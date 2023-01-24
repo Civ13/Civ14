@@ -1,0 +1,332 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "trench0"
+    },
+    {
+      "name": "trench1"
+    },
+    {
+      "name": "trench2"
+    },
+    {
+      "name": "trench3"
+    },
+    {
+      "name": "trench4"
+    },
+    {
+      "name": "trench5"
+    },
+    {
+      "name": "trench6"
+    },
+    {
+      "name": "trench7"
+    },
+    {
+      "name": "trench8"
+    },
+    {
+      "name": "trench9"
+    },
+    {
+      "name": "trench10"
+    },
+    {
+      "name": "trench12"
+    },
+    {
+      "name": "trench13"
+    },
+    {
+      "name": "trench14"
+    },
+    {
+      "name": "trench15"
+    },
+    {
+      "name": "trench"
+    },
+    {
+      "name": "trench_edges",
+      "directions": 8
+    },
+    {
+      "name": "trench_floodedX",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "trench_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "trench_flooded_edges",
+      "directions": 8
+    },
+    {
+      "name": "irrigation0"
+    },
+    {
+      "name": "irrigation1"
+    },
+    {
+      "name": "irrigation2"
+    },
+    {
+      "name": "irrigation3"
+    },
+    {
+      "name": "irrigation4"
+    },
+    {
+      "name": "irrigation5"
+    },
+    {
+      "name": "irrigation6"
+    },
+    {
+      "name": "irrigation7"
+    },
+    {
+      "name": "irrigation8"
+    },
+    {
+      "name": "irrigation9"
+    },
+    {
+      "name": "irrigation10"
+    },
+    {
+      "name": "irrigation11"
+    },
+    {
+      "name": "irrigation12"
+    },
+    {
+      "name": "irrigation13"
+    },
+    {
+      "name": "irrigation14"
+    },
+    {
+      "name": "irrigation15"
+    },
+    {
+      "name": "irrigation"
+    },
+    {
+      "name": "irrigation_edges",
+      "directions": 8
+    },
+    {
+      "name": "irrigation_flooded_edges",
+      "directions": 8
+    },
+    {
+      "name": "irrigation0_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation1_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation2_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation3_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation4_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation5_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation6_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation7_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation8_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation9_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation10_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation11_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation12_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation13_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation14_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation15_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "irrigation_flooded",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    }
+  ]
+}

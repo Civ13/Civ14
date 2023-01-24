@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "chest"
+    },
+    {
+      "name": "groin"
+    },
+    {
+      "name": "r_hand"
+    },
+    {
+      "name": "l_hand"
+    },
+    {
+      "name": "r_arm"
+    },
+    {
+      "name": "l_arm"
+    },
+    {
+      "name": "r_foot"
+    },
+    {
+      "name": "l_foot"
+    },
+    {
+      "name": "r_leg"
+    },
+    {
+      "name": "l_leg"
+    },
+    {
+      "name": "eyes"
+    },
+    {
+      "name": "mouth"
+    },
+    {
+      "name": "head"
+    }
+  ]
+}

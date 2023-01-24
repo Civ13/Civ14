@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": ""
+    },
+    {
+      "name": "h0"
+    },
+    {
+      "name": "h1"
+    },
+    {
+      "name": ""
+    },
+    {
+      "name": "hR0"
+    },
+    {
+      "name": "hR1"
+    },
+    {
+      "name": ""
+    },
+    {
+      "name": ""
+    },
+    {
+      "name": "radio1"
+    },
+    {
+      "name": "radio0"
+    },
+    {
+      "name": "radio2"
+    },
+    {
+      "name": "h2"
+    },
+    {
+      "name": "hR2"
+    },
+    {
+      "name": "typing",
+      "delays": [
+        [
+          0.4,
+          0.4,
+          0.4
+        ]
+      ]
+    }
+  ]
+}

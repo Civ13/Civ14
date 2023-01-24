@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": ""
+    },
+    {
+      "name": "N"
+    },
+    {
+      "name": "N-corner"
+    },
+    {
+      "name": "S"
+    },
+    {
+      "name": "S-corner"
+    },
+    {
+      "name": "E"
+    },
+    {
+      "name": "E-corner"
+    },
+    {
+      "name": "W"
+    },
+    {
+      "name": "W-corner"
+    },
+    {
+      "name": "NW-in"
+    },
+    {
+      "name": "NW-out"
+    },
+    {
+      "name": "NE-in"
+    },
+    {
+      "name": "NE-out"
+    },
+    {
+      "name": "SW-in"
+    },
+    {
+      "name": "SW-out"
+    },
+    {
+      "name": "SE-in"
+    },
+    {
+      "name": "SE-out"
+    },
+    {
+      "name": "U-N"
+    },
+    {
+      "name": "U-S"
+    },
+    {
+      "name": "U-E"
+    },
+    {
+      "name": "U-W"
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "detective",
+      "directions": 4
+    },
+    {
+      "name": "inspector",
+      "directions": 4
+    },
+    {
+      "name": "boots",
+      "directions": 4
+    },
+    {
+      "name": "chef",
+      "directions": 4
+    },
+    {
+      "name": "white",
+      "directions": 4
+    },
+    {
+      "name": "wizard",
+      "directions": 4
+    },
+    {
+      "name": "galoshes",
+      "directions": 4
+    },
+    {
+      "name": "jackboots",
+      "directions": 4
+    },
+    {
+      "name": "swat",
+      "directions": 4
+    },
+    {
+      "name": "black",
+      "directions": 4
+    },
+    {
+      "name": "brown",
+      "directions": 4
+    },
+    {
+      "name": "tourist",
+      "directions": 4
+    },
+    {
+      "name": "cowboy",
+      "directions": 4
+    },
+    {
+      "name": "laceups",
+      "directions": 4
+    },
+    {
+      "name": "leather",
+      "directions": 4
+    },
+    {
+      "name": "workboots",
+      "directions": 4
+    },
+    {
+      "name": "jackbootsX",
+      "directions": 4
+    },
+    {
+      "name": "wrappedboots",
+      "directions": 4
+    },
+    {
+      "name": "cavalier_boots",
+      "directions": 4
+    },
+    {
+      "name": "soldier_shoes",
+      "directions": 4
+    },
+    {
+      "name": "sailorboots1",
+      "directions": 4
+    },
+    {
+      "name": "sailorboots2",
+      "directions": 4
+    },
+    {
+      "name": "roman",
+      "directions": 4
+    },
+    {
+      "name": "medieval",
+      "directions": 4
+    },
+    {
+      "name": "knight",
+      "directions": 4
+    },
+    {
+      "name": "ork_warrior",
+      "directions": 4
+    },
+    {
+      "name": "arab",
+      "directions": 4
+    },
+    {
+      "name": "fur1",
+      "directions": 4
+    },
+    {
+      "name": "fur2",
+      "directions": 4
+    },
+    {
+      "name": "fur3",
+      "directions": 4
+    },
+    {
+      "name": "chad",
+      "directions": 4
+    },
+    {
+      "name": "fur4",
+      "directions": 4
+    },
+    {
+      "name": "fur5",
+      "directions": 4
+    },
+    {
+      "name": "japboots",
+      "directions": 4
+    },
+    {
+      "name": "cowboyboots1",
+      "directions": 4
+    },
+    {
+      "name": "cowboyboots2",
+      "directions": 4
+    },
+    {
+      "name": "flipflops",
+      "directions": 4
+    },
+    {
+      "name": "ac_boots",
+      "directions": 4
+    },
+    {
+      "name": "fur6",
+      "directions": 4
+    },
+    {
+      "name": "guardiacivil_boots",
+      "directions": 4
+    },
+    {
+      "name": "iogboot",
+      "directions": 4
+    },
+    {
+      "name": "geta",
+      "directions": 4
+    },
+    {
+      "name": "winterboots",
+      "directions": 4
+    },
+    {
+      "name": "usmc",
+      "directions": 4
+    },
+    {
+      "name": "aztec_sandals",
+      "directions": 4
+    },
+    {
+      "name": "swat1",
+      "directions": 4
+    },
+    {
+      "name": "gator_cowboy",
+      "directions": 4
+    },
+    {
+      "name": "gator_boots",
+      "directions": 4
+    },
+    {
+      "name": "gator_ankleboots",
+      "directions": 4
+    },
+    {
+      "name": "gator_laceups",
+      "directions": 4
+    },
+    {
+      "name": "tsuranuki",
+      "directions": 4
+    },
+    {
+      "name": "emir",
+      "directions": 4
+    },
+    {
+      "name": "nlfsandals_v1",
+      "directions": 4
+    },
+    {
+      "name": "nlfsandals_v2",
+      "directions": 4
+    },
+    {
+      "name": "steppe_wool_shoes",
+      "directions": 4
+    },
+    {
+      "name": "lizard_cowboy",
+      "directions": 4
+    },
+    {
+      "name": "lizard_boots",
+      "directions": 4
+    },
+    {
+      "name": "lizard_ankleboots",
+      "directions": 4
+    },
+    {
+      "name": "lizard_laceups",
+      "directions": 4
+    },
+    {
+      "name": "courier_sneakers",
+      "directions": 4
+    },
+    {
+      "name": "punk",
+      "directions": 4
+    },
+    {
+      "name": "toughguy",
+      "directions": 4
+    },
+    {
+      "name": "football",
+      "directions": 4
+    },
+    {
+      "name": "shackles",
+      "directions": 4
+    },
+    {
+      "name": "geta1",
+      "directions": 4
+    },
+    {
+      "name": "dwoots",
+      "directions": 4
+    },
+    {
+      "name": "whiteput",
+      "directions": 4
+    },
+    {
+      "name": "replicant_boots",
+      "directions": 4
+    },
+    {
+      "name": "japboots_ww2",
+      "directions": 4
+    },
+    {
+      "name": "japboots_ww2_puttees",
+      "directions": 4
+    },
+    {
+      "name": "redboots",
+      "directions": 4
+    },
+    {
+      "name": "senateboots",
+      "directions": 4
+    },
+    {
+      "name": "brown_laceups",
+      "directions": 4
+    },
+    {
+      "name": "grey_laceups",
+      "directions": 4
+    },
+    {
+      "name": "white_laceups",
+      "directions": 4
+    },
+    {
+      "name": "sovietboots",
+      "directions": 4
+    },
+    {
+      "name": "jackboots2",
+      "directions": 4
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "twocow",
+      "directions": 4
+    },
+    {
+      "name": "twocow_dead"
+    },
+    {
+      "name": "hucow",
+      "directions": 4
+    },
+    {
+      "name": "hucow_dead"
+    },
+    {
+      "name": "bugbear_black",
+      "directions": 4
+    },
+    {
+      "name": "bugbear_black_dead"
+    },
+    {
+      "name": "bugbear_brown",
+      "directions": 4
+    },
+    {
+      "name": "bugbear_brown_dead"
+    },
+    {
+      "name": "zombear",
+      "directions": 4
+    },
+    {
+      "name": "zombear_dead"
+    },
+    {
+      "name": "poisondeer_f",
+      "directions": 4
+    },
+    {
+      "name": "poisondeer_m",
+      "directions": 4
+    },
+    {
+      "name": "poisondeer_m_dead"
+    },
+    {
+      "name": "poisondeer_f_dead"
+    },
+    {
+      "name": "wolf_m_wolfman",
+      "directions": 4
+    },
+    {
+      "name": "wolf_f_wolfman",
+      "directions": 4
+    },
+    {
+      "name": "big_frog",
+      "directions": 4
+    },
+    {
+      "name": "big_frog_dead"
+    }
+  ]
+}

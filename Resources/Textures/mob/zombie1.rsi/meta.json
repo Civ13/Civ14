@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "zombie"
+    },
+    {
+      "name": "chest_s",
+      "directions": 4
+    },
+    {
+      "name": "head_s",
+      "directions": 4
+    },
+    {
+      "name": "r_hand_s",
+      "directions": 4
+    },
+    {
+      "name": "r_arm_s",
+      "directions": 4
+    },
+    {
+      "name": "l_hand_s",
+      "directions": 4
+    },
+    {
+      "name": "l_arm_s",
+      "directions": 4
+    },
+    {
+      "name": "r_leg_s",
+      "directions": 4
+    },
+    {
+      "name": "r_foot_s",
+      "directions": 4
+    },
+    {
+      "name": "l_leg_s",
+      "directions": 4
+    },
+    {
+      "name": "l_foot_s",
+      "directions": 4
+    },
+    {
+      "name": ""
+    },
+    {
+      "name": "chest_s_dead"
+    },
+    {
+      "name": "head_s_dead"
+    },
+    {
+      "name": "r_hand_s_dead"
+    },
+    {
+      "name": "r_arm_s_dead"
+    },
+    {
+      "name": "l_hand_s_dead"
+    },
+    {
+      "name": "l_arm_s_dead"
+    },
+    {
+      "name": "r_leg_s_dead"
+    },
+    {
+      "name": "r_foot_s_dead"
+    },
+    {
+      "name": "l_leg_s_dead"
+    },
+    {
+      "name": "l_foot_s_dead"
+    }
+  ]
+}

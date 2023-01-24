@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "lizard",
+      "directions": 4
+    },
+    {
+      "name": "lizard-dead"
+    },
+    {
+      "name": "blank"
+    },
+    {
+      "name": "leech",
+      "directions": 4
+    },
+    {
+      "name": "leech-dead"
+    },
+    {
+      "name": "leech_h"
+    },
+    {
+      "name": "mosquitoes1",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "mosquitoes2",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "mosquitoes3",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "locusts1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "locusts2",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "locusts3",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "large_spider",
+      "directions": 4
+    },
+    {
+      "name": "large_dead_spider"
+    },
+    {
+      "name": "cockroach_big",
+      "directions": 4,
+      "delays": [
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "cockroach",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "living_cockroach",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "dead_cockroach"
+    },
+    {
+      "name": "flies",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "fies2",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "blue_snail",
+      "directions": 4
+    },
+    {
+      "name": "pink_snail",
+      "directions": 4
+    },
+    {
+      "name": "brown_snail",
+      "directions": 4
+    },
+    {
+      "name": "emerald_snail",
+      "directions": 4
+    },
+    {
+      "name": "poison_snail",
+      "directions": 4
+    },
+    {
+      "name": "blue_snail_dead"
+    },
+    {
+      "name": "pink_snail_dead"
+    },
+    {
+      "name": "brown_snail_dead"
+    },
+    {
+      "name": "emerald_snail_dead"
+    },
+    {
+      "name": "poison_snail_dead"
+    },
+    {
+      "name": "living_worm",
+      "delays": [
+        [
+          0.3,
+          0.2,
+          0.3,
+          0.2,
+          0.3,
+          0.2,
+          0.3,
+          0.2,
+          0.3,
+          0.2,
+          0.3,
+          0.2,
+          0.3,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "dead_worm"
+    }
+  ]
+}

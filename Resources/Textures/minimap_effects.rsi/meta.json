@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "size": {
+    "x": 60,
+    "y": 60
+  },
+  "states": [
+    {
+      "name": "map_x"
+    },
+    {
+      "name": "map_arrow",
+      "directions": 8
+    },
+    {
+      "name": "map_circle"
+    },
+    {
+      "name": "map_number_1"
+    },
+    {
+      "name": "map_number_2"
+    },
+    {
+      "name": "map_number_3"
+    },
+    {
+      "name": "map_number_4"
+    },
+    {
+      "name": "map_number_5"
+    },
+    {
+      "name": "map_number_6"
+    },
+    {
+      "name": "map_number_7"
+    },
+    {
+      "name": "map_number_8"
+    },
+    {
+      "name": "map_number_9"
+    },
+    {
+      "name": "island1"
+    },
+    {
+      "name": "island3"
+    },
+    {
+      "name": "island4"
+    },
+    {
+      "name": "island2"
+    },
+    {
+      "name": "island5"
+    },
+    {
+      "name": "island_fortress1"
+    },
+    {
+      "name": "island_fortress2"
+    },
+    {
+      "name": "merchant"
+    },
+    {
+      "name": "pirates"
+    },
+    {
+      "name": "british"
+    },
+    {
+      "name": "spanish"
+    },
+    {
+      "name": "undead"
+    },
+    {
+      "name": "size1"
+    },
+    {
+      "name": "size2"
+    },
+    {
+      "name": "size3"
+    },
+    {
+      "name": "size4"
+    },
+    {
+      "name": "size5"
+    },
+    {
+      "name": "size6"
+    },
+    {
+      "name": "ship1"
+    },
+    {
+      "name": "ship2"
+    },
+    {
+      "name": "ship3"
+    },
+    {
+      "name": "ship4"
+    },
+    {
+      "name": "ship5"
+    },
+    {
+      "name": "ship6"
+    }
+  ]
+}

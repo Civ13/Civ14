@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "torii",
+      "directions": 4
+    },
+    {
+      "name": "ropeladder",
+      "directions": 4
+    },
+    {
+      "name": "ropeladder_thin",
+      "directions": 4
+    },
+    {
+      "name": "large_mast"
+    },
+    {
+      "name": "large_mast1"
+    },
+    {
+      "name": "grid_partial",
+      "directions": 8
+    },
+    {
+      "name": "grid"
+    },
+    {
+      "name": "grid_partial_open",
+      "directions": 8
+    },
+    {
+      "name": "grid_open"
+    }
+  ]
+}

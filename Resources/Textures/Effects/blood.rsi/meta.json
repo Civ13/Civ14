@@ -1,0 +1,265 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "thisisfuckingstupid"
+    },
+    {
+      "name": "itemblood"
+    },
+    {
+      "name": "gibarm",
+      "directions": 4
+    },
+    {
+      "name": "gibarm_flesh",
+      "directions": 4
+    },
+    {
+      "name": "gibleg",
+      "directions": 4
+    },
+    {
+      "name": "gibleg_flesh",
+      "directions": 4
+    },
+    {
+      "name": "gibtorso",
+      "directions": 4
+    },
+    {
+      "name": "gibtorso_flesh",
+      "directions": 4
+    },
+    {
+      "name": "gibmid1"
+    },
+    {
+      "name": "gib1"
+    },
+    {
+      "name": "gib1_flesh"
+    },
+    {
+      "name": "gib2"
+    },
+    {
+      "name": "gib2_flesh"
+    },
+    {
+      "name": "gib3",
+      "directions": 4
+    },
+    {
+      "name": "gib3_flesh",
+      "directions": 4
+    },
+    {
+      "name": "gib5",
+      "directions": 4
+    },
+    {
+      "name": "gib5_flesh",
+      "directions": 4
+    },
+    {
+      "name": "gib6",
+      "directions": 4
+    },
+    {
+      "name": "gib6_flesh",
+      "directions": 4
+    },
+    {
+      "name": "gibup1"
+    },
+    {
+      "name": "gibup1_flesh"
+    },
+    {
+      "name": "gibdown1"
+    },
+    {
+      "name": "gibdown1_flesh"
+    },
+    {
+      "name": "gibmid2"
+    },
+    {
+      "name": "gibmid2_flesh"
+    },
+    {
+      "name": "gibmid3"
+    },
+    {
+      "name": "gibmid3_flesh"
+    },
+    {
+      "name": "gibhead",
+      "directions": 4
+    },
+    {
+      "name": "u_ketchup",
+      "directions": 4
+    },
+    {
+      "name": "u_guilty",
+      "directions": 4
+    },
+    {
+      "name": "u_madman",
+      "directions": 4
+    },
+    {
+      "name": "u_psycopath",
+      "directions": 4
+    },
+    {
+      "name": "u_ketchup_l"
+    },
+    {
+      "name": "u_guilty_l"
+    },
+    {
+      "name": "u_dangerous_l"
+    },
+    {
+      "name": "u_madman_l"
+    },
+    {
+      "name": "u_psycopath_l"
+    },
+    {
+      "name": "tracks",
+      "directions": 8
+    },
+    {
+      "name": "remains"
+    },
+    {
+      "name": "remainsxeno"
+    },
+    {
+      "name": "gibbearcore"
+    },
+    {
+      "name": "gibbear1"
+    },
+    {
+      "name": "gibbear2"
+    },
+    {
+      "name": "gibbear3"
+    },
+    {
+      "name": "gibbear4"
+    },
+    {
+      "name": "gibbear5"
+    },
+    {
+      "name": "gibbearhead",
+      "directions": 4
+    },
+    {
+      "name": "vomit_1"
+    },
+    {
+      "name": "vomit_2"
+    },
+    {
+      "name": "vomit_3"
+    },
+    {
+      "name": "vomit_4"
+    },
+    {
+      "name": "vomittox_1"
+    },
+    {
+      "name": "vomittox_2"
+    },
+    {
+      "name": "vomittox_3"
+    },
+    {
+      "name": "vomittox_4"
+    },
+    {
+      "name": "writing2"
+    },
+    {
+      "name": "writing3"
+    },
+    {
+      "name": "writing4"
+    },
+    {
+      "name": "writing5"
+    },
+    {
+      "name": "mgibbl1"
+    },
+    {
+      "name": "mgibbl2"
+    },
+    {
+      "name": "mgibbl3"
+    },
+    {
+      "name": "mgibbl4"
+    },
+    {
+      "name": "mgibbl5"
+    },
+    {
+      "name": "mfloor1"
+    },
+    {
+      "name": "mfloor2"
+    },
+    {
+      "name": "mfloor3"
+    },
+    {
+      "name": "mfloor4"
+    },
+    {
+      "name": "mfloor5"
+    },
+    {
+      "name": "mfloor6"
+    },
+    {
+      "name": "mfloor7"
+    },
+    {
+      "name": "writing1"
+    },
+    {
+      "name": "mucus"
+    },
+    {
+      "name": "mouse"
+    },
+    {
+      "name": "lizard"
+    },
+    {
+      "name": "vomit_b1"
+    },
+    {
+      "name": "vomit_b2"
+    },
+    {
+      "name": "vomit_b3"
+    },
+    {
+      "name": "vomit_b4"
+    }
+  ]
+}

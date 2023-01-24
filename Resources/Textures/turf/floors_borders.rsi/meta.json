@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "dirt"
+    },
+    {
+      "name": "water"
+    },
+    {
+      "name": "sidewalkconcrete",
+      "directions": 4
+    },
+    {
+      "name": "concreteroad"
+    },
+    {
+      "name": "grasstodirt",
+      "directions": 8
+    },
+    {
+      "name": "sandtodirt",
+      "directions": 8
+    },
+    {
+      "name": "grasstosand",
+      "directions": 8
+    },
+    {
+      "name": "dirttosand",
+      "directions": 8
+    },
+    {
+      "name": "sandtograss",
+      "directions": 8
+    },
+    {
+      "name": "dirttograss",
+      "directions": 8
+    },
+    {
+      "name": "airportstriped",
+      "directions": 4
+    },
+    {
+      "name": "airport"
+    },
+    {
+      "name": "sandtowater",
+      "directions": 8
+    },
+    {
+      "name": "dirttowater",
+      "directions": 8
+    },
+    {
+      "name": "grasstowater",
+      "directions": 8
+    },
+    {
+      "name": "watertosand",
+      "directions": 8
+    },
+    {
+      "name": "watertodirt",
+      "directions": 8
+    },
+    {
+      "name": "watertograss",
+      "directions": 8
+    },
+    {
+      "name": "carpet1"
+    },
+    {
+      "name": "stone1"
+    },
+    {
+      "name": "stone2"
+    },
+    {
+      "name": "stone3"
+    },
+    {
+      "name": "stone4"
+    },
+    {
+      "name": "carpet2"
+    },
+    {
+      "name": "stone5"
+    },
+    {
+      "name": "stone6"
+    },
+    {
+      "name": "carpet3"
+    },
+    {
+      "name": "stone7"
+    },
+    {
+      "name": "carpet4"
+    },
+    {
+      "name": "carpet5"
+    },
+    {
+      "name": "stone8"
+    },
+    {
+      "name": "stone9"
+    },
+    {
+      "name": "stone11"
+    },
+    {
+      "name": "wood1"
+    },
+    {
+      "name": "wood2"
+    },
+    {
+      "name": "wood3"
+    },
+    {
+      "name": "carpet6"
+    },
+    {
+      "name": "grassOLD"
+    },
+    {
+      "name": "sandOLD"
+    },
+    {
+      "name": "sidewalk_corner",
+      "directions": 4
+    },
+    {
+      "name": "sidewalk_grass",
+      "directions": 4
+    },
+    {
+      "name": "grass"
+    },
+    {
+      "name": "sand"
+    },
+    {
+      "name": "sandbeachupdated",
+      "directions": 8
+    },
+    {
+      "name": "beachwatermask",
+      "directions": 8
+    },
+    {
+      "name": "updatedwater"
+    },
+    {
+      "name": "sandwater"
+    },
+    {
+      "name": ""
+    },
+    {
+      "name": "outerstreet"
+    },
+    {
+      "name": "tilered"
+    },
+    {
+      "name": "tileblue"
+    },
+    {
+      "name": "marbleblack"
+    },
+    {
+      "name": "grass_edgesX",
+      "directions": 4
+    }
+  ]
+}

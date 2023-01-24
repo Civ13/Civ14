@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "light_broken"
+    },
+    {
+      "name": "wood-broken"
+    },
+    {
+      "name": "rust"
+    },
+    {
+      "name": "scorched1"
+    },
+    {
+      "name": "scorched2"
+    },
+    {
+      "name": "scorched3"
+    },
+    {
+      "name": "damaged1"
+    },
+    {
+      "name": "damaged2"
+    },
+    {
+      "name": "damaged3"
+    },
+    {
+      "name": "wood-broken1"
+    },
+    {
+      "name": "wood-broken2"
+    },
+    {
+      "name": "wood-broken3"
+    },
+    {
+      "name": "wood-broken4"
+    },
+    {
+      "name": "wood-broken5"
+    },
+    {
+      "name": "wood-broken6"
+    },
+    {
+      "name": "wood-broken7"
+    }
+  ]
+}

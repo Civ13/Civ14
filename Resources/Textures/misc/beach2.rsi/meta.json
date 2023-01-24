@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "sandwater",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "palm1old"
+    },
+    {
+      "name": "palm2old"
+    },
+    {
+      "name": "palm1"
+    },
+    {
+      "name": "palm2"
+    },
+    {
+      "name": "dead_palm1"
+    },
+    {
+      "name": "dead_palm2"
+    }
+  ]
+}

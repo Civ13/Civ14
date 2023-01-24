@@ -1,0 +1,2673 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "",
+      "directions": 4
+    },
+    {
+      "name": "jp_"
+    },
+    {
+      "name": "cad_"
+    },
+    {
+      "name": "",
+      "delays": [
+        [
+          0.120000005,
+          0.120000005,
+          0.120000005,
+          0.120000005
+        ]
+      ]
+    },
+    {
+      "name": "tophat",
+      "directions": 4
+    },
+    {
+      "name": "pwig",
+      "directions": 4
+    },
+    {
+      "name": "drill_hat",
+      "directions": 4
+    },
+    {
+      "name": "centcom",
+      "directions": 4
+    },
+    {
+      "name": "captain",
+      "directions": 4
+    },
+    {
+      "name": "paper",
+      "directions": 4
+    },
+    {
+      "name": "pirate",
+      "directions": 4
+    },
+    {
+      "name": "bandana",
+      "directions": 4
+    },
+    {
+      "name": "plaguedoctor",
+      "directions": 4
+    },
+    {
+      "name": "chaplain_hood",
+      "directions": 4
+    },
+    {
+      "name": "nun_hood",
+      "directions": 4
+    },
+    {
+      "name": "redcoat",
+      "directions": 4
+    },
+    {
+      "name": "fez",
+      "directions": 4
+    },
+    {
+      "name": "feather_trilby",
+      "directions": 4
+    },
+    {
+      "name": "boater_hat",
+      "directions": 4
+    },
+    {
+      "name": "beaver_hat",
+      "directions": 4
+    },
+    {
+      "name": "bowler_hat",
+      "directions": 4
+    },
+    {
+      "name": "fedora",
+      "directions": 4
+    },
+    {
+      "name": "philosopher_wig",
+      "directions": 4
+    },
+    {
+      "name": "piratebandana1",
+      "directions": 4
+    },
+    {
+      "name": "piratehat",
+      "directions": 4
+    },
+    {
+      "name": "tarred_hat",
+      "directions": 4
+    },
+    {
+      "name": "tricorne_black",
+      "directions": 4
+    },
+    {
+      "name": "tricorne_british",
+      "directions": 4
+    },
+    {
+      "name": "tricorne_british_soldier",
+      "directions": 4
+    },
+    {
+      "name": "redberet",
+      "directions": 4
+    },
+    {
+      "name": "blueberet",
+      "directions": 4
+    },
+    {
+      "name": "beret_red",
+      "directions": 4
+    },
+    {
+      "name": "beret_black",
+      "directions": 4
+    },
+    {
+      "name": "beret_black_insig",
+      "directions": 4
+    },
+    {
+      "name": "beret_green",
+      "directions": 4
+    },
+    {
+      "name": "beret_green_insig",
+      "directions": 4
+    },
+    {
+      "name": "beret_rus_vdv",
+      "directions": 4
+    },
+    {
+      "name": "caubeen",
+      "directions": 4
+    },
+    {
+      "name": "unitednations_beret",
+      "directions": 4
+    },
+    {
+      "name": "caf_inf",
+      "directions": 4
+    },
+    {
+      "name": "caf_arm",
+      "directions": 4
+    },
+    {
+      "name": "caf_artsig",
+      "directions": 4
+    },
+    {
+      "name": "chief_hat",
+      "directions": 4
+    },
+    {
+      "name": "tricorne_portuguese",
+      "directions": 4
+    },
+    {
+      "name": "tricorne_spanish",
+      "directions": 4
+    },
+    {
+      "name": "tricorne_french",
+      "directions": 4
+    },
+    {
+      "name": "tricorne_dutch",
+      "directions": 4
+    },
+    {
+      "name": "skull_mask",
+      "directions": 4
+    },
+    {
+      "name": "kerchief",
+      "directions": 4
+    },
+    {
+      "name": "tricorne_british2",
+      "directions": 4
+    },
+    {
+      "name": "chasseur_pt",
+      "directions": 4
+    },
+    {
+      "name": "chasseur_nl",
+      "directions": 4
+    },
+    {
+      "name": "chasseur_fr",
+      "directions": 4
+    },
+    {
+      "name": "chasseur_br",
+      "directions": 4
+    },
+    {
+      "name": "gladiator",
+      "directions": 4
+    },
+    {
+      "name": "goldenhelmet",
+      "directions": 4
+    },
+    {
+      "name": "metallichelmet",
+      "directions": 4
+    },
+    {
+      "name": "roman",
+      "directions": 4
+    },
+    {
+      "name": "old_roman",
+      "directions": 4
+    },
+    {
+      "name": "roman_c",
+      "directions": 4
+    },
+    {
+      "name": "old_roman_c",
+      "directions": 4
+    },
+    {
+      "name": "roman_d",
+      "directions": 4
+    },
+    {
+      "name": "old_roman_d",
+      "directions": 4
+    },
+    {
+      "name": "greek",
+      "directions": 4
+    },
+    {
+      "name": "greek_c",
+      "directions": 4
+    },
+    {
+      "name": "bearpelt",
+      "directions": 4
+    },
+    {
+      "name": "wolfpelt",
+      "directions": 4
+    },
+    {
+      "name": "whitewolfpelt",
+      "directions": 4
+    },
+    {
+      "name": "toxotai",
+      "directions": 4
+    },
+    {
+      "name": "greek_sl",
+      "directions": 4
+    },
+    {
+      "name": "knight_blue",
+      "directions": 4
+    },
+    {
+      "name": "knight_red",
+      "directions": 4
+    },
+    {
+      "name": "knight_green",
+      "directions": 4
+    },
+    {
+      "name": "knight_yellow",
+      "directions": 4
+    },
+    {
+      "name": "knight_templar",
+      "directions": 4
+    },
+    {
+      "name": "knight_simple",
+      "directions": 4
+    },
+    {
+      "name": "medieval_helmet1",
+      "directions": 4
+    },
+    {
+      "name": "medieval_helmet2",
+      "directions": 4
+    },
+    {
+      "name": "medieval_helmet3",
+      "directions": 4
+    },
+    {
+      "name": "noblehat1",
+      "directions": 4
+    },
+    {
+      "name": "noblehat2",
+      "directions": 4
+    },
+    {
+      "name": "coif",
+      "directions": 4
+    },
+    {
+      "name": "coif_helmet",
+      "directions": 4
+    },
+    {
+      "name": "turban1",
+      "directions": 4
+    },
+    {
+      "name": "turban2",
+      "directions": 4
+    },
+    {
+      "name": "turban3",
+      "directions": 4
+    },
+    {
+      "name": "turban4",
+      "directions": 4
+    },
+    {
+      "name": "turhelm1",
+      "directions": 4
+    },
+    {
+      "name": "turhelm2",
+      "directions": 4
+    },
+    {
+      "name": "turhelm3",
+      "directions": 4
+    },
+    {
+      "name": "turhelm4",
+      "directions": 4
+    },
+    {
+      "name": "arabw_helmet1",
+      "directions": 4
+    },
+    {
+      "name": "arabw_helmet",
+      "directions": 4
+    },
+    {
+      "name": "turban_w",
+      "directions": 4
+    },
+    {
+      "name": "gold_crown",
+      "directions": 4
+    },
+    {
+      "name": "gold_crown_diamond",
+      "directions": 4
+    },
+    {
+      "name": "silver_crown",
+      "directions": 4
+    },
+    {
+      "name": "silver_crown_diamond",
+      "directions": 4
+    },
+    {
+      "name": "brownbearpelt",
+      "directions": 4
+    },
+    {
+      "name": "whitebearpelt",
+      "directions": 4
+    },
+    {
+      "name": "leatherhelmet",
+      "directions": 4
+    },
+    {
+      "name": "mayan_headdress",
+      "directions": 4
+    },
+    {
+      "name": "japcap",
+      "directions": 4
+    },
+    {
+      "name": "japcap2",
+      "directions": 4
+    },
+    {
+      "name": "japoffcap",
+      "directions": 4
+    },
+    {
+      "name": "ruscap",
+      "directions": 4
+    },
+    {
+      "name": "rusoffcap",
+      "directions": 4
+    },
+    {
+      "name": "detective",
+      "directions": 4
+    },
+    {
+      "name": "detective2",
+      "directions": 4
+    },
+    {
+      "name": "sombrero",
+      "directions": 4
+    },
+    {
+      "name": "doublecrown",
+      "directions": 4
+    },
+    {
+      "name": "redcrown",
+      "directions": 4
+    },
+    {
+      "name": "napoleonic_hat",
+      "directions": 4
+    },
+    {
+      "name": "japcapad",
+      "directions": 4
+    },
+    {
+      "name": "japoffcapad",
+      "directions": 4
+    },
+    {
+      "name": "japcap2ad",
+      "directions": 4
+    },
+    {
+      "name": "cowboy2",
+      "directions": 4
+    },
+    {
+      "name": "union_cap",
+      "directions": 4
+    },
+    {
+      "name": "union_capad",
+      "directions": 4
+    },
+    {
+      "name": "union_hat",
+      "directions": 4
+    },
+    {
+      "name": "union_hat2",
+      "directions": 4
+    },
+    {
+      "name": "confederate_hat",
+      "directions": 4
+    },
+    {
+      "name": "confederate_cap",
+      "directions": 4
+    },
+    {
+      "name": "confederate_capad",
+      "directions": 4
+    },
+    {
+      "name": "flatcap1",
+      "directions": 4
+    },
+    {
+      "name": "flatcap2",
+      "directions": 4
+    },
+    {
+      "name": "flatcap3",
+      "directions": 4
+    },
+    {
+      "name": "cowboy",
+      "directions": 4
+    },
+    {
+      "name": "artisan",
+      "directions": 4
+    },
+    {
+      "name": "pickelhaube",
+      "directions": 4
+    },
+    {
+      "name": "stahlhelm",
+      "directions": 4
+    },
+    {
+      "name": "brodie",
+      "directions": 4
+    },
+    {
+      "name": "old_pith",
+      "directions": 4
+    },
+    {
+      "name": "feathered_hat",
+      "directions": 4
+    },
+    {
+      "name": "stahlhelm_old",
+      "directions": 4
+    },
+    {
+      "name": "adrian",
+      "directions": 4
+    },
+    {
+      "name": "brittcap",
+      "directions": 4
+    },
+    {
+      "name": "germcap",
+      "directions": 4
+    },
+    {
+      "name": "frenchcap",
+      "directions": 4
+    },
+    {
+      "name": "samurai_warrior1",
+      "directions": 4
+    },
+    {
+      "name": "samurai_warrior2",
+      "directions": 4
+    },
+    {
+      "name": "samurai_warrior3",
+      "directions": 4
+    },
+    {
+      "name": "samurai_warrior4",
+      "directions": 4
+    },
+    {
+      "name": "samurai_guard1",
+      "directions": 4
+    },
+    {
+      "name": "samurai_guard2",
+      "directions": 4
+    },
+    {
+      "name": "samurai_guard3",
+      "directions": 4
+    },
+    {
+      "name": "samurai_guard4",
+      "directions": 4
+    },
+    {
+      "name": "fieldcap",
+      "directions": 4
+    },
+    {
+      "name": "viking",
+      "directions": 4
+    },
+    {
+      "name": "brodie_old",
+      "directions": 4
+    },
+    {
+      "name": "germcap2",
+      "directions": 4
+    },
+    {
+      "name": "frenchcap2",
+      "directions": 4
+    },
+    {
+      "name": "pickelhaube2",
+      "directions": 4
+    },
+    {
+      "name": "card",
+      "directions": 4
+    },
+    {
+      "name": "cigpack",
+      "directions": 4
+    },
+    {
+      "name": "peace",
+      "directions": 4
+    },
+    {
+      "name": "bullets",
+      "directions": 4
+    },
+    {
+      "name": "text",
+      "directions": 4
+    },
+    {
+      "name": "ghillie",
+      "directions": 4
+    },
+    {
+      "name": "jungle_hat_khaki",
+      "directions": 4
+    },
+    {
+      "name": "jungle_hat_green",
+      "directions": 4
+    },
+    {
+      "name": "ushelmet_mar",
+      "directions": 4
+    },
+    {
+      "name": "ushelmet_mar_nco",
+      "directions": 4
+    },
+    {
+      "name": "ushelmet_camo",
+      "directions": 4
+    },
+    {
+      "name": "commando_bandana",
+      "directions": 4
+    },
+    {
+      "name": "lwh_desert",
+      "directions": 4
+    },
+    {
+      "name": "lwh_black",
+      "directions": 4
+    },
+    {
+      "name": "64b7",
+      "directions": 4
+    },
+    {
+      "name": "pasgt_woodland",
+      "directions": 4
+    },
+    {
+      "name": "pasgt_woodland_sl",
+      "directions": 4
+    },
+    {
+      "name": "pasgt_woodland_com",
+      "directions": 4
+    },
+    {
+      "name": "pasgt_desert",
+      "directions": 4
+    },
+    {
+      "name": "pasgt_desert_attachments",
+      "directions": 4
+    },
+    {
+      "name": "pasgt_green",
+      "directions": 4
+    },
+    {
+      "name": "pasgt_reddish",
+      "directions": 4
+    },
+    {
+      "name": "pasgt_white",
+      "directions": 4
+    },
+    {
+      "name": "black_shemagh",
+      "directions": 4
+    },
+    {
+      "name": "black_bandana",
+      "directions": 4
+    },
+    {
+      "name": "affieldcap",
+      "directions": 4
+    },
+    {
+      "name": "afger_officercap",
+      "directions": 4
+    },
+    {
+      "name": "afgerhelm",
+      "directions": 4
+    },
+    {
+      "name": "usnco_cap",
+      "directions": 4
+    },
+    {
+      "name": "japcap_mp",
+      "directions": 4
+    },
+    {
+      "name": "gertanker",
+      "directions": 4
+    },
+    {
+      "name": "sovtanker",
+      "directions": 4
+    },
+    {
+      "name": "ger_officercap",
+      "directions": 4
+    },
+    {
+      "name": "sov_officercap",
+      "directions": 4
+    },
+    {
+      "name": "gerhelm_mp",
+      "directions": 4
+    },
+    {
+      "name": "gerhelm_medic",
+      "directions": 4
+    },
+    {
+      "name": "sovhelm",
+      "directions": 4
+    },
+    {
+      "name": "sshelm",
+      "directions": 4
+    },
+    {
+      "name": "sovpilotka",
+      "directions": 4
+    },
+    {
+      "name": "nkvd_cap",
+      "directions": 4
+    },
+    {
+      "name": "fieldcap1",
+      "directions": 4
+    },
+    {
+      "name": "fieldcap2",
+      "directions": 4
+    },
+    {
+      "name": "sscap",
+      "directions": 4
+    },
+    {
+      "name": "ushanka",
+      "directions": 4
+    },
+    {
+      "name": "ushanka_up",
+      "directions": 4
+    },
+    {
+      "name": "sovhelm_medic",
+      "directions": 4
+    },
+    {
+      "name": "rad2",
+      "directions": 4
+    },
+    {
+      "name": "nbc",
+      "directions": 4
+    },
+    {
+      "name": "nbc2",
+      "directions": 4
+    },
+    {
+      "name": "gat",
+      "directions": 4
+    },
+    {
+      "name": "idf",
+      "directions": 4
+    },
+    {
+      "name": "idf1",
+      "directions": 4
+    },
+    {
+      "name": "idf2",
+      "directions": 4
+    },
+    {
+      "name": "idf3",
+      "directions": 4
+    },
+    {
+      "name": "laurelcrown",
+      "directions": 4
+    },
+    {
+      "name": "cheka",
+      "directions": 4
+    },
+    {
+      "name": "papakha",
+      "directions": 4
+    },
+    {
+      "name": "papakha_white",
+      "directions": 4
+    },
+    {
+      "name": "papakha_kuban",
+      "directions": 4
+    },
+    {
+      "name": "budenovka",
+      "directions": 4
+    },
+    {
+      "name": "ac_hood",
+      "directions": 4
+    },
+    {
+      "name": "ac_hood_up",
+      "directions": 4
+    },
+    {
+      "name": "kippah",
+      "directions": 4
+    },
+    {
+      "name": "beserkerhelmet",
+      "directions": 4
+    },
+    {
+      "name": "spearmanhelmet",
+      "directions": 4
+    },
+    {
+      "name": "captainhelmet",
+      "directions": 4
+    },
+    {
+      "name": "spearwhitehelmet",
+      "directions": 4
+    },
+    {
+      "name": "grunthelmet",
+      "directions": 4
+    },
+    {
+      "name": "chitin_helmet",
+      "directions": 4
+    },
+    {
+      "name": "sauronhelmet",
+      "directions": 4
+    },
+    {
+      "name": "bone_helmet",
+      "directions": 4
+    },
+    {
+      "name": "furhat_hat",
+      "directions": 4
+    },
+    {
+      "name": "furcap_hat",
+      "directions": 4
+    },
+    {
+      "name": "customberet_hat",
+      "directions": 4
+    },
+    {
+      "name": "roundcap_hat",
+      "directions": 4
+    },
+    {
+      "name": "custfeathercap_b_hat",
+      "directions": 4
+    },
+    {
+      "name": "custfeathercap_f_hat",
+      "directions": 4
+    },
+    {
+      "name": "custfeathercap_hat",
+      "directions": 4
+    },
+    {
+      "name": "customnoblehat_hat",
+      "directions": 4
+    },
+    {
+      "name": "custombandana_hat",
+      "directions": 4
+    },
+    {
+      "name": "ac_hood_up1713",
+      "directions": 4
+    },
+    {
+      "name": "ac_hood1713",
+      "directions": 4
+    },
+    {
+      "name": "scraphelmet",
+      "directions": 4
+    },
+    {
+      "name": "kevlarhelmet",
+      "directions": 4
+    },
+    {
+      "name": "fieldcap_china2",
+      "directions": 4
+    },
+    {
+      "name": "fieldcap_china",
+      "directions": 4
+    },
+    {
+      "name": "guardiacivil_hat",
+      "directions": 4
+    },
+    {
+      "name": "ger_officercap_tanker",
+      "directions": 4
+    },
+    {
+      "name": "ioghelmet",
+      "directions": 4
+    },
+    {
+      "name": "peakyblindercap",
+      "directions": 4
+    },
+    {
+      "name": "laurelcrown_gold",
+      "directions": 4
+    },
+    {
+      "name": "gerhelm_winter",
+      "directions": 4
+    },
+    {
+      "name": "gerhelm_winter2",
+      "directions": 4
+    },
+    {
+      "name": "fieldcap1_winter",
+      "directions": 4
+    },
+    {
+      "name": "fieldcap1_winter2",
+      "directions": 4
+    },
+    {
+      "name": "ork_elite_helmet",
+      "directions": 4
+    },
+    {
+      "name": "ork_elite_helmet_2",
+      "directions": 4
+    },
+    {
+      "name": "sovhelm_winter",
+      "directions": 4
+    },
+    {
+      "name": "keffiyeh_black",
+      "directions": 4
+    },
+    {
+      "name": "keffiyeh_red",
+      "directions": 4
+    },
+    {
+      "name": "keffiyeh_custom",
+      "directions": 4
+    },
+    {
+      "name": "keffiyeh_custom_color",
+      "directions": 4
+    },
+    {
+      "name": "keffiyeh_custom_white",
+      "directions": 4
+    },
+    {
+      "name": "wool_hood",
+      "directions": 4
+    },
+    {
+      "name": "iogmask1",
+      "directions": 4
+    },
+    {
+      "name": "jingasa",
+      "directions": 4
+    },
+    {
+      "name": "kasa",
+      "directions": 4
+    },
+    {
+      "name": "jingasa_flaps",
+      "directions": 4
+    },
+    {
+      "name": "hennin",
+      "directions": 4
+    },
+    {
+      "name": "custom_hennin_point",
+      "directions": 4
+    },
+    {
+      "name": "custom_beanie",
+      "directions": 4
+    },
+    {
+      "name": "custom_hennin_lining",
+      "directions": 4
+    },
+    {
+      "name": "custom_hennin",
+      "directions": 4
+    },
+    {
+      "name": "tacticalhelmet",
+      "directions": 4
+    },
+    {
+      "name": "a6b47",
+      "directions": 4
+    },
+    {
+      "name": "zsh1",
+      "directions": 4
+    },
+    {
+      "name": "zsh2",
+      "directions": 4
+    },
+    {
+      "name": "pantherpelt",
+      "directions": 4
+    },
+    {
+      "name": "sailor_hat",
+      "directions": 4
+    },
+    {
+      "name": "sshelm_dark",
+      "directions": 4
+    },
+    {
+      "name": "swat",
+      "directions": 4
+    },
+    {
+      "name": "egyptian_headdress_black",
+      "directions": 4
+    },
+    {
+      "name": "egyptian_headdress_blue",
+      "directions": 4
+    },
+    {
+      "name": "egyptian_headdress_red",
+      "directions": 4
+    },
+    {
+      "name": "lionpelt",
+      "directions": 4
+    },
+    {
+      "name": "foxpelt",
+      "directions": 4
+    },
+    {
+      "name": "whitefoxpelt",
+      "directions": 4
+    },
+    {
+      "name": "brown_eisenbruck",
+      "directions": 4
+    },
+    {
+      "name": "grey_eisenbruck",
+      "directions": 4
+    },
+    {
+      "name": "aged_eisenbruck",
+      "directions": 4
+    },
+    {
+      "name": "gatorpelt",
+      "directions": 4
+    },
+    {
+      "name": "pharoah_headdress",
+      "directions": 4
+    },
+    {
+      "name": "nemes_headdress",
+      "directions": 4
+    },
+    {
+      "name": "semitic_cap",
+      "directions": 4
+    },
+    {
+      "name": "vaquerohat",
+      "directions": 4
+    },
+    {
+      "name": "fiendish",
+      "directions": 4
+    },
+    {
+      "name": "bandit",
+      "directions": 4
+    },
+    {
+      "name": "ainu",
+      "directions": 4
+    },
+    {
+      "name": "ainu_smol",
+      "directions": 4
+    },
+    {
+      "name": "crusader",
+      "directions": 4
+    },
+    {
+      "name": "new_knight_templar",
+      "directions": 4
+    },
+    {
+      "name": "crusader_king",
+      "directions": 4
+    },
+    {
+      "name": "templar_priest",
+      "directions": 4
+    },
+    {
+      "name": "baltic_priest",
+      "directions": 4
+    },
+    {
+      "name": "baltic_crusader",
+      "directions": 4
+    },
+    {
+      "name": "baltic_crusader_grandmaster",
+      "directions": 4
+    },
+    {
+      "name": "crusader_saint",
+      "directions": 4
+    },
+    {
+      "name": "penlianal_whitestrake",
+      "directions": 4
+    },
+    {
+      "name": "hell_champion",
+      "directions": 4
+    },
+    {
+      "name": "barbarian",
+      "directions": 4
+    },
+    {
+      "name": "ziggurhat",
+      "directions": 4
+    },
+    {
+      "name": "new_viking",
+      "directions": 4
+    },
+    {
+      "name": "viking_king",
+      "directions": 4
+    },
+    {
+      "name": "valkyrie",
+      "directions": 4
+    },
+    {
+      "name": "valkyrie_queen",
+      "directions": 4
+    },
+    {
+      "name": "persian_immortal",
+      "directions": 4
+    },
+    {
+      "name": "assyrian_crown",
+      "directions": 4
+    },
+    {
+      "name": "mamluk_coif_helmet",
+      "directions": 4
+    },
+    {
+      "name": "mamluk_helmet",
+      "directions": 4
+    },
+    {
+      "name": "mamluk_lord",
+      "directions": 4
+    },
+    {
+      "name": "mamluk_king",
+      "directions": 4
+    },
+    {
+      "name": "wip_greek_custom",
+      "directions": 4
+    },
+    {
+      "name": "wip_greek_custom_h",
+      "directions": 4
+    },
+    {
+      "name": "wip_greek_custom_a",
+      "directions": 4
+    },
+    {
+      "name": "pith",
+      "directions": 4
+    },
+    {
+      "name": "nap_bearskin_hat",
+      "directions": 4
+    },
+    {
+      "name": "w_nap_bearskin_hat",
+      "directions": 4
+    },
+    {
+      "name": "b_nap_bearskin_hat",
+      "directions": 4
+    },
+    {
+      "name": "modern_bearskin_hat",
+      "directions": 4
+    },
+    {
+      "name": "white_modern_bearskin_hat",
+      "directions": 4
+    },
+    {
+      "name": "brown_modern_bearskin_hat",
+      "directions": 4
+    },
+    {
+      "name": "customcap",
+      "directions": 4
+    },
+    {
+      "name": "customcap_l1",
+      "directions": 4
+    },
+    {
+      "name": "customcap_l2",
+      "directions": 4
+    },
+    {
+      "name": "customcap_l3",
+      "directions": 4
+    },
+    {
+      "name": "fieldcap_custom",
+      "directions": 4
+    },
+    {
+      "name": "ottoman_wip",
+      "directions": 4
+    },
+    {
+      "name": "riding_cap_wip"
+    },
+    {
+      "name": "bicycle_helmet_wip"
+    },
+    {
+      "name": "althletic_helmet_wip"
+    },
+    {
+      "name": "nap_satsuma",
+      "directions": 4
+    },
+    {
+      "name": "gnome_chompsky",
+      "directions": 4
+    },
+    {
+      "name": "raja_wip"
+    },
+    {
+      "name": "mughal_wip"
+    },
+    {
+      "name": "dunce_cap",
+      "directions": 4
+    },
+    {
+      "name": "brown_nap_lea_infantry_cap",
+      "directions": 4
+    },
+    {
+      "name": "nap_lea_infantry_cap",
+      "directions": 4
+    },
+    {
+      "name": "prussian_lea_infantry_cap",
+      "directions": 4
+    },
+    {
+      "name": "commissar",
+      "directions": 4
+    },
+    {
+      "name": "custom_nap_lea_infantry_cap_b",
+      "directions": 4
+    },
+    {
+      "name": "custom_nap_lea_infantry_cap_f",
+      "directions": 4
+    },
+    {
+      "name": "adrian_standard",
+      "directions": 4
+    },
+    {
+      "name": "adrian_standard_strap",
+      "directions": 4
+    },
+    {
+      "name": "adrian_russian",
+      "directions": 4
+    },
+    {
+      "name": "adrian_russian_strap",
+      "directions": 4
+    },
+    {
+      "name": "ww2_british_tropical",
+      "directions": 4
+    },
+    {
+      "name": "ww2_british_officer",
+      "directions": 4
+    },
+    {
+      "name": "ww2_british_officer_flap",
+      "directions": 4
+    },
+    {
+      "name": "ww2_british_officer_tropical",
+      "directions": 4
+    },
+    {
+      "name": "ww2_british_officer_tropical_flap",
+      "directions": 4
+    },
+    {
+      "name": "ww2_aussie",
+      "directions": 4
+    },
+    {
+      "name": "ww2_british_beret",
+      "directions": 4
+    },
+    {
+      "name": "brodie_mk1_deb",
+      "directions": 4
+    },
+    {
+      "name": "brodie_mk1_ag",
+      "directions": 4
+    },
+    {
+      "name": "brodie_mk2_og",
+      "directions": 4
+    },
+    {
+      "name": "brodie_mk2_medic",
+      "directions": 4
+    },
+    {
+      "name": "brodie_mk2_irish",
+      "directions": 4
+    },
+    {
+      "name": "brodie_mk2_nettan",
+      "directions": 4
+    },
+    {
+      "name": "brodie_mk2_nettanf",
+      "directions": 4
+    },
+    {
+      "name": "brodie_mk2_netgreen",
+      "directions": 4
+    },
+    {
+      "name": "brodie_mk2_netgreenf",
+      "directions": 4
+    },
+    {
+      "name": "adrian_greek",
+      "directions": 4
+    },
+    {
+      "name": "adrian_greek_strap",
+      "directions": 4
+    },
+    {
+      "name": "m26_adrian",
+      "directions": 4
+    },
+    {
+      "name": "m26_adrian_s",
+      "directions": 4
+    },
+    {
+      "name": "m26_medic",
+      "directions": 4
+    },
+    {
+      "name": "m15_adrian_m",
+      "directions": 4
+    },
+    {
+      "name": "athena",
+      "directions": 4
+    },
+    {
+      "name": "aries",
+      "directions": 4
+    },
+    {
+      "name": "leonidas",
+      "directions": 4
+    },
+    {
+      "name": "spartan",
+      "directions": 4
+    },
+    {
+      "name": "athenian",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "new_greek",
+      "directions": 4
+    },
+    {
+      "name": "sol_invictus",
+      "directions": 4
+    },
+    {
+      "name": "asterix",
+      "directions": 4
+    },
+    {
+      "name": "apollo",
+      "directions": 4
+    },
+    {
+      "name": "vitalstatistix",
+      "directions": 4
+    },
+    {
+      "name": "baltic_crusader_king",
+      "directions": 4
+    },
+    {
+      "name": "varangian_guard",
+      "directions": 4
+    },
+    {
+      "name": "giantdad",
+      "directions": 4
+    },
+    {
+      "name": "emir_turban",
+      "directions": 4
+    },
+    {
+      "name": "brodie_steel",
+      "directions": 4
+    },
+    {
+      "name": "adrian_steel",
+      "directions": 4
+    },
+    {
+      "name": "m1_standard",
+      "directions": 4
+    },
+    {
+      "name": "m1_steel",
+      "directions": 4
+    },
+    {
+      "name": "m1_2nd_lt",
+      "directions": 4
+    },
+    {
+      "name": "m1_1st_lt",
+      "directions": 4
+    },
+    {
+      "name": "m1_cpt",
+      "directions": 4
+    },
+    {
+      "name": "m1_chaplain",
+      "directions": 4
+    },
+    {
+      "name": "m1_mp_green",
+      "directions": 4
+    },
+    {
+      "name": "m1_mp_black",
+      "directions": 4
+    },
+    {
+      "name": "m1_mp_white",
+      "directions": 4
+    },
+    {
+      "name": "m1_medic",
+      "directions": 4
+    },
+    {
+      "name": "m1_tan_netting",
+      "directions": 4
+    },
+    {
+      "name": "m1_green_netting",
+      "directions": 4
+    },
+    {
+      "name": "m1_greennet_leaves",
+      "directions": 4
+    },
+    {
+      "name": "rice_hat",
+      "directions": 4
+    },
+    {
+      "name": "black_boonie",
+      "directions": 4
+    },
+    {
+      "name": "khaki_boonie",
+      "directions": 4
+    },
+    {
+      "name": "og107_boonie",
+      "directions": 4
+    },
+    {
+      "name": "ape_helm",
+      "directions": 4
+    },
+    {
+      "name": "dragoon",
+      "directions": 4
+    },
+    {
+      "name": "hedjet",
+      "directions": 4
+    },
+    {
+      "name": "pschent",
+      "directions": 4
+    },
+    {
+      "name": "black_cape",
+      "directions": 4
+    },
+    {
+      "name": "anubis",
+      "directions": 4
+    },
+    {
+      "name": "egyptian_bronze_headdress",
+      "directions": 4
+    },
+    {
+      "name": "osiris",
+      "directions": 4
+    },
+    {
+      "name": "atef",
+      "directions": 4
+    },
+    {
+      "name": "deshret",
+      "directions": 4
+    },
+    {
+      "name": "khepresh",
+      "directions": 4
+    },
+    {
+      "name": "wyvern",
+      "directions": 4
+    },
+    {
+      "name": "ice_wyvern",
+      "directions": 4
+    },
+    {
+      "name": "green_dragon",
+      "directions": 4
+    },
+    {
+      "name": "leather_skullcap_helmet",
+      "directions": 4
+    },
+    {
+      "name": "steppe_shaman_wool_hat",
+      "directions": 4
+    },
+    {
+      "name": "nursehat",
+      "directions": 4
+    },
+    {
+      "name": "wood_bucket",
+      "directions": 4
+    },
+    {
+      "name": "mystic",
+      "directions": 4
+    },
+    {
+      "name": "sheeppelt",
+      "directions": 4
+    },
+    {
+      "name": "goatpelt",
+      "directions": 4
+    },
+    {
+      "name": "lizardpelt",
+      "directions": 4
+    },
+    {
+      "name": "motorcycle",
+      "directions": 4
+    },
+    {
+      "name": "constable",
+      "directions": 4
+    },
+    {
+      "name": "ten_gallon_hat_white",
+      "directions": 4
+    },
+    {
+      "name": "traffic_cop",
+      "directions": 4
+    },
+    {
+      "name": "ustanker",
+      "directions": 4
+    },
+    {
+      "name": "chinese_ushanka",
+      "directions": 4
+    },
+    {
+      "name": "chinese_ushanka_up",
+      "directions": 4
+    },
+    {
+      "name": "chi_korea_helm",
+      "directions": 4
+    },
+    {
+      "name": "korea_m1_standard",
+      "directions": 4
+    },
+    {
+      "name": "korea_m1_2nd_lt",
+      "directions": 4
+    },
+    {
+      "name": "korea_m1_1st_lt",
+      "directions": 4
+    },
+    {
+      "name": "korea_m1_cpt",
+      "directions": 4
+    },
+    {
+      "name": "korea_m1_medic",
+      "directions": 4
+    },
+    {
+      "name": "korea_m1_green_netting",
+      "directions": 4
+    },
+    {
+      "name": "korea_m1_tan_netting",
+      "directions": 4
+    },
+    {
+      "name": "ww2_japcap_snlf",
+      "directions": 4
+    },
+    {
+      "name": "ww2_japcap_snlf_extended",
+      "directions": 4
+    },
+    {
+      "name": "japhelm_snlf",
+      "directions": 4
+    },
+    {
+      "name": "japhelm_snlf_extended",
+      "directions": 4
+    },
+    {
+      "name": "baliwag",
+      "directions": 4
+    },
+    {
+      "name": "baliwag_down",
+      "directions": 4
+    },
+    {
+      "name": "fil_off_cap",
+      "directions": 4
+    },
+    {
+      "name": "medieval_count_hat",
+      "directions": 4
+    },
+    {
+      "name": "us_fp_hat",
+      "directions": 4
+    },
+    {
+      "name": "morion_helmet",
+      "directions": 4
+    },
+    {
+      "name": "pilgrim",
+      "directions": 4
+    },
+    {
+      "name": "capotain",
+      "directions": 4
+    },
+    {
+      "name": "cavalier",
+      "directions": 4
+    },
+    {
+      "name": "sultan",
+      "directions": 4
+    },
+    {
+      "name": "toadstool",
+      "directions": 4
+    },
+    {
+      "name": "bronze_chinese",
+      "directions": 4
+    },
+    {
+      "name": "burg_sallet",
+      "directions": 4
+    },
+    {
+      "name": "burg_sallet_o",
+      "directions": 4
+    },
+    {
+      "name": "german_sallet",
+      "directions": 4
+    },
+    {
+      "name": "german_sallet_o",
+      "directions": 4
+    },
+    {
+      "name": "italian_sallet",
+      "directions": 4
+    },
+    {
+      "name": "italian_sallet_o",
+      "directions": 4
+    },
+    {
+      "name": "imperial_chinese",
+      "directions": 4
+    },
+    {
+      "name": "hatchigane",
+      "directions": 4
+    },
+    {
+      "name": "toughguy",
+      "directions": 4
+    },
+    {
+      "name": "yellow_ninja",
+      "directions": 4
+    },
+    {
+      "name": "barbuta_t",
+      "directions": 4
+    },
+    {
+      "name": "barbuta_arched",
+      "directions": 4
+    },
+    {
+      "name": "barbuta_y",
+      "directions": 4
+    },
+    {
+      "name": "bascinet_hounskull",
+      "directions": 4
+    },
+    {
+      "name": "bascinet_o",
+      "directions": 4
+    },
+    {
+      "name": "ssh_68_sovhelm",
+      "directions": 4
+    },
+    {
+      "name": "sovietfacehelmet_o",
+      "directions": 4
+    },
+    {
+      "name": "sovietfacehelmet",
+      "directions": 4
+    },
+    {
+      "name": "sovietface_weldhelmet",
+      "directions": 4
+    },
+    {
+      "name": "sovietface_weldhelmet_o",
+      "directions": 4
+    },
+    {
+      "name": "bisonpelt",
+      "directions": 4
+    },
+    {
+      "name": "bison_fur_hat",
+      "directions": 4
+    },
+    {
+      "name": "zulu_umghele",
+      "directions": 4
+    },
+    {
+      "name": "samurai_lord1",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "samurai_lord1_o",
+      "directions": 4
+    },
+    {
+      "name": "samurai_lord2",
+      "directions": 4
+    },
+    {
+      "name": "samurai_lord2_o",
+      "directions": 4
+    },
+    {
+      "name": "samurai_lord3",
+      "directions": 4
+    },
+    {
+      "name": "samurai_lord3_o",
+      "directions": 4
+    },
+    {
+      "name": "samurai_lord4",
+      "directions": 4
+    },
+    {
+      "name": "samurai_lord4_o",
+      "directions": 4
+    },
+    {
+      "name": "phrigian_helmet",
+      "directions": 4
+    },
+    {
+      "name": "phrigian_hat",
+      "directions": 4
+    },
+    {
+      "name": "phrigian_hat_red",
+      "directions": 4
+    },
+    {
+      "name": "phrigian_hat_blue",
+      "directions": 4
+    },
+    {
+      "name": "doge",
+      "directions": 4
+    },
+    {
+      "name": "bizarre_hat",
+      "directions": 4
+    },
+    {
+      "name": "raccoonfurcap_hat",
+      "directions": 4
+    },
+    {
+      "name": "cabasset_helmet",
+      "directions": 4
+    },
+    {
+      "name": "abashiri_guard",
+      "directions": 4
+    },
+    {
+      "name": "abashiri_guard_head",
+      "directions": 4
+    },
+    {
+      "name": "abashiri_kasa",
+      "directions": 4
+    },
+    {
+      "name": "ushanka_plain",
+      "directions": 4
+    },
+    {
+      "name": "ushanka_plain_up",
+      "directions": 4
+    },
+    {
+      "name": "leaf_crown",
+      "directions": 4
+    },
+    {
+      "name": "leaf_hat",
+      "directions": 4
+    },
+    {
+      "name": "star_platinum",
+      "directions": 4
+    },
+    {
+      "name": "japwinter",
+      "directions": 4
+    },
+    {
+      "name": "japwinter_up",
+      "directions": 4
+    },
+    {
+      "name": "viet_pith",
+      "directions": 4
+    },
+    {
+      "name": "viet_pith2",
+      "directions": 4
+    },
+    {
+      "name": "viet_pith3",
+      "directions": 4
+    },
+    {
+      "name": "nva_off_cap",
+      "directions": 4
+    },
+    {
+      "name": "ach_ocp",
+      "directions": 4
+    },
+    {
+      "name": "ach_green",
+      "directions": 4
+    },
+    {
+      "name": "ach_white",
+      "directions": 4
+    },
+    {
+      "name": "ach_green_com",
+      "directions": 4
+    },
+    {
+      "name": "ach_green_sl",
+      "directions": 4
+    },
+    {
+      "name": "maga",
+      "directions": 4
+    },
+    {
+      "name": "maga_flipped",
+      "directions": 4
+    },
+    {
+      "name": "fbi",
+      "directions": 4
+    },
+    {
+      "name": "fbi_flipped",
+      "directions": 4
+    },
+    {
+      "name": "upa_cap",
+      "directions": 4
+    },
+    {
+      "name": "upapilotka",
+      "directions": 4
+    },
+    {
+      "name": "upa_off",
+      "directions": 4
+    },
+    {
+      "name": "upa_commander",
+      "directions": 4
+    },
+    {
+      "name": "blackcap",
+      "directions": 4
+    },
+    {
+      "name": "blackcap_flipped",
+      "directions": 4
+    },
+    {
+      "name": "dwelmet",
+      "directions": 4
+    },
+    {
+      "name": "tes13",
+      "directions": 4
+    },
+    {
+      "name": "stormcloak",
+      "directions": 4
+    },
+    {
+      "name": "fieldcap_rus_fed",
+      "directions": 4
+    },
+    {
+      "name": "bandana_olive",
+      "directions": 4
+    },
+    {
+      "name": "welding",
+      "directions": 4
+    },
+    {
+      "name": "weldingup",
+      "directions": 4
+    },
+    {
+      "name": "tes13_iron",
+      "directions": 4
+    },
+    {
+      "name": "tes13_hide",
+      "directions": 4
+    },
+    {
+      "name": "tes13_imperial",
+      "directions": 4
+    },
+    {
+      "name": "tes13_imperial_officer",
+      "directions": 4
+    },
+    {
+      "name": "beret_rus_spez",
+      "directions": 4
+    },
+    {
+      "name": "replicant_helmet",
+      "directions": 4
+    },
+    {
+      "name": "repsgt_helmet",
+      "directions": 4
+    },
+    {
+      "name": "replt_helmet",
+      "directions": 4
+    },
+    {
+      "name": "repcaptain_helmet",
+      "directions": 4
+    },
+    {
+      "name": "repcommander_helmet",
+      "directions": 4
+    },
+    {
+      "name": "reppilot_helmet",
+      "directions": 4
+    },
+    {
+      "name": "repmp_helmet",
+      "directions": 4
+    },
+    {
+      "name": "repensign_cap",
+      "directions": 4
+    },
+    {
+      "name": "repnavalcaptain_cap",
+      "directions": 4
+    },
+    {
+      "name": "repmedicalofficer_cap",
+      "directions": 4
+    },
+    {
+      "name": "ushelmet_camo_lt",
+      "directions": 4
+    },
+    {
+      "name": "repstormtrooper_helmet",
+      "directions": 4
+    },
+    {
+      "name": "repairborne_helmet",
+      "directions": 4
+    },
+    {
+      "name": "repARF_helmet",
+      "directions": 4
+    },
+    {
+      "name": "mk6",
+      "directions": 4
+    },
+    {
+      "name": "mk6_straps",
+      "directions": 4
+    },
+    {
+      "name": "ukraine_cap",
+      "directions": 4
+    },
+    {
+      "name": "pimp_hat",
+      "directions": 4
+    },
+    {
+      "name": "ushanka_new",
+      "directions": 4
+    },
+    {
+      "name": "ushanka_new_up",
+      "directions": 4
+    },
+    {
+      "name": "chefhat",
+      "directions": 4
+    },
+    {
+      "name": "redcap",
+      "directions": 4
+    },
+    {
+      "name": "redcap_flipped",
+      "directions": 4
+    },
+    {
+      "name": "bluecap",
+      "directions": 4
+    },
+    {
+      "name": "bluecap_flipped",
+      "directions": 4
+    },
+    {
+      "name": "yellowcap",
+      "directions": 4
+    },
+    {
+      "name": "yellowcap_flipped",
+      "directions": 4
+    },
+    {
+      "name": "unitednations",
+      "directions": 4
+    },
+    {
+      "name": "unitednations_medic",
+      "directions": 4
+    },
+    {
+      "name": "ww2_japcap",
+      "directions": 4
+    },
+    {
+      "name": "ww2_japcap_extended",
+      "directions": 4
+    },
+    {
+      "name": "ww2_japoffcap",
+      "directions": 4
+    },
+    {
+      "name": "ww2_japoffcap_extended",
+      "directions": 4
+    },
+    {
+      "name": "japbandana",
+      "directions": 4
+    },
+    {
+      "name": "japhelm_extended",
+      "directions": 4
+    },
+    {
+      "name": "japhelm",
+      "directions": 4
+    },
+    {
+      "name": "jappilotcap",
+      "directions": 4
+    },
+    {
+      "name": "japhelm_bandana_extended",
+      "directions": 4
+    },
+    {
+      "name": "japhelm_bandana",
+      "directions": 4
+    },
+    {
+      "name": "japtanker",
+      "directions": 4
+    },
+    {
+      "name": "japhelm_medic_extended",
+      "directions": 4
+    },
+    {
+      "name": "japhelm_medic",
+      "directions": 4
+    },
+    {
+      "name": "ghillie_winter",
+      "directions": 4
+    },
+    {
+      "name": "cg634",
+      "directions": 4
+    },
+    {
+      "name": "kevlarhelmet_press",
+      "directions": 4
+    },
+    {
+      "name": "kippa",
+      "directions": 4
+    },
+    {
+      "name": "taqiyah",
+      "directions": 4
+    },
+    {
+      "name": "hijab",
+      "directions": 4
+    },
+    {
+      "name": "pakol_rose",
+      "directions": 4
+    },
+    {
+      "name": "pakol_beige",
+      "directions": 4
+    },
+    {
+      "name": "pakol_bgrey",
+      "directions": 4
+    },
+    {
+      "name": "mechanicalhelmet",
+      "directions": 4
+    },
+    {
+      "name": "atf",
+      "directions": 4
+    },
+    {
+      "name": "atf_flipped",
+      "directions": 4
+    },
+    {
+      "name": "dea",
+      "directions": 4
+    },
+    {
+      "name": "dea_flipped",
+      "directions": 4
+    },
+    {
+      "name": "fieldcap_afghanka",
+      "directions": 4
+    },
+    {
+      "name": "tfc",
+      "directions": 4
+    },
+    {
+      "name": "tfc_flipped",
+      "directions": 4
+    },
+    {
+      "name": "sd_sheriffhat",
+      "directions": 4
+    },
+    {
+      "name": "sd_cap",
+      "directions": 4
+    },
+    {
+      "name": "sd_cap_black",
+      "directions": 4
+    },
+    {
+      "name": "hardhat_yellow",
+      "directions": 4
+    },
+    {
+      "name": "hardhat_orange",
+      "directions": 4
+    },
+    {
+      "name": "hardhat_white",
+      "directions": 4
+    },
+    {
+      "name": "astronaut",
+      "directions": 4
+    },
+    {
+      "name": "rebel_helmet",
+      "directions": 4
+    },
+    {
+      "name": "rebel_helmet1",
+      "directions": 4
+    },
+    {
+      "name": "rebel_helmet2",
+      "directions": 4
+    },
+    {
+      "name": "repofficer_ensign",
+      "directions": 4
+    },
+    {
+      "name": "repofficer_med",
+      "directions": 4
+    },
+    {
+      "name": "repofficer_navcaptain",
+      "directions": 4
+    },
+    {
+      "name": "impofficer_stormofficer",
+      "directions": 4
+    },
+    {
+      "name": "replicant_helmet2",
+      "directions": 4
+    },
+    {
+      "name": "replicant2_501st",
+      "directions": 4
+    },
+    {
+      "name": "replicant2_212th",
+      "directions": 4
+    },
+    {
+      "name": "surgcap_blue",
+      "directions": 4
+    },
+    {
+      "name": "surgcap_darkgreen",
+      "directions": 4
+    },
+    {
+      "name": "surgcap_lightgreen",
+      "directions": 4
+    },
+    {
+      "name": "surgcap_navy",
+      "directions": 4
+    },
+    {
+      "name": "surgcap_white",
+      "directions": 4
+    },
+    {
+      "name": "blugoslavia_cap",
+      "directions": 4
+    },
+    {
+      "name": "redmenia_cap",
+      "directions": 4
+    },
+    {
+      "name": "redguard",
+      "directions": 4
+    },
+    {
+      "name": "senateguard",
+      "directions": 4
+    },
+    {
+      "name": "replicant_blizzard",
+      "directions": 4
+    },
+    {
+      "name": "replicant_radiotech",
+      "directions": 4
+    },
+    {
+      "name": "replicant_commando",
+      "directions": 4
+    },
+    {
+      "name": "replicant_atrt",
+      "directions": 4
+    },
+    {
+      "name": "replicant_engi",
+      "directions": 4
+    },
+    {
+      "name": "stormsurgeon_helmet",
+      "directions": 4
+    },
+    {
+      "name": "stormradio_helmet",
+      "directions": 4
+    },
+    {
+      "name": "cvc_helmet",
+      "directions": 4
+    },
+    {
+      "name": "ft1_helmet",
+      "directions": 4
+    },
+    {
+      "name": "ft1med_helmet",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          4.5
+        ],
+        [
+          0.1,
+          0.1,
+          4.5
+        ],
+        [
+          0.1,
+          0.1,
+          4.5
+        ],
+        [
+          0.1,
+          0.1,
+          4.5
+        ]
+      ]
+    },
+    {
+      "name": "qgf03",
+      "directions": 4
+    },
+    {
+      "name": "sov_officercap2",
+      "directions": 4
+    },
+    {
+      "name": "swat_new",
+      "directions": 4
+    },
+    {
+      "name": "papers_please_up",
+      "directions": 4
+    },
+    {
+      "name": "papers_please_officer",
+      "directions": 4
+    },
+    {
+      "name": "bandana_ballas1",
+      "directions": 4
+    },
+    {
+      "name": "bandana_ballas2",
+      "directions": 4
+    },
+    {
+      "name": "bandana_grove",
+      "directions": 4
+    },
+    {
+      "name": "cra_cap",
+      "directions": 4
+    },
+    {
+      "name": "black_beanie",
+      "directions": 4
+    },
+    {
+      "name": "sfera_helmet",
+      "directions": 4
+    },
+    {
+      "name": "kitty",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "ssh_68_winter",
+      "directions": 4
+    }
+  ]
+}

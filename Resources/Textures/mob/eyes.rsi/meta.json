@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "blindfold",
+      "directions": 4
+    },
+    {
+      "name": "eyepatch",
+      "directions": 4
+    },
+    {
+      "name": "glasses",
+      "directions": 4
+    },
+    {
+      "name": "sun",
+      "directions": 4
+    },
+    {
+      "name": "gglasses",
+      "directions": 4
+    },
+    {
+      "name": "monocle",
+      "directions": 4
+    },
+    {
+      "name": "steampunk",
+      "directions": 4
+    },
+    {
+      "name": "biker",
+      "directions": 4
+    },
+    {
+      "name": "thermal",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "thermal_offX",
+      "directions": 4
+    },
+    {
+      "name": "nvg",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "nvg_off",
+      "directions": 4
+    },
+    {
+      "name": "tactical_goggles",
+      "directions": 4
+    },
+    {
+      "name": "bigsunglasses",
+      "directions": 4
+    },
+    {
+      "name": "redlense",
+      "directions": 4
+    },
+    {
+      "name": "univisor_r",
+      "directions": 4
+    },
+    {
+      "name": "univisor_c",
+      "directions": 4
+    },
+    {
+      "name": "univisor_g",
+      "directions": 4
+    },
+    {
+      "name": "univisor_y",
+      "directions": 4
+    },
+    {
+      "name": "univisor_w",
+      "directions": 4
+    },
+    {
+      "name": "univisor_flashy",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    }
+  ]
+}

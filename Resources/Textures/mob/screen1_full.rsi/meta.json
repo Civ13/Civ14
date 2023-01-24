@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "size": {
+    "x": 480,
+    "y": 480
+  },
+  "states": [
+    {
+      "name": "blackimageoverlay",
+      "delays": [
+        [
+          25,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "oxydamageoverlay0"
+    },
+    {
+      "name": "oxydamageoverlay1"
+    },
+    {
+      "name": "oxydamageoverlay2"
+    },
+    {
+      "name": "oxydamageoverlay3"
+    },
+    {
+      "name": "oxydamageoverlay4"
+    },
+    {
+      "name": "oxydamageoverlay5"
+    },
+    {
+      "name": "oxydamageoverlay6"
+    },
+    {
+      "name": "oxydamageoverlay7"
+    },
+    {
+      "name": "brutedamageoverlay0"
+    },
+    {
+      "name": "brutedamageoverlay1"
+    },
+    {
+      "name": "brutedamageoverlay2"
+    },
+    {
+      "name": "brutedamageoverlay3"
+    },
+    {
+      "name": "brutedamageoverlay4"
+    },
+    {
+      "name": "brutedamageoverlay5"
+    },
+    {
+      "name": "brutedamageoverlay6"
+    },
+    {
+      "name": "passage0"
+    },
+    {
+      "name": "passage1"
+    },
+    {
+      "name": "passage2"
+    },
+    {
+      "name": "passage3"
+    },
+    {
+      "name": "passage4"
+    },
+    {
+      "name": "passage5"
+    },
+    {
+      "name": "passage6"
+    },
+    {
+      "name": "passage7"
+    },
+    {
+      "name": "passage8"
+    },
+    {
+      "name": "passage9"
+    },
+    {
+      "name": "passage10"
+    },
+    {
+      "name": "fishbed"
+    },
+    {
+      "name": "gasmask"
+    }
+  ]
+}

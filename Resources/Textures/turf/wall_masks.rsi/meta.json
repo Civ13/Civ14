@@ -1,0 +1,642 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": ""
+    },
+    {
+      "name": "stone0"
+    },
+    {
+      "name": "stone1"
+    },
+    {
+      "name": "stone2"
+    },
+    {
+      "name": "stone3"
+    },
+    {
+      "name": "stone4"
+    },
+    {
+      "name": "stone5"
+    },
+    {
+      "name": "stone6"
+    },
+    {
+      "name": "stone7"
+    },
+    {
+      "name": "stone8"
+    },
+    {
+      "name": "stone9"
+    },
+    {
+      "name": "stone10"
+    },
+    {
+      "name": "stone11"
+    },
+    {
+      "name": "stone12"
+    },
+    {
+      "name": "stone13"
+    },
+    {
+      "name": "stone14"
+    },
+    {
+      "name": "stone15"
+    },
+    {
+      "name": "stonefwall_open"
+    },
+    {
+      "name": "stonefwall_opening",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "stonefwall_closing",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "metal0"
+    },
+    {
+      "name": "metal1"
+    },
+    {
+      "name": "metal2"
+    },
+    {
+      "name": "metal3"
+    },
+    {
+      "name": "metal4"
+    },
+    {
+      "name": "metal5"
+    },
+    {
+      "name": "metal6"
+    },
+    {
+      "name": "metal7"
+    },
+    {
+      "name": "metal8"
+    },
+    {
+      "name": "metal9"
+    },
+    {
+      "name": "metal10"
+    },
+    {
+      "name": "metal11"
+    },
+    {
+      "name": "metal12"
+    },
+    {
+      "name": "metal13"
+    },
+    {
+      "name": "metal14"
+    },
+    {
+      "name": "metal15"
+    },
+    {
+      "name": "metalfwall_open"
+    },
+    {
+      "name": "metalfwall_opening",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "metalfwall_closing",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "solid0"
+    },
+    {
+      "name": "solid1"
+    },
+    {
+      "name": "solid2"
+    },
+    {
+      "name": "solid3"
+    },
+    {
+      "name": "solid4"
+    },
+    {
+      "name": "solid5"
+    },
+    {
+      "name": "solid6"
+    },
+    {
+      "name": "solid7"
+    },
+    {
+      "name": "solid8"
+    },
+    {
+      "name": "solid9"
+    },
+    {
+      "name": "solid10"
+    },
+    {
+      "name": "solid11"
+    },
+    {
+      "name": "solid12"
+    },
+    {
+      "name": "solid13"
+    },
+    {
+      "name": "solid14"
+    },
+    {
+      "name": "solid15"
+    },
+    {
+      "name": "solidfwall_open"
+    },
+    {
+      "name": "solidfwall_opening",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "solidfwall_closing",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "generic"
+    },
+    {
+      "name": "rgeneric"
+    },
+    {
+      "name": "reinf_over"
+    },
+    {
+      "name": "blank"
+    },
+    {
+      "name": "reinf_metal"
+    },
+    {
+      "name": "reinf_stone"
+    },
+    {
+      "name": "reinf_construct-5"
+    },
+    {
+      "name": "reinf_construct-4"
+    },
+    {
+      "name": "reinf_construct-3"
+    },
+    {
+      "name": "reinf_construct-2"
+    },
+    {
+      "name": "reinf_construct-1"
+    },
+    {
+      "name": "reinf_construct-0"
+    },
+    {
+      "name": "void"
+    },
+    {
+      "name": "wood3"
+    },
+    {
+      "name": "wood12"
+    },
+    {
+      "name": "wood1"
+    },
+    {
+      "name": "wood2"
+    },
+    {
+      "name": "wood4"
+    },
+    {
+      "name": "wood8"
+    },
+    {
+      "name": "wood5"
+    },
+    {
+      "name": "wood6"
+    },
+    {
+      "name": "wood9"
+    },
+    {
+      "name": "wood10"
+    },
+    {
+      "name": "wood7"
+    },
+    {
+      "name": "wood11"
+    },
+    {
+      "name": "wood13"
+    },
+    {
+      "name": "wood14"
+    },
+    {
+      "name": "wood0"
+    },
+    {
+      "name": "wood15"
+    },
+    {
+      "name": "woodfwall_open"
+    },
+    {
+      "name": "woodfwall_opening",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "woodfwall_closing",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "reinf_wood"
+    },
+    {
+      "name": "cement_wall0"
+    },
+    {
+      "name": "cement_wall1"
+    },
+    {
+      "name": "cement_wall2"
+    },
+    {
+      "name": "cement_wall3"
+    },
+    {
+      "name": "cement_wall4"
+    },
+    {
+      "name": "cement_wall5"
+    },
+    {
+      "name": "cement_wall6"
+    },
+    {
+      "name": "cement_wall7"
+    },
+    {
+      "name": "cement_wall8"
+    },
+    {
+      "name": "cement_wall9"
+    },
+    {
+      "name": "cement_wall10"
+    },
+    {
+      "name": "cement_wall11"
+    },
+    {
+      "name": "cement_wall12"
+    },
+    {
+      "name": "cement_wall13"
+    },
+    {
+      "name": "cement_wall14"
+    },
+    {
+      "name": "cement_wall15"
+    },
+    {
+      "name": "new_brick0"
+    },
+    {
+      "name": "new_brick1"
+    },
+    {
+      "name": "new_brick2"
+    },
+    {
+      "name": "new_brick3"
+    },
+    {
+      "name": "new_brick4"
+    },
+    {
+      "name": "new_brick5"
+    },
+    {
+      "name": "new_brick6"
+    },
+    {
+      "name": "new_brick7"
+    },
+    {
+      "name": "new_brick8"
+    },
+    {
+      "name": "new_brick9"
+    },
+    {
+      "name": "new_brick10"
+    },
+    {
+      "name": "new_brick11"
+    },
+    {
+      "name": "new_brick12"
+    },
+    {
+      "name": "new_brick13"
+    },
+    {
+      "name": "new_brick14"
+    },
+    {
+      "name": "new_brick15"
+    },
+    {
+      "name": "new_wood0"
+    },
+    {
+      "name": "new_wood12"
+    },
+    {
+      "name": "new_wood3"
+    },
+    {
+      "name": "new_wood8"
+    },
+    {
+      "name": "new_wood1"
+    },
+    {
+      "name": "new_wood4"
+    },
+    {
+      "name": "new_wood2"
+    },
+    {
+      "name": "new_wood6"
+    },
+    {
+      "name": "new_wood10"
+    },
+    {
+      "name": "new_wood5"
+    },
+    {
+      "name": "new_wood9"
+    },
+    {
+      "name": "new_wood7"
+    },
+    {
+      "name": "new_wood11"
+    },
+    {
+      "name": "new_wood13"
+    },
+    {
+      "name": "new_wood14"
+    },
+    {
+      "name": "new_wood15"
+    },
+    {
+      "name": "stone_block_wall12"
+    },
+    {
+      "name": "stone_block_wall3"
+    },
+    {
+      "name": "stone_block_wall8"
+    },
+    {
+      "name": "stone_block_wall1"
+    },
+    {
+      "name": "stone_block_wall4"
+    },
+    {
+      "name": "stone_block_wall2"
+    },
+    {
+      "name": "stone_block_wall6"
+    },
+    {
+      "name": "stone_block_wall10"
+    },
+    {
+      "name": "stone_block_wall9"
+    },
+    {
+      "name": "stone_block_wall5"
+    },
+    {
+      "name": "stone_block_wall7"
+    },
+    {
+      "name": "stone_block_wall14"
+    },
+    {
+      "name": "stone_block_wall11"
+    },
+    {
+      "name": "stone_block_wall13"
+    },
+    {
+      "name": "stone_block_wall15"
+    },
+    {
+      "name": "stone_block_wall0"
+    },
+    {
+      "name": "new_stonebrick0"
+    },
+    {
+      "name": "new_stonebrick12"
+    },
+    {
+      "name": "new_stonebrick3"
+    },
+    {
+      "name": "new_stonebrick8"
+    },
+    {
+      "name": "new_stonebrick1"
+    },
+    {
+      "name": "new_stonebrick4"
+    },
+    {
+      "name": "new_stonebrick2"
+    },
+    {
+      "name": "new_stonebrick6"
+    },
+    {
+      "name": "new_stonebrick10"
+    },
+    {
+      "name": "new_stonebrick5"
+    },
+    {
+      "name": "new_stonebrick9"
+    },
+    {
+      "name": "new_stonebrick7"
+    },
+    {
+      "name": "new_stonebrick14"
+    },
+    {
+      "name": "new_stonebrick11"
+    },
+    {
+      "name": "new_stonebrick13"
+    },
+    {
+      "name": "new_stonebrick15"
+    },
+    {
+      "name": "abashiri3"
+    },
+    {
+      "name": "abashiri12"
+    },
+    {
+      "name": "abashiri1"
+    },
+    {
+      "name": "abashiri2"
+    },
+    {
+      "name": "abashiri4"
+    },
+    {
+      "name": "abashiri8"
+    },
+    {
+      "name": "abashiri5"
+    },
+    {
+      "name": "abashiri6"
+    },
+    {
+      "name": "abashiri9"
+    },
+    {
+      "name": "abashiri10"
+    },
+    {
+      "name": "abashiri7"
+    },
+    {
+      "name": "abashiri11"
+    },
+    {
+      "name": "abashiri13"
+    },
+    {
+      "name": "abashiri14"
+    },
+    {
+      "name": "abashiri0"
+    },
+    {
+      "name": "abashiri15"
+    }
+  ]
+}

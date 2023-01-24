@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 10
+  },
+  "states": [
+    {
+      "name": "ooc"
+    },
+    {
+      "name": "looc"
+    },
+    {
+      "name": "dead"
+    },
+    {
+      "name": "asay"
+    },
+    {
+      "name": "a-discord"
+    },
+    {
+      "name": "admin"
+    },
+    {
+      "name": "mentor"
+    },
+    {
+      "name": "pm_in"
+    },
+    {
+      "name": "pm_out_alt"
+    },
+    {
+      "name": "pm_other"
+    },
+    {
+      "name": "help"
+    },
+    {
+      "name": "discord"
+    },
+    {
+      "name": "discord2"
+    }
+  ]
+}

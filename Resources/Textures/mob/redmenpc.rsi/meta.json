@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "male_template",
+      "directions": 4
+    },
+    {
+      "name": "male1",
+      "directions": 4
+    },
+    {
+      "name": "female_template",
+      "directions": 4
+    },
+    {
+      "name": "female1",
+      "directions": 4
+    },
+    {
+      "name": "",
+      "directions": 4
+    }
+  ]
+}

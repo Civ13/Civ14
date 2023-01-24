@@ -1,0 +1,751 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "muzzle",
+      "directions": 4
+    },
+    {
+      "name": "death",
+      "directions": 4
+    },
+    {
+      "name": "cigon",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cigoff",
+      "directions": 4
+    },
+    {
+      "name": "cigaron",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cigaroff",
+      "directions": 4
+    },
+    {
+      "name": "cigar2off",
+      "directions": 4
+    },
+    {
+      "name": "cobpipeon",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cobpipeoff",
+      "directions": 4
+    },
+    {
+      "name": "ty_necklace",
+      "directions": 4
+    },
+    {
+      "name": "tooth-necklace",
+      "directions": 4
+    },
+    {
+      "name": "pipeon",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "pipeoff",
+      "directions": 4
+    },
+    {
+      "name": "cigar2on",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "skull_mask",
+      "directions": 4
+    },
+    {
+      "name": "plaguedoctor",
+      "directions": 4
+    },
+    {
+      "name": "shemagh0",
+      "directions": 4
+    },
+    {
+      "name": "shemagh1",
+      "directions": 4
+    },
+    {
+      "name": "old_glasses",
+      "directions": 4
+    },
+    {
+      "name": "greykerchief0",
+      "directions": 4
+    },
+    {
+      "name": "redkerchief0",
+      "directions": 4
+    },
+    {
+      "name": "redkerchief1",
+      "directions": 4
+    },
+    {
+      "name": "greykerchief1",
+      "directions": 4
+    },
+    {
+      "name": "samurai1",
+      "directions": 4
+    },
+    {
+      "name": "samurai2",
+      "directions": 4
+    },
+    {
+      "name": "samurai3",
+      "directions": 4
+    },
+    {
+      "name": "french_gasmask",
+      "directions": 4
+    },
+    {
+      "name": "german_gasmask",
+      "directions": 4
+    },
+    {
+      "name": "british_gasmask",
+      "directions": 4
+    },
+    {
+      "name": "painting_woodland",
+      "directions": 4
+    },
+    {
+      "name": "nvg_off",
+      "directions": 4
+    },
+    {
+      "name": "thermal_off",
+      "directions": 4
+    },
+    {
+      "name": "balaclava",
+      "directions": 4
+    },
+    {
+      "name": "shemagh_1",
+      "directions": 4
+    },
+    {
+      "name": "shemagh_2",
+      "directions": 4
+    },
+    {
+      "name": "shemagh_3",
+      "directions": 4
+    },
+    {
+      "name": "shemagh_4",
+      "directions": 4
+    },
+    {
+      "name": "t99",
+      "directions": 4
+    },
+    {
+      "name": "modern_gasmask",
+      "directions": 4
+    },
+    {
+      "name": "woodenmask",
+      "directions": 4
+    },
+    {
+      "name": "chitin_mask",
+      "directions": 4
+    },
+    {
+      "name": "moderngasmask",
+      "directions": 4
+    },
+    {
+      "name": "sovietmask",
+      "directions": 4
+    },
+    {
+      "name": "clownmask",
+      "directions": 4
+    },
+    {
+      "name": "iogplate",
+      "directions": 4
+    },
+    {
+      "name": "military_gasmask",
+      "directions": 4
+    },
+    {
+      "name": "russiamask",
+      "directions": 4
+    },
+    {
+      "name": "sovietbala",
+      "directions": 4
+    },
+    {
+      "name": "salamon",
+      "directions": 4
+    },
+    {
+      "name": "swatmask",
+      "directions": 4
+    },
+    {
+      "name": "assyrian",
+      "directions": 4
+    },
+    {
+      "name": "bossjaw",
+      "directions": 4
+    },
+    {
+      "name": "whistle",
+      "directions": 4
+    },
+    {
+      "name": "mummy_mask",
+      "directions": 4
+    },
+    {
+      "name": "frog",
+      "directions": 4
+    },
+    {
+      "name": "bumba",
+      "directions": 4
+    },
+    {
+      "name": "jackal",
+      "directions": 4
+    },
+    {
+      "name": "glass_pipe",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bear",
+      "directions": 4
+    },
+    {
+      "name": "bee",
+      "directions": 4
+    },
+    {
+      "name": "fox",
+      "directions": 4
+    },
+    {
+      "name": "rat",
+      "directions": 4
+    },
+    {
+      "name": "joy",
+      "directions": 4
+    },
+    {
+      "name": "cowmask",
+      "directions": 4
+    },
+    {
+      "name": "sack",
+      "directions": 4
+    },
+    {
+      "name": "scarecrow_sack",
+      "directions": 4
+    },
+    {
+      "name": "anubis",
+      "directions": 4
+    },
+    {
+      "name": "osiris",
+      "directions": 4
+    },
+    {
+      "name": "solitaire",
+      "directions": 4
+    },
+    {
+      "name": "raven",
+      "directions": 4
+    },
+    {
+      "name": "bat",
+      "directions": 4
+    },
+    {
+      "name": "pig",
+      "directions": 4
+    },
+    {
+      "name": "",
+      "directions": 4
+    },
+    {
+      "name": "owl",
+      "directions": 4
+    },
+    {
+      "name": "sterile",
+      "directions": 4
+    },
+    {
+      "name": "sterile_down",
+      "directions": 4
+    },
+    {
+      "name": "jointon",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "stone_mask",
+      "directions": 4
+    },
+    {
+      "name": "stone_mask_empty",
+      "directions": 4
+    },
+    {
+      "name": "stone_mask_jeweled",
+      "directions": 4
+    },
+    {
+      "name": "gorilla",
+      "directions": 4
+    },
+    {
+      "name": "african1",
+      "directions": 4
+    },
+    {
+      "name": "pmkold",
+      "directions": 4
+    },
+    {
+      "name": "senulus_0",
+      "directions": 4,
+      "delays": [
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "senulus_1",
+      "directions": 4,
+      "delays": [
+        [
+          0.15,
+          0.15
+        ],
+        [
+          0.15,
+          0.15
+        ],
+        [
+          0.15,
+          0.15
+        ],
+        [
+          0.15,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "bluekerchief0",
+      "directions": 4
+    },
+    {
+      "name": "bluekerchief1",
+      "directions": 4
+    },
+    {
+      "name": "yellowkerchief0",
+      "directions": 4
+    },
+    {
+      "name": "yellowkerchief1",
+      "directions": 4
+    },
+    {
+      "name": "NecklaceChristianGold",
+      "directions": 4
+    },
+    {
+      "name": "payday1",
+      "directions": 4
+    },
+    {
+      "name": "payday2",
+      "directions": 4
+    },
+    {
+      "name": "payday3",
+      "directions": 4
+    },
+    {
+      "name": "payday4",
+      "directions": 4
+    },
+    {
+      "name": "swat_new",
+      "directions": 4
+    },
+    {
+      "name": "pmk1",
+      "directions": 4
+    },
+    {
+      "name": "shm1",
+      "directions": 4
+    },
+    {
+      "name": "gp5",
+      "directions": 4
+    }
+  ]
+}

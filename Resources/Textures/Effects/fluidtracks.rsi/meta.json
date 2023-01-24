@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "human1",
+      "directions": 4
+    },
+    {
+      "name": "human2",
+      "directions": 4
+    },
+    {
+      "name": "paw1",
+      "directions": 4
+    },
+    {
+      "name": "paw2",
+      "directions": 4
+    },
+    {
+      "name": "claw1",
+      "directions": 4
+    },
+    {
+      "name": "claw2",
+      "directions": 4
+    },
+    {
+      "name": "wheels",
+      "directions": 8
+    }
+  ]
+}

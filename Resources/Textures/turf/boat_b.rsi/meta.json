@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "boat_b1"
+    },
+    {
+      "name": "boat_b2"
+    },
+    {
+      "name": "boat_b3"
+    },
+    {
+      "name": "boat_b4"
+    },
+    {
+      "name": "boat_b5"
+    },
+    {
+      "name": "boat_b6"
+    },
+    {
+      "name": "boat_b7"
+    },
+    {
+      "name": "boat_b8"
+    },
+    {
+      "name": "boat_b9"
+    },
+    {
+      "name": "boat_b10"
+    },
+    {
+      "name": "boat_b_east"
+    },
+    {
+      "name": "boat_b_west"
+    },
+    {
+      "name": "boat_b_east2"
+    },
+    {
+      "name": "boat_b_west2"
+    },
+    {
+      "name": "boat_b11"
+    },
+    {
+      "name": "boat_b12"
+    },
+    {
+      "name": "boat_b13"
+    },
+    {
+      "name": "boat_b14"
+    },
+    {
+      "name": "boat_b15"
+    },
+    {
+      "name": "boat_b16"
+    },
+    {
+      "name": "boat_b17"
+    },
+    {
+      "name": "boat_b_port0"
+    },
+    {
+      "name": "boat_b_port1"
+    },
+    {
+      "name": "boat_b_port2"
+    },
+    {
+      "name": "boat_b_port3",
+      "directions": 4
+    },
+    {
+      "name": "boat_b18"
+    },
+    {
+      "name": "boat_b19"
+    },
+    {
+      "name": "boat_b_port9"
+    },
+    {
+      "name": "boat_b_port5"
+    },
+    {
+      "name": "boat_b_port_1"
+    },
+    {
+      "name": "boat_b_port_10"
+    },
+    {
+      "name": "boat_b_port_6"
+    },
+    {
+      "name": "boat_b_port_6-2"
+    },
+    {
+      "name": "boat_b_port_10-2"
+    },
+    {
+      "name": "boat_b_port5-2"
+    },
+    {
+      "name": "boat_b_port9-2"
+    },
+    {
+      "name": "boat_b20",
+      "directions": 4
+    }
+  ]
+}

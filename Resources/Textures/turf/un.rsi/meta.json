@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "un"
+    },
+    {
+      "name": "un_edges",
+      "directions": 8
+    },
+    {
+      "name": "un_corners",
+      "directions": 8
+    },
+    {
+      "name": "un_dark"
+    }
+  ]
+}

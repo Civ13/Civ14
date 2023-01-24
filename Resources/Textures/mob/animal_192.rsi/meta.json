@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "size": {
+    "x": 192,
+    "y": 144
+  },
+  "states": [
+    {
+      "name": "mammoth",
+      "directions": 4
+    },
+    {
+      "name": "mammoth_dead"
+    }
+  ]
+}

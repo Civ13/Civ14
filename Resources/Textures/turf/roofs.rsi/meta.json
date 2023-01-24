@@ -1,0 +1,693 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": ""
+    },
+    {
+      "name": "roof"
+    },
+    {
+      "name": "palm1"
+    },
+    {
+      "name": "palm_0"
+    },
+    {
+      "name": "palm_1"
+    },
+    {
+      "name": "palm_2"
+    },
+    {
+      "name": "palm_3"
+    },
+    {
+      "name": "palm_4"
+    },
+    {
+      "name": "palm_5"
+    },
+    {
+      "name": "palm_6"
+    },
+    {
+      "name": "palm_7"
+    },
+    {
+      "name": "palm_8"
+    },
+    {
+      "name": "palm_9"
+    },
+    {
+      "name": "palm_10"
+    },
+    {
+      "name": "palm_11"
+    },
+    {
+      "name": "palm_12"
+    },
+    {
+      "name": "palm_13"
+    },
+    {
+      "name": "palm_14"
+    },
+    {
+      "name": "palm_15"
+    },
+    {
+      "name": "wood_0"
+    },
+    {
+      "name": "wood_1"
+    },
+    {
+      "name": "wood_2"
+    },
+    {
+      "name": "wood_3"
+    },
+    {
+      "name": "wood_4"
+    },
+    {
+      "name": "wood_5"
+    },
+    {
+      "name": "wood_6"
+    },
+    {
+      "name": "wood_7"
+    },
+    {
+      "name": "wood_8"
+    },
+    {
+      "name": "wood_9"
+    },
+    {
+      "name": "wood_10"
+    },
+    {
+      "name": "wood_11"
+    },
+    {
+      "name": "wood_12"
+    },
+    {
+      "name": "wood_13"
+    },
+    {
+      "name": "wood_14"
+    },
+    {
+      "name": "wood_15"
+    },
+    {
+      "name": "clayroof_topright"
+    },
+    {
+      "name": "clay_0"
+    },
+    {
+      "name": "clay_1"
+    },
+    {
+      "name": "clay_2"
+    },
+    {
+      "name": "clay_3"
+    },
+    {
+      "name": "clay_4"
+    },
+    {
+      "name": "clay_5"
+    },
+    {
+      "name": "clay_6"
+    },
+    {
+      "name": "clay_7"
+    },
+    {
+      "name": "clay_8"
+    },
+    {
+      "name": "clay_9"
+    },
+    {
+      "name": "clay_10"
+    },
+    {
+      "name": "clay_11"
+    },
+    {
+      "name": "clay_12"
+    },
+    {
+      "name": "clay_13"
+    },
+    {
+      "name": "clay_14"
+    },
+    {
+      "name": "clay_15"
+    },
+    {
+      "name": "roof_builder"
+    },
+    {
+      "name": "palm_roof_builder"
+    },
+    {
+      "name": "thatch_roof_builder"
+    },
+    {
+      "name": "clay_roof_builder"
+    },
+    {
+      "name": "cement_0"
+    },
+    {
+      "name": "cement_1"
+    },
+    {
+      "name": "cement_2"
+    },
+    {
+      "name": "cement_3"
+    },
+    {
+      "name": "cement_4"
+    },
+    {
+      "name": "cement_5"
+    },
+    {
+      "name": "cement_6"
+    },
+    {
+      "name": "cement_7"
+    },
+    {
+      "name": "cement_8"
+    },
+    {
+      "name": "cement_9"
+    },
+    {
+      "name": "cement_10"
+    },
+    {
+      "name": "cement_11"
+    },
+    {
+      "name": "cement_12"
+    },
+    {
+      "name": "cement_13"
+    },
+    {
+      "name": "cement_14"
+    },
+    {
+      "name": "cement_15"
+    },
+    {
+      "name": "roof1"
+    },
+    {
+      "name": "palm_dm"
+    },
+    {
+      "name": "wood_dm"
+    },
+    {
+      "name": "clay_dm"
+    },
+    {
+      "name": "thatch_dm"
+    },
+    {
+      "name": "cement_dm"
+    },
+    {
+      "name": "concrete_roof_builder"
+    },
+    {
+      "name": "roof2"
+    },
+    {
+      "name": "thatch_0"
+    },
+    {
+      "name": "thatch_1"
+    },
+    {
+      "name": "thatch_2"
+    },
+    {
+      "name": "thatch_3"
+    },
+    {
+      "name": "thatch_4"
+    },
+    {
+      "name": "thatch_5"
+    },
+    {
+      "name": "thatch_6"
+    },
+    {
+      "name": "thatch_7"
+    },
+    {
+      "name": "thatch_8"
+    },
+    {
+      "name": "thatch_9"
+    },
+    {
+      "name": "thatch_10"
+    },
+    {
+      "name": "thatch_11"
+    },
+    {
+      "name": "thatch_12"
+    },
+    {
+      "name": "thatch_13"
+    },
+    {
+      "name": "thatch_14"
+    },
+    {
+      "name": "thatch_15"
+    },
+    {
+      "name": "sandstone_roof_builder"
+    },
+    {
+      "name": "sandstone_0"
+    },
+    {
+      "name": "sandstone_1"
+    },
+    {
+      "name": "sandstone_2"
+    },
+    {
+      "name": "sandstone_3"
+    },
+    {
+      "name": "sandstone_4"
+    },
+    {
+      "name": "sandstone_5"
+    },
+    {
+      "name": "sandstone_6"
+    },
+    {
+      "name": "sandstone_7"
+    },
+    {
+      "name": "sandstone_8"
+    },
+    {
+      "name": "sandstone_9"
+    },
+    {
+      "name": "sandstone_10"
+    },
+    {
+      "name": "sandstone_11"
+    },
+    {
+      "name": "sandstone_12"
+    },
+    {
+      "name": "sandstone_13"
+    },
+    {
+      "name": "sandstone_14"
+    },
+    {
+      "name": "sandstone_15"
+    },
+    {
+      "name": "sandstone_dm"
+    },
+    {
+      "name": "sandstone_left_border"
+    },
+    {
+      "name": "sandstone_corner_border"
+    },
+    {
+      "name": "mayan_0"
+    },
+    {
+      "name": "mayan_1"
+    },
+    {
+      "name": "mayan_2"
+    },
+    {
+      "name": "mayan_3"
+    },
+    {
+      "name": "mayan_4"
+    },
+    {
+      "name": "mayan_5"
+    },
+    {
+      "name": "mayan_6"
+    },
+    {
+      "name": "mayan_7"
+    },
+    {
+      "name": "mayan_8"
+    },
+    {
+      "name": "mayan_9"
+    },
+    {
+      "name": "mayan_10"
+    },
+    {
+      "name": "mayan_11"
+    },
+    {
+      "name": "mayan_12"
+    },
+    {
+      "name": "mayan_13"
+    },
+    {
+      "name": "mayan_14"
+    },
+    {
+      "name": "mayan_15"
+    },
+    {
+      "name": "mayan_dm"
+    },
+    {
+      "name": "mayan_left_border"
+    },
+    {
+      "name": "mayan_corner_border"
+    },
+    {
+      "name": "mayan_roof_builder"
+    },
+    {
+      "name": "fortressroof_0"
+    },
+    {
+      "name": "fortressroof_1"
+    },
+    {
+      "name": "fortressroof_2"
+    },
+    {
+      "name": "fortressroof_3"
+    },
+    {
+      "name": "fortress_roof_4"
+    },
+    {
+      "name": "fortress_5"
+    },
+    {
+      "name": "fortress_roof_6"
+    },
+    {
+      "name": "fortress_roof_7"
+    },
+    {
+      "name": "fortress_roof_8"
+    },
+    {
+      "name": "fortress_roof_9"
+    },
+    {
+      "name": "fortress_roof_10"
+    },
+    {
+      "name": "fortress_roof_11"
+    },
+    {
+      "name": "fortressroof_12"
+    },
+    {
+      "name": "fortress_roof_13"
+    },
+    {
+      "name": "fortress_roof_14"
+    },
+    {
+      "name": "fortressroof_15"
+    },
+    {
+      "name": "fortress_roof_dm"
+    },
+    {
+      "name": "fortress_roof_builder"
+    },
+    {
+      "name": "black_slateroof_0"
+    },
+    {
+      "name": "black_slateroof_1"
+    },
+    {
+      "name": "black_slateroof_2"
+    },
+    {
+      "name": "black_slateroof_3"
+    },
+    {
+      "name": "black_slateroof_4"
+    },
+    {
+      "name": "black_slateroof_5"
+    },
+    {
+      "name": "black_slateroof_6"
+    },
+    {
+      "name": "black_slateroof_7"
+    },
+    {
+      "name": "black_slateroof_8"
+    },
+    {
+      "name": "black_slateroof_9"
+    },
+    {
+      "name": "black_slateroof_10"
+    },
+    {
+      "name": "black_slateroof_topright"
+    },
+    {
+      "name": "black_slateroof_11"
+    },
+    {
+      "name": "black_slateroof_12"
+    },
+    {
+      "name": "black_slateroof_13"
+    },
+    {
+      "name": "black_slateroof_14"
+    },
+    {
+      "name": "black_slateroof_15"
+    },
+    {
+      "name": "black_slateroof_dm"
+    },
+    {
+      "name": "black_slateroof_builder"
+    },
+    {
+      "name": "medieval_slate_0"
+    },
+    {
+      "name": "medieval slateroof_1"
+    },
+    {
+      "name": "medieval_slateroof_2"
+    },
+    {
+      "name": "medieval_slateroof_3"
+    },
+    {
+      "name": "medieval_slateroof_4"
+    },
+    {
+      "name": "medieval_slateroof_5"
+    },
+    {
+      "name": "medieval_slateroof_6"
+    },
+    {
+      "name": "medieval_slateroof_7"
+    },
+    {
+      "name": "medieval_slateroof_8"
+    },
+    {
+      "name": "medieval_slateroof_9"
+    },
+    {
+      "name": "medieval_slateroof_10"
+    },
+    {
+      "name": "medieval_slateroof_top_right"
+    },
+    {
+      "name": "medieval_slateroof_11"
+    },
+    {
+      "name": "medieval_slateroof_12"
+    },
+    {
+      "name": "medieval slateroof_13"
+    },
+    {
+      "name": "medieval_slateroof_14"
+    },
+    {
+      "name": "medieval_slate_15"
+    },
+    {
+      "name": "medieval_slate.dm"
+    },
+    {
+      "name": "medieval_slateroof_builder"
+    },
+    {
+      "name": "blackclay_dm"
+    },
+    {
+      "name": "blackclay_roof_builder"
+    },
+    {
+      "name": "blackclay_0"
+    },
+    {
+      "name": "blackclay_1"
+    },
+    {
+      "name": "blackclay_2"
+    },
+    {
+      "name": "blackclay_3"
+    },
+    {
+      "name": "blackclay_4"
+    },
+    {
+      "name": "blackclay_5"
+    },
+    {
+      "name": "blackclay_6"
+    },
+    {
+      "name": "blackclay_7"
+    },
+    {
+      "name": "blackclay_8"
+    },
+    {
+      "name": "blackclay_9"
+    },
+    {
+      "name": "blackclay_10"
+    },
+    {
+      "name": "blackclay_11"
+    },
+    {
+      "name": "blackclay_12"
+    },
+    {
+      "name": "blackclay_13"
+    },
+    {
+      "name": "blackclay_14"
+    },
+    {
+      "name": "blackclay_15"
+    },
+    {
+      "name": "blueclay_roof_builder"
+    },
+    {
+      "name": "blueclay_dm"
+    },
+    {
+      "name": "blueclay_0"
+    },
+    {
+      "name": "blueclay_1"
+    },
+    {
+      "name": "blueclay_2"
+    },
+    {
+      "name": "blueclay_3"
+    },
+    {
+      "name": "blueclay_4"
+    },
+    {
+      "name": "blueclay_5"
+    },
+    {
+      "name": "blueclay_6"
+    },
+    {
+      "name": "blueclay_7"
+    },
+    {
+      "name": "blueclay_8"
+    },
+    {
+      "name": "blueclay_9"
+    },
+    {
+      "name": "blueclay_10"
+    },
+    {
+      "name": "blueclay_11"
+    },
+    {
+      "name": "blueclay_12"
+    },
+    {
+      "name": "blueclay_13"
+    },
+    {
+      "name": "blueclay_14"
+    },
+    {
+      "name": "blueclay_15"
+    }
+  ]
+}

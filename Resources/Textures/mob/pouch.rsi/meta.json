@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "portable_radio4",
+      "directions": 4
+    },
+    {
+      "name": "comlink",
+      "directions": 4
+    },
+    {
+      "name": "pocketwatch",
+      "directions": 4
+    },
+    {
+      "name": "canteen_jap",
+      "directions": 4
+    }
+  ]
+}

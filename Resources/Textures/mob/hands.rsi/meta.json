@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "black",
+      "directions": 4
+    },
+    {
+      "name": "leather",
+      "directions": 4
+    },
+    {
+      "name": "gray",
+      "directions": 4
+    },
+    {
+      "name": "lightbrown",
+      "directions": 4
+    },
+    {
+      "name": "brown",
+      "directions": 4
+    },
+    {
+      "name": "brownfur",
+      "directions": 4
+    },
+    {
+      "name": "blackfur",
+      "directions": 4
+    },
+    {
+      "name": "whitefur",
+      "directions": 4
+    },
+    {
+      "name": "greyfur",
+      "directions": 4
+    },
+    {
+      "name": "pinkfur",
+      "directions": 4
+    },
+    {
+      "name": "union_gloves",
+      "directions": 4
+    },
+    {
+      "name": "fingerless",
+      "directions": 4
+    },
+    {
+      "name": "latex",
+      "directions": 4
+    },
+    {
+      "name": "gauntlet",
+      "directions": 4
+    },
+    {
+      "name": "ork_gauntlet",
+      "directions": 4
+    },
+    {
+      "name": "ac_gauntlets",
+      "directions": 4
+    },
+    {
+      "name": "ac_gauntlets_armed",
+      "directions": 4
+    },
+    {
+      "name": "orcfur",
+      "directions": 4
+    },
+    {
+      "name": "guardiacivil_gloves",
+      "directions": 4
+    },
+    {
+      "name": "luxglove",
+      "directions": 4
+    },
+    {
+      "name": "luxglove1",
+      "directions": 4
+    },
+    {
+      "name": "salamon",
+      "directions": 4
+    },
+    {
+      "name": "swat",
+      "directions": 4
+    },
+    {
+      "name": "kote",
+      "directions": 4
+    },
+    {
+      "name": "wyvern",
+      "directions": 4
+    },
+    {
+      "name": "ice_wyvern",
+      "directions": 4
+    },
+    {
+      "name": "green_dragon",
+      "directions": 4
+    },
+    {
+      "name": "motorist",
+      "directions": 4
+    },
+    {
+      "name": "toughguy",
+      "directions": 4
+    },
+    {
+      "name": "oven_mitts",
+      "directions": 4
+    },
+    {
+      "name": "blue",
+      "directions": 4
+    },
+    {
+      "name": "red",
+      "directions": 4
+    },
+    {
+      "name": "dwoves",
+      "directions": 4
+    },
+    {
+      "name": "replicant_gloves",
+      "directions": 4
+    },
+    {
+      "name": "boxing",
+      "directions": 4
+    },
+    {
+      "name": "boxingblue",
+      "directions": 4
+    },
+    {
+      "name": "boxinggreen",
+      "directions": 4
+    },
+    {
+      "name": "boxingyellow",
+      "directions": 4
+    },
+    {
+      "name": "veryblack",
+      "directions": 4
+    },
+    {
+      "name": "firefighter",
+      "directions": 4
+    }
+  ]
+}
