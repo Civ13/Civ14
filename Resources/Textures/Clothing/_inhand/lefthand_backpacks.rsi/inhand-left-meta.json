@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "giftbag",
+      "directions": 4
+    },
+    {
+      "name": "germanpack",
+      "directions": 4
+    },
+    {
+      "name": "russianpack",
+      "directions": 4
+    },
+    {
+      "name": "backpack",
+      "directions": 4
+    },
+    {
+      "name": "parachute",
+      "directions": 4
+    },
+    {
+      "name": "produce_basket",
+      "directions": 4
+    },
+    {
+      "name": "briefcase",
+      "directions": 4
+    },
+    {
+      "name": "duffel",
+      "directions": 4
+    },
+    {
+      "name": "us_buttpack",
+      "directions": 4
+    },
+    {
+      "name": "sovpack",
+      "directions": 4
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "brown_jacket",
+      "directions": 4
+    },
+    {
+      "name": "det_suit",
+      "directions": 4
+    },
+    {
+      "name": "greatcoat",
+      "directions": 4
+    },
+    {
+      "name": "grey_hoodie",
+      "directions": 4
+    },
+    {
+      "name": "holidaypriest",
+      "directions": 4
+    },
+    {
+      "name": "imperium_monk",
+      "directions": 4
+    },
+    {
+      "name": "jensencoat",
+      "directions": 4
+    },
+    {
+      "name": "jensensuit",
+      "directions": 4
+    },
+    {
+      "name": "johnny_coat",
+      "directions": 4
+    },
+    {
+      "name": "labcoat",
+      "directions": 4
+    },
+    {
+      "name": "leather_jacket",
+      "directions": 4
+    },
+    {
+      "name": "nazi1",
+      "directions": 4
+    },
+    {
+      "name": "nun",
+      "directions": 4
+    },
+    {
+      "name": "santa",
+      "directions": 4
+    },
+    {
+      "name": "straight_jacket",
+      "directions": 4
+    },
+    {
+      "name": "ac_suit",
+      "directions": 4
+    },
+    {
+      "name": "hazard",
+      "directions": 4
+    },
+    {
+      "name": "hazard_b",
+      "directions": 4
+    },
+    {
+      "name": "hazard_g",
+      "directions": 4
+    },
+    {
+      "name": "sealvest",
+      "directions": 4
+    }
+  ]
+}

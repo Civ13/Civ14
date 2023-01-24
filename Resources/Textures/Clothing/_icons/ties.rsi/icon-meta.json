@@ -1,0 +1,642 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "blue_tie"
+    },
+    {
+      "name": "red_tie"
+    },
+    {
+      "name": "horribletie"
+    },
+    {
+      "name": "stethoscope"
+    },
+    {
+      "name": "bronze"
+    },
+    {
+      "name": "bronze_heart"
+    },
+    {
+      "name": "silver"
+    },
+    {
+      "name": "gold"
+    },
+    {
+      "name": "red"
+    },
+    {
+      "name": "hydro"
+    },
+    {
+      "name": "med"
+    },
+    {
+      "name": "medgreen"
+    },
+    {
+      "name": "rnd"
+    },
+    {
+      "name": "engie"
+    },
+    {
+      "name": "cargo"
+    },
+    {
+      "name": "holster"
+    },
+    {
+      "name": "bandolier"
+    },
+    {
+      "name": "webbing"
+    },
+    {
+      "name": "holster_hip"
+    },
+    {
+      "name": "locket"
+    },
+    {
+      "name": "heartlocket_open"
+    },
+    {
+      "name": "heartlocket_closed"
+    },
+    {
+      "name": "british_scarf"
+    },
+    {
+      "name": "indian1"
+    },
+    {
+      "name": "indian2"
+    },
+    {
+      "name": "indianshaman"
+    },
+    {
+      "name": "spanish"
+    },
+    {
+      "name": "british"
+    },
+    {
+      "name": "portuguese"
+    },
+    {
+      "name": "french"
+    },
+    {
+      "name": "indianr"
+    },
+    {
+      "name": "indianb"
+    },
+    {
+      "name": "indiang"
+    },
+    {
+      "name": "indiany"
+    },
+    {
+      "name": "indianw"
+    },
+    {
+      "name": "indianbl"
+    },
+    {
+      "name": "talisman"
+    },
+    {
+      "name": "dutch"
+    },
+    {
+      "name": "bronze_arm"
+    },
+    {
+      "name": "copper_arm"
+    },
+    {
+      "name": "gold_arm"
+    },
+    {
+      "name": "silver_arm"
+    },
+    {
+      "name": "iron_arm"
+    },
+    {
+      "name": "customarmband"
+    },
+    {
+      "name": "customsash"
+    },
+    {
+      "name": "customtabard"
+    },
+    {
+      "name": "customcape"
+    },
+    {
+      "name": "sash"
+    },
+    {
+      "name": "jap"
+    },
+    {
+      "name": "holster_hip2"
+    },
+    {
+      "name": "sheriff"
+    },
+    {
+      "name": "grey_scarf"
+    },
+    {
+      "name": "red_scarf"
+    },
+    {
+      "name": "customscarf"
+    },
+    {
+      "name": "suspenders2"
+    },
+    {
+      "name": "suspenders1"
+    },
+    {
+      "name": "black_tie"
+    },
+    {
+      "name": "custom_tie"
+    },
+    {
+      "name": "black_bowtie"
+    },
+    {
+      "name": "custom_bowtie"
+    },
+    {
+      "name": "british_vest"
+    },
+    {
+      "name": "german_vest"
+    },
+    {
+      "name": "french_vest"
+    },
+    {
+      "name": "modern_armorvest"
+    },
+    {
+      "name": "modern_platearmor"
+    },
+    {
+      "name": "modern_dayfield"
+    },
+    {
+      "name": "us_vest"
+    },
+    {
+      "name": "khan_ran_scarf"
+    },
+    {
+      "name": "yellow_scarf"
+    },
+    {
+      "name": "flakjacket"
+    },
+    {
+      "name": "flakjacket1969"
+    },
+    {
+      "name": "modern_kevlar"
+    },
+    {
+      "name": "plates"
+    },
+    {
+      "name": "knee_protections"
+    },
+    {
+      "name": "elbow_protections"
+    },
+    {
+      "name": "iba_black"
+    },
+    {
+      "name": "pasgt_woodland"
+    },
+    {
+      "name": "pasgt_green"
+    },
+    {
+      "name": "iba_ucp"
+    },
+    {
+      "name": "iba_ocp"
+    },
+    {
+      "name": "green_webbing"
+    },
+    {
+      "name": "khaki_webbing"
+    },
+    {
+      "name": "nlfchestrig_v1"
+    },
+    {
+      "name": "nlfchestrig_v2"
+    },
+    {
+      "name": "pasgt_khaki"
+    },
+    {
+      "name": "jap_harn"
+    },
+    {
+      "name": "nsdap"
+    },
+    {
+      "name": "redcross"
+    },
+    {
+      "name": "usmp"
+    },
+    {
+      "name": "japanesemp"
+    },
+    {
+      "name": "volkssturm"
+    },
+    {
+      "name": "katana_sheath_empty"
+    },
+    {
+      "name": "katana_sheath"
+    },
+    {
+      "name": "short_sheath"
+    },
+    {
+      "name": "short_sheath_empty"
+    },
+    {
+      "name": "longer_sheath_empty"
+    },
+    {
+      "name": "longer_sheath"
+    },
+    {
+      "name": "longsword_sheath_empty"
+    },
+    {
+      "name": "longsword_sheath"
+    },
+    {
+      "name": "greenkevlarvest"
+    },
+    {
+      "name": "greytacticalvest"
+    },
+    {
+      "name": "yellowkevlarvest"
+    },
+    {
+      "name": "modernkevlar2"
+    },
+    {
+      "name": "waist_holster"
+    },
+    {
+      "name": "daisho_sheath"
+    },
+    {
+      "name": "daisho_sheath_empty"
+    },
+    {
+      "name": "apron"
+    },
+    {
+      "name": "patch_marksman"
+    },
+    {
+      "name": "patch_specialforces"
+    },
+    {
+      "name": "customizable_priest_band"
+    },
+    {
+      "name": "wearable_sign"
+    },
+    {
+      "name": "policetag"
+    },
+    {
+      "name": "tacholster"
+    },
+    {
+      "name": "patch_russia"
+    },
+    {
+      "name": "patch_spets"
+    },
+    {
+      "name": "legguards"
+    },
+    {
+      "name": "russian_vest"
+    },
+    {
+      "name": "ubac_tan"
+    },
+    {
+      "name": "ubac_green"
+    },
+    {
+      "name": "ubac_black"
+    },
+    {
+      "name": "sweater"
+    },
+    {
+      "name": "black_pouches"
+    },
+    {
+      "name": "tan_pouches"
+    },
+    {
+      "name": "armguards"
+    },
+    {
+      "name": "largepouches"
+    },
+    {
+      "name": "knifeholster"
+    },
+    {
+      "name": "largepouches_tan"
+    },
+    {
+      "name": "platecarrier_black"
+    },
+    {
+      "name": "platecarrier_tan"
+    },
+    {
+      "name": "platecarrier_green"
+    },
+    {
+      "name": "swimmerplate"
+    },
+    {
+      "name": "sharpshooter"
+    },
+    {
+      "name": "plate1"
+    },
+    {
+      "name": "jap_ittohei"
+    },
+    {
+      "name": "jap_nitohei"
+    },
+    {
+      "name": "jap_jotohei"
+    },
+    {
+      "name": "jap_gunso"
+    },
+    {
+      "name": "jap_2lt"
+    },
+    {
+      "name": "jap_1lt"
+    },
+    {
+      "name": "jap_taii"
+    },
+    {
+      "name": "germ_schtz"
+    },
+    {
+      "name": "germ_obrschtz"
+    },
+    {
+      "name": "germ_gftr"
+    },
+    {
+      "name": "germ_obrgftr"
+    },
+    {
+      "name": "germ_grppnfher"
+    },
+    {
+      "name": "germ_2lt"
+    },
+    {
+      "name": "germ_1lt"
+    },
+    {
+      "name": "germ_hptmn"
+    },
+    {
+      "name": "swat"
+    },
+    {
+      "name": "civil_war"
+    },
+    {
+      "name": "khan_ran_v1"
+    },
+    {
+      "name": "khan_ran_v2"
+    },
+    {
+      "name": "fp_webbing"
+    },
+    {
+      "name": "fp_lt"
+    },
+    {
+      "name": "fp_cpt"
+    },
+    {
+      "name": "fp_sgt"
+    },
+    {
+      "name": "fp_cpl"
+    },
+    {
+      "name": "ruffle_neck"
+    },
+    {
+      "name": "spiked_bracers"
+    },
+    {
+      "name": "upa_sgt"
+    },
+    {
+      "name": "upa_lt"
+    },
+    {
+      "name": "replicant_kama"
+    },
+    {
+      "name": "pauldron_s"
+    },
+    {
+      "name": "pauldron_sy"
+    },
+    {
+      "name": "pauldron_sb"
+    },
+    {
+      "name": "pauldron_sr"
+    },
+    {
+      "name": "pauldron_sg"
+    },
+    {
+      "name": "pauldron_d"
+    },
+    {
+      "name": "pauldron_dy"
+    },
+    {
+      "name": "pauldron_db"
+    },
+    {
+      "name": "pauldron_dr"
+    },
+    {
+      "name": "pauldron_dg"
+    },
+    {
+      "name": "us_bandolier"
+    },
+    {
+      "name": "shotgun_bandolier"
+    },
+    {
+      "name": "ukraine_armor"
+    },
+    {
+      "name": "un"
+    },
+    {
+      "name": "jap_ittohei_1937"
+    },
+    {
+      "name": "jap_nitohei_1937"
+    },
+    {
+      "name": "jap_jotohei_1937"
+    },
+    {
+      "name": "jap_gunso_1937"
+    },
+    {
+      "name": "jap_2lt_1937"
+    },
+    {
+      "name": "jap_1lt_1937"
+    },
+    {
+      "name": "jap_taii_1937"
+    },
+    {
+      "name": "caf_tacvest"
+    },
+    {
+      "name": "survival_webbing"
+    },
+    {
+      "name": "survival_webbing_white"
+    },
+    {
+      "name": "ru_band"
+    },
+    {
+      "name": "us_webbing"
+    },
+    {
+      "name": "sov_ryad"
+    },
+    {
+      "name": "sov_efreit"
+    },
+    {
+      "name": "sov_jsgt"
+    },
+    {
+      "name": "sov_sgt"
+    },
+    {
+      "name": "sov_ssgt"
+    },
+    {
+      "name": "sov_starsh"
+    },
+    {
+      "name": "sov_prapor"
+    },
+    {
+      "name": "sov_lt"
+    },
+    {
+      "name": "sov_capt"
+    },
+    {
+      "name": "sov_maj"
+    },
+    {
+      "name": "sov_podpolk"
+    },
+    {
+      "name": "sov_polk"
+    },
+    {
+      "name": "sov_genmaj"
+    },
+    {
+      "name": "pasgt_blizzard"
+    },
+    {
+      "name": "6b2"
+    },
+    {
+      "name": "6b3"
+    },
+    {
+      "name": "6b5"
+    },
+    {
+      "name": "6b45"
+    },
+    {
+      "name": "us_webbing_cw"
+    },
+    {
+      "name": "soviet_webbing_cw"
+    },
+    {
+      "name": "chicom1"
+    },
+    {
+      "name": "chicom2"
+    },
+    {
+      "name": "m79_vest"
+    }
+  ]
+}

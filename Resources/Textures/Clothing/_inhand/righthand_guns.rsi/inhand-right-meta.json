@@ -1,0 +1,1274 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "bow0",
+      "directions": 4
+    },
+    {
+      "name": "bow1",
+      "directions": 4
+    },
+    {
+      "name": "shortbow0",
+      "directions": 4
+    },
+    {
+      "name": "shortbow1",
+      "directions": 4
+    },
+    {
+      "name": "longbow0",
+      "directions": 4
+    },
+    {
+      "name": "longbow1",
+      "directions": 4
+    },
+    {
+      "name": "compoundbow0",
+      "directions": 4
+    },
+    {
+      "name": "compoundbow1",
+      "directions": 4
+    },
+    {
+      "name": "crossbow0",
+      "directions": 4
+    },
+    {
+      "name": "crossbow1",
+      "directions": 4
+    },
+    {
+      "name": "gscale0",
+      "directions": 4
+    },
+    {
+      "name": "gscale1",
+      "directions": 4
+    },
+    {
+      "name": "sling0",
+      "directions": 4
+    },
+    {
+      "name": "sling1",
+      "directions": 4
+    },
+    {
+      "name": "firelance",
+      "directions": 4
+    },
+    {
+      "name": "musket",
+      "directions": 4
+    },
+    {
+      "name": "musketoon",
+      "directions": 4
+    },
+    {
+      "name": "blunderbuss",
+      "directions": 4
+    },
+    {
+      "name": "handcannon",
+      "directions": 4
+    },
+    {
+      "name": "tanegashima",
+      "directions": 4
+    },
+    {
+      "name": "tanegashima_cocked",
+      "directions": 4
+    },
+    {
+      "name": "matchlock",
+      "directions": 4
+    },
+    {
+      "name": "matchlock_cocked",
+      "directions": 4
+    },
+    {
+      "name": "rollingblock",
+      "directions": 4
+    },
+    {
+      "name": "rollingblock_open",
+      "directions": 4
+    },
+    {
+      "name": "mauser93",
+      "directions": 4
+    },
+    {
+      "name": "springfield",
+      "directions": 4
+    },
+    {
+      "name": "mosin",
+      "directions": 4
+    },
+    {
+      "name": "mosin30",
+      "directions": 4
+    },
+    {
+      "name": "gewehr71",
+      "directions": 4
+    },
+    {
+      "name": "gewehr98",
+      "directions": 4
+    },
+    {
+      "name": "berdan",
+      "directions": 4
+    },
+    {
+      "name": "murata",
+      "directions": 4
+    },
+    {
+      "name": "enfield",
+      "directions": 4
+    },
+    {
+      "name": "carcano",
+      "directions": 4
+    },
+    {
+      "name": "lebel",
+      "directions": 4
+    },
+    {
+      "name": "berthier",
+      "directions": 4
+    },
+    {
+      "name": "kar98k",
+      "directions": 4
+    },
+    {
+      "name": "p14enfield",
+      "directions": 4
+    },
+    {
+      "name": "mp40",
+      "directions": 4
+    },
+    {
+      "name": "mp40_open",
+      "directions": 4
+    },
+    {
+      "name": "ppsh",
+      "directions": 4
+    },
+    {
+      "name": "ppsh_open",
+      "directions": 4
+    },
+    {
+      "name": "pps",
+      "directions": 4
+    },
+    {
+      "name": "pps_open",
+      "directions": 4
+    },
+    {
+      "name": "g41",
+      "directions": 4
+    },
+    {
+      "name": "g41_open",
+      "directions": 4
+    },
+    {
+      "name": "g43",
+      "directions": 4
+    },
+    {
+      "name": "g43_open",
+      "directions": 4
+    },
+    {
+      "name": "magdart",
+      "directions": 4
+    },
+    {
+      "name": "magdart_open",
+      "directions": 4
+    },
+    {
+      "name": "svt",
+      "directions": 4
+    },
+    {
+      "name": "svt_open",
+      "directions": 4
+    },
+    {
+      "name": "stg",
+      "directions": 4
+    },
+    {
+      "name": "stg_open",
+      "directions": 4
+    },
+    {
+      "name": "sks",
+      "directions": 4
+    },
+    {
+      "name": "sks_open",
+      "directions": 4
+    },
+    {
+      "name": "sksm",
+      "directions": 4
+    },
+    {
+      "name": "sksm_open",
+      "directions": 4
+    },
+    {
+      "name": "greasegun",
+      "directions": 4
+    },
+    {
+      "name": "greasegun_open",
+      "directions": 4
+    },
+    {
+      "name": "blyskawica",
+      "directions": 4
+    },
+    {
+      "name": "blyskawica_open",
+      "directions": 4
+    },
+    {
+      "name": "arisaka30",
+      "directions": 4
+    },
+    {
+      "name": "arisaka35",
+      "directions": 4
+    },
+    {
+      "name": "arisaka38",
+      "directions": 4
+    },
+    {
+      "name": "arisaka38_open",
+      "directions": 4
+    },
+    {
+      "name": "arisaka38_scope",
+      "directions": 4
+    },
+    {
+      "name": "arisaka38_scope_open",
+      "directions": 4
+    },
+    {
+      "name": "arisaka99",
+      "directions": 4
+    },
+    {
+      "name": "arisaka99_open",
+      "directions": 4
+    },
+    {
+      "name": "arisaka99_scope"
+    },
+    {
+      "name": "arisaka99_scope_open"
+    },
+    {
+      "name": "arisaka99_flag",
+      "directions": 4
+    },
+    {
+      "name": "arisaka99_flag_open",
+      "directions": 4
+    },
+    {
+      "name": "type99lmg",
+      "directions": 4
+    },
+    {
+      "name": "type99lmg_open",
+      "directions": 4
+    },
+    {
+      "name": "madsen",
+      "directions": 4
+    },
+    {
+      "name": "madsen_open",
+      "directions": 4
+    },
+    {
+      "name": "type100",
+      "directions": 4
+    },
+    {
+      "name": "type100_open",
+      "directions": 4
+    },
+    {
+      "name": "sten2",
+      "directions": 4
+    },
+    {
+      "name": "sten2_open",
+      "directions": 4
+    },
+    {
+      "name": "dp",
+      "directions": 4
+    },
+    {
+      "name": "dp_open",
+      "directions": 4
+    },
+    {
+      "name": "mg34",
+      "directions": 4
+    },
+    {
+      "name": "mg34_open",
+      "directions": 4
+    },
+    {
+      "name": "m1garand",
+      "directions": 4
+    },
+    {
+      "name": "m1garand_open",
+      "directions": 4
+    },
+    {
+      "name": "springfield_ww2",
+      "directions": 4
+    },
+    {
+      "name": "springfield_ww2_open",
+      "directions": 4
+    },
+    {
+      "name": "springfield_ww2_scope",
+      "directions": 4
+    },
+    {
+      "name": "springfield_ww2_scope_open",
+      "directions": 4
+    },
+    {
+      "name": "bar",
+      "directions": 4
+    },
+    {
+      "name": "bar_open",
+      "directions": 4
+    },
+    {
+      "name": "thompson",
+      "directions": 4
+    },
+    {
+      "name": "thompson_open",
+      "directions": 4
+    },
+    {
+      "name": "dartbolt",
+      "directions": 4
+    },
+    {
+      "name": "dartbolt_open",
+      "directions": 4
+    },
+    {
+      "name": "pistol",
+      "directions": 4
+    },
+    {
+      "name": "revolver",
+      "directions": 4
+    },
+    {
+      "name": "glock17"
+    },
+    {
+      "name": "sig250",
+      "directions": 4
+    },
+    {
+      "name": "sig250_open",
+      "directions": 4
+    },
+    {
+      "name": "pl14",
+      "directions": 4
+    },
+    {
+      "name": "tec-9",
+      "directions": 4
+    },
+    {
+      "name": "tec-9_open",
+      "directions": 4
+    },
+    {
+      "name": "uzi",
+      "directions": 4
+    },
+    {
+      "name": "uzi_open",
+      "directions": 4
+    },
+    {
+      "name": "skorpion",
+      "directions": 4
+    },
+    {
+      "name": "skorpion_open",
+      "directions": 4
+    },
+    {
+      "name": "mac10",
+      "directions": 4
+    },
+    {
+      "name": "mac10_open",
+      "directions": 4
+    },
+    {
+      "name": "flaregun",
+      "directions": 4
+    },
+    {
+      "name": "flaregun_civ",
+      "directions": 4
+    },
+    {
+      "name": "shotgun",
+      "directions": 4
+    },
+    {
+      "name": "revolving",
+      "directions": 4
+    },
+    {
+      "name": "tactical",
+      "directions": 4
+    },
+    {
+      "name": "tactical_open",
+      "directions": 4
+    },
+    {
+      "name": "mk18",
+      "directions": 4
+    },
+    {
+      "name": "mk18_open",
+      "directions": 4
+    },
+    {
+      "name": "saiga12",
+      "directions": 4
+    },
+    {
+      "name": "saiga12_open",
+      "directions": 4
+    },
+    {
+      "name": "svd",
+      "directions": 4
+    },
+    {
+      "name": "svd_open",
+      "directions": 4
+    },
+    {
+      "name": "ak47",
+      "directions": 4
+    },
+    {
+      "name": "ak47_open",
+      "directions": 4
+    },
+    {
+      "name": "ak74",
+      "directions": 4
+    },
+    {
+      "name": "ak74_open",
+      "directions": 4
+    },
+    {
+      "name": "ak74_scope",
+      "directions": 4
+    },
+    {
+      "name": "ak74_scope_open",
+      "directions": 4
+    },
+    {
+      "name": "ak74m",
+      "directions": 4
+    },
+    {
+      "name": "ak74m_open",
+      "directions": 4
+    },
+    {
+      "name": "ak74mtactical",
+      "directions": 4
+    },
+    {
+      "name": "ak74mtactical_open",
+      "directions": 4
+    },
+    {
+      "name": "ak101",
+      "directions": 4
+    },
+    {
+      "name": "mp5",
+      "directions": 4
+    },
+    {
+      "name": "mp5_open",
+      "directions": 4
+    },
+    {
+      "name": "fal",
+      "directions": 4
+    },
+    {
+      "name": "fal_open",
+      "directions": 4
+    },
+    {
+      "name": "c6",
+      "directions": 4
+    },
+    {
+      "name": "c6_open",
+      "directions": 4
+    },
+    {
+      "name": "m60",
+      "directions": 4
+    },
+    {
+      "name": "m60_open",
+      "directions": 4
+    },
+    {
+      "name": "negev",
+      "directions": 4
+    },
+    {
+      "name": "negev_open",
+      "directions": 4
+    },
+    {
+      "name": "bazooka",
+      "directions": 4
+    },
+    {
+      "name": "bazooka_empty",
+      "directions": 4
+    },
+    {
+      "name": "rpg",
+      "directions": 4
+    },
+    {
+      "name": "rocket",
+      "directions": 4
+    },
+    {
+      "name": "panzerfaust",
+      "directions": 4
+    },
+    {
+      "name": "m79",
+      "directions": 4
+    },
+    {
+      "name": "E-5",
+      "directions": 4
+    },
+    {
+      "name": "DC-17",
+      "directions": 4
+    },
+    {
+      "name": "Z-6",
+      "directions": 4,
+      "delays": [
+        [
+          0.16,
+          0.16
+        ],
+        [
+          0.16,
+          0.16
+        ],
+        [
+          0.16,
+          0.16
+        ],
+        [
+          0.16,
+          0.16
+        ]
+      ]
+    },
+    {
+      "name": "Z-6_open",
+      "directions": 4
+    },
+    {
+      "name": "ptrd",
+      "directions": 4
+    },
+    {
+      "name": "ptrd_open",
+      "directions": 4
+    },
+    {
+      "name": "c7",
+      "directions": 4
+    },
+    {
+      "name": "c7_open",
+      "directions": 4
+    },
+    {
+      "name": "c7_scope",
+      "directions": 4
+    },
+    {
+      "name": "c7_scope_open",
+      "directions": 4
+    },
+    {
+      "name": "SPRITES THAT NEED FIXING \u002B SORTING"
+    },
+    {
+      "name": "arquebus",
+      "directions": 4
+    },
+    {
+      "name": "ak101_open",
+      "directions": 4
+    },
+    {
+      "name": "pkmp",
+      "directions": 4
+    },
+    {
+      "name": "pkmp_open",
+      "directions": 4
+    },
+    {
+      "name": "m14",
+      "directions": 4
+    },
+    {
+      "name": "m14_open",
+      "directions": 4
+    },
+    {
+      "name": "m4",
+      "directions": 4
+    },
+    {
+      "name": "m4_open",
+      "directions": 4
+    },
+    {
+      "name": "m4mws",
+      "directions": 4
+    },
+    {
+      "name": "m4mws_open",
+      "directions": 4
+    },
+    {
+      "name": "m16a4",
+      "directions": 4
+    },
+    {
+      "name": "m16a4_open",
+      "directions": 4
+    },
+    {
+      "name": "aks74",
+      "directions": 4
+    },
+    {
+      "name": "aks74_folded",
+      "directions": 4
+    },
+    {
+      "name": "aks74_open",
+      "directions": 4
+    },
+    {
+      "name": "aks74_folded_open",
+      "directions": 4
+    },
+    {
+      "name": "aks74u",
+      "directions": 4
+    },
+    {
+      "name": "aks74u_open",
+      "directions": 4
+    },
+    {
+      "name": "aks74u_folded",
+      "directions": 4
+    },
+    {
+      "name": "aks74u_folded_open",
+      "directions": 4
+    },
+    {
+      "name": "aks74uso",
+      "directions": 4
+    },
+    {
+      "name": "aks74uso_folded",
+      "directions": 4
+    },
+    {
+      "name": "aks74uso_open",
+      "directions": 4
+    },
+    {
+      "name": "aks74uso_folded_open",
+      "directions": 4
+    },
+    {
+      "name": "hk417",
+      "directions": 4
+    },
+    {
+      "name": "hk417_open",
+      "directions": 4
+    },
+    {
+      "name": "scarl",
+      "directions": 4
+    },
+    {
+      "name": "scarl_open",
+      "directions": 4
+    },
+    {
+      "name": "scarh",
+      "directions": 4
+    },
+    {
+      "name": "scarh_open",
+      "directions": 4
+    },
+    {
+      "name": "vz58",
+      "directions": 4
+    },
+    {
+      "name": "vz58_open",
+      "directions": 4
+    },
+    {
+      "name": "m24",
+      "directions": 4
+    },
+    {
+      "name": "m24_open",
+      "directions": 4
+    },
+    {
+      "name": "p90",
+      "directions": 4
+    },
+    {
+      "name": "p90_open",
+      "directions": 4
+    },
+    {
+      "name": "g3",
+      "directions": 4
+    },
+    {
+      "name": "g3_open",
+      "directions": 4
+    },
+    {
+      "name": "m16",
+      "directions": 4
+    },
+    {
+      "name": "m16_open",
+      "directions": 4
+    },
+    {
+      "name": "ar15",
+      "directions": 4
+    },
+    {
+      "name": "ar15_open",
+      "directions": 4
+    },
+    {
+      "name": "bx7",
+      "directions": 4
+    },
+    {
+      "name": "vintorez",
+      "directions": 4
+    },
+    {
+      "name": "vintorez_open",
+      "directions": 4
+    },
+    {
+      "name": "akms",
+      "directions": 4
+    },
+    {
+      "name": "akms_open",
+      "directions": 4
+    },
+    {
+      "name": "akms_folded",
+      "directions": 4
+    },
+    {
+      "name": "akms_folded_open",
+      "directions": 4
+    },
+    {
+      "name": "ak47gold",
+      "directions": 4
+    },
+    {
+      "name": "ak47gold_open",
+      "directions": 4
+    },
+    {
+      "name": "rpk74",
+      "directions": 4
+    },
+    {
+      "name": "rpk74_drum",
+      "directions": 4
+    },
+    {
+      "name": "rpk74_open",
+      "directions": 4
+    },
+    {
+      "name": "rpd",
+      "directions": 4
+    },
+    {
+      "name": "rpd_open",
+      "directions": 4
+    },
+    {
+      "name": "m72law",
+      "directions": 4
+    },
+    {
+      "name": "a50calss",
+      "directions": 4
+    },
+    {
+      "name": "E-11",
+      "directions": 4
+    },
+    {
+      "name": "DC-15",
+      "directions": 4
+    },
+    {
+      "name": "DC-15A",
+      "directions": 4
+    },
+    {
+      "name": "A280",
+      "directions": 4
+    },
+    {
+      "name": "lasgunm36",
+      "directions": 4
+    },
+    {
+      "name": "lasgunm36_open",
+      "directions": 4
+    },
+    {
+      "name": "UNUSED, DOUBLED, UNSORTED SPRITES"
+    },
+    {
+      "name": "crossbow_old",
+      "directions": 4
+    },
+    {
+      "name": "crossbow-solid",
+      "directions": 4
+    },
+    {
+      "name": "dshotgun",
+      "directions": 4
+    },
+    {
+      "name": "blowgun",
+      "directions": 4
+    },
+    {
+      "name": "dartgun-10",
+      "directions": 4
+    },
+    {
+      "name": "dartgun-8",
+      "directions": 4
+    },
+    {
+      "name": "dartgun-6",
+      "directions": 4
+    },
+    {
+      "name": "dartgun-4",
+      "directions": 4
+    },
+    {
+      "name": "dartgun-2",
+      "directions": 4
+    },
+    {
+      "name": "dartgun-0",
+      "directions": 4
+    },
+    {
+      "name": "dartgun-empty",
+      "directions": 4
+    },
+    {
+      "name": "g3sg1-empty",
+      "directions": 4
+    },
+    {
+      "name": "g3tgs",
+      "directions": 4
+    },
+    {
+      "name": "g3tgs-empty",
+      "directions": 4
+    },
+    {
+      "name": "g3a3-wielded",
+      "directions": 4
+    },
+    {
+      "name": "g3a3-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "g3sg1-wielded",
+      "directions": 4
+    },
+    {
+      "name": "g3sg1-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "g3tgs-wielded",
+      "directions": 4
+    },
+    {
+      "name": "g3tgs-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "svd-unwielded",
+      "directions": 4
+    },
+    {
+      "name": "svd-unwielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "m21-wielded",
+      "directions": 4
+    },
+    {
+      "name": "m16",
+      "directions": 4
+    },
+    {
+      "name": "m16-empty",
+      "directions": 4
+    },
+    {
+      "name": "m16gl",
+      "directions": 4
+    },
+    {
+      "name": "m16gl-empty",
+      "directions": 4
+    },
+    {
+      "name": "m16gl-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "m16gl-wielded",
+      "directions": 4
+    },
+    {
+      "name": "m16-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "m16-wielded",
+      "directions": 4
+    },
+    {
+      "name": "vz58-wielded",
+      "directions": 4
+    },
+    {
+      "name": "vz58-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "vz58gl",
+      "directions": 4
+    },
+    {
+      "name": "vz58gl-empty",
+      "directions": 4
+    },
+    {
+      "name": "vz58gl-wielded",
+      "directions": 4
+    },
+    {
+      "name": "vz58gl-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "rpg-wielded",
+      "directions": 4
+    },
+    {
+      "name": "rpg-empty-wielded",
+      "directions": 4
+    },
+    {
+      "name": "g3a3",
+      "directions": 4
+    },
+    {
+      "name": "g3a3-empty",
+      "directions": 4
+    },
+    {
+      "name": "g3sg1",
+      "directions": 4
+    },
+    {
+      "name": "m60-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "m60-wielded",
+      "directions": 4
+    },
+    {
+      "name": "m60",
+      "directions": 4
+    },
+    {
+      "name": "m60-empty",
+      "directions": 4
+    },
+    {
+      "name": "smaw-empty",
+      "directions": 4
+    },
+    {
+      "name": "smaw",
+      "directions": 4
+    },
+    {
+      "name": "smaw-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "smaw-wielded",
+      "directions": 4
+    },
+    {
+      "name": "rpg1",
+      "directions": 4
+    },
+    {
+      "name": "rpg1-empty",
+      "directions": 4
+    },
+    {
+      "name": "aks-folded-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "aks-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "rpk-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "ak74gl-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "ak74-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "aks-folded-wielded",
+      "directions": 4
+    },
+    {
+      "name": "aks-wielded",
+      "directions": 4
+    },
+    {
+      "name": "rpk-wielded",
+      "directions": 4
+    },
+    {
+      "name": "ak74gl-wielded",
+      "directions": 4
+    },
+    {
+      "name": "ak74-wielded",
+      "directions": 4
+    },
+    {
+      "name": "aks-folded-empty",
+      "directions": 4
+    },
+    {
+      "name": "aks-empty",
+      "directions": 4
+    },
+    {
+      "name": "rpk-empty",
+      "directions": 4
+    },
+    {
+      "name": "ak74gl-empty",
+      "directions": 4
+    },
+    {
+      "name": "ak74-empty",
+      "directions": 4
+    },
+    {
+      "name": "aks-folded",
+      "directions": 4
+    },
+    {
+      "name": "aks",
+      "directions": 4
+    },
+    {
+      "name": "rpk",
+      "directions": 4
+    },
+    {
+      "name": "ak74gl",
+      "directions": 4
+    },
+    {
+      "name": "vz59-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "vz59-empty",
+      "directions": 4
+    },
+    {
+      "name": "vz59-wielded",
+      "directions": 4
+    },
+    {
+      "name": "vz59",
+      "directions": 4
+    },
+    {
+      "name": "m16-wielded2",
+      "directions": 4
+    },
+    {
+      "name": "m16-wielded-empty2",
+      "directions": 4
+    },
+    {
+      "name": "ak74m_open2",
+      "directions": 4
+    },
+    {
+      "name": "lmg",
+      "directions": 4
+    },
+    {
+      "name": "lmg-empty",
+      "directions": 4
+    },
+    {
+      "name": "lmg-wielded",
+      "directions": 4
+    },
+    {
+      "name": "lmg-wielded-empty",
+      "directions": 4
+    },
+    {
+      "name": "m14-wielded",
+      "directions": 4
+    },
+    {
+      "name": "shotgun-wielded",
+      "directions": 4
+    },
+    {
+      "name": "rifle-wielded",
+      "directions": 4
+    }
+  ]
+}
