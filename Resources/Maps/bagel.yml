@@ -71056,7 +71056,7 @@ entities:
     parent: 60
     type: Transform
 - uid: 6329
-  type: SpawnPointAssistant
+  type: SpawnPointNomad
   components:
   - pos: 11.5,13.5
     parent: 60
@@ -91143,13 +91143,13 @@ entities:
     parent: 60
     type: Transform
 - uid: 9303
-  type: SpawnPointAssistant
+  type: SpawnPointNomad
   components:
   - pos: 12.5,13.5
     parent: 60
     type: Transform
 - uid: 9304
-  type: SpawnPointAssistant
+  type: SpawnPointNomad
   components:
   - pos: 10.5,13.5
     parent: 60

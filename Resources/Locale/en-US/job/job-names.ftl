@@ -40,6 +40,7 @@ job-name-ertmedic = ERT medic
 job-name-ertjanitor = ERT janitor
 job-name-boxer = boxer
 job-name-zookeeper = zookeeper
+job-name-nomad = nomad
 
 # Role timers - Make these alphabetical or I cut you
 JobAtmosphericTechnician = atmospheric technician
@@ -69,6 +70,7 @@ JobMedicalDoctor = medical doctor
 JobMedicalIntern = medical intern
 JobMime = mime
 JobMusician = musician
+JobNomad = nomad
 JobPassenger = passenger
 JobPsychologist = psychologist
 JobQuartermaster = quartermaster

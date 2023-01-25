@@ -1,0 +1,15 @@
+- type: gameMap
+  id: Nomads
+  mapName: "Nomads Classic"
+  mapPath: /Maps/nomads.yml
+  minPlayers: 0
+  stations:
+    Nomads:
+      mapNameTemplate: "{0} Nomads {1}"
+      emergencyShuttlePath: /Maps/Shuttles/emergency_courser.yml
+      nameGenerator: !type:NanotrasenNameGenerator
+        prefixCreator: "14"
+      overflowJobs:
+        - Nomad
+      availableJobs:
+        Nomad: [1000, 1000]

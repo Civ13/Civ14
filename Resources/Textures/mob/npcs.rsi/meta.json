@@ -1,829 +1,809 @@
 {
-  "version": 1,
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "states": [
-    {
-      "name": "male_template",
-      "directions": 4
-    },
-    {
-      "name": "female_template",
-      "directions": 4
-    },
-    {
-      "name": "native_naked",
-      "directions": 4
-    },
-    {
-      "name": "native_ranged1",
-      "directions": 4
-    },
-    {
-      "name": "native_ranged2",
-      "directions": 4
-    },
-    {
-      "name": "native_melee1",
-      "directions": 4
-    },
-    {
-      "name": "native_melee2",
-      "directions": 4
-    },
-    {
-      "name": "native_melee3",
-      "directions": 4
-    },
-    {
-      "name": "native_bigboi",
-      "directions": 4
-    },
-    {
-      "name": "native_ranged1_dead"
-    },
-    {
-      "name": "native_ranged2_dead"
-    },
-    {
-      "name": "native_melee1_dead"
-    },
-    {
-      "name": "native_melee2_dead"
-    },
-    {
-      "name": "native_melee3_dead"
-    },
-    {
-      "name": "native_bigboi_dead"
-    },
-    {
-      "name": "native_ranged1b",
-      "directions": 4
-    },
-    {
-      "name": "native_ranged2b",
-      "directions": 4
-    },
-    {
-      "name": "native_melee1b",
-      "directions": 4
-    },
-    {
-      "name": "native_melee2b",
-      "directions": 4
-    },
-    {
-      "name": "native_melee3b",
-      "directions": 4
-    },
-    {
-      "name": "spanish_sgt",
-      "directions": 4
-    },
-    {
-      "name": "spanish_soldier",
-      "directions": 4
-    },
-    {
-      "name": "spanish_rifleman",
-      "directions": 4
-    },
-    {
-      "name": "spanish_template",
-      "directions": 4
-    },
-    {
-      "name": "spanish_cpt",
-      "directions": 4
-    },
-    {
-      "name": "spanish_lt",
-      "directions": 4
-    },
-    {
-      "name": "piratemelee",
-      "directions": 4
-    },
-    {
-      "name": "piratemelee1",
-      "directions": 4
-    },
-    {
-      "name": "piratemeleeX",
-      "directions": 4
-    },
-    {
-      "name": "piratemelee2",
-      "directions": 4
-    },
-    {
-      "name": "pirateranged",
-      "directions": 4
-    },
-    {
-      "name": "piratemelee_dead",
-      "directions": 4
-    },
-    {
-      "name": "pirateranged_dead",
-      "directions": 4
-    },
-    {
-      "name": "pirate_friendly1",
-      "directions": 4
-    },
-    {
-      "name": "pirate_friendly2",
-      "directions": 4
-    },
-    {
-      "name": "pirate_friendly3",
-      "directions": 4
-    },
-    {
-      "name": "pirate_friendly_captain",
-      "directions": 4,
-      "delays": [
-        [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2
-        ],
-        [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2
-        ],
-        [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2
-        ],
-        [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2
-        ]
-      ]
-    },
-    {
-      "name": "pirate_friendly_blind",
-      "directions": 4
-    },
-    {
-      "name": "british_soldier",
-      "directions": 4
-    },
-    {
-      "name": "civ1",
-      "directions": 4
-    },
-    {
-      "name": "civ2",
-      "directions": 4
-    },
-    {
-      "name": "merchant",
-      "directions": 4
-    },
-    {
-      "name": "civ3",
-      "directions": 4
-    },
-    {
-      "name": "civ4",
-      "directions": 4
-    },
-    {
-      "name": "civ5",
-      "directions": 4
-    },
-    {
-      "name": "barmaiden",
-      "directions": 4
-    },
-    {
-      "name": "civ6",
-      "directions": 4
-    },
-    {
-      "name": "civ7",
-      "directions": 4
-    },
-    {
-      "name": "pirate_friendly_female",
-      "directions": 4
-    },
-    {
-      "name": "civ8",
-      "directions": 4
-    },
-    {
-      "name": "civ9",
-      "directions": 4
-    },
-    {
-      "name": "britishmelee1",
-      "directions": 4
-    },
-    {
-      "name": "britishmelee2",
-      "directions": 4
-    },
-    {
-      "name": "britishmelee3",
-      "directions": 4
-    },
-    {
-      "name": "britishmelee4",
-      "directions": 4
-    },
-    {
-      "name": "britishmelee5",
-      "directions": 4
-    },
-    {
-      "name": "britishmelee6",
-      "directions": 4
-    },
-    {
-      "name": "britishranged1",
-      "directions": 4
-    },
-    {
-      "name": "britishranged2",
-      "directions": 4
-    },
-    {
-      "name": "britishranged3",
-      "directions": 4
-    },
-    {
-      "name": "britishranged4",
-      "directions": 4
-    },
-    {
-      "name": "britishranged5",
-      "directions": 4
-    },
-    {
-      "name": "britishranged6",
-      "directions": 4
-    },
-    {
-      "name": "britishranged1_docile",
-      "directions": 4
-    },
-    {
-      "name": "britishranged2_docile",
-      "directions": 4
-    },
-    {
-      "name": "britishranged3_docile",
-      "directions": 4
-    },
-    {
-      "name": "britishranged4_docile",
-      "directions": 4
-    },
-    {
-      "name": "britishranged5_docile",
-      "directions": 4
-    },
-    {
-      "name": "britishranged6_docile",
-      "directions": 4
-    },
-    {
-      "name": "bandit",
-      "directions": 4
-    },
-    {
-      "name": "bandit_dead"
-    },
-    {
-      "name": "bandit2",
-      "directions": 4
-    },
-    {
-      "name": "bandit2_dead"
-    },
-    {
-      "name": "pmc",
-      "directions": 4
-    },
-    {
-      "name": "pmc_dead",
-      "directions": 4
-    },
-    {
-      "name": "ww2_jap_ranged1",
-      "directions": 4
-    },
-    {
-      "name": "ww2_jap_ranged2",
-      "directions": 4
-    },
-    {
-      "name": "ww2_jap_ranged3",
-      "directions": 4
-    },
-    {
-      "name": "ww2_jap_ranged4",
-      "directions": 4
-    },
-    {
-      "name": "ww2_jap_ranged_summer1",
-      "directions": 4
-    },
-    {
-      "name": "ww2_jap_ranged_summer2",
-      "directions": 4
-    },
-    {
-      "name": "ww2_jap_ranged_summer3",
-      "directions": 4
-    },
-    {
-      "name": "ww2_jap_ranged_summer_template",
-      "directions": 4
-    },
-    {
-      "name": "ww2_jap_ranged_summer4",
-      "directions": 4
-    },
-    {
-      "name": "ww2_american_ranged1",
-      "directions": 4
-    },
-    {
-      "name": "ww2_american_ranged_template",
-      "directions": 4
-    },
-    {
-      "name": "ww2_american_ranged_medic",
-      "directions": 4
-    },
-    {
-      "name": "ww2_jap_ranged_summer_medic",
-      "directions": 4
-    },
-    {
-      "name": "ww2_jap_ranged_summer_medic2",
-      "directions": 4
-    },
-    {
-      "name": "ww2_jap_ranged_summer_sl",
-      "directions": 4
-    },
-    {
-      "name": "ww2_american_ranged_sl",
-      "directions": 4
-    },
-    {
-      "name": "ww2_jap_ranged_summer_mg",
-      "directions": 4
-    },
-    {
-      "name": "ww2_american_ranged_mg",
-      "directions": 4
-    },
-    {
-      "name": "piratemelee",
-      "directions": 4
-    },
-    {
-      "name": "piratemelee1",
-      "directions": 4
-    },
-    {
-      "name": "piratemeleeX",
-      "directions": 4
-    },
-    {
-      "name": "piratemelee2",
-      "directions": 4
-    },
-    {
-      "name": "pirateranged",
-      "directions": 4
-    },
-    {
-      "name": "piratemelee_dead",
-      "directions": 4
-    },
-    {
-      "name": "pirateranged_dead",
-      "directions": 4
-    },
-    {
-      "name": "japmelee",
-      "directions": 4
-    },
-    {
-      "name": "japmelee_dead",
-      "directions": 4
-    },
-    {
-      "name": "japcommander",
-      "directions": 4,
-      "delays": [
-        [
-          0.15,
-          0.15,
-          0.15,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ],
-        [
-          0.15,
-          0.15,
-          0.15,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ],
-        [
-          0.15,
-          0.15,
-          0.15,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ],
-        [
-          0.15,
-          0.15,
-          0.15,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "hostage_m1",
-      "directions": 4
-    },
-    {
-      "name": "hostage_m2",
-      "directions": 4
-    },
-    {
-      "name": "hostage_m3",
-      "directions": 4
-    },
-    {
-      "name": "hostage_m4",
-      "directions": 4
-    },
-    {
-      "name": "hostage_m5",
-      "directions": 4
-    },
-    {
-      "name": "hostage_m1_dead"
-    },
-    {
-      "name": "hostage_m2_dead"
-    },
-    {
-      "name": "hostage_m3_dead"
-    },
-    {
-      "name": "hostage_m4_dead"
-    },
-    {
-      "name": "hostage_m5_dead"
-    },
-    {
-      "name": "slave_template",
-      "directions": 4
-    },
-    {
-      "name": "slave1",
-      "directions": 4
-    },
-    {
-      "name": "slave2",
-      "directions": 4
-    },
-    {
-      "name": "slave3",
-      "directions": 4
-    },
-    {
-      "name": "slave4",
-      "directions": 4
-    },
-    {
-      "name": "slave1_dead"
-    },
-    {
-      "name": "slave2_dead"
-    },
-    {
-      "name": "slave3_dead"
-    },
-    {
-      "name": "slave4_dead"
-    },
-    {
-      "name": "slaver1",
-      "directions": 4
-    },
-    {
-      "name": "slaver2",
-      "directions": 4
-    },
-    {
-      "name": "slaver1_dead"
-    },
-    {
-      "name": "slaver2_dead"
-    },
-    {
-      "name": "civilian_1",
-      "directions": 4
-    },
-    {
-      "name": "civilian_1_dead"
-    },
-    {
-      "name": "civilian_2",
-      "directions": 4
-    },
-    {
-      "name": "civilian_2_dead"
-    },
-    {
-      "name": "civilian_3",
-      "directions": 4
-    },
-    {
-      "name": "civilian_4",
-      "directions": 4
-    },
-    {
-      "name": "civilian_3_dead"
-    },
-    {
-      "name": "civilian_4_dead"
-    },
-    {
-      "name": "civilian_5",
-      "directions": 4
-    },
-    {
-      "name": "civilian_5_dead"
-    },
-    {
-      "name": "greenistani_1",
-      "directions": 4
-    },
-    {
-      "name": "greenistani_2",
-      "directions": 4
-    },
-    {
-      "name": "greenistani_1_dead"
-    },
-    {
-      "name": "greenistani_2_dead"
-    },
-    {
-      "name": "civilian_6",
-      "directions": 4
-    },
-    {
-      "name": "civilian_7",
-      "directions": 4
-    },
-    {
-      "name": "civilian_6_dead"
-    },
-    {
-      "name": "civilian_7_dead"
-    },
-    {
-      "name": "civilian_8",
-      "directions": 4
-    },
-    {
-      "name": "civilian_8_dead"
-    },
-    {
-      "name": "civilian_9",
-      "directions": 4
-    },
-    {
-      "name": "civilian_9_dead"
-    },
-    {
-      "name": "afghcia",
-      "directions": 4
-    },
-    {
-      "name": "afghdrug",
-      "directions": 4
-    },
-    {
-      "name": "rng1",
-      "directions": 4
-    },
-    {
-      "name": "rng2",
-      "directions": 4
-    },
-    {
-      "name": "rng3",
-      "directions": 4
-    },
-    {
-      "name": "rng4",
-      "directions": 4
-    },
-    {
-      "name": "rng_sl",
-      "directions": 4
-    },
-    {
-      "name": "rng_medic",
-      "directions": 4
-    },
-    {
-      "name": "rng1_ng",
-      "directions": 4
-    },
-    {
-      "name": "rng2_ng",
-      "directions": 4
-    },
-    {
-      "name": "rng3_ng",
-      "directions": 4
-    },
-    {
-      "name": "rng4_ng",
-      "directions": 4
-    },
-    {
-      "name": "rng1_dead"
-    },
-    {
-      "name": "rng2_dead"
-    },
-    {
-      "name": "rng3_dead"
-    },
-    {
-      "name": "rng4_dead"
-    },
-    {
-      "name": "rng_sl_dead"
-    },
-    {
-      "name": "rng_medic_dead"
-    },
-    {
-      "name": "muj1",
-      "directions": 4
-    },
-    {
-      "name": "muj1_dead"
-    },
-    {
-      "name": "mujakm",
-      "directions": 4
-    },
-    {
-      "name": "mujakm_dead"
-    },
-    {
-      "name": "mujtemp",
-      "directions": 4
-    },
-    {
-      "name": "muj2",
-      "directions": 4
-    },
-    {
-      "name": "muj2_dead"
-    },
-    {
-      "name": "afghciv1",
-      "directions": 4
-    },
-    {
-      "name": "afghciv2",
-      "directions": 4
-    },
-    {
-      "name": "afghciv3",
-      "directions": 4
-    },
-    {
-      "name": "afghciv4",
-      "directions": 4
-    },
-    {
-      "name": "afghciv5",
-      "directions": 4
-    },
-    {
-      "name": "afghciv6",
-      "directions": 4
-    },
-    {
-      "name": "afghciv7",
-      "directions": 4
-    },
-    {
-      "name": "afghciv8",
-      "directions": 4
-    },
-    {
-      "name": "afghciv9",
-      "directions": 4
-    },
-    {
-      "name": "afghciv1_dead"
-    },
-    {
-      "name": "afghciv2_dead"
-    },
-    {
-      "name": "afghciv3_dead"
-    },
-    {
-      "name": "afghciv4_dead"
-    },
-    {
-      "name": "afghciv5_dead"
-    },
-    {
-      "name": "afghciv6_dead"
-    },
-    {
-      "name": "afghciv7_dead"
-    },
-    {
-      "name": "afghciv8_dead"
-    },
-    {
-      "name": "afghciv9_dead"
-    },
-    {
-      "name": "rus_che1_ng",
-      "directions": 4
-    },
-    {
-      "name": "rus_che2_ng",
-      "directions": 4
-    },
-    {
-      "name": "rus_che3_ng",
-      "directions": 4
-    },
-    {
-      "name": "rus_che4_ng",
-      "directions": 4
-    },
-    {
-      "name": "rus_che1_ng_dead"
-    },
-    {
-      "name": "rus_che2_ng_dead"
-    },
-    {
-      "name": "rus_che3_ng_dead"
-    },
-    {
-      "name": "rus_che4_ng_dead"
-    }
-  ]
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "male_template",
+            "directions": 4
+        },
+        {
+            "name": "female_template",
+            "directions": 4
+        },
+        {
+            "name": "native_naked",
+            "directions": 4
+        },
+        {
+            "name": "native_ranged1",
+            "directions": 4
+        },
+        {
+            "name": "native_ranged2",
+            "directions": 4
+        },
+        {
+            "name": "native_melee1",
+            "directions": 4
+        },
+        {
+            "name": "native_melee2",
+            "directions": 4
+        },
+        {
+            "name": "native_melee3",
+            "directions": 4
+        },
+        {
+            "name": "native_bigboi",
+            "directions": 4
+        },
+        {
+            "name": "native_ranged1_dead"
+        },
+        {
+            "name": "native_ranged2_dead"
+        },
+        {
+            "name": "native_melee1_dead"
+        },
+        {
+            "name": "native_melee2_dead"
+        },
+        {
+            "name": "native_melee3_dead"
+        },
+        {
+            "name": "native_bigboi_dead"
+        },
+        {
+            "name": "native_ranged1b",
+            "directions": 4
+        },
+        {
+            "name": "native_ranged2b",
+            "directions": 4
+        },
+        {
+            "name": "native_melee1b",
+            "directions": 4
+        },
+        {
+            "name": "native_melee2b",
+            "directions": 4
+        },
+        {
+            "name": "native_melee3b",
+            "directions": 4
+        },
+        {
+            "name": "spanish_sgt",
+            "directions": 4
+        },
+        {
+            "name": "spanish_soldier",
+            "directions": 4
+        },
+        {
+            "name": "spanish_rifleman",
+            "directions": 4
+        },
+        {
+            "name": "spanish_template",
+            "directions": 4
+        },
+        {
+            "name": "spanish_cpt",
+            "directions": 4
+        },
+        {
+            "name": "spanish_lt",
+            "directions": 4
+        },
+        {
+            "name": "piratemelee1",
+            "directions": 4
+        },
+        {
+            "name": "piratemeleeX",
+            "directions": 4
+        },
+        {
+            "name": "piratemelee2",
+            "directions": 4
+        },
+        {
+            "name": "pirateranged",
+            "directions": 4
+        },
+        {
+            "name": "pirateranged_dead",
+            "directions": 4
+        },
+        {
+            "name": "pirate_friendly1",
+            "directions": 4
+        },
+        {
+            "name": "pirate_friendly2",
+            "directions": 4
+        },
+        {
+            "name": "pirate_friendly3",
+            "directions": 4
+        },
+        {
+            "name": "pirate_friendly_captain",
+            "directions": 4,
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2
+                ]
+            ]
+        },
+        {
+            "name": "pirate_friendly_blind",
+            "directions": 4
+        },
+        {
+            "name": "british_soldier",
+            "directions": 4
+        },
+        {
+            "name": "civ1",
+            "directions": 4
+        },
+        {
+            "name": "civ2",
+            "directions": 4
+        },
+        {
+            "name": "merchant",
+            "directions": 4
+        },
+        {
+            "name": "civ3",
+            "directions": 4
+        },
+        {
+            "name": "civ4",
+            "directions": 4
+        },
+        {
+            "name": "civ5",
+            "directions": 4
+        },
+        {
+            "name": "barmaiden",
+            "directions": 4
+        },
+        {
+            "name": "civ6",
+            "directions": 4
+        },
+        {
+            "name": "civ7",
+            "directions": 4
+        },
+        {
+            "name": "pirate_friendly_female",
+            "directions": 4
+        },
+        {
+            "name": "civ8",
+            "directions": 4
+        },
+        {
+            "name": "civ9",
+            "directions": 4
+        },
+        {
+            "name": "britishmelee1",
+            "directions": 4
+        },
+        {
+            "name": "britishmelee2",
+            "directions": 4
+        },
+        {
+            "name": "britishmelee3",
+            "directions": 4
+        },
+        {
+            "name": "britishmelee4",
+            "directions": 4
+        },
+        {
+            "name": "britishmelee5",
+            "directions": 4
+        },
+        {
+            "name": "britishmelee6",
+            "directions": 4
+        },
+        {
+            "name": "britishranged1",
+            "directions": 4
+        },
+        {
+            "name": "britishranged2",
+            "directions": 4
+        },
+        {
+            "name": "britishranged3",
+            "directions": 4
+        },
+        {
+            "name": "britishranged4",
+            "directions": 4
+        },
+        {
+            "name": "britishranged5",
+            "directions": 4
+        },
+        {
+            "name": "britishranged6",
+            "directions": 4
+        },
+        {
+            "name": "britishranged1_docile",
+            "directions": 4
+        },
+        {
+            "name": "britishranged2_docile",
+            "directions": 4
+        },
+        {
+            "name": "britishranged3_docile",
+            "directions": 4
+        },
+        {
+            "name": "britishranged4_docile",
+            "directions": 4
+        },
+        {
+            "name": "britishranged5_docile",
+            "directions": 4
+        },
+        {
+            "name": "britishranged6_docile",
+            "directions": 4
+        },
+        {
+            "name": "bandit",
+            "directions": 4
+        },
+        {
+            "name": "bandit_dead"
+        },
+        {
+            "name": "bandit2",
+            "directions": 4
+        },
+        {
+            "name": "bandit2_dead"
+        },
+        {
+            "name": "pmc",
+            "directions": 4
+        },
+        {
+            "name": "pmc_dead",
+            "directions": 4
+        },
+        {
+            "name": "ww2_jap_ranged1",
+            "directions": 4
+        },
+        {
+            "name": "ww2_jap_ranged2",
+            "directions": 4
+        },
+        {
+            "name": "ww2_jap_ranged3",
+            "directions": 4
+        },
+        {
+            "name": "ww2_jap_ranged4",
+            "directions": 4
+        },
+        {
+            "name": "ww2_jap_ranged_summer1",
+            "directions": 4
+        },
+        {
+            "name": "ww2_jap_ranged_summer2",
+            "directions": 4
+        },
+        {
+            "name": "ww2_jap_ranged_summer3",
+            "directions": 4
+        },
+        {
+            "name": "ww2_jap_ranged_summer_template",
+            "directions": 4
+        },
+        {
+            "name": "ww2_jap_ranged_summer4",
+            "directions": 4
+        },
+        {
+            "name": "ww2_american_ranged1",
+            "directions": 4
+        },
+        {
+            "name": "ww2_american_ranged_template",
+            "directions": 4
+        },
+        {
+            "name": "ww2_american_ranged_medic",
+            "directions": 4
+        },
+        {
+            "name": "ww2_jap_ranged_summer_medic",
+            "directions": 4
+        },
+        {
+            "name": "ww2_jap_ranged_summer_medic2",
+            "directions": 4
+        },
+        {
+            "name": "ww2_jap_ranged_summer_sl",
+            "directions": 4
+        },
+        {
+            "name": "ww2_american_ranged_sl",
+            "directions": 4
+        },
+        {
+            "name": "ww2_jap_ranged_summer_mg",
+            "directions": 4
+        },
+        {
+            "name": "ww2_american_ranged_mg",
+            "directions": 4
+        },
+        {
+            "name": "piratemelee",
+            "directions": 4
+        },
+        {
+            "name": "pirateranged",
+            "directions": 4
+        },
+        {
+            "name": "piratemelee_dead",
+            "directions": 4
+        },
+        {
+            "name": "pirateranged_dead",
+            "directions": 4
+        },
+        {
+            "name": "japmelee",
+            "directions": 4
+        },
+        {
+            "name": "japmelee_dead",
+            "directions": 4
+        },
+        {
+            "name": "japcommander",
+            "directions": 4,
+            "delays": [
+                [
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "hostage_m1",
+            "directions": 4
+        },
+        {
+            "name": "hostage_m2",
+            "directions": 4
+        },
+        {
+            "name": "hostage_m3",
+            "directions": 4
+        },
+        {
+            "name": "hostage_m4",
+            "directions": 4
+        },
+        {
+            "name": "hostage_m5",
+            "directions": 4
+        },
+        {
+            "name": "hostage_m1_dead"
+        },
+        {
+            "name": "hostage_m2_dead"
+        },
+        {
+            "name": "hostage_m3_dead"
+        },
+        {
+            "name": "hostage_m4_dead"
+        },
+        {
+            "name": "hostage_m5_dead"
+        },
+        {
+            "name": "slave_template",
+            "directions": 4
+        },
+        {
+            "name": "slave1",
+            "directions": 4
+        },
+        {
+            "name": "slave2",
+            "directions": 4
+        },
+        {
+            "name": "slave3",
+            "directions": 4
+        },
+        {
+            "name": "slave4",
+            "directions": 4
+        },
+        {
+            "name": "slave1_dead"
+        },
+        {
+            "name": "slave2_dead"
+        },
+        {
+            "name": "slave3_dead"
+        },
+        {
+            "name": "slave4_dead"
+        },
+        {
+            "name": "slaver1",
+            "directions": 4
+        },
+        {
+            "name": "slaver2",
+            "directions": 4
+        },
+        {
+            "name": "slaver1_dead"
+        },
+        {
+            "name": "slaver2_dead"
+        },
+        {
+            "name": "civilian_1",
+            "directions": 4
+        },
+        {
+            "name": "civilian_1_dead"
+        },
+        {
+            "name": "civilian_2",
+            "directions": 4
+        },
+        {
+            "name": "civilian_2_dead"
+        },
+        {
+            "name": "civilian_3",
+            "directions": 4
+        },
+        {
+            "name": "civilian_4",
+            "directions": 4
+        },
+        {
+            "name": "civilian_3_dead"
+        },
+        {
+            "name": "civilian_4_dead"
+        },
+        {
+            "name": "civilian_5",
+            "directions": 4
+        },
+        {
+            "name": "civilian_5_dead"
+        },
+        {
+            "name": "greenistani_1",
+            "directions": 4
+        },
+        {
+            "name": "greenistani_2",
+            "directions": 4
+        },
+        {
+            "name": "greenistani_1_dead"
+        },
+        {
+            "name": "greenistani_2_dead"
+        },
+        {
+            "name": "civilian_6",
+            "directions": 4
+        },
+        {
+            "name": "civilian_7",
+            "directions": 4
+        },
+        {
+            "name": "civilian_6_dead"
+        },
+        {
+            "name": "civilian_7_dead"
+        },
+        {
+            "name": "civilian_8",
+            "directions": 4
+        },
+        {
+            "name": "civilian_8_dead"
+        },
+        {
+            "name": "civilian_9",
+            "directions": 4
+        },
+        {
+            "name": "civilian_9_dead"
+        },
+        {
+            "name": "afghcia",
+            "directions": 4
+        },
+        {
+            "name": "afghdrug",
+            "directions": 4
+        },
+        {
+            "name": "rng1",
+            "directions": 4
+        },
+        {
+            "name": "rng2",
+            "directions": 4
+        },
+        {
+            "name": "rng3",
+            "directions": 4
+        },
+        {
+            "name": "rng4",
+            "directions": 4
+        },
+        {
+            "name": "rng_sl",
+            "directions": 4
+        },
+        {
+            "name": "rng_medic",
+            "directions": 4
+        },
+        {
+            "name": "rng1_ng",
+            "directions": 4
+        },
+        {
+            "name": "rng2_ng",
+            "directions": 4
+        },
+        {
+            "name": "rng3_ng",
+            "directions": 4
+        },
+        {
+            "name": "rng4_ng",
+            "directions": 4
+        },
+        {
+            "name": "rng1_dead"
+        },
+        {
+            "name": "rng2_dead"
+        },
+        {
+            "name": "rng3_dead"
+        },
+        {
+            "name": "rng4_dead"
+        },
+        {
+            "name": "rng_sl_dead"
+        },
+        {
+            "name": "rng_medic_dead"
+        },
+        {
+            "name": "muj1",
+            "directions": 4
+        },
+        {
+            "name": "muj1_dead"
+        },
+        {
+            "name": "mujakm",
+            "directions": 4
+        },
+        {
+            "name": "mujakm_dead"
+        },
+        {
+            "name": "mujtemp",
+            "directions": 4
+        },
+        {
+            "name": "muj2",
+            "directions": 4
+        },
+        {
+            "name": "muj2_dead"
+        },
+        {
+            "name": "afghciv1",
+            "directions": 4
+        },
+        {
+            "name": "afghciv2",
+            "directions": 4
+        },
+        {
+            "name": "afghciv3",
+            "directions": 4
+        },
+        {
+            "name": "afghciv4",
+            "directions": 4
+        },
+        {
+            "name": "afghciv5",
+            "directions": 4
+        },
+        {
+            "name": "afghciv6",
+            "directions": 4
+        },
+        {
+            "name": "afghciv7",
+            "directions": 4
+        },
+        {
+            "name": "afghciv8",
+            "directions": 4
+        },
+        {
+            "name": "afghciv9",
+            "directions": 4
+        },
+        {
+            "name": "afghciv1_dead"
+        },
+        {
+            "name": "afghciv2_dead"
+        },
+        {
+            "name": "afghciv3_dead"
+        },
+        {
+            "name": "afghciv4_dead"
+        },
+        {
+            "name": "afghciv5_dead"
+        },
+        {
+            "name": "afghciv6_dead"
+        },
+        {
+            "name": "afghciv7_dead"
+        },
+        {
+            "name": "afghciv8_dead"
+        },
+        {
+            "name": "afghciv9_dead"
+        },
+        {
+            "name": "rus_che1_ng",
+            "directions": 4
+        },
+        {
+            "name": "rus_che2_ng",
+            "directions": 4
+        },
+        {
+            "name": "rus_che3_ng",
+            "directions": 4
+        },
+        {
+            "name": "rus_che4_ng",
+            "directions": 4
+        },
+        {
+            "name": "rus_che1_ng_dead"
+        },
+        {
+            "name": "rus_che2_ng_dead"
+        },
+        {
+            "name": "rus_che3_ng_dead"
+        },
+        {
+            "name": "rus_che4_ng_dead"
+        }
+    ]
 }
