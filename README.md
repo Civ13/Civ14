@@ -1,4 +1,4 @@
-<p align="center"> <img alt="Civilization 13" src="https://civ13.github.io/public/img/banner.png" /></p>
+<p align="center"> <img alt="Civilization 14" width="50%" src="https://raw.githubusercontent.com/taislin/civ14/master/Resources/Textures/Logo/splash.png" /></p>
 
 Civilization 14 is a port of Civilization 13 from BYOND to [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), used for Space Station 14.
 
