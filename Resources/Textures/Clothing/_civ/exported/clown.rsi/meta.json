@@ -8,18 +8,18 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-INNERCLOTHING-clown",
+			"name": "equipped-INNERCLOTHING-clown"
 		},
 		{
-			"name": "clown",
-		},
-		{
-			"directions": 4,
-			"name": "inhand-left-clown",
+			"name": "clown"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-clown",
+			"name": "inhand-left-clown"
+		},
+		{
+			"directions": 4,
+			"name": "inhand-right-clown"
 		}
 	]
 }

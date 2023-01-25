@@ -8,18 +8,18 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-INNERCLOTHING-kilt",
+			"name": "equipped-INNERCLOTHING-kilt"
 		},
 		{
-			"name": "kilt",
-		},
-		{
-			"directions": 4,
-			"name": "inhand-left-kilt",
+			"name": "kilt"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-kilt",
+			"name": "inhand-left-kilt"
+		},
+		{
+			"directions": 4,
+			"name": "inhand-right-kilt"
 		}
 	]
 }

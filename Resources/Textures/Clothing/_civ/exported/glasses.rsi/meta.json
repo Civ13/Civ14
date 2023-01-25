@@ -8,18 +8,18 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-EYES-glasses",
+			"name": "equipped-EYES-glasses"
 		},
 		{
-			"name": "glasses",
-		},
-		{
-			"directions": 4,
-			"name": "inhand-left-glasses",
+			"name": "glasses"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-glasses",
+			"name": "inhand-left-glasses"
+		},
+		{
+			"directions": 4,
+			"name": "inhand-right-glasses"
 		}
 	]
 }

@@ -8,18 +8,18 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-FEET-football",
+			"name": "equipped-FEET-football"
 		},
 		{
-			"name": "football",
-		},
-		{
-			"directions": 4,
-			"name": "inhand-left-football",
+			"name": "football"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-football",
+			"name": "inhand-left-football"
+		},
+		{
+			"directions": 4,
+			"name": "inhand-right-football"
 		}
 	]
 }

@@ -8,18 +8,18 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-MASK-cigon",
+			"name": "equipped-MASK-cigon"
 		},
 		{
-			"name": "cigon",
-		},
-		{
-			"directions": 4,
-			"name": "inhand-left-cigon",
+			"name": "cigon"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-cigon",
+			"name": "inhand-left-cigon"
+		},
+		{
+			"directions": 4,
+			"name": "inhand-right-cigon"
 		}
 	]
 }

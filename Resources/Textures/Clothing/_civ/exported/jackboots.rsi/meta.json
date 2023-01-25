@@ -8,18 +8,18 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-FEET-jackboots",
+			"name": "equipped-FEET-jackboots"
 		},
 		{
-			"name": "jackboots",
-		},
-		{
-			"directions": 4,
-			"name": "inhand-left-jackboots",
+			"name": "jackboots"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-jackboots",
+			"name": "inhand-left-jackboots"
+		},
+		{
+			"directions": 4,
+			"name": "inhand-right-jackboots"
 		}
 	]
 }
