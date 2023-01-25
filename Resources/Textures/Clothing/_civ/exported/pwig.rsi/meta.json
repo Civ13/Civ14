@@ -8,18 +8,18 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-HELMET-pwig",
+			"name": "equipped-HELMET-pwig"
 		},
 		{
-			"name": "pwig",
-		},
-		{
-			"directions": 4,
-			"name": "inhand-left-pwig",
+			"name": "pwig"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-pwig",
+			"name": "inhand-left-pwig"
+		},
+		{
+			"directions": 4,
+			"name": "inhand-right-pwig"
 		}
 	]
 }

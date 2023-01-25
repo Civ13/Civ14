@@ -8,15 +8,15 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-BACKPACK-dp_open",
+			"name": "equipped-BACKPACK-dp_open"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-left-dp_open",
+			"name": "inhand-left-dp_open"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-dp_open",
+			"name": "inhand-right-dp_open"
 		}
 	]
 }

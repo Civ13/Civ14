@@ -8,15 +8,15 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-BACKPACK-bar",
+			"name": "equipped-BACKPACK-bar"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-left-bar",
+			"name": "inhand-left-bar"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-bar",
+			"name": "inhand-right-bar"
 		}
 	]
 }

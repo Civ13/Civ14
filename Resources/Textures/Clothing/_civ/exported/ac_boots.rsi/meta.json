@@ -8,18 +8,18 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-FEET-ac_boots",
+			"name": "equipped-FEET-ac_boots"
 		},
 		{
-			"name": "ac_boots",
-		},
-		{
-			"directions": 4,
-			"name": "inhand-left-ac_boots",
+			"name": "ac_boots"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-ac_boots",
+			"name": "inhand-left-ac_boots"
+		},
+		{
+			"directions": 4,
+			"name": "inhand-right-ac_boots"
 		}
 	]
 }

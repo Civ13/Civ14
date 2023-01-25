@@ -8,26 +8,26 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-HELMET-stormcloak",
+			"name": "equipped-HELMET-stormcloak"
 		},
 		{
 			"directions": 4,
-			"name": "equipped-INNERCLOTHING-stormcloak",
+			"name": "equipped-INNERCLOTHING-stormcloak"
 		},
 		{
 			"directions": 4,
-			"name": "equipped-OUTERCLOTHING-stormcloak",
+			"name": "equipped-OUTERCLOTHING-stormcloak"
 		},
 		{
-			"name": "stormcloak",
-		},
-		{
-			"directions": 4,
-			"name": "inhand-left-stormcloak",
+			"name": "stormcloak"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-stormcloak",
+			"name": "inhand-left-stormcloak"
+		},
+		{
+			"directions": 4,
+			"name": "inhand-right-stormcloak"
 		}
 	]
 }

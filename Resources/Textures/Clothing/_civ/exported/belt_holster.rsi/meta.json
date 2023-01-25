@@ -8,18 +8,18 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-BELT-belt_holster",
+			"name": "equipped-BELT-belt_holster"
 		},
 		{
-			"name": "belt_holster",
-		},
-		{
-			"directions": 4,
-			"name": "inhand-left-belt_holster",
+			"name": "belt_holster"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-belt_holster",
+			"name": "inhand-left-belt_holster"
+		},
+		{
+			"directions": 4,
+			"name": "inhand-right-belt_holster"
 		}
 	]
 }

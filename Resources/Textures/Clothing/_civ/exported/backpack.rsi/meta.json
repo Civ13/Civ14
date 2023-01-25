@@ -8,15 +8,15 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-BACKPACK-backpack",
+			"name": "equipped-BACKPACK-backpack"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-left-backpack",
+			"name": "inhand-left-backpack"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-backpack",
+			"name": "inhand-right-backpack"
 		}
 	]
 }

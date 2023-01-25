@@ -8,18 +8,18 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-OUTERCLOTHING-hazard",
+			"name": "equipped-OUTERCLOTHING-hazard"
 		},
 		{
-			"name": "hazard",
-		},
-		{
-			"directions": 4,
-			"name": "inhand-left-hazard",
+			"name": "hazard"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-hazard",
+			"name": "inhand-left-hazard"
+		},
+		{
+			"directions": 4,
+			"name": "inhand-right-hazard"
 		}
 	]
 }

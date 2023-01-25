@@ -8,18 +8,18 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-HAND-ac_gauntlets",
+			"name": "equipped-HAND-ac_gauntlets"
 		},
 		{
-			"name": "ac_gauntlets",
-		},
-		{
-			"directions": 4,
-			"name": "inhand-left-ac_gauntlets",
+			"name": "ac_gauntlets"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-ac_gauntlets",
+			"name": "inhand-left-ac_gauntlets"
+		},
+		{
+			"directions": 4,
+			"name": "inhand-right-ac_gauntlets"
 		}
 	]
 }

@@ -8,18 +8,18 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-EYES-blindfold",
+			"name": "equipped-EYES-blindfold"
 		},
 		{
-			"name": "blindfold",
-		},
-		{
-			"directions": 4,
-			"name": "inhand-left-blindfold",
+			"name": "blindfold"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-blindfold",
+			"name": "inhand-left-blindfold"
+		},
+		{
+			"directions": 4,
+			"name": "inhand-right-blindfold"
 		}
 	]
 }

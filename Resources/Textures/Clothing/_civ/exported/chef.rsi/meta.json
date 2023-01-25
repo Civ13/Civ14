@@ -8,18 +8,18 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-FEET-chef",
+			"name": "equipped-FEET-chef"
 		},
 		{
-			"name": "chef",
-		},
-		{
-			"directions": 4,
-			"name": "inhand-left-chef",
+			"name": "chef"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-chef",
+			"name": "inhand-left-chef"
+		},
+		{
+			"directions": 4,
+			"name": "inhand-right-chef"
 		}
 	]
 }

@@ -8,18 +8,18 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-HELMET-kevlarhelmet",
+			"name": "equipped-HELMET-kevlarhelmet"
 		},
 		{
-			"name": "kevlarhelmet",
-		},
-		{
-			"directions": 4,
-			"name": "inhand-left-kevlarhelmet",
+			"name": "kevlarhelmet"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-kevlarhelmet",
+			"name": "inhand-left-kevlarhelmet"
+		},
+		{
+			"directions": 4,
+			"name": "inhand-right-kevlarhelmet"
 		}
 	]
 }

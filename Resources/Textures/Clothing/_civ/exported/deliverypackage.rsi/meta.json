@@ -8,11 +8,11 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "inhand-left-deliverypackage",
+			"name": "inhand-left-deliverypackage"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-deliverypackage",
+			"name": "inhand-right-deliverypackage"
 		}
 	]
 }
