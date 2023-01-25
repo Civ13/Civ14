@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "luminol"
+    },
+    {
+      "name": "uv"
+    },
+    {
+      "name": "dust"
+    },
+    {
+      "name": "case"
+    },
+    {
+      "name": "olddna",
+      "delays": [
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "olddna1",
+      "delays": [
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "olddna2",
+      "delays": [
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "olddna3"
+    },
+    {
+      "name": "dnakit"
+    },
+    {
+      "name": "swab"
+    },
+    {
+      "name": "swab_used"
+    },
+    {
+      "name": "card1"
+    },
+    {
+      "name": "card2"
+    },
+    {
+      "name": "card3"
+    },
+    {
+      "name": "card4"
+    },
+    {
+      "name": "card5"
+    },
+    {
+      "name": "card6"
+    },
+    {
+      "name": "card7"
+    },
+    {
+      "name": "microscopeold"
+    },
+    {
+      "name": "microscopeslideold"
+    },
+    {
+      "name": "slide"
+    },
+    {
+      "name": "slideblood"
+    },
+    {
+      "name": "slideswab"
+    },
+    {
+      "name": "slidefiber"
+    },
+    {
+      "name": "printer"
+    },
+    {
+      "name": "printeractive",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "m_glass"
+    },
+    {
+      "name": "unused_forensics_tool"
+    },
+    {
+      "name": "fiberbag"
+    },
+    {
+      "name": "fiber"
+    },
+    {
+      "name": "microscope_adv",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "microscope_advslide",
+      "delays": [
+        [
+          1,
+          0.2,
+          1,
+          0.2,
+          1,
+          1,
+          1,
+          1,
+          0.2,
+          0.2,
+          0.2,
+          1,
+          1,
+          1,
+          0.2,
+          0.2,
+          0.2,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "dnaworking",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.15,
+          0.15,
+          0.15,
+          0.15,
+          0.15,
+          0.15,
+          0.15,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "dnaclosed",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.15,
+          0.15,
+          0.3,
+          0.15,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "dnaopen",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "dnaunpowered"
+    },
+    {
+      "name": "dnaopenunpowered"
+    },
+    {
+      "name": "cards"
+    },
+    {
+      "name": "fingerprint0"
+    },
+    {
+      "name": "fingerprint1"
+    },
+    {
+      "name": "uv_off"
+    },
+    {
+      "name": "uv_on"
+    }
+  ]
+}
