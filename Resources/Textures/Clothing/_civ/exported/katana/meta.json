@@ -8,24 +8,23 @@
 	"states": [
 		{
 			"directions": 9,
-			"name": "equipped-BACKPACK-katana",
+			"name": "equipped-BACKPACK",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-			"name": "equipped-BELT-katana",
+			"name": "equipped-BELT",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-left-katana",
+			"name": "inhand-left-katana",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-right-katana",
+			"name": "inhand-right-katana",
 			"directions": 4
-	
-	}
+		}
 	]
 }

@@ -8,19 +8,18 @@
 	"states": [
 		{
 			"directions": 9,
-			"name": "equipped-BACKPACK-rollingblock_open",
+			"name": "equipped-BACKPACK",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-left-rollingblock_open",
+			"name": "inhand-left-rollingblock_open",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-right-rollingblock_open",
+			"name": "inhand-right-rollingblock_open",
 			"directions": 4
-	
-	}
+		}
 	]
 }

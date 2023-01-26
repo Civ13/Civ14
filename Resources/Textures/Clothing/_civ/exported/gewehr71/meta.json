@@ -8,19 +8,18 @@
 	"states": [
 		{
 			"directions": 9,
-			"name": "equipped-BACKPACK-gewehr71",
+			"name": "equipped-BACKPACK",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-left-gewehr71",
+			"name": "inhand-left-gewehr71",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-right-gewehr71",
+			"name": "inhand-right-gewehr71",
 			"directions": 4
-	
-	}
+		}
 	]
 }

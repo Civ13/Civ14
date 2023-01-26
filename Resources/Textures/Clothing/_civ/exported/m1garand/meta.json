@@ -8,19 +8,18 @@
 	"states": [
 		{
 			"directions": 9,
-			"name": "equipped-BACKPACK-m1garand",
+			"name": "equipped-BACKPACK",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-left-m1garand",
+			"name": "inhand-left-m1garand",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-right-m1garand",
+			"name": "inhand-right-m1garand",
 			"directions": 4
-	
-	}
+		}
 	]
 }

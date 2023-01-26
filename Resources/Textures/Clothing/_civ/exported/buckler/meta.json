@@ -8,17 +8,17 @@
 	"states": [
 		{
 			"directions": 9,
-			"name": "equipped-BACKPACK-buckler",
+			"name": "equipped-BACKPACK",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-left-buckler",
+			"name": "inhand-left-buckler",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-right-buckler",
+			"name": "inhand-right-buckler",
 			"directions": 4
 		}
 	]

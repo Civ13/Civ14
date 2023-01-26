@@ -8,19 +8,18 @@
 	"states": [
 		{
 			"directions": 9,
-			"name": "equipped-BACKPACK-g3_open",
+			"name": "equipped-BACKPACK",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-left-g3_open",
+			"name": "inhand-left-g3_open",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-right-g3_open",
+			"name": "inhand-right-g3_open",
 			"directions": 4
-	
-	}
+		}
 	]
 }

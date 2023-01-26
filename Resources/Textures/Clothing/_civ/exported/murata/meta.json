@@ -8,19 +8,18 @@
 	"states": [
 		{
 			"directions": 9,
-			"name": "equipped-BACKPACK-murata",
+			"name": "equipped-BACKPACK",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-left-murata",
+			"name": "inhand-left-murata",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-right-murata",
+			"name": "inhand-right-murata",
 			"directions": 4
-	
-	}
+		}
 	]
 }

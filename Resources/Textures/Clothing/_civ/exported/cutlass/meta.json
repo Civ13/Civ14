@@ -8,22 +8,22 @@
 	"states": [
 		{
 			"directions": 9,
-			"name": "equipped-BACKPACK-cutlass",
+			"name": "equipped-BACKPACK",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-			"name": "equipped-BELT-cutlass",
+			"name": "equipped-BELT",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-left-cutlass",
+			"name": "inhand-left-cutlass",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-right-cutlass",
+			"name": "inhand-right-cutlass",
 			"directions": 4
 		}
 	]

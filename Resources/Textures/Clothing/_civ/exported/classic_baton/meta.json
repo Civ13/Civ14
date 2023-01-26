@@ -8,17 +8,17 @@
 	"states": [
 		{
 			"directions": 9,
-			"name": "equipped-BELT-classic_baton",
+			"name": "equipped-BELT",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-left-classic_baton",
+			"name": "inhand-left-classic_baton",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-right-classic_baton",
+			"name": "inhand-right-classic_baton",
 			"directions": 4
 		}
 	]

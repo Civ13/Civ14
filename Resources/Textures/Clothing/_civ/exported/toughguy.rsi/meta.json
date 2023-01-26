@@ -8,11 +8,11 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-FEET-toughguy"
+			"name": "equipped-FEET"
 		},
 		{
 			"directions": 4,
-			"name": "equipped-HAND-toughguy"
+			"name": "equipped-HAND"
 		},
 		{
 			"directions": 4,
@@ -20,7 +20,7 @@
 		},
 		{
 			"directions": 4,
-			"name": "equipped-INNERCLOTHING-toughguy"
+			"name": "equipped-INNERCLOTHING"
 		},
 		{
 			"name": "toughguy"

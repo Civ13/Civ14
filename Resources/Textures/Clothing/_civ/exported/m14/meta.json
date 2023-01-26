@@ -8,19 +8,18 @@
 	"states": [
 		{
 			"directions": 9,
-			"name": "equipped-BACKPACK-m14",
+			"name": "equipped-BACKPACK",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-left-m14",
+			"name": "inhand-left-m14",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-right-m14",
+			"name": "inhand-right-m14",
 			"directions": 4
-	
-	}
+		}
 	]
 }

@@ -8,19 +8,18 @@
 	"states": [
 		{
 			"directions": 9,
-			"name": "equipped-BELT-pen",
+			"name": "equipped-BELT",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-left-pen",
+			"name": "inhand-left-pen",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-right-pen",
+			"name": "inhand-right-pen",
 			"directions": 4
-	
-	}
+		}
 	]
 }

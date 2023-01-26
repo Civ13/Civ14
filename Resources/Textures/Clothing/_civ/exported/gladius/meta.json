@@ -8,24 +8,23 @@
 	"states": [
 		{
 			"directions": 9,
-			"name": "equipped-BACKPACK-gladius",
+			"name": "equipped-BACKPACK",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-			"name": "equipped-BELT-gladius",
+			"name": "equipped-BELT",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-left-gladius",
+			"name": "inhand-left-gladius",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-right-gladius",
+			"name": "inhand-right-gladius",
 			"directions": 4
-	
-	}
+		}
 	]
 }

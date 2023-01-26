@@ -8,19 +8,18 @@
 	"states": [
 		{
 			"directions": 9,
-			"name": "equipped-BACKPACK-mosin30",
+			"name": "equipped-BACKPACK",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-left-mosin30",
+			"name": "inhand-left-mosin30",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-right-mosin30",
+			"name": "inhand-right-mosin30",
 			"directions": 4
-	
-	}
+		}
 	]
 }

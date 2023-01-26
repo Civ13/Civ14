@@ -8,7 +8,7 @@
 	"states": [
 		{
 			"directions": 9,
-			"name": "equipped-OUTERCLOTHING-labcoat",
+			"name": "equipped-OUTERCLOTHING",
 			"directions": 4
 		},
 		{
@@ -17,14 +17,13 @@
 		},
 		{
 			"directions": 9,
-            "name": "inhand-left-labcoat",
+			"name": "inhand-left-labcoat",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-right-labcoat",
+			"name": "inhand-right-labcoat",
 			"directions": 4
-	
-	}
+		}
 	]
 }

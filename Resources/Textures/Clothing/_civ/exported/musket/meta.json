@@ -8,19 +8,18 @@
 	"states": [
 		{
 			"directions": 9,
-			"name": "equipped-BACKPACK-musket",
+			"name": "equipped-BACKPACK",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-left-musket",
+			"name": "inhand-left-musket",
 			"directions": 4
 		},
 		{
 			"directions": 9,
-            "name": "inhand-right-musket",
+			"name": "inhand-right-musket",
 			"directions": 4
-	
-	}
+		}
 	]
 }

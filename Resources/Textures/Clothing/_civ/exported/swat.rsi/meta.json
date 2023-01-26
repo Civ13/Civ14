@@ -8,11 +8,11 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "equipped-FEET-swat"
+			"name": "equipped-FEET"
 		},
 		{
 			"directions": 4,
-			"name": "equipped-HAND-swat"
+			"name": "equipped-HAND"
 		},
 		{
 			"directions": 4,
@@ -20,15 +20,15 @@
 		},
 		{
 			"directions": 4,
-			"name": "equipped-INNERCLOTHING-swat"
+			"name": "equipped-INNERCLOTHING"
 		},
 		{
 			"directions": 4,
-			"name": "equipped-NECK-swat"
+			"name": "equipped-NECK"
 		},
 		{
 			"directions": 4,
-			"name": "equipped-OUTERCLOTHING-swat"
+			"name": "equipped-OUTERCLOTHING"
 		},
 		{
 			"name": "swat"
