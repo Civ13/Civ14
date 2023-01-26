@@ -2,20 +2,6 @@
 
 - type: entity
   parent: ClothingShoesBase
-  id: shoes
-  name: shoes
-  description: Comfortable-looking shoes.
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
-
-
-
-
-- type: entity
-  parent: ClothingShoesBase
   id: shoes-color
   name: shoes
   description: A pair of shoes.
@@ -1019,19 +1005,6 @@
   - type: Clothing
     sprite: Clothing/_civ/exported/dwoots.rsi
 
-
-
-
-- type: entity
-  parent: ClothingShoesBase
-  id: shoes-sneakers
-  name: shoes
-  description: Comfortable-looking shoes.
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
 
 
 

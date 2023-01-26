@@ -1,16 +1,5 @@
 - type: entity
   parent: ClothingHeadBase
-  id: head
-  name: head
-  description:
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/.rsi
-
-- type: entity
-  parent: ClothingHeadBase
   id: head-helmet-redguard
   name: Imperial Red Guard Helmet
   description: A reinforced plastoid helmet of the Extra-Galactic Empire's Red Guards.
@@ -5657,17 +5646,6 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: head-custom
-  name: head
-  description:
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/.rsi
-
-- type: entity
-  parent: ClothingHeadBase
   id: head-custom-custom_beanie
   name: beanie
   description: A warm winter beanie.
@@ -6436,16 +6414,6 @@
     - type: Clothing
       sprite: Clothing/_civ/exported/ushanka_new.rsi
 
-- type: entity
-  parent: ClothingHeadBase
-  id: head-ww2
-  name: head
-  description:
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -6889,17 +6857,6 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: head-coldwar
-  name: head
-  description:
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/.rsi
-
-- type: entity
-  parent: ClothingHeadBase
   id: head-coldwar-soviet_officer
   name: soviet officer cap
   description: A cap worn by Soviet officers.
@@ -6908,17 +6865,6 @@
       sprite: Clothing/_civ/exported/sov_officercap2.rsi
     - type: Clothing
       sprite: Clothing/_civ/exported/sov_officercap2.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: head-fieldcap
-  name: head
-  description:
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -7319,16 +7265,6 @@
     - type: Clothing
       sprite: Clothing/_civ/exported/fedora.rsi
 
-- type: entity
-  parent: ClothingHeadBase
-  id: head-ww
-  name: head
-  description:
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -7420,28 +7356,6 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: head-ph_us_war
-  name: head
-  description:
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: head-ph_us_war-filipino
-  name: head
-  description:
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/.rsi
-
-- type: entity
-  parent: ClothingHeadBase
   id: head-ph_us_war-filipino-fil_off_cap
   name: Filipino Officer Cap
   description: A cap worn by Filipino Officers of the Philippine Republic Army.
@@ -7461,17 +7375,6 @@
       sprite: Clothing/_civ/exported/baliwag.rsi
     - type: Clothing
       sprite: Clothing/_civ/exported/baliwag.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: head-ph_us_war-american
-  name: head
-  description:
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/.rsi
 
 - type: entity
   parent: ClothingHeadBase

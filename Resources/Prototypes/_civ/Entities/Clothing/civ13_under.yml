@@ -1,19 +1,4 @@
 
-
-- type: entity
-  parent: ClothingUniformBase
-  id: under
-  name: under
-  description: 
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
-
-
-
-
 - type: entity
   parent: ClothingUniformBase
   id: under-chaplain
@@ -1258,22 +1243,6 @@
     sprite: Clothing/_civ/exported/sov_kzs.rsi
 
 
-
-
-- type: entity
-  parent: ClothingUniformBase
-  id: under-coldwar
-  name: under
-  description: 
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
-
-
-
-
 - type: entity
   parent: ClothingUniformBase
   id: under-coldwar-soviet_officer
@@ -1284,20 +1253,6 @@
     sprite: Clothing/_civ/exported/sovuni_officer2.rsi
   - type: Clothing
     sprite: Clothing/_civ/exported/sovuni_officer2.rsi
-
-
-
-
-- type: entity
-  parent: ClothingUniformBase
-  id: under-coldwar-dra
-  name: under
-  description: 
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
 
 
 
@@ -1494,20 +1449,6 @@
     sprite: Clothing/_civ/exported/gator_pants.rsi
   - type: Clothing
     sprite: Clothing/_civ/exported/gator_pants.rsi
-
-
-
-
-- type: entity
-  parent: ClothingUniformBase
-  id: under-ww2
-  name: under
-  description: 
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
 
 
 
@@ -2928,34 +2869,6 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: under-ph_us_war
-  name: under
-  description: 
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
-
-
-
-
-- type: entity
-  parent: ClothingUniformBase
-  id: under-ph_us_war-filipino
-  name: under
-  description: 
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
-
-
-
-
-- type: entity
-  parent: ClothingUniformBase
   id: under-ph_us_war-filipino-filuni
   name: Philippine Republic Army Uniform
   description: A standard philippine republic army uniform.
@@ -2978,21 +2891,6 @@
     sprite: Clothing/_civ/exported/filuni_sniper.rsi
   - type: Clothing
     sprite: Clothing/_civ/exported/filuni_sniper.rsi
-
-
-
-
-- type: entity
-  parent: ClothingUniformBase
-  id: under-ph_us_war-american
-  name: under
-  description: 
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
-
 
 
 
@@ -3188,20 +3086,6 @@
     sprite: Clothing/_civ/exported/dressr.rsi
   - type: Clothing
     sprite: Clothing/_civ/exported/dressr.rsi
-
-
-
-
-- type: entity
-  parent: ClothingUniformBase
-  id: under-debutante
-  name: under
-  description: 
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
 
 
 
@@ -4706,20 +4590,6 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: under-sari
-  name: under
-  description: 
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
-
-
-
-
-- type: entity
-  parent: ClothingUniformBase
   id: under-sari-blue
   name: blue sari
   description: A satin layered piece of clothing for women, made in indian style
@@ -4938,21 +4808,6 @@
     sprite: Clothing/_civ/exported/haori_samurai3.rsi
   - type: Clothing
     sprite: Clothing/_civ/exported/haori_samurai3.rsi
-
-
-
-
-- type: entity
-  parent: ClothingUniformBase
-  id: under-tes13
-  name: under
-  description: 
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
-
 
 
 
@@ -5754,19 +5609,6 @@
 
 
 
-- type: entity
-  parent: ClothingUniformBase
-  id: under-ww1
-  name: under
-  description: 
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
-
-
-
 
 - type: entity
   parent: ClothingUniformBase
@@ -5821,23 +5663,6 @@
   - type: Clothing
     sprite: Clothing/_civ/exported/ww1_french.rsi
 
-
-
-
-- type: entity
-  parent: ClothingUniformBase
-  id: under-red
-  name: under
-  description: 
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
-
-
-
-
 - type: entity
   parent: ClothingUniformBase
   id: under-red-strappedbikini
@@ -5876,21 +5701,6 @@
     sprite: Clothing/_civ/exported/r_swimtrunks.rsi
   - type: Clothing
     sprite: Clothing/_civ/exported/r_swimtrunks.rsi
-
-
-
-
-- type: entity
-  parent: ClothingUniformBase
-  id: under-blue
-  name: under
-  description: 
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
-
 
 
 
@@ -5934,22 +5744,6 @@
     sprite: Clothing/_civ/exported/b_swimtrunks.rsi
 
 
-
-
-- type: entity
-  parent: ClothingUniformBase
-  id: under-green
-  name: under
-  description: 
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
-
-
-
-
 - type: entity
   parent: ClothingUniformBase
   id: under-green-strappedbikini
@@ -5988,21 +5782,6 @@
     sprite: Clothing/_civ/exported/g_swimtrunks.rsi
   - type: Clothing
     sprite: Clothing/_civ/exported/g_swimtrunks.rsi
-
-
-
-
-- type: entity
-  parent: ClothingUniformBase
-  id: under-custom
-  name: under
-  description: 
-  components:
-  - type: Sprite
-    sprite: Clothing/_civ/exported/.rsi
-  - type: Clothing
-    sprite: Clothing/_civ/exported/.rsi
-
 
 
 
