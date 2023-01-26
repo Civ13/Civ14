@@ -8,18 +8,18 @@
     "states": [
         {
             "directions": 4,
-            "name": "equipped-HELMET",
+            "name": "equipped-HELMET"
         },
         {
-            "name": "ac_hood"
-        },
-        {
-            "directions": 4,
-            "name": "inhand-left-ac_hood",
+            "name": "icon"
         },
         {
             "directions": 4,
-            "name": "inhand-right-ac_hood",
+            "name": "inhand-left"
+        },
+        {
+            "directions": 4,
+            "name": "inhand-right"
         }
     ]
 }

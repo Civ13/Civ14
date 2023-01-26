@@ -11,15 +11,15 @@
 			"name": "equipped-OUTERCLOTHING"
 		},
 		{
-			"name": "hazard"
+			"name": "icon"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-left-hazard"
+			"name": "inhand-left"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-hazard"
+			"name": "inhand-right"
 		}
 	]
 }

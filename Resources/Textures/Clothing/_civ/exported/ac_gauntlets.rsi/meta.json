@@ -11,15 +11,15 @@
 			"name": "equipped-HAND"
 		},
 		{
-			"name": "ac_gauntlets"
+			"name": "icon"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-left-ac_gauntlets"
+			"name": "inhand-left"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-ac_gauntlets"
+			"name": "inhand-right"
 		}
 	]
 }

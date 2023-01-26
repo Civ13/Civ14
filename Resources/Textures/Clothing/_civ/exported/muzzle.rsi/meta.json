@@ -11,15 +11,15 @@
 			"name": "equipped-MASK"
 		},
 		{
-			"name": "muzzle"
+			"name": "icon"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-left-muzzle"
+			"name": "inhand-left"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-muzzle"
+			"name": "inhand-right"
 		}
 	]
 }

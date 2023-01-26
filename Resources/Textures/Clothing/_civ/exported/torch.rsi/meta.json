@@ -8,11 +8,11 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "inhand-left-torch"
+			"name": "inhand-left"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-torch"
+			"name": "inhand-right"
 		}
 	]
 }

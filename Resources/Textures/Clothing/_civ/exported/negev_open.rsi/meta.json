@@ -8,11 +8,11 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "inhand-left-negev_open"
+			"name": "inhand-left"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-negev_open"
+			"name": "inhand-right"
 		}
 	]
 }

@@ -8,11 +8,11 @@
 	"states": [
 		{
 			"directions": 4,
-			"name": "inhand-left-chain"
+			"name": "inhand-left"
 		},
 		{
 			"directions": 4,
-			"name": "inhand-right-chain"
+			"name": "inhand-right"
 		}
 	]
 }
