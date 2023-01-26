@@ -7,13 +7,11 @@
 	},
 	"states": [
 		{
-			"directions": 9,
-			"name": "equipped-HELMET-union_hat",
-			"directions": 4
+			"directions": 4,
+			"name": "equipped-HELMET",
 		},
 		{
 			"name": "union_hat",
-			"directions": 4
 		}
 	]
 }

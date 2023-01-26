@@ -7,14 +7,12 @@
 	},
 	"states": [
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "inhand-left-greek_standard",
-			"directions": 4
 		},
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "inhand-right-greek_standard",
-			"directions": 4
 		}
 	]
 }

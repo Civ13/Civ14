@@ -7,14 +7,12 @@
 	},
 	"states": [
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "inhand-left-glock17",
-			"directions": 4
 		},
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "inhand-right-glock17",
-			"directions": 4
 		}
 	]
 }

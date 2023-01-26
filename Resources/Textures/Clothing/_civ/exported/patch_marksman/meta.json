@@ -7,13 +7,11 @@
 	},
 	"states": [
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "equipped-NECK",
-			"directions": 4
 		},
 		{
 			"name": "patch_marksman",
-			"directions": 4
 		}
 	]
 }

@@ -7,13 +7,11 @@
 	},
 	"states": [
 		{
-			"directions": 9,
-			"name": "equipped-HELMET-ach_white",
-			"directions": 4
+			"directions": 4,
+			"name": "equipped-HELMET",
 		},
 		{
 			"name": "ach_white",
-			"directions": 4
 		}
 	]
 }

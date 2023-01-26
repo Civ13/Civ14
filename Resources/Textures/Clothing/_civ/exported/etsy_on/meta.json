@@ -7,14 +7,12 @@
 	},
 	"states": [
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "inhand-left-etsy_on",
-			"directions": 4
 		},
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "inhand-right-etsy_on",
-			"directions": 4
 		}
 	]
 }

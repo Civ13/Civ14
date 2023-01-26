@@ -7,18 +7,15 @@
 	},
 	"states": [
 		{
-			"directions": 9,
-			"name": "equipped-HELMET-nap_satsuma",
-			"directions": 4
+			"directions": 4,
+			"name": "equipped-HELMET",
 		},
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "equipped-INNERCLOTHING",
-			"directions": 4
 		},
 		{
 			"name": "nap_satsuma",
-			"directions": 4
 		}
 	]
 }

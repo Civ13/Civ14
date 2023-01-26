@@ -7,18 +7,15 @@
 	},
 	"states": [
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "equipped-BELT",
-			"directions": 4
 		},
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "equipped-NECK",
-			"directions": 4
 		},
 		{
 			"name": "sheriff",
-			"directions": 4
 		}
 	]
 }

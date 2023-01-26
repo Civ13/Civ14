@@ -7,14 +7,12 @@
 	},
 	"states": [
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "inhand-left-lawyer_blue",
-			"directions": 4
 		},
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "inhand-right-lawyer_blue",
-			"directions": 4
 		}
 	]
 }

@@ -7,14 +7,12 @@
 	},
 	"states": [
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "inhand-left-type100_flamethrower",
-			"directions": 4
 		},
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "inhand-right-type100_flamethrower",
-			"directions": 4
 		}
 	]
 }

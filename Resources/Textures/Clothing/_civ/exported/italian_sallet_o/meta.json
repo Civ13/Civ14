@@ -7,13 +7,11 @@
 	},
 	"states": [
 		{
-			"directions": 9,
-			"name": "equipped-HELMET-italian_sallet_o",
-			"directions": 4
+			"directions": 4,
+			"name": "equipped-HELMET",
 		},
 		{
 			"name": "italian_sallet_o",
-			"directions": 4
 		}
 	]
 }

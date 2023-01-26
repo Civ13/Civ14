@@ -7,13 +7,11 @@
 	},
 	"states": [
 		{
-			"directions": 9,
-			"name": "equipped-HELMET-m26_medic",
-			"directions": 4
+			"directions": 4,
+			"name": "equipped-HELMET",
 		},
 		{
 			"name": "m26_medic",
-			"directions": 4
 		}
 	]
 }

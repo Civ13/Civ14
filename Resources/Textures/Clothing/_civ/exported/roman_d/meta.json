@@ -7,13 +7,11 @@
 	},
 	"states": [
 		{
-			"directions": 9,
-			"name": "equipped-HELMET-roman_d",
-			"directions": 4
+			"directions": 4,
+			"name": "equipped-HELMET",
 		},
 		{
 			"name": "roman_d",
-			"directions": 4
 		}
 	]
 }

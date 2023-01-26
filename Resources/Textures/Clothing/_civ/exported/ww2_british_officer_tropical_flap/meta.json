@@ -7,13 +7,11 @@
 	},
 	"states": [
 		{
-			"directions": 9,
-			"name": "equipped-HELMET-ww2_british_officer_tropical_flap",
-			"directions": 4
+			"directions": 4,
+			"name": "equipped-HELMET",
 		},
 		{
 			"name": "ww2_british_officer_tropical_flap",
-			"directions": 4
 		}
 	]
 }

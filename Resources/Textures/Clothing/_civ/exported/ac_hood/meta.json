@@ -7,22 +7,19 @@
     },
     "states": [
         {
-            "directions": 9,
-            "name": "equipped-HELMET-ac_hood",
-            "directions": 4
+            "directions": 4,
+            "name": "equipped-HELMET",
         },
         {
             "name": "ac_hood"
         },
         {
-            "directions": 9,
+            "directions": 4,
             "name": "inhand-left-ac_hood",
-            "directions": 4
         },
         {
-            "directions": 9,
+            "directions": 4,
             "name": "inhand-right-ac_hood",
-            "directions": 4
         }
     ]
 }

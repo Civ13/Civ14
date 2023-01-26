@@ -7,23 +7,19 @@
 	},
 	"states": [
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "equipped-MASK",
-			"directions": 4
 		},
 		{
 			"name": "cigoff",
-			"directions": 4
 		},
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "inhand-left-cigoff",
-			"directions": 4
 		},
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "inhand-right-cigoff",
-			"directions": 4
 		}
 	]
 }

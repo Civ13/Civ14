@@ -8,17 +8,14 @@
 	"states": [
 		{
 			"name": "nursesuit",
-			"directions": 4
 		},
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "inhand-left-nursesuit",
-			"directions": 4
 		},
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "inhand-right-nursesuit",
-			"directions": 4
 		}
 	]
 }

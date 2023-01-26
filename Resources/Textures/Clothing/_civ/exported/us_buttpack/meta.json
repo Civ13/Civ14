@@ -7,17 +7,14 @@
 	},
 	"states": [
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "equipped-BACKPACK",
-			"directions": 4
 		},
 		{
 			"name": "inhand-left-us_buttpack",
-			"directions": 4
 		},
 		{
 			"name": "inhand-right-us_buttpack",
-			"directions": 4
 		}
 	]
 }

@@ -7,18 +7,15 @@
 	},
 	"states": [
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "equipped-INNERCLOTHING",
-			"directions": 4
 		},
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "equipped-OUTERCLOTHING",
-			"directions": 4
 		},
 		{
 			"name": "french_officer",
-			"directions": 4
 		}
 	]
 }

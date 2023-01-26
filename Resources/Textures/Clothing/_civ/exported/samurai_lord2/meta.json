@@ -7,18 +7,15 @@
 	},
 	"states": [
 		{
-			"directions": 9,
-			"name": "equipped-HELMET-samurai_lord2",
-			"directions": 4
+			"directions": 4,
+			"name": "equipped-HELMET",
 		},
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "equipped-OUTERCLOTHING",
-			"directions": 4
 		},
 		{
 			"name": "samurai_lord2",
-			"directions": 4
 		}
 	]
 }

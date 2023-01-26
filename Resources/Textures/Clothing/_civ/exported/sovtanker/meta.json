@@ -7,18 +7,15 @@
 	},
 	"states": [
 		{
-			"directions": 9,
-			"name": "equipped-HELMET-sovtanker",
-			"directions": 4
+			"directions": 4,
+			"name": "equipped-HELMET",
 		},
 		{
-			"directions": 9,
+			"directions": 4,
 			"name": "equipped-INNERCLOTHING",
-			"directions": 4
 		},
 		{
 			"name": "sovtanker",
-			"directions": 4
 		}
 	]
 }
