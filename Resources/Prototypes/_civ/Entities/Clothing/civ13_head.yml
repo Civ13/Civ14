@@ -1180,66 +1180,6 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: head-helmet-modern-ushelmet-camo
-  name: M1 camo helmet
-  description: A typical US Army helmet. With a Mitchell camo cover.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/m1_camo_mitchell.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/m1_camo_mitchell.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.55
-          Slash: 0.55
-          Piercing: 0.15
-          Arrow: 0.45
-          Heat: 0.15
-          Radiation: 0
-
-- type: entity
-  parent: ClothingHeadBase
-  id: head-helmet-modern-ushelmet-camo-accessory
-  name: M1 camo helmet
-  description: A typical US Army helmet. With a Mitchell camo cover.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/m1_camo_mitchell.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/m1_camo_mitchell.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.55
-          Slash: 0.55
-          Piercing: 0.15
-          Arrow: 0.45
-          Heat: 0.15
-          Radiation: 0
-
-- type: entity
-  parent: ClothingHeadBase
-  id: head-helmet-modern-ushelmet-camo-lt
-  name: M1 camo helmet
-  description: A typical US Army helmet. With a Mitchell camo cover.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/m1_camo_mitchell_lt.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/m1_camo_mitchell_lt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.55
-          Slash: 0.55
-          Piercing: 0.15
-          Arrow: 0.45
-          Heat: 0.15
-          Radiation: 0
-
-- type: entity
-  parent: ClothingHeadBase
   id: head-helmet-modern-ushelmet-late
   name: M1 helmet
   description: A typical us army helmet.
@@ -5426,17 +5366,6 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: head-hairflower
-  name: hair flower pin
-  description: Smells nice.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/hairflower.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/hairflower.rsi
-
-- type: entity
-  parent: ClothingHeadBase
   id: head-powdered_wig
   name: powdered wig
   description: A powdered wig.
@@ -5621,17 +5550,6 @@
       sprite: Clothing/_civ/exported/philosopher_wig.rsi
     - type: Clothing
       sprite: Clothing/_civ/exported/philosopher_wig.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: head-orangebandana
-  name: orange bandana
-  description: An orange piece of cloth, worn on the head.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/orange_bandana.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/orange_bandana.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -6413,7 +6331,6 @@
       sprite: Clothing/_civ/exported/ushanka_new.rsi
     - type: Clothing
       sprite: Clothing/_civ/exported/ushanka_new.rsi
-
 
 - type: entity
   parent: ClothingHeadBase
@@ -7264,7 +7181,6 @@
       sprite: Clothing/_civ/exported/fedora.rsi
     - type: Clothing
       sprite: Clothing/_civ/exported/fedora.rsi
-
 
 - type: entity
   parent: ClothingHeadBase

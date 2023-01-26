@@ -10,14 +10,11 @@
     "states": [
         {
             "directions": 4,
-            "name": "equipped-INNERCLOTHING"
+            "name": "inhand-left"
         },
         {
             "directions": 4,
-            "name": "equipped-OUTERCLOTHING"
-        },
-        {
-            "name": "icon"
+            "name": "inhand-right"
         }
     ]
 }
