@@ -98,9 +98,7 @@ entities:
   - uid: 0
     components:
       - type: MetaData
-      - pos: -1.7478588,0.38306206
-        parent: 19
-        type: Transform
+      - type: Transform
       - type: PhysicsMap
       - type: Broadphase
       - type: OccluderTree
@@ -111,8 +109,6 @@ entities:
         enabled: True
         type: Gravity
       - type: MapLight
-      - id: Nomads
-        type: BecomesStation
       - space: False
         mixture:
           volume: 2500
@@ -262,19 +258,4 @@ entities:
     components:
       - pos: -3.5,14.5
         parent: 0
-        type: Transform
-  - uid: 19
-    components:
-      - type: MetaData
-      - type: Transform
-      - index: 7
-        type: Map
-      - type: PhysicsMap
-      - type: Broadphase
-      - type: OccluderTree
-  - uid: 20
-    type: LightSun
-    components:
-      - pos: -5.5,13.5
-        parent: 1
         type: Transform
