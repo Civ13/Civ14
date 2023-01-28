@@ -5302,39 +5302,6 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: head-caphat-cap
-  name: captain's cap
-  description: You fear to wear it for the negligence it brings.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/capcap.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/capcap.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: head-caphat-formal
-  name: parade hat
-  description: No one in a commanding position should be without a perfect, white hat of ultimate authority.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/officercap.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/officercap.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: head-caphat-hop
-  name: crew resource's hat
-  description: A stylish hat that both protects you from enraged former-crewmembers and gives you a false sense of authority.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/hopcap.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/hopcap.rsi
-
-- type: entity
-  parent: ClothingHeadBase
   id: head-chaplain_hood
   name: preacher's hood
   description: It's hood that covers the head.
@@ -5343,26 +5310,6 @@
       sprite: Clothing/_civ/exported/chaplain_hood.rsi
     - type: Clothing
       sprite: Clothing/_civ/exported/chaplain_hood.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: head-welding
-  name: welding helmet
-  description: A head-mounted face cover designed to protect the wearer completely from arc eye.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/welding.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/welding.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.1
-          Slash: 0.1
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
 
 - type: entity
   parent: ClothingHeadBase
@@ -5462,17 +5409,6 @@
       sprite: Clothing/_civ/exported/bandana_olive.rsi
     - type: Clothing
       sprite: Clothing/_civ/exported/bandana_olive.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: head-beaverhat
-  name: beaver hat
-  description: Soft felt makes this hat both comfortable and elegant.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/beaver_hat.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/beaver_hat.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -5773,17 +5709,6 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: head-repmedicalcap
-  name: republic medical officer cap
-  description: a tight fitting grey cap.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/repmedicalofficer_cap.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/repmedicalofficer_cap.rsi
-
-- type: entity
-  parent: ClothingHeadBase
   id: head-impofficercap
   name: imperial officer cap
   description: a tight fitting grey cap.
@@ -5990,17 +5915,6 @@
       sprite: Clothing/_civ/exported/wolfpelt.rsi
     - type: Clothing
       sprite: Clothing/_civ/exported/wolfpelt.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: head-wolfpelt-white
-  name: white wolfpelt headcover
-  description: A wolf pelt turned into a headcover.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/whitewolfpelt.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/whitewolfpelt.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -8171,28 +8085,6 @@
       sprite: Clothing/_civ/exported/ukraine_cap.rsi
     - type: Clothing
       sprite: Clothing/_civ/exported/ukraine_cap.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: head-cap-usec
-  name: USEC field cap
-  description: An USEC pattern field cap, standard issue for USEC PMCs
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/usec_cap.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/usec_cap.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: head-cap-bear
-  name: BEAR field cap
-  description: A BEAR pattern field cap, standard issue for BEAR PMCs
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/bear_cap.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/bear_cap.rsi
 
 - type: entity
   parent: ClothingHeadBase

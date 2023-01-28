@@ -2958,26 +2958,6 @@
 
 - type: entity
   parent: ClothingOuterBase
-  id: suit-armor-creed-three
-  name: creed armor
-  description: A leather armor worn by the creed.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/ac_armor_1713.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/ac_armor_1713.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.65
-          Slash: 0.65
-          Piercing: 0.1
-          Arrow: 0.8
-          Heat: 0.15
-          Radiation: 0.1
-
-- type: entity
-  parent: ClothingOuterBase
   id: suit-armor-creed-unity
   name: creed armor
   description: A leather armor worn by the creed.
@@ -3814,26 +3794,6 @@
           Piercing: 1.5
           Arrow: 1.5
           Heat: 0.55
-          Radiation: 0
-
-- type: entity
-  parent: ClothingOuterBase
-  id: suit-armor-chitin
-  name: chitin chestplate
-  description: A chitin chestplate, specially crafted from insects.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/chitin_armor.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/chitin_armor.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.5
-          Slash: 0.5
-          Piercing: 0.05
-          Arrow: 0.15
-          Heat: 0.15
           Radiation: 0
 
 - type: entity

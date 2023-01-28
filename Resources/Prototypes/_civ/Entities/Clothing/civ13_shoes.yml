@@ -33,28 +33,6 @@
 
 - type: entity
   parent: ClothingShoesBase
-  id: shoes-color-green
-  name: green shoes
-  description: A pair of shoes.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/green.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/green.rsi
-
-- type: entity
-  parent: ClothingShoesBase
-  id: shoes-color-purple
-  name: purple shoes
-  description: A pair of shoes.
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/purple.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/purple.rsi
-
-- type: entity
-  parent: ClothingShoesBase
   id: shoes-color-brown
   name: brown shoes
   description: A pair of shoes.
@@ -236,9 +214,9 @@
   description: A pair of rather plain, wooden sandals.
   components:
     - type: Sprite
-      sprite: Clothing/_civ/exported/sandals.rsi
+      sprite: Clothing/_civ/exported/flipflops.rsi
     - type: Clothing
-      sprite: Clothing/_civ/exported/sandals.rsi
+      sprite: Clothing/_civ/exported/flipflops.rsi
 
 - type: entity
   parent: ClothingShoesBase
@@ -247,9 +225,9 @@
   description: A pair of simple, thin leather strap sandals. Covers up to the lower foot.
   components:
     - type: Sprite
-      sprite: Clothing/_civ/exported/sandals.rsi
+      sprite: Clothing/_civ/exported/flipflops.rsi
     - type: Clothing
-      sprite: Clothing/_civ/exported/sandals.rsi
+      sprite: Clothing/_civ/exported/flipflops.rsi
 
 - type: entity
   parent: ClothingShoesBase
@@ -261,17 +239,6 @@
       sprite: Clothing/_civ/exported/black.rsi
     - type: Clothing
       sprite: Clothing/_civ/exported/black.rsi
-
-- type: entity
-  parent: ClothingShoesBase
-  id: shoes-slippers
-  name: bunny slippers
-  description: Fluffy!
-  components:
-    - type: Sprite
-      sprite: Clothing/_civ/exported/slippers.rsi
-    - type: Clothing
-      sprite: Clothing/_civ/exported/slippers.rsi
 
 - type: entity
   parent: ClothingShoesBase
