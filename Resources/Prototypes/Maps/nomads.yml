@@ -5,10 +5,7 @@
   minPlayers: 0
   stations:
     Nomads:
-      mapNameTemplate: "{0} Nomads {1}"
-      emergencyShuttlePath: /Maps/Shuttles/emergency_courser.yml
-      nameGenerator: !type:NanotrasenNameGenerator
-        prefixCreator: "14"
+      mapNameTemplate: "Nomads: Classic"
       overflowJobs:
         - Nomad
       availableJobs:
