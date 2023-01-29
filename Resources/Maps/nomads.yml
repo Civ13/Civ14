@@ -100,8 +100,19 @@ entities:
   - uid: 0
     components:
       - type: MetaData
-      - pos: -1.7478588,0.38306206
-        parent: 19
+      - type: Transform
+      - index: 7
+        type: Map
+      - type: PhysicsMap
+      - type: Broadphase
+      - type: OccluderTree
+  - uid: 1
+    components:
+      - name: "Nomads: Classic"
+        type: MetaData
+      - rot: 3.023658037185669 rad
+        pos: 325.6156,-26.942665
+        parent: 0
         type: Transform
       - type: PhysicsMap
       - type: Broadphase
@@ -153,130 +164,128 @@ entities:
             ind: -2,1
             tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
         type: MapGrid
-      - nextUpdate: 420.0443874
+      - angularDamping: 0.05
+        linearDamping: 0.05
+        fixedRotation: False
+        bodyType: Dynamic
+        type: Physics
+      - fixtures: []
+        type: Fixtures
+      - nextUpdate: 293.6267131
         type: GridPathfinding
       - chunkCollection: {}
         type: DecalGrid
-  - uid: 1
+  - uid: 2
     type: FloraTreeLarge03
     components:
       - pos: 0.12800121,12.4053955
-        parent: 0
+        parent: 1
         type: Transform
-  - uid: 2
+  - uid: 3
     type: FloraTreeLarge04
     components:
       - pos: -12.590749,13.7803955
-        parent: 0
-        type: Transform
-  - uid: 3
-    type: FloraTreeLarge02
-    components:
-      - pos: -5.528249,8.7803955
-        parent: 0
+        parent: 1
         type: Transform
   - uid: 4
     type: FloraTreeLarge02
     components:
-      - pos: -1.9032488,17.780396
-        parent: 0
+      - pos: -5.528249,8.7803955
+        parent: 1
         type: Transform
   - uid: 5
+    type: FloraTreeLarge02
+    components:
+      - pos: -1.9032488,17.780396
+        parent: 1
+        type: Transform
+  - uid: 6
     type: FloraTreeLarge04
     components:
       - pos: -7.215749,13.9366455
-        parent: 0
+        parent: 1
         type: Transform
-  - uid: 6
+  - uid: 7
     type: FloraTree03
     components:
       - pos: -8.996999,17.342896
-        parent: 0
-        type: Transform
-  - uid: 7
-    type: FloraTree04
-    components:
-      - pos: -3.2157488,12.5616455
-        parent: 0
+        parent: 1
         type: Transform
   - uid: 8
     type: FloraTree04
     components:
-      - pos: -10.028249,12.3272705
-        parent: 0
+      - pos: -3.2157488,12.5616455
+        parent: 1
         type: Transform
   - uid: 9
+    type: FloraTree04
+    components:
+      - pos: -10.028249,12.3272705
+        parent: 1
+        type: Transform
+  - uid: 10
     type: FloraTree03
     components:
       - pos: 0.2998762,16.10852
-        parent: 0
+        parent: 1
         type: Transform
-  - uid: 10
+  - uid: 11
     type: FloraTree06
     components:
       - pos: -6.668874,18.42102
-        parent: 0
+        parent: 1
         type: Transform
-  - uid: 11
+  - uid: 12
     type: FloraTreeStump
     components:
       - pos: -10.028249,15.0772705
-        parent: 0
+        parent: 1
         type: Transform
-  - uid: 12
+  - uid: 13
     type: FloraTreeStumpConifer
     components:
       - pos: -0.6063738,10.4522705
-        parent: 0
+        parent: 1
         type: Transform
-  - uid: 13
+  - uid: 14
     type: FloraRockSolid02
     components:
       - pos: -11.762624,17.311646
-        parent: 0
+        parent: 1
         type: Transform
-  - uid: 14
+  - uid: 15
     type: FloraRockSolid03
     components:
       - pos: -4.715749,14.3897705
-        parent: 0
+        parent: 1
         type: Transform
-  - uid: 15
+  - uid: 16
     type: FloraRockSolid01
     components:
       - pos: 2.1280012,10.2491455
-        parent: 0
+        parent: 1
         type: Transform
-  - uid: 16
+  - uid: 17
     type: SpawnPointLatejoin
     components:
       - pos: -13.5,9.5
-        parent: 0
-        type: Transform
-  - uid: 17
-    type: SpawnPointNomad
-    components:
-      - pos: 0,16.5
-        parent: 0
+        parent: 1
         type: Transform
   - uid: 18
-    type: SpawnPointObserver
+    type: SpawnPointNomad
     components:
-      - pos: 0,14.5
-        parent: 0
+      - pos: 0.5,16.5
+        parent: 1
         type: Transform
   - uid: 19
+    type: SpawnPointObserver
     components:
-      - type: MetaData
-      - type: Transform
-      - index: 7
-        type: Map
-      - type: PhysicsMap
-      - type: Broadphase
-      - type: OccluderTree
+      - pos: 0.5,14.5
+        parent: 1
+        type: Transform
   - uid: 20
     type: LightSun
     components:
-      - pos: 0,0
+      - pos: 0.5,12.5
         parent: 1
         type: Transform
