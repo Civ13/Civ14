@@ -13,7 +13,6 @@ public sealed partial class AdminVerbSystem
 {
     [Dependency] private readonly ZombifyOnDeathSystem _zombify = default!;
     [Dependency] private readonly TraitorRuleSystem _traitorRule = default!;
-    [Dependency] private readonly NukeopsRuleSystem _nukeopsRule = default!;
     [Dependency] private readonly PiratesRuleSystem _piratesRule = default!;
 
     // All antag verbs have names so invokeverb works.
@@ -65,24 +64,6 @@ public sealed partial class AdminVerbSystem
             Message = Loc.GetString("admin-verb-make-zombie"),
         };
         args.Verbs.Add(zombie);
-
-
-        Verb nukeOp = new()
-        {
-            Text = "Make nuclear operative",
-            Category = VerbCategory.Antag,
-            IconTexture = "/Textures/Structures/Wallmounts/signs.rsi/radiation.png",
-            Act = () =>
-            {
-                if (targetMindComp.Mind == null || targetMindComp.Mind.Session == null)
-                    return;
-
-                _nukeopsRule.MakeLoneNukie(targetMindComp.Mind);
-            },
-            Impact = LogImpact.High,
-            Message = Loc.GetString("admin-verb-make-nuclear-operative"),
-        };
-        args.Verbs.Add(nukeOp);
 
         Verb pirate = new()
         {

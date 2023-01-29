@@ -38,10 +38,7 @@ namespace Content.IntegrationTests.Tests
 
         private static string[] Grids =
         {
-            "/Maps/centcomm.yml",
-            "/Maps/Shuttles/cargo.yml",
-            "/Maps/Shuttles/emergency.yml",
-            "/Maps/infiltrator.yml",
+            "/Maps/nomads.yml",
         };
 
         /// <summary>

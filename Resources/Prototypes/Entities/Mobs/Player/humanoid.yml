@@ -11,8 +11,8 @@
       state: ertleader
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
-      - names_last
+        - NamesFirstMilitaryLeader
+        - names_last
     - type: RandomHumanoidSpawner
       settings: ERTLeader
 
@@ -24,11 +24,11 @@
       name: ERT Leader
       description: Lead a team of specialists to resolve the stations issues.
     - type: Loadout
-      prototypes: [ ERTLeaderGear ]
+      prototypes: [ERTLeaderGear]
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
-      - names_last
+        - NamesFirstMilitaryLeader
+        - names_last
 
 - type: entity
   id: RandomHumanoidSpawnerERTLeaderEVA
@@ -50,7 +50,7 @@
       name: ERT Leader
       description: Lead a team of specialists to resolve the stations issues.
     - type: Loadout
-      prototypes: [ ERTLeaderGearEVA ]
+      prototypes: [ERTLeaderGearEVA]
 
 ## ERT Janitor
 
@@ -64,8 +64,8 @@
       state: ertjanitor
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - names_last
+        - NamesFirstMilitary
+        - names_last
     - type: RandomHumanoidSpawner
       settings: ERTJanitor
 
@@ -78,10 +78,10 @@
       description: Assist with custodial efforts to resolve the stations issues.
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - names_last
+        - NamesFirstMilitary
+        - names_last
     - type: Loadout
-      prototypes: [ ERTJanitorGear ]
+      prototypes: [ERTJanitorGear]
 
 - type: entity
   id: RandomHumanoidSpawnerERTJanitorEVA
@@ -103,7 +103,7 @@
       name: ERT Janitor
       description: Assist with custodial efforts to resolve the stations issues.
     - type: Loadout
-      prototypes: [ ERTJanitorGearEVA ]
+      prototypes: [ERTJanitorGearEVA]
 
 ## ERT Engineer
 
@@ -117,8 +117,8 @@
       state: ertengineer
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - names_last
+        - NamesFirstMilitary
+        - names_last
     - type: RandomHumanoidSpawner
       settings: ERTEngineer
 
@@ -131,10 +131,10 @@
       description: Assist with engineering efforts to resolve the stations issues.
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - names_last
+        - NamesFirstMilitary
+        - names_last
     - type: Loadout
-      prototypes: [ ERTEngineerGear ]
+      prototypes: [ERTEngineerGear]
 
 - type: entity
   id: RandomHumanoidSpawnerERTEngineerEVA
@@ -156,7 +156,7 @@
       name: ERT Engineer
       description: Assist with engineering efforts to resolve the stations issues.
     - type: Loadout
-      prototypes: [ ERTEngineerGearEVA ]
+      prototypes: [ERTEngineerGearEVA]
 
 ## ERT Security
 
@@ -170,8 +170,8 @@
       state: ertsecurity
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - names_last
+        - NamesFirstMilitary
+        - names_last
     - type: RandomHumanoidSpawner
       settings: ERTSecurity
 
@@ -184,10 +184,10 @@
       description: Assist with security efforts to resolve the stations issues.
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - names_last
+        - NamesFirstMilitary
+        - names_last
     - type: Loadout
-      prototypes: [ ERTSecurityGear ]
+      prototypes: [ERTSecurityGear]
 
 - type: entity
   id: RandomHumanoidSpawnerERTSecurityEVA
@@ -209,7 +209,7 @@
       name: ERT Security
       description: Assist with security efforts to resolve the stations issues.
     - type: Loadout
-      prototypes: [ ERTSecurityGearEVA ]
+      prototypes: [ERTSecurityGearEVA]
 
 ## ERT Medic
 
@@ -223,8 +223,8 @@
       state: ertmedical
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - names_last
+        - NamesFirstMilitary
+        - names_last
     - type: RandomHumanoidSpawner
       settings: ERTMedical
 
@@ -237,10 +237,10 @@
       description: Assist with medicaling efforts to resolve the stations issues.
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - names_last
+        - NamesFirstMilitary
+        - names_last
     - type: Loadout
-      prototypes: [ ERTMedicalGear ]
+      prototypes: [ERTMedicalGear]
 
 - type: entity
   id: RandomHumanoidSpawnerERTMedicalEVA
@@ -262,7 +262,7 @@
       name: ERT Medical
       description: Assist with medicaling efforts to resolve the stations issues.
     - type: Loadout
-      prototypes: [ ERTMedicalGearEVA ]
+      prototypes: [ERTMedicalGearEVA]
 
 ## CBURN
 
@@ -286,8 +286,8 @@
       description: A highly trained CentCom agent, capable of dealing with various threats.
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - names_last
+        - NamesFirstMilitary
+        - names_last
 ## Central Command
 
 - type: entity
@@ -307,7 +307,7 @@
       name: CentCom official
       description: Inspect the station, jot down performance reviews for heads of staff, bug the Captain.
     - type: Loadout
-      prototypes: [ CentcomGear ]
+      prototypes: [CentcomGear]
 
 ## Syndicate
 
@@ -319,7 +319,7 @@
       sprite: Mobs/Species/Human/parts.rsi
       state: full
     - type: RandomMetadata
-      nameSegments: [ names_death_commando ]
+      nameSegments: [names_death_commando]
     - type: RandomHumanoidSpawner
       settings: SyndicateAgent
 
@@ -328,18 +328,3 @@
   components:
     - type: Loadout
       prototypes: [SyndicateOperativeGearExtremelyBasic]
-
-- type: entity
-  id: RandomHumanoidSpawnerNukeOp
-  name: Nuclear Operative
-  components:
-    - type: Icon
-      sprite: Mobs/Species/Human/parts.rsi
-      state: full
-    - type: RandomHumanoidSpawner
-      settings: NukeOp
-
-- type: randomHumanoidSettings
-  id: NukeOp
-  components:
-    - type: NukeOperative

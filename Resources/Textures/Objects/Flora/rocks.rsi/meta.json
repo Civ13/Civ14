@@ -1,75 +1,69 @@
 {
-  "version": 1,
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "states": [
-    {
-      "name": "remains"
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
     },
-    {
-      "name": "rock4"
-    },
-    {
-      "name": "rock5"
-    },
-    {
-      "name": "Basalt Sand"
-    },
-    {
-      "name": "Basalt Floor Color Palette"
-    },
-    {
-      "name": "Basalt Wall, Rocks, \u0026 Bones Color Palette"
-    },
-    {
-      "name": "basalt1"
-    },
-    {
-      "name": "basalt2"
-    },
-    {
-      "name": "basalt3"
-    },
-    {
-      "name": "basalt4"
-    },
-    {
-      "name": "basalt5"
-    },
-    {
-      "name": "rock1"
-    },
-    {
-      "name": "rock2"
-    },
-    {
-      "name": "rock3"
-    },
-    {
-      "name": "crystalformation_blue"
-    },
-    {
-      "name": "crystalformation_orange"
-    },
-    {
-      "name": "crystalformation_green"
-    },
-    {
-      "name": "crystalformation_purple"
-    },
-    {
-      "name": "crystalformation_yellow"
-    },
-    {
-      "name": "crystalformation"
-    },
-    {
-      "name": "crystalformation_cyan"
-    },
-    {
-      "name": "crystalformation_magenta"
-    }
-  ]
+    "states": [
+        {
+            "name": "remains"
+        },
+        {
+            "name": "Basalt Sand"
+        },
+        {
+            "name": "basalt1"
+        },
+        {
+            "name": "basalt2"
+        },
+        {
+            "name": "basalt3"
+        },
+        {
+            "name": "basalt4"
+        },
+        {
+            "name": "basalt5"
+        },
+        {
+            "name": "rock1"
+        },
+        {
+            "name": "rock2"
+        },
+        {
+            "name": "rock3"
+        },
+        {
+            "name": "rock4"
+        },
+        {
+            "name": "rock5"
+        },
+        {
+            "name": "crystalformation_blue"
+        },
+        {
+            "name": "crystalformation_orange"
+        },
+        {
+            "name": "crystalformation_green"
+        },
+        {
+            "name": "crystalformation_purple"
+        },
+        {
+            "name": "crystalformation_yellow"
+        },
+        {
+            "name": "crystalformation"
+        },
+        {
+            "name": "crystalformation_cyan"
+        },
+        {
+            "name": "crystalformation_magenta"
+        }
+    ]
 }

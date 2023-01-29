@@ -318,7 +318,7 @@
 
 - type: entity
   parent: BaseVegetation
-  id: Vegetation19
+  id: Vegetation39
   name: vegetation
   components:
     - type: Sprite

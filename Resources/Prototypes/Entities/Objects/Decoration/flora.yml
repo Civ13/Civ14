@@ -193,6 +193,7 @@
       state: rock2
 
 - type: entity
+  parent: BaseRockSmall
   id: FloraRockSmall03
   name: rock
   components:
@@ -200,6 +201,7 @@
       state: rock3
 
 - type: entity
+  parent: BaseRockSmall
   id: FloraRockSmall04
   name: rock
   components:
@@ -207,6 +209,7 @@
       state: rock4
 
 - type: entity
+  parent: BaseRockSmall
   id: FloraRockSmall05
   name: rock
   components:
