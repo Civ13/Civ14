@@ -12,3 +12,8 @@
   id: 2
   name: ui-options-hud-theme-classic
   path: Classic
+
+- type: hudTheme
+  id: 3
+  name: ui-options-hud-theme-civ
+  path: Civ

@@ -48,6 +48,7 @@ ui-options-hud-theme = HUD Theme:
 ui-options-hud-theme-default = Default
 ui-options-hud-theme-modernized = Modernized
 ui-options-hud-theme-classic = Classic
+ui-options-hud-theme-civ = Civ
 ui-options-vp-stretch = Stretch viewport to fit game window
 ui-options-vp-scale = Fixed viewport scale: x{ $scale }
 ui-options-vp-integer-scaling = Prefer integer scaling (might cause black bars/clipping)

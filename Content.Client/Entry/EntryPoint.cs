@@ -157,7 +157,7 @@ namespace Content.Client.Entry
             _voteManager.Initialize();
             _gamePrototypeLoadManager.Initialize();
             _networkResources.Initialize();
-            _userInterfaceManager.SetDefaultTheme("SS14DefaultTheme");
+            _userInterfaceManager.SetDefaultTheme("SS14CivTheme");
             _documentParsingManager.Initialize();
 
             _baseClient.RunLevelChanged += (_, args) =>
