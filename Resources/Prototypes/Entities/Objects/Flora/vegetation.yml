@@ -104,6 +104,251 @@
 
 - type: entity
   parent: BaseVegetation
+  id: Vegetation11
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush11
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation12
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush12
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation13
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush13
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation14
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush14
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation15
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush15
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation16
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush16
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation17
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush17
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation18
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush18
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation19
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush19
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation20
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush20
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation21
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush21
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation22
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush22
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation23
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush23
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation24
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush24
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation25
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush25
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation26
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush26
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation27
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush27
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation28
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush28
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation29
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush29
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation30
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush30
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation31
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush31
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation32
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush32
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation33
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush33
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation34
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush34
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation35
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush35
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation36
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush36
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation37
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush37
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation38
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush38
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation19
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush39
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation40
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush40
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation41
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush41
+
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation42
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush42
+
+- type: entity
+  parent: BaseVegetation
   id: TallGrass01
   name: tall grass
   components:
