@@ -88,8 +88,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content.Tools", "Content.To
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robust.Analyzers", "RobustToolbox\Robust.Analyzers\Robust.Analyzers.csproj", "{88B0FC0F-7209-40E2-AF16-EB90AF727C5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content.YAMLLinter", "Content.YAMLLinter\Content.YAMLLinter.csproj", "{A59E2FCC-93CF-4886-8EA7-94F021A7475D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.Base", "RobustToolbox\Avalonia.Base\Avalonia.Base.csproj", "{A3C5B00A-D232-4A01-B82E-B0E58BFD5C12}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robust.Benchmarks", "RobustToolbox\Robust.Benchmarks\Robust.Benchmarks.csproj", "{8A21C7CA-2EB8-40E5-8043-33582C06D139}"
