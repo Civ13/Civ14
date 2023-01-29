@@ -1,0 +1,17 @@
+- type: entity
+  id: LightSun
+  parent: AlwaysPoweredWallLight
+  name: Sun
+  description: "The Sun."
+  suffix: Always powered
+  components:
+    - type: Transform
+      anchored: true
+    - type: Clickable
+    - type: InteractionOutline
+    - type: PointLight
+      radius: 500
+      energy: 0.8
+      softness: 1
+  placement:
+    mode: SnapgridCenter
