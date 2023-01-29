@@ -1,0 +1,176 @@
+- type: entity
+  id: BaseVegetation
+  description: Some low-growing vegetation.
+  abstract: true
+  components:
+    - type: SpriteFade
+    - type: Clickable
+    - type: Sprite
+      sprite: Objects/Flora/ausflora.rsi
+      netsync: false
+      drawdepth: Overdoors
+    - type: Physics
+      bodyType: Static
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+        - trigger: !type:DamageTrigger
+            damage: 30
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                Log:
+                  min: 1
+                  max: 2
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation01
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush1
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation02
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush2
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation03
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush3
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation04
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush4
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation05
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush5
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation06
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush6
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation07
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush7
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation08
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush8
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation09
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush9
+- type: entity
+  parent: BaseVegetation
+  id: Vegetation10
+  name: vegetation
+  components:
+    - type: Sprite
+      state: smallbush10
+
+- type: entity
+  parent: BaseVegetation
+  id: TallGrass01
+  name: tall grass
+  components:
+    - type: Sprite
+      sprite: Objects/Flora/wild.rsi
+      state: tall_grass_1
+- type: entity
+  parent: BaseVegetation
+  id: TallGrass02
+  name: tall grass
+  components:
+    - type: Sprite
+      sprite: Objects/Flora/wild.rsi
+      state: tall_grass_2
+- type: entity
+  parent: BaseVegetation
+  id: TallGrass03
+  name: tall grass
+  components:
+    - type: Sprite
+      sprite: Objects/Flora/wild.rsi
+      state: tall_grass_3
+- type: entity
+  parent: BaseVegetation
+  id: TallGrass04
+  name: tall grass
+  components:
+    - type: Sprite
+      sprite: Objects/Flora/wild.rsi
+      state: tall_grass_4
+- type: entity
+  parent: BaseVegetation
+  id: TallGrass05
+  name: tall grass
+  components:
+    - type: Sprite
+      sprite: Objects/Flora/wild.rsi
+      state: tall_grass_5
+- type: entity
+  parent: BaseVegetation
+  id: TallGrass06
+  name: tall grass
+  components:
+    - type: Sprite
+      sprite: Objects/Flora/wild.rsi
+      state: tall_grass_6
+- type: entity
+  parent: BaseVegetation
+  id: TallGrass07
+  name: tall grass
+  components:
+    - type: Sprite
+      sprite: Objects/Flora/wild.rsi
+      state: tall_grass_7
+- type: entity
+  parent: BaseVegetation
+  id: TallGrass08
+  name: tall grass
+  components:
+    - type: Sprite
+      sprite: Objects/Flora/wild.rsi
+      state: tall_grass_8
+- type: entity
+  parent: BaseVegetation
+  id: TallGrass09
+  name: tall grass
+  components:
+    - type: Sprite
+      sprite: Objects/Flora/wild.rsi
+      state: tall_grass_9

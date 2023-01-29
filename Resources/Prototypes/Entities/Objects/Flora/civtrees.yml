@@ -52,7 +52,7 @@
 - type: entity
   parent: BaseTree
   id: BaseTreeAcacia
-  name: tree
+  name: acacia tree
   components:
     - type: Sprite
       sprite: Objects\Flora\bigtrees.rsi
@@ -63,7 +63,7 @@
 - type: entity
   parent: BaseTree
   id: BaseTreeMedPine
-  name: tree
+  name: mediterranean pine
   components:
     - type: Sprite
       sprite: Objects\Flora\bigtrees.rsi
