@@ -1,0 +1,72 @@
+- type: entity
+  parent: BaseTree
+  id: BaseTreeTemperate1
+  name: tree
+  components:
+    - type: Sprite
+      sprite: Objects\Flora\bigtrees.rsi
+      netsync: false
+      drawdepth: Overdoors
+      state: tree_1
+- type: entity
+  parent: BaseTree
+  id: BaseTreeTemperate2
+  name: tree
+  components:
+    - type: Sprite
+      sprite: Objects\Flora\bigtrees.rsi
+      netsync: false
+      drawdepth: Overdoors
+      state: tree_2
+- type: entity
+  parent: BaseTree
+  id: BaseTreeTemperate3
+  name: tree
+  components:
+    - type: Sprite
+      sprite: Objects\Flora\bigtrees.rsi
+      netsync: false
+      drawdepth: Overdoors
+      state: tree_3
+- type: entity
+  parent: BaseTree
+  id: BaseTreeTemperate4
+  name: tree
+  components:
+    - type: Sprite
+      sprite: Objects\Flora\bigtrees.rsi
+      netsync: false
+      drawdepth: Overdoors
+      state: tree_4
+- type: entity
+  parent: BaseTree
+  id: BaseTreeTemperate5
+  name: tree
+  components:
+    - type: Sprite
+      sprite: Objects\Flora\bigtrees.rsi
+      netsync: false
+      drawdepth: Overdoors
+      state: tree_5
+
+- type: entity
+  parent: BaseTree
+  id: BaseTreeAcacia
+  name: tree
+  components:
+    - type: Sprite
+      sprite: Objects\Flora\bigtrees.rsi
+      netsync: false
+      drawdepth: Overdoors
+      state: african_acacia
+
+- type: entity
+  parent: BaseTree
+  id: BaseTreeMedPine
+  name: tree
+  components:
+    - type: Sprite
+      sprite: Objects\Flora\bigtrees.rsi
+      netsync: false
+      drawdepth: Overdoors
+      state: med_pine

@@ -1,0 +1,244 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "",
+      "delays": [
+        [
+          0.120000005,
+          0.120000005,
+          0.120000005,
+          0.120000005
+        ]
+      ]
+    },
+    {
+      "name": "tree_timber",
+      "directions": 4
+    },
+    {
+      "name": "small_bush"
+    },
+    {
+      "name": "big_bush"
+    },
+    {
+      "name": "tree"
+    },
+    {
+      "name": "deadtree"
+    },
+    {
+      "name": "jungle1"
+    },
+    {
+      "name": "jungle2"
+    },
+    {
+      "name": "jungle3"
+    },
+    {
+      "name": "jungle4"
+    },
+    {
+      "name": "jungle5"
+    },
+    {
+      "name": "jungle6"
+    },
+    {
+      "name": "burnedbush1"
+    },
+    {
+      "name": "burnedbush2"
+    },
+    {
+      "name": "burnedbush3"
+    },
+    {
+      "name": "burnedbush4"
+    },
+    {
+      "name": "burnedbush5"
+    },
+    {
+      "name": "burnedbush6"
+    },
+    {
+      "name": "burnedbush7"
+    },
+    {
+      "name": "burnedbush8"
+    },
+    {
+      "name": "burnedtree1"
+    },
+    {
+      "name": "burnedtree2"
+    },
+    {
+      "name": "burnedtree3"
+    },
+    {
+      "name": "burnedtree4"
+    },
+    {
+      "name": "burnedtree5"
+    },
+    {
+      "name": "tree_log",
+      "directions": 4
+    },
+    {
+      "name": "burnedlog"
+    },
+    {
+      "name": "tall_grass_1"
+    },
+    {
+      "name": "tall_grass_2"
+    },
+    {
+      "name": "tall_grass_3",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "tall_grass_4",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "tall_grass_5",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "tall_grass_6"
+    },
+    {
+      "name": "tall_grass_7"
+    },
+    {
+      "name": "tall_grass_8",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "tall_grass_9",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "tree_stump"
+    },
+    {
+      "name": "tree_stump2"
+    },
+    {
+      "name": "dead_tall_grass_1"
+    },
+    {
+      "name": "dead_tall_grass_2"
+    },
+    {
+      "name": "dead_tall_grass_3",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "dead_tall_grass_4",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "dead_tall_grass_5",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    }
+  ]
+}
