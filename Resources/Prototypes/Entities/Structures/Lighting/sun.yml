@@ -10,8 +10,12 @@
     - type: Clickable
     - type: InteractionOutline
     - type: PointLight
-      radius: 500
-      energy: 0.8
-      softness: 1
+      radius: 50
+      energy: 10
+      softness: 50
+      color: "#F4E99B"
+    - type: Sprite
+      netsync: false
+      visible: false
   placement:
     mode: SnapgridCenter

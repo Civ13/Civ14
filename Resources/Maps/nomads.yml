@@ -37,63 +37,65 @@ tilemap:
   30: FloorDarkPavementVertical
   31: FloorDarkPlastic
   32: FloorDirt
-  33: FloorEighties
-  34: FloorElevatorShaft
-  35: FloorFreezer
-  36: FloorGlass
-  37: FloorGold
-  38: FloorGrass
-  39: FloorGrassDark
-  40: FloorGrassJungle
-  41: FloorGrassLight
-  42: FloorGreenCircuit
-  43: FloorGym
-  44: FloorHydro
-  45: FloorKitchen
-  46: FloorLaundry
-  47: FloorLino
-  48: FloorMetalDiamond
-  49: FloorMime
-  50: FloorMono
-  51: FloorPlastic
-  52: FloorRGlass
-  53: FloorReinforced
-  54: FloorRockVault
-  55: FloorShowroom
-  56: FloorShuttleBlue
-  57: FloorShuttleOrange
-  58: FloorShuttlePurple
-  59: FloorShuttleRed
-  60: FloorShuttleWhite
-  61: FloorSilver
-  62: FloorSnow
-  63: FloorSteel
-  64: FloorSteelDiagonal
-  65: FloorSteelDiagonalMini
-  66: FloorSteelDirty
-  67: FloorSteelHerringbone
-  68: FloorSteelMini
-  69: FloorSteelMono
-  70: FloorSteelOffset
-  71: FloorSteelPavement
-  72: FloorSteelPavementVertical
-  73: FloorTechMaint
-  74: FloorTechMaint2
-  75: FloorTechMaint3
-  76: FloorWhite
-  77: FloorWhiteDiagonal
-  78: FloorWhiteDiagonalMini
-  79: FloorWhiteHerringbone
-  80: FloorWhiteMini
-  81: FloorWhiteMono
-  82: FloorWhiteOffset
-  83: FloorWhitePavement
-  84: FloorWhitePavementVertical
-  85: FloorWhitePlastic
-  86: FloorWood
-  87: FloorWoodTile
-  88: Lattice
-  89: Plating
+  33: FloorDirtPloughed
+  34: FloorEighties
+  35: FloorElevatorShaft
+  36: FloorFreezer
+  37: FloorGlass
+  38: FloorGold
+  39: FloorGrass
+  40: FloorGrassDark
+  41: FloorGrassDry
+  42: FloorGrassJungle
+  43: FloorGrassLight
+  44: FloorGreenCircuit
+  45: FloorGym
+  46: FloorHydro
+  47: FloorKitchen
+  48: FloorLaundry
+  49: FloorLino
+  50: FloorMetalDiamond
+  51: FloorMime
+  52: FloorMono
+  53: FloorPlastic
+  54: FloorRGlass
+  55: FloorReinforced
+  56: FloorRockVault
+  57: FloorShowroom
+  58: FloorShuttleBlue
+  59: FloorShuttleOrange
+  60: FloorShuttlePurple
+  61: FloorShuttleRed
+  62: FloorShuttleWhite
+  63: FloorSilver
+  64: FloorSnow
+  65: FloorSteel
+  66: FloorSteelDiagonal
+  67: FloorSteelDiagonalMini
+  68: FloorSteelDirty
+  69: FloorSteelHerringbone
+  70: FloorSteelMini
+  71: FloorSteelMono
+  72: FloorSteelOffset
+  73: FloorSteelPavement
+  74: FloorSteelPavementVertical
+  75: FloorTechMaint
+  76: FloorTechMaint2
+  77: FloorTechMaint3
+  78: FloorWhite
+  79: FloorWhiteDiagonal
+  80: FloorWhiteDiagonalMini
+  81: FloorWhiteHerringbone
+  82: FloorWhiteMini
+  83: FloorWhiteMono
+  84: FloorWhiteOffset
+  85: FloorWhitePavement
+  86: FloorWhitePavementVertical
+  87: FloorWhitePlastic
+  88: FloorWood
+  89: FloorWoodTile
+  90: Lattice
+  91: Plating
 entities:
   - uid: 0
     components:
@@ -254,13 +256,13 @@ entities:
   - uid: 17
     type: SpawnPointNomad
     components:
-      - pos: -3.5,16.5
+      - pos: 0,16.5
         parent: 0
         type: Transform
   - uid: 18
     type: SpawnPointObserver
     components:
-      - pos: -3.5,14.5
+      - pos: 0,14.5
         parent: 0
         type: Transform
   - uid: 19
@@ -275,6 +277,6 @@ entities:
   - uid: 20
     type: LightSun
     components:
-      - pos: -5.5,13.5
+      - pos: 0,0
         parent: 1
         type: Transform

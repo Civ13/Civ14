@@ -1,7 +1,7 @@
 - type: species
   id: Reptilian
   name: species-name-reptilian
-  roundStart: true
+  roundStart: false
   prototype: MobReptilian
   sprites: MobReptilianSprites
   defaultSkinTone: "#34a223"
@@ -44,11 +44,11 @@
     Tail:
       points: 1
       required: true
-      defaultMarkings: [ LizardTailSmooth ]
+      defaultMarkings: [LizardTailSmooth]
     Snout:
       points: 1
       required: true
-      defaultMarkings: [ LizardSnoutRound ]
+      defaultMarkings: [LizardSnoutRound]
     HeadTop:
       points: 1
       required: false

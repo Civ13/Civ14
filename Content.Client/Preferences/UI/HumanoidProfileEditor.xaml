@@ -100,20 +100,22 @@
                                     <humanoid:SingleMarkingPicker Name="CFacialHairPicker" Category="FacialHair" />
                                 </BoxContainer>
                             </prefUi:HighlightedContainer>
-                            <!-- Clothing -->
+                            <!--
+
                             <prefUi:HighlightedContainer>
                                 <BoxContainer Orientation="Horizontal">
                                     <Label Text="{Loc 'humanoid-profile-editor-clothing-label'}" />
                                     <OptionButton Name="CClothingButton" />
                                 </BoxContainer>
                             </prefUi:HighlightedContainer>
-                            <!-- Backpack -->
-                            <prefUi:HighlightedContainer>
+
+                                <prefUi:HighlightedContainer>
                                 <BoxContainer Orientation="Horizontal">
                                     <Label Text="{Loc 'humanoid-profile-editor-backpack-label'}" />
                                     <OptionButton Name="CBackpackButton" />
                                 </BoxContainer>
                             </prefUi:HighlightedContainer>
+                            -->
                             <!-- Eyes -->
                             <prefUi:HighlightedContainer>
                                 <BoxContainer Orientation="Vertical">
