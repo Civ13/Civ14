@@ -5,9 +5,9 @@
     <key>CFBundleName</key>
     <string>SS14</string>
     <key>CFBundleDisplayName</key>
-    <string>Space Station 14</string>
+    <string>Civilization 14</string>
     <key>CFBundleExecutable</key>
-    <string>SS14</string>
+    <string>Civ14</string>
     <!--
     Just a note about this icon.
     MacOS seems REALLY iffy about this and even when the file is correct,
@@ -15,6 +15,6 @@
     TL;DR Apple is stupid.
     -->
     <key>CFBundleIconFile</key>
-    <string>ss14</string>
+    <string>civ14</string>
 </dict>
 </plist>
