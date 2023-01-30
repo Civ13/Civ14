@@ -107,7 +107,6 @@ entities:
       - type: Broadphase
       - type: OccluderTree
       - type: Gravity
-
       - name: "Nomads: Classic"
         type: MetaData
       - parallax: Grass

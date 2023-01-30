@@ -28,7 +28,7 @@
               acts: ["Destruction"]
             - !type:SpawnEntitiesBehavior
               spawn:
-                Log:
+                MaterialStraw1:
                   min: 1
                   max: 2
 - type: entity

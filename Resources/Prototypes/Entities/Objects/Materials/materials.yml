@@ -147,6 +147,33 @@
 
 - type: entity
   parent: MaterialBase
+  id: MaterialStraw
+  name: straw
+  suffix: Full
+  components:
+    - type: Material
+      materials:
+        Straw: 50
+    - type: Stack
+      stackType: Straw
+    - type: Sprite
+      netsync: false
+      sprite: /Textures/Objects/_civ/materials.rsi
+      state: sheet-straw
+    - type: Item
+      sprite: /Textures/Objects/_civ/materials.rsi
+      state: sheet-straw
+
+- type: entity
+  parent: MaterialStraw
+  id: MaterialStraw1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
   id: MaterialBiomass
   name: biomass
   suffix: Full

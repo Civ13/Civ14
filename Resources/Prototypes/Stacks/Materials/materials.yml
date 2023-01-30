@@ -20,6 +20,13 @@
   maxCount: 15
 
 - type: stack
+  id: Straw
+  name: straw
+  icon: { sprite: /Textures/Objects/_civ/materials.rsi, state: sheet-straw }
+  spawn: MaterialStraw1
+  maxCount: 50
+
+- type: stack
   id: Cloth
   name: cloth
   icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: cloth }
