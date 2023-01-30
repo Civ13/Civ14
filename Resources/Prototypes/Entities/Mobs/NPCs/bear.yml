@@ -125,15 +125,3 @@
       damage:
         groups:
           Brute: 20
-
-- type: entity
-  id: MobBearSpaceSalvage
-  parent: MobBearSpace
-  suffix: "Salvage Ruleset"
-  components:
-    - type: GhostTakeoverAvailable
-      prob: 0.05
-      name: space bear on salvage wreck
-      description: |
-        Defend the loot inside the salvage wreck!
-    - type: SalvageMobRestrictions

@@ -91,36 +91,21 @@
         - MobTickSalvage
 
 - type: entity
-  name: Salvage Space Bear Spawner
-  id: SpawnMobBearSalvage
-  parent: MarkerBase
-  components:
-  - type: Sprite
-    layers:
-    - state: green
-    - state: bear
-      sprite: Mobs/Animals/bear.rsi
-  - type: ConditionalSpawner
-    prototypes:
-    - MobBearSpaceSalvage
-
-- type: entity
   id: SalvageMobSpawner75
   parent: SalvageMobSpawner
   suffix: 75
   components:
-  - type: RandomSpawner
-    prototypes:
-    - MobCarpSalvage
-    - MobCarpSalvage
-    - MobCarpSalvage
-    - MobCarpSalvage
-    - MobCarpSalvage
-    - MobTickSalvage
-    - MobTickSalvage
-    - MobTickSalvage
-    - PlushieCarp
-    - DehydratedSpaceCarp
-    chance: 0.75
-    offset: 0.2
-
+    - type: RandomSpawner
+      prototypes:
+        - MobCarpSalvage
+        - MobCarpSalvage
+        - MobCarpSalvage
+        - MobCarpSalvage
+        - MobCarpSalvage
+        - MobTickSalvage
+        - MobTickSalvage
+        - MobTickSalvage
+        - PlushieCarp
+        - DehydratedSpaceCarp
+      chance: 0.75
+      offset: 0.2
