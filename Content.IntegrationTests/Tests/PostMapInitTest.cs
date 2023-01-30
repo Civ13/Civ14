@@ -141,20 +141,9 @@ namespace Content.IntegrationTests.Tests
 
                     var maps = protoManager.EnumeratePrototypes<GameMapPrototype>().ToList();
                     var mapNames = new List<string>();
-                    var naughty = new HashSet<string>()
-                    {
-                        "Empty",
-                        "Infiltrator",
-                        "Pirate",
-                    };
 
                     foreach (var map in maps)
                     {
-                        // AAAAAAAAAA
-                        // Why are they stations!
-                        if (naughty.Contains(map.ID))
-                            continue;
-
                         mapNames.Add(map.ID);
                     }
 
