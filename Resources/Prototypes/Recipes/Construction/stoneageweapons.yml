@@ -42,7 +42,7 @@
       edges:
         - to: spear
           steps:
-            - material: BoneStack
+            - material: Bone
               amount: 2
               doAfter: 2
             - material: WoodPlank

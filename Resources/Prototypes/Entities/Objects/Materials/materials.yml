@@ -4,26 +4,25 @@
   id: MaterialBase
   description: A raw material.
   components:
-  - type: Sprite
-    netsync: false
-    sprite: Objects/Materials/materials.rsi
-  - type: Item
-    sprite: Objects/Materials/materials.rsi
-  - type: ItemStatus
-  - type: Tag
-    tags:
-      - RawMaterial
-      - DroneUsable
-  - type: Damageable
-    damageContainer: Inorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+    - type: Sprite
+      netsync: false
+      sprite: Objects/Materials/materials.rsi
+    - type: Item
+      sprite: Objects/Materials/materials.rsi
+    - type: ItemStatus
+    - type: Tag
+      tags:
+        - RawMaterial
+        - DroneUsable
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   parent: MaterialBase
@@ -31,35 +30,35 @@
   name: cloth
   suffix: Full
   components:
-  - type: Stack
-    stackType: Cloth
-  - type: Material
-    materials:
-      Cloth: 100
-  - type: Extractable
-    juiceSolution:
-      reagents:
-      - ReagentId: Fiber
-        Quantity: 3
-  - type: Sprite
-    state: cloth_3
-  - type: Appearance
-    visuals:
-    - type: StackVisualizer
-      stackLayers:
-      - cloth
-      - cloth_2
-      - cloth_3
+    - type: Stack
+      stackType: Cloth
+    - type: Material
+      materials:
+        Cloth: 100
+    - type: Extractable
+      juiceSolution:
+        reagents:
+          - ReagentId: Fiber
+            Quantity: 3
+    - type: Sprite
+      state: cloth_3
+    - type: Appearance
+      visuals:
+        - type: StackVisualizer
+          stackLayers:
+            - cloth
+            - cloth_2
+            - cloth_3
 
 - type: entity
   parent: MaterialCloth
   id: MaterialCloth1
   suffix: Single
   components:
-  - type: Sprite
-    state: cloth
-  - type: Stack
-    count: 1
+    - type: Sprite
+      state: cloth
+    - type: Stack
+      count: 1
 
 - type: entity
   parent: MaterialBase
@@ -67,33 +66,33 @@
   name: durathread
   suffix: Full
   components:
-  - type: Stack
-    stackType: Durathread
-  - type: Material
-    materials:
-      Durathread: 100
-  - type: Sprite
-    state: durathread_3
-  - type: Appearance
-    visuals:
-    - type: StackVisualizer
-      stackLayers:
-      - durathread
-      - durathread_2
-      - durathread_3
-  - type: Construction
-    graph: Durathread
-    node: MaterialDurathread
+    - type: Stack
+      stackType: Durathread
+    - type: Material
+      materials:
+        Durathread: 100
+    - type: Sprite
+      state: durathread_3
+    - type: Appearance
+      visuals:
+        - type: StackVisualizer
+          stackLayers:
+            - durathread
+            - durathread_2
+            - durathread_3
+    - type: Construction
+      graph: Durathread
+      node: MaterialDurathread
 
 - type: entity
   parent: MaterialDurathread
   id: MaterialDurathread1
   suffix: Single
   components:
-  - type: Sprite
-    state: durathread
-  - type: Stack
-    count: 1
+    - type: Sprite
+      state: durathread
+    - type: Stack
+      count: 1
 
 - type: entity
   parent: MaterialBase
@@ -101,23 +100,50 @@
   name: wood
   suffix: Full
   components:
-  - type: Material
-    materials:
-      Wood: 100
-  - type: Stack
-    stackType: WoodPlank
-  - type: Sprite
-    state: wood
-  - type: Item
-    heldPrefix: wood
+    - type: Material
+      materials:
+        Wood: 100
+    - type: Stack
+      stackType: WoodPlank
+    - type: Sprite
+      state: wood
+    - type: Item
+      heldPrefix: wood
 
 - type: entity
   parent: MaterialWoodPlank
   id: MaterialWoodPlank1
   suffix: Single
   components:
-  - type: Stack
-    count: 1
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialBone
+  name: bone
+  suffix: Full
+  components:
+    - type: Material
+      materials:
+        Bone: 15
+    - type: Stack
+      stackType: Bone
+    - type: Sprite
+      netsync: false
+      sprite: /Textures/Objects/_civ/materials.rsi
+      state: sheet-bone
+    - type: Item
+      sprite: /Textures/Objects/_civ/materials.rsi
+      state: sheet-bone
+
+- type: entity
+  parent: MaterialBone
+  id: MaterialBone1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
 
 - type: entity
   parent: MaterialBase
@@ -125,24 +151,24 @@
   name: biomass
   suffix: Full
   components:
-  - type: Material
-    materials:
-      Biomass: 1
-  - type: Stack
-    stackType: Biomass
-    count: 100
-  - type: Sprite
-    sprite: /Textures/Objects/Misc/monkeycube.rsi
-    state: cube
-    color: "#8A9A5B"
+    - type: Material
+      materials:
+        Biomass: 1
+    - type: Stack
+      stackType: Biomass
+      count: 100
+    - type: Sprite
+      sprite: /Textures/Objects/Misc/monkeycube.rsi
+      state: cube
+      color: "#8A9A5B"
 
 - type: entity
   parent: MaterialBiomass
   id: MaterialBiomass1
   suffix: Single
   components:
-  - type: Stack
-    count: 1
+    - type: Stack
+      count: 1
 
 # Following not used currently
 - type: entity
@@ -150,17 +176,17 @@
   id: MaterialHideBear
   name: bear hide
   components:
-  - type: Sprite
-    sprite: Objects/Materials/materials.rsi
-    state: bearpelt
-  - type: Item
-    sprite: Clothing/Head/Misc/hides.rsi
-    heldPrefix: bear
-  - type: Clothing
-    sprite: Clothing/Head/Misc/hides.rsi
-    equippedPrefix: bear
-    slots:
-      - HEAD
+    - type: Sprite
+      sprite: Objects/Materials/materials.rsi
+      state: bearpelt
+    - type: Item
+      sprite: Clothing/Head/Misc/hides.rsi
+      heldPrefix: bear
+    - type: Clothing
+      sprite: Clothing/Head/Misc/hides.rsi
+      equippedPrefix: bear
+      slots:
+        - HEAD
 
 - type: entity
   parent: MaterialBase
@@ -168,20 +194,20 @@
   name: refined diamond
   suffix: Full
   components:
-  - type: Stack
-    stackType: Diamond
-  - type: Sprite
-    state: diamond
-  - type: Item
-    heldPrefix: diamond
+    - type: Stack
+      stackType: Diamond
+    - type: Sprite
+      state: diamond
+    - type: Item
+      heldPrefix: diamond
 
 - type: entity
   parent: MaterialDiamond
   id: MaterialDiamond1
   suffix: Single
   components:
-  - type: Stack
-    count: 1
+    - type: Stack
+      count: 1
 
 - type: entity
   parent: MaterialBase
@@ -189,24 +215,24 @@
   name: cotton
   suffix: Full
   components:
-  - type: Stack
-    stackType: Cotton
-  - type: Sprite
-    state: cotton_3
-  - type: Appearance
-    visuals:
-      - type: StackVisualizer
-        stackLayers:
-          - cotton
-          - cotton_2
-          - cotton_3
+    - type: Stack
+      stackType: Cotton
+    - type: Sprite
+      state: cotton_3
+    - type: Appearance
+      visuals:
+        - type: StackVisualizer
+          stackLayers:
+            - cotton
+            - cotton_2
+            - cotton_3
 
 - type: entity
   parent: MaterialCotton
   id: MaterialCotton1
   suffix: Single
   components:
-  - type: Sprite
-    state: cotton
-  - type: Stack
-    count: 1
+    - type: Sprite
+      state: cotton
+    - type: Stack
+      count: 1

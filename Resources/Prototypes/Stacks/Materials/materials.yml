@@ -13,6 +13,13 @@
   maxCount: 30
 
 - type: stack
+  id: Bone
+  name: bone
+  icon: { sprite: /Textures/Objects/_civ/materials.rsi, state: sheet-bone }
+  spawn: MaterialBone1
+  maxCount: 15
+
+- type: stack
   id: Cloth
   name: cloth
   icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: cloth }
