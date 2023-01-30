@@ -9,6 +9,8 @@
   description: A simple weapon for tripping someone at a distance.
   icon: { sprite: Objects/Weapons/Throwable/bola.rsi, state: icon }
   objectType: Item
+  ageMin: 0
+  ageMax: 8
 
 - type: construction
   name: wooden buckler
@@ -16,11 +18,12 @@
   graph: WoodenBuckler
   startNode: start
   targetNode: woodenBuckler
-
   category: construction-category-weapons
   description: A nicely carved wooden shield!
   icon: { sprite: Objects/Weapons/Melee/shields.rsi, state: buckler-icon }
   objectType: Item
+  ageMin: 2
+  ageMax: 8
 
 - type: construction
   name: makeshift shield
@@ -32,3 +35,5 @@
   description: Crude and falling apart. Why would you make this?
   icon: { sprite: Objects/Weapons/Melee/shields.rsi, state: makeshift-icon }
   objectType: Item
+  ageMin: 5
+  ageMax: 8

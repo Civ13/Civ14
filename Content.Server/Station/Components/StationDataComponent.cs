@@ -15,7 +15,11 @@ public sealed class StationDataComponent : Component
     /// </summary>
     [DataField("stationConfig")]
     public StationConfig? StationConfig = null;
-
+    /// <summary>
+    /// The current (ordinal) age. 0 (stone age) to 8 (modern)
+    /// </summary>
+    [DataField("currentAge", required: true)]
+    public int currentAge { get; set; } = 0;
     /// <summary>
     /// List of all grids this station is part of.
     /// </summary>

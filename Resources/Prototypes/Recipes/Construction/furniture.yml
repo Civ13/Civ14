@@ -13,6 +13,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 1
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -29,6 +31,8 @@
     state: stool
   objectType: Structure
   placementMode: SnapgridCenter
+  ageMin: 1
+  ageMax: 8
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
@@ -46,6 +50,8 @@
     state: bar
   objectType: Structure
   placementMode: SnapgridCenter
+  ageMin: 4
+  ageMax: 8
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
@@ -63,6 +69,8 @@
     state: office-white
   objectType: Structure
   placementMode: SnapgridCenter
+  ageMin: 5
+  ageMax: 8
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
@@ -80,6 +88,8 @@
     state: office-dark
   objectType: Structure
   placementMode: SnapgridCenter
+  ageMin: 5
+  ageMax: 8
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
@@ -98,6 +108,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 5
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -115,6 +127,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 5
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -132,6 +146,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 1
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -149,6 +165,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 5
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -166,10 +184,11 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 5
+  ageMax: 8
   conditions:
-    - !type:TileNotBlocked
+    - !type:TileNotBlocked #tables
 
-#tables
 - type: construction
   name: steel table
   id: Table
@@ -184,6 +203,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 4
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -201,6 +222,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 4
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -218,6 +241,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 4
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -235,6 +260,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 5
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -252,6 +279,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 8
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -269,6 +298,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 1
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -286,6 +317,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 3
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -303,6 +336,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 5
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -320,10 +355,11 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 1
+  ageMax: 8
   conditions:
-    - !type:TileNotBlocked
+    - !type:TileNotBlocked #bathroom
 
-#bathroom
 - type: construction
   name: toilet
   id: ToiletEmpty
@@ -338,10 +374,11 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 3
+  ageMax: 8
   conditions:
-    - !type:TileNotBlocked
+    - !type:TileNotBlocked #beds
 
-#beds
 - type: construction
   id: Bed
   name: bed
@@ -356,6 +393,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 0
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -373,6 +412,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 4
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -390,10 +431,11 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 2
+  ageMax: 8
   conditions:
-    - !type:TileNotBlocked
+    - !type:TileNotBlocked #racks
 
-#racks
 - type: construction
   id: Rack
   name: rack
@@ -408,6 +450,8 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 2
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked
 
@@ -425,5 +469,7 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 2
+  ageMax: 8
   conditions:
     - !type:TileNotBlocked

@@ -8,6 +8,8 @@
   description: A frame used to construct anything with a computer circuitboard.
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 7
+  ageMax: 8
   icon:
     sprite: Structures/Machines/parts.rsi
     state: 4
@@ -22,6 +24,8 @@
   category: construction-category-machines
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  ageMin: 5
+  ageMax: 8
   icon:
     sprite: Structures/Machines/parts.rsi
     state: "box_0"
@@ -37,6 +41,8 @@
   description: A lever to control machines. It has 3 modes.
   objectType: Structure
   canBuildInImpassable: false
+  ageMin: 7
+  ageMax: 8
   icon:
     sprite: Structures/conveyor.rsi
     state: switch-off
@@ -58,6 +64,8 @@
   placementMode: SnapgridCenter
   canRotate: true
   canBuildInImpassable: true
+  ageMin: 4
+  ageMax: 8
   conditions:
     - !type:WallmountCondition
 
@@ -76,6 +84,8 @@
   placementMode: SnapgridCenter
   canRotate: true
   canBuildInImpassable: true
+  ageMin: 7
+  ageMax: 8
   conditions:
     - !type:WallmountCondition
 
@@ -94,5 +104,7 @@
   placementMode: SnapgridCenter
   canRotate: true
   canBuildInImpassable: true
+  ageMin: 5
+  ageMax: 8
   conditions:
     - !type:WallmountCondition

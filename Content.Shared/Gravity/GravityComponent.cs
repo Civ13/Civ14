@@ -26,6 +26,6 @@ namespace Content.Shared.Gravity
         }
 
         [DataField("enabled")]
-        public bool Enabled;
+        public bool Enabled = true;
     }
 }

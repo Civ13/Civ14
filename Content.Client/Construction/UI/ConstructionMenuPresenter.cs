@@ -145,7 +145,7 @@ namespace Content.Client.Construction.UI
 
             recipesList.Clear();
             var recipes = new List<ConstructionPrototype>();
-
+            var _currentage = 0;
             foreach (var recipe in _prototypeManager.EnumeratePrototypes<ConstructionPrototype>())
             {
                 if (!string.IsNullOrEmpty(search))
@@ -159,8 +159,10 @@ namespace Content.Client.Construction.UI
                     if (recipe.Category != category)
                         continue;
                 }
-
-                recipes.Add(recipe);
+                if (_currentage >= recipe.AgeMin && _currentage <= recipe.AgeMax)
+                {
+                    recipes.Add(recipe);
+                }
             }
 
             recipes.Sort((a, b) => string.Compare(a.Name, b.Name, StringComparison.InvariantCulture));

@@ -54,6 +54,10 @@ namespace Content.Shared.Construction.Prototypes
 
         [DataField("category")] public string Category { get; private set; } = "";
 
+        [DataField("ageMin")] public int AgeMin { get; private set; } = 0;
+
+        [DataField("ageMax")] public int AgeMax { get; private set; } = 8;
+
         [DataField("objectType")] public ConstructionType Type { get; private set; } = ConstructionType.Structure;
 
         [ViewVariables]

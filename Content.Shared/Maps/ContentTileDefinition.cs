@@ -72,7 +72,7 @@ namespace Content.Shared.Maps
         /// <summary>
         /// Can weather affect this tile.
         /// </summary>
-        [DataField("weather")] public bool Weather = false;
+        [DataField("weather")] public bool Weather = true;
 
         public void AssignTileId(ushort id)
         {

@@ -22,7 +22,7 @@ namespace Content.Server.Gravity
             if (!Resolve(uid, ref gravity))
                 return;
 
-            var enabled = false;
+            var enabled = true;
 
             foreach (var (comp, xform) in EntityQuery<GravityGeneratorComponent, TransformComponent>(true))
             {

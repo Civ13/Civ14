@@ -10,6 +10,8 @@
     sprite: Objects/Weapons/Melee/baseball_bat.rsi
     state: icon
   objectType: Item
+  ageMin: 5
+  ageMax: 8
 
 - type: construction
   name: makeshift handcuffs
@@ -21,6 +23,8 @@
   description: "Homemade handcuffs crafted from spare cables."
   icon: { sprite: Objects/Misc/cablecuffs.rsi, state: cuff }
   objectType: Item
+  ageMin: 3
+  ageMax: 8
 
 - type: construction
   name: muzzle
