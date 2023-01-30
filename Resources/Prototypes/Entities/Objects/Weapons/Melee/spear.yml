@@ -2,7 +2,7 @@
   name: spear
   parent: BaseItem
   id: Spear
-  description: Definition of a Classic. Keeping murder affordable since 200,000 BCE.
+  description: A basic bone-tipped spear.
   components:
     - type: Tag
       tags:
@@ -75,3 +75,54 @@
       damage:
         types:
           Blunt: 5
+
+- type: entity
+  name: sharpened stick
+  parent: Spear
+  id: SharpenedStick
+  description: Definition of a Classic. Keeping murder affordable since 200,000 BCE.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/StoneAge/sharpened_stick.rsi
+      netsync: false
+      state: icon
+    - type: MeleeWeapon
+      damage:
+        types:
+          Piercing: 7
+      angle: 0
+      animation: WeaponArcThrust
+    - type: DamageOtherOnHit
+      damage:
+        types:
+          Piercing: 11
+    - type: Item
+      size: 25
+    - type: Clothing
+      quickEquip: true
+      slots:
+        - back
+    - type: Construction
+      graph: SharpenedStick
+      node: sharpened_stick
+    - type: ItemCooldown
+    - type: Wieldable
+    - type: IncreaseDamageOnWield
+      damage:
+        types:
+          Piercing: 4
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 18 #excess damage avoids cost of spawning entities.
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+        - trigger: !type:DamageTrigger
+            damage: 12
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
