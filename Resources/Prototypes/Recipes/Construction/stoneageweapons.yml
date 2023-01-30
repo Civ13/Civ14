@@ -1,0 +1,52 @@
+- type: construction
+  name: sharpened stick
+  id: SharpenedStick
+  graph: SharpenedStick
+  startNode: start
+  targetNode: sharpened_stick
+  category: construction-category-weapons
+  description: A simple and crude spear-like weapon
+  icon: { sprite: Objects/Weapons/StoneAge/sharpened_stick.rsi, state: icon }
+  objectType: Item
+
+- type: constructionGraph
+  id: SharpenedStick
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: sharpened_stick
+          steps:
+            - material: WoodPlank
+              amount: 5
+              doAfter: 5
+    - node: sharpened_stick
+      entity: SharpenedStick
+
+- type: construction
+  name: bone-tipped spear
+  id: Spear
+  graph: Spear
+  startNode: start
+  targetNode: spear
+  category: construction-category-weapons
+  description: A crude spear with a sharpened bone tip.
+  icon: { sprite: Objects/Weapons/StoneAge/spear.rsi, state: icon }
+  objectType: Item
+
+- type: constructionGraph
+  id: Spear
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: spear
+          steps:
+            - material: BoneStack
+              amount: 2
+              doAfter: 2
+            - material: WoodPlank
+              amount: 5
+              doAfter: 5
+    - node: spear
+      entity: Spear

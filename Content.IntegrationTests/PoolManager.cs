@@ -44,7 +44,7 @@ public static class PoolManager
         (CCVars.DatabaseSynchronous.Name, "true", false),
         (CCVars.DatabaseSqliteDelay.Name, "0", false),
         (CCVars.HolidaysEnabled.Name, "false", false),
-        (CCVars.GameMap.Name, "Empty", true),
+        (CCVars.GameMap.Name, "Nomads", true),
         (CCVars.AdminLogsQueueSendDelay.Name, "0", true),
         (CCVars.NetPVS.Name, "false", true),
         (CCVars.NPCMaxUpdates.Name, "999999", true),

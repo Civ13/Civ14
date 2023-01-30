@@ -1,16 +1,6 @@
 - type: construction
-  name: crude spear
-  id: Spear
-  graph: Spear
-  startNode: start
-  targetNode: spear
-  category: construction-category-weapons
-  description: A crude spear for when you need to put holes in somebody.
-  icon: { sprite: Objects/Weapons/Melee/spear.rsi, state: spear }
-  objectType: Item
-
-- type: construction
   name: makeshift bola
+
   id: Bola
   graph: Bola
   startNode: start
@@ -26,6 +16,7 @@
   graph: WoodenBuckler
   startNode: start
   targetNode: woodenBuckler
+
   category: construction-category-weapons
   description: A nicely carved wooden shield!
   icon: { sprite: Objects/Weapons/Melee/shields.rsi, state: buckler-icon }
