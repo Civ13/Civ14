@@ -116,7 +116,7 @@ entities:
         type: Gravity
       - type: MapLight
       - type: Gravity
-        enabled: true
+        enabled: True
       - id: Nomads
         type: BecomesStation
       - space: False
