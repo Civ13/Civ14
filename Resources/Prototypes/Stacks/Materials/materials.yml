@@ -27,6 +27,34 @@
   maxCount: 50
 
 - type: stack
+  id: Stone
+  name: stone
+  icon: { sprite: /Textures/Objects/_civ/materials.rsi, state: sheet-stone }
+  spawn: MaterialStone1
+  maxCount: 20
+
+- type: stack
+  id: Leather
+  name: leather
+  icon: { sprite: /Textures/Objects/_civ/materials.rsi, state: sheet-leather }
+  spawn: MaterialLeather1
+  maxCount: 50
+
+- type: stack
+  id: Flint
+  name: flint
+  icon: { sprite: /Textures/Objects/_civ/materials.rsi, state: flint }
+  spawn: MaterialFlint1
+  maxCount: 30
+
+- type: stack
+  id: Dirt
+  name: dirt
+  icon: { sprite: /Textures/Objects/_civ/items.rsi, state: dirt_pile }
+  spawn: MaterialDirt1
+  maxCount: 10
+
+- type: stack
   id: Cloth
   name: cloth
   icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: cloth }
