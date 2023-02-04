@@ -165,8 +165,8 @@
       state: flint
 
 - type: entity
-  parent: MaterialWoodPlank
-  id: MaterialWoodPlank1
+  parent: MaterialFlint
+  id: MaterialFlint1
   suffix: Single
   components:
     - type: Stack
@@ -175,12 +175,14 @@
 - type: entity
   parent: MaterialBase
   id: MaterialLeather
-  name: Leather
+  name: leather
   suffix: Full
   components:
     - type: Material
       materials:
         Leather: 50
+    - type: Stack
+      stackType: Leather
     - type: Sprite
       netsync: false
       sprite: /Textures/Objects/_civ/materials.rsi
@@ -205,7 +207,7 @@
   components:
     - type: Material
       materials:
-        Wood: 10
+        Dirt: 10
     - type: Stack
       stackType: Dirt
     - type: Sprite

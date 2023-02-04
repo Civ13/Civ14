@@ -10,3 +10,63 @@
   objectType: Item
   ageMin: 0
   ageMax: 8
+
+- type: construction
+  name: bone shovel
+  id: BoneShovel
+  graph: BoneShovel
+  startNode: start
+  targetNode: boneshovel
+  category: construction-category-tools
+  description: A crude bone shovel.
+  icon: { sprite: Objects/_civ/items.rsi, state: shovel_bone }
+  objectType: Item
+  ageMin: 0
+  ageMax: 8
+
+- type: constructionGraph
+  id: BoneShovel
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: boneshovel
+          steps:
+            - material: Bone
+              amount: 4
+              doAfter: 4
+            - material: WoodPlank
+              amount: 4
+              doAfter: 4
+    - node: boneshovel
+      entity: BoneShovel
+
+- type: construction
+  name: bone pickaxe
+  id: BonePickaxe
+  graph: BonePickaxe
+  startNode: start
+  targetNode: bonepickaxe
+  category: construction-category-tools
+  description: A crude bone pickaxe.
+  icon: { sprite: Objects/_civ/items.rsi, state: pickaxe_bone }
+  objectType: Item
+  ageMin: 0
+  ageMax: 8
+
+- type: constructionGraph
+  id: BonePickaxe
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: bonepickaxe
+          steps:
+            - material: Bone
+              amount: 5
+              doAfter: 5
+            - material: WoodPlank
+              amount: 4
+              doAfter: 5
+    - node: bonepickaxe
+      entity: Bonepickaxe

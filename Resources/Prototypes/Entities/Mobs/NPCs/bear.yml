@@ -34,9 +34,9 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        150: Dead
+        100: Dead
     - type: Stamina
-      excess: 150
+      excess: 100
     - type: Appearance
     - type: DamageStateVisuals
       states:
@@ -85,21 +85,12 @@
   id: MobBearBrown
   parent: MobBearBlack
   components:
-    - type: Fixtures
-      fixtures:
-        - shape: !type:PhysShapeCircle
-            radius: 0.6
-          density: 450
-          mask:
-            - MobMask
-          layer:
-            - MobLayer
     - type: MobThresholds
       thresholds:
         0: Alive
-        200: Dead
+        150: Dead
     - type: Stamina
-      excess: 200
+      excess: 150
     - type: Appearance
     - type: DamageStateVisuals
       states:
