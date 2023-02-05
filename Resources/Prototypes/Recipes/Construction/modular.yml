@@ -10,6 +10,8 @@
     sprite: Objects/Weapons/Grenades/modular.rsi
     state: complete
   objectType: Item
+  ageMin: 8
+  ageMax: 8
 
 - type: construction
   name: modular mine
@@ -23,3 +25,5 @@
     sprite: Objects/Misc/uglymine.rsi
     state: uglymine
   objectType: Item
+  ageMin: 8
+  ageMax: 8

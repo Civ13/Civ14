@@ -51,6 +51,8 @@
   icon:
     sprite: Objects/Weapons/Guns/Cannons/pneumatic_cannon.rsi
     state: icon
+  ageMin: 8
+  ageMax: 8
 
 - type: construction
   name: gauze
