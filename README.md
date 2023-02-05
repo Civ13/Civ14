@@ -10,8 +10,9 @@ Civilization 14 is a port of [Civilization 13](https://github.com/Civ13/civ13) f
 
 ## Building
 
-1. Clone this repo.
-2. Run `RUN_THIS.py` to init submodules and download the engine.
-3. Run `testrun.bat` (make sure you have [.NET 7 or above installed](https://dotnet.microsoft.com/en-us/download)).
+1. Make sure to install [.NET 7](https://dotnet.microsoft.com/en-us/download)) and [Python 3](https://www.python.org/downloads/).
+2. Clone this repository.
+3. Open the folder `BuildChecker` and run the `git_helper.py` file to init submodules and download the engine. Use the console to run it (it will be `py -3 git_helper.py` or `python git-helper.py` or `python3 git-helper.py`)
+4. Run `testrun.bat` to compile and launch the client and server.
 
 More detailed instructions on building the project can be found on the SS14 docs, [here](https://docs.spacestation14.io/getting-started/dev-setup).
