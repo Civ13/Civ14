@@ -38,6 +38,7 @@
   components:
     - type: Sprite
       state: smallbush1
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation02
@@ -45,6 +46,7 @@
   components:
     - type: Sprite
       state: smallbush2
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation03
@@ -52,6 +54,7 @@
   components:
     - type: Sprite
       state: smallbush3
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation04
@@ -59,6 +62,7 @@
   components:
     - type: Sprite
       state: smallbush4
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation05
@@ -66,6 +70,7 @@
   components:
     - type: Sprite
       state: smallbush5
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation06
@@ -73,6 +78,7 @@
   components:
     - type: Sprite
       state: smallbush6
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation07
@@ -80,6 +86,7 @@
   components:
     - type: Sprite
       state: smallbush7
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation08
@@ -87,6 +94,7 @@
   components:
     - type: Sprite
       state: smallbush8
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation09
@@ -94,6 +102,7 @@
   components:
     - type: Sprite
       state: smallbush9
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation10
@@ -181,6 +190,7 @@
   components:
     - type: Sprite
       state: smallbush20
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation21
@@ -188,6 +198,7 @@
   components:
     - type: Sprite
       state: smallbush21
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation22
@@ -195,6 +206,7 @@
   components:
     - type: Sprite
       state: smallbush22
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation23
@@ -202,6 +214,7 @@
   components:
     - type: Sprite
       state: smallbush23
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation24
@@ -209,6 +222,7 @@
   components:
     - type: Sprite
       state: smallbush24
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation25
@@ -216,6 +230,7 @@
   components:
     - type: Sprite
       state: smallbush25
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation26
@@ -223,6 +238,7 @@
   components:
     - type: Sprite
       state: smallbush26
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation27
@@ -230,6 +246,7 @@
   components:
     - type: Sprite
       state: smallbush27
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation28
@@ -237,6 +254,7 @@
   components:
     - type: Sprite
       state: smallbush28
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation29
@@ -244,6 +262,7 @@
   components:
     - type: Sprite
       state: smallbush29
+
 - type: entity
   parent: BaseVegetation
   id: Vegetation30
@@ -355,6 +374,7 @@
     - type: Sprite
       sprite: Objects/Flora/wild.rsi
       state: tall_grass_1
+
 - type: entity
   parent: BaseVegetation
   id: TallGrass02
@@ -363,6 +383,7 @@
     - type: Sprite
       sprite: Objects/Flora/wild.rsi
       state: tall_grass_2
+
 - type: entity
   parent: BaseVegetation
   id: TallGrass03
@@ -371,6 +392,7 @@
     - type: Sprite
       sprite: Objects/Flora/wild.rsi
       state: tall_grass_3
+
 - type: entity
   parent: BaseVegetation
   id: TallGrass04
@@ -379,6 +401,7 @@
     - type: Sprite
       sprite: Objects/Flora/wild.rsi
       state: tall_grass_4
+
 - type: entity
   parent: BaseVegetation
   id: TallGrass05
@@ -387,6 +410,7 @@
     - type: Sprite
       sprite: Objects/Flora/wild.rsi
       state: tall_grass_5
+
 - type: entity
   parent: BaseVegetation
   id: TallGrass06
@@ -395,6 +419,7 @@
     - type: Sprite
       sprite: Objects/Flora/wild.rsi
       state: tall_grass_6
+
 - type: entity
   parent: BaseVegetation
   id: TallGrass07
@@ -403,6 +428,7 @@
     - type: Sprite
       sprite: Objects/Flora/wild.rsi
       state: tall_grass_7
+
 - type: entity
   parent: BaseVegetation
   id: TallGrass08
@@ -411,6 +437,7 @@
     - type: Sprite
       sprite: Objects/Flora/wild.rsi
       state: tall_grass_8
+
 - type: entity
   parent: BaseVegetation
   id: TallGrass09

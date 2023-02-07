@@ -7,20 +7,20 @@
     },
     "states": [
         {
-            "directions": 4,
-            "name": "equipped-BACKPACK"
+            "name": "equipped-BACKPACK",
+            "directions": 4
         },
         {
-            "directions": 4,
-            "name": "equipped-BELT"
+            "name": "equipped-BELT",
+            "directions": 4
         },
         {
-            "directions": 4,
-            "name": "inhand-left"
+            "name": "inhand-left",
+            "directions": 4
         },
         {
-            "directions": 4,
-            "name": "inhand-right"
+            "name": "inhand-right",
+            "directions": 4
         },
         {
             "name": "icon"
