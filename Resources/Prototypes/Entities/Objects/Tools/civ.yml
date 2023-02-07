@@ -8,10 +8,10 @@
       tags:
         - Shovel
     - type: Sprite
-      sprite: Objects/_civ/items.rsi
-      state: shovel_bone
+      sprite: Objects/Weapons/StoneAge/bone_shovel.rsi
+      state: icon
     - type: Item
-      sprite: Objects/Tools/shovel.rsi
+      size: 20
 
 - type: entity
   name: bone pickaxe

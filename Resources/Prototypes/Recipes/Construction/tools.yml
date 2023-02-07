@@ -33,7 +33,7 @@
   targetNode: boneshovel
   category: construction-category-tools
   description: A crude bone shovel.
-  icon: { sprite: Objects/_civ/items.rsi, state: shovel_bone }
+  icon: { sprite: Objects/Weapons/StoneAge/bone_shovel.rsi, state: icon }
   objectType: Item
   ageMin: 0
   ageMax: 8
