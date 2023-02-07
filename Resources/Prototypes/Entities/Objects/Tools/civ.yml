@@ -20,8 +20,8 @@
   description: A crude pickaxe, with a shaped bone head.
   components:
     - type: Sprite
-      sprite: Objects/_civ/items.rsi
-      state: pickaxe_bone
+      sprite: Objects/Weapons/StoneAge/bone_pickaxe.rsi
+      state: icon
     - type: GatheringTool
       damage:
         types:
@@ -34,4 +34,3 @@
           Blunt: 3
     - type: Item
       size: 20
-      sprite: Objects/Weapons/Melee/pickaxe.rsi

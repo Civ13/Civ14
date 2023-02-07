@@ -20,13 +20,13 @@
       sprite: Objects/Weapons/StoneAge/bone_knife.rsi
 
 - type: entity
-  id: BoneHatchet
+  id: BoneAxe
   name: bone hatchet
   parent: FireAxe
   description: A crude hatched made of sharpened bone.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/StoneAge/bone_hatchet.rsi
+      sprite: Objects/Weapons/StoneAge/bone_axe.rsi
       state: icon
     - type: MeleeWeapon
       attackRate: 1.1
@@ -38,20 +38,20 @@
     - type: Item
       size: 60
     - type: Clothing
-      sprite: Objects/Weapons/StoneAge/bone_hatchet.rsi
+      sprite: Objects/Weapons/StoneAge/bone_axe.rsi
       quickEquip: false
       slots:
         - back
         - belt
 
 - type: entity
-  id: BoneAxe
-  name: bone axe
+  id: StoneAxe
+  name: stone axe
   parent: FireAxe
   description: A simple multi-purpose axe, made of bone.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/StoneAge/bone_axe.rsi
+      sprite: Objects/Weapons/StoneAge/stone_axe.rsi
       state: icon
     - type: MeleeWeapon
       attackRate: 0.9
@@ -63,7 +63,7 @@
     - type: Item
       size: 90
     - type: Clothing
-      sprite: Objects/Weapons/StoneAge/bone_axe.rsi
+      sprite: Objects/Weapons/StoneAge/stone_axe.rsi
       quickEquip: false
       slots:
         - back

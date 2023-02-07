@@ -63,7 +63,7 @@
   targetNode: bonepickaxe
   category: construction-category-tools
   description: A crude bone pickaxe.
-  icon: { sprite: Objects/_civ/items.rsi, state: pickaxe_bone }
+  icon: { sprite: Objects/Weapons/StoneAge/bone_pickaxe.rsi, state: icon }
   objectType: Item
   ageMin: 0
   ageMax: 8
@@ -77,10 +77,40 @@
         - to: bonepickaxe
           steps:
             - material: Bone
+              amount: 4
+              doAfter: 4
+            - material: WoodPlank
+              amount: 4
+              doAfter: 4
+    - node: bonepickaxe
+      entity: BonePickaxe
+
+- type: construction
+  name: bone axe
+  id: BoneAxe
+  graph: BoneAxe
+  startNode: start
+  targetNode: boneaxe
+  category: construction-category-tools
+  description: A crude bone axe.
+  icon: { sprite: Objects/Weapons/StoneAge/bone_axe.rsi, state: icon }
+  objectType: Item
+  ageMin: 0
+  ageMax: 8
+
+- type: constructionGraph
+  id: BoneAxe
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: boneaxe
+          steps:
+            - material: Bone
               amount: 5
               doAfter: 5
             - material: WoodPlank
               amount: 4
-              doAfter: 5
-    - node: bonepickaxe
-      entity: BonePickaxe
+              doAfter: 4
+    - node: boneaxe
+      entity: BoneAxe
