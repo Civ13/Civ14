@@ -8,6 +8,7 @@
       netsync: false
       drawdepth: Overdoors
       state: tree_1
+
 - type: entity
   parent: BaseTree
   id: BaseTreeTemperate2
@@ -18,6 +19,7 @@
       netsync: false
       drawdepth: Overdoors
       state: tree_2
+
 - type: entity
   parent: BaseTree
   id: BaseTreeTemperate3
@@ -28,6 +30,7 @@
       netsync: false
       drawdepth: Overdoors
       state: tree_3
+
 - type: entity
   parent: BaseTree
   id: BaseTreeTemperate4
@@ -38,6 +41,7 @@
       netsync: false
       drawdepth: Overdoors
       state: tree_4
+
 - type: entity
   parent: BaseTree
   id: BaseTreeTemperate5
