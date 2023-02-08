@@ -61,6 +61,8 @@
       sprite: Objects/Decoration/Flora/flora_trees.rsi
       netsync: false
       drawdepth: Overdoors
+    - type: Tree
+      sound: /Audio/Items/crowbar.ogg
     - type: Physics
       bodyType: Static
     - type: Fixtures
