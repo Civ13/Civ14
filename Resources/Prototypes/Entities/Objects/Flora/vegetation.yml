@@ -9,8 +9,6 @@
       sprite: Objects/Flora/ausflora.rsi
       netsync: false
       drawdepth: Overdoors
-    - type: Physics
-      bodyType: Static
     - type: Damageable
       damageContainer: Inorganic
       damageModifierSet: Wood

@@ -23,7 +23,7 @@
               amount: 2
               doAfter: 2
     - node: torch
-      entity: LightTorch
+      entity: Torch
 
 - type: construction
   name: bone shovel

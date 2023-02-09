@@ -12,6 +12,9 @@
       state: icon
     - type: Item
       size: 20
+    - type: Construction
+      graph: BoneShovel
+      node: boneshovel
 
 - type: entity
   name: bone pickaxe
@@ -34,3 +37,6 @@
           Blunt: 3
     - type: Item
       size: 20
+    - type: Construction
+      graph: BonePickaxe
+      node: bonepickaxe
