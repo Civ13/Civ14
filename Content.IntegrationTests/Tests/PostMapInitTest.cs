@@ -204,8 +204,6 @@ namespace Content.IntegrationTests.Tests
                     }
                 }
 
-                var station = entManager.GetComponent<StationMemberComponent>(targetGrid!.Value).Station;
-
                 // Test that the map has valid latejoin spawn points
                 if (!NoSpawnMaps.Contains(mapProto))
                 {
