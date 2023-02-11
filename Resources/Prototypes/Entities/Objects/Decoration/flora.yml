@@ -58,12 +58,14 @@
     - type: SpriteFade
     - type: Clickable
     - type: Sprite
-      sprite: Objects/Decoration/Flora/flora_trees.rsi
+      sprite: Objects/Decoration/Flora/flora_trees.rsiwa
       netsync: false
       drawdepth: Overdoors
     - type: Tree
-      Sound: /Audio/Items/crowbar.ogg
-      BreakTime: 4
+      entity: LeafedStick
+      amount: 2
+      sound: /Audio/Items/crowbar.ogg
+      breakTime: 4
     - type: Physics
       bodyType: Static
     - type: Fixtures
@@ -439,3 +441,16 @@
   components:
     - type: Sprite
       state: treestumpconifer
+
+- type: entity
+  parent: BaseItem
+  id: LeafedStick
+  description: A branch from a tree, it has some leaves on it.
+  name: branch
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Objects/_civ/old_weapons.rsi
+    state: leaved_stick
+  - type: Item
+    sprite: Objects/Materials/parts.rsi

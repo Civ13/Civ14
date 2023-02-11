@@ -23,25 +23,28 @@ public sealed class TreeSystem : EntitySystem
 
         component.CancelToken = new CancellationTokenSource();
 
-        var doAfterArgs = new DoAfterEventArgs(args.User, component.BreakTime, default, uid)
+        if (component.Amount > 0f)
         {
-            BreakOnTargetMove = true,
-            BreakOnUserMove = true,
-            BreakOnDamage = false,
-            BreakOnStun = true,
-            NeedHand = true,
-            TargetFinishedEvent = new BreakDoAfterComplete(uid),
-            TargetCancelledEvent = new BreakDoAfterCancel(),
-        };
-
-        _doAfter.DoAfter(doAfterArgs);
+            var doAfterArgs = new DoAfterEventArgs(args.User, component.BreakTime, default, uid)
+            {
+                BreakOnTargetMove = true,
+                BreakOnUserMove = true,
+                BreakOnDamage = false,
+                BreakOnStun = true,
+                NeedHand = true,
+                TargetFinishedEvent = new BreakDoAfterComplete(uid),
+                TargetCancelledEvent = new BreakDoAfterCancel(),
+            };
+            _doAfter.DoAfter(doAfterArgs);
+        }
     }
 
     private void OnBreakComplete(EntityUid uid, TreeComponent component, BreakDoAfterComplete ev)
     {
         component.CancelToken = null;
+        var newEntity = component.Entity;
         var pos = Transform(uid).MapPosition;
-        EntityManager.SpawnEntity("SharpenedStick",pos);
+        EntityManager.SpawnEntity(newEntity, pos);
         _audio.PlayPvs(component.Sound, uid);
     }
 
