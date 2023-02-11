@@ -65,7 +65,7 @@
     - type: SpriteFade
     - type: Clickable
     - type: Sprite
-      sprite: Objects/Decoration/Flora/flora_trees.rsiwa
+      sprite: Objects/Decoration/Flora/flora_trees.rsi
       netsync: false
       drawdepth: Overdoors
     - type: Tree
