@@ -42,6 +42,7 @@ public sealed class TreeSystem : EntitySystem
     private void OnBreakComplete(EntityUid uid, TreeComponent component, BreakDoAfterComplete ev)
     {
         component.CancelToken = null;
+        component.Amount--;
         var newEntity = component.Entity;
         var pos = Transform(uid).MapPosition;
         EntityManager.SpawnEntity(newEntity, pos);
