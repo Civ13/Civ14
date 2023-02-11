@@ -62,7 +62,8 @@
       netsync: false
       drawdepth: Overdoors
     - type: Tree
-      sound: /Audio/Items/crowbar.ogg
+      Sound: /Audio/Items/crowbar.ogg
+      BreakTime: 4
     - type: Physics
       bodyType: Static
     - type: Fixtures

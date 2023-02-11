@@ -1,4 +1,4 @@
-using Content.Server.Tree;
+using System.Threading;
 using Content.Server.DoAfter;
 using Content.Shared.Interaction;
 
@@ -6,62 +6,60 @@ namespace Content.Server.Tree;
 
 public sealed class TreeSystem : EntitySystem
 {
-    [Dependency] private readonly SharedInteractionSystem _interactionSystem = default!;
+    [Dependency] private readonly DoAfterSystem _doAfter = default!;
+
     [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly DoAfterSystem _doAfterSystem = default!;
+
     public override void Initialize()
     {
-        SubscribeLocalEvent<TreeComponent, AfterInteractEvent>(AfterInteractOn);
-        SubscribeLocalEvent<TreeComponent>(OnDoAfterComplete);
+        SubscribeLocalEvent<TreeComponent, InteractHandEvent>(TryBreak);
+        SubscribeLocalEvent<TreeComponent, BreakDoAfterComplete>(OnBreakComplete);
+        SubscribeLocalEvent<TreeComponent, BreakDoAfterCancel>(OnBreakCancel);
     }
 
-    private void OnInteractHand(EntityUid uid, TreeComponent component, InteractHandEvent args)
+    private void TryBreak(EntityUid uid, TreeComponent component, InteractHandEvent args)
     {
-        if (!_interactionSystem.InRangeUnobstructed(args.User, args.Target))
-            return;
-        var pos = Transform(uid).MapPosition;
-        EntityManager.SpawnEntity("SharpenedStick", pos);
-        _audio.PlayPvs(component.Sound, uid);
-    }
+        if (component.CancelToken != null) return;
 
-    private void OnDoAfterComplete(EntityUid uid, TreeComponent component)
-        {
-            var pos = Transform(uid).MapPosition;
-            EntityManager.SpawnEntity("SharpenedStick", pos);
-            _audio.PlayPvs(component.Sound, uid);
-            }
-        }
+        component.CancelToken = new CancellationTokenSource();
 
-    private void AfterInteractOn(EntityUid uid, TreeComponent component, AfterInteractEvent args)
-    {
-        var doAfterEventArgs = new DoAfterEventArgs(args.User, component.BreakTime, default, target)
+        var doAfterArgs = new DoAfterEventArgs(args.User, component.BreakTime, default, uid)
         {
             BreakOnTargetMove = true,
             BreakOnUserMove = true,
-            BreakOnDamage = true,
+            BreakOnDamage = false,
             BreakOnStun = true,
             NeedHand = true,
-            BroadcastFinishedEvent = new TreeBranchDoAfterComplete(uid, target, component, args.User),
+            TargetFinishedEvent = new BreakDoAfterComplete(uid),
+            TargetCancelledEvent = new BreakDoAfterCancel(),
         };
-        _doAfterSystem.DoAfter(doAfterEventArgs);
+
+        _doAfter.DoAfter(doAfterArgs);
     }
 
+    private void OnBreakComplete(EntityUid uid, TreeComponent component, BreakDoAfterComplete ev)
+    {
+        component.CancelToken = null;
+        var pos = Transform(uid).MapPosition;
+        EntityManager.SpawnEntity("SharpenedStick",pos);
+        _audio.PlayPvs(component.Sound, uid);
+    }
 
-    private sealed class TreeBranchDoAfterComplete : EntityEventArgs
+    private void OnBreakCancel(EntityUid uid, TreeComponent component, BreakDoAfterCancel args)
+    {
+        component.CancelToken = null;
+    }
+
+    private sealed class BreakDoAfterComplete : EntityEventArgs
     {
         public readonly EntityUid User;
-        public readonly EntityUid UsedTool;
-        public readonly EntityUid Target;
-        public readonly TreeComponent Component;
 
-        public TreeBranchDoAfterComplete(EntityUid usedTool, EntityUid target, string sprite,
-            TreeComponent component, EntityUid user)
+        public BreakDoAfterComplete(EntityUid uid)
         {
-            User = user;
-            UsedTool = usedTool;
-            Target = target;
-            Component = component;
+            User = uid;
         }
     }
+
+    private sealed class BreakDoAfterCancel : EntityEventArgs { }
 }
 

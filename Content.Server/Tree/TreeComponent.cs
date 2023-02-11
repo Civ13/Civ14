@@ -1,3 +1,5 @@
+using System.Threading;
+
 namespace Content.Server.Tree;
 
 [RegisterComponent]
@@ -8,4 +10,6 @@ public sealed class TreeComponent : Component
 
     [DataField("breakTime")]
     public float BreakTime = 3.0f;
+
+    public CancellationTokenSource? CancelToken;
 }
