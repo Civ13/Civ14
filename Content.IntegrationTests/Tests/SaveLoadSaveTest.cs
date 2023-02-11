@@ -97,7 +97,7 @@ namespace Content.IntegrationTests.Tests
                 mapId = mapManager.CreateMap();
                 mapManager.AddUninitializedMap(mapId);
                 mapManager.SetMapPaused(mapId, true);
-                mapLoader.LoadMap(mapId, "Maps/bagel.yml");
+                mapLoader.LoadMap(mapId, "Maps/nomads.yml");
                 mapLoader.SaveMap(mapId, "load save ticks save 1.yml");
             });
 

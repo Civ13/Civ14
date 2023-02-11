@@ -11,6 +11,10 @@
       damage:
         types:
           Slash: 10
+    - type: Construction
+      graph: BoneKnife
+      node: boneknife
+
     - type: Sprite
       sprite: Objects/Weapons/StoneAge/bone_knife.rsi
       size: 2
@@ -43,6 +47,9 @@
       slots:
         - back
         - belt
+    - type: Construction
+      graph: FlintAxe
+      node: flintaxe
 
 - type: entity
   id: BoneAxe
@@ -68,6 +75,9 @@
       slots:
         - back
         - belt
+    - type: Construction
+      graph: BoneAxe
+      node: boneaxe
 
 - type: entity
   id: StoneAxe
@@ -93,6 +103,9 @@
       slots:
         - back
         - belt
+    - type: Construction
+      graph: StoneAxe
+      node: stoneaxe
 
 - type: entity
   id: BoneBattleAxe
@@ -117,3 +130,6 @@
       quickEquip: false
       slots:
         - back
+    - type: Construction
+      graph: BoneBattleAxe
+      node: bonebattleaxe

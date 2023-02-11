@@ -23,7 +23,7 @@
               amount: 2
               doAfter: 2
     - node: torch
-      entity: LightTorch
+      entity: Torch
 
 - type: construction
   name: bone shovel
@@ -114,3 +114,123 @@
               doAfter: 4
     - node: boneaxe
       entity: BoneAxe
+
+- type: construction
+  name: bone knife
+  id: BoneKnife
+  graph: BoneKnife
+  startNode: start
+  targetNode: boneknife
+  category: construction-category-tools
+  description: A crude bone knife.
+  icon: { sprite: Objects/Weapons/StoneAge/bone_knife.rsi, state: icon }
+  objectType: Item
+  ageMin: 0
+  ageMax: 8
+
+- type: constructionGraph
+  id: BoneKnife
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: boneknife
+          steps:
+            - material: Bone
+              amount: 2
+              doAfter: 5
+            - material: WoodPlank
+              amount: 1
+              doAfter: 2
+    - node: boneknife
+      entity: BoneKnife
+
+- type: construction
+  name: flint axe
+  id: FlintAxe
+  graph: FlintAxe
+  startNode: start
+  targetNode: flintaxe
+  category: construction-category-tools
+  description: A crude flint axe.
+  icon: { sprite: Objects/Weapons/StoneAge/flint_axe.rsi, state: icon }
+  objectType: Item
+  ageMin: 0
+  ageMax: 8
+
+- type: constructionGraph
+  id: FlintAxe
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: flintaxe
+          steps:
+            - material: Flint
+              amount: 5
+              doAfter: 5
+            - material: WoodPlank
+              amount: 4
+              doAfter: 4
+    - node: flintaxe
+      entity: FlintAxe
+
+- type: construction
+  name: stone axe
+  id: StoneAxe
+  graph: StoneAxe
+  startNode: start
+  targetNode: stoneaxe
+  category: construction-category-tools
+  description: A crude stone axe.
+  icon: { sprite: Objects/Weapons/StoneAge/stone_axe.rsi, state: icon }
+  objectType: Item
+  ageMin: 0
+  ageMax: 8
+
+- type: constructionGraph
+  id: StoneAxe
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: stoneaxe
+          steps:
+            - material: Stone
+              amount: 5
+              doAfter: 5
+            - material: WoodPlank
+              amount: 4
+              doAfter: 4
+    - node: stoneaxe
+      entity: StoneAxe
+
+- type: construction
+  name: bone battleaxe
+  id: BoneBattleAxe
+  graph: BoneBattleAxe
+  startNode: start
+  targetNode: bonebattleaxe
+  category: construction-category-tools
+  description: A crude bone battleaxe.
+  icon: { sprite: Objects/Weapons/StoneAge/bone_battleaxe.rsi, state: icon }
+  objectType: Item
+  ageMin: 0
+  ageMax: 8
+
+- type: constructionGraph
+  id: BoneBattleAxe
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: bonebattleaxe
+          steps:
+            - material: Bone
+              amount: 7
+              doAfter: 7
+            - material: WoodPlank
+              amount: 5
+              doAfter: 5
+    - node: bonebattleaxe
+      entity: BoneBattleAxe

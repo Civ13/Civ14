@@ -47,6 +47,54 @@
   price: 0.05
 
 - type: material
+  id: Dirt
+  stackEntity: MaterialDirt1
+  name: materials-dirt
+  icon: { sprite: /Textures/Objects/_civ/items.rsi, state: dirt_pile }
+  color: "#76552b"
+  price: 0.01
+
+- type: material
+  id: Flint
+  stackEntity: MaterialFlint1
+  name: materials-flint
+  icon: { sprite: /Textures/Objects/_civ/materials.rsi, state: flint }
+  color: "#151C06"
+  price: 0.02
+
+- type: material
+  id: Straw
+  stackEntity: MaterialStraw1
+  name: materials-straw
+  icon: { sprite: /Textures/Objects/_civ/materials.rsi, state: sheet-straw }
+  color: "#F7E972"
+  price: 0.04
+
+- type: material
+  id: Leather
+  stackEntity: MaterialLeather1
+  name: materials-leather
+  icon: { sprite: /Textures/Objects/_civ/materials.rsi, state: sheet-leather }
+  color: "#624A2E"
+  price: 0.25
+
+- type: material
+  id: Bone
+  stackEntity: MaterialBone1
+  name: materials-bone
+  icon: { sprite: /Textures/Objects/_civ/materials.rsi, state: sheet-bone }
+  color: "#F7E972"
+  price: 0.05
+
+- type: material
+  id: Stone
+  stackEntity: MaterialStone1
+  name: materials-stone
+  icon: { sprite: /Textures/Objects/_civ/materials.rsi, state: sheet-stone }
+  color: "#F7E972"
+  price: 0.12
+
+- type: material
   id: Uranium
   stackEntity: SheetUranium1
   name: materials-uranium
