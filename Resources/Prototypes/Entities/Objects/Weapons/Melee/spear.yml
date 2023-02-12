@@ -99,7 +99,7 @@
     - type: Item
       size: 25
     - type: Clothing
-      quickEquip: true
+      quickEquip: false
       slots:
         - back
     - type: Construction

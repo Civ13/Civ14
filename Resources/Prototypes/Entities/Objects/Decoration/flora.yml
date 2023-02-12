@@ -461,3 +461,7 @@
     state: leaved_stick
   - type: Item
     sprite: Objects/Materials/parts.rsi
+  - type: Branch
+    entity: SharpenedStick
+    sound: /Audio/Items/crowbar.ogg
+    breakTime: 5
