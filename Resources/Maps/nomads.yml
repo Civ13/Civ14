@@ -99,7 +99,6 @@ tilemap:
 entities:
   - uid: 0
     components:
-      - type: MetaData
       - type: Transform
       - index: 5
         type: Map
@@ -109,10 +108,7 @@ entities:
         type: Parallax
       - gravityShakeSound: !type:SoundPathSpecifier
           path: /Audio/Effects/alert.ogg
-        enabled: True
         type: Gravity
-      - type: Gravity
-        enabled: True
       - id: Nomads
         type: BecomesStation
       - space: False
@@ -293,7 +289,7 @@ entities:
         parent: 0
         type: Transform
   - uid: 19
-    type: LightSun
+    type: BaseTreeTemperate4
     components:
       - pos: 0.5,1.5
         parent: 0
