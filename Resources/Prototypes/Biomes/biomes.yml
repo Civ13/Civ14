@@ -92,7 +92,7 @@
       threshold: 0
       tile: FloorDirt
     - !type:BiomeTileLayer
-      threshold: 0.5
+      threshold: 0.78
       tile: FloorGrass
 
 # Lava
