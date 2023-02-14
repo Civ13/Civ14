@@ -5,6 +5,7 @@
     <TargetFramework>$(TargetFramework)</TargetFramework>
     <LangVersion>11</LangVersion>
     <IsPackable>false</IsPackable>
+    <WarningLevel>1</WarningLevel>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>..\bin\Content.Server\</OutputPath>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>

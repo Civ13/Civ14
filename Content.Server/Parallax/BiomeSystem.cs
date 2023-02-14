@@ -182,7 +182,10 @@ public sealed class BiomeSystem : SharedBiomeSystem
 
         // Now do entities
         var loadedEntities = new List<EntityUid>();
-        component.LoadedEntities.Add(chunk, loadedEntities);
+        if (!component.LoadedEntities.ContainsKey(chunk))
+            {
+                component.LoadedEntities.Add(chunk, loadedEntities);
+            }
 
         for (var x = 0; x < ChunkSize; x++)
         {
@@ -208,7 +211,6 @@ public sealed class BiomeSystem : SharedBiomeSystem
                 {
                     _transform.AnchorEntity(xform, grid, indices);
                 }
-
                 loadedEntities.Add(ent);
             }
         }
