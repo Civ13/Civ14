@@ -1,6 +1,6 @@
 using System.Threading;
 using Content.Server.DoAfter;
-using Content.Shared.Interaction;
+using Content.Shared.Verbs;
 
 namespace Content.Server.Tree;
 
@@ -12,12 +12,12 @@ public sealed class TreeSystem : EntitySystem
 
     public override void Initialize()
     {
-        SubscribeLocalEvent<TreeComponent, InteractHandEvent>(TryBreak);
+        SubscribeLocalEvent<TreeComponent, GetVerbsEvent<AlternativeVerb>>(AddBreakVerb);
         SubscribeLocalEvent<TreeComponent, BreakDoAfterComplete>(OnBreakComplete);
         SubscribeLocalEvent<TreeComponent, BreakDoAfterCancel>(OnBreakCancel);
     }
 
-    private void TryBreak(EntityUid uid, TreeComponent component, InteractHandEvent args)
+    private void TryBreak(EntityUid uid, TreeComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
         if (component.CancelToken != null) return;
 
@@ -65,5 +65,20 @@ public sealed class TreeSystem : EntitySystem
     }
 
     private sealed class BreakDoAfterCancel : EntityEventArgs { }
+
+    private void AddBreakVerb(EntityUid uid, TreeComponent component, GetVerbsEvent<AlternativeVerb> args)
+        {
+            if (!args.CanAccess || !args.CanInteract || args.Hands == null)
+                return;
+
+            AlternativeVerb verb = new()
+            {
+                Act = () => TryBreak(uid, component, args),
+                Text = Loc.GetString("break-verb"),
+            };
+
+            args.Verbs.Add(verb);
+        }
+
 }
 

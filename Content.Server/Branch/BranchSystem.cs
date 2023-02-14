@@ -1,6 +1,6 @@
 using System.Threading;
 using Content.Server.DoAfter;
-using Content.Shared.Interaction;
+using Content.Shared.Verbs;
 
 namespace Content.Server.Branch;
 
@@ -12,12 +12,12 @@ public sealed class BranchSystem : EntitySystem
 
     public override void Initialize()
     {
-        SubscribeLocalEvent<BranchComponent, InteractHandEvent>(TryBreak);
-        SubscribeLocalEvent<BranchComponent, BreakDoAfterComplete>(OnBreakComplete);
-        SubscribeLocalEvent<BranchComponent, BreakDoAfterCancel>(OnBreakCancel);
+        SubscribeLocalEvent<BranchComponent, GetVerbsEvent<AlternativeVerb>>(AddSharpenVerb);
+        SubscribeLocalEvent<BranchComponent, SharpenDoAfterComplete>(OnSharpenComplete);
+        SubscribeLocalEvent<BranchComponent, SharpenDoAfterCancel>(OnSharpenCancel);
     }
 
-    private void TryBreak(EntityUid uid, BranchComponent component, InteractHandEvent args)
+    private void TrySharpen(EntityUid uid, BranchComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
         if (component.CancelToken != null) return;
 
@@ -30,13 +30,13 @@ public sealed class BranchSystem : EntitySystem
             BreakOnDamage = false,
             BreakOnStun = true,
             NeedHand = true,
-            TargetFinishedEvent = new BreakDoAfterComplete(uid),
-            TargetCancelledEvent = new BreakDoAfterCancel(),
+            TargetFinishedEvent = new SharpenDoAfterComplete(uid),
+            TargetCancelledEvent = new SharpenDoAfterCancel(),
         };
         _doAfter.DoAfter(doAfterArgs);
     }
 
-    private void OnBreakComplete(EntityUid uid, BranchComponent component, BreakDoAfterComplete ev)
+    private void OnSharpenComplete(EntityUid uid, BranchComponent component, SharpenDoAfterComplete ev)
     {
         component.CancelToken = null;
         var newEntity = component.Entity;
@@ -46,21 +46,35 @@ public sealed class BranchSystem : EntitySystem
         EntityManager.DeleteEntity(uid);
     }
 
-    private void OnBreakCancel(EntityUid uid, BranchComponent component, BreakDoAfterCancel args)
+    private void OnSharpenCancel(EntityUid uid, BranchComponent component, SharpenDoAfterCancel args)
     {
         component.CancelToken = null;
     }
 
-    private sealed class BreakDoAfterComplete : EntityEventArgs
+    private sealed class SharpenDoAfterComplete : EntityEventArgs
     {
         public readonly EntityUid User;
 
-        public BreakDoAfterComplete(EntityUid uid)
+        public SharpenDoAfterComplete(EntityUid uid)
         {
             User = uid;
         }
     }
 
-    private sealed class BreakDoAfterCancel : EntityEventArgs { }
+    private sealed class SharpenDoAfterCancel : EntityEventArgs { }
+
+    private void AddSharpenVerb(EntityUid uid, BranchComponent component, GetVerbsEvent<AlternativeVerb> args)
+        {
+            if (!args.CanAccess || !args.CanInteract || args.Hands == null)
+                return;
+
+            AlternativeVerb verb = new()
+            {
+                Act = () => TrySharpen(uid, component, args),
+                Text = Loc.GetString("sharpen-verb"),
+            };
+
+            args.Verbs.Add(verb);
+        }
 }
 
