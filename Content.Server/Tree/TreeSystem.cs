@@ -7,7 +7,6 @@ namespace Content.Server.Tree;
 public sealed class TreeSystem : EntitySystem
 {
     [Dependency] private readonly DoAfterSystem _doAfter = default!;
-
     [Dependency] private readonly SharedAudioSystem _audio = default!;
 
     public override void Initialize()
@@ -74,7 +73,7 @@ public sealed class TreeSystem : EntitySystem
             AlternativeVerb verb = new()
             {
                 Act = () => TryBreak(uid, component, args),
-                Text = Loc.GetString("break-verb"),
+                Text = Loc.GetString("break-verb")
             };
 
             args.Verbs.Add(verb);
