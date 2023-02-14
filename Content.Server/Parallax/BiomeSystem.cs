@@ -217,7 +217,10 @@ public sealed class BiomeSystem : SharedBiomeSystem
 
         // Decals
         var loadedDecals = new Dictionary<uint, Vector2i>();
-        component.LoadedDecals.Add(chunk, loadedDecals);
+        if (!component.LoadedDecals.ContainsKey(chunk))
+            {
+                component.LoadedDecals.Add(chunk, loadedDecals);
+            }
 
         for (var x = 0; x < ChunkSize; x++)
         {
