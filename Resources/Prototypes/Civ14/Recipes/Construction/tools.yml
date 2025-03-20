@@ -74,3 +74,14 @@
   description: A simple wood hammer.
   icon: { sprite: Civ14/Objects/StoneAge/wood_hammer.rsi, state: icon }
   objectType: Item
+
+- type: construction
+  name: wood bucket
+  id: Bucket
+  graph: Bucket
+  startNode: start
+  targetNode: bucket
+  category: construction-category-tools
+  description: A simple wood bucket.
+  icon: { sprite: Objects/Tools/bucket.rsi, state: icon }
+  objectType: Item

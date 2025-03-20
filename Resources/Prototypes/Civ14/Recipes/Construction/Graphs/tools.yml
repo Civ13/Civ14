@@ -127,3 +127,17 @@
               doAfter: 6
     - node: woodhammer
       entity: WoodHammer
+
+- type: constructionGraph
+  id: Bucket
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: bucket
+          steps:
+            - material: WoodPlank
+              amount: 3
+              doAfter: 3
+    - node: bucket
+      entity: Bucket
