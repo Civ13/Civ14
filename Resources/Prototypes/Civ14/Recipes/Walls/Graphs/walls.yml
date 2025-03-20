@@ -1,0 +1,13 @@
+- type: constructionGraph
+  id: StrawWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Straw
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: StrawWall

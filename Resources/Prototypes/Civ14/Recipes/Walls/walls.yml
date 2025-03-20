@@ -1,0 +1,16 @@
+- type: construction
+  name: straw wall
+  id: StrawWall
+  graph: StrawWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A basic wall made of straw and dry leaves. Burns easily.
+  icon:
+    sprite: Civ14/Structures/walls.rsi
+    state: straw_wallB1
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked

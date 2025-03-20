@@ -67,3 +67,20 @@
               doAfter: 15
     - node: bonearmor
       entity: suit-storage-jacket-bonearmor
+
+- type: constructionGraph
+  id: Quiver
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: Quiver
+          steps:
+            - material: Leather
+              amount: 5
+              doAfter: 2
+            - material: WoodPlank
+              amount: 1
+              doAfter: 2
+    - node: Quiver
+      entity: ClothingBeltQuiver
