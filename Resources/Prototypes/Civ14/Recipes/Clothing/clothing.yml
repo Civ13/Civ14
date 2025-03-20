@@ -6,7 +6,7 @@
   targetNode: leatherloincloth
   category: construction-category-clothing
   description: A simple leather loincloth.
-  icon: { sprite: Clothing/Civ14/exported/leatherloincloth1.rsi, state: icon }
+  icon: { sprite: Civ14/Clothing/exported/leatherloincloth1.rsi, state: icon }
   objectType: Item
 
 - type: construction
@@ -17,7 +17,7 @@
   targetNode: leathersandals
   category: construction-category-clothing
   description: A pair of simple, thin leather strap sandals. Covers up to the lower foot.
-  icon: { sprite: Clothing/Civ14/exported/flipflops.rsi, state: icon }
+  icon: { sprite: Civ14/Clothing/exported/flipflops.rsi, state: icon }
   objectType: Item
 
 - type: construction
@@ -28,7 +28,7 @@
   targetNode: bonehelmet
   category: construction-category-clothing
   description: A helmet made of bones.
-  icon: { sprite: Clothing/Civ14/exported/bone_helmet.rsi, state: icon }
+  icon: { sprite: Civ14/Clothing/exported/bone_helmet.rsi, state: icon }
   objectType: Item
 
 - type: construction
@@ -39,7 +39,7 @@
   targetNode: leathercap
   category: construction-category-clothing
   description: A cap made of leather.
-  icon: { sprite: Clothing/Civ14/exported/roundcap_hat.rsi, state: icon }
+  icon: { sprite: Civ14/Clothing/exported/roundcap_hat.rsi, state: icon }
   objectType: Item
 
 - type: construction
@@ -50,7 +50,7 @@
   targetNode: bonearmor
   category: construction-category-clothing
   description: A spooky armor, made of assorted bones.
-  icon: { sprite: Clothing/Civ14/exported/bonearmor.rsi, state: icon }
+  icon: { sprite: Civ14/Clothing/exported/bonearmor.rsi, state: icon }
   objectType: Item
 
 - type: construction

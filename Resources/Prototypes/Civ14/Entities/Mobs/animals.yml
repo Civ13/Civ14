@@ -9,7 +9,7 @@
       layers:
         - map: ["enum.DamageStateVisualLayers.Base"]
           state: deer_m
-          sprite: Mobs/Civ14/animal.rsi
+          sprite: Civ14/Mobs/animal.rsi
     - type: Physics
     - type: Fixtures
       fixtures:
@@ -69,7 +69,7 @@
       layers:
         - map: ["enum.DamageStateVisualLayers.Base"]
           state: deer_f
-          sprite: Mobs/Civ14/animal.rsi
+          sprite: Civ14/Mobs/animal.rsi
     - type: DamageStateVisuals
       states:
         Alive:
@@ -87,7 +87,7 @@
   components:
     - type: Sprite
       drawdepth: SmallMobs
-      sprite: Mobs/Civ14/animal.rsi
+      sprite: Civ14/Mobs/animal.rsi
       layers:
         - map: ["enum.DamageStateVisualLayers.Base", "movement"]
           state: rabbitgrey
@@ -200,7 +200,7 @@
   components:
     - type: Sprite
       drawdepth: SmallMobs
-      sprite: Mobs/Civ14/animal.rsi
+      sprite: Civ14/Mobs/animal.rsi
       layers:
         - map: ["enum.DamageStateVisualLayers.Base", "movement"]
           state: rabbitblack
@@ -220,7 +220,7 @@
   components:
     - type: Sprite
       drawdepth: SmallMobs
-      sprite: Mobs/Civ14/animal.rsi
+      sprite: Civ14/Mobs/animal.rsi
       layers:
         - map: ["enum.DamageStateVisualLayers.Base", "movement"]
           state: rabbitwhite
