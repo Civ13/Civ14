@@ -6,7 +6,7 @@
   components:
     - type: Sprite
       netsync: false
-      sprite: Objects/_civ/old_weapons.rsi
+      sprite: Civ14/Objects/old_weapons.rsi
       state: flint
     - type: Item
       shape:
@@ -26,7 +26,7 @@
   components:
     - type: Sprite
       netsync: false
-      sprite: Objects/_civ/old_weapons.rsi
+      sprite: Civ14/Objects/old_weapons.rsi
       state: sharpened_flint
     - type: Item
       shape:

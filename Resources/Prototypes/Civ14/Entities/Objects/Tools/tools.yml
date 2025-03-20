@@ -8,7 +8,7 @@
       tags:
         - Shovel
     - type: Sprite
-      sprite: Objects/_civ/StoneAge/bone_shovel.rsi
+      sprite: Civ14/Objects/StoneAge/bone_shovel.rsi
       state: icon
     - type: Item
       size: Large
@@ -23,7 +23,7 @@
   description: A crude pickaxe, with a shaped bone head.
   components:
     - type: Sprite
-      sprite: Objects/_civ/StoneAge/bone_pickaxe.rsi
+      sprite: Civ14/Objects/StoneAge/bone_pickaxe.rsi
       state: icon
     - type: MeleeWeapon
       damage:
@@ -53,12 +53,12 @@
       graph: BoneKnife
       node: boneknife
     - type: Sprite
-      sprite: Objects/_civ/StoneAge/bone_knife.rsi
+      sprite: Civ14/Objects/StoneAge/bone_knife.rsi
       size: 2
       state: icon
     - type: Item
       size: Normal
-      sprite: Objects/_civ/StoneAge/bone_knife.rsi
+      sprite: Civ14/Objects/StoneAge/bone_knife.rsi
 
 - type: entity
   id: FlintAxe
@@ -67,7 +67,7 @@
   description: A crude hatchet made of sharpened flint.
   components:
     - type: Sprite
-      sprite: Objects/_civ/StoneAge/flint_axe.rsi
+      sprite: Civ14/Objects/StoneAge/flint_axe.rsi
       state: icon
     - type: MeleeWeapon
       attackRate: 1.1
@@ -79,7 +79,7 @@
     - type: Item
       size: Normal
     - type: Clothing
-      sprite: Objects/_civ/StoneAge/flint_axe.rsi
+      sprite: Civ14/Objects/StoneAge/flint_axe.rsi
       quickEquip: false
       slots:
         - back
@@ -95,7 +95,7 @@
   description: A crude hatched made of sharpened bone.
   components:
     - type: Sprite
-      sprite: Objects/_civ/StoneAge/bone_axe.rsi
+      sprite: Civ14/Objects/StoneAge/bone_axe.rsi
       state: icon
     - type: MeleeWeapon
       attackRate: 1.1
@@ -107,7 +107,7 @@
     - type: Item
       size: Normal
     - type: Clothing
-      sprite: Objects/_civ/StoneAge/bone_axe.rsi
+      sprite: Civ14/Objects/StoneAge/bone_axe.rsi
       quickEquip: false
       slots:
         - back
@@ -123,7 +123,7 @@
   description: A simple wood plough. Use it on dirt to plough farming areas.
   components:
     - type: Sprite
-      sprite: Objects/_civ/items.rsi
+      sprite: Civ14/Objects/items.rsi
       state: plough
     - type: MeleeWeapon
       damage:
@@ -139,7 +139,7 @@
       materialComposition:
         Wood: 100
     - type: Clothing
-      sprite: Objects/_civ/items.rsi
+      sprite: Civ14/Objects/items.rsi
       quickEquip: false
       slots:
         - back
@@ -156,7 +156,7 @@
   description: Hit stuff apart with this.
   components:
     - type: Sprite
-      sprite: Objects/_civ/items.rsi
+      sprite: Civ14/Objects/items.rsi
       state: hammer
     - type: Item
       size: Normal
@@ -173,7 +173,7 @@
   id: WoodHammer
   components:
     - type: Sprite
-      sprite: Objects/_civ/StoneAge/wood_hammer.rsi
+      sprite: Civ14/Objects/StoneAge/wood_hammer.rsi
       state: icon
     - type: MeleeWeapon
       damage:

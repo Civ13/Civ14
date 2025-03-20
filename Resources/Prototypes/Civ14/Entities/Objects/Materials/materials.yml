@@ -5,7 +5,7 @@
   abstract: true
   components:
     - type: Sprite
-      sprite: Objects/_civ/pooeffect.rsi
+      sprite: Civ14/Objects/pooeffect.rsi
       layers:
         - state: poop1
           map: ["random"]
@@ -21,7 +21,7 @@
             poop7: ""
     - type: Appearance
     - type: Item
-      sprite: Objects/_civ/pooeffect.rsi
+      sprite: Civ14/Objects/pooeffect.rsi
       heldPrefix: poo
 
 - type: entity
@@ -42,7 +42,7 @@
   description: Decomposed organic matter, full of nutrients for the soil.
   components:
     - type: Sprite
-      sprite: Objects/_civ/pooeffect.rsi
+      sprite: Civ14/Objects/pooeffect.rsi
       layers:
         - state: animalpoo1
           map: ["random"]
