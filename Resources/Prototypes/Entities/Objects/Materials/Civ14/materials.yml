@@ -161,3 +161,44 @@
   components:
     - type: Stack
       count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialClay
+  name: clay
+  suffix: Full
+  components:
+    - type: Sprite
+      state: clay
+      layers:
+        - state: claylump
+          map: ["base"]
+    - type: Stack
+      stackType: Clay
+      baseLayer: base
+      layerStates:
+        - claylump
+        - claylump_2
+        - claylump_3
+    - type: Appearance
+    - type: Item
+      heldPrefix: clay
+    - type: Tag
+      tags:
+        - RawMaterial
+
+- type: entity
+  parent: MaterialClay
+  id: MaterialClay10
+  suffix: 10
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: MaterialClay
+  id: MaterialClay1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
