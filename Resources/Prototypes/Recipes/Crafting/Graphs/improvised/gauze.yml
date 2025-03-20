@@ -2,12 +2,12 @@
   id: Gauze
   start: start
   graph:
-  - node: start
-    edges:
-    - to: gauze
-      steps:
-      - material: Cloth
-        amount: 2
-        doAfter: 3
-  - node: gauze
-    entity: Gauze1
+    - node: start
+      edges:
+        - to: gauze
+          steps:
+            - material: Leather
+              amount: 2
+              doAfter: 3
+    - node: gauze
+      entity: Gauze1

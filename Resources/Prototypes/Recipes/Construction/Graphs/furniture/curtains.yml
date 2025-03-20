@@ -8,109 +8,82 @@
       edges:
         - to: Curtains
           completed:
-            - !type:SnapToGrid { }
+            - !type:SnapToGrid {}
           steps:
-            - material: Cloth
+            - material: Leather
               amount: 2
-              doAfter: 1
+              doAfter: 3
         - to: CurtainsBlack
           completed:
-            - !type:SnapToGrid { }
+            - !type:SnapToGrid {}
           steps:
-            - tag: CarpetBlack
-              doAfter: 1
-              name: black carpet
-              icon:
-                sprite: Objects/Tiles/tile.rsi
-                state: carpet-black
+            - material: Leather
+              amount: 2
+              doAfter: 3
         - to: CurtainsBlue
           completed:
-            - !type:SnapToGrid { }
+            - !type:SnapToGrid {}
           steps:
-            - tag: CarpetBlue
-              doAfter: 1
-              name: blue carpet
-              icon:
-                sprite: Objects/Tiles/tile.rsi
-                state: carpet-blue
+            - material: Leather
+              amount: 2
+              doAfter: 3
         - to: CurtainsCyan
           completed:
-            - !type:SnapToGrid { }
+            - !type:SnapToGrid {}
           steps:
-            - tag: CarpetCyan
-              doAfter: 1
-              name: cyan carpet
-              icon:
-                sprite: Objects/Tiles/tile.rsi
-                state: carpet-cyan
+            - material: Leather
+              amount: 2
+              doAfter: 3
         - to: CurtainsGreen
           completed:
-            - !type:SnapToGrid { }
+            - !type:SnapToGrid {}
           steps:
-            - tag: CarpetGreen
-              doAfter: 1
-              name: green carpet
-              icon:
-                sprite: Objects/Tiles/tile.rsi
-                state: carpet-green
+            - material: Leather
+              amount: 2
+              doAfter: 3
         - to: CurtainsOrange
           completed:
-            - !type:SnapToGrid { }
+            - !type:SnapToGrid {}
           steps:
-            - tag: CarpetOrange
-              doAfter: 1
-              name: orange carpet
-              icon:
-                sprite: Objects/Tiles/tile.rsi
-                state: carpet-orange
+            - material: Leather
+              amount: 2
+              doAfter: 3
         - to: CurtainsPink
           completed:
-            - !type:SnapToGrid { }
+            - !type:SnapToGrid {}
           steps:
-            - tag: CarpetPink
-              doAfter: 1
-              name: pink carpet
-              icon:
-                sprite: Objects/Tiles/tile.rsi
-                state: carpet-pink
+            - material: Leather
+              amount: 2
+              doAfter: 3
         - to: CurtainsPurple
           completed:
-            - !type:SnapToGrid { }
+            - !type:SnapToGrid {}
           steps:
-            - tag: CarpetPurple
-              doAfter: 1
-              name: purple carpet
-              icon:
-                sprite: Objects/Tiles/tile.rsi
-                state: carpet-purple
+            - material: Leather
+              amount: 2
+              doAfter: 3
         - to: CurtainsRed
           completed:
-            - !type:SnapToGrid { }
+            - !type:SnapToGrid {}
           steps:
-            - tag: CarpetRed
-              doAfter: 1
-              name: red carpet
-              icon:
-                sprite: Objects/Tiles/tile.rsi
-                state: carpet-red
+            - material: Leather
+              amount: 2
+              doAfter: 3
         - to: CurtainsWhite
           completed:
-            - !type:SnapToGrid { }
+            - !type:SnapToGrid {}
           steps:
-            - tag: CarpetWhite
-              doAfter: 1
-              name: white carpet
-              icon:
-                sprite: Objects/Tiles/tile.rsi
-                state: carpet-white
-              
+            - material: Leather
+              amount: 2
+              doAfter: 3
+
     - node: Curtains
       entity: HospitalCurtains
       edges:
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
+              prototype: MaterialLeather1
               amount: 2
           steps:
             - tool: Cutting
@@ -121,12 +94,12 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
+              prototype: MaterialLeather1
               amount: 2
           steps:
             - tool: Cutting
               doAfter: 1
-    
+
     - node: CurtainsBlack
       entity: CurtainsBlack
       edges:
@@ -148,8 +121,8 @@
               amount: 1
           steps:
             - tool: Cutting
-              doAfter: 1    
-              
+              doAfter: 1
+
     - node: CurtainsBlue
       entity: CurtainsBlue
       edges:
@@ -172,7 +145,7 @@
           steps:
             - tool: Cutting
               doAfter: 1
-              
+
     - node: CurtainsCyan
       entity: CurtainsCyan
       edges:
@@ -195,7 +168,7 @@
           steps:
             - tool: Cutting
               doAfter: 1
-              
+
     - node: CurtainsGreen
       entity: CurtainsGreen
       edges:
@@ -218,7 +191,7 @@
           steps:
             - tool: Cutting
               doAfter: 1
-              
+
     - node: CurtainsOrange
       entity: CurtainsOrange
       edges:
@@ -241,7 +214,7 @@
           steps:
             - tool: Cutting
               doAfter: 1
-              
+
     - node: CurtainsPink
       entity: CurtainsPink
       edges:
@@ -264,7 +237,7 @@
           steps:
             - tool: Cutting
               doAfter: 1
-              
+
     - node: CurtainsPurple
       entity: CurtainsPurple
       edges:
@@ -287,7 +260,7 @@
           steps:
             - tool: Cutting
               doAfter: 1
-              
+
     - node: CurtainsRed
       entity: CurtainsRed
       edges:
@@ -310,7 +283,7 @@
           steps:
             - tool: Cutting
               doAfter: 1
-              
+
     - node: CurtainsWhite
       entity: CurtainsWhite
       edges:

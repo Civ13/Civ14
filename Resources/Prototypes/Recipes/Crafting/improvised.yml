@@ -1,30 +1,4 @@
 - type: construction
-  name: baseball bat
-  id: bat
-  graph: WoodenBat
-  startNode: start
-  targetNode: bat
-  category: construction-category-weapons
-  description: A robust baseball bat.
-  icon:
-    sprite: Objects/Weapons/Melee/baseball_bat.rsi
-    state: icon
-  objectType: Item
-
-- type: construction
-  name: ghost sheet
-  id: ghost_sheet
-  graph: GhostSheet
-  startNode: start
-  targetNode: ghost_sheet
-  category: construction-category-clothing
-  description: Become a spooky ghost. Boo!
-  icon:
-    sprite: Clothing/OuterClothing/Misc/ghostsheet.rsi
-    state: icon
-  objectType: Item
-
-- type: construction
   name: muzzle
   id: muzzle
   graph: Muzzle

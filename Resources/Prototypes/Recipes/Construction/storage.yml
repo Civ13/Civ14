@@ -1,23 +1,4 @@
 - type: construction
-  id: ChestDrawer
-  name: chest drawer
-  description: A small drawer for all your filing needs, Now with wheels!
-  graph: FilingCabinet
-  startNode: start
-  targetNode: chestDrawer
-  category: construction-category-storage
-  icon:
-    sprite: Structures/Storage/cabinets.rsi
-    state: chestdrawer
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-      # Shelfs
-      # Normals
-
-- type: construction
   id: ShelfWood
   name: wooden shelf
   description: A convenient place to place, well, anything really.
@@ -32,6 +13,7 @@
   canBuildInImpassable: true
   conditions:
     - !type:WallmountCondition # Departmental
+
 
 - type: construction
   id: ShelfBar

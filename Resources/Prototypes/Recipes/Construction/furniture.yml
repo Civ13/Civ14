@@ -1,21 +1,3 @@
-#chairs
-- type: construction
-  name: chair
-  id: Chair
-  graph: Seat
-  startNode: start
-  targetNode: chair
-  category: construction-category-furniture
-  description: You sit in this. Either by will or force.
-  icon:
-    sprite: Structures/Furniture/chairs.rsi
-    state: chair
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
 - type: construction
   name: stool
   id: Stool
@@ -25,8 +7,8 @@
   category: construction-category-furniture
   description: You sit in this. Either by will or force.
   icon:
-    sprite: Structures/Furniture/chairs.rsi
-    state: stool
+    sprite: Civ14/Objects/bed_chair.rsi
+    state: stool_wood
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -42,8 +24,8 @@
   category: construction-category-furniture
   description: You sit in this. Either by will or force.
   icon:
-    sprite: Structures/Furniture/chairs.rsi
-    state: wooden
+    sprite: Civ14/Objects/bed_chair.rsi
+    state: wooden_chair
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -99,9 +81,9 @@
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
-    - !type:TileNotBlocked
+    - !type:TileNotBlocked #bedroom
 
-#bedroom
+
 - type: construction
   id: Bed
   name: bed
@@ -111,8 +93,8 @@
   targetNode: bed
   category: construction-category-furniture
   icon:
-    sprite: Structures/Furniture/furniture.rsi
-    state: bed
+    sprite: Civ14/Objects/bed_chair.rsi
+    state: bed_wood
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -136,28 +118,10 @@
   conditions:
     - !type:TileNotBlocked
 
-#racks
-- type: construction
-  id: Rack
-  name: rack
-  description: A rack for storing things on.
-  graph: Rack
-  startNode: start
-  targetNode: Rack
-  category: construction-category-furniture
-  icon:
-    sprite: Structures/Furniture/furniture.rsi
-    state: rack
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
 - type: construction
   id: Curtains
-  name: curtains
-  description: Contains less than 1% mercury.
+  name: white curtains
+  description: Basic white curtains. For when you need privacy.
   graph: Curtains
   startNode: start
   targetNode: Curtains
