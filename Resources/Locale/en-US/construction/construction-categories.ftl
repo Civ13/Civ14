@@ -6,6 +6,7 @@ construction-category-materials = Materials
 construction-category-structures = Structures
 construction-category-machines = Machines
 construction-category-weapons = Weapons
+construction-category-clothing = Clothing
 construction-category-tiles = Tiles
 construction-category-utilities = Utilities
 construction-category-misc = Misc
