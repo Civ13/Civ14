@@ -17,7 +17,7 @@
         },
         {
             "name": "closing",
-            "directions": 4,
+            "directions": 1,
             "delays": [
                 [
                     0.1,
@@ -40,7 +40,7 @@
         },
         {
             "name": "opening",
-            "directions": 4,
+            "directions": 1,
             "delays": [
                 [
                     0.1,
