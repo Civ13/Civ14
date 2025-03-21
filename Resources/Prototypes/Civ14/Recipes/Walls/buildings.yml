@@ -7,7 +7,11 @@
   category: construction-category-structures
   description: A basic wood door. Flammable!
   icon: { sprite: Civ14/Structures/Doors/wood_door_classic.rsi, state: closed }
-  objectType: Item
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
 
 - type: construction
   name: wood door
@@ -18,7 +22,11 @@
   category: construction-category-structures
   description: A rustic wood door. Flammable!
   icon: { sprite: Civ14/Structures/Doors/wood_door_rustic.rsi, state: closed }
-  objectType: Item
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
 
 - type: construction
   name: straw wall window
