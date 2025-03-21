@@ -180,9 +180,6 @@
     - id: ClothingOuterFlannelBlue
       prob: 0.01
       orGroup: Clothes
-    - id: ClothingHeadHelmetBone
-      prob: 0.01
-      orGroup: Clothes
     - id: ClothingOuterSuitCarp
       prob: 0.01
       orGroup: Clothes

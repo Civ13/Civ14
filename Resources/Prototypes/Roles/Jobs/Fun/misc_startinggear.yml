@@ -15,7 +15,7 @@
     ears: ClothingHeadsetGrey
   storage:
     back:
-    - BoxSurvival
+      - BoxSurvival
 
 # Syndicate Operative Outfit - Civilian
 - type: startingGear
@@ -42,7 +42,7 @@
     id: SyndiPDA
   storage:
     back:
-    - BoxSurvival
+      - BoxSurvival
 
 # Syndicate Footsoldier Gear
 - type: startingGear
@@ -58,7 +58,7 @@
     shoes: ClothingShoesBootsCombatFilled
   storage:
     back:
-    - BoxSurvivalSyndicate
+      - BoxSurvivalSyndicate
 
 - type: startingGear
   id: SyndicateFootsoldierTeamLeaderGear
@@ -86,9 +86,9 @@
     gloves: ClothingHandsGlovesCombat
   storage:
     back:
-    - BoxSurvivalSecurity
-    - Flash
-    - MagazinePistol
+      - BoxSurvivalSecurity
+      - Flash
+      - MagazinePistol
 
 - type: startingGear
   id: BoxingKangarooGear
@@ -140,10 +140,10 @@
     id: AdminPDA
   storage:
     back:
-    - GasAnalyzer
-    - trayScanner
-    - AccessConfiguratorUniversal
-    - Multitool
+      - GasAnalyzer
+      - trayScanner
+      - AccessConfiguratorUniversal
+      - Multitool
 
 #Gladiator with spear
 - type: startingGear
@@ -161,7 +161,6 @@
     jumpsuit: ClothingUniformJumpsuitGladiator
     outerClothing: ClothingOuterArmorBone
     back: SpearBone
-    head: ClothingHeadHelmetBone
     shoes: ClothingShoesCult
 
 #Banana Clown
