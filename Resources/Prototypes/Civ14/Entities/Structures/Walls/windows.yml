@@ -20,6 +20,9 @@
             - TableMask
           layer:
             - TableLayer
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Wood
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -52,6 +55,9 @@
             - TableMask
           layer:
             - TableLayer
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Wood
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -84,6 +90,9 @@
             - TableMask
           layer:
             - TableLayer
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Wood
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -116,6 +125,9 @@
             - TableMask
           layer:
             - TableLayer
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Wood
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
