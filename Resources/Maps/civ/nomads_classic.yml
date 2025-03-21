@@ -94,7 +94,7 @@ entities:
           - type: Transform
             pos: 0.5,-1.5
             parent: 2
-  - proto: SpawnPointPassenger
+  - proto: SpawnPointNomads
     entities:
       - uid: 3
         components:
