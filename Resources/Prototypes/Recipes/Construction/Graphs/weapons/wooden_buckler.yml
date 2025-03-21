@@ -6,15 +6,24 @@
       edges:
         - to: woodenBuckler
           steps:
-            - material: Cable
-              amount: 5
-              doAfter: 2
             - material: WoodPlank
               amount: 5
               doAfter: 2
-            - material: Steel
+
+        - to: woodenBucklerRed
+          steps:
+            - material: WoodPlank
               amount: 5
               doAfter: 2
 
+        - to: woodenBucklerBlue
+          steps:
+            - material: WoodPlank
+              amount: 5
+              doAfter: 2
     - node: woodenBuckler
       entity: WoodenBuckler
+    - node: woodenBucklerBlue
+      entity: WoodenBucklerBlue
+    - node: woodenBucklerRed
+      entity: WoodenBucklerRed

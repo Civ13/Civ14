@@ -13,6 +13,13 @@
   maxCount: 30
 
 - type: stack
+  id: Clay
+  name: clay
+  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: claylump }
+  spawn: MaterialClay1
+  maxCount: 40
+
+- type: stack
   id: Stone
   name: stone
   icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: stone }

@@ -34,18 +34,16 @@
       damageContainer: Shield
     - type: Destructible
       thresholds:
-        - trigger:
-            !type:DamageTrigger
+        - trigger: !type:DamageTrigger
             damage: 140
           behaviors:
             - !type:DoActsBehavior
-              acts: [ "Destruction" ]
-        - trigger:
-            !type:DamageTrigger
+              acts: ["Destruction"]
+        - trigger: !type:DamageTrigger
             damage: 100 #This is probably enough damage before it breaks
           behaviors:
             - !type:DoActsBehavior
-              acts: [ "Destruction" ]
+              acts: ["Destruction"]
             - !type:PlaySoundBehavior
               sound:
                 collection: MetalBreak
@@ -64,7 +62,7 @@
 
 - type: entity
   name: riot shield
-  parent: [ BaseShield, BaseSecurityContraband ]
+  parent: [BaseShield, BaseSecurityContraband]
   id: RiotShield
   description: A large tower shield. Good for controlling crowds.
   components:
@@ -85,7 +83,7 @@
 
 - type: entity
   name: laser shield
-  parent: [ BaseShield, BaseSecurityContraband ]
+  parent: [BaseShield, BaseSecurityContraband]
   id: RiotLaserShield
   description: A shield built for withstanding lasers, but not much else.
   components:
@@ -105,7 +103,7 @@
 
 - type: entity
   name: ballistic shield
-  parent: [ BaseShield, BaseSecurityContraband ]
+  parent: [BaseShield, BaseSecurityContraband]
   id: RiotBulletShield
   description: A shield built for protecting against ballistics, but not much else.
   components:
@@ -129,9 +127,10 @@
   name: wooden buckler
   parent: BaseShield
   id: WoodenBuckler
-  description: A small round wooden makeshift shield.
+  description: A small round wooden shield.
   components:
     - type: Sprite
+      sprite: Civ14/Objects/Weapons/buckler.rsi
       state: buckler-icon
     - type: Item
       heldPrefix: buckler
@@ -157,18 +156,16 @@
       node: woodenBuckler
     - type: Destructible
       thresholds:
-        - trigger:
-            !type:DamageTrigger
+        - trigger: !type:DamageTrigger
             damage: 60
           behaviors:
             - !type:DoActsBehavior
-              acts: [ "Destruction" ]
-        - trigger:
-            !type:DamageTrigger
+              acts: ["Destruction"]
+        - trigger: !type:DamageTrigger
             damage: 30 #Weaker shield
           behaviors:
             - !type:DoActsBehavior
-              acts: [ "Destruction" ]
+              acts: ["Destruction"]
             - !type:PlaySoundBehavior
               sound:
                 collection: WoodDestroy
@@ -179,6 +176,30 @@
                   max: 5
     - type: StaticPrice
       price: 150
+
+- type: entity
+  name: red wooden buckler
+  parent: WoodenBuckler
+  id: WoodenBucklerRed
+  description: A small round wooden shield. This one is red.
+  components:
+    - type: Sprite
+      state: red_buckler-icon
+    - type: Construction
+      graph: WoodenBuckler
+      node: woodenBucklerRed
+
+- type: entity
+  name: blue wooden buckler
+  parent: WoodenBuckler
+  id: WoodenBucklerBlue
+  description: A small round wooden shield. This one is blue.
+  components:
+    - type: Sprite
+      state: blue_buckler-icon
+    - type: Construction
+      graph: WoodenBuckler
+      node: woodenBucklerBlue
 
 - type: entity
   name: makeshift shield
@@ -213,18 +234,16 @@
       node: makeshiftShield
     - type: Destructible
       thresholds:
-        - trigger:
-            !type:DamageTrigger
+        - trigger: !type:DamageTrigger
             damage: 40
           behaviors:
             - !type:DoActsBehavior
-              acts: [ "Destruction" ]
-        - trigger:
-            !type:DamageTrigger
+              acts: ["Destruction"]
+        - trigger: !type:DamageTrigger
             damage: 20 #Very weak shield
           behaviors:
             - !type:DoActsBehavior
-              acts: [ "Destruction" ]
+              acts: ["Destruction"]
             - !type:PlaySoundBehavior
               sound:
                 collection: MetalBreak
@@ -266,18 +285,16 @@
       node: shield
     - type: Destructible
       thresholds:
-        - trigger:
-            !type:DamageTrigger
+        - trigger: !type:DamageTrigger
             damage: 40
           behaviors:
             - !type:DoActsBehavior
-              acts: [ "Destruction" ]
-        - trigger:
-            !type:DamageTrigger
+              acts: ["Destruction"]
+        - trigger: !type:DamageTrigger
             damage: 20
           behaviors:
             - !type:DoActsBehavior
-              acts: [ "Destruction" ]
+              acts: ["Destruction"]
             - !type:SpawnEntitiesBehavior
               spawn:
                 MaterialWebSilk:
@@ -351,12 +368,11 @@
         path: /Audio/Effects/glass_step.ogg
     - type: Destructible
       thresholds:
-        - trigger:
-            !type:DamageTrigger
+        - trigger: !type:DamageTrigger
             damage: 40
           behaviors:
             - !type:DoActsBehavior
-              acts: [ "Destruction" ]
+              acts: ["Destruction"]
             - !type:PlaySoundBehavior
               sound:
                 collection: GlassBreak
@@ -384,8 +400,8 @@
       activatedSize: Huge
     - type: ComponentToggler
       components:
-      - type: DisarmMalus
-        malus: 0.6
+        - type: DisarmMalus
+          malus: 0.6
     - type: Sprite
       sprite: Objects/Weapons/Melee/e_shield.rsi
       layers:
@@ -394,7 +410,7 @@
           color: "#FFFFFF"
           visible: false
           shader: unshaded
-          map: [ "shield" ]
+          map: ["shield"]
     - type: Item
       size: Small
       sprite: Objects/Weapons/Melee/e_shield.rsi
@@ -442,18 +458,16 @@
       damageContainer: Shield
     - type: Destructible
       thresholds:
-        - trigger:
-            !type:DamageTrigger
+        - trigger: !type:DamageTrigger
             damage: 180
           behaviors:
             - !type:DoActsBehavior
-              acts: [ "Destruction" ]
-        - trigger:
-            !type:DamageTrigger
+              acts: ["Destruction"]
+        - trigger: !type:DamageTrigger
             damage: 100
           behaviors:
             - !type:DoActsBehavior
-              acts: [ "Destruction" ]
+              acts: ["Destruction"]
             - !type:PlaySoundBehavior
               sound:
                 collection: GlassBreak
@@ -496,8 +510,8 @@
           volume: -5
     - type: ComponentToggler
       components:
-      - type: DisarmMalus
-        malus: 0.6
+        - type: DisarmMalus
+          malus: 0.6
     - type: ItemToggleSize
       activatedSize: Huge
     - type: Sprite
@@ -506,7 +520,7 @@
         - state: teleriot-icon
         - state: teleriot-on
           visible: false
-          map: [ "shield" ]
+          map: ["shield"]
     - type: Item
       size: Small
       sprite: Objects/Weapons/Melee/teleriot_shield.rsi
@@ -523,18 +537,16 @@
     - type: Appearance
     - type: Destructible
       thresholds:
-        - trigger:
-            !type:DamageTrigger
+        - trigger: !type:DamageTrigger
             damage: 100
           behaviors:
             - !type:DoActsBehavior
-              acts: [ "Destruction" ]
-        - trigger:
-            !type:DamageTrigger
+              acts: ["Destruction"]
+        - trigger: !type:DamageTrigger
             damage: 70
           behaviors:
             - !type:DoActsBehavior
-              acts: [ "Destruction" ]
+              acts: ["Destruction"]
             - !type:PlaySoundBehavior
               sound:
                 collection: MetalGlassBreak

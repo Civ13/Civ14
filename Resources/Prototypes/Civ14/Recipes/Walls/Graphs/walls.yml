@@ -1,0 +1,56 @@
+- type: constructionGraph
+  id: StrawWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Straw
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: StrawWall
+
+- type: constructionGraph
+  id: LogWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: LogWall
+
+- type: constructionGraph
+  id: DirtWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Dirt
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: DirtWall
+
+- type: constructionGraph
+
+  id: ClayWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Clay
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: ClayWall

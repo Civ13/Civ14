@@ -5,7 +5,7 @@
   description: A wood box, used to turn trash and scraps into fertilizer.
   components:
     - type: Sprite
-      sprite: Objects/_civ/structures.rsi
+      sprite: Civ14/Objects/structures.rsi
       state: compostbin
     - type: Appearance
     - type: Damageable

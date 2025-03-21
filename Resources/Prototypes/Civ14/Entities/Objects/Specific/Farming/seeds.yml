@@ -6,7 +6,7 @@
     - type: Seed
       seedId: wheat
     - type: Sprite
-      sprite: Objects/_civ/farming.rsi
+      sprite: Civ14/Objects/farming.rsi
       state: seeds
     - type: Item
       size: Normal
