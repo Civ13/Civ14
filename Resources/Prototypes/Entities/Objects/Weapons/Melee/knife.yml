@@ -3,30 +3,31 @@
   id: BaseKnife
   abstract: true
   components:
-  - type: Tag
-    tags:
-    - Knife
-  - type: Sharp
-  - type: Execution
-    doAfterDuration: 4.0
-  - type: Utensil
-    types:
-      - Knife
-  - type: MeleeWeapon
-    wideAnimationRotation: -135
-    damage:
+    - type: Tag
+      tags:
+        - Knife
+    - type: Sharp
+    - type: Execution
+      doAfterDuration: 4.0
+    - type: Utensil
       types:
-        Slash: 10
-    soundHit:
-      path: /Audio/Weapons/bladeslice.ogg
-  - type: Sprite
-  - type: Item
-    size: Small
-  - type: Tool
-    qualities:
-      - Slicing
-    useSound:
-      path: /Audio/Items/Culinary/chop.ogg
+        - Knife
+    - type: MeleeWeapon
+      wideAnimationRotation: -135
+      damage:
+        types:
+          Slash: 10
+      soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+    - type: Sprite
+    - type: Item
+      size: Small
+    - type: Tool
+      qualities:
+        - Slicing
+      useSound:
+        path: /Audio/Items/Culinary/chop.ogg
+    - type: SeedSlicer
 
 - type: entity
   name: kitchen knife
@@ -34,19 +35,19 @@
   id: KitchenKnife
   description: A general purpose Chef's Knife made by Asters Merchant Guild. Guaranteed to stay sharp for years to come..
   components:
-  - type: Tag
-    tags:
-    - Knife
-    - KitchenKnife
-  - type: Sprite
-    sprite: Objects/Weapons/Melee/kitchen_knife.rsi
-    state: icon
-  - type: Item
-    sprite: Objects/Weapons/Melee/kitchen_knife.rsi
-  - type: GuideHelp
-    guides:
-    - Chef
-    - FoodRecipes
+    - type: Tag
+      tags:
+        - Knife
+        - KitchenKnife
+    - type: Sprite
+      sprite: Objects/Weapons/Melee/kitchen_knife.rsi
+      state: icon
+    - type: Item
+      sprite: Objects/Weapons/Melee/kitchen_knife.rsi
+    - type: GuideHelp
+      guides:
+        - Chef
+        - FoodRecipes
 
 - type: entity
   name: butcher's cleaver
@@ -54,26 +55,26 @@
   id: ButchCleaver
   description: A huge blade used for chopping and chopping up meat. This includes clowns and clown-by-products.
   components:
-  - type: Tag
-    tags:
-    - Knife
-    - Cleaver
-  - type: Sprite
-    sprite: Objects/Weapons/Melee/cleaver.rsi
-    state: butch
-  - type: MeleeWeapon
-    wideAnimationRotation: -115
-    attackRate: 1.5
-    damage:
-      types:
-        Slash: 13
-  - type: Item
-    size: Normal
-    sprite: Objects/Weapons/Melee/cleaver.rsi
-  - type: GuideHelp
-    guides:
-    - Chef
-    - FoodRecipes
+    - type: Tag
+      tags:
+        - Knife
+        - Cleaver
+    - type: Sprite
+      sprite: Objects/Weapons/Melee/cleaver.rsi
+      state: butch
+    - type: MeleeWeapon
+      wideAnimationRotation: -115
+      attackRate: 1.5
+      damage:
+        types:
+          Slash: 13
+    - type: Item
+      size: Normal
+      sprite: Objects/Weapons/Melee/cleaver.rsi
+    - type: GuideHelp
+      guides:
+        - Chef
+        - FoodRecipes
 
 - type: entity
   name: combat knife
@@ -81,36 +82,36 @@
   id: CombatKnife
   description: A deadly knife intended for melee confrontations.
   components:
-  - type: Tag
-    tags:
-    - CombatKnife
-    - Knife
-  - type: Sprite
-    sprite: Objects/Weapons/Melee/combat_knife.rsi
-    state: icon
-  - type: MeleeWeapon
-    wideAnimationRotation: -135
-    attackRate: 1.5
-    damage:
-      types:
-        Slash: 12
-  - type: EmbeddableProjectile
-    sound: /Audio/Weapons/star_hit.ogg
-    offset: -0.15,0.0
-  - type: LandAtCursor
-  - type: DamageOtherOnHit
-    damage:
-      types:
-        Slash: 10
-  - type: Item
-    sprite: Objects/Weapons/Melee/combat_knife.rsi
-    storedSprite:
-      state: storage
+    - type: Tag
+      tags:
+        - CombatKnife
+        - Knife
+    - type: Sprite
       sprite: Objects/Weapons/Melee/combat_knife.rsi
-  - type: DisarmMalus
-    malus: 0.225
-  - type: ThrowingAngle
-    angle: 225
+      state: icon
+    - type: MeleeWeapon
+      wideAnimationRotation: -135
+      attackRate: 1.5
+      damage:
+        types:
+          Slash: 12
+    - type: EmbeddableProjectile
+      sound: /Audio/Weapons/star_hit.ogg
+      offset: -0.15,0.0
+    - type: LandAtCursor
+    - type: DamageOtherOnHit
+      damage:
+        types:
+          Slash: 10
+    - type: Item
+      sprite: Objects/Weapons/Melee/combat_knife.rsi
+      storedSprite:
+        state: storage
+        sprite: Objects/Weapons/Melee/combat_knife.rsi
+    - type: DisarmMalus
+      malus: 0.225
+    - type: ThrowingAngle
+      angle: 225
 
 - type: entity
   name: survival knife
@@ -118,14 +119,14 @@
   id: SurvivalKnife
   description: Weapon of first and last resort for combatting space carp.
   components:
-  - type: Sprite
-    sprite: Objects/Weapons/Melee/survival_knife.rsi
-    state: icon
-  - type: Item
-    sprite: Objects/Weapons/Melee/survival_knife.rsi
-    storedSprite:
-      state: storage
+    - type: Sprite
       sprite: Objects/Weapons/Melee/survival_knife.rsi
+      state: icon
+    - type: Item
+      sprite: Objects/Weapons/Melee/survival_knife.rsi
+      storedSprite:
+        state: storage
+        sprite: Objects/Weapons/Melee/survival_knife.rsi
 
 - type: entity
   name: kukri knife
@@ -133,17 +134,17 @@
   id: KukriKnife
   description: Professionals have standards. Be polite. Be efficient. Have a plan to kill everyone you meet.
   components:
-  - type: Sprite
-    sprite: Objects/Weapons/Melee/kukri_knife.rsi
-    state: icon
-  - type: MeleeWeapon
-    attackRate: 1.0
-    damage:
-      types:
-        Slash: 15
-  - type: Item
-    sprite: Objects/Weapons/Melee/kukri_knife.rsi
-    storedSprite: null
+    - type: Sprite
+      sprite: Objects/Weapons/Melee/kukri_knife.rsi
+      state: icon
+    - type: MeleeWeapon
+      attackRate: 1.0
+      damage:
+        types:
+          Slash: 15
+    - type: Item
+      sprite: Objects/Weapons/Melee/kukri_knife.rsi
+      storedSprite: null
 
 - type: entity
   parent: ClothingHeadHatGreyFlatcap
@@ -152,24 +153,24 @@
   description: Fashionable for both the working class and old man Jenkins. It has glass shards hidden in the brim.
   suffix: Bladed
   components:
-  - type: Construction
-    graph: BladedFlatcapGrey
-    node: icon
-  - type: MeleeWeapon
-    wideAnimationRotation: 90
-    attackRate: 1.2
-    damage:
-      types:
-        Slash: 5
-  - type: DamageOtherOnHit
-    damage:
-      types:
-        Slash: 10
-  - type: LandAtCursor
-  - type: Sprite
-    sprite: Clothing/Head/Hats/greyflatcap.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hats/greyflatcap.rsi
+    - type: Construction
+      graph: BladedFlatcapGrey
+      node: icon
+    - type: MeleeWeapon
+      wideAnimationRotation: 90
+      attackRate: 1.2
+      damage:
+        types:
+          Slash: 5
+    - type: DamageOtherOnHit
+      damage:
+        types:
+          Slash: 10
+    - type: LandAtCursor
+    - type: Sprite
+      sprite: Clothing/Head/Hats/greyflatcap.rsi
+    - type: Clothing
+      sprite: Clothing/Head/Hats/greyflatcap.rsi
 
 - type: entity
   parent: BladedFlatcapGrey
@@ -177,12 +178,12 @@
   name: brown flatcap
   description: Stupid clown! You made me look bad! It has glass shards hidden in the brim.
   components:
-  - type: Construction
-    graph: BladedFlatcapBrown
-  - type: Sprite
-    sprite: Clothing/Head/Hats/brownflatcap.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hats/brownflatcap.rsi
+    - type: Construction
+      graph: BladedFlatcapBrown
+    - type: Sprite
+      sprite: Clothing/Head/Hats/brownflatcap.rsi
+    - type: Clothing
+      sprite: Clothing/Head/Hats/brownflatcap.rsi
 
 - type: entity
   name: shiv
@@ -190,26 +191,26 @@
   id: Shiv
   description: A crude weapon fashioned from a piece of cloth and a glass shard.
   components:
-  - type: Tag
-    tags:
-    - CombatKnife
-    - Knife
-    - Shiv
-  - type: Construction
-    graph: Shiv
-    node: icon
-  - type: Sprite
-    sprite: Objects/Weapons/Melee/shiv.rsi
-    state: icon
-  - type: MeleeWeapon
-    attackRate: 1.5
-    damage:
-      types:
-        Slash: 5.5
-  - type: Item
-    sprite: Objects/Weapons/Melee/shiv.rsi
-  - type: DisarmMalus
-    malus: 0.225
+    - type: Tag
+      tags:
+        - CombatKnife
+        - Knife
+        - Shiv
+    - type: Construction
+      graph: Shiv
+      node: icon
+    - type: Sprite
+      sprite: Objects/Weapons/Melee/shiv.rsi
+      state: icon
+    - type: MeleeWeapon
+      attackRate: 1.5
+      damage:
+        types:
+          Slash: 5.5
+    - type: Item
+      sprite: Objects/Weapons/Melee/shiv.rsi
+    - type: DisarmMalus
+      malus: 0.225
 
 - type: entity
   name: reinforced shiv
@@ -217,18 +218,18 @@
   id: ReinforcedShiv
   description: A crude weapon fashioned from a piece of cloth and a reinforced glass shard.
   components:
-  - type: Construction
-    graph: ReinforcedShiv
-    node: icon
-  - type: MeleeWeapon
-    attackRate: 1.5
-    damage:
-      types:
-        Slash: 7 #each "tier" grants an additional 2 damage
-  - type: Item
-    sprite: Objects/Weapons/Melee/reinforced_shiv.rsi
-  - type: Sprite
-    sprite: Objects/Weapons/Melee/reinforced_shiv.rsi
+    - type: Construction
+      graph: ReinforcedShiv
+      node: icon
+    - type: MeleeWeapon
+      attackRate: 1.5
+      damage:
+        types:
+          Slash: 7 #each "tier" grants an additional 2 damage
+    - type: Item
+      sprite: Objects/Weapons/Melee/reinforced_shiv.rsi
+    - type: Sprite
+      sprite: Objects/Weapons/Melee/reinforced_shiv.rsi
 
 - type: entity
   name: plasma shiv
@@ -236,18 +237,18 @@
   id: PlasmaShiv
   description: A crude weapon fashioned from a piece of cloth and a plasma glass shard.
   components:
-  - type: Construction
-    graph: PlasmaShiv
-    node: icon
-  - type: MeleeWeapon
-    attackRate: 1.5
-    damage:
-      types:
-        Slash: 9
-  - type: Item
-    sprite: Objects/Weapons/Melee/plasma_shiv.rsi
-  - type: Sprite
-    sprite: Objects/Weapons/Melee/plasma_shiv.rsi
+    - type: Construction
+      graph: PlasmaShiv
+      node: icon
+    - type: MeleeWeapon
+      attackRate: 1.5
+      damage:
+        types:
+          Slash: 9
+    - type: Item
+      sprite: Objects/Weapons/Melee/plasma_shiv.rsi
+    - type: Sprite
+      sprite: Objects/Weapons/Melee/plasma_shiv.rsi
 
 - type: entity
   name: uranium shiv
@@ -255,19 +256,19 @@
   id: UraniumShiv
   description: A crude weapon fashioned from a piece of cloth and a uranium glass shard. Violates the geneva convention!
   components:
-  - type: Construction
-    graph: UraniumShiv
-    node: icon
-  - type: MeleeWeapon
-    attackRate: 1.5
-    damage:
-      types:
-        Slash: 7
-        Radiation: 4
-  - type: Item
-    sprite: Objects/Weapons/Melee/uranium_shiv.rsi
-  - type: Sprite
-    sprite: Objects/Weapons/Melee/uranium_shiv.rsi
+    - type: Construction
+      graph: UraniumShiv
+      node: icon
+    - type: MeleeWeapon
+      attackRate: 1.5
+      damage:
+        types:
+          Slash: 7
+          Radiation: 4
+    - type: Item
+      sprite: Objects/Weapons/Melee/uranium_shiv.rsi
+    - type: Sprite
+      sprite: Objects/Weapons/Melee/uranium_shiv.rsi
 
 - type: entity
   name: throwing knife
@@ -275,30 +276,30 @@
   id: ThrowingKnife
   description: This blood-red knife is very aerodynamic and easy to throw, but good luck trying to fight someone hand-to-hand.
   components:
-  - type: Tag
-    tags:
-    - CombatKnife
-    - Knife
-  - type: Sprite
-    sprite: Objects/Weapons/Melee/throwing_knife.rsi
-    state: icon
-  - type: MeleeWeapon
-    wideAnimationRotation: -135
-    attackRate: 2
-    damage:
-      types:
-        Slash: 5
-  - type: EmbeddableProjectile
-    sound: /Audio/Weapons/star_hit.ogg
-    offset: -0.15,0.0
-  - type: LandAtCursor
-  - type: DamageOtherOnHit
-    ignoreResistances: true
-    damage:
-      types:
-        Slash: 10
-        Piercing: 15
-  - type: Item
-    sprite: Objects/Weapons/Melee/throwing_knife.rsi
-  - type: ThrowingAngle
-    angle: 225
+    - type: Tag
+      tags:
+        - CombatKnife
+        - Knife
+    - type: Sprite
+      sprite: Objects/Weapons/Melee/throwing_knife.rsi
+      state: icon
+    - type: MeleeWeapon
+      wideAnimationRotation: -135
+      attackRate: 2
+      damage:
+        types:
+          Slash: 5
+    - type: EmbeddableProjectile
+      sound: /Audio/Weapons/star_hit.ogg
+      offset: -0.15,0.0
+    - type: LandAtCursor
+    - type: DamageOtherOnHit
+      ignoreResistances: true
+      damage:
+        types:
+          Slash: 10
+          Piercing: 15
+    - type: Item
+      sprite: Objects/Weapons/Melee/throwing_knife.rsi
+    - type: ThrowingAngle
+      angle: 225
