@@ -13,7 +13,7 @@ namespace Content.Shared.Devour.Components;
 public sealed partial class DevourerComponent : Component
 {
     [DataField("devourAction", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
-    public string? DevourAction = "ActionDevour";
+    public string? DevourAction = "";
 
     [DataField("devourActionEntity")]
     public EntityUid? DevourActionEntity;
