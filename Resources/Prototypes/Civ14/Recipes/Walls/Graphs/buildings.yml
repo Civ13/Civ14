@@ -1,5 +1,5 @@
 - type: constructionGraph
-  id: WoodDoor
+  id: WoodDoorClassic
   start: start
   graph:
     - node: start
@@ -10,7 +10,21 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: WoodDoor
+      entity: WoodDoorClassic
+
+- type: constructionGraph
+  id: WoodDoorRustic
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: WoodDoorRustic
 
 - type: constructionGraph
   id: StrawWallWindow

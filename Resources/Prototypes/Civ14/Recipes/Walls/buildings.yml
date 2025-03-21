@@ -1,12 +1,23 @@
 - type: construction
   name: wood door
-  id: WoodDoor
-  graph: WoodDoor
+  id: WoodDoorClassic
+  graph: WoodDoorClassic
   startNode: start
   targetNode: end
   category: construction-category-structures
   description: A basic wood door. Flammable!
-  icon: { sprite: Structures/Doors/MineralDoors/wood_door.rsi, state: closed }
+  icon: { sprite: Civ14/Structures/Doors/wood_door_classic.rsi, state: closed }
+  objectType: Item
+
+- type: construction
+  name: wood door
+  id: WoodDoorRustic
+  graph: WoodDoorRustic
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A rustic wood door. Flammable!
+  icon: { sprite: Civ14/Structures/Doors/wood_door_rustic.rsi, state: closed }
   objectType: Item
 
 - type: construction
