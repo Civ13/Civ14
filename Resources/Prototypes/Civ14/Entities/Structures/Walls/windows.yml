@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseRailing
   id: DirtWallWindow
-  desc: "A basic wall made of dried mud bricks. This one has a window."
+  description: "A basic wall made of dried mud bricks. This one has a window."
   components:
     - type: Sprite
       drawdepth: SmallObjects
@@ -36,7 +36,7 @@
 - type: entity
   parent: BaseRailing
   id: StrawWallWindow
-  desc: "A basic wall made of straw and dry leaves. Burns easily. This one has a window."
+  description: "A basic wall made of straw and dry leaves. Burns easily. This one has a window."
   components:
     - type: Sprite
       drawdepth: SmallObjects
@@ -71,7 +71,7 @@
 - type: entity
   parent: BaseRailing
   id: ClayWallWindow
-  desc: "A wall made of fired clay bricks. This one has a window."
+  description: "A wall made of fired clay bricks. This one has a window."
   components:
     - type: Sprite
       drawdepth: SmallObjects
@@ -106,7 +106,7 @@
 - type: entity
   parent: BaseRailing
   id: LogWallWindow
-  desc: "A wall made of stacked hardwood logs. For that rustic feel. This one has a window."
+  description: "A wall made of stacked hardwood logs. For that rustic feel. This one has a window."
   components:
     - type: Sprite
       drawdepth: SmallObjects
