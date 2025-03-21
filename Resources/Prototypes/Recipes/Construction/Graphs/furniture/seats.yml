@@ -13,7 +13,7 @@
               doAfter: 1
         - to: stool
           steps:
-            - material: Steel
+            - material: WoodPlank
               amount: 1
               doAfter: 1
         - to: stoolBar

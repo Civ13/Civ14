@@ -1,0 +1,67 @@
+- type: construction
+  name: straw wall
+  id: StrawWall
+  graph: StrawWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A basic wall made of straw and dry leaves. Burns easily.
+  icon:
+    sprite: Civ14/Structures/walls.rsi
+    state: straw_wallB1
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: dirt wall
+  id: DirtWall
+  graph: DirtWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A basic wall made of dried mud bricks.
+  icon:
+    sprite: Civ14/Structures/walls.rsi
+    state: drysod_wall
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: clay wall
+  id: ClayWall
+  graph: ClayWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A wall made of fired clay bricks.
+  icon:
+    sprite: Civ14/Structures/claystuff.rsi
+    state: claybrickwall
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: log wall
+  id: LogWall
+  graph: LogWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A wall made of stacked hardwood logs. For that rustic feel.
+  icon:
+    sprite: Civ14/Structures/walls.rsi
+    state: log_wall
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked

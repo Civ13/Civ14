@@ -7,7 +7,7 @@
   components:
     - type: Sprite
       netsync: false
-      sprite: Objects/_civ/old_weapons.rsi
+      sprite: Civ14/Objects/old_weapons.rsi
       state: leaved_stick
     - type: Item
       shape:
@@ -26,7 +26,7 @@
   components:
     - type: Sprite
       netsync: false
-      sprite: Objects/_civ/old_weapons.rsi
+      sprite: Civ14/Objects/old_weapons.rsi
       state: sharpened_stick
     - type: Item
       shape:

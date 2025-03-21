@@ -91,13 +91,13 @@
             - tag: SharpenedFlint
               name: a sharpened flint
               icon:
-                sprite: Objects/_civ/old_weapons.rsi
+                sprite: Civ14/Objects/old_weapons.rsi
                 state: sharpened_flint
               doAfter: 5
             - tag: SharpenedStick
               name: a sharpened stick
               icon:
-                sprite: Objects/_civ/old_weapons.rsi
+                sprite: Civ14/Objects/old_weapons.rsi
                 state: sharpened_stick
               doAfter: 4
     - node: flintaxe
@@ -127,3 +127,17 @@
               doAfter: 6
     - node: woodhammer
       entity: WoodHammer
+
+- type: constructionGraph
+  id: Bucket
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: bucket
+          steps:
+            - material: WoodPlank
+              amount: 3
+              doAfter: 3
+    - node: bucket
+      entity: Bucket

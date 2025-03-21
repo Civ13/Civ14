@@ -6,5 +6,5 @@
   targetNode: woodclub
   category: construction-category-weapons
   description: A crude wood club.
-  icon: { sprite: Objects/_civ/StoneAge/club.rsi, state: icon }
+  icon: { sprite: Civ14/Objects/StoneAge/club.rsi, state: icon }
   objectType: Item

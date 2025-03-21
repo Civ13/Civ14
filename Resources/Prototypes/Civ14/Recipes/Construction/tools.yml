@@ -6,7 +6,7 @@
   targetNode: boneshovel
   category: construction-category-tools
   description: A crude bone shovel.
-  icon: { sprite: Objects/_civ/StoneAge/bone_shovel.rsi, state: icon }
+  icon: { sprite: Civ14/Objects/StoneAge/bone_shovel.rsi, state: icon }
   objectType: Item
 
 - type: construction
@@ -17,7 +17,7 @@
   targetNode: bonepickaxe
   category: construction-category-tools
   description: A crude bone pickaxe.
-  icon: { sprite: Objects/_civ/StoneAge/bone_pickaxe.rsi, state: icon }
+  icon: { sprite: Civ14/Objects/StoneAge/bone_pickaxe.rsi, state: icon }
   objectType: Item
 
 - type: construction
@@ -28,7 +28,7 @@
   targetNode: boneaxe
   category: construction-category-tools
   description: A crude bone axe.
-  icon: { sprite: Objects/_civ/StoneAge/bone_axe.rsi, state: icon }
+  icon: { sprite: Civ14/Objects/StoneAge/bone_axe.rsi, state: icon }
   objectType: Item
 
 - type: construction
@@ -39,7 +39,7 @@
   targetNode: boneknife
   category: construction-category-tools
   description: A crude bone knife.
-  icon: { sprite: Objects/_civ/StoneAge/bone_knife.rsi, state: icon }
+  icon: { sprite: Civ14/Objects/StoneAge/bone_knife.rsi, state: icon }
   objectType: Item
 
 - type: construction
@@ -50,7 +50,7 @@
   targetNode: flintaxe
   category: construction-category-tools
   description: A crude flint axe.
-  icon: { sprite: Objects/_civ/StoneAge/flint_axe.rsi, state: icon }
+  icon: { sprite: Civ14/Objects/StoneAge/flint_axe.rsi, state: icon }
   objectType: Item
 
 - type: construction
@@ -61,7 +61,7 @@
   targetNode: plough
   category: construction-category-tools
   description: A simple wood plough.
-  icon: { sprite: Objects/_civ/items.rsi, state: plough }
+  icon: { sprite: Civ14/Objects/items.rsi, state: plough }
   objectType: Item
 
 - type: construction
@@ -72,5 +72,16 @@
   targetNode: woodhammer
   category: construction-category-tools
   description: A simple wood hammer.
-  icon: { sprite: Objects/_civ/StoneAge/wood_hammer.rsi, state: icon }
+  icon: { sprite: Civ14/Objects/StoneAge/wood_hammer.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  name: wood bucket
+  id: Bucket
+  graph: Bucket
+  startNode: start
+  targetNode: bucket
+  category: construction-category-tools
+  description: A simple wood bucket.
+  icon: { sprite: Objects/Tools/bucket.rsi, state: icon }
   objectType: Item

@@ -1,0 +1,65 @@
+- type: construction
+  name: leather loincloth
+  id: LeatherLoincloth
+  graph: LeatherLoincloth
+  startNode: start
+  targetNode: leatherloincloth
+  category: construction-category-clothing
+  description: A simple leather loincloth.
+  icon: { sprite: Civ14/Clothing/exported/leatherloincloth1.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  name: leather sandals
+  id: LeatherSandals
+  graph: LeatherSandals
+  startNode: start
+  targetNode: leathersandals
+  category: construction-category-clothing
+  description: A pair of simple, thin leather strap sandals. Covers up to the lower foot.
+  icon: { sprite: Civ14/Clothing/exported/flipflops.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  name: bone helmet
+  id: BoneHelmet
+  graph: BoneHelmet
+  startNode: start
+  targetNode: bonehelmet
+  category: construction-category-clothing
+  description: A helmet made of bones.
+  icon: { sprite: Civ14/Clothing/exported/bone_helmet.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  name: leather cap
+  id: LeatherCap
+  graph: LeatherCap
+  startNode: start
+  targetNode: leathercap
+  category: construction-category-clothing
+  description: A cap made of leather.
+  icon: { sprite: Civ14/Clothing/exported/roundcap_hat.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  name: bone armor
+  id: BoneArmor
+  graph: BoneArmor
+  startNode: start
+  targetNode: bonearmor
+  category: construction-category-clothing
+  description: A spooky armor, made of assorted bones.
+  icon: { sprite: Civ14/Clothing/exported/bonearmor.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  name: quiver
+  id: ClothingBeltQuiver
+  graph: Quiver
+  startNode: start
+  targetNode: Quiver
+  category: construction-category-clothing
+  description: Can hold up to 15 arrows, and fits snug around your waist.
+  icon: { sprite: Clothing/Belt/quiver.rsi, state: icon }
+  objectType: Item

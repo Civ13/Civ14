@@ -11,7 +11,7 @@
       layers:
         - map: ["enum.DamageStateVisualLayers.Base"]
           state: brownbear
-          sprite: Mobs/Civ14/animal.rsi
+          sprite: Civ14/Mobs/animal.rsi
     - type: Fixtures
       fixtures:
         fix1:
@@ -66,7 +66,7 @@
       layers:
         - map: ["enum.DamageStateVisualLayers.Base"]
           state: greywolf
-          sprite: Mobs/Civ14/animal.rsi
+          sprite: Civ14/Mobs/animal.rsi
     - type: Fixtures
       fixtures:
         fix1:
@@ -123,7 +123,7 @@
       layers:
         - map: ["enum.DamageStateVisualLayers.Base"]
           state: sabertoothcat_brown
-          sprite: Mobs/Civ14/animal_big.rsi
+          sprite: Civ14/Mobs/animal_big.rsi
     - type: Fixtures
       fixtures:
         fix1:

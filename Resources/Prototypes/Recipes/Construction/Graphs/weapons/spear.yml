@@ -99,10 +99,10 @@
         - to: spear
           steps:
             - material: Bones
-              amount: 4
-              doAfter: 2
-            - material: WebSilk
               amount: 1
-              doAfter: 1
+              doAfter: 5
+            - material: WoodPlank
+              amount: 3
+              doAfter: 5
     - node: spear
       entity: SpearBone

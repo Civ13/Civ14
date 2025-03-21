@@ -5,7 +5,7 @@
   description: A crude wooden club, for all your unga needs.
   components:
     - type: Sprite
-      sprite: Objects/_civ/StoneAge/club.rsi
+      sprite: Civ14/Objects/StoneAge/club.rsi
       state: icon
     - type: MeleeWeapon
       wideAnimationRotation: -135
@@ -18,7 +18,7 @@
     - type: Item
       size: Normal
     - type: Clothing
-      sprite: Objects/_civ/StoneAge/club.rsi
+      sprite: Civ14/Objects/StoneAge/club.rsi
       quickEquip: false
       slots:
         - Belt
