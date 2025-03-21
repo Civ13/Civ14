@@ -716,6 +716,9 @@
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Metallic
+    - type: OreVein
+      oreChance: 0.7
+      currentOre: OreStone
     - type: Destructible
       thresholds:
         - trigger:

@@ -1,0 +1,5 @@
+- type: ore
+  id: OreStone
+  oreEntity: MaterialStone1
+  minOreYield: 1
+  maxOreYield: 3
