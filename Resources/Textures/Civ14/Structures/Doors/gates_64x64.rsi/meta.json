@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "barriergate",
+      "directions": 4
+    },
+    {
+      "name": "barriergate_open",
+      "directions": 4
+    },
+    {
+      "name": "barriergate_vertical_left",
+      "directions": 4
+    },
+    {
+      "name": "barriergate_vertical_right",
+      "directions": 4
+    },
+    {
+      "name": "barriergate_vertical_left_open",
+      "directions": 4
+    },
+    {
+      "name": "barriergate_vertical_right_open",
+      "directions": 4
+    }
+  ]
+}

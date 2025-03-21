@@ -7,7 +7,7 @@
     - type: ExpendableLight
       spentName: expendable-light-burnt-torch-name
       spentDesc: expendable-light-burnt-torch-desc
-      glowDuration: 100
+      glowDuration: 300
       fadeOutDuration: 4
       iconStateSpent: torch_spent
       turnOnBehaviourID: turn_on
@@ -18,14 +18,14 @@
     - type: Sprite
       sprite: Objects/Misc/torch.rsi
       layers:
-        - map: [ enum.ExpendableLightVisualLayers.Base ]
+        - map: [enum.ExpendableLightVisualLayers.Base]
           state: torch_unlit
-        - map: [ enum.ExpendableLightVisualLayers.Glow ]
+        - map: [enum.ExpendableLightVisualLayers.Glow]
           state: lit_overlay
           color: "#FFFFFF"
           visible: false
           shader: unshaded
-        - map: [ enum.ExpendableLightVisualLayers.Overlay ]
+        - map: [enum.ExpendableLightVisualLayers.Overlay]
           state: torch_nocloth
     - type: Icon
       sprite: Objects/Misc/torch.rsi
@@ -78,4 +78,4 @@
           endValue: 1.0
     - type: Tag
       tags:
-      - Torch
+        - Torch

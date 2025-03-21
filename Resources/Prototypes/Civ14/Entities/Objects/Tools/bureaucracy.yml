@@ -1,0 +1,12 @@
+- type: entity
+  name: pencil
+  parent: Pen
+  id: Pencil
+  description: A simple wooden pencil.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/bureaucracy.rsi
+      state: pencil
+    - type: Construction
+      graph: Pencil
+      node: end
