@@ -24,7 +24,7 @@ namespace Content.Server.Guardian
         [ViewVariables] public ContainerSlot GuardianContainer = default!;
 
         [DataField]
-        public EntProtoId Action = "";
+        public EntProtoId Action = "ActionToggleGuardian";
 
         [DataField] public EntityUid? ActionEntity;
     }
