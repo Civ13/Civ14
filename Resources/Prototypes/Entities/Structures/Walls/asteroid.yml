@@ -713,10 +713,6 @@
     - type: Transform
       noRot: true
     - type: SoundOnGather
-    - type: Gatherable
-      toolWhitelist:
-        tags:
-          - Pickaxe
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Metallic
