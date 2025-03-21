@@ -35,7 +35,7 @@ public abstract class SharedDevourSystem : EntitySystem
         //I did it mom, I added ERP content into upstream. Legally!
         component.Stomach = ContainerSystem.EnsureContainer<Container>(uid, "stomach");
 
-        _actionsSystem.AddAction(uid, ref component.DevourActionEntity, component.DevourAction);
+        //_actionsSystem.AddAction(uid, ref component.DevourActionEntity, component.DevourAction);
     }
 
     /// <summary>
@@ -63,7 +63,7 @@ public abstract class SharedDevourSystem : EntitySystem
                     });
                     break;
                 default:
-                    _popupSystem.PopupClient(Loc.GetString("devour-action-popup-message-fail-target-alive"), uid,uid);
+                    _popupSystem.PopupClient(Loc.GetString("devour-action-popup-message-fail-target-alive"), uid, uid);
                     break;
             }
 

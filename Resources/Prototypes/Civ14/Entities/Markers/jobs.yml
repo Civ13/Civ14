@@ -1,0 +1,13 @@
+# Nomad
+
+- type: entity
+  id: SpawnPointNomads
+  parent: SpawnPointJobBase
+  name: nomad
+  components:
+    - type: SpawnPoint
+      job_id: Nomad
+    - type: Sprite
+      layers:
+        - state: green
+        - state: passenger

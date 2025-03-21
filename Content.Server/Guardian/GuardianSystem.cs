@@ -119,12 +119,12 @@ namespace Content.Server.Guardian
         private void OnHostInit(EntityUid uid, GuardianHostComponent component, ComponentInit args)
         {
             component.GuardianContainer = _container.EnsureContainer<ContainerSlot>(uid, "GuardianContainer");
-            _actionSystem.AddAction(uid, ref component.ActionEntity, component.Action);
+            //_actionSystem.AddAction(uid, ref component.ActionEntity, component.Action);
         }
 
         private void OnHostShutdown(EntityUid uid, GuardianHostComponent component, ComponentShutdown args)
         {
-            if (component.HostedGuardian is not {} guardian)
+            if (component.HostedGuardian is not { } guardian)
                 return;
 
             // Ensure held items are dropped before deleting guardian.
@@ -199,7 +199,7 @@ namespace Content.Server.Guardian
                 return;
             }
 
-            _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, user, component.InjectionDelay, new GuardianCreatorDoAfterEvent(), injector, target: target, used: injector){BreakOnMove = true});
+            _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, user, component.InjectionDelay, new GuardianCreatorDoAfterEvent(), injector, target: target, used: injector) { BreakOnMove = true });
         }
 
         private void OnDoAfter(EntityUid uid, GuardianCreatorComponent component, DoAfterEvent args)
@@ -279,8 +279,8 @@ namespace Content.Server.Guardian
         /// </summary>
         private void OnCreatorExamine(EntityUid uid, GuardianCreatorComponent component, ExaminedEvent args)
         {
-           if (component.Used)
-               args.PushMarkup(Loc.GetString("guardian-activator-empty-examine"));
+            if (component.Used)
+                args.PushMarkup(Loc.GetString("guardian-activator-empty-examine"));
         }
 
         /// <summary>
@@ -350,7 +350,7 @@ namespace Content.Server.Guardian
             guardianComponent.GuardianLoose = true;
         }
 
-        private void RetractGuardian(EntityUid host,GuardianHostComponent hostComponent, EntityUid guardian, GuardianComponent guardianComponent)
+        private void RetractGuardian(EntityUid host, GuardianHostComponent hostComponent, EntityUid guardian, GuardianComponent guardianComponent)
         {
             if (!guardianComponent.GuardianLoose)
             {

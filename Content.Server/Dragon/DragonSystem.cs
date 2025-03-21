@@ -109,7 +109,7 @@ public sealed partial class DragonSystem : EntitySystem
     private void OnInit(EntityUid uid, DragonComponent component, MapInitEvent args)
     {
         Roar(uid, component);
-        _actions.AddAction(uid, ref component.SpawnRiftActionEntity, component.SpawnRiftAction);
+        //_actions.AddAction(uid, ref component.SpawnRiftActionEntity, component.SpawnRiftAction);
     }
 
     private void OnShutdown(EntityUid uid, DragonComponent component, ComponentShutdown args)
