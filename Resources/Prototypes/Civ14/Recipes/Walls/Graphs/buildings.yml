@@ -1,0 +1,70 @@
+- type: constructionGraph
+  id: WoodDoor
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: WoodDoor
+
+- type: constructionGraph
+  id: StrawWallWindow
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Straw
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: StrawWallWindow
+
+- type: constructionGraph
+  id: LogWallWindow
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: LogWallWindow
+
+- type: constructionGraph
+  id: DirtWallWindow
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Dirt
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: DirtWallWindow
+
+- type: constructionGraph
+
+  id: ClayWallWindow
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Clay
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: ClayWallWindow

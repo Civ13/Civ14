@@ -1,0 +1,78 @@
+- type: construction
+  name: wood door
+  id: WoodDoor
+  graph: WoodDoor
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A basic wood door. Flammable!
+  icon: { sprite: Structures/Doors/MineralDoors/wood_door.rsi, state: closed }
+  objectType: Item
+
+- type: construction
+  name: straw wall window
+  id: StrawWallWindow
+  graph: StrawWallWindow
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A basic wall made of straw and dry leaves. Burns easily.
+  icon:
+    sprite: Civ14/Structures/windows.rsi
+    state: straw_window
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: dirt wall window
+  id: DirtWallWindow
+  graph: DirtWallWindow
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A basic wall made of dried mud bricks.
+  icon:
+    sprite: Civ14/Structures/windows.rsi
+    state: drysod_window
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: clay wall
+  id: ClayWallWindow
+  graph: ClayWallWindow
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A wall made of fired clay bricks.
+  icon:
+    sprite: Civ14/Structures/windows.rsi
+    state: clay_windownew
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: log wall window
+  id: LogWallWindow
+  graph: LogWallWindow
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A wall made of stacked hardwood logs. For that rustic feel.
+  icon:
+    sprite: Civ14/Structures/windows.rsi
+    state: log_window
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
