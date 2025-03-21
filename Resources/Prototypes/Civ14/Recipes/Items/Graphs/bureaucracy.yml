@@ -1,0 +1,27 @@
+- type: constructionGraph
+  id: Pencil
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 1
+              doAfter: 2
+    - node: end
+      entity: Pencil
+
+- type: constructionGraph
+  id: Paper
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 1
+              doAfter: 1
+    - node: end
+      entity: Paper
