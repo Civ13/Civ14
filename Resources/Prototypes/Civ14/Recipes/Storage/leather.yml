@@ -28,5 +28,5 @@
   targetNode: end
   category: construction-category-storage
   description: A leather waterskin, used to carry liquids.
-  icon: { sprite: Civ14/Objects/storage.rsi, state: waterskin }
+  icon: { sprite: Civ14/Objects/Storage/storage.rsi, state: waterskin }
   objectType: Item

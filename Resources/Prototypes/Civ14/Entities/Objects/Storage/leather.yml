@@ -29,7 +29,7 @@
   description: A leather waterskin, used to carry liquids.
   components:
     - type: Sprite
-      sprite: Civ14/Objects/storage.rsi
+      sprite: Civ14/Objects/Storage/storage.rsi
       state: waterskin
     - type: Construction
       graph: LeatherWaterskin
