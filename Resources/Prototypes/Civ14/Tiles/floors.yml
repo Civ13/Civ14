@@ -48,3 +48,102 @@
     collection: FootstepAsteroid
   heatCapacity: 10000
   weather: true
+
+- type: tile
+  id: FloorThatch
+  name: thatch floor
+  sprite: /Textures/Civ14/Structures/Floors/wood.rsi/thatch2.png
+  variants: 1
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [Prying]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemThatch
+  heatCapacity: 10000
+
+- type: stack
+  id: FloorTileThatch
+  name: thatch floor
+  spawn: FloorTileItemThatch
+  maxCount: 30
+
+- type: entity
+  name: thatch floor
+  parent: FloorTileItemBase
+  id: FloorTileItemThatch
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Floors/wood.rsi
+      state: thatch_hand
+    - type: Item
+      heldPrefix: wood
+    - type: FloorTile
+      outputs:
+        - Plating
+        - FloorThatch
+    - type: Stack
+      stackType: FloorTileThatch
+    - type: SpawnAfterInteract #Nuke after convert to FloorTile
+      prototype: FloorThatch
+      doAfter: 0.5
+      removeOnInteract: true
+    - type: Construction
+      graph: TileThatch
+      node: end
+
+- type: entity
+  id: FloorThatch
+  parent: BaseStructure
+  name: thatch floor
+  description: "A floor made of compressed dried straw."
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Floors/wood.rsi
+      state: thatch2
+      drawdepth: FloorTiles
+    - type: IsRoof
+    - type: Tag
+      tags:
+        - ForceFixRotations
+    - type: Physics
+      canCollide: false
+    - type: Fixtures
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 25
+            behaviors:
+              - !type:DoActsBehavior
+                acts: ["Destruction"]
+
+- type: entity
+  id: FloorWoodClassic
+  parent: BaseStructure
+  name: wood floor
+  description: "A rustic wood floor."
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Floors/wood.rsi
+      state: wood
+      drawdepth: FloorTiles
+    - type: IsRoof
+    - type: Tag
+      tags:
+        - ForceFixRotations
+    - type: Physics
+      canCollide: false
+    - type: Fixtures
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 40
+            behaviors:
+              - !type:DoActsBehavior
+                acts: ["Destruction"]

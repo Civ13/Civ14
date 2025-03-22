@@ -1,0 +1,27 @@
+- type: construction
+  name: thatch floor
+  id: TileThatch
+  graph: TileThatch
+  startNode: start
+  targetNode: end
+  category: construction-category-tiles
+  description: A floor made of compressed dried straw.
+  icon: { sprite: Civ14/Structures/Floors/wood.rsi, state: thatch_hand }
+  objectType: Item
+
+- type: constructionGraph
+  id: TileThatch
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            # Needs StackType ID
+            - material: WoodPlank
+              amount: 1
+    - node: end
+      entity: FloorTileItemThatch

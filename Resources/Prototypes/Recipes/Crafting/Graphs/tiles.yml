@@ -51,10 +51,10 @@
           steps:
             - material: Brass
               amount: 1
-    
+
     - node: filledPlate
       entity: FloorTileItemBrassFilled
-      
+
     - node: reebe
       entity: FloorTileItemBrassReebe
 
@@ -105,19 +105,3 @@
               amount: 1
     - node: fleshTile
       entity: FloorTileItemFlesh
-
-- type: constructionGraph
-  id: TileWoodLarge
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: woodtilelarge
-          completed:
-            - !type:SetStackCount
-              amount: 4
-          steps:
-            - material: WoodPlank
-              amount: 2
-    - node: woodtilelarge
-      entity: FloorTileItemWoodLarge
