@@ -106,7 +106,7 @@ public sealed partial class StrawCollectorSystem : EntitySystem
             Spawn("MaterialStraw1", coordinates);
         }
 
-        _popup.PopupEntity($"You finish cutting the grass. DEBUG: {strawCount}", ent, args.User);
+        _popup.PopupEntity($"You finish cutting the grass.", ent, args.User);
         args.Handled = true;
     }
 }
