@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "fence",
+      "directions": 4
+    },
+    {
+      "name": "fence2",
+      "directions": 4
+    },
+    {
+      "name": "fence3",
+      "directions": 4
+    },
+    {
+      "name": "steel_picket",
+      "directions": 4
+    },
+    {
+      "name": "steel_picket2",
+      "directions": 4
+    },
+    {
+      "name": "steel_picket3",
+      "directions": 4
+    },
+    {
+      "name": "picket",
+      "directions": 4
+    },
+    {
+      "name": "picket2",
+      "directions": 4
+    },
+    {
+      "name": "picket3",
+      "directions": 4
+    },
+    {
+      "name": "white_fence",
+      "directions": 4
+    },
+    {
+      "name": "iron_fence",
+      "directions": 4
+    },
+    {
+      "name": "chainlinkfence",
+      "directions": 4
+    },
+    {
+      "name": "chainlinkfence_corner",
+      "directions": 4
+    },
+    {
+      "name": "chainlinkfence_cut1",
+      "directions": 4
+    },
+    {
+      "name": "chainlinkfence_cut2",
+      "directions": 4
+    },
+    {
+      "name": "chainlinkfence_cut3",
+      "directions": 4
+    },
+    {
+      "name": "chainlinkfence_door",
+      "directions": 4
+    },
+    {
+      "name": "chainlinkfence_door_open",
+      "directions": 4
+    },
+    {
+      "name": "goalpost",
+      "directions": 8
+    },
+    {
+      "name": "goalpost_i"
+    },
+    {
+      "name": "goalpostX",
+      "directions": 8
+    },
+    {
+      "name": "metal_fence1",
+      "directions": 4
+    },
+    {
+      "name": "metal_fence_corner1",
+      "directions": 4
+    },
+    {
+      "name": "metal_fence2",
+      "directions": 4
+    },
+    {
+      "name": "metal_fence_corner2",
+      "directions": 4
+    },
+    {
+      "name": "metal_fence3",
+      "directions": 4
+    },
+    {
+      "name": "metal_fence_corner3",
+      "directions": 4
+    },
+    {
+      "name": "metal_fence4",
+      "directions": 4
+    },
+    {
+      "name": "metal_fence_corner4",
+      "directions": 4
+    },
+    {
+      "name": "metal_fence5",
+      "directions": 4
+    },
+    {
+      "name": "metal_fence_corner5",
+      "directions": 4
+    }
+  ]
+}
