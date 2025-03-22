@@ -28,6 +28,10 @@
       useSound:
         path: /Audio/Items/Culinary/chop.ogg
     - type: SeedSlicer
+    - type: StrawCollector
+      collectTime: 5.0
+      minAmount: 0
+      maxAmount: 2
 
 - type: entity
   name: kitchen knife
