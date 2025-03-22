@@ -36,17 +36,24 @@ namespace Content.Server.Farming
 
             // Grass tiles that can be turned into dirt tiles
             var grassTiles = new HashSet<string>
-    {
-        "FloorGrass",
-        "FloorGrassJungle",
-        "FloorGrassDark",
-        "FloorGrassLight",
-        "FloorAstroGrass",
-        "FloorPlanetGrass",
-        "FloorJungleAstroGrass",
-        "FloorMowedAstroGrass"
-    };
+                {
+                    "FloorGrass",
+                    "FloorGrassJungle",
+                    "FloorGrassDark",
+                    "FloorGrassLight",
+                    "FloorAstroGrass",
+                    "FloorPlanetGrass",
+                    "FloorJungleAstroGrass",
+                    "FloorMowedAstroGrass"
+                };
 
+            var ploughableTiles = new HashSet<string> // I'd rather do it in another way, but Asphalt has a FloorDirt BaseTurf, so I cant use it
+                {
+                    "FloorDirt",
+                    "FloorDirtDigged_1",
+                    "FloorDirtDigged_2",
+                    "FloorDirtDigged_3"
+                };
             // Get clicked grid
             var gridUid = _transform.GetGrid(args.ClickLocation);
             if (!gridUid.HasValue || !TryComp<MapGridComponent>(gridUid.Value, out var grid))
@@ -63,7 +70,7 @@ namespace Content.Server.Farming
             string popupMessage;
 
             // Ploughing dirt or grass?
-            if (tileDef.ID == "FloorDirt")
+            if (ploughableTiles.Contains(tileDef.ID))
             {
                 actionType = PloughActionType.Plough;
                 popupMessage = "You begin plowing the soil.";
