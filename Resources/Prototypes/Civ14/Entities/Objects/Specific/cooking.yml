@@ -1,0 +1,133 @@
+- type: entity
+  id: KitchenMill
+  parent: [BaseMachinePowered, SmallConstructibleMachine]
+  name: small mill
+  description: A small, hand-powered mill.
+  suffix: mill
+  components:
+    - type: Animateable
+    - type: InteractionOutline
+    - type: ApcPowerReceiver
+      needsPower: false
+      powerLoad: 0
+    - type: Anchorable
+      delay: 2
+    - type: ReagentGrinder
+    - type: ActivatableUI
+      key: enum.ReagentGrinderUiKey.Key
+    - type: UserInterface
+      interfaces:
+        enum.ReagentGrinderUiKey.Key:
+          type: ReagentGrinderBoundUserInterface
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.ReagentGrinderVisualState.BeakerAttached:
+          grinder:
+            True: { state: "flour_mill" }
+            False: { state: "flour_mill" }
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.17,0,0.20,0.4"
+          mask:
+            - TabletopMachineMask
+          layer:
+            - TabletopMachineLayer
+    - type: Sprite
+      sprite: Civ14/Objects/structures.rsi
+      drawdepth: SmallObjects
+      snapCardinals: true
+      offset: "0.0,0.4"
+      layers:
+        - map: ["grinder"]
+          state: "flour_mill"
+    - type: ItemSlots
+      slots:
+        beakerSlot:
+          whitelist:
+            components:
+              - FitsInDispenser
+    - type: ContainerContainer
+      containers:
+        beakerSlot: !type:ContainerSlot
+        inputContainer: !type:Container
+    - type: Construction
+      node: end
+
+- type: entity
+  id: KitchenCampfire
+  parent: [BaseMachinePowered, SmallConstructibleMachine]
+  name: campfire
+  description: Keeps you warm and cooks your food.
+  components:
+    - type: Animateable
+    - type: InteractionOutline
+    - type: ApcPowerReceiver
+      needsPower: false
+      powerLoad: 0
+    - type: Microwave
+      capacity: 3
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.PowerDeviceVisuals.VisualState:
+          enum.MicrowaveVisualizerLayers.Base:
+            Idle: { state: "fireplace2" }
+            Cooking: { state: "fireplace_on" }
+          enum.MicrowaveVisualizerLayers.BaseUnlit:
+            Idle: { state: "fireplace" }
+            Cooking: { state: "fireplace_on" }
+        enum.PowerDeviceVisuals.Powered:
+          enum.MicrowaveVisualizerLayers.BaseUnlit:
+            True: { visible: true }
+            False: { visible: false }
+    - type: ActivatableUI
+      key: enum.MicrowaveUiKey.Key
+    - type: UserInterface
+      interfaces:
+        enum.MicrowaveUiKey.Key:
+          type: MicrowaveBoundUserInterface
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.3,-0.16,0.3,0.16"
+          density: 190
+          mask:
+            - TabletopMachineMask
+          layer:
+            - TabletopMachineLayer
+    - type: Sprite
+      sprite: Civ14/Objects/kitchen.rsi
+      drawdepth: SmallObjects
+      snapCardinals: true
+      layers:
+        - state: fireplace2
+          map: ["enum.MicrowaveVisualizerLayers.Base"]
+        - state: fireplace
+          shader: unshaded
+          map: ["enum.MicrowaveVisualizerLayers.BaseUnlit"]
+          visible: false
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 25
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Breakage"]
+    - type: ContainerContainer
+      containers:
+        microwave_entity_container: !type:Container
+    - type: EmptyOnMachineDeconstruct
+      containers:
+        - microwave_entity_container
+    - type: GuideHelp
+      guides:
+        - Chef
+        - FoodRecipes
+    - type: Construction
+      node: end

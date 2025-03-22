@@ -194,11 +194,6 @@
 
 - type: latheRecipe
   parent: BaseWoodTileRecipe
-  id: FloorTileItemWoodLarge
-  result: FloorTileItemWoodLarge
-
-- type: latheRecipe
-  parent: BaseWoodTileRecipe
   id: FloorTileItemWoodPattern
   result: FloorTileItemWoodPattern
 

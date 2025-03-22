@@ -8,3 +8,14 @@
   description: A small, hand-powered, wood mill.
   icon: { sprite: Civ14/Objects/structures.rsi, state: flour_mill }
   objectType: Item
+
+- type: construction
+  name: campfire
+  id: Campfire
+  graph: Campfire
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  description: "Keeps you warm and cooks your food."
+  icon: { sprite: Civ14/Objects/kitchen.rsi, state: fireplace_on }
+  objectType: Item

@@ -104,7 +104,15 @@
     - type: Tag
       tags:
         - RawMaterial
-
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 30
+          reagents:
+            - ReagentId: Dirt
+              Quantity: 30
+    - type: Extractable
+      grindableSolutionName: food
 - type: entity
   parent: MaterialDirt
   id: MaterialDirt10

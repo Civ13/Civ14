@@ -19,9 +19,9 @@ microwave-bound-user-interface-cook-time-label = COOK TIME: {$time}
 
 ## UI
 
-microwave-menu-title = Microwave
+microwave-menu-title = Campfire
 microwave-menu-start-button = Start
-microwave-menu-eject-all-text = Eject All Contents
+microwave-menu-eject-all-text = Remove All Contents
 microwave-menu-eject-all-tooltip = This vaporizes all reagents, but ejects any solids.
 microwave-menu-instant-button = INSTANT
 microwave-menu-footer-flavor-left = Do not insert any electronic, metallic or living objects.

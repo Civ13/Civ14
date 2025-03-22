@@ -1,0 +1,23 @@
+- type: construction
+  name: wood fence
+  id: FenceWoodClassic
+  graph: FenceWoodClassic
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: "A rustic wood fence for your garden."
+  icon: { sprite: Civ14/Structures/fence.rsi, state: fence }
+  objectType: Item
+
+- type: constructionGraph
+  id: FenceWoodClassic
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 3
+    - node: end
+      entity: FenceWoodClassic
