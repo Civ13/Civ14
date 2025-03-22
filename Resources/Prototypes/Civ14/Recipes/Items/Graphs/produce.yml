@@ -1,0 +1,13 @@
+- type: constructionGraph
+  id: KitchenMill
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 4
+              doAfter: 2
+    - node: end
+      entity: KitchenMill
