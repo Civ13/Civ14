@@ -1,0 +1,344 @@
+{
+    "version": 1,
+    "license": null,
+    "copyright": null,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "",
+            "delays": [
+                [
+                    0.120000005,
+                    0.120000005,
+                    0.120000005,
+                    0.120000005
+                ]
+            ]
+        },
+        {
+            "name": "window_clear"
+        },
+        {
+            "name": "old_window"
+        },
+        {
+            "name": "old_window2"
+        },
+        {
+            "name": "straw_window"
+        },
+        {
+            "name": "log_window",
+            "directions": 4
+        },
+        {
+            "name": "drysod_window"
+        },
+        {
+            "name": "windownew"
+        },
+        {
+            "name": "windownew_frame"
+        },
+        {
+            "name": "windowmetal"
+        },
+        {
+            "name": "windowmetal_frame"
+        },
+        {
+            "name": "windowmetal_frameX"
+        },
+        {
+            "name": "medieval_windownew_frame"
+        },
+        {
+            "name": "medieval_windownew"
+        },
+        {
+            "name": "brick_windownew"
+        },
+        {
+            "name": "brick_windownew_frame"
+        },
+        {
+            "name": "stone_windownew"
+        },
+        {
+            "name": "stone_windownew_frame"
+        },
+        {
+            "name": "sandstone_windownew"
+        },
+        {
+            "name": "sandstone_windownew_frame"
+        },
+        {
+            "name": "sumerian_windownew_frame",
+            "directions": 4
+        },
+        {
+            "name": "sumerian_windownew",
+            "directions": 4
+        },
+        {
+            "name": "shoji_windownew_frame"
+        },
+        {
+            "name": "shoji_windownew"
+        },
+        {
+            "name": "nordic_window",
+            "directions": 4
+        },
+        {
+            "name": "roman_window",
+            "directions": 4
+        },
+        {
+            "name": "aztec_window",
+            "directions": 4
+        },
+        {
+            "name": "bamboo_windownew_frame"
+        },
+        {
+            "name": "bamboo_windownew"
+        },
+        {
+            "name": "villa_windownew_frame",
+            "directions": 4
+        },
+        {
+            "name": "villa_windownew",
+            "directions": 4
+        },
+        {
+            "name": "villa_windownew_full",
+            "directions": 4
+        },
+        {
+            "name": "villa_windownew_fullframe",
+            "directions": 4
+        },
+        {
+            "name": "stone_windownew_fullframe"
+        },
+        {
+            "name": "stone_windownew_full"
+        },
+        {
+            "name": "sandstone_windownew_fullframe"
+        },
+        {
+            "name": "sandstone_windownew_full"
+        },
+        {
+            "name": "red_earthwindownew_frame"
+        },
+        {
+            "name": "red_earthwindownew"
+        },
+        {
+            "name": "brick_windownew_fullframe"
+        },
+        {
+            "name": "brick_windownew_full"
+        },
+        {
+            "name": "metal_porthole_fullframe"
+        },
+        {
+            "name": "metal_porthole_full"
+        },
+        {
+            "name": "clay_windownew_frame",
+            "directions": 4
+        },
+        {
+            "name": "clay_windownew",
+            "directions": 4
+        },
+        {
+            "name": "oriental_windownew_frame"
+        },
+        {
+            "name": "oriental_windownew"
+        },
+        {
+            "name": "redsandstone_windownew_fullframe"
+        },
+        {
+            "name": "redsandstone_windownew_full"
+        },
+        {
+            "name": "redsandstonewindow_small"
+        },
+        {
+            "name": "redsandstonewindow_small_full"
+        },
+        {
+            "name": "marble_windownew_frame"
+        },
+        {
+            "name": "marble_windownew"
+        },
+        {
+            "name": "marble_windownew_fullframe"
+        },
+        {
+            "name": "marble_windownew_full"
+        },
+        {
+            "name": "abashiri3"
+        },
+        {
+            "name": "abashiri12"
+        },
+        {
+            "name": "abashiri1"
+        },
+        {
+            "name": "abashiri2"
+        },
+        {
+            "name": "abashiri4"
+        },
+        {
+            "name": "abashiri8"
+        },
+        {
+            "name": "abashiri5"
+        },
+        {
+            "name": "abashiri6"
+        },
+        {
+            "name": "abashiri9"
+        },
+        {
+            "name": "abashiri10"
+        },
+        {
+            "name": "abashiri7"
+        },
+        {
+            "name": "abashiri11"
+        },
+        {
+            "name": "abashiri13"
+        },
+        {
+            "name": "abashiri14"
+        },
+        {
+            "name": "abashiri0"
+        },
+        {
+            "name": "abashiri15"
+        },
+        {
+            "name": "ruinedbars",
+            "directions": 4
+        },
+        {
+            "name": "medieval0"
+        },
+        {
+            "name": "medieval1"
+        },
+        {
+            "name": "medieval2"
+        },
+        {
+            "name": "medieval3"
+        },
+        {
+            "name": "medieval4"
+        },
+        {
+            "name": "medieval5"
+        },
+        {
+            "name": "medieval6"
+        },
+        {
+            "name": "medieval7"
+        },
+        {
+            "name": "medieval8"
+        },
+        {
+            "name": "medieval9"
+        },
+        {
+            "name": "medieval10"
+        },
+        {
+            "name": "medieval11"
+        },
+        {
+            "name": "medieval12"
+        },
+        {
+            "name": "medieval13"
+        },
+        {
+            "name": "medieval14"
+        },
+        {
+            "name": "medieval15"
+        },
+        {
+            "name": "medieval_glass0"
+        },
+        {
+            "name": "medieval_glass1"
+        },
+        {
+            "name": "medieval_glass2"
+        },
+        {
+            "name": "medieval_glass3"
+        },
+        {
+            "name": "medieval_glass4"
+        },
+        {
+            "name": "medieval_glass5"
+        },
+        {
+            "name": "medieval_glass6"
+        },
+        {
+            "name": "medieval_glass7"
+        },
+        {
+            "name": "medieval_glass8"
+        },
+        {
+            "name": "medieval_glass9"
+        },
+        {
+            "name": "medieval_glass10"
+        },
+        {
+            "name": "medieval_glass11"
+        },
+        {
+            "name": "medieval_glass12"
+        },
+        {
+            "name": "medieval_glass13"
+        },
+        {
+            "name": "medieval_glass14"
+        },
+        {
+            "name": "medieval_glass15"
+        }
+    ]
+}

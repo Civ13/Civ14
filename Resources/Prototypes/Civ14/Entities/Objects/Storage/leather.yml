@@ -1,0 +1,36 @@
+- type: entity
+  parent: ClothingBackpack
+  id: LeatherClothingBackpack
+  name: leather backpack
+  description: A sturdy leather backpack.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Storage/backpack.rsi
+    - type: Construction
+      graph: LeatherClothingBackpack
+      node: end
+
+- type: entity
+  parent: ClothingBeltUtility
+  id: LeatherClothingBelt
+  name: leather satchel
+  description: A leather satchel worn around the waist.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Storage/satchel.rsi
+    - type: Construction
+      graph: LeatherClothingBelt
+      node: end
+
+- type: entity
+  parent: DrinkBottleBaseEmpty
+  id: LeatherWaterskin
+  name: leather waterskin
+  description: A leather waterskin, used to carry liquids.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Storage/storage.rsi
+      state: waterskin
+    - type: Construction
+      graph: LeatherWaterskin
+      node: end

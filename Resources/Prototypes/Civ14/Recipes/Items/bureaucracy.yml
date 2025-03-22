@@ -1,0 +1,21 @@
+- type: construction
+  name: pencil
+  id: Pencil
+  graph: Pencil
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  description: A simple wooden pencil.
+  icon: { sprite: Civ14/Objects/bureaucracy.rsi, state: pencil }
+  objectType: Item
+
+- type: construction
+  name: paper
+  id: Paper
+  graph: Paper
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  description: A simple sheet of paper.
+  icon: { sprite: Civ14/Objects/bureaucracy.rsi, state: paper }
+  objectType: Item
