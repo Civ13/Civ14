@@ -1687,13 +1687,6 @@ entities:
     - type: Transform
       pos: 25.308355,7.6870356
       parent: 2
-- proto: ClothingHeadHelmetBone
-  entities:
-  - uid: 642
-    components:
-    - type: Transform
-      pos: 20.506927,28.78566
-      parent: 2
 - proto: ClothingNeckCloakMiner
   entities:
   - uid: 1039

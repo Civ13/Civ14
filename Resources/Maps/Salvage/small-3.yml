@@ -233,13 +233,6 @@ entities:
     - type: Transform
       pos: -0.46850228,2.4146657
       parent: 10
-- proto: ClothingHeadHelmetBone
-  entities:
-  - uid: 486
-    components:
-    - type: Transform
-      pos: -6.420633,-6.5805063
-      parent: 10
 - proto: ClothingOuterArmorBone
   entities:
   - uid: 487
