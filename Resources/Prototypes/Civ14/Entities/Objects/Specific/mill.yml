@@ -1,0 +1,55 @@
+- type: entity
+  id: KitchenMill
+  parent: [BaseMachinePowered, SmallConstructibleMachine]
+  name: small mill
+  description: A small, hand-powered mill.
+  suffix: mill
+  components:
+    - type: Animateable
+    - type: InteractionOutline
+    - type: Anchorable
+      delay: 2
+    - type: ReagentGrinder
+    - type: ActivatableUI
+      key: enum.ReagentGrinderUiKey.Key
+    - type: UserInterface
+      interfaces:
+        enum.ReagentGrinderUiKey.Key:
+          type: ReagentGrinderBoundUserInterface
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.ReagentGrinderVisualState.BeakerAttached:
+          grinder:
+            True: { state: "flour_mill" }
+            False: { state: "flour_mill" }
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.17,0,0.20,0.4"
+          mask:
+            - TabletopMachineMask
+          layer:
+            - TabletopMachineLayer
+    - type: Sprite
+      sprite: Civ14/Objects/structures.rsi
+      drawdepth: SmallObjects
+      snapCardinals: true
+      offset: "0.0,0.4"
+      layers:
+        - map: ["grinder"]
+          state: "flour_mill"
+    - type: ItemSlots
+      slots:
+        beakerSlot:
+          whitelist:
+            components:
+              - FitsInDispenser
+    - type: ContainerContainer
+      containers:
+        beakerSlot: !type:ContainerSlot
+        inputContainer: !type:Container
+    - type: Construction
+      node: end

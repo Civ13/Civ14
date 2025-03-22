@@ -8,7 +8,7 @@
   description: A basic wood door. Flammable!
   icon: { sprite: Civ14/Structures/Doors/wood_door_classic.rsi, state: closed }
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: SnapgridCente
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
