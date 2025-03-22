@@ -1,0 +1,10 @@
+- type: construction
+  name: small mill
+  id: KitchenMill
+  graph: KitchenMill
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  description: A small, hand-powered, wood mill.
+  icon: { sprite: Civ14/Objects/structures.rsi, state: flour_mill }
+  objectType: Item
