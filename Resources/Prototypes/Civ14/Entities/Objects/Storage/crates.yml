@@ -1,0 +1,16 @@
+- type: entity
+  parent: CrateBaseWeldable
+  id: CrateWood
+  name: wood crate
+  components:
+    - type: Icon
+      sprite: Civ14/Objects/Storage/wood_crate.rsi
+    - type: Sprite
+      sprite: Civ14/Objects/Storage/wood_crate.rsi
+    - type: Construction
+      graph: CrateWood
+      node: end
+      containers:
+        - entity_storage
+    - type: StaticPrice
+      price: 100
