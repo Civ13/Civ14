@@ -2,25 +2,23 @@ import numpy as np
 import yaml
 from perlin_noise import PerlinNoise
 import base64
+import struct
 
 # -----------------------------------------------------------------------------
 # Tilemap – Apenas os 4 itens válidos (usados apenas na grid)
 # -----------------------------------------------------------------------------
-# Esses são os tiles que aparecem na grid.
 TILEMAP = {
     1: "Space",
     2: "FloorAstroGrass",
     0: "FloorDirt",
     3: "FloorGrassDark"
 }
-# Mapeamento inverso: converte nome para índice
 TILEMAP_REVERSE = {v: k for k, v in TILEMAP.items()}
 
 # -----------------------------------------------------------------------------
 # Geração do heightmap e mapeamento para tiles (para a grid)
 # -----------------------------------------------------------------------------
 def generate_heightmap(width, height, octaves=6, seed=None):
-    """Gera um heightmap usando Perlin Noise."""
     noise = PerlinNoise(octaves=octaves, seed=seed)
     heightmap = np.zeros((height, width))
     for y in range(height):
@@ -29,12 +27,6 @@ def generate_heightmap(width, height, octaves=6, seed=None):
     return heightmap
 
 def map_noise_to_tiles(heightmap, thresholds=(0.3, 0.0)):
-    """
-    Mapeia os valores do heightmap para índices do tilemap.
-    Se o valor < dirt_threshold (0.0): FloorDirt (0);
-    se estiver entre 0.0 e grass_threshold (0.3): FloorAstroGrass (2);
-    se >= grass_threshold: FloorGrassDark (3).
-    """
     grass_threshold, dirt_threshold = thresholds
     h, w = heightmap.shape
     tile_map = np.zeros((h, w), dtype=np.int32)
@@ -50,27 +42,26 @@ def map_noise_to_tiles(heightmap, thresholds=(0.3, 0.0)):
     return tile_map
 
 def add_border(tile_map, border_value=None):
-    """
-    Adiciona bordas ao mapa.
-    Por padrão, utiliza FloorDirt (índice 0) para a borda.
-    """
     if border_value is None:
         border_value = TILEMAP_REVERSE["FloorDirt"]
     bordered = np.pad(tile_map, pad_width=1, mode='constant', constant_values=border_value)
     return bordered.astype(np.int32)
 
 def encode_tiles(tile_map):
-    """
-    Codifica a matriz de tiles em base64.
-    Converte a matriz para 32-bit little-endian usando '<i4'.
-    """
-    arr = np.ascontiguousarray(tile_map.astype('<i4'))
-    return base64.b64encode(arr.tobytes()).decode('utf-8')
+    tile_bytes = bytearray()
+    for y in range(tile_map.shape[0]):
+        for x in range(tile_map.shape[1]):
+            tile_id = tile_map[y, x]
+            flags = 0
+            variant = 0
+            tile_bytes.extend(struct.pack("<I", tile_id))  # 4 bytes para tile_id
+            tile_bytes.append(flags)                       # 1 byte para flags
+            tile_bytes.append(variant)                     # 1 byte para variant
+    return base64.b64encode(tile_bytes).decode('utf-8')
 
 # -----------------------------------------------------------------------------
 # Geração dinâmica das entidades sobre o grid
 # -----------------------------------------------------------------------------
-# UID global para atribuição sequencial (começa em 3, pois 1 e 2 são reservados)
 global_uid = 3
 def next_uid():
     global global_uid
@@ -78,12 +69,23 @@ def next_uid():
     global_uid += 1
     return uid
 
-def generate_main_entities(tile_map):
-    """
-    Gera o grupo principal (proto: "") contendo:
-      - UID 1: Map Entity (componentes básicos)
-      - UID 2: grid (com MapGrid e demais componentes)
-    """
+def generate_main_entities(tile_map, chunk_size=16):
+    h, w = tile_map.shape
+    chunks = {}
+    for cy in range(0, h, chunk_size):
+        for cx in range(0, w, chunk_size):
+            chunk_key = f"{cx//chunk_size},{cy//chunk_size}"
+            chunk_tiles = tile_map[cy:cy+chunk_size, cx:cx+chunk_size]
+            # Preenche chunks incompletos nas bordas com FloorDirt (0)
+            if chunk_tiles.shape[0] < chunk_size or chunk_tiles.shape[1] < chunk_size:
+                full_chunk = np.zeros((chunk_size, chunk_size), dtype=np.int32)
+                full_chunk[:chunk_tiles.shape[0], :chunk_tiles.shape[1]] = chunk_tiles
+                chunk_tiles = full_chunk
+            chunks[chunk_key] = {
+                "ind": f"{cx//chunk_size},{cy//chunk_size}",
+                "tiles": encode_tiles(chunk_tiles),
+                "version": 6
+            }
     main = {
         "proto": "",
         "entities": [
@@ -105,15 +107,7 @@ def generate_main_entities(tile_map):
                 "components": [
                     {"type": "MetaData", "name": "grid"},
                     {"type": "Transform", "parent": 1, "pos": "3.46875,4.03125"},
-                    {"type": "MapGrid",
-                     "chunks": {
-                         "0,0": {
-                             "ind": "0,0",
-                             "tiles": encode_tiles(tile_map),
-                             "version": 6
-                         }
-                     }
-                    },
+                    {"type": "MapGrid", "chunks": chunks},
                     {"type": "Broadphase"},
                     {"type": "Physics",
                      "angularDamping": 0.05,
@@ -142,16 +136,6 @@ def generate_main_entities(tile_map):
     return main
 
 def generate_dynamic_entities(tile_map):
-    """
-    Gera entidades dinamicamente com base em cada tile do mapa (com borda).
-    Neste exemplo, a lógica é:
-      - Se o tile estiver na borda (primeira/última linha ou coluna): usa proto "WallPlastitaniumIndestructible".
-      - No interior:
-           * Se o tile for FloorAstroGrass (índice 2): usa proto "FloorWaterEntity".
-           * Se o tile for FloorGrassDark (índice 3): usa proto "FloraRockSolid".
-      - Além disso, se o tile estiver na penúltima linha (parte inferior interior),
-        também gera uma entidade no grupo "WallRock".
-    """
     groups = {
         "FloorWaterEntity": [],
         "FloraRockSolid": [],
@@ -166,7 +150,6 @@ def generate_dynamic_entities(tile_map):
             pos_x = x - center_x - 0.5
             pos_y = -(y - center_y) + 0.5
             tile_val = tile_map[y, x]
-            # Se estiver na borda:
             if x == 0 or x == w - 1 or y == 0 or y == h - 1:
                 groups["WallPlastitaniumIndestructible"].append({
                     "uid": next_uid(),
@@ -175,7 +158,6 @@ def generate_dynamic_entities(tile_map):
                     ]
                 })
             else:
-                # Interior: gera entidades conforme o valor do tile
                 if tile_val == TILEMAP_REVERSE["FloorAstroGrass"]:
                     groups["FloorWaterEntity"].append({
                         "uid": next_uid(),
@@ -190,7 +172,6 @@ def generate_dynamic_entities(tile_map):
                             {"type": "Transform", "parent": 2, "pos": f"{pos_x},{pos_y}"}
                         ]
                     })
-                # Se o tile estiver na penúltima linha (parte inferior interior)
                 if y == h - 2:
                     groups["WallRock"].append({
                         "uid": next_uid(),
@@ -203,20 +184,17 @@ def generate_dynamic_entities(tile_map):
         dynamic_groups.append({"proto": proto, "entities": ents})
     return dynamic_groups
 
-def generate_all_entities(tile_map):
-    """
-    Combina o grupo principal (UID 1 e 2) com os grupos dinâmicos gerados.
-    """
+def generate_all_entities(tile_map, chunk_size=16):
     entities = []
-    entities.append(generate_main_entities(tile_map))
+    entities.append(generate_main_entities(tile_map, chunk_size))
     entities.extend(generate_dynamic_entities(tile_map))
     return entities
 
 # -----------------------------------------------------------------------------
 # Salvar YAML
 # -----------------------------------------------------------------------------
-def save_map_to_yaml(tile_map, filename="output.yml"):
-    all_entities = generate_all_entities(tile_map)
+def save_map_to_yaml(tile_map, filename="output.yml", chunk_size=16):
+    all_entities = generate_all_entities(tile_map, chunk_size)
     count = sum(len(group.get("entities", [])) for group in all_entities)
     map_data = {
         "meta": {
@@ -241,15 +219,17 @@ def save_map_to_yaml(tile_map, filename="output.yml"):
 # -----------------------------------------------------------------------------
 # Geração do mapa
 # -----------------------------------------------------------------------------
-width = 52   # 50 + 2 (bordas)
-height = 52  # 50 + 2 (bordas)
-# Gera o heightmap para a área interna (sem borda)
+width = 52
+height = 52
+chunk_size = 16
 heightmap = generate_heightmap(width - 2, height - 2)
-# Mapeia os valores para os tiles (usando thresholds: <0.0 -> FloorDirt, [0.0,0.3) -> FloorAstroGrass, >=0.3 -> FloorGrassDark)
-tile_map = map_noise_to_tiles(heightmap, thresholds=(0.3, 0.0))
-# Adiciona a borda – usando FloorDirt (índice 0) para a borda
-bordered_tile_map = add_border(tile_map, border_value=TILEMAP_REVERSE["FloorDirt"])
+print("Heightmap - Min:", heightmap.min(), "Max:", heightmap.max())
 
-# Salva o YAML
-save_map_to_yaml(bordered_tile_map)
+tile_map = map_noise_to_tiles(heightmap, thresholds=(0.3, 0.0))
+print("Tiles únicos no mapa:", np.unique(tile_map))
+
+bordered_tile_map = add_border(tile_map, border_value=TILEMAP_REVERSE["FloorDirt"])
+print("Tiles únicos no mapa com borda:", np.unique(bordered_tile_map))
+
+save_map_to_yaml(bordered_tile_map, chunk_size=chunk_size)
 print("Mapa gerado e salvo em output.yml com sucesso!")
