@@ -69,6 +69,15 @@ def next_uid():
     global_uid += 1
     return uid
 
+def represent_sound_path_specifier(dumper, data):
+    for key, value in data.items():
+        if isinstance(key, str) and key.startswith("!type:"):
+            tag = key
+            if isinstance(value, dict) and "path" in value:
+                return dumper.represent_mapping(tag, value)
+    # Fallback to default representation if the structure doesn't match
+    return dumper.represent_dict(data)
+
 def generate_main_entities(tile_map, chunk_size=16):
     h, w = tile_map.shape
     chunks = {}
@@ -213,6 +222,7 @@ def save_map_to_yaml(tile_map, filename="output.yml", chunk_size=16):
         "tilemap": TILEMAP,
         "entities": all_entities
     }
+    yaml.add_representer(dict, represent_sound_path_specifier) # Register the custom representer
     with open(filename, 'w') as outfile:
         yaml.dump(map_data, outfile, default_flow_style=False, sort_keys=False)
 
