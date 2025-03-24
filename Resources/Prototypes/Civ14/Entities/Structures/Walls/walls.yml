@@ -206,6 +206,7 @@
       graph: StoneBlockWall
       node: end
       cost: 6
+      time: 8
       material: Stone
 - type: entity
   parent: StoneBlockWall
