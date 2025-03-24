@@ -4,6 +4,8 @@ import base64
 import struct
 import random
 from pyfastnoiselite.pyfastnoiselite import FastNoiseLite, NoiseType, FractalType, CellularReturnType, CellularDistanceFunction
+import time
+import os
 
 # -----------------------------------------------------------------------------
 # Tilemap
@@ -274,8 +276,9 @@ def represent_sound_path_specifier(dumper, data):
                 return dumper.represent_mapping(tag, value)
     return dumper.represent_dict(data)
 
-def save_map_to_yaml(tile_map, biome_entity_layers, filename="output.yml", chunk_size=16, seed_base=None):
-    """Salva o mapa gerado em um arquivo YAML."""
+# Função save_map_to_yaml atualizada para aceitar diretório de saída
+def save_map_to_yaml(tile_map, biome_entity_layers, output_dir, filename="output.yml", chunk_size=16, seed_base=None):
+    """Salva o mapa gerado em um arquivo YAML no diretório especificado."""
     all_entities = generate_all_entities(tile_map, chunk_size, biome_entity_layers, seed_base)
     count = sum(len(group.get("entities", [])) for group in all_entities)
     map_data = {
@@ -296,7 +299,8 @@ def save_map_to_yaml(tile_map, biome_entity_layers, filename="output.yml", chunk
         "entities": all_entities
     }
     yaml.add_representer(dict, represent_sound_path_specifier)
-    with open(filename, 'w') as outfile:
+    output_path = os.path.join(output_dir, filename)
+    with open(output_path, 'w') as outfile:
         yaml.dump(map_data, outfile, default_flow_style=False, sort_keys=False)
 
 # -----------------------------------------------------------------------------
@@ -378,6 +382,10 @@ MAP_CONFIG = [
     },
 ]
 
+# Iniciar o rastreamento de tempo
+start_time = time.time()
+
+
 seed_base = random.randint(0, 1000000)
 print(f"Seed base gerado: {seed_base}")
 
@@ -388,10 +396,21 @@ chunk_size = 16
 biome_tile_layers = [layer for layer in MAP_CONFIG if layer["type"] == "BiomeTileLayer"]
 biome_entity_layers = [layer for layer in MAP_CONFIG if layer["type"] == "BiomeEntityLayer"]
 
+# Obter o diretório do script e construir o caminho de saída
+script_dir = os.path.dirname(os.path.abspath(__file__))
+output_dir = os.path.join(script_dir, "Resources", "Maps", "civ")
+
+# Criar o diretório se não existir
+os.makedirs(output_dir, exist_ok=True)
+
 # Gerar tile_map
 tile_map = generate_tile_map(width, height, biome_tile_layers, seed_base)
 bordered_tile_map = add_border(tile_map, border_value=TILEMAP_REVERSE["FloorDirt"])
 
 # Salvar o mapa
-save_map_to_yaml(bordered_tile_map, biome_entity_layers, filename="output.yml", chunk_size=chunk_size, seed_base=seed_base)
-print("Mapa gerado e salvo em output.yml com sucesso!")
+save_map_to_yaml(bordered_tile_map, biome_entity_layers, output_dir, filename="nomads_classic.yml", chunk_size=chunk_size, seed_base=seed_base)
+
+# Calcular e exibir o tempo total
+end_time = time.time()
+total_time = end_time - start_time
+print(f"Mapa gerado e salvo em {total_time:.2f} segundos!")
