@@ -22,7 +22,6 @@
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
-      fx: EffectRCDDeconstruct2
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -68,7 +67,6 @@
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
-      fx: EffectRCDDeconstruct2
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -113,7 +111,6 @@
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
-      fx: EffectRCDDeconstruct2
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -151,7 +148,6 @@
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
-      fx: EffectRCDDeconstruct2
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -191,7 +187,6 @@
       sprite: Civ14/Structures/Walls/stone_block_wall.rsi
     - type: Icon
       sprite: Civ14/Structures/Walls/stone_block_wall.rsi
-      fx: EffectRCDDeconstruct8
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -343,7 +338,6 @@
       sprite: Civ14/Structures/Walls/sandstone_block_wall.rsi
     - type: Icon
       sprite: Civ14/Structures/Walls/sandstone_block_wall.rsi
-      fx: EffectRCDDeconstruct8
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
