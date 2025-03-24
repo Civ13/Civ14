@@ -10,14 +10,11 @@ import os
 # -----------------------------------------------------------------------------
 # Tilemap
 # -----------------------------------------------------------------------------
-# Declaração do TILEMAP com os tiles novos já inclusos
 TILEMAP = {
     0: "Space",
     1: "FloorDirt",
     2: "FloorAstroGrass",
-    3: "FloorGrassDark",
-    4: "FloorGrass",  # Novo tile para bioma de floresta
-    5: "FloorSand"   # Novo tile para bioma de deserto
+    3: "FloorGrassDark"
 }
 TILEMAP_REVERSE = {v: k for k, v in TILEMAP.items()}
 
@@ -41,9 +38,9 @@ def encode_tiles(tile_map):
             tile_id = tile_map[y, x]
             flags = 0
             variant = 0
-            tile_bytes.extend(struct.pack("<I", tile_id))  # 4 bytes para tile_id
-            tile_bytes.append(flags)                       # 1 byte para flags
-            tile_bytes.append(variant)                     # 1 byte para variant
+            tile_bytes.extend(struct.pack("<I", tile_id)) # 4 bytes tile_id
+            tile_bytes.append(flags)                      # 1 byte flag
+            tile_bytes.append(variant)                    # 1 byte variant
     return base64.b64encode(tile_bytes).decode('utf-8')
 
 # -----------------------------------------------------------------------------
@@ -74,7 +71,7 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
         for y in range(height):
             for x in range(width):
                 noise_value = noise.get_noise(x, y)
-                noise_value = (noise_value + 1) / 2  # Normalizar para [0, 1]
+                noise_value = (noise_value + 1) / 2
                 if noise_value > layer["threshold"]:
                     if layer.get("overwrite", True) or tile_map[y, x] == TILEMAP_REVERSE["Space"]:
                         tile_map[y, x] = TILEMAP_REVERSE[layer["tile_type"]]
@@ -94,10 +91,15 @@ def next_uid():
     return uid
 
 def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
-    """Gera entidades dinâmicas com base nas camadas de entidades."""
+    """Gera entidades dinâmicas com base nas camadas de entidades, respeitando prioridades."""
     groups = {}
     h, w = tile_map.shape
-    for layer in biome_entity_layers:
+    occupied_positions = set()  # Set to trace occupied positions
+
+    # # Order layers by priority. Highest first
+    sorted_layers = sorted(biome_entity_layers, key=lambda layer: layer.get("priority", 0), reverse=True)
+
+    for layer in sorted_layers:
         proto = layer["entity_proto"]
         if proto not in groups:
             groups[proto] = []
@@ -122,6 +124,8 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
             for x in range(w):
                 if x == 0 or x == w - 1 or y == 0 or y == h - 1:
                     continue
+                if (x, y) in occupied_positions:
+                    continue  # Jump if already occupied
                 tile_val = tile_map[y, x]
                 noise_value = noise.get_noise(x, y)
                 noise_value = (noise_value + 1) / 2
@@ -132,6 +136,8 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
                             {"type": "Transform", "parent": 2, "pos": f"{x},{y}"}
                         ]
                     })
+                    occupied_positions.add((x, y))
+
     # Adicionar paredes indestrutíveis nas bordas
     groups["WallPlastitaniumIndestructible"] = []
     for y in range(h):
@@ -169,9 +175,9 @@ def generate_atmosphere_tiles(width, height, chunk_size):
     for y in range(-1, max_y + 1):
         for x in range(-1, max_x + 1):
             if x == -1 or x == max_x or y == -1 or y == max_y:
-                tiles[f"{x},{y}"] = {0: 65535}  # Borda: mistura 0 (imutável)
+                tiles[f"{x},{y}"] = {0: 65535}
             else:
-                tiles[f"{x},{y}"] = {1: 65535}  # Interno: mistura 1
+                tiles[f"{x},{y}"] = {1: 65535}
     return tiles
 
 def generate_main_entities(tile_map, chunk_size=16):
@@ -192,7 +198,6 @@ def generate_main_entities(tile_map, chunk_size=16):
                 "version": 6
             }
     
-    # Gerar tiles de atmosfera
     atmosphere_chunk_size = 4
     atmosphere_tiles = generate_atmosphere_tiles(w, h, atmosphere_chunk_size)
     
@@ -331,7 +336,6 @@ def generate_spawn_points(tile_map, num_points=2):
 # Configuração do Mapa (MAP_CONFIG)
 # -----------------------------------------------------------------------------
 MAP_CONFIG = [
-    # Camadas Originais
     {
         "type": "BiomeTileLayer",
         "tile_type": "FloorDirt",
@@ -360,7 +364,8 @@ MAP_CONFIG = [
         "frequency": 0.5,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.65,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrassDark"]
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrassDark"],
+        "priority": 1
     },
     {
         "type": "BiomeEntityLayer",
@@ -373,7 +378,8 @@ MAP_CONFIG = [
         "frequency": 0.015,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.30,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorDirt"]
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorDirt"],
+        "priority": 1
     },
     { # Rivers
         "type": "BiomeEntityLayer",
@@ -384,7 +390,8 @@ MAP_CONFIG = [
         "frequency": 0.003,
         "fractal_type": FractalType.FractalType_Ridged,
         "threshold": 0.95,
-        "tile_condition": lambda tile: True
+        "tile_condition": lambda tile: True,
+        "priority": 10 
     },
 ]
 
@@ -399,23 +406,18 @@ print(f"Seed base gerado: {seed_base}")
 width, height = 250, 250
 chunk_size = 16
 
-# Separar camadas
 biome_tile_layers = [layer for layer in MAP_CONFIG if layer["type"] == "BiomeTileLayer"]
 biome_entity_layers = [layer for layer in MAP_CONFIG if layer["type"] == "BiomeEntityLayer"]
 
-# Definir diretório de saída
 script_dir = os.path.dirname(os.path.abspath(__file__))
 output_dir = os.path.join(script_dir, "Resources", "Maps", "civ")
 os.makedirs(output_dir, exist_ok=True)
 
-# Gerar tile_map e adicionar borda
 tile_map = generate_tile_map(width, height, biome_tile_layers, seed_base)
 bordered_tile_map = add_border(tile_map, border_value=TILEMAP_REVERSE["FloorDirt"])
 
-# Salvar o mapa em YAML
 save_map_to_yaml(bordered_tile_map, biome_entity_layers, output_dir, filename="nomads_classic.yml", chunk_size=chunk_size, seed_base=seed_base)
 
-# Calcular e exibir o tempo total
 end_time = time.time()
 total_time = end_time - start_time
 print(f"Mapa gerado e salvo em {total_time:.2f} segundos!")
