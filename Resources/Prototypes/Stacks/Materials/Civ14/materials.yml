@@ -27,8 +27,8 @@
   maxCount: 20
 
 - type: stack
-  id: Sandtone
-  name: sandtone
+  id: Sandstone
+  name: sandstone
   icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: sheet-sandstone }
   spawn: MaterialSandstone1
   maxCount: 20

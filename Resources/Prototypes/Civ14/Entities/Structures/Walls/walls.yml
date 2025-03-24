@@ -22,9 +22,6 @@
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
-    - type: RCDDeconstructable
-      cost: 2
-      delay: 2
       fx: EffectRCDDeconstruct2
     - type: Destructible
       thresholds:
@@ -45,7 +42,7 @@
       graph: StrawWall
       node: end
       cost: 5
-      delay: 8
+      time: 8
       material: Straw
 
 - type: entity
@@ -71,9 +68,6 @@
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
-    - type: RCDDeconstructable
-      cost: 2
-      delay: 2
       fx: EffectRCDDeconstruct2
     - type: Destructible
       thresholds:
@@ -94,7 +88,7 @@
       graph: DirtWall
       node: end
       cost: 5
-      delay: 8
+      time: 8
       material: Straw
 - type: entity
   parent: BaseWall
@@ -119,9 +113,6 @@
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
-    - type: RCDDeconstructable
-      cost: 2
-      delay: 2
       fx: EffectRCDDeconstruct2
     - type: Destructible
       thresholds:
@@ -137,7 +128,7 @@
       graph: ClayWall
       node: end
       cost: 5
-      delay: 8
+      time: 8
       material: Clay
 - type: entity
   parent: BaseWall
@@ -160,9 +151,6 @@
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
-    - type: RCDDeconstructable
-      cost: 2
-      delay: 2
       fx: EffectRCDDeconstruct2
     - type: Destructible
       thresholds:
@@ -183,7 +171,7 @@
       graph: LogWall
       node: end
       cost: 5
-      delay: 8
+      time: 8
       material: WoodPlank
     - type: IconSmooth
       key: walls
@@ -203,9 +191,6 @@
       sprite: Civ14/Structures/Walls/stone_block_wall.rsi
     - type: Icon
       sprite: Civ14/Structures/Walls/stone_block_wall.rsi
-    - type: RCDDeconstructable
-      cost: 6
-      delay: 8
       fx: EffectRCDDeconstruct8
     - type: Destructible
       thresholds:
@@ -220,8 +205,7 @@
     - type: Construction
       graph: StoneBlockWall
       node: end
-      cost: 6
-      delay: 8
+      cost: 6c
       material: Stone
 - type: entity
   parent: StoneBlockWall
@@ -240,7 +224,7 @@
       graph: MayanStoneWall
       node: end
       cost: 6
-      delay: 8
+      time: 8
       material: Stone
 - type: entity
   parent: StoneBlockWall
@@ -259,7 +243,7 @@
       graph: StoneBrickWall
       node: end
       cost: 6
-      delay: 8
+      time: 8
       material: Stone
 - type: entity
   parent: StoneBlockWall
@@ -278,7 +262,7 @@
       graph: MarbleBlockWall
       node: end
       cost: 8
-      delay: 8
+      time: 8
       material: Stone
 - type: entity
   parent: StoneBlockWall
@@ -304,7 +288,7 @@
       graph: FortressBrickWall
       node: end
       cost: 6
-      delay: 8
+      time: 8
       material: Stone
 - type: entity
   parent: StoneBlockWall
@@ -323,7 +307,7 @@
       graph: RomanStoneBrickWall
       node: end
       cost: 6
-      delay: 8
+      time: 8
       material: Stone
 - type: entity
   parent: StoneBlockWall
@@ -342,7 +326,7 @@
       graph: GrecianStoneBrickWall
       node: end
       cost: 6
-      delay: 8
+      time: 8
       material: Stone
 #sandstone walls
 - type: entity
@@ -358,9 +342,6 @@
       sprite: Civ14/Structures/Walls/sandstone_block_wall.rsi
     - type: Icon
       sprite: Civ14/Structures/Walls/sandstone_block_wall.rsi
-    - type: RCDDeconstructable
-      cost: 6
-      delay: 8
       fx: EffectRCDDeconstruct8
     - type: Destructible
       thresholds:
@@ -376,7 +357,7 @@
       graph: SandstoneBlockWall
       node: end
       cost: 6
-      delay: 8
+      time: 8
       material: Sandstone
 - type: entity
   parent: SandstoneBlockWall
@@ -395,7 +376,7 @@
       graph: EgyptianSandstoneBrickWall
       node: end
       cost: 6
-      delay: 8
+      time: 8
       material: Sandstone
 - type: entity
   parent: SandstoneBlockWall
@@ -414,7 +395,7 @@
       graph: SandstoneBrickWall
       node: end
       cost: 6
-      delay: 8
+      time: 8
       material: Sandstone
 - type: entity
   parent: SandstoneBlockWall
@@ -433,7 +414,7 @@
       graph: RedSandstoneBlockWall
       node: end
       cost: 6
-      delay: 8
+      time: 8
       material: Sandstone
 - type: entity
   parent: SandstoneBlockWall
@@ -459,5 +440,5 @@
       graph: FortressSandstoneBrickWall
       node: end
       cost: 7
-      delay: 8
+      time: 8
       material: Sandstone
