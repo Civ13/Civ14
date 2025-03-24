@@ -9,56 +9,27 @@ from pyfastnoiselite.pyfastnoiselite import FastNoiseLite, NoiseType, FractalTyp
 # Tilemap
 # -----------------------------------------------------------------------------
 TILEMAP = {
-    1: "Space",
+    0: "Space",
+    1: "FloorDirt",
     2: "FloorAstroGrass",
-    0: "FloorDirt",
     3: "FloorGrassDark"
 }
 TILEMAP_REVERSE = {v: k for k, v in TILEMAP.items()}
 
 # -----------------------------------------------------------------------------
-# Geração do heightmap e mapeamento para tiles
+# Funções auxiliares
 # -----------------------------------------------------------------------------
 def round_to_chunk(number, chunk):
+    """Arredonda um número para o múltiplo inferior mais próximo do tamanho do chunk."""
     return number - (number % chunk)
 
-def generate_heightmap(width, height, octaves=6, seed=None, chunk=16):
-    width = round_to_chunk(width, chunk) - 2
-    height = round_to_chunk(height, chunk) - 2
-    noise = FastNoiseLite()
-    noise.noise_type = NoiseType.NoiseType_OpenSimplex2
-    noise.fractal_octaves = octaves
-    noise.frequency = 0.02  # Ajuste conforme necessário
-    noise.fractal_type = FractalType.FractalType_FBm
-
-    heightmap = np.zeros((height, width))
-    for y in range(height):
-        for x in range(width):
-            heightmap[y, x] = noise.get_noise(x, y)
-    return heightmap
-
-def map_noise_to_tiles(heightmap, thresholds=(0.3, 0.0)):
-    grass_threshold, dirt_threshold = thresholds
-    h, w = heightmap.shape
-    tile_map = np.zeros((h, w), dtype=np.int32)
-    for y in range(h):
-        for x in range(w):
-            value = (heightmap[y, x] + 1) / 2  # Normalizar de [-1, 1] para [0, 1]
-            if value < dirt_threshold:
-                tile_map[y, x] = TILEMAP_REVERSE["FloorDirt"]
-            elif value < grass_threshold:
-                tile_map[y, x] = TILEMAP_REVERSE["FloorAstroGrass"]
-            else:
-                tile_map[y, x] = TILEMAP_REVERSE["FloorGrassDark"]
-    return tile_map
-
-def add_border(tile_map, border_value=None):
-    if border_value is None:
-        border_value = TILEMAP_REVERSE["FloorDirt"]
+def add_border(tile_map, border_value):
+    """Adiciona uma borda ao tile_map com o valor especificado."""
     bordered = np.pad(tile_map, pad_width=1, mode='constant', constant_values=border_value)
     return bordered.astype(np.int32)
 
 def encode_tiles(tile_map):
+    """Codifica os tiles em formato base64 para o YAML."""
     tile_bytes = bytearray()
     for y in range(tile_map.shape[0]):
         for x in range(tile_map.shape[1]):
@@ -71,24 +42,87 @@ def encode_tiles(tile_map):
     return base64.b64encode(tile_bytes).decode('utf-8')
 
 # -----------------------------------------------------------------------------
+# Geração do tile_map com múltiplas camadas
+# -----------------------------------------------------------------------------
+def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
+    """Gera o tile_map com base nas camadas de tiles definidas em biome_tile_layers."""
+    tile_map = np.full((height, width), TILEMAP_REVERSE["FloorDirt"], dtype=np.int32)  # Inicializar com "Space"
+    for layer in biome_tile_layers:
+        noise = FastNoiseLite()
+        noise.noise_type = layer["noise_type"]
+        noise.fractal_octaves = layer["octaves"]
+        noise.frequency = layer["frequency"]
+        noise.fractal_type = layer["fractal_type"]
+        if seed_base is not None:
+            noise.seed = (seed_base + hash(layer["tile_type"])) % (2**31)
+        count = 0
+        for y in range(height):
+            for x in range(width):
+                noise_value = noise.get_noise(x, y)
+                noise_value = (noise_value + 1) / 2  # Normalizar para [0, 1]
+                if noise_value > layer["threshold"]:
+                    if layer.get("overwrite", True) or tile_map[y, x] == TILEMAP_REVERSE["Space"]:
+                        tile_map[y, x] = TILEMAP_REVERSE[layer["tile_type"]]
+                        count += 1
+        print(f"Camada {layer['tile_type']}: {count} tiles colocados")
+    return tile_map
+
+# -----------------------------------------------------------------------------
 # Geração de entidades
 # -----------------------------------------------------------------------------
 global_uid = 3
 def next_uid():
+    """Gera um UID único para cada entidade."""
     global global_uid
     uid = global_uid
     global_uid += 1
     return uid
 
-def represent_sound_path_specifier(dumper, data):
-    for key, value in data.items():
-        if isinstance(key, str) and key.startswith("!type:"):
-            tag = key
-            if isinstance(value, dict) and "path" in value:
-                return dumper.represent_mapping(tag, value)
-    return dumper.represent_dict(data)
+def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
+    """Gera entidades dinâmicas com base nas camadas de entidades."""
+    groups = {}
+    h, w = tile_map.shape
+    for layer in biome_entity_layers:
+        proto = layer["entity_proto"]
+        if proto not in groups:
+            groups[proto] = []
+        noise = FastNoiseLite()
+        noise.noise_type = layer["noise_type"]
+        noise.fractal_octaves = layer["octaves"]
+        noise.frequency = layer["frequency"]
+        noise.fractal_type = layer["fractal_type"]
+        if seed_base is not None:
+            noise.seed = (seed_base + hash(proto)) % (2**31)
+        for y in range(h):
+            for x in range(w):
+                if x == 0 or x == w - 1 or y == 0 or y == h - 1:
+                    continue
+                tile_val = tile_map[y, x]
+                noise_value = noise.get_noise(x, y)
+                noise_value = (noise_value + 1) / 2
+                if noise_value > layer["threshold"] and layer["tile_condition"](tile_val):
+                    groups[proto].append({
+                        "uid": next_uid(),
+                        "components": [
+                            {"type": "Transform", "parent": 2, "pos": f"{x},{y}"}
+                        ]
+                    })
+    # Adicionar paredes indestrutíveis nas bordas
+    groups["WallPlastitaniumIndestructible"] = []
+    for y in range(h):
+        for x in range(w):
+            if x == 0 or x == w - 1 or y == 0 or y == h - 1:
+                groups["WallPlastitaniumIndestructible"].append({
+                    "uid": next_uid(),
+                    "components": [
+                        {"type": "Transform", "parent": 2, "pos": f"{x},{y}"}
+                    ]
+                })
+    dynamic_groups = [{"proto": proto, "entities": ents} for proto, ents in groups.items()]
+    return dynamic_groups
 
 def generate_main_entities(tile_map, chunk_size=16):
+    """Gera as entidades principais, incluindo os chunks do mapa."""
     h, w = tile_map.shape
     chunks = {}
     for cy in range(0, h, chunk_size):
@@ -153,51 +187,29 @@ def generate_main_entities(tile_map, chunk_size=16):
     }
     return main
 
-def generate_dynamic_entities(tile_map, entity_config, seed_base=None):
-    groups = {proto: [] for proto in entity_config.keys()}
-    groups["WallPlastitaniumIndestructible"] = []
-    h, w = tile_map.shape
-    for y in range(h):
-        for x in range(w):
-            pos_x, pos_y = x, y
-            tile_val = tile_map[y, x]
-            if x == 0 or x == w - 1 or y == 0 or y == h - 1:
-                groups["WallPlastitaniumIndestructible"].append({
-                    "uid": next_uid(),
-                    "components": [
-                        {"type": "Transform", "parent": 2, "pos": f"{pos_x},{pos_y}"}
-                    ]
-                })
-            else:
-                for proto, config in entity_config.items():
-                    noise = FastNoiseLite()
-                    noise.noise_type = config["noise_type"]
-                    noise.fractal_octaves = config["octaves"]
-                    noise.frequency = config["frequency"]
-                    noise.fractal_type = config["fractal_type"]
-                    noise_value = noise.get_noise(x, y)
-                    noise_value = (noise_value + 1) / 2
-                    if noise_value > config["threshold"] and config["tile_condition"](tile_val):
-                        groups[proto].append({
-                            "uid": next_uid(),
-                            "components": [
-                                {"type": "Transform", "parent": 2, "pos": f"{pos_x},{pos_y}"}
-                            ]
-                        })
-    dynamic_groups = [{"proto": proto, "entities": ents} for proto, ents in groups.items()]
-    return dynamic_groups
-
-def generate_all_entities(tile_map, chunk_size=16, entity_config=None, seed_base=None):
+def generate_all_entities(tile_map, chunk_size=16, biome_entity_layers=None, seed_base=None):
+    """Combina entidades principais e dinâmicas."""
     entities = []
+    dynamic_groups = generate_dynamic_entities(tile_map, biome_entity_layers, seed_base)
     entities.append(generate_main_entities(tile_map, chunk_size))
-    entities.extend(generate_dynamic_entities(tile_map, entity_config, seed_base))
+    entities.extend(dynamic_groups)
     return entities
 
 # -----------------------------------------------------------------------------
 # Salvar YAML
 # -----------------------------------------------------------------------------
-def save_map_to_yaml(tile_map, filename="output.yml", chunk_size=16, entity_config=None, seed_base=None):
-    all_entities = generate_all_entities(tile_map, chunk_size, entity_config, seed_base)
+def represent_sound_path_specifier(dumper, data):
+    """Representação personalizada para SoundPathSpecifier no YAML."""
+    for key, value in data.items():
+        if isinstance(key, str) and key.startswith("!type:"):
+            tag = key
+            if isinstance(value, dict) and "path" in value:
+                return dumper.represent_mapping(tag, value)
+    return dumper.represent_dict(data)
+
+def save_map_to_yaml(tile_map, biome_entity_layers, filename="output.yml", chunk_size=16, seed_base=None):
+    """Salva o mapa gerado em um arquivo YAML."""
+    all_entities = generate_all_entities(tile_map, chunk_size, biome_entity_layers, seed_base)
     count = sum(len(group.get("entities", [])) for group in all_entities)
     map_data = {
         "meta": {
@@ -223,16 +235,40 @@ def save_map_to_yaml(tile_map, filename="output.yml", chunk_size=16, entity_conf
 # -----------------------------------------------------------------------------
 # Configuração e execução
 # -----------------------------------------------------------------------------
-ENTITY_CONFIG = {
-    "FloorWaterEntity": {
+ENTITY_CONFIG = [
+    {
+        "type": "BiomeTileLayer",
+        "tile_type": "FloorDirt",
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 2,
+        "frequency": 0.02,  # Aumentado para mais variação
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.3,   # Diminuído para cobrir mais área
+        "overwrite": True
+    },
+    {
+        "type": "BiomeTileLayer",
+        "tile_type": "FloorAstroGrass",
+        "noise_type": NoiseType.NoiseType_Perlin,
+        "octaves": 3,
+        "frequency": 0.03,  # Aumentado para mais variação
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.4,   # Diminuído para facilitar colocação
+        "overwrite": True   # Alterado para True para sobrescrever FloorDirt
+    },
+    {
+        "type": "BiomeEntityLayer",
+        "entity_proto": "FloorWaterEntity",
         "noise_type": NoiseType.NoiseType_OpenSimplex2S,
         "octaves": 3,
         "frequency": 0.01,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.3,
+        "threshold": 0.8,
         "tile_condition": lambda tile: True
     },
-    "FloraRockSolid": {
+    {
+        "type": "BiomeEntityLayer",
+        "entity_proto": "FloraRockSolid",
         "noise_type": NoiseType.NoiseType_Perlin,
         "octaves": 4,
         "frequency": 0.02,
@@ -240,7 +276,9 @@ ENTITY_CONFIG = {
         "threshold": 0.65,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrassDark"]
     },
-    "WallRock": {
+    {
+        "type": "BiomeEntityLayer",
+        "entity_proto": "WallRock",
         "noise_type": NoiseType.NoiseType_Cellular,
         "octaves": 5,
         "frequency": 0.05,
@@ -248,7 +286,7 @@ ENTITY_CONFIG = {
         "threshold": 0.30,
         "tile_condition": lambda tile: True
     },
-}
+]
 
 seed_base = random.randint(0, 1000000)
 print(f"Seed base gerado: {seed_base}")
@@ -256,9 +294,14 @@ print(f"Seed base gerado: {seed_base}")
 width, height = 100, 100
 chunk_size = 16
 
-heightmap = generate_heightmap(width, height, seed=seed_base)
-tile_map = map_noise_to_tiles(heightmap, thresholds=(0.3, 0.0))
+# Separar camadas
+biome_tile_layers = [layer for layer in ENTITY_CONFIG if layer["type"] == "BiomeTileLayer"]
+biome_entity_layers = [layer for layer in ENTITY_CONFIG if layer["type"] == "BiomeEntityLayer"]
+
+# Gerar tile_map
+tile_map = generate_tile_map(width, height, biome_tile_layers, seed_base)
 bordered_tile_map = add_border(tile_map, border_value=TILEMAP_REVERSE["FloorDirt"])
 
-save_map_to_yaml(bordered_tile_map, chunk_size=chunk_size, entity_config=ENTITY_CONFIG, seed_base=seed_base)
+# Salvar o mapa
+save_map_to_yaml(bordered_tile_map, biome_entity_layers, filename="output.yml", chunk_size=chunk_size, seed_base=seed_base)
 print("Mapa gerado e salvo em output.yml com sucesso!")
