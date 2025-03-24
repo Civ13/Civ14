@@ -34,6 +34,21 @@ namespace Content.Server.Construction.Components
         [DataField("deconstructionTarget")]
         public string? DeconstructionNode { get; set; } = "start";
 
+        [DataField("cost")]
+        public int BuildCost { get; set; } = 0;
+
+        [DataField("time")]
+        public int BuildTime { get; set; } = 0;
+
+        [DataField("material")]
+        public string BuildMaterial { get; set; } = "WooodPlank";
+
+        [DataField("agemax")]
+        public int ageMax { get; set; } = 8;
+
+        [DataField("agemin")]
+        public int ageMin { get; set; } = 0;
+
         [ViewVariables]
         // TODO Force flush interaction queue before serializing to YAML.
         // Otherwise you can end up with entities stuck in invalid states (e.g., waiting for DoAfters).

@@ -16,7 +16,7 @@
     - BaseStationRecords
     - BaseStationArrivals
     - BaseStationGateway
-    - BaseStationShuttles
+
     - BaseStationCentcomm
     - BaseStationEvacuation
     - BaseStationAlertLevels
@@ -26,7 +26,7 @@
     - BaseStationAllEventsEligible
     - BaseStationNanotrasen
     - BaseStationDeliveries
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
     - type: Transform
 
@@ -36,17 +36,17 @@
     - BaseStation
     - BaseStationAlertLevels
     - BaseStationNanotrasen
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
     - type: Transform
 
 - type: entity
   id: StandardStationArena
   parent:
-  - BaseStation
-  - BaseStationJobsSpawning
-  - BaseStationRecords
-  - BaseStationNanotrasen
-  categories: [ HideSpawnMenu ]
+    - BaseStation
+    - BaseStationJobsSpawning
+    - BaseStationRecords
+    - BaseStationNanotrasen
+  categories: [HideSpawnMenu]
   components:
     - type: Transform
