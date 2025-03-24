@@ -209,6 +209,8 @@ def generate_all_entities(tile_map, chunk_size=16, biome_entity_layers=None, see
     dynamic_groups = generate_dynamic_entities(tile_map, biome_entity_layers, seed_base)
     entities.append(generate_main_entities(tile_map, chunk_size))
     entities.extend(dynamic_groups)
+    spawn_points = generate_spawn_points(tile_map)
+    entities.append(spawn_points)
     return entities
 
 # -----------------------------------------------------------------------------
@@ -247,6 +249,28 @@ def save_map_to_yaml(tile_map, biome_entity_layers, filename="output.yml", chunk
     yaml.add_representer(dict, represent_sound_path_specifier)
     with open(filename, 'w') as outfile:
         yaml.dump(map_data, outfile, default_flow_style=False, sort_keys=False)
+
+
+# -----------------------------------------------------------------------------
+# Fixed spawn point for now
+# -----------------------------------------------------------------------------
+def generate_spawn_points(tile_map, num_points=2):
+    """Gera entidades SpawnPointNomads no centro do mapa."""
+    h, w = tile_map.shape
+    center_x = w // 2  # Meio da largura
+    center_y = h // 2  # Meio da altura
+    spawn_points = []
+    for i in range(num_points):
+        # Ajustar posições relativas ao centro
+        pos_x = center_x - 2.5  # Mantendo o offset do exemplo
+        pos_y = center_y - 0.5 - i  # -0.5 e -1.5 para os dois pontos
+        spawn_points.append({
+            "uid": next_uid(),
+            "components": [
+                {"type": "Transform", "parent": 2, "pos": f"{pos_x},{pos_y}"}
+            ]
+        })
+    return {"proto": "SpawnPointNomads", "entities": spawn_points}
 
 # -----------------------------------------------------------------------------
 # Configuração e execução
