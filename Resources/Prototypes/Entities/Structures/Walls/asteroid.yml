@@ -730,21 +730,21 @@
       mode: NoSprite
     - type: Icon
       sprite: Structures/Walls/rock.rsi
-      state: rocks
+      state: rocky
     - type: MiningScannerViewable
     - type: SmoothEdge
     - type: Sprite
       sprite: Structures/Walls/rock.rsi
       layers:
-        - state: rocks
+        - state: rocky
         - map: ["enum.EdgeLayer.South"]
-          state: rocks_south
+          state: rocky_south
         - map: ["enum.EdgeLayer.East"]
-          state: rocks_east
+          state: rocky_east
         - map: ["enum.EdgeLayer.North"]
-          state: rocks_north
+          state: rocky_north
         - map: ["enum.EdgeLayer.West"]
-          state: rocks_west
+          state: rocky_west
 
 # Ore veins
 - type: entity

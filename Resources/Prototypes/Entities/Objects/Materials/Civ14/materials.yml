@@ -179,7 +179,7 @@
     - type: Sprite
       state: sheet-sandstone
       layers:
-        - state: sandstone
+        - state: sheet-sandstone
           map: ["base"]
     - type: Stack
       stackType: Sandstone
