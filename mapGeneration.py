@@ -225,6 +225,8 @@ def generate_main_entities(tile_map, chunk_size=16):
                     {"type": "OccluderTree"},
                     {"type": "SpreaderGrid"},
                     {"type": "Shuttle"},
+                    {"type": "SunShadow"},
+                    {"type": "SunShadowCycle"},
                     {"type": "GridPathfinding"},
                     {"type": "Gravity",
                      "gravityShakeSound": { "!type:SoundPathSpecifier": {"path": "/Audio/Effects/alert.ogg"} },
