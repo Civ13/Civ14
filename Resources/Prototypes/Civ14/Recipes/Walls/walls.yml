@@ -58,8 +58,8 @@
   category: construction-category-structures
   description: A wall made of stacked hardwood logs. For that rustic feel.
   icon:
-    sprite: Civ14/Structures/walls.rsi
-    state: log_wall
+    sprite: Civ14/Structures/Walls/oldwood.rsi
+    state: full
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false

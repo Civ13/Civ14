@@ -147,12 +147,9 @@
         - Wooden
         - Wall
     - type: Sprite
-      sprite: Civ14/Structures/walls.rsi
-      layers:
-        - state: log_wall
+      sprite: Civ14/Structures/Walls/oldwood.rsi
     - type: Icon
-      sprite: Civ14/Structures/walls.rsi
-      state: log_wall
+      sprite: Civ14/Structures/Walls/oldwood.rsi
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
@@ -178,3 +175,6 @@
     - type: Construction
       graph: LogWall
       node: end
+    - type: IconSmooth
+      key: walls
+      base: brick
