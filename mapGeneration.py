@@ -235,7 +235,7 @@ def save_map_to_yaml(tile_map, biome_entity_layers, filename="output.yml", chunk
 # -----------------------------------------------------------------------------
 # Configuração e execução
 # -----------------------------------------------------------------------------
-ENTITY_CONFIG = [
+MAP_CONFIG = [
     {
         "type": "BiomeTileLayer",
         "tile_type": "FloorDirt",
@@ -271,7 +271,7 @@ ENTITY_CONFIG = [
         "entity_proto": "FloraRockSolid",
         "noise_type": NoiseType.NoiseType_Perlin,
         "octaves": 4,
-        "frequency": 0.02,
+        "frequency": 0.5,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.65,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrassDark"]
@@ -281,9 +281,9 @@ ENTITY_CONFIG = [
         "entity_proto": "WallRock",
         "noise_type": NoiseType.NoiseType_Cellular,
         "octaves": 5,
-        "frequency": 0.05,
+        "frequency": 0.03,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.30,
+        "threshold": 0.12,
         "tile_condition": lambda tile: True
     },
 ]
@@ -291,12 +291,12 @@ ENTITY_CONFIG = [
 seed_base = random.randint(0, 1000000)
 print(f"Seed base gerado: {seed_base}")
 
-width, height = 100, 100
+width, height = 250, 250
 chunk_size = 16
 
 # Separar camadas
-biome_tile_layers = [layer for layer in ENTITY_CONFIG if layer["type"] == "BiomeTileLayer"]
-biome_entity_layers = [layer for layer in ENTITY_CONFIG if layer["type"] == "BiomeEntityLayer"]
+biome_tile_layers = [layer for layer in MAP_CONFIG if layer["type"] == "BiomeTileLayer"]
+biome_entity_layers = [layer for layer in MAP_CONFIG if layer["type"] == "BiomeEntityLayer"]
 
 # Gerar tile_map
 tile_map = generate_tile_map(width, height, biome_tile_layers, seed_base)
