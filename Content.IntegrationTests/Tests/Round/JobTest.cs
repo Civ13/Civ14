@@ -36,7 +36,7 @@ public sealed class JobTest
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: ""Empty""
+          mapNameTemplate: ""Nomads""
         - type: StationJobs
           availableJobs:
             {Passenger}: [ -1, -1 ]
