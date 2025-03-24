@@ -205,7 +205,7 @@
     - type: Construction
       graph: StoneBlockWall
       node: end
-      cost: 6c
+      cost: 6
       material: Stone
 - type: entity
   parent: StoneBlockWall
