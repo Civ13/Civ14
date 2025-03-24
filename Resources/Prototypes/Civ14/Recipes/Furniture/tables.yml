@@ -6,7 +6,7 @@
   targetNode: end
   category: construction-category-furniture
   description: A table made of wood.
-  icon: { sprite: Civ14/Structures/old_table4.rsi, state: icon }
+  icon: { sprite: Civ14/Structures/old_table4.rsi, state: full }
   objectType: Item
 
 - type: constructionGraph

@@ -11,8 +11,8 @@
 
 - type: construction
   name: campfire
-  id: Campfire
-  graph: Campfire
+  id: KitchenCampfire
+  graph: KitchenCampfire
   startNode: start
   targetNode: end
   category: construction-category-misc
@@ -35,7 +35,7 @@
       entity: KitchenMill
 
 - type: constructionGraph
-  id: Campfire
+  id: KitchenCampfire
   start: start
   graph:
     - node: start
@@ -46,4 +46,4 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: Campfire
+      entity: KitchenCampfire
