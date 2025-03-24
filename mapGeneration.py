@@ -74,7 +74,7 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
                         count += 1
         print(f"Camada {layer['tile_type']}: {count} tiles colocados")
     return tile_map
-    
+
 # -----------------------------------------------------------------------------
 # Geração de entidades
 # -----------------------------------------------------------------------------
@@ -137,8 +137,38 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
     dynamic_groups = [{"proto": proto, "entities": ents} for proto, ents in groups.items()]
     return dynamic_groups
 
+# Definir uniqueMixes
+unique_mixes = [
+    {
+        "volume": 2500,
+        "immutable": True,
+        "temperature": 293.15,
+        "moles": [21.82478, 82.10312, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+        "volume": 2500,
+        "temperature": 293.15,
+        "moles": [21.824879, 82.10312, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }
+]
+
+def generate_atmosphere_tiles(width, height, chunk_size):
+    """Gera os tiles de atmosfera com base no tamanho do mapa."""
+    max_x = (width + chunk_size - 1) // chunk_size - 1
+    max_y = (height + chunk_size - 1) // chunk_size - 1
+    tiles = {}
+    for y in range(-1, max_y + 1):
+        for x in range(-1, max_x + 1):
+            if x == -1 or x == max_x or y == -1 or y == max_y:
+                # Borda: mistura 0 (imutável)
+                tiles[f"{x},{y}"] = {0: 65535}
+            else:
+                # Interno: mistura 1
+                tiles[f"{x},{y}"] = {1: 65535}
+    return tiles
+
 def generate_main_entities(tile_map, chunk_size=16):
-    """Gera as entidades principais, incluindo os chunks do mapa."""
+    """Gera as entidades principais, incluindo os chunks do mapa e a atmosfera."""
     h, w = tile_map.shape
     chunks = {}
     for cy in range(0, h, chunk_size):
@@ -154,6 +184,11 @@ def generate_main_entities(tile_map, chunk_size=16):
                 "tiles": encode_tiles(chunk_tiles),
                 "version": 6
             }
+    
+    # Gerar tiles de atmosfera
+    atmosphere_chunk_size = 4
+    atmosphere_tiles = generate_atmosphere_tiles(w, h, atmosphere_chunk_size)
+    
     main = {
         "proto": "",
         "entities": [
@@ -162,6 +197,8 @@ def generate_main_entities(tile_map, chunk_size=16):
                 "components": [
                     {"type": "MetaData", "name": "Map Entity"},
                     {"type": "Transform"},
+                    {"type": "LightCycle"},
+                    {"type": "MapLight", "ambientLightColor": "#D8B059FF"},
                     {"type": "Map", "mapPaused": True},
                     {"type": "PhysicsMap"},
                     {"type": "GridTree"},
@@ -190,11 +227,21 @@ def generate_main_entities(tile_map, chunk_size=16):
                     {"type": "Shuttle"},
                     {"type": "GridPathfinding"},
                     {"type": "Gravity",
-                     "gravityShakeSound": { "!type:SoundPathSpecifier": {"path": "/Audio/Effects/alert.ogg"} }
+                     "gravityShakeSound": { "!type:SoundPathSpecifier": {"path": "/Audio/Effects/alert.ogg"} },
+                     "inherent": True,
+                     "enabled": True
                     },
                     {"type": "BecomesStation", "id": "Nomads"},
                     {"type": "DecalGrid", "chunkCollection": {"version": 2, "nodes": []}},
-                    {"type": "GridAtmosphere", "version": 2, "data": {"chunkSize": 4}},
+                    {
+                        "type": "GridAtmosphere",
+                        "version": 2,
+                        "data": {
+                            "tiles": atmosphere_tiles,
+                            "uniqueMixes": unique_mixes,
+                            "chunkSize": atmosphere_chunk_size
+                        }
+                    },
                     {"type": "GasTileOverlay"},
                     {"type": "RadiationGridResistance"}
                 ]
@@ -249,7 +296,6 @@ def save_map_to_yaml(tile_map, biome_entity_layers, filename="output.yml", chunk
     yaml.add_representer(dict, represent_sound_path_specifier)
     with open(filename, 'w') as outfile:
         yaml.dump(map_data, outfile, default_flow_style=False, sort_keys=False)
-
 
 # -----------------------------------------------------------------------------
 # Fixed spawn point for now
@@ -321,7 +367,7 @@ MAP_CONFIG = [
         "entity_proto": "WallRock",
         "noise_type": NoiseType.NoiseType_Cellular,
         "cellular_distance_function": CellularDistanceFunction.CellularDistanceFunction_Euclidean,
-        "cellular_return_type":  CellularReturnType.CellularReturnType_Distance2,
+        "cellular_return_type": CellularReturnType.CellularReturnType_Distance2,
         "octaves": 5,
         "frequency": 0.02,
         "fractal_type": FractalType.FractalType_FBm,
