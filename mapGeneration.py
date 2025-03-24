@@ -18,7 +18,12 @@ TILEMAP_REVERSE = {v: k for k, v in TILEMAP.items()}
 # -----------------------------------------------------------------------------
 # Geração do heightmap e mapeamento para tiles (para a grid)
 # -----------------------------------------------------------------------------
-def generate_heightmap(width, height, octaves=6, seed=None):
+def round_to_chunk(number, chunk):
+    return number - (number % chunk)
+
+def generate_heightmap(width, height, octaves=6, seed=None, chunk = 16):
+    width = round_to_chunk(width, chunk) - 2
+    height = round_to_chunk(height, chunk) - 2
     noise = PerlinNoise(octaves=octaves, seed=seed)
     heightmap = np.zeros((height, width))
     for y in range(height):
@@ -152,7 +157,6 @@ def generate_dynamic_entities(tile_map):
     h, w = tile_map.shape
     for y in range(h):
         for x in range(w):
-            print(f"entities. x:{x}, y:{y}")
             pos_x = x
             pos_y = y
             tile_val = tile_map[y, x]
@@ -227,10 +231,10 @@ def save_map_to_yaml(tile_map, filename="output.yml", chunk_size=16):
 # -----------------------------------------------------------------------------
 # Geração do mapa
 # -----------------------------------------------------------------------------
-width = 128
-height = 128
+width = 100
+height = 100
 chunk_size = 16
-heightmap = generate_heightmap(width - 2, height - 2)
+heightmap = generate_heightmap(width, height)
 print("Heightmap - Min:", heightmap.min(), "Max:", heightmap.max())
 
 tile_map = map_noise_to_tiles(heightmap, thresholds=(0.3, 0.0))
@@ -241,3 +245,5 @@ print("Tiles únicos no mapa com borda:", np.unique(bordered_tile_map))
 
 save_map_to_yaml(bordered_tile_map, chunk_size=chunk_size)
 print("Mapa gerado e salvo em output.yml com sucesso!")
+
+print(f"Map size: {round_to_chunk(width, chunk_size)}x{round_to_chunk(height, chunk_size)}")
