@@ -3,7 +3,7 @@ import yaml
 import base64
 import struct
 import random
-from pyfastnoiselite.pyfastnoiselite import FastNoiseLite, NoiseType, FractalType
+from pyfastnoiselite.pyfastnoiselite import FastNoiseLite, NoiseType, FractalType, CellularReturnType, CellularDistanceFunction
 
 # -----------------------------------------------------------------------------
 # Tilemap
@@ -46,13 +46,21 @@ def encode_tiles(tile_map):
 # -----------------------------------------------------------------------------
 def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
     """Gera o tile_map com base nas camadas de tiles definidas em biome_tile_layers."""
-    tile_map = np.full((height, width), TILEMAP_REVERSE["FloorDirt"], dtype=np.int32)  # Inicializar com "Space"
+    tile_map = np.full((height, width), TILEMAP_REVERSE["FloorDirt"], dtype=np.int32)
     for layer in biome_tile_layers:
         noise = FastNoiseLite()
         noise.noise_type = layer["noise_type"]
         noise.fractal_octaves = layer["octaves"]
         noise.frequency = layer["frequency"]
         noise.fractal_type = layer["fractal_type"]
+        
+        if "cellular_distance_function" in layer:
+            noise.cellular_distance_function = layer["cellular_distance_function"]
+            print(f"cellular_distance_function configurado para: {noise.cellular_distance_function}")
+        if "cellular_return_type" in layer:
+            noise.cellular_return_type = layer["cellular_return_type"]
+            print(f"cellular_return_type configurado para: {noise.cellular_return_type}")
+        
         if seed_base is not None:
             noise.seed = (seed_base + hash(layer["tile_type"])) % (2**31)
         count = 0
@@ -66,7 +74,7 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
                         count += 1
         print(f"Camada {layer['tile_type']}: {count} tiles colocados")
     return tile_map
-
+    
 # -----------------------------------------------------------------------------
 # Geração de entidades
 # -----------------------------------------------------------------------------
@@ -91,6 +99,14 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
         noise.fractal_octaves = layer["octaves"]
         noise.frequency = layer["frequency"]
         noise.fractal_type = layer["fractal_type"]
+
+        if "cellular_distance_function" in layer:
+            noise.cellular_distance_function = layer["cellular_distance_function"]
+            print(f"cellular_distance_function configurado para: {noise.cellular_distance_function}")
+        if "cellular_return_type" in layer:
+            noise.cellular_return_type = layer["cellular_return_type"]
+            print(f"cellular_return_type configurado para: {noise.cellular_return_type}")
+
         if seed_base is not None:
             noise.seed = (seed_base + hash(proto)) % (2**31)
         for y in range(h):
@@ -280,10 +296,12 @@ MAP_CONFIG = [
         "type": "BiomeEntityLayer",
         "entity_proto": "WallRock",
         "noise_type": NoiseType.NoiseType_Cellular,
+        "cellular_distance_function": CellularDistanceFunction.CellularDistanceFunction_Euclidean,
+        "cellular_return_type":  CellularReturnType.CellularReturnType_Distance2,
         "octaves": 5,
-        "frequency": 0.03,
+        "frequency": 0.02,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.12,
+        "threshold": 0.42,
         "tile_condition": lambda tile: True
     },
 ]
