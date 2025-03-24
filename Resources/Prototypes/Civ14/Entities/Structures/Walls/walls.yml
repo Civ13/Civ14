@@ -44,6 +44,9 @@
     - type: Construction
       graph: StrawWall
       node: end
+      cost: 5
+      delay: 8
+      material: Straw
 
 - type: entity
   parent: BaseWall
@@ -90,7 +93,9 @@
     - type: Construction
       graph: DirtWall
       node: end
-
+      cost: 5
+      delay: 8
+      material: Straw
 - type: entity
   parent: BaseWall
   id: ClayWall
@@ -131,7 +136,9 @@
     - type: Construction
       graph: ClayWall
       node: end
-
+      cost: 5
+      delay: 8
+      material: Clay
 - type: entity
   parent: BaseWall
   id: LogWall
@@ -175,6 +182,9 @@
     - type: Construction
       graph: LogWall
       node: end
+      cost: 5
+      delay: 8
+      material: WoodPlank
     - type: IconSmooth
       key: walls
       base: oldwood
@@ -207,7 +217,12 @@
     - type: IconSmooth
       key: walls
       base: stone_block_wall
-
+    - type: Construction
+      graph: StoneBlockWall
+      node: end
+      cost: 6
+      delay: 8
+      material: Stone
 - type: entity
   parent: StoneBlockWall
   id: MayanStoneWall
@@ -221,11 +236,16 @@
     - type: IconSmooth
       key: walls
       base: mayan
-
+    - type: Construction
+      graph: MayanStoneWall
+      node: end
+      cost: 6
+      delay: 8
+      material: Stone
 - type: entity
   parent: StoneBlockWall
-  id: MayanStoneBrickWall
-  name: mayan stone wall
+  id: StoneBrickWall
+  name: stone brick wall
   description: A wall made of well-stacked stone bricks.
   components:
     - type: Sprite
@@ -235,7 +255,12 @@
     - type: IconSmooth
       key: walls
       base: new_stonebrick
-
+    - type: Construction
+      graph: StoneBrickWall
+      node: end
+      cost: 6
+      delay: 8
+      material: Stone
 - type: entity
   parent: StoneBlockWall
   id: MarbleBlockWall
@@ -249,7 +274,12 @@
     - type: IconSmooth
       key: walls
       base: marble_block_wall
-
+    - type: Construction
+      graph: MarbleBlockWall
+      node: end
+      cost: 8
+      delay: 8
+      material: Stone
 - type: entity
   parent: StoneBlockWall
   id: FortressBrickWall
@@ -270,7 +300,12 @@
     - type: IconSmooth
       key: walls
       base: fortress_brickwall
-
+    - type: Construction
+      graph: FortressBrickWall
+      node: end
+      cost: 6
+      delay: 8
+      material: Stone
 - type: entity
   parent: StoneBlockWall
   id: RomanStoneBrickWall
@@ -284,7 +319,12 @@
     - type: IconSmooth
       key: walls
       base: roman
-
+    - type: Construction
+      graph: RomanStoneBrickWall
+      node: end
+      cost: 6
+      delay: 8
+      material: Stone
 - type: entity
   parent: StoneBlockWall
   id: GrecianStoneBrickWall
@@ -298,7 +338,12 @@
     - type: IconSmooth
       key: walls
       base: grecian
-
+    - type: Construction
+      graph: GrecianStoneBrickWall
+      node: end
+      cost: 6
+      delay: 8
+      material: Stone
 #sandstone walls
 - type: entity
   parent: BaseWall
@@ -327,7 +372,12 @@
     - type: IconSmooth
       key: walls
       base: sandstone_block_wall
-
+    - type: Construction
+      graph: SandstoneBlockWall
+      node: end
+      cost: 6
+      delay: 8
+      material: Sandstone
 - type: entity
   parent: SandstoneBlockWall
   id: EgyptianSandstoneBrickWall
@@ -341,7 +391,12 @@
     - type: IconSmooth
       key: walls
       base: egyptian
-
+    - type: Construction
+      graph: EgyptianSandstoneBrickWall
+      node: end
+      cost: 6
+      delay: 8
+      material: Sandstone
 - type: entity
   parent: SandstoneBlockWall
   id: SandstoneBrickWall
@@ -355,7 +410,12 @@
     - type: IconSmooth
       key: walls
       base: sandstone_brickwall
-
+    - type: Construction
+      graph: SandstoneBrickWall
+      node: end
+      cost: 6
+      delay: 8
+      material: Sandstone
 - type: entity
   parent: SandstoneBlockWall
   id: RedSandstoneBlockWall
@@ -369,7 +429,12 @@
     - type: IconSmooth
       key: walls
       base: redsandstone_block_wall
-
+    - type: Construction
+      graph: RedSandstoneBlockWall
+      node: end
+      cost: 6
+      delay: 8
+      material: Sandstone
 - type: entity
   parent: SandstoneBlockWall
   id: FortressSandstoneBrickWall
@@ -390,3 +455,9 @@
     - type: IconSmooth
       key: walls
       base: sandstone_fortress
+    - type: Construction
+      graph: FortressSandstoneBrickWall
+      node: end
+      cost: 7
+      delay: 8
+      material: Sandstone

@@ -121,3 +121,316 @@
               doAfter: 5
     - node: end
       entity: ClayWall
+
+- type: construction
+  name: stone block wall
+  id: StoneBlockWall
+  graph: StoneBlockWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: An ancient wall made of stacked stone blocks.
+  icon:
+    sprite: Civ14/Structures/Walls/stone_block_wall.rsi
+    state: default
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: StoneBlockWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 6
+              doAfter: 5
+    - node: end
+      entity: StoneBlockWall
+- type: construction
+  name: mayan stone wall
+  id: MayanStoneWall
+  graph: MayanStoneWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A Mayan-style stone wall.
+  icon:
+    sprite: Civ14/Structures/Walls/mayan.rsi
+    state: default
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: MayanStoneWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 6
+              doAfter: 5
+    - node: end
+      entity: MayanStoneWall
+- type: construction
+  name: stone brick wall
+  id: StoneBrickWall
+  graph: StoneBrickWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A wall made of well-stacked stone bricks.
+  icon:
+    sprite: Civ14/Structures/Walls/new_stonebrick.rsi
+    state: default
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: StoneBrickWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 6
+              doAfter: 5
+    - node: end
+      entity: StoneBrickWall
+- type: construction
+  name: marble block wall
+  id: MarbleBlockWall
+  graph: MarbleBlockWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: An ancient wall made of stacked marble blocks.
+  icon:
+    sprite: Civ14/Structures/Walls/marble_block_wall.rsi
+    state: default
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: MarbleBlockWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 8
+              doAfter: 5
+    - node: end
+      entity: MarbleBlockWall
+- type: construction
+  name: fortress stone wall
+  id: FortressBrickWall
+  graph: FortressBrickWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A strong, reinforced stone brick wall.
+  icon:
+    sprite: Civ14/Structures/Walls/fortress_brickwall.rsi
+    state: default
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: FortressBrickWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 6
+              doAfter: 5
+    - node: end
+      entity: FortressBrickWall
+- type: construction
+  name: roman stone wall
+  id: RomanStoneBrickWall
+  graph: RomanStoneBrickWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A Roman-style stone wall.
+  icon:
+    sprite: Civ14/Structures/Walls/roman.rsi
+    state: default
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: RomanStoneBrickWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 6
+              doAfter: 5
+    - node: end
+      entity: RomanStoneBrickWall
+- type: construction
+  name: grecian stone wall
+  id: GrecianStoneBrickWall
+  graph: GrecianStoneBrickWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A Greek-style stone wall.
+  icon:
+    sprite: Civ14/Structures/Walls/grecian.rsi
+    state: default
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: GrecianStoneBrickWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 6
+              doAfter: 5
+    - node: end
+      entity: GrecianStoneBrickWall
+- type: construction
+  name: sandstone block wall
+  id: SandstoneBlockWall
+  graph: SandstoneBlockWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: An ancient wall made of stacked sandstone blocks.
+  icon:
+    sprite: Civ14/Structures/Walls/sandstone_block_wall.rsi
+    state: default
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: SandstoneBlockWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Sandstone
+              amount: 6
+              doAfter: 5
+    - node: end
+      entity: SandstoneBlockWall
+- type: construction
+  name: egyptian sandstone wall
+  id: EgyptianSandstoneBrickWall
+  graph: EgyptianSandstoneBrickWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: An Egyptian-style stone wall.
+  icon:
+    sprite: Civ14/Structures/Walls/egyptian.rsi
+    state: default
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: EgyptianSandstoneBrickWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Sandstone
+              amount: 6
+              doAfter: 5
+    - node: end
+      entity: EgyptianSandstoneBrickWall
+- type: construction
+  name: sandstone brick wall
+  id: SandstoneBrickWall
+  graph: SandstoneBrickWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A wall made of well-stacked sandstone bricks.
+  icon:
+    sprite: Civ14/Structures/Walls/sandstone_brickwall.rsi
+    state: default
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: SandstoneBrickWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Sandstone
+              amount: 6
+              doAfter: 5
+    - node: end
+      entity: SandstoneBrickWall
+- type: construction
+  name: red sandstone block wall
+  id: RedSandstoneBlockWall
+  graph: RedSandstoneBlockWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A wall made of red sandstone blocks.
+  icon:
+    sprite: Civ14/Structures/Walls/redsandstone_block_wall.rsi
+    state: default
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: RedSandstoneBlockWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Sandstone
+              amount: 6
+              doAfter: 5
+    - node: end
+      entity: RedSandstoneBlockWall
+- type: construction
+  name: fortress sandstone wall
+  id: FortressSandstoneBrickWall
+  graph: FortressSandstoneBrickWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A fortress wall made of dark sandstone bricks.
+  icon:
+    sprite: Civ14/Structures/Walls/sandstone_fortress.rsi
+    state: default
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: FortressSandstoneBrickWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Sandstone
+              amount: 7
+              doAfter: 5
+    - node: end
+      entity: FortressSandstoneBrickWall
