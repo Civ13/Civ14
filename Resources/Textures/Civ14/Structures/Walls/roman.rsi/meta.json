@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by Valithor for Space Station 14",
+    "size": {
+    "x": 32,
+    "y": 32
+    },
+    "states": [
+    {
+        "name": "full"
+    },
+    {
+        "name": "roman0",
+        "directions": 4
+    },
+    {
+        "name": "roman1",
+        "directions": 4
+    },
+    {
+        "name": "roman2",
+        "directions": 4
+    },
+    {
+        "name": "roman3",
+        "directions": 4
+    },
+    {
+        "name": "roman4",
+        "directions": 4
+    },
+    {
+        "name": "roman5",
+        "directions": 4
+    },
+    {
+        "name": "roman6",
+        "directions": 4
+    },
+    {
+        "name": "roman7",
+        "directions": 4
+    }
+    ]
+}

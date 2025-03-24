@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by Valithor for Space Station 14",
+    "size": {
+    "x": 32,
+    "y": 32
+    },
+    "states": [
+    {
+        "name": "full"
+    },
+    {
+        "name": "mayan0",
+        "directions": 4
+    },
+    {
+        "name": "mayan1",
+        "directions": 4
+    },
+    {
+        "name": "mayan2",
+        "directions": 4
+    },
+    {
+        "name": "mayan3",
+        "directions": 4
+    },
+    {
+        "name": "mayan4",
+        "directions": 4
+    },
+    {
+        "name": "mayan5",
+        "directions": 4
+    },
+    {
+        "name": "mayan6",
+        "directions": 4
+    },
+    {
+        "name": "mayan7",
+        "directions": 4
+    }
+    ]
+}

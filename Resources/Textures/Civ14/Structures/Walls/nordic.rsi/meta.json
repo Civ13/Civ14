@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by Valithor for Space Station 14",
+    "size": {
+    "x": 32,
+    "y": 32
+    },
+    "states": [
+    {
+        "name": "full"
+    },
+    {
+        "name": "nordic0",
+        "directions": 4
+    },
+    {
+        "name": "nordic1",
+        "directions": 4
+    },
+    {
+        "name": "nordic2",
+        "directions": 4
+    },
+    {
+        "name": "nordic3",
+        "directions": 4
+    },
+    {
+        "name": "nordic4",
+        "directions": 4
+    },
+    {
+        "name": "nordic5",
+        "directions": 4
+    },
+    {
+        "name": "nordic6",
+        "directions": 4
+    },
+    {
+        "name": "nordic7",
+        "directions": 4
+    }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by Valithor for Space Station 14",
+    "size": {
+    "x": 32,
+    "y": 32
+    },
+    "states": [
+    {
+        "name": "full"
+    },
+    {
+        "name": "orc_brickwall0",
+        "directions": 4
+    },
+    {
+        "name": "orc_brickwall1",
+        "directions": 4
+    },
+    {
+        "name": "orc_brickwall2",
+        "directions": 4
+    },
+    {
+        "name": "orc_brickwall3",
+        "directions": 4
+    },
+    {
+        "name": "orc_brickwall4",
+        "directions": 4
+    },
+    {
+        "name": "orc_brickwall5",
+        "directions": 4
+    },
+    {
+        "name": "orc_brickwall6",
+        "directions": 4
+    },
+    {
+        "name": "orc_brickwall7",
+        "directions": 4
+    }
+    ]
+}

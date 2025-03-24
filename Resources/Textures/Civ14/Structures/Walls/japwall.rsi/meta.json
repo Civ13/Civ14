@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by Valithor for Space Station 14",
+    "size": {
+    "x": 32,
+    "y": 32
+    },
+    "states": [
+    {
+        "name": "full"
+    },
+    {
+        "name": "japwall0",
+        "directions": 4
+    },
+    {
+        "name": "japwall1",
+        "directions": 4
+    },
+    {
+        "name": "japwall2",
+        "directions": 4
+    },
+    {
+        "name": "japwall3",
+        "directions": 4
+    },
+    {
+        "name": "japwall4",
+        "directions": 4
+    },
+    {
+        "name": "japwall5",
+        "directions": 4
+    },
+    {
+        "name": "japwall6",
+        "directions": 4
+    },
+    {
+        "name": "japwall7",
+        "directions": 4
+    }
+    ]
+}
