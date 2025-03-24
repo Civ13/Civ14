@@ -42,7 +42,7 @@ public sealed class StationJobsTest
   stations:
     Station:
       mapNameTemplate: FooStation
-      stationProto: StandardNanotrasenStation
+      stationProto: StandardStationArena
       components:
         - type: StationJobs
           availableJobs:

@@ -33,7 +33,7 @@ public sealed class JobTest
   minPlayers: 0
   stations:
     Empty:
-      stationProto: StandardNanotrasenStation
+      stationProto: StandardStationArena
       components:
         - type: StationNameSetup
           mapNameTemplate: ""Nomads""
