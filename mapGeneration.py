@@ -75,7 +75,6 @@ def represent_sound_path_specifier(dumper, data):
             tag = key
             if isinstance(value, dict) and "path" in value:
                 return dumper.represent_mapping(tag, value)
-    # Fallback to default representation if the structure doesn't match
     return dumper.represent_dict(data)
 
 def generate_main_entities(tile_map, chunk_size=16):
@@ -85,7 +84,6 @@ def generate_main_entities(tile_map, chunk_size=16):
         for cx in range(0, w, chunk_size):
             chunk_key = f"{cx//chunk_size},{cy//chunk_size}"
             chunk_tiles = tile_map[cy:cy+chunk_size, cx:cx+chunk_size]
-            # Preenche chunks incompletos nas bordas com FloorDirt (0)
             if chunk_tiles.shape[0] < chunk_size or chunk_tiles.shape[1] < chunk_size:
                 full_chunk = np.zeros((chunk_size, chunk_size), dtype=np.int32)
                 full_chunk[:chunk_tiles.shape[0], :chunk_tiles.shape[1]] = chunk_tiles
@@ -115,7 +113,7 @@ def generate_main_entities(tile_map, chunk_size=16):
                 "uid": 2,
                 "components": [
                     {"type": "MetaData", "name": "grid"},
-                    {"type": "Transform", "parent": 1, "pos": "3.46875,4.03125"},
+                    {"type": "Transform", "parent": 1, "pos": "0,0"},  # Centralizado
                     {"type": "MapGrid", "chunks": chunks},
                     {"type": "Broadphase"},
                     {"type": "Physics",
@@ -154,9 +152,11 @@ def generate_dynamic_entities(tile_map):
     h, w = tile_map.shape
     for y in range(h):
         for x in range(w):
-            pos_x = x  # Usar coordenada X direta
-            pos_y = y  # Usar coordenada Y direta
+            print(f"entities. x:{x}, y:{y}")
+            pos_x = x
+            pos_y = y
             tile_val = tile_map[y, x]
+            # Gera paredes em todos os quatro lados
             if x == 0 or x == w - 1 or y == 0 or y == h - 1:
                 groups["WallPlastitaniumIndestructible"].append({
                     "uid": next_uid(),
@@ -220,15 +220,15 @@ def save_map_to_yaml(tile_map, filename="output.yml", chunk_size=16):
         "tilemap": TILEMAP,
         "entities": all_entities
     }
-    yaml.add_representer(dict, represent_sound_path_specifier) # Register the custom representer
+    yaml.add_representer(dict, represent_sound_path_specifier)
     with open(filename, 'w') as outfile:
         yaml.dump(map_data, outfile, default_flow_style=False, sort_keys=False)
 
 # -----------------------------------------------------------------------------
 # Geração do mapa
 # -----------------------------------------------------------------------------
-width = 100
-height = 100
+width = 128
+height = 128
 chunk_size = 16
 heightmap = generate_heightmap(width - 2, height - 2)
 print("Heightmap - Min:", heightmap.min(), "Max:", heightmap.max())
