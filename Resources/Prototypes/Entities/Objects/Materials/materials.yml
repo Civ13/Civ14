@@ -232,13 +232,13 @@
       stackType: WoodPlank
       baseLayer: base
       layerStates:
-        - wood
-        - wood_2
-        - wood_3
+        - logs
+        - logs_2
+        - logs_3
     - type: Sprite
-      state: wood
+      state: logs
       layers:
-        - state: wood
+        - state: logs
           map: ["base"]
     - type: Appearance
     - type: Item

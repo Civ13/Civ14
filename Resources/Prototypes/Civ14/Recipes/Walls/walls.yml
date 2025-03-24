@@ -132,7 +132,7 @@
   description: An ancient wall made of stacked stone blocks.
   icon:
     sprite: Civ14/Structures/Walls/stone_block_wall.rsi
-    state: default
+    state: full
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
@@ -158,7 +158,7 @@
   description: A Mayan-style stone wall.
   icon:
     sprite: Civ14/Structures/Walls/mayan.rsi
-    state: default
+    state: full
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
@@ -184,7 +184,7 @@
   description: A wall made of well-stacked stone bricks.
   icon:
     sprite: Civ14/Structures/Walls/new_stonebrick.rsi
-    state: default
+    state: full
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
@@ -210,7 +210,7 @@
   description: An ancient wall made of stacked marble blocks.
   icon:
     sprite: Civ14/Structures/Walls/marble_block_wall.rsi
-    state: default
+    state: full
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
@@ -236,7 +236,7 @@
   description: A strong, reinforced stone brick wall.
   icon:
     sprite: Civ14/Structures/Walls/fortress_brickwall.rsi
-    state: default
+    state: full
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
@@ -262,7 +262,7 @@
   description: A Roman-style stone wall.
   icon:
     sprite: Civ14/Structures/Walls/roman.rsi
-    state: default
+    state: full
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
@@ -288,7 +288,7 @@
   description: A Greek-style stone wall.
   icon:
     sprite: Civ14/Structures/Walls/grecian.rsi
-    state: default
+    state: full
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
@@ -314,7 +314,7 @@
   description: An ancient wall made of stacked sandstone blocks.
   icon:
     sprite: Civ14/Structures/Walls/sandstone_block_wall.rsi
-    state: default
+    state: full
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
@@ -340,7 +340,7 @@
   description: An Egyptian-style stone wall.
   icon:
     sprite: Civ14/Structures/Walls/egyptian.rsi
-    state: default
+    state: full
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
@@ -366,7 +366,7 @@
   description: A wall made of well-stacked sandstone bricks.
   icon:
     sprite: Civ14/Structures/Walls/sandstone_brickwall.rsi
-    state: default
+    state: full
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
@@ -392,7 +392,7 @@
   description: A wall made of red sandstone blocks.
   icon:
     sprite: Civ14/Structures/Walls/redsandstone_block_wall.rsi
-    state: default
+    state: full
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
@@ -418,7 +418,7 @@
   description: A fortress wall made of dark sandstone bricks.
   icon:
     sprite: Civ14/Structures/Walls/sandstone_fortress.rsi
-    state: default
+    state: full
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
