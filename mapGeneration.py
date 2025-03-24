@@ -152,12 +152,10 @@ def generate_dynamic_entities(tile_map):
         "WallRock": []
     }
     h, w = tile_map.shape
-    center_x = w // 2
-    center_y = h // 2
     for y in range(h):
         for x in range(w):
-            pos_x = x - center_x - 0.5
-            pos_y = -(y - center_y) + 0.5
+            pos_x = x  # Usar coordenada X direta
+            pos_y = y  # Usar coordenada Y direta
             tile_val = tile_map[y, x]
             if x == 0 or x == w - 1 or y == 0 or y == h - 1:
                 groups["WallPlastitaniumIndestructible"].append({
@@ -229,8 +227,8 @@ def save_map_to_yaml(tile_map, filename="output.yml", chunk_size=16):
 # -----------------------------------------------------------------------------
 # Geração do mapa
 # -----------------------------------------------------------------------------
-width = 52
-height = 52
+width = 100
+height = 100
 chunk_size = 16
 heightmap = generate_heightmap(width - 2, height - 2)
 print("Heightmap - Min:", heightmap.min(), "Max:", heightmap.max())
