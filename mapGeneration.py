@@ -10,16 +10,19 @@ import os
 # -----------------------------------------------------------------------------
 # Tilemap
 # -----------------------------------------------------------------------------
+# Declaração do TILEMAP com os tiles novos já inclusos
 TILEMAP = {
     0: "Space",
     1: "FloorDirt",
     2: "FloorAstroGrass",
-    3: "FloorGrassDark"
+    3: "FloorGrassDark",
+    4: "FloorGrass",  # Novo tile para bioma de floresta
+    5: "FloorSand"   # Novo tile para bioma de deserto
 }
 TILEMAP_REVERSE = {v: k for k, v in TILEMAP.items()}
 
 # -----------------------------------------------------------------------------
-# Funções auxiliares
+# Funções Auxiliares
 # -----------------------------------------------------------------------------
 def round_to_chunk(number, chunk):
     """Arredonda um número para o múltiplo inferior mais próximo do tamanho do chunk."""
@@ -44,7 +47,7 @@ def encode_tiles(tile_map):
     return base64.b64encode(tile_bytes).decode('utf-8')
 
 # -----------------------------------------------------------------------------
-# Geração do tile_map com múltiplas camadas
+# Geração do Tile Map com Múltiplas Camadas
 # -----------------------------------------------------------------------------
 def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
     """Gera o tile_map com base nas camadas de tiles definidas em biome_tile_layers."""
@@ -58,10 +61,12 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
         
         if "cellular_distance_function" in layer:
             noise.cellular_distance_function = layer["cellular_distance_function"]
-            print(f"cellular_distance_function configurado para: {noise.cellular_distance_function}")
         if "cellular_return_type" in layer:
             noise.cellular_return_type = layer["cellular_return_type"]
-            print(f"cellular_return_type configurado para: {noise.cellular_return_type}")
+        if "cellular_jitter" in layer:
+            noise.cellular_jitter = layer["cellular_jitter"]
+        if "fractal_lacunarity" in layer:
+            noise.fractal_lacunarity = layer["fractal_lacunarity"]
         
         if seed_base is not None:
             noise.seed = (seed_base + hash(layer["tile_type"])) % (2**31)
@@ -78,7 +83,7 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
     return tile_map
 
 # -----------------------------------------------------------------------------
-# Geração de entidades
+# Geração de Entidades
 # -----------------------------------------------------------------------------
 global_uid = 3
 def next_uid():
@@ -104,10 +109,12 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
 
         if "cellular_distance_function" in layer:
             noise.cellular_distance_function = layer["cellular_distance_function"]
-            print(f"cellular_distance_function configurado para: {noise.cellular_distance_function}")
         if "cellular_return_type" in layer:
             noise.cellular_return_type = layer["cellular_return_type"]
-            print(f"cellular_return_type configurado para: {noise.cellular_return_type}")
+        if "cellular_jitter" in layer:
+            noise.cellular_jitter = layer["cellular_jitter"]
+        if "fractal_lacunarity" in layer:
+            noise.fractal_lacunarity = layer["fractal_lacunarity"]
 
         if seed_base is not None:
             noise.seed = (seed_base + hash(proto)) % (2**31)
@@ -139,7 +146,7 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
     dynamic_groups = [{"proto": proto, "entities": ents} for proto, ents in groups.items()]
     return dynamic_groups
 
-# Definir uniqueMixes
+# Definir uniqueMixes para atmosfera
 unique_mixes = [
     {
         "volume": 2500,
@@ -162,11 +169,9 @@ def generate_atmosphere_tiles(width, height, chunk_size):
     for y in range(-1, max_y + 1):
         for x in range(-1, max_x + 1):
             if x == -1 or x == max_x or y == -1 or y == max_y:
-                # Borda: mistura 0 (imutável)
-                tiles[f"{x},{y}"] = {0: 65535}
+                tiles[f"{x},{y}"] = {0: 65535}  # Borda: mistura 0 (imutável)
             else:
-                # Interno: mistura 1
-                tiles[f"{x},{y}"] = {1: 65535}
+                tiles[f"{x},{y}"] = {1: 65535}  # Interno: mistura 1
     return tiles
 
 def generate_main_entities(tile_map, chunk_size=16):
@@ -276,7 +281,6 @@ def represent_sound_path_specifier(dumper, data):
                 return dumper.represent_mapping(tag, value)
     return dumper.represent_dict(data)
 
-# Função save_map_to_yaml atualizada para aceitar diretório de saída
 def save_map_to_yaml(tile_map, biome_entity_layers, output_dir, filename="output.yml", chunk_size=16, seed_base=None):
     """Salva o mapa gerado em um arquivo YAML no diretório especificado."""
     all_entities = generate_all_entities(tile_map, chunk_size, biome_entity_layers, seed_base)
@@ -304,18 +308,17 @@ def save_map_to_yaml(tile_map, biome_entity_layers, output_dir, filename="output
         yaml.dump(map_data, outfile, default_flow_style=False, sort_keys=False)
 
 # -----------------------------------------------------------------------------
-# Fixed spawn point for now
+# Geração de Spawn Points
 # -----------------------------------------------------------------------------
 def generate_spawn_points(tile_map, num_points=2):
     """Gera entidades SpawnPointNomads no centro do mapa."""
     h, w = tile_map.shape
-    center_x = w // 2  # Meio da largura
-    center_y = h // 2  # Meio da altura
+    center_x = w // 2
+    center_y = h // 2
     spawn_points = []
     for i in range(num_points):
-        # Ajustar posições relativas ao centro
-        pos_x = center_x - 2.5  # Mantendo o offset do exemplo
-        pos_y = center_y - 0.5 - i  # -0.5 e -1.5 para os dois pontos
+        pos_x = center_x - 2.5
+        pos_y = center_y - 0.5 - i
         spawn_points.append({
             "uid": next_uid(),
             "components": [
@@ -325,17 +328,18 @@ def generate_spawn_points(tile_map, num_points=2):
     return {"proto": "SpawnPointNomads", "entities": spawn_points}
 
 # -----------------------------------------------------------------------------
-# Configuração e execução
+# Configuração do Mapa (MAP_CONFIG)
 # -----------------------------------------------------------------------------
 MAP_CONFIG = [
+    # Camadas Originais
     {
         "type": "BiomeTileLayer",
         "tile_type": "FloorDirt",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 2,
-        "frequency": 0.02,  # Aumentado para mais variação
-        "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.3,   # Diminuído para cobrir mais área
+        "frequency": 0.01,
+        "fractal_type": FractalType.FractalType_None,
+        "threshold": -1.0,
         "overwrite": True
     },
     {
@@ -343,20 +347,10 @@ MAP_CONFIG = [
         "tile_type": "FloorAstroGrass",
         "noise_type": NoiseType.NoiseType_Perlin,
         "octaves": 3,
-        "frequency": 0.03,  # Aumentado para mais variação
-        "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.4,   # Diminuído para facilitar colocação
-        "overwrite": True   # Alterado para True para sobrescrever FloorDirt
-    },
-    {
-        "type": "BiomeEntityLayer",
-        "entity_proto": "FloorWaterEntity",
-        "noise_type": NoiseType.NoiseType_OpenSimplex2S,
-        "octaves": 3,
-        "frequency": 0.01,
-        "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.8,
-        "tile_condition": lambda tile: True
+        "frequency": 0.02,
+        "fractal_type": FractalType.FractalType_None,
+        "threshold": 0.4,
+        "overwrite": True
     },
     {
         "type": "BiomeEntityLayer",
@@ -372,19 +366,32 @@ MAP_CONFIG = [
         "type": "BiomeEntityLayer",
         "entity_proto": "WallRock",
         "noise_type": NoiseType.NoiseType_Cellular,
-        "cellular_distance_function": CellularDistanceFunction.CellularDistanceFunction_Euclidean,
-        "cellular_return_type": CellularReturnType.CellularReturnType_Distance2,
-        "octaves": 5,
-        "frequency": 0.02,
+        "cellular_distance_function": CellularDistanceFunction.CellularDistanceFunction_Hybrid,
+        "cellular_return_type": CellularReturnType.CellularReturnType_CellValue,
+        "octaves": 2,
+        "cellular_jitter": 1.070,
+        "frequency": 0.015,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.42,
+        "threshold": 0.30,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorDirt"]
+    },
+    { # Rivers
+        "type": "BiomeEntityLayer",
+        "entity_proto": "FloorWaterEntity",
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "fractal_lacunarity": 1.50,
+        "frequency": 0.003,
+        "fractal_type": FractalType.FractalType_Ridged,
+        "threshold": 0.95,
         "tile_condition": lambda tile: True
     },
 ]
 
-# Iniciar o rastreamento de tempo
+# -----------------------------------------------------------------------------
+# Execução
+# -----------------------------------------------------------------------------
 start_time = time.time()
-
 
 seed_base = random.randint(0, 1000000)
 print(f"Seed base gerado: {seed_base}")
@@ -396,18 +403,16 @@ chunk_size = 16
 biome_tile_layers = [layer for layer in MAP_CONFIG if layer["type"] == "BiomeTileLayer"]
 biome_entity_layers = [layer for layer in MAP_CONFIG if layer["type"] == "BiomeEntityLayer"]
 
-# Obter o diretório do script e construir o caminho de saída
+# Definir diretório de saída
 script_dir = os.path.dirname(os.path.abspath(__file__))
 output_dir = os.path.join(script_dir, "Resources", "Maps", "civ")
-
-# Criar o diretório se não existir
 os.makedirs(output_dir, exist_ok=True)
 
-# Gerar tile_map
+# Gerar tile_map e adicionar borda
 tile_map = generate_tile_map(width, height, biome_tile_layers, seed_base)
 bordered_tile_map = add_border(tile_map, border_value=TILEMAP_REVERSE["FloorDirt"])
 
-# Salvar o mapa
+# Salvar o mapa em YAML
 save_map_to_yaml(bordered_tile_map, biome_entity_layers, output_dir, filename="nomads_classic.yml", chunk_size=chunk_size, seed_base=seed_base)
 
 # Calcular e exibir o tempo total
