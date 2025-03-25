@@ -45,3 +45,58 @@
             tree_3: ""
             tree_4: ""
             tree_5: ""
+
+- type: decal
+  id: BushTemperate
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    layers:
+      - state: smallbush1
+        map: ["random"]
+      - type: RandomSprite
+        available:
+          - random:
+              smallbush1: ""
+              smallbush2: ""
+              smallbush3: ""
+              smallbush4: ""
+              smallbush5: ""
+              smallbush6: ""
+              smallbush7: ""
+              smallbush8: ""
+              smallbush9: ""
+              smallbush10: ""
+              smallbush11: ""
+              smallbush12: ""
+              smallbush13: ""
+              smallbush14: ""
+              smallbush15: ""
+              smallbush16: ""
+              smallbush17: ""
+              smallbush18: ""
+              smallbush19: ""
+              smallbush20: ""
+              smallbush21: ""
+              smallbush22: ""
+              smallbush23: ""
+              smallbush24: ""
+              smallbush25: ""
+              smallbush26: ""
+              smallbush27: ""
+              smallbush28: ""
+              smallbush29: ""
+              smallbush30: ""
+              smallbush31: ""
+              smallbush32: ""
+              smallbush33: ""
+              smallbush34: ""
+              smallbush35: ""
+              smallbush36: ""
+              smallbush37: ""
+              smallbush38: ""
+              smallbush39: ""
+              smallbush40: ""
+              smallbush41: ""
+              smallbush42: ""
