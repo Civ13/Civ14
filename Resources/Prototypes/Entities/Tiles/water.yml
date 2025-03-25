@@ -64,6 +64,7 @@
         - !type:ExtinguishReaction
 
 - type: entity
+  parent: FloorWaterEntity
   id: FloorWaterDeepEntity
   name: deep water
   description: Freshwater. Looks quite deep.
@@ -75,6 +76,7 @@
         - state: jungle1
 
 - type: entity
+  parent: FloorWaterEntity
   id: FloorWaterDeepSaltEntity
   name: deep saltwater
   description: Saltwater. Looks quite deep.
@@ -86,6 +88,7 @@
         - state: seadeep
 
 - type: entity
+  parent: FloorWaterEntity
   id: FloorWaterSaltEntity
   name: shallow saltwater
   description: Shallow saltwater.
@@ -98,6 +101,7 @@
 
 - type: entity
   id: FloorWaterSwampEntity
+  parent: FloorWaterEntity
   name: swamp water
   description: Shallow swampwater. You probably shouldn't drink from this.
   components:
