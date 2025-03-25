@@ -852,7 +852,9 @@
       spawned:
         - id: FoodMeat
           amount: 5
-        - id: MaterialLeather
+        - id: MaterialLeather1
+          amount: 3
+        - id: MaterialBones1
           amount: 3
     - type: Grammar
       attributes:
@@ -1018,8 +1020,10 @@
       spawned:
         - id: FoodMeat
           amount: 4
-        - id: MaterialLeather
+        - id: MaterialLeather1
           amount: 3
+        - id: MaterialBones1
+          amount: 2
     - type: Grammar
       attributes:
         gender: female # Here because of UdderComponent
@@ -1134,7 +1138,9 @@
       spawned:
         - id: FoodMeat
           amount: 4
-        - id: MaterialLeather
+        - id: MaterialLeather1
+          amount: 3
+        - id: MaterialBones1
           amount: 3
     - type: Bloodstream
       bloodMaxVolume: 300
@@ -1192,7 +1198,9 @@
     - type: Butcherable
       spawned:
         - id: FoodMeat
-        - id: MaterialLeather
+        - id: MaterialLeather1
+          amount: 1
+        - id: MaterialBones1
           amount: 1
     - type: DamageStateVisuals
       states:
@@ -2560,7 +2568,9 @@
       spawned:
         - id: FoodMeat
           amount: 3
-        - id: MaterialLeather
+        - id: MaterialLeather1
+          amount: 1
+        - id: MaterialBones1
           amount: 1
     - type: InteractionPopup
       successChance: 0.2 # Low when undomesticated.
@@ -2634,7 +2644,9 @@
       spawned:
         - id: FoodMeat
           amount: 2
-        - id: MaterialLeather
+        - id: MaterialLeather1
+          amount: 1
+        - id: MaterialBones1
           amount: 1
     - type: InteractionPopup
       successChance: 0.2 # Low when undomesticated.
@@ -2695,8 +2707,10 @@
       spawned:
         - id: FoodMeat
           amount: 3
-        - id: MaterialLeather
+        - id: MaterialLeather1
           amount: 2
+        - id: MaterialBones1
+          amount: 1
     - type: InteractionPopup
       successChance: 0.5
       interactSuccessString: petting-success-soft-floofy
@@ -2918,7 +2932,9 @@
       spawned:
         - id: FoodMeat
           amount: 3
-        - id: MaterialLeather
+        - id: MaterialLeather1
+          amount: 1
+        - id: MaterialBones1
           amount: 1
     - type: ReplacementAccent
       accent: cat
@@ -3147,8 +3163,10 @@
       spawned:
         - id: FoodMeat
           amount: 3
-        - id: MaterialLeather
+        - id: MaterialLeather1
           amount: 2
+        - id: MaterialBones1
+          amount: 1
     - type: InteractionPopup
       successChance: 0.9
       interactSuccessString: petting-success-sloth
@@ -3201,8 +3219,10 @@
       spawned:
         - id: FoodMeat
           amount: 3
-        - id: MaterialLeather
+        - id: MaterialLeather1
           amount: 2
+        - id: MaterialBones1
+          amount: 1
     - type: InteractionPopup
       successChance: 0.8
       interactDelay: 1.5 # Avoids overlapping SFX due to spam - these SFX are a little longer than the typical 1 second.
@@ -3409,7 +3429,9 @@
       spawned:
         - id: FoodMeatBacon
           amount: 6
-        - id: MaterialLeather
+        - id: MaterialLeather1
+          amount: 2
+        - id: MaterialBones1
           amount: 2
     - type: Grammar
       attributes:
@@ -3474,7 +3496,9 @@
       spawned:
         - id: FoodMeat
           amount: 4
-        - id: MaterialLeather
+        - id: MaterialLeather1
+          amount: 2
+        - id: MaterialBones1
           amount: 2
     - type: Bloodstream
       bloodMaxVolume: 300

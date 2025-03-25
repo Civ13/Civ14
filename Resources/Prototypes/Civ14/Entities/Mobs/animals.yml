@@ -33,8 +33,10 @@
       spawned:
         - id: FoodMeat
           amount: 4
-        - id: MaterialLeather
+        - id: MaterialLeather1
           amount: 2
+        - id: MaterialBones1
+          amount: 1
     - type: Bloodstream
       bloodMaxVolume: 300
       # Horns though

@@ -27,7 +27,9 @@
       spawned:
         - id: FoodMeat
           amount: 4
-        - id: MaterialLeather
+        - id: MaterialLeather1
+          amount: 3
+        - id: MaterialBones1
           amount: 3
     - type: DamageStateVisuals
       states:
@@ -85,7 +87,9 @@
       spawned:
         - id: FoodMeat
           amount: 2
-        - id: MaterialLeather
+        - id: MaterialLeather1
+          amount: 1
+        - id: MaterialBones1
           amount: 1
     - type: DamageStateVisuals
       states:
@@ -139,7 +143,9 @@
       spawned:
         - id: FoodMeat
           amount: 3
-        - id: MaterialLeather
+        - id: MaterialLeather1
+          amount: 2
+        - id: MaterialBones1
           amount: 2
     - type: MovementSpeedModifier
       baseWalkSpeed: 3.5
