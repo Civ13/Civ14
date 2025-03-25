@@ -412,6 +412,7 @@ MAP_CONFIG = [
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "priority": 0
     },
+    ####### PREDATORS
     { # Wolves
         "type": "BiomeEntityLayer",
         "entity_protos": "SpawnMobGreyWolf",
@@ -431,6 +432,17 @@ MAP_CONFIG = [
         "frequency": 0.300,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.958,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "priority": 11
+    },
+    { # Sabertooth
+        "type": "BiomeEntityLayer",
+        "entity_protos": "SpawnMobSabertooth",
+        "noise_type": NoiseType.NoiseType_Perlin,
+        "octaves": 1,
+        "frequency": 0.300,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.96882,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "priority": 11
     },
