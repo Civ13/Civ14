@@ -457,6 +457,18 @@ MAP_CONFIG = [
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "priority": 11
     },
+    ####### Preys
+    { # Rabbits
+        "type": "BiomeEntityLayer",
+        "entity_protos": "SpawnMobRabbit",
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.9987,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "priority": 11
+    },
 ]
 
 # -----------------------------------------------------------------------------
