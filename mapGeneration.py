@@ -431,7 +431,7 @@ MAP_CONFIG = [
     },
     { # Trees
         "type": "BiomeEntityLayer",
-        "entity_protos": ["FloraTree", "FloraTreeLarge"],
+        "entity_protos": "TreeTemperate",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.5,
