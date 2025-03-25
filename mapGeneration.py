@@ -375,7 +375,7 @@ MAP_CONFIG = [
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrassDark"],
         "priority": 1
     },
-    {
+    { # Rocks
         "type": "BiomeEntityLayer",
         "entity_protos": "WallRock",
         "noise_type": NoiseType.NoiseType_Cellular,
@@ -411,6 +411,17 @@ MAP_CONFIG = [
         "threshold": 0.9,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "priority": 0
+    },
+    { # Wolves
+        "type": "BiomeEntityLayer",
+        "entity_protos": "SpawnMobGreyWolf",
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.08,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.995,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "priority": 11
     },
 ]
 
