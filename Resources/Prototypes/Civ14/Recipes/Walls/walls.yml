@@ -24,8 +24,8 @@
   category: construction-category-structures
   description: A basic wall made of dried mud bricks.
   icon:
-    sprite: Civ14/Structures/walls.rsi
-    state: drysod_wall
+    sprite: Civ14/Structures/Walls/dirtwall.rsi
+    state: full
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false

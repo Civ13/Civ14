@@ -58,12 +58,12 @@
       tags:
         - Wall
     - type: Sprite
-      sprite: Civ14/Structures/walls.rsi
-      layers:
-        - state: drysod_wall
+      sprite: Civ14/Structures/Walls/dirtwall.rsi
     - type: Icon
-      sprite: Civ14/Structures/walls.rsi
-      state: drysod_wall
+      sprite: Civ14/Structures/Walls/dirtwall.rsi
+    - type: IconSmooth
+      key: walls
+      base: dirtwall
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
