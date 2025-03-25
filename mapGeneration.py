@@ -393,6 +393,17 @@ MAP_CONFIG = [
         "tile_condition": lambda tile: True,
         "priority": 10 
     },
+    { # Trees
+        "type": "BiomeEntityLayer",
+        "entity_proto": "FloraTree",
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.5,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.9,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "priority": 0
+    },
 ]
 
 # -----------------------------------------------------------------------------
