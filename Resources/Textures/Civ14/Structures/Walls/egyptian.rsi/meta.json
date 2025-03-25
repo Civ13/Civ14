@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by Valithor for Space Station 14",
+    "size": {
+    "x": 32,
+    "y": 32
+    },
+    "states": [
+    {
+        "name": "full"
+    },
+    {
+        "name": "egyptian0",
+        "directions": 4
+    },
+    {
+        "name": "egyptian1",
+        "directions": 4
+    },
+    {
+        "name": "egyptian2",
+        "directions": 4
+    },
+    {
+        "name": "egyptian3",
+        "directions": 4
+    },
+    {
+        "name": "egyptian4",
+        "directions": 4
+    },
+    {
+        "name": "egyptian5",
+        "directions": 4
+    },
+    {
+        "name": "egyptian6",
+        "directions": 4
+    },
+    {
+        "name": "egyptian7",
+        "directions": 4
+    }
+    ]
+}

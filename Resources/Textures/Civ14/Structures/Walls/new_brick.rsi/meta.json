@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by Valithor for Space Station 14",
+    "size": {
+    "x": 32,
+    "y": 32
+    },
+    "states": [
+    {
+        "name": "full"
+    },
+    {
+        "name": "new_brick0",
+        "directions": 4
+    },
+    {
+        "name": "new_brick1",
+        "directions": 4
+    },
+    {
+        "name": "new_brick2",
+        "directions": 4
+    },
+    {
+        "name": "new_brick3",
+        "directions": 4
+    },
+    {
+        "name": "new_brick4",
+        "directions": 4
+    },
+    {
+        "name": "new_brick5",
+        "directions": 4
+    },
+    {
+        "name": "new_brick6",
+        "directions": 4
+    },
+    {
+        "name": "new_brick7",
+        "directions": 4
+    }
+    ]
+}

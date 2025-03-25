@@ -1,0 +1,46 @@
+- type: entity
+  id: TableWoodClassic
+  parent: TableBase
+  name: wood table
+  description: A crude wood table.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/old_table4.rsi
+    - type: Icon
+      sprite: Civ14/Structures/old_table4.rsi
+    - type: Damageable
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 100
+          behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+        - trigger: !type:DamageTrigger
+            damage: 15
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: WoodDestroy
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                MaterialWoodPlank:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: IconSmooth
+      key: woodtable
+    - type: Construction
+      graph: TableWoodClassic
+      node: end
+    - type: Tag
+      tags:
+        - Wooden
+    - type: FootstepModifier
+      footstepSoundCollection:
+        collection: FootstepWood

@@ -1,0 +1,24 @@
+- type: construction
+  name: wood crate
+  id: CrateWood
+  graph: CrateWood
+  startNode: start
+  targetNode: end
+  category: construction-category-storage
+  description: A storage crate made of wood.
+  icon: { sprite: Civ14/Objects/Storage/wood_crate.rsi, state: icon }
+  objectType: Item
+
+- type: constructionGraph
+  id: CrateWood
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 4
+              doAfter: 6
+    - node: end
+      entity: CrateWood

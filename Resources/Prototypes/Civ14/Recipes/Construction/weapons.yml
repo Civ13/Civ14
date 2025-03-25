@@ -8,3 +8,17 @@
   description: A crude wood club.
   icon: { sprite: Civ14/Objects/StoneAge/club.rsi, state: icon }
   objectType: Item
+
+- type: constructionGraph
+  id: WoodClub
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: woodclub
+          steps:
+            - material: WoodPlank
+              amount: 8
+              doAfter: 8
+    - node: woodclub
+      entity: WoodClub

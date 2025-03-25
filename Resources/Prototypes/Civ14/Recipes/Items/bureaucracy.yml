@@ -19,3 +19,31 @@
   description: A simple sheet of paper.
   icon: { sprite: Civ14/Objects/bureaucracy.rsi, state: paper }
   objectType: Item
+
+- type: constructionGraph
+  id: Pencil
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 1
+              doAfter: 2
+    - node: end
+      entity: Pencil
+
+- type: constructionGraph
+  id: Paper
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 1
+              doAfter: 1
+    - node: end
+      entity: Paper

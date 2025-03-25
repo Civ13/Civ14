@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by Valithor for Space Station 14",
+    "size": {
+    "x": 32,
+    "y": 32
+    },
+    "states": [
+    {
+        "name": "full"
+    },
+    {
+        "name": "horizontal_concrete_blocks0",
+        "directions": 4
+    },
+    {
+        "name": "horizontal_concrete_blocks1",
+        "directions": 4
+    },
+    {
+        "name": "horizontal_concrete_blocks2",
+        "directions": 4
+    },
+    {
+        "name": "horizontal_concrete_blocks3",
+        "directions": 4
+    },
+    {
+        "name": "horizontal_concrete_blocks4",
+        "directions": 4
+    },
+    {
+        "name": "horizontal_concrete_blocks5",
+        "directions": 4
+    },
+    {
+        "name": "horizontal_concrete_blocks6",
+        "directions": 4
+    },
+    {
+        "name": "horizontal_concrete_blocks7",
+        "directions": 4
+    }
+    ]
+}

@@ -30,3 +30,45 @@
   description: A leather waterskin, used to carry liquids.
   icon: { sprite: Civ14/Objects/Storage/storage.rsi, state: waterskin }
   objectType: Item
+
+- type: constructionGraph
+  id: LeatherClothingBelt
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 10
+    - node: end
+      entity: LeatherClothingBelt
+
+- type: constructionGraph
+  id: LeatherWaterskin
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 10
+    - node: end
+      entity: LeatherWaterskin
+
+- type: constructionGraph
+  id: LeatherClothingBackpack
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 6
+              doAfter: 10
+    - node: end
+      entity: LeatherClothingBackpack
