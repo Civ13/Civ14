@@ -375,15 +375,15 @@ MAP_CONFIG = [
         "threshold": 0.4,
         "overwrite": True
     },
-    {
+    { # Boulders for flints
         "type": "BiomeEntityLayer",
         "entity_protos": "FloraRockSolid",
-        "noise_type": NoiseType.NoiseType_Perlin,
-        "octaves": 4,
-        "frequency": 0.5,
+        "noise_type": NoiseType.NoiseType_OpenSimplex2S,
+        "octaves": 6,
+        "frequency": 0.3,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.65,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrassDark"],
+        "threshold": 0.815,
+        "tile_condition": lambda tile: tile in [TILEMAP_REVERSE["FloorAstroGrass"], TILEMAP_REVERSE["FloorDirt"]],
         "priority": 1
     },
     { # Rocks
@@ -398,7 +398,7 @@ MAP_CONFIG = [
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.30,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorDirt"],
-        "priority": 1
+        "priority": 2
     },
     { # Rivers
         "type": "BiomeEntityLayer",
@@ -443,8 +443,8 @@ MAP_CONFIG = [
         "frequency": 0.300,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.958,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "priority": 11
+        "tile_condition": lambda tile: tile in [TILEMAP_REVERSE["FloorAstroGrass"], TILEMAP_REVERSE["FloorDirt"]],
+        "priority": 1
     },
     { # Sabertooth
         "type": "BiomeEntityLayer",
@@ -512,7 +512,7 @@ start_time = time.time()
 seed_base = random.randint(0, 1000000)
 print(f"Seed base gerado: {seed_base}")
 
-width, height = 250, 250
+width, height = 500, 500
 chunk_size = 16
 
 biome_tile_layers = [layer for layer in MAP_CONFIG if layer["type"] == "BiomeTileLayer"]
