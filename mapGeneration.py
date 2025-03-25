@@ -100,9 +100,12 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
     sorted_layers = sorted(biome_entity_layers, key=lambda layer: layer.get("priority", 0), reverse=True)
 
     for layer in sorted_layers:
-        proto = layer["entity_proto"]
-        if proto not in groups:
-            groups[proto] = []
+        # Get entity_protos list
+        entity_protos = layer["entity_protos"]
+        if isinstance(entity_protos, str):  # If its a string, turns it into a list
+            entity_protos = [entity_protos]
+
+        # Set layer noise
         noise = FastNoiseLite()
         noise.noise_type = layer["noise_type"]
         noise.fractal_octaves = layer["octaves"]
@@ -119,17 +122,22 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
             noise.fractal_lacunarity = layer["fractal_lacunarity"]
 
         if seed_base is not None:
-            noise.seed = (seed_base + hash(proto)) % (2**31)
+            noise.seed = (seed_base + hash(tuple(entity_protos))) % (2**31)
+
         for y in range(h):
             for x in range(w):
                 if x == 0 or x == w - 1 or y == 0 or y == h - 1:
                     continue
                 if (x, y) in occupied_positions:
-                    continue  # Jump if already occupied
+                    continue
                 tile_val = tile_map[y, x]
                 noise_value = noise.get_noise(x, y)
-                noise_value = (noise_value + 1) / 2
+                noise_value = (noise_value + 1) / 2  # Normalizar para [0, 1]
                 if noise_value > layer["threshold"] and layer["tile_condition"](tile_val):
+                    # Chooses randomly a proto
+                    proto = random.choice(entity_protos)
+                    if proto not in groups:
+                        groups[proto] = []
                     groups[proto].append({
                         "uid": next_uid(),
                         "components": [
@@ -358,7 +366,7 @@ MAP_CONFIG = [
     },
     {
         "type": "BiomeEntityLayer",
-        "entity_proto": "FloraRockSolid",
+        "entity_protos": "FloraRockSolid",
         "noise_type": NoiseType.NoiseType_Perlin,
         "octaves": 4,
         "frequency": 0.5,
@@ -369,7 +377,7 @@ MAP_CONFIG = [
     },
     {
         "type": "BiomeEntityLayer",
-        "entity_proto": "WallRock",
+        "entity_protos": "WallRock",
         "noise_type": NoiseType.NoiseType_Cellular,
         "cellular_distance_function": CellularDistanceFunction.CellularDistanceFunction_Hybrid,
         "cellular_return_type": CellularReturnType.CellularReturnType_CellValue,
@@ -383,7 +391,7 @@ MAP_CONFIG = [
     },
     { # Rivers
         "type": "BiomeEntityLayer",
-        "entity_proto": "FloorWaterEntity",
+        "entity_protos": "FloorWaterEntity",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "fractal_lacunarity": 1.50,
@@ -395,7 +403,7 @@ MAP_CONFIG = [
     },
     { # Trees
         "type": "BiomeEntityLayer",
-        "entity_proto": "FloraTree",
+        "entity_protos": ["FloraTree", "FloraTreeLarge"],
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.5,
