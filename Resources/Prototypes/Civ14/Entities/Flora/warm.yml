@@ -1,0 +1,27 @@
+- type: entity
+  parent: BaseTree
+  id: TreeAcacia
+  name: acacia tree
+  description: A large savanna tree.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bigtrees.rsi
+      state: african_acacia
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.1,-0.3,0.1,0.3"
+          density: 4000
+          layer:
+            - WallLayer
+
+- type: entity
+  parent: TreeAcacia
+  id: TreeAcaciaDead
+  name: dead acacia tree
+  description: A large savanna tree. This one is dead.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bigtrees_dead.rsi
+      state: african_acacia_dead

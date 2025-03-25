@@ -1,0 +1,27 @@
+- type: entity
+  parent: BaseTree
+  id: TreeMed
+  name: mediterranean tree
+  description: A large pine tree adapted to dry climates.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bigtrees.rsi
+      state: med_pine
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.1,-0.3,0.1,0.3"
+          density: 4000
+          layer:
+            - WallLayer
+
+- type: entity
+  parent: TreeMed
+  id: TreeMedDead
+  name: dead mediterranean tree
+  description: A large pine tree adapted to dry climates. This one is dead.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bigtrees_dead.rsi
+      state: med_pine_dead

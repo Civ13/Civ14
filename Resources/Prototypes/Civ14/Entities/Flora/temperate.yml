@@ -1,0 +1,47 @@
+- type: entity
+  parent: BaseTree
+  id: TreeTemperate
+  name: temperate tree
+  description: Yep, it's a tree.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bigtrees.rsi
+      layers:
+        - state: tree_1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            tree_1: ""
+            tree_2: ""
+            tree_3: ""
+            tree_4: ""
+            tree_5: ""
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.1,-0.3,0.1,0.3"
+          density: 4000
+          layer:
+            - WallLayer
+
+- type: entity
+  parent: TreeTemperate
+  id: TreeTemperateDead
+  name: dead tree
+  description: Yep, it's a tree. But it's dead.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bigtrees_dead.rsi
+      layers:
+        - state: tree_1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            tree_1: ""
+            tree_2: ""
+            tree_3: ""
+            tree_4: ""
+            tree_5: ""

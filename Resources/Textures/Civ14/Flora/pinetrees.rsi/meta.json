@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 64,
+    "y": 96
+  },
+  "states": [
+    {
+      "name": "pine_1"
+    },
+    {
+      "name": "pine_2"
+    },
+    {
+      "name": "pine_3"
+    },
+    {
+      "name": "stump"
+    },
+    {
+      "name": "festivus_pole"
+    }
+  ]
+}

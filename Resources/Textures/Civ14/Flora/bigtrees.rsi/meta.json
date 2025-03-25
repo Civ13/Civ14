@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "tree_1"
+    },
+    {
+      "name": "tree_2"
+    },
+    {
+      "name": "tree_3"
+    },
+    {
+      "name": "tree_4"
+    },
+    {
+      "name": "tree_5"
+    },
+    {
+      "name": "cactus",
+      "directions": 4
+    },
+    {
+      "name": "african_acacia"
+    },
+    {
+      "name": "african_acaciaX"
+    },
+    {
+      "name": "med_pine"
+    },
+    {
+      "name": "cherry_blossom_1"
+    },
+    {
+      "name": "cherry_blossom_2"
+    },
+    {
+      "name": "cherry_blossom_3"
+    },
+    {
+      "name": "cherry_blossom_4"
+    }
+  ]
+}
