@@ -4,10 +4,24 @@
   sprite: /Textures/Tiles/Planet/dirt.rsi/dirt.png
   variants: 4
   placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
+
+- type: tile
+  id: FloorPlanetDryDirt
+  name: tiles-drydirt-floor
+  sprite: /Textures/Civ14/Structures/Floors/nature/dust.png
+  variants: 1
+  placementVariants:
+    - 1.0
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
@@ -22,12 +36,12 @@
   sprite: /Textures/Tiles/Planet/Desert/desert.png
   variants: 6
   placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
@@ -41,12 +55,12 @@
   sprite: /Textures/Tiles/Planet/Desert/low_desert.png
   variants: 6
   placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
@@ -61,10 +75,10 @@
   sprite: /Textures/Tiles/Planet/Grass/grass.png
   variants: 4
   placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
   edgeSpritePriority: 1
   edgeSprites:
     SouthEast: /Textures/Tiles/Planet/Grass/single_edge.png
@@ -103,19 +117,19 @@
   sprite: /Textures/Tiles/Planet/Snow/snow.png
   variants: 13
   placementVariants:
-  - 0.8
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0116
-  - 0.0116
+    - 0.8
+    - 0.0166
+    - 0.0166
+    - 0.0166
+    - 0.0166
+    - 0.0166
+    - 0.0166
+    - 0.0166
+    - 0.0166
+    - 0.0166
+    - 0.0166
+    - 0.0116
+    - 0.0116
   edgeSpritePriority: 2
   edgeSprites:
     South: /Textures/Tiles/Planet/Snow/snow_double_edge_south.png
@@ -160,5 +174,4 @@
   heatCapacity: 10000
   weather: true
   indestructible: true
-
 # Wasteland

@@ -102,6 +102,7 @@ tiles-jungle-grass-floor = jungle grass floor
 tiles-dark-grass-floor = dark grass floor
 tiles-light-grass-floor = light grass floor
 tiles-dirt-floor = dirt floor
+tiles-drydirt-floor = dry dirt floor
 tiles-asteroid-sand = asteroid sand
 tiles-asteroid-sand-dug = dug asteroid sand
 tiles-asteroid-tile = asteroid tile
