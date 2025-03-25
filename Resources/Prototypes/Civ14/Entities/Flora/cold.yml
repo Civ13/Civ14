@@ -88,15 +88,6 @@
     state: snowbush1
 
 - type: decal
-  id: BushSnow1
-  tags: ["flora"]
-  snapCardinals: true
-  defaultSnap: false
-  sprite:
-    sprite: Civ14/Flora/bushes_snow.rsi
-    state: snowbush1
-
-- type: decal
   id: BushSnow2
   tags: ["flora"]
   snapCardinals: true
