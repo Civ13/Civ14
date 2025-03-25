@@ -14,7 +14,8 @@ TILEMAP = {
     0: "Space",
     1: "FloorDirt",
     2: "FloorAstroGrass",
-    3: "FloorGrassDark"
+    3: "FloorGrassDark",
+    4: "FloorAsteroidSand"
 }
 TILEMAP_REVERSE = {v: k for k, v in TILEMAP.items()}
 
@@ -66,7 +67,9 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
             noise.fractal_lacunarity = layer["fractal_lacunarity"]
         
         if seed_base is not None:
-            noise.seed = (seed_base + hash(layer["tile_type"])) % (2**31)
+            # Uses "seed_key" if available, if not uses a hash based on tile_type
+            seed_key = layer.get("seed_key", layer["tile_type"])
+            noise.seed = (seed_base + hash(seed_key)) % (2**31)
         count = 0
         for y in range(height):
             for x in range(width):
@@ -123,7 +126,9 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
             noise.fractal_lacunarity = layer["fractal_lacunarity"]
 
         if seed_base is not None:
-            noise.seed = (seed_base + hash(tuple(entity_protos))) % (2**31)
+            # Uses "seed_key" if available, if not uses a hash based on entity_protos
+            seed_key = layer.get("seed_key", tuple(entity_protos))
+            noise.seed = (seed_base + hash(seed_key)) % (2**31)
 
         for y in range(h):
             for x in range(w):
@@ -410,7 +415,19 @@ MAP_CONFIG = [
         "fractal_type": FractalType.FractalType_Ridged,
         "threshold": 0.95,
         "tile_condition": lambda tile: True,
-        "priority": 10 
+        "priority": 10 ,
+        "seed_key": "river_noise" 
+    },
+    { # River sand
+        "type": "BiomeTileLayer",
+        "tile_type": "FloorAsteroidSand",
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.003,  # Same as the river
+        "fractal_type": FractalType.FractalType_Ridged,
+        "threshold": 0.90,  # Larger than the river
+        "overwrite": True,
+        "seed_key": "river_noise" 
     },
     { # Trees
         "type": "BiomeEntityLayer",
