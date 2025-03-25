@@ -1,65 +1,108 @@
 - type: entity
   id: FloorWaterEntity
   name: water
-  description: A real thirst quencher.
+  description: Looks like shallow freshwater.
   placement:
     mode: SnapgridCenter
     snap:
-    - Wall
+      - Wall
   components:
-  - type: FloorOccluder
-  - type: Transform
-    anchored: true
-  - type: SyncSprite
-  - type: Clickable
-  - type: Sprite
-    sprite: Tiles/Planet/water.rsi
-    drawdepth: BelowFloor
-    layers:
-      - state: shoreline_water
-  - type: SolutionContainerManager
-    solutions:
-      pool:
-        maxVol: 9999999 #.inf seems to break the whole yaml file, but would definitely be preferable. 
+    - type: FloorOccluder
+    - type: Transform
+      anchored: true
+    - type: SyncSprite
+    - type: Clickable
+    - type: Sprite
+      sprite: Tiles/Planet/water.rsi
+      drawdepth: BelowFloor
+      layers:
+        - state: jungle2
+    - type: SolutionContainerManager
+      solutions:
+        pool:
+          maxVol: 9999999 #.inf seems to break the whole yaml file, but would definitely be preferable.
+          reagents:
+            - ReagentId: Water
+              Quantity: 9999999
+    - type: SolutionRegeneration
+      solution: tank
+      generated:
         reagents:
-        - ReagentId: Water
-          Quantity: 9999999
-  - type: SolutionRegeneration
-    solution: tank
-    generated:
-      reagents:
-      - ReagentId: Water
-        Quantity: 100
-  - type: DrainableSolution
-    solution: pool
-  - type: SpeedModifierContacts
-    walkSpeedModifier: 0.5
-    sprintSpeedModifier: 0.5
-  - type: Physics
-    bodyType: Static
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,0.5"
-        layer:
-          - SlipLayer
-        mask:
-          - ItemMask
-        density: 1000
-        hard: false
-  - type: FootstepModifier
-    footstepSoundCollection:
-      collection: FootstepWater
-      params:
-        volume: 8
-  - type: StepTrigger
-    requiredTriggeredSpeed: 0
-    intersectRatio: 0.1
-    blacklist:
-      tags:
-        - Catwalk
-  - type: TileEntityEffect
-    effects:
-    - !type:ExtinguishReaction
+          - ReagentId: Water
+            Quantity: 100
+    - type: DrainableSolution
+      solution: pool
+    - type: SpeedModifierContacts
+      walkSpeedModifier: 0.5
+      sprintSpeedModifier: 0.5
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.5,-0.5,0.5,0.5"
+          layer:
+            - SlipLayer
+          mask:
+            - ItemMask
+          density: 1000
+          hard: false
+    - type: FootstepModifier
+      footstepSoundCollection:
+        collection: FootstepWater
+        params:
+          volume: 8
+    - type: StepTrigger
+      requiredTriggeredSpeed: 0
+      intersectRatio: 0.1
+      blacklist:
+        tags:
+          - Catwalk
+    - type: TileEntityEffect
+      effects:
+        - !type:ExtinguishReaction
+
+- type: entity
+  id: FloorWaterDeepEntity
+  name: deep water
+  description: Freshwater. Looks quite deep.
+  components:
+    - type: Sprite
+      sprite: Tiles/Planet/water.rsi
+      drawdepth: BelowFloor
+      layers:
+        - state: jungle1
+
+- type: entity
+  id: FloorWaterDeepSaltEntity
+  name: deep saltwater
+  description: Saltwater. Looks quite deep.
+  components:
+    - type: Sprite
+      sprite: Tiles/Planet/water.rsi
+      drawdepth: BelowFloor
+      layers:
+        - state: seadeep
+
+- type: entity
+  id: FloorWaterSaltEntity
+  name: shallow saltwater
+  description: Shallow saltwater.
+  components:
+    - type: Sprite
+      sprite: Tiles/Planet/water.rsi
+      drawdepth: BelowFloor
+      layers:
+        - state: seashallow
+
+- type: entity
+  id: FloorWaterSwampEntity
+  name: swamp water
+  description: Shallow swampwater. You probably shouldn't drink from this.
+  components:
+    - type: Sprite
+      sprite: Tiles/Planet/water.rsi
+      drawdepth: BelowFloor
+      layers:
+        - state: swamp
