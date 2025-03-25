@@ -18,7 +18,7 @@
 - type: tile
   id: FloorPlanetDryDirt
   name: tiles-drydirt-floor
-  sprite: /Textures/Civ14/Structures/Floors/nature/dust.png
+  sprite: /Textures/Civ14/Structures/Floors/nature.rsi/dust.png
   variants: 1
   placementVariants:
     - 1.0

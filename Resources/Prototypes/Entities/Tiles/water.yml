@@ -74,7 +74,17 @@
       drawdepth: BelowFloor
       layers:
         - state: jungle1
-
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.5,-0.5,0.5,0.5"
+          density: 100
+          mask:
+            - Impassable
+            - HighImpassable
+          layer:
+            - HighImpassable
 - type: entity
   parent: FloorWaterEntity
   id: FloorWaterDeepSaltEntity
@@ -86,7 +96,17 @@
       drawdepth: BelowFloor
       layers:
         - state: seadeep
-
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.5,-0.5,0.5,0.5"
+          density: 100
+          mask:
+            - Impassable
+            - HighImpassable
+          layer:
+            - HighImpassable
 - type: entity
   parent: FloorWaterEntity
   id: FloorWaterSaltEntity
