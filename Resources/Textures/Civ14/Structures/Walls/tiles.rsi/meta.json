@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by Valithor for Space Station 14",
+    "size": {
+    "x": 32,
+    "y": 32
+    },
+    "states": [
+    {
+        "name": "full"
+    },
+    {
+        "name": "tiles0",
+        "directions": 4
+    },
+    {
+        "name": "tiles1",
+        "directions": 4
+    },
+    {
+        "name": "tiles2",
+        "directions": 4
+    },
+    {
+        "name": "tiles3",
+        "directions": 4
+    },
+    {
+        "name": "tiles4",
+        "directions": 4
+    },
+    {
+        "name": "tiles5",
+        "directions": 4
+    },
+    {
+        "name": "tiles6",
+        "directions": 4
+    },
+    {
+        "name": "tiles7",
+        "directions": 4
+    }
+    ]
+}

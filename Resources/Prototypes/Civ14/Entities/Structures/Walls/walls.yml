@@ -22,10 +22,6 @@
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
-    - type: RCDDeconstructable
-      cost: 2
-      delay: 2
-      fx: EffectRCDDeconstruct2
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -44,6 +40,9 @@
     - type: Construction
       graph: StrawWall
       node: end
+      cost: 5
+      time: 8
+      material: Straw
 
 - type: entity
   parent: BaseWall
@@ -68,10 +67,6 @@
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
-    - type: RCDDeconstructable
-      cost: 2
-      delay: 2
-      fx: EffectRCDDeconstruct2
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -90,7 +85,9 @@
     - type: Construction
       graph: DirtWall
       node: end
-
+      cost: 5
+      time: 8
+      material: Straw
 - type: entity
   parent: BaseWall
   id: ClayWall
@@ -114,10 +111,6 @@
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
-    - type: RCDDeconstructable
-      cost: 2
-      delay: 2
-      fx: EffectRCDDeconstruct2
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -131,7 +124,9 @@
     - type: Construction
       graph: ClayWall
       node: end
-
+      cost: 5
+      time: 8
+      material: Clay
 - type: entity
   parent: BaseWall
   id: LogWall
@@ -147,19 +142,12 @@
         - Wooden
         - Wall
     - type: Sprite
-      sprite: Civ14/Structures/walls.rsi
-      layers:
-        - state: log_wall
+      sprite: Civ14/Structures/Walls/oldwood.rsi
     - type: Icon
-      sprite: Civ14/Structures/walls.rsi
-      state: log_wall
+      sprite: Civ14/Structures/Walls/oldwood.rsi
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
-    - type: RCDDeconstructable
-      cost: 2
-      delay: 2
-      fx: EffectRCDDeconstruct2
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -178,3 +166,274 @@
     - type: Construction
       graph: LogWall
       node: end
+      cost: 5
+      time: 8
+      material: WoodPlank
+    - type: IconSmooth
+      key: walls
+      base: oldwood
+
+# stone walls
+- type: entity
+  parent: BaseWall
+  id: StoneBlockWall
+  name: stone block wall
+  description: An ancient wall made of stacked stone blocks.
+  components:
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/stone_block_wall.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/stone_block_wall.rsi
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: IconSmooth
+      key: walls
+      base: stone_block_wall
+    - type: Construction
+      graph: StoneBlockWall
+      node: end
+      cost: 6
+      time: 8
+      material: Stone
+- type: entity
+  parent: StoneBlockWall
+  id: MayanStoneWall
+  name: mayan stone wall
+  description: A Mayan-style stone wall.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/mayan.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/mayan.rsi
+    - type: IconSmooth
+      key: walls
+      base: mayan
+    - type: Construction
+      graph: MayanStoneWall
+      node: end
+      cost: 6
+      time: 8
+      material: Stone
+- type: entity
+  parent: StoneBlockWall
+  id: StoneBrickWall
+  name: stone brick wall
+  description: A wall made of well-stacked stone bricks.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/new_stonebrick.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/new_stonebrick.rsi
+    - type: IconSmooth
+      key: walls
+      base: new_stonebrick
+    - type: Construction
+      graph: StoneBrickWall
+      node: end
+      cost: 6
+      time: 8
+      material: Stone
+- type: entity
+  parent: StoneBlockWall
+  id: MarbleBlockWall
+  name: marble block wall
+  description: An ancient wall made of stacked marble blocks.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/marble_block_wall.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/marble_block_wall.rsi
+    - type: IconSmooth
+      key: walls
+      base: marble_block_wall
+    - type: Construction
+      graph: MarbleBlockWall
+      node: end
+      cost: 8
+      time: 8
+      material: Stone
+- type: entity
+  parent: StoneBlockWall
+  id: FortressBrickWall
+  name: fortress stone wall
+  description: A strong, reinforced stone brick wall.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/fortress_brickwall.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/fortress_brickwall.rsi
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 350
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: IconSmooth
+      key: walls
+      base: fortress_brickwall
+    - type: Construction
+      graph: FortressBrickWall
+      node: end
+      cost: 6
+      time: 8
+      material: Stone
+- type: entity
+  parent: StoneBlockWall
+  id: RomanStoneBrickWall
+  name: roman stone wall
+  description: A Roman-style stone wall.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/roman.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/roman.rsi
+    - type: IconSmooth
+      key: walls
+      base: roman
+    - type: Construction
+      graph: RomanStoneBrickWall
+      node: end
+      cost: 6
+      time: 8
+      material: Stone
+- type: entity
+  parent: StoneBlockWall
+  id: GrecianStoneBrickWall
+  name: grecian stone wall
+  description: A Greek-style stone wall.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/grecian.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/grecian.rsi
+    - type: IconSmooth
+      key: walls
+      base: grecian
+    - type: Construction
+      graph: GrecianStoneBrickWall
+      node: end
+      cost: 6
+      time: 8
+      material: Stone
+#sandstone walls
+- type: entity
+  parent: BaseWall
+  id: SandstoneBlockWall
+  name: sandstone block wall
+  description: An ancient wall made of stacked sandstone blocks.
+  components:
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/sandstone_block_wall.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/sandstone_block_wall.rsi
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 240
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: IconSmooth
+      key: walls
+      base: sandstone_block_wall
+    - type: Construction
+      graph: SandstoneBlockWall
+      node: end
+      cost: 6
+      time: 8
+      material: Sandstone
+- type: entity
+  parent: SandstoneBlockWall
+  id: EgyptianSandstoneBrickWall
+  name: egyptian sandstone wall
+  description: An Egyptian-style stone wall.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/egyptian.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/egyptian.rsi
+    - type: IconSmooth
+      key: walls
+      base: egyptian
+    - type: Construction
+      graph: EgyptianSandstoneBrickWall
+      node: end
+      cost: 6
+      time: 8
+      material: Sandstone
+- type: entity
+  parent: SandstoneBlockWall
+  id: SandstoneBrickWall
+  name: sandstone brick wall
+  description: A wall made of well-stacked sandstone bricks.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/sandstone_brickwall.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/sandstone_brickwall.rsi
+    - type: IconSmooth
+      key: walls
+      base: sandstone_brickwall
+    - type: Construction
+      graph: SandstoneBrickWall
+      node: end
+      cost: 6
+      time: 8
+      material: Sandstone
+- type: entity
+  parent: SandstoneBlockWall
+  id: RedSandstoneBlockWall
+  name: red sandstone block wall
+  description: A wall made of red sandstone blocks.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/redsandstone_block_wall.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/redsandstone_block_wall.rsi
+    - type: IconSmooth
+      key: walls
+      base: redsandstone_block_wall
+    - type: Construction
+      graph: RedSandstoneBlockWall
+      node: end
+      cost: 6
+      time: 8
+      material: Sandstone
+- type: entity
+  parent: SandstoneBlockWall
+  id: FortressSandstoneBrickWall
+  name: fortress sandstone wall
+  description: A fortress wall made of dark sandstone bricks.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/sandstone_fortress.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/sandstone_fortress.rsi
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 310
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: IconSmooth
+      key: walls
+      base: sandstone_fortress
+    - type: Construction
+      graph: FortressSandstoneBrickWall
+      node: end
+      cost: 7
+      time: 8
+      material: Sandstone

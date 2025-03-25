@@ -8,7 +8,7 @@ namespace Content.IntegrationTests.Tests.Commands;
 [TestFixture]
 public sealed class ForceMapTest
 {
-    private const string DefaultMapName = "Empty";
+    private const string DefaultMapName = "Nomads";
     private const string BadMapName = "asdf_asd-fa__sdfAsd_f"; // Hopefully no one ever names a map this...
     private const string TestMapEligibleName = "ForceMapTestEligible";
     private const string TestMapIneligibleName = "ForceMapTestIneligible";
@@ -18,27 +18,27 @@ public sealed class ForceMapTest
 - type: gameMap
   id: {TestMapIneligibleName}
   mapName: {TestMapIneligibleName}
-  mapPath: /Maps/Test/empty.yml
+  mapPath: /Maps/civ/nomads.yml
   minPlayers: 20
   maxPlayers: 80
   stations:
     Empty:
-      stationProto: StandardNanotrasenStation
+      stationProto: StandardStationArena
       components:
         - type: StationNameSetup
-          mapNameTemplate: ""Empty""
+          mapNameTemplate: ""Nomads Test""
 
 - type: gameMap
   id: {TestMapEligibleName}
   mapName: {TestMapEligibleName}
-  mapPath: /Maps/Test/empty.yml
+  mapPath: /Maps/civ/nomads.yml
   minPlayers: 0
   stations:
     Empty:
-      stationProto: StandardNanotrasenStation
+      stationProto: StandardStationArena
       components:
         - type: StationNameSetup
-          mapNameTemplate: ""Empty""
+          mapNameTemplate: ""Nomads Test""
 ";
 
     [Test]

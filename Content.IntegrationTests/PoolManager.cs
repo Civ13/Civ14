@@ -30,7 +30,7 @@ namespace Content.IntegrationTests;
 /// </summary>
 public static partial class PoolManager
 {
-    public const string TestMap = "Empty";
+    public const string TestMap = "Nomads";
     private static int _pairId;
     private static readonly object PairLock = new();
     private static bool _initialized;

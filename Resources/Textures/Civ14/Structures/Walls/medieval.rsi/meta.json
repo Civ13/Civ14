@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by Valithor for Space Station 14",
+    "size": {
+    "x": 32,
+    "y": 32
+    },
+    "states": [
+    {
+        "name": "full"
+    },
+    {
+        "name": "medieval0",
+        "directions": 4
+    },
+    {
+        "name": "medieval1",
+        "directions": 4
+    },
+    {
+        "name": "medieval2",
+        "directions": 4
+    },
+    {
+        "name": "medieval3",
+        "directions": 4
+    },
+    {
+        "name": "medieval4",
+        "directions": 4
+    },
+    {
+        "name": "medieval5",
+        "directions": 4
+    },
+    {
+        "name": "medieval6",
+        "directions": 4
+    },
+    {
+        "name": "medieval7",
+        "directions": 4
+    }
+    ]
+}

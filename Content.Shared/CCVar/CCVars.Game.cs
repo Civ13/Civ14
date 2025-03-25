@@ -82,7 +82,7 @@ public sealed partial class CCVars
     ///     If the save file exists, it replaces MapPath but everything else stays the same (station name and such).
     /// </summary>
     public static readonly CVarDef<string>
-        PersistenceMap = CVarDef.Create("game.persistencemap", "Empty", CVar.ARCHIVE);
+        PersistenceMap = CVarDef.Create("game.persistencemap", "Nomads", CVar.ARCHIVE);
 
     /// <summary>
     ///     Prototype to use for map pool.

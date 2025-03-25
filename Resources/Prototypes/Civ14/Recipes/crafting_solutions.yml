@@ -14,10 +14,10 @@
 
 - type: reagent
   id: Dirt
-  name: "dirt"
+  name: reagent-name-dirt
   group: Foods
-  desc: "A bunch of dirt"
-  physicalDesc: "dirt"
-  flavor: earthy
+  desc: reagent-desc-dirt
+  physicalDesc: reagent-physical-desc-earthy
+  flavor: tingly
   color: brown
   recognizable: true

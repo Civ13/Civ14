@@ -11,11 +11,39 @@
 
 - type: construction
   name: campfire
-  id: Campfire
-  graph: Campfire
+  id: KitchenCampfire
+  graph: KitchenCampfire
   startNode: start
   targetNode: end
   category: construction-category-misc
   description: "Keeps you warm and cooks your food."
   icon: { sprite: Civ14/Objects/kitchen.rsi, state: fireplace_on }
   objectType: Item
+
+- type: constructionGraph
+  id: KitchenMill
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 4
+              doAfter: 2
+    - node: end
+      entity: KitchenMill
+
+- type: constructionGraph
+  id: KitchenCampfire
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: KitchenCampfire

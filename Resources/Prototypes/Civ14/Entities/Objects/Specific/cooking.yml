@@ -71,6 +71,9 @@
     - type: Microwave
       capacity: 3
     - type: Appearance
+    - type: PointLight
+      radius: 4
+      energy: 3
     - type: GenericVisualizer
       visuals:
         enum.PowerDeviceVisuals.VisualState:

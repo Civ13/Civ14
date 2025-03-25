@@ -25,9 +25,6 @@ public sealed partial class AdminVerbSystem
     private const string DefaultInitialInfectedRule = "Zombie";
 
     [ValidatePrototypeId<EntityPrototype>]
-    private const string DefaultNukeOpRule = "LoneOpsSpawn";
-
-    [ValidatePrototypeId<EntityPrototype>]
     private const string DefaultRevsRule = "Revolutionary";
 
     [ValidatePrototypeId<EntityPrototype>]
@@ -96,21 +93,6 @@ public sealed partial class AdminVerbSystem
             Message = string.Join(": ", zombieName, Loc.GetString("admin-verb-make-zombie")),
         };
         args.Verbs.Add(zombie);
-
-        var nukeOpName = Loc.GetString("admin-verb-text-make-nuclear-operative");
-        Verb nukeOp = new()
-        {
-            Text = nukeOpName,
-            Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new("/Textures/Clothing/Head/Hardsuits/syndicate.rsi"), "icon"),
-            Act = () =>
-            {
-                _antag.ForceMakeAntag<NukeopsRuleComponent>(targetPlayer, DefaultNukeOpRule);
-            },
-            Impact = LogImpact.High,
-            Message = string.Join(": ", nukeOpName, Loc.GetString("admin-verb-make-nuclear-operative")),
-        };
-        args.Verbs.Add(nukeOp);
 
         var pirateName = Loc.GetString("admin-verb-text-make-pirate");
         Verb pirate = new()

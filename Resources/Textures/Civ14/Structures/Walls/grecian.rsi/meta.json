@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by Valithor for Space Station 14",
+    "size": {
+    "x": 32,
+    "y": 32
+    },
+    "states": [
+    {
+        "name": "full"
+    },
+    {
+        "name": "grecian0",
+        "directions": 4
+    },
+    {
+        "name": "grecian1",
+        "directions": 4
+    },
+    {
+        "name": "grecian2",
+        "directions": 4
+    },
+    {
+        "name": "grecian3",
+        "directions": 4
+    },
+    {
+        "name": "grecian4",
+        "directions": 4
+    },
+    {
+        "name": "grecian5",
+        "directions": 4
+    },
+    {
+        "name": "grecian6",
+        "directions": 4
+    },
+    {
+        "name": "grecian7",
+        "directions": 4
+    }
+    ]
+}
