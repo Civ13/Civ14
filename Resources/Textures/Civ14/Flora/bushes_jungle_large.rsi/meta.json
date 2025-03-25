@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "bush1"
+    },
+    {
+      "name": "bush2"
+    },
+    {
+      "name": "bush3"
+    },
+    {
+      "name": "rocks1"
+    },
+    {
+      "name": "rocks2"
+    },
+    {
+      "name": "rocks3"
+    }
+  ]
+}

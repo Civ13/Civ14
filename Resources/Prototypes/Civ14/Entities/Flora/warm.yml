@@ -1,0 +1,285 @@
+- type: entity
+  parent: BaseTree
+  id: TreeAcacia
+  name: acacia tree
+  description: A large savanna tree.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bigtrees.rsi
+      state: african_acacia
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.1,-0.3,0.1,0.3"
+          density: 4000
+          layer:
+            - WallLayer
+
+- type: entity
+  parent: TreeAcacia
+  id: TreeAcaciaDead
+  name: dead acacia tree
+  description: A large savanna tree. This one is dead.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bigtrees_dead.rsi
+      state: african_acacia_dead
+
+- type: decal
+  id: BushJungle1
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "1"
+
+- type: decal
+  id: BushJungle2
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "2"
+
+- type: decal
+  id: BushJungle3
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "3"
+
+- type: decal
+  id: BushJungle4
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "4"
+- type: decal
+  id: BushJungle5
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "5"
+- type: decal
+  id: BushJungle6
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "6"
+- type: decal
+  id: BushJungle7
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "7"
+- type: decal
+  id: BushJungle8
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "8"
+- type: decal
+  id: BushJungle9
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "9"
+- type: decal
+  id: BushJungle10
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "10"
+- type: decal
+  id: BushJungle11
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "11"
+- type: decal
+  id: BushJungle12
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "12"
+- type: decal
+  id: BushJungle13
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "13"
+- type: decal
+  id: BushJungle14
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "14"
+- type: decal
+  id: BushJungle15
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "15"
+- type: decal
+  id: BushJungle16
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "16"
+- type: decal
+  id: BushJungle17
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "17"
+- type: decal
+  id: BushJungle18
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "18"
+- type: decal
+  id: BushJungle19
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "19"
+- type: decal
+  id: BushJungle20
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "20"
+- type: decal
+  id: BushJungle21
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "21"
+- type: decal
+  id: BushJungle22
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "22"
+- type: decal
+  id: BushJungle23
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "23"
+- type: decal
+  id: BushJungle24
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "24"
+- type: decal
+  id: BushJungle25
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "25"
+- type: decal
+  id: BushJungle26
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "26"
+- type: decal
+  id: BushJungle27
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "27"
+- type: decal
+  id: BushJungle28
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "28"
+- type: decal
+  id: BushJungle29
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "29"
+- type: decal
+  id: BushJungle30
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle.rsi
+    state: "30"
+
+- type: decal
+  id: BushJungleLarge1
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle_large.rsi
+    state: "bush1"
+- type: decal
+  id: BushJungleLarge2
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle_large.rsi
+    state: "bush2"
+- type: decal
+  id: BushJungleLarge3
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle_large.rsi
+    state: "bush3"
+
+- type: decal
+  id: RockJungleLarge1
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle_large.rsi
+    state: "rocks1"
+- type: decal
+  id: RocksJungleLarge2
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle_large.rsi
+    state: "rocks2"
+- type: decal
+  id: RocksJungleLarge3
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_jungle_large.rsi
+    state: "rocks3"

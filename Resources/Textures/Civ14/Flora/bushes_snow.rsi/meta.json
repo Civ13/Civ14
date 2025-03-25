@@ -1,0 +1,142 @@
+{
+    "version": 1,
+    "license": null,
+    "copyright": null,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "",
+            "delays": [
+                [
+                    0.120000005,
+                    0.120000005,
+                    0.120000005,
+                    0.120000005
+                ]
+            ]
+        },
+        {
+            "name": "snowgrass1"
+        },
+        {
+            "name": "snowgrass2"
+        },
+        {
+            "name": "snowgrass3"
+        },
+        {
+            "name": "snowgrass4"
+        },
+        {
+            "name": "snowgrass5"
+        },
+        {
+            "name": "snowgrass6"
+        },
+        {
+            "name": "snowgrass7"
+        },
+        {
+            "name": "snowgrass8"
+        },
+        {
+            "name": "snowgrass9"
+        },
+        {
+            "name": "snowgrass"
+        },
+        {
+            "name": "snowgrass_n"
+        },
+        {
+            "name": "snowgrass_ne"
+        },
+        {
+            "name": "snowgrass_nw"
+        },
+        {
+            "name": "snowgrass_nws"
+        },
+        {
+            "name": "snowgrass_e"
+        },
+        {
+            "name": "snowgrass_esw"
+        },
+        {
+            "name": "snowgrass_s"
+        },
+        {
+            "name": "snowgrass_se"
+        },
+        {
+            "name": "snowgrass_sw"
+        },
+        {
+            "name": "snowgrass_swe"
+        },
+        {
+            "name": "snowgrass_w"
+        },
+        {
+            "name": "snowbush1"
+        },
+        {
+            "name": "snowbush2"
+        },
+        {
+            "name": "snowbush3"
+        },
+        {
+            "name": "snowbush4"
+        },
+        {
+            "name": "snowbush5"
+        },
+        {
+            "name": "snowbush6"
+        },
+        {
+            "name": "winter1"
+        },
+        {
+            "name": "winter2"
+        },
+        {
+            "name": "winter3"
+        },
+        {
+            "name": "winter4"
+        },
+        {
+            "name": "winter5"
+        },
+        {
+            "name": "winter6"
+        },
+        {
+            "name": "winter7"
+        },
+        {
+            "name": "winter8"
+        },
+        {
+            "name": "winter9"
+        },
+        {
+            "name": "winter10"
+        },
+        {
+            "name": "winter11"
+        },
+        {
+            "name": "winter12"
+        },
+        {
+            "name": "winter13"
+        }
+    ]
+}

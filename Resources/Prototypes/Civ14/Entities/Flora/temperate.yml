@@ -1,0 +1,345 @@
+- type: entity
+  parent: BaseTree
+  id: TreeTemperate
+  name: temperate tree
+  description: Yep, it's a tree.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bigtrees.rsi
+      layers:
+        - state: tree_1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            tree_1: ""
+            tree_2: ""
+            tree_3: ""
+            tree_4: ""
+            tree_5: ""
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.1,-0.3,0.1,0.3"
+          density: 4000
+          layer:
+            - WallLayer
+
+- type: entity
+  parent: TreeTemperate
+  id: TreeTemperateDead
+  name: dead tree
+  description: Yep, it's a tree. But it's dead.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bigtrees_dead.rsi
+      layers:
+        - state: tree_1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            tree_1: ""
+            tree_2: ""
+            tree_3: ""
+            tree_4: ""
+            tree_5: ""
+
+- type: decal
+  id: BushTemperate1
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush1
+
+- type: decal
+  id: BushTemperate2
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush2
+
+- type: decal
+  id: BushTemperate3
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush3
+
+- type: decal
+  id: BushTemperate4
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush4
+- type: decal
+  id: BushTemperate5
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush5
+- type: decal
+  id: BushTemperate6
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush6
+- type: decal
+  id: BushTemperate7
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush7
+- type: decal
+  id: BushTemperate8
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush8
+- type: decal
+  id: BushTemperate9
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush9
+- type: decal
+  id: BushTemperate10
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush10
+- type: decal
+  id: BushTemperate11
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush11
+- type: decal
+  id: BushTemperate12
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush12
+- type: decal
+  id: BushTemperate13
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush13
+- type: decal
+  id: BushTemperate14
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush14
+- type: decal
+  id: BushTemperate15
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush15
+- type: decal
+  id: BushTemperate16
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush16
+- type: decal
+  id: BushTemperate17
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush17
+- type: decal
+  id: BushTemperate18
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush18
+- type: decal
+  id: BushTemperate19
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush19
+- type: decal
+  id: BushTemperate20
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush20
+- type: decal
+  id: BushTemperate21
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush21
+- type: decal
+  id: BushTemperate22
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush22
+- type: decal
+  id: BushTemperate23
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush23
+- type: decal
+  id: BushTemperate24
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush24
+- type: decal
+  id: BushTemperate25
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush25
+- type: decal
+  id: BushTemperate26
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush26
+- type: decal
+  id: BushTemperate27
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush27
+- type: decal
+  id: BushTemperate28
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush28
+- type: decal
+  id: BushTemperate29
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush29
+- type: decal
+  id: BushTemperate30
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush30
+- type: decal
+  id: BushTemperate31
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush31
+- type: decal
+  id: BushTemperate32
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush32
+- type: decal
+  id: BushTemperate33
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush33
+- type: decal
+  id: BushTemperate34
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush34
+- type: decal
+  id: BushTemperate35
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush35
+- type: decal
+  id: BushTemperate36
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush36
+- type: decal
+  id: BushTemperate37
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush37
+- type: decal
+  id: BushTemperate38
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush38
+- type: decal
+  id: BushTemperate39
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush39
+- type: decal
+  id: BushTemperate40
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush40
+- type: decal
+  id: BushTemperate41
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush41
+- type: decal
+  id: BushTemperate42
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: /Textures/Civ14/Flora/bushes_temperate.rsi
+    state: smallbush42

@@ -1499,6 +1499,17 @@
   weather: true
 
 - type: tile
+  id: FloorGrassDry
+  name: tiles-dry-grass-floor
+  sprite: /Textures/Civ14/Structures/Floors/nature.rsi/dry_grass.png
+  baseTurf: FloorGrassDark
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
   id: FloorDirt
   name: tiles-dirt-floor
   sprite: /Textures/Tiles/dirt.png

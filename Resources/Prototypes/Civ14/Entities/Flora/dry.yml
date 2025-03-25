@@ -1,0 +1,175 @@
+- type: entity
+  parent: BaseTree
+  id: TreeMed
+  name: mediterranean tree
+  description: A large pine tree adapted to dry climates.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bigtrees.rsi
+      state: med_pine
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.1,-0.3,0.1,0.3"
+          density: 4000
+          layer:
+            - WallLayer
+
+- type: entity
+  parent: TreeMed
+  id: TreeMedDead
+  name: dead mediterranean tree
+  description: A large pine tree adapted to dry climates. This one is dead.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bigtrees_dead.rsi
+      state: med_pine_dead
+
+- type: decal
+  id: TallGrass1
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: tall_grass_1
+- type: decal
+  id: TallGrass2
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: tall_grass_2
+- type: decal
+  id: TallGrass3
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: tall_grass_3
+- type: decal
+  id: TallGrass4
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: tall_grass_4
+- type: decal
+  id: TallGrass5
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: tall_grass_5
+- type: decal
+  id: TallGrass6
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: tall_grass_6
+- type: decal
+  id: TallGrass7
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: tall_grass_7
+- type: decal
+  id: TallGrass8
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: tall_grass_8
+- type: decal
+  id: TallGrass9
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: tall_grass_9
+
+- type: decal
+  id: BurnedBush1
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: burnedbush1
+
+- type: decal
+  id: BurnedBush2
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: burnedbush2
+- type: decal
+  id: BurnedBush3
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: burnedbush3
+- type: decal
+  id: BurnedBush4
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: burnedbush4
+- type: decal
+  id: BurnedBush5
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: burnedbush5
+- type: decal
+  id: BurnedBush6
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: burnedbush6
+- type: decal
+  id: BurnedBush7
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: burnedbush7
+- type: decal
+  id: BurnedBush8
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: burnedbush8
+
+- type: decal
+  id: BurnedLog
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_dry.rsi
+    state: burnedlog
