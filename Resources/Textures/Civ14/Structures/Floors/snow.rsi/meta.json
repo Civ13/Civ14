@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": ""
+    },
+    {
+      "name": "wild_overlay"
+    },
+    {
+      "name": "tree_overlay"
+    },
+    {
+      "name": "wild_overlay_wip"
+    },
+    {
+      "name": "dirt"
+    },
+    {
+      "name": "grassX"
+    },
+    {
+      "name": "grass1X"
+    },
+    {
+      "name": "grass2"
+    },
+    {
+      "name": "grass3X"
+    },
+    {
+      "name": "grass0"
+    },
+    {
+      "name": "grass1"
+    },
+    {
+      "name": "grass3"
+    },
+    {
+      "name": "grass4"
+    },
+    {
+      "name": "grass5"
+    },
+    {
+      "name": "grass6"
+    },
+    {
+      "name": "snow_edges",
+      "directions": 8
+    },
+    {
+      "name": "snowgrass"
+    },
+    {
+      "name": "snowgrass_edges",
+      "directions": 8
+    },
+    {
+      "name": "dirt_edges",
+      "directions": 8
+    },
+    {
+      "name": "dead_snowgrass"
+    }
+  ]
+}

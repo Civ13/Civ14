@@ -1,0 +1,17 @@
+- type: entity
+  parent: BaseTree
+  id: TreeCactus
+  name: cactus
+  description: A large cactus.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bigtrees.rsi
+      state: cactus
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.1,-0.3,0.1,0.3"
+          density: 4000
+          layer:
+            - WallLayer

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "tree_1"
+    },
+    {
+      "name": "tree_2"
+    },
+    {
+      "name": "tree_3"
+    },
+    {
+      "name": "tree_4"
+    },
+    {
+      "name": "tree_5"
+    },
+    {
+      "name": "african_acacia_dead"
+    },
+    {
+      "name": "med_pine_dead"
+    },
+    {
+      "name": "tree_stump"
+    }
+  ]
+}

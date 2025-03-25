@@ -1,0 +1,214 @@
+- type: entity
+  parent: BaseTree
+  id: TreePine
+  name: pinetree
+  description: Yep, it's a tree.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/pinetrees.rsi
+      layers:
+        - state: pine_1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            pine_1: ""
+            pine_2: ""
+            pine_3: ""
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.1,-0.3,0.1,0.3"
+          density: 4000
+          layer:
+            - WallLayer
+- type: entity
+  parent: TreePine
+  id: TreePineSnow
+  name: snowy pinetree
+  description: Yep, it's a tree.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/pinetrees_snow.rsi
+      layers:
+        - state: pine_1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            pine_1: ""
+            pine_2: ""
+            pine_3: ""
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.1,-0.3,0.1,0.3"
+          density: 4000
+          layer:
+            - WallLayer
+
+- type: entity
+  parent: TreeTemperate
+  id: TreeTemperateSnow
+  name: snowy tree
+  description: Yep, it's a tree.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bigtrees_winter.rsi
+      layers:
+        - state: tree_1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            tree_1: ""
+            tree_2: ""
+            tree_3: ""
+            tree_4: ""
+            tree_5: ""
+            tree_6: ""
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.1,-0.3,0.1,0.3"
+          density: 4000
+          layer:
+            - WallLayer
+
+- type: decal
+  id: BushSnow1
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_snow.rsi
+    state: snowbush1
+
+- type: decal
+  id: BushSnow2
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_snow.rsi
+    state: snowbush2
+
+- type: decal
+  id: BushSnow3
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_snow.rsi
+    state: snowbush3
+
+- type: decal
+  id: BushSnow4
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_snow.rsi
+    state: snowbush4
+
+- type: decal
+  id: BushSnow5
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_snow.rsi
+    state: snowbush5
+
+- type: decal
+  id: BushSnow6
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_snow.rsi
+    state: snowbush6
+
+- type: decal
+  id: BushGrassSnow1
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_snow.rsi
+    state: snowgrass1
+
+- type: decal
+  id: BushGrassSnow2
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_snow.rsi
+    state: snowgrass2
+
+- type: decal
+  id: BushGrassSnow3
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_snow.rsi
+    state: snowgrass3
+
+- type: decal
+  id: BushGrassSnow4
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_snow.rsi
+    state: snowgrass4
+
+- type: decal
+  id: BushGrassSnow5
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_snow.rsi
+    state: snowgrass5
+
+- type: decal
+  id: BushGrassSnow6
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_snow.rsi
+    state: snowgrass6
+
+- type: decal
+  id: BushGrassSnow7
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_snow.rsi
+    state: snowgrass7
+
+- type: decal
+  id: BushGrassSnow8
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_snow.rsi
+    state: snowgrass8
+
+- type: decal
+  id: BushGrassSnow9
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Civ14/Flora/bushes_snow.rsi
+    state: snowgrass9
