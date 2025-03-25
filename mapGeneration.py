@@ -33,7 +33,7 @@ def add_border(tile_map, border_value):
 def encode_tiles(tile_map):
     """Codifica os tiles em formato base64 para o YAML."""
     tile_bytes = bytearray()
-    for y in range(tile_map.shape[0]):
+    for y in range(tile_map.shape[0]): # u
         for x in range(tile_map.shape[1]):
             tile_id = tile_map[y, x]
             flags = 0
@@ -461,6 +461,39 @@ MAP_CONFIG = [
     { # Rabbits
         "type": "BiomeEntityLayer",
         "entity_protos": "SpawnMobRabbit",
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.9987,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "priority": 11
+    },
+    { # Chicken
+        "type": "BiomeEntityLayer",
+        "entity_protos": "SpawnMobChicken",
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.9987,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "priority": 11
+    },
+    { # Deers
+        "type": "BiomeEntityLayer",
+        "entity_protos": "SpawnMobDeer",
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.9987,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "priority": 11
+    },
+    { # Pigs
+        "type": "BiomeEntityLayer",
+        "entity_protos": "SpawnMobPig",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.1,
