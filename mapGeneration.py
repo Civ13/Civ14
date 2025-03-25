@@ -417,9 +417,9 @@ MAP_CONFIG = [
         "entity_protos": "SpawnMobGreyWolf",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
-        "frequency": 0.08,
+        "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.995,
+        "threshold": 0.9965,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "priority": 11
     },
