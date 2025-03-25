@@ -48,6 +48,17 @@
   heatCapacity: 10000
   weather: true
   indestructible: true
+# Desert
+- type: tile
+  id: FloorSand
+  name: tiles-sand-floor
+  sprite: /Textures/Tiles/Planet/Desert/sand.png
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
 
 - type: tile
   id: FloorLowDesert
