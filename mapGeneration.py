@@ -93,10 +93,11 @@ def next_uid():
 def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
     """Gera entidades dinâmicas com base nas camadas de entidades, respeitando prioridades."""
     groups = {}
+    entity_count = {}  # Count entities by proto
     h, w = tile_map.shape
     occupied_positions = set()  # Set to trace occupied positions
 
-    # # Order layers by priority. Highest first
+    # Order layers by priority. Highest first
     sorted_layers = sorted(biome_entity_layers, key=lambda layer: layer.get("priority", 0), reverse=True)
 
     for layer in sorted_layers:
@@ -145,8 +146,10 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
                         ]
                     })
                     occupied_positions.add((x, y))
+                    # Counts entities by proto
+                    entity_count[proto] = entity_count.get(proto, 0) + 1
 
-    # Adicionar paredes indestrutíveis nas bordas
+    # Surrounding undestructible walls
     groups["WallPlastitaniumIndestructible"] = []
     for y in range(h):
         for x in range(w):
@@ -157,7 +160,15 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
                         {"type": "Transform", "parent": 2, "pos": f"{x},{y}"}
                     ]
                 })
+                # Count undestructible walls
+                entity_count["WallPlastitaniumIndestructible"] = entity_count.get("WallPlastitaniumIndestructible", 0) + 1
+
     dynamic_groups = [{"proto": proto, "entities": ents} for proto, ents in groups.items()]
+
+    # Print generated protos
+    for proto, count in entity_count.items():
+        print(f"Generated {count} amount of {proto}")
+
     return dynamic_groups
 
 # Definir uniqueMixes para atmosfera
