@@ -82,7 +82,7 @@
               acts: ["Destruction"]
             - !type:SpawnEntitiesBehavior
               spawn:
-                MarterialWoodPlank1:
+                MaterialWoodPlank1:
                   min: 4
                   max: 5
     - type: TreeBranches
