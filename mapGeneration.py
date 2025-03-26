@@ -199,18 +199,18 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
                     entity_count[proto] = entity_count.get(proto, 0) + 1
 
     # Surrounding undestructible walls
-    groups["WallPlastitaniumIndestructible"] = []
+    groups["WallRockIndestructible"] = []
     for y in range(h):
         for x in range(w):
             if x == 0 or x == w - 1 or y == 0 or y == h - 1:
-                groups["WallPlastitaniumIndestructible"].append({
+                groups["WallRockIndestructible"].append({
                     "uid": next_uid(),
                     "components": [
                         {"type": "Transform", "parent": 2, "pos": f"{x},{y}"}
                     ]
                 })
                 # Count undestructible walls
-                entity_count["WallPlastitaniumIndestructible"] = entity_count.get("WallPlastitaniumIndestructible", 0) + 1
+                entity_count["WallRockIndestructible"] = entity_count.get("WallRockIndestructible", 0) + 1
 
     dynamic_groups = [{"proto": proto, "entities": ents} for proto, ents in groups.items()]
 
