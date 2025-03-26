@@ -1,0 +1,168 @@
+- type: construction
+  name: primitive pelt coat
+  id: suit-prehistoricfurcoat
+  graph: suit-prehistoricfurcoat
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  description: >-
+    A makeshift pelt coat made from fur skins, worn to protect early man from
+    the elements.
+  icon:
+    sprite: Civ14/Clothing/exported/prehistoric_fur4.rsi
+    state: icon
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: suit-prehistoricfurcoat
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 8
+              doAfter: 15
+    - node: end
+      entity: suit-prehistoricfurcoat
+- type: construction
+  name: brown primitive pelt coat
+  id: suit-prehistoricfurcoat-brown
+  graph: suit-prehistoricfurcoat-brown
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  description: >-
+    A makeshift brown pelt coat made from fur skins, worn to protect early man
+    from the elements.
+  icon:
+    sprite: Civ14/Clothing/exported/prehistoric_fur1.rsi
+    state: icon
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: suit-prehistoricfurcoat-brown
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 8
+              doAfter: 15
+    - node: end
+      entity: suit-prehistoricfurcoat-brown
+- type: construction
+  name: black primitive pelt coat
+  id: suit-prehistoricfurcoat-black
+  graph: suit-prehistoricfurcoat-black
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  description: >-
+    A makeshift black pelt coat made from fur skins, worn to protect early man
+    from the elements.
+  icon:
+    sprite: Civ14/Clothing/exported/prehistoric_fur2.rsi
+    state: icon
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: suit-prehistoricfurcoat-black
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 8
+              doAfter: 15
+    - node: end
+      entity: suit-prehistoricfurcoat-black
+- type: construction
+  name: white primitive pelt coat
+  id: suit-prehistoricfurcoat-white
+  graph: suit-prehistoricfurcoat-white
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  description: >-
+    A makeshift white pelt coat made from fur skins, worn to protect early man
+    from the elements.
+  icon:
+    sprite: Civ14/Clothing/exported/prehistoric_fur3.rsi
+    state: icon
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: suit-prehistoricfurcoat-white
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 8
+              doAfter: 15
+    - node: end
+      entity: suit-prehistoricfurcoat-white
+- type: construction
+  name: grey primitive pelt coat
+  id: suit-prehistoricfurcoat-grey
+  graph: suit-prehistoricfurcoat-grey
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  description: >-
+    A makeshift grey pelt coat made from fur skins, worn to protect early man
+    from the elements.
+  icon:
+    sprite: Civ14/Clothing/exported/prehistoric_fur4.rsi
+    state: icon
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: suit-prehistoricfurcoat-grey
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 8
+              doAfter: 15
+    - node: end
+      entity: suit-prehistoricfurcoat-grey
+- type: construction
+  name: primitive wood armor
+  id: suit-woodarmor
+  graph: suit-woodarmor
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  description: >-
+    A wooden set of armor made of small planks held together by plant fiber
+    ropes.
+  icon:
+    sprite: Civ14/Clothing/exported/wooden_chestarmor.rsi
+    state: icon
+  objectType: Structure
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: suit-woodarmor
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 8
+              doAfter: 12
+    - node: end
+      entity: suit-woodarmor

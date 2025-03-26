@@ -4299,7 +4299,6 @@
           Arrow: 0.05
           Heat: 0
           Radiation: 0.05
-
 - type: entity
   parent: ClothingOuterBase
   id: suit-prehistoricfurcoat
@@ -4319,6 +4318,12 @@
           Arrow: 0.15
           Heat: 0.15
           Radiation: 0.25
+    - type: Construction
+      graph: suit-prehistoricfurcoat
+      node: end
+      cost: 8
+      material: Leather
+      time: 15
 
 - type: entity
   parent: ClothingOuterBase
@@ -4339,6 +4344,12 @@
           Arrow: 0.15
           Heat: 0.15
           Radiation: 0.25
+    - type: Construction
+      graph: suit-prehistoricfurcoat-brown
+      node: end
+      cost: 8
+      material: Leather
+      time: 15
 
 - type: entity
   parent: ClothingOuterBase
@@ -4359,6 +4370,12 @@
           Arrow: 0.15
           Heat: 0.15
           Radiation: 0.25
+    - type: Construction
+      graph: suit-prehistoricfurcoat-black
+      node: end
+      cost: 8
+      material: Leather
+      time: 15
 
 - type: entity
   parent: ClothingOuterBase
@@ -4379,6 +4396,12 @@
           Arrow: 0.15
           Heat: 0.15
           Radiation: 0.25
+    - type: Construction
+      graph: suit-prehistoricfurcoat-white
+      node: end
+      cost: 8
+      material: Leather
+      time: 15
 
 - type: entity
   parent: ClothingOuterBase
@@ -4399,6 +4422,12 @@
           Arrow: 0.15
           Heat: 0.15
           Radiation: 0.25
+    - type: Construction
+      graph: suit-prehistoricfurcoat-grey
+      node: end
+      cost: 8
+      material: Leather
+      time: 15
 
 - type: entity
   parent: ClothingOuterBase
@@ -4419,6 +4448,12 @@
           Arrow: 0.18
           Heat: 0.1
           Radiation: 0.15
+    - type: Construction
+      graph: suit-woodarmor
+      node: end
+      cost: 8
+      material: WoodPlank
+      time: 12
 
 - type: entity
   parent: ClothingOuterBase
