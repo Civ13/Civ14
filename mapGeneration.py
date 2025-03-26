@@ -598,9 +598,119 @@ MAP_CONFIG = [
         "priority": 11
     },
     # DECALS
-    {
+    { # Bush Temperate group 1
         "type": "BiomeDecalLayer",
         "decal_id": ["BushTemperate1", "BushTemperate2", "BushTemperate3", "BushTemperate4"],
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.96,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "color": "#FFFFFFFF"
+    },
+    { # Bush Temperate group 2
+        "type": "BiomeDecalLayer",
+        "decal_id": ["BushTemperate5", "BushTemperate6", "BushTemperate7", "BushTemperate8"],
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.96,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "color": "#FFFFFFFF"
+    },
+    { # Bush Temperate group 3
+        "type": "BiomeDecalLayer",
+        "decal_id": ["BushTemperate9", "BushTemperate10", "BushTemperate11"],
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.96,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "color": "#FFFFFFFF"
+    },
+    { # Bush Temperate group 4
+        "type": "BiomeDecalLayer",
+        "decal_id": ["BushTemperate12", "BushTemperate13", "BushTemperate14", "BushTemperate15"],
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.96,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "color": "#FFFFFFFF"
+    },
+    { # Bush Temperate group 5
+        "type": "BiomeDecalLayer",
+        "decal_id": ["BushTemperate16", "BushTemperate17", "BushTemperate18"],
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.96,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "color": "#FFFFFFFF"
+    },
+    { # Bush Temperate group 6
+        "type": "BiomeDecalLayer",
+        "decal_id": ["BushTemperate19", "BushTemperate20", "BushTemperate21", "BushTemperate22"],
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.96,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "color": "#FFFFFFFF"
+    },
+    { # Bush Temperate group 7
+        "type": "BiomeDecalLayer",
+        "decal_id": ["BushTemperate23", "BushTemperate24", "BushTemperate25"],
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.96,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "color": "#FFFFFFFF"
+    },
+    { # Bush Temperate group 8
+        "type": "BiomeDecalLayer",
+        "decal_id": ["BushTemperate26", "BushTemperate27", "BushTemperate28"],
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.96,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "color": "#FFFFFFFF"
+    },
+    { # Bush Temperate group 9
+        "type": "BiomeDecalLayer",
+        "decal_id": ["BushTemperate29", "BushTemperate30", "BushTemperate31", "BushTemperate32"],
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.96,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "color": "#FFFFFFFF"
+    },
+    { # Bush Temperate group 10
+        "type": "BiomeDecalLayer",
+        "decal_id": ["BushTemperate33", "BushTemperate34", "BushTemperate35", "BushTemperate36"],
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.96,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "color": "#FFFFFFFF"
+    },
+    { # Bush Temperate group 11 - High grass
+        "type": "BiomeDecalLayer",
+        "decal_id": ["BushTemperate37", "BushTemperate38", "BushTemperate39", "BushTemperate40", "BushTemperate41", "BushTemperate42"],
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.1,
