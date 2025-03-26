@@ -147,9 +147,6 @@
   name: guide-entry-rules-r11
   ruleEntry: true
   text: "/ServerInfo/Guidebook/ServerRules/RuleR11Escalation.xml"
-  children:
-    - RuleR11-1
-    - RuleR11-2
 
 - type: guideEntry
   id: RuleR12
