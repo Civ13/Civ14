@@ -4,19 +4,19 @@
 
 These rules apply at all times, including between rounds.
 
-### 1. Admins have final say
+## 1. Admins Have Final Say
 
 These rules are not perfect. The rules attempt to clearly communicate what the admin team intends to be allowed and prohibited, but there are likely loopholes or other flaws that can be "lawyered". Don't attempt to manipulate the interpretation of the rules to suit your personal goals or to degrade the experience of other players. If you are unsure of something, follow the more restrictive option until you are able to ask an admin and get clarification.
 
 Admins can override rules if they deem it in the best interest of the current round, server, and/or community at large. Online admins are able to make final interpretations of rules during a round. Even if you disagree with how an admin interprets a rule, you must still follow the interpretation they provide for you. Admin actions and interpretations of rules can be contested through staff complaints. If admins believe that you are an overall negative impact to the community or rounds, you will be banned. Admins will be held fully accountable for their actions if they exercise this privilege.
 
-### 2. Don't be a dick
+## 2. Don't Be a Dick
 
 -   Don't do anything with the goal of negatively affecting other players. Not everyone is going to enjoy every round. Killing someone is allowed in certain situations even though it might negatively affect them, but no one should be doing anything for the purpose of harming someone else's experience.
 
 -   Do not interact negatively with SSD/AFK players. Interactions to complete antagonist objectives or duties like security searches/arrests are always permitted.
 
-### 3. No sexual content/themes, including erotic roleplay (ERP) and no shock content
+## 3. No Sexual Content / ERP
 
 Erotic Roleplay (commonly abbreviated as "ERP") and sexual content is not allowed. This includes direct and indirect mentions of sexual behavior or actions. Slight leeway is given to insults, but this rule is otherwise strictly enforced.
 
@@ -38,7 +38,7 @@ Prohibited:
 -   Dedicating significant portions of rounds to romantic relationships, dating, or similar things.
 -   Emoting defecation or related acts.
 
-### 4. Do not use out of game methods to communicate with other players
+## 4. No Metacommunication
 
 Do not utilize any external means of communication to talk to other players who are connected to the same server, or who were connected to the same server during the current round. This is referred to as "metacomming" and includes any means of communication including text, voice, images, and video. This includes applications such as Discord, Steam, and other platforms, along with in-person communication.
 
@@ -46,7 +46,7 @@ Even if information is not being shared or abused, it may still be considered a 
 
 The only exemption to this rule is when **all** players are in the server lobby.
 
-### 5. Do not attempt to evade bans
+## 5. No Ban Evasion
 
 Almost all bans may be appealed on our forums at forum.ss14.io in the ban appeals section. This is generally the only acceptable way to contact the administration team to discuss your ban and revise it if it is inappropriate, including if it is mistakenly applied.
 
@@ -54,11 +54,11 @@ Any attempt to circumvent or bypass a game ban will result in a voucher ban. Att
 
 There are no exemptions for evading or attempting to evade game bans. Antagonists who impersonate or take over a role which they are banned from to aid in their goals are not considered to be evading their role ban.
 
-### 6. Use mostly English
+## 6. Use Mostly English
 
 You must be fluent in English enough to be able to not cause game issues, and to be able to communicate with game admins when necessary. You can use other languages in OOC and ingame IF the people you are talking to speak the language. If a game admin does not feel that you are fluent enough in English, they may kick you.
 
-### 7. Do not exploit the game, use cheats, or macros
+## 7. No Exploits / Cheats
 
 The following are prohibited by this rule:
 
@@ -71,23 +71,23 @@ The following are prohibited by this rule:
 
 Both attempts and successful use are prohibited.
 
-### 8. Do not use multiple accounts, or alt accounts, and do not share accounts
+## 8. No Multiaccounting
 
 Use of multiple accounts is referred to as "multikey". the rule applies even if the accounts are not used at the same time, including if the old account is abandoned. All accounts may be banned if this rule is violated. You are responsible for everything done on and with your account. You are just as responsible for actions taken by other people using your account as you would be had you taken the actions themselves.
 
-### 9. Do not abuse or ignore admin messages
+## 9. No AHELP Abuse
 
 Admin help, or "ahelp", is the system used by admins to communicate with specific players in the game. Only use admin help for things requiring admin attention. If you ignore messages admins send to you via ahelp, or disconnect during an ahelp, you may be banned. If you urgently need to leave during an ahelp, you may do so but will likely need to continue the ahelp on the forums. Do not admin check, be hostile/aggressive, request events, or spam. IC methods of contacting admins, like prayers, faxes, red phones, and banana phones, should be used when there is not an issue.
 
 Admins are not always online, but all ahelps are automatically relayed to discord. For various reasons, admins might not respond to an ahelp even if they've handled it. A lack of response does not necessarily mean that an ahelp was ignored.
 
-#### Should I ahelp X?
+### Should I ahelp X?
 
 You can ahelp anytime you genuinely think a player is breaking a rule. Not all ahelps end up being for something that an admin needs to intervene in, but that's ok, admins would rather have people occasionally report things that turn out to not be an issue than miss reports for actual issues because someone was unsure, or get those reports late because someone waited until the end of the round to be more sure.
 
 The most common reason players give for not ahelping issues is that they don't want to waste admin time, but it only takes a few seconds for an admin to check if someone is an antagonist. If you are ahelping too many things, an admin will let you know. If you're not being told to stop reporting something or to report less things, then you can safely assume that you aren't causing any issues.
 
-#### What should I include in an ahelp?
+### What should I include in an ahelp?
 
 At a minimum, admins need to know what the issue is to be able to address an ahelp. Don't send ahelp messages with no information about what your question or the issue is. Messages like "hello" are often considered admin checking.
 
@@ -107,17 +107,17 @@ Inappropriate uses of ahelp:
 -   requesting events, and
 -   spamming messages about the same issue.
 
-### 10. Do not threaten to ahelp other players or argue with them about rules
+## 10. No AHELP threats
 
 This rule covers out-of-character (OOC) and in-character (IC) actions. Don't threaten to ahelp a player, don't tell them you are ahelping them, and don't tell them you did ahelp them. You can argue in character about Space Law, but do not argue about whether something is or is not against the rules. If you think someone is breaking a rule, ahelp them. If you don't think someone is breaking a rule, don't ahelp them. Either way, the best thing that you can do after is to continue in-character.
 
-### 11. Players must be and act at least 16 years old
+## 11. Minimum Age 16
 
 All players must be at least 16 years old. Additionally, all players must act at least as mature as a 16 year old. Admins may ban someone who they believe is acting less mature than a 16 year old, even if the player is known to be significantly older than 16 years old.
 
 Anyone who connects to the servers is a player, even if they don't actually play in a round.
 
-### 12. Use realistic character names
+## 12. Use Realistic-ish Characters
 
 -   No names of people or characters from the real world, you can do variations though.
 -   Must follow all other rules (no slurs/sexual names/etc)
@@ -147,7 +147,7 @@ Humans typically use the Firstname Lastname convention.
 -   Bad: Middle-Aged Man
 -   Bad: Operative Whiskey
 
-### 13. Do not use LOOC or OOC to share current round information
+## 13. No IC in OOC
 
 Local Out of Character (LOOC) and Out of Character (OOC) channel are meant for things that don't relate to the current round. Using these channels to share round info is often referred to as "IC in OOC" or "ick ock".
 
@@ -155,9 +155,9 @@ Local Out of Character (LOOC) and Out of Character (OOC) channel are meant for t
 
 These rules only apply during a round. A round ends only when the round summary has appeared. All of these rules apply fully until the moment that the round summary appears, even while the arrivals shuttle is in transit.
 
-"Chad Mode" games are exempt from these rules. Roleplay rules do not apply to ghosts/spectators/observers while they are ghosts/spectators/observers. Dead chat is considered to be an in-game out of character chat channel.
+**Note:** "Chad Mode" games are exempt from these rules. Roleplay rules do not apply to ghosts/spectators/observers while they are ghosts/spectators/observers. Dead chat is considered to be an in-game out of character chat channel.
 
-### 1. Roleplay a normal person
+## 1. Roleplay a Nrmal Person
 
 -   Do not use texting/messaging acronyms (ex: "lol", "wtf", "brb", "lmao", "thx", "sgtm") or emoticons (ex: ":)", "xD") in-character.
 -   Do not mention out-of-character (OOC) concepts like game admins or developers in character.
@@ -178,35 +178,31 @@ Things you could do instead:
 -   Point at cheese
 -   Point at the cargo order console then emote "shoots finger guns"
 
-### 2. Do not metagame, obey the Metashield
+## 2. No Metagaming
 
 Something that is "shielded" cannot be known by your character during a round until the "revealing condition" happens. This also means that your character cannot do things based on "shielded" information. Knowing or acting on something that is shielded before the revealing condition is met is referred to as metagaming.
 
 Revealing conditions reveal the shielded information for the round, not for a specific instance. This means that once a revealing condition is met in a round, the shield no longer applies in any case for the remainder of the round.
 
-### 3. Do not stall the round
+## 3. No Round Stalling
+
+**This applies only on gamemodes with specific roles. Does not apply on Nomads gamemodes.**
 
 Rounds are intended to end eventually. Don't hold a round hostage by preventing it from coming to a natural end. If a majority of players in a round want the round to end, don't prevent it from ending. Recalling the shuttle or preventing it from being called can contribute to round stalling, but is not always round stalling. Leaving the station with the nuclear authentication disk while nuclear operatives are trying to get it is almost always considered round stalling. Leaving the station on the evacuation shuttle is not round stalling.
 
-### 4. As a member of a team, only be friendly to your team and don't work against your team
+## 4. Respect Teams and Teamwork
 
 Do not take or enable antagonist roles that you do not want to play. Solo antagonists and team antagonists are intended to cause issues for non-antagonists or the station. Antagonists are not required to exclusively cause issues, but their net impact on non-antagonists or the station should generally be negative.
 
 Do not cause issues for your own team as a team antagonist.
 
-### 5. As a member of a team, do not cause excessive death, damage, or destruction beyond your objectives
-
-This rule is not intended to disallow reasonable steps taken to complete your objectives. As an antagonist, you can always kill in bona fide self defense. Taking steps to permanently round remove many people who are no longer an immediate threat to you is almost always excessive, even if it is done to prevent yourself from being discovered.
-
-This rule is not intended to disallow all antagonist activity unrelated to objectives. Antagonists may cause a level of disruption to the station that is proportional to their objectives, even if it is unrelated to their objectives. As an antagonist, killing a single person in a round is not on its own be a violation of this rule.
-
-### 6. Listen to your team leader
+## 5. Listen to your team leader
 
 Captains lead all departments and other members of command. Department heads lead members of their department. Certain antagonist teams have team leaders, like nuclear operative commanders or head revolutionaries. You are not required to perfectly follow orders given to you by your leaders, but you should generally allow your leaders to lead and not interfere with their ability to. You can choose to ignore unreasonable orders, including ones which are will result in your death unless you are an antagonist with an objective that requires you to die.
 
 Team antagonists have to listen to the leader of their antagonist team. Team antagonists do not have to listen to any other leaders, including leaders of other antagonist teams. Solo antagonists do not have to listen to any leaders at all.
 
-### 7. Follow reasonable escalation
+## 6. Follow Reasonable Escalation
 
 Antagonists are fully exempt from escalation rules. Non-antagonists who are in a conflict with antagonists are not exempt. Escalation should typically follow steps or a pattern of conflict types similar to:
 
@@ -224,7 +220,7 @@ Escalation does not have to be directed at a specific player to enter them into 
 
 You will be considered to be violating this rule if you escalate a conflict based on a poor or unreasonable assumption.
 
-### 8. Do not abandon your role
+## 7. No Role Abandoning
 
 **This applies only on gamemodes with specific roles. Does not apply on Nomads gamemodes.**
 
@@ -234,7 +230,7 @@ Violations of this rule typically result in temporary or indefinite role bans. W
 
 "Antag rolling" refers to a player abandoning their role if they do not get an antagonist role.
 
-### 9. Stick to your role
+## 8. Stick to Your Role
 
 **This applies only on gamemodes with specific roles. Does not apply on Nomads gamemodes.**
 Requesting job changes is not prohibited by this rule. This rule is loosened if the station is understaffed or if there is a significant threat to you.
