@@ -3632,9 +3632,6 @@
             });
             $li.append($a_use_default);
             $chooser.eq(1).append($li);
-
-            $chooser.eq(1).append('<li class="divider" />');
-            $chooser.eq(1).append('<li><a href="http://www.bootswatch.com">Powered by Bootswatch</a></li>');
             $this.replaceWith($chooser);
         });
     };
