@@ -16,6 +16,23 @@
   weather: true
 
 - type: tile
+  id: FloorDirtRock
+  name: tiles-dirt-floor
+  sprite: /Textures/Tiles/dirt.png
+  variants: 4
+  placementVariants:
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
   id: FloorDirtDigged_2
   name: tiles-dirt-floor
   sprite: /Textures/Tiles/dirt.png
