@@ -273,12 +273,12 @@ unique_mixes = [
     {
         "volume": 2500,
         "immutable": True,
-        "temperature": 293.15,
+        "temperature": 278.15,
         "moles": [21.82478, 82.10312, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         "volume": 2500,
-        "temperature": 293.15,
+        "temperature": 278.15,
         "moles": [21.824879, 82.10312, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     }
 ]
