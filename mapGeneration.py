@@ -180,6 +180,7 @@ def generate_decals(tile_map, biome_decal_layers, seed_base=None, chunk_size=16)
     """Generate decals using biome_decal_layers and log the count of each decal type."""
     decals_by_id = {}
     h, w = tile_map.shape
+    occupied_tiles = set()
     decal_count = {}
 
     for layer in biome_decal_layers:
@@ -199,6 +200,8 @@ def generate_decals(tile_map, biome_decal_layers, seed_base=None, chunk_size=16)
             for x in range(w):
                 if x == 0 or x == w - 1 or y == 0 or y == h - 1:
                     continue
+                if (x, y) in occupied_tiles:
+                    continue
                 tile_val = tile_map[y, x]
                 noise_value = noise.get_noise(x, y)
                 noise_value = (noise_value + 1) / 2
@@ -216,6 +219,7 @@ def generate_decals(tile_map, biome_decal_layers, seed_base=None, chunk_size=16)
                         "color": layer.get("color", "#FFFFFFFF"),
                         "position": pos_str
                     })
+                    occupied_tiles.add((x, y))
                     decal_count[chosen_decal_id] = decal_count.get(chosen_decal_id, 0) + 1
 
     for decal_id, count in decal_count.items():
