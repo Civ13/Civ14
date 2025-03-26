@@ -34,6 +34,12 @@
   maxCount: 20
 
 - type: stack
+  id: Rope
+  name: rope
+  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: rope }
+  spawn: MaterialRope1
+  maxCount: 50
+- type: stack
   id: Dirt
   name: dirt
   icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: dirt_pile }

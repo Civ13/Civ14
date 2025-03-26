@@ -9,7 +9,7 @@
       sprite: Civ14/Objects/farming.rsi
       state: seeds
     - type: Item
-      size: Normal
+      size: Small
 
 - type: entity
   parent: SeedBaseCiv
@@ -50,3 +50,13 @@
       seedId: potato
     - type: Sprite
       state: potato
+
+- type: entity
+  parent: SeedBaseCiv
+  id: HempSeedsCiv
+  name: "hemp seeds"
+  components:
+    - type: Seed
+      seedId: hemp
+    - type: Sprite
+      color: "#B87333"
