@@ -176,6 +176,51 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
 
     return dynamic_groups
 
+def generate_decals(tile_map, biome_decal_layers, seed_base=None, chunk_size=16):
+    """Generate decals using biome_decal_layers and log the count of each decal type."""
+    decals_by_id = {}
+    h, w = tile_map.shape
+    decal_count = {}
+
+    for layer in biome_decal_layers:
+        noise = FastNoiseLite()
+        noise.noise_type = layer["noise_type"]
+        noise.fractal_octaves = layer["octaves"]
+        noise.frequency = layer["frequency"]
+        noise.fractal_type = layer["fractal_type"]
+
+        if seed_base is not None:
+            seed_key = layer.get("seed_key", layer["decal_id"])
+            noise.seed = (seed_base + hash(seed_key)) % (2**31)
+
+        for y in range(h):
+            for x in range(w):
+                if x == 0 or x == w - 1 or y == 0 or y == h - 1:
+                    continue
+                tile_val = tile_map[y, x]
+                noise_value = noise.get_noise(x, y)
+                noise_value = (noise_value + 1) / 2
+                if noise_value > layer["threshold"] and layer["tile_condition"](tile_val):
+                    decal_id = layer["decal_id"]
+                    if decal_id not in decals_by_id:
+                        decals_by_id[decal_id] = []
+                    # Randoms a small offset for decals
+                    offset_x = (noise.get_noise(x + 1000, y + 1000) + 1) / 4 - 0.25  # Between -0.25 and 0.25
+                    offset_y = (noise.get_noise(x + 2000, y + 2000) + 1) / 4 - 0.25  # Between -0.25 and 0.25
+                    pos_x = x + offset_x
+                    pos_y = y + offset_y
+                    pos_str = f"{pos_x:.7f},{pos_y:.7f}"
+                    decals_by_id[decal_id].append({
+                        "color": layer.get("color", "#FFFFFFFF"),
+                        "position": pos_str
+                    })
+                    decal_count[decal_id] = decal_count.get(decal_id, 0) + 1
+
+    for decal_id, count in decal_count.items():
+        print(f"Generated {count} decal(s) - {decal_id}")
+
+    return decals_by_id
+
 # Definir uniqueMixes para atmosfera
 unique_mixes = [
     {
@@ -204,8 +249,11 @@ def generate_atmosphere_tiles(width, height, chunk_size):
                 tiles[f"{x},{y}"] = {1: 65535}
     return tiles
 
-def generate_main_entities(tile_map, chunk_size=16):
-    """Gera as entidades principais, incluindo os chunks do mapa e a atmosfera."""
+def generate_main_entities(tile_map, chunk_size=16, decals_by_chunk=None):
+    """Generates entities, decals and atmos."""
+    if decals_by_chunk is None:
+        decals_by_chunk = {}
+
     h, w = tile_map.shape
     chunks = {}
     for cy in range(0, h, chunk_size):
@@ -224,7 +272,22 @@ def generate_main_entities(tile_map, chunk_size=16):
     
     atmosphere_chunk_size = 4
     atmosphere_tiles = generate_atmosphere_tiles(w, h, atmosphere_chunk_size)
+
+    # Decals generation
+    decal_nodes = []
+    for chunk_key, decals in decals_by_chunk.items():
+        if decals:
+            node = {
+                "node": {
+                    "color": decals[0]["color"],
+                    "id": chunk_key
+                },
+                "decals": {str(i): decal["position"] for i, decal in enumerate(decals)}
+            }
+            decal_nodes.append(node)
     
+    print(f"Total decal nodes generated: {len(decal_nodes)}")
+
     main = {
         "proto": "",
         "entities": [
@@ -270,7 +333,7 @@ def generate_main_entities(tile_map, chunk_size=16):
                      "enabled": True
                     },
                     {"type": "BecomesStation", "id": "Nomads"},
-                    {"type": "DecalGrid", "chunkCollection": {"version": 2, "nodes": []}},
+                    {"type": "DecalGrid", "chunkCollection": {"version": 2, "nodes": decal_nodes}},
                     {
                         "type": "GridAtmosphere",
                         "version": 2,
@@ -288,11 +351,19 @@ def generate_main_entities(tile_map, chunk_size=16):
     }
     return main
 
-def generate_all_entities(tile_map, chunk_size=16, biome_entity_layers=None, seed_base=None):
-    """Combina entidades principais e dinâmicas."""
+def generate_all_entities(tile_map, chunk_size=16, biome_layers=None, seed_base=None):
+    """Combines tiles, entities and decals."""
     entities = []
+    if biome_layers is None:
+        biome_layers = []
+    biome_tile_layers = [layer for layer in biome_layers if layer["type"] == "BiomeTileLayer"]
+    biome_entity_layers = [layer for layer in biome_layers if layer["type"] == "BiomeEntityLayer"]
+    biome_decal_layers = [layer for layer in biome_layers if layer["type"] == "BiomeDecalLayer"]
+
     dynamic_groups = generate_dynamic_entities(tile_map, biome_entity_layers, seed_base)
-    entities.append(generate_main_entities(tile_map, chunk_size))
+    decals_by_chunk = generate_decals(tile_map, biome_decal_layers, seed_base, chunk_size)
+    main_entities = generate_main_entities(tile_map, chunk_size, decals_by_chunk)
+    entities.append(main_entities)
     entities.extend(dynamic_groups)
     spawn_points = generate_spawn_points(tile_map)
     entities.append(spawn_points)
@@ -310,9 +381,9 @@ def represent_sound_path_specifier(dumper, data):
                 return dumper.represent_mapping(tag, value)
     return dumper.represent_dict(data)
 
-def save_map_to_yaml(tile_map, biome_entity_layers, output_dir, filename="output.yml", chunk_size=16, seed_base=None):
+def save_map_to_yaml(tile_map, biome_layers, output_dir, filename="output.yml", chunk_size=16, seed_base=None):
     """Salva o mapa gerado em um arquivo YAML no diretório especificado."""
-    all_entities = generate_all_entities(tile_map, chunk_size, biome_entity_layers, seed_base)
+    all_entities = generate_all_entities(tile_map, chunk_size, biome_layers, seed_base)
     count = sum(len(group.get("entities", [])) for group in all_entities)
     map_data = {
         "meta": {
@@ -335,7 +406,6 @@ def save_map_to_yaml(tile_map, biome_entity_layers, output_dir, filename="output
     output_path = os.path.join(output_dir, filename)
     with open(output_path, 'w') as outfile:
         yaml.dump(map_data, outfile, default_flow_style=False, sort_keys=False)
-
 # -----------------------------------------------------------------------------
 # Geração de Spawn Points
 # -----------------------------------------------------------------------------
@@ -519,6 +589,18 @@ MAP_CONFIG = [
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "priority": 11
     },
+    # DECALS
+    {
+        "type": "BiomeDecalLayer",
+        "decal_id": "BushTemperate1",
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.9957,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
+        "color": "#FFFFFFFF"
+    }
 ]
 
 # -----------------------------------------------------------------------------
@@ -542,7 +624,7 @@ os.makedirs(output_dir, exist_ok=True)
 tile_map = generate_tile_map(width, height, biome_tile_layers, seed_base)
 bordered_tile_map = add_border(tile_map, border_value=TILEMAP_REVERSE["FloorDirt"])
 
-save_map_to_yaml(bordered_tile_map, biome_entity_layers, output_dir, filename="nomads_classic.yml", chunk_size=chunk_size, seed_base=seed_base)
+save_map_to_yaml(bordered_tile_map, MAP_CONFIG, output_dir, filename="nomads_classic.yml", chunk_size=chunk_size, seed_base=seed_base)
 
 end_time = time.time()
 total_time = end_time - start_time
