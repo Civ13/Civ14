@@ -437,3 +437,33 @@
       cost: 7
       time: 8
       material: Sandstone
+
+# Rocks and ore veins
+- type: entity
+  id: WallRockIndestructible
+  parent: BaseWall
+  name: rock
+  suffix: planetmap
+  description: This wall cannot be destroyed.
+  components:
+    - type: Transform
+      noRot: true
+    - type: IconSmooth
+      key: walls
+      mode: NoSprite
+    - type: Icon
+      sprite: Structures/Walls/rock.rsi
+      state: rocky
+    - type: SmoothEdge
+    - type: Sprite
+      sprite: Structures/Walls/rock.rsi
+      layers:
+        - state: rocky
+        - map: ["enum.EdgeLayer.South"]
+          state: rocky_south
+        - map: ["enum.EdgeLayer.East"]
+          state: rocky_east
+        - map: ["enum.EdgeLayer.North"]
+          state: rocky_north
+        - map: ["enum.EdgeLayer.West"]
+          state: rocky_west

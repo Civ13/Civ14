@@ -199,18 +199,18 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
                     entity_count[proto] = entity_count.get(proto, 0) + 1
 
     # Surrounding undestructible walls
-    groups["WallPlastitaniumIndestructible"] = []
+    groups["WallRockIndestructible"] = []
     for y in range(h):
         for x in range(w):
             if x == 0 or x == w - 1 or y == 0 or y == h - 1:
-                groups["WallPlastitaniumIndestructible"].append({
+                groups["WallRockIndestructible"].append({
                     "uid": next_uid(),
                     "components": [
                         {"type": "Transform", "parent": 2, "pos": f"{x},{y}"}
                     ]
                 })
                 # Count undestructible walls
-                entity_count["WallPlastitaniumIndestructible"] = entity_count.get("WallPlastitaniumIndestructible", 0) + 1
+                entity_count["WallRockIndestructible"] = entity_count.get("WallRockIndestructible", 0) + 1
 
     dynamic_groups = [{"proto": proto, "entities": ents} for proto, ents in groups.items()]
 
@@ -273,12 +273,12 @@ unique_mixes = [
     {
         "volume": 2500,
         "immutable": True,
-        "temperature": 293.15,
+        "temperature": 278.15,
         "moles": [21.82478, 82.10312, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         "volume": 2500,
-        "temperature": 293.15,
+        "temperature": 278.15,
         "moles": [21.824879, 82.10312, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     }
 ]
@@ -419,7 +419,7 @@ def generate_all_entities(tile_map, chunk_size=16, biome_layers=None, seed_base=
     entities.append(main_entities)
     entities.extend(dynamic_groups)
     spawn_points = generate_spawn_points(tile_map)
-    entities.append(spawn_points)
+    entities.extend(spawn_points)
     return entities
 
 # -----------------------------------------------------------------------------
@@ -524,22 +524,105 @@ def apply_iterative_erosion(tile_map, tile_type, min_neighbors=3, max_iterations
 # -----------------------------------------------------------------------------
 # Geração de Spawn Points
 # -----------------------------------------------------------------------------
-def generate_spawn_points(tile_map, num_points=2):
-    """Gera entidades SpawnPointNomads no centro do mapa."""
+def generate_spawn_points(tile_map, num_points_per_corner=1):
+    """Gera 4 SpawnPointNomads e 4 SpawnPointLatejoin, um de cada em cada canto do mapa em FloorAstroGrass."""
     h, w = tile_map.shape
-    center_x = w // 2
-    center_y = h // 2
-    spawn_points = []
-    for i in range(num_points):
-        pos_x = center_x - 2.5
-        pos_y = center_y - 0.5 - i
-        spawn_points.append({
-            "uid": next_uid(),
-            "components": [
-                {"type": "Transform", "parent": 2, "pos": f"{pos_x},{pos_y}"}
-            ]
-        })
-    return {"proto": "SpawnPointNomads", "entities": spawn_points}
+    spawn_positions = set()
+    nomads_entities = []
+    latejoin_entities = [] 
+    corners = ['top_left', 'top_right', 'bottom_left', 'bottom_right']
+    astro_grass_id = TILEMAP_REVERSE["FloorAstroGrass"]
+    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)] 
+
+    for corner in corners:
+        found = False
+        initial_size = 15  # Initial size to search for positions
+        while not found and initial_size <= min(w, h) // 2:
+            x_min, x_max, y_min, y_max = get_corner_region(corner, w, h, initial_size)
+            candidates = []
+            # Searchs for AstroTileGrass in the initial size in the corners
+            for y in range(y_min, y_max + 1):
+                for x in range(x_min, x_max + 1):
+                    if tile_map[y, x] == astro_grass_id and (x, y) not in spawn_positions:
+                        # Verifica tiles adjacentes válidos
+                        adjacent = []
+                        for dx, dy in directions:
+                            nx, ny = x + dx, y + dy
+                            if (0 <= nx < w and 0 <= ny < h and 
+                                tile_map[ny, nx] == astro_grass_id and 
+                                (nx, ny) not in spawn_positions):
+                                adjacent.append((nx, ny))
+                        if adjacent:
+                            candidates.append((x, y, adjacent))
+            if candidates:
+                x, y, adjacent = random.choice(candidates)
+                adj_x, adj_y = random.choice(adjacent)
+                if random.random() < 0.5:
+                    nomads_pos = (x, y)
+                    latejoin_pos = (adj_x, adj_y)
+                else:
+                    nomads_pos = (adj_x, adj_y)
+                    latejoin_pos = (x, y)
+                nomads_entities.append({
+                    "uid": next_uid(),
+                    "components": [
+                        {"type": "Transform", "parent": 2, "pos": f"{nomads_pos[0]},{nomads_pos[1]}"}
+                    ]
+                })
+                latejoin_entities.append({
+                    "uid": next_uid(),
+                    "components": [
+                        {"type": "Transform", "parent": 2, "pos": f"{latejoin_pos[0]},{latejoin_pos[1]}"}
+                    ]
+                })
+                spawn_positions.add(nomads_pos)
+                spawn_positions.add(latejoin_pos)
+                found = True
+            else:
+                initial_size += 1
+        if not found:
+            print(f"Possible to find an available position at the corner for spawn points {corner}")
+
+    print("SpawnPointNomads positions:")
+    for ent in nomads_entities:
+        pos = ent["components"][0]["pos"]
+        print(pos)
+    print("SpawnPointLatejoin positions:")
+    for ent in latejoin_entities:
+        pos = ent["components"][0]["pos"]
+        print(pos)
+
+    # Retorna as entidades no formato correto para o YAML
+    return [
+        {"proto": "SpawnPointNomads", "entities": nomads_entities},
+        {"proto": "SpawnPointLatejoin", "entities": latejoin_entities}
+    ]
+
+def get_corner_region(corner, w, h, initial_size):
+    """Defines a region to search in the map's corners."""
+    if corner == 'top_left':
+        x_min = 1
+        x_max = min(initial_size, w-2)
+        y_min = 1
+        y_max = min(initial_size, h-2)
+    elif corner == 'top_right':
+        x_min = max(w-1-initial_size, 1)
+        x_max = w-2
+        y_min = 1
+        y_max = min(initial_size, h-2)
+    elif corner == 'bottom_left':
+        x_min = 1
+        x_max = min(initial_size, w-2)
+        y_min = max(h-1-initial_size, 1)
+        y_max = h-2
+    elif corner == 'bottom_right':
+        x_min = max(w-1-initial_size, 1)
+        x_max = w-2
+        y_min = max(h-1-initial_size, 1)
+        y_max = h-2
+    else:
+        raise ValueError("Invalid corner")
+    return x_min, x_max, y_min, y_max
 
 # -----------------------------------------------------------------------------
 # Configuração do Mapa (MAP_CONFIG)
@@ -662,7 +745,7 @@ MAP_CONFIG = [
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.9965,
+        "threshold": 0.9981,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "priority": 11
     },
@@ -696,7 +779,7 @@ MAP_CONFIG = [
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.9987,
+        "threshold": 0.9989,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "priority": 11
     },
@@ -707,7 +790,7 @@ MAP_CONFIG = [
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.9987,
+        "threshold": 0.9989,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "priority": 11
     },
@@ -718,7 +801,7 @@ MAP_CONFIG = [
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.9987,
+        "threshold": 0.9989,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "priority": 11
     },
@@ -729,7 +812,7 @@ MAP_CONFIG = [
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.9987,
+        "threshold": 0.9992,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "priority": 11
     },
@@ -854,7 +937,7 @@ MAP_CONFIG = [
         "threshold": 0.96,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "color": "#FFFFFFFF"
-    }
+    },
 ]
 
 # -----------------------------------------------------------------------------
