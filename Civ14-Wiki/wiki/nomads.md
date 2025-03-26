@@ -1,8 +1,6 @@
 # Nomads
 
-<div class="alert alert-dismissible alert-danger">
-This guide was originally written for Civ13, and as such might not fully reflect the actual gameplay of Civ14.
-</div>
+**WARNING: This guide was originally written for Civ13, and as such might not fully reflect the actual gameplay of Civ14.**
 
 **_"I'm cold and starving, [WHAT DO I DO?](starter_guide.md)"_** _- A confused player_
 
