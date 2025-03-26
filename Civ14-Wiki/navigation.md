@@ -1,5 +1,6 @@
 # Civ14 Wiki
 
+[Rules](rules/rules.md)
 [How to Play](wiki/playing.md)
 [Nomads](wiki/nomads.md)
 [Discord](https://discord.gg/hBEtg4x)
