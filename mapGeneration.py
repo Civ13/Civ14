@@ -190,8 +190,10 @@ def generate_decals(tile_map, biome_decal_layers, seed_base=None, chunk_size=16)
         noise.fractal_type = layer["fractal_type"]
 
         if seed_base is not None:
-            seed_key = layer.get("seed_key", layer["decal_id"])
+            seed_key = layer.get("seed_key", tuple(layer["decal_id"]) if isinstance(layer["decal_id"], list) else layer["decal_id"])
             noise.seed = (seed_base + hash(seed_key)) % (2**31)
+
+        decal_ids = layer["decal_id"] if isinstance(layer["decal_id"], list) else [layer["decal_id"]]
 
         for y in range(h):
             for x in range(w):
@@ -201,20 +203,20 @@ def generate_decals(tile_map, biome_decal_layers, seed_base=None, chunk_size=16)
                 noise_value = noise.get_noise(x, y)
                 noise_value = (noise_value + 1) / 2
                 if noise_value > layer["threshold"] and layer["tile_condition"](tile_val):
-                    decal_id = layer["decal_id"]
-                    if decal_id not in decals_by_id:
-                        decals_by_id[decal_id] = []
-                    # Randoms a small offset for decals
+                    chosen_decal_id = random.choice(decal_ids)
+                    if chosen_decal_id not in decals_by_id:
+                        decals_by_id[chosen_decal_id] = []
+                    # Small random offset for decals
                     offset_x = (noise.get_noise(x + 1000, y + 1000) + 1) / 4 - 0.25  # Between -0.25 and 0.25
                     offset_y = (noise.get_noise(x + 2000, y + 2000) + 1) / 4 - 0.25  # Between -0.25 and 0.25
                     pos_x = x + offset_x
                     pos_y = y + offset_y
                     pos_str = f"{pos_x:.7f},{pos_y:.7f}"
-                    decals_by_id[decal_id].append({
+                    decals_by_id[chosen_decal_id].append({
                         "color": layer.get("color", "#FFFFFFFF"),
                         "position": pos_str
                     })
-                    decal_count[decal_id] = decal_count.get(decal_id, 0) + 1
+                    decal_count[chosen_decal_id] = decal_count.get(chosen_decal_id, 0) + 1
 
     for decal_id, count in decal_count.items():
         print(f"Generated {count} decal(s) - {decal_id}")
@@ -249,10 +251,10 @@ def generate_atmosphere_tiles(width, height, chunk_size):
                 tiles[f"{x},{y}"] = {1: 65535}
     return tiles
 
-def generate_main_entities(tile_map, chunk_size=16, decals_by_chunk=None):
+def generate_main_entities(tile_map, chunk_size=16, decals_by_id=None):
     """Generates entities, decals and atmos."""
-    if decals_by_chunk is None:
-        decals_by_chunk = {}
+    if decals_by_id is None:
+        decals_by_id = {}
 
     h, w = tile_map.shape
     chunks = {}
@@ -275,18 +277,24 @@ def generate_main_entities(tile_map, chunk_size=16, decals_by_chunk=None):
 
     # Decals generation
     decal_nodes = []
-    for chunk_key, decals in decals_by_chunk.items():
+    global_index = 0
+    for decal_id, decals in decals_by_id.items():
         if decals:
+            node_decals = {}
+            for decal in decals:
+                node_decals[str(global_index)] = decal["position"]
+                global_index += 1
             node = {
                 "node": {
                     "color": decals[0]["color"],
-                    "id": chunk_key
+                    "id": decal_id
                 },
-                "decals": {str(i): decal["position"] for i, decal in enumerate(decals)}
+                "decals": node_decals
             }
             decal_nodes.append(node)
     
     print(f"Total decal nodes generated: {len(decal_nodes)}")
+    print(f"Total decals: {global_index}")
 
     main = {
         "proto": "",
@@ -592,12 +600,12 @@ MAP_CONFIG = [
     # DECALS
     {
         "type": "BiomeDecalLayer",
-        "decal_id": "BushTemperate1",
+        "decal_id": ["BushTemperate1", "BushTemperate2", "BushTemperate3", "BushTemperate4"],
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.9957,
+        "threshold": 0.96,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "color": "#FFFFFFFF"
     }
