@@ -177,12 +177,6 @@
         Plastic: 100
     - type: StaticPrice
       price: 56
-    - type: GuideHelp
-      guides:
-        - Networking
-        - WirePanels
-        - Airlocks
-        - InspectingPower
 
 - type: entity
   name: network configurator
@@ -231,9 +225,6 @@
           type: NetworkConfiguratorBoundUserInterface
     - type: StaticPrice
       price: 56
-    - type: GuideHelp
-      guides:
-        - Networking
 
 #Power tools
 #Later on these should switch probably switch damage when changing the tool behavior.

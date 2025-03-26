@@ -63,10 +63,7 @@
     entity: AmeShielding
   - type: StaticPrice
     price: 500
-  - type: GuideHelp
-    guides:
-    - AME
-    - Power
+
   - type: StealTarget
     stealGroup: AmePartFlatpack
 
@@ -81,10 +78,6 @@
   - type: Sprite
     layers:
     - state: singularity-generator
-  - type: GuideHelp
-    guides:
-    - SingularityEngine
-    - Power
 
 - type: entity
   parent: BaseFlatpack
@@ -145,10 +138,7 @@
   - type: Sprite
     layers:
     - state: tesla-generator
-  - type: GuideHelp
-    guides:
-    - TeslaEngine
-    - Power
+
 
 - type: entity
   parent: BaseFlatpack

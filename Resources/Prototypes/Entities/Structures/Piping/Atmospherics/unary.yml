@@ -155,10 +155,6 @@
     - type: Weldable
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentScrubber
-    - type: GuideHelp
-      guides:
-        - AirScrubber
-        - DeviceMonitoringAndControl
 
 - type: entity
   parent: GasUnaryBase
