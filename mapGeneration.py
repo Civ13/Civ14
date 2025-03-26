@@ -15,7 +15,8 @@ TILEMAP = {
     1: "FloorDirt",
     2: "FloorAstroGrass",
     3: "FloorGrassDark",
-    4: "FloorAsteroidSand"
+    4: "FloorAsteroidSand",
+    5: "FloorDirtRock"
 }
 TILEMAP_REVERSE = {v: k for k, v in TILEMAP.items()}
 
@@ -50,7 +51,11 @@ def encode_tiles(tile_map):
 def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
     """Gera o tile_map com base nas camadas de tiles definidas em biome_tile_layers."""
     tile_map = np.full((height, width), TILEMAP_REVERSE["FloorDirt"], dtype=np.int32)
-    for layer in biome_tile_layers:
+
+    # Ordena as camadas por prioridade (menor para maior)
+    sorted_layers = sorted(biome_tile_layers, key=lambda layer: layer.get("priority", 1))
+    
+    for layer in sorted_layers:
         noise = FastNoiseLite()
         noise.noise_type = layer["noise_type"]
         noise.fractal_octaves = layer["octaves"]
@@ -67,17 +72,15 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
             noise.fractal_lacunarity = layer["fractal_lacunarity"]
         
         if seed_base is not None:
-            # Uses "seed_key" if available, if not uses a hash based on tile_type
             seed_key = layer.get("seed_key", layer["tile_type"])
             noise.seed = (seed_base + hash(seed_key)) % (2**31)
 
-        # Modular noise for noise modulations following the main noise
+        # Configuração de modulação, se presente
         mod_noise = None
         if "modulation" in layer:
             mod_config = layer["modulation"]
             mod_noise = FastNoiseLite()
             mod_noise.noise_type = mod_config.get("noise_type", NoiseType.NoiseType_OpenSimplex2)
-
             if "cellular_distance_function" in mod_config:
                 mod_noise.cellular_distance_function = mod_config["cellular_distance_function"]
             if "cellular_return_type" in mod_config:
@@ -86,18 +89,20 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
                 mod_noise.cellular_jitter = mod_config["cellular_jitter"]
             if "fractal_lacunarity" in mod_config:
                 mod_noise.fractal_lacunarity = mod_config["fractal_lacunarity"]
-
             mod_noise.frequency = mod_config.get("frequency", 0.010)
             mod_noise.seed = (seed_base + hash(seed_key + "_mod")) % (2**31)
             threshold_min = mod_config.get("threshold_min", 0.4)
             threshold_max = mod_config.get("threshold_max", 0.6)
 
         count = 0
+        dont_overwrite = [TILEMAP_REVERSE[t] for t in layer.get("dontOverwrite", [])]
+
         for y in range(height):
             for x in range(width):
                 noise_value = noise.get_noise(x, y)
-
-                noise_value = (noise_value + 1) / 2
+                noise_value = (noise_value + 1) / 2  # Normalizar para [0, 1]
+                
+                place_tile = False
                 if mod_noise:
                     mod_value = mod_noise.get_noise(x, y)
                     mod_value = (mod_value + 1) / 2
@@ -105,21 +110,19 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
                         if mod_value > threshold_max:
                             place_tile = True
                         elif mod_value > threshold_min:
-                            # Interpolação linear entre threshold_min e threshold_max
                             probability = (mod_value - threshold_min) / (threshold_max - threshold_min)
                             place_tile = random.random() < probability
-                        else:
-                            place_tile = False
-                        if place_tile:
-                            if layer.get("overwrite", True) or tile_map[y, x] == TILEMAP_REVERSE["Space"]:
-                                tile_map[y, x] = TILEMAP_REVERSE[layer["tile_type"]]
-                                count += 1
                 else:
-                    # Sem modulação: usa apenas o threshold principal
                     if noise_value > layer["threshold"]:
-                        if layer.get("overwrite", True) or tile_map[y, x] == TILEMAP_REVERSE["Space"]:
+                        place_tile = True
+                
+                if place_tile:
+                    current_tile = tile_map[y, x]
+                    if current_tile not in dont_overwrite:
+                        if layer.get("overwrite", True) or current_tile == TILEMAP_REVERSE["Space"]:
                             tile_map[y, x] = TILEMAP_REVERSE[layer["tile_type"]]
                             count += 1
+        
         print(f"Camada {layer['tile_type']}: {count} tiles colocados")
     return tile_map
 
@@ -542,15 +545,27 @@ def generate_spawn_points(tile_map, num_points=2):
 # Configuração do Mapa (MAP_CONFIG)
 # -----------------------------------------------------------------------------
 MAP_CONFIG = [
-    {
+    {   # Rock dirt formations
         "type": "BiomeTileLayer",
-        "tile_type": "FloorDirt",
+        "tile_type": "FloorDirtRock",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 2,
         "frequency": 0.01,
         "fractal_type": FractalType.FractalType_None,
         "threshold": -1.0,
         "overwrite": True
+    },
+    { # Sprinkled dirt around the map
+        "type": "BiomeTileLayer",
+        "tile_type": "FloorDirt",
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 10,
+        "frequency": 0.3,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.825,
+        "overwrite": True,
+        "dontOverwrite": ["FloorAsteroidSand", "FloorDirtRock"],
+        "priority": 10
     },
     {
         "type": "BiomeTileLayer",
@@ -570,7 +585,7 @@ MAP_CONFIG = [
         "frequency": 0.3,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.815,
-        "tile_condition": lambda tile: tile in [TILEMAP_REVERSE["FloorAstroGrass"], TILEMAP_REVERSE["FloorDirt"]],
+        "tile_condition": lambda tile: tile in [TILEMAP_REVERSE["FloorAstroGrass"], TILEMAP_REVERSE["FloorDirt"], TILEMAP_REVERSE["FloorDirtRock"]],
         "priority": 1
     },
     { # Rocks
@@ -584,7 +599,7 @@ MAP_CONFIG = [
         "frequency": 0.015,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.30,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorDirt"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorDirtRock"],
         "priority": 2
     },
     { # Rivers
@@ -659,7 +674,7 @@ MAP_CONFIG = [
         "frequency": 0.300,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.958,
-        "tile_condition": lambda tile: tile in [TILEMAP_REVERSE["FloorAstroGrass"], TILEMAP_REVERSE["FloorDirt"]],
+        "tile_condition": lambda tile: tile in [TILEMAP_REVERSE["FloorAstroGrass"], TILEMAP_REVERSE["FloorDirtRock"]],
         "priority": 1
     },
     { # Sabertooth

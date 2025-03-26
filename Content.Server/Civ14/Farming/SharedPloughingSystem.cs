@@ -50,6 +50,7 @@ namespace Content.Server.Farming
             var ploughableTiles = new HashSet<string> // I'd rather do it in another way, but Asphalt has a FloorDirt BaseTurf, so I cant use it
                 {
                     "FloorDirt",
+                    "FloorDirtRock",
                     "FloorDirtDigged_1",
                     "FloorDirtDigged_2",
                     "FloorDirtDigged_3"
