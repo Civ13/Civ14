@@ -708,6 +708,7 @@
   parent: BaseWall
   name: rock
   suffix: planetmap
+  description: Its made of large, uneven rocks stacked together.
   components:
     - type: Transform
       noRot: true
