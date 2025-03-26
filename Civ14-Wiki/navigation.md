@@ -4,7 +4,7 @@
 
 <!-- set a default theme -->
 
-[gimmick:theme (inverse: false)](bootstrap)
+[gimmick:theme (inverse: false)](darkly)
 
 <!-- show a theme chooser in the menu bar -->
 
