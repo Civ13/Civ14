@@ -3,7 +3,7 @@ import yaml
 import base64
 import struct
 import random
-from pyfastnoiselite.pyfastnoiselite import FastNoiseLite, NoiseType, FractalType, CellularReturnType, CellularDistanceFunction
+from pyfastnoiselite.pyfastnoiselite import FastNoiseLite, NoiseType, FractalType, CellularReturnType, CellularDistanceFunction, DomainWarpType
 import time
 import os
 
@@ -70,15 +70,56 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
             # Uses "seed_key" if available, if not uses a hash based on tile_type
             seed_key = layer.get("seed_key", layer["tile_type"])
             noise.seed = (seed_base + hash(seed_key)) % (2**31)
+
+        # Modular noise for noise modulations following the main noise
+        mod_noise = None
+        if "modulation" in layer:
+            mod_config = layer["modulation"]
+            mod_noise = FastNoiseLite()
+            mod_noise.noise_type = mod_config.get("noise_type", NoiseType.NoiseType_OpenSimplex2)
+
+            if "cellular_distance_function" in mod_config:
+                mod_noise.cellular_distance_function = mod_config["cellular_distance_function"]
+            if "cellular_return_type" in mod_config:
+                mod_noise.cellular_return_type = mod_config["cellular_return_type"]
+            if "cellular_jitter" in mod_config:
+                mod_noise.cellular_jitter = mod_config["cellular_jitter"]
+            if "fractal_lacunarity" in mod_config:
+                mod_noise.fractal_lacunarity = mod_config["fractal_lacunarity"]
+
+            mod_noise.frequency = mod_config.get("frequency", 0.010)
+            mod_noise.seed = (seed_base + hash(seed_key + "_mod")) % (2**31)
+            threshold_min = mod_config.get("threshold_min", 0.4)
+            threshold_max = mod_config.get("threshold_max", 0.6)
+
         count = 0
         for y in range(height):
             for x in range(width):
                 noise_value = noise.get_noise(x, y)
+
                 noise_value = (noise_value + 1) / 2
-                if noise_value > layer["threshold"]:
-                    if layer.get("overwrite", True) or tile_map[y, x] == TILEMAP_REVERSE["Space"]:
-                        tile_map[y, x] = TILEMAP_REVERSE[layer["tile_type"]]
-                        count += 1
+                if mod_noise:
+                    mod_value = mod_noise.get_noise(x, y)
+                    mod_value = (mod_value + 1) / 2
+                    if noise_value > layer["threshold"]:
+                        if mod_value > threshold_max:
+                            place_tile = True
+                        elif mod_value > threshold_min:
+                            # Interpolação linear entre threshold_min e threshold_max
+                            probability = (mod_value - threshold_min) / (threshold_max - threshold_min)
+                            place_tile = random.random() < probability
+                        else:
+                            place_tile = False
+                        if place_tile:
+                            if layer.get("overwrite", True) or tile_map[y, x] == TILEMAP_REVERSE["Space"]:
+                                tile_map[y, x] = TILEMAP_REVERSE[layer["tile_type"]]
+                                count += 1
+                else:
+                    # Sem modulação: usa apenas o threshold principal
+                    if noise_value > layer["threshold"]:
+                        if layer.get("overwrite", True) or tile_map[y, x] == TILEMAP_REVERSE["Space"]:
+                            tile_map[y, x] = TILEMAP_REVERSE[layer["tile_type"]]
+                            count += 1
         print(f"Camada {layer['tile_type']}: {count} tiles colocados")
     return tile_map
 
@@ -221,9 +262,6 @@ def generate_decals(tile_map, biome_decal_layers, seed_base=None, chunk_size=16)
                     })
                     occupied_tiles.add((x, y))
                     decal_count[chosen_decal_id] = decal_count.get(chosen_decal_id, 0) + 1
-
-    for decal_id, count in decal_count.items():
-        print(f"Generated {count} decal(s) - {decal_id}")
 
     return decals_by_id
 
@@ -418,6 +456,68 @@ def save_map_to_yaml(tile_map, biome_layers, output_dir, filename="output.yml", 
     output_path = os.path.join(output_dir, filename)
     with open(output_path, 'w') as outfile:
         yaml.dump(map_data, outfile, default_flow_style=False, sort_keys=False)
+
+
+import numpy as np
+from collections import defaultdict
+
+def apply_erosion(tile_map, tile_type, min_neighbors=3):
+    h, w = tile_map.shape
+    new_map = tile_map.copy()
+    
+    for y in range(1, h-1):
+        for x in range(1, w-1):
+            if tile_map[y, x] == tile_type:
+                neighbors = 0
+                neighbor_types = []
+                for dy in [-1, 0, 1]:
+                    for dx in [-1, 0, 1]:
+                        if dy == 0 and dx == 0:
+                            continue
+                        neighbor_y = y + dy
+                        neighbor_x = x + dx
+                        if 0 <= neighbor_y < h and 0 <= neighbor_x < w:
+                            nt = tile_map[neighbor_y, neighbor_x]
+                            neighbor_types.append(nt)
+                            if nt == tile_type:
+                                neighbors += 1
+                if neighbors < min_neighbors:
+                    counts = defaultdict(int)
+                    for nt in neighbor_types:
+                        counts[nt] += 1
+                    if counts:
+                        max_count = max(counts.values())
+                        candidates = [k for k, v in counts.items() if v == max_count]
+                        majority_type = candidates[0]  # Defines majority_type here
+                        new_map[y, x] = majority_type
+    return new_map
+
+def count_isolated_tiles(tile_map, tile_type, min_neighbors=3):
+    h, w = tile_map.shape
+    isolated = 0
+    for y in range(1, h-1):
+        for x in range(1, w-1):
+            if tile_map[y, x] == tile_type:
+                neighbors = sum(1 for dy in [-1, 0, 1] for dx in [-1, 0, 1] 
+                               if not (dy == 0 and dx == 0) and 
+                               0 <= y + dy < h and 0 <= x + dx < w and 
+                               tile_map[y + dy, x + dx] == tile_type)
+                if neighbors < min_neighbors:
+                    isolated += 1
+    return isolated
+
+def apply_iterative_erosion(tile_map, tile_type, min_neighbors=3, max_iterations=10):
+    """Applies erosion interactively untill there are no more tiles with the declared min neighbors"""
+    iteration = 0
+    while iteration < max_iterations:
+        isolated_before = count_isolated_tiles(tile_map, tile_type, min_neighbors)
+        tile_map = apply_erosion(tile_map, tile_type, min_neighbors)
+        isolated_after = count_isolated_tiles(tile_map, tile_type, min_neighbors)
+        if isolated_after == isolated_before or isolated_after == 0:
+            break 
+        iteration += 1
+    return tile_map
+
 # -----------------------------------------------------------------------------
 # Geração de Spawn Points
 # -----------------------------------------------------------------------------
@@ -479,8 +579,8 @@ MAP_CONFIG = [
         "noise_type": NoiseType.NoiseType_Cellular,
         "cellular_distance_function": CellularDistanceFunction.CellularDistanceFunction_Hybrid,
         "cellular_return_type": CellularReturnType.CellularReturnType_CellValue,
-        "octaves": 2,
         "cellular_jitter": 1.070,
+        "octaves": 2,
         "frequency": 0.015,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.30,
@@ -507,9 +607,26 @@ MAP_CONFIG = [
         "octaves": 1,
         "frequency": 0.003,  # Same as the river
         "fractal_type": FractalType.FractalType_Ridged,
-        "threshold": 0.90,  # Larger than the river
+        "threshold": 0.935,  # Larger than the river
         "overwrite": True,
-        "seed_key": "river_noise" 
+        "seed_key": "river_noise",
+    },
+    { # Additional River Sand with More Curves
+        "type": "BiomeTileLayer",
+        "tile_type": "FloorAsteroidSand",
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.003,
+        "fractal_type": FractalType.FractalType_Ridged,
+        "threshold": 0.92,  # Slightly lower than the original
+        "overwrite": True,
+        "seed_key": "river_noise",  # Same as the original to follow its path
+        "modulation": {
+            "noise_type": NoiseType.NoiseType_Perlin,  # Different noise for variation
+            "frequency": 0.01,  # Controls the scale of the variation
+            "threshold_min": 0.43,  # Lower bound where sand starts appearing
+            "threshold_max": 0.55  # Upper bound for a smooth transition
+        }
     },
     { # Trees
         "type": "BiomeEntityLayer",
@@ -744,6 +861,10 @@ output_dir = os.path.join(script_dir, "Resources", "Maps", "civ")
 os.makedirs(output_dir, exist_ok=True)
 
 tile_map = generate_tile_map(width, height, biome_tile_layers, seed_base)
+
+ # Applies erosion to lone sand tiles, overwritting it with surrounding tiles
+tile_map = apply_iterative_erosion(tile_map, TILEMAP_REVERSE["FloorAsteroidSand"], min_neighbors=1)
+
 bordered_tile_map = add_border(tile_map, border_value=TILEMAP_REVERSE["FloorDirt"])
 
 save_map_to_yaml(bordered_tile_map, MAP_CONFIG, output_dir, filename="nomads_classic.yml", chunk_size=chunk_size, seed_base=seed_base)
