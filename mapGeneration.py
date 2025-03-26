@@ -696,7 +696,7 @@ MAP_CONFIG = [
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.9987,
+        "threshold": 0.9989,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "priority": 11
     },
@@ -707,7 +707,7 @@ MAP_CONFIG = [
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.9987,
+        "threshold": 0.9989,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "priority": 11
     },
@@ -718,7 +718,7 @@ MAP_CONFIG = [
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.9987,
+        "threshold": 0.9989,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "priority": 11
     },
@@ -729,7 +729,7 @@ MAP_CONFIG = [
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
-        "threshold": 0.9987,
+        "threshold": 0.9992,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
         "priority": 11
     },
