@@ -251,3 +251,44 @@
   components:
     - type: Stack
       count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialRope
+  name: rope
+  suffix: Full
+  components:
+    - type: Sprite
+      state: sheet-sandstone
+      layers:
+        - state: sheet-sandstone
+          map: ["base"]
+    - type: Stack
+      stackType: Sandstone
+      baseLayer: base
+      layerStates:
+        - rope
+        - rope_2
+        - rope_3
+    - type: Appearance
+    - type: Item
+      heldPrefix: rope
+    - type: Tag
+      tags:
+        - RawMaterial
+
+- type: entity
+  parent: MaterialRope
+  id: MaterialRope10
+  suffix: 10
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: MaterialRope
+  id: MaterialRope1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1

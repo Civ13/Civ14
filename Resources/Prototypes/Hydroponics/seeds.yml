@@ -27,6 +27,28 @@
       PotencyDivisor: 20
 
 - type: seed
+  id: hemp
+  name: seeds-hemp-name
+  noun: seeds-noun-seeds
+  displayName: seeds-hemp-display-name
+  plantRsi: Civ14/Objects/Farming/hemp.rsi
+  packetPrototype: HempSeedsCiv
+  productPrototypes:
+    - MaterialRope1
+  lifespan: 25
+  maturation: 6
+  production: 3
+  yield: 3
+  potency: 5
+  idealLight: 8
+  nutrientConsumption: 0.40
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+
+- type: seed
   id: meatwheat
   name: seeds-meatwheat-name
   noun: seeds-noun-seeds
@@ -42,15 +64,6 @@
   potency: 5
   idealLight: 8
   nutrientConsumption: 0.40
-  chemicals:
-    Nutriment:
-      Min: 1
-      Max: 20
-      PotencyDivisor: 20
-    UncookedAnimalProteins:
-      Min: 5
-      Max: 20
-      PotencyDivisor: 20
 
 - type: seed
   id: oat

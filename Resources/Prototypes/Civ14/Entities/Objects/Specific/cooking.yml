@@ -74,6 +74,7 @@
     - type: PointLight
       radius: 4
       energy: 3
+      color: "#E25822"
     - type: GenericVisualizer
       visuals:
         enum.PowerDeviceVisuals.VisualState:
