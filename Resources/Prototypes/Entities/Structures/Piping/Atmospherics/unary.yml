@@ -196,9 +196,7 @@
         - enum.LightLayers.Unshaded
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
-    - type: GuideHelp
-      guides:
-        - AirInjector
+
 
 - type: entity
   parent: [BaseMachinePowered, ConstructibleMachine]
@@ -448,6 +446,4 @@
     - type: PowerSwitch
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: Thermoregulator
-    - type: GuideHelp
-      guides:
-        - GasCondensing
+

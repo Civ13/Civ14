@@ -45,10 +45,7 @@
       containers:
         brain_slot: !type:ContainerSlot
     - type: Appearance
-    - type: GuideHelp
-      guides:
-        - Cyborgs
-        - Robotics
+
     - type: ChangeVoiceInContainer
       whitelist:
         components:

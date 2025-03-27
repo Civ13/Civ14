@@ -76,9 +76,6 @@
         path: /Audio/Ambience/Objects/gas_pump.ogg
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasFlowRegulator
-    - type: GuideHelp
-      guides:
-        - Pumps
 
 - type: entity
   parent: GasBinaryBase
@@ -226,9 +223,6 @@
         path: /Audio/Ambience/Objects/gas_hiss.ogg
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasValve
-    - type: GuideHelp
-      guides:
-        - ManualValve
 
 - type: entity
   parent: GasBinaryBase
@@ -292,7 +286,6 @@
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasValve
 
-
 - type: entity
   parent: GasBinaryBase
   id: GasPort
@@ -325,9 +318,6 @@
       node: port
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
-    - type: GuideHelp
-      guides:
-        - GasCanisters
 
 - type: entity
   parent: GasVentPump
@@ -387,9 +377,6 @@
       enabled: true
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
-    - type: GuideHelp
-      guides:
-        - AirVent
 
 - type: entity
   parent: [BaseMachine, ConstructibleMachine]
@@ -491,9 +478,6 @@
       node: radiator
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: Thermoregulator
-    - type: GuideHelp
-      guides:
-        - Radiators
 
 - type: entity
   parent: HeatExchanger

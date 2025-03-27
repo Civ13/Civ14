@@ -1265,9 +1265,6 @@
       radius: 1.5
       energy: 1.6
       color: "#B0ADA9"
-    - type: GuideHelp
-      guides:
-        - Robotics
 
 - type: entity
   parent: VendingMachine
@@ -1390,9 +1387,7 @@
       color: "#b89f25"
     - type: AccessReader
       access: [["Salvage"]]
-    - type: GuideHelp
-      guides:
-        - Salvage
+
 
 - type: entity
   parent: VendingMachine
