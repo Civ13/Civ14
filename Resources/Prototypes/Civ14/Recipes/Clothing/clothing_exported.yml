@@ -9,7 +9,7 @@
     A makeshift pelt coat made from fur skins, worn to protect early man from
     the elements.
   icon:
-    sprite: Civ14/Clothing/exported/prehistoric_fur4.rsi
+    sprite: Civ14/Clothing/exported/suits/prehistoric_fur4.rsi
     state: icon
   objectType: Structure
   placementMode: SnapgridCenter
@@ -37,7 +37,7 @@
     A makeshift brown pelt coat made from fur skins, worn to protect early man
     from the elements.
   icon:
-    sprite: Civ14/Clothing/exported/prehistoric_fur1.rsi
+    sprite: Civ14/Clothing/exported/suits/prehistoric_fur1.rsi
     state: icon
   objectType: Structure
   placementMode: SnapgridCenter
@@ -65,7 +65,7 @@
     A makeshift black pelt coat made from fur skins, worn to protect early man
     from the elements.
   icon:
-    sprite: Civ14/Clothing/exported/prehistoric_fur2.rsi
+    sprite: Civ14/Clothing/exported/suits/prehistoric_fur2.rsi
     state: icon
   objectType: Structure
   placementMode: SnapgridCenter
@@ -93,7 +93,7 @@
     A makeshift white pelt coat made from fur skins, worn to protect early man
     from the elements.
   icon:
-    sprite: Civ14/Clothing/exported/prehistoric_fur3.rsi
+    sprite: Civ14/Clothing/exported/suits/prehistoric_fur3.rsi
     state: icon
   objectType: Structure
   placementMode: SnapgridCenter
@@ -121,7 +121,7 @@
     A makeshift grey pelt coat made from fur skins, worn to protect early man
     from the elements.
   icon:
-    sprite: Civ14/Clothing/exported/prehistoric_fur4.rsi
+    sprite: Civ14/Clothing/exported/suits/prehistoric_fur4.rsi
     state: icon
   objectType: Structure
   placementMode: SnapgridCenter
@@ -149,7 +149,7 @@
     A wooden set of armor made of small planks held together by plant fiber
     ropes.
   icon:
-    sprite: Civ14/Clothing/exported/wooden_chestarmor.rsi
+    sprite: Civ14/Clothing/exported/suits/wooden_chestarmor.rsi
     state: icon
   objectType: Structure
   placementMode: SnapgridCenter
