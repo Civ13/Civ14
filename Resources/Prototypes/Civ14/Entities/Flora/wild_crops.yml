@@ -1,0 +1,139 @@
+- type: entity
+  name: wild plant
+  parent: BaseStructure
+  abstract: true
+  id: WildPlantBase
+  description: A small patch of wild crop, its irregular leaves hinting at a hidden blend of cultivated varieties, yet it thrives untamed in nature.
+  suffix: Structure
+  components:
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.17,0,0.20,0.4"
+    - type: Transform
+      anchored: true
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 80
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+- type: entity
+  name: wild plant
+  parent: WildPlantBase
+  id: WildPlantPotato
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/potato.rsi
+      state: harvest
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: PotatoWildHarverst
+
+- type: entityLootTable
+  id: PotatoWildHarverst
+  entries:
+  - id: FoodPotato
+    amount: 1
+    maxAmount: 1
+
+- type: entity
+  name: wild plant
+  parent: WildPlantBase
+  id: WildPlantCorn
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/corn.rsi
+      state: harvest
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: CornWildHarverst
+
+- type: entityLootTable
+  id: CornWildHarverst
+  entries:
+  - id: FoodCorn
+    amount: 1
+    maxAmount: 1
+
+- type: entity
+  name: wild plant
+  parent: WildPlantBase
+  id: WildPlantRice
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/rice.rsi
+      state: harvest
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: RiceWildHarverst
+
+- type: entityLootTable
+  id: RiceWildHarverst
+  entries:
+  - id: RiceBushel
+    amount: 1
+    maxAmount: 1
+
+- type: entity
+  name: wild plant
+  parent: WildPlantBase
+  id: WildPlantWheat
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/wheat.rsi
+      state: harvest
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: WheatWildHarverst
+
+- type: entityLootTable
+  id: WheatWildHarverst
+  entries:
+  - id: WheatBushel
+    amount: 1
+    maxAmount: 1
+
+- type: entity
+  name: wild plant
+  parent: WildPlantBase
+  id: WildPlantHemp
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Farming/hemp.rsi
+      state: harvest
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: HempWildHarverst
+
+- type: entityLootTable
+  id: HempWildHarverst
+  entries:
+  - id: HempSeedsCiv
+    amount: 1
+    maxAmount: 1
+  - id: MaterialRope1
+    amount: 1
+    maxAmount: 1

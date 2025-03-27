@@ -685,6 +685,23 @@ MAP_CONFIG = [
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorDirtRock"],
         "priority": 2
     },
+    { # Wild crops
+        "type": "BiomeEntityLayer",
+        "entity_protos": [
+            "WildPlantPotato",
+            "WildPlantCorn",
+            "WildPlantRice",
+            "WildPlantWheat",
+            "WildPlantHemp"
+            ],
+        "noise_type": NoiseType.NoiseType_OpenSimplex2S,
+        "octaves": 6,
+        "frequency": 0.3,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.84,
+        "tile_condition": lambda tile: tile in [TILEMAP_REVERSE["FloorAstroGrass"]],
+        "priority": 1
+    },
     { # Rivers
         "type": "BiomeEntityLayer",
         "entity_protos": "FloorWaterEntity",
