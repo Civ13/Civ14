@@ -7,5 +7,4 @@
   showInVote: false #2boring2vote
   description: extended-description
   rules:
-    - BasicStationEventScheduler
     - BasicRoundstartVariation

@@ -5,6 +5,11 @@
   text: "/ServerInfo/Guidebook/SpaceStation14.xml"
   children:
     - Survival
+    - Medical
+    - Chemical
+    - Service
+    - Science
+    - References
     - Glossary
 
 - type: guideEntry
