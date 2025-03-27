@@ -7,7 +7,7 @@
   category: clothing
   description: Typical priest clothing.
   icon:
-    sprite: Civ14/Clothing/exported/chaplain.rsi
+    sprite: Civ14/Clothing/exported/uniforms/chaplain.rsi
     state: icon
   objectType: Item
 
@@ -33,7 +33,7 @@
   category: clothing
   description: An oversized white t-shirt and purple cargo shorts.
   icon:
-    sprite: Civ14/Clothing/exported/ballas1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ballas1.rsi
     state: icon
   objectType: Item
 
@@ -59,7 +59,7 @@
   category: clothing
   description: An oversized black outfit.
   icon:
-    sprite: Civ14/Clothing/exported/ballas2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ballas2.rsi
     state: icon
   objectType: Item
 
@@ -85,7 +85,7 @@
   category: clothing
   description: An oversized purple shirt and khaki cargo pants.
   icon:
-    sprite: Civ14/Clothing/exported/ballas3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ballas3.rsi
     state: icon
   objectType: Item
 
@@ -111,7 +111,7 @@
   category: clothing
   description: An oversized green sweatshirt and jeans.
   icon:
-    sprite: Civ14/Clothing/exported/grove1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/grove1.rsi
     state: icon
   objectType: Item
 
@@ -137,7 +137,7 @@
   category: clothing
   description: A green checkered shirt and beige pants.
   icon:
-    sprite: Civ14/Clothing/exported/grove2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/grove2.rsi
     state: icon
   objectType: Item
 
@@ -163,7 +163,7 @@
   category: clothing
   description: A green basketball jersey and black jeans.
   icon:
-    sprite: Civ14/Clothing/exported/grove3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/grove3.rsi
     state: icon
   objectType: Item
 
@@ -189,7 +189,7 @@
   category: clothing
   description: Wow!
   icon:
-    sprite: Civ14/Clothing/exported/chad.rsi
+    sprite: Civ14/Clothing/exported/uniforms/chad.rsi
     state: icon
   objectType: Item
 
@@ -215,7 +215,7 @@
   category: clothing
   description: regular jumpsuit for contestants
   icon:
-    sprite: Civ14/Clothing/exported/squid_player.rsi
+    sprite: Civ14/Clothing/exported/uniforms/squid_player.rsi
     state: icon
   objectType: Item
 
@@ -241,7 +241,7 @@
   category: clothing
   description: A tight bodyglove worn by troopers.
   icon:
-    sprite: Civ14/Clothing/exported/replicant_bodyglove.rsi
+    sprite: Civ14/Clothing/exported/uniforms/replicant_bodyglove.rsi
     state: icon
   objectType: Item
 
@@ -267,7 +267,7 @@
   category: clothing
   description: A tight red bodyglove worn by Red guards.
   icon:
-    sprite: Civ14/Clothing/exported/redbodyglove.rsi
+    sprite: Civ14/Clothing/exported/uniforms/redbodyglove.rsi
     state: icon
   objectType: Item
 
@@ -293,7 +293,7 @@
   category: clothing
   description: A tight blue bodyglove worn by senate guards.
   icon:
-    sprite: Civ14/Clothing/exported/bluebodyglove.rsi
+    sprite: Civ14/Clothing/exported/uniforms/bluebodyglove.rsi
     state: icon
   objectType: Item
 
@@ -321,7 +321,7 @@
     A double-breasted black tunic rank and trousers with a metal plac denoting
     rank for NCO's in the Stormtrooper Corps.
   icon:
-    sprite: Civ14/Clothing/exported/imp_stormofficer.rsi
+    sprite: Civ14/Clothing/exported/uniforms/imp_stormofficer.rsi
     state: icon
   objectType: Item
 
@@ -349,7 +349,7 @@
     A double-breasted olive-green tunic rank and trousers with a metal plac
     denoting rank for CO's in the Imperial Navy.
   icon:
-    sprite: Civ14/Clothing/exported/impofficer_captain.rsi
+    sprite: Civ14/Clothing/exported/uniforms/impofficer_captain.rsi
     state: icon
   objectType: Item
 
@@ -375,7 +375,7 @@
   category: clothing
   description: A grey jumpsuit for technician's in the Engineering Corps.
   icon:
-    sprite: Civ14/Clothing/exported/imp_technician_grey.rsi
+    sprite: Civ14/Clothing/exported/uniforms/imp_technician_grey.rsi
     state: icon
   objectType: Item
 
@@ -401,7 +401,7 @@
   category: clothing
   description: A blue jumpsuit for technician's in the Engineering Corps.
   icon:
-    sprite: Civ14/Clothing/exported/imp_technician_blue.rsi
+    sprite: Civ14/Clothing/exported/uniforms/imp_technician_blue.rsi
     state: icon
   objectType: Item
 
@@ -427,7 +427,7 @@
   category: clothing
   description: A black jumpsuit for technician's in the Engineering Corps.
   icon:
-    sprite: Civ14/Clothing/exported/imp_technician_black.rsi
+    sprite: Civ14/Clothing/exported/uniforms/imp_technician_black.rsi
     state: icon
   objectType: Item
 
@@ -455,7 +455,7 @@
     A double-breasted blue-grey tunic and trousers for NCO's in the Republic
     Navy.
   icon:
-    sprite: Civ14/Clothing/exported/repofficer_ensign.rsi
+    sprite: Civ14/Clothing/exported/uniforms/repofficer_ensign.rsi
     state: icon
   objectType: Item
 
@@ -483,7 +483,7 @@
     A double-breasted white-grey tunic and trousers for NCO's in the Republic
     Medical Corps.
   icon:
-    sprite: Civ14/Clothing/exported/repofficer_medical.rsi
+    sprite: Civ14/Clothing/exported/uniforms/repofficer_medical.rsi
     state: icon
   objectType: Item
 
@@ -511,7 +511,7 @@
     A double-breasted olive-green tunic rank and trousers with a metal plac
     denoting rank for CO's in the Republic Navy.
   icon:
-    sprite: Civ14/Clothing/exported/repofficer_navcaptain.rsi
+    sprite: Civ14/Clothing/exported/uniforms/repofficer_navcaptain.rsi
     state: icon
   objectType: Item
 
@@ -537,7 +537,7 @@
   category: clothing
   description: A well adjusted captain's jacket.
   icon:
-    sprite: Civ14/Clothing/exported/repcaptain_uniform.rsi
+    sprite: Civ14/Clothing/exported/uniforms/repcaptain_uniform.rsi
     state: icon
   objectType: Item
 
@@ -563,7 +563,7 @@
   category: clothing
   description: A well adjusted ensign's jacket.
   icon:
-    sprite: Civ14/Clothing/exported/repensign_uniform.rsi
+    sprite: Civ14/Clothing/exported/uniforms/repensign_uniform.rsi
     state: icon
   objectType: Item
 
@@ -589,7 +589,7 @@
   category: clothing
   description: A well adjusted medical jacket.
   icon:
-    sprite: Civ14/Clothing/exported/repmedical_uniform.rsi
+    sprite: Civ14/Clothing/exported/uniforms/repmedical_uniform.rsi
     state: icon
   objectType: Item
 
@@ -615,7 +615,7 @@
   category: clothing
   description: A dark mechanical armor made for souless individuals.
   icon:
-    sprite: Civ14/Clothing/exported/darth_armor.rsi
+    sprite: Civ14/Clothing/exported/uniforms/darth_armor.rsi
     state: icon
   objectType: Item
 
@@ -641,7 +641,7 @@
   category: clothing
   description: A well adjusted lieutenant's jacket.
   icon:
-    sprite: Civ14/Clothing/exported/imp_stormofficer.rsi
+    sprite: Civ14/Clothing/exported/uniforms/imp_stormofficer.rsi
     state: icon
   objectType: Item
 
@@ -667,7 +667,7 @@
   category: clothing
   description: A loose outfit worn by the wise & experienced.
   icon:
-    sprite: Civ14/Clothing/exported/wise_tutor.rsi
+    sprite: Civ14/Clothing/exported/uniforms/wise_tutor.rsi
     state: icon
   objectType: Item
 
@@ -693,7 +693,7 @@
   category: clothing
   description: A loose outfit worn by the wise & experienced.
   icon:
-    sprite: Civ14/Clothing/exported/wise_tutor2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/wise_tutor2.rsi
     state: icon
   objectType: Item
 
@@ -719,7 +719,7 @@
   category: clothing
   description: A loose outfit worn by the unwise & unexperienced.
   icon:
-    sprite: Civ14/Clothing/exported/wise_tutor3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/wise_tutor3.rsi
     state: icon
   objectType: Item
 
@@ -745,7 +745,7 @@
   category: clothing
   description: A loose outfit worn by arrogant students.
   icon:
-    sprite: Civ14/Clothing/exported/arrogant_student.rsi
+    sprite: Civ14/Clothing/exported/uniforms/arrogant_student.rsi
     state: icon
   objectType: Item
 
@@ -771,7 +771,7 @@
   category: clothing
   description: A plain looking uniform worn by soldiers of the rebel alliance.
   icon:
-    sprite: Civ14/Clothing/exported/rebel1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/rebel1.rsi
     state: icon
   objectType: Item
 
@@ -797,7 +797,7 @@
   category: clothing
   description: A military uniform worn by DRA officers.
   icon:
-    sprite: Civ14/Clothing/exported/dra_uni_officer.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dra_uni_officer.rsi
     state: icon
   objectType: Item
 
@@ -823,7 +823,7 @@
   category: clothing
   description: A simple cloth tunic, with a brass and leather belt.
   icon:
-    sprite: Civ14/Clothing/exported/customroman.rsi
+    sprite: Civ14/Clothing/exported/uniforms/customroman.rsi
     state: icon
   objectType: Item
 
@@ -849,7 +849,7 @@
   category: clothing
   description: A simple cloth toga.
   icon:
-    sprite: Civ14/Clothing/exported/customtoga.rsi
+    sprite: Civ14/Clothing/exported/uniforms/customtoga.rsi
     state: icon
   objectType: Item
 
@@ -875,7 +875,7 @@
   category: clothing
   description: A simple cloth toga, covering just one of the shoulders.
   icon:
-    sprite: Civ14/Clothing/exported/toga2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/toga2.rsi
     state: icon
   objectType: Item
 
@@ -903,7 +903,7 @@
     A red tunic covered with iron armor, with added golden plates. Used by the
     roman army's centurions.
   icon:
-    sprite: Civ14/Clothing/exported/roman_centurion.rsi
+    sprite: Civ14/Clothing/exported/uniforms/roman_centurion.rsi
     state: icon
   objectType: Item
 
@@ -931,7 +931,7 @@
     A light tunic, covered with bronze and leather armor. Used by the hellenic
     armies.
   icon:
-    sprite: Civ14/Clothing/exported/athens.rsi
+    sprite: Civ14/Clothing/exported/uniforms/athens.rsi
     state: icon
   objectType: Item
 
@@ -959,7 +959,7 @@
     A light tunic, covered with bronze and leather armor. Used by the hellenic
     armies.
   icon:
-    sprite: Civ14/Clothing/exported/thebes.rsi
+    sprite: Civ14/Clothing/exported/uniforms/thebes.rsi
     state: icon
   objectType: Item
 
@@ -987,7 +987,7 @@
     A light tunic, covered with bronze and leather armor. Used by the hellenic
     armies.
   icon:
-    sprite: Civ14/Clothing/exported/corinthia.rsi
+    sprite: Civ14/Clothing/exported/uniforms/corinthia.rsi
     state: icon
   objectType: Item
 
@@ -1015,7 +1015,7 @@
     A light blue tunic covered by a bronze plate armor. Used by hellenic
     commanders.
   icon:
-    sprite: Civ14/Clothing/exported/greek_commander.rsi
+    sprite: Civ14/Clothing/exported/uniforms/greek_commander.rsi
     state: icon
   objectType: Item
 
@@ -1041,7 +1041,7 @@
   category: clothing
   description: A light white tunic.
   icon:
-    sprite: Civ14/Clothing/exported/toxotai.rsi
+    sprite: Civ14/Clothing/exported/uniforms/toxotai.rsi
     state: icon
   objectType: Item
 
@@ -1067,7 +1067,7 @@
   category: clothing
   description: Celtic-style trousers, in green.
   icon:
-    sprite: Civ14/Clothing/exported/celtic_green.rsi
+    sprite: Civ14/Clothing/exported/uniforms/celtic_green.rsi
     state: icon
   objectType: Item
 
@@ -1093,7 +1093,7 @@
   category: clothing
   description: Celtic-style trousers, in blue.
   icon:
-    sprite: Civ14/Clothing/exported/celtic_blue.rsi
+    sprite: Civ14/Clothing/exported/uniforms/celtic_blue.rsi
     state: icon
   objectType: Item
 
@@ -1119,7 +1119,7 @@
   category: clothing
   description: Celtic-style trousers, in red.
   icon:
-    sprite: Civ14/Clothing/exported/celtic_red.rsi
+    sprite: Civ14/Clothing/exported/uniforms/celtic_red.rsi
     state: icon
   objectType: Item
 
@@ -1145,7 +1145,7 @@
   category: clothing
   description: Short, celtic-style wool trousers.
   icon:
-    sprite: Civ14/Clothing/exported/celtic_short_braccae.rsi
+    sprite: Civ14/Clothing/exported/uniforms/celtic_short_braccae.rsi
     state: icon
   objectType: Item
 
@@ -1171,7 +1171,7 @@
   category: clothing
   description: Long, celtic-style wool trousers.
   icon:
-    sprite: Civ14/Clothing/exported/celtic_long_braccae.rsi
+    sprite: Civ14/Clothing/exported/uniforms/celtic_long_braccae.rsi
     state: icon
   objectType: Item
 
@@ -1197,7 +1197,7 @@
   category: clothing
   description: Mayan-style loincloth.
   icon:
-    sprite: Civ14/Clothing/exported/mayan_loincloth.rsi
+    sprite: Civ14/Clothing/exported/uniforms/mayan_loincloth.rsi
     state: icon
   objectType: Item
 
@@ -1223,7 +1223,7 @@
   category: clothing
   description: A loincloth fit for a ferocious aztec warrior.
   icon:
-    sprite: Civ14/Clothing/exported/aztec_loincloth.rsi
+    sprite: Civ14/Clothing/exported/uniforms/aztec_loincloth.rsi
     state: icon
   objectType: Item
 
@@ -1249,7 +1249,7 @@
   category: clothing
   description: A fancy, decorated shendyt.
   icon:
-    sprite: Civ14/Clothing/exported/pharaoh.rsi
+    sprite: Civ14/Clothing/exported/uniforms/pharaoh.rsi
     state: icon
   objectType: Item
 
@@ -1275,7 +1275,7 @@
   category: clothing
   description: A fancy, decorated shendyt.
   icon:
-    sprite: Civ14/Clothing/exported/greatshendyt.rsi
+    sprite: Civ14/Clothing/exported/uniforms/greatshendyt.rsi
     state: icon
   objectType: Item
 
@@ -1301,7 +1301,7 @@
   category: clothing
   description: A set of robes worn by the ainu.
   icon:
-    sprite: Civ14/Clothing/exported/ainu_robe.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ainu_robe.rsi
     state: icon
   objectType: Item
 
@@ -1327,7 +1327,7 @@
   category: clothing
   description: A set of robes worn by the ainu.
   icon:
-    sprite: Civ14/Clothing/exported/ainu_robe2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ainu_robe2.rsi
     state: icon
   objectType: Item
 
@@ -1355,7 +1355,7 @@
     A plain kimono in popular asian style, with simplistic underwear concealed
     beneath.
   icon:
-    sprite: Civ14/Clothing/exported/kimono.rsi
+    sprite: Civ14/Clothing/exported/uniforms/kimono.rsi
     state: icon
   objectType: Item
 
@@ -1381,7 +1381,7 @@
   category: clothing
   description: A simple towel to wrap around yourself.
   icon:
-    sprite: Civ14/Clothing/exported/towel.rsi
+    sprite: Civ14/Clothing/exported/uniforms/towel.rsi
     state: icon
   objectType: Item
 
@@ -1407,7 +1407,7 @@
   category: clothing
   description: The musty wrappings seem to disintigrate as you examine them.
   icon:
-    sprite: Civ14/Clothing/exported/mummy.rsi
+    sprite: Civ14/Clothing/exported/uniforms/mummy.rsi
     state: icon
   objectType: Item
 
@@ -1435,7 +1435,7 @@
     An outfit composed of a blue emergency services shirt and denim trousers. It
     has a police badge attached
   icon:
-    sprite: Civ14/Clothing/exported/traffic_cop.rsi
+    sprite: Civ14/Clothing/exported/uniforms/traffic_cop.rsi
     state: icon
   objectType: Item
 
@@ -1463,7 +1463,7 @@
     An outfit composed of a blue emergency services shirt and denim trousers. It
     has a police supervisor badge attached
   icon:
-    sprite: Civ14/Clothing/exported/traffic_cop_sup.rsi
+    sprite: Civ14/Clothing/exported/uniforms/traffic_cop_sup.rsi
     state: icon
   objectType: Item
 
@@ -1489,7 +1489,7 @@
   category: clothing
   description: A law enforcement outfit worn by the town's sherrif.
   icon:
-    sprite: Civ14/Clothing/exported/sd_sheriff.rsi
+    sprite: Civ14/Clothing/exported/uniforms/sd_sheriff.rsi
     state: icon
   objectType: Item
 
@@ -1515,7 +1515,7 @@
   category: clothing
   description: A law enforcement outfit worn by the town's deputies.
   icon:
-    sprite: Civ14/Clothing/exported/sd_deputy.rsi
+    sprite: Civ14/Clothing/exported/uniforms/sd_deputy.rsi
     state: icon
   objectType: Item
 
@@ -1541,7 +1541,7 @@
   category: clothing
   description: ""
   icon:
-    sprite: Civ14/Clothing/exported/custom_col_short_full.rsi
+    sprite: Civ14/Clothing/exported/uniforms/custom_col_short_full.rsi
     state: icon
   objectType: Item
 
@@ -1567,7 +1567,7 @@
   category: clothing
   description: A standard tropical US army uniform.
   icon:
-    sprite: Civ14/Clothing/exported/us_fp.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_fp.rsi
     state: icon
   objectType: Item
 
@@ -1595,7 +1595,7 @@
     The standard US Army camo uniform implemented in the early 1980s. Still used
     during the present day by many countries.
   icon:
-    sprite: Civ14/Clothing/exported/us_camo.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_camo.rsi
     state: icon
   objectType: Item
 
@@ -1621,7 +1621,7 @@
   category: clothing
   description: The standard US Army OG-107 uniform trousers.
   icon:
-    sprite: Civ14/Clothing/exported/us_greentrousers_og107.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_greentrousers_og107.rsi
     state: icon
   objectType: Item
 
@@ -1647,7 +1647,7 @@
   category: clothing
   description: A rolled-sleeves version of the US Army OG-107 uniform.
   icon:
-    sprite: Civ14/Clothing/exported/us_uni_og107_rolled.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_uni_og107_rolled.rsi
     state: icon
   objectType: Item
 
@@ -1675,7 +1675,7 @@
     A light version of the US Army OG-107 trousers and the service khaki
     undershirt.
   icon:
-    sprite: Civ14/Clothing/exported/us_og107_lightuni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_og107_lightuni.rsi
     state: icon
   objectType: Item
 
@@ -1703,7 +1703,7 @@
     A light version of the US Army OG-107 trousers and the service white
     untucked undershirt.
   icon:
-    sprite: Civ14/Clothing/exported/us_og107_lightuni2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_og107_lightuni2.rsi
     state: icon
   objectType: Item
 
@@ -1729,7 +1729,7 @@
   category: clothing
   description: A camo uniform in the tigerstripes pattern.
   icon:
-    sprite: Civ14/Clothing/exported/us_camo_tigerstripes.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_camo_tigerstripes.rsi
     state: icon
   objectType: Item
 
@@ -1755,7 +1755,7 @@
   category: clothing
   description: The standard US Army desert camo uniform the late 20th century.
   icon:
-    sprite: Civ14/Clothing/exported/us_camo_dcu.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_camo_dcu.rsi
     state: icon
   objectType: Item
 
@@ -1781,7 +1781,7 @@
   category: clothing
   description: The standard US Army camo uniform the late 20th century.
   icon:
-    sprite: Civ14/Clothing/exported/us_camo_woodland.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_camo_woodland.rsi
     state: icon
   objectType: Item
 
@@ -1809,7 +1809,7 @@
     The standard US Army camo uniform the late 20th century, with Hezbollah
     insiginia.
   icon:
-    sprite: Civ14/Clothing/exported/us_camo_woodland_hez.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_camo_woodland_hez.rsi
     state: icon
   objectType: Item
 
@@ -1835,7 +1835,7 @@
   category: clothing
   description: The standard US Army camo uniform the early 21st century.
   icon:
-    sprite: Civ14/Clothing/exported/us_camo_ucp.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_camo_ucp.rsi
     state: icon
   objectType: Item
 
@@ -1861,7 +1861,7 @@
   category: clothing
   description: The standard US Army camo uniform from 2018 onwards.
   icon:
-    sprite: Civ14/Clothing/exported/us_camo_ocp.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_camo_ocp.rsi
     state: icon
   objectType: Item
 
@@ -1889,7 +1889,7 @@
     A uniform in a camouflage pattern designed for use in a wide range of
     environments and conditions. Usually given to special operations units.
   icon:
-    sprite: Civ14/Clothing/exported/multicam.rsi
+    sprite: Civ14/Clothing/exported/uniforms/multicam.rsi
     state: icon
   objectType: Item
 
@@ -1915,7 +1915,7 @@
   category: clothing
   description: An informal outfit made of OCP pattern trousers and a olive drab shirt.
   icon:
-    sprite: Civ14/Clothing/exported/us_lightuni_modern.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_lightuni_modern.rsi
     state: icon
   objectType: Item
 
@@ -1943,7 +1943,7 @@
     The standard us army uniform of the korean war, this one outfitted for
     winter.
   icon:
-    sprite: Civ14/Clothing/exported/usuni_korea.rsi
+    sprite: Civ14/Clothing/exported/uniforms/usuni_korea.rsi
     state: icon
   objectType: Item
 
@@ -1969,7 +1969,7 @@
   category: clothing
   description: The standard winter chinese uniform.
   icon:
-    sprite: Civ14/Clothing/exported/korea_china.rsi
+    sprite: Civ14/Clothing/exported/uniforms/korea_china.rsi
     state: icon
   objectType: Item
 
@@ -1995,7 +1995,7 @@
   category: clothing
   description: A black uniform of the NLF.
   icon:
-    sprite: Civ14/Clothing/exported/localnlfuniform_v1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v1.rsi
     state: icon
   objectType: Item
 
@@ -2021,7 +2021,7 @@
   category: clothing
   description: A black and blue uniform of the NLF.
   icon:
-    sprite: Civ14/Clothing/exported/localnlfuniform_v2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v2.rsi
     state: icon
   objectType: Item
 
@@ -2047,7 +2047,7 @@
   category: clothing
   description: A black and khaki uniform of the NLF.
   icon:
-    sprite: Civ14/Clothing/exported/localnlfuniform_v3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v3.rsi
     state: icon
   objectType: Item
 
@@ -2073,7 +2073,7 @@
   category: clothing
   description: A blue and khaki uniform of the NLF.
   icon:
-    sprite: Civ14/Clothing/exported/localnlfuniform_v4.rsi
+    sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v4.rsi
     state: icon
   objectType: Item
 
@@ -2099,7 +2099,7 @@
   category: clothing
   description: A grey uniform of the NLF.
   icon:
-    sprite: Civ14/Clothing/exported/localnlfuniform_v5.rsi
+    sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v5.rsi
     state: icon
   objectType: Item
 
@@ -2125,7 +2125,7 @@
   category: clothing
   description: A khaki uniform of the North Vietnamese Army.
   icon:
-    sprite: Civ14/Clothing/exported/NVAuni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/NVAuni.rsi
     state: icon
   objectType: Item
 
@@ -2153,7 +2153,7 @@
     A khaki uniform of the North Vietnamese Army. This one is bearing the ranks
     of a sergeant.
   icon:
-    sprite: Civ14/Clothing/exported/NVAuni_sl.rsi
+    sprite: Civ14/Clothing/exported/uniforms/NVAuni_sl.rsi
     state: icon
   objectType: Item
 
@@ -2181,7 +2181,7 @@
     A army issued pair of pants and woodland pattern body-paint; to blend
     seamlessly into the enviroment
   icon:
-    sprite: Civ14/Clothing/exported/toughguy.rsi
+    sprite: Civ14/Clothing/exported/uniforms/toughguy.rsi
     state: icon
   objectType: Item
 
@@ -2207,7 +2207,7 @@
   category: clothing
   description: An uniform worn by the Red guard.
   icon:
-    sprite: Civ14/Clothing/exported/redguard.rsi
+    sprite: Civ14/Clothing/exported/uniforms/redguard.rsi
     state: icon
   objectType: Item
 
@@ -2235,7 +2235,7 @@
     A standard soviet uniform developped and issued in the early 80's, still in
     use after the collapse of the Soviet Union.
   icon:
-    sprite: Civ14/Clothing/exported/afghanka_open.rsi
+    sprite: Civ14/Clothing/exported/uniforms/afghanka_open.rsi
     state: icon
   objectType: Item
 
@@ -2261,7 +2261,7 @@
   category: clothing
   description: A heavily weathered Afghanka uniform with a CAFR patch on the front.
   icon:
-    sprite: Civ14/Clothing/exported/cafr_afghanka_open.rsi
+    sprite: Civ14/Clothing/exported/uniforms/cafr_afghanka_open.rsi
     state: icon
   objectType: Item
 
@@ -2287,7 +2287,7 @@
   category: clothing
   description: A suit in the KLMK camo pattern, issued by the Soviet Union in the 1970s.
   icon:
-    sprite: Civ14/Clothing/exported/sov_klmk.rsi
+    sprite: Civ14/Clothing/exported/uniforms/sov_klmk.rsi
     state: icon
   objectType: Item
 
@@ -2313,7 +2313,7 @@
   category: clothing
   description: A light yellow tunic.
   icon:
-    sprite: Civ14/Clothing/exported/yellow_tunic.rsi
+    sprite: Civ14/Clothing/exported/uniforms/yellow_tunic.rsi
     state: icon
   objectType: Item
 
@@ -2341,7 +2341,7 @@
     A suit in the KZS camo pattern, issued by the Soviet Union in the late
     1970s.
   icon:
-    sprite: Civ14/Clothing/exported/sov_kzs.rsi
+    sprite: Civ14/Clothing/exported/uniforms/sov_kzs.rsi
     state: icon
   objectType: Item
 
@@ -2367,7 +2367,7 @@
   category: clothing
   description: A Soviet officer uniform, used by officers in the Red Army.
   icon:
-    sprite: Civ14/Clothing/exported/sovuni_officer.rsi
+    sprite: Civ14/Clothing/exported/uniforms/sovuni_officer.rsi
     state: icon
   objectType: Item
 
@@ -2393,7 +2393,7 @@
   category: clothing
   description: A military uniform worn by DRA soldiers.
   icon:
-    sprite: Civ14/Clothing/exported/dra_uni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dra_uni.rsi
     state: icon
   objectType: Item
 
@@ -2419,7 +2419,7 @@
   category: clothing
   description: A military uniform worn by DRA NCOs.
   icon:
-    sprite: Civ14/Clothing/exported/dra_uni_nco.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dra_uni_nco.rsi
     state: icon
   objectType: Item
 
@@ -2445,7 +2445,7 @@
   category: clothing
   description: A stylish red bowling shirt with black pants.
   icon:
-    sprite: Civ14/Clothing/exported/bowling_red.rsi
+    sprite: Civ14/Clothing/exported/uniforms/bowling_red.rsi
     state: icon
   objectType: Item
 
@@ -2471,7 +2471,7 @@
   category: clothing
   description: A stylish yellow bowling shirt with black pants.
   icon:
-    sprite: Civ14/Clothing/exported/bowling_yellow.rsi
+    sprite: Civ14/Clothing/exported/uniforms/bowling_yellow.rsi
     state: icon
   objectType: Item
 
@@ -2497,7 +2497,7 @@
   category: clothing
   description: A stylish green bowling shirt with black pants.
   icon:
-    sprite: Civ14/Clothing/exported/bowling_green.rsi
+    sprite: Civ14/Clothing/exported/uniforms/bowling_green.rsi
     state: icon
   objectType: Item
 
@@ -2523,7 +2523,7 @@
   category: clothing
   description: A stylish blue bowling shirt with black pants.
   icon:
-    sprite: Civ14/Clothing/exported/bowling_blue.rsi
+    sprite: Civ14/Clothing/exported/uniforms/bowling_blue.rsi
     state: icon
   objectType: Item
 
@@ -2549,7 +2549,7 @@
   category: clothing
   description: A tie-dye t-shirt with bootleg grey jeans. Right on, man!
   icon:
-    sprite: Civ14/Clothing/exported/hippy.rsi
+    sprite: Civ14/Clothing/exported/uniforms/hippy.rsi
     state: icon
   objectType: Item
 
@@ -2577,7 +2577,7 @@
     A mid century style dress often worn outside in fair weather associated with
     a new generation of independent women
   icon:
-    sprite: Civ14/Clothing/exported/sundress_yellow.rsi
+    sprite: Civ14/Clothing/exported/uniforms/sundress_yellow.rsi
     state: icon
   objectType: Item
 
@@ -2603,7 +2603,7 @@
   category: clothing
   description: A football jersey of the Chad Town Football Club, C.T.F.C.
   icon:
-    sprite: Civ14/Clothing/exported/football_blue.rsi
+    sprite: Civ14/Clothing/exported/uniforms/football_blue.rsi
     state: icon
   objectType: Item
 
@@ -2629,7 +2629,7 @@
   category: clothing
   description: A fancy cloth toga.
   icon:
-    sprite: Civ14/Clothing/exported/customtoga.rsi
+    sprite: Civ14/Clothing/exported/uniforms/customtoga.rsi
     state: icon
   objectType: Item
 
@@ -2655,7 +2655,7 @@
   category: clothing
   description: A football jersey of the Unga Bunga United, U.B.U.
   icon:
-    sprite: Civ14/Clothing/exported/football_red.rsi
+    sprite: Civ14/Clothing/exported/uniforms/football_red.rsi
     state: icon
   objectType: Item
 
@@ -2683,7 +2683,7 @@
     A tight fitting pair of alligator scale pants. When you're this on-point;
     wearing a shirt would just cramp your style.
   icon:
-    sprite: Civ14/Clothing/exported/gator_pants.rsi
+    sprite: Civ14/Clothing/exported/uniforms/gator_pants.rsi
     state: icon
   objectType: Item
 
@@ -2709,7 +2709,7 @@
   category: clothing
   description: A soviet NKVD uniform, worn by members of the NKVD.
   icon:
-    sprite: Civ14/Clothing/exported/nkvd_uni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/nkvd_uni.rsi
     state: icon
   objectType: Item
 
@@ -2735,7 +2735,7 @@
   category: clothing
   description: A Russian KGB uniform, used by KGB.
   icon:
-    sprite: Civ14/Clothing/exported/nkvd_uni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/nkvd_uni.rsi
     state: icon
   objectType: Item
 
@@ -2761,7 +2761,7 @@
   category: clothing
   description: A worn out GULAG prisoner outfit.
   icon:
-    sprite: Civ14/Clothing/exported/gulagprisoner.rsi
+    sprite: Civ14/Clothing/exported/uniforms/gulagprisoner.rsi
     state: icon
   objectType: Item
 
@@ -2787,7 +2787,7 @@
   category: clothing
   description: An Imperial Japanese Army officer uniform.
   icon:
-    sprite: Civ14/Clothing/exported/japoffuni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/japoffuni.rsi
     state: icon
   objectType: Item
 
@@ -2813,7 +2813,7 @@
   category: clothing
   description: A standard imperial japanese army uniform.
   icon:
-    sprite: Civ14/Clothing/exported/japuni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/japuni.rsi
     state: icon
   objectType: Item
 
@@ -2839,7 +2839,7 @@
   category: clothing
   description: A imperial japanese navy uniform.
   icon:
-    sprite: Civ14/Clothing/exported/ww2_japuni_navy.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_navy.rsi
     state: icon
   objectType: Item
 
@@ -2865,7 +2865,7 @@
   category: clothing
   description: An Imperial Japanese naval petty officer uniform.
   icon:
-    sprite: Civ14/Clothing/exported/ww2_japuni_navy_po.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_navy_po.rsi
     state: icon
   objectType: Item
 
@@ -2891,7 +2891,7 @@
   category: clothing
   description: An Imperial Japanese naval officer uniform.
   icon:
-    sprite: Civ14/Clothing/exported/ww2_japuni_navy_officer.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_navy_officer.rsi
     state: icon
   objectType: Item
 
@@ -2919,7 +2919,7 @@
     A prestigious Imperial Japanese SNLF uniform, worn by elite naval infantry
     renowned for their expertise in amphibious assault operations.
   icon:
-    sprite: Civ14/Clothing/exported/ww2_japuni_snlf.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_snlf.rsi
     state: icon
   objectType: Item
 
@@ -2945,7 +2945,7 @@
   category: clothing
   description: An Imperial Japanese Army uniform, this one bears the rank of a tanker.
   icon:
-    sprite: Civ14/Clothing/exported/japtanker.rsi
+    sprite: Civ14/Clothing/exported/uniforms/japtanker.rsi
     state: icon
   objectType: Item
 
@@ -2971,7 +2971,7 @@
   category: clothing
   description: A khaki uniform worn by the British Army.
   icon:
-    sprite: Civ14/Clothing/exported/ww1_british.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww1_british.rsi
     state: icon
   objectType: Item
 
@@ -2997,7 +2997,7 @@
   category: clothing
   description: A tropical green British officer uniform.
   icon:
-    sprite: Civ14/Clothing/exported/ww2_british_off_tropical.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww2_british_off_tropical.rsi
     state: icon
   objectType: Item
 
@@ -3023,7 +3023,7 @@
   category: clothing
   description: A Chinese Red Army uniform.
   icon:
-    sprite: Civ14/Clothing/exported/ww2_china.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww2_china.rsi
     state: icon
   objectType: Item
 
@@ -3049,7 +3049,7 @@
   category: clothing
   description: A Chinese Red Army uniform.
   icon:
-    sprite: Civ14/Clothing/exported/ww2_china_off.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww2_china_off.rsi
     state: icon
   objectType: Item
 
@@ -3075,7 +3075,7 @@
   category: clothing
   description: A Chinese Red Army uniform.
   icon:
-    sprite: Civ14/Clothing/exported/ww2_china2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww2_china2.rsi
     state: icon
   objectType: Item
 
@@ -3101,7 +3101,7 @@
   category: clothing
   description: A chinese army uniform.
   icon:
-    sprite: Civ14/Clothing/exported/ww2_china2_off.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww2_china2_off.rsi
     state: icon
   objectType: Item
 
@@ -3127,7 +3127,7 @@
   category: clothing
   description: A uniform worn by the Chinese Red Army.
   icon:
-    sprite: Civ14/Clothing/exported/cra_uni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/cra_uni.rsi
     state: icon
   objectType: Item
 
@@ -3153,7 +3153,7 @@
   category: clothing
   description: A feldgrau uniform worn by the Imperial German Army.
   icon:
-    sprite: Civ14/Clothing/exported/ww1_german.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww1_german.rsi
     state: icon
   objectType: Item
 
@@ -3179,7 +3179,7 @@
   category: clothing
   description: A German feldgrau uniform, usually worn by doctors in the Wehrmacht.
   icon:
-    sprite: Civ14/Clothing/exported/geruni_doctor.rsi
+    sprite: Civ14/Clothing/exported/uniforms/geruni_doctor.rsi
     state: icon
   objectType: Item
 
@@ -3205,7 +3205,7 @@
   category: clothing
   description: A German feldgrau uniform, almost always worn by officers in the Wehrmacht.
   icon:
-    sprite: Civ14/Clothing/exported/geruni_officer.rsi
+    sprite: Civ14/Clothing/exported/uniforms/geruni_officer.rsi
     state: icon
   objectType: Item
 
@@ -3231,7 +3231,7 @@
   category: clothing
   description: A German feldgrau uniform, often worn by tankers in the Wehrmacht.
   icon:
-    sprite: Civ14/Clothing/exported/gertanker.rsi
+    sprite: Civ14/Clothing/exported/uniforms/gertanker.rsi
     state: icon
   objectType: Item
 
@@ -3257,7 +3257,7 @@
   category: clothing
   description: A German feldgrau uniform, mostly worn by Military Police in the Wehrmacht.
   icon:
-    sprite: Civ14/Clothing/exported/geruni_mp.rsi
+    sprite: Civ14/Clothing/exported/uniforms/geruni_mp.rsi
     state: icon
   objectType: Item
 
@@ -3283,7 +3283,7 @@
   category: clothing
   description: A German SS uniform, always worn by soldaten in the Schutzstaffel.
   icon:
-    sprite: Civ14/Clothing/exported/ssuni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ssuni.rsi
     state: icon
   objectType: Item
 
@@ -3309,7 +3309,7 @@
   category: clothing
   description: A german SS officer uniform, worn by officers in the Schutzstaffel.
   icon:
-    sprite: Civ14/Clothing/exported/ssuni_officer.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ssuni_officer.rsi
     state: icon
   objectType: Item
 
@@ -3337,7 +3337,7 @@
     This German SS uniform features the iconic 1944 Erbsenmuster dot-pattern,
     historically worn by members of the Schutzstaffel.
   icon:
-    sprite: Civ14/Clothing/exported/ssuni_camo.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ssuni_camo.rsi
     state: icon
   objectType: Item
 
@@ -3363,7 +3363,7 @@
   category: clothing
   description: A Soviet uniform, used by infantry in the Red Army.
   icon:
-    sprite: Civ14/Clothing/exported/sovuni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/sovuni.rsi
     state: icon
   objectType: Item
 
@@ -3389,7 +3389,7 @@
   category: clothing
   description: A Soviet tanker uniform, used by tank crewmen in the Red Army.
   icon:
-    sprite: Civ14/Clothing/exported/sovtanker.rsi
+    sprite: Civ14/Clothing/exported/uniforms/sovtanker.rsi
     state: icon
   objectType: Item
 
@@ -3415,7 +3415,7 @@
   category: clothing
   description: A Soviet berezka uniform, adapted to the winter wilderness.
   icon:
-    sprite: Civ14/Clothing/exported/berezka.rsi
+    sprite: Civ14/Clothing/exported/uniforms/berezka.rsi
     state: icon
   objectType: Item
 
@@ -3441,7 +3441,7 @@
   category: clothing
   description: A Soviet camouflage outfit, designed specifically for reconnaissance units.
   icon:
-    sprite: Civ14/Clothing/exported/amoeba.rsi
+    sprite: Civ14/Clothing/exported/uniforms/amoeba.rsi
     state: icon
   objectType: Item
 
@@ -3467,7 +3467,7 @@
   category: clothing
   description: A canadian pattern uniform
   icon:
-    sprite: Civ14/Clothing/exported/cad_pat_winter.rsi
+    sprite: Civ14/Clothing/exported/uniforms/cad_pat_winter.rsi
     state: icon
   objectType: Item
 
@@ -3495,7 +3495,7 @@
     A uniform of the italian army. It has a dark green shirt with a bright
     orange trimmings along the arms and feet and a white saltire.
   icon:
-    sprite: Civ14/Clothing/exported/nap_portuguese_army.rsi
+    sprite: Civ14/Clothing/exported/uniforms/nap_portuguese_army.rsi
     state: icon
   objectType: Item
 
@@ -3521,7 +3521,7 @@
   category: clothing
   description: An Italian uniform, used by officers of the Italian Royal Army.
   icon:
-    sprite: Civ14/Clothing/exported/it_uni_officer.rsi
+    sprite: Civ14/Clothing/exported/uniforms/it_uni_officer.rsi
     state: icon
   objectType: Item
 
@@ -3547,7 +3547,7 @@
   category: clothing
   description: A Hellenic army uniform.
   icon:
-    sprite: Civ14/Clothing/exported/ww2_japuni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww2_japuni.rsi
     state: icon
   objectType: Item
 
@@ -3573,7 +3573,7 @@
   category: clothing
   description: A set composed of a light blue linen shirt and short trousers.
   icon:
-    sprite: Civ14/Clothing/exported/civuni1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/civuni1.rsi
     state: icon
   objectType: Item
 
@@ -3599,7 +3599,7 @@
   category: clothing
   description: A set composed of a white linen shirt and black trousers.
   icon:
-    sprite: Civ14/Clothing/exported/civuni2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/civuni2.rsi
     state: icon
   objectType: Item
 
@@ -3625,7 +3625,7 @@
   category: clothing
   description: The standard uniform of the HJ.
   icon:
-    sprite: Civ14/Clothing/exported/hj_uni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/hj_uni.rsi
     state: icon
   objectType: Item
 
@@ -3651,7 +3651,7 @@
   category: clothing
   description: An American uniform, used by soldiers in the US army during WW2.
   icon:
-    sprite: Civ14/Clothing/exported/usuni2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/usuni2.rsi
     state: icon
   objectType: Item
 
@@ -3677,7 +3677,7 @@
   category: clothing
   description: An American uniform, used by tankers in the US army.
   icon:
-    sprite: Civ14/Clothing/exported/ustanker.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ustanker.rsi
     state: icon
   objectType: Item
 
@@ -3703,7 +3703,7 @@
   category: clothing
   description: An american uniform, used by sailors in the US navy during WW2.
   icon:
-    sprite: Civ14/Clothing/exported/us_navy.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_navy.rsi
     state: icon
   objectType: Item
 
@@ -3729,7 +3729,7 @@
   category: clothing
   description: An American uniform, used by captains in the US army.
   icon:
-    sprite: Civ14/Clothing/exported/usuni_cap.rsi
+    sprite: Civ14/Clothing/exported/uniforms/usuni_cap.rsi
     state: icon
   objectType: Item
 
@@ -3755,7 +3755,7 @@
   category: clothing
   description: An American uniform, used by Military Police in the US army.
   icon:
-    sprite: Civ14/Clothing/exported/usuni_mp.rsi
+    sprite: Civ14/Clothing/exported/uniforms/usuni_mp.rsi
     state: icon
   objectType: Item
 
@@ -3783,7 +3783,7 @@
     An American uniform, used by soldiers in the US army, this one has no
     jacket.
   icon:
-    sprite: Civ14/Clothing/exported/us_shirtless.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_shirtless.rsi
     state: icon
   objectType: Item
 
@@ -3809,7 +3809,7 @@
   category: clothing
   description: A Finnish winter uniform.
   icon:
-    sprite: Civ14/Clothing/exported/geruni_ww2_winter.rsi
+    sprite: Civ14/Clothing/exported/uniforms/geruni_ww2_winter.rsi
     state: icon
   objectType: Item
 
@@ -3835,7 +3835,7 @@
   category: clothing
   description: A Ukrayins'ka Povstans'ka Armiya uniform.
   icon:
-    sprite: Civ14/Clothing/exported/upa_uni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/upa_uni.rsi
     state: icon
   objectType: Item
 
@@ -3861,7 +3861,7 @@
   category: clothing
   description: A Ukrayins'ka Povstans'ka Armiya officer uniform.
   icon:
-    sprite: Civ14/Clothing/exported/upa_off.rsi
+    sprite: Civ14/Clothing/exported/uniforms/upa_off.rsi
     state: icon
   objectType: Item
 
@@ -3887,7 +3887,7 @@
   category: clothing
   description: A blue uniform of the Blugoslavian Navy.
   icon:
-    sprite: Civ14/Clothing/exported/blugoslavian_sailor.rsi
+    sprite: Civ14/Clothing/exported/uniforms/blugoslavian_sailor.rsi
     state: icon
   objectType: Item
 
@@ -3913,7 +3913,7 @@
   category: clothing
   description: A red uniform of the Redmenian Navy.
   icon:
-    sprite: Civ14/Clothing/exported/redmenian_sailor.rsi
+    sprite: Civ14/Clothing/exported/uniforms/redmenian_sailor.rsi
     state: icon
   objectType: Item
 
@@ -3939,7 +3939,7 @@
   category: clothing
   description: Sanitary clothing worn by medical personnel.
   icon:
-    sprite: Civ14/Clothing/exported/scrubs_white.rsi
+    sprite: Civ14/Clothing/exported/uniforms/scrubs_white.rsi
     state: icon
   objectType: Item
 
@@ -3965,7 +3965,7 @@
   category: clothing
   description: Sanitary clothing worn by medical personnel. This one is dark green.
   icon:
-    sprite: Civ14/Clothing/exported/scrubs_darkgreen.rsi
+    sprite: Civ14/Clothing/exported/uniforms/scrubs_darkgreen.rsi
     state: icon
   objectType: Item
 
@@ -3991,7 +3991,7 @@
   category: clothing
   description: Sanitary clothing worn by medical personnel. This one is light green.
   icon:
-    sprite: Civ14/Clothing/exported/scrubs_lightgreen.rsi
+    sprite: Civ14/Clothing/exported/uniforms/scrubs_lightgreen.rsi
     state: icon
   objectType: Item
 
@@ -4017,7 +4017,7 @@
   category: clothing
   description: Sanitary clothing worn by medical personnel. This one is navy.
   icon:
-    sprite: Civ14/Clothing/exported/scrubs_navy.rsi
+    sprite: Civ14/Clothing/exported/uniforms/scrubs_navy.rsi
     state: icon
   objectType: Item
 
@@ -4043,7 +4043,7 @@
   category: clothing
   description: A uniform worn by the UN Irish troops.
   icon:
-    sprite: Civ14/Clothing/exported/un_irish.rsi
+    sprite: Civ14/Clothing/exported/uniforms/un_irish.rsi
     state: icon
   objectType: Item
 
@@ -4069,7 +4069,7 @@
   category: clothing
   description: A light uniform worn by mercenaries.
   icon:
-    sprite: Civ14/Clothing/exported/afr_merc.rsi
+    sprite: Civ14/Clothing/exported/uniforms/afr_merc.rsi
     state: icon
   objectType: Item
 
@@ -4095,7 +4095,7 @@
   category: clothing
   description: A white shirt of the creed.
   icon:
-    sprite: Civ14/Clothing/exported/ac_shirt.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ac_shirt.rsi
     state: icon
   objectType: Item
 
@@ -4121,7 +4121,7 @@
   category: clothing
   description: A standard uniform for the guards of Abashiri Prison.
   icon:
-    sprite: Civ14/Clothing/exported/abashiri_guard.rsi
+    sprite: Civ14/Clothing/exported/uniforms/abashiri_guard.rsi
     state: icon
   objectType: Item
 
@@ -4147,7 +4147,7 @@
   category: clothing
   description: A standard yukata for the guards of Abashiri Prison.
   icon:
-    sprite: Civ14/Clothing/exported/abashiri_prisoner.rsi
+    sprite: Civ14/Clothing/exported/uniforms/abashiri_prisoner.rsi
     state: icon
   objectType: Item
 
@@ -4173,7 +4173,7 @@
   category: clothing
   description: A standard Imperial Russian Army uniform.
   icon:
-    sprite: Civ14/Clothing/exported/rusuni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/rusuni.rsi
     state: icon
   objectType: Item
 
@@ -4199,7 +4199,7 @@
   category: clothing
   description: A standard Imperial Russian Army uniform.
   icon:
-    sprite: Civ14/Clothing/exported/ww1_russian2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww1_russian2.rsi
     state: icon
   objectType: Item
 
@@ -4225,7 +4225,7 @@
   category: clothing
   description: A standard Imperial Russian Army uniform, with officer epaulettes.
   icon:
-    sprite: Civ14/Clothing/exported/ww1_russian_o.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww1_russian_o.rsi
     state: icon
   objectType: Item
 
@@ -4253,7 +4253,7 @@
     A standard early 20th century Russian uniform, with no epaulettes or
     insignias.
   icon:
-    sprite: Civ14/Clothing/exported/ww1_russian.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww1_russian.rsi
     state: icon
   objectType: Item
 
@@ -4279,7 +4279,7 @@
   category: clothing
   description: A red beshmet with grey trousers, traditional of the Kuban Cossaks.
   icon:
-    sprite: Civ14/Clothing/exported/kuban_cossak.rsi
+    sprite: Civ14/Clothing/exported/uniforms/kuban_cossak.rsi
     state: icon
   objectType: Item
 
@@ -4305,7 +4305,7 @@
   category: clothing
   description: An outfit composed of a white shirt and light brown trousers.
   icon:
-    sprite: Civ14/Clothing/exported/modern1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/modern1.rsi
     state: icon
   objectType: Item
 
@@ -4331,7 +4331,7 @@
   category: clothing
   description: An outfit composed of a white shirt and black trousers.
   icon:
-    sprite: Civ14/Clothing/exported/modern2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/modern2.rsi
     state: icon
   objectType: Item
 
@@ -4357,7 +4357,7 @@
   category: clothing
   description: An outfit composed of a expensive white shirt and black trousers.
   icon:
-    sprite: Civ14/Clothing/exported/bman.rsi
+    sprite: Civ14/Clothing/exported/uniforms/bman.rsi
     state: icon
   objectType: Item
 
@@ -4383,7 +4383,7 @@
   category: clothing
   description: An outfit composed of a white shirt and grey trousers.
   icon:
-    sprite: Civ14/Clothing/exported/modern3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/modern3.rsi
     state: icon
   objectType: Item
 
@@ -4409,7 +4409,7 @@
   category: clothing
   description: An outfit composed of a white shirt and brown trousers.
   icon:
-    sprite: Civ14/Clothing/exported/modern4.rsi
+    sprite: Civ14/Clothing/exported/uniforms/modern4.rsi
     state: icon
   objectType: Item
 
@@ -4435,7 +4435,7 @@
   category: clothing
   description: An outfit composed of a white shirt and black cargo pants.
   icon:
-    sprite: Civ14/Clothing/exported/modern7.rsi
+    sprite: Civ14/Clothing/exported/uniforms/modern7.rsi
     state: icon
   objectType: Item
 
@@ -4461,7 +4461,7 @@
   category: clothing
   description: A uniform used by police special forces.
   icon:
-    sprite: Civ14/Clothing/exported/swat.rsi
+    sprite: Civ14/Clothing/exported/uniforms/swat.rsi
     state: icon
   objectType: Item
 
@@ -4487,7 +4487,7 @@
   category: clothing
   description: A white personal protective uniform against ambient radiation.
   icon:
-    sprite: Civ14/Clothing/exported/cleansuit.rsi
+    sprite: Civ14/Clothing/exported/uniforms/cleansuit.rsi
     state: icon
   objectType: Item
 
@@ -4513,7 +4513,7 @@
   category: clothing
   description: A uniform used by police special forces.
   icon:
-    sprite: Civ14/Clothing/exported/swat_new.rsi
+    sprite: Civ14/Clothing/exported/uniforms/swat_new.rsi
     state: icon
   objectType: Item
 
@@ -4539,7 +4539,7 @@
   category: clothing
   description: A Redmenian combat uniform, slightly camoed.
   icon:
-    sprite: Civ14/Clothing/exported/rdf_standardc.rsi
+    sprite: Civ14/Clothing/exported/uniforms/rdf_standardc.rsi
     state: icon
   objectType: Item
 
@@ -4565,7 +4565,7 @@
   category: clothing
   description: A uniform used by police forces.
   icon:
-    sprite: Civ14/Clothing/exported/police.rsi
+    sprite: Civ14/Clothing/exported/uniforms/police.rsi
     state: icon
   objectType: Item
 
@@ -4591,7 +4591,7 @@
   category: clothing
   description: Normally worn by criminals and scum.
   icon:
-    sprite: Civ14/Clothing/exported/prisoner.rsi
+    sprite: Civ14/Clothing/exported/uniforms/prisoner.rsi
     state: icon
   objectType: Item
 
@@ -4617,7 +4617,7 @@
   category: clothing
   description: An outfit composed of camo pants and shirt.
   icon:
-    sprite: Civ14/Clothing/exported/milrus2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/milrus2.rsi
     state: icon
   objectType: Item
 
@@ -4643,7 +4643,7 @@
   category: clothing
   description: An outfit composed of a green jacket and black pants.
   icon:
-    sprite: Civ14/Clothing/exported/baily.rsi
+    sprite: Civ14/Clothing/exported/uniforms/baily.rsi
     state: icon
   objectType: Item
 
@@ -4669,7 +4669,7 @@
   category: clothing
   description: An outfit composed of a camo cargo pants and tan ubac.
   icon:
-    sprite: Civ14/Clothing/exported/tactical1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/tactical1.rsi
     state: icon
   objectType: Item
 
@@ -4695,7 +4695,7 @@
   category: clothing
   description: A outfit used by PMC units.
   icon:
-    sprite: Civ14/Clothing/exported/pmc.rsi
+    sprite: Civ14/Clothing/exported/uniforms/pmc.rsi
     state: icon
   objectType: Item
 
@@ -4721,7 +4721,7 @@
   category: clothing
   description: A outfit that is expensive and has style.
   icon:
-    sprite: Civ14/Clothing/exported/mafia.rsi
+    sprite: Civ14/Clothing/exported/uniforms/mafia.rsi
     state: icon
   objectType: Item
 
@@ -4747,7 +4747,7 @@
   category: clothing
   description: A outfit used by construction workers.
   icon:
-    sprite: Civ14/Clothing/exported/engi.rsi
+    sprite: Civ14/Clothing/exported/uniforms/engi.rsi
     state: icon
   objectType: Item
 
@@ -4773,7 +4773,7 @@
   category: clothing
   description: A gorka outfit used by Spetsnaz.
   icon:
-    sprite: Civ14/Clothing/exported/gorka.rsi
+    sprite: Civ14/Clothing/exported/uniforms/gorka.rsi
     state: icon
   objectType: Item
 
@@ -4799,7 +4799,7 @@
   category: clothing
   description: An outfit composed of a black skirt and white shirt.
   icon:
-    sprite: Civ14/Clothing/exported/modern8.rsi
+    sprite: Civ14/Clothing/exported/uniforms/modern8.rsi
     state: icon
   objectType: Item
 
@@ -4825,7 +4825,7 @@
   category: clothing
   description: An outfit worn by fancy men in the 1800s.
   icon:
-    sprite: Civ14/Clothing/exported/oldmansuit.rsi
+    sprite: Civ14/Clothing/exported/uniforms/oldmansuit.rsi
     state: icon
   objectType: Item
 
@@ -4851,7 +4851,7 @@
   category: clothing
   description: An outfit worn by fancy men in the 1800s.
   icon:
-    sprite: Civ14/Clothing/exported/cozyoldy.rsi
+    sprite: Civ14/Clothing/exported/uniforms/cozyoldy.rsi
     state: icon
   objectType: Item
 
@@ -4877,7 +4877,7 @@
   category: clothing
   description: An outfit used by scum.
   icon:
-    sprite: Civ14/Clothing/exported/peakyblinder.rsi
+    sprite: Civ14/Clothing/exported/uniforms/peakyblinder.rsi
     state: icon
   objectType: Item
 
@@ -4903,7 +4903,7 @@
   category: clothing
   description: An black outfit used by enforcers of the law.
   icon:
-    sprite: Civ14/Clothing/exported/constable.rsi
+    sprite: Civ14/Clothing/exported/uniforms/constable.rsi
     state: icon
   objectType: Item
 
@@ -4929,7 +4929,7 @@
   category: clothing
   description: An outfit used by fire fighters. Damn hot.
   icon:
-    sprite: Civ14/Clothing/exported/oldfirefighter.rsi
+    sprite: Civ14/Clothing/exported/uniforms/oldfirefighter.rsi
     state: icon
   objectType: Item
 
@@ -4955,7 +4955,7 @@
   category: clothing
   description: An dress used by fancy woman.
   icon:
-    sprite: Civ14/Clothing/exported/black_tango_alt_s.rsi
+    sprite: Civ14/Clothing/exported/uniforms/black_tango_alt_s.rsi
     state: icon
   objectType: Item
 
@@ -4981,7 +4981,7 @@
   category: clothing
   description: An outfit used by clowns.
   icon:
-    sprite: Civ14/Clothing/exported/clown.rsi
+    sprite: Civ14/Clothing/exported/uniforms/clown.rsi
     state: icon
   objectType: Item
 
@@ -5007,7 +5007,7 @@
   category: clothing
   description: A jester outfit. WHERE IS ME FUN HAHA.
   icon:
-    sprite: Civ14/Clothing/exported/jester.rsi
+    sprite: Civ14/Clothing/exported/uniforms/jester.rsi
     state: icon
   objectType: Item
 
@@ -5033,7 +5033,7 @@
   category: clothing
   description: An outfit composed of a checkered shirt and a denim bib.
   icon:
-    sprite: Civ14/Clothing/exported/farmer_outfit.rsi
+    sprite: Civ14/Clothing/exported/uniforms/farmer_outfit.rsi
     state: icon
   objectType: Item
 
@@ -5059,7 +5059,7 @@
   category: clothing
   description: An outfit composed of a white shirt and a leather bib.
   icon:
-    sprite: Civ14/Clothing/exported/mechanic_outfit.rsi
+    sprite: Civ14/Clothing/exported/uniforms/mechanic_outfit.rsi
     state: icon
   objectType: Item
 
@@ -5087,7 +5087,7 @@
     A early 20th century style dress made to be well fitting, often worn by
     housewives
   icon:
-    sprite: Civ14/Clothing/exported/tradwife_blue.rsi
+    sprite: Civ14/Clothing/exported/uniforms/tradwife_blue.rsi
     state: icon
   objectType: Item
 
@@ -5113,7 +5113,7 @@
   category: clothing
   description: Basic blue shorts.
   icon:
-    sprite: Civ14/Clothing/exported/shorts_blue.rsi
+    sprite: Civ14/Clothing/exported/uniforms/shorts_blue.rsi
     state: icon
   objectType: Item
 
@@ -5139,7 +5139,7 @@
   category: clothing
   description: Basic red shorts
   icon:
-    sprite: Civ14/Clothing/exported/shorts_red.rsi
+    sprite: Civ14/Clothing/exported/uniforms/shorts_red.rsi
     state: icon
   objectType: Item
 
@@ -5165,7 +5165,7 @@
   category: clothing
   description: Basic yellow shorts
   icon:
-    sprite: Civ14/Clothing/exported/shorts_yellow.rsi
+    sprite: Civ14/Clothing/exported/uniforms/shorts_yellow.rsi
     state: icon
   objectType: Item
 
@@ -5191,7 +5191,7 @@
   category: clothing
   description: A standard philippine republic army uniform.
   icon:
-    sprite: Civ14/Clothing/exported/filuni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/filuni.rsi
     state: icon
   objectType: Item
 
@@ -5217,7 +5217,7 @@
   category: clothing
   description: A standard philippine republic army uniform.
   icon:
-    sprite: Civ14/Clothing/exported/filuni_sniper.rsi
+    sprite: Civ14/Clothing/exported/uniforms/filuni_sniper.rsi
     state: icon
   objectType: Item
 
@@ -5243,7 +5243,7 @@
   category: clothing
   description: A standard tropical US army officer uniform.
   icon:
-    sprite: Civ14/Clothing/exported/us_fp_off.rsi
+    sprite: Civ14/Clothing/exported/uniforms/us_fp_off.rsi
     state: icon
   objectType: Item
 
@@ -5269,7 +5269,7 @@
   category: clothing
   description: A Uniform used by the spanish republican forces.
   icon:
-    sprite: Civ14/Clothing/exported/spanishrepublican.rsi
+    sprite: Civ14/Clothing/exported/uniforms/spanishrepublican.rsi
     state: icon
   objectType: Item
 
@@ -5295,7 +5295,7 @@
   category: clothing
   description: A Uniform used by the spanish Nationalist forces.
   icon:
-    sprite: Civ14/Clothing/exported/spanishnationalist.rsi
+    sprite: Civ14/Clothing/exported/uniforms/spanishnationalist.rsi
     state: icon
   objectType: Item
 
@@ -5321,7 +5321,7 @@
   category: clothing
   description: A Cheap Blue Uniform.
   icon:
-    sprite: Civ14/Clothing/exported/intbrigadist.rsi
+    sprite: Civ14/Clothing/exported/uniforms/intbrigadist.rsi
     state: icon
   objectType: Item
 
@@ -5347,7 +5347,7 @@
   category: clothing
   description: An easy to see uniform used by Blugoslavia.
   icon:
-    sprite: Civ14/Clothing/exported/rdf_standard.rsi
+    sprite: Civ14/Clothing/exported/uniforms/rdf_standard.rsi
     state: icon
   objectType: Item
 
@@ -5373,7 +5373,7 @@
   category: clothing
   description: A Redmenian combat uniform used by squad leaders.
   icon:
-    sprite: Civ14/Clothing/exported/rdf_standardc.rsi
+    sprite: Civ14/Clothing/exported/uniforms/rdf_standardc.rsi
     state: icon
   objectType: Item
 
@@ -5399,7 +5399,7 @@
   category: clothing
   description: A ceremonial uniform of Redmenia, used by officers and commanders
   icon:
-    sprite: Civ14/Clothing/exported/rdf_command.rsi
+    sprite: Civ14/Clothing/exported/uniforms/rdf_command.rsi
     state: icon
   objectType: Item
 
@@ -5425,7 +5425,7 @@
   category: clothing
   description: A Redmenian combat uniform, slightly camoed.
   icon:
-    sprite: Civ14/Clothing/exported/rdf_modern.rsi
+    sprite: Civ14/Clothing/exported/uniforms/rdf_modern.rsi
     state: icon
   objectType: Item
 
@@ -5451,7 +5451,7 @@
   category: clothing
   description: NCR Trooper Fatigues
   icon:
-    sprite: Civ14/Clothing/exported/ncr_fatigues.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ncr_fatigues.rsi
     state: icon
   objectType: Item
 
@@ -5479,7 +5479,7 @@
     A red T-shirt and dark skirt with leather armor overtop. Commonly worn by
     Caesar's Legion.
   icon:
-    sprite: Civ14/Clothing/exported/legionaire.rsi
+    sprite: Civ14/Clothing/exported/uniforms/legionaire.rsi
     state: icon
   objectType: Item
 
@@ -5505,7 +5505,7 @@
   category: clothing
   description: A set composed of a quality white linen shirt and black trousers.
   icon:
-    sprite: Civ14/Clothing/exported/civuni4.rsi
+    sprite: Civ14/Clothing/exported/uniforms/civuni4.rsi
     state: icon
   objectType: Item
 
@@ -5533,7 +5533,7 @@
     A set composed of a light white linen shirt with short sleeves and black
     trousers.
   icon:
-    sprite: Civ14/Clothing/exported/civuni3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/civuni3.rsi
     state: icon
   objectType: Item
 
@@ -5559,7 +5559,7 @@
   category: clothing
   description: A set composed of a green linen shirt and black trousers.
   icon:
-    sprite: Civ14/Clothing/exported/civuni5.rsi
+    sprite: Civ14/Clothing/exported/uniforms/civuni5.rsi
     state: icon
   objectType: Item
 
@@ -5585,7 +5585,7 @@
   category: clothing
   description: A set composed of a pink linen shirt and black trousers.
   icon:
-    sprite: Civ14/Clothing/exported/civuni6.rsi
+    sprite: Civ14/Clothing/exported/uniforms/civuni6.rsi
     state: icon
   objectType: Item
 
@@ -5611,7 +5611,7 @@
   category: clothing
   description: A sterile, nicely pressed suit for doctors.
   icon:
-    sprite: Civ14/Clothing/exported/ba_suit.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ba_suit.rsi
     state: icon
   objectType: Item
 
@@ -5637,7 +5637,7 @@
   category: clothing
   description: A dark dress, used by peasant women.
   icon:
-    sprite: Civ14/Clothing/exported/dress1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dress1.rsi
     state: icon
   objectType: Item
 
@@ -5663,7 +5663,7 @@
   category: clothing
   description: A blue dress.
   icon:
-    sprite: Civ14/Clothing/exported/dress2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dress2.rsi
     state: icon
   objectType: Item
 
@@ -5689,7 +5689,7 @@
   category: clothing
   description: A brown dress.
   icon:
-    sprite: Civ14/Clothing/exported/dress3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dress3.rsi
     state: icon
   objectType: Item
 
@@ -5715,7 +5715,7 @@
   category: clothing
   description: A green dress.
   icon:
-    sprite: Civ14/Clothing/exported/dressg.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dressg.rsi
     state: icon
   objectType: Item
 
@@ -5741,7 +5741,7 @@
   category: clothing
   description: A red dress.
   icon:
-    sprite: Civ14/Clothing/exported/dressr.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dressr.rsi
     state: icon
   objectType: Item
 
@@ -5769,7 +5769,7 @@
     A regal uniform often worn by a class of explorers known as conquistadors in
     search of wealth.
   icon:
-    sprite: Civ14/Clothing/exported/conquistador.rsi
+    sprite: Civ14/Clothing/exported/uniforms/conquistador.rsi
     state: icon
   objectType: Item
 
@@ -5795,7 +5795,7 @@
   category: clothing
   description: A set of plain black and grey clothes worn by transient followers of faith.
   icon:
-    sprite: Civ14/Clothing/exported/pilgrim.rsi
+    sprite: Civ14/Clothing/exported/uniforms/pilgrim.rsi
     state: icon
   objectType: Item
 
@@ -5821,7 +5821,7 @@
   category: clothing
   description: A set of clothes with a black striped shirt.
   icon:
-    sprite: Civ14/Clothing/exported/pirate1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/pirate1.rsi
     state: icon
   objectType: Item
 
@@ -5847,7 +5847,7 @@
   category: clothing
   description: A set of clothes with a red striped shirt.
   icon:
-    sprite: Civ14/Clothing/exported/pirate2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/pirate2.rsi
     state: icon
   objectType: Item
 
@@ -5873,7 +5873,7 @@
   category: clothing
   description: A set of clothes with a blue striped shirt.
   icon:
-    sprite: Civ14/Clothing/exported/pirate3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/pirate3.rsi
     state: icon
   objectType: Item
 
@@ -5899,7 +5899,7 @@
   category: clothing
   description: A set of clothes with a white shirt and baggy trousers
   icon:
-    sprite: Civ14/Clothing/exported/pirate4.rsi
+    sprite: Civ14/Clothing/exported/uniforms/pirate4.rsi
     state: icon
   objectType: Item
 
@@ -5925,7 +5925,7 @@
   category: clothing
   description: A set of clothes with a sleeveless shirt.
   icon:
-    sprite: Civ14/Clothing/exported/pirate5.rsi
+    sprite: Civ14/Clothing/exported/uniforms/pirate5.rsi
     state: icon
   objectType: Item
 
@@ -5951,7 +5951,7 @@
   category: clothing
   description: A set of royal navy sailor clothes, with a white shirt and trousers.
   icon:
-    sprite: Civ14/Clothing/exported/british_sailor1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/british_sailor1.rsi
     state: icon
   objectType: Item
 
@@ -5979,7 +5979,7 @@
     A set of royal navy sailor clothes, with an unbuttoned white shirt and
     trousers.
   icon:
-    sprite: Civ14/Clothing/exported/british_sailor2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/british_sailor2.rsi
     state: icon
   objectType: Item
 
@@ -6005,7 +6005,7 @@
   category: clothing
   description: White british sailor trousers. For when it's too hot to wear a shirt.
   icon:
-    sprite: Civ14/Clothing/exported/british_sailor3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/british_sailor3.rsi
     state: icon
   objectType: Item
 
@@ -6031,7 +6031,7 @@
   category: clothing
   description: A set of royal navy sailor clothes, with a grey shirt and trousers.
   icon:
-    sprite: Civ14/Clothing/exported/british_sailor4.rsi
+    sprite: Civ14/Clothing/exported/uniforms/british_sailor4.rsi
     state: icon
   objectType: Item
 
@@ -6059,7 +6059,7 @@
     A set of portuguese navy sailor clothes, with a white shirt and green
     trousers.
   icon:
-    sprite: Civ14/Clothing/exported/portuguese_sailor1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor1.rsi
     state: icon
   objectType: Item
 
@@ -6087,7 +6087,7 @@
     A set of portuguese navy sailor clothes, with an unbuttoned white shirt and
     geen trousers.
   icon:
-    sprite: Civ14/Clothing/exported/portuguese_sailor2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor2.rsi
     state: icon
   objectType: Item
 
@@ -6113,7 +6113,7 @@
   category: clothing
   description: Green portuguese sailor trousers. For when it's too hot to wear a shirt.
   icon:
-    sprite: Civ14/Clothing/exported/portuguese_sailor3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor3.rsi
     state: icon
   objectType: Item
 
@@ -6141,7 +6141,7 @@
     A set of portuguese navy sailor clothes, with a white shirt and green
     trousers. There's a green scarf attached.
   icon:
-    sprite: Civ14/Clothing/exported/portuguese_sailor4.rsi
+    sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor4.rsi
     state: icon
   objectType: Item
 
@@ -6167,7 +6167,7 @@
   category: clothing
   description: A set of spanish navy sailor clothes, with brown shirt and trousers.
   icon:
-    sprite: Civ14/Clothing/exported/spanish_sailor1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/spanish_sailor1.rsi
     state: icon
   objectType: Item
 
@@ -6195,7 +6195,7 @@
     A set of spanish navy sailor clothes, with an unbuttoned brown shirt and
     trousers.
   icon:
-    sprite: Civ14/Clothing/exported/spanish_sailor2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/spanish_sailor2.rsi
     state: icon
   objectType: Item
 
@@ -6221,7 +6221,7 @@
   category: clothing
   description: Brown spanish sailor trousers. For when it's too hot to wear a shirt.
   icon:
-    sprite: Civ14/Clothing/exported/spanish_sailor3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/spanish_sailor3.rsi
     state: icon
   objectType: Item
 
@@ -6247,7 +6247,7 @@
   category: clothing
   description: Blue spanish soldier trousers and a fancy white shirt.
   icon:
-    sprite: Civ14/Clothing/exported/spanish_soldier.rsi
+    sprite: Civ14/Clothing/exported/uniforms/spanish_soldier.rsi
     state: icon
   objectType: Item
 
@@ -6275,7 +6275,7 @@
     A set of french officer clothes, with a light blue shirt and black trousers,
     both with golden buttons.
   icon:
-    sprite: Civ14/Clothing/exported/french_officer.rsi
+    sprite: Civ14/Clothing/exported/uniforms/french_officer.rsi
     state: icon
   objectType: Item
 
@@ -6301,7 +6301,7 @@
   category: clothing
   description: A set of baycona officer clothes, this seems to be very old.
   icon:
-    sprite: Civ14/Clothing/exported/baycona.rsi
+    sprite: Civ14/Clothing/exported/uniforms/baycona.rsi
     state: icon
   objectType: Item
 
@@ -6327,7 +6327,7 @@
   category: clothing
   description: A set of french navy sailor clothes, with light blue shirt and trousers.
   icon:
-    sprite: Civ14/Clothing/exported/french_sailor1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/french_sailor1.rsi
     state: icon
   objectType: Item
 
@@ -6355,7 +6355,7 @@
     A set of french navy sailor clothes, with an unbuttoned light blue shirt and
     trousers.
   icon:
-    sprite: Civ14/Clothing/exported/french_sailor2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/french_sailor2.rsi
     state: icon
   objectType: Item
 
@@ -6381,7 +6381,7 @@
   category: clothing
   description: Light blue french sailor trousers. For when it's too hot to wear a shirt.
   icon:
-    sprite: Civ14/Clothing/exported/french_sailor3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/french_sailor3.rsi
     state: icon
   objectType: Item
 
@@ -6407,7 +6407,7 @@
   category: clothing
   description: A set of dutch navy sailor clothes, with a white shirt and orange trousers.
   icon:
-    sprite: Civ14/Clothing/exported/dutch_sailor1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dutch_sailor1.rsi
     state: icon
   objectType: Item
 
@@ -6435,7 +6435,7 @@
     A set of dutch navy sailor clothes, with an unbuttoned white shirt and
     orange trousers.
   icon:
-    sprite: Civ14/Clothing/exported/dutch_sailor2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dutch_sailor2.rsi
     state: icon
   objectType: Item
 
@@ -6461,7 +6461,7 @@
   category: clothing
   description: Orange dutch sailor trousers. For when it's too hot to wear a shirt.
   icon:
-    sprite: Civ14/Clothing/exported/dutch_sailor3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dutch_sailor3.rsi
     state: icon
   objectType: Item
 
@@ -6489,7 +6489,7 @@
     A set of officer clothes, with a white shirt and black trousers, both with
     golden buttons.
   icon:
-    sprite: Civ14/Clothing/exported/officer.rsi
+    sprite: Civ14/Clothing/exported/uniforms/officer.rsi
     state: icon
   objectType: Item
 
@@ -6515,7 +6515,7 @@
   category: clothing
   description: A set of united provinces army clothes. Yellow shirts and trousers.
   icon:
-    sprite: Civ14/Clothing/exported/dutch_army.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dutch_army.rsi
     state: icon
   objectType: Item
 
@@ -6541,7 +6541,7 @@
   category: clothing
   description: A set of portuguese army clothes. Red shirt with black and white trousers.
   icon:
-    sprite: Civ14/Clothing/exported/portuguese_army.rsi
+    sprite: Civ14/Clothing/exported/uniforms/portuguese_army.rsi
     state: icon
   objectType: Item
 
@@ -6567,7 +6567,7 @@
   category: clothing
   description: A set of french army clothes. White shirt with blue and white trousers.
   icon:
-    sprite: Civ14/Clothing/exported/french_army.rsi
+    sprite: Civ14/Clothing/exported/uniforms/french_army.rsi
     state: icon
   objectType: Item
 
@@ -6595,7 +6595,7 @@
     A modest nurse dress with a sown on apron. Often found worn by nurses
     tending to the injuries within wartime field hospitals.
   icon:
-    sprite: Civ14/Clothing/exported/nightingale.rsi
+    sprite: Civ14/Clothing/exported/uniforms/nightingale.rsi
     state: icon
   objectType: Item
 
@@ -6623,7 +6623,7 @@
     A uniform of the french army, with golden epaulettes, black shirt and a gold
     buttoned white gilet.
   icon:
-    sprite: Civ14/Clothing/exported/nap_french_army.rsi
+    sprite: Civ14/Clothing/exported/uniforms/nap_french_army.rsi
     state: icon
   objectType: Item
 
@@ -6651,7 +6651,7 @@
     A uniform of the british army's scottish infantry. Often worn in fearsome
     highland charges with a red shirt, itchy kilt and a white saltire.
   icon:
-    sprite: Civ14/Clothing/exported/blackwatch.rsi
+    sprite: Civ14/Clothing/exported/uniforms/blackwatch.rsi
     state: icon
   objectType: Item
 
@@ -6679,7 +6679,7 @@
     A uniform of the spanish army. Often worn by swiss conscripts loyal to spain
     it has a dark navy shirt with a red gilet with gold buttons.
   icon:
-    sprite: Civ14/Clothing/exported/walloon_guard.rsi
+    sprite: Civ14/Clothing/exported/uniforms/walloon_guard.rsi
     state: icon
   objectType: Item
 
@@ -6705,7 +6705,7 @@
   category: clothing
   description: The standard Russian Federation Army camo uniform.
   icon:
-    sprite: Civ14/Clothing/exported/russian_emr.rsi
+    sprite: Civ14/Clothing/exported/uniforms/russian_emr.rsi
     state: icon
   objectType: Item
 
@@ -6733,7 +6733,7 @@
     A uniform of the american army. Often worn by proud defenders of freedom and
     liberty it is blue with a white saltire and a red undershirt.
   icon:
-    sprite: Civ14/Clothing/exported/patriot.rsi
+    sprite: Civ14/Clothing/exported/uniforms/patriot.rsi
     state: icon
   objectType: Item
 
@@ -6762,7 +6762,7 @@
     navy shirt with red and white leather shoulder epaulettes with a assortment
     of buttons.
   icon:
-    sprite: Civ14/Clothing/exported/nap_prussian_army.rsi
+    sprite: Civ14/Clothing/exported/uniforms/nap_prussian_army.rsi
     state: icon
   objectType: Item
 
@@ -6790,7 +6790,7 @@
     A uniform of the joint austrian and german army. It has a dark green shirt
     with black saltire, and a lime green collar and epaulletes.
   icon:
-    sprite: Civ14/Clothing/exported/nap_jaegers.rsi
+    sprite: Civ14/Clothing/exported/uniforms/nap_jaegers.rsi
     state: icon
   objectType: Item
 
@@ -6818,7 +6818,7 @@
     A uniform of the portuguese army. Often worn by pennisula soldiers, it has a
     dark navy shirt with a white saltire.
   icon:
-    sprite: Civ14/Clothing/exported/nap_portuguese_army.rsi
+    sprite: Civ14/Clothing/exported/uniforms/nap_portuguese_army.rsi
     state: icon
   objectType: Item
 
@@ -6846,7 +6846,7 @@
     A uniform of the imperial japanese army. It has a black buttoned shirt and
     blue trousers with a white harness.
   icon:
-    sprite: Civ14/Clothing/exported/nap_satsuma.rsi
+    sprite: Civ14/Clothing/exported/uniforms/nap_satsuma.rsi
     state: icon
   objectType: Item
 
@@ -6872,7 +6872,7 @@
   category: clothing
   description: A fancy imperial merchant suit.
   icon:
-    sprite: Civ14/Clothing/exported/merchant_suit.rsi
+    sprite: Civ14/Clothing/exported/uniforms/merchant_suit.rsi
     state: icon
   objectType: Item
 
@@ -6898,7 +6898,7 @@
   category: clothing
   description: A set of blue jeans and brown hoodie.
   icon:
-    sprite: Civ14/Clothing/exported/scavfit.rsi
+    sprite: Civ14/Clothing/exported/uniforms/scavfit.rsi
     state: icon
   objectType: Item
 
@@ -6924,7 +6924,7 @@
   category: clothing
   description: A set of tan pants and a brown coat.
   icon:
-    sprite: Civ14/Clothing/exported/wastelander.rsi
+    sprite: Civ14/Clothing/exported/uniforms/wastelander.rsi
     state: icon
   objectType: Item
 
@@ -6950,7 +6950,7 @@
   category: clothing
   description: A red shirt with leather trousers, commonly used among pioneers.
   icon:
-    sprite: Civ14/Clothing/exported/pioneer_outfit.rsi
+    sprite: Civ14/Clothing/exported/uniforms/pioneer_outfit.rsi
     state: icon
   objectType: Item
 
@@ -6976,7 +6976,7 @@
   category: clothing
   description: A blue shirt with light beige trousers.
   icon:
-    sprite: Civ14/Clothing/exported/rancher_outfit.rsi
+    sprite: Civ14/Clothing/exported/uniforms/rancher_outfit.rsi
     state: icon
   objectType: Item
 
@@ -7002,7 +7002,7 @@
   category: clothing
   description: A white shirt with leather trousers, worn among cowboys and ranchers.
   icon:
-    sprite: Civ14/Clothing/exported/cowboy_outfit.rsi
+    sprite: Civ14/Clothing/exported/uniforms/cowboy_outfit.rsi
     state: icon
   objectType: Item
 
@@ -7028,7 +7028,7 @@
   category: clothing
   description: A red-and-white checkered shirt and light beige trousers.
   icon:
-    sprite: Civ14/Clothing/exported/checkered_outfit.rsi
+    sprite: Civ14/Clothing/exported/uniforms/checkered_outfit.rsi
     state: icon
   objectType: Item
 
@@ -7054,7 +7054,7 @@
   category: clothing
   description: A navy blue shirt with denim trousers.
   icon:
-    sprite: Civ14/Clothing/exported/worker_outfit.rsi
+    sprite: Civ14/Clothing/exported/uniforms/worker_outfit.rsi
     state: icon
   objectType: Item
 
@@ -7080,7 +7080,7 @@
   category: clothing
   description: A white undershirt with beige briefs. it has texan style bowtie.
   icon:
-    sprite: Civ14/Clothing/exported/texas.rsi
+    sprite: Civ14/Clothing/exported/uniforms/texas.rsi
     state: icon
   objectType: Item
 
@@ -7106,7 +7106,7 @@
   category: clothing
   description: The traditional south german attire.
   icon:
-    sprite: Civ14/Clothing/exported/lederhosen.rsi
+    sprite: Civ14/Clothing/exported/uniforms/lederhosen.rsi
     state: icon
   objectType: Item
 
@@ -7134,7 +7134,7 @@
     A well made black and red outfit with white arms and gold buttons. Often
     worn by self styled leaders, always with a plan.
   icon:
-    sprite: Civ14/Clothing/exported/gang_leader.rsi
+    sprite: Civ14/Clothing/exported/uniforms/gang_leader.rsi
     state: icon
   objectType: Item
 
@@ -7163,7 +7163,7 @@
     people at arms length with the wrong side of the law, clothes sense is no
     judicator of character however.
   icon:
-    sprite: Civ14/Clothing/exported/arthur_morgan.rsi
+    sprite: Civ14/Clothing/exported/uniforms/arthur_morgan.rsi
     state: icon
   objectType: Item
 
@@ -7189,7 +7189,7 @@
   category: clothing
   description: A stylish bartender outfit.
   icon:
-    sprite: Civ14/Clothing/exported/bartender.rsi
+    sprite: Civ14/Clothing/exported/uniforms/bartender.rsi
     state: icon
   objectType: Item
 
@@ -7215,7 +7215,7 @@
   category: clothing
   description: A no nonsense black shirt & vest with gold buttons, made in victorian style.
   icon:
-    sprite: Civ14/Clothing/exported/victorianvest.rsi
+    sprite: Civ14/Clothing/exported/uniforms/victorianvest.rsi
     state: icon
   objectType: Item
 
@@ -7243,7 +7243,7 @@
     A no nonsense black shirt & red vest with gold buttons, made in victorian
     style.
   icon:
-    sprite: Civ14/Clothing/exported/victorianredvest.rsi
+    sprite: Civ14/Clothing/exported/uniforms/victorianredvest.rsi
     state: icon
   objectType: Item
 
@@ -7271,7 +7271,7 @@
     A no nonsense red shirt & black vest with gold buttons, made in victorian
     style.
   icon:
-    sprite: Civ14/Clothing/exported/victorianblred.rsi
+    sprite: Civ14/Clothing/exported/uniforms/victorianblred.rsi
     state: icon
   objectType: Item
 
@@ -7297,7 +7297,7 @@
   category: clothing
   description: A no nonsense black waistcoat with white shirt.
   icon:
-    sprite: Civ14/Clothing/exported/waistcoat.rsi
+    sprite: Civ14/Clothing/exported/uniforms/waistcoat.rsi
     state: icon
   objectType: Item
 
@@ -7324,7 +7324,7 @@
     A eye catching dress often worn by frontier damsels looking to drum up
     business.
   icon:
-    sprite: Civ14/Clothing/exported/dress_saloon.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dress_saloon.rsi
     state: icon
   objectType: Item
 
@@ -7352,7 +7352,7 @@
     A tight fitting and attractive dress commmonly worn by women hailing from
     the orient.
   icon:
-    sprite: Civ14/Clothing/exported/cheongsam.rsi
+    sprite: Civ14/Clothing/exported/uniforms/cheongsam.rsi
     state: icon
   objectType: Item
 
@@ -7378,7 +7378,7 @@
   category: clothing
   description: A plain black dress for women to properly uphold their modesty
   icon:
-    sprite: Civ14/Clothing/exported/dress_black.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dress_black.rsi
     state: icon
   objectType: Item
 
@@ -7406,7 +7406,7 @@
     A cermonial white wedding dress. Something old, something new, something
     borrowed, something blue.
   icon:
-    sprite: Civ14/Clothing/exported/bride_white.rsi
+    sprite: Civ14/Clothing/exported/uniforms/bride_white.rsi
     state: icon
   objectType: Item
 
@@ -7432,7 +7432,7 @@
   category: clothing
   description: A black dress for a lady, made in a victorian style.
   icon:
-    sprite: Civ14/Clothing/exported/victorianblackdress.rsi
+    sprite: Civ14/Clothing/exported/uniforms/victorianblackdress.rsi
     state: icon
   objectType: Item
 
@@ -7458,7 +7458,7 @@
   category: clothing
   description: A prim and proper black dress, covers from neck to ankle.
   icon:
-    sprite: Civ14/Clothing/exported/victorian_dress.rsi
+    sprite: Civ14/Clothing/exported/uniforms/victorian_dress.rsi
     state: icon
   objectType: Item
 
@@ -7483,7 +7483,7 @@
   category: clothing
   description: A blue uniform worn by union soldiers.
   icon:
-    sprite: Civ14/Clothing/exported/union_uniform.rsi
+    sprite: Civ14/Clothing/exported/uniforms/union_uniform.rsi
     state: icon
   objectType: Item
 
@@ -7509,7 +7509,7 @@
   category: clothing
   description: A grey uniform worn by confederate soldiers.
   icon:
-    sprite: Civ14/Clothing/exported/confederate_uniform1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/confederate_uniform1.rsi
     state: icon
   objectType: Item
 
@@ -7535,7 +7535,7 @@
   category: clothing
   description: A grey uniform worn by confederate soldiers.
   icon:
-    sprite: Civ14/Clothing/exported/confederate_uniform1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/confederate_uniform1.rsi
     state: icon
   objectType: Item
 
@@ -7563,7 +7563,7 @@
     A grey uniform worn by confederate soldiers, however this one has union
     pants.
   icon:
-    sprite: Civ14/Clothing/exported/confederate_uniform2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/confederate_uniform2.rsi
     state: icon
   objectType: Item
 
@@ -7592,7 +7592,7 @@
     sown into one piece for convenience and it has texan style bowtie. This
     person probably has a lot of money..
   icon:
-    sprite: Civ14/Clothing/exported/doug_dimmadome.rsi
+    sprite: Civ14/Clothing/exported/uniforms/doug_dimmadome.rsi
     state: icon
   objectType: Item
 
@@ -7618,7 +7618,7 @@
   category: clothing
   description: A long white tunic, with golden trimmings.
   icon:
-    sprite: Civ14/Clothing/exported/white_tunic_long.rsi
+    sprite: Civ14/Clothing/exported/uniforms/white_tunic_long.rsi
     state: icon
   objectType: Item
 
@@ -7644,7 +7644,7 @@
   category: clothing
   description: A white tunic with a red cross in the middle.
   icon:
-    sprite: Civ14/Clothing/exported/crusader1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/crusader1.rsi
     state: icon
   objectType: Item
 
@@ -7670,7 +7670,7 @@
   category: clothing
   description: A light leather tunic.
   icon:
-    sprite: Civ14/Clothing/exported/leather_tunic.rsi
+    sprite: Civ14/Clothing/exported/uniforms/leather_tunic.rsi
     state: icon
   objectType: Item
 
@@ -7696,7 +7696,7 @@
   category: clothing
   description: A green and tartan woolen kilt.
   icon:
-    sprite: Civ14/Clothing/exported/kilt.rsi
+    sprite: Civ14/Clothing/exported/uniforms/kilt.rsi
     state: icon
   objectType: Item
 
@@ -7721,7 +7721,7 @@
   category: clothing
   description: Loosely stitched from patch cloth, contains deep pockets for spare change.
   icon:
-    sprite: Civ14/Clothing/exported/beggar_clothing.rsi
+    sprite: Civ14/Clothing/exported/uniforms/beggar_clothing.rsi
     state: icon
   objectType: Item
 
@@ -7746,7 +7746,7 @@
   category: clothing
   description: A light blue and white tunic.
   icon:
-    sprite: Civ14/Clothing/exported/blue_tunic2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/blue_tunic2.rsi
     state: icon
   objectType: Item
 
@@ -7772,7 +7772,7 @@
   category: clothing
   description: A light red and yellow tunic.
   icon:
-    sprite: Civ14/Clothing/exported/red_tunic2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/red_tunic2.rsi
     state: icon
   objectType: Item
 
@@ -7798,7 +7798,7 @@
   category: clothing
   description: A light fitting tunic with arabic motifs.
   icon:
-    sprite: Civ14/Clothing/exported/arabw_tunic.rsi
+    sprite: Civ14/Clothing/exported/uniforms/arabw_tunic.rsi
     state: icon
   objectType: Item
 
@@ -7824,7 +7824,7 @@
   category: clothing
   description: A light, loose fitting tunic.
   icon:
-    sprite: Civ14/Clothing/exported/arab1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/arab1.rsi
     state: icon
   objectType: Item
 
@@ -7852,7 +7852,7 @@
     A loose fitting green tunic with arabic motifs and long sleeves. Often worn
     by emirate rulers
   icon:
-    sprite: Civ14/Clothing/exported/emir_tunic.rsi
+    sprite: Civ14/Clothing/exported/uniforms/emir_tunic.rsi
     state: icon
   objectType: Item
 
@@ -7878,7 +7878,7 @@
   category: clothing
   description: A light, loose fitting arabic tunic.
   icon:
-    sprite: Civ14/Clothing/exported/arab1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/arab1.rsi
     state: icon
   objectType: Item
 
@@ -7904,7 +7904,7 @@
   category: clothing
   description: A light, loose fitting arabic tunic.
   icon:
-    sprite: Civ14/Clothing/exported/arab2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/arab2.rsi
     state: icon
   objectType: Item
 
@@ -7930,7 +7930,7 @@
   category: clothing
   description: A loose fitting arabic tunic.
   icon:
-    sprite: Civ14/Clothing/exported/arab3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/arab3.rsi
     state: icon
   objectType: Item
 
@@ -7956,7 +7956,7 @@
   category: clothing
   description: A lightly darkened robe used by wise knights.
   icon:
-    sprite: Civ14/Clothing/exported/wise_knight.rsi
+    sprite: Civ14/Clothing/exported/uniforms/wise_knight.rsi
     state: icon
   objectType: Item
 
@@ -7982,7 +7982,7 @@
   category: clothing
   description: A darkened robe used by upset warriors.
   icon:
-    sprite: Civ14/Clothing/exported/arrogant_warrior.rsi
+    sprite: Civ14/Clothing/exported/uniforms/arrogant_warrior.rsi
     state: icon
   objectType: Item
 
@@ -8008,7 +8008,7 @@
   category: clothing
   description: A brown tunic made out of wool. Often worn by nomads upon the great steppes.
   icon:
-    sprite: Civ14/Clothing/exported/steppe_wool_tunic.rsi
+    sprite: Civ14/Clothing/exported/uniforms/steppe_wool_tunic.rsi
     state: icon
   objectType: Item
 
@@ -8033,7 +8033,7 @@
   category: clothing
   description: A fancy count outfit.
   icon:
-    sprite: Civ14/Clothing/exported/count_outfit.rsi
+    sprite: Civ14/Clothing/exported/uniforms/count_outfit.rsi
     state: icon
   objectType: Item
 
@@ -8059,7 +8059,7 @@
   category: clothing
   description: A baggy renaissance-style outfit.
   icon:
-    sprite: Civ14/Clothing/exported/renaissance.rsi
+    sprite: Civ14/Clothing/exported/uniforms/renaissance.rsi
     state: icon
   objectType: Item
 
@@ -8087,7 +8087,7 @@
     A gold embroidered baggy renaissance-style outfit. Often worn by republic
     rulers over many petty merchantile aristocrats.
   icon:
-    sprite: Civ14/Clothing/exported/doge.rsi
+    sprite: Civ14/Clothing/exported/uniforms/doge.rsi
     state: icon
   objectType: Item
 
@@ -8113,7 +8113,7 @@
   category: clothing
   description: A baggy renaissance-style outfit, with colored stripes.
   icon:
-    sprite: Civ14/Clothing/exported/pontifical.rsi
+    sprite: Civ14/Clothing/exported/uniforms/pontifical.rsi
     state: icon
   objectType: Item
 
@@ -8141,7 +8141,7 @@
     A very modest nun dress. With a small cross around the neck, to aide
     protection against temptation.
   icon:
-    sprite: Civ14/Clothing/exported/nun.rsi
+    sprite: Civ14/Clothing/exported/uniforms/nun.rsi
     state: icon
   objectType: Item
 
@@ -8169,7 +8169,7 @@
     A plain black outfit with a clerical white collar around the neck, often
     worn by priests of organized religions.
   icon:
-    sprite: Civ14/Clothing/exported/christian_priest.rsi
+    sprite: Civ14/Clothing/exported/uniforms/christian_priest.rsi
     state: icon
   objectType: Item
 
@@ -8197,7 +8197,7 @@
     A ornate and bright uniform often worn by elite mercenaries & central
     european troops during the 15th century.
   icon:
-    sprite: Civ14/Clothing/exported/landschneckt.rsi
+    sprite: Civ14/Clothing/exported/uniforms/landschneckt.rsi
     state: icon
   objectType: Item
 
@@ -8223,7 +8223,7 @@
   category: clothing
   description: A light cloth, with blue trimmings.
   icon:
-    sprite: Civ14/Clothing/exported/huipil.rsi
+    sprite: Civ14/Clothing/exported/uniforms/huipil.rsi
     state: icon
   objectType: Item
 
@@ -8249,7 +8249,7 @@
   category: clothing
   description: A light cloth, covering the lower part of the body. With red trimmings.
   icon:
-    sprite: Civ14/Clothing/exported/halfhuipil.rsi
+    sprite: Civ14/Clothing/exported/uniforms/halfhuipil.rsi
     state: icon
   objectType: Item
 
@@ -8275,7 +8275,7 @@
   category: clothing
   description: A light, loose fitting hanfu.
   icon:
-    sprite: Civ14/Clothing/exported/dark_hanfu.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dark_hanfu.rsi
     state: icon
   objectType: Item
 
@@ -8301,7 +8301,7 @@
   category: clothing
   description: A light, loose fitting bit of clothes.
   icon:
-    sprite: Civ14/Clothing/exported/artisan3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/artisan3.rsi
     state: icon
   objectType: Item
 
@@ -8327,7 +8327,7 @@
   category: clothing
   description: A light, loose fitting bit of clothes.
   icon:
-    sprite: Civ14/Clothing/exported/artisan1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/artisan1.rsi
     state: icon
   objectType: Item
 
@@ -8353,7 +8353,7 @@
   category: clothing
   description: A light, loose fitting bit of clothes.
   icon:
-    sprite: Civ14/Clothing/exported/artisan2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/artisan2.rsi
     state: icon
   objectType: Item
 
@@ -8379,7 +8379,7 @@
   category: clothing
   description: A light, loose fitting bit of clothes, worn in japan.
   icon:
-    sprite: Civ14/Clothing/exported/haori_custom.rsi
+    sprite: Civ14/Clothing/exported/uniforms/haori_custom.rsi
     state: icon
   objectType: Item
 
@@ -8405,7 +8405,7 @@
   category: clothing
   description: A light, loose fitting bit of clothes, worn in japan.
   icon:
-    sprite: Civ14/Clothing/exported/haori_samurai.rsi
+    sprite: Civ14/Clothing/exported/uniforms/haori_samurai.rsi
     state: icon
   objectType: Item
 
@@ -8431,7 +8431,7 @@
   category: clothing
   description: A blue tabard over some leather armor with chainmail underneath.
   icon:
-    sprite: Civ14/Clothing/exported/stormcloak.rsi
+    sprite: Civ14/Clothing/exported/uniforms/stormcloak.rsi
     state: icon
   objectType: Item
 
@@ -8457,7 +8457,7 @@
   category: clothing
   description: A suit of blue fine clothing over some trousers
   icon:
-    sprite: Civ14/Clothing/exported/ulfric.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ulfric.rsi
     state: icon
   objectType: Item
 
@@ -8483,7 +8483,7 @@
   category: clothing
   description: An orange tabard over some leather armor with chainmail underneath.
   icon:
-    sprite: Civ14/Clothing/exported/whiterun.rsi
+    sprite: Civ14/Clothing/exported/uniforms/whiterun.rsi
     state: icon
   objectType: Item
 
@@ -8509,7 +8509,7 @@
   category: clothing
   description: A red tunic with leather armor overtop.
   icon:
-    sprite: Civ14/Clothing/exported/tes13_imperial.rsi
+    sprite: Civ14/Clothing/exported/uniforms/tes13_imperial.rsi
     state: icon
   objectType: Item
 
@@ -8535,7 +8535,7 @@
   category: clothing
   description: A suit of fine clothing over some trousers
   icon:
-    sprite: Civ14/Clothing/exported/bolgruf.rsi
+    sprite: Civ14/Clothing/exported/uniforms/bolgruf.rsi
     state: icon
   objectType: Item
 
@@ -8563,7 +8563,7 @@
     An outfit composed of the VSR93 camo pants and shirt, along with a high
     waistbelt.
   icon:
-    sprite: Civ14/Clothing/exported/rus_vsr93.rsi
+    sprite: Civ14/Clothing/exported/uniforms/rus_vsr93.rsi
     state: icon
   objectType: Item
 
@@ -8589,7 +8589,7 @@
   category: clothing
   description: An outfit designed and issued for the OMON forces of the Russian Federation.
   icon:
-    sprite: Civ14/Clothing/exported/omon.rsi
+    sprite: Civ14/Clothing/exported/uniforms/omon.rsi
     state: icon
   objectType: Item
 
@@ -8615,7 +8615,7 @@
   category: clothing
   description: An all black tunic and trousers outfit.
   icon:
-    sprite: Civ14/Clothing/exported/insurgent_black.rsi
+    sprite: Civ14/Clothing/exported/uniforms/insurgent_black.rsi
     state: icon
   objectType: Item
 
@@ -8641,7 +8641,7 @@
   category: clothing
   description: A dark yellow, sand-colored tunic and trousers outfit.
   icon:
-    sprite: Civ14/Clothing/exported/insurgent_sand.rsi
+    sprite: Civ14/Clothing/exported/uniforms/insurgent_sand.rsi
     state: icon
   objectType: Item
 
@@ -8667,7 +8667,7 @@
   category: clothing
   description: A dark yellow, sand-colored tunic with woodland camo trousers.
   icon:
-    sprite: Civ14/Clothing/exported/insurgent_sand_woodland.rsi
+    sprite: Civ14/Clothing/exported/uniforms/insurgent_sand_woodland.rsi
     state: icon
   objectType: Item
 
@@ -8693,7 +8693,7 @@
   category: clothing
   description: A dark yellow, sand-colored uniform with desert camo trousers.
   icon:
-    sprite: Civ14/Clothing/exported/insurgent_sand_dcu.rsi
+    sprite: Civ14/Clothing/exported/uniforms/insurgent_sand_dcu.rsi
     state: icon
   objectType: Item
 
@@ -8719,7 +8719,7 @@
   category: clothing
   description: A light brown uniform with green trousers.
   icon:
-    sprite: Civ14/Clothing/exported/insurgent_sand_green.rsi
+    sprite: Civ14/Clothing/exported/uniforms/insurgent_sand_green.rsi
     state: icon
   objectType: Item
 
@@ -8745,7 +8745,7 @@
   category: clothing
   description: A black tunic with desert camo trousers, worn by insurgent leaders.
   icon:
-    sprite: Civ14/Clothing/exported/insurgent_leader.rsi
+    sprite: Civ14/Clothing/exported/uniforms/insurgent_leader.rsi
     state: icon
   objectType: Item
 
@@ -8771,7 +8771,7 @@
   category: clothing
   description: The plain olive coloured uniform of the Israeli Defense Forces.
   icon:
-    sprite: Civ14/Clothing/exported/idf_olive.rsi
+    sprite: Civ14/Clothing/exported/uniforms/idf_olive.rsi
     state: icon
   objectType: Item
 
@@ -8797,7 +8797,7 @@
   category: clothing
   description: A casual jeans and white shirt combo.
   icon:
-    sprite: Civ14/Clothing/exported/motorist.rsi
+    sprite: Civ14/Clothing/exported/uniforms/motorist.rsi
     state: icon
   objectType: Item
 
@@ -8825,7 +8825,7 @@
     Casual brown trousers and a black shirt, perfect for running away from
     gunfire.
   icon:
-    sprite: Civ14/Clothing/exported/reporter.rsi
+    sprite: Civ14/Clothing/exported/uniforms/reporter.rsi
     state: icon
   objectType: Item
 
@@ -8853,7 +8853,7 @@
     A rowdy alternative culture purple sleeveless shirt and purple trousers for
     bringing down the establishment.
   icon:
-    sprite: Civ14/Clothing/exported/punk.rsi
+    sprite: Civ14/Clothing/exported/uniforms/punk.rsi
     state: icon
   objectType: Item
 
@@ -8879,7 +8879,7 @@
   category: clothing
   description: A uniform used by EMS workers.
   icon:
-    sprite: Civ14/Clothing/exported/paramedic.rsi
+    sprite: Civ14/Clothing/exported/uniforms/paramedic.rsi
     state: icon
   objectType: Item
 
@@ -8905,7 +8905,7 @@
   category: clothing
   description: A uniform used by firefighters. Offers heat protection on the legs.
   icon:
-    sprite: Civ14/Clothing/exported/firefighter.rsi
+    sprite: Civ14/Clothing/exported/uniforms/firefighter.rsi
     state: icon
   objectType: Item
 
@@ -8931,7 +8931,7 @@
   category: clothing
   description: A brown shirt with black pants.
   icon:
-    sprite: Civ14/Clothing/exported/detective1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/detective1.rsi
     state: icon
   objectType: Item
 
@@ -8957,7 +8957,7 @@
   category: clothing
   description: A blue shirt with black pants.
   icon:
-    sprite: Civ14/Clothing/exported/detective2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/detective2.rsi
     state: icon
   objectType: Item
 
@@ -8983,7 +8983,7 @@
   category: clothing
   description: A black shirt with grey pants.
   icon:
-    sprite: Civ14/Clothing/exported/detective3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/detective3.rsi
     state: icon
   objectType: Item
 
@@ -9009,7 +9009,7 @@
   category: clothing
   description: A shirt with tracksuit pants.
   icon:
-    sprite: Civ14/Clothing/exported/trackpants.rsi
+    sprite: Civ14/Clothing/exported/uniforms/trackpants.rsi
     state: icon
   objectType: Item
 
@@ -9035,7 +9035,7 @@
   category: clothing
   description: A outfit used by tactical units.
   icon:
-    sprite: Civ14/Clothing/exported/tacti.rsi
+    sprite: Civ14/Clothing/exported/uniforms/tacti.rsi
     state: icon
   objectType: Item
 
@@ -9063,7 +9063,7 @@
     Assorted surplus cammo trousers with a nice hawaiian shirt for all your
     operating needs.
   icon:
-    sprite: Civ14/Clothing/exported/tacticool_hawaiian_blue.rsi
+    sprite: Civ14/Clothing/exported/uniforms/tacticool_hawaiian_blue.rsi
     state: icon
   objectType: Item
 
@@ -9089,7 +9089,7 @@
   category: clothing
   description: A camouflage shirt with blue pants.
   icon:
-    sprite: Civ14/Clothing/exported/boomerwaffen1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/boomerwaffen1.rsi
     state: icon
   objectType: Item
 
@@ -9115,7 +9115,7 @@
   category: clothing
   description: A tanktop with camouflage pants.
   icon:
-    sprite: Civ14/Clothing/exported/boomerwaffen2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/boomerwaffen2.rsi
     state: icon
   objectType: Item
 
@@ -9141,7 +9141,7 @@
   category: clothing
   description: A black shirt with camouflage pants.
   icon:
-    sprite: Civ14/Clothing/exported/boomerwaffen3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/boomerwaffen3.rsi
     state: icon
   objectType: Item
 
@@ -9167,7 +9167,7 @@
   category: clothing
   description: A modern shaman outfit.
   icon:
-    sprite: Civ14/Clothing/exported/modern_shaman.rsi
+    sprite: Civ14/Clothing/exported/uniforms/modern_shaman.rsi
     state: icon
   objectType: Item
 
@@ -9193,7 +9193,7 @@
   category: clothing
   description: The standard Ukrainian Ground Forces camo uniform.
   icon:
-    sprite: Civ14/Clothing/exported/ukraine_acu.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ukraine_acu.rsi
     state: icon
   objectType: Item
 
@@ -9219,7 +9219,7 @@
   category: clothing
   description: The standard Russian Federation Army camo uniform.
   icon:
-    sprite: Civ14/Clothing/exported/russian_emr_vdv.rsi
+    sprite: Civ14/Clothing/exported/uniforms/russian_emr_vdv.rsi
     state: icon
   objectType: Item
 
@@ -9245,7 +9245,7 @@
   category: clothing
   description: The standard Russian Federation Army camo uniform.
   icon:
-    sprite: Civ14/Clothing/exported/russian_emr_desert.rsi
+    sprite: Civ14/Clothing/exported/uniforms/russian_emr_desert.rsi
     state: icon
   objectType: Item
 
@@ -9271,7 +9271,7 @@
   category: clothing
   description: Standard Uniform of the syrian army.
   icon:
-    sprite: Civ14/Clothing/exported/syr_army.rsi
+    sprite: Civ14/Clothing/exported/uniforms/syr_army.rsi
     state: icon
   objectType: Item
 
@@ -9297,7 +9297,7 @@
   category: clothing
   description: Standard uniform used by the FSA forces.
   icon:
-    sprite: Civ14/Clothing/exported/salv_army.rsi
+    sprite: Civ14/Clothing/exported/uniforms/salv_army.rsi
     state: icon
   objectType: Item
 
@@ -9323,7 +9323,7 @@
   category: clothing
   description: A pair of jeans secured by suspenders.
   icon:
-    sprite: Civ14/Clothing/exported/warband1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/warband1.rsi
     state: icon
   objectType: Item
 
@@ -9349,7 +9349,7 @@
   category: clothing
   description: A mix of woodland camoflage trousers and a white sleeveless shirt.
   icon:
-    sprite: Civ14/Clothing/exported/warband2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/warband2.rsi
     state: icon
   objectType: Item
 
@@ -9375,7 +9375,7 @@
   category: clothing
   description: A canadian pattern uniform
   icon:
-    sprite: Civ14/Clothing/exported/cad_pat.rsi
+    sprite: Civ14/Clothing/exported/uniforms/cad_pat.rsi
     state: icon
   objectType: Item
 
@@ -9401,7 +9401,7 @@
   category: clothing
   description: A canadian pattern uniform
   icon:
-    sprite: Civ14/Clothing/exported/cad_pat_arid.rsi
+    sprite: Civ14/Clothing/exported/uniforms/cad_pat_arid.rsi
     state: icon
   objectType: Item
 
@@ -9427,7 +9427,7 @@
   category: clothing
   description: The standard modern Chinese military uniform.
   icon:
-    sprite: Civ14/Clothing/exported/type07.rsi
+    sprite: Civ14/Clothing/exported/uniforms/type07.rsi
     state: icon
   objectType: Item
 
@@ -9453,7 +9453,7 @@
   category: clothing
   description: A pair of light pants with a red floral shirt.
   icon:
-    sprite: Civ14/Clothing/exported/cartel1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/cartel1.rsi
     state: icon
   objectType: Item
 
@@ -9479,7 +9479,7 @@
   category: clothing
   description: A DPM variant camo uniform used by the Dutch Army.
   icon:
-    sprite: Civ14/Clothing/exported/dutch_dpm.rsi
+    sprite: Civ14/Clothing/exported/uniforms/dutch_dpm.rsi
     state: icon
   objectType: Item
 
@@ -9506,7 +9506,7 @@
   category: clothing
   description: An wrap of cotton loincloth, worn around the waist.
   icon:
-    sprite: Civ14/Clothing/exported/loincloth1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/loincloth1.rsi
     state: icon
   objectType: Item
 
@@ -9532,7 +9532,7 @@
   category: clothing
   description: A wrap of leaves, worn around the waist.
   icon:
-    sprite: Civ14/Clothing/exported/leaves_skirt.rsi
+    sprite: Civ14/Clothing/exported/uniforms/leaves_skirt.rsi
     state: icon
   objectType: Item
 
@@ -9557,7 +9557,7 @@
   category: clothing
   description: ""
   icon:
-    sprite: Civ14/Clothing/exported/leaves_skirt_long.rsi
+    sprite: Civ14/Clothing/exported/uniforms/leaves_skirt_long.rsi
     state: icon
   objectType: Item
 
@@ -9582,7 +9582,7 @@
   category: clothing
   description: leaves arranged on the body to preserve modesty
   icon:
-    sprite: Civ14/Clothing/exported/adam.rsi
+    sprite: Civ14/Clothing/exported/uniforms/adam.rsi
     state: icon
   objectType: Item
 
@@ -9607,7 +9607,7 @@
   category: clothing
   description: A wrap of leather cloth, worn around the waist.
   icon:
-    sprite: Civ14/Clothing/exported/indian1.rsi
+    sprite: Civ14/Clothing/exported/uniforms/indian1.rsi
     state: icon
   objectType: Item
 
@@ -9633,7 +9633,7 @@
   category: clothing
   description: A wrap of leather cloth, worn around the waist.
   icon:
-    sprite: Civ14/Clothing/exported/indian2.rsi
+    sprite: Civ14/Clothing/exported/uniforms/indian2.rsi
     state: icon
   objectType: Item
 
@@ -9659,7 +9659,7 @@
   category: clothing
   description: A wrap of leather cloth, worn around the waist and the chest.
   icon:
-    sprite: Civ14/Clothing/exported/indian3.rsi
+    sprite: Civ14/Clothing/exported/uniforms/indian3.rsi
     state: icon
   objectType: Item
 
@@ -9685,7 +9685,7 @@
   category: clothing
   description: An elaborate wrap of leather cloth, worn by tribal chiefs.
   icon:
-    sprite: Civ14/Clothing/exported/indianchef.rsi
+    sprite: Civ14/Clothing/exported/uniforms/indianchef.rsi
     state: icon
   objectType: Item
 
@@ -9711,7 +9711,7 @@
   category: clothing
   description: A white cloth, worn around the waist, painted with religious symbols.
   icon:
-    sprite: Civ14/Clothing/exported/indianshaman.rsi
+    sprite: Civ14/Clothing/exported/uniforms/indianshaman.rsi
     state: icon
   objectType: Item
 
@@ -9737,7 +9737,7 @@
   category: clothing
   description: A white cloth, worn around the waist, painted with religious symbols.
   icon:
-    sprite: Civ14/Clothing/exported/indianshaman.rsi
+    sprite: Civ14/Clothing/exported/uniforms/indianshaman.rsi
     state: icon
   objectType: Item
 
@@ -9763,7 +9763,7 @@
   category: clothing
   description: A massive leopard pelt.
   icon:
-    sprite: Civ14/Clothing/exported/giant_leopard_pelt.rsi
+    sprite: Civ14/Clothing/exported/uniforms/giant_leopard_pelt.rsi
     state: icon
   objectType: Item
 
@@ -9791,7 +9791,7 @@
     A wrap of cattle fur tassles fashioned into a loincloth, often worn by the
     zulu people.
   icon:
-    sprite: Civ14/Clothing/exported/zulu_slene.rsi
+    sprite: Civ14/Clothing/exported/uniforms/zulu_slene.rsi
     state: icon
   objectType: Item
 
@@ -9819,7 +9819,7 @@
     A tight fitting pair of lizard scale pants. When you're this on-point;
     wearing a shirt would just cramp your style.
   icon:
-    sprite: Civ14/Clothing/exported/lizard_pants.rsi
+    sprite: Civ14/Clothing/exported/uniforms/lizard_pants.rsi
     state: icon
   objectType: Item
 
@@ -9845,7 +9845,7 @@
   category: clothing
   description: A khaki trench suit worn by soldiers of the British Army.
   icon:
-    sprite: Civ14/Clothing/exported/trenchsuit.rsi
+    sprite: Civ14/Clothing/exported/uniforms/trenchsuit.rsi
     state: icon
   objectType: Item
 
@@ -9871,7 +9871,7 @@
   category: clothing
   description: A Polish uniform, used by the Polish Army.
   icon:
-    sprite: Civ14/Clothing/exported/trenchsuit.rsi
+    sprite: Civ14/Clothing/exported/uniforms/trenchsuit.rsi
     state: icon
   objectType: Item
 
@@ -9897,7 +9897,7 @@
   category: clothing
   description: A French light blue uniform, used by the French Army.
   icon:
-    sprite: Civ14/Clothing/exported/ww1_french.rsi
+    sprite: Civ14/Clothing/exported/uniforms/ww1_french.rsi
     state: icon
   objectType: Item
 
@@ -9923,7 +9923,7 @@
   category: clothing
   description: Seems to be two piece green Bikini, the top is held up by straps.
   icon:
-    sprite: Civ14/Clothing/exported/g_strapbikini.rsi
+    sprite: Civ14/Clothing/exported/uniforms/g_strapbikini.rsi
     state: icon
   objectType: Item
 
@@ -9951,7 +9951,7 @@
     Seems to be two piece green Bikini, the top is held up by a tight horizontal
     cloth.
   icon:
-    sprite: Civ14/Clothing/exported/g_bandbikini.rsi
+    sprite: Civ14/Clothing/exported/uniforms/g_bandbikini.rsi
     state: icon
   objectType: Item
 
@@ -9977,7 +9977,7 @@
   category: clothing
   description: Seems to be pants made for swiming in.
   icon:
-    sprite: Civ14/Clothing/exported/g_swimtrunks.rsi
+    sprite: Civ14/Clothing/exported/uniforms/g_swimtrunks.rsi
     state: icon
   objectType: Item
 
@@ -10003,7 +10003,7 @@
   category: clothing
   description: A football team's official jersey.
   icon:
-    sprite: Civ14/Clothing/exported/football_custom.rsi
+    sprite: Civ14/Clothing/exported/uniforms/football_custom.rsi
     state: icon
   objectType: Item
 
@@ -10029,7 +10029,7 @@
   category: clothing
   description: A simple cloth stola, roman clothing for women.
   icon:
-    sprite: Civ14/Clothing/exported/fem_roman.rsi
+    sprite: Civ14/Clothing/exported/uniforms/fem_roman.rsi
     state: icon
   objectType: Item
 
@@ -10055,7 +10055,7 @@
   category: clothing
   description: A simple, small loincloth.
   icon:
-    sprite: Civ14/Clothing/exported/customspartan.rsi
+    sprite: Civ14/Clothing/exported/uniforms/customspartan.rsi
     state: icon
   objectType: Item
 
@@ -10081,7 +10081,7 @@
   category: clothing
   description: A kilt-like cloth used around the waist.
   icon:
-    sprite: Civ14/Clothing/exported/customshendyt.rsi
+    sprite: Civ14/Clothing/exported/uniforms/customshendyt.rsi
     state: icon
   objectType: Item
 
@@ -10107,7 +10107,7 @@
   category: clothing
   description: Thick cloth celtic trousers.
   icon:
-    sprite: Civ14/Clothing/exported/customceltic.rsi
+    sprite: Civ14/Clothing/exported/uniforms/customceltic.rsi
     state: icon
   objectType: Item
 
@@ -10133,7 +10133,7 @@
   category: clothing
   description: A simple cloth tunic, with a leather belt.
   icon:
-    sprite: Civ14/Clothing/exported/customtunic.rsi
+    sprite: Civ14/Clothing/exported/uniforms/customtunic.rsi
     state: icon
   objectType: Item
 
@@ -10159,7 +10159,7 @@
   category: clothing
   description: A light cloth tunic, in arabic style.
   icon:
-    sprite: Civ14/Clothing/exported/customarabictunic.rsi
+    sprite: Civ14/Clothing/exported/uniforms/customarabictunic.rsi
     state: icon
   objectType: Item
 
@@ -10185,7 +10185,7 @@
   category: clothing
   description: A renaissance-style outfit.
   icon:
-    sprite: Civ14/Clothing/exported/customren.rsi
+    sprite: Civ14/Clothing/exported/uniforms/customren.rsi
     state: icon
   objectType: Item
 
@@ -10211,7 +10211,7 @@
   category: clothing
   description: A renaissance-style pontifical outfit.
   icon:
-    sprite: Civ14/Clothing/exported/custom_pontifical.rsi
+    sprite: Civ14/Clothing/exported/uniforms/custom_pontifical.rsi
     state: icon
   objectType: Item
 
@@ -10237,7 +10237,7 @@
   category: clothing
   description: A female dress.
   icon:
-    sprite: Civ14/Clothing/exported/customdress.rsi
+    sprite: Civ14/Clothing/exported/uniforms/customdress.rsi
     state: icon
   objectType: Item
 
@@ -10263,7 +10263,7 @@
   category: clothing
   description: A female dress.
   icon:
-    sprite: Civ14/Clothing/exported/custombuttonup_full.rsi
+    sprite: Civ14/Clothing/exported/uniforms/custombuttonup_full.rsi
     state: icon
   objectType: Item
 
@@ -10289,7 +10289,7 @@
   category: clothing
   description: A tribal robe.
   icon:
-    sprite: Civ14/Clothing/exported/tribalrobe.rsi
+    sprite: Civ14/Clothing/exported/uniforms/tribalrobe.rsi
     state: icon
   objectType: Item
 
@@ -10315,7 +10315,7 @@
   category: clothing
   description: A victorian Era uniform.
   icon:
-    sprite: Civ14/Clothing/exported/customuni.rsi
+    sprite: Civ14/Clothing/exported/uniforms/customuni.rsi
     state: icon
   objectType: Item
 
@@ -10341,7 +10341,7 @@
   category: clothing
   description: A modern era camouflaged uniform.
   icon:
-    sprite: Civ14/Clothing/exported/modern_camo_custom.rsi
+    sprite: Civ14/Clothing/exported/uniforms/modern_camo_custom.rsi
     state: icon
   objectType: Item
 
@@ -10367,7 +10367,7 @@
   category: clothing
   description: Basic striped pyjamas.
   icon:
-    sprite: Civ14/Clothing/exported/custompyjamas.rsi
+    sprite: Civ14/Clothing/exported/uniforms/custompyjamas.rsi
     state: icon
   objectType: Item
 
@@ -10393,7 +10393,7 @@
   category: clothing
   description: A laced dress.
   icon:
-    sprite: Civ14/Clothing/exported/crinoline_dress.rsi
+    sprite: Civ14/Clothing/exported/uniforms/crinoline_dress.rsi
     state: icon
   objectType: Item
 
@@ -10419,7 +10419,7 @@
   category: clothing
   description: A generic outfit.
   icon:
-    sprite: Civ14/Clothing/exported/custom_mod_full.rsi
+    sprite: Civ14/Clothing/exported/uniforms/custom_mod_full.rsi
     state: icon
   objectType: Item
 
@@ -10445,7 +10445,7 @@
   category: clothing
   description: A sterile white uniform.
   icon:
-    sprite: Civ14/Clothing/exported/custom_mod_full.rsi
+    sprite: Civ14/Clothing/exported/uniforms/custom_mod_full.rsi
     state: icon
   objectType: Item
 
@@ -10471,7 +10471,7 @@
   category: clothing
   description: ""
   icon:
-    sprite: Civ14/Clothing/exported/custom_modbaggy_full.rsi
+    sprite: Civ14/Clothing/exported/uniforms/custom_modbaggy_full.rsi
     state: icon
   objectType: Item
 
@@ -10497,7 +10497,7 @@
   category: clothing
   description: ""
   icon:
-    sprite: Civ14/Clothing/exported/custom_col_full.rsi
+    sprite: Civ14/Clothing/exported/uniforms/custom_col_full.rsi
     state: icon
   objectType: Item
 
@@ -10523,7 +10523,7 @@
   category: clothing
   description: A shirt with tracksuit pants.
   icon:
-    sprite: Civ14/Clothing/exported/trackpants_custom.rsi
+    sprite: Civ14/Clothing/exported/uniforms/trackpants_custom.rsi
     state: icon
   objectType: Item
 
@@ -10549,7 +10549,7 @@
   category: clothing
   description: A camouflage uniform issued by the Central Asian Federal Republic.
   icon:
-    sprite: Civ14/Clothing/exported/cafr_newiform.rsi
+    sprite: Civ14/Clothing/exported/uniforms/cafr_newiform.rsi
     state: icon
   objectType: Item
 
@@ -10575,7 +10575,7 @@
   category: clothing
   description: A football jersey of the Unga Bunga United, U.B.U.
   icon:
-    sprite: Civ14/Clothing/exported/football_red.rsi
+    sprite: Civ14/Clothing/exported/uniforms/football_red.rsi
     state: icon
   objectType: Item
 
@@ -10601,7 +10601,7 @@
   category: clothing
   description: A C.R. Flamengo football shirt, with yellow swimming trunks.
   icon:
-    sprite: Civ14/Clothing/exported/flamengo.rsi
+    sprite: Civ14/Clothing/exported/uniforms/flamengo.rsi
     state: icon
   objectType: Item
 
@@ -10627,7 +10627,7 @@
   category: clothing
   description: A football jersey of the goalkeeper of Blugoslavia Football Club, C.T.F.C.
   icon:
-    sprite: Civ14/Clothing/exported/football_blue_gk.rsi
+    sprite: Civ14/Clothing/exported/uniforms/football_blue_gk.rsi
     state: icon
   objectType: Item
 
@@ -10653,7 +10653,7 @@
   category: clothing
   description: A football jersey of the Redmenia United, U.B.U.
   icon:
-    sprite: Civ14/Clothing/exported/football_red.rsi
+    sprite: Civ14/Clothing/exported/uniforms/football_red.rsi
     state: icon
   objectType: Item
 
@@ -10679,7 +10679,7 @@
   category: clothing
   description: A football jersey of the Blugoslavia Football Club, C.T.F.C.
   icon:
-    sprite: Civ14/Clothing/exported/football_blue.rsi
+    sprite: Civ14/Clothing/exported/uniforms/football_blue.rsi
     state: icon
   objectType: Item
 
