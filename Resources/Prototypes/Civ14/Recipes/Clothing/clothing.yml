@@ -75,7 +75,7 @@
               amount: 1
               doAfter: 10
     - node: leatherloincloth
-      entity: under-loinleather
+      entity: civ13_uniform_leather_loincloth
 
 - type: constructionGraph
   id: LeatherSandals
