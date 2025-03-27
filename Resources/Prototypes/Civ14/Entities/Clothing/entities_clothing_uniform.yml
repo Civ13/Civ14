@@ -248,9 +248,9 @@
           Heat: 0
           Radiation: 0
 - type: entity
-  name: imperial stormtrooper officer uniform
+  name: imperial stormtrooper captain uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_imperial_stormtrooper_officer_uniform
+  id: civ13_uniform_imperial_stormtrooper_captain_uniform
   description: >-
     A double-breasted olive-green tunic rank and trousers with a metal plac
     denoting rank for CO's in the Imperial Navy.

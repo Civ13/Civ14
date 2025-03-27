@@ -339,9 +339,9 @@
     - node: end
       entity: civ13_uniform_imperial_stormtrooper_officer_uniform
 - type: construction
-  name: imperial stormtrooper officer uniform
-  id: civ13_uniform_imperial_stormtrooper_officer_uniform
-  graph: civ13_uniform_imperial_stormtrooper_officer_uniform
+  name: imperial stormtrooper captain uniform
+  id: civ13_uniform_imperial_stormtrooper_captain_uniform
+  graph: civ13_uniform_imperial_stormtrooper_captain_uniform
   startNode: start
   targetNode: end
   category: clothing
@@ -354,7 +354,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_imperial_stormtrooper_officer_uniform
+  id: civ13_uniform_imperial_stormtrooper_captain_uniform
   start: start
   graph:
     - node: start
@@ -365,7 +365,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_imperial_stormtrooper_officer_uniform
+      entity: civ13_uniform_imperial_stormtrooper_captain_uniform
 - type: construction
   name: imperial technician grey uniform
   id: civ13_uniform_imperial_technician_grey_uniform
@@ -1539,7 +1539,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/custom_col_short_full.rsi
     state: icon
@@ -9580,7 +9580,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/leaves_skirt_long.rsi
     state: icon
@@ -10494,7 +10494,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/custom_modbaggy_full.rsi
     state: icon
@@ -10520,7 +10520,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/custom_col_full.rsi
     state: icon
