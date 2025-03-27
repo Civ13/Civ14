@@ -121,19 +121,6 @@
 
 - type: entity
   parent: BaseComputerCircuitboard
-  id: SalvageExpeditionsComputerCircuitboard
-  name: salvage expeditions computer board
-  description: A computer printed circuit board for a salvage expeditions computer.
-  components:
-    - type: Sprite
-      state: cpu_supply
-    - type: ComputerBoard
-      prototype: ComputerSalvageExpedition
-    - type: StealTarget
-      stealGroup: SalvageExpeditionsComputerCircuitboard
-
-- type: entity
-  parent: BaseComputerCircuitboard
   id: CargoShuttleConsoleCircuitboard
   name: cargo shuttle console board
   description: A computer printed circuit board for a cargo shuttle console.
@@ -368,17 +355,6 @@
       state: cpu_syndicate
     - type: ComputerBoard
       prototype: ComputerShuttleSyndie
-
-- type: entity
-  parent: BaseComputerCircuitboard
-  id: CloningConsoleComputerCircuitboard
-  name: cloning console computer board
-  description: A computer printed circuit board for a cloning console.
-  components:
-    - type: Sprite
-      state: cpu_medical
-    - type: ComputerBoard
-      prototype: ComputerCloningConsole
 
 - type: entity
   parent: BaseComputerCircuitboard
