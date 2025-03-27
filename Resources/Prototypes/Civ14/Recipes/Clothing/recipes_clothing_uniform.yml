@@ -837,7 +837,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_long_tunic
 - type: construction
@@ -863,7 +863,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 6.5
+              doAfter: 6
     - node: end
       entity: civ13_uniform_toga
 - type: construction
@@ -1159,7 +1159,7 @@
           steps:
             - material: Leather
               amount: 2
-              doAfter: 5.5
+              doAfter: 5
     - node: end
       entity: civ13_uniform_short_celtic_braccae
 - type: construction
@@ -1185,7 +1185,7 @@
           steps:
             - material: Leather
               amount: 3
-              doAfter: 5.5
+              doAfter: 5
     - node: end
       entity: civ13_uniform_long_celtic_braccae
 - type: construction
@@ -1211,7 +1211,7 @@
           steps:
             - material: Cloth
               amount: 2
-              doAfter: 5.5
+              doAfter: 5
     - node: end
       entity: civ13_uniform_mayan_loincloth
 - type: construction
@@ -1263,7 +1263,7 @@
           steps:
             - material: Cloth
               amount: 8
-              doAfter: 14.5
+              doAfter: 14
     - node: end
       entity: civ13_uniform_pharaohic_shendyt
 - type: construction
@@ -1289,7 +1289,7 @@
           steps:
             - material: Cloth
               amount: 10
-              doAfter: 18.5
+              doAfter: 18
     - node: end
       entity: civ13_uniform_nemes_shendyt
 - type: construction
@@ -1369,7 +1369,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_white_kimono
 - type: construction
@@ -1449,7 +1449,7 @@
           steps:
             - material: Cloth
               amount: 5
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_police_outfit
 - type: construction
@@ -1539,7 +1539,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/custom_col_short_full.rsi
     state: icon
@@ -1555,7 +1555,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_short_colonial_outfit
 - type: construction
@@ -2591,7 +2591,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_yellow_sundress
 - type: construction
@@ -3587,7 +3587,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_blue_colonial_clothing
 - type: construction
@@ -3613,7 +3613,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_white_colonial_clothing
 - type: construction
@@ -4319,7 +4319,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_light_brown_outfit
 - type: construction
@@ -4345,7 +4345,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_black_outfit
 - type: construction
@@ -4397,7 +4397,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_grey_outfit
 - type: construction
@@ -4423,7 +4423,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_brown_outfit
 - type: construction
@@ -4917,7 +4917,7 @@
           steps:
             - material: Cloth
               amount: 5
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_constable_outfit
 - type: construction
@@ -5047,7 +5047,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_farmer_outfit
 - type: construction
@@ -5073,7 +5073,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_mechanic_outfit
 - type: construction
@@ -5101,7 +5101,7 @@
           steps:
             - material: Cloth
               amount: 5
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_blue_traditional_dress
 - type: construction
@@ -5519,7 +5519,7 @@
           steps:
             - material: Cloth
               amount: 5
-              doAfter: 10.5
+              doAfter: 10
     - node: end
       entity: civ13_uniform_fancy_colonial_clothing
 - type: construction
@@ -5547,7 +5547,7 @@
           steps:
             - material: Cloth
               amount: 2
-              doAfter: 5.5
+              doAfter: 5
     - node: end
       entity: civ13_uniform_short_sleeved_colonial_clothing
 - type: construction
@@ -5573,7 +5573,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_green_colonial_clothing
 - type: construction
@@ -5599,7 +5599,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_pink_colonial_clothing
 - type: construction
@@ -5651,7 +5651,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_dark_dress
 - type: construction
@@ -5677,7 +5677,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_blue_dress
 - type: construction
@@ -5703,7 +5703,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_brown_dress
 - type: construction
@@ -5729,7 +5729,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_green_dress
 - type: construction
@@ -5755,7 +5755,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_red_dress
 - type: construction
@@ -5783,7 +5783,7 @@
           steps:
             - material: Cloth
               amount: 5
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_conquistador_uniform
 - type: construction
@@ -5809,7 +5809,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_pilgrim_clothing
 - type: construction
@@ -5835,7 +5835,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_black_stripes_clothing
 - type: construction
@@ -5861,7 +5861,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_red_stripes_clothing
 - type: construction
@@ -5887,7 +5887,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_blue_stripes_clothing
 - type: construction
@@ -6886,7 +6886,7 @@
           steps:
             - material: Cloth
               amount: 5
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_merchant_suit
 - type: construction
@@ -6964,7 +6964,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_pioneer_outfit
 - type: construction
@@ -6990,7 +6990,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_rancher_outfit
 - type: construction
@@ -7016,7 +7016,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_cowboy_outfit
 - type: construction
@@ -7042,7 +7042,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_checkered_outfit
 - type: construction
@@ -7068,7 +7068,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_worker_outfit_1
 - type: construction
@@ -7094,7 +7094,7 @@
           steps:
             - material: Cloth
               amount: 5
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_texan_shirt_outfit
 - type: construction
@@ -7120,7 +7120,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_lederhosen
 - type: construction
@@ -7229,7 +7229,7 @@
           steps:
             - material: Cloth
               amount: 5
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_black_victorian_shirt_and_vest
 - type: construction
@@ -7257,7 +7257,7 @@
           steps:
             - material: Cloth
               amount: 5
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_black_victorian_shirt_and_red_vest
 - type: construction
@@ -7285,7 +7285,7 @@
           steps:
             - material: Cloth
               amount: 5
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_red_victorian_shirt_and_black_vest
 - type: construction
@@ -7338,7 +7338,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_saloon_dress_outfit
 - type: construction
@@ -7392,7 +7392,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_plain_black_dress
 - type: construction
@@ -7446,7 +7446,7 @@
           steps:
             - material: Cloth
               amount: 5
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_victorian_black_dress
 - type: construction
@@ -7471,7 +7471,7 @@
         - to: end
           steps:
             - amount: 4
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_neck_length_black_dress
 - type: construction
@@ -7866,7 +7866,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_emirate_tunic
 - type: construction
@@ -7892,7 +7892,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_light_brown_arabic_tunic
 - type: construction
@@ -7918,7 +7918,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_light_white_arabic_tunic
 - type: construction
@@ -8047,7 +8047,7 @@
           steps:
             - material: Cloth
               amount: 6
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_count_outfit
 - type: construction
@@ -8073,7 +8073,7 @@
           steps:
             - material: Cloth
               amount: 6
-              doAfter: 10.5
+              doAfter: 10
     - node: end
       entity: civ13_uniform_purple_renaissance_clothing
 - type: construction
@@ -8127,7 +8127,7 @@
           steps:
             - material: Cloth
               amount: 6
-              doAfter: 10.5
+              doAfter: 10
     - node: end
       entity: civ13_uniform_pontifical_renaissance_clothing
 - type: construction
@@ -8155,7 +8155,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_nun_dress
 - type: construction
@@ -8183,7 +8183,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_black_priest_outfit
 - type: construction
@@ -8211,7 +8211,7 @@
           steps:
             - material: Cloth
               amount: 6
-              doAfter: 10.5
+              doAfter: 10
     - node: end
       entity: civ13_uniform_green_landschneckt_uniform
 - type: construction
@@ -8237,7 +8237,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 5.5
+              doAfter: 5
     - node: end
       entity: civ13_uniform_huipil
 - type: construction
@@ -8263,7 +8263,7 @@
           steps:
             - material: Cloth
               amount: 2
-              doAfter: 4.5
+              doAfter: 4
     - node: end
       entity: civ13_uniform_half_huipil
 - type: construction
@@ -8811,7 +8811,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_motorist_outfit
 - type: construction
@@ -8867,7 +8867,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_punk_outfit
 - type: construction
@@ -9496,32 +9496,7 @@
               doAfter: 5
     - node: end
       entity: civ13_uniform_M93_DPM_camo_uniform
-- type: construction
-  name: leather loincloth
-  id: civ13_uniform_leather_loincloth
-  graph: civ13_uniform_leather_loincloth
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: A wrap of leather cloth, worn around the waist.
-  icon:
-    sprite: Civ14/Clothing/exported/leatherloincloth1.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_uniform_leather_loincloth
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 2
-              doAfter: 5
-    - node: end
-      entity: civ13_uniform_leather_loincloth
 - type: construction
   name: cotton loincloth
   id: civ13_uniform_cotton_loincloth
@@ -9545,7 +9520,7 @@
           steps:
             - material: Cloth
               amount: 2
-              doAfter: 4.5
+              doAfter: 4
     - node: end
       entity: civ13_uniform_cotton_loincloth
 - type: construction
@@ -9580,7 +9555,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/leaves_skirt_long.rsi
     state: icon
@@ -10068,7 +10043,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_stola
 - type: construction
@@ -10120,7 +10095,7 @@
           steps:
             - material: Cloth
               amount: 2
-              doAfter: 4.5
+              doAfter: 4
     - node: end
       entity: civ13_uniform_shendyt
 - type: construction
@@ -10146,7 +10121,7 @@
           steps:
             - material: Cloth
               amount: 2
-              doAfter: 5.5
+              doAfter: 5
     - node: end
       entity: civ13_uniform_celtic_trousers
 - type: construction
@@ -10172,7 +10147,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_tunic
 - type: construction
@@ -10198,7 +10173,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_arabic_tunic
 - type: construction
@@ -10224,7 +10199,7 @@
           steps:
             - material: Cloth
               amount: 6
-              doAfter: 10.5
+              doAfter: 10
     - node: end
       entity: civ13_uniform_renaissance_outfit
 - type: construction
@@ -10250,7 +10225,7 @@
           steps:
             - material: Cloth
               amount: 6
-              doAfter: 10.5
+              doAfter: 10
     - node: end
       entity: civ13_uniform_renaissance_outfit_1
 - type: construction
@@ -10276,7 +10251,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_dress
 - type: construction
@@ -10302,7 +10277,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_dress_1
 - type: construction
@@ -10354,7 +10329,7 @@
           steps:
             - material: Cloth
               amount: 3
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_uniform
 - type: construction
@@ -10432,7 +10407,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 8.5
+              doAfter: 8
     - node: end
       entity: civ13_uniform_crinoine_dress
 - type: construction
@@ -10458,7 +10433,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_modern_outfit_1
 - type: construction
@@ -10494,7 +10469,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/custom_modbaggy_full.rsi
     state: icon
@@ -10510,7 +10485,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_baggy_modern_outfit
 - type: construction
@@ -10520,7 +10495,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/custom_col_full.rsi
     state: icon
@@ -10536,7 +10511,7 @@
           steps:
             - material: Cloth
               amount: 4
-              doAfter: 7.5
+              doAfter: 7
     - node: end
       entity: civ13_uniform_colonial_outfit
 - type: construction
