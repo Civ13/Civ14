@@ -17,6 +17,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_preachers_clothing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: white t-shirt and purple shorts
   parent: ClothingUniformBase
@@ -36,6 +42,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_white_t_shirt_and_purple_shorts
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: baggy black clothing
   parent: ClothingUniformBase
@@ -55,6 +67,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_baggy_black_clothing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: purple shirt and khaki pants
   parent: ClothingUniformBase
@@ -74,6 +92,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_purple_shirt_and_khaki_pants
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: green sweatshirt and jeans
   parent: ClothingUniformBase
@@ -93,6 +117,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_green_sweatshirt_and_jeans
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: green checkered outfit
   parent: ClothingUniformBase
@@ -112,6 +142,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_green_checkered_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: green jersey and jeans
   parent: ClothingUniformBase
@@ -131,6 +167,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_green_jersey_and_jeans
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: chad clothing
   parent: ClothingUniformBase
@@ -150,6 +192,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_chad_clothing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: contestant clothing
   parent: ClothingUniformBase
@@ -169,6 +217,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_contestant_clothing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: replicant black bodyglove
   parent: ClothingUniformBase
@@ -188,6 +242,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_replicant_black_bodyglove
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: red bodyglove
   parent: ClothingUniformBase
@@ -207,6 +267,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_red_bodyglove
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: blue bodyglove
   parent: ClothingUniformBase
@@ -226,6 +292,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_blue_bodyglove
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: imperial stormtrooper officer uniform
   parent: ClothingUniformBase
@@ -247,10 +319,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_imperial_stormtrooper_officer_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
-  name: imperial stormtrooper captain uniform
+  name: imperial stormtrooper officer uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_imperial_stormtrooper_captain_uniform
+  id: civ13_uniform_imperial_stormtrooper_officer_uniform_1
   description: >-
     A double-breasted olive-green tunic rank and trousers with a metal plac
     denoting rank for CO's in the Imperial Navy.
@@ -268,6 +346,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_imperial_stormtrooper_officer_uniform_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: imperial technician grey uniform
   parent: ClothingUniformBase
@@ -287,6 +371,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_imperial_technician_grey_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: imperial technician blue uniform
   parent: ClothingUniformBase
@@ -306,6 +396,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_imperial_technician_blue_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: imperial technician black uniform
   parent: ClothingUniformBase
@@ -325,6 +421,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_imperial_technician_black_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: republic ensign uniform
   parent: ClothingUniformBase
@@ -346,6 +448,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_republic_ensign_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: republic medical officer
   parent: ClothingUniformBase
@@ -367,6 +475,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_republic_medical_officer
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: republic naval officer uniform
   parent: ClothingUniformBase
@@ -388,6 +502,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_republic_naval_officer_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: republic naval captain uniform
   parent: ClothingUniformBase
@@ -407,6 +527,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_republic_naval_captain_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: republic naval ensign uniform
   parent: ClothingUniformBase
@@ -426,6 +552,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_republic_naval_ensign_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: republic medical officer uniform
   parent: ClothingUniformBase
@@ -445,6 +577,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_republic_medical_officer_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: black cybernetic armor
   parent: ClothingUniformBase
@@ -464,6 +602,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_black_cybernetic_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: imperial naval lieutenant uniform
   parent: ClothingUniformBase
@@ -483,6 +627,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_imperial_naval_lieutenant_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: wise tutor's outfit
   parent: ClothingUniformBase
@@ -502,6 +652,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_wise_tutors_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: wise tutor's alternative outfit
   parent: ClothingUniformBase
@@ -521,6 +677,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_wise_tutors_alternative_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: wise disciple outfit
   parent: ClothingUniformBase
@@ -540,6 +702,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_wise_disciple_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: arrogant student's outfit
   parent: ClothingUniformBase
@@ -559,6 +727,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_arrogant_students_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: rebellion trooper uniform
   parent: ClothingUniformBase
@@ -578,6 +752,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_rebellion_trooper_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: DRA officer uniform
   parent: ClothingUniformBase
@@ -597,6 +777,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_DRA_officer_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: long tunic
   parent: ClothingUniformBase
@@ -616,6 +802,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_long_tunic
+      node: end
+      cost: 4
+      material: Cloth
+      time: 8.5
 - type: entity
   name: toga
   parent: ClothingUniformBase
@@ -635,6 +827,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_toga
+      node: end
+      cost: 3
+      material: Cloth
+      time: 6.5
 - type: entity
   name: half-shoulder white toga
   parent: ClothingUniformBase
@@ -654,6 +852,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_half_shoulder_white_toga
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: roman centurion uniform
   parent: ClothingUniformBase
@@ -675,6 +879,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_roman_centurion_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: greek uniform
   parent: ClothingUniformBase
@@ -696,10 +906,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_greek_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: greek uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_greek_uniform
+  id: civ13_uniform_greek_uniform_1
   description: >-
     A light tunic, covered with bronze and leather armor. Used by the hellenic
     armies.
@@ -717,10 +933,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_greek_uniform_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: greek uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_greek_uniform
+  id: civ13_uniform_greek_uniform_1_2
   description: >-
     A light tunic, covered with bronze and leather armor. Used by the hellenic
     armies.
@@ -738,6 +960,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_greek_uniform_1_2
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: greek commander uniform
   parent: ClothingUniformBase
@@ -759,6 +987,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_greek_commander_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: white tunic
   parent: ClothingUniformBase
@@ -778,6 +1012,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_white_tunic
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: green celtic trousers
   parent: ClothingUniformBase
@@ -797,6 +1037,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_green_celtic_trousers
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: blue celtic trousers
   parent: ClothingUniformBase
@@ -816,6 +1062,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_blue_celtic_trousers
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: red celtic trousers
   parent: ClothingUniformBase
@@ -835,6 +1087,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_red_celtic_trousers
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: short celtic braccae
   parent: ClothingUniformBase
@@ -854,6 +1112,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_short_celtic_braccae
+      node: end
+      cost: 2
+      material: Leather
+      time: 5.5
 - type: entity
   name: long celtic braccae
   parent: ClothingUniformBase
@@ -873,6 +1137,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_long_celtic_braccae
+      node: end
+      cost: 3
+      material: Leather
+      time: 5.5
 - type: entity
   name: mayan loincloth
   parent: ClothingUniformBase
@@ -892,6 +1162,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_mayan_loincloth
+      node: end
+      cost: 2
+      material: Cloth
+      time: 5.5
 - type: entity
   name: aztec loincloth
   parent: ClothingUniformBase
@@ -911,6 +1187,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_aztec_loincloth
+      node: end
+      cost: 2
+      material: Leather
+      time: 5
 - type: entity
   name: pharaohic shendyt
   parent: ClothingUniformBase
@@ -930,6 +1212,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_pharaohic_shendyt
+      node: end
+      cost: 8
+      material: Cloth
+      time: 14.5
 - type: entity
   name: nemes shendyt
   parent: ClothingUniformBase
@@ -949,6 +1237,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_nemes_shendyt
+      node: end
+      cost: 10
+      material: Cloth
+      time: 18.5
 - type: entity
   name: ainu robes
   parent: ClothingUniformBase
@@ -968,10 +1262,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_ainu_robes
+      node: end
+      cost: 3
+      material: Cloth
+      time: 10
 - type: entity
   name: ainu robes
   parent: ClothingUniformBase
-  id: civ13_uniform_ainu_robes
+  id: civ13_uniform_ainu_robes_1
   description: A set of robes worn by the ainu.
   components:
     - type: Sprite
@@ -987,6 +1287,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_ainu_robes_1
+      node: end
+      cost: 3
+      material: Cloth
+      time: 10
 - type: entity
   name: white kimono
   parent: ClothingUniformBase
@@ -1008,6 +1314,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_white_kimono
+      node: end
+      cost: 4
+      material: Cloth
+      time: 8.5
 - type: entity
   name: white towel
   parent: ClothingUniformBase
@@ -1027,6 +1339,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_white_towel
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: linnen wrappings
   parent: ClothingUniformBase
@@ -1046,6 +1364,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_linnen_wrappings
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: police outfit
   parent: ClothingUniformBase
@@ -1067,6 +1391,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_police_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 7.5
 - type: entity
   name: police supervisor outfit
   parent: ClothingUniformBase
@@ -1088,6 +1418,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_police_supervisor_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: sheriff's department sheriff outfit
   parent: ClothingUniformBase
@@ -1107,6 +1443,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_sheriffs_department_sheriff_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: sheriff's department deputy outfit
   parent: ClothingUniformBase
@@ -1126,6 +1468,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_sheriffs_department_deputy_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: short colonial outfit
   parent: ClothingUniformBase
@@ -1145,6 +1493,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_short_colonial_outfit
+      node: end
+      cost: 4
+      material: Cloth
+      time: 7.5
 - type: entity
   name: US Army Uniform
   parent: ClothingUniformBase
@@ -1164,6 +1518,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_US_Army_Uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: woodland camo uniform
   parent: ClothingUniformBase
@@ -1185,6 +1545,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_woodland_camo_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: OG-107 trousers
   parent: ClothingUniformBase
@@ -1204,6 +1570,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_OG_107_trousers
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: OG-107 uniform with rolled sleeves
   parent: ClothingUniformBase
@@ -1223,6 +1595,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_OG_107_uniform_with_rolled_sleeves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: OG-107 trousers and khaki undershirt
   parent: ClothingUniformBase
@@ -1244,6 +1622,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_OG_107_trousers_and_khaki_undershirt
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: OG-107 trousers and white undershirt
   parent: ClothingUniformBase
@@ -1265,6 +1649,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_OG_107_trousers_and_white_undershirt
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: tigerstripes camo uniform
   parent: ClothingUniformBase
@@ -1284,6 +1674,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_tigerstripes_camo_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: desert camouflage uniform
   parent: ClothingUniformBase
@@ -1303,6 +1699,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_desert_camouflage_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: woodland camouflage uniform
   parent: ClothingUniformBase
@@ -1322,10 +1724,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_woodland_camouflage_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: woodland camouflage uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_woodland_camouflage_uniform
+  id: civ13_uniform_woodland_camouflage_uniform_1
   description: >-
     The standard US Army camo uniform the late 20th century, with Hezbollah
     insiginia.
@@ -1343,6 +1751,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_woodland_camouflage_uniform_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: UCP camo uniform
   parent: ClothingUniformBase
@@ -1362,6 +1776,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_UCP_camo_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: OCP camo uniform
   parent: ClothingUniformBase
@@ -1381,6 +1801,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_OCP_camo_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: MultiCam camo uniform
   parent: ClothingUniformBase
@@ -1402,6 +1828,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_MultiCam_camo_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: U.S. Army training uniform
   parent: ClothingUniformBase
@@ -1421,6 +1853,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_U.S._Army_training_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: american uniform
   parent: ClothingUniformBase
@@ -1442,6 +1880,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_american_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: chinese uniform
   parent: ClothingUniformBase
@@ -1461,6 +1905,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_chinese_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: local NLF uniform
   parent: ClothingUniformBase
@@ -1480,10 +1930,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_local_NLF_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: local NLF uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_local_NLF_uniform
+  id: civ13_uniform_local_NLF_uniform_1
   description: A black and blue uniform of the NLF.
   components:
     - type: Sprite
@@ -1499,10 +1955,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_local_NLF_uniform_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: local NLF uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_local_NLF_uniform
+  id: civ13_uniform_local_NLF_uniform_1_2
   description: A black and khaki uniform of the NLF.
   components:
     - type: Sprite
@@ -1518,10 +1980,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_local_NLF_uniform_1_2
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: local NLF uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_local_NLF_uniform
+  id: civ13_uniform_local_NLF_uniform_1_2_3
   description: A blue and khaki uniform of the NLF.
   components:
     - type: Sprite
@@ -1537,10 +2005,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_local_NLF_uniform_1_2_3
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: local NLF uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_local_NLF_uniform
+  id: civ13_uniform_local_NLF_uniform_1_2_3_4
   description: A grey uniform of the NLF.
   components:
     - type: Sprite
@@ -1556,6 +2030,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_local_NLF_uniform_1_2_3_4
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: NVA uniform
   parent: ClothingUniformBase
@@ -1575,6 +2055,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_NVA_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: NVA sergeant uniform
   parent: ClothingUniformBase
@@ -1596,6 +2082,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_NVA_sergeant_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: specialist pants with woodland pattern paint
   parent: ClothingUniformBase
@@ -1617,6 +2109,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_specialist_pants_with_woodland_pattern_paint
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Chinese Red Guard Uniform
   parent: ClothingUniformBase
@@ -1636,6 +2134,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Chinese_Red_Guard_Uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: afghanka uniform
   parent: ClothingUniformBase
@@ -1657,6 +2161,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_afghanka_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: cafr afghanka uniform
   parent: ClothingUniformBase
@@ -1676,6 +2186,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_cafr_afghanka_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: KLMK camo uniform
   parent: ClothingUniformBase
@@ -1695,6 +2211,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_KLMK_camo_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: yellow tunic
   parent: ClothingUniformBase
@@ -1714,6 +2236,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_yellow_tunic
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: KZS camo uniform
   parent: ClothingUniformBase
@@ -1735,6 +2263,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_KZS_camo_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Soviet officer uniform
   parent: ClothingUniformBase
@@ -1754,6 +2288,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Soviet_officer_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: DRA uniform
   parent: ClothingUniformBase
@@ -1773,6 +2313,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_DRA_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: DRA NCO uniform
   parent: ClothingUniformBase
@@ -1792,6 +2338,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_DRA_NCO_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: red bowling outfit
   parent: ClothingUniformBase
@@ -1811,6 +2363,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_red_bowling_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: yellow bowling outfit
   parent: ClothingUniformBase
@@ -1830,6 +2388,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_yellow_bowling_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: green bowling outfit
   parent: ClothingUniformBase
@@ -1849,6 +2413,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_green_bowling_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: blue bowling outfit
   parent: ClothingUniformBase
@@ -1868,6 +2438,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_blue_bowling_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: hippie outfit
   parent: ClothingUniformBase
@@ -1887,6 +2463,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_hippie_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: yellow sundress
   parent: ClothingUniformBase
@@ -1908,6 +2490,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_yellow_sundress
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: Chad Town jersey
   parent: ClothingUniformBase
@@ -1927,6 +2515,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Chad_Town_jersey
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: purple toga
   parent: ClothingUniformBase
@@ -1946,6 +2540,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_purple_toga
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Unga Bunga jersey
   parent: ClothingUniformBase
@@ -1965,6 +2565,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Unga_Bunga_jersey
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: shirtless gator pants
   parent: ClothingUniformBase
@@ -1986,6 +2592,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_shirtless_gator_pants
+      node: end
+      cost: 3
+      material: Leather
+      time: 12
 - type: entity
   name: NKVD uniform
   parent: ClothingUniformBase
@@ -2005,6 +2617,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_NKVD_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: KGB uniform
   parent: ClothingUniformBase
@@ -2024,6 +2642,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_KGB_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: GULAG prisoner clothing
   parent: ClothingUniformBase
@@ -2043,6 +2667,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_GULAG_prisoner_clothing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Japanese Officer Uniform
   parent: ClothingUniformBase
@@ -2062,6 +2692,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Japanese_Officer_Uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Japanese Army Uniform
   parent: ClothingUniformBase
@@ -2081,6 +2717,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Japanese_Army_Uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: japanese naval uniform
   parent: ClothingUniformBase
@@ -2100,6 +2742,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_japanese_naval_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Japanese naval petty officer uniform
   parent: ClothingUniformBase
@@ -2119,6 +2767,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Japanese_naval_petty_officer_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Japanese naval officer uniform
   parent: ClothingUniformBase
@@ -2138,6 +2792,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Japanese_naval_officer_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Japanese SNLF uniform
   parent: ClothingUniformBase
@@ -2159,6 +2819,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Japanese_SNLF_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Japanese tanker uniform
   parent: ClothingUniformBase
@@ -2178,6 +2844,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Japanese_tanker_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: british uniform
   parent: ClothingUniformBase
@@ -2197,6 +2869,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_british_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: British officer uniform
   parent: ClothingUniformBase
@@ -2216,6 +2894,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_British_officer_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Chinese uniform
   parent: ClothingUniformBase
@@ -2235,10 +2919,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Chinese_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Chinese uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_Chinese_uniform
+  id: civ13_uniform_Chinese_uniform_1
   description: A Chinese Red Army uniform.
   components:
     - type: Sprite
@@ -2254,10 +2944,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Chinese_uniform_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Chinese uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_Chinese_uniform
+  id: civ13_uniform_Chinese_uniform_1_2
   description: A Chinese Red Army uniform.
   components:
     - type: Sprite
@@ -2273,10 +2969,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Chinese_uniform_1_2
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: chinese uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_chinese_uniform
+  id: civ13_uniform_chinese_uniform_1
   description: A chinese army uniform.
   components:
     - type: Sprite
@@ -2292,6 +2994,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_chinese_uniform_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Chinese Red Army uniform
   parent: ClothingUniformBase
@@ -2311,6 +3019,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Chinese_Red_Army_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: German uniform
   parent: ClothingUniformBase
@@ -2330,6 +3044,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_German_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: German doctor uniform
   parent: ClothingUniformBase
@@ -2349,6 +3069,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_German_doctor_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: German officer uniform
   parent: ClothingUniformBase
@@ -2368,6 +3094,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_German_officer_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: German tanker uniform
   parent: ClothingUniformBase
@@ -2387,6 +3119,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_German_tanker_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: German MP uniform
   parent: ClothingUniformBase
@@ -2406,6 +3144,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_German_MP_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: German SS uniform
   parent: ClothingUniformBase
@@ -2425,6 +3169,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_German_SS_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: German SS officer uniform
   parent: ClothingUniformBase
@@ -2444,6 +3194,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_German_SS_officer_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: German camo SS uniform
   parent: ClothingUniformBase
@@ -2465,6 +3221,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_German_camo_SS_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Soviet uniform
   parent: ClothingUniformBase
@@ -2484,6 +3246,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Soviet_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Soviet tanker uniform
   parent: ClothingUniformBase
@@ -2503,6 +3271,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Soviet_tanker_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Soviet berezka uniform
   parent: ClothingUniformBase
@@ -2522,6 +3296,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Soviet_berezka_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Soviet amoeba outfit
   parent: ClothingUniformBase
@@ -2541,6 +3321,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Soviet_amoeba_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: cadpat uniform
   parent: ClothingUniformBase
@@ -2560,6 +3346,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_cadpat_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: napoleonic italian soldier uniform
   parent: ClothingUniformBase
@@ -2581,6 +3373,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_napoleonic_italian_soldier_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Italian officer uniform
   parent: ClothingUniformBase
@@ -2600,6 +3398,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Italian_officer_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Greek uniform
   parent: ClothingUniformBase
@@ -2619,6 +3423,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Greek_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: blue colonial clothing
   parent: ClothingUniformBase
@@ -2638,6 +3448,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_blue_colonial_clothing
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: white colonial clothing
   parent: ClothingUniformBase
@@ -2657,6 +3473,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_white_colonial_clothing
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: Hitlerjugend outfit
   parent: ClothingUniformBase
@@ -2676,6 +3498,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Hitlerjugend_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: American uniform
   parent: ClothingUniformBase
@@ -2695,6 +3523,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_American_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: American tanker uniform
   parent: ClothingUniformBase
@@ -2714,6 +3548,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_American_tanker_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: U.S. Navy uniform
   parent: ClothingUniformBase
@@ -2733,6 +3573,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_U.S._Navy_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: American captain uniform
   parent: ClothingUniformBase
@@ -2752,6 +3598,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_American_captain_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: American MP uniform
   parent: ClothingUniformBase
@@ -2771,6 +3623,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_American_MP_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: American uniform with shirt
   parent: ClothingUniformBase
@@ -2792,6 +3650,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_American_uniform_with_shirt
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Finnish uniform
   parent: ClothingUniformBase
@@ -2811,6 +3675,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Finnish_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: UPA uniform
   parent: ClothingUniformBase
@@ -2830,6 +3700,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_UPA_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: UPA officer uniform
   parent: ClothingUniformBase
@@ -2849,6 +3725,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_UPA_officer_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Blugoslavian navy uniform
   parent: ClothingUniformBase
@@ -2868,6 +3750,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Blugoslavian_navy_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Redmenian navy uniform
   parent: ClothingUniformBase
@@ -2887,6 +3775,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Redmenian_navy_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: white medical scrubs
   parent: ClothingUniformBase
@@ -2906,6 +3800,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_white_medical_scrubs
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: dark green medical scrubs
   parent: ClothingUniformBase
@@ -2925,6 +3825,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_dark_green_medical_scrubs
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: light green medical scrubs
   parent: ClothingUniformBase
@@ -2944,6 +3850,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_light_green_medical_scrubs
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: navy medical scrubs
   parent: ClothingUniformBase
@@ -2963,6 +3875,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_navy_medical_scrubs
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: irish olive uniform
   parent: ClothingUniformBase
@@ -2982,6 +3900,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_irish_olive_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: african mercenary uniform
   parent: ClothingUniformBase
@@ -3001,6 +3925,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_african_mercenary_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: creed shirt
   parent: ClothingUniformBase
@@ -3020,6 +3950,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_creed_shirt
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Abashiri Guard Uniform
   parent: ClothingUniformBase
@@ -3039,6 +3975,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Abashiri_Guard_Uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Abashiri Prison Uniform
   parent: ClothingUniformBase
@@ -3058,6 +4000,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Abashiri_Prison_Uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Russian Army uniform
   parent: ClothingUniformBase
@@ -3077,10 +4025,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Russian_Army_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Russian Army uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_Russian_Army_uniform
+  id: civ13_uniform_Russian_Army_uniform_1
   description: A standard Imperial Russian Army uniform.
   components:
     - type: Sprite
@@ -3096,6 +4050,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Russian_Army_uniform_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Russian Army officer uniform
   parent: ClothingUniformBase
@@ -3115,6 +4075,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Russian_Army_officer_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Red Army uniform
   parent: ClothingUniformBase
@@ -3136,6 +4102,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Red_Army_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Kuban Cossak beshmet
   parent: ClothingUniformBase
@@ -3155,6 +4127,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Kuban_Cossak_beshmet
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: light brown outfit
   parent: ClothingUniformBase
@@ -3174,6 +4152,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_light_brown_outfit
+      node: end
+      cost: 4
+      material: Cloth
+      time: 7.5
 - type: entity
   name: black outfit
   parent: ClothingUniformBase
@@ -3193,6 +4177,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_black_outfit
+      node: end
+      cost: 4
+      material: Cloth
+      time: 7.5
 - type: entity
   name: shirt outfit
   parent: ClothingUniformBase
@@ -3212,6 +4202,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_shirt_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: grey outfit
   parent: ClothingUniformBase
@@ -3231,6 +4227,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_grey_outfit
+      node: end
+      cost: 4
+      material: Cloth
+      time: 7.5
 - type: entity
   name: brown outfit
   parent: ClothingUniformBase
@@ -3250,6 +4252,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_brown_outfit
+      node: end
+      cost: 4
+      material: Cloth
+      time: 7.5
 - type: entity
   name: modern outfit
   parent: ClothingUniformBase
@@ -3269,6 +4277,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_modern_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: swat outfit
   parent: ClothingUniformBase
@@ -3288,6 +4302,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_swat_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: cleansuit
   parent: ClothingUniformBase
@@ -3303,10 +4323,16 @@
         coefficients:
           Heat: 0.85
           Radiation: 0.8
+    - type: Construction
+      graph: civ13_uniform_cleansuit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: swat outfit
   parent: ClothingUniformBase
-  id: civ13_uniform_swat_outfit
+  id: civ13_uniform_swat_outfit_1
   description: A uniform used by police special forces.
   components:
     - type: Sprite
@@ -3322,6 +4348,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_swat_outfit_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Redmenian Camo Uniform
   parent: ClothingUniformBase
@@ -3341,10 +4373,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Redmenian_Camo_Uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: police outfit
   parent: ClothingUniformBase
-  id: civ13_uniform_police_outfit
+  id: civ13_uniform_police_outfit_1
   description: A uniform used by police forces.
   components:
     - type: Sprite
@@ -3360,6 +4398,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_police_outfit_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: prison outfit
   parent: ClothingUniformBase
@@ -3379,6 +4423,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_prison_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: russian military outfit
   parent: ClothingUniformBase
@@ -3398,6 +4448,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_russian_military_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: security outfit
   parent: ClothingUniformBase
@@ -3417,6 +4473,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_security_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: tactical outfit
   parent: ClothingUniformBase
@@ -3436,6 +4498,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_tactical_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: pmc outfit
   parent: ClothingUniformBase
@@ -3455,6 +4523,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_pmc_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: fancy outfit
   parent: ClothingUniformBase
@@ -3474,6 +4548,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_fancy_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: worker outfit
   parent: ClothingUniformBase
@@ -3493,6 +4573,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_worker_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: gorka outfit
   parent: ClothingUniformBase
@@ -3512,6 +4598,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_gorka_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: modern skirt
   parent: ClothingUniformBase
@@ -3531,6 +4623,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_modern_skirt
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: old man suit
   parent: ClothingUniformBase
@@ -3550,10 +4648,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_old_man_suit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: fancy outfit
   parent: ClothingUniformBase
-  id: civ13_uniform_fancy_outfit
+  id: civ13_uniform_fancy_outfit_1
   description: An outfit worn by fancy men in the 1800s.
   components:
     - type: Sprite
@@ -3569,6 +4673,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_fancy_outfit_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: fancy suit
   parent: ClothingUniformBase
@@ -3588,6 +4698,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_fancy_suit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: constable outfit
   parent: ClothingUniformBase
@@ -3607,6 +4723,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_constable_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 7.5
 - type: entity
   name: fire fighter uniform
   parent: ClothingUniformBase
@@ -3626,6 +4748,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_fire_fighter_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: black dress
   parent: ClothingUniformBase
@@ -3645,6 +4773,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_black_dress
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: clown outfit
   parent: ClothingUniformBase
@@ -3664,6 +4798,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_clown_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: jester outfit
   parent: ClothingUniformBase
@@ -3683,6 +4823,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_jester_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: farmer outfit
   parent: ClothingUniformBase
@@ -3702,6 +4848,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_farmer_outfit
+      node: end
+      cost: 4
+      material: Cloth
+      time: 7.5
 - type: entity
   name: mechanic outfit
   parent: ClothingUniformBase
@@ -3721,6 +4873,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_mechanic_outfit
+      node: end
+      cost: 4
+      material: Cloth
+      time: 7.5
 - type: entity
   name: blue traditional dress
   parent: ClothingUniformBase
@@ -3742,6 +4900,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_blue_traditional_dress
+      node: end
+      cost: 5
+      material: Cloth
+      time: 7.5
 - type: entity
   name: blue shorts
   parent: ClothingUniformBase
@@ -3761,6 +4925,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_blue_shorts
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: red shorts
   parent: ClothingUniformBase
@@ -3780,6 +4950,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_red_shorts
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: yellow shorts
   parent: ClothingUniformBase
@@ -3799,6 +4975,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_yellow_shorts
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Philippine Republic Army Uniform
   parent: ClothingUniformBase
@@ -3818,6 +5000,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Philippine_Republic_Army_Uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Tiradores de Muerta Uniform
   parent: ClothingUniformBase
@@ -3837,6 +5025,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Tiradores_de_Muerta_Uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: US Army Officer Uniform
   parent: ClothingUniformBase
@@ -3856,6 +5050,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_US_Army_Officer_Uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Spanish Republican Uniform
   parent: ClothingUniformBase
@@ -3875,6 +5075,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Spanish_Republican_Uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Spanish Nationalist Uniform
   parent: ClothingUniformBase
@@ -3894,6 +5100,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Spanish_Nationalist_Uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Brigadists Uniform
   parent: ClothingUniformBase
@@ -3913,6 +5125,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Brigadists_Uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Redmenian army uniform
   parent: ClothingUniformBase
@@ -3932,10 +5150,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Redmenian_army_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Redmenian Camo Uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_Redmenian_Camo_Uniform
+  id: civ13_uniform_Redmenian_Camo_Uniform_1
   description: A Redmenian combat uniform used by squad leaders.
   components:
     - type: Sprite
@@ -3951,6 +5175,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Redmenian_Camo_Uniform_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Redmenian Ceremonial Uniform
   parent: ClothingUniformBase
@@ -3970,10 +5200,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Redmenian_Ceremonial_Uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Redmenian Camo Uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_Redmenian_Camo_Uniform
+  id: civ13_uniform_Redmenian_Camo_Uniform_1_2
   description: A Redmenian combat uniform, slightly camoed.
   components:
     - type: Sprite
@@ -3989,6 +5225,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Redmenian_Camo_Uniform_1_2
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: NCR uniform
   parent: ClothingUniformBase
@@ -4008,6 +5250,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_NCR_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Legionaire Armor
   parent: ClothingUniformBase
@@ -4028,6 +5276,12 @@
           Piercing: 0.92
           Arrow: 0.6699999999999999
           Heat: 0.85
+    - type: Construction
+      graph: civ13_uniform_Legionaire_Armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: fancy colonial clothing
   parent: ClothingUniformBase
@@ -4047,6 +5301,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_fancy_colonial_clothing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 10.5
 - type: entity
   name: short-sleeved colonial clothing
   parent: ClothingUniformBase
@@ -4068,6 +5328,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_short_sleeved_colonial_clothing
+      node: end
+      cost: 2
+      material: Cloth
+      time: 5.5
 - type: entity
   name: green colonial clothing
   parent: ClothingUniformBase
@@ -4087,6 +5353,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_green_colonial_clothing
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: pink colonial clothing
   parent: ClothingUniformBase
@@ -4106,6 +5378,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_pink_colonial_clothing
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: doctor's uniform
   parent: ClothingUniformBase
@@ -4125,6 +5403,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_doctors_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: dark dress
   parent: ClothingUniformBase
@@ -4144,6 +5428,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_dark_dress
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: blue dress
   parent: ClothingUniformBase
@@ -4163,6 +5453,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_blue_dress
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: brown dress
   parent: ClothingUniformBase
@@ -4182,6 +5478,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_brown_dress
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: green dress
   parent: ClothingUniformBase
@@ -4201,6 +5503,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_green_dress
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: red dress
   parent: ClothingUniformBase
@@ -4220,6 +5528,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_red_dress
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: conquistador uniform
   parent: ClothingUniformBase
@@ -4241,6 +5555,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_conquistador_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 7.5
 - type: entity
   name: pilgrim clothing
   parent: ClothingUniformBase
@@ -4260,6 +5580,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_pilgrim_clothing
+      node: end
+      cost: 4
+      material: Cloth
+      time: 7.5
 - type: entity
   name: black stripes clothing
   parent: ClothingUniformBase
@@ -4279,6 +5605,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_black_stripes_clothing
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: red stripes clothing
   parent: ClothingUniformBase
@@ -4298,6 +5630,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_red_stripes_clothing
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: blue stripes clothing
   parent: ClothingUniformBase
@@ -4317,6 +5655,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_blue_stripes_clothing
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: baggy clothing
   parent: ClothingUniformBase
@@ -4336,6 +5680,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_baggy_clothing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: sleeveless clothing
   parent: ClothingUniformBase
@@ -4355,6 +5705,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_sleeveless_clothing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: british sailor clothes
   parent: ClothingUniformBase
@@ -4374,6 +5730,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_british_sailor_clothes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: open british sailor clothes
   parent: ClothingUniformBase
@@ -4395,6 +5757,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_open_british_sailor_clothes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: british sailor trousers
   parent: ClothingUniformBase
@@ -4414,6 +5782,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_british_sailor_trousers
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: grey british sailor clothes
   parent: ClothingUniformBase
@@ -4433,6 +5807,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_grey_british_sailor_clothes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: portuguese sailor clothes
   parent: ClothingUniformBase
@@ -4454,6 +5834,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_portuguese_sailor_clothes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: open portuguese sailor clothes
   parent: ClothingUniformBase
@@ -4475,6 +5861,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_open_portuguese_sailor_clothes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: portuguese sailor trousers
   parent: ClothingUniformBase
@@ -4494,6 +5886,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_portuguese_sailor_trousers
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: portuguese sailor clothes with scarf
   parent: ClothingUniformBase
@@ -4515,6 +5913,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_portuguese_sailor_clothes_with_scarf
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: spanish sailor clothes
   parent: ClothingUniformBase
@@ -4534,6 +5938,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_spanish_sailor_clothes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: open spanish sailor clothes
   parent: ClothingUniformBase
@@ -4555,6 +5965,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_open_spanish_sailor_clothes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: spanish sailor trousers
   parent: ClothingUniformBase
@@ -4574,6 +5990,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_spanish_sailor_trousers
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: spanish soldier uniform
   parent: ClothingUniformBase
@@ -4593,6 +6015,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_spanish_soldier_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: french officer clothes
   parent: ClothingUniformBase
@@ -4614,6 +6042,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_french_officer_clothes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: baycona outfit
   parent: ClothingUniformBase
@@ -4633,6 +6067,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_baycona_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: french sailor clothes
   parent: ClothingUniformBase
@@ -4652,6 +6092,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_french_sailor_clothes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: open french sailor clothes
   parent: ClothingUniformBase
@@ -4673,6 +6119,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_open_french_sailor_clothes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: french sailor trousers
   parent: ClothingUniformBase
@@ -4692,6 +6144,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_french_sailor_trousers
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: dutch sailor clothes
   parent: ClothingUniformBase
@@ -4711,6 +6169,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_dutch_sailor_clothes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: open dutch sailor clothes
   parent: ClothingUniformBase
@@ -4732,6 +6196,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_open_dutch_sailor_clothes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: dutch sailor trousers
   parent: ClothingUniformBase
@@ -4751,6 +6221,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_dutch_sailor_trousers
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: officer clothes
   parent: ClothingUniformBase
@@ -4772,6 +6248,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_officer_clothes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: dutch army uniform
   parent: ClothingUniformBase
@@ -4791,6 +6273,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_dutch_army_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: portuguese army uniform
   parent: ClothingUniformBase
@@ -4810,6 +6298,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_portuguese_army_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: French Army uniform
   parent: ClothingUniformBase
@@ -4829,6 +6323,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_French_Army_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: nightingale dress
   parent: ClothingUniformBase
@@ -4850,6 +6350,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_nightingale_dress
+      node: end
+      cost: 4
+      material: Cloth
+      time: 9
 - type: entity
   name: napoleonic french soldier uniform
   parent: ClothingUniformBase
@@ -4871,6 +6377,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_napoleonic_french_soldier_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: napoleonic blackwatch soldier uniform
   parent: ClothingUniformBase
@@ -4892,6 +6404,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_napoleonic_blackwatch_soldier_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: napoleonic walloon soldier uniform
   parent: ClothingUniformBase
@@ -4913,6 +6431,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_napoleonic_walloon_soldier_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: EMR pattern uniform
   parent: ClothingUniformBase
@@ -4932,6 +6456,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_EMR_pattern_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: patriotic american soldier uniform
   parent: ClothingUniformBase
@@ -4953,6 +6483,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_patriotic_american_soldier_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: napoleonic prussian soldier uniform
   parent: ClothingUniformBase
@@ -4975,6 +6511,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_napoleonic_prussian_soldier_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: napoleonic jaeger soldier uniform
   parent: ClothingUniformBase
@@ -4996,6 +6538,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_napoleonic_jaeger_soldier_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: napoleonic portuguese soldier uniform
   parent: ClothingUniformBase
@@ -5017,6 +6565,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_napoleonic_portuguese_soldier_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: japanese soldier uniform
   parent: ClothingUniformBase
@@ -5038,6 +6592,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_japanese_soldier_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: merchant suit
   parent: ClothingUniformBase
@@ -5057,6 +6617,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_merchant_suit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 8.5
 - type: entity
   name: Ripped outfit
   parent: ClothingUniformBase
@@ -5076,6 +6642,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Ripped_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: outfit
   parent: ClothingUniformBase
@@ -5095,6 +6667,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: pioneer outfit
   parent: ClothingUniformBase
@@ -5114,6 +6692,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_pioneer_outfit
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: rancher outfit
   parent: ClothingUniformBase
@@ -5133,6 +6717,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_rancher_outfit
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: cowboy outfit
   parent: ClothingUniformBase
@@ -5152,6 +6742,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_cowboy_outfit
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: checkered outfit
   parent: ClothingUniformBase
@@ -5171,10 +6767,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_checkered_outfit
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: worker outfit
   parent: ClothingUniformBase
-  id: civ13_uniform_worker_outfit
+  id: civ13_uniform_worker_outfit_1
   description: A navy blue shirt with denim trousers.
   components:
     - type: Sprite
@@ -5190,6 +6792,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_worker_outfit_1
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: texan shirt outfit
   parent: ClothingUniformBase
@@ -5209,6 +6817,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_texan_shirt_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 7.5
 - type: entity
   name: lederhosen
   parent: ClothingUniformBase
@@ -5228,6 +6842,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_lederhosen
+      node: end
+      cost: 4
+      material: Cloth
+      time: 7.5
 - type: entity
   name: classy outlaw outfit
   parent: ClothingUniformBase
@@ -5249,6 +6869,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_classy_outlaw_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: outlaw outfit
   parent: ClothingUniformBase
@@ -5271,6 +6897,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_outlaw_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: bartender outfit
   parent: ClothingUniformBase
@@ -5290,6 +6922,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_bartender_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: black victorian shirt and vest
   parent: ClothingUniformBase
@@ -5309,6 +6947,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_black_victorian_shirt_and_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 7.5
 - type: entity
   name: black victorian shirt and red vest
   parent: ClothingUniformBase
@@ -5330,6 +6974,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_black_victorian_shirt_and_red_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 7.5
 - type: entity
   name: red victorian shirt and black vest
   parent: ClothingUniformBase
@@ -5351,6 +7001,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_red_victorian_shirt_and_black_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 7.5
 - type: entity
   name: white shirt and black waistcoat
   parent: ClothingUniformBase
@@ -5370,6 +7026,11 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_white_shirt_and_black_waistcoat
+      node: end
+      cost: 5
+      time: 11
 - type: entity
   name: saloon dress outfit
   parent: ClothingUniformBase
@@ -5391,6 +7052,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_saloon_dress_outfit
+      node: end
+      cost: 4
+      material: Cloth
+      time: 7.5
 - type: entity
   name: cheongsam dress
   parent: ClothingUniformBase
@@ -5412,6 +7079,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_cheongsam_dress
+      node: end
+      cost: 5
+      material: Cloth
+      time: 10
 - type: entity
   name: plain black dress
   parent: ClothingUniformBase
@@ -5431,6 +7104,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_plain_black_dress
+      node: end
+      cost: 4
+      material: Cloth
+      time: 8.5
 - type: entity
   name: white wedding dress
   parent: ClothingUniformBase
@@ -5452,6 +7131,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_white_wedding_dress
+      node: end
+      cost: 10
+      material: Cloth
+      time: 16
 - type: entity
   name: victorian black dress
   parent: ClothingUniformBase
@@ -5471,6 +7156,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_victorian_black_dress
+      node: end
+      cost: 5
+      material: Cloth
+      time: 7.5
 - type: entity
   name: neck length black dress
   parent: ClothingUniformBase
@@ -5490,6 +7181,11 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_neck_length_black_dress
+      node: end
+      cost: 4
+      time: 7.5
 - type: entity
   name: union uniform
   parent: ClothingUniformBase
@@ -5509,6 +7205,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_union_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: confederate uniform
   parent: ClothingUniformBase
@@ -5528,10 +7230,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_confederate_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: confederate uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_confederate_uniform
+  id: civ13_uniform_confederate_uniform_1
   description: A grey uniform worn by confederate soldiers.
   components:
     - type: Sprite
@@ -5547,10 +7255,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_confederate_uniform_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: confederate uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_confederate_uniform
+  id: civ13_uniform_confederate_uniform_1_2
   description: >-
     A grey uniform worn by confederate soldiers, however this one has union
     pants.
@@ -5568,6 +7282,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_confederate_uniform_1_2
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: eccentric businessman outfit
   parent: ClothingUniformBase
@@ -5590,10 +7310,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_eccentric_businessman_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: white tunic
   parent: ClothingUniformBase
-  id: civ13_uniform_white_tunic
+  id: civ13_uniform_white_tunic_1
   description: A long white tunic, with golden trimmings.
   components:
     - type: Sprite
@@ -5609,6 +7335,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_white_tunic_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: crusader tunic
   parent: ClothingUniformBase
@@ -5628,6 +7360,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_crusader_tunic
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: leather tunic
   parent: ClothingUniformBase
@@ -5647,6 +7385,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_leather_tunic
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: kilt
   parent: ClothingUniformBase
@@ -5666,6 +7410,11 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_kilt
+      node: end
+      cost: 2
+      time: 10
 - type: entity
   name: beggar clothing
   parent: ClothingUniformBase
@@ -5685,6 +7434,11 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_beggar_clothing
+      node: end
+      cost: 4
+      time: 8
 - type: entity
   name: blue-white tunic
   parent: ClothingUniformBase
@@ -5704,6 +7458,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_blue_white_tunic
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: yellow-red tunic
   parent: ClothingUniformBase
@@ -5723,6 +7483,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_yellow_red_tunic
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: fancy arabic tunic
   parent: ClothingUniformBase
@@ -5742,6 +7508,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_fancy_arabic_tunic
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: light brown tunic
   parent: ClothingUniformBase
@@ -5761,6 +7533,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_light_brown_tunic
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: emirate tunic
   parent: ClothingUniformBase
@@ -5782,6 +7560,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_emirate_tunic
+      node: end
+      cost: 4
+      material: Cloth
+      time: 8.5
 - type: entity
   name: light brown arabic tunic
   parent: ClothingUniformBase
@@ -5801,6 +7585,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_light_brown_arabic_tunic
+      node: end
+      cost: 3
+      material: Cloth
+      time: 8.5
 - type: entity
   name: light white arabic tunic
   parent: ClothingUniformBase
@@ -5820,6 +7610,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_light_white_arabic_tunic
+      node: end
+      cost: 3
+      material: Cloth
+      time: 8.5
 - type: entity
   name: white arabic tunic
   parent: ClothingUniformBase
@@ -5839,6 +7635,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_white_arabic_tunic
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Wise Knight robes
   parent: ClothingUniformBase
@@ -5858,6 +7660,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Wise_Knight_robes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Arrogant Warrior robes
   parent: ClothingUniformBase
@@ -5877,6 +7685,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Arrogant_Warrior_robes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: steppe wool tunic
   parent: ClothingUniformBase
@@ -5896,6 +7710,11 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_steppe_wool_tunic
+      node: end
+      cost: 3
+      time: 10
 - type: entity
   name: count outfit
   parent: ClothingUniformBase
@@ -5915,6 +7734,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_count_outfit
+      node: end
+      cost: 6
+      material: Cloth
+      time: 8.5
 - type: entity
   name: purple renaissance clothing
   parent: ClothingUniformBase
@@ -5934,6 +7759,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_purple_renaissance_clothing
+      node: end
+      cost: 6
+      material: Cloth
+      time: 10.5
 - type: entity
   name: doge outfit
   parent: ClothingUniformBase
@@ -5955,6 +7786,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_doge_outfit
+      node: end
+      cost: 8
+      material: Cloth
+      time: 14.7
 - type: entity
   name: pontifical renaissance clothing
   parent: ClothingUniformBase
@@ -5974,6 +7811,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_pontifical_renaissance_clothing
+      node: end
+      cost: 6
+      material: Cloth
+      time: 10.5
 - type: entity
   name: nun dress
   parent: ClothingUniformBase
@@ -5995,6 +7838,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_nun_dress
+      node: end
+      cost: 4
+      material: Cloth
+      time: 8.5
 - type: entity
   name: black priest outfit
   parent: ClothingUniformBase
@@ -6016,6 +7865,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_black_priest_outfit
+      node: end
+      cost: 4
+      material: Cloth
+      time: 8.5
 - type: entity
   name: green landschneckt uniform
   parent: ClothingUniformBase
@@ -6037,6 +7892,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_green_landschneckt_uniform
+      node: end
+      cost: 6
+      material: Cloth
+      time: 10.5
 - type: entity
   name: huipil
   parent: ClothingUniformBase
@@ -6056,6 +7917,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_huipil
+      node: end
+      cost: 3
+      material: Cloth
+      time: 5.5
 - type: entity
   name: half huipil
   parent: ClothingUniformBase
@@ -6075,6 +7942,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_half_huipil
+      node: end
+      cost: 2
+      material: Cloth
+      time: 4.5
 - type: entity
   name: dark hanfu
   parent: ClothingUniformBase
@@ -6094,6 +7967,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_dark_hanfu
+      node: end
+      cost: 3
+      material: Cloth
+      time: 10
 - type: entity
   name: light artisan clothing
   parent: ClothingUniformBase
@@ -6113,6 +7992,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_light_artisan_clothing
+      node: end
+      cost: 3
+      material: Cloth
+      time: 10
 - type: entity
   name: artisan clothing
   parent: ClothingUniformBase
@@ -6132,6 +8017,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_artisan_clothing
+      node: end
+      cost: 3
+      material: Cloth
+      time: 10
 - type: entity
   name: dark artisan clothing
   parent: ClothingUniformBase
@@ -6151,6 +8042,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_dark_artisan_clothing
+      node: end
+      cost: 3
+      material: Cloth
+      time: 10
 - type: entity
   name: haori
   parent: ClothingUniformBase
@@ -6170,10 +8067,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_haori
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: haori
   parent: ClothingUniformBase
-  id: civ13_uniform_haori
+  id: civ13_uniform_haori_1
   description: A light, loose fitting bit of clothes, worn in japan.
   components:
     - type: Sprite
@@ -6189,6 +8092,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_haori_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: stormcloak curass
   parent: ClothingUniformBase
@@ -6208,6 +8117,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_stormcloak_curass
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Ulfric Stormcloak's clothes
   parent: ClothingUniformBase
@@ -6226,6 +8141,12 @@
           Piercing: 0.9
           Arrow: 0.19999999999999996
           Heat: 0.85
+    - type: Construction
+      graph: civ13_uniform_Ulfric_Stormcloaks_clothes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: whiterun guard curass
   parent: ClothingUniformBase
@@ -6244,6 +8165,12 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
+    - type: Construction
+      graph: civ13_uniform_whiterun_guard_curass
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: imperial armor
   parent: ClothingUniformBase
@@ -6262,6 +8189,12 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
+    - type: Construction
+      graph: civ13_uniform_imperial_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Jarl Bolgruf's clothes
   parent: ClothingUniformBase
@@ -6280,6 +8213,12 @@
           Piercing: 0.9
           Arrow: 0.19999999999999996
           Heat: 0.85
+    - type: Construction
+      graph: civ13_uniform_Jarl_Bolgrufs_clothes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: russian military outfit VSR 93
   parent: ClothingUniformBase
@@ -6301,6 +8240,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_russian_military_outfit_VSR_93
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: russian OMON uniform
   parent: ClothingUniformBase
@@ -6320,6 +8265,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_russian_OMON_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: black tunic
   parent: ClothingUniformBase
@@ -6339,6 +8290,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_black_tunic
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: sand-colored tunic
   parent: ClothingUniformBase
@@ -6358,6 +8315,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_sand_colored_tunic
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: sand-colored tunic with woodland camo trousers
   parent: ClothingUniformBase
@@ -6377,6 +8340,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_sand_colored_tunic_with_woodland_camo_trousers
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: sand-colored uniform with desert camo trousers
   parent: ClothingUniformBase
@@ -6396,6 +8365,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_sand_colored_uniform_with_desert_camo_trousers
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: light brown uniform with green trousers
   parent: ClothingUniformBase
@@ -6415,6 +8390,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_light_brown_uniform_with_green_trousers
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: black tunic with desert camo trousers
   parent: ClothingUniformBase
@@ -6434,6 +8415,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_black_tunic_with_desert_camo_trousers
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: IDF olive uniform
   parent: ClothingUniformBase
@@ -6453,6 +8440,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_IDF_olive_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: motorist outfit
   parent: ClothingUniformBase
@@ -6472,6 +8465,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_motorist_outfit
+      node: end
+      cost: 4
+      material: Cloth
+      time: 7.5
 - type: entity
   name: war correspondent outfit
   parent: ClothingUniformBase
@@ -6493,6 +8492,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_war_correspondent_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: punk outfit
   parent: ClothingUniformBase
@@ -6514,6 +8519,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_punk_outfit
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: paramedic uniform
   parent: ClothingUniformBase
@@ -6533,6 +8544,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_paramedic_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: firefighter uniform
   parent: ClothingUniformBase
@@ -6552,10 +8569,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_firefighter_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: shirt outfit
   parent: ClothingUniformBase
-  id: civ13_uniform_shirt_outfit
+  id: civ13_uniform_shirt_outfit_1
   description: A brown shirt with black pants.
   components:
     - type: Sprite
@@ -6571,10 +8594,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_shirt_outfit_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: shirt outfit
   parent: ClothingUniformBase
-  id: civ13_uniform_shirt_outfit
+  id: civ13_uniform_shirt_outfit_1_2
   description: A blue shirt with black pants.
   components:
     - type: Sprite
@@ -6590,10 +8619,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_shirt_outfit_1_2
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: shirt outfit
   parent: ClothingUniformBase
-  id: civ13_uniform_shirt_outfit
+  id: civ13_uniform_shirt_outfit_1_2_3
   description: A black shirt with grey pants.
   components:
     - type: Sprite
@@ -6609,6 +8644,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_shirt_outfit_1_2_3
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: track pants
   parent: ClothingUniformBase
@@ -6628,10 +8669,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_track_pants
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: tactical outfit
   parent: ClothingUniformBase
-  id: civ13_uniform_tactical_outfit
+  id: civ13_uniform_tactical_outfit_1
   description: A outfit used by tactical units.
   components:
     - type: Sprite
@@ -6647,6 +8694,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_tactical_outfit_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: tacticool hawaiian outfit
   parent: ClothingUniformBase
@@ -6668,6 +8721,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_tacticool_hawaiian_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: camouflage shirt with blue pants
   parent: ClothingUniformBase
@@ -6687,6 +8746,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_camouflage_shirt_with_blue_pants
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: tanktop with camouflage pants
   parent: ClothingUniformBase
@@ -6706,6 +8771,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_tanktop_with_camouflage_pants
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: black shirt with camouflage pants
   parent: ClothingUniformBase
@@ -6725,6 +8796,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_black_shirt_with_camouflage_pants
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: modern shaman outfit
   parent: ClothingUniformBase
@@ -6744,6 +8821,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_modern_shaman_outfit
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: ACU pattern uniform
   parent: ClothingUniformBase
@@ -6763,10 +8846,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_ACU_pattern_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: EMR pattern uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_EMR_pattern_uniform
+  id: civ13_uniform_EMR_pattern_uniform_1
   description: The standard Russian Federation Army camo uniform.
   components:
     - type: Sprite
@@ -6782,6 +8871,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_EMR_pattern_uniform_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: EMR desert pattern uniform
   parent: ClothingUniformBase
@@ -6801,6 +8896,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_EMR_desert_pattern_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Syrian Army uniform
   parent: ClothingUniformBase
@@ -6820,6 +8921,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Syrian_Army_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Free Syrian Army uniform
   parent: ClothingUniformBase
@@ -6839,6 +8946,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Free_Syrian_Army_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: jeans with suspenders
   parent: ClothingUniformBase
@@ -6858,6 +8971,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_jeans_with_suspenders
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: camo trousers and white sleeveless shirt
   parent: ClothingUniformBase
@@ -6877,10 +8996,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_camo_trousers_and_white_sleeveless_shirt
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: cadpat uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_cadpat_uniform
+  id: civ13_uniform_cadpat_uniform_1
   description: A canadian pattern uniform
   components:
     - type: Sprite
@@ -6896,10 +9021,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_cadpat_uniform_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: cadpat uniform
   parent: ClothingUniformBase
-  id: civ13_uniform_cadpat_uniform
+  id: civ13_uniform_cadpat_uniform_1_2
   description: A canadian pattern uniform
   components:
     - type: Sprite
@@ -6915,6 +9046,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_cadpat_uniform_1_2
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: type 07 chinese uniform
   parent: ClothingUniformBase
@@ -6934,6 +9071,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_type_07_chinese_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: floral shirt with light pants
   parent: ClothingUniformBase
@@ -6953,6 +9096,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_floral_shirt_with_light_pants
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: M93 DPM camo uniform
   parent: ClothingUniformBase
@@ -6972,6 +9121,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_M93_DPM_camo_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: leather loincloth
   parent: ClothingUniformBase
@@ -6991,6 +9146,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_leather_loincloth
+      node: end
+      cost: 2
+      material: Leather
+      time: 5
 - type: entity
   name: cotton loincloth
   parent: ClothingUniformBase
@@ -7010,6 +9171,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_cotton_loincloth
+      node: end
+      cost: 2
+      material: Cloth
+      time: 4.5
 - type: entity
   name: leaf skirt
   parent: ClothingUniformBase
@@ -7029,6 +9196,11 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_leaf_skirt
+      node: end
+      cost: 4
+      time: 10
 - type: entity
   name: long leaf skirt
   parent: ClothingUniformBase
@@ -7048,6 +9220,11 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_long_leaf_skirt
+      node: end
+      cost: 6
+      time: 14
 - type: entity
   name: au naturel leaf covering
   parent: ClothingUniformBase
@@ -7067,6 +9244,11 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_au_naturel_leaf_covering
+      node: end
+      cost: 2
+      time: 2
 - type: entity
   name: short leather loincloth
   parent: ClothingUniformBase
@@ -7086,6 +9268,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_short_leather_loincloth
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: long leather loincloth
   parent: ClothingUniformBase
@@ -7105,6 +9293,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_long_leather_loincloth
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: covering leather loincloth
   parent: ClothingUniformBase
@@ -7124,6 +9318,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_covering_leather_loincloth
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: indian chief clothing
   parent: ClothingUniformBase
@@ -7143,6 +9343,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_indian_chief_clothing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: pygmy shaman clothing
   parent: ClothingUniformBase
@@ -7162,6 +9368,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_pygmy_shaman_clothing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: indian shaman clothing
   parent: ClothingUniformBase
@@ -7181,6 +9393,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_indian_shaman_clothing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: big leopard pelt
   parent: ClothingUniformBase
@@ -7200,6 +9418,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_big_leopard_pelt
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: slene cattle fur loincloth
   parent: ClothingUniformBase
@@ -7221,6 +9445,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_slene_cattle_fur_loincloth
+      node: end
+      cost: 2
+      material: Leather
+      time: 8
 - type: entity
   name: shirtless lizard pants
   parent: ClothingUniformBase
@@ -7242,6 +9472,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_shirtless_lizard_pants
+      node: end
+      cost: 3
+      material: Leather
+      time: 12
 - type: entity
   name: British uniform
   parent: ClothingUniformBase
@@ -7261,6 +9497,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_British_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Polish uniform
   parent: ClothingUniformBase
@@ -7280,6 +9522,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Polish_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: French uniform
   parent: ClothingUniformBase
@@ -7299,6 +9547,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_French_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Green Strap Bikini
   parent: ClothingUniformBase
@@ -7318,6 +9572,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Green_Strap_Bikini
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Green Band Bikini
   parent: ClothingUniformBase
@@ -7339,6 +9599,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Green_Band_Bikini
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Green Swimtrunks
   parent: ClothingUniformBase
@@ -7358,6 +9624,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Green_Swimtrunks
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: football jersey
   parent: ClothingUniformBase
@@ -7377,6 +9649,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_football_jersey
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: stola
   parent: ClothingUniformBase
@@ -7396,6 +9674,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_stola
+      node: end
+      cost: 4
+      material: Cloth
+      time: 8.5
 - type: entity
   name: short loincloth
   parent: ClothingUniformBase
@@ -7415,6 +9699,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_short_loincloth
+      node: end
+      cost: 3
+      material: Leather
+      time: 5
 - type: entity
   name: shendyt
   parent: ClothingUniformBase
@@ -7434,6 +9724,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_shendyt
+      node: end
+      cost: 2
+      material: Cloth
+      time: 4.5
 - type: entity
   name: celtic trousers
   parent: ClothingUniformBase
@@ -7453,6 +9749,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_celtic_trousers
+      node: end
+      cost: 2
+      material: Cloth
+      time: 5.5
 - type: entity
   name: tunic
   parent: ClothingUniformBase
@@ -7472,6 +9774,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_tunic
+      node: end
+      cost: 4
+      material: Cloth
+      time: 8.5
 - type: entity
   name: arabic tunic
   parent: ClothingUniformBase
@@ -7491,6 +9799,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_arabic_tunic
+      node: end
+      cost: 4
+      material: Cloth
+      time: 8.5
 - type: entity
   name: renaissance outfit
   parent: ClothingUniformBase
@@ -7510,10 +9824,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_renaissance_outfit
+      node: end
+      cost: 6
+      material: Cloth
+      time: 10.5
 - type: entity
   name: renaissance outfit
   parent: ClothingUniformBase
-  id: civ13_uniform_renaissance_outfit
+  id: civ13_uniform_renaissance_outfit_1
   description: A renaissance-style pontifical outfit.
   components:
     - type: Sprite
@@ -7529,6 +9849,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_renaissance_outfit_1
+      node: end
+      cost: 6
+      material: Cloth
+      time: 10.5
 - type: entity
   name: dress
   parent: ClothingUniformBase
@@ -7548,10 +9874,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_dress
+      node: end
+      cost: 4
+      material: Cloth
+      time: 8.5
 - type: entity
   name: dress
   parent: ClothingUniformBase
-  id: civ13_uniform_dress
+  id: civ13_uniform_dress_1
   description: A female dress.
   components:
     - type: Sprite
@@ -7567,6 +9899,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_dress_1
+      node: end
+      cost: 4
+      material: Cloth
+      time: 8.5
 - type: entity
   name: tribal robe
   parent: ClothingUniformBase
@@ -7586,6 +9924,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_tribal_robe
+      node: end
+      cost: 3
+      material: Cloth
+      time: 10
 - type: entity
   name: uniform
   parent: ClothingUniformBase
@@ -7605,6 +9949,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_uniform
+      node: end
+      cost: 3
+      material: Cloth
+      time: 7.5
 - type: entity
   name: camo uniform
   parent: ClothingUniformBase
@@ -7624,6 +9974,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_camo_uniform
+      node: end
+      cost: 4
+      material: Cloth
+      time: 10
 - type: entity
   name: pyjamas
   parent: ClothingUniformBase
@@ -7643,6 +9999,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_pyjamas
+      node: end
+      cost: 3
+      material: Cloth
+      time: 10
 - type: entity
   name: crinoine dress
   parent: ClothingUniformBase
@@ -7662,10 +10024,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_crinoine_dress
+      node: end
+      cost: 4
+      material: Cloth
+      time: 8.5
 - type: entity
   name: modern outfit
   parent: ClothingUniformBase
-  id: civ13_uniform_modern_outfit
+  id: civ13_uniform_modern_outfit_1
   description: A generic outfit.
   components:
     - type: Sprite
@@ -7681,6 +10049,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_modern_outfit_1
+      node: end
+      cost: 4
+      material: Cloth
+      time: 7.5
 - type: entity
   name: Facility uniform
   parent: ClothingUniformBase
@@ -7700,6 +10074,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Facility_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: baggy modern outfit
   parent: ClothingUniformBase
@@ -7719,6 +10099,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_baggy_modern_outfit
+      node: end
+      cost: 4
+      material: Cloth
+      time: 7.5
 - type: entity
   name: colonial outfit
   parent: ClothingUniformBase
@@ -7738,10 +10124,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_colonial_outfit
+      node: end
+      cost: 4
+      material: Cloth
+      time: 7.5
 - type: entity
   name: track pants
   parent: ClothingUniformBase
-  id: civ13_uniform_track_pants
+  id: civ13_uniform_track_pants_1
   description: A shirt with tracksuit pants.
   components:
     - type: Sprite
@@ -7757,6 +10149,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_track_pants_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: cafr uniform
   parent: ClothingUniformBase
@@ -7776,10 +10174,16 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_cafr_uniform
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Unga Bunga jersey
   parent: ClothingUniformBase
-  id: civ13_uniform_Unga_Bunga_jersey
+  id: civ13_uniform_Unga_Bunga_jersey_1
   description: A football jersey of the Unga Bunga United, U.B.U.
   components:
     - type: Sprite
@@ -7795,6 +10199,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Unga_Bunga_jersey_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: flamengo shirt with yellow shorts
   parent: ClothingUniformBase
@@ -7814,6 +10224,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_flamengo_shirt_with_yellow_shorts
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Blugoslavia goalkeeper jersey
   parent: ClothingUniformBase
@@ -7833,6 +10249,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Blugoslavia_goalkeeper_jersey
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Redmenia jersey
   parent: ClothingUniformBase
@@ -7852,6 +10274,12 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Redmenia_jersey
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
 - type: entity
   name: Blugoslavia jersey
   parent: ClothingUniformBase
@@ -7871,3 +10299,9 @@
           Arrow: 0
           Heat: 0
           Radiation: 0
+    - type: Construction
+      graph: civ13_uniform_Blugoslavia_jersey
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5

@@ -339,9 +339,9 @@
     - node: end
       entity: civ13_uniform_imperial_stormtrooper_officer_uniform
 - type: construction
-  name: imperial stormtrooper captain uniform
-  id: civ13_uniform_imperial_stormtrooper_captain_uniform
-  graph: civ13_uniform_imperial_stormtrooper_captain_uniform
+  name: imperial stormtrooper officer uniform
+  id: civ13_uniform_imperial_stormtrooper_officer_uniform_1
+  graph: civ13_uniform_imperial_stormtrooper_officer_uniform_1
   startNode: start
   targetNode: end
   category: clothing
@@ -354,7 +354,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_imperial_stormtrooper_captain_uniform
+  id: civ13_uniform_imperial_stormtrooper_officer_uniform_1
   start: start
   graph:
     - node: start
@@ -365,7 +365,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_imperial_stormtrooper_captain_uniform
+      entity: civ13_uniform_imperial_stormtrooper_officer_uniform_1
 - type: construction
   name: imperial technician grey uniform
   id: civ13_uniform_imperial_technician_grey_uniform
@@ -950,8 +950,8 @@
       entity: civ13_uniform_greek_uniform
 - type: construction
   name: greek uniform
-  id: civ13_uniform_greek_uniform
-  graph: civ13_uniform_greek_uniform
+  id: civ13_uniform_greek_uniform_1
+  graph: civ13_uniform_greek_uniform_1
   startNode: start
   targetNode: end
   category: clothing
@@ -964,7 +964,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_greek_uniform
+  id: civ13_uniform_greek_uniform_1
   start: start
   graph:
     - node: start
@@ -975,11 +975,11 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_greek_uniform
+      entity: civ13_uniform_greek_uniform_1
 - type: construction
   name: greek uniform
-  id: civ13_uniform_greek_uniform
-  graph: civ13_uniform_greek_uniform
+  id: civ13_uniform_greek_uniform_1_2
+  graph: civ13_uniform_greek_uniform_1_2
   startNode: start
   targetNode: end
   category: clothing
@@ -992,7 +992,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_greek_uniform
+  id: civ13_uniform_greek_uniform_1_2
   start: start
   graph:
     - node: start
@@ -1003,7 +1003,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_greek_uniform
+      entity: civ13_uniform_greek_uniform_1_2
 - type: construction
   name: greek commander uniform
   id: civ13_uniform_greek_commander_uniform
@@ -1320,8 +1320,8 @@
       entity: civ13_uniform_ainu_robes
 - type: construction
   name: ainu robes
-  id: civ13_uniform_ainu_robes
-  graph: civ13_uniform_ainu_robes
+  id: civ13_uniform_ainu_robes_1
+  graph: civ13_uniform_ainu_robes_1
   startNode: start
   targetNode: end
   category: clothing
@@ -1332,7 +1332,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_ainu_robes
+  id: civ13_uniform_ainu_robes_1
   start: start
   graph:
     - node: start
@@ -1343,7 +1343,7 @@
               amount: 3
               doAfter: 10
     - node: end
-      entity: civ13_uniform_ainu_robes
+      entity: civ13_uniform_ainu_robes_1
 - type: construction
   name: white kimono
   id: civ13_uniform_white_kimono
@@ -1539,7 +1539,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ""
+  description: ''
   icon:
     sprite: Civ14/Clothing/exported/custom_col_short_full.rsi
     state: icon
@@ -1800,8 +1800,8 @@
       entity: civ13_uniform_woodland_camouflage_uniform
 - type: construction
   name: woodland camouflage uniform
-  id: civ13_uniform_woodland_camouflage_uniform
-  graph: civ13_uniform_woodland_camouflage_uniform
+  id: civ13_uniform_woodland_camouflage_uniform_1
+  graph: civ13_uniform_woodland_camouflage_uniform_1
   startNode: start
   targetNode: end
   category: clothing
@@ -1814,7 +1814,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_woodland_camouflage_uniform
+  id: civ13_uniform_woodland_camouflage_uniform_1
   start: start
   graph:
     - node: start
@@ -1825,7 +1825,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_woodland_camouflage_uniform
+      entity: civ13_uniform_woodland_camouflage_uniform_1
 - type: construction
   name: UCP camo uniform
   id: civ13_uniform_UCP_camo_uniform
@@ -2014,8 +2014,8 @@
       entity: civ13_uniform_local_NLF_uniform
 - type: construction
   name: local NLF uniform
-  id: civ13_uniform_local_NLF_uniform
-  graph: civ13_uniform_local_NLF_uniform
+  id: civ13_uniform_local_NLF_uniform_1
+  graph: civ13_uniform_local_NLF_uniform_1
   startNode: start
   targetNode: end
   category: clothing
@@ -2026,7 +2026,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_local_NLF_uniform
+  id: civ13_uniform_local_NLF_uniform_1
   start: start
   graph:
     - node: start
@@ -2037,11 +2037,11 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_local_NLF_uniform
+      entity: civ13_uniform_local_NLF_uniform_1
 - type: construction
   name: local NLF uniform
-  id: civ13_uniform_local_NLF_uniform
-  graph: civ13_uniform_local_NLF_uniform
+  id: civ13_uniform_local_NLF_uniform_1_2
+  graph: civ13_uniform_local_NLF_uniform_1_2
   startNode: start
   targetNode: end
   category: clothing
@@ -2052,7 +2052,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_local_NLF_uniform
+  id: civ13_uniform_local_NLF_uniform_1_2
   start: start
   graph:
     - node: start
@@ -2063,11 +2063,11 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_local_NLF_uniform
+      entity: civ13_uniform_local_NLF_uniform_1_2
 - type: construction
   name: local NLF uniform
-  id: civ13_uniform_local_NLF_uniform
-  graph: civ13_uniform_local_NLF_uniform
+  id: civ13_uniform_local_NLF_uniform_1_2_3
+  graph: civ13_uniform_local_NLF_uniform_1_2_3
   startNode: start
   targetNode: end
   category: clothing
@@ -2078,7 +2078,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_local_NLF_uniform
+  id: civ13_uniform_local_NLF_uniform_1_2_3
   start: start
   graph:
     - node: start
@@ -2089,11 +2089,11 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_local_NLF_uniform
+      entity: civ13_uniform_local_NLF_uniform_1_2_3
 - type: construction
   name: local NLF uniform
-  id: civ13_uniform_local_NLF_uniform
-  graph: civ13_uniform_local_NLF_uniform
+  id: civ13_uniform_local_NLF_uniform_1_2_3_4
+  graph: civ13_uniform_local_NLF_uniform_1_2_3_4
   startNode: start
   targetNode: end
   category: clothing
@@ -2104,7 +2104,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_local_NLF_uniform
+  id: civ13_uniform_local_NLF_uniform_1_2_3_4
   start: start
   graph:
     - node: start
@@ -2115,7 +2115,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_local_NLF_uniform
+      entity: civ13_uniform_local_NLF_uniform_1_2_3_4
 - type: construction
   name: NVA uniform
   id: civ13_uniform_NVA_uniform
@@ -3042,8 +3042,8 @@
       entity: civ13_uniform_Chinese_uniform
 - type: construction
   name: Chinese uniform
-  id: civ13_uniform_Chinese_uniform
-  graph: civ13_uniform_Chinese_uniform
+  id: civ13_uniform_Chinese_uniform_1
+  graph: civ13_uniform_Chinese_uniform_1
   startNode: start
   targetNode: end
   category: clothing
@@ -3054,7 +3054,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_Chinese_uniform
+  id: civ13_uniform_Chinese_uniform_1
   start: start
   graph:
     - node: start
@@ -3065,11 +3065,11 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_Chinese_uniform
+      entity: civ13_uniform_Chinese_uniform_1
 - type: construction
   name: Chinese uniform
-  id: civ13_uniform_Chinese_uniform
-  graph: civ13_uniform_Chinese_uniform
+  id: civ13_uniform_Chinese_uniform_1_2
+  graph: civ13_uniform_Chinese_uniform_1_2
   startNode: start
   targetNode: end
   category: clothing
@@ -3080,7 +3080,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_Chinese_uniform
+  id: civ13_uniform_Chinese_uniform_1_2
   start: start
   graph:
     - node: start
@@ -3091,11 +3091,11 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_Chinese_uniform
+      entity: civ13_uniform_Chinese_uniform_1_2
 - type: construction
   name: chinese uniform
-  id: civ13_uniform_chinese_uniform
-  graph: civ13_uniform_chinese_uniform
+  id: civ13_uniform_chinese_uniform_1
+  graph: civ13_uniform_chinese_uniform_1
   startNode: start
   targetNode: end
   category: clothing
@@ -3106,7 +3106,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_chinese_uniform
+  id: civ13_uniform_chinese_uniform_1
   start: start
   graph:
     - node: start
@@ -3117,7 +3117,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_chinese_uniform
+      entity: civ13_uniform_chinese_uniform_1
 - type: construction
   name: Chinese Red Army uniform
   id: civ13_uniform_Chinese_Red_Army_uniform
@@ -4192,8 +4192,8 @@
       entity: civ13_uniform_Russian_Army_uniform
 - type: construction
   name: Russian Army uniform
-  id: civ13_uniform_Russian_Army_uniform
-  graph: civ13_uniform_Russian_Army_uniform
+  id: civ13_uniform_Russian_Army_uniform_1
+  graph: civ13_uniform_Russian_Army_uniform_1
   startNode: start
   targetNode: end
   category: clothing
@@ -4204,7 +4204,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_Russian_Army_uniform
+  id: civ13_uniform_Russian_Army_uniform_1
   start: start
   graph:
     - node: start
@@ -4215,7 +4215,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_Russian_Army_uniform
+      entity: civ13_uniform_Russian_Army_uniform_1
 - type: construction
   name: Russian Army officer uniform
   id: civ13_uniform_Russian_Army_officer_uniform
@@ -4506,8 +4506,8 @@
       entity: civ13_uniform_cleansuit
 - type: construction
   name: swat outfit
-  id: civ13_uniform_swat_outfit
-  graph: civ13_uniform_swat_outfit
+  id: civ13_uniform_swat_outfit_1
+  graph: civ13_uniform_swat_outfit_1
   startNode: start
   targetNode: end
   category: clothing
@@ -4518,7 +4518,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_swat_outfit
+  id: civ13_uniform_swat_outfit_1
   start: start
   graph:
     - node: start
@@ -4529,7 +4529,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_swat_outfit
+      entity: civ13_uniform_swat_outfit_1
 - type: construction
   name: Redmenian Camo Uniform
   id: civ13_uniform_Redmenian_Camo_Uniform
@@ -4558,8 +4558,8 @@
       entity: civ13_uniform_Redmenian_Camo_Uniform
 - type: construction
   name: police outfit
-  id: civ13_uniform_police_outfit
-  graph: civ13_uniform_police_outfit
+  id: civ13_uniform_police_outfit_1
+  graph: civ13_uniform_police_outfit_1
   startNode: start
   targetNode: end
   category: clothing
@@ -4570,7 +4570,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_police_outfit
+  id: civ13_uniform_police_outfit_1
   start: start
   graph:
     - node: start
@@ -4581,7 +4581,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_police_outfit
+      entity: civ13_uniform_police_outfit_1
 - type: construction
   name: prison outfit
   id: civ13_uniform_prison_outfit
@@ -4844,8 +4844,8 @@
       entity: civ13_uniform_old_man_suit
 - type: construction
   name: fancy outfit
-  id: civ13_uniform_fancy_outfit
-  graph: civ13_uniform_fancy_outfit
+  id: civ13_uniform_fancy_outfit_1
+  graph: civ13_uniform_fancy_outfit_1
   startNode: start
   targetNode: end
   category: clothing
@@ -4856,7 +4856,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_fancy_outfit
+  id: civ13_uniform_fancy_outfit_1
   start: start
   graph:
     - node: start
@@ -4867,7 +4867,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_fancy_outfit
+      entity: civ13_uniform_fancy_outfit_1
 - type: construction
   name: fancy suit
   id: civ13_uniform_fancy_suit
@@ -5366,8 +5366,8 @@
       entity: civ13_uniform_Redmenian_army_uniform
 - type: construction
   name: Redmenian Camo Uniform
-  id: civ13_uniform_Redmenian_Camo_Uniform
-  graph: civ13_uniform_Redmenian_Camo_Uniform
+  id: civ13_uniform_Redmenian_Camo_Uniform_1
+  graph: civ13_uniform_Redmenian_Camo_Uniform_1
   startNode: start
   targetNode: end
   category: clothing
@@ -5378,7 +5378,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_Redmenian_Camo_Uniform
+  id: civ13_uniform_Redmenian_Camo_Uniform_1
   start: start
   graph:
     - node: start
@@ -5389,7 +5389,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_Redmenian_Camo_Uniform
+      entity: civ13_uniform_Redmenian_Camo_Uniform_1
 - type: construction
   name: Redmenian Ceremonial Uniform
   id: civ13_uniform_Redmenian_Ceremonial_Uniform
@@ -5418,8 +5418,8 @@
       entity: civ13_uniform_Redmenian_Ceremonial_Uniform
 - type: construction
   name: Redmenian Camo Uniform
-  id: civ13_uniform_Redmenian_Camo_Uniform
-  graph: civ13_uniform_Redmenian_Camo_Uniform
+  id: civ13_uniform_Redmenian_Camo_Uniform_1_2
+  graph: civ13_uniform_Redmenian_Camo_Uniform_1_2
   startNode: start
   targetNode: end
   category: clothing
@@ -5430,7 +5430,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_Redmenian_Camo_Uniform
+  id: civ13_uniform_Redmenian_Camo_Uniform_1_2
   start: start
   graph:
     - node: start
@@ -5441,7 +5441,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_Redmenian_Camo_Uniform
+      entity: civ13_uniform_Redmenian_Camo_Uniform_1_2
 - type: construction
   name: NCR uniform
   id: civ13_uniform_NCR_uniform
@@ -7047,8 +7047,8 @@
       entity: civ13_uniform_checkered_outfit
 - type: construction
   name: worker outfit
-  id: civ13_uniform_worker_outfit
-  graph: civ13_uniform_worker_outfit
+  id: civ13_uniform_worker_outfit_1
+  graph: civ13_uniform_worker_outfit_1
   startNode: start
   targetNode: end
   category: clothing
@@ -7059,7 +7059,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_worker_outfit
+  id: civ13_uniform_worker_outfit_1
   start: start
   graph:
     - node: start
@@ -7070,7 +7070,7 @@
               amount: 3
               doAfter: 7.5
     - node: end
-      entity: civ13_uniform_worker_outfit
+      entity: civ13_uniform_worker_outfit_1
 - type: construction
   name: texan shirt outfit
   id: civ13_uniform_texan_shirt_outfit
@@ -7528,8 +7528,8 @@
       entity: civ13_uniform_confederate_uniform
 - type: construction
   name: confederate uniform
-  id: civ13_uniform_confederate_uniform
-  graph: civ13_uniform_confederate_uniform
+  id: civ13_uniform_confederate_uniform_1
+  graph: civ13_uniform_confederate_uniform_1
   startNode: start
   targetNode: end
   category: clothing
@@ -7540,7 +7540,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_confederate_uniform
+  id: civ13_uniform_confederate_uniform_1
   start: start
   graph:
     - node: start
@@ -7551,11 +7551,11 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_confederate_uniform
+      entity: civ13_uniform_confederate_uniform_1
 - type: construction
   name: confederate uniform
-  id: civ13_uniform_confederate_uniform
-  graph: civ13_uniform_confederate_uniform
+  id: civ13_uniform_confederate_uniform_1_2
+  graph: civ13_uniform_confederate_uniform_1_2
   startNode: start
   targetNode: end
   category: clothing
@@ -7568,7 +7568,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_confederate_uniform
+  id: civ13_uniform_confederate_uniform_1_2
   start: start
   graph:
     - node: start
@@ -7579,7 +7579,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_confederate_uniform
+      entity: civ13_uniform_confederate_uniform_1_2
 - type: construction
   name: eccentric businessman outfit
   id: civ13_uniform_eccentric_businessman_outfit
@@ -7611,8 +7611,8 @@
       entity: civ13_uniform_eccentric_businessman_outfit
 - type: construction
   name: white tunic
-  id: civ13_uniform_white_tunic
-  graph: civ13_uniform_white_tunic
+  id: civ13_uniform_white_tunic_1
+  graph: civ13_uniform_white_tunic_1
   startNode: start
   targetNode: end
   category: clothing
@@ -7623,7 +7623,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_white_tunic
+  id: civ13_uniform_white_tunic_1
   start: start
   graph:
     - node: start
@@ -7634,7 +7634,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_white_tunic
+      entity: civ13_uniform_white_tunic_1
 - type: construction
   name: crusader tunic
   id: civ13_uniform_crusader_tunic
@@ -8398,8 +8398,8 @@
       entity: civ13_uniform_haori
 - type: construction
   name: haori
-  id: civ13_uniform_haori
-  graph: civ13_uniform_haori
+  id: civ13_uniform_haori_1
+  graph: civ13_uniform_haori_1
   startNode: start
   targetNode: end
   category: clothing
@@ -8410,7 +8410,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_haori
+  id: civ13_uniform_haori_1
   start: start
   graph:
     - node: start
@@ -8421,7 +8421,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_haori
+      entity: civ13_uniform_haori_1
 - type: construction
   name: stormcloak curass
   id: civ13_uniform_stormcloak_curass
@@ -8924,8 +8924,8 @@
       entity: civ13_uniform_firefighter_uniform
 - type: construction
   name: shirt outfit
-  id: civ13_uniform_shirt_outfit
-  graph: civ13_uniform_shirt_outfit
+  id: civ13_uniform_shirt_outfit_1
+  graph: civ13_uniform_shirt_outfit_1
   startNode: start
   targetNode: end
   category: clothing
@@ -8936,7 +8936,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_shirt_outfit
+  id: civ13_uniform_shirt_outfit_1
   start: start
   graph:
     - node: start
@@ -8947,11 +8947,11 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_shirt_outfit
+      entity: civ13_uniform_shirt_outfit_1
 - type: construction
   name: shirt outfit
-  id: civ13_uniform_shirt_outfit
-  graph: civ13_uniform_shirt_outfit
+  id: civ13_uniform_shirt_outfit_1_2
+  graph: civ13_uniform_shirt_outfit_1_2
   startNode: start
   targetNode: end
   category: clothing
@@ -8962,7 +8962,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_shirt_outfit
+  id: civ13_uniform_shirt_outfit_1_2
   start: start
   graph:
     - node: start
@@ -8973,11 +8973,11 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_shirt_outfit
+      entity: civ13_uniform_shirt_outfit_1_2
 - type: construction
   name: shirt outfit
-  id: civ13_uniform_shirt_outfit
-  graph: civ13_uniform_shirt_outfit
+  id: civ13_uniform_shirt_outfit_1_2_3
+  graph: civ13_uniform_shirt_outfit_1_2_3
   startNode: start
   targetNode: end
   category: clothing
@@ -8988,7 +8988,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_shirt_outfit
+  id: civ13_uniform_shirt_outfit_1_2_3
   start: start
   graph:
     - node: start
@@ -8999,7 +8999,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_shirt_outfit
+      entity: civ13_uniform_shirt_outfit_1_2_3
 - type: construction
   name: track pants
   id: civ13_uniform_track_pants
@@ -9028,8 +9028,8 @@
       entity: civ13_uniform_track_pants
 - type: construction
   name: tactical outfit
-  id: civ13_uniform_tactical_outfit
-  graph: civ13_uniform_tactical_outfit
+  id: civ13_uniform_tactical_outfit_1
+  graph: civ13_uniform_tactical_outfit_1
   startNode: start
   targetNode: end
   category: clothing
@@ -9040,7 +9040,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_tactical_outfit
+  id: civ13_uniform_tactical_outfit_1
   start: start
   graph:
     - node: start
@@ -9051,7 +9051,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_tactical_outfit
+      entity: civ13_uniform_tactical_outfit_1
 - type: construction
   name: tacticool hawaiian outfit
   id: civ13_uniform_tacticool_hawaiian_outfit
@@ -9212,8 +9212,8 @@
       entity: civ13_uniform_ACU_pattern_uniform
 - type: construction
   name: EMR pattern uniform
-  id: civ13_uniform_EMR_pattern_uniform
-  graph: civ13_uniform_EMR_pattern_uniform
+  id: civ13_uniform_EMR_pattern_uniform_1
+  graph: civ13_uniform_EMR_pattern_uniform_1
   startNode: start
   targetNode: end
   category: clothing
@@ -9224,7 +9224,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_EMR_pattern_uniform
+  id: civ13_uniform_EMR_pattern_uniform_1
   start: start
   graph:
     - node: start
@@ -9235,7 +9235,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_EMR_pattern_uniform
+      entity: civ13_uniform_EMR_pattern_uniform_1
 - type: construction
   name: EMR desert pattern uniform
   id: civ13_uniform_EMR_desert_pattern_uniform
@@ -9368,8 +9368,8 @@
       entity: civ13_uniform_camo_trousers_and_white_sleeveless_shirt
 - type: construction
   name: cadpat uniform
-  id: civ13_uniform_cadpat_uniform
-  graph: civ13_uniform_cadpat_uniform
+  id: civ13_uniform_cadpat_uniform_1
+  graph: civ13_uniform_cadpat_uniform_1
   startNode: start
   targetNode: end
   category: clothing
@@ -9380,7 +9380,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_cadpat_uniform
+  id: civ13_uniform_cadpat_uniform_1
   start: start
   graph:
     - node: start
@@ -9391,11 +9391,11 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_cadpat_uniform
+      entity: civ13_uniform_cadpat_uniform_1
 - type: construction
   name: cadpat uniform
-  id: civ13_uniform_cadpat_uniform
-  graph: civ13_uniform_cadpat_uniform
+  id: civ13_uniform_cadpat_uniform_1_2
+  graph: civ13_uniform_cadpat_uniform_1_2
   startNode: start
   targetNode: end
   category: clothing
@@ -9406,7 +9406,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_cadpat_uniform
+  id: civ13_uniform_cadpat_uniform_1_2
   start: start
   graph:
     - node: start
@@ -9417,7 +9417,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_cadpat_uniform
+      entity: civ13_uniform_cadpat_uniform_1_2
 - type: construction
   name: type 07 chinese uniform
   id: civ13_uniform_type_07_chinese_uniform
@@ -9580,7 +9580,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ""
+  description: ''
   icon:
     sprite: Civ14/Clothing/exported/leaves_skirt_long.rsi
     state: icon
@@ -10229,8 +10229,8 @@
       entity: civ13_uniform_renaissance_outfit
 - type: construction
   name: renaissance outfit
-  id: civ13_uniform_renaissance_outfit
-  graph: civ13_uniform_renaissance_outfit
+  id: civ13_uniform_renaissance_outfit_1
+  graph: civ13_uniform_renaissance_outfit_1
   startNode: start
   targetNode: end
   category: clothing
@@ -10241,7 +10241,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_renaissance_outfit
+  id: civ13_uniform_renaissance_outfit_1
   start: start
   graph:
     - node: start
@@ -10252,7 +10252,7 @@
               amount: 6
               doAfter: 10.5
     - node: end
-      entity: civ13_uniform_renaissance_outfit
+      entity: civ13_uniform_renaissance_outfit_1
 - type: construction
   name: dress
   id: civ13_uniform_dress
@@ -10281,8 +10281,8 @@
       entity: civ13_uniform_dress
 - type: construction
   name: dress
-  id: civ13_uniform_dress
-  graph: civ13_uniform_dress
+  id: civ13_uniform_dress_1
+  graph: civ13_uniform_dress_1
   startNode: start
   targetNode: end
   category: clothing
@@ -10293,7 +10293,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_dress
+  id: civ13_uniform_dress_1
   start: start
   graph:
     - node: start
@@ -10304,7 +10304,7 @@
               amount: 4
               doAfter: 8.5
     - node: end
-      entity: civ13_uniform_dress
+      entity: civ13_uniform_dress_1
 - type: construction
   name: tribal robe
   id: civ13_uniform_tribal_robe
@@ -10437,8 +10437,8 @@
       entity: civ13_uniform_crinoine_dress
 - type: construction
   name: modern outfit
-  id: civ13_uniform_modern_outfit
-  graph: civ13_uniform_modern_outfit
+  id: civ13_uniform_modern_outfit_1
+  graph: civ13_uniform_modern_outfit_1
   startNode: start
   targetNode: end
   category: clothing
@@ -10449,7 +10449,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_modern_outfit
+  id: civ13_uniform_modern_outfit_1
   start: start
   graph:
     - node: start
@@ -10460,7 +10460,7 @@
               amount: 4
               doAfter: 7.5
     - node: end
-      entity: civ13_uniform_modern_outfit
+      entity: civ13_uniform_modern_outfit_1
 - type: construction
   name: Facility uniform
   id: civ13_uniform_Facility_uniform
@@ -10494,7 +10494,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ""
+  description: ''
   icon:
     sprite: Civ14/Clothing/exported/custom_modbaggy_full.rsi
     state: icon
@@ -10520,7 +10520,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ""
+  description: ''
   icon:
     sprite: Civ14/Clothing/exported/custom_col_full.rsi
     state: icon
@@ -10541,8 +10541,8 @@
       entity: civ13_uniform_colonial_outfit
 - type: construction
   name: track pants
-  id: civ13_uniform_track_pants
-  graph: civ13_uniform_track_pants
+  id: civ13_uniform_track_pants_1
+  graph: civ13_uniform_track_pants_1
   startNode: start
   targetNode: end
   category: clothing
@@ -10553,7 +10553,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_track_pants
+  id: civ13_uniform_track_pants_1
   start: start
   graph:
     - node: start
@@ -10564,7 +10564,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_track_pants
+      entity: civ13_uniform_track_pants_1
 - type: construction
   name: cafr uniform
   id: civ13_uniform_cafr_uniform
@@ -10593,8 +10593,8 @@
       entity: civ13_uniform_cafr_uniform
 - type: construction
   name: Unga Bunga jersey
-  id: civ13_uniform_Unga_Bunga_jersey
-  graph: civ13_uniform_Unga_Bunga_jersey
+  id: civ13_uniform_Unga_Bunga_jersey_1
+  graph: civ13_uniform_Unga_Bunga_jersey_1
   startNode: start
   targetNode: end
   category: clothing
@@ -10605,7 +10605,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: civ13_uniform_Unga_Bunga_jersey
+  id: civ13_uniform_Unga_Bunga_jersey_1
   start: start
   graph:
     - node: start
@@ -10616,7 +10616,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_uniform_Unga_Bunga_jersey
+      entity: civ13_uniform_Unga_Bunga_jersey_1
 - type: construction
   name: flamengo shirt with yellow shorts
   id: civ13_uniform_flamengo_shirt_with_yellow_shorts
