@@ -1539,13 +1539,6 @@
         path: /Audio/Voice/Reptilian/reptilian_scream.ogg
 
 - type: entity
-  id: MobKoboldSyndicateAgentNukeops # Reinforcement exclusive to nukeops uplink
-  parent: MobBaseSyndicateKobold
-  suffix: NukeOps
-  components:
-    - type: NukeOperative
-
-- type: entity
   name: guidebook monkey
   parent: MobMonkey
   categories: [HideSpawnMenu]
