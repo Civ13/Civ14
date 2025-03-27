@@ -101,26 +101,3 @@
   id: MindRoleJob
   name: Job Role
   # JobPrototype is filled by SharedJobSystem
-
-# Zombie Squad
-- type: entity
-  parent: BaseMindRoleAntag
-  id: MindRoleInitialInfected
-  name: Initial Infected Role
-  components:
-    - type: MindRole
-      antagPrototype: InitialInfected
-      exclusiveAntag: true
-      roleType: TeamAntagonist
-    - type: InitialInfectedRole
-
-- type: entity
-  parent: MindRoleGhostRoleTeamAntagonistFlock
-  id: MindRoleZombie
-  name: Zombie Role
-  components:
-    - type: MindRole
-      antagPrototype: Zombie
-      exclusiveAntag: true
-      roleType: TeamAntagonist
-    - type: ZombieRole

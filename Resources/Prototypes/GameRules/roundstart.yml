@@ -15,15 +15,6 @@
       deleteBody: false
 
 - type: entity
-  parent: BaseGameRule
-  id: DummyNonAntagChance
-  components:
-    - type: SubGamemodes
-      rules:
-        - id: DummyNonAntag
-          prob: 0.3
-
-- type: entity
   id: InactivityTimeRestart
   parent: BaseGameRule
   components:
@@ -50,4 +41,3 @@
   parent: BaseGameRule
   components:
     - type: SecretRule
-

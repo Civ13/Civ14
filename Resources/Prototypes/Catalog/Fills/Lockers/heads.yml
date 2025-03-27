@@ -4,7 +4,6 @@
     children:
       - id: BoxEncryptionKeyCargo
       - id: BoxFolderQmClipboard
-      - id: CargoBountyComputerCircuitboard
       - id: CargoRequestComputerCircuitboard
       - id: CargoSaleComputerCircuitboard
       - id: CargoShuttleComputerCircuitboard
@@ -262,7 +261,6 @@
   id: LockerFillResearchDirectorNoHardsuit
   table: !type:AllSelector
     children:
-      - id: Intellicard
       - id: BoxEncryptionKeyScience
       - id: CircuitImprinterMachineCircuitboard
       - id: ClothingBeltUtilityFilled
