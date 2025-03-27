@@ -61,14 +61,6 @@
       - HumanoidAppearance # will cause problems for downstream felinids getting cloned as Urists
       - VirtualItem
 
-- type: cloningSettings
-  id: CloningPod
-  parent: Antag
-  forceCloning: false
-  copyEquipment: null
-  copyInternalStorage: false
-  copyImplants: false
-
 # spawner
 
 - type: entity

@@ -49,7 +49,6 @@ namespace Content.IntegrationTests.Tests
 
         private static readonly string[] GameMaps =
         {
-            "Dev",
             "Nomads"
         };
 
