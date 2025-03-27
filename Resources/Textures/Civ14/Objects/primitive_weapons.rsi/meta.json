@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "primitive_axe_1"
+    },
+    {
+      "name": "primitive_axe_2"
+    },
+    {
+      "name": "primitive_axe_3"
+    },
+    {
+      "name": "primitive_knife_1"
+    },
+    {
+      "name": "primitive_knife_2"
+    },
+    {
+      "name": "primitive_knife_3"
+    },
+    {
+      "name": "primitive_hammer_1"
+    },
+    {
+      "name": "primitive_handle"
+    },
+    {
+      "name": "primitive_handle_twined"
+    },
+    {
+      "name": "primitive_hammerhead_1"
+    },
+    {
+      "name": "primitive_axehead_1"
+    },
+    {
+      "name": "primitive_axehead_2"
+    },
+    {
+      "name": "primitive_axehead_3"
+    },
+    {
+      "name": "primitive_knifehead_1"
+    },
+    {
+      "name": "primitive_knifehead_2"
+    },
+    {
+      "name": "primitive_knifehead_3"
+    },
+    {
+      "name": "twine"
+    },
+    {
+      "name": "flint"
+    },
+    {
+      "name": "primitive_spearhead_1"
+    },
+    {
+      "name": "primitive_spearhead_2"
+    },
+    {
+      "name": "primitive_spearhead_3"
+    },
+    {
+      "name": "primitive_spear_1"
+    },
+    {
+      "name": "primitive_spear_2"
+    },
+    {
+      "name": "primitive_spear_3"
+    },
+    {
+      "name": "obsidian"
+    },
+    {
+      "name": "rock"
+    }
+  ]
+}
