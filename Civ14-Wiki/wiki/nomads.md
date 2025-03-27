@@ -1,8 +1,6 @@
 # Nomads
 
-<div class="alert alert-dismissible alert-danger">
-This guide was originally written for Civ13, and as such might not fully reflect the actual gameplay of Civ14.
-</div>
+**WARNING: This guide was originally written for Civ13, and as such might not fully reflect the actual gameplay of Civ14.**
 
 **_"I'm cold and starving, [WHAT DO I DO?](starter_guide.md)"_** _- A confused player_
 
@@ -10,7 +8,7 @@ This guide was originally written for Civ13, and as such might not fully reflect
 
 In Nomads, everyone spawns without any predetermined roles or factions. The map is a complete wilderness, ready to be explored and settled. There are no prebuilt structures, except for occasional ancient ruins.
 
-You can stay factionless (a nomad), create your own faction or join an existing one. Only members of a faction can research new technologies and accumulate research points.
+You can stay factionless (a nomad), create your own faction or join an existing one.
 
 A map may have one or more ethnicities, each speaking its own language initially incomprehensible to a speaker of a different language. On certain maps you can choose who you spawn as, while on other maps it is random.
 
@@ -21,13 +19,13 @@ What will each civilization desire? Military power? World domination? Scholars w
 ## Becoming Civilized
 
 Perhaps you have noticed that your ability to craft things is a bit
-limited in comparison to other people, and you would like to make more.
+limited in comparison to other people, and you would like to make more. ~~Only members of a faction can research new technologies and accumulate research points.~~ (Not implemented yet in Civ14).
 
 Perhaps you are finding surviving alone difficult. Perhaps you enjoy the company and roleplay opportunity that comes with engaging with other players. If those apply to you, then you should consider joining or starting a faction.
 
 The benefits of joining or assembling a faction:
 
--   You gain access to that factions research levels, which equates to more things you can craft (Not implemented yet in Civ14).
+-   ~~gain access to that factions research levels, which equates to more things you can craft~~ (Not implemented yet in Civ14).
 -   More opportunity to roleplay in a manner you want to. From becoming a towns blacksmith, simple farmer, village idiot, to village chieftain, diplomat, emperor, or anything you want to try and make happen.
 -   Depending on the faction, you might have access to shared resources and facilities.
 -   Safety in numbers. Raiders will think twice before attacking a city, whereas a loner is an easy target for burglars, thieves, pillagers, and robbers.
@@ -58,7 +56,7 @@ Each map has either a single biome or several different ones.
 
 There are seasons of the year, effects of which are different in every biome. Some biomes have four seasons, while others have only two.
 
-On large maps with multiple biomes each biome has its own list of plants that could be grown there. Many plants also grow only in certain seasons. See the **[Guide to Farming](Guide_to_Farming)**.
+On large maps with multiple biomes each biome has its own list of plants that could be grown there. Many plants also grow only in certain seasons. See the **[Guide to Farming](guide_to_farming.md)**.
 
 To determine the biome you are in, read the descriptions below and look at your surroundings. Looking at the map of **[Pangea](https://civ13.github.io/civ13-wiki/assets/images/map_pangea.png)** that has almost every biome may also help. From top to bottom: Tundra, Taiga (roughly the southern half of the snowed area, before the northern mountains), Temperate, Semi-Arid, Desert, Savanna, Jungle. The one biome missing is Sea.
 

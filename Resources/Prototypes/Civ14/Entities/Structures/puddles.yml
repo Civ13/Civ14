@@ -1,0 +1,47 @@
+- type: entity
+  name: puddle
+  id: PuddleWater
+  suffix: Empty
+  description: A puddle of water. You can drink from it if you are desperate.
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Civ14/Objects/watercloset.rsi
+      layers:
+        - state: puddle
+        - map: ["enum.SolutionContainerLayers.Fill"]
+          state: puddle_dry_fill1
+          visible: false
+    - type: Appearance
+    - type: SolutionContainerVisuals
+      maxFillLevels: 1
+      fillBaseName: puddle_dry_fill
+      solutionName: drainBuffer
+    - type: SolutionContainerManager
+      solutions:
+        drainBuffer:
+          maxVol: 100
+        tank:
+          maxVol: 500
+    - type: SolutionRegeneration
+      solution: tank
+      generated:
+        reagents:
+          - ReagentId: Water
+            Quantity: 1
+    - type: DrainableSolution
+      solution: tank
+    - type: ReagentTank
+    - type: Drain
+      autoDrain: false
+    - type: DumpableSolution
+      solution: drainBuffer
+    - type: AmbientSound
+      enabled: false
+      volume: -8
+      range: 8
+      sound:
+        path: /Audio/Ambience/Objects/drain.ogg

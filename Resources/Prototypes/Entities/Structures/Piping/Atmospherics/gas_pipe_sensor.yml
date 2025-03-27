@@ -45,10 +45,6 @@
     tags:
     - AirSensor
     - Unstackable
-  - type: GuideHelp
-    guides:
-    - AtmosphericNetworkMonitor
-    - DeviceMonitoringAndControl
 
 - type: entity
   parent: GasPipeSensor

@@ -25,15 +25,14 @@
       fx: EffectRCDDeconstruct6
     - type: Tag
       tags:
-      - ForceFixRotations # Allow fixrotations to target these
+        - ForceFixRotations # Allow fixrotations to target these
     - type: Destructible
       thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 500
-        behaviors:
-        - !type:DoActsBehavior
-          acts: ["Destruction"]
+        - trigger: !type:DamageTrigger
+            damage: 500
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
     - type: Sprite
       sprite: Structures/Doors/Airlocks/Standard/firelock.rsi
       snapCardinals: true
@@ -56,14 +55,13 @@
     - type: Fixtures
       fixtures:
         fix1:
-          shape:
-            !type:PhysShapeAabb
-            bounds: "-0.49,-0.49,0.49,0.49"  # don't want this colliding with walls or they won't close
+          shape: !type:PhysShapeAabb
+            bounds: "-0.49,-0.49,0.49,0.49" # don't want this colliding with walls or they won't close
           density: 100
           mask:
-          - FullTileMask
+            - FullTileMask
           layer:
-          - AirlockLayer
+            - AirlockLayer
     - type: Door
       openDrawDepth: WallTops
       closeTimeOne: 0.1
@@ -109,7 +107,7 @@
     - type: StaticPrice
       price: 150
     - type: AccessReader
-      access: [ [ "Engineering" ] ]
+      access: [["Engineering"]]
     - type: PryUnpowered
       pryModifier: 0.5
     - type: PointLight
@@ -119,28 +117,23 @@
       enabled: false
       castShadows: false
     - type: NavMapDoor
-    - type: GuideHelp
-      guides:
-      - FireAndGasControl
-      - Fires
-      - Spacing
 
 - type: entity
   id: Firelock
   parent: BaseFirelock
   components:
-  - type: StationAiWhitelist
-  - type: ContainerContainer
-    containers:
-      board: !type:Container
-  - type: Construction
-    graph: Firelock
-    node: Firelock
-    containers:
-    - board
-  - type: ContainerFill
-    containers:
-      board: [ FirelockElectronics ]
+    - type: StationAiWhitelist
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+    - type: Construction
+      graph: Firelock
+      node: Firelock
+      containers:
+        - board
+    - type: ContainerFill
+      containers:
+        board: [FirelockElectronics]
 
 - type: entity
   id: FirelockGlass
@@ -155,14 +148,13 @@
     - type: Fixtures
       fixtures:
         fix1:
-          shape:
-            !type:PhysShapeAabb
-            bounds: "-0.49,-0.49,0.49,0.49"  # don't want this colliding with walls or they won't close
+          shape: !type:PhysShapeAabb
+            bounds: "-0.49,-0.49,0.49,0.49" # don't want this colliding with walls or they won't close
           mask:
-          - Impassable
-          - HighImpassable
+            - Impassable
+            - HighImpassable
           layer:
-          - GlassAirlockLayer
+            - GlassAirlockLayer
     - type: Door
       occludes: false
     - type: Construction
@@ -185,19 +177,18 @@
     - type: Fixtures
       fixtures:
         fix1:
-          shape:
-            !type:PhysShapeAabb
+          shape: !type:PhysShapeAabb
             bounds: "-0.49,-0.49,0.49,-0.2" # don't want this colliding with walls or they won't close
           mask:
-          - Impassable
-          - HighImpassable
+            - Impassable
+            - HighImpassable
           layer:
-          - GlassAirlockLayer
+            - GlassAirlockLayer
     - type: Occluder
       enabled: false
     - type: Tag
       tags:
-      - ForceNoFixRotations # Prevent fixrotations from targeting these, since the base Firelock is targeted
+        - ForceNoFixRotations # Prevent fixrotations from targeting these, since the base Firelock is targeted
     - type: Door
       occludes: false
     - type: Physics

@@ -13,8 +13,7 @@
     - type: Fixtures
       fixtures:
         fix1:
-          shape:
-            !type:PhysShapeCircle
+          shape: !type:PhysShapeCircle
             radius: .4
           density: 190
           mask:
@@ -23,7 +22,7 @@
       anchored: true
     - type: Anchorable
       flags:
-      - Anchorable
+        - Anchorable
     - type: Pullable
     - type: Sprite
       sprite: Structures/Piping/Atmospherics/miners.rsi
@@ -32,9 +31,6 @@
     - type: GasMiner
       maxExternalPressure: 300
       spawnAmount: 400
-    - type: GuideHelp
-      guides:
-      - GasMiningAndStorage
 
 - type: entity
   name: O2 gas miner
