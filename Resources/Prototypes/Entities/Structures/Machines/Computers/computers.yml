@@ -49,7 +49,6 @@
         enum.WiresUiKey.Key:
           type: WiresBoundUserInterface
 
-
 - type: entity
   parent: BaseComputerAiAccess
   id: ComputerAtmosMonitoring
@@ -145,7 +144,6 @@
         board: !type:Container
           ents: []
         disk_slot: !type:ContainerSlot {}
-
 
 - type: entity
   parent: BaseComputerShuttle
@@ -387,7 +385,6 @@
     - type: AccessReader
       access: [["Security"]]
 
-
 - type: entity
   parent: BaseComputerAiAccess
   id: ComputerStationRecords
@@ -513,8 +510,6 @@
         - map: ["enum.WiresVisualLayers.MaintenancePanel"]
           state: generic_panel_open
     - type: ResearchClient
-    - type: AnalysisConsole
-      reportEntityId: PaperArtifactAnalyzer
     - type: DeviceList
     - type: DeviceNetwork
       deviceNetId: Wired
@@ -540,7 +535,6 @@
       radius: 1.5
       energy: 1.6
       color: "#b53ca1"
-
 
 - type: entity
   parent: BaseComputerAiAccess
