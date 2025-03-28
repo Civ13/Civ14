@@ -112,7 +112,7 @@
       entity: civ13_suit_white_primitive_pelt_coat
 - type: construction
   name: grey primitive pelt coat
-  id: civ13_suit_black_primitive_pelt_coat
+  id: civ13_suit_grey_primitive_pelt_coat
   graph: civ13_suit_grey_primitive_pelt_coat
   startNode: start
   targetNode: end
