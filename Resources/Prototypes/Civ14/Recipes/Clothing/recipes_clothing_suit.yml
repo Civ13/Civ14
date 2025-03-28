@@ -573,6 +573,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 8
               doAfter: 14
     - node: end
@@ -1474,6 +1475,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 6
               doAfter: 14
     - node: end
@@ -1501,6 +1503,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 6
               doAfter: 11
     - node: end
@@ -1592,7 +1595,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/suits/paramedic_jacket.rsi
     state: icon
@@ -1753,7 +1756,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/suits/inqcape_alt.rsi
     state: icon
@@ -2737,6 +2740,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 7
               doAfter: 11
     - node: end
@@ -3366,6 +3370,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 4
               doAfter: 7
     - node: end
@@ -3443,6 +3448,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 3
               doAfter: 7
     - node: end
@@ -3468,6 +3474,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 4
               doAfter: 7
     - node: end
@@ -3493,6 +3500,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 4
               doAfter: 7
     - node: end
@@ -5035,7 +5043,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/suits/samurai_lord1.rsi
     state: icon
@@ -5103,6 +5111,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 6
               doAfter: 17
     - node: end
@@ -5588,6 +5597,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 14
               doAfter: 18
     - node: end
@@ -5847,6 +5857,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 12
               doAfter: 26
     - node: end

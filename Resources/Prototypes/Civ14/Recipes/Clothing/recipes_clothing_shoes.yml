@@ -1616,6 +1616,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 3
               doAfter: 8
     - node: end

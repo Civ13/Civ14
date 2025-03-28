@@ -1034,6 +1034,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 4
               doAfter: 10
     - node: end
@@ -1395,7 +1396,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/a6b47cam.rsi
     state: icon
@@ -1593,6 +1594,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 3
               doAfter: 10
     - node: end
@@ -1644,6 +1646,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 3
               doAfter: 10
     - node: end
@@ -2025,7 +2028,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/a6b47b.rsi
     state: icon
@@ -2051,7 +2054,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/a6b47bc.rsi
     state: icon
@@ -2549,6 +2552,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 6
               doAfter: 17
     - node: end
@@ -2744,7 +2748,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/brownbearpelt.rsi
     state: icon
@@ -2920,6 +2924,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 7
               doAfter: 10
     - node: end
@@ -3956,7 +3961,7 @@
   category: clothing
   description: >-
     A iron helmet with a quilted neck covering and a decorative red plume, made
-    in a imperial chinese style. 
+    in a imperial chinese style.
   icon:
     sprite: Civ14/Clothing/exported/hats/imperial_chinese.rsi
     state: icon
@@ -4662,6 +4667,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 7
               doAfter: 12
     - node: end
@@ -6031,6 +6037,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 4
               doAfter: 10
     - node: end
@@ -6766,6 +6773,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 2
               doAfter: 4
     - node: end
@@ -7423,6 +7431,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 8
               doAfter: 15
     - node: end
@@ -7448,6 +7457,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 6
               doAfter: 15
     - node: end
@@ -8107,6 +8117,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 3
               doAfter: 8
     - node: end
@@ -10730,7 +10741,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/piratehat.rsi
     state: icon
@@ -10756,7 +10767,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/piratebandana1.rsi
     state: icon
@@ -11620,7 +11631,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/noblehat1.rsi
     state: icon
@@ -11646,7 +11657,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/noblehat2.rsi
     state: icon
@@ -12010,6 +12021,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 4
               doAfter: 7
     - node: end
@@ -12403,6 +12415,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 3
               doAfter: 6
     - node: end
@@ -12428,6 +12441,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 5
               doAfter: 12
     - node: end
