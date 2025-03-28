@@ -167,7 +167,7 @@ namespace Content.Client.Construction.UI
             PopulateInfo(_selected);
         }
 
-        private void OnViewPopulateRecipes(object? sender, (string search, string catagory) args)
+        private void OnViewPopulateRecipes(object? sender, (string search, string category) args)
         {
             var (search, category) = args;
 
