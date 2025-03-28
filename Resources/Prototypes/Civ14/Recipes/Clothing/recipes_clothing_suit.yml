@@ -206,34 +206,7 @@
               doAfter: 5
     - node: end
       entity: civ13_suit_police_bulletproof_vest
-- type: construction
-  name: black primitive pelt coat
-  id: civ13_suit_black_primitive_pelt_coat
-  graph: civ13_suit_black_primitive_pelt_coat
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: >-
-    A makeshift black pelt coat made from fur skins, worn to protect early man
-    from the elements.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/prehistoric_fur2.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_suit_black_primitive_pelt_coat
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 6
-              doAfter: 13
-    - node: end
-      entity: civ13_suit_black_primitive_pelt_coat
 - type: construction
   name: haori jacket
   id: civ13_suit_haori_jacket
@@ -562,7 +535,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 8
+              amount: 8
               doAfter: 14
     - node: end
       entity: civ13_suit_surgery_apron
@@ -1452,7 +1425,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 6
+              amount: 6
               doAfter: 14
     - node: end
       entity: civ13_suit_steppe_shaman_wool_coat
@@ -1480,7 +1453,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 6
+              amount: 6
               doAfter: 11
     - node: end
       entity: civ13_suit_motorist_jacket
@@ -2065,90 +2038,7 @@
               doAfter: 15
     - node: end
       entity: civ13_suit_fur_coat
-- type: construction
-  name: brown primitive pelt coat
-  id: civ13_suit_brown_primitive_pelt_coat
-  graph: civ13_suit_brown_primitive_pelt_coat
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: >-
-    A makeshift brown pelt coat made from fur skins, worn to protect early man
-    from the elements.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/prehistoric_fur1.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_suit_brown_primitive_pelt_coat
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 6
-              doAfter: 13
-    - node: end
-      entity: civ13_suit_brown_primitive_pelt_coat
-- type: construction
-  name: white primitive pelt coat
-  id: civ13_suit_white_primitive_pelt_coat
-  graph: civ13_suit_white_primitive_pelt_coat
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: >-
-    A makeshift white pelt coat made from fur skins, worn to protect early man
-    from the elements.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/prehistoric_fur3.rsi
-    state: icon
-  objectType: Item
-
-- type: constructionGraph
-  id: civ13_suit_white_primitive_pelt_coat
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 6
-              doAfter: 13
-    - node: end
-      entity: civ13_suit_white_primitive_pelt_coat
-- type: construction
-  name: grey primitive pelt coat
-  id: civ13_suit_grey_primitive_pelt_coat
-  graph: civ13_suit_grey_primitive_pelt_coat
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: >-
-    A makeshift grey pelt coat made from fur skins, worn to protect early man
-    from the elements.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/prehistoric_fur4.rsi
-    state: icon
-  objectType: Item
-
-- type: constructionGraph
-  id: civ13_suit_grey_primitive_pelt_coat
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 6
-              doAfter: 13
-    - node: end
-      entity: civ13_suit_grey_primitive_pelt_coat
 - type: construction
   name: human skin coat
   id: civ13_suit_human_skin_coat
@@ -2717,7 +2607,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 7
+              amount: 7
               doAfter: 11
     - node: end
       entity: civ13_suit_black_peacoat
@@ -3347,7 +3237,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 4
+              amount: 4
               doAfter: 7
     - node: end
       entity: civ13_suit_modern_coat
@@ -3425,7 +3315,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 3
+              amount: 3
               doAfter: 7
     - node: end
       entity: civ13_suit_service_jacket
@@ -3451,7 +3341,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 4
+              amount: 4
               doAfter: 7
     - node: end
       entity: civ13_suit_brown_bombers_jacket
@@ -3477,7 +3367,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 4
+              amount: 4
               doAfter: 7
     - node: end
       entity: civ13_suit_black_bombers_jacket
@@ -5063,7 +4953,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 6
+              amount: 6
               doAfter: 17
     - node: end
       entity: civ13_suit_bronze_chestplate
@@ -5549,7 +5439,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 14
+              amount: 14
               doAfter: 18
     - node: end
       entity: civ13_suit_chitin_chestplate
@@ -5809,7 +5699,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 12
+              amount: 12
               doAfter: 26
     - node: end
       entity: civ13_suit_6B3_body_armor
@@ -6163,62 +6053,7 @@
               doAfter: 5
     - node: end
       entity: civ13_suit_lifejacket_1_2
-- type: construction
-  name: primitive pelt coat
-  id: civ13_suit_primitive_pelt_coat
-  graph: civ13_suit_primitive_pelt_coat
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: >-
-    A makeshift pelt coat made from fur skins, worn to protect early man from
-    the elements.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/prehistoric_fur1.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_suit_primitive_pelt_coat
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 6
-              doAfter: 13
-    - node: end
-      entity: civ13_suit_primitive_pelt_coat
-- type: construction
-  name: primitive wood armor
-  id: civ13_suit_primitive_wood_armor
-  graph: civ13_suit_primitive_wood_armor
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: >-
-    A wooden set of armor made of small planks held together by plant fiber
-    ropes.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/wooden_chestarmor.rsi
-    state: icon
-  objectType: Item
-
-- type: constructionGraph
-  id: civ13_suit_primitive_wood_armor
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_suit_primitive_wood_armor
 - type: construction
   name: primitive bone hair-pipe armor
   id: civ13_suit_primitive_bone_hair_pipe_armor
