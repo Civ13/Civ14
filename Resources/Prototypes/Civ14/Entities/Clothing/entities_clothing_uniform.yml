@@ -583,31 +583,7 @@
       cost: 5
       material: Cloth
       time: 5
-- type: entity
-  name: black cybernetic armor
-  parent: ClothingUniformBase
-  id: civ13_uniform_black_cybernetic_armor
-  description: A dark mechanical armor made for souless individuals.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/uniforms/darth_armor.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/uniforms/darth_armor.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_uniform_black_cybernetic_armor
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: imperial naval lieutenant uniform
   parent: ClothingUniformBase
@@ -5360,31 +5336,7 @@
       cost: 3
       material: Cloth
       time: 7
-- type: entity
-  name: doctor's uniform
-  parent: ClothingUniformBase
-  id: civ13_uniform_doctors_uniform
-  description: A sterile, nicely pressed suit for doctors.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/uniforms/ba_suit.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/uniforms/ba_suit.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_uniform_doctors_uniform
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: dark dress
   parent: ClothingUniformBase

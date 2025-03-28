@@ -606,32 +606,7 @@
               doAfter: 5
     - node: end
       entity: civ13_uniform_republic_medical_officer_uniform
-- type: construction
-  name: black cybernetic armor
-  id: civ13_uniform_black_cybernetic_armor
-  graph: civ13_uniform_black_cybernetic_armor
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: A dark mechanical armor made for souless individuals.
-  icon:
-    sprite: Civ14/Clothing/exported/uniforms/darth_armor.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_uniform_black_cybernetic_armor
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_uniform_black_cybernetic_armor
 - type: construction
   name: imperial naval lieutenant uniform
   id: civ13_uniform_imperial_naval_lieutenant_uniform
@@ -5577,32 +5552,7 @@
               doAfter: 7
     - node: end
       entity: civ13_uniform_pink_colonial_clothing
-- type: construction
-  name: doctor's uniform
-  id: civ13_uniform_doctors_uniform
-  graph: civ13_uniform_doctors_uniform
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: A sterile, nicely pressed suit for doctors.
-  icon:
-    sprite: Civ14/Clothing/exported/uniforms/ba_suit.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_uniform_doctors_uniform
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_uniform_doctors_uniform
 - type: construction
   name: dark dress
   id: civ13_uniform_dark_dress
