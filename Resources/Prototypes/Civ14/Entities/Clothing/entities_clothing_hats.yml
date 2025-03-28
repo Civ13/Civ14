@@ -1805,10 +1805,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.09999999999999998
-          Slash: 0.09999999999999998
-          Piercing: 0.040000000000000036
-          Arrow: -0.10000000000000009
+          Blunt: 0.1
+          Slash: 0.1
+          Piercing: 0.05
+          Arrow: -0.1
           Heat: 0.73
     - type: Construction
       graph: civ13_head_MASKA_1_helmet
@@ -1816,31 +1816,7 @@
       cost: 5
       material: Cloth
       time: 5
-- type: entity
-  name: welding helmet
-  parent: ClothingHeadBase
-  id: civ13_head_welding_helmet
-  description: >-
-    A head-mounted face cover designed to protect the wearer completely from arc
-    eye.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/hats/welding.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/hats/welding.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.9
-          Slash: 0.9
-          Piercing: 0
-          Arrow: 0
-    - type: Construction
-      graph: civ13_head_welding_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: 6B47 helmet
   parent: ClothingHeadBase
@@ -5201,58 +5177,7 @@
       cost: 5
       material: Cloth
       time: 5
-- type: entity
-  name: stalhelm ROA
-  parent: ClothingHeadBase
-  id: civ13_head_stalhelm_ROA
-  description: >-
-    An ordinary German Stahlhelm, it most likely belongs to the Russian
-    Liberation Army.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/hats/roa_helmet.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/hats/roa_helmet.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.6
-          Slash: 0.6
-          Piercing: 0.9
-          Arrow: 0.7
-          Heat: 0.85
-    - type: Construction
-      graph: civ13_head_stalhelm_ROA
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
-- type: entity
-  name: german stalhelm ROA
-  parent: ClothingHeadBase
-  id: civ13_head_german_stalhelm_ROA
-  description: >-
-    An ordinary German Stahlhelm, it has identification marks indicating it
-    belongs to the Russian Liberation Army.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/hats/roa_helmet2.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/hats/roa_helmet2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.6
-          Slash: 0.6
-          Piercing: 0.9
-          Arrow: 0.7
-          Heat: 0.85
-    - type: Construction
-      graph: civ13_head_german_stalhelm_ROA
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: German 'SS' helmet
   parent: ClothingHeadBase
@@ -5687,60 +5612,7 @@
       cost: 5
       material: Cloth
       time: 5
-- type: entity
-  name: parade hat
-  parent: ClothingHeadBase
-  id: civ13_head_parade_hat
-  description: >-
-    No one in a commanding position should be without a perfect, white hat of
-    ultimate authority.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/hats/officercap.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/hats/officercap.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_head_parade_hat
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
-- type: entity
-  name: crew resource's hat
-  parent: ClothingHeadBase
-  id: civ13_head_crew_resources_hat
-  description: >-
-    A stylish hat that both protects you from enraged former-crewmembers and
-    gives you a false sense of authority.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/hats/hopcap.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/hats/hopcap.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_head_crew_resources_hat
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: preacher's hood
   parent: ClothingHeadBase
@@ -5991,31 +5863,7 @@
       cost: 5
       material: Cloth
       time: 5
-- type: entity
-  name: beaver hat
-  parent: ClothingHeadBase
-  id: civ13_head_beaver_hat
-  description: Soft felt makes this hat both comfortable and elegant.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/hats/beaver_hat.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/hats/beaver_hat.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_head_beaver_hat
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: feather trilby
   parent: ClothingHeadBase
@@ -6193,31 +6041,7 @@
       cost: 2
       material: Cloth
       time: 13
-- type: entity
-  name: DRA field cap
-  parent: ClothingHeadBase
-  id: civ13_head_DRA_field_cap
-  description: A cap worn by DRA military personnel.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/hats/undefined.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/hats/undefined.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_head_DRA_field_cap
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: beret
   parent: ClothingHeadBase

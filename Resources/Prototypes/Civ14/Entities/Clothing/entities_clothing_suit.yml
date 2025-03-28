@@ -247,31 +247,7 @@
       cost: 4
       material: Cloth
       time: 8
-- type: entity
-  name: Abashiri guard coat
-  parent: ClothingOuterBase
-  id: civ13_suit_Abashiri_guard_coat
-  description: An Abashiri Prison Guard coat.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/suits/undefined.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/suits/undefined.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_suit_Abashiri_guard_coat
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: Abashiri Haori
   parent: ClothingOuterBase
@@ -1316,31 +1292,7 @@
       cost: 15
       material: Cloth
       time: 20
-- type: entity
-  name: light white arabic robe
-  parent: ClothingOuterBase
-  id: civ13_suit_light_white_arabic_robe
-  description: A light, white, loose fitting garment for keeping the sun off.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/suits/arab2.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/suits/arab2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_suit_light_white_arabic_robe
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: plague doctor suit
   parent: ClothingOuterBase
@@ -4533,31 +4485,7 @@
       cost: 5
       material: Cloth
       time: 5
-- type: entity
-  name: creed armor
-  parent: ClothingOuterBase
-  id: civ13_suit_creed_armor_1
-  description: A leather armor worn by the creed.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/suits/ac_armor_1713.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/suits/ac_armor_1713.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.35
-          Slash: 0.35
-          Piercing: 0.9
-          Arrow: 0.19999999999999996
-          Heat: 0.85
-          Radiation: 0.9
-    - type: Construction
-      graph: civ13_suit_creed_armor_1
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: creed armor
   parent: ClothingOuterBase

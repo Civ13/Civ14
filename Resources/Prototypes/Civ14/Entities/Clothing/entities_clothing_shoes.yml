@@ -47,106 +47,7 @@
       cost: 3
       material: Leather
       time: 8
-- type: entity
-  name: blue shoes
-  parent: ClothingShoesBase
-  id: civ13_shoes_blue_shoes
-  description: ''
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/shoes/blue.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/shoes/blue.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_shoes_blue_shoes
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
-- type: entity
-  name: green shoes
-  parent: ClothingShoesBase
-  id: civ13_shoes_green_shoes
-  description: ''
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/shoes/green.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/shoes/green.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_shoes_green_shoes
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
-- type: entity
-  name: yellow shoes
-  parent: ClothingShoesBase
-  id: civ13_shoes_yellow_shoes
-  description: ''
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/shoes/yellow.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/shoes/yellow.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_shoes_yellow_shoes
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
-- type: entity
-  name: purple shoes
-  parent: ClothingShoesBase
-  id: civ13_shoes_purple_shoes
-  description: ''
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/shoes/purple.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/shoes/purple.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_shoes_purple_shoes
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: brown fur boots
   parent: ClothingShoesBase
@@ -200,7 +101,7 @@
   name: orange shoes
   parent: ClothingShoesBase
   id: civ13_shoes_orange_shoes
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/orange.rsi
@@ -294,34 +195,7 @@
       cost: 4
       material: Leather
       time: 8
-- type: entity
-  name: magboots
-  parent: ClothingShoesBase
-  id: civ13_shoes_magboots
-  description: >-
-    Magnetic boots, often used during extravehicular activity to ensure the user
-    remains safely attached to the vehicle. They're large enough to be worn over
-    other footwear.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/shoes/magboots0.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/shoes/magboots0.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_shoes_magboots
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: black fur boots
   parent: ClothingShoesBase
@@ -374,7 +248,7 @@
   name: ０wrapped boots
   parent: ClothingShoesBase
   id: civ13_shoes_０wrapped_boots
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/wrappedboots.rsi
@@ -398,7 +272,7 @@
   name: NCR wrapped boots
   parent: ClothingShoesBase
   id: civ13_shoes_NCR_wrapped_boots
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/ncr_boots.rsi
@@ -638,56 +512,7 @@
       cost: 5
       material: Cloth
       time: 5
-- type: entity
-  name: bunny slippers
-  parent: ClothingShoesBase
-  id: civ13_shoes_bunny_slippers
-  description: Fluffy!
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/shoes/slippers.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/shoes/slippers.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_shoes_bunny_slippers
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
-- type: entity
-  name: worn bunny slippers
-  parent: ClothingShoesBase
-  id: civ13_shoes_worn_bunny_slippers
-  description: Fluffy...
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/shoes/slippers_worn.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/shoes/slippers_worn.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_shoes_worn_bunny_slippers
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: laceup shoes
   parent: ClothingShoesBase
@@ -936,9 +761,9 @@
   description: Dense fur boots.
   components:
     - type: Sprite
-      sprite: Civ14/Clothing/exported/shoes/fur.rsi
+      sprite: Civ14/Clothing/exported/shoes/fur1.rsi
     - type: Clothing
-      sprite: Civ14/Clothing/exported/shoes/fur.rsi
+      sprite: Civ14/Clothing/exported/shoes/fur1.rsi
     - type: Armor
       modifiers:
         coefficients:
