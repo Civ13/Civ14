@@ -45,14 +45,17 @@
         types:
           Piercing: 13
       animation: WeaponArcFist
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 4
+      baseSprintSpeed: 9
     - type: NPCRetaliation
     - type: FactionException
     - type: NpcFactionMember
       factions:
-        - Passive
-    - type: HTN
-      rootTask:
-        task: SimpleHostileCompound
+        - Prey
+#    - type: HTN
+#      rootTask:
+#        task: SimplePreyCompound
     - type: Puller
       needsHands: false
 
@@ -80,6 +83,7 @@
           Base: deer_f_dead
         Dead:
           Base: deer_f_dead
+
 
 - type: entity
   name: rabbit
@@ -193,6 +197,7 @@
       price: 50
     - type: BadFood
     - type: NonSpreaderZombie
+
 
 - type: entity
   name: black rabbit

@@ -21,6 +21,7 @@
   - Dragon
   - AllHostile
   - Wizard
+  - Predator
 
 - type: npcFaction
   id: Mouse
@@ -135,3 +136,35 @@
   - Zombie
   - Revolutionary
   - AllHostile
+
+- type: npcFaction
+  id: Predator
+  hostile:
+  - NanoTrasen
+  - Dragon
+  - Mouse
+  - Passive
+  - PetsNT
+  - SimpleHostile
+  - SimpleNeutral
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Prey
+
+- type: npcFaction
+  id: Prey
+  Hostile:
+  - NanoTrasen
+  - Dragon
+  - Mouse
+  - Passive
+  - PetsNT
+  - SimpleHostile
+  - SimpleNeutral
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Predator

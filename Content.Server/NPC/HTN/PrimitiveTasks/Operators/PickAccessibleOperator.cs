@@ -19,6 +19,13 @@ public sealed partial class PickAccessibleOperator : HTNOperator
     [DataField("targetCoordinates")]
     public string TargetCoordinates = "TargetCoordinates";
 
+    [DataField("targetKey")]
+    public string TargetKey = default!;
+
+    /// supposed be be a toggle to check if the chosen tile is safe
+    [DataField("isSafe")]
+    public bool IsSafe = false;
+
     /// <summary>
     /// Where the pathfinding result will be stored (if applicable). This gets removed after execution.
     /// </summary>
@@ -53,6 +60,36 @@ public sealed partial class PickAccessibleOperator : HTNOperator
         {
             return (false, null);
         }
+
+        //CIV14, written by the ever incompetent Aciad
+        //todo, make it redo the selection if the path doesn't meet the criteria of being further away from
+        //the target than the current possition, I mean it seems to me like it should
+        //rn it seems like this doesn't actually do anything
+        if (IsSafe == true) //not sure entirely if this bit works
+        {
+            //this should get the value of whatever entity is set as the target
+            blackboard.TryGetValue<EntityUid>(TargetKey, out var targetEntity, _entManager);
+
+            var ownerTransform = _entManager.GetComponent<TransformComponent>(owner);
+            var targetTransform = _entManager.GetComponent<TransformComponent>(targetEntity);
+
+            //figures out current positions of the entities & the destination target
+            var pathEndCoordinates = path.Path.Last().Coordinates;
+            var ownerWorldPosition = ownerTransform.WorldPosition;
+            var targetWorldPosition = targetTransform.WorldPosition;
+
+            var ownerToTargetDistance = (ownerWorldPosition - targetWorldPosition).Length;
+            var targetToPathEndDistance = (targetWorldPosition - pathEndCoordinates.Position).Length;
+
+            if (ownerToTargetDistance.Invoke() < targetToPathEndDistance.Invoke()) //if it ain't far enough away, quit
+            {
+                return (false, null);
+            }
+        }
+
+
+
+
 
         var target = path.Path.Last().Coordinates;
 
