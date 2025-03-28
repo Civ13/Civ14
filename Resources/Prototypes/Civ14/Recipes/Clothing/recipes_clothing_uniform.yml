@@ -7310,7 +7310,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 5
+              amount: 5
               doAfter: 11
     - node: end
       entity: civ13_uniform_white_shirt_and_black_waistcoat
@@ -7472,7 +7472,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 4
+              amount: 4
               doAfter: 7
     - node: end
       entity: civ13_uniform_neck_length_black_dress
@@ -7711,7 +7711,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 2
+              amount: 2
               doAfter: 10
     - node: end
       entity: civ13_uniform_kilt
@@ -7737,7 +7737,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 4
+              amount: 4
               doAfter: 8
     - node: end
       entity: civ13_uniform_beggar_clothing
@@ -8025,7 +8025,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 3
+              amount: 3
               doAfter: 10
     - node: end
       entity: civ13_uniform_steppe_wool_tunic
@@ -9550,7 +9550,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 4
+              amount: 4
               doAfter: 10
     - node: end
       entity: civ13_uniform_leaf_skirt
@@ -9576,7 +9576,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 6
+              amount: 6
               doAfter: 14
     - node: end
       entity: civ13_uniform_long_leaf_skirt
@@ -9602,7 +9602,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 2
+              amount: 2
               doAfter: 2
     - node: end
       entity: civ13_uniform_au_naturel_leaf_covering

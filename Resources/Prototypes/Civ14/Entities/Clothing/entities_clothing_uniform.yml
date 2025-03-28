@@ -807,7 +807,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: toga
   parent: ClothingUniformBase
@@ -832,7 +832,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 6.5
+      time: 6
 - type: entity
   name: half-shoulder white toga
   parent: ClothingUniformBase
@@ -1117,7 +1117,7 @@
       node: end
       cost: 2
       material: Leather
-      time: 5.5
+      time: 5
 - type: entity
   name: long celtic braccae
   parent: ClothingUniformBase
@@ -1142,7 +1142,7 @@
       node: end
       cost: 3
       material: Leather
-      time: 5.5
+      time: 5
 - type: entity
   name: mayan loincloth
   parent: ClothingUniformBase
@@ -1167,7 +1167,7 @@
       node: end
       cost: 2
       material: Cloth
-      time: 5.5
+      time: 5
 - type: entity
   name: aztec loincloth
   parent: ClothingUniformBase
@@ -1217,7 +1217,7 @@
       node: end
       cost: 8
       material: Cloth
-      time: 14.5
+      time: 14
 - type: entity
   name: nemes shendyt
   parent: ClothingUniformBase
@@ -1242,7 +1242,7 @@
       node: end
       cost: 10
       material: Cloth
-      time: 18.5
+      time: 18
 - type: entity
   name: ainu robes
   parent: ClothingUniformBase
@@ -1319,7 +1319,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: white towel
   parent: ClothingUniformBase
@@ -1396,7 +1396,7 @@
       node: end
       cost: 5
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: police supervisor outfit
   parent: ClothingUniformBase
@@ -1478,7 +1478,7 @@
   name: short colonial outfit
   parent: ClothingUniformBase
   id: civ13_uniform_short_colonial_outfit
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/custom_col_short_full.rsi
@@ -1498,7 +1498,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: US Army Uniform
   parent: ClothingUniformBase
@@ -2495,7 +2495,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: Chad Town jersey
   parent: ClothingUniformBase
@@ -3453,7 +3453,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: white colonial clothing
   parent: ClothingUniformBase
@@ -3478,7 +3478,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: Hitlerjugend outfit
   parent: ClothingUniformBase
@@ -4157,7 +4157,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: black outfit
   parent: ClothingUniformBase
@@ -4182,7 +4182,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: shirt outfit
   parent: ClothingUniformBase
@@ -4232,7 +4232,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: brown outfit
   parent: ClothingUniformBase
@@ -4257,7 +4257,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: modern outfit
   parent: ClothingUniformBase
@@ -4728,7 +4728,7 @@
       node: end
       cost: 5
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: fire fighter uniform
   parent: ClothingUniformBase
@@ -4853,7 +4853,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: mechanic outfit
   parent: ClothingUniformBase
@@ -4878,7 +4878,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: blue traditional dress
   parent: ClothingUniformBase
@@ -4905,7 +4905,7 @@
       node: end
       cost: 5
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: blue shorts
   parent: ClothingUniformBase
@@ -5306,7 +5306,7 @@
       node: end
       cost: 5
       material: Cloth
-      time: 10.5
+      time: 10
 - type: entity
   name: short-sleeved colonial clothing
   parent: ClothingUniformBase
@@ -5333,7 +5333,7 @@
       node: end
       cost: 2
       material: Cloth
-      time: 5.5
+      time: 5
 - type: entity
   name: green colonial clothing
   parent: ClothingUniformBase
@@ -5358,7 +5358,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: pink colonial clothing
   parent: ClothingUniformBase
@@ -5383,7 +5383,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: doctor's uniform
   parent: ClothingUniformBase
@@ -5433,7 +5433,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: blue dress
   parent: ClothingUniformBase
@@ -5458,7 +5458,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: brown dress
   parent: ClothingUniformBase
@@ -5483,7 +5483,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: green dress
   parent: ClothingUniformBase
@@ -5508,7 +5508,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: red dress
   parent: ClothingUniformBase
@@ -5533,7 +5533,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: conquistador uniform
   parent: ClothingUniformBase
@@ -5560,7 +5560,7 @@
       node: end
       cost: 5
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: pilgrim clothing
   parent: ClothingUniformBase
@@ -5585,7 +5585,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: black stripes clothing
   parent: ClothingUniformBase
@@ -5610,7 +5610,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: red stripes clothing
   parent: ClothingUniformBase
@@ -5635,7 +5635,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: blue stripes clothing
   parent: ClothingUniformBase
@@ -5660,7 +5660,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: baggy clothing
   parent: ClothingUniformBase
@@ -6622,7 +6622,7 @@
       node: end
       cost: 5
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: Ripped outfit
   parent: ClothingUniformBase
@@ -6697,7 +6697,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: rancher outfit
   parent: ClothingUniformBase
@@ -6722,7 +6722,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: cowboy outfit
   parent: ClothingUniformBase
@@ -6747,7 +6747,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: checkered outfit
   parent: ClothingUniformBase
@@ -6772,7 +6772,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: worker outfit
   parent: ClothingUniformBase
@@ -6797,7 +6797,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: texan shirt outfit
   parent: ClothingUniformBase
@@ -6822,7 +6822,7 @@
       node: end
       cost: 5
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: lederhosen
   parent: ClothingUniformBase
@@ -6847,7 +6847,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: classy outlaw outfit
   parent: ClothingUniformBase
@@ -6952,7 +6952,7 @@
       node: end
       cost: 5
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: black victorian shirt and red vest
   parent: ClothingUniformBase
@@ -6979,7 +6979,7 @@
       node: end
       cost: 5
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: red victorian shirt and black vest
   parent: ClothingUniformBase
@@ -7006,7 +7006,7 @@
       node: end
       cost: 5
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: white shirt and black waistcoat
   parent: ClothingUniformBase
@@ -7057,7 +7057,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: cheongsam dress
   parent: ClothingUniformBase
@@ -7109,7 +7109,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: white wedding dress
   parent: ClothingUniformBase
@@ -7161,7 +7161,7 @@
       node: end
       cost: 5
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: neck length black dress
   parent: ClothingUniformBase
@@ -7185,7 +7185,7 @@
       graph: civ13_uniform_neck_length_black_dress
       node: end
       cost: 4
-      time: 7.5
+      time: 7
 - type: entity
   name: union uniform
   parent: ClothingUniformBase
@@ -7565,7 +7565,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: light brown arabic tunic
   parent: ClothingUniformBase
@@ -7590,7 +7590,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: light white arabic tunic
   parent: ClothingUniformBase
@@ -7615,7 +7615,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: white arabic tunic
   parent: ClothingUniformBase
@@ -7739,7 +7739,7 @@
       node: end
       cost: 6
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: purple renaissance clothing
   parent: ClothingUniformBase
@@ -7764,7 +7764,7 @@
       node: end
       cost: 6
       material: Cloth
-      time: 10.5
+      time: 10
 - type: entity
   name: doge outfit
   parent: ClothingUniformBase
@@ -7816,7 +7816,7 @@
       node: end
       cost: 6
       material: Cloth
-      time: 10.5
+      time: 10
 - type: entity
   name: nun dress
   parent: ClothingUniformBase
@@ -7843,7 +7843,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: black priest outfit
   parent: ClothingUniformBase
@@ -7870,7 +7870,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: green landschneckt uniform
   parent: ClothingUniformBase
@@ -7897,7 +7897,7 @@
       node: end
       cost: 6
       material: Cloth
-      time: 10.5
+      time: 10
 - type: entity
   name: huipil
   parent: ClothingUniformBase
@@ -7922,7 +7922,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 5.5
+      time: 5
 - type: entity
   name: half huipil
   parent: ClothingUniformBase
@@ -7947,7 +7947,7 @@
       node: end
       cost: 2
       material: Cloth
-      time: 4.5
+      time: 4
 - type: entity
   name: dark hanfu
   parent: ClothingUniformBase
@@ -8160,8 +8160,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 05
+          Slash: 05
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
@@ -8184,8 +8184,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 05
+          Slash: 05
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
@@ -8470,7 +8470,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: war correspondent outfit
   parent: ClothingUniformBase
@@ -8524,7 +8524,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: paramedic uniform
   parent: ClothingUniformBase
@@ -9176,7 +9176,7 @@
       node: end
       cost: 2
       material: Cloth
-      time: 4.5
+      time: 4
 - type: entity
   name: leaf skirt
   parent: ClothingUniformBase
@@ -9205,7 +9205,7 @@
   name: long leaf skirt
   parent: ClothingUniformBase
   id: civ13_uniform_long_leaf_skirt
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/leaves_skirt_long.rsi
@@ -9679,7 +9679,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: short loincloth
   parent: ClothingUniformBase
@@ -9729,7 +9729,7 @@
       node: end
       cost: 2
       material: Cloth
-      time: 4.5
+      time: 4
 - type: entity
   name: celtic trousers
   parent: ClothingUniformBase
@@ -9754,7 +9754,7 @@
       node: end
       cost: 2
       material: Cloth
-      time: 5.5
+      time: 5
 - type: entity
   name: tunic
   parent: ClothingUniformBase
@@ -9779,7 +9779,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: arabic tunic
   parent: ClothingUniformBase
@@ -9804,7 +9804,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: renaissance outfit
   parent: ClothingUniformBase
@@ -9829,7 +9829,7 @@
       node: end
       cost: 6
       material: Cloth
-      time: 10.5
+      time: 10
 - type: entity
   name: renaissance outfit
   parent: ClothingUniformBase
@@ -9854,7 +9854,7 @@
       node: end
       cost: 6
       material: Cloth
-      time: 10.5
+      time: 10
 - type: entity
   name: dress
   parent: ClothingUniformBase
@@ -9879,7 +9879,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: dress
   parent: ClothingUniformBase
@@ -9904,7 +9904,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: tribal robe
   parent: ClothingUniformBase
@@ -9954,7 +9954,7 @@
       node: end
       cost: 3
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: camo uniform
   parent: ClothingUniformBase
@@ -10029,7 +10029,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 8.5
+      time: 8
 - type: entity
   name: modern outfit
   parent: ClothingUniformBase
@@ -10054,7 +10054,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: Facility uniform
   parent: ClothingUniformBase
@@ -10084,7 +10084,7 @@
   name: baggy modern outfit
   parent: ClothingUniformBase
   id: civ13_uniform_baggy_modern_outfit
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/custom_modbaggy_full.rsi
@@ -10104,12 +10104,12 @@
       node: end
       cost: 4
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: colonial outfit
   parent: ClothingUniformBase
   id: civ13_uniform_colonial_outfit
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/custom_col_full.rsi
@@ -10129,7 +10129,7 @@
       node: end
       cost: 4
       material: Cloth
-      time: 7.5
+      time: 7
 - type: entity
   name: track pants
   parent: ClothingUniformBase
