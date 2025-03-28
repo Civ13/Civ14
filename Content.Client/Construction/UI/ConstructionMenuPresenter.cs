@@ -174,17 +174,18 @@ namespace Content.Client.Construction.UI
             var recipes = new List<ConstructionPrototype>();
 
             var isEmptyCategory = string.IsNullOrEmpty(category) || category == _forAllCategoryName;
+            var CurrentAge = 0;
 
             if (isEmptyCategory)
                 _selectedCategory = string.Empty;
             else
                 _selectedCategory = category;
-
             foreach (var recipe in _prototypeManager.EnumeratePrototypes<ConstructionPrototype>())
             {
                 if (recipe.Hide)
                     continue;
-
+                if (recipe.AgeMin <= CurrentAge && recipe.AgeMax >= CurrentAge)
+                    continue;
                 if (_playerManager.LocalSession == null
                 || _playerManager.LocalEntity == null
                 || _whitelistSystem.IsWhitelistFail(recipe.EntityWhitelist, _playerManager.LocalEntity.Value))

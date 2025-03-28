@@ -11,6 +11,8 @@
     state: straw_wallB1
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
@@ -28,6 +30,8 @@
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
@@ -45,6 +49,8 @@
     state: claybrickwall
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
@@ -62,6 +68,8 @@
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
@@ -135,6 +143,8 @@
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: StoneBlockWall
   start: start
@@ -161,6 +171,8 @@
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: MayanStoneWall
   start: start
@@ -187,6 +199,8 @@
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: StoneBrickWall
   start: start
@@ -213,6 +227,8 @@
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: MarbleBlockWall
   start: start
@@ -239,6 +255,8 @@
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: FortressBrickWall
   start: start
@@ -265,6 +283,8 @@
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: RomanStoneBrickWall
   start: start
@@ -291,6 +311,8 @@
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: GrecianStoneBrickWall
   start: start
@@ -317,6 +339,8 @@
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: SandstoneBlockWall
   start: start
@@ -343,6 +367,8 @@
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: EgyptianSandstoneBrickWall
   start: start
@@ -369,6 +395,8 @@
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: SandstoneBrickWall
   start: start
@@ -395,6 +423,8 @@
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: RedSandstoneBlockWall
   start: start
@@ -421,6 +451,8 @@
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: FortressSandstoneBrickWall
   start: start

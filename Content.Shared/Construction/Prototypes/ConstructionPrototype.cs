@@ -65,6 +65,12 @@ public sealed partial class ConstructionPrototype : IPrototype
     [DataField("canBuildInImpassable")]
     public bool CanBuildInImpassable { get; private set; }
 
+    [DataField("agemax")]
+    public int AgeMax { get; set; } = 8;
+
+    [DataField("agemin")]
+    public int AgeMin { get; set; } = 0;
+
     /// <summary>
     /// If not null, then this is used to check if the entity trying to construct this is whitelisted.
     /// If they're not whitelisted, hide the item.
