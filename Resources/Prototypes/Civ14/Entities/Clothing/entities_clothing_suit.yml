@@ -4403,7 +4403,7 @@
           Piercing: 0.9299999999999999
           Arrow: 0.65
           Heat: 0.85
-          Radiation: .nan
+          Radiation: 0
     - type: Construction
       graph: civ13_suit_bronze_egyptian_lamellar
       node: end
@@ -4678,7 +4678,7 @@
           Piercing: 0.65
           Arrow: 0.09999999999999998
           Heat: 0.35
-          Radiation: .nan
+          Radiation: 0
     - type: Construction
       graph: civ13_suit_arbites_armor
       node: end
@@ -4953,7 +4953,7 @@
           Piercing: 0.95
           Arrow: 0.75
           Heat: 0.85
-          Radiation: .nan
+          Radiation: 0
     - type: Construction
       graph: civ13_suit_steppe_leather_armor
       node: end
@@ -5227,7 +5227,7 @@
           Piercing: 0.95
           Arrow: 0.85
           Heat: 0.85
-          Radiation: .nan
+          Radiation: 0
     - type: Construction
       graph: civ13_suit_chitin_chestplate
       node: end

@@ -1029,7 +1029,7 @@
           Slash: 0.7
           Arrow: 0.8
           Heat: 0.85
-          Radiation: .nan
+          Radiation: 0
     - type: Construction
       graph: civ13_head_khepresh_war_crown
       node: end
@@ -1285,7 +1285,7 @@
   name: camo 6B47 helmet
   parent: ClothingHeadBase
   id: civ13_head_camo_6B47_helmet
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/a6b47cam.rsi
@@ -1833,8 +1833,8 @@
         coefficients:
           Blunt: 0.9
           Slash: 0.9
-          Piercing: .nan
-          Arrow: .nan
+          Piercing: 0
+          Arrow: 0
     - type: Construction
       graph: civ13_head_welding_helmet
       node: end
@@ -1872,7 +1872,7 @@
   name: blugo 6B47 helmet
   parent: ClothingHeadBase
   id: civ13_head_blugo_6B47_helmet
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/a6b47b.rsi
@@ -1897,7 +1897,7 @@
   name: blugo command 6B47 helmet
   parent: ClothingHeadBase
   id: civ13_head_blugo_command_6B47_helmet
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/a6b47bc.rsi
@@ -2545,7 +2545,7 @@
   name: brown bear pelt hat
   parent: ClothingHeadBase
   id: civ13_head_brown_bear_pelt_hat
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/brownbearpelt.rsi
@@ -2686,7 +2686,7 @@
           Piercing: 0.92
           Arrow: 0.75
           Heat: 0.75
-          Radiation: .nan
+          Radiation: 0
     - type: Construction
       graph: civ13_head_satsuma_infantry_hat
       node: end
@@ -2713,7 +2713,7 @@
           Piercing: 0.92
           Arrow: 0.6
           Heat: 0.85
-          Radiation: .nan
+          Radiation: 0
     - type: Construction
       graph: civ13_head_dragoon_helmet
       node: end
@@ -3669,7 +3669,7 @@
   id: civ13_head_imperial_chinese_helmet
   description: >-
     A iron helmet with a quilted neck covering and a decorative red plume, made
-    in a imperial chinese style. 
+    in a imperial chinese style.
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/imperial_chinese.rsi
@@ -3959,7 +3959,7 @@
           Slash: 0.7
           Arrow: 0.8
           Heat: 0.85
-          Radiation: .nan
+          Radiation: 0
     - type: Construction
       graph: civ13_head_leather_skullcap_helmet
       node: end
@@ -10107,7 +10107,7 @@
   name: Pirate hat
   parent: ClothingHeadBase
   id: civ13_head_Pirate_hat
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/piratehat.rsi
@@ -10132,7 +10132,7 @@
   name: bandana
   parent: ClothingHeadBase
   id: civ13_head_bandana_1
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/piratebandana1.rsi
@@ -10963,7 +10963,7 @@
   name: brown noble hat
   parent: ClothingHeadBase
   id: civ13_head_brown_noble_hat
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/noblehat1.rsi
@@ -10988,7 +10988,7 @@
   name: black noble hat
   parent: ClothingHeadBase
   id: civ13_head_black_noble_hat
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/noblehat2.rsi
