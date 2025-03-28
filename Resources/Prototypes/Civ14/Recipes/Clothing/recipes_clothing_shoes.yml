@@ -50,110 +50,7 @@
               doAfter: 8
     - node: end
       entity: civ13_shoes_white_fur_boots
-- type: construction
-  name: blue shoes
-  id: civ13_shoes_blue_shoes
-  graph: civ13_shoes_blue_shoes
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: ""
-  icon:
-    sprite: Civ14/Clothing/exported/shoes/blue.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_shoes_blue_shoes
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_shoes_blue_shoes
-- type: construction
-  name: green shoes
-  id: civ13_shoes_green_shoes
-  graph: civ13_shoes_green_shoes
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: ""
-  icon:
-    sprite: Civ14/Clothing/exported/shoes/green.rsi
-    state: icon
-  objectType: Item
-
-- type: constructionGraph
-  id: civ13_shoes_green_shoes
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_shoes_green_shoes
-- type: construction
-  name: yellow shoes
-  id: civ13_shoes_yellow_shoes
-  graph: civ13_shoes_yellow_shoes
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: ""
-  icon:
-    sprite: Civ14/Clothing/exported/shoes/yellow.rsi
-    state: icon
-  objectType: Item
-
-- type: constructionGraph
-  id: civ13_shoes_yellow_shoes
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_shoes_yellow_shoes
-- type: construction
-  name: purple shoes
-  id: civ13_shoes_purple_shoes
-  graph: civ13_shoes_purple_shoes
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: ""
-  icon:
-    sprite: Civ14/Clothing/exported/shoes/purple.rsi
-    state: icon
-  objectType: Item
-
-- type: constructionGraph
-  id: civ13_shoes_purple_shoes
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_shoes_purple_shoes
 - type: construction
   name: brown fur boots
   id: civ13_shoes_brown_fur_boots
@@ -651,58 +548,7 @@
               doAfter: 5
     - node: end
       entity: civ13_shoes_magic_shoes
-- type: construction
-  name: bunny slippers
-  id: civ13_shoes_bunny_slippers
-  graph: civ13_shoes_bunny_slippers
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: Fluffy!
-  icon:
-    sprite: Civ14/Clothing/exported/shoes/slippers.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_shoes_bunny_slippers
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_shoes_bunny_slippers
-- type: construction
-  name: worn bunny slippers
-  id: civ13_shoes_worn_bunny_slippers
-  graph: civ13_shoes_worn_bunny_slippers
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: Fluffy...
-  icon:
-    sprite: Civ14/Clothing/exported/shoes/slippers_worn.rsi
-    state: icon
-  objectType: Item
-
-- type: constructionGraph
-  id: civ13_shoes_worn_bunny_slippers
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_shoes_worn_bunny_slippers
 - type: construction
   name: laceup shoes
   id: civ13_shoes_laceup_shoes
@@ -972,7 +818,7 @@
   category: clothing
   description: Dense fur boots.
   icon:
-    sprite: Civ14/Clothing/exported/shoes/fur.rsi
+    sprite: Civ14/Clothing/exported/shoes/fur1.rsi
     state: icon
   objectType: Item
 

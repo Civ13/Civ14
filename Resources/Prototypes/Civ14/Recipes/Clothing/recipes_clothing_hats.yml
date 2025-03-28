@@ -1965,34 +1965,7 @@
               doAfter: 5
     - node: end
       entity: civ13_head_MASKA_1_helmet
-- type: construction
-  name: welding helmet
-  id: civ13_head_welding_helmet
-  graph: civ13_head_welding_helmet
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: >-
-    A head-mounted face cover designed to protect the wearer completely from arc
-    eye.
-  icon:
-    sprite: Civ14/Clothing/exported/hats/welding.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_head_welding_helmet
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_head_welding_helmet
 - type: construction
   name: 6B47 helmet
   id: civ13_head_6B47_helmet
@@ -4641,7 +4614,7 @@
       edges:
         - to: end
           steps:
-            - material: Bone
+            - material: Bones
               amount: 10
               doAfter: 10
     - node: end
@@ -6513,32 +6486,7 @@
               doAfter: 13
     - node: end
       entity: civ13_head_beanie
-- type: construction
-  name: DRA field cap
-  id: civ13_head_DRA_field_cap
-  graph: civ13_head_DRA_field_cap
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: A cap worn by DRA military personnel.
-  icon:
-    sprite: Civ14/Clothing/exported/hats/undefined.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_head_DRA_field_cap
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_head_DRA_field_cap
 - type: construction
   name: beret
   id: civ13_head_beret

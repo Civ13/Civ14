@@ -4633,7 +4633,7 @@
       graph: civ13_head_bone_helmet
       node: end
       cost: 10
-      material: Bone
+      material: Bones
       time: 10
 - type: entity
   name: chitin helmet

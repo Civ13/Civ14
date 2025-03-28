@@ -1660,7 +1660,7 @@
       graph: civ13_suit_bone_armor
       node: end
       cost: 10
-      material: Bone
+      material: Bones
       time: 17
 - type: entity
   name: imperial officer armor
@@ -6271,7 +6271,7 @@
       graph: civ13_suit_primitive_bone_hair_pipe_armor
       node: end
       cost: 5
-      material: Bone
+      material: Bones
       time: 10
 - type: entity
   name: mbata pelt vest

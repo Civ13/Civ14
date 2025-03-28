@@ -234,19 +234,6 @@
     - node: end
       entity: civ13_suit_haori_jacket
 
-- type: constructionGraph
-  id: civ13_suit_Abashiri_guard_coat
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_suit_Abashiri_guard_coat
 - type: construction
   name: Abashiri Haori
   id: civ13_suit_Abashiri_Haori
@@ -1334,19 +1321,6 @@
     - node: end
       entity: civ13_suit_cream_short_jacket
 
-- type: constructionGraph
-  id: civ13_suit_light_white_arabic_robe
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_suit_light_white_arabic_robe
 - type: construction
   name: plague doctor suit
   id: civ13_suit_plague_doctor_suit
@@ -1610,7 +1584,7 @@
       edges:
         - to: end
           steps:
-            - material: Bone
+            - material: Bones
               amount: 10
               doAfter: 17
     - node: end
@@ -4632,7 +4606,7 @@
       edges:
         - to: end
           steps:
-            - material: Copper
+            - material: Cloth
               amount: 4
               doAfter: 8
     - node: end
@@ -6077,7 +6051,7 @@
       edges:
         - to: end
           steps:
-            - material: Bone
+            - material: Bones
               amount: 5
               doAfter: 10
     - node: end
