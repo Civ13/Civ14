@@ -4,7 +4,7 @@
   graph: civ13_uniform_preachers_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Typical priest clothing.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/chaplain.rsi
@@ -30,7 +30,7 @@
   graph: civ13_uniform_white_t_shirt_and_purple_shorts
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An oversized white t-shirt and purple cargo shorts.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ballas1.rsi
@@ -56,7 +56,7 @@
   graph: civ13_uniform_baggy_black_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An oversized black outfit.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ballas2.rsi
@@ -82,7 +82,7 @@
   graph: civ13_uniform_purple_shirt_and_khaki_pants
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An oversized purple shirt and khaki cargo pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ballas3.rsi
@@ -108,7 +108,7 @@
   graph: civ13_uniform_green_sweatshirt_and_jeans
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An oversized green sweatshirt and jeans.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/grove1.rsi
@@ -134,7 +134,7 @@
   graph: civ13_uniform_green_checkered_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A green checkered shirt and beige pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/grove2.rsi
@@ -160,7 +160,7 @@
   graph: civ13_uniform_green_jersey_and_jeans
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A green basketball jersey and black jeans.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/grove3.rsi
@@ -186,7 +186,7 @@
   graph: civ13_uniform_chad_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Wow!
   icon:
     sprite: Civ14/Clothing/exported/uniforms/chad.rsi
@@ -212,7 +212,7 @@
   graph: civ13_uniform_contestant_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: regular jumpsuit for contestants
   icon:
     sprite: Civ14/Clothing/exported/uniforms/squid_player.rsi
@@ -238,7 +238,7 @@
   graph: civ13_uniform_replicant_black_bodyglove
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A tight bodyglove worn by troopers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/replicant_bodyglove.rsi
@@ -264,7 +264,7 @@
   graph: civ13_uniform_red_bodyglove
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A tight red bodyglove worn by Red guards.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/redbodyglove.rsi
@@ -290,7 +290,7 @@
   graph: civ13_uniform_blue_bodyglove
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A tight blue bodyglove worn by senate guards.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/bluebodyglove.rsi
@@ -316,7 +316,7 @@
   graph: civ13_uniform_imperial_stormtrooper_officer_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A double-breasted black tunic rank and trousers with a metal plac denoting
     rank for NCO's in the Stormtrooper Corps.
@@ -344,7 +344,7 @@
   graph: civ13_uniform_imperial_stormtrooper_officer_uniform_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A double-breasted olive-green tunic rank and trousers with a metal plac
     denoting rank for CO's in the Imperial Navy.
@@ -372,7 +372,7 @@
   graph: civ13_uniform_imperial_technician_grey_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A grey jumpsuit for technician's in the Engineering Corps.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/imp_technician_grey.rsi
@@ -398,7 +398,7 @@
   graph: civ13_uniform_imperial_technician_blue_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A blue jumpsuit for technician's in the Engineering Corps.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/imp_technician_blue.rsi
@@ -424,7 +424,7 @@
   graph: civ13_uniform_imperial_technician_black_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A black jumpsuit for technician's in the Engineering Corps.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/imp_technician_black.rsi
@@ -450,7 +450,7 @@
   graph: civ13_uniform_republic_ensign_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A double-breasted blue-grey tunic and trousers for NCO's in the Republic
     Navy.
@@ -478,7 +478,7 @@
   graph: civ13_uniform_republic_medical_officer
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A double-breasted white-grey tunic and trousers for NCO's in the Republic
     Medical Corps.
@@ -506,7 +506,7 @@
   graph: civ13_uniform_republic_naval_officer_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A double-breasted olive-green tunic rank and trousers with a metal plac
     denoting rank for CO's in the Republic Navy.
@@ -534,7 +534,7 @@
   graph: civ13_uniform_republic_naval_captain_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A well adjusted captain's jacket.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/repcaptain_uniform.rsi
@@ -560,7 +560,7 @@
   graph: civ13_uniform_republic_naval_ensign_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A well adjusted ensign's jacket.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/repensign_uniform.rsi
@@ -586,7 +586,7 @@
   graph: civ13_uniform_republic_medical_officer_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A well adjusted medical jacket.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/repmedical_uniform.rsi
@@ -612,7 +612,7 @@
   graph: civ13_uniform_black_cybernetic_armor
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A dark mechanical armor made for souless individuals.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/darth_armor.rsi
@@ -638,7 +638,7 @@
   graph: civ13_uniform_imperial_naval_lieutenant_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A well adjusted lieutenant's jacket.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/imp_stormofficer.rsi
@@ -664,7 +664,7 @@
   graph: civ13_uniform_wise_tutors_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A loose outfit worn by the wise & experienced.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/wise_tutor.rsi
@@ -690,7 +690,7 @@
   graph: civ13_uniform_wise_tutors_alternative_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A loose outfit worn by the wise & experienced.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/wise_tutor2.rsi
@@ -716,7 +716,7 @@
   graph: civ13_uniform_wise_disciple_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A loose outfit worn by the unwise & unexperienced.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/wise_tutor3.rsi
@@ -742,7 +742,7 @@
   graph: civ13_uniform_arrogant_students_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A loose outfit worn by arrogant students.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/arrogant_student.rsi
@@ -768,7 +768,7 @@
   graph: civ13_uniform_rebellion_trooper_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A plain looking uniform worn by soldiers of the rebel alliance.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/rebel1.rsi
@@ -794,7 +794,7 @@
   graph: civ13_uniform_DRA_officer_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A military uniform worn by DRA officers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/dra_uni_officer.rsi
@@ -820,7 +820,7 @@
   graph: civ13_uniform_long_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A simple cloth tunic, with a brass and leather belt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/customroman.rsi
@@ -846,7 +846,7 @@
   graph: civ13_uniform_toga
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A simple cloth toga.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/customtoga.rsi
@@ -872,7 +872,7 @@
   graph: civ13_uniform_half_shoulder_white_toga
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A simple cloth toga, covering just one of the shoulders.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/toga2.rsi
@@ -898,7 +898,7 @@
   graph: civ13_uniform_roman_centurion_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A red tunic covered with iron armor, with added golden plates. Used by the
     roman army's centurions.
@@ -926,7 +926,7 @@
   graph: civ13_uniform_greek_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A light tunic, covered with bronze and leather armor. Used by the hellenic
     armies.
@@ -954,7 +954,7 @@
   graph: civ13_uniform_greek_uniform_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A light tunic, covered with bronze and leather armor. Used by the hellenic
     armies.
@@ -982,7 +982,7 @@
   graph: civ13_uniform_greek_uniform_1_2
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A light tunic, covered with bronze and leather armor. Used by the hellenic
     armies.
@@ -1010,7 +1010,7 @@
   graph: civ13_uniform_greek_commander_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A light blue tunic covered by a bronze plate armor. Used by hellenic
     commanders.
@@ -1038,7 +1038,7 @@
   graph: civ13_uniform_white_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light white tunic.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/toxotai.rsi
@@ -1064,7 +1064,7 @@
   graph: civ13_uniform_green_celtic_trousers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Celtic-style trousers, in green.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/celtic_green.rsi
@@ -1090,7 +1090,7 @@
   graph: civ13_uniform_blue_celtic_trousers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Celtic-style trousers, in blue.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/celtic_blue.rsi
@@ -1116,7 +1116,7 @@
   graph: civ13_uniform_red_celtic_trousers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Celtic-style trousers, in red.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/celtic_red.rsi
@@ -1142,7 +1142,7 @@
   graph: civ13_uniform_short_celtic_braccae
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Short, celtic-style wool trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/celtic_short_braccae.rsi
@@ -1168,7 +1168,7 @@
   graph: civ13_uniform_long_celtic_braccae
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Long, celtic-style wool trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/celtic_long_braccae.rsi
@@ -1194,7 +1194,7 @@
   graph: civ13_uniform_mayan_loincloth
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Mayan-style loincloth.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/mayan_loincloth.rsi
@@ -1220,7 +1220,7 @@
   graph: civ13_uniform_aztec_loincloth
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A loincloth fit for a ferocious aztec warrior.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/aztec_loincloth.rsi
@@ -1246,7 +1246,7 @@
   graph: civ13_uniform_pharaohic_shendyt
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A fancy, decorated shendyt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/pharaoh.rsi
@@ -1272,7 +1272,7 @@
   graph: civ13_uniform_nemes_shendyt
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A fancy, decorated shendyt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/greatshendyt.rsi
@@ -1298,7 +1298,7 @@
   graph: civ13_uniform_ainu_robes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of robes worn by the ainu.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ainu_robe.rsi
@@ -1324,7 +1324,7 @@
   graph: civ13_uniform_ainu_robes_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of robes worn by the ainu.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ainu_robe2.rsi
@@ -1350,7 +1350,7 @@
   graph: civ13_uniform_white_kimono
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A plain kimono in popular asian style, with simplistic underwear concealed
     beneath.
@@ -1378,7 +1378,7 @@
   graph: civ13_uniform_white_towel
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A simple towel to wrap around yourself.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/towel.rsi
@@ -1404,7 +1404,7 @@
   graph: civ13_uniform_linnen_wrappings
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The musty wrappings seem to disintigrate as you examine them.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/mummy.rsi
@@ -1430,7 +1430,7 @@
   graph: civ13_uniform_police_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     An outfit composed of a blue emergency services shirt and denim trousers. It
     has a police badge attached
@@ -1458,7 +1458,7 @@
   graph: civ13_uniform_police_supervisor_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     An outfit composed of a blue emergency services shirt and denim trousers. It
     has a police supervisor badge attached
@@ -1486,7 +1486,7 @@
   graph: civ13_uniform_sheriffs_department_sheriff_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A law enforcement outfit worn by the town's sherrif.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/sd_sheriff.rsi
@@ -1512,7 +1512,7 @@
   graph: civ13_uniform_sheriffs_department_deputy_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A law enforcement outfit worn by the town's deputies.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/sd_deputy.rsi
@@ -1538,7 +1538,7 @@
   graph: civ13_uniform_short_colonial_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: ""
   icon:
     sprite: Civ14/Clothing/exported/uniforms/custom_col_short_full.rsi
@@ -1564,7 +1564,7 @@
   graph: civ13_uniform_US_Army_Uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A standard tropical US army uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/us_fp.rsi
@@ -1590,7 +1590,7 @@
   graph: civ13_uniform_woodland_camo_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The standard US Army camo uniform implemented in the early 1980s. Still used
     during the present day by many countries.
@@ -1618,7 +1618,7 @@
   graph: civ13_uniform_OG_107_trousers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The standard US Army OG-107 uniform trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/us_greentrousers_og107.rsi
@@ -1644,7 +1644,7 @@
   graph: civ13_uniform_OG_107_uniform_with_rolled_sleeves
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A rolled-sleeves version of the US Army OG-107 uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/us_uni_og107_rolled.rsi
@@ -1670,7 +1670,7 @@
   graph: civ13_uniform_OG_107_trousers_and_khaki_undershirt
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A light version of the US Army OG-107 trousers and the service khaki
     undershirt.
@@ -1698,7 +1698,7 @@
   graph: civ13_uniform_OG_107_trousers_and_white_undershirt
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A light version of the US Army OG-107 trousers and the service white
     untucked undershirt.
@@ -1726,7 +1726,7 @@
   graph: civ13_uniform_tigerstripes_camo_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A camo uniform in the tigerstripes pattern.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/us_camo_tigerstripes.rsi
@@ -1752,7 +1752,7 @@
   graph: civ13_uniform_desert_camouflage_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The standard US Army desert camo uniform the late 20th century.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/us_camo_dcu.rsi
@@ -1778,7 +1778,7 @@
   graph: civ13_uniform_woodland_camouflage_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The standard US Army camo uniform the late 20th century.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/us_camo_woodland.rsi
@@ -1804,7 +1804,7 @@
   graph: civ13_uniform_woodland_camouflage_uniform_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The standard US Army camo uniform the late 20th century, with Hezbollah
     insiginia.
@@ -1832,7 +1832,7 @@
   graph: civ13_uniform_UCP_camo_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The standard US Army camo uniform the early 21st century.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/us_camo_ucp.rsi
@@ -1858,7 +1858,7 @@
   graph: civ13_uniform_OCP_camo_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The standard US Army camo uniform from 2018 onwards.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/us_camo_ocp.rsi
@@ -1884,7 +1884,7 @@
   graph: civ13_uniform_MultiCam_camo_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A uniform in a camouflage pattern designed for use in a wide range of
     environments and conditions. Usually given to special operations units.
@@ -1912,7 +1912,7 @@
   graph: civ13_uniform_U.S._Army_training_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An informal outfit made of OCP pattern trousers and a olive drab shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/us_lightuni_modern.rsi
@@ -1938,7 +1938,7 @@
   graph: civ13_uniform_american_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The standard us army uniform of the korean war, this one outfitted for
     winter.
@@ -1966,7 +1966,7 @@
   graph: civ13_uniform_chinese_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The standard winter chinese uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/korea_china.rsi
@@ -1992,7 +1992,7 @@
   graph: civ13_uniform_local_NLF_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A black uniform of the NLF.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v1.rsi
@@ -2018,7 +2018,7 @@
   graph: civ13_uniform_local_NLF_uniform_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A black and blue uniform of the NLF.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v2.rsi
@@ -2044,7 +2044,7 @@
   graph: civ13_uniform_local_NLF_uniform_1_2
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A black and khaki uniform of the NLF.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v3.rsi
@@ -2070,7 +2070,7 @@
   graph: civ13_uniform_local_NLF_uniform_1_2_3
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A blue and khaki uniform of the NLF.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v4.rsi
@@ -2096,7 +2096,7 @@
   graph: civ13_uniform_local_NLF_uniform_1_2_3_4
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A grey uniform of the NLF.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v5.rsi
@@ -2122,7 +2122,7 @@
   graph: civ13_uniform_NVA_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A khaki uniform of the North Vietnamese Army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/NVAuni.rsi
@@ -2148,7 +2148,7 @@
   graph: civ13_uniform_NVA_sergeant_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A khaki uniform of the North Vietnamese Army. This one is bearing the ranks
     of a sergeant.
@@ -2176,7 +2176,7 @@
   graph: civ13_uniform_specialist_pants_with_woodland_pattern_paint
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A army issued pair of pants and woodland pattern body-paint; to blend
     seamlessly into the enviroment
@@ -2204,7 +2204,7 @@
   graph: civ13_uniform_Chinese_Red_Guard_Uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An uniform worn by the Red guard.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/redguard.rsi
@@ -2230,7 +2230,7 @@
   graph: civ13_uniform_afghanka_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A standard soviet uniform developped and issued in the early 80's, still in
     use after the collapse of the Soviet Union.
@@ -2258,7 +2258,7 @@
   graph: civ13_uniform_cafr_afghanka_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A heavily weathered Afghanka uniform with a CAFR patch on the front.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/cafr_afghanka_open.rsi
@@ -2284,7 +2284,7 @@
   graph: civ13_uniform_KLMK_camo_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A suit in the KLMK camo pattern, issued by the Soviet Union in the 1970s.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/sov_klmk.rsi
@@ -2310,7 +2310,7 @@
   graph: civ13_uniform_yellow_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light yellow tunic.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/yellow_tunic.rsi
@@ -2336,7 +2336,7 @@
   graph: civ13_uniform_KZS_camo_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A suit in the KZS camo pattern, issued by the Soviet Union in the late
     1970s.
@@ -2364,7 +2364,7 @@
   graph: civ13_uniform_Soviet_officer_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Soviet officer uniform, used by officers in the Red Army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/sovuni_officer.rsi
@@ -2390,7 +2390,7 @@
   graph: civ13_uniform_DRA_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A military uniform worn by DRA soldiers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/dra_uni.rsi
@@ -2416,7 +2416,7 @@
   graph: civ13_uniform_DRA_NCO_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A military uniform worn by DRA NCOs.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/dra_uni_nco.rsi
@@ -2442,7 +2442,7 @@
   graph: civ13_uniform_red_bowling_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A stylish red bowling shirt with black pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/bowling_red.rsi
@@ -2468,7 +2468,7 @@
   graph: civ13_uniform_yellow_bowling_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A stylish yellow bowling shirt with black pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/bowling_yellow.rsi
@@ -2494,7 +2494,7 @@
   graph: civ13_uniform_green_bowling_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A stylish green bowling shirt with black pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/bowling_green.rsi
@@ -2520,7 +2520,7 @@
   graph: civ13_uniform_blue_bowling_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A stylish blue bowling shirt with black pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/bowling_blue.rsi
@@ -2546,7 +2546,7 @@
   graph: civ13_uniform_hippie_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A tie-dye t-shirt with bootleg grey jeans. Right on, man!
   icon:
     sprite: Civ14/Clothing/exported/uniforms/hippy.rsi
@@ -2572,7 +2572,7 @@
   graph: civ13_uniform_yellow_sundress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A mid century style dress often worn outside in fair weather associated with
     a new generation of independent women
@@ -2600,7 +2600,7 @@
   graph: civ13_uniform_Chad_Town_jersey
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A football jersey of the Chad Town Football Club, C.T.F.C.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/football_blue.rsi
@@ -2626,7 +2626,7 @@
   graph: civ13_uniform_purple_toga
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A fancy cloth toga.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/customtoga.rsi
@@ -2652,7 +2652,7 @@
   graph: civ13_uniform_Unga_Bunga_jersey
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A football jersey of the Unga Bunga United, U.B.U.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/football_red.rsi
@@ -2678,7 +2678,7 @@
   graph: civ13_uniform_shirtless_gator_pants
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A tight fitting pair of alligator scale pants. When you're this on-point;
     wearing a shirt would just cramp your style.
@@ -2706,7 +2706,7 @@
   graph: civ13_uniform_NKVD_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A soviet NKVD uniform, worn by members of the NKVD.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/nkvd_uni.rsi
@@ -2732,7 +2732,7 @@
   graph: civ13_uniform_KGB_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Russian KGB uniform, used by KGB.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/nkvd_uni.rsi
@@ -2758,7 +2758,7 @@
   graph: civ13_uniform_GULAG_prisoner_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A worn out GULAG prisoner outfit.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/gulagprisoner.rsi
@@ -2784,7 +2784,7 @@
   graph: civ13_uniform_Japanese_Officer_Uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An Imperial Japanese Army officer uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/japoffuni.rsi
@@ -2810,7 +2810,7 @@
   graph: civ13_uniform_Japanese_Army_Uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A standard imperial japanese army uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/japuni.rsi
@@ -2836,7 +2836,7 @@
   graph: civ13_uniform_japanese_naval_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A imperial japanese navy uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_navy.rsi
@@ -2862,7 +2862,7 @@
   graph: civ13_uniform_Japanese_naval_petty_officer_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An Imperial Japanese naval petty officer uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_navy_po.rsi
@@ -2888,7 +2888,7 @@
   graph: civ13_uniform_Japanese_naval_officer_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An Imperial Japanese naval officer uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_navy_officer.rsi
@@ -2914,7 +2914,7 @@
   graph: civ13_uniform_Japanese_SNLF_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A prestigious Imperial Japanese SNLF uniform, worn by elite naval infantry
     renowned for their expertise in amphibious assault operations.
@@ -2942,7 +2942,7 @@
   graph: civ13_uniform_Japanese_tanker_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An Imperial Japanese Army uniform, this one bears the rank of a tanker.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/japtanker.rsi
@@ -2968,7 +2968,7 @@
   graph: civ13_uniform_british_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A khaki uniform worn by the British Army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ww1_british.rsi
@@ -2994,7 +2994,7 @@
   graph: civ13_uniform_British_officer_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A tropical green British officer uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ww2_british_off_tropical.rsi
@@ -3020,7 +3020,7 @@
   graph: civ13_uniform_Chinese_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Chinese Red Army uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ww2_china.rsi
@@ -3046,7 +3046,7 @@
   graph: civ13_uniform_Chinese_uniform_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Chinese Red Army uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ww2_china_off.rsi
@@ -3072,7 +3072,7 @@
   graph: civ13_uniform_Chinese_uniform_1_2
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Chinese Red Army uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ww2_china2.rsi
@@ -3098,7 +3098,7 @@
   graph: civ13_uniform_chinese_uniform_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A chinese army uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ww2_china2_off.rsi
@@ -3124,7 +3124,7 @@
   graph: civ13_uniform_Chinese_Red_Army_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A uniform worn by the Chinese Red Army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/cra_uni.rsi
@@ -3150,7 +3150,7 @@
   graph: civ13_uniform_German_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A feldgrau uniform worn by the Imperial German Army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ww1_german.rsi
@@ -3176,7 +3176,7 @@
   graph: civ13_uniform_German_doctor_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A German feldgrau uniform, usually worn by doctors in the Wehrmacht.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/geruni_doctor.rsi
@@ -3202,7 +3202,7 @@
   graph: civ13_uniform_German_officer_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A German feldgrau uniform, almost always worn by officers in the Wehrmacht.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/geruni_officer.rsi
@@ -3228,7 +3228,7 @@
   graph: civ13_uniform_German_tanker_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A German feldgrau uniform, often worn by tankers in the Wehrmacht.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/gertanker.rsi
@@ -3254,7 +3254,7 @@
   graph: civ13_uniform_German_MP_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A German feldgrau uniform, mostly worn by Military Police in the Wehrmacht.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/geruni_mp.rsi
@@ -3280,7 +3280,7 @@
   graph: civ13_uniform_German_SS_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A German SS uniform, always worn by soldaten in the Schutzstaffel.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ssuni.rsi
@@ -3306,7 +3306,7 @@
   graph: civ13_uniform_German_SS_officer_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A german SS officer uniform, worn by officers in the Schutzstaffel.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ssuni_officer.rsi
@@ -3332,7 +3332,7 @@
   graph: civ13_uniform_German_camo_SS_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     This German SS uniform features the iconic 1944 Erbsenmuster dot-pattern,
     historically worn by members of the Schutzstaffel.
@@ -3360,7 +3360,7 @@
   graph: civ13_uniform_Soviet_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Soviet uniform, used by infantry in the Red Army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/sovuni.rsi
@@ -3386,7 +3386,7 @@
   graph: civ13_uniform_Soviet_tanker_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Soviet tanker uniform, used by tank crewmen in the Red Army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/sovtanker.rsi
@@ -3412,7 +3412,7 @@
   graph: civ13_uniform_Soviet_berezka_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Soviet berezka uniform, adapted to the winter wilderness.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/berezka.rsi
@@ -3438,7 +3438,7 @@
   graph: civ13_uniform_Soviet_amoeba_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Soviet camouflage outfit, designed specifically for reconnaissance units.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/amoeba.rsi
@@ -3464,7 +3464,7 @@
   graph: civ13_uniform_cadpat_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A canadian pattern uniform
   icon:
     sprite: Civ14/Clothing/exported/uniforms/cad_pat_winter.rsi
@@ -3490,7 +3490,7 @@
   graph: civ13_uniform_napoleonic_italian_soldier_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A uniform of the italian army. It has a dark green shirt with a bright
     orange trimmings along the arms and feet and a white saltire.
@@ -3518,7 +3518,7 @@
   graph: civ13_uniform_Italian_officer_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An Italian uniform, used by officers of the Italian Royal Army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/it_uni_officer.rsi
@@ -3544,7 +3544,7 @@
   graph: civ13_uniform_Greek_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Hellenic army uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ww2_japuni.rsi
@@ -3570,7 +3570,7 @@
   graph: civ13_uniform_blue_colonial_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set composed of a light blue linen shirt and short trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/civuni1.rsi
@@ -3596,7 +3596,7 @@
   graph: civ13_uniform_white_colonial_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set composed of a white linen shirt and black trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/civuni2.rsi
@@ -3622,7 +3622,7 @@
   graph: civ13_uniform_Hitlerjugend_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The standard uniform of the HJ.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/hj_uni.rsi
@@ -3648,7 +3648,7 @@
   graph: civ13_uniform_American_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An American uniform, used by soldiers in the US army during WW2.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/usuni2.rsi
@@ -3674,7 +3674,7 @@
   graph: civ13_uniform_American_tanker_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An American uniform, used by tankers in the US army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ustanker.rsi
@@ -3700,7 +3700,7 @@
   graph: civ13_uniform_U.S._Navy_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An american uniform, used by sailors in the US navy during WW2.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/us_navy.rsi
@@ -3726,7 +3726,7 @@
   graph: civ13_uniform_American_captain_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An American uniform, used by captains in the US army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/usuni_cap.rsi
@@ -3752,7 +3752,7 @@
   graph: civ13_uniform_American_MP_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An American uniform, used by Military Police in the US army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/usuni_mp.rsi
@@ -3778,7 +3778,7 @@
   graph: civ13_uniform_American_uniform_with_shirt
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     An American uniform, used by soldiers in the US army, this one has no
     jacket.
@@ -3806,7 +3806,7 @@
   graph: civ13_uniform_Finnish_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Finnish winter uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/geruni_ww2_winter.rsi
@@ -3832,7 +3832,7 @@
   graph: civ13_uniform_UPA_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Ukrayins'ka Povstans'ka Armiya uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/upa_uni.rsi
@@ -3858,7 +3858,7 @@
   graph: civ13_uniform_UPA_officer_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Ukrayins'ka Povstans'ka Armiya officer uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/upa_off.rsi
@@ -3884,7 +3884,7 @@
   graph: civ13_uniform_Blugoslavian_navy_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A blue uniform of the Blugoslavian Navy.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/blugoslavian_sailor.rsi
@@ -3910,7 +3910,7 @@
   graph: civ13_uniform_Redmenian_navy_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A red uniform of the Redmenian Navy.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/redmenian_sailor.rsi
@@ -3936,7 +3936,7 @@
   graph: civ13_uniform_white_medical_scrubs
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Sanitary clothing worn by medical personnel.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/scrubs_white.rsi
@@ -3962,7 +3962,7 @@
   graph: civ13_uniform_dark_green_medical_scrubs
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Sanitary clothing worn by medical personnel. This one is dark green.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/scrubs_darkgreen.rsi
@@ -3988,7 +3988,7 @@
   graph: civ13_uniform_light_green_medical_scrubs
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Sanitary clothing worn by medical personnel. This one is light green.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/scrubs_lightgreen.rsi
@@ -4014,7 +4014,7 @@
   graph: civ13_uniform_navy_medical_scrubs
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Sanitary clothing worn by medical personnel. This one is navy.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/scrubs_navy.rsi
@@ -4040,7 +4040,7 @@
   graph: civ13_uniform_irish_olive_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A uniform worn by the UN Irish troops.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/un_irish.rsi
@@ -4066,7 +4066,7 @@
   graph: civ13_uniform_african_mercenary_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light uniform worn by mercenaries.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/afr_merc.rsi
@@ -4092,7 +4092,7 @@
   graph: civ13_uniform_creed_shirt
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A white shirt of the creed.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ac_shirt.rsi
@@ -4118,7 +4118,7 @@
   graph: civ13_uniform_Abashiri_Guard_Uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A standard uniform for the guards of Abashiri Prison.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/abashiri_guard.rsi
@@ -4144,7 +4144,7 @@
   graph: civ13_uniform_Abashiri_Prison_Uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A standard yukata for the guards of Abashiri Prison.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/abashiri_prisoner.rsi
@@ -4170,7 +4170,7 @@
   graph: civ13_uniform_Russian_Army_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A standard Imperial Russian Army uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/rusuni.rsi
@@ -4196,7 +4196,7 @@
   graph: civ13_uniform_Russian_Army_uniform_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A standard Imperial Russian Army uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ww1_russian2.rsi
@@ -4222,7 +4222,7 @@
   graph: civ13_uniform_Russian_Army_officer_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A standard Imperial Russian Army uniform, with officer epaulettes.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ww1_russian_o.rsi
@@ -4248,7 +4248,7 @@
   graph: civ13_uniform_Red_Army_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A standard early 20th century Russian uniform, with no epaulettes or
     insignias.
@@ -4276,7 +4276,7 @@
   graph: civ13_uniform_Kuban_Cossak_beshmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A red beshmet with grey trousers, traditional of the Kuban Cossaks.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/kuban_cossak.rsi
@@ -4302,7 +4302,7 @@
   graph: civ13_uniform_light_brown_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit composed of a white shirt and light brown trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/modern1.rsi
@@ -4328,7 +4328,7 @@
   graph: civ13_uniform_black_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit composed of a white shirt and black trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/modern2.rsi
@@ -4354,7 +4354,7 @@
   graph: civ13_uniform_shirt_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit composed of a expensive white shirt and black trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/bman.rsi
@@ -4380,7 +4380,7 @@
   graph: civ13_uniform_grey_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit composed of a white shirt and grey trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/modern3.rsi
@@ -4406,7 +4406,7 @@
   graph: civ13_uniform_brown_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit composed of a white shirt and brown trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/modern4.rsi
@@ -4432,7 +4432,7 @@
   graph: civ13_uniform_modern_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit composed of a white shirt and black cargo pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/modern7.rsi
@@ -4458,7 +4458,7 @@
   graph: civ13_uniform_swat_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A uniform used by police special forces.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/swat.rsi
@@ -4484,7 +4484,7 @@
   graph: civ13_uniform_cleansuit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A white personal protective uniform against ambient radiation.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/cleansuit.rsi
@@ -4510,7 +4510,7 @@
   graph: civ13_uniform_swat_outfit_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A uniform used by police special forces.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/swat_new.rsi
@@ -4536,7 +4536,7 @@
   graph: civ13_uniform_Redmenian_Camo_Uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Redmenian combat uniform, slightly camoed.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/rdf_standardc.rsi
@@ -4562,7 +4562,7 @@
   graph: civ13_uniform_police_outfit_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A uniform used by police forces.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/police.rsi
@@ -4588,7 +4588,7 @@
   graph: civ13_uniform_prison_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Normally worn by criminals and scum.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/prisoner.rsi
@@ -4614,7 +4614,7 @@
   graph: civ13_uniform_russian_military_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit composed of camo pants and shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/milrus2.rsi
@@ -4640,7 +4640,7 @@
   graph: civ13_uniform_security_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit composed of a green jacket and black pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/baily.rsi
@@ -4666,7 +4666,7 @@
   graph: civ13_uniform_tactical_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit composed of a camo cargo pants and tan ubac.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/tactical1.rsi
@@ -4692,7 +4692,7 @@
   graph: civ13_uniform_pmc_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A outfit used by PMC units.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/pmc.rsi
@@ -4718,7 +4718,7 @@
   graph: civ13_uniform_fancy_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A outfit that is expensive and has style.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/mafia.rsi
@@ -4744,7 +4744,7 @@
   graph: civ13_uniform_worker_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A outfit used by construction workers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/engi.rsi
@@ -4770,7 +4770,7 @@
   graph: civ13_uniform_gorka_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A gorka outfit used by Spetsnaz.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/gorka.rsi
@@ -4796,7 +4796,7 @@
   graph: civ13_uniform_modern_skirt
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit composed of a black skirt and white shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/modern8.rsi
@@ -4822,7 +4822,7 @@
   graph: civ13_uniform_old_man_suit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit worn by fancy men in the 1800s.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/oldmansuit.rsi
@@ -4848,7 +4848,7 @@
   graph: civ13_uniform_fancy_outfit_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit worn by fancy men in the 1800s.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/cozyoldy.rsi
@@ -4874,7 +4874,7 @@
   graph: civ13_uniform_fancy_suit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit used by scum.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/peakyblinder.rsi
@@ -4900,7 +4900,7 @@
   graph: civ13_uniform_constable_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An black outfit used by enforcers of the law.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/constable.rsi
@@ -4926,7 +4926,7 @@
   graph: civ13_uniform_fire_fighter_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit used by fire fighters. Damn hot.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/oldfirefighter.rsi
@@ -4952,7 +4952,7 @@
   graph: civ13_uniform_black_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An dress used by fancy woman.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/black_tango_alt_s.rsi
@@ -4978,7 +4978,7 @@
   graph: civ13_uniform_clown_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit used by clowns.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/clown.rsi
@@ -5004,7 +5004,7 @@
   graph: civ13_uniform_jester_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A jester outfit. WHERE IS ME FUN HAHA.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/jester.rsi
@@ -5030,7 +5030,7 @@
   graph: civ13_uniform_farmer_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit composed of a checkered shirt and a denim bib.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/farmer_outfit.rsi
@@ -5056,7 +5056,7 @@
   graph: civ13_uniform_mechanic_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit composed of a white shirt and a leather bib.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/mechanic_outfit.rsi
@@ -5082,7 +5082,7 @@
   graph: civ13_uniform_blue_traditional_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A early 20th century style dress made to be well fitting, often worn by
     housewives
@@ -5110,7 +5110,7 @@
   graph: civ13_uniform_blue_shorts
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Basic blue shorts.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/shorts_blue.rsi
@@ -5136,7 +5136,7 @@
   graph: civ13_uniform_red_shorts
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Basic red shorts
   icon:
     sprite: Civ14/Clothing/exported/uniforms/shorts_red.rsi
@@ -5162,7 +5162,7 @@
   graph: civ13_uniform_yellow_shorts
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Basic yellow shorts
   icon:
     sprite: Civ14/Clothing/exported/uniforms/shorts_yellow.rsi
@@ -5188,7 +5188,7 @@
   graph: civ13_uniform_Philippine_Republic_Army_Uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A standard philippine republic army uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/filuni.rsi
@@ -5214,7 +5214,7 @@
   graph: civ13_uniform_Tiradores_de_Muerta_Uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A standard philippine republic army uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/filuni_sniper.rsi
@@ -5240,7 +5240,7 @@
   graph: civ13_uniform_US_Army_Officer_Uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A standard tropical US army officer uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/us_fp_off.rsi
@@ -5266,7 +5266,7 @@
   graph: civ13_uniform_Spanish_Republican_Uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Uniform used by the spanish republican forces.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/spanishrepublican.rsi
@@ -5292,7 +5292,7 @@
   graph: civ13_uniform_Spanish_Nationalist_Uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Uniform used by the spanish Nationalist forces.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/spanishnationalist.rsi
@@ -5318,7 +5318,7 @@
   graph: civ13_uniform_Brigadists_Uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Cheap Blue Uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/intbrigadist.rsi
@@ -5344,7 +5344,7 @@
   graph: civ13_uniform_Redmenian_army_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An easy to see uniform used by Blugoslavia.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/rdf_standard.rsi
@@ -5370,7 +5370,7 @@
   graph: civ13_uniform_Redmenian_Camo_Uniform_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Redmenian combat uniform used by squad leaders.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/rdf_standardc.rsi
@@ -5396,7 +5396,7 @@
   graph: civ13_uniform_Redmenian_Ceremonial_Uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A ceremonial uniform of Redmenia, used by officers and commanders
   icon:
     sprite: Civ14/Clothing/exported/uniforms/rdf_command.rsi
@@ -5422,7 +5422,7 @@
   graph: civ13_uniform_Redmenian_Camo_Uniform_1_2
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Redmenian combat uniform, slightly camoed.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/rdf_modern.rsi
@@ -5448,7 +5448,7 @@
   graph: civ13_uniform_NCR_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: NCR Trooper Fatigues
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ncr_fatigues.rsi
@@ -5474,7 +5474,7 @@
   graph: civ13_uniform_Legionaire_Armor
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A red T-shirt and dark skirt with leather armor overtop. Commonly worn by
     Caesar's Legion.
@@ -5502,7 +5502,7 @@
   graph: civ13_uniform_fancy_colonial_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set composed of a quality white linen shirt and black trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/civuni4.rsi
@@ -5528,7 +5528,7 @@
   graph: civ13_uniform_short_sleeved_colonial_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A set composed of a light white linen shirt with short sleeves and black
     trousers.
@@ -5556,7 +5556,7 @@
   graph: civ13_uniform_green_colonial_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set composed of a green linen shirt and black trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/civuni5.rsi
@@ -5582,7 +5582,7 @@
   graph: civ13_uniform_pink_colonial_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set composed of a pink linen shirt and black trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/civuni6.rsi
@@ -5608,7 +5608,7 @@
   graph: civ13_uniform_doctors_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A sterile, nicely pressed suit for doctors.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ba_suit.rsi
@@ -5634,7 +5634,7 @@
   graph: civ13_uniform_dark_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A dark dress, used by peasant women.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/dress1.rsi
@@ -5660,7 +5660,7 @@
   graph: civ13_uniform_blue_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A blue dress.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/dress2.rsi
@@ -5686,7 +5686,7 @@
   graph: civ13_uniform_brown_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A brown dress.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/dress3.rsi
@@ -5712,7 +5712,7 @@
   graph: civ13_uniform_green_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A green dress.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/dressg.rsi
@@ -5738,7 +5738,7 @@
   graph: civ13_uniform_red_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A red dress.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/dressr.rsi
@@ -5764,7 +5764,7 @@
   graph: civ13_uniform_conquistador_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A regal uniform often worn by a class of explorers known as conquistadors in
     search of wealth.
@@ -5792,7 +5792,7 @@
   graph: civ13_uniform_pilgrim_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of plain black and grey clothes worn by transient followers of faith.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/pilgrim.rsi
@@ -5818,7 +5818,7 @@
   graph: civ13_uniform_black_stripes_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of clothes with a black striped shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/pirate1.rsi
@@ -5844,7 +5844,7 @@
   graph: civ13_uniform_red_stripes_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of clothes with a red striped shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/pirate2.rsi
@@ -5870,7 +5870,7 @@
   graph: civ13_uniform_blue_stripes_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of clothes with a blue striped shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/pirate3.rsi
@@ -5896,7 +5896,7 @@
   graph: civ13_uniform_baggy_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of clothes with a white shirt and baggy trousers
   icon:
     sprite: Civ14/Clothing/exported/uniforms/pirate4.rsi
@@ -5922,7 +5922,7 @@
   graph: civ13_uniform_sleeveless_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of clothes with a sleeveless shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/pirate5.rsi
@@ -5948,7 +5948,7 @@
   graph: civ13_uniform_british_sailor_clothes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of royal navy sailor clothes, with a white shirt and trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/british_sailor1.rsi
@@ -5974,7 +5974,7 @@
   graph: civ13_uniform_open_british_sailor_clothes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A set of royal navy sailor clothes, with an unbuttoned white shirt and
     trousers.
@@ -6002,7 +6002,7 @@
   graph: civ13_uniform_british_sailor_trousers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: White british sailor trousers. For when it's too hot to wear a shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/british_sailor3.rsi
@@ -6028,7 +6028,7 @@
   graph: civ13_uniform_grey_british_sailor_clothes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of royal navy sailor clothes, with a grey shirt and trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/british_sailor4.rsi
@@ -6054,7 +6054,7 @@
   graph: civ13_uniform_portuguese_sailor_clothes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A set of portuguese navy sailor clothes, with a white shirt and green
     trousers.
@@ -6082,7 +6082,7 @@
   graph: civ13_uniform_open_portuguese_sailor_clothes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A set of portuguese navy sailor clothes, with an unbuttoned white shirt and
     geen trousers.
@@ -6110,7 +6110,7 @@
   graph: civ13_uniform_portuguese_sailor_trousers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Green portuguese sailor trousers. For when it's too hot to wear a shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor3.rsi
@@ -6136,7 +6136,7 @@
   graph: civ13_uniform_portuguese_sailor_clothes_with_scarf
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A set of portuguese navy sailor clothes, with a white shirt and green
     trousers. There's a green scarf attached.
@@ -6164,7 +6164,7 @@
   graph: civ13_uniform_spanish_sailor_clothes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of spanish navy sailor clothes, with brown shirt and trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/spanish_sailor1.rsi
@@ -6190,7 +6190,7 @@
   graph: civ13_uniform_open_spanish_sailor_clothes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A set of spanish navy sailor clothes, with an unbuttoned brown shirt and
     trousers.
@@ -6218,7 +6218,7 @@
   graph: civ13_uniform_spanish_sailor_trousers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Brown spanish sailor trousers. For when it's too hot to wear a shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/spanish_sailor3.rsi
@@ -6244,7 +6244,7 @@
   graph: civ13_uniform_spanish_soldier_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Blue spanish soldier trousers and a fancy white shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/spanish_soldier.rsi
@@ -6270,7 +6270,7 @@
   graph: civ13_uniform_french_officer_clothes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A set of french officer clothes, with a light blue shirt and black trousers,
     both with golden buttons.
@@ -6298,7 +6298,7 @@
   graph: civ13_uniform_baycona_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of baycona officer clothes, this seems to be very old.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/baycona.rsi
@@ -6324,7 +6324,7 @@
   graph: civ13_uniform_french_sailor_clothes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of french navy sailor clothes, with light blue shirt and trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/french_sailor1.rsi
@@ -6350,7 +6350,7 @@
   graph: civ13_uniform_open_french_sailor_clothes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A set of french navy sailor clothes, with an unbuttoned light blue shirt and
     trousers.
@@ -6378,7 +6378,7 @@
   graph: civ13_uniform_french_sailor_trousers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Light blue french sailor trousers. For when it's too hot to wear a shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/french_sailor3.rsi
@@ -6404,7 +6404,7 @@
   graph: civ13_uniform_dutch_sailor_clothes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of dutch navy sailor clothes, with a white shirt and orange trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/dutch_sailor1.rsi
@@ -6430,7 +6430,7 @@
   graph: civ13_uniform_open_dutch_sailor_clothes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A set of dutch navy sailor clothes, with an unbuttoned white shirt and
     orange trousers.
@@ -6458,7 +6458,7 @@
   graph: civ13_uniform_dutch_sailor_trousers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Orange dutch sailor trousers. For when it's too hot to wear a shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/dutch_sailor3.rsi
@@ -6484,7 +6484,7 @@
   graph: civ13_uniform_officer_clothes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A set of officer clothes, with a white shirt and black trousers, both with
     golden buttons.
@@ -6512,7 +6512,7 @@
   graph: civ13_uniform_dutch_army_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of united provinces army clothes. Yellow shirts and trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/dutch_army.rsi
@@ -6538,7 +6538,7 @@
   graph: civ13_uniform_portuguese_army_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of portuguese army clothes. Red shirt with black and white trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/portuguese_army.rsi
@@ -6564,7 +6564,7 @@
   graph: civ13_uniform_French_Army_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of french army clothes. White shirt with blue and white trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/french_army.rsi
@@ -6590,7 +6590,7 @@
   graph: civ13_uniform_nightingale_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A modest nurse dress with a sown on apron. Often found worn by nurses
     tending to the injuries within wartime field hospitals.
@@ -6618,7 +6618,7 @@
   graph: civ13_uniform_napoleonic_french_soldier_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A uniform of the french army, with golden epaulettes, black shirt and a gold
     buttoned white gilet.
@@ -6646,7 +6646,7 @@
   graph: civ13_uniform_napoleonic_blackwatch_soldier_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A uniform of the british army's scottish infantry. Often worn in fearsome
     highland charges with a red shirt, itchy kilt and a white saltire.
@@ -6674,7 +6674,7 @@
   graph: civ13_uniform_napoleonic_walloon_soldier_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A uniform of the spanish army. Often worn by swiss conscripts loyal to spain
     it has a dark navy shirt with a red gilet with gold buttons.
@@ -6702,7 +6702,7 @@
   graph: civ13_uniform_EMR_pattern_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The standard Russian Federation Army camo uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/russian_emr.rsi
@@ -6728,7 +6728,7 @@
   graph: civ13_uniform_patriotic_american_soldier_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A uniform of the american army. Often worn by proud defenders of freedom and
     liberty it is blue with a white saltire and a red undershirt.
@@ -6756,7 +6756,7 @@
   graph: civ13_uniform_napoleonic_prussian_soldier_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A uniform of the prussian army. Often worn by professional troops it has a
     navy shirt with red and white leather shoulder epaulettes with a assortment
@@ -6785,7 +6785,7 @@
   graph: civ13_uniform_napoleonic_jaeger_soldier_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A uniform of the joint austrian and german army. It has a dark green shirt
     with black saltire, and a lime green collar and epaulletes.
@@ -6813,7 +6813,7 @@
   graph: civ13_uniform_napoleonic_portuguese_soldier_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A uniform of the portuguese army. Often worn by pennisula soldiers, it has a
     dark navy shirt with a white saltire.
@@ -6841,7 +6841,7 @@
   graph: civ13_uniform_japanese_soldier_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A uniform of the imperial japanese army. It has a black buttoned shirt and
     blue trousers with a white harness.
@@ -6869,7 +6869,7 @@
   graph: civ13_uniform_merchant_suit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A fancy imperial merchant suit.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/merchant_suit.rsi
@@ -6895,7 +6895,7 @@
   graph: civ13_uniform_Ripped_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of blue jeans and brown hoodie.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/scavfit.rsi
@@ -6921,7 +6921,7 @@
   graph: civ13_uniform_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A set of tan pants and a brown coat.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/wastelander.rsi
@@ -6947,7 +6947,7 @@
   graph: civ13_uniform_pioneer_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A red shirt with leather trousers, commonly used among pioneers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/pioneer_outfit.rsi
@@ -6973,7 +6973,7 @@
   graph: civ13_uniform_rancher_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A blue shirt with light beige trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/rancher_outfit.rsi
@@ -6999,7 +6999,7 @@
   graph: civ13_uniform_cowboy_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A white shirt with leather trousers, worn among cowboys and ranchers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/cowboy_outfit.rsi
@@ -7025,7 +7025,7 @@
   graph: civ13_uniform_checkered_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A red-and-white checkered shirt and light beige trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/checkered_outfit.rsi
@@ -7051,7 +7051,7 @@
   graph: civ13_uniform_worker_outfit_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A navy blue shirt with denim trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/worker_outfit.rsi
@@ -7077,7 +7077,7 @@
   graph: civ13_uniform_texan_shirt_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A white undershirt with beige briefs. it has texan style bowtie.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/texas.rsi
@@ -7103,7 +7103,7 @@
   graph: civ13_uniform_lederhosen
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The traditional south german attire.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/lederhosen.rsi
@@ -7129,7 +7129,7 @@
   graph: civ13_uniform_classy_outlaw_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A well made black and red outfit with white arms and gold buttons. Often
     worn by self styled leaders, always with a plan.
@@ -7157,7 +7157,7 @@
   graph: civ13_uniform_outlaw_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A blue shirt with blue denim trousers and white suspenders. Often worn by
     people at arms length with the wrong side of the law, clothes sense is no
@@ -7186,7 +7186,7 @@
   graph: civ13_uniform_bartender_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A stylish bartender outfit.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/bartender.rsi
@@ -7212,7 +7212,7 @@
   graph: civ13_uniform_black_victorian_shirt_and_vest
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A no nonsense black shirt & vest with gold buttons, made in victorian style.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/victorianvest.rsi
@@ -7238,7 +7238,7 @@
   graph: civ13_uniform_black_victorian_shirt_and_red_vest
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A no nonsense black shirt & red vest with gold buttons, made in victorian
     style.
@@ -7266,7 +7266,7 @@
   graph: civ13_uniform_red_victorian_shirt_and_black_vest
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A no nonsense red shirt & black vest with gold buttons, made in victorian
     style.
@@ -7294,7 +7294,7 @@
   graph: civ13_uniform_white_shirt_and_black_waistcoat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A no nonsense black waistcoat with white shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/waistcoat.rsi
@@ -7309,6 +7309,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 5
               doAfter: 11
     - node: end
@@ -7319,7 +7320,7 @@
   graph: civ13_uniform_saloon_dress_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A eye catching dress often worn by frontier damsels looking to drum up
     business.
@@ -7347,7 +7348,7 @@
   graph: civ13_uniform_cheongsam_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A tight fitting and attractive dress commmonly worn by women hailing from
     the orient.
@@ -7375,7 +7376,7 @@
   graph: civ13_uniform_plain_black_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A plain black dress for women to properly uphold their modesty
   icon:
     sprite: Civ14/Clothing/exported/uniforms/dress_black.rsi
@@ -7401,7 +7402,7 @@
   graph: civ13_uniform_white_wedding_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A cermonial white wedding dress. Something old, something new, something
     borrowed, something blue.
@@ -7429,7 +7430,7 @@
   graph: civ13_uniform_victorian_black_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A black dress for a lady, made in a victorian style.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/victorianblackdress.rsi
@@ -7455,7 +7456,7 @@
   graph: civ13_uniform_neck_length_black_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A prim and proper black dress, covers from neck to ankle.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/victorian_dress.rsi
@@ -7470,6 +7471,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 4
               doAfter: 7
     - node: end
@@ -7480,7 +7482,7 @@
   graph: civ13_uniform_union_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A blue uniform worn by union soldiers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/union_uniform.rsi
@@ -7506,7 +7508,7 @@
   graph: civ13_uniform_confederate_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A grey uniform worn by confederate soldiers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/confederate_uniform1.rsi
@@ -7532,7 +7534,7 @@
   graph: civ13_uniform_confederate_uniform_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A grey uniform worn by confederate soldiers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/confederate_uniform1.rsi
@@ -7558,7 +7560,7 @@
   graph: civ13_uniform_confederate_uniform_1_2
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A grey uniform worn by confederate soldiers, however this one has union
     pants.
@@ -7586,7 +7588,7 @@
   graph: civ13_uniform_eccentric_businessman_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A cream jacket with white undershirt, the jacket and the shirt seem to be
     sown into one piece for convenience and it has texan style bowtie. This
@@ -7615,7 +7617,7 @@
   graph: civ13_uniform_white_tunic_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A long white tunic, with golden trimmings.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/white_tunic_long.rsi
@@ -7641,7 +7643,7 @@
   graph: civ13_uniform_crusader_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A white tunic with a red cross in the middle.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/crusader1.rsi
@@ -7667,7 +7669,7 @@
   graph: civ13_uniform_leather_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light leather tunic.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/leather_tunic.rsi
@@ -7693,7 +7695,7 @@
   graph: civ13_uniform_kilt
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A green and tartan woolen kilt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/kilt.rsi
@@ -7708,6 +7710,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 2
               doAfter: 10
     - node: end
@@ -7718,7 +7721,7 @@
   graph: civ13_uniform_beggar_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Loosely stitched from patch cloth, contains deep pockets for spare change.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/beggar_clothing.rsi
@@ -7733,6 +7736,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 4
               doAfter: 8
     - node: end
@@ -7743,7 +7747,7 @@
   graph: civ13_uniform_blue_white_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light blue and white tunic.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/blue_tunic2.rsi
@@ -7769,7 +7773,7 @@
   graph: civ13_uniform_yellow_red_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light red and yellow tunic.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/red_tunic2.rsi
@@ -7795,7 +7799,7 @@
   graph: civ13_uniform_fancy_arabic_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light fitting tunic with arabic motifs.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/arabw_tunic.rsi
@@ -7821,7 +7825,7 @@
   graph: civ13_uniform_light_brown_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light, loose fitting tunic.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/arab1.rsi
@@ -7847,7 +7851,7 @@
   graph: civ13_uniform_emirate_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A loose fitting green tunic with arabic motifs and long sleeves. Often worn
     by emirate rulers
@@ -7875,7 +7879,7 @@
   graph: civ13_uniform_light_brown_arabic_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light, loose fitting arabic tunic.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/arab1.rsi
@@ -7901,7 +7905,7 @@
   graph: civ13_uniform_light_white_arabic_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light, loose fitting arabic tunic.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/arab2.rsi
@@ -7927,7 +7931,7 @@
   graph: civ13_uniform_white_arabic_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A loose fitting arabic tunic.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/arab3.rsi
@@ -7953,7 +7957,7 @@
   graph: civ13_uniform_Wise_Knight_robes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A lightly darkened robe used by wise knights.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/wise_knight.rsi
@@ -7979,7 +7983,7 @@
   graph: civ13_uniform_Arrogant_Warrior_robes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A darkened robe used by upset warriors.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/arrogant_warrior.rsi
@@ -8005,7 +8009,7 @@
   graph: civ13_uniform_steppe_wool_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A brown tunic made out of wool. Often worn by nomads upon the great steppes.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/steppe_wool_tunic.rsi
@@ -8020,6 +8024,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 3
               doAfter: 10
     - node: end
@@ -8030,7 +8035,7 @@
   graph: civ13_uniform_count_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A fancy count outfit.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/count_outfit.rsi
@@ -8056,7 +8061,7 @@
   graph: civ13_uniform_purple_renaissance_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A baggy renaissance-style outfit.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/renaissance.rsi
@@ -8082,7 +8087,7 @@
   graph: civ13_uniform_doge_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A gold embroidered baggy renaissance-style outfit. Often worn by republic
     rulers over many petty merchantile aristocrats.
@@ -8110,7 +8115,7 @@
   graph: civ13_uniform_pontifical_renaissance_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A baggy renaissance-style outfit, with colored stripes.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/pontifical.rsi
@@ -8136,7 +8141,7 @@
   graph: civ13_uniform_nun_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A very modest nun dress. With a small cross around the neck, to aide
     protection against temptation.
@@ -8164,7 +8169,7 @@
   graph: civ13_uniform_black_priest_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A plain black outfit with a clerical white collar around the neck, often
     worn by priests of organized religions.
@@ -8192,7 +8197,7 @@
   graph: civ13_uniform_green_landschneckt_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A ornate and bright uniform often worn by elite mercenaries & central
     european troops during the 15th century.
@@ -8220,7 +8225,7 @@
   graph: civ13_uniform_huipil
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light cloth, with blue trimmings.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/huipil.rsi
@@ -8246,7 +8251,7 @@
   graph: civ13_uniform_half_huipil
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light cloth, covering the lower part of the body. With red trimmings.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/halfhuipil.rsi
@@ -8272,7 +8277,7 @@
   graph: civ13_uniform_dark_hanfu
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light, loose fitting hanfu.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/dark_hanfu.rsi
@@ -8298,7 +8303,7 @@
   graph: civ13_uniform_light_artisan_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light, loose fitting bit of clothes.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/artisan3.rsi
@@ -8324,7 +8329,7 @@
   graph: civ13_uniform_artisan_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light, loose fitting bit of clothes.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/artisan1.rsi
@@ -8350,7 +8355,7 @@
   graph: civ13_uniform_dark_artisan_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light, loose fitting bit of clothes.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/artisan2.rsi
@@ -8376,7 +8381,7 @@
   graph: civ13_uniform_haori
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light, loose fitting bit of clothes, worn in japan.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/haori_custom.rsi
@@ -8402,7 +8407,7 @@
   graph: civ13_uniform_haori_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light, loose fitting bit of clothes, worn in japan.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/haori_samurai.rsi
@@ -8428,7 +8433,7 @@
   graph: civ13_uniform_stormcloak_curass
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A blue tabard over some leather armor with chainmail underneath.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/stormcloak.rsi
@@ -8454,7 +8459,7 @@
   graph: civ13_uniform_Ulfric_Stormcloaks_clothes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A suit of blue fine clothing over some trousers
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ulfric.rsi
@@ -8480,7 +8485,7 @@
   graph: civ13_uniform_whiterun_guard_curass
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An orange tabard over some leather armor with chainmail underneath.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/whiterun.rsi
@@ -8506,7 +8511,7 @@
   graph: civ13_uniform_imperial_armor
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A red tunic with leather armor overtop.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/tes13_imperial.rsi
@@ -8532,7 +8537,7 @@
   graph: civ13_uniform_Jarl_Bolgrufs_clothes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A suit of fine clothing over some trousers
   icon:
     sprite: Civ14/Clothing/exported/uniforms/bolgruf.rsi
@@ -8558,7 +8563,7 @@
   graph: civ13_uniform_russian_military_outfit_VSR_93
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     An outfit composed of the VSR93 camo pants and shirt, along with a high
     waistbelt.
@@ -8586,7 +8591,7 @@
   graph: civ13_uniform_russian_OMON_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An outfit designed and issued for the OMON forces of the Russian Federation.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/omon.rsi
@@ -8612,7 +8617,7 @@
   graph: civ13_uniform_black_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An all black tunic and trousers outfit.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/insurgent_black.rsi
@@ -8638,7 +8643,7 @@
   graph: civ13_uniform_sand_colored_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A dark yellow, sand-colored tunic and trousers outfit.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/insurgent_sand.rsi
@@ -8664,7 +8669,7 @@
   graph: civ13_uniform_sand_colored_tunic_with_woodland_camo_trousers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A dark yellow, sand-colored tunic with woodland camo trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/insurgent_sand_woodland.rsi
@@ -8690,7 +8695,7 @@
   graph: civ13_uniform_sand_colored_uniform_with_desert_camo_trousers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A dark yellow, sand-colored uniform with desert camo trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/insurgent_sand_dcu.rsi
@@ -8716,7 +8721,7 @@
   graph: civ13_uniform_light_brown_uniform_with_green_trousers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light brown uniform with green trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/insurgent_sand_green.rsi
@@ -8742,7 +8747,7 @@
   graph: civ13_uniform_black_tunic_with_desert_camo_trousers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A black tunic with desert camo trousers, worn by insurgent leaders.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/insurgent_leader.rsi
@@ -8768,7 +8773,7 @@
   graph: civ13_uniform_IDF_olive_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The plain olive coloured uniform of the Israeli Defense Forces.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/idf_olive.rsi
@@ -8794,7 +8799,7 @@
   graph: civ13_uniform_motorist_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A casual jeans and white shirt combo.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/motorist.rsi
@@ -8820,7 +8825,7 @@
   graph: civ13_uniform_war_correspondent_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     Casual brown trousers and a black shirt, perfect for running away from
     gunfire.
@@ -8848,7 +8853,7 @@
   graph: civ13_uniform_punk_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A rowdy alternative culture purple sleeveless shirt and purple trousers for
     bringing down the establishment.
@@ -8876,7 +8881,7 @@
   graph: civ13_uniform_paramedic_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A uniform used by EMS workers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/paramedic.rsi
@@ -8902,7 +8907,7 @@
   graph: civ13_uniform_firefighter_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A uniform used by firefighters. Offers heat protection on the legs.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/firefighter.rsi
@@ -8928,7 +8933,7 @@
   graph: civ13_uniform_shirt_outfit_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A brown shirt with black pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/detective1.rsi
@@ -8954,7 +8959,7 @@
   graph: civ13_uniform_shirt_outfit_1_2
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A blue shirt with black pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/detective2.rsi
@@ -8980,7 +8985,7 @@
   graph: civ13_uniform_shirt_outfit_1_2_3
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A black shirt with grey pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/detective3.rsi
@@ -9006,7 +9011,7 @@
   graph: civ13_uniform_track_pants
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A shirt with tracksuit pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/trackpants.rsi
@@ -9032,7 +9037,7 @@
   graph: civ13_uniform_tactical_outfit_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A outfit used by tactical units.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/tacti.rsi
@@ -9058,7 +9063,7 @@
   graph: civ13_uniform_tacticool_hawaiian_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     Assorted surplus cammo trousers with a nice hawaiian shirt for all your
     operating needs.
@@ -9086,7 +9091,7 @@
   graph: civ13_uniform_camouflage_shirt_with_blue_pants
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A camouflage shirt with blue pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/boomerwaffen1.rsi
@@ -9112,7 +9117,7 @@
   graph: civ13_uniform_tanktop_with_camouflage_pants
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A tanktop with camouflage pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/boomerwaffen2.rsi
@@ -9138,7 +9143,7 @@
   graph: civ13_uniform_black_shirt_with_camouflage_pants
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A black shirt with camouflage pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/boomerwaffen3.rsi
@@ -9164,7 +9169,7 @@
   graph: civ13_uniform_modern_shaman_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A modern shaman outfit.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/modern_shaman.rsi
@@ -9190,7 +9195,7 @@
   graph: civ13_uniform_ACU_pattern_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The standard Ukrainian Ground Forces camo uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ukraine_acu.rsi
@@ -9216,7 +9221,7 @@
   graph: civ13_uniform_EMR_pattern_uniform_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The standard Russian Federation Army camo uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/russian_emr_vdv.rsi
@@ -9242,7 +9247,7 @@
   graph: civ13_uniform_EMR_desert_pattern_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The standard Russian Federation Army camo uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/russian_emr_desert.rsi
@@ -9268,7 +9273,7 @@
   graph: civ13_uniform_Syrian_Army_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Standard Uniform of the syrian army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/syr_army.rsi
@@ -9294,7 +9299,7 @@
   graph: civ13_uniform_Free_Syrian_Army_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Standard uniform used by the FSA forces.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/salv_army.rsi
@@ -9320,7 +9325,7 @@
   graph: civ13_uniform_jeans_with_suspenders
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of jeans secured by suspenders.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/warband1.rsi
@@ -9346,7 +9351,7 @@
   graph: civ13_uniform_camo_trousers_and_white_sleeveless_shirt
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A mix of woodland camoflage trousers and a white sleeveless shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/warband2.rsi
@@ -9372,7 +9377,7 @@
   graph: civ13_uniform_cadpat_uniform_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A canadian pattern uniform
   icon:
     sprite: Civ14/Clothing/exported/uniforms/cad_pat.rsi
@@ -9398,7 +9403,7 @@
   graph: civ13_uniform_cadpat_uniform_1_2
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A canadian pattern uniform
   icon:
     sprite: Civ14/Clothing/exported/uniforms/cad_pat_arid.rsi
@@ -9424,7 +9429,7 @@
   graph: civ13_uniform_type_07_chinese_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The standard modern Chinese military uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/type07.rsi
@@ -9450,7 +9455,7 @@
   graph: civ13_uniform_floral_shirt_with_light_pants
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of light pants with a red floral shirt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/cartel1.rsi
@@ -9476,7 +9481,7 @@
   graph: civ13_uniform_M93_DPM_camo_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A DPM variant camo uniform used by the Dutch Army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/dutch_dpm.rsi
@@ -9503,7 +9508,7 @@
   graph: civ13_uniform_cotton_loincloth
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An wrap of cotton loincloth, worn around the waist.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/loincloth1.rsi
@@ -9529,7 +9534,7 @@
   graph: civ13_uniform_leaf_skirt
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A wrap of leaves, worn around the waist.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/leaves_skirt.rsi
@@ -9544,6 +9549,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 4
               doAfter: 10
     - node: end
@@ -9554,7 +9560,7 @@
   graph: civ13_uniform_long_leaf_skirt
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: ""
   icon:
     sprite: Civ14/Clothing/exported/uniforms/leaves_skirt_long.rsi
@@ -9569,6 +9575,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 6
               doAfter: 14
     - node: end
@@ -9579,7 +9586,7 @@
   graph: civ13_uniform_au_naturel_leaf_covering
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: leaves arranged on the body to preserve modesty
   icon:
     sprite: Civ14/Clothing/exported/uniforms/adam.rsi
@@ -9594,6 +9601,7 @@
       edges:
         - to: end
           steps:
+            - material: Cloth
             - amount: 2
               doAfter: 2
     - node: end
@@ -9604,7 +9612,7 @@
   graph: civ13_uniform_short_leather_loincloth
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A wrap of leather cloth, worn around the waist.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/indian1.rsi
@@ -9630,7 +9638,7 @@
   graph: civ13_uniform_long_leather_loincloth
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A wrap of leather cloth, worn around the waist.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/indian2.rsi
@@ -9656,7 +9664,7 @@
   graph: civ13_uniform_covering_leather_loincloth
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A wrap of leather cloth, worn around the waist and the chest.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/indian3.rsi
@@ -9682,7 +9690,7 @@
   graph: civ13_uniform_indian_chief_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An elaborate wrap of leather cloth, worn by tribal chiefs.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/indianchef.rsi
@@ -9708,7 +9716,7 @@
   graph: civ13_uniform_pygmy_shaman_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A white cloth, worn around the waist, painted with religious symbols.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/indianshaman.rsi
@@ -9734,7 +9742,7 @@
   graph: civ13_uniform_indian_shaman_clothing
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A white cloth, worn around the waist, painted with religious symbols.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/indianshaman.rsi
@@ -9760,7 +9768,7 @@
   graph: civ13_uniform_big_leopard_pelt
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A massive leopard pelt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/giant_leopard_pelt.rsi
@@ -9786,7 +9794,7 @@
   graph: civ13_uniform_slene_cattle_fur_loincloth
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A wrap of cattle fur tassles fashioned into a loincloth, often worn by the
     zulu people.
@@ -9814,7 +9822,7 @@
   graph: civ13_uniform_shirtless_lizard_pants
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A tight fitting pair of lizard scale pants. When you're this on-point;
     wearing a shirt would just cramp your style.
@@ -9842,7 +9850,7 @@
   graph: civ13_uniform_British_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A khaki trench suit worn by soldiers of the British Army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/trenchsuit.rsi
@@ -9868,7 +9876,7 @@
   graph: civ13_uniform_Polish_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Polish uniform, used by the Polish Army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/trenchsuit.rsi
@@ -9894,7 +9902,7 @@
   graph: civ13_uniform_French_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A French light blue uniform, used by the French Army.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/ww1_french.rsi
@@ -9920,7 +9928,7 @@
   graph: civ13_uniform_Green_Strap_Bikini
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Seems to be two piece green Bikini, the top is held up by straps.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/g_strapbikini.rsi
@@ -9946,7 +9954,7 @@
   graph: civ13_uniform_Green_Band_Bikini
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     Seems to be two piece green Bikini, the top is held up by a tight horizontal
     cloth.
@@ -9974,7 +9982,7 @@
   graph: civ13_uniform_Green_Swimtrunks
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Seems to be pants made for swiming in.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/g_swimtrunks.rsi
@@ -10000,7 +10008,7 @@
   graph: civ13_uniform_football_jersey
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A football team's official jersey.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/football_custom.rsi
@@ -10026,7 +10034,7 @@
   graph: civ13_uniform_stola
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A simple cloth stola, roman clothing for women.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/fem_roman.rsi
@@ -10052,7 +10060,7 @@
   graph: civ13_uniform_short_loincloth
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A simple, small loincloth.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/customspartan.rsi
@@ -10078,7 +10086,7 @@
   graph: civ13_uniform_shendyt
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A kilt-like cloth used around the waist.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/customshendyt.rsi
@@ -10104,7 +10112,7 @@
   graph: civ13_uniform_celtic_trousers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Thick cloth celtic trousers.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/customceltic.rsi
@@ -10130,7 +10138,7 @@
   graph: civ13_uniform_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A simple cloth tunic, with a leather belt.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/customtunic.rsi
@@ -10156,7 +10164,7 @@
   graph: civ13_uniform_arabic_tunic
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light cloth tunic, in arabic style.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/customarabictunic.rsi
@@ -10182,7 +10190,7 @@
   graph: civ13_uniform_renaissance_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A renaissance-style outfit.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/customren.rsi
@@ -10208,7 +10216,7 @@
   graph: civ13_uniform_renaissance_outfit_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A renaissance-style pontifical outfit.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/custom_pontifical.rsi
@@ -10234,7 +10242,7 @@
   graph: civ13_uniform_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A female dress.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/customdress.rsi
@@ -10260,7 +10268,7 @@
   graph: civ13_uniform_dress_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A female dress.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/custombuttonup_full.rsi
@@ -10286,7 +10294,7 @@
   graph: civ13_uniform_tribal_robe
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A tribal robe.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/tribalrobe.rsi
@@ -10312,7 +10320,7 @@
   graph: civ13_uniform_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A victorian Era uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/customuni.rsi
@@ -10338,7 +10346,7 @@
   graph: civ13_uniform_camo_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A modern era camouflaged uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/modern_camo_custom.rsi
@@ -10364,7 +10372,7 @@
   graph: civ13_uniform_pyjamas
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Basic striped pyjamas.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/custompyjamas.rsi
@@ -10390,7 +10398,7 @@
   graph: civ13_uniform_crinoine_dress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A laced dress.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/crinoline_dress.rsi
@@ -10416,7 +10424,7 @@
   graph: civ13_uniform_modern_outfit_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A generic outfit.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/custom_mod_full.rsi
@@ -10442,7 +10450,7 @@
   graph: civ13_uniform_Facility_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A sterile white uniform.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/custom_mod_full.rsi
@@ -10468,7 +10476,7 @@
   graph: civ13_uniform_baggy_modern_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: ""
   icon:
     sprite: Civ14/Clothing/exported/uniforms/custom_modbaggy_full.rsi
@@ -10494,7 +10502,7 @@
   graph: civ13_uniform_colonial_outfit
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: ""
   icon:
     sprite: Civ14/Clothing/exported/uniforms/custom_col_full.rsi
@@ -10520,7 +10528,7 @@
   graph: civ13_uniform_track_pants_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A shirt with tracksuit pants.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/trackpants_custom.rsi
@@ -10546,7 +10554,7 @@
   graph: civ13_uniform_cafr_uniform
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A camouflage uniform issued by the Central Asian Federal Republic.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/cafr_newiform.rsi
@@ -10572,7 +10580,7 @@
   graph: civ13_uniform_Unga_Bunga_jersey_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A football jersey of the Unga Bunga United, U.B.U.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/football_red.rsi
@@ -10598,7 +10606,7 @@
   graph: civ13_uniform_flamengo_shirt_with_yellow_shorts
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A C.R. Flamengo football shirt, with yellow swimming trunks.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/flamengo.rsi
@@ -10624,7 +10632,7 @@
   graph: civ13_uniform_Blugoslavia_goalkeeper_jersey
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A football jersey of the goalkeeper of Blugoslavia Football Club, C.T.F.C.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/football_blue_gk.rsi
@@ -10650,7 +10658,7 @@
   graph: civ13_uniform_Redmenia_jersey
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A football jersey of the Redmenia United, U.B.U.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/football_red.rsi
@@ -10676,7 +10684,7 @@
   graph: civ13_uniform_Blugoslavia_jersey
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A football jersey of the Blugoslavia Football Club, C.T.F.C.
   icon:
     sprite: Civ14/Clothing/exported/uniforms/football_blue.rsi
