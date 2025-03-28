@@ -4,7 +4,7 @@
   graph: civ13_head_mamluk_conical_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A conical helmet, with nose and ear protection in mamluk style.
   icon:
     sprite: Civ14/Clothing/exported/hats/mamluk_helmet.rsi
@@ -30,7 +30,7 @@
   graph: civ13_head_Imperial_Red_Guard_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A reinforced plastoid helmet of the Extra-Galactic Empire's Red Guards.
   icon:
     sprite: Civ14/Clothing/exported/hats/redguard.rsi
@@ -56,7 +56,7 @@
   graph: civ13_head_Imperial_Senate_Guard_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A reinforced plastoid helmet of the Extra-Galactic Empire's Senate Guards.
   icon:
     sprite: Civ14/Clothing/exported/hats/senateguard.rsi
@@ -82,7 +82,7 @@
   graph: civ13_head_Phase_I_Replicant_Trooper_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A reinforced plastoid helmet of the Republic Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/replicant_helmet.rsi
@@ -108,7 +108,7 @@
   graph: civ13_head_Phase_I_Replicant_ARF_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A reinforced plastoid helmet of the Republic Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/repARF_helmet.rsi
@@ -134,7 +134,7 @@
   graph: civ13_head_Phase_I_Replicant_Airborne_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A reinforced airborne helmet of the Republic Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/repairborne_helmet.rsi
@@ -160,7 +160,7 @@
   graph: civ13_head_Stormtrooper_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A reinforced helmet of the Imperial Storm Corps.
   icon:
     sprite: Civ14/Clothing/exported/hats/repstormtrooper_helmet.rsi
@@ -186,7 +186,7 @@
   graph: civ13_head_Storm_Surgeon_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A reinforced helmet of the Imperial Medical Corps.
   icon:
     sprite: Civ14/Clothing/exported/hats/stormsurgeon_helmet.rsi
@@ -212,7 +212,7 @@
   graph: civ13_head_Stormtrooper_Radio_Technician_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A reinforced helmet of the Imperial Storm Corps.
   icon:
     sprite: Civ14/Clothing/exported/hats/stormradio_helmet.rsi
@@ -238,7 +238,7 @@
   graph: civ13_head_AT_RT_Replicant_Driver_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A reinforced plastoid helmet of the Republic Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/replicant_atrt.rsi
@@ -264,7 +264,7 @@
   graph: civ13_head_Phase_I_Replicant_Radio_Technician_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A reinforced plastoid radio technician helmet of the Republic Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/replicant_radiotech.rsi
@@ -290,7 +290,7 @@
   graph: civ13_head_Replicant_Engineer_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A reinforced plastoid engineer helmet of the Republic Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/replicant_engi.rsi
@@ -316,7 +316,7 @@
   graph: civ13_head_Replicant_Commando_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A plastoid helmet used by clone commandos of the Republic Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/replicant_commando.rsi
@@ -342,7 +342,7 @@
   graph: civ13_head_Phase_I_Replicant_Pilot_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A reinforced plastoid helmet of the Republic Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/reppilot_helmet.rsi
@@ -368,7 +368,7 @@
   graph: civ13_head_Phase_I_Replicant_MP_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A highly reinforced plastoid helmet of the Republic Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/repmp_helmet.rsi
@@ -394,7 +394,7 @@
   graph: civ13_head_M1_helmet_2nd_LT
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical us army helmet. With lieutenant markings.
   icon:
     sprite: Civ14/Clothing/exported/hats/m1_2nd_lt.rsi
@@ -420,7 +420,7 @@
   graph: civ13_head_M1_camo_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical US Army helmet. With a Mitchell camo cover.
   icon:
     sprite: Civ14/Clothing/exported/hats/m1_camo_mitchell_lt.rsi
@@ -446,7 +446,7 @@
   graph: civ13_head_Phase_I_Replicant_Captain_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A reinforced plastoid helmet of the Republic Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/repcaptain_helmet.rsi
@@ -472,7 +472,7 @@
   graph: civ13_head_Phase_I_Replicant_Commander_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A reinforced plastoid helmet of the Republic Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/repcommander_helmet.rsi
@@ -498,7 +498,7 @@
   graph: civ13_head_Phase_II_Replicant_Trooper_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A phase II helmet used by clone troopers of the Republic Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/replicant_helmet2.rsi
@@ -524,7 +524,7 @@
   graph: civ13_head_Phase_II_Replicant_Trooper_Helmet_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A phase II helmet with blizzard protection plates used by clone troopers of
     the Republic Army.
@@ -552,7 +552,7 @@
   graph: civ13_head_Phase_II_501st_Replicant_Trooper_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A phase II 501st helmet used by clone troopers of the Republic Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/replicant_helmet2.rsi
@@ -578,7 +578,7 @@
   graph: civ13_head_Rebel_Fleet_Trooper_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A reinforced plastoid helmet of the Rebel Alliance.
   icon:
     sprite: Civ14/Clothing/exported/hats/rebel_helmet1.rsi
@@ -604,7 +604,7 @@
   graph: civ13_head_roman_legionary_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The typical helmet of the roman army.
   icon:
     sprite: Civ14/Clothing/exported/hats/roman.rsi
@@ -630,7 +630,7 @@
   graph: civ13_head_ushanka
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A warm ushanka, often worn by citizens and soldiers in cold climates.
   icon:
     sprite: Civ14/Clothing/exported/hats/ushanka_plain_up.rsi
@@ -656,7 +656,7 @@
   graph: civ13_head_roman_decurion_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     An iron helmet, used by decurions. Officers within the cavalry of the roman
     army.
@@ -684,7 +684,7 @@
   graph: civ13_head_roman_centurion_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     An iron helmet, used by centurions. Officers within the infantry of the
     roman army.
@@ -712,7 +712,7 @@
   graph: civ13_head_gladiator_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A gladiator helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/gladiator.rsi
@@ -738,7 +738,7 @@
   graph: civ13_head_sol_invictus_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A gold adorned helmet with masqued visage and gold solar streaks. Worn by
     roman emperors.
@@ -766,7 +766,7 @@
   graph: civ13_head_greek_anax_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A reinforced bronze greek helmet, covering most of the face, with black
     plummage on top. Worn by hellenic kings.
@@ -794,7 +794,7 @@
   graph: civ13_head_aries_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A reinforced bronze greek helmet, covering most of the face, with red
     plummage on top. Worn by dieties and avatars of destruction such as aries.
@@ -822,7 +822,7 @@
   graph: civ13_head_athena_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A reinforced bronze greek helmet, covering most of the face, with blue
     plummage on top and a gold laurel. Chosen helm of the god of tactical
@@ -851,7 +851,7 @@
   graph: civ13_head_Greek_M15_Adrian_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An M15 Greek Adrian Helmet, known for its distinctive design.
   icon:
     sprite: Civ14/Clothing/exported/hats/adrian_greek.rsi
@@ -877,7 +877,7 @@
   graph: civ13_head_lochagos_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A bronze greek helmet, covering most of the face, with red plummage on top.
     Worn by hellenic lochagos.
@@ -905,7 +905,7 @@
   graph: civ13_head_dimoerites_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A bronze greek helmet, covering most of the face, with blue plummage on top.
     Worn by hellenic dimoerites.
@@ -933,7 +933,7 @@
   graph: civ13_head_egyptian_war_headdress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A bronze egyptian headpiece, with an exposed face to relieve the wearer of
     heat.
@@ -961,7 +961,7 @@
   graph: civ13_head_bronze_anubis_headdress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A bronze egyptian headpiece, with the visage of the god anubis; god of the
     dead.
@@ -989,7 +989,7 @@
   graph: civ13_head_bronze_osirus_headdress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A bronze egyptian headpiece, with the visage of the god osiris; god of the
     underworld.
@@ -1017,7 +1017,7 @@
   graph: civ13_head_bronze_phrigian_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A knob ended bronze phrigian helmet. With more emphasis on style than
     overall protection
@@ -1045,7 +1045,7 @@
   graph: civ13_head_leather_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A simple leather helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/leatherhelmet.rsi
@@ -1071,7 +1071,7 @@
   graph: civ13_head_hatchigane_headband
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A armored leather headband of japanese design, it wears away petty attacks
     but will not withstand heavy blows.
@@ -1099,7 +1099,7 @@
   graph: civ13_head_khepresh_war_crown
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A ornate egyptian war crown made of leather and gold. It is not as
     protective as bronze or iron, but practical for protecting your majesty.
@@ -1127,7 +1127,7 @@
   graph: civ13_head_horned_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A horned helmet, used by barbarians.
   icon:
     sprite: Civ14/Clothing/exported/hats/barbarian.rsi
@@ -1153,7 +1153,7 @@
   graph: civ13_head_winged_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A winged helmet, used swift warriors who don't mind brutalistic stabs to the
     face.
@@ -1181,7 +1181,7 @@
   graph: civ13_head_conspicious_gaelic_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The gold winged helmet of the god of the sun and light, as well a a
     messenger of olympus. The wearer feels energized to move quickly
@@ -1209,7 +1209,7 @@
   graph: civ13_head_conspicious_gaelic_helmet_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A hard to miss winged helmet with white & black trimmings and modest red
     necktie, often worn by chieftains.
@@ -1237,7 +1237,7 @@
   graph: civ13_head_chinese_warrior_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A bronze helmet, used by early chinese dynasties.
   icon:
     sprite: Civ14/Clothing/exported/hats/bronze_chinese.rsi
@@ -1263,7 +1263,7 @@
   graph: civ13_head_yellow_ninja_headband
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A armored leather headband of japanese design, wearing it makes you feel
     faster and the urge to flail your arms behind you as you run.
@@ -1291,7 +1291,7 @@
   graph: civ13_head_VDV_beret
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A beret worn by the Russian Airborne Forces.
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_rus_vdv_modern.rsi
@@ -1317,7 +1317,7 @@
   graph: civ13_head_M1_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical us army helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/m1_standard.rsi
@@ -1343,7 +1343,7 @@
   graph: civ13_head_UN_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical blue UN helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/unitednations.rsi
@@ -1369,7 +1369,7 @@
   graph: civ13_head_UN_medic_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical blue UN helmet, with doctor markings.
   icon:
     sprite: Civ14/Clothing/exported/hats/unitednations_medic.rsi
@@ -1395,7 +1395,7 @@
   graph: civ13_head_camo_6B47_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/a6b47cam.rsi
@@ -1421,7 +1421,7 @@
   graph: civ13_head_CVC_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A standard issue helmet for vehicle crewmen.
   icon:
     sprite: Civ14/Clothing/exported/hats/cvc_helmet.rsi
@@ -1447,7 +1447,7 @@
   graph: civ13_head_Chinese_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A leftover japanese helmet repurposed for the People's Liberation Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/chi_korea_helm.rsi
@@ -1473,7 +1473,7 @@
   graph: civ13_head_Chinese_helmet_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A steel helmet used by the People's Liberation Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/chi_korea_helm.rsi
@@ -1499,7 +1499,7 @@
   graph: civ13_head_Medical_FT1_advanced_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An extremely advanced helmet used by the Chinese medics.
   icon:
     sprite: Civ14/Clothing/exported/hats/ft1med_helmet.rsi
@@ -1525,7 +1525,7 @@
   graph: civ13_head_SSh_68_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A mass produced metal helmet often used by USSR infantry forces in the mid
     20th century.
@@ -1553,7 +1553,7 @@
   graph: civ13_head_viet_pith_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pith helmet used by the vietnamese.
   icon:
     sprite: Civ14/Clothing/exported/hats/viet_pith.rsi
@@ -1579,7 +1579,7 @@
   graph: civ13_head_white_hard_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A white hard hat used by the workers.
   icon:
     sprite: Civ14/Clothing/exported/hats/hardhat_white.rsi
@@ -1605,7 +1605,7 @@
   graph: civ13_head_yellow_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A yellow cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/yellowcap.rsi
@@ -1631,7 +1631,7 @@
   graph: civ13_head_orange_hard_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An orange hard hat used by the workers.
   icon:
     sprite: Civ14/Clothing/exported/hats/hardhat_orange.rsi
@@ -1657,7 +1657,7 @@
   graph: civ13_head_iron_pickelhaube
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical pointed helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/pickelhaube.rsi
@@ -1683,7 +1683,7 @@
   graph: civ13_head_M1915_Stahlhelm
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An iconic German Stahlhelm, widely used by soldiers in battle.
   icon:
     sprite: Civ14/Clothing/exported/hats/stahlhelm_old.rsi
@@ -1709,7 +1709,7 @@
   graph: civ13_head_iron_brodie
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical rounded helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/brodie.rsi
@@ -1735,7 +1735,7 @@
   graph: civ13_head_pith_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical tropical helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/pith.rsi
@@ -1761,7 +1761,7 @@
   graph: civ13_head_PASGT_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical US Army PASGT helmet. This one is in U.S. Woodland pattern.
   icon:
     sprite: Civ14/Clothing/exported/hats/pasgt_woodland.rsi
@@ -1787,7 +1787,7 @@
   graph: civ13_head_Red_PASGT_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical US Army PASGT helmet. This one has a red dye.
   icon:
     sprite: Civ14/Clothing/exported/hats/pasgt_reddish.rsi
@@ -1813,7 +1813,7 @@
   graph: civ13_head_white_papakha
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A traditional caucasus hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/papakha_white.rsi
@@ -1839,7 +1839,7 @@
   graph: civ13_head_LWH_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical US Army LightWeight Helmet. This one is in beige color.
   icon:
     sprite: Civ14/Clothing/exported/hats/lwh_desert.rsi
@@ -1865,7 +1865,7 @@
   graph: civ13_head_sheriffs_department_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A baseball cap worn by the LEOs of the town's Sheriff Department. Black
     version.
@@ -1893,7 +1893,7 @@
   graph: civ13_head_OCP_ACH_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical US Army Advanced Combat Helmet. This one is in OCP cammo.
   icon:
     sprite: Civ14/Clothing/exported/hats/ach_ocp.rsi
@@ -1919,7 +1919,7 @@
   graph: civ13_head_ACH_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical US Army Advanced Combat Helmet. This one is in green.
   icon:
     sprite: Civ14/Clothing/exported/hats/ach_green.rsi
@@ -1945,7 +1945,7 @@
   graph: civ13_head_MASKA_1_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A USSR heavy armoured helmet with a slitted facemask.
   icon:
     sprite: Civ14/Clothing/exported/hats/sovietfacehelmet.rsi
@@ -1972,7 +1972,7 @@
   graph: civ13_head_6B47_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A Russian heavy armoured helmet often used by Russian infantry forces in the
     21st century.
@@ -2000,7 +2000,7 @@
   graph: civ13_head_blugo_6B47_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/a6b47b.rsi
@@ -2026,7 +2026,7 @@
   graph: civ13_head_blugo_command_6B47_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/a6b47bc.rsi
@@ -2052,7 +2052,7 @@
   graph: civ13_head_Sfera_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A russian combat armoured helmet, often used by internal troops in the USSR
     and Russia.
@@ -2080,7 +2080,7 @@
   graph: civ13_head_ZSh_1_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A russian heavy armoured helmet, often used by USSR infantry forces in the
     late 20th century.
@@ -2108,7 +2108,7 @@
   graph: civ13_head_ZSh_2_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A russian heavy armoured helmet with a visor; often used by russian infantry
     forces in the 21st century.
@@ -2136,7 +2136,7 @@
   graph: civ13_head_IDF_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical IDF helmet. This one is in IDF olive green.
   icon:
     sprite: Civ14/Clothing/exported/hats/idf.rsi
@@ -2162,7 +2162,7 @@
   graph: civ13_head_firefighter_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A protective and fire-resistant helmet used by firefigthers.
   icon:
     sprite: Civ14/Clothing/exported/hats/hardhat_yellow.rsi
@@ -2188,7 +2188,7 @@
   graph: civ13_head_Mk6_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A british developed kevlar ballistics helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/mk6.rsi
@@ -2214,7 +2214,7 @@
   graph: civ13_head_CG634_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical CAF CADPAT Combat Helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/cg634.rsi
@@ -2240,7 +2240,7 @@
   graph: civ13_head_Mechanical_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A mechanical steel helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/mechanicalhelmet.rsi
@@ -2266,7 +2266,7 @@
   graph: civ13_head_QGF03_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A modern chinese combat helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/qgf03.rsi
@@ -2292,7 +2292,7 @@
   graph: civ13_head_M95_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A PASGT derived helmet used by the Dutch Armed Forces. This one is in DPM
     pattern.
@@ -2320,7 +2320,7 @@
   graph: civ13_head_M1_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The typical rounded steel helmet of the US Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/m1_standard.rsi
@@ -2346,7 +2346,7 @@
   graph: civ13_head_M1_Helmet_with_netting
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The typical rounded steel helmet of the US Army, with tan netting.
   icon:
     sprite: Civ14/Clothing/exported/hats/m1_tan_netting.rsi
@@ -2372,7 +2372,7 @@
   graph: civ13_head_M1_Helmet_with_green_netting
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The typical rounded steel helmet of the US Army, with green netting.
   icon:
     sprite: Civ14/Clothing/exported/hats/m1_green_netting.rsi
@@ -2398,7 +2398,7 @@
   graph: civ13_head_M1_Medic_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The typical rounded steel helmet of the US Army, this one for medics
   icon:
     sprite: Civ14/Clothing/exported/hats/m1_medic.rsi
@@ -2424,7 +2424,7 @@
   graph: civ13_head_M1_2nd_LT_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The typical rounded steel helmet of the US Army, this one bearing the rank
     of 2nd Lieutenant.
@@ -2452,7 +2452,7 @@
   graph: civ13_head_M1_1st_LT_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The typical rounded steel helmet of the US Army, this one bearing the rank
     of 1st Lieutenant.
@@ -2480,7 +2480,7 @@
   graph: civ13_head_M1_Captain_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The typical rounded steel helmet of the US Army, this one bearing the rank
     of Captain.
@@ -2508,7 +2508,7 @@
   graph: civ13_head_constable_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A typical plastic helmet worn by constable's of law enforcement. Protects
     the head from petty battery and assault.
@@ -2536,7 +2536,7 @@
   graph: civ13_head_NCR_Officer_Beret
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A green camo beret with a capbadge of the NCR's 2 headed bear.
   icon:
     sprite: Civ14/Clothing/exported/hats/ncr_beret.rsi
@@ -2562,7 +2562,7 @@
   graph: civ13_head_Goggles_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A typical rounded steel helmet. This one has a pair of biker goggles
     attached.
@@ -2590,7 +2590,7 @@
   graph: civ13_head_Legionaire_Cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A rather thin leather cap with ear protection.
   icon:
     sprite: Civ14/Clothing/exported/hats/legionaire.rsi
@@ -2616,7 +2616,7 @@
   graph: civ13_head_imperial_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An imperial helmet made of leather
   icon:
     sprite: Civ14/Clothing/exported/hats/tes13_imperial.rsi
@@ -2642,7 +2642,7 @@
   graph: civ13_head_morion_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A protective and hardy morion helmet covering the dome of the head and ears.
   icon:
     sprite: Civ14/Clothing/exported/hats/morion_helmet.rsi
@@ -2668,7 +2668,7 @@
   graph: civ13_head_cabasset_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A protective and hardy morion helmet without the narrow ridge dent covering.
   icon:
     sprite: Civ14/Clothing/exported/hats/morion_helmet.rsi
@@ -2694,7 +2694,7 @@
   graph: civ13_head_leather_infantry_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A protective leather cap often worn by soldiers of early era modern warfare.
   icon:
     sprite: Civ14/Clothing/exported/hats/nap_lea_infantry_cap.rsi
@@ -2720,7 +2720,7 @@
   graph: civ13_head_brown_bear_pelt_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/brownbearpelt.rsi
@@ -2746,7 +2746,7 @@
   graph: civ13_head_blue_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A blue cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/bluecap.rsi
@@ -2772,7 +2772,7 @@
   graph: civ13_head_red_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A red cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/redcap.rsi
@@ -2798,7 +2798,7 @@
   graph: civ13_head_commisar_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A protective leather cap often worn by squadron commanders of a grimdark
     future.
@@ -2826,7 +2826,7 @@
   graph: civ13_head_prussian_leather_infantry_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A protective leather cap often worn by prussian soldiers of the napoleonic
     era.
@@ -2854,7 +2854,7 @@
   graph: civ13_head_satsuma_infantry_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pointed black hat often worn by soldiers of imperial japan's satsuma era.
   icon:
     sprite: Civ14/Clothing/exported/hats/nap_satsuma.rsi
@@ -2880,7 +2880,7 @@
   graph: civ13_head_dragoon_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A bronze helmet with a impressive plume. It is often worn by napoleonic
     cavalry squadrons; though it is more for show it can still deflect harm.
@@ -2908,7 +2908,7 @@
   graph: civ13_head_black_napoleonic_bearskin_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A decorative parade hat felted from bear skin and bronze. Often worn by
     napoleonic grenadiers.
@@ -2936,7 +2936,7 @@
   graph: civ13_head_gold_crown
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A crown of gold. Fancy.
   icon:
     sprite: Civ14/Clothing/exported/hats/gold_crown.rsi
@@ -2962,7 +2962,7 @@
   graph: civ13_head_silver_crown
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A crown of silver. Fancy.
   icon:
     sprite: Civ14/Clothing/exported/hats/silver_crown.rsi
@@ -2988,7 +2988,7 @@
   graph: civ13_head_inlaid_gold_crown
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A crown of gold, with a diamond in it. Extra Fancy.
   icon:
     sprite: Civ14/Clothing/exported/hats/gold_crown_diamond.rsi
@@ -3014,7 +3014,7 @@
   graph: civ13_head_inlaid_silver_crown
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A crown of silver, with a diamond in it. Extra Fancy.
   icon:
     sprite: Civ14/Clothing/exported/hats/silver_crown_diamond.rsi
@@ -3040,7 +3040,7 @@
   graph: civ13_head_brown_padded_head_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A padded brown coif, applies practical if modest protection.
   icon:
     sprite: Civ14/Clothing/exported/hats/brown_eisenbruck.rsi
@@ -3066,7 +3066,7 @@
   graph: civ13_head_grey_padded_head_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A padded grey coif, applies practical if modest protection.
   icon:
     sprite: Civ14/Clothing/exported/hats/grey_eisenbruck.rsi
@@ -3092,7 +3092,7 @@
   graph: civ13_head_ratty_old_padded_head_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A ratty, old padded coif, its color faded but remains protective.
   icon:
     sprite: Civ14/Clothing/exported/hats/aged_eisenbruck.rsi
@@ -3118,7 +3118,7 @@
   graph: civ13_head_italian_sallet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A very protective helmet used by archers and crossbowmen in the 15th century
     throughout europe.
@@ -3146,7 +3146,7 @@
   graph: civ13_head_german_sallet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A very protective helmet used by archers and crossbowmen in the 15th century
     throughout europe.
@@ -3174,7 +3174,7 @@
   graph: civ13_head_burgundian_sallet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A very protective helmet used by archers and crossbowmen in the 15th century
     throughout europe, providing moderate protection.
@@ -3202,7 +3202,7 @@
   graph: civ13_head_hounskull_bascinet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A bascinet helmet with a large outward faceguard; used by knights & heavy
     infantry in the 14th century.
@@ -3230,7 +3230,7 @@
   graph: civ13_head_knight_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A thick knight helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/knight_simple.rsi
@@ -3256,7 +3256,7 @@
   graph: civ13_head_protective_conical_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A conical helmet, with nose and ear protection.
   icon:
     sprite: Civ14/Clothing/exported/hats/medieval_helmet1.rsi
@@ -3282,7 +3282,7 @@
   graph: civ13_head_kettle_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A wide brim iron helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/medieval_helmet2.rsi
@@ -3308,7 +3308,7 @@
   graph: civ13_head_conical_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A conical helmet, with nose protection.
   icon:
     sprite: Civ14/Clothing/exported/hats/medieval_helmet3.rsi
@@ -3334,7 +3334,7 @@
   graph: civ13_head_coif_wrapped_mamluk_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A chainmail headcover and pointed helmet, in mamluk style
   icon:
     sprite: Civ14/Clothing/exported/hats/mamluk_coif_helmet.rsi
@@ -3360,7 +3360,7 @@
   graph: civ13_head_iron_coif_and_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A chainmail headcover, with a conical helmet on top.
   icon:
     sprite: Civ14/Clothing/exported/hats/coif_helmet.rsi
@@ -3386,7 +3386,7 @@
   graph: civ13_head_purple_arabic_turban_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An iron helmet, covered with a purple turban.
   icon:
     sprite: Civ14/Clothing/exported/hats/turhelm1.rsi
@@ -3412,7 +3412,7 @@
   graph: civ13_head_red_arabic_turban_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An iron helmet, covered with a red turban.
   icon:
     sprite: Civ14/Clothing/exported/hats/turhelm2.rsi
@@ -3438,7 +3438,7 @@
   graph: civ13_head_green_arabic_turban_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An iron helmet, covered with a green turban.
   icon:
     sprite: Civ14/Clothing/exported/hats/turhelm3.rsi
@@ -3464,7 +3464,7 @@
   graph: civ13_head_blue_arabic_turban_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An iron helmet, covered with a blue turban.
   icon:
     sprite: Civ14/Clothing/exported/hats/turhelm3.rsi
@@ -3490,7 +3490,7 @@
   graph: civ13_head_long_arabic_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     An long conical iron helmet, in arabic style, with side protections for the
     face. Often worn by arabic soldiers
@@ -3518,7 +3518,7 @@
   graph: civ13_head_feminine_long_arabic_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     An long conical iron helmet, in arabic style, with side protections for the
     face. Often worn by arabic princesses
@@ -3546,7 +3546,7 @@
   graph: civ13_head_templar_knight_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A thick knight helmet, with a yellow cross painted on the front.
   icon:
     sprite: Civ14/Clothing/exported/hats/knight_templar.rsi
@@ -3572,7 +3572,7 @@
   graph: civ13_head_emirate_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     An iron helmet, covered with a green turban & cloth wrapped around. Often
     worn by rulers of emirate kingdoms
@@ -3600,7 +3600,7 @@
   graph: civ13_head_crusader_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A thick knight helmet, with narrow slit eye holes.
   icon:
     sprite: Civ14/Clothing/exported/hats/crusader.rsi
@@ -3626,7 +3626,7 @@
   graph: civ13_head_crusader_king_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A thick knight helmet, embellished with a gold cross on the front and crown
     on top. It has narrow slit eye holes.
@@ -3654,7 +3654,7 @@
   graph: civ13_head_baltic_crusader_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A thick knight helmet with menacing horns affixed to the side. It has narrow
     slit eye holes.
@@ -3682,7 +3682,7 @@
   graph: civ13_head_baltic_grandmaster_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A thick knight helmet with menacing horns affixed to the side and a
     grandmaster's pattern decoration. It has narrow slit eye holes.
@@ -3710,7 +3710,7 @@
   graph: civ13_head_baltic_crusader_king_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A thick knight helmet with menacing horns affixed to the side, a
     grandmaster's pattern decoration & a silver crown. It has narrow slit eye
@@ -3739,7 +3739,7 @@
   graph: civ13_head_templar_priest_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A thick knight helmet with a covered cloth dome in templar colors, it has
     narrow slit eye holes.
@@ -3767,7 +3767,7 @@
   graph: civ13_head_baltic_priest_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A thick knight helmet with a covered cloth dome in baltic colors, it has
     narrow slit eye holes.
@@ -3795,7 +3795,7 @@
   graph: civ13_head_viking_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A rounded viking helmet, with nose and ear protection
   icon:
     sprite: Civ14/Clothing/exported/hats/new_viking.rsi
@@ -3821,7 +3821,7 @@
   graph: civ13_head_royal_mamluk_conical_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A royally decorated gold plated conical helmet, with nose and ear protection
     in mamluk style. It is wrapped in chainmail.
@@ -3849,7 +3849,7 @@
   graph: civ13_head_royal_viking_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A rounded valkyrie helmet, it is protective and adorned with wings
   icon:
     sprite: Civ14/Clothing/exported/hats/valkyrie.rsi
@@ -3875,7 +3875,7 @@
   graph: civ13_head_royal_viking_helmet_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A royally decorated gold rounded valkyrie helmet, it is protective and
     adorned with wings
@@ -3903,7 +3903,7 @@
   graph: civ13_head_varangian_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A robust varangian guard style helmet, with tightly wrapped chainmail over
     everything but the eye holes.
@@ -3931,7 +3931,7 @@
   graph: civ13_head_imperial_chinese_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A iron helmet with a quilted neck covering and a decorative red plume, made
     in a imperial chinese style.
@@ -3959,7 +3959,7 @@
   graph: civ13_head_penlianal_whitestrake_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The thick legendary paladin helmet of a martially gifted genocidal maniac.
     Or great hero from particular point of view.
@@ -3987,7 +3987,7 @@
   graph: civ13_head_hell_knight_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The thick horned helmet of elite demonic champions. A green furor of anger
     and hatred spills out of its narrow slit eye holes.
@@ -4015,7 +4015,7 @@
   graph: civ13_head_saint_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The thick helmet of those chosen of divinity, a angelic halo hangs overhead.
   icon:
     sprite: Civ14/Clothing/exported/hats/crusader_saint.rsi
@@ -4041,7 +4041,7 @@
   graph: civ13_head_lordran_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The legendary helmet of the father, it is said its former owner's booming
     voice could answer any challenge
@@ -4069,7 +4069,7 @@
   graph: civ13_head_dwemmer_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The thick helmet of elite dwemmer warriors.
   icon:
     sprite: Civ14/Clothing/exported/hats/dwelmet.rsi
@@ -4095,7 +4095,7 @@
   graph: civ13_head_leather_samurai_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A thick leather helmet of japanese origin. Typically worn by petty guards
     and light infantry.
@@ -4123,7 +4123,7 @@
   graph: civ13_head_hide_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A thick helmet of hide worn often by soldiers or guards.
   icon:
     sprite: Civ14/Clothing/exported/hats/tes13_hide.rsi
@@ -4149,7 +4149,7 @@
   graph: civ13_head_iron_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A thick horned helmet of iron worn often by bandits mercenaries and
     travelers.
@@ -4177,7 +4177,7 @@
   graph: civ13_head_stormcloak_officer_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A bear pelt helmet with an armored lining.
   icon:
     sprite: Civ14/Clothing/exported/hats/stormcloak.rsi
@@ -4203,7 +4203,7 @@
   graph: civ13_head_imperial_officer_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An imperial helmet made of steel
   icon:
     sprite: Civ14/Clothing/exported/hats/tes13_imperial_officer.rsi
@@ -4229,7 +4229,7 @@
   graph: civ13_head_leather_skullcap_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A iron studded leather helmet. Often used by raiders or bands of
     mercenaries.
@@ -4257,7 +4257,7 @@
   graph: civ13_head_samurai_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A thick metal helmet of japanese origin. Typically worn by feudal warriors.
   icon:
     sprite: Civ14/Clothing/exported/hats/samurai_warrior3.rsi
@@ -4283,7 +4283,7 @@
   graph: civ13_head_jingasa
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A thick leather and straw hat of japanese origin. Typically worn by ranged
     combatant samurai.
@@ -4311,7 +4311,7 @@
   graph: civ13_head_kasa
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A thick straw hat of japanese origin. Typically worn by travelers.
   icon:
     sprite: Civ14/Clothing/exported/hats/kasa.rsi
@@ -4337,7 +4337,7 @@
   graph: civ13_head_black_kevlar_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A standard bulletproof helmet, made of kevlar.
   icon:
     sprite: Civ14/Clothing/exported/hats/kevlarhelmet.rsi
@@ -4363,7 +4363,7 @@
   graph: civ13_head_Press_kevlar_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A standard bulletproof helmet, made of kevlar, with 'PRESS' written across
     it.
@@ -4391,7 +4391,7 @@
   graph: civ13_head_motorcycle_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Protects your head from injuries if you crash your bike.
   icon:
     sprite: Civ14/Clothing/exported/hats/motorcycle.rsi
@@ -4417,7 +4417,7 @@
   graph: civ13_head_swat_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A standard kevlar helmet used by swat officers.
   icon:
     sprite: Civ14/Clothing/exported/hats/swat.rsi
@@ -4443,7 +4443,7 @@
   graph: civ13_head_swat_helmet_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A standard kevlar helmet used by swat officers.
   icon:
     sprite: Civ14/Clothing/exported/hats/swat_new.rsi
@@ -4469,7 +4469,7 @@
   graph: civ13_head_FT1_advanced_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An extremely advanced helmet used by the Chinese.
   icon:
     sprite: Civ14/Clothing/exported/hats/ft1_helmet.rsi
@@ -4495,7 +4495,7 @@
   graph: civ13_head_tactical_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A standard bulletproof helmet, made of polyethylene.
   icon:
     sprite: Civ14/Clothing/exported/hats/tacticalhelmet.rsi
@@ -4521,7 +4521,7 @@
   graph: civ13_head_IOG_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A strong helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/ioghelmet.rsi
@@ -4547,7 +4547,7 @@
   graph: civ13_head_IOG_helmet_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A strong helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/iogmask1.rsi
@@ -4573,7 +4573,7 @@
   graph: civ13_head_scrap_metal_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A makeshift helmet made of random metal.
   icon:
     sprite: Civ14/Clothing/exported/hats/scraphelmet.rsi
@@ -4599,7 +4599,7 @@
   graph: civ13_head_bone_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A helmet made of bones.
   icon:
     sprite: Civ14/Clothing/exported/hats/bone_helmet.rsi
@@ -4625,7 +4625,7 @@
   graph: civ13_head_chitin_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A helmet made from insect chitin.
   icon:
     sprite: Civ14/Clothing/exported/hats/chitin_helmet.rsi
@@ -4651,7 +4651,7 @@
   graph: civ13_head_saurons_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The helmet to the armor of sauron
   icon:
     sprite: Civ14/Clothing/exported/hats/sauronhelmet.rsi
@@ -4677,7 +4677,7 @@
   graph: civ13_head_orc_beserker_helm
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Orc make good helmet!
   icon:
     sprite: Civ14/Clothing/exported/hats/beserkerhelmet.rsi
@@ -4703,7 +4703,7 @@
   graph: civ13_head_iron_helmet_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A helmet with front plate, made of dark iron.
   icon:
     sprite: Civ14/Clothing/exported/hats/ork_elite_helmet_2.rsi
@@ -4729,7 +4729,7 @@
   graph: civ13_head_iron_helmet_1_2
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A helmet made of dark iron.
   icon:
     sprite: Civ14/Clothing/exported/hats/ork_elite_helmet.rsi
@@ -4755,7 +4755,7 @@
   graph: civ13_head_orc_spearman_helm
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Orc make good helmet!
   icon:
     sprite: Civ14/Clothing/exported/hats/spearmanhelmet.rsi
@@ -4781,7 +4781,7 @@
   graph: civ13_head_orc_captain_helm
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Orc make good helmet!
   icon:
     sprite: Civ14/Clothing/exported/hats/captainhelmet.rsi
@@ -4807,7 +4807,7 @@
   graph: civ13_head_orc_grunt_helm
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Orc make good helmet!
   icon:
     sprite: Civ14/Clothing/exported/hats/grunthelmet.rsi
@@ -4833,7 +4833,7 @@
   graph: civ13_head_Greek_M15_Adrian_helmet_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Greek Adrian Helmet, commonly worn by soldiers in battle.
   icon:
     sprite: Civ14/Clothing/exported/hats/adrian_greek.rsi
@@ -4859,7 +4859,7 @@
   graph: civ13_head_M15_Adrian_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An iconic M15 Adrian Helmet, widely used by French soldiers.
   icon:
     sprite: Civ14/Clothing/exported/hats/adrian_standard.rsi
@@ -4885,7 +4885,7 @@
   graph: civ13_head_Medic_M15_Adrian_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An M15 Greek Adrian Helmet, specially designed for medics.
   icon:
     sprite: Civ14/Clothing/exported/hats/m26_medic.rsi
@@ -4911,7 +4911,7 @@
   graph: civ13_head_Russian_M15_Adrian_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The Adrian helmet but Soviet, used by the red army.
   icon:
     sprite: Civ14/Clothing/exported/hats/adrian_russian.rsi
@@ -4937,7 +4937,7 @@
   graph: civ13_head_Medic_M15_Adrian_helmet_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An M15 Adrian Helmet, specially outfitted for medics.
   icon:
     sprite: Civ14/Clothing/exported/hats/m15_adrian_m.rsi
@@ -4963,7 +4963,7 @@
   graph: civ13_head_M26_Adrian_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An iconic M26 Adrian Helmet, widely used during its time.
   icon:
     sprite: Civ14/Clothing/exported/hats/m26_adrian.rsi
@@ -4989,7 +4989,7 @@
   graph: civ13_head_Medic_M26_Adrian_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An iconic M26 Adrian Helmet, specially designed for medics.
   icon:
     sprite: Civ14/Clothing/exported/hats/m26_medic.rsi
@@ -5015,7 +5015,7 @@
   graph: civ13_head_Mk1_Brodie_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A classic British helmet, this one is painted in duck egg blue.
   icon:
     sprite: Civ14/Clothing/exported/hats/brodie_mk1_deb.rsi
@@ -5041,7 +5041,7 @@
   graph: civ13_head_Mk1_Brodie_Helmet_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A classic British helmet, this one is painted in apple green.
   icon:
     sprite: Civ14/Clothing/exported/hats/brodie_mk1_ag.rsi
@@ -5067,7 +5067,7 @@
   graph: civ13_head_Mk2_Brodie_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An iconic British helmet, this one is painted in olive green.
   icon:
     sprite: Civ14/Clothing/exported/hats/brodie_mk2_og.rsi
@@ -5093,7 +5093,7 @@
   graph: civ13_head_Mk2_Brodie_Medic_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A specialized British helmet for medical personnel.
   icon:
     sprite: Civ14/Clothing/exported/hats/brodie_mk2_medic.rsi
@@ -5119,7 +5119,7 @@
   graph: civ13_head_Irish_Mk2_Brodie_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A variant of the Mk2 Brodie Helmet used by the Irish Royal Rifles.
   icon:
     sprite: Civ14/Clothing/exported/hats/brodie_mk2_irish.rsi
@@ -5145,7 +5145,7 @@
   graph: civ13_head_Mk2_Brodie_Helmet_with_green_netting
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A British helmet equipped with green netting for additional camouflage.
   icon:
     sprite: Civ14/Clothing/exported/hats/brodie_mk2_netgreen.rsi
@@ -5171,7 +5171,7 @@
   graph: civ13_head_Mk2_Brodie_Helmet_with_tan_netting
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A British helmet equipped with tan netting for additional camouflage.
   icon:
     sprite: Civ14/Clothing/exported/hats/brodie_mk2_nettan.rsi
@@ -5197,7 +5197,7 @@
   graph: civ13_head_Camouflaged_Mk2_Brodie_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A British Army helmet with tan netting and foliage for camouflage.
   icon:
     sprite: Civ14/Clothing/exported/hats/brodie_mk2_nettanf.rsi
@@ -5223,7 +5223,7 @@
   graph: civ13_head_Camouflaged_Mk2_Brodie_Helmet_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A British Army helmet with green netting and foliage for camouflage.
   icon:
     sprite: Civ14/Clothing/exported/hats/brodie_mk2_netgreenf.rsi
@@ -5249,7 +5249,7 @@
   graph: civ13_head_Leather_pickelhaube
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical pointed helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/pickelhaube2.rsi
@@ -5275,7 +5275,7 @@
   graph: civ13_head_Japanese_sakura_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     An "Adrian" style Japanese helmet, the top having a cherry blossom shaped
     vent.
@@ -5303,7 +5303,7 @@
   graph: civ13_head_Japanese_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     This Japanese helm is crafted in the classic rounded steel design, commonly
     worn by frontlining soldiers.
@@ -5331,7 +5331,7 @@
   graph: civ13_head_pirate_bandana
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Yarr.
   icon:
     sprite: Civ14/Clothing/exported/hats/bandana.rsi
@@ -5357,7 +5357,7 @@
   graph: civ13_head_Japanese_SNLF_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The Japanese SNLF helm is crafted in the classic rounded steel design, this
     helmet is standard issue for Japanese soldiers of the Special Naval Landing
@@ -5386,7 +5386,7 @@
   graph: civ13_head_Japanese_medic_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The Japanese medical helmet is crafted in the typical rounded steel design,
     this helmet bears the distinguishing marks of a medic, signifying its use by
@@ -5415,7 +5415,7 @@
   graph: civ13_head_Japanese_tanker_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The Japanese tanker helmet is crafted from a blend of sturdy meshes and
     tough leather, this helmet boasts a typical rounded steel design, providing
@@ -5444,7 +5444,7 @@
   graph: civ13_head_US_mp_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A typical rounded steel helmet. This one has the markings of MP on it.
   icon:
     sprite: Civ14/Clothing/exported/hats/m1_mp_white.rsi
@@ -5470,7 +5470,7 @@
   graph: civ13_head_german_stahlhelm
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The typical rounded steel helmet of the Wehrmacht
   icon:
     sprite: Civ14/Clothing/exported/hats/stahlhelm.rsi
@@ -5496,7 +5496,7 @@
   graph: civ13_head_Fallschirmjager_stahlhelm
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A fallschirmjager helmet.
   icon:
     sprite: Civ14/Clothing/exported/hats/stahlhelm_para.rsi
@@ -5522,7 +5522,7 @@
   graph: civ13_head_german_medic_stahlhelm
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The typical rounded steel helmet of the Wehrmacht, this one belonging to a
     medic.
@@ -5550,7 +5550,7 @@
   graph: civ13_head_german_stahlhelm_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The typical rounded steel helmet of the Wehrmacht, this one specifically for
     MP's.
@@ -5579,7 +5579,7 @@
   graph: civ13_head_German_SS_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The typical rounded steel helmet of the Schutzstaffel. This one is prepared
     with camo.
@@ -5607,7 +5607,7 @@
   graph: civ13_head_German_SS_helmet_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The typical rounded steel helmet of the Schutzstaffel.
   icon:
     sprite: Civ14/Clothing/exported/hats/stahlhelm.rsi
@@ -5633,7 +5633,7 @@
   graph: civ13_head_soviet_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The typical rounded steel helmet of the red army.
   icon:
     sprite: Civ14/Clothing/exported/hats/sovhelm.rsi
@@ -5659,7 +5659,7 @@
   graph: civ13_head_Greek_M1934/39_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The M1934/39 helmet was the primary combat helmet used by the Greek Armed
     Forces during World War II. Greece purchased these helmets from Italy prior
@@ -5688,7 +5688,7 @@
   graph: civ13_head_M33_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The Elmetto Mod. 33 is a steel combat helmet designed in the 1930s in Italy.
     While not as good as the German Stahlhelm, the M33 was seen as a successful
@@ -5718,7 +5718,7 @@
   graph: civ13_head_M33_Medic_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The Elmetto Mod. The M33 is a steel combat helmet designed in the 1930s in
     Italy. While not as good as the German Stahlhelm, the M33 was seen as a
@@ -5748,7 +5748,7 @@
   graph: civ13_head_M1_Helmet_with_netting_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The typical rounded steel helmet of the US Army, with tan netting.
   icon:
     sprite: Civ14/Clothing/exported/hats/m1_greennet_leaves.rsi
@@ -5774,7 +5774,7 @@
   graph: civ13_head_M1_Chaplain_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The typical rounded steel helmet of the US Army, this one brandishing a
     cross.
@@ -5802,7 +5802,7 @@
   graph: civ13_head_Black_M1_MP_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The typical rounded steel helmet of the US Army, this one for Military
     Police.
@@ -5830,7 +5830,7 @@
   graph: civ13_head_M1_MP_Helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The typical rounded steel helmet of the US Army, this one for Military
     Police.
@@ -5858,7 +5858,7 @@
   graph: civ13_head_USMC_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The typical rounded steel helmet of the USMC.
   icon:
     sprite: Civ14/Clothing/exported/hats/ushelmet_mar.rsi
@@ -5884,7 +5884,7 @@
   graph: civ13_head_USMC_sergeant_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The typical rounded steel helmet of the USMC, this one bearing the rank of
     Sergeant.
@@ -5912,7 +5912,7 @@
   graph: civ13_head_soviet_medical_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     The typical rounded steel helmet of the red army, with the white markings of
     the medical corps.
@@ -5940,7 +5940,7 @@
   graph: civ13_head_bronze_montefortino_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A conical bronce helmet with cheekplates.
   icon:
     sprite: Civ14/Clothing/exported/hats/montefortino.rsi
@@ -5966,7 +5966,7 @@
   graph: civ13_head_chefs_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     It's a hat used by chefs to keep hair out of your food. Judging by the food
     in the mess, they don't work.
@@ -5994,7 +5994,7 @@
   graph: civ13_head_captains_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: It's good being the king.
   icon:
     sprite: Civ14/Clothing/exported/hats/captain.rsi
@@ -6020,7 +6020,7 @@
   graph: civ13_head_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A generic visored cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/blackcap.rsi
@@ -6047,7 +6047,7 @@
   graph: civ13_head_preachers_hood
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: It's hood that covers the head.
   icon:
     sprite: Civ14/Clothing/exported/hats/chaplain_hood.rsi
@@ -6073,7 +6073,7 @@
   graph: civ13_head_hair_flower_pin
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Smells nice.
   icon:
     sprite: Civ14/Clothing/exported/hats/hairflower.rsi
@@ -6099,7 +6099,7 @@
   graph: civ13_head_powdered_wig
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A powdered wig.
   icon:
     sprite: Civ14/Clothing/exported/hats/pwig.rsi
@@ -6125,7 +6125,7 @@
   graph: civ13_head_top_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: It's an amish looking hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/tophat.rsi
@@ -6151,7 +6151,7 @@
   graph: civ13_head_pimp_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: It's a gangster hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/pimp_hat.rsi
@@ -6177,7 +6177,7 @@
   graph: civ13_head_flat_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: It's an common cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/peakyblindercap.rsi
@@ -6203,7 +6203,7 @@
   graph: civ13_head_flat_cap_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: It's an common cap. Has razor blades in it.
   icon:
     sprite: Civ14/Clothing/exported/hats/peakyblindercap.rsi
@@ -6229,7 +6229,7 @@
   graph: civ13_head_pirate_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Yarr.
   icon:
     sprite: Civ14/Clothing/exported/hats/pirate.rsi
@@ -6255,7 +6255,7 @@
   graph: civ13_head_specialist_bandana
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A red bandana, the preferred headwear of seasoned jungle fighters.
   icon:
     sprite: Civ14/Clothing/exported/hats/toughguy.rsi
@@ -6281,7 +6281,7 @@
   graph: civ13_head_olive_bandana
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An olive bandana.
   icon:
     sprite: Civ14/Clothing/exported/hats/bandana_olive.rsi
@@ -6308,7 +6308,7 @@
   graph: civ13_head_feather_trilby
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A sharp, stylish hat with a feather.
   icon:
     sprite: Civ14/Clothing/exported/hats/feathered_hat.rsi
@@ -6334,7 +6334,7 @@
   graph: civ13_head_fez
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: You should wear a fez. Fezzes are cool.
   icon:
     sprite: Civ14/Clothing/exported/hats/fez.rsi
@@ -6360,7 +6360,7 @@
   graph: civ13_head_bearpelt_headcover
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A bear pelt turned into a headcover.
   icon:
     sprite: Civ14/Clothing/exported/hats/bearpelt.rsi
@@ -6386,7 +6386,7 @@
   graph: civ13_head_natural_philosophers_wig
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A stylish monstrosity unearthed from Earth's Renaissance period. With this
     most distinguish'd wig, you'll be ready for your next soiree!
@@ -6414,7 +6414,7 @@
   graph: civ13_head_orange_bandana
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An orange piece of cloth, worn on the head.
   icon:
     sprite: Civ14/Clothing/exported/hats/orange_bandana.rsi
@@ -6440,7 +6440,7 @@
   graph: civ13_head_dunce_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pointed white cap often worn by dummies who should feel ashamed.
   icon:
     sprite: Civ14/Clothing/exported/hats/dunce_cap.rsi
@@ -6466,7 +6466,7 @@
   graph: civ13_head_beanie
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A warm winter beanie.
   icon:
     sprite: Civ14/Clothing/exported/hats/custom_beanie.rsi
@@ -6493,7 +6493,7 @@
   graph: civ13_head_beret
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A simple cloth beret.
   icon:
     sprite: Civ14/Clothing/exported/hats/customberet_hat.rsi
@@ -6519,7 +6519,7 @@
   graph: civ13_head_bandana
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A simple cloth bandana.
   icon:
     sprite: Civ14/Clothing/exported/hats/custombandana_hat.rsi
@@ -6545,7 +6545,7 @@
   graph: civ13_head_noble_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A fancy noble hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/customnoblehat_hat.rsi
@@ -6571,7 +6571,7 @@
   graph: civ13_head_wool_hood
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A wool hood.
   icon:
     sprite: Civ14/Clothing/exported/hats/wool_hood.rsi
@@ -6597,7 +6597,7 @@
   graph: civ13_head_Drill_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The hat of a drill sergeant sir yes sir!!
   icon:
     sprite: Civ14/Clothing/exported/hats/drill_hat.rsi
@@ -6623,7 +6623,7 @@
   graph: civ13_head_taqiyah
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A short, rounded skullcap usually worn for religious purposes.
   icon:
     sprite: Civ14/Clothing/exported/hats/taqiyah.rsi
@@ -6649,7 +6649,7 @@
   graph: civ13_head_hijab
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A veil which is wrapped to cover the head and chest.
   icon:
     sprite: Civ14/Clothing/exported/hats/hijab.rsi
@@ -6675,7 +6675,7 @@
   graph: civ13_head_kippa
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A small, brimless cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/kippa.rsi
@@ -6701,7 +6701,7 @@
   graph: civ13_head_purple_bandana
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A purple bandana tied in the front.
   icon:
     sprite: Civ14/Clothing/exported/hats/bandana_ballas1.rsi
@@ -6727,7 +6727,7 @@
   graph: civ13_head_green_bandana
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A green bandana tied in the front.
   icon:
     sprite: Civ14/Clothing/exported/hats/bandana_grove.rsi
@@ -6753,7 +6753,7 @@
   graph: civ13_head_imperial_naval_officer_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A tight fitting green cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/repofficer_navcaptain.rsi
@@ -6779,7 +6779,7 @@
   graph: civ13_head_imperial_black_field_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A tight fitting black cap worn by Stormtrooper CORPS Officers, Naval
     Lieutenants, and Technicians.
@@ -6807,7 +6807,7 @@
   graph: civ13_head_republic_naval_officer_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A tight fitting green cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/repnavalcaptain_cap.rsi
@@ -6833,7 +6833,7 @@
   graph: civ13_head_republic_naval_ensign_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A tight fitting blue grey cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/repensign_cap.rsi
@@ -6859,7 +6859,7 @@
   graph: civ13_head_republic_medical_officer_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A tight fitting grey cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/repmedicalofficer_cap.rsi
@@ -6885,7 +6885,7 @@
   graph: civ13_head_imperial_officer_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A tight fitting grey cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/impofficer_stormofficer.rsi
@@ -6911,7 +6911,7 @@
   graph: civ13_head_caubeen
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: an Irish beret, typically in dark green color.
   icon:
     sprite: Civ14/Clothing/exported/hats/caubeen.rsi
@@ -6937,7 +6937,7 @@
   graph: civ13_head_ainu_bandana
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A bandana with intricate patterns.
   icon:
     sprite: Civ14/Clothing/exported/hats/ainu.rsi
@@ -6963,7 +6963,7 @@
   graph: civ13_head_toxotai_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A wide brim hat, used by the toxotai.
   icon:
     sprite: Civ14/Clothing/exported/hats/toxotai.rsi
@@ -6989,7 +6989,7 @@
   graph: civ13_head_black_egyptian_headdress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A plain sun-protective linen headdress, despite its black stripes.
   icon:
     sprite: Civ14/Clothing/exported/hats/egyptian_headdress_black.rsi
@@ -7015,7 +7015,7 @@
   graph: civ13_head_blue_egyptian_headdress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A plain sun-protective blue linen headdress.
   icon:
     sprite: Civ14/Clothing/exported/hats/egyptian_headdress_blue.rsi
@@ -7041,7 +7041,7 @@
   graph: civ13_head_red_egyptian_headdress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A plain sun-protective red linen headdress.
   icon:
     sprite: Civ14/Clothing/exported/hats/egyptian_headdress_red.rsi
@@ -7067,7 +7067,7 @@
   graph: civ13_head_pharoah_headdress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A ornate, golden headdress.
   icon:
     sprite: Civ14/Clothing/exported/hats/pharoah_headdress.rsi
@@ -7093,7 +7093,7 @@
   graph: civ13_head_nemes_headdress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A fancy, golden headdress.
   icon:
     sprite: Civ14/Clothing/exported/hats/nemes_headdress.rsi
@@ -7119,7 +7119,7 @@
   graph: civ13_head_double_crown
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A double-coloured cloth crown.
   icon:
     sprite: Civ14/Clothing/exported/hats/doublecrown.rsi
@@ -7145,7 +7145,7 @@
   graph: civ13_head_hedjet_crown
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A egyptian crown made from cloth. It is often worn by pharoahs ruling over
     the floodplains.
@@ -7173,7 +7173,7 @@
   graph: civ13_head_deshret_crown
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A red egyptian crown made from cloth. It is often worn by pharoahs ruling
     over desert dunes.
@@ -7201,7 +7201,7 @@
   graph: civ13_head_pschent_crown
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A combined red and white egyptian crown made from cloth. Combined of deshret
     & hedjet; it represents divine authority over their domain.
@@ -7229,7 +7229,7 @@
   graph: civ13_head_laurel_crown
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A crown made of laurel.
   icon:
     sprite: Civ14/Clothing/exported/hats/laurelcrown.rsi
@@ -7255,7 +7255,7 @@
   graph: civ13_head_gold_laurel_crown
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A crown made of gold, imitating a laurel crown.
   icon:
     sprite: Civ14/Clothing/exported/hats/laurelcrown_gold.rsi
@@ -7281,7 +7281,7 @@
   graph: civ13_head_fiendish_headdress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A menacing headdress, preferred by cults & covens.
   icon:
     sprite: Civ14/Clothing/exported/hats/fiendish.rsi
@@ -7307,7 +7307,7 @@
   graph: civ13_head_semitic_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A yellow knob-headed hat applied to denote jews amongst themselves and those
     ruling over them.
@@ -7335,7 +7335,7 @@
   graph: civ13_head_wolfpelt_headcover
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A wolf pelt turned into a headcover.
   icon:
     sprite: Civ14/Clothing/exported/hats/wolfpelt.rsi
@@ -7361,7 +7361,7 @@
   graph: civ13_head_pantherpelt_headcover
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A panther pelt turned into a headcover.
   icon:
     sprite: Civ14/Clothing/exported/hats/pantherpelt.rsi
@@ -7387,7 +7387,7 @@
   graph: civ13_head_lionpelt_headcover
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A lion pelt turned into a headcover.
   icon:
     sprite: Civ14/Clothing/exported/hats/lionpelt.rsi
@@ -7413,7 +7413,7 @@
   graph: civ13_head_alligator_pelt_headcover
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A alligator pelt turned into a headcover.
   icon:
     sprite: Civ14/Clothing/exported/hats/gatorpelt.rsi
@@ -7439,7 +7439,7 @@
   graph: civ13_head_foxpelt_headcover
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A fox pelt turned into a headcover.
   icon:
     sprite: Civ14/Clothing/exported/hats/foxpelt.rsi
@@ -7465,7 +7465,7 @@
   graph: civ13_head_sheep_pelt_headcover
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A sheep pelt turned into a headcover. The thick wool helps keep the cold off
     your body.
@@ -7493,7 +7493,7 @@
   graph: civ13_head_goatpelt_headcover
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A goat pelt turned into a headcover. The light loose fur helps keep the
     sun's rays off your body.
@@ -7521,7 +7521,7 @@
   graph: civ13_head_bisonpelt_headcover
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A bison pelt turned into a headcover. The thick matted fur keeps the cold
     off your body; the horns are just for show.
@@ -7549,7 +7549,7 @@
   graph: civ13_head_atef_crown
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A white egyptian crown made from cloth adorned with plumes of feathers. The
     preferred crown of egyptian dieties.
@@ -7577,7 +7577,7 @@
   graph: civ13_head_sheriffs_stratton_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A stratton hat worn by the LEOs of the town's Sheriff Department.
   icon:
     sprite: Civ14/Clothing/exported/hats/sd_sheriffhat.rsi
@@ -7603,7 +7603,7 @@
   graph: civ13_head_sheriffs_department_cap_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A baseball cap worn by the LEOs of the town's Sheriff Department.
   icon:
     sprite: Civ14/Clothing/exported/hats/sd_cap.rsi
@@ -7629,7 +7629,7 @@
   graph: civ13_head_police_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A blue cap often worn by members of the police and security guards.
   icon:
     sprite: Civ14/Clothing/exported/hats/traffic_cop.rsi
@@ -7655,7 +7655,7 @@
   graph: civ13_head_red_beret
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A red beret.
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_red.rsi
@@ -7681,7 +7681,7 @@
   graph: civ13_head_black_beret
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A black military beret.
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_black.rsi
@@ -7707,7 +7707,7 @@
   graph: civ13_head_green_beret
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A green beret with golden insignia.
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_green_insig.rsi
@@ -7733,7 +7733,7 @@
   graph: civ13_head_green_beret_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A green beret.
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_green.rsi
@@ -7759,7 +7759,7 @@
   graph: civ13_head_UN_beret
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A blue UN beret.
   icon:
     sprite: Civ14/Clothing/exported/hats/unitednations_beret.rsi
@@ -7785,7 +7785,7 @@
   graph: civ13_head_ghillie_headcover
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A headcover for a ghillie suit.
   icon:
     sprite: Civ14/Clothing/exported/hats/ghillie.rsi
@@ -7811,7 +7811,7 @@
   graph: civ13_head_black_boonie
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A wide brim, soft jungle hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/black_boonie.rsi
@@ -7837,7 +7837,7 @@
   graph: civ13_head_khaki_boonie
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A wide brim, soft jungle hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/khaki_boonie.rsi
@@ -7863,7 +7863,7 @@
   graph: civ13_head_olive_green_boonie
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A wide brim, soft jungle hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/og107_boonie.rsi
@@ -7889,7 +7889,7 @@
   graph: civ13_head_cadpat_tilly
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A wide brim, soft sun hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/tilly_cadpat.rsi
@@ -7915,7 +7915,7 @@
   graph: civ13_head_rice_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A wide brim, rice farmer hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/rice_hat.rsi
@@ -7941,7 +7941,7 @@
   graph: civ13_head_chinese_ushanka
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A chinese ushanka, used by soldiers in the chinese army.
   icon:
     sprite: Civ14/Clothing/exported/hats/chinese_ushanka_up.rsi
@@ -7967,7 +7967,7 @@
   graph: civ13_head_NVA_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A field cap with the markings of an NVA officer.
   icon:
     sprite: Civ14/Clothing/exported/hats/nva_off_cap.rsi
@@ -7993,7 +7993,7 @@
   graph: civ13_head_soviet_ushanka
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A soviet ushanka, used by soldiers in the Red Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/ushanka_new_up.rsi
@@ -8019,7 +8019,7 @@
   graph: civ13_head_NKVD_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by members of the NKVD.
   icon:
     sprite: Civ14/Clothing/exported/hats/nkvd_cap.rsi
@@ -8045,7 +8045,7 @@
   graph: civ13_head_KGB_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by KGB.
   icon:
     sprite: Civ14/Clothing/exported/hats/nkvd_cap.rsi
@@ -8071,7 +8071,7 @@
   graph: civ13_head_US_sailor_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A hat worn by American sailors.
   icon:
     sprite: Civ14/Clothing/exported/hats/sailor_hat.rsi
@@ -8097,7 +8097,7 @@
   graph: civ13_head_Blugoslavian_sailor_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A hat worn by sailors of the Blugoslavian Naval Force.
   icon:
     sprite: Civ14/Clothing/exported/hats/upapilotka.rsi
@@ -8123,7 +8123,7 @@
   graph: civ13_head_Redmenian_sailor_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A hat worn by sailors of the Imperial Redmenian Navy.
   icon:
     sprite: Civ14/Clothing/exported/hats/sailor_hat.rsi
@@ -8149,7 +8149,7 @@
   graph: civ13_head_Japanese_Cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by Japanese soldiers.
   icon:
     sprite: Civ14/Clothing/exported/hats/japcap.rsi
@@ -8175,7 +8175,7 @@
   graph: civ13_head_Japanese_Officer_Cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by japanese officers.
   icon:
     sprite: Civ14/Clothing/exported/hats/japoffcap.rsi
@@ -8201,7 +8201,7 @@
   graph: civ13_head_Japanese_naval_officer_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by Japanese officers in their navy.
   icon:
     sprite: Civ14/Clothing/exported/hats/ww2_japcap_navy_officer.rsi
@@ -8227,7 +8227,7 @@
   graph: civ13_head_Japanese_petty_officer_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by Japanese petty officers in their navy.
   icon:
     sprite: Civ14/Clothing/exported/hats/ww2_japcap_navy.rsi
@@ -8253,7 +8253,7 @@
   graph: civ13_head_Japanese_sailor_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by Japanese sailors.
   icon:
     sprite: Civ14/Clothing/exported/hats/japanese_sailor_hat.rsi
@@ -8279,7 +8279,7 @@
   graph: civ13_head_Japanese_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A cap worn by the Imperial Japanese Army, especially those bearing the rank
     of SNLF.
@@ -8307,7 +8307,7 @@
   graph: civ13_head_Japanese_headband
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A headband worn by Japanese soldiers.
   icon:
     sprite: Civ14/Clothing/exported/hats/japbandana.rsi
@@ -8333,7 +8333,7 @@
   graph: civ13_head_Japanese_pilot_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by Japanese pilots.
   icon:
     sprite: Civ14/Clothing/exported/hats/jappilotcap.rsi
@@ -8359,7 +8359,7 @@
   graph: civ13_head_Kenpeitai_MP_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by the military police corps of the Imperial Japanese Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/japcap_mp.rsi
@@ -8385,7 +8385,7 @@
   graph: civ13_head_Japanese_winter_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Japanese winter cap, worn by soldiers in the Imperial Japanese Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/japwinter_up.rsi
@@ -8411,7 +8411,7 @@
   graph: civ13_head_British_officer_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by British officers.
   icon:
     sprite: Civ14/Clothing/exported/hats/ww2_british_officer.rsi
@@ -8437,7 +8437,7 @@
   graph: civ13_head_British_officer_cap_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by British officers, this one being a tropical green.
   icon:
     sprite: Civ14/Clothing/exported/hats/ww2_british_officer_tropical.rsi
@@ -8463,7 +8463,7 @@
   graph: civ13_head_British_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A brown hat sometimes worn by the British.
   icon:
     sprite: Civ14/Clothing/exported/hats/ww2_aussie.rsi
@@ -8489,7 +8489,7 @@
   graph: civ13_head_tropical_british_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A khaki hat worn by the British Army in tropical climates.
   icon:
     sprite: Civ14/Clothing/exported/hats/ww2_british_tropical.rsi
@@ -8515,7 +8515,7 @@
   graph: civ13_head_British_beret
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A khaki beret worn by the British Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/ww2_british_beret.rsi
@@ -8541,7 +8541,7 @@
   graph: civ13_head_Chinese_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by the Chinese Red Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/fieldcap_china.rsi
@@ -8567,7 +8567,7 @@
   graph: civ13_head_Chinese_cap_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by the Chinese Red Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/fieldcap_china2.rsi
@@ -8593,7 +8593,7 @@
   graph: civ13_head_Chinese_Red_Army_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by the Chinese Red Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/cra_cap.rsi
@@ -8619,7 +8619,7 @@
   graph: civ13_head_US_nco_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by American NCO's.
   icon:
     sprite: Civ14/Clothing/exported/hats/usnco_cap.rsi
@@ -8645,7 +8645,7 @@
   graph: civ13_head_US_tanker_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by American tankers.
   icon:
     sprite: Civ14/Clothing/exported/hats/ustanker.rsi
@@ -8671,7 +8671,7 @@
   graph: civ13_head_German_tanker_headset
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap and radio headset worn by German tank crewmen of the Wehrmacht.
   icon:
     sprite: Civ14/Clothing/exported/hats/gertanker.rsi
@@ -8697,7 +8697,7 @@
   graph: civ13_head_Italian_tanker_headset
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap and radio headset worn by Italian tank crewmen.
   icon:
     sprite: Civ14/Clothing/exported/hats/gertanker.rsi
@@ -8723,7 +8723,7 @@
   graph: civ13_head_Soviet_tanker_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by Soviet tank crewmen.
   icon:
     sprite: Civ14/Clothing/exported/hats/sovtanker.rsi
@@ -8749,7 +8749,7 @@
   graph: civ13_head_German_officer_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by German officers the Wehrmacht.
   icon:
     sprite: Civ14/Clothing/exported/hats/ger_officercap.rsi
@@ -8775,7 +8775,7 @@
   graph: civ13_head_German_panzer_officer_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by German officers the tank corps of the Wehrmacht.
   icon:
     sprite: Civ14/Clothing/exported/hats/ger_officercap_tanker.rsi
@@ -8801,7 +8801,7 @@
   graph: civ13_head_soviet_officer_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap and worn by soviet officers the red army.
   icon:
     sprite: Civ14/Clothing/exported/hats/sov_officercap.rsi
@@ -8827,7 +8827,7 @@
   graph: civ13_head_soviet_pilotka
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap and worn by soviet soldiers of the red army.
   icon:
     sprite: Civ14/Clothing/exported/hats/sovpilotka.rsi
@@ -8853,7 +8853,7 @@
   graph: civ13_head_soviet_ushanka_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A soviet ushanka, used by soldiers in the red army.
   icon:
     sprite: Civ14/Clothing/exported/hats/ushanka_up.rsi
@@ -8879,7 +8879,7 @@
   graph: civ13_head_SS_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by officers in the Schutzstaffel.
   icon:
     sprite: Civ14/Clothing/exported/hats/sscap.rsi
@@ -8905,7 +8905,7 @@
   graph: civ13_head_German_field_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by German Wehrmacht.
   icon:
     sprite: Civ14/Clothing/exported/hats/fieldcap1.rsi
@@ -8931,7 +8931,7 @@
   graph: civ13_head_soviet_field_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap and worn by soviets in the red army.
   icon:
     sprite: Civ14/Clothing/exported/hats/fieldcap2.rsi
@@ -8957,7 +8957,7 @@
   graph: civ13_head_UPA_field_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap and worn by the Ukrayins'ka Povstans'ka Armiya.
   icon:
     sprite: Civ14/Clothing/exported/hats/upa_cap.rsi
@@ -8983,7 +8983,7 @@
   graph: civ13_head_UPA_pilotka
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pilotka and worn by the Ukrayins'ka Povstans'ka Armiya.
   icon:
     sprite: Civ14/Clothing/exported/hats/upapilotka.rsi
@@ -9009,7 +9009,7 @@
   graph: civ13_head_UPA_officer_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap and worn by the Ukrayins'ka Povstans'ka Armiya NCO's.
   icon:
     sprite: Civ14/Clothing/exported/hats/upa_off.rsi
@@ -9035,7 +9035,7 @@
   graph: civ13_head_UPA_officer_cap_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap and worn by the Ukrayins'ka Povstans'ka Armiya Officers.
   icon:
     sprite: Civ14/Clothing/exported/hats/upa_commander.rsi
@@ -9061,7 +9061,7 @@
   graph: civ13_head_soviet_officer_cap_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by Soviet officers.
   icon:
     sprite: Civ14/Clothing/exported/hats/sov_officercap2.rsi
@@ -9087,7 +9087,7 @@
   graph: civ13_head_cafr_officer_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by CAFR officers.
   icon:
     sprite: Civ14/Clothing/exported/hats/cafr_officercap.rsi
@@ -9113,7 +9113,7 @@
   graph: civ13_head_Afghanka_field_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A field cap issued to Soviet forces in the 1980s.
   icon:
     sprite: Civ14/Clothing/exported/hats/fieldcap_afghanka.rsi
@@ -9139,7 +9139,7 @@
   graph: civ13_head_VDV_beret_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A beret worn by the Soviet and Russian Airborne Forces.
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_rus_vdv.rsi
@@ -9165,7 +9165,7 @@
   graph: civ13_head_Spetznaz_beret
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A beret worn by the Spetznaz.
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_rus_spez.rsi
@@ -9191,7 +9191,7 @@
   graph: civ13_head_Blugoslavian_beret
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A beret worn by Blugoslavian Officers.
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_rus_vdv.rsi
@@ -9217,7 +9217,7 @@
   graph: civ13_head_Redmenian_beret
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A beret worn by Redmenian Officers.
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_rus_spez.rsi
@@ -9243,7 +9243,7 @@
   graph: civ13_head_Blugoslavian_navy_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by Blugoslavian Officers of the Blugoslavian Naval Force.
   icon:
     sprite: Civ14/Clothing/exported/hats/blugoslavia_cap.rsi
@@ -9269,7 +9269,7 @@
   graph: civ13_head_Redmenian_navy_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by Redmenian Officers of the Imperial Redmenian Navy.
   icon:
     sprite: Civ14/Clothing/exported/hats/redmenia_cap.rsi
@@ -9295,7 +9295,7 @@
   graph: civ13_head_olive_drab_bandana
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An olive drab coloured bandana.
   icon:
     sprite: Civ14/Clothing/exported/hats/commando_bandana.rsi
@@ -9321,7 +9321,7 @@
   graph: civ13_head_yellow_NBC_hood
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A yellow coloured NBC hood, made protect against biological, chemical and
     nuclear threats.
@@ -9349,7 +9349,7 @@
   graph: civ13_head_olive_drab_NBC_hood
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     An olive drab coloured NBC hood, made protect against biological, chemical
     and nuclear threats.
@@ -9377,7 +9377,7 @@
   graph: civ13_head_firefighting_hood
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A suit primarily intended to protect against fire.
   icon:
     sprite: Civ14/Clothing/exported/hats/nbc2.rsi
@@ -9403,7 +9403,7 @@
   graph: civ13_head_astronaut_helmet
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A grey helmet, made to protect against low pressure, temperature and
     radioactive threa
@@ -9431,7 +9431,7 @@
   graph: civ13_head_Chinese_Red_Guard_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by the Chinese Red guard.
   icon:
     sprite: Civ14/Clothing/exported/hats/redguardcap.rsi
@@ -9457,7 +9457,7 @@
   graph: civ13_head_bizarre_dark_blue_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A dark blue hat worn by troublemakers.
   icon:
     sprite: Civ14/Clothing/exported/hats/bizarre_hat.rsi
@@ -9483,7 +9483,7 @@
   graph: civ13_head_white_surgical_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A white sterile surgical cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/surgcap_white.rsi
@@ -9509,7 +9509,7 @@
   graph: civ13_head_dark_green_surgical_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A dark green sterile surgical cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/surgcap_darkgreen.rsi
@@ -9535,7 +9535,7 @@
   graph: civ13_head_light_green_surgical_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light green sterile surgical cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/surgcap_lightgreen.rsi
@@ -9561,7 +9561,7 @@
   graph: civ13_head_navy_surgical_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A navy sterile surgical cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/surgcap_navy.rsi
@@ -9587,7 +9587,7 @@
   graph: civ13_head_creed_hood
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: It's hood that covers the head.
   icon:
     sprite: Civ14/Clothing/exported/hats/ac_hood.rsi
@@ -9613,7 +9613,7 @@
   graph: civ13_head_Abashiri_Guard_Cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by Abashiri Guards.
   icon:
     sprite: Civ14/Clothing/exported/hats/abashiri_guard.rsi
@@ -9639,7 +9639,7 @@
   graph: civ13_head_Abashiri_Head_Guard_Cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by the Abashiri Head Guard.
   icon:
     sprite: Civ14/Clothing/exported/hats/abashiri_guard_head.rsi
@@ -9665,7 +9665,7 @@
   graph: civ13_head_Abashiri_Warden_Cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by the Abashiri Warden.
   icon:
     sprite: Civ14/Clothing/exported/hats/abashiri_guard_head.rsi
@@ -9691,7 +9691,7 @@
   graph: civ13_head_Kasa
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A straw hat that obscures inmate's view, as well as their faces.
   icon:
     sprite: Civ14/Clothing/exported/hats/abashiri_kasa.rsi
@@ -9717,7 +9717,7 @@
   graph: civ13_head_Japanese_Cap_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by japanese soldiers.
   icon:
     sprite: Civ14/Clothing/exported/hats/japcap2.rsi
@@ -9743,7 +9743,7 @@
   graph: civ13_head_Russian_Cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by russian soldiers.
   icon:
     sprite: Civ14/Clothing/exported/hats/ruscap.rsi
@@ -9769,7 +9769,7 @@
   graph: civ13_head_Russian_Officer_Cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by russian army officers.
   icon:
     sprite: Civ14/Clothing/exported/hats/rusoffcap.rsi
@@ -9795,7 +9795,7 @@
   graph: civ13_head_top_hat_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A high top hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/tophat.rsi
@@ -9821,7 +9821,7 @@
   graph: civ13_head_brown_flat_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A common flat cap, in brown.
   icon:
     sprite: Civ14/Clothing/exported/hats/flatcap1.rsi
@@ -9847,7 +9847,7 @@
   graph: civ13_head_blue_flat_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A common flat cap, in blue.
   icon:
     sprite: Civ14/Clothing/exported/hats/flatcap2.rsi
@@ -9873,7 +9873,7 @@
   graph: civ13_head_grey_flat_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A common flat cap, in grey.
   icon:
     sprite: Civ14/Clothing/exported/hats/flatcap3.rsi
@@ -9899,7 +9899,7 @@
   graph: civ13_head_fedora_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A wide brim hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/fedora.rsi
@@ -9925,7 +9925,7 @@
   graph: civ13_head_Cheka_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A black leather cap worn by Cheka agents.
   icon:
     sprite: Civ14/Clothing/exported/hats/cheka.rsi
@@ -9951,7 +9951,7 @@
   graph: civ13_head_papakha
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A traditional caucasus hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/papakha.rsi
@@ -9977,7 +9977,7 @@
   graph: civ13_head_Kuban_papakha
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A traditional Kuban Cossak papakha, black with a red crown.
   icon:
     sprite: Civ14/Clothing/exported/hats/papakha_kuban.rsi
@@ -10003,7 +10003,7 @@
   graph: civ13_head_budenovka
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A Soviet budenovka hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/budenovka.rsi
@@ -10029,7 +10029,7 @@
   graph: civ13_head_German_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap sometimes worn by German soldiers.
   icon:
     sprite: Civ14/Clothing/exported/hats/germcap2.rsi
@@ -10055,7 +10055,7 @@
   graph: civ13_head_French_kepi
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A flat circular cap worn by French soldiers.
   icon:
     sprite: Civ14/Clothing/exported/hats/frenchcap.rsi
@@ -10081,7 +10081,7 @@
   graph: civ13_head_British_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A classic British cap, commonly worn by British soldiers.
   icon:
     sprite: Civ14/Clothing/exported/hats/brittcap.rsi
@@ -10107,7 +10107,7 @@
   graph: civ13_head_Filipino_Officer_Cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by Filipino Officers of the Philippine Republic Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/fil_off_cap.rsi
@@ -10133,7 +10133,7 @@
   graph: civ13_head_Baliwag
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A common hat worn by the spanish and filipinos, this one bearing the mark of
     the Philippine Republic Army.
@@ -10161,7 +10161,7 @@
   graph: civ13_head_US_Army_Hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A hat worn by enlisted men of the US Army in tropical climates.
   icon:
     sprite: Civ14/Clothing/exported/hats/us_fp_hat.rsi
@@ -10187,7 +10187,7 @@
   graph: civ13_head_cowboy_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A hat worn by stylish rural people.
   icon:
     sprite: Civ14/Clothing/exported/hats/us_fp_hat.rsi
@@ -10213,7 +10213,7 @@
   graph: civ13_head_NCR_1st_Recon_Beret
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A red beret with a capbadge of the NCR's 1st Recon.
   icon:
     sprite: Civ14/Clothing/exported/hats/ncr_beret_recon.rsi
@@ -10239,7 +10239,7 @@
   graph: civ13_head_fur_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A hat made of fur.
   icon:
     sprite: Civ14/Clothing/exported/hats/furhat_hat.rsi
@@ -10265,7 +10265,7 @@
   graph: civ13_head_bisonhead_fur_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A hat made of bison fur with little decorative horns and a fur lined
     interior.
@@ -10293,7 +10293,7 @@
   graph: civ13_head_fur_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap made of fur.
   icon:
     sprite: Civ14/Clothing/exported/hats/furcap_hat.rsi
@@ -10319,7 +10319,7 @@
   graph: civ13_head_roundcap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap made of leather.
   icon:
     sprite: Civ14/Clothing/exported/hats/roundcap_hat.rsi
@@ -10345,7 +10345,7 @@
   graph: civ13_head_kerchief
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A kerchief, worn by women over the hair.
   icon:
     sprite: Civ14/Clothing/exported/hats/kerchief.rsi
@@ -10371,7 +10371,7 @@
   graph: civ13_head_red_sailor_beret
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A red beret.
   icon:
     sprite: Civ14/Clothing/exported/hats/redberet.rsi
@@ -10397,7 +10397,7 @@
   graph: civ13_head_blue_sailor_beret
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A blue beret.
   icon:
     sprite: Civ14/Clothing/exported/hats/blueberet.rsi
@@ -10423,7 +10423,7 @@
   graph: civ13_head_tarred_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A tarred hat, commonly used by sailors.
   icon:
     sprite: Civ14/Clothing/exported/hats/tarred_hat.rsi
@@ -10449,7 +10449,7 @@
   graph: civ13_head_straw_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A straw hat, commonly used by sailors.
   icon:
     sprite: Civ14/Clothing/exported/hats/boater_hat.rsi
@@ -10475,7 +10475,7 @@
   graph: civ13_head_black_tricorne
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A black tricorne. In fashion.
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_black.rsi
@@ -10501,7 +10501,7 @@
   graph: civ13_head_capotain
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A black capotain, high fashion amongst the courts of nobilty.
   icon:
     sprite: Civ14/Clothing/exported/hats/capotain.rsi
@@ -10527,7 +10527,7 @@
   graph: civ13_head_capotain_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A stylized capotain, often worn by transient pilgrims.
   icon:
     sprite: Civ14/Clothing/exported/hats/pilgrim.rsi
@@ -10553,7 +10553,7 @@
   graph: civ13_head_Pirate_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/piratehat.rsi
@@ -10579,7 +10579,7 @@
   graph: civ13_head_bandana_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/piratebandana1.rsi
@@ -10605,7 +10605,7 @@
   graph: civ13_head_royal_navy_tricorne
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A blue tricorne, used by the british royal navy.
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_british.rsi
@@ -10631,7 +10631,7 @@
   graph: civ13_head_british_Army_tricorne
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A red tricorne, used by the british army.
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_british2.rsi
@@ -10657,7 +10657,7 @@
   graph: civ13_head_black_bicorne
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A black bicorne, commonly used by the armed forces.
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_british_soldier.rsi
@@ -10683,7 +10683,7 @@
   graph: civ13_head_british_feathered_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A feathered black bicorne, used by the british light infantry.
   icon:
     sprite: Civ14/Clothing/exported/hats/chasseur_br.rsi
@@ -10709,7 +10709,7 @@
   graph: civ13_head_portuguese_navy_tricorne
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A green tricorne, used by the Portuguese Navy.
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_portuguese.rsi
@@ -10735,7 +10735,7 @@
   graph: civ13_head_portuguese_feathered_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A feathered black bicorne, used by the portuguese light infantry.
   icon:
     sprite: Civ14/Clothing/exported/hats/chasseur_pt.rsi
@@ -10761,7 +10761,7 @@
   graph: civ13_head_portuguese_army_tricorne
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A green tricorne, used by the portuguese army
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_portuguese.rsi
@@ -10787,7 +10787,7 @@
   graph: civ13_head_spanish_navy_tricorne
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A yellow tricorne, used by the spanish navy.
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_spanish.rsi
@@ -10813,7 +10813,7 @@
   graph: civ13_head_spanish_army_tricorne
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A yellow tricorne, used by the spanish army.
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_spanish.rsi
@@ -10839,7 +10839,7 @@
   graph: civ13_head_french_navy_tricorne
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A white and blue tricorne, used by the french navy.
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_french.rsi
@@ -10865,7 +10865,7 @@
   graph: civ13_head_french_army_tricorne
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A white and blue tricorne, used by the french army.
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_french.rsi
@@ -10891,7 +10891,7 @@
   graph: civ13_head_french_feathered_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A feathered black bicorne, used by the french light infantry.
   icon:
     sprite: Civ14/Clothing/exported/hats/chasseur_fr.rsi
@@ -10917,7 +10917,7 @@
   graph: civ13_head_united_provinces_navy_tricorne
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An orange tricorne, used by the united provinces navy.
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_dutch.rsi
@@ -10943,7 +10943,7 @@
   graph: civ13_head_united_Provinces_feathered_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A feathered black bicorne, used by the united provinces light infantry.
   icon:
     sprite: Civ14/Clothing/exported/hats/chasseur_nl.rsi
@@ -10969,7 +10969,7 @@
   graph: civ13_head_united_Provinces_Army_tricorne
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An orange tricorne, used by the dutch united provinces army.
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_dutch.rsi
@@ -10995,7 +10995,7 @@
   graph: civ13_head_nurse_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A white nurse hat, symbolic of care and empathy.
   icon:
     sprite: Civ14/Clothing/exported/hats/nursehat.rsi
@@ -11021,7 +11021,7 @@
   graph: civ13_head_bowler_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A round bowler hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/bowler_hat.rsi
@@ -11047,7 +11047,7 @@
   graph: civ13_head_cowboy_hat_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A curved leather hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/cowboy.rsi
@@ -11073,7 +11073,7 @@
   graph: civ13_head_dark_cowboy_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A grayish, curved leather hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/cowboy2.rsi
@@ -11099,7 +11099,7 @@
   graph: civ13_head_vaquero_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A wide brimmed hat with a feather in the top, favored by mexican cowboys.
     The wide brim helps keep the sun off the wearer's face.
@@ -11127,7 +11127,7 @@
   graph: civ13_head_bandit_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A dark and long brimmed cowboy hat with a grim presence. Despite the dark
     colors, it helps keep the sun off the wearer's face.
@@ -11155,7 +11155,7 @@
   graph: civ13_head_dark_union_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A dark, slouched leather hat worn commonly by union soldiers.
   icon:
     sprite: Civ14/Clothing/exported/hats/union_hat.rsi
@@ -11181,7 +11181,7 @@
   graph: civ13_head_light_union_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light, slouched leather hat worn commonly by union soldiers.
   icon:
     sprite: Civ14/Clothing/exported/hats/union_hat2.rsi
@@ -11207,7 +11207,7 @@
   graph: civ13_head_grey_confederate_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A grey, slouched leather hat worn commonly by confederate soldiers.
   icon:
     sprite: Civ14/Clothing/exported/hats/confederate_hat.rsi
@@ -11233,7 +11233,7 @@
   graph: civ13_head_union_Cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by union soldiers.
   icon:
     sprite: Civ14/Clothing/exported/hats/union_cap.rsi
@@ -11259,7 +11259,7 @@
   graph: civ13_head_confederate_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by confederate soldiers.
   icon:
     sprite: Civ14/Clothing/exported/hats/confederate_cap.rsi
@@ -11285,7 +11285,7 @@
   graph: civ13_head_sombrero
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Ay caramba! The wide brim helps keep the sun off the wearer's face
   icon:
     sprite: Civ14/Clothing/exported/hats/sombrero.rsi
@@ -11311,7 +11311,7 @@
   graph: civ13_head_white_ten_gallon_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     Hat of choice of made-men and those aspiring to wealth & greatness. Its
     white wide brim helps keep the sun off wearer's face.
@@ -11339,7 +11339,7 @@
   graph: civ13_head_artisan_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A large artisan hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/artisan.rsi
@@ -11365,7 +11365,7 @@
   graph: civ13_head_feathered_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A feathered hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/feathered_hat.rsi
@@ -11391,7 +11391,7 @@
   graph: civ13_head_count_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A fancy, feathered hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/medieval_count_hat.rsi
@@ -11417,7 +11417,7 @@
   graph: civ13_head_cavalier_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A free willled and fanciful leather feathered hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/cavalier.rsi
@@ -11443,7 +11443,7 @@
   graph: civ13_head_brown_noble_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/noblehat1.rsi
@@ -11469,7 +11469,7 @@
   graph: civ13_head_black_noble_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: ""
   icon:
     sprite: Civ14/Clothing/exported/hats/noblehat2.rsi
@@ -11495,7 +11495,7 @@
   graph: civ13_head_phrigian_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A knob ended hat of the ancient phrigian design. Often worn by merchants or
     peasants of jewish descent.
@@ -11523,7 +11523,7 @@
   graph: civ13_head_doge_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A ornate knob ended hat banded in gold of the ancient phrigian design. Often
     worn by republic rulers over many petty merchantile aristocrats.
@@ -11551,7 +11551,7 @@
   graph: civ13_head_long_black_hooded_cape
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A long black hooded cape. Often worn those wishing to conceal themselves in
     the shadows.
@@ -11579,7 +11579,7 @@
   graph: civ13_head_plague_doctor_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A a short brimmed black hat. Often worn by plague doctors to cut a discreet
     figure in the streets between visitations.
@@ -11607,7 +11607,7 @@
   graph: civ13_head_nun_hood
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A typical nun hood. Made in such a way to indicate commitment, like that
     found in marriage to the faith.
@@ -11635,7 +11635,7 @@
   graph: civ13_head_turban
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A colored, light fabric turban.
   icon:
     sprite: Civ14/Clothing/exported/hats/turban1.rsi
@@ -11661,7 +11661,7 @@
   graph: civ13_head_white_turban
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A simple white turban.
   icon:
     sprite: Civ14/Clothing/exported/hats/turban_w.rsi
@@ -11687,7 +11687,7 @@
   graph: civ13_head_grand_turban
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A large turban often worn by figures of importance..
   icon:
     sprite: Civ14/Clothing/exported/hats/sultan.rsi
@@ -11713,7 +11713,7 @@
   graph: civ13_head_toadstool_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The princess is in another castle.
   icon:
     sprite: Civ14/Clothing/exported/hats/toadstool.rsi
@@ -11739,7 +11739,7 @@
   graph: civ13_head_keffiyeh
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A headdress fashioned from a scarf with a checkered pattern.
   icon:
     sprite: Civ14/Clothing/exported/hats/keffiyeh_black.rsi
@@ -11765,7 +11765,7 @@
   graph: civ13_head_pakol
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A soft round-topped men's cap made of wool.
   icon:
     sprite: Civ14/Clothing/exported/hats/pakol_rose.rsi
@@ -11791,7 +11791,7 @@
   graph: civ13_head_mayan_headdress
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A mayan style headdress.
   icon:
     sprite: Civ14/Clothing/exported/hats/mayan_headdress.rsi
@@ -11817,7 +11817,7 @@
   graph: civ13_head_steppe_shaman_wool_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A dyed red wool hat of steppe nomad design. Often worn by shamans to protect
     themselves from the elements on the steppe whilst performing rituals
@@ -11845,7 +11845,7 @@
   graph: civ13_head_gat_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A traditional korean hat.
   icon:
     sprite: Civ14/Clothing/exported/hats/gat.rsi
@@ -11871,7 +11871,7 @@
   graph: civ13_head_Russian_Federal_Forces_service_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A cap worn by the Russian Federal Army.
   icon:
     sprite: Civ14/Clothing/exported/hats/fieldcap_rus_fed.rsi
@@ -11897,7 +11897,7 @@
   graph: civ13_head_black_bandana
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A light black piece of cloth worn wrapped around the head.
   icon:
     sprite: Civ14/Clothing/exported/hats/black_bandana.rsi
@@ -11923,7 +11923,7 @@
   graph: civ13_head_black_shemagh
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A light black piece of cloth worn loosely wrapped around the head, typical
     of middle-east countries.
@@ -11951,7 +11951,7 @@
   graph: civ13_head_TFC_Cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A red Texas Fried Chicken cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/tfc.rsi
@@ -11977,7 +11977,7 @@
   graph: civ13_head_MAGA_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A red hat with "Make America Great Again" on the front.
   icon:
     sprite: Civ14/Clothing/exported/hats/maga.rsi
@@ -12003,7 +12003,7 @@
   graph: civ13_head_FBI_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A black hat with FBI in white letters in the front.
   icon:
     sprite: Civ14/Clothing/exported/hats/fbi.rsi
@@ -12029,7 +12029,7 @@
   graph: civ13_head_ATF_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A dark navy hat with ATF in yellow letters in the front.
   icon:
     sprite: Civ14/Clothing/exported/hats/atf.rsi
@@ -12055,7 +12055,7 @@
   graph: civ13_head_DEA_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A dark navy hat with DEA in yellow letters in the front.
   icon:
     sprite: Civ14/Clothing/exported/hats/dea.rsi
@@ -12081,7 +12081,7 @@
   graph: civ13_head_ACU_field_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An ACU pattern field cap, standard issue for the Ukrainian Ground Forces
   icon:
     sprite: Civ14/Clothing/exported/hats/ukraine_cap.rsi
@@ -12107,7 +12107,7 @@
   graph: civ13_head_USEC_field_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An USEC pattern field cap, standard issue for USEC PMCs
   icon:
     sprite: Civ14/Clothing/exported/hats/usec_cap.rsi
@@ -12133,7 +12133,7 @@
   graph: civ13_head_BEAR_field_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A BEAR pattern field cap, standard issue for BEAR PMCs
   icon:
     sprite: Civ14/Clothing/exported/hats/bear_cap.rsi
@@ -12159,7 +12159,7 @@
   graph: civ13_head_black_beanie
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A woolcloth black skull cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/black_beanie.rsi
@@ -12185,7 +12185,7 @@
   graph: civ13_head_umghele_headband
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A headband made from big cat pelt, worn ceremonially & military dress by the
     zulu.
@@ -12213,7 +12213,7 @@
   graph: civ13_head_leaf_head_covering
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A simple batch of leaves dampened down as rudimentary headwear.
   icon:
     sprite: Civ14/Clothing/exported/hats/leaf_hat.rsi
@@ -12239,7 +12239,7 @@
   graph: civ13_head_leaf_crown
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A crown assembled out of leaves, fastened with a leather strap.
   icon:
     sprite: Civ14/Clothing/exported/hats/leaf_crown.rsi
@@ -12265,7 +12265,7 @@
   graph: civ13_head_star_platinum_headband
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A spiritually infused headband that lets your hair flow wildly in the wind,
     you feel as if you could punch endlessly.
@@ -12293,7 +12293,7 @@
   graph: civ13_head_chief_hat
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A hat made with with feathers. Worn by tribal leaders.
   icon:
     sprite: Civ14/Clothing/exported/hats/chief_hat.rsi
@@ -12319,7 +12319,7 @@
   graph: civ13_head_lizard_pelt_headcover
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A lizard pelt turned into a headcover.
   icon:
     sprite: Civ14/Clothing/exported/hats/lizardpelt.rsi
@@ -12345,7 +12345,7 @@
   graph: civ13_head_mystic_hood
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A ominous cream hood, it conceals the face almost fully.
   icon:
     sprite: Civ14/Clothing/exported/hats/mystic.rsi
@@ -12371,7 +12371,7 @@
   graph: civ13_head_officer_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: An officer cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/customcap.rsi
@@ -12397,7 +12397,7 @@
   graph: civ13_head_keffiyeh_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A headdress fashioned from a scarf with a checkered pattern.
   icon:
     sprite: Civ14/Clothing/exported/hats/keffiyeh_custom.rsi
@@ -12423,7 +12423,7 @@
   graph: civ13_head_feathered_cap
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A feathered cap.
   icon:
     sprite: Civ14/Clothing/exported/hats/custfeathercap_hat.rsi
@@ -12449,7 +12449,7 @@
   graph: civ13_head_hennin
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A headdress fashioned from cloth with a nice lining.
   icon:
     sprite: Civ14/Clothing/exported/hats/custom_hennin.rsi

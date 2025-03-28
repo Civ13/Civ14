@@ -4,7 +4,7 @@
   graph: civ13_shoes_shoes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of shoes.
   icon:
     sprite: Civ14/Clothing/exported/shoes/white.rsi
@@ -30,7 +30,7 @@
   graph: civ13_shoes_white_fur_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Dense fur boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/fur4.rsi
@@ -57,7 +57,7 @@
   graph: civ13_shoes_brown_fur_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Dense fur boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/fur1.rsi
@@ -83,7 +83,7 @@
   graph: civ13_shoes_red_shoes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Stylish red shoes.
   icon:
     sprite: Civ14/Clothing/exported/shoes/red.rsi
@@ -109,7 +109,7 @@
   graph: civ13_shoes_orange_shoes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: ""
   icon:
     sprite: Civ14/Clothing/exported/shoes/orange.rsi
@@ -135,7 +135,7 @@
   graph: civ13_shoes_jackboots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Military-style boots designed for combat or rugged environments.
   icon:
     sprite: Civ14/Clothing/exported/shoes/jackboots.rsi
@@ -161,7 +161,7 @@
   graph: civ13_shoes_Soviet_sapogi_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Jackboots of Soviet origin. Also known as 'Yuftevyje sapogi'.
   icon:
     sprite: Civ14/Clothing/exported/shoes/sovietboots.rsi
@@ -187,7 +187,7 @@
   graph: civ13_shoes_workboots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A pair of steel-toed work boots designed for use in industrial settings.
     Safety first.
@@ -216,7 +216,7 @@
   graph: civ13_shoes_black_fur_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Dense fur boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/fur3.rsi
@@ -242,7 +242,7 @@
   graph: civ13_shoes_０military_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: When you want to turn up the heat.
   icon:
     sprite: Civ14/Clothing/exported/shoes/swat.rsi
@@ -268,7 +268,7 @@
   graph: civ13_shoes_０wrapped_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: ""
   icon:
     sprite: Civ14/Clothing/exported/shoes/wrappedboots.rsi
@@ -294,7 +294,7 @@
   graph: civ13_shoes_NCR_wrapped_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: ""
   icon:
     sprite: Civ14/Clothing/exported/shoes/ncr_boots.rsi
@@ -320,7 +320,7 @@
   graph: civ13_shoes_Legionaire_armored_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Black boots with armored plating attached.
   icon:
     sprite: Civ14/Clothing/exported/shoes/legion_boots.rsi
@@ -346,7 +346,7 @@
   graph: civ13_shoes_Leather_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of hob-nailed leather boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/japboots_ww2.rsi
@@ -372,7 +372,7 @@
   graph: civ13_shoes_Black_leather_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of hob-nailed leather boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/japboots_ww2_navy.rsi
@@ -398,7 +398,7 @@
   graph: civ13_shoes_SWAT_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: When you want to turn up the heat.
   icon:
     sprite: Civ14/Clothing/exported/shoes/swat.rsi
@@ -424,7 +424,7 @@
   graph: civ13_shoes_combat_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: When you REALLY want to turn up the heat
   icon:
     sprite: Civ14/Clothing/exported/shoes/swat.rsi
@@ -450,7 +450,7 @@
   graph: civ13_shoes_IOG_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: When you REALLY want to turn up the heat.
   icon:
     sprite: Civ14/Clothing/exported/shoes/iogboot.rsi
@@ -476,7 +476,7 @@
   graph: civ13_shoes_sandals
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of rather plain, wooden sandals.
   icon:
     sprite: Civ14/Clothing/exported/shoes/sandals.rsi
@@ -502,7 +502,7 @@
   graph: civ13_shoes_leather_shoes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A sturdy pair of leather shoes.
   icon:
     sprite: Civ14/Clothing/exported/shoes/leather.rsi
@@ -528,7 +528,7 @@
   graph: civ13_shoes_magic_shoes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of magic, black shoes.
   icon:
     sprite: Civ14/Clothing/exported/shoes/black.rsi
@@ -555,7 +555,7 @@
   graph: civ13_shoes_laceup_shoes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The height of fashion, and they're pre-polished!
   icon:
     sprite: Civ14/Clothing/exported/shoes/laceups.rsi
@@ -581,7 +581,7 @@
   graph: civ13_shoes_grey_fur_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Dense fur boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/fur2.rsi
@@ -607,7 +607,7 @@
   graph: civ13_shoes_alligator_scale_laceup_shoes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The height of luxurious footwear, and they're pre-polished!
   icon:
     sprite: Civ14/Clothing/exported/shoes/gator_laceups.rsi
@@ -633,7 +633,7 @@
   graph: civ13_shoes_chad_shoes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Ouch!
   icon:
     sprite: Civ14/Clothing/exported/shoes/chad.rsi
@@ -659,7 +659,7 @@
   graph: civ13_shoes_flip_flops
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Brazilian style flip-flops.
   icon:
     sprite: Civ14/Clothing/exported/shoes/flipflops.rsi
@@ -685,7 +685,7 @@
   graph: civ13_shoes_plastoid_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of plastoid boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/white.rsi
@@ -711,7 +711,7 @@
   graph: civ13_shoes_red_plastoid_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of red plastoid boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/redboots.rsi
@@ -737,7 +737,7 @@
   graph: civ13_shoes_blue_plastoid_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of blue plastoid boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/senateboots.rsi
@@ -763,7 +763,7 @@
   graph: civ13_shoes_sandals_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Basic leather sandals, going up to the knee.
   icon:
     sprite: Civ14/Clothing/exported/shoes/roman.rsi
@@ -789,7 +789,7 @@
   graph: civ13_shoes_aztec_sandals
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Basic leather sandals, hailing from the jungles.
   icon:
     sprite: Civ14/Clothing/exported/shoes/aztec_sandals.rsi
@@ -815,7 +815,7 @@
   graph: civ13_shoes_fur_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Dense fur boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/fur1.rsi
@@ -841,7 +841,7 @@
   graph: civ13_shoes_human_skin_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Human skin boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/fur5.rsi
@@ -867,7 +867,7 @@
   graph: civ13_shoes_orcish_sabatons
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of orc plated armored boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/ork_warrior.rsi
@@ -893,7 +893,7 @@
   graph: civ13_shoes_specialist_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A well made and importantly quiet treading pair of army-issue leather
     boots..
@@ -921,7 +921,7 @@
   graph: civ13_shoes_creed_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of leather boots worn by the creed.
   icon:
     sprite: Civ14/Clothing/exported/shoes/ac_boots.rsi
@@ -947,7 +947,7 @@
   graph: civ13_shoes_Winter_wrapped_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of simple, thin leather boots. Covers up to the lower leg.
   icon:
     sprite: Civ14/Clothing/exported/shoes/japboots.rsi
@@ -973,7 +973,7 @@
   graph: civ13_shoes_black_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Classic black boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/sailorboots1.rsi
@@ -999,7 +999,7 @@
   graph: civ13_shoes_leather_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Classic leather boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/sailorboots2.rsi
@@ -1025,7 +1025,7 @@
   graph: civ13_shoes_winter_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Classic winter boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/winterboots.rsi
@@ -1051,7 +1051,7 @@
   graph: civ13_shoes_black_puttee_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Classic black boots with white puttees.
   icon:
     sprite: Civ14/Clothing/exported/shoes/whiteput.rsi
@@ -1077,7 +1077,7 @@
   graph: civ13_shoes_infantry_shoes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Low black infantry shoes.
   icon:
     sprite: Civ14/Clothing/exported/shoes/soldier_shoes.rsi
@@ -1103,7 +1103,7 @@
   graph: civ13_shoes_black_sailor_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Classic black sailor boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/sailorboots1.rsi
@@ -1129,7 +1129,7 @@
   graph: civ13_shoes_leather_sailor_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Classic leather sailor boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/sailorboots2.rsi
@@ -1155,7 +1155,7 @@
   graph: civ13_shoes_military_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Classic tan military boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/usmc.rsi
@@ -1181,7 +1181,7 @@
   graph: civ13_shoes_black_riding_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Black leather boots with spurs, perfect for riding.
   icon:
     sprite: Civ14/Clothing/exported/shoes/cowboyboots1.rsi
@@ -1207,7 +1207,7 @@
   graph: civ13_shoes_alligator_scale_riding_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Alligator scale patterned boots with spurs, perfect for riding in style.
   icon:
     sprite: Civ14/Clothing/exported/shoes/gator_cowboy.rsi
@@ -1233,7 +1233,7 @@
   graph: civ13_shoes_lizard_scale_riding_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: lizard scale patterned boots with spurs, perfect for riding in style.
   icon:
     sprite: Civ14/Clothing/exported/shoes/lizard_cowboy.rsi
@@ -1259,7 +1259,7 @@
   graph: civ13_shoes_leather_riding_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Leather boots with spurs, perfect for riding.
   icon:
     sprite: Civ14/Clothing/exported/shoes/cowboyboots2.rsi
@@ -1285,7 +1285,7 @@
   graph: civ13_shoes_alligator_scale_ankle_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Classy alligator scale ankle-length boots, a certain statement for fashion.
   icon:
     sprite: Civ14/Clothing/exported/shoes/gator_ankleboots.rsi
@@ -1311,7 +1311,7 @@
   graph: civ13_shoes_leather_shoes_1
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of simple, thin leather shoes. Covers up to the ankle.
   icon:
     sprite: Civ14/Clothing/exported/shoes/medieval.rsi
@@ -1337,7 +1337,7 @@
   graph: civ13_shoes_arabic_leather_shoes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of simple, thin leather shoes. Loose at the tip.
   icon:
     sprite: Civ14/Clothing/exported/shoes/arab.rsi
@@ -1363,7 +1363,7 @@
   graph: civ13_shoes_emirate_leather_shoes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A pair of simple, arabic style leather shoes. Extra padded & loose at the
     tip.
@@ -1391,7 +1391,7 @@
   graph: civ13_shoes_Sabatons
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of plated armored boots.
   icon:
     sprite: Civ14/Clothing/exported/shoes/knight.rsi
@@ -1417,7 +1417,7 @@
   graph: civ13_shoes_steppe_wool_shoe
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     A pair of insulated rough woolen shoes for keeping feet warm on the open
     steppe.
@@ -1445,7 +1445,7 @@
   graph: civ13_shoes_geta_sandals
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of simple, wood sandals. Keeps you elevated off he ground slightly.
   icon:
     sprite: Civ14/Clothing/exported/shoes/geta.rsi
@@ -1471,7 +1471,7 @@
   graph: civ13_shoes_tsuranuki
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of plated shin guards & shoes of japanese origin.
   icon:
     sprite: Civ14/Clothing/exported/shoes/tsuranuki.rsi
@@ -1497,7 +1497,7 @@
   graph: civ13_shoes_dwemmer_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of plated boots made of dwemmer metal.
   icon:
     sprite: Civ14/Clothing/exported/shoes/dwoots.rsi
@@ -1523,7 +1523,7 @@
   graph: civ13_shoes_courier_sneakers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of simple, thin grey sneakers.
   icon:
     sprite: Civ14/Clothing/exported/shoes/courier_sneakers.rsi
@@ -1549,7 +1549,7 @@
   graph: civ13_shoes_punk_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of stylized high leather boots for kicking the snot out of 'The Man'.
   icon:
     sprite: Civ14/Clothing/exported/shoes/punk.rsi
@@ -1575,7 +1575,7 @@
   graph: civ13_shoes_lizard_scale_ankle_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Classy lizard scale ankle-length boots, a certain statement for fashion.
   icon:
     sprite: Civ14/Clothing/exported/shoes/lizard_ankleboots.rsi
@@ -1601,7 +1601,7 @@
   graph: civ13_shoes_lizard_scale_laceup_shoes
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: The height of luxurious footwear, and they're pre-polished!
   icon:
     sprite: Civ14/Clothing/exported/shoes/lizard_laceups.rsi
@@ -1627,7 +1627,7 @@
   graph: civ13_shoes_Brown_boots
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: Combat boots made of brown leather with a toe cap and rubber sole.
   icon:
     sprite: Civ14/Clothing/exported/shoes/brownboots.rsi
@@ -1653,7 +1653,7 @@
   graph: civ13_shoes_Brown_boots_with_leggings
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: >-
     These combat boots are crafted from durable brown leather, featuring a toe
     cap and rubber sole. They come complete with protective leggings, providing
@@ -1682,7 +1682,7 @@
   graph: civ13_shoes_football_trainers
   startNode: start
   targetNode: end
-  category: clothing
+  category: construction-category-clothing
   description: A pair of football trainers.
   icon:
     sprite: Civ14/Clothing/exported/shoes/football.rsi
