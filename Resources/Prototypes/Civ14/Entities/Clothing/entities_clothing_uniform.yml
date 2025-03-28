@@ -4243,6 +4243,7 @@
       cost: 5
       material: Cloth
       time: 5
+      hide: true
 - type: entity
   name: Abashiri Prison Uniform
   parent: ClothingUniformBase
