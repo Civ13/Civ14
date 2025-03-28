@@ -184,7 +184,7 @@ namespace Content.Client.Construction.UI
                 var CurrentAge = 0; //hardcoded for now
                 if (recipe.Hide)
                     continue;
-                if (recipe.AgeMin > CurrentAge || CurrentAge > recipe.AgeMax)
+                if (CurrentAge < recipe.AgeMin || CurrentAge > recipe.AgeMax)
                     continue;
                 if (_playerManager.LocalSession == null
                 || _playerManager.LocalEntity == null
