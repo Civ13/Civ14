@@ -17,6 +17,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_mamluk_conical_helmet
       node: end
       cost: 5
@@ -41,6 +43,8 @@
           Arrow: 0.19999999999999996
           Heat: 0.35
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Imperial_Red_Guard_Helmet
       node: end
       cost: 5
@@ -65,6 +69,8 @@
           Arrow: 0.19999999999999996
           Heat: 0.35
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Imperial_Senate_Guard_Helmet
       node: end
       cost: 5
@@ -89,6 +95,8 @@
           Arrow: 0.55
           Heat: 0.55
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Phase_I_Replicant_Trooper_Helmet
       node: end
       cost: 5
@@ -113,6 +121,8 @@
           Arrow: 0.5
           Heat: 0.55
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Phase_I_Replicant_ARF_Helmet
       node: end
       cost: 5
@@ -137,6 +147,8 @@
           Arrow: 0.5
           Heat: 0.44999999999999996
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Phase_I_Replicant_Airborne_Helmet
       node: end
       cost: 5
@@ -161,6 +173,8 @@
           Arrow: 0.4
           Heat: 0.5
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Stormtrooper_Helmet
       node: end
       cost: 5
@@ -185,6 +199,8 @@
           Arrow: 0.4
           Heat: 0.5
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Storm_Surgeon_Helmet
       node: end
       cost: 5
@@ -209,6 +225,8 @@
           Arrow: 0.5
           Heat: 0.5
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Stormtrooper_Radio_Technician_Helmet
       node: end
       cost: 5
@@ -233,6 +251,8 @@
           Arrow: 0.55
           Heat: 0.55
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_AT_RT_Replicant_Driver_Helmet
       node: end
       cost: 5
@@ -257,6 +277,8 @@
           Arrow: 0.5
           Heat: 0.5
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Phase_I_Replicant_Radio_Technician_Helmet
       node: end
       cost: 5
@@ -282,6 +304,8 @@
           Heat: 0.5
           Radiation: 0.65
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Replicant_Engineer_Helmet
       node: end
       cost: 5
@@ -306,6 +330,8 @@
           Arrow: 0.35
           Heat: 0.4
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Replicant_Commando_Helmet
       node: end
       cost: 5
@@ -330,6 +356,8 @@
           Arrow: 0.5
           Heat: 0.44999999999999996
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Phase_I_Replicant_Pilot_Helmet
       node: end
       cost: 5
@@ -354,6 +382,8 @@
           Arrow: 0.5
           Heat: 0.55
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Phase_I_Replicant_MP_Helmet
       node: end
       cost: 5
@@ -378,6 +408,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M1_helmet_2nd_LT
       node: end
       cost: 5
@@ -403,6 +435,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M1_camo_helmet
       node: end
       cost: 5
@@ -427,6 +461,8 @@
           Arrow: 0.5
           Heat: 0.44999999999999996
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Phase_I_Replicant_Captain_Helmet
       node: end
       cost: 5
@@ -451,6 +487,8 @@
           Arrow: 0.5
           Heat: 0.44999999999999996
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Phase_I_Replicant_Commander_Helmet
       node: end
       cost: 5
@@ -475,6 +513,8 @@
           Arrow: 0.4
           Heat: 0.42000000000000004
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Phase_II_Replicant_Trooper_Helmet
       node: end
       cost: 5
@@ -501,6 +541,8 @@
           Arrow: 0.4
           Heat: 0.42000000000000004
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Phase_II_Replicant_Trooper_Helmet_1
       node: end
       cost: 5
@@ -525,6 +567,8 @@
           Arrow: 0.4
           Heat: 0.42000000000000004
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Phase_II_501st_Replicant_Trooper_Helmet
       node: end
       cost: 5
@@ -549,6 +593,8 @@
           Arrow: 0.5
           Heat: 0.55
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Rebel_Fleet_Trooper_Helmet
       node: end
       cost: 5
@@ -573,6 +619,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_roman_legionary_helmet
       node: end
       cost: 5
@@ -598,6 +646,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_ushanka
       node: end
       cost: 4
@@ -624,6 +674,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_roman_decurion_helmet
       node: end
       cost: 5
@@ -650,6 +702,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_roman_centurion_helmet
       node: end
       cost: 5
@@ -674,6 +728,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_gladiator_helmet
       node: end
       cost: 5
@@ -700,6 +756,8 @@
           Arrow: 0.5
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_sol_invictus_helmet
       node: end
       cost: 5
@@ -726,6 +784,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_greek_anax_helmet
       node: end
       cost: 5
@@ -752,6 +812,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_aries_helmet
       node: end
       cost: 5
@@ -779,6 +841,8 @@
           Arrow: 0.4
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_athena_helmet
       node: end
       cost: 5
@@ -803,6 +867,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Greek_M15_Adrian_helmet
       node: end
       cost: 5
@@ -829,6 +895,8 @@
           Arrow: 0.56
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_lochagos_helmet
       node: end
       cost: 5
@@ -855,6 +923,8 @@
           Arrow: 0.56
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_dimoerites_helmet
       node: end
       cost: 5
@@ -881,6 +951,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_egyptian_war_headdress
       node: end
       cost: 5
@@ -907,6 +979,8 @@
           Arrow: 0.4
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_bronze_anubis_headdress
       node: end
       cost: 5
@@ -933,6 +1007,8 @@
           Arrow: 0.4
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_bronze_osirus_headdress
       node: end
       cost: 5
@@ -958,6 +1034,8 @@
           Arrow: 0.75
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_bronze_phrigian_helmet
       node: end
       cost: 4
@@ -980,6 +1058,8 @@
           Arrow: 0.85
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_leather_helmet
       node: end
       cost: 3
@@ -1005,6 +1085,8 @@
           Arrow: 0.85
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_hatchigane_headband
       node: end
       cost: 3
@@ -1031,6 +1113,8 @@
           Heat: 0.85
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_khepresh_war_crown
       node: end
       cost: 3
@@ -1054,6 +1138,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_horned_helmet
       node: end
       cost: 5
@@ -1079,6 +1165,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_winged_helmet
       node: end
       cost: 5
@@ -1105,6 +1193,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_conspicious_gaelic_helmet
       node: end
       cost: 5
@@ -1130,6 +1220,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_conspicious_gaelic_helmet_1
       node: end
       cost: 5
@@ -1153,6 +1245,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_chinese_warrior_helmet
       node: end
       cost: 5
@@ -1178,6 +1272,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_yellow_ninja_headband
       node: end
       cost: 5
@@ -1203,6 +1299,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_VDV_beret
       node: end
       cost: 5
@@ -1227,6 +1325,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M1_helmet
       node: end
       cost: 5
@@ -1251,6 +1351,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_UN_helmet
       node: end
       cost: 5
@@ -1276,6 +1378,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_UN_medic_helmet
       node: end
       cost: 5
@@ -1301,6 +1405,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_camo_6B47_helmet
       node: end
       cost: 5
@@ -1325,6 +1431,8 @@
           Arrow: 0.25
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_CVC_helmet
       node: end
       cost: 5
@@ -1349,6 +1457,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Chinese_helmet
       node: end
       cost: 5
@@ -1373,6 +1483,8 @@
           Arrow: 0.55
           Heat: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Chinese_helmet_1
       node: end
       cost: 5
@@ -1397,6 +1509,8 @@
           Arrow: 0.4
           Heat: 0.6
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Medical_FT1_advanced_helmet
       node: end
       cost: 5
@@ -1424,6 +1538,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_SSh_68_helmet
       node: end
       cost: 5
@@ -1448,6 +1564,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_viet_pith_helmet
       node: end
       cost: 5
@@ -1472,6 +1590,8 @@
           Arrow: 0.85
           Heat: 0.95
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_white_hard_hat
       node: end
       cost: 3
@@ -1496,6 +1616,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_yellow_cap
       node: end
       cost: 5
@@ -1520,6 +1642,8 @@
           Arrow: 0.85
           Heat: 0.95
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_orange_hard_hat
       node: end
       cost: 3
@@ -1543,6 +1667,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_iron_pickelhaube
       node: end
       cost: 5
@@ -1567,6 +1693,8 @@
           Arrow: 0.65
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M1915_Stahlhelm
       node: end
       cost: 5
@@ -1591,6 +1719,8 @@
           Arrow: 0.65
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_iron_brodie
       node: end
       cost: 5
@@ -1615,6 +1745,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_pith_helmet
       node: end
       cost: 5
@@ -1639,6 +1771,8 @@
           Arrow: 0.25
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_PASGT_helmet
       node: end
       cost: 5
@@ -1663,6 +1797,8 @@
           Arrow: 0.25
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Red_PASGT_helmet
       node: end
       cost: 5
@@ -1688,6 +1824,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_white_papakha
       node: end
       cost: 5
@@ -1712,6 +1850,8 @@
           Arrow: 0.32999999999999996
           Heat: 0.8200000000000001
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_LWH_helmet
       node: end
       cost: 5
@@ -1739,6 +1879,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_sheriffs_department_cap
       node: end
       cost: 5
@@ -1763,6 +1905,8 @@
           Arrow: 0.050000000000000044
           Heat: 0.78
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_OCP_ACH_helmet
       node: end
       cost: 5
@@ -1787,6 +1931,8 @@
           Arrow: 0.050000000000000044
           Heat: 0.78
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_ACH_helmet
       node: end
       cost: 5
@@ -1811,6 +1957,8 @@
           Arrow: -0.1
           Heat: 0.73
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_MASKA_1_helmet
       node: end
       cost: 5
@@ -1839,6 +1987,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_6B47_helmet
       node: end
       cost: 5
@@ -1864,6 +2014,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_blugo_6B47_helmet
       node: end
       cost: 5
@@ -1889,6 +2041,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_blugo_command_6B47_helmet
       node: end
       cost: 5
@@ -1916,6 +2070,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Sfera_helmet
       node: end
       cost: 5
@@ -1943,6 +2099,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_ZSh_1_helmet
       node: end
       cost: 5
@@ -1970,6 +2128,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_ZSh_2_helmet
       node: end
       cost: 5
@@ -1994,6 +2154,8 @@
           Arrow: 0.44999999999999996
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_IDF_helmet
       node: end
       cost: 5
@@ -2019,6 +2181,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_firefighter_helmet
       node: end
       cost: 5
@@ -2043,6 +2207,8 @@
           Arrow: 0.32999999999999996
           Heat: 0.8200000000000001
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Mk6_helmet
       node: end
       cost: 5
@@ -2068,6 +2234,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_CG634_helmet
       node: end
       cost: 5
@@ -2092,6 +2260,8 @@
           Arrow: 0.010000000000000009
           Heat: 0.5800000000000001
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Mechanical_Helmet
       node: end
       cost: 5
@@ -2116,6 +2286,8 @@
           Arrow: 0.19999999999999996
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_QGF03_helmet
       node: end
       cost: 5
@@ -2142,6 +2314,8 @@
           Arrow: 0.25
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M95_helmet
       node: end
       cost: 5
@@ -2166,6 +2340,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M1_Helmet
       node: end
       cost: 5
@@ -2190,6 +2366,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M1_Helmet_with_netting
       node: end
       cost: 5
@@ -2214,6 +2392,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M1_Helmet_with_green_netting
       node: end
       cost: 5
@@ -2238,6 +2418,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M1_Medic_Helmet
       node: end
       cost: 5
@@ -2264,6 +2446,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M1_2nd_LT_Helmet
       node: end
       cost: 5
@@ -2290,6 +2474,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M1_1st_LT_Helmet
       node: end
       cost: 5
@@ -2316,6 +2502,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M1_Captain_Helmet
       node: end
       cost: 5
@@ -2342,6 +2530,8 @@
           Arrow: 0.4
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_constable_helmet
       node: end
       cost: 6
@@ -2366,6 +2556,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_NCR_Officer_Beret
       node: end
       cost: 5
@@ -2393,6 +2585,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Goggles_Helmet
       node: end
       cost: 5
@@ -2416,6 +2610,8 @@
           Arrow: 0.98
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Legionaire_Cap
       node: end
       cost: 5
@@ -2440,6 +2636,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_imperial_helmet
       node: end
       cost: 5
@@ -2464,6 +2662,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_morion_helmet
       node: end
       cost: 5
@@ -2488,6 +2688,8 @@
           Arrow: 0.6799999999999999
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_cabasset_helmet
       node: end
       cost: 5
@@ -2512,6 +2714,8 @@
           Arrow: 0.75
           Heat: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_leather_infantry_cap
       node: end
       cost: 3
@@ -2537,6 +2741,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_brown_bear_pelt_hat
       node: end
       cost: 4
@@ -2562,6 +2768,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_blue_cap
       node: end
       cost: 5
@@ -2587,6 +2795,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_red_cap
       node: end
       cost: 5
@@ -2613,6 +2823,8 @@
           Arrow: 0.75
           Heat: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_commisar_hat
       node: end
       cost: 5
@@ -2639,6 +2851,8 @@
           Arrow: 0.75
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_prussian_leather_infantry_helmet
       node: end
       cost: 5
@@ -2664,6 +2878,8 @@
           Heat: 0.75
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_satsuma_infantry_hat
       node: end
       cost: 5
@@ -2691,6 +2907,8 @@
           Heat: 0.85
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_dragoon_helmet
       node: end
       cost: 7
@@ -2716,6 +2934,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_black_napoleonic_bearskin_hat
       node: end
       cost: 4
@@ -2740,6 +2960,8 @@
           Arrow: 0.85
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_gold_crown
       node: end
       cost: 3
@@ -2764,6 +2986,8 @@
           Arrow: 0.85
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_silver_crown
       node: end
       cost: 3
@@ -2788,6 +3012,8 @@
           Arrow: 0.8
           Heat: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_inlaid_gold_crown
       node: end
       cost: 5
@@ -2812,6 +3038,8 @@
           Arrow: 0.8
           Heat: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_inlaid_silver_crown
       node: end
       cost: 5
@@ -2835,6 +3063,8 @@
           Arrow: 0.85
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_brown_padded_head_cap
       node: end
       cost: 4
@@ -2858,6 +3088,8 @@
           Arrow: 0.85
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_grey_padded_head_cap
       node: end
       cost: 4
@@ -2881,6 +3113,8 @@
           Arrow: 0.85
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_ratty_old_padded_head_cap
       node: end
       cost: 4
@@ -2907,6 +3141,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_italian_sallet
       node: end
       cost: 5
@@ -2933,6 +3169,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_german_sallet
       node: end
       cost: 5
@@ -2959,6 +3197,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_burgundian_sallet
       node: end
       cost: 5
@@ -2985,6 +3225,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_hounskull_bascinet
       node: end
       cost: 5
@@ -3009,6 +3251,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_knight_helmet
       node: end
       cost: 5
@@ -3033,6 +3277,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_protective_conical_helmet
       node: end
       cost: 5
@@ -3057,6 +3303,8 @@
           Arrow: 0.65
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_kettle_helmet
       node: end
       cost: 5
@@ -3081,6 +3329,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_conical_helmet
       node: end
       cost: 5
@@ -3105,6 +3355,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_coif_wrapped_mamluk_helmet
       node: end
       cost: 5
@@ -3129,6 +3381,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_iron_coif_and_helmet
       node: end
       cost: 5
@@ -3153,6 +3407,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_purple_arabic_turban_helmet
       node: end
       cost: 5
@@ -3177,6 +3433,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_red_arabic_turban_helmet
       node: end
       cost: 5
@@ -3201,6 +3459,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_green_arabic_turban_helmet
       node: end
       cost: 5
@@ -3225,6 +3485,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_blue_arabic_turban_helmet
       node: end
       cost: 5
@@ -3251,6 +3513,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_long_arabic_helmet
       node: end
       cost: 5
@@ -3277,6 +3541,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_feminine_long_arabic_helmet
       node: end
       cost: 5
@@ -3301,6 +3567,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_templar_knight_helmet
       node: end
       cost: 5
@@ -3327,6 +3595,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_emirate_helmet
       node: end
       cost: 7
@@ -3351,6 +3621,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_crusader_helmet
       node: end
       cost: 5
@@ -3377,6 +3649,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_crusader_king_helmet
       node: end
       cost: 5
@@ -3403,6 +3677,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_baltic_crusader_helmet
       node: end
       cost: 5
@@ -3429,6 +3705,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_baltic_grandmaster_helmet
       node: end
       cost: 5
@@ -3456,6 +3734,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_baltic_crusader_king_helmet
       node: end
       cost: 5
@@ -3482,6 +3762,8 @@
           Arrow: 0.30000000000000004
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_templar_priest_helmet
       node: end
       cost: 5
@@ -3508,6 +3790,8 @@
           Arrow: 0.30000000000000004
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_baltic_priest_helmet
       node: end
       cost: 5
@@ -3532,6 +3816,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_viking_helmet
       node: end
       cost: 5
@@ -3558,6 +3844,8 @@
           Arrow: 0.5
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_royal_mamluk_conical_helmet
       node: end
       cost: 5
@@ -3582,6 +3870,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_royal_viking_helmet
       node: end
       cost: 5
@@ -3608,6 +3898,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_royal_viking_helmet_1
       node: end
       cost: 5
@@ -3634,6 +3926,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_varangian_helmet
       node: end
       cost: 5
@@ -3660,6 +3954,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_imperial_chinese_helmet
       node: end
       cost: 5
@@ -3686,6 +3982,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_penlianal_whitestrake_helmet
       node: end
       cost: 5
@@ -3712,6 +4010,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_hell_knight_helmet
       node: end
       cost: 5
@@ -3736,6 +4036,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_saint_helmet
       node: end
       cost: 5
@@ -3762,6 +4064,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_lordran_helmet
       node: end
       cost: 5
@@ -3787,6 +4091,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_dwemmer_helmet
       node: end
       cost: 5
@@ -3813,6 +4119,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_leather_samurai_helmet
       node: end
       cost: 7
@@ -3837,6 +4145,8 @@
           Arrow: 0.8
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_hide_helmet
       node: end
       cost: 5
@@ -3863,6 +4173,8 @@
           Arrow: 0.7
           Heat: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_iron_helmet
       node: end
       cost: 5
@@ -3887,6 +4199,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_stormcloak_officer_helmet
       node: end
       cost: 5
@@ -3911,6 +4225,8 @@
           Arrow: 0.5
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_imperial_officer_helmet
       node: end
       cost: 5
@@ -3937,6 +4253,8 @@
           Heat: 0.85
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_leather_skullcap_helmet
       node: end
       cost: 3
@@ -3961,6 +4279,8 @@
           Arrow: 0.5
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_samurai_helmet
       node: end
       cost: 5
@@ -3987,6 +4307,8 @@
           Arrow: 0.85
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_jingasa
       node: end
       cost: 5
@@ -4011,6 +4333,8 @@
           Arrow: 0.85
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_kasa
       node: end
       cost: 3
@@ -4036,6 +4360,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_black_kevlar_helmet
       node: end
       cost: 5
@@ -4063,6 +4389,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Press_kevlar_helmet
       node: end
       cost: 5
@@ -4087,6 +4415,8 @@
           Arrow: 0.35
           Heat: 0.65
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_motorcycle_helmet
       node: end
       cost: 5
@@ -4111,6 +4441,8 @@
           Arrow: 0.050000000000000044
           Heat: 0.73
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_swat_helmet
       node: end
       cost: 5
@@ -4135,6 +4467,8 @@
           Arrow: 0.050000000000000044
           Heat: 0.73
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_swat_helmet_1
       node: end
       cost: 5
@@ -4160,6 +4494,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_FT1_advanced_helmet
       node: end
       cost: 5
@@ -4185,6 +4521,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_tactical_helmet
       node: end
       cost: 5
@@ -4210,6 +4548,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_IOG_helmet
       node: end
       cost: 5
@@ -4235,6 +4575,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_IOG_helmet_1
       node: end
       cost: 5
@@ -4260,6 +4602,8 @@
           Heat: 0.8
           Radiation: 0.6
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_scrap_metal_helmet
       node: end
       cost: 5
@@ -4284,6 +4628,8 @@
           Arrow: 0.85
           Heat: 0.84
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_bone_helmet
       node: end
       cost: 10
@@ -4309,6 +4655,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_chitin_helmet
       node: end
       cost: 7
@@ -4333,6 +4681,8 @@
           Heat: 0.8
           Radiation: 0.55
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_saurons_helmet
       node: end
       cost: 5
@@ -4356,6 +4706,8 @@
           Arrow: 0.19999999999999996
           Radiation: 0.9
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_orc_beserker_helm
       node: end
       cost: 5
@@ -4379,6 +4731,8 @@
           Arrow: 0.09999999999999998
           Radiation: 0.9
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_iron_helmet_1
       node: end
       cost: 5
@@ -4402,6 +4756,8 @@
           Arrow: 0.30000000000000004
           Radiation: 0.9
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_iron_helmet_1_2
       node: end
       cost: 5
@@ -4426,6 +4782,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_orc_spearman_helm
       node: end
       cost: 5
@@ -4450,6 +4808,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_orc_captain_helm
       node: end
       cost: 5
@@ -4474,6 +4834,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_orc_grunt_helm
       node: end
       cost: 5
@@ -4498,6 +4860,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Greek_M15_Adrian_helmet_1
       node: end
       cost: 5
@@ -4522,6 +4886,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M15_Adrian_helmet
       node: end
       cost: 5
@@ -4546,6 +4912,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Medic_M15_Adrian_helmet
       node: end
       cost: 5
@@ -4570,6 +4938,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Russian_M15_Adrian_helmet
       node: end
       cost: 5
@@ -4594,6 +4964,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Medic_M15_Adrian_helmet_1
       node: end
       cost: 5
@@ -4618,6 +4990,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M26_Adrian_helmet
       node: end
       cost: 5
@@ -4642,6 +5016,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Medic_M26_Adrian_helmet
       node: end
       cost: 5
@@ -4666,6 +5042,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Mk1_Brodie_Helmet
       node: end
       cost: 5
@@ -4691,6 +5069,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Mk1_Brodie_Helmet_1
       node: end
       cost: 5
@@ -4716,6 +5096,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Mk2_Brodie_Helmet
       node: end
       cost: 5
@@ -4741,6 +5123,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Mk2_Brodie_Medic_Helmet
       node: end
       cost: 5
@@ -4766,6 +5150,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Irish_Mk2_Brodie_Helmet
       node: end
       cost: 5
@@ -4791,6 +5177,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Mk2_Brodie_Helmet_with_green_netting
       node: end
       cost: 5
@@ -4816,6 +5204,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Mk2_Brodie_Helmet_with_tan_netting
       node: end
       cost: 5
@@ -4841,6 +5231,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Camouflaged_Mk2_Brodie_Helmet
       node: end
       cost: 5
@@ -4866,6 +5258,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Camouflaged_Mk2_Brodie_Helmet_1
       node: end
       cost: 5
@@ -4890,6 +5284,8 @@
           Arrow: 0.7
           Heat: 0.9
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Leather_pickelhaube
       node: end
       cost: 5
@@ -4916,6 +5312,8 @@
           Arrow: 0.75
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Japanese_sakura_helmet
       node: end
       cost: 5
@@ -4942,6 +5340,8 @@
           Arrow: 0.6699999999999999
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Japanese_helmet
       node: end
       cost: 5
@@ -4967,6 +5367,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_pirate_bandana
       node: end
       cost: 5
@@ -4994,6 +5396,8 @@
           Arrow: 0.6699999999999999
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Japanese_SNLF_helmet
       node: end
       cost: 5
@@ -5021,6 +5425,8 @@
           Arrow: 0.6699999999999999
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Japanese_medic_helmet
       node: end
       cost: 5
@@ -5048,6 +5454,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Japanese_tanker_helmet
       node: end
       cost: 5
@@ -5072,6 +5480,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_US_mp_helmet
       node: end
       cost: 5
@@ -5096,6 +5506,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_german_stahlhelm
       node: end
       cost: 5
@@ -5120,6 +5532,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Fallschirmjager_stahlhelm
       node: end
       cost: 5
@@ -5146,6 +5560,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_german_medic_stahlhelm
       node: end
       cost: 5
@@ -5172,6 +5588,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_german_stahlhelm_1
       node: end
       cost: 5
@@ -5199,6 +5617,8 @@
           Arrow: 0.6799999999999999
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_German_SS_helmet
       node: end
       cost: 5
@@ -5223,6 +5643,8 @@
           Arrow: 0.6799999999999999
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_German_SS_helmet_1
       node: end
       cost: 5
@@ -5247,6 +5669,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_soviet_helmet
       node: end
       cost: 5
@@ -5274,6 +5698,8 @@
           Arrow: 0.75
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Greek_M1934/39_Helmet
       node: end
       cost: 5
@@ -5302,6 +5728,8 @@
           Arrow: 0.75
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M33_Helmet
       node: end
       cost: 5
@@ -5330,6 +5758,8 @@
           Arrow: 0.75
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M33_Medic_Helmet
       node: end
       cost: 5
@@ -5354,6 +5784,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M1_Helmet_with_netting_1
       node: end
       cost: 5
@@ -5380,6 +5812,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M1_Chaplain_Helmet
       node: end
       cost: 5
@@ -5406,6 +5840,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Black_M1_MP_Helmet
       node: end
       cost: 5
@@ -5432,6 +5868,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_M1_MP_Helmet
       node: end
       cost: 5
@@ -5456,6 +5894,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_USMC_helmet
       node: end
       cost: 5
@@ -5482,6 +5922,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_USMC_sergeant_helmet
       node: end
       cost: 5
@@ -5508,6 +5950,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_soviet_medical_helmet
       node: end
       cost: 5
@@ -5531,6 +5975,8 @@
           Arrow: 0.75
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_bronze_montefortino_helmet
       node: end
       cost: 4
@@ -5557,6 +6003,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_chefs_hat
       node: end
       cost: 5
@@ -5582,6 +6030,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_captains_hat
       node: end
       cost: 5
@@ -5607,6 +6057,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_cap
       node: end
       cost: 5
@@ -5633,6 +6085,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_preachers_hood
       node: end
       cost: 5
@@ -5658,6 +6112,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_hair_flower_pin
       node: end
       cost: 5
@@ -5683,6 +6139,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_powdered_wig
       node: end
       cost: 5
@@ -5708,6 +6166,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_top_hat
       node: end
       cost: 5
@@ -5733,6 +6193,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_pimp_hat
       node: end
       cost: 5
@@ -5758,6 +6220,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_flat_cap
       node: end
       cost: 5
@@ -5783,6 +6247,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_flat_cap_1
       node: end
       cost: 5
@@ -5808,6 +6274,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_pirate_hat
       node: end
       cost: 5
@@ -5833,6 +6301,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_specialist_bandana
       node: end
       cost: 5
@@ -5858,6 +6328,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_olive_bandana
       node: end
       cost: 5
@@ -5884,6 +6356,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_feather_trilby
       node: end
       cost: 5
@@ -5909,6 +6383,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_fez
       node: end
       cost: 5
@@ -5934,6 +6410,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_bearpelt_headcover
       node: end
       cost: 5
@@ -5961,6 +6439,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_natural_philosophers_wig
       node: end
       cost: 5
@@ -5986,6 +6466,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_orange_bandana
       node: end
       cost: 5
@@ -6011,6 +6493,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_dunce_cap
       node: end
       cost: 5
@@ -6036,6 +6520,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_beanie
       node: end
       cost: 2
@@ -6062,6 +6548,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_beret
       node: end
       cost: 2
@@ -6087,6 +6575,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_bandana
       node: end
       cost: 2
@@ -6112,6 +6602,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_noble_hat
       node: end
       cost: 4
@@ -6137,6 +6629,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_wool_hood
       node: end
       cost: 2
@@ -6161,6 +6655,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Drill_hat
       node: end
       cost: 5
@@ -6186,6 +6682,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_taqiyah
       node: end
       cost: 2
@@ -6211,6 +6709,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_hijab
       node: end
       cost: 2
@@ -6236,6 +6736,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_kippa
       node: end
       cost: 2
@@ -6261,6 +6763,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_purple_bandana
       node: end
       cost: 5
@@ -6286,6 +6790,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_green_bandana
       node: end
       cost: 5
@@ -6311,6 +6817,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_imperial_naval_officer_cap
       node: end
       cost: 5
@@ -6338,6 +6846,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_imperial_black_field_cap
       node: end
       cost: 5
@@ -6363,6 +6873,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_republic_naval_officer_cap
       node: end
       cost: 5
@@ -6388,6 +6900,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_republic_naval_ensign_cap
       node: end
       cost: 5
@@ -6413,6 +6927,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_republic_medical_officer_cap
       node: end
       cost: 5
@@ -6438,6 +6954,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_imperial_officer_cap
       node: end
       cost: 5
@@ -6463,6 +6981,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_caubeen
       node: end
       cost: 5
@@ -6488,6 +7008,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_ainu_bandana
       node: end
       cost: 4
@@ -6513,6 +7035,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_toxotai_hat
       node: end
       cost: 5
@@ -6538,6 +7062,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_black_egyptian_headdress
       node: end
       cost: 4
@@ -6563,6 +7089,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_blue_egyptian_headdress
       node: end
       cost: 4
@@ -6588,6 +7116,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_red_egyptian_headdress
       node: end
       cost: 4
@@ -6613,6 +7143,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_pharoah_headdress
       node: end
       cost: 6
@@ -6638,6 +7170,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_nemes_headdress
       node: end
       cost: 6
@@ -6663,6 +7197,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_double_crown
       node: end
       cost: 5
@@ -6690,6 +7226,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_hedjet_crown
       node: end
       cost: 5
@@ -6717,6 +7255,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_deshret_crown
       node: end
       cost: 5
@@ -6744,6 +7284,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_pschent_crown
       node: end
       cost: 5
@@ -6769,6 +7311,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_laurel_crown
       node: end
       cost: 8
@@ -6793,6 +7337,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_gold_laurel_crown
       node: end
       cost: 6
@@ -6817,6 +7363,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_fiendish_headdress
       node: end
       cost: 4
@@ -6844,6 +7392,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_semitic_cap
       node: end
       cost: 4
@@ -6869,6 +7419,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_wolfpelt_headcover
       node: end
       cost: 4
@@ -6894,6 +7446,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_pantherpelt_headcover
       node: end
       cost: 3
@@ -6919,6 +7473,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_lionpelt_headcover
       node: end
       cost: 3
@@ -6944,6 +7500,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_alligator_pelt_headcover
       node: end
       cost: 3
@@ -6969,6 +7527,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_foxpelt_headcover
       node: end
       cost: 3
@@ -6996,6 +7556,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_sheep_pelt_headcover
       node: end
       cost: 3
@@ -7023,6 +7585,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_goatpelt_headcover
       node: end
       cost: 3
@@ -7050,6 +7614,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_bisonpelt_headcover
       node: end
       cost: 3
@@ -7077,6 +7643,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_atef_crown
       node: end
       cost: 5
@@ -7102,6 +7670,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_sheriffs_stratton_hat
       node: end
       cost: 5
@@ -7127,6 +7697,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_sheriffs_department_cap_1
       node: end
       cost: 5
@@ -7152,6 +7724,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_police_cap
       node: end
       cost: 4
@@ -7177,6 +7751,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_red_beret
       node: end
       cost: 5
@@ -7202,6 +7778,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_black_beret
       node: end
       cost: 5
@@ -7227,6 +7805,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_green_beret
       node: end
       cost: 5
@@ -7252,6 +7832,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_green_beret_1
       node: end
       cost: 5
@@ -7277,6 +7859,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_UN_beret
       node: end
       cost: 5
@@ -7302,6 +7886,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_ghillie_headcover
       node: end
       cost: 5
@@ -7327,6 +7913,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_black_boonie
       node: end
       cost: 5
@@ -7352,6 +7940,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_khaki_boonie
       node: end
       cost: 5
@@ -7377,6 +7967,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_olive_green_boonie
       node: end
       cost: 5
@@ -7402,6 +7994,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_cadpat_tilly
       node: end
       cost: 5
@@ -7427,6 +8021,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_rice_hat
       node: end
       cost: 3
@@ -7451,6 +8047,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_chinese_ushanka
       node: end
       cost: 5
@@ -7476,6 +8074,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_NVA_cap
       node: end
       cost: 5
@@ -7501,6 +8101,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_soviet_ushanka
       node: end
       cost: 5
@@ -7526,6 +8128,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_NKVD_cap
       node: end
       cost: 5
@@ -7551,6 +8155,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_KGB_cap
       node: end
       cost: 5
@@ -7576,6 +8182,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_US_sailor_hat
       node: end
       cost: 5
@@ -7601,6 +8209,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Blugoslavian_sailor_hat
       node: end
       cost: 5
@@ -7626,6 +8236,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Redmenian_sailor_hat
       node: end
       cost: 5
@@ -7651,6 +8263,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Japanese_Cap
       node: end
       cost: 5
@@ -7676,6 +8290,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Japanese_Officer_Cap
       node: end
       cost: 5
@@ -7701,6 +8317,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Japanese_naval_officer_cap
       node: end
       cost: 5
@@ -7726,6 +8344,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Japanese_petty_officer_cap
       node: end
       cost: 5
@@ -7751,6 +8371,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Japanese_sailor_cap
       node: end
       cost: 5
@@ -7778,6 +8400,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Japanese_cap
       node: end
       cost: 5
@@ -7803,6 +8427,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Japanese_headband
       node: end
       cost: 5
@@ -7828,6 +8454,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Japanese_pilot_cap
       node: end
       cost: 5
@@ -7853,6 +8481,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Kenpeitai_MP_cap
       node: end
       cost: 5
@@ -7878,6 +8508,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Japanese_winter_cap
       node: end
       cost: 5
@@ -7903,6 +8535,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_British_officer_cap
       node: end
       cost: 5
@@ -7928,6 +8562,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_British_officer_cap_1
       node: end
       cost: 5
@@ -7953,6 +8589,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_British_hat
       node: end
       cost: 5
@@ -7978,6 +8616,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_tropical_british_hat
       node: end
       cost: 5
@@ -8003,6 +8643,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_British_beret
       node: end
       cost: 5
@@ -8028,6 +8670,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Chinese_cap
       node: end
       cost: 5
@@ -8053,6 +8697,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Chinese_cap_1
       node: end
       cost: 5
@@ -8078,6 +8724,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Chinese_Red_Army_cap
       node: end
       cost: 5
@@ -8103,6 +8751,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_US_nco_cap
       node: end
       cost: 5
@@ -8127,6 +8777,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_US_tanker_cap
       node: end
       cost: 5
@@ -8150,6 +8802,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_German_tanker_headset
       node: end
       cost: 5
@@ -8173,6 +8827,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Italian_tanker_headset
       node: end
       cost: 5
@@ -8197,6 +8853,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Soviet_tanker_cap
       node: end
       cost: 5
@@ -8222,6 +8880,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_German_officer_cap
       node: end
       cost: 5
@@ -8247,6 +8907,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_German_panzer_officer_cap
       node: end
       cost: 5
@@ -8272,6 +8934,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_soviet_officer_cap
       node: end
       cost: 5
@@ -8297,6 +8961,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_soviet_pilotka
       node: end
       cost: 5
@@ -8322,6 +8988,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_soviet_ushanka_1
       node: end
       cost: 5
@@ -8347,6 +9015,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_SS_cap
       node: end
       cost: 5
@@ -8372,6 +9042,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_German_field_cap
       node: end
       cost: 5
@@ -8397,6 +9069,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_soviet_field_cap
       node: end
       cost: 5
@@ -8422,6 +9096,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_UPA_field_cap
       node: end
       cost: 5
@@ -8447,6 +9123,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_UPA_pilotka
       node: end
       cost: 5
@@ -8472,6 +9150,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_UPA_officer_cap
       node: end
       cost: 5
@@ -8497,6 +9177,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_UPA_officer_cap_1
       node: end
       cost: 5
@@ -8522,6 +9204,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_soviet_officer_cap_1
       node: end
       cost: 5
@@ -8547,6 +9231,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_cafr_officer_cap
       node: end
       cost: 5
@@ -8572,6 +9258,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Afghanka_field_cap
       node: end
       cost: 5
@@ -8597,6 +9285,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_VDV_beret_1
       node: end
       cost: 5
@@ -8622,6 +9312,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Spetznaz_beret
       node: end
       cost: 5
@@ -8647,6 +9339,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Blugoslavian_beret
       node: end
       cost: 5
@@ -8672,6 +9366,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Redmenian_beret
       node: end
       cost: 5
@@ -8697,6 +9393,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Blugoslavian_navy_cap
       node: end
       cost: 5
@@ -8722,6 +9420,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Redmenian_navy_cap
       node: end
       cost: 5
@@ -8747,6 +9447,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_olive_drab_bandana
       node: end
       cost: 5
@@ -8770,6 +9472,8 @@
           Heat: 0.75
           Radiation: 0.19999999999999996
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_yellow_NBC_hood
       node: end
       cost: 3
@@ -8793,6 +9497,8 @@
           Heat: 0.75
           Radiation: 0.19999999999999996
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_olive_drab_NBC_hood
       node: end
       cost: 3
@@ -8816,6 +9522,8 @@
           Heat: 0.19999999999999996
           Radiation: 0.6
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_firefighting_hood
       node: end
       cost: 5
@@ -8843,6 +9551,8 @@
           Heat: 0.9
           Radiation: -0.95
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_astronaut_helmet
       node: end
       cost: 5
@@ -8868,6 +9578,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Chinese_Red_Guard_cap
       node: end
       cost: 5
@@ -8893,6 +9605,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_bizarre_dark_blue_hat
       node: end
       cost: 5
@@ -8918,6 +9632,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_white_surgical_cap
       node: end
       cost: 5
@@ -8943,6 +9659,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_dark_green_surgical_cap
       node: end
       cost: 5
@@ -8968,6 +9686,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_light_green_surgical_cap
       node: end
       cost: 5
@@ -8993,6 +9713,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_navy_surgical_cap
       node: end
       cost: 5
@@ -9018,6 +9740,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_creed_hood
       node: end
       cost: 5
@@ -9043,6 +9767,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Abashiri_Guard_Cap
       node: end
       cost: 5
@@ -9068,6 +9794,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Abashiri_Head_Guard_Cap
       node: end
       cost: 5
@@ -9093,6 +9821,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Abashiri_Warden_Cap
       node: end
       cost: 5
@@ -9118,6 +9848,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Kasa
       node: end
       cost: 5
@@ -9143,6 +9875,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Japanese_Cap_1
       node: end
       cost: 5
@@ -9168,6 +9902,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Russian_Cap
       node: end
       cost: 5
@@ -9193,6 +9929,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Russian_Officer_Cap
       node: end
       cost: 5
@@ -9218,6 +9956,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_top_hat_1
       node: end
       cost: 5
@@ -9243,6 +9983,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_brown_flat_cap
       node: end
       cost: 2
@@ -9268,6 +10010,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_blue_flat_cap
       node: end
       cost: 2
@@ -9293,6 +10037,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_grey_flat_cap
       node: end
       cost: 2
@@ -9318,6 +10064,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_fedora_hat
       node: end
       cost: 5
@@ -9343,6 +10091,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Cheka_cap
       node: end
       cost: 5
@@ -9368,6 +10118,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_papakha
       node: end
       cost: 5
@@ -9393,6 +10145,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Kuban_papakha
       node: end
       cost: 5
@@ -9418,6 +10172,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_budenovka
       node: end
       cost: 5
@@ -9443,6 +10199,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_German_cap
       node: end
       cost: 5
@@ -9468,6 +10226,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_French_kepi
       node: end
       cost: 5
@@ -9493,6 +10253,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_British_cap
       node: end
       cost: 5
@@ -9518,6 +10280,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Filipino_Officer_Cap
       node: end
       cost: 5
@@ -9545,6 +10309,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Baliwag
       node: end
       cost: 5
@@ -9570,6 +10336,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_US_Army_Hat
       node: end
       cost: 5
@@ -9595,6 +10363,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_cowboy_hat
       node: end
       cost: 5
@@ -9620,6 +10390,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_NCR_1st_Recon_Beret
       node: end
       cost: 5
@@ -9645,6 +10417,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_fur_hat
       node: end
       cost: 2
@@ -9672,6 +10446,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_bisonhead_fur_hat
       node: end
       cost: 3
@@ -9697,6 +10473,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_fur_cap
       node: end
       cost: 2
@@ -9722,6 +10500,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_roundcap
       node: end
       cost: 2
@@ -9747,6 +10527,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_kerchief
       node: end
       cost: 2
@@ -9772,6 +10554,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_red_sailor_beret
       node: end
       cost: 2
@@ -9797,6 +10581,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_blue_sailor_beret
       node: end
       cost: 2
@@ -9822,6 +10608,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_tarred_hat
       node: end
       cost: 3
@@ -9847,6 +10635,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_straw_hat
       node: end
       cost: 3
@@ -9872,6 +10662,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_black_tricorne
       node: end
       cost: 3
@@ -9897,6 +10689,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_capotain
       node: end
       cost: 4
@@ -9922,6 +10716,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_capotain_1
       node: end
       cost: 4
@@ -9947,6 +10743,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Pirate_hat
       node: end
       cost: 5
@@ -9972,6 +10770,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_bandana_1
       node: end
       cost: 2
@@ -9997,6 +10797,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_royal_navy_tricorne
       node: end
       cost: 5
@@ -10022,6 +10824,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_british_Army_tricorne
       node: end
       cost: 5
@@ -10047,6 +10851,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_black_bicorne
       node: end
       cost: 2
@@ -10072,6 +10878,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_british_feathered_hat
       node: end
       cost: 5
@@ -10097,6 +10905,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_portuguese_navy_tricorne
       node: end
       cost: 5
@@ -10122,6 +10932,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_portuguese_feathered_hat
       node: end
       cost: 5
@@ -10147,6 +10959,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_portuguese_army_tricorne
       node: end
       cost: 5
@@ -10172,6 +10986,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_spanish_navy_tricorne
       node: end
       cost: 5
@@ -10197,6 +11013,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_spanish_army_tricorne
       node: end
       cost: 5
@@ -10222,6 +11040,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_french_navy_tricorne
       node: end
       cost: 5
@@ -10247,6 +11067,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_french_army_tricorne
       node: end
       cost: 5
@@ -10272,6 +11094,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_french_feathered_hat
       node: end
       cost: 5
@@ -10297,6 +11121,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_united_provinces_navy_tricorne
       node: end
       cost: 5
@@ -10322,6 +11148,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_united_Provinces_feathered_hat
       node: end
       cost: 5
@@ -10347,6 +11175,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_united_Provinces_Army_tricorne
       node: end
       cost: 5
@@ -10372,6 +11202,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_nurse_hat
       node: end
       cost: 2
@@ -10397,6 +11229,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_bowler_hat
       node: end
       cost: 2
@@ -10422,6 +11256,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_cowboy_hat_1
       node: end
       cost: 3
@@ -10447,6 +11283,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_dark_cowboy_hat
       node: end
       cost: 3
@@ -10474,6 +11312,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_vaquero_hat
       node: end
       cost: 4
@@ -10501,6 +11341,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_bandit_hat
       node: end
       cost: 4
@@ -10526,6 +11368,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_dark_union_hat
       node: end
       cost: 5
@@ -10551,6 +11395,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_light_union_hat
       node: end
       cost: 5
@@ -10576,6 +11422,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_grey_confederate_hat
       node: end
       cost: 5
@@ -10601,6 +11449,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_union_Cap
       node: end
       cost: 5
@@ -10626,6 +11476,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_confederate_cap
       node: end
       cost: 5
@@ -10651,6 +11503,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_sombrero
       node: end
       cost: 4
@@ -10678,6 +11532,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_white_ten_gallon_hat
       node: end
       cost: 5
@@ -10703,6 +11559,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_artisan_hat
       node: end
       cost: 2
@@ -10728,6 +11586,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_feathered_hat
       node: end
       cost: 3
@@ -10753,6 +11613,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_count_hat
       node: end
       cost: 5
@@ -10778,6 +11640,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_cavalier_hat
       node: end
       cost: 3
@@ -10803,6 +11667,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_brown_noble_hat
       node: end
       cost: 5
@@ -10828,6 +11694,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_black_noble_hat
       node: end
       cost: 5
@@ -10855,6 +11723,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_phrigian_hat
       node: end
       cost: 4
@@ -10882,6 +11752,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_doge_hat
       node: end
       cost: 4
@@ -10909,6 +11781,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_long_black_hooded_cape
       node: end
       cost: 6
@@ -10936,6 +11810,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_plague_doctor_hat
       node: end
       cost: 4
@@ -10963,6 +11839,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_nun_hood
       node: end
       cost: 4
@@ -10988,6 +11866,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_turban
       node: end
       cost: 2
@@ -11013,6 +11893,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_white_turban
       node: end
       cost: 2
@@ -11038,6 +11920,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_grand_turban
       node: end
       cost: 5
@@ -11063,6 +11947,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_toadstool_hat
       node: end
       cost: 5
@@ -11088,6 +11974,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_keffiyeh
       node: end
       cost: 5
@@ -11113,6 +12001,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_pakol
       node: end
       cost: 5
@@ -11138,6 +12028,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_mayan_headdress
       node: end
       cost: 4
@@ -11165,6 +12057,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_steppe_shaman_wool_hat
       node: end
       cost: 4
@@ -11189,6 +12083,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_gat_hat
       node: end
       cost: 2
@@ -11214,6 +12110,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_Russian_Federal_Forces_service_cap
       node: end
       cost: 5
@@ -11239,6 +12137,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_black_bandana
       node: end
       cost: 5
@@ -11266,6 +12166,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_black_shemagh
       node: end
       cost: 5
@@ -11291,6 +12193,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_TFC_Cap
       node: end
       cost: 5
@@ -11316,6 +12220,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_MAGA_hat
       node: end
       cost: 5
@@ -11341,6 +12247,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_FBI_hat
       node: end
       cost: 5
@@ -11366,6 +12274,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_ATF_hat
       node: end
       cost: 5
@@ -11391,6 +12301,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_DEA_hat
       node: end
       cost: 5
@@ -11416,6 +12328,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_ACU_field_cap
       node: end
       cost: 5
@@ -11441,6 +12355,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_USEC_field_cap
       node: end
       cost: 5
@@ -11466,6 +12382,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_BEAR_field_cap
       node: end
       cost: 5
@@ -11491,6 +12409,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_black_beanie
       node: end
       cost: 5
@@ -11518,6 +12438,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_umghele_headband
       node: end
       cost: 2
@@ -11543,6 +12465,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_leaf_head_covering
       node: end
       cost: 3
@@ -11567,6 +12491,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_leaf_crown
       node: end
       cost: 5
@@ -11593,6 +12519,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_star_platinum_headband
       node: end
       cost: 5
@@ -11618,6 +12546,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_chief_hat
       node: end
       cost: 5
@@ -11643,6 +12573,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_lizard_pelt_headcover
       node: end
       cost: 3
@@ -11668,6 +12600,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_mystic_hood
       node: end
       cost: 5
@@ -11693,6 +12627,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_officer_cap
       node: end
       cost: 4
@@ -11718,6 +12654,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_keffiyeh_1
       node: end
       cost: 2
@@ -11743,6 +12681,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_feathered_cap
       node: end
       cost: 4
@@ -11768,6 +12708,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_head_hennin
       node: end
       cost: 2

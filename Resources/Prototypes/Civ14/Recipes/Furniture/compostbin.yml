@@ -1,0 +1,24 @@
+- type: construction
+  name: wood table
+  id: CompostBin
+  graph: CompostBin
+  startNode: start
+  targetNode: end
+  category: construction-category-furniture
+  description: A wood box, used to turn trash and scraps into fertilizer.
+  icon: { sprite: Civ14/Structures/old_table4.rsi, state: full }
+  objectType: Item
+
+- type: constructionGraph
+  id: CompostBin
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 5
+              doAfter: 10
+    - node: end
+      entity: CompostBin

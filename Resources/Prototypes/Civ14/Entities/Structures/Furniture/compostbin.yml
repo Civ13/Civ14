@@ -46,3 +46,8 @@
         - Pizza
         - Cheese
       compostTime: 20.0
+    - type: Construction
+      agemin: 0
+      agemax: 8
+      graph: start
+      node: end

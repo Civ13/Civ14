@@ -18,6 +18,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_preachers_robe
       node: end
       cost: 5
@@ -43,6 +45,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_contestant_jacket
       node: end
       cost: 5
@@ -68,6 +72,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_black_vest
       node: end
       cost: 5
@@ -93,6 +99,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_DRA_officer_jacket
       node: end
       cost: 5
@@ -117,6 +125,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_afghanka_coat
       node: end
       cost: 5
@@ -141,6 +151,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_cafr_afghanka_coat
       node: end
       cost: 5
@@ -166,6 +178,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_forensics_jacket
       node: end
       cost: 5
@@ -191,6 +205,8 @@
           Heat: 0.6
           Radiation: 0.8
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_police_bulletproof_vest
       node: end
       cost: 5
@@ -217,6 +233,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_black_primitive_pelt_coat
       node: end
       cost: 6
@@ -242,6 +260,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_haori_jacket
       node: end
       cost: 4
@@ -270,6 +290,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Abashiri_Haori
       node: end
       cost: 5
@@ -297,6 +319,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Abashiri_Haori_1
       node: end
       cost: 5
@@ -324,6 +348,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Abashiri_Haori_1_2
       node: end
       cost: 5
@@ -349,6 +375,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_black_suit
       node: end
       cost: 15
@@ -374,6 +402,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_dark_black_suit
       node: end
       cost: 15
@@ -399,6 +429,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_charcoal_suit
       node: end
       cost: 15
@@ -424,6 +456,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_navy_suit
       node: end
       cost: 15
@@ -449,6 +483,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_checkered_suit
       node: end
       cost: 15
@@ -474,6 +510,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_burgundy_suit
       node: end
       cost: 15
@@ -499,6 +537,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_white_labcoat
       node: end
       cost: 5
@@ -524,6 +564,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_surgery_apron
       node: end
       cost: 8
@@ -548,6 +590,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_coveralls
       node: end
       cost: 5
@@ -573,6 +617,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_black_jacket
       node: end
       cost: 6
@@ -598,6 +644,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_fancy_brown_jacket
       node: end
       cost: 10
@@ -623,6 +671,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_blue_vest
       node: end
       cost: 4
@@ -648,6 +698,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_black_vest_1
       node: end
       cost: 4
@@ -673,6 +725,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_fancy_red_jacket
       node: end
       cost: 10
@@ -700,6 +754,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_royal_navy_captain_jacket
       node: end
       cost: 5
@@ -725,6 +781,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_royal_navy_officer_jacket
       node: end
       cost: 5
@@ -750,6 +808,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_british_red_jacket
       node: end
       cost: 5
@@ -777,6 +837,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_portuguese_captain_jacket
       node: end
       cost: 5
@@ -802,6 +864,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_portuguese_officer_jacket
       node: end
       cost: 5
@@ -829,6 +893,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_spanish_captain_jacket
       node: end
       cost: 5
@@ -854,6 +920,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_spanish_officer_jacket
       node: end
       cost: 5
@@ -879,6 +947,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_spanish_soldier_jacket
       node: end
       cost: 5
@@ -906,6 +976,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_french_captain_jacket
       node: end
       cost: 5
@@ -931,6 +1003,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_french_officer_jacket
       node: end
       cost: 5
@@ -958,6 +1032,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_united_provinces_captain_jacket
       node: end
       cost: 5
@@ -985,6 +1061,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_united_provinces_officer_jacket
       node: end
       cost: 5
@@ -1012,6 +1090,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_united_provinces_army_jacket
       node: end
       cost: 5
@@ -1037,6 +1117,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_spanish_army_jacket
       node: end
       cost: 5
@@ -1062,6 +1144,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_portuguese_army_jacket
       node: end
       cost: 5
@@ -1087,6 +1171,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_french_army_jacket
       node: end
       cost: 5
@@ -1112,6 +1198,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_british_army_jacket
       node: end
       cost: 5
@@ -1137,6 +1225,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_victorian_tailcoat
       node: end
       cost: 15
@@ -1162,6 +1252,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_leather_overcoat
       node: end
       cost: 6
@@ -1187,6 +1279,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_black_leather_overcoat
       node: end
       cost: 6
@@ -1212,6 +1306,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_black_vest_1_2
       node: end
       cost: 4
@@ -1237,6 +1333,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_olive_vest
       node: end
       cost: 4
@@ -1262,6 +1360,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_blue_vest_1
       node: end
       cost: 4
@@ -1287,6 +1387,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_cream_short_jacket
       node: end
       cost: 15
@@ -1313,6 +1415,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_plague_doctor_suit
       node: end
       cost: 5
@@ -1340,6 +1444,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_regal_ermine_cape
       node: end
       cost: 9
@@ -1367,6 +1473,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_steppe_shaman_wool_coat
       node: end
       cost: 6
@@ -1391,6 +1499,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_motorist_jacket
       node: end
       cost: 6
@@ -1413,6 +1523,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Russian_Federal_Forces_winter_jacket
       node: end
       cost: 5
@@ -1438,6 +1550,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_punk_jacket
       node: end
       cost: 5
@@ -1463,6 +1577,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_high_visibility_jacket
       node: end
       cost: 5
@@ -1488,6 +1604,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_paramedic_jacket
       node: end
       cost: 5
@@ -1513,6 +1631,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_track_suit
       node: end
       cost: 5
@@ -1535,6 +1655,8 @@
           Slash: 0.5
           Arrow: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_bone_armor
       node: end
       cost: 10
@@ -1559,6 +1681,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_imperial_officer_armor
       node: end
       cost: 5
@@ -1587,6 +1711,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_commissar_jacket
       node: end
       cost: 5
@@ -1614,6 +1740,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_inquisitorial_jacket
       node: end
       cost: 5
@@ -1639,6 +1767,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_inquisitorial_jacket_1
       node: end
       cost: 5
@@ -1664,6 +1794,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_elven_warlock_robe
       node: end
       cost: 5
@@ -1691,6 +1823,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_elven_harlequin_jacket
       node: end
       cost: 5
@@ -1716,6 +1850,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_poncho
       node: end
       cost: 2
@@ -1741,6 +1877,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_hoodie
       node: end
       cost: 5
@@ -1766,6 +1904,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_cloth_jacket
       node: end
       cost: 5
@@ -1791,6 +1931,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_suit_blazer
       node: end
       cost: 5
@@ -1816,6 +1958,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_colonial_coat
       node: end
       cost: 7
@@ -1841,6 +1985,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_colonial_jacket
       node: end
       cost: 5
@@ -1866,6 +2012,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_track_suit_1
       node: end
       cost: 5
@@ -1889,6 +2037,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_wise_tutor_robes
       node: end
       cost: 5
@@ -1912,6 +2062,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_arrogant_student_robes
       node: end
       cost: 5
@@ -1936,6 +2088,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_fur_coat
       node: end
       cost: 6
@@ -1962,6 +2116,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_brown_primitive_pelt_coat
       node: end
       cost: 6
@@ -1988,6 +2144,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_white_primitive_pelt_coat
       node: end
       cost: 6
@@ -2014,6 +2172,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_grey_primitive_pelt_coat
       node: end
       cost: 6
@@ -2038,6 +2198,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_human_skin_coat
       node: end
       cost: 6
@@ -2062,6 +2224,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_M05_snow_pattern_coat
       node: end
       cost: 5
@@ -2086,6 +2250,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Ukrainian_winter_camo_coat
       node: end
       cost: 5
@@ -2110,6 +2276,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Klyaksa_camo_coat
       node: end
       cost: 5
@@ -2134,6 +2302,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Schneetarn_camo_coat
       node: end
       cost: 5
@@ -2158,6 +2328,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_orc_fur_coat
       node: end
       cost: 6
@@ -2182,6 +2354,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_dark_green_winter_coat
       node: end
       cost: 5
@@ -2205,6 +2379,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_red_jacket
       node: end
       cost: 6
@@ -2229,6 +2405,8 @@
           Arrow: 0.65
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_bronze_chinese_lamellar
       node: end
       cost: 5
@@ -2253,6 +2431,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_american_coat
       node: end
       cost: 5
@@ -2277,6 +2457,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_bizarre_dark_blue_coat
       node: end
       cost: 5
@@ -2300,6 +2482,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Cheka_leather_coat
       node: end
       cost: 5
@@ -2323,6 +2507,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Black_cherkesska_coat
       node: end
       cost: 5
@@ -2346,6 +2532,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Soviet_coat
       node: end
       cost: 5
@@ -2369,6 +2557,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Japanese_coat
       node: end
       cost: 5
@@ -2392,6 +2582,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_priest_sleev
       node: end
       cost: 5
@@ -2415,6 +2607,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Japanese_Coat
       node: end
       cost: 5
@@ -2438,6 +2632,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Brown_trench_coat
       node: end
       cost: 5
@@ -2461,6 +2657,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Russian_Coat
       node: end
       cost: 5
@@ -2484,6 +2682,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Russian_officer_coat.
       node: end
       cost: 5
@@ -2509,6 +2709,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_brown_winter_coat
       node: end
       cost: 5
@@ -2534,6 +2736,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_black_peacoat
       node: end
       cost: 7
@@ -2556,6 +2760,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_fur_coat_1
       node: end
       cost: 5
@@ -2581,6 +2787,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_fancy_fur_coat
       node: end
       cost: 10
@@ -2606,6 +2814,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_overlord_robe
       node: end
       cost: 5
@@ -2629,6 +2839,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_monk_robes
       node: end
       cost: 6
@@ -2654,6 +2866,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_fine_clothing
       node: end
       cost: 5
@@ -2677,6 +2891,8 @@
           Arrow: 0.95
           Radiation: 0.95
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_lifejacket
       node: end
       cost: 5
@@ -2702,6 +2918,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_firefighter_coat
       node: end
       cost: 5
@@ -2727,6 +2945,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_biker_jacket
       node: end
       cost: 6
@@ -2754,6 +2974,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_lizard_scale_jacket
       node: end
       cost: 6
@@ -2781,6 +3003,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_alligator_scale_jacket
       node: end
       cost: 6
@@ -2804,6 +3028,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Japanese_sand_colored_jacket
       node: end
       cost: 5
@@ -2827,6 +3053,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Japanese_rain_coat
       node: end
       cost: 5
@@ -2850,6 +3078,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Japanese_pilot_coat
       node: end
       cost: 5
@@ -2875,6 +3105,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_American_coat
       node: end
       cost: 5
@@ -2898,6 +3130,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_German_parka
       node: end
       cost: 5
@@ -2921,6 +3155,8 @@
           Arrow: 0.95
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_winter_ghillie_suit
       node: end
       cost: 5
@@ -2944,6 +3180,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Grey_parka
       node: end
       cost: 8
@@ -2967,6 +3205,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_German_officer_coat
       node: end
       cost: 5
@@ -2992,6 +3232,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_SS_parka
       node: end
       cost: 5
@@ -3015,6 +3257,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Soviet_coat_1
       node: end
       cost: 5
@@ -3038,6 +3282,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_soviet_winter_coat
       node: end
       cost: 5
@@ -3061,6 +3307,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Soviet_winter_coat
       node: end
       cost: 5
@@ -3084,6 +3332,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Soviet_officer_coat
       node: end
       cost: 5
@@ -3107,6 +3357,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_modern_coat
       node: end
       cost: 4
@@ -3129,6 +3381,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_black_coat
       node: end
       cost: 5
@@ -3152,6 +3406,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_fancy__coat
       node: end
       cost: 5
@@ -3175,6 +3431,8 @@
           Heat: 0.9
           Radiation: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_service_jacket
       node: end
       cost: 3
@@ -3197,6 +3455,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_brown_bombers_jacket
       node: end
       cost: 4
@@ -3219,6 +3479,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_black_bombers_jacket
       node: end
       cost: 4
@@ -3241,6 +3503,8 @@
           Heat: 0.85
           Radiation: 0.8
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_German_coat
       node: end
       cost: 5
@@ -3264,6 +3528,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_French_trench_coat
       node: end
       cost: 5
@@ -3287,6 +3553,8 @@
           Heat: 0.85
           Radiation: 0.8
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_British_coat
       node: end
       cost: 5
@@ -3310,6 +3578,8 @@
           Heat: 0.85
           Radiation: 0.7
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_royal_coat
       node: end
       cost: 5
@@ -3335,6 +3605,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_black_leather_long_coat
       node: end
       cost: 5
@@ -3360,6 +3632,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_modern_brown_coat
       node: end
       cost: 5
@@ -3385,6 +3659,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_modern_black_coat
       node: end
       cost: 5
@@ -3410,6 +3686,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_gentleman_coat
       node: end
       cost: 5
@@ -3435,6 +3713,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_hazard_vest
       node: end
       cost: 5
@@ -3458,6 +3738,8 @@
           Arrow: 0.95
           Radiation: 0.95
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_lifejacket_1
       node: end
       cost: 5
@@ -3482,6 +3764,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_green_plated_armor
       node: end
       cost: 5
@@ -3507,6 +3791,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_seal_lifevest
       node: end
       cost: 5
@@ -3532,6 +3818,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_FBI_jacket
       node: end
       cost: 5
@@ -3557,6 +3845,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_ATF_jacket
       node: end
       cost: 5
@@ -3582,6 +3872,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_DEA_jacket
       node: end
       cost: 5
@@ -3607,6 +3899,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_olive_drab_jacket
       node: end
       cost: 5
@@ -3630,6 +3924,8 @@
           Arrow: 0.95
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_ghillie_suit
       node: end
       cost: 5
@@ -3657,6 +3953,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_chest_length_apron
       node: end
       cost: 4
@@ -3684,6 +3982,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_waist_length_apron
       node: end
       cost: 4
@@ -3709,6 +4009,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_a_classic_chefs_apron.
       node: end
       cost: 5
@@ -3734,6 +4036,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Texas_Fried_Chicken_apron
       node: end
       cost: 5
@@ -3759,6 +4063,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_blue_hawaiian_shirt.
       node: end
       cost: 3
@@ -3784,6 +4090,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_orange_hawaiian_shirt.
       node: end
       cost: 3
@@ -3809,6 +4117,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_purple_hawaiian_shirt.
       node: end
       cost: 3
@@ -3834,6 +4144,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_purple_pimp_jacket.
       node: end
       cost: 5
@@ -3859,6 +4171,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Blugoslavian_Jacket.
       node: end
       cost: 5
@@ -3886,6 +4200,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Blugoslavian_Flak_Jacket.
       node: end
       cost: 5
@@ -3913,6 +4229,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_full_body_gorilla_outfit
       node: end
       cost: 12
@@ -3937,6 +4255,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.44999999999999996
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_replicant_trooper_armor
       node: end
       cost: 5
@@ -3961,6 +4281,8 @@
           Arrow: 0.5
           Heat: 0.6
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_replicant_pilot_armor
       node: end
       cost: 5
@@ -3985,6 +4307,8 @@
           Arrow: 0.5
           Heat: 0.6
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_replicant_MP_armor
       node: end
       cost: 5
@@ -4009,6 +4333,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.55
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_replicant_sergeant_armor
       node: end
       cost: 5
@@ -4035,6 +4361,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.53
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_replicant_reinforced_armor
       node: end
       cost: 5
@@ -4059,6 +4387,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.55
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_replicant_lieutenant_armor
       node: end
       cost: 5
@@ -4083,6 +4413,8 @@
           Arrow: 0.050000000000000044
           Heat: 0.44999999999999996
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_replicant_commando_armor
       node: end
       cost: 5
@@ -4107,6 +4439,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.55
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_replicant_captain_armor
       node: end
       cost: 5
@@ -4131,6 +4465,8 @@
           Arrow: 0.050000000000000044
           Heat: 0.55
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_replicant_commander_armor
       node: end
       cost: 5
@@ -4157,6 +4493,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.25
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_red_guard_armor_with_robe.
       node: end
       cost: 5
@@ -4181,6 +4519,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.25
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_senate_guard_armor_with_robe.
       node: end
       cost: 5
@@ -4205,6 +4545,8 @@
           Arrow: 0.040000000000000036
           Heat: 0.5
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_standard_stormtrooper_armor
       node: end
       cost: 5
@@ -4231,6 +4573,8 @@
           Arrow: 0.14
           Heat: 0.6
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_stormsurgeon_armor
       node: end
       cost: 5
@@ -4257,6 +4601,8 @@
           Arrow: 0.33999999999999997
           Heat: 0.65
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_light_stormtrooper_armor
       node: end
       cost: 5
@@ -4284,6 +4630,8 @@
           Heat: 0.85
           Radiation: 0.55
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_segmented_armor
       node: end
       cost: 5
@@ -4308,6 +4656,8 @@
           Arrow: 0.65
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_chainmail
       node: end
       cost: 5
@@ -4332,6 +4682,8 @@
           Heat: 0.85
           Radiation: 0.9
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_linothorax_armor
       node: end
       cost: 8
@@ -4357,6 +4709,8 @@
           Heat: 0.85
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_bronze_egyptian_lamellar
       node: end
       cost: 5
@@ -4381,6 +4735,8 @@
           Arrow: 0.65
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_scaled_armor
       node: end
       cost: 5
@@ -4405,6 +4761,8 @@
           Arrow: 0.85
           Heat: 0.98
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_aztec_harness
       node: end
       cost: 4
@@ -4430,6 +4788,8 @@
           Heat: 0.9
           Radiation: 0.9
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_alligator_scale_armor
       node: end
       cost: 9
@@ -4455,6 +4815,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_pharoahic_armor_of_the_gods
       node: end
       cost: 5
@@ -4480,6 +4842,8 @@
           Heat: 0.85
           Radiation: 0.9
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_creed_armor
       node: end
       cost: 5
@@ -4506,6 +4870,8 @@
           Heat: 0.85
           Radiation: 0.9
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_creed_armor_1_2
       node: end
       cost: 5
@@ -4530,6 +4896,8 @@
           Heat: 0.9
           Radiation: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Matagi_Vest
       node: end
       cost: 5
@@ -4554,6 +4922,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_NCR_Trooper_Armor
       node: end
       cost: 5
@@ -4580,6 +4950,8 @@
           Arrow: 0.5
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_imperial_chestplate
       node: end
       cost: 5
@@ -4608,6 +4980,8 @@
           Heat: 0.35
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_arbites_armor
       node: end
       cost: 5
@@ -4632,6 +5006,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_plated_armor
       node: end
       cost: 5
@@ -4656,6 +5032,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_red_samurai_lord_armor
       node: end
       cost: 5
@@ -4682,6 +5060,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_templar_plated_armor
       node: end
       cost: 5
@@ -4706,6 +5086,8 @@
           Arrow: 0.65
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_bronze_chestplate
       node: end
       cost: 6
@@ -4729,6 +5111,8 @@
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_iron_chestplate
       node: end
       cost: 5
@@ -4752,6 +5136,8 @@
           Arrow: 0.85
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_leather_armor
       node: end
       cost: 6
@@ -4778,6 +5164,8 @@
           Arrow: 0.44999999999999996
           Heat: 0.8
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_hauberk
       node: end
       cost: 5
@@ -4804,6 +5192,8 @@
           Arrow: 0.5
           Heat: 0.8
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_emirate_armor
       node: end
       cost: 5
@@ -4830,6 +5220,8 @@
           Arrow: 0.44999999999999996
           Heat: 0.8
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_varangian_lamellar_armor
       node: end
       cost: 5
@@ -4856,6 +5248,8 @@
           Arrow: 0.5
           Heat: 0.8
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_imperial_chinese_armor
       node: end
       cost: 5
@@ -4883,6 +5277,8 @@
           Heat: 0.85
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_steppe_leather_armor
       node: end
       cost: 5
@@ -4907,6 +5303,8 @@
           Arrow: 0
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_royal_plated_armor
       node: end
       cost: 5
@@ -4933,6 +5331,8 @@
           Arrow: 0.65
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_leather_samurai_armor
       node: end
       cost: 10
@@ -4959,6 +5359,8 @@
           Arrow: 0.25
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_samurai_armor
       node: end
       cost: 5
@@ -4983,6 +5385,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_samurai_lord_armor
       node: end
       cost: 5
@@ -5007,6 +5411,8 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_dwemmer_armor
       node: end
       cost: 5
@@ -5031,6 +5437,8 @@
           Arrow: 0.55
           Heat: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_stormcloak_officer_armor
       node: end
       cost: 5
@@ -5057,6 +5465,8 @@
           Arrow: 0.09999999999999998
           Heat: 0.5
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_zgz1_advanced_armor
       node: end
       cost: 5
@@ -5083,6 +5493,8 @@
           Arrow: 0.4
           Heat: 0.6
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_Medical_zgz1_advanced_armor
       node: end
       cost: 5
@@ -5108,6 +5520,8 @@
           Heat: 0.8
           Radiation: 0.6
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_scrap_plate_armor
       node: end
       cost: 5
@@ -5132,6 +5546,8 @@
           Arrow: -0.5
           Heat: 0.44999999999999996
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_mechanized_armor
       node: end
       cost: 5
@@ -5157,6 +5573,8 @@
           Heat: 0.85
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_chitin_chestplate
       node: end
       cost: 14
@@ -5181,6 +5599,8 @@
           Heat: 0.8
           Radiation: 0.55
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_saurons_armor
       node: end
       cost: 5
@@ -5206,6 +5626,8 @@
           Heat: 0.85
           Radiation: 0.55
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_plated_armor_1
       node: end
       cost: 5
@@ -5231,6 +5653,8 @@
           Heat: 0.85
           Radiation: 0.55
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_plated_armor_1_2
       node: end
       cost: 5
@@ -5256,6 +5680,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_orc_urukhai_armor
       node: end
       cost: 5
@@ -5281,6 +5707,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_orc_whitehand_armor
       node: end
       cost: 5
@@ -5306,6 +5734,8 @@
           Heat: 0.9
           Radiation: 0.8
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_orc_grunt_armor
       node: end
       cost: 5
@@ -5331,6 +5761,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_red_cape
       node: end
       cost: 5
@@ -5356,6 +5788,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_swat_heavy_vest
       node: end
       cost: 5
@@ -5381,6 +5815,8 @@
           Heat: 0.6
           Radiation: 0.6
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_swat_bulletproof_vest
       node: end
       cost: 5
@@ -5406,6 +5842,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_6B3_body_armor
       node: end
       cost: 12
@@ -5428,6 +5866,8 @@
           Heat: 0.75
           Radiation: 0.19999999999999996
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_yellow_NBC_suit
       node: end
       cost: 12
@@ -5451,6 +5891,8 @@
           Heat: 0.75
           Radiation: 0.19999999999999996
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_olive_drab_NBC_suit
       node: end
       cost: 12
@@ -5474,6 +5916,8 @@
           Heat: 0.19999999999999996
           Radiation: 0.6
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_firefighting_suit
       node: end
       cost: 5
@@ -5497,6 +5941,8 @@
           Heat: 0.95
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_hazmat_suit
       node: end
       cost: 5
@@ -5522,6 +5968,8 @@
           Heat: 0.95
           Radiation: 0.25
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_NBC_poncho
       node: end
       cost: 5
@@ -5545,6 +5993,8 @@
           Heat: 0.95
           Radiation: -0.95
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_astronaut_suit
       node: end
       cost: 5
@@ -5570,6 +6020,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_carbon_black_suit
       node: end
       cost: 5
@@ -5597,6 +6049,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_6B45_heavy_vest
       node: end
       cost: 5
@@ -5622,6 +6076,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_heavy_vest
       node: end
       cost: 5
@@ -5647,6 +6103,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_medium_vest
       node: end
       cost: 5
@@ -5672,6 +6130,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_6B44_vest
       node: end
       cost: 5
@@ -5697,6 +6157,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_6B28_plate_carrier
       node: end
       cost: 5
@@ -5720,6 +6182,8 @@
           Arrow: 0.95
           Radiation: 0.95
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_lifejacket_1_2
       node: end
       cost: 5
@@ -5746,6 +6210,8 @@
           Heat: 0.85
           Radiation: 0.75
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_primitive_pelt_coat
       node: end
       cost: 6
@@ -5772,6 +6238,8 @@
           Heat: 0.9
           Radiation: 0.85
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_primitive_wood_armor
       node: end
       cost: 5
@@ -5798,6 +6266,8 @@
           Heat: 0.92
           Radiation: 0.8200000000000001
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_primitive_bone_hair_pipe_armor
       node: end
       cost: 5
@@ -5825,6 +6295,8 @@
           Heat: 0
           Radiation: 0
     - type: Construction
+      agemin: 8
+      agemax: 8
       graph: civ13_suit_mbata_pelt_vest
       node: end
       cost: 3
