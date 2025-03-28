@@ -69,7 +69,7 @@ public sealed partial class ConstructionPrototype : IPrototype
     public int AgeMax { get; set; } = 8;
 
     [DataField("agemin")]
-    public int AgeMin { get; set; } = 0;
+    public int AgeMin { get; set; } = 8;
 
     /// <summary>
     /// If not null, then this is used to check if the entity trying to construct this is whitelisted.

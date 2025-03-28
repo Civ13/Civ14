@@ -1035,7 +1035,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 4
+              amount: 4
               doAfter: 10
     - node: end
       entity: civ13_head_bronze_phrigian_helmet
@@ -1595,7 +1595,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 3
+              amount: 3
               doAfter: 10
     - node: end
       entity: civ13_head_white_hard_hat
@@ -1647,7 +1647,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 3
+              amount: 3
               doAfter: 10
     - node: end
       entity: civ13_head_orange_hard_hat
@@ -2553,7 +2553,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 6
+              amount: 6
               doAfter: 17
     - node: end
       entity: civ13_head_constable_helmet
@@ -2925,7 +2925,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 7
+              amount: 7
               doAfter: 10
     - node: end
       entity: civ13_head_dragoon_helmet
@@ -4668,7 +4668,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 7
+              amount: 7
               doAfter: 12
     - node: end
       entity: civ13_head_chitin_helmet
@@ -5983,7 +5983,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 4
+              amount: 4
               doAfter: 10
     - node: end
       entity: civ13_head_bronze_montefortino_helmet
@@ -6639,7 +6639,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 2
+              amount: 2
               doAfter: 4
     - node: end
       entity: civ13_head_wool_hood
@@ -7297,7 +7297,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 8
+              amount: 8
               doAfter: 15
     - node: end
       entity: civ13_head_laurel_crown
@@ -7323,7 +7323,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 6
+              amount: 6
               doAfter: 15
     - node: end
       entity: civ13_head_gold_laurel_crown
@@ -7983,7 +7983,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 3
+              amount: 3
               doAfter: 8
     - node: end
       entity: civ13_head_rice_hat
@@ -11887,7 +11887,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 4
+              amount: 4
               doAfter: 7
     - node: end
       entity: civ13_head_steppe_shaman_wool_hat
@@ -12281,7 +12281,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 3
+              amount: 3
               doAfter: 6
     - node: end
       entity: civ13_head_leaf_head_covering
@@ -12307,7 +12307,7 @@
         - to: end
           steps:
             - material: Cloth
-            - amount: 5
+              amount: 5
               doAfter: 12
     - node: end
       entity: civ13_head_leaf_crown
