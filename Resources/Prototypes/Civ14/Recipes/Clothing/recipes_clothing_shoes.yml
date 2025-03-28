@@ -57,7 +57,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/shoes/blue.rsi
     state: icon
@@ -83,7 +83,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/shoes/green.rsi
     state: icon
@@ -109,7 +109,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/shoes/yellow.rsi
     state: icon
@@ -135,7 +135,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/shoes/purple.rsi
     state: icon
@@ -213,7 +213,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/shoes/orange.rsi
     state: icon
@@ -312,35 +312,7 @@
               doAfter: 8
     - node: end
       entity: civ13_shoes_workboots
-- type: construction
-  name: magboots
-  id: civ13_shoes_magboots
-  graph: civ13_shoes_magboots
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: >-
-    Magnetic boots, often used during extravehicular activity to ensure the user
-    remains safely attached to the vehicle. They're large enough to be worn over
-    other footwear.
-  icon:
-    sprite: Civ14/Clothing/exported/shoes/magboots0.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_shoes_magboots
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_shoes_magboots
 - type: construction
   name: black fur boots
   id: civ13_shoes_black_fur_boots
@@ -400,7 +372,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/shoes/wrappedboots.rsi
     state: icon
@@ -426,7 +398,7 @@
   startNode: start
   targetNode: end
   category: clothing
-  description: ''
+  description: ""
   icon:
     sprite: Civ14/Clothing/exported/shoes/ncr_boots.rsi
     state: icon

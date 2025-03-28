@@ -260,18 +260,6 @@
               doAfter: 8
     - node: end
       entity: civ13_suit_haori_jacket
-- type: construction
-  name: Abashiri guard coat
-  id: civ13_suit_Abashiri_guard_coat
-  graph: civ13_suit_Abashiri_guard_coat
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: An Abashiri Prison Guard coat.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/undefined.rsi
-    state: icon
-  objectType: Item
 
 - type: constructionGraph
   id: civ13_suit_Abashiri_guard_coat
@@ -1372,18 +1360,6 @@
               doAfter: 20
     - node: end
       entity: civ13_suit_cream_short_jacket
-- type: construction
-  name: light white arabic robe
-  id: civ13_suit_light_white_arabic_robe
-  graph: civ13_suit_light_white_arabic_robe
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: A light, white, loose fitting garment for keeping the sun off.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/arab2.rsi
-    state: icon
-  objectType: Item
 
 - type: constructionGraph
   id: civ13_suit_light_white_arabic_robe
@@ -4849,32 +4825,7 @@
               doAfter: 5
     - node: end
       entity: civ13_suit_creed_armor
-- type: construction
-  name: creed armor
-  id: civ13_suit_creed_armor_1
-  graph: civ13_suit_creed_armor_1
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: A leather armor worn by the creed.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/ac_armor_1713.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_suit_creed_armor_1
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_suit_creed_armor_1
 - type: construction
   name: creed armor
   id: civ13_suit_creed_armor_1_2

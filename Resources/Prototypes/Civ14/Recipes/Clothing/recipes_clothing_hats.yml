@@ -5599,62 +5599,7 @@
               doAfter: 5
     - node: end
       entity: civ13_head_german_stahlhelm_1
-- type: construction
-  name: stalhelm ROA
-  id: civ13_head_stalhelm_ROA
-  graph: civ13_head_stalhelm_ROA
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: >-
-    An ordinary German Stahlhelm, it most likely belongs to the Russian
-    Liberation Army.
-  icon:
-    sprite: Civ14/Clothing/exported/hats/roa_helmet.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_head_stalhelm_ROA
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_head_stalhelm_ROA
-- type: construction
-  name: german stalhelm ROA
-  id: civ13_head_german_stalhelm_ROA
-  graph: civ13_head_german_stalhelm_ROA
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: >-
-    An ordinary German Stahlhelm, it has identification marks indicating it
-    belongs to the Russian Liberation Army.
-  icon:
-    sprite: Civ14/Clothing/exported/hats/roa_helmet2.rsi
-    state: icon
-  objectType: Item
-
-- type: constructionGraph
-  id: civ13_head_german_stalhelm_ROA
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_head_german_stalhelm_ROA
 - type: construction
   name: German 'SS' helmet
   id: civ13_head_German_SS_helmet
@@ -6122,62 +6067,7 @@
               doAfter: 5
     - node: end
       entity: civ13_head_cap
-- type: construction
-  name: parade hat
-  id: civ13_head_parade_hat
-  graph: civ13_head_parade_hat
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: >-
-    No one in a commanding position should be without a perfect, white hat of
-    ultimate authority.
-  icon:
-    sprite: Civ14/Clothing/exported/hats/officercap.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_head_parade_hat
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_head_parade_hat
-- type: construction
-  name: crew resource's hat
-  id: civ13_head_crew_resources_hat
-  graph: civ13_head_crew_resources_hat
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: >-
-    A stylish hat that both protects you from enraged former-crewmembers and
-    gives you a false sense of authority.
-  icon:
-    sprite: Civ14/Clothing/exported/hats/hopcap.rsi
-    state: icon
-  objectType: Item
-
-- type: constructionGraph
-  id: civ13_head_crew_resources_hat
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_head_crew_resources_hat
 - type: construction
   name: preacher's hood
   id: civ13_head_preachers_hood
@@ -6438,32 +6328,7 @@
               doAfter: 5
     - node: end
       entity: civ13_head_olive_bandana
-- type: construction
-  name: beaver hat
-  id: civ13_head_beaver_hat
-  graph: civ13_head_beaver_hat
-  startNode: start
-  targetNode: end
-  category: clothing
-  description: Soft felt makes this hat both comfortable and elegant.
-  icon:
-    sprite: Civ14/Clothing/exported/hats/beaver_hat.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_head_beaver_hat
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_head_beaver_hat
 - type: construction
   name: feather trilby
   id: civ13_head_feather_trilby
