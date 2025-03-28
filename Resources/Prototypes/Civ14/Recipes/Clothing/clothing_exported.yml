@@ -1,7 +1,7 @@
 - type: construction
   name: primitive pelt coat
-  id: suit-prehistoricfurcoat
-  graph: suit-prehistoricfurcoat
+  id: civ13_suit_primitive_pelt_coat
+  graph: civ13_suit_primitive_pelt_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
@@ -14,7 +14,7 @@
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
-  id: suit-prehistoricfurcoat
+  id: civ13_suit_primitive_pelt_coat
   start: start
   graph:
     - node: start
@@ -25,11 +25,11 @@
               amount: 8
               doAfter: 15
     - node: end
-      entity: suit-prehistoricfurcoat
+      entity: civ13_suit_primitive_pelt_coat
 - type: construction
   name: brown primitive pelt coat
-  id: suit-prehistoricfurcoat-brown
-  graph: suit-prehistoricfurcoat-brown
+  id: civ13_suit_brown_primitive_pelt_coat
+  graph: civ13_suit_brown_primitive_pelt_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
@@ -42,7 +42,7 @@
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
-  id: suit-prehistoricfurcoat-brown
+  id: civ13_suit_brown_primitive_pelt_coat
   start: start
   graph:
     - node: start
@@ -53,11 +53,11 @@
               amount: 8
               doAfter: 15
     - node: end
-      entity: suit-prehistoricfurcoat-brown
+      entity: civ13_suit_brown_primitive_pelt_coat
 - type: construction
   name: black primitive pelt coat
-  id: suit-prehistoricfurcoat-black
-  graph: suit-prehistoricfurcoat-black
+  id: civ13_suit_black_primitive_pelt_coat
+  graph: civ13_suit_black_primitive_pelt_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
@@ -70,7 +70,7 @@
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
-  id: suit-prehistoricfurcoat-black
+  id: civ13_suit_black_primitive_pelt_coat
   start: start
   graph:
     - node: start
@@ -81,11 +81,11 @@
               amount: 8
               doAfter: 15
     - node: end
-      entity: suit-prehistoricfurcoat-black
+      entity: civ13_suit_black_primitive_pelt_coat
 - type: construction
   name: white primitive pelt coat
-  id: suit-prehistoricfurcoat-white
-  graph: suit-prehistoricfurcoat-white
+  id: civ13_suit_white_primitive_pelt_coat
+  graph: civ13_suit_white_primitive_pelt_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
@@ -98,7 +98,7 @@
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
-  id: suit-prehistoricfurcoat-white
+  id: civ13_suit_white_primitive_pelt_coat
   start: start
   graph:
     - node: start
@@ -109,11 +109,11 @@
               amount: 8
               doAfter: 15
     - node: end
-      entity: suit-prehistoricfurcoat-white
+      entity: civ13_suit_white_primitive_pelt_coat
 - type: construction
   name: grey primitive pelt coat
-  id: suit-prehistoricfurcoat-grey
-  graph: suit-prehistoricfurcoat-grey
+  id: civ13_suit_black_primitive_pelt_coat
+  graph: civ13_suit_grey_primitive_pelt_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
@@ -126,7 +126,7 @@
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
-  id: suit-prehistoricfurcoat-grey
+  id: civ13_suit_grey_primitive_pelt_coat
   start: start
   graph:
     - node: start
@@ -137,11 +137,11 @@
               amount: 8
               doAfter: 15
     - node: end
-      entity: suit-prehistoricfurcoat-grey
+      entity: civ13_suit_grey_primitive_pelt_coat
 - type: construction
   name: primitive wood armor
-  id: suit-woodarmor
-  graph: suit-woodarmor
+  id: civ13_suit_primitive_wood_armor
+  graph: civ13_suit_primitive_wood_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
@@ -154,7 +154,7 @@
   objectType: Structure
   placementMode: SnapgridCenter
 - type: constructionGraph
-  id: suit-woodarmor
+  id: civ13_suit_primitive_wood_armor
   start: start
   graph:
     - node: start
@@ -165,4 +165,4 @@
               amount: 8
               doAfter: 12
     - node: end
-      entity: suit-woodarmor
+      entity: civ13_suit_primitive_wood_armor

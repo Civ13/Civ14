@@ -1,0 +1,1885 @@
+- type: construction
+  name: shoes
+  id: civ13_shoes_shoes
+  graph: civ13_shoes_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of shoes.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/white.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_shoes
+- type: construction
+  name: white fur boots
+  id: civ13_shoes_white_fur_boots
+  graph: civ13_shoes_white_fur_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Dense fur boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/fur4.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_white_fur_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 8
+    - node: end
+      entity: civ13_shoes_white_fur_boots
+- type: construction
+  name: blue shoes
+  id: civ13_shoes_blue_shoes
+  graph: civ13_shoes_blue_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: ''
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/blue.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_blue_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_blue_shoes
+- type: construction
+  name: green shoes
+  id: civ13_shoes_green_shoes
+  graph: civ13_shoes_green_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: ''
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/green.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_green_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_green_shoes
+- type: construction
+  name: yellow shoes
+  id: civ13_shoes_yellow_shoes
+  graph: civ13_shoes_yellow_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: ''
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/yellow.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_yellow_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_yellow_shoes
+- type: construction
+  name: purple shoes
+  id: civ13_shoes_purple_shoes
+  graph: civ13_shoes_purple_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: ''
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/purple.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_purple_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_purple_shoes
+- type: construction
+  name: brown fur boots
+  id: civ13_shoes_brown_fur_boots
+  graph: civ13_shoes_brown_fur_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Dense fur boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/fur1.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_brown_fur_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 8
+    - node: end
+      entity: civ13_shoes_brown_fur_boots
+- type: construction
+  name: red shoes
+  id: civ13_shoes_red_shoes
+  graph: civ13_shoes_red_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Stylish red shoes.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/red.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_red_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_red_shoes
+- type: construction
+  name: orange shoes
+  id: civ13_shoes_orange_shoes
+  graph: civ13_shoes_orange_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: ''
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/orange.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_orange_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_orange_shoes
+- type: construction
+  name: jackboots
+  id: civ13_shoes_jackboots
+  graph: civ13_shoes_jackboots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Military-style boots designed for combat or rugged environments.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/jackboots.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_jackboots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_jackboots
+- type: construction
+  name: Soviet sapogi boots
+  id: civ13_shoes_Soviet_sapogi_boots
+  graph: civ13_shoes_Soviet_sapogi_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Jackboots of Soviet origin. Also known as 'Yuftevyje sapogi'.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/sovietboots.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_Soviet_sapogi_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_Soviet_sapogi_boots
+- type: construction
+  name: workboots
+  id: civ13_shoes_workboots
+  graph: civ13_shoes_workboots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: >-
+    A pair of steel-toed work boots designed for use in industrial settings.
+    Safety first.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/workboots.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_workboots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 4
+              doAfter: 8
+    - node: end
+      entity: civ13_shoes_workboots
+- type: construction
+  name: magboots
+  id: civ13_shoes_magboots
+  graph: civ13_shoes_magboots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: >-
+    Magnetic boots, often used during extravehicular activity to ensure the user
+    remains safely attached to the vehicle. They're large enough to be worn over
+    other footwear.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/magboots0.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_magboots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_magboots
+- type: construction
+  name: black fur boots
+  id: civ13_shoes_black_fur_boots
+  graph: civ13_shoes_black_fur_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Dense fur boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/fur3.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_black_fur_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 8
+    - node: end
+      entity: civ13_shoes_black_fur_boots
+- type: construction
+  name: ０military boots
+  id: civ13_shoes_０military_boots
+  graph: civ13_shoes_０military_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: When you want to turn up the heat.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/swat.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_０military_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_０military_boots
+- type: construction
+  name: ０wrapped boots
+  id: civ13_shoes_０wrapped_boots
+  graph: civ13_shoes_０wrapped_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: ''
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/wrappedboots.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_０wrapped_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_０wrapped_boots
+- type: construction
+  name: NCR wrapped boots
+  id: civ13_shoes_NCR_wrapped_boots
+  graph: civ13_shoes_NCR_wrapped_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: ''
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/ncr_boots.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_NCR_wrapped_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_NCR_wrapped_boots
+- type: construction
+  name: Legionaire armored boots
+  id: civ13_shoes_Legionaire_armored_boots
+  graph: civ13_shoes_Legionaire_armored_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Black boots with armored plating attached.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/legion_boots.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_Legionaire_armored_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_Legionaire_armored_boots
+- type: construction
+  name: Leather boots
+  id: civ13_shoes_Leather_boots
+  graph: civ13_shoes_Leather_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of hob-nailed leather boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/japboots_ww2.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_Leather_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_Leather_boots
+- type: construction
+  name: Black leather boots
+  id: civ13_shoes_Black_leather_boots
+  graph: civ13_shoes_Black_leather_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of hob-nailed leather boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/japboots_ww2_navy.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_Black_leather_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_Black_leather_boots
+- type: construction
+  name: SWAT boots
+  id: civ13_shoes_SWAT_boots
+  graph: civ13_shoes_SWAT_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: When you want to turn up the heat.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/swat.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_SWAT_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_SWAT_boots
+- type: construction
+  name: combat boots
+  id: civ13_shoes_combat_boots
+  graph: civ13_shoes_combat_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: When you REALLY want to turn up the heat
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/swat.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_combat_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_combat_boots
+- type: construction
+  name: IOG boots
+  id: civ13_shoes_IOG_boots
+  graph: civ13_shoes_IOG_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: When you REALLY want to turn up the heat.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/iogboot.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_IOG_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_IOG_boots
+- type: construction
+  name: sandals
+  id: civ13_shoes_sandals
+  graph: civ13_shoes_sandals
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of rather plain, wooden sandals.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/sandals.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_sandals
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 1
+              doAfter: 4
+    - node: end
+      entity: civ13_shoes_sandals
+- type: construction
+  name: leather shoes
+  id: civ13_shoes_leather_shoes
+  graph: civ13_shoes_leather_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A sturdy pair of leather shoes.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/leather.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_leather_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 6
+    - node: end
+      entity: civ13_shoes_leather_shoes
+- type: construction
+  name: magic shoes
+  id: civ13_shoes_magic_shoes
+  graph: civ13_shoes_magic_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of magic, black shoes.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/black.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_magic_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_magic_shoes
+- type: construction
+  name: bunny slippers
+  id: civ13_shoes_bunny_slippers
+  graph: civ13_shoes_bunny_slippers
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Fluffy!
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/slippers.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_bunny_slippers
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_bunny_slippers
+- type: construction
+  name: worn bunny slippers
+  id: civ13_shoes_worn_bunny_slippers
+  graph: civ13_shoes_worn_bunny_slippers
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Fluffy...
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/slippers_worn.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_worn_bunny_slippers
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_worn_bunny_slippers
+- type: construction
+  name: laceup shoes
+  id: civ13_shoes_laceup_shoes
+  graph: civ13_shoes_laceup_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: The height of fashion, and they're pre-polished!
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/laceups.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_laceup_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 6
+    - node: end
+      entity: civ13_shoes_laceup_shoes
+- type: construction
+  name: grey fur boots
+  id: civ13_shoes_grey_fur_boots
+  graph: civ13_shoes_grey_fur_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Dense fur boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/fur2.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_grey_fur_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 8
+    - node: end
+      entity: civ13_shoes_grey_fur_boots
+- type: construction
+  name: alligator scale laceup shoes
+  id: civ13_shoes_alligator_scale_laceup_shoes
+  graph: civ13_shoes_alligator_scale_laceup_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: The height of luxurious footwear, and they're pre-polished!
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/gator_laceups.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_alligator_scale_laceup_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 6
+    - node: end
+      entity: civ13_shoes_alligator_scale_laceup_shoes
+- type: construction
+  name: chad shoes
+  id: civ13_shoes_chad_shoes
+  graph: civ13_shoes_chad_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Ouch!
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/chad.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_chad_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_chad_shoes
+- type: construction
+  name: flip-flops
+  id: civ13_shoes_flip_flops
+  graph: civ13_shoes_flip_flops
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Brazilian style flip-flops.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/flipflops.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_flip_flops
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_flip_flops
+- type: construction
+  name: plastoid boots
+  id: civ13_shoes_plastoid_boots
+  graph: civ13_shoes_plastoid_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of plastoid boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/white.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_plastoid_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_plastoid_boots
+- type: construction
+  name: red plastoid boots
+  id: civ13_shoes_red_plastoid_boots
+  graph: civ13_shoes_red_plastoid_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of red plastoid boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/redboots.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_red_plastoid_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_red_plastoid_boots
+- type: construction
+  name: blue plastoid boots
+  id: civ13_shoes_blue_plastoid_boots
+  graph: civ13_shoes_blue_plastoid_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of blue plastoid boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/senateboots.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_blue_plastoid_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_blue_plastoid_boots
+- type: construction
+  name: sandals
+  id: civ13_shoes_sandals_1
+  graph: civ13_shoes_sandals_1
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Basic leather sandals, going up to the knee.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/roman.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_sandals_1
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 2
+              doAfter: 6
+    - node: end
+      entity: civ13_shoes_sandals_1
+- type: construction
+  name: aztec sandals
+  id: civ13_shoes_aztec_sandals
+  graph: civ13_shoes_aztec_sandals
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Basic leather sandals, hailing from the jungles.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/aztec_sandals.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_aztec_sandals
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 2
+              doAfter: 6
+    - node: end
+      entity: civ13_shoes_aztec_sandals
+- type: construction
+  name: fur boots
+  id: civ13_shoes_fur_boots
+  graph: civ13_shoes_fur_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Dense fur boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/fur.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_fur_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 8
+    - node: end
+      entity: civ13_shoes_fur_boots
+- type: construction
+  name: human skin boots
+  id: civ13_shoes_human_skin_boots
+  graph: civ13_shoes_human_skin_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Human skin boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/fur5.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_human_skin_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 8
+    - node: end
+      entity: civ13_shoes_human_skin_boots
+- type: construction
+  name: orcish sabatons
+  id: civ13_shoes_orcish_sabatons
+  graph: civ13_shoes_orcish_sabatons
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of orc plated armored boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/ork_warrior.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_orcish_sabatons
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_orcish_sabatons
+- type: construction
+  name: specialist boots
+  id: civ13_shoes_specialist_boots
+  graph: civ13_shoes_specialist_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: >-
+    A well made and importantly quiet treading pair of army-issue leather
+    boots..
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/toughguy.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_specialist_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_specialist_boots
+- type: construction
+  name: creed boots
+  id: civ13_shoes_creed_boots
+  graph: civ13_shoes_creed_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of leather boots worn by the creed.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/ac_boots.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_creed_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_creed_boots
+- type: construction
+  name: Winter wrapped boots
+  id: civ13_shoes_Winter_wrapped_boots
+  graph: civ13_shoes_Winter_wrapped_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of simple, thin leather boots. Covers up to the lower leg.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/japboots.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_Winter_wrapped_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_Winter_wrapped_boots
+- type: construction
+  name: black boots
+  id: civ13_shoes_black_boots
+  graph: civ13_shoes_black_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Classic black boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/sailorboots1.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_black_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 8
+    - node: end
+      entity: civ13_shoes_black_boots
+- type: construction
+  name: leather boots
+  id: civ13_shoes_leather_boots
+  graph: civ13_shoes_leather_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Classic leather boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/sailorboots2.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_leather_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 8
+    - node: end
+      entity: civ13_shoes_leather_boots
+- type: construction
+  name: winter boots
+  id: civ13_shoes_winter_boots
+  graph: civ13_shoes_winter_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Classic winter boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/winterboots.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_winter_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_winter_boots
+- type: construction
+  name: black puttee boots
+  id: civ13_shoes_black_puttee_boots
+  graph: civ13_shoes_black_puttee_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Classic black boots with white puttees.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/whiteput.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_black_puttee_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_black_puttee_boots
+- type: construction
+  name: infantry shoes
+  id: civ13_shoes_infantry_shoes
+  graph: civ13_shoes_infantry_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Low black infantry shoes.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/soldier_shoes.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_infantry_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 2
+              doAfter: 6
+    - node: end
+      entity: civ13_shoes_infantry_shoes
+- type: construction
+  name: black sailor boots
+  id: civ13_shoes_black_sailor_boots
+  graph: civ13_shoes_black_sailor_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Classic black sailor boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/sailorboots1.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_black_sailor_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_black_sailor_boots
+- type: construction
+  name: leather sailor boots
+  id: civ13_shoes_leather_sailor_boots
+  graph: civ13_shoes_leather_sailor_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Classic leather sailor boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/sailorboots2.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_leather_sailor_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_leather_sailor_boots
+- type: construction
+  name: military boots
+  id: civ13_shoes_military_boots
+  graph: civ13_shoes_military_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Classic tan military boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/usmc.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_military_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_military_boots
+- type: construction
+  name: black riding boots
+  id: civ13_shoes_black_riding_boots
+  graph: civ13_shoes_black_riding_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Black leather boots with spurs, perfect for riding.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/cowboyboots1.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_black_riding_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_black_riding_boots
+- type: construction
+  name: alligator scale riding boots
+  id: civ13_shoes_alligator_scale_riding_boots
+  graph: civ13_shoes_alligator_scale_riding_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Alligator scale patterned boots with spurs, perfect for riding in style.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/gator_cowboy.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_alligator_scale_riding_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 6
+    - node: end
+      entity: civ13_shoes_alligator_scale_riding_boots
+- type: construction
+  name: lizard scale riding boots
+  id: civ13_shoes_lizard_scale_riding_boots
+  graph: civ13_shoes_lizard_scale_riding_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: lizard scale patterned boots with spurs, perfect for riding in style.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/lizard_cowboy.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_lizard_scale_riding_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 6
+    - node: end
+      entity: civ13_shoes_lizard_scale_riding_boots
+- type: construction
+  name: leather riding boots
+  id: civ13_shoes_leather_riding_boots
+  graph: civ13_shoes_leather_riding_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Leather boots with spurs, perfect for riding.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/cowboyboots2.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_leather_riding_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_leather_riding_boots
+- type: construction
+  name: alligator scale ankle boots
+  id: civ13_shoes_alligator_scale_ankle_boots
+  graph: civ13_shoes_alligator_scale_ankle_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Classy alligator scale ankle-length boots, a certain statement for fashion.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/gator_ankleboots.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_alligator_scale_ankle_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 6
+    - node: end
+      entity: civ13_shoes_alligator_scale_ankle_boots
+- type: construction
+  name: leather shoes
+  id: civ13_shoes_leather_shoes_1
+  graph: civ13_shoes_leather_shoes_1
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of simple, thin leather shoes. Covers up to the ankle.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/medieval.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_leather_shoes_1
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 8
+    - node: end
+      entity: civ13_shoes_leather_shoes_1
+- type: construction
+  name: arabic leather shoes
+  id: civ13_shoes_arabic_leather_shoes
+  graph: civ13_shoes_arabic_leather_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of simple, thin leather shoes. Loose at the tip.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/arab.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_arabic_leather_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 2
+              doAfter: 6
+    - node: end
+      entity: civ13_shoes_arabic_leather_shoes
+- type: construction
+  name: emirate leather shoes
+  id: civ13_shoes_emirate_leather_shoes
+  graph: civ13_shoes_emirate_leather_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: >-
+    A pair of simple, arabic style leather shoes. Extra padded & loose at the
+    tip.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/emir.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_emirate_leather_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 4
+              doAfter: 6
+    - node: end
+      entity: civ13_shoes_emirate_leather_shoes
+- type: construction
+  name: Sabatons
+  id: civ13_shoes_Sabatons
+  graph: civ13_shoes_Sabatons
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of plated armored boots.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/knight.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_Sabatons
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_Sabatons
+- type: construction
+  name: steppe wool shoe
+  id: civ13_shoes_steppe_wool_shoe
+  graph: civ13_shoes_steppe_wool_shoe
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: >-
+    A pair of insulated rough woolen shoes for keeping feet warm on the open
+    steppe.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/steppe_wool_shoes.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_steppe_wool_shoe
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - amount: 3
+              doAfter: 8
+    - node: end
+      entity: civ13_shoes_steppe_wool_shoe
+- type: construction
+  name: geta sandals
+  id: civ13_shoes_geta_sandals
+  graph: civ13_shoes_geta_sandals
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of simple, wood sandals. Keeps you elevated off he ground slightly.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/geta.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_geta_sandals
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 1
+              doAfter: 4
+    - node: end
+      entity: civ13_shoes_geta_sandals
+- type: construction
+  name: tsuranuki
+  id: civ13_shoes_tsuranuki
+  graph: civ13_shoes_tsuranuki
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of plated shin guards & shoes of japanese origin.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/tsuranuki.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_tsuranuki
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_tsuranuki
+- type: construction
+  name: dwemmer boots
+  id: civ13_shoes_dwemmer_boots
+  graph: civ13_shoes_dwemmer_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of plated boots made of dwemmer metal.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/dwoots.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_dwemmer_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_dwemmer_boots
+- type: construction
+  name: courier sneakers
+  id: civ13_shoes_courier_sneakers
+  graph: civ13_shoes_courier_sneakers
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of simple, thin grey sneakers.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/courier_sneakers.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_courier_sneakers
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 3
+              doAfter: 8
+    - node: end
+      entity: civ13_shoes_courier_sneakers
+- type: construction
+  name: punk boots
+  id: civ13_shoes_punk_boots
+  graph: civ13_shoes_punk_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of stylized high leather boots for kicking the snot out of 'The Man'.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/punk.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_punk_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 4
+              doAfter: 11
+    - node: end
+      entity: civ13_shoes_punk_boots
+- type: construction
+  name: lizard scale ankle boots
+  id: civ13_shoes_lizard_scale_ankle_boots
+  graph: civ13_shoes_lizard_scale_ankle_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Classy lizard scale ankle-length boots, a certain statement for fashion.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/lizard_ankleboots.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_lizard_scale_ankle_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 6
+    - node: end
+      entity: civ13_shoes_lizard_scale_ankle_boots
+- type: construction
+  name: lizard scale laceup shoes
+  id: civ13_shoes_lizard_scale_laceup_shoes
+  graph: civ13_shoes_lizard_scale_laceup_shoes
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: The height of luxurious footwear, and they're pre-polished!
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/lizard_laceups.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_lizard_scale_laceup_shoes
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 3
+              doAfter: 6
+    - node: end
+      entity: civ13_shoes_lizard_scale_laceup_shoes
+- type: construction
+  name: Brown boots
+  id: civ13_shoes_Brown_boots
+  graph: civ13_shoes_Brown_boots
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: Combat boots made of brown leather with a toe cap and rubber sole.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/brownboots.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_Brown_boots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_Brown_boots
+- type: construction
+  name: Brown boots with leggings
+  id: civ13_shoes_Brown_boots_with_leggings
+  graph: civ13_shoes_Brown_boots_with_leggings
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: >-
+    These combat boots are crafted from durable brown leather, featuring a toe
+    cap and rubber sole. They come complete with protective leggings, providing
+    extra coverage and support for the wearer's legs.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/brownboots_us_ww2_alt.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_Brown_boots_with_leggings
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_Brown_boots_with_leggings
+- type: construction
+  name: football trainers
+  id: civ13_shoes_football_trainers
+  graph: civ13_shoes_football_trainers
+  startNode: start
+  targetNode: end
+  category: clothing
+  description: A pair of football trainers.
+  icon:
+    sprite: Civ14/Clothing/exported/shoes/football.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: civ13_shoes_football_trainers
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_shoes_football_trainers

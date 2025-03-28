@@ -89,7 +89,7 @@
               amount: 1
               doAfter: 10
     - node: leathersandals
-      entity: shoes-sandal-leather
+      entity: civ13_shoes_sandals_1
 
 - type: constructionGraph
   id: BoneHelmet
@@ -103,7 +103,7 @@
               amount: 4
               doAfter: 10
     - node: bonehelmet
-      entity: head-helmet-bone
+      entity: civ13_head_bone_helmet
 
 - type: constructionGraph
   id: LeatherCap
@@ -117,7 +117,7 @@
               amount: 2
               doAfter: 10
     - node: leathercap
-      entity: head-roundcap
+      entity: civ13_head_roundcap
 
 - type: constructionGraph
   id: BoneArmor
@@ -131,7 +131,7 @@
               amount: 4
               doAfter: 15
     - node: bonearmor
-      entity: suit-storage-jacket-bonearmor
+      entity: civ13_suit_bone_armor
 
 - type: constructionGraph
   id: Quiver
