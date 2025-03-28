@@ -1345,31 +1345,7 @@
       cost: 5
       material: Cloth
       time: 5
-- type: entity
-  name: linnen wrappings
-  parent: ClothingUniformBase
-  id: civ13_uniform_linnen_wrappings
-  description: The musty wrappings seem to disintigrate as you examine them.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/uniforms/mummy.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/uniforms/mummy.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_uniform_linnen_wrappings
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: police outfit
   parent: ClothingUniformBase

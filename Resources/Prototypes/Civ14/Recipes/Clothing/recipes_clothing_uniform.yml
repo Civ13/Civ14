@@ -1398,32 +1398,7 @@
               doAfter: 5
     - node: end
       entity: civ13_uniform_white_towel
-- type: construction
-  name: linnen wrappings
-  id: civ13_uniform_linnen_wrappings
-  graph: civ13_uniform_linnen_wrappings
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: The musty wrappings seem to disintigrate as you examine them.
-  icon:
-    sprite: Civ14/Clothing/exported/uniforms/mummy.rsi
-    state: icon
-  objectType: Item
 
-- type: constructionGraph
-  id: civ13_uniform_linnen_wrappings
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_uniform_linnen_wrappings
 - type: construction
   name: police outfit
   id: civ13_uniform_police_outfit
