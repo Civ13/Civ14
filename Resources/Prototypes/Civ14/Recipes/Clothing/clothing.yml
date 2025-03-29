@@ -8,6 +8,8 @@
   description: A simple leather loincloth.
   icon: { sprite: Civ14/Clothing/exported/uniforms/leatherloincloth1.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: leather sandals
@@ -19,6 +21,8 @@
   description: A pair of simple, thin leather strap sandals. Covers up to the lower foot.
   icon: { sprite: Civ14/Clothing/exported/shoes/flipflops.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: bone helmet
@@ -30,6 +34,8 @@
   description: A helmet made of bones.
   icon: { sprite: Civ14/Clothing/exported/hats/bone_helmet.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: leather cap
@@ -41,6 +47,8 @@
   description: A cap made of leather.
   icon: { sprite: Civ14/Clothing/exported/hats/roundcap_hat.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: bone armor
@@ -52,6 +60,8 @@
   description: A spooky armor, made of assorted bones.
   icon: { sprite: Civ14/Clothing/exported/suits/bonearmor.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: quiver
@@ -63,6 +73,8 @@
   description: Can hold up to 15 arrows, and fits snug around your waist.
   icon: { sprite: Clothing/Belt/quiver.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: LeatherLoincloth
   start: start

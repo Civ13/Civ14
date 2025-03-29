@@ -10,7 +10,8 @@
     sprite: Civ14/Clothing/exported/hats/mamluk_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_mamluk_conical_helmet
   start: start
@@ -36,7 +37,8 @@
     sprite: Civ14/Clothing/exported/hats/redguard.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Imperial_Red_Guard_Helmet
   start: start
@@ -62,7 +64,8 @@
     sprite: Civ14/Clothing/exported/hats/senateguard.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Imperial_Senate_Guard_Helmet
   start: start
@@ -88,7 +91,8 @@
     sprite: Civ14/Clothing/exported/hats/replicant_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Phase_I_Replicant_Trooper_Helmet
   start: start
@@ -114,7 +118,8 @@
     sprite: Civ14/Clothing/exported/hats/repARF_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Phase_I_Replicant_ARF_Helmet
   start: start
@@ -140,7 +145,8 @@
     sprite: Civ14/Clothing/exported/hats/repairborne_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Phase_I_Replicant_Airborne_Helmet
   start: start
@@ -166,7 +172,8 @@
     sprite: Civ14/Clothing/exported/hats/repstormtrooper_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Stormtrooper_Helmet
   start: start
@@ -192,7 +199,8 @@
     sprite: Civ14/Clothing/exported/hats/stormsurgeon_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Storm_Surgeon_Helmet
   start: start
@@ -218,7 +226,8 @@
     sprite: Civ14/Clothing/exported/hats/stormradio_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Stormtrooper_Radio_Technician_Helmet
   start: start
@@ -244,7 +253,8 @@
     sprite: Civ14/Clothing/exported/hats/replicant_atrt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_AT_RT_Replicant_Driver_Helmet
   start: start
@@ -270,7 +280,8 @@
     sprite: Civ14/Clothing/exported/hats/replicant_radiotech.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Phase_I_Replicant_Radio_Technician_Helmet
   start: start
@@ -296,7 +307,8 @@
     sprite: Civ14/Clothing/exported/hats/replicant_engi.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Replicant_Engineer_Helmet
   start: start
@@ -322,7 +334,8 @@
     sprite: Civ14/Clothing/exported/hats/replicant_commando.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Replicant_Commando_Helmet
   start: start
@@ -348,7 +361,8 @@
     sprite: Civ14/Clothing/exported/hats/reppilot_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Phase_I_Replicant_Pilot_Helmet
   start: start
@@ -374,7 +388,8 @@
     sprite: Civ14/Clothing/exported/hats/repmp_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Phase_I_Replicant_MP_Helmet
   start: start
@@ -400,7 +415,8 @@
     sprite: Civ14/Clothing/exported/hats/m1_2nd_lt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M1_helmet_2nd_LT
   start: start
@@ -426,7 +442,8 @@
     sprite: Civ14/Clothing/exported/hats/m1_camo_mitchell_lt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M1_camo_helmet
   start: start
@@ -452,7 +469,8 @@
     sprite: Civ14/Clothing/exported/hats/repcaptain_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Phase_I_Replicant_Captain_Helmet
   start: start
@@ -478,7 +496,8 @@
     sprite: Civ14/Clothing/exported/hats/repcommander_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Phase_I_Replicant_Commander_Helmet
   start: start
@@ -504,7 +523,8 @@
     sprite: Civ14/Clothing/exported/hats/replicant_helmet2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Phase_II_Replicant_Trooper_Helmet
   start: start
@@ -532,7 +552,8 @@
     sprite: Civ14/Clothing/exported/hats/replicant_blizzard.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Phase_II_Replicant_Trooper_Helmet_1
   start: start
@@ -558,7 +579,8 @@
     sprite: Civ14/Clothing/exported/hats/replicant_helmet2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Phase_II_501st_Replicant_Trooper_Helmet
   start: start
@@ -584,7 +606,8 @@
     sprite: Civ14/Clothing/exported/hats/rebel_helmet1.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Rebel_Fleet_Trooper_Helmet
   start: start
@@ -610,7 +633,8 @@
     sprite: Civ14/Clothing/exported/hats/roman.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_roman_legionary_helmet
   start: start
@@ -636,7 +660,8 @@
     sprite: Civ14/Clothing/exported/hats/ushanka_plain_up.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_ushanka
   start: start
@@ -664,7 +689,8 @@
     sprite: Civ14/Clothing/exported/hats/roman_d.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_roman_decurion_helmet
   start: start
@@ -692,7 +718,8 @@
     sprite: Civ14/Clothing/exported/hats/roman_c.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_roman_centurion_helmet
   start: start
@@ -718,7 +745,8 @@
     sprite: Civ14/Clothing/exported/hats/gladiator.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_gladiator_helmet
   start: start
@@ -746,7 +774,8 @@
     sprite: Civ14/Clothing/exported/hats/sol_invictus.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_sol_invictus_helmet
   start: start
@@ -774,7 +803,8 @@
     sprite: Civ14/Clothing/exported/hats/leonidas.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_greek_anax_helmet
   start: start
@@ -802,7 +832,8 @@
     sprite: Civ14/Clothing/exported/hats/aries.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_aries_helmet
   start: start
@@ -831,7 +862,8 @@
     sprite: Civ14/Clothing/exported/hats/athena.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_athena_helmet
   start: start
@@ -857,7 +889,8 @@
     sprite: Civ14/Clothing/exported/hats/adrian_greek.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Greek_M15_Adrian_helmet
   start: start
@@ -885,7 +918,8 @@
     sprite: Civ14/Clothing/exported/hats/spartan.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_lochagos_helmet
   start: start
@@ -913,7 +947,8 @@
     sprite: Civ14/Clothing/exported/hats/athenian.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_dimoerites_helmet
   start: start
@@ -941,7 +976,8 @@
     sprite: Civ14/Clothing/exported/hats/egyptian_bronze_headdress.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_egyptian_war_headdress
   start: start
@@ -969,7 +1005,8 @@
     sprite: Civ14/Clothing/exported/hats/anubis.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_bronze_anubis_headdress
   start: start
@@ -997,7 +1034,8 @@
     sprite: Civ14/Clothing/exported/hats/osiris.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_bronze_osirus_headdress
   start: start
@@ -1025,7 +1063,8 @@
     sprite: Civ14/Clothing/exported/hats/phrigian_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_bronze_phrigian_helmet
   start: start
@@ -1051,7 +1090,8 @@
     sprite: Civ14/Clothing/exported/hats/leatherhelmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_leather_helmet
   start: start
@@ -1079,7 +1119,8 @@
     sprite: Civ14/Clothing/exported/hats/hatchigane.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_hatchigane_headband
   start: start
@@ -1107,7 +1148,8 @@
     sprite: Civ14/Clothing/exported/hats/khepresh.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_khepresh_war_crown
   start: start
@@ -1133,7 +1175,8 @@
     sprite: Civ14/Clothing/exported/hats/barbarian.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_horned_helmet
   start: start
@@ -1161,7 +1204,8 @@
     sprite: Civ14/Clothing/exported/hats/asterix.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_winged_helmet
   start: start
@@ -1189,7 +1233,8 @@
     sprite: Civ14/Clothing/exported/hats/apollo.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_conspicious_gaelic_helmet
   start: start
@@ -1217,7 +1262,8 @@
     sprite: Civ14/Clothing/exported/hats/vitalstatistix.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_conspicious_gaelic_helmet_1
   start: start
@@ -1243,7 +1289,8 @@
     sprite: Civ14/Clothing/exported/hats/bronze_chinese.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_chinese_warrior_helmet
   start: start
@@ -1271,7 +1318,8 @@
     sprite: Civ14/Clothing/exported/hats/yellow_ninja.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_yellow_ninja_headband
   start: start
@@ -1297,7 +1345,8 @@
     sprite: Civ14/Clothing/exported/hats/beret_rus_vdv_modern.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_VDV_beret
   start: start
@@ -1323,7 +1372,8 @@
     sprite: Civ14/Clothing/exported/hats/m1_standard.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M1_helmet
   start: start
@@ -1349,7 +1399,8 @@
     sprite: Civ14/Clothing/exported/hats/unitednations.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_UN_helmet
   start: start
@@ -1375,7 +1426,8 @@
     sprite: Civ14/Clothing/exported/hats/unitednations_medic.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_UN_medic_helmet
   start: start
@@ -1401,7 +1453,8 @@
     sprite: Civ14/Clothing/exported/hats/a6b47cam.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_camo_6B47_helmet
   start: start
@@ -1427,7 +1480,8 @@
     sprite: Civ14/Clothing/exported/hats/cvc_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_CVC_helmet
   start: start
@@ -1453,7 +1507,8 @@
     sprite: Civ14/Clothing/exported/hats/chi_korea_helm.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Chinese_helmet
   start: start
@@ -1479,7 +1534,8 @@
     sprite: Civ14/Clothing/exported/hats/chi_korea_helm.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Chinese_helmet_1
   start: start
@@ -1505,7 +1561,8 @@
     sprite: Civ14/Clothing/exported/hats/ft1med_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Medical_FT1_advanced_helmet
   start: start
@@ -1533,7 +1590,8 @@
     sprite: Civ14/Clothing/exported/hats/ssh_68_sovhelm.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_SSh_68_helmet
   start: start
@@ -1559,7 +1617,8 @@
     sprite: Civ14/Clothing/exported/hats/viet_pith.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_viet_pith_helmet
   start: start
@@ -1585,7 +1644,8 @@
     sprite: Civ14/Clothing/exported/hats/hardhat_white.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_white_hard_hat
   start: start
@@ -1611,7 +1671,8 @@
     sprite: Civ14/Clothing/exported/hats/yellowcap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_yellow_cap
   start: start
@@ -1637,7 +1698,8 @@
     sprite: Civ14/Clothing/exported/hats/hardhat_orange.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_orange_hard_hat
   start: start
@@ -1663,7 +1725,8 @@
     sprite: Civ14/Clothing/exported/hats/pickelhaube.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_iron_pickelhaube
   start: start
@@ -1689,7 +1752,8 @@
     sprite: Civ14/Clothing/exported/hats/stahlhelm_old.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M1915_Stahlhelm
   start: start
@@ -1715,7 +1779,8 @@
     sprite: Civ14/Clothing/exported/hats/brodie.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_iron_brodie
   start: start
@@ -1741,7 +1806,8 @@
     sprite: Civ14/Clothing/exported/hats/pith.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_pith_helmet
   start: start
@@ -1767,7 +1833,8 @@
     sprite: Civ14/Clothing/exported/hats/pasgt_woodland.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_PASGT_helmet
   start: start
@@ -1793,7 +1860,8 @@
     sprite: Civ14/Clothing/exported/hats/pasgt_reddish.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Red_PASGT_helmet
   start: start
@@ -1819,7 +1887,8 @@
     sprite: Civ14/Clothing/exported/hats/papakha_white.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_white_papakha
   start: start
@@ -1845,7 +1914,8 @@
     sprite: Civ14/Clothing/exported/hats/lwh_desert.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_LWH_helmet
   start: start
@@ -1873,7 +1943,8 @@
     sprite: Civ14/Clothing/exported/hats/sd_cap_black.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_sheriffs_department_cap
   start: start
@@ -1899,7 +1970,8 @@
     sprite: Civ14/Clothing/exported/hats/ach_ocp.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_OCP_ACH_helmet
   start: start
@@ -1925,7 +1997,8 @@
     sprite: Civ14/Clothing/exported/hats/ach_green.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_ACH_helmet
   start: start
@@ -1951,7 +2024,8 @@
     sprite: Civ14/Clothing/exported/hats/sovietfacehelmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_MASKA_1_helmet
   start: start
@@ -1980,7 +2054,8 @@
     sprite: Civ14/Clothing/exported/hats/a6b47.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_6B47_helmet
   start: start
@@ -2006,7 +2081,8 @@
     sprite: Civ14/Clothing/exported/hats/a6b47b.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_blugo_6B47_helmet
   start: start
@@ -2032,7 +2108,8 @@
     sprite: Civ14/Clothing/exported/hats/a6b47bc.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_blugo_command_6B47_helmet
   start: start
@@ -2060,7 +2137,8 @@
     sprite: Civ14/Clothing/exported/hats/sfera_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Sfera_helmet
   start: start
@@ -2088,7 +2166,8 @@
     sprite: Civ14/Clothing/exported/hats/zsh1.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_ZSh_1_helmet
   start: start
@@ -2116,7 +2195,8 @@
     sprite: Civ14/Clothing/exported/hats/zsh2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_ZSh_2_helmet
   start: start
@@ -2142,7 +2222,8 @@
     sprite: Civ14/Clothing/exported/hats/idf.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_IDF_helmet
   start: start
@@ -2168,7 +2249,8 @@
     sprite: Civ14/Clothing/exported/hats/hardhat_yellow.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_firefighter_helmet
   start: start
@@ -2194,7 +2276,8 @@
     sprite: Civ14/Clothing/exported/hats/mk6.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Mk6_helmet
   start: start
@@ -2220,7 +2303,8 @@
     sprite: Civ14/Clothing/exported/hats/cg634.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_CG634_helmet
   start: start
@@ -2246,7 +2330,8 @@
     sprite: Civ14/Clothing/exported/hats/mechanicalhelmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Mechanical_Helmet
   start: start
@@ -2272,7 +2357,8 @@
     sprite: Civ14/Clothing/exported/hats/qgf03.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_QGF03_helmet
   start: start
@@ -2300,7 +2386,8 @@
     sprite: Civ14/Clothing/exported/hats/m95_dpm.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M95_helmet
   start: start
@@ -2326,7 +2413,8 @@
     sprite: Civ14/Clothing/exported/hats/m1_standard.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M1_Helmet
   start: start
@@ -2352,7 +2440,8 @@
     sprite: Civ14/Clothing/exported/hats/m1_tan_netting.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M1_Helmet_with_netting
   start: start
@@ -2378,7 +2467,8 @@
     sprite: Civ14/Clothing/exported/hats/m1_green_netting.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M1_Helmet_with_green_netting
   start: start
@@ -2404,7 +2494,8 @@
     sprite: Civ14/Clothing/exported/hats/m1_medic.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M1_Medic_Helmet
   start: start
@@ -2432,7 +2523,8 @@
     sprite: Civ14/Clothing/exported/hats/m1_2nd_lt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M1_2nd_LT_Helmet
   start: start
@@ -2460,7 +2552,8 @@
     sprite: Civ14/Clothing/exported/hats/m1_1st_lt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M1_1st_LT_Helmet
   start: start
@@ -2488,7 +2581,8 @@
     sprite: Civ14/Clothing/exported/hats/m1_cpt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M1_Captain_Helmet
   start: start
@@ -2516,7 +2610,8 @@
     sprite: Civ14/Clothing/exported/hats/constable.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_constable_helmet
   start: start
@@ -2542,7 +2637,8 @@
     sprite: Civ14/Clothing/exported/hats/ncr_beret.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_NCR_Officer_Beret
   start: start
@@ -2570,7 +2666,8 @@
     sprite: Civ14/Clothing/exported/hats/ncr_helmet_goggles.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Goggles_Helmet
   start: start
@@ -2596,7 +2693,8 @@
     sprite: Civ14/Clothing/exported/hats/legionaire.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Legionaire_Cap
   start: start
@@ -2622,7 +2720,8 @@
     sprite: Civ14/Clothing/exported/hats/tes13_imperial.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_imperial_helmet
   start: start
@@ -2648,7 +2747,8 @@
     sprite: Civ14/Clothing/exported/hats/morion_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_morion_helmet
   start: start
@@ -2674,7 +2774,8 @@
     sprite: Civ14/Clothing/exported/hats/morion_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_cabasset_helmet
   start: start
@@ -2700,7 +2801,8 @@
     sprite: Civ14/Clothing/exported/hats/nap_lea_infantry_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_leather_infantry_cap
   start: start
@@ -2726,7 +2828,8 @@
     sprite: Civ14/Clothing/exported/hats/brownbearpelt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_brown_bear_pelt_hat
   start: start
@@ -2752,7 +2855,8 @@
     sprite: Civ14/Clothing/exported/hats/bluecap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_blue_cap
   start: start
@@ -2778,7 +2882,8 @@
     sprite: Civ14/Clothing/exported/hats/redcap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_red_cap
   start: start
@@ -2806,7 +2911,8 @@
     sprite: Civ14/Clothing/exported/hats/commissar.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_commisar_hat
   start: start
@@ -2834,7 +2940,8 @@
     sprite: Civ14/Clothing/exported/hats/prussian_lea_infantry_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_prussian_leather_infantry_helmet
   start: start
@@ -2860,7 +2967,8 @@
     sprite: Civ14/Clothing/exported/hats/nap_satsuma.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_satsuma_infantry_hat
   start: start
@@ -2888,7 +2996,8 @@
     sprite: Civ14/Clothing/exported/hats/dragoon.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_dragoon_helmet
   start: start
@@ -2916,7 +3025,8 @@
     sprite: Civ14/Clothing/exported/hats/nap_bearskin_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_black_napoleonic_bearskin_hat
   start: start
@@ -2942,7 +3052,8 @@
     sprite: Civ14/Clothing/exported/hats/gold_crown.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_gold_crown
   start: start
@@ -2968,7 +3079,8 @@
     sprite: Civ14/Clothing/exported/hats/silver_crown.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_silver_crown
   start: start
@@ -2994,7 +3106,8 @@
     sprite: Civ14/Clothing/exported/hats/gold_crown_diamond.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_inlaid_gold_crown
   start: start
@@ -3020,7 +3133,8 @@
     sprite: Civ14/Clothing/exported/hats/silver_crown_diamond.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_inlaid_silver_crown
   start: start
@@ -3046,7 +3160,8 @@
     sprite: Civ14/Clothing/exported/hats/brown_eisenbruck.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_brown_padded_head_cap
   start: start
@@ -3072,7 +3187,8 @@
     sprite: Civ14/Clothing/exported/hats/grey_eisenbruck.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_grey_padded_head_cap
   start: start
@@ -3098,7 +3214,8 @@
     sprite: Civ14/Clothing/exported/hats/aged_eisenbruck.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_ratty_old_padded_head_cap
   start: start
@@ -3126,7 +3243,8 @@
     sprite: Civ14/Clothing/exported/hats/italian_sallet_o.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_italian_sallet
   start: start
@@ -3154,7 +3272,8 @@
     sprite: Civ14/Clothing/exported/hats/german_sallet_o.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_german_sallet
   start: start
@@ -3182,7 +3301,8 @@
     sprite: Civ14/Clothing/exported/hats/burg_sallet_o.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_burgundian_sallet
   start: start
@@ -3210,7 +3330,8 @@
     sprite: Civ14/Clothing/exported/hats/bascinet_o.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_hounskull_bascinet
   start: start
@@ -3236,7 +3357,8 @@
     sprite: Civ14/Clothing/exported/hats/knight_simple.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_knight_helmet
   start: start
@@ -3262,7 +3384,8 @@
     sprite: Civ14/Clothing/exported/hats/medieval_helmet1.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_protective_conical_helmet
   start: start
@@ -3288,7 +3411,8 @@
     sprite: Civ14/Clothing/exported/hats/medieval_helmet2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_kettle_helmet
   start: start
@@ -3314,7 +3438,8 @@
     sprite: Civ14/Clothing/exported/hats/medieval_helmet3.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_conical_helmet
   start: start
@@ -3340,7 +3465,8 @@
     sprite: Civ14/Clothing/exported/hats/mamluk_coif_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_coif_wrapped_mamluk_helmet
   start: start
@@ -3366,7 +3492,8 @@
     sprite: Civ14/Clothing/exported/hats/coif_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_iron_coif_and_helmet
   start: start
@@ -3392,7 +3519,8 @@
     sprite: Civ14/Clothing/exported/hats/turhelm1.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_purple_arabic_turban_helmet
   start: start
@@ -3418,7 +3546,8 @@
     sprite: Civ14/Clothing/exported/hats/turhelm2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_red_arabic_turban_helmet
   start: start
@@ -3444,7 +3573,8 @@
     sprite: Civ14/Clothing/exported/hats/turhelm3.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_green_arabic_turban_helmet
   start: start
@@ -3470,7 +3600,8 @@
     sprite: Civ14/Clothing/exported/hats/turhelm3.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_blue_arabic_turban_helmet
   start: start
@@ -3498,7 +3629,8 @@
     sprite: Civ14/Clothing/exported/hats/arabw_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_long_arabic_helmet
   start: start
@@ -3526,7 +3658,8 @@
     sprite: Civ14/Clothing/exported/hats/arabw_helmet1.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_feminine_long_arabic_helmet
   start: start
@@ -3552,7 +3685,8 @@
     sprite: Civ14/Clothing/exported/hats/knight_templar.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_templar_knight_helmet
   start: start
@@ -3580,7 +3714,8 @@
     sprite: Civ14/Clothing/exported/hats/emir_turban.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_emirate_helmet
   start: start
@@ -3606,7 +3741,8 @@
     sprite: Civ14/Clothing/exported/hats/crusader.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_crusader_helmet
   start: start
@@ -3634,7 +3770,8 @@
     sprite: Civ14/Clothing/exported/hats/crusader_king.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_crusader_king_helmet
   start: start
@@ -3662,7 +3799,8 @@
     sprite: Civ14/Clothing/exported/hats/baltic_crusader.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_baltic_crusader_helmet
   start: start
@@ -3690,7 +3828,8 @@
     sprite: Civ14/Clothing/exported/hats/baltic_crusader_grandmaster.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_baltic_grandmaster_helmet
   start: start
@@ -3719,7 +3858,8 @@
     sprite: Civ14/Clothing/exported/hats/baltic_crusader_king.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_baltic_crusader_king_helmet
   start: start
@@ -3747,7 +3887,8 @@
     sprite: Civ14/Clothing/exported/hats/templar_priest.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_templar_priest_helmet
   start: start
@@ -3775,7 +3916,8 @@
     sprite: Civ14/Clothing/exported/hats/baltic_priest.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_baltic_priest_helmet
   start: start
@@ -3801,7 +3943,8 @@
     sprite: Civ14/Clothing/exported/hats/new_viking.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_viking_helmet
   start: start
@@ -3829,7 +3972,8 @@
     sprite: Civ14/Clothing/exported/hats/mamluk_king.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_royal_mamluk_conical_helmet
   start: start
@@ -3855,7 +3999,8 @@
     sprite: Civ14/Clothing/exported/hats/valkyrie.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_royal_viking_helmet
   start: start
@@ -3883,7 +4028,8 @@
     sprite: Civ14/Clothing/exported/hats/valkyrie_queen.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_royal_viking_helmet_1
   start: start
@@ -3911,7 +4057,8 @@
     sprite: Civ14/Clothing/exported/hats/varangian_guard.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_varangian_helmet
   start: start
@@ -3939,7 +4086,8 @@
     sprite: Civ14/Clothing/exported/hats/imperial_chinese.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_imperial_chinese_helmet
   start: start
@@ -3967,7 +4115,8 @@
     sprite: Civ14/Clothing/exported/hats/penlianal_whitestrake.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_penlianal_whitestrake_helmet
   start: start
@@ -3995,7 +4144,8 @@
     sprite: Civ14/Clothing/exported/hats/hell_champion.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_hell_knight_helmet
   start: start
@@ -4021,7 +4171,8 @@
     sprite: Civ14/Clothing/exported/hats/crusader_saint.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_saint_helmet
   start: start
@@ -4049,7 +4200,8 @@
     sprite: Civ14/Clothing/exported/hats/giantdad.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_lordran_helmet
   start: start
@@ -4075,7 +4227,8 @@
     sprite: Civ14/Clothing/exported/hats/dwelmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_dwemmer_helmet
   start: start
@@ -4103,7 +4256,8 @@
     sprite: Civ14/Clothing/exported/hats/samurai_guard3.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_leather_samurai_helmet
   start: start
@@ -4129,7 +4283,8 @@
     sprite: Civ14/Clothing/exported/hats/tes13_hide.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_hide_helmet
   start: start
@@ -4157,7 +4312,8 @@
     sprite: Civ14/Clothing/exported/hats/tes13_iron.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_iron_helmet
   start: start
@@ -4183,7 +4339,8 @@
     sprite: Civ14/Clothing/exported/hats/stormcloak.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_stormcloak_officer_helmet
   start: start
@@ -4209,7 +4366,8 @@
     sprite: Civ14/Clothing/exported/hats/tes13_imperial_officer.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_imperial_officer_helmet
   start: start
@@ -4237,7 +4395,8 @@
     sprite: Civ14/Clothing/exported/hats/leather_skullcap_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_leather_skullcap_helmet
   start: start
@@ -4263,7 +4422,8 @@
     sprite: Civ14/Clothing/exported/hats/samurai_warrior3.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_samurai_helmet
   start: start
@@ -4291,7 +4451,8 @@
     sprite: Civ14/Clothing/exported/hats/jingasa.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_jingasa
   start: start
@@ -4317,7 +4478,8 @@
     sprite: Civ14/Clothing/exported/hats/kasa.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_kasa
   start: start
@@ -4343,7 +4505,8 @@
     sprite: Civ14/Clothing/exported/hats/kevlarhelmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_black_kevlar_helmet
   start: start
@@ -4371,7 +4534,8 @@
     sprite: Civ14/Clothing/exported/hats/kevlarhelmet_press.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Press_kevlar_helmet
   start: start
@@ -4397,7 +4561,8 @@
     sprite: Civ14/Clothing/exported/hats/motorcycle.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_motorcycle_helmet
   start: start
@@ -4423,7 +4588,8 @@
     sprite: Civ14/Clothing/exported/hats/swat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_swat_helmet
   start: start
@@ -4449,7 +4615,8 @@
     sprite: Civ14/Clothing/exported/hats/swat_new.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_swat_helmet_1
   start: start
@@ -4475,7 +4642,8 @@
     sprite: Civ14/Clothing/exported/hats/ft1_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_FT1_advanced_helmet
   start: start
@@ -4501,7 +4669,8 @@
     sprite: Civ14/Clothing/exported/hats/tacticalhelmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_tactical_helmet
   start: start
@@ -4527,7 +4696,8 @@
     sprite: Civ14/Clothing/exported/hats/ioghelmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_IOG_helmet
   start: start
@@ -4553,7 +4723,8 @@
     sprite: Civ14/Clothing/exported/hats/iogmask1.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_IOG_helmet_1
   start: start
@@ -4579,7 +4750,8 @@
     sprite: Civ14/Clothing/exported/hats/scraphelmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_scrap_metal_helmet
   start: start
@@ -4605,7 +4777,8 @@
     sprite: Civ14/Clothing/exported/hats/bone_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_bone_helmet
   start: start
@@ -4631,7 +4804,8 @@
     sprite: Civ14/Clothing/exported/hats/chitin_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_chitin_helmet
   start: start
@@ -4657,7 +4831,8 @@
     sprite: Civ14/Clothing/exported/hats/sauronhelmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_saurons_helmet
   start: start
@@ -4683,7 +4858,8 @@
     sprite: Civ14/Clothing/exported/hats/beserkerhelmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_orc_beserker_helm
   start: start
@@ -4709,7 +4885,8 @@
     sprite: Civ14/Clothing/exported/hats/ork_elite_helmet_2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_iron_helmet_1
   start: start
@@ -4735,7 +4912,8 @@
     sprite: Civ14/Clothing/exported/hats/ork_elite_helmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_iron_helmet_1_2
   start: start
@@ -4761,7 +4939,8 @@
     sprite: Civ14/Clothing/exported/hats/spearmanhelmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_orc_spearman_helm
   start: start
@@ -4787,7 +4966,8 @@
     sprite: Civ14/Clothing/exported/hats/captainhelmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_orc_captain_helm
   start: start
@@ -4813,7 +4993,8 @@
     sprite: Civ14/Clothing/exported/hats/grunthelmet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_orc_grunt_helm
   start: start
@@ -4839,7 +5020,8 @@
     sprite: Civ14/Clothing/exported/hats/adrian_greek.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Greek_M15_Adrian_helmet_1
   start: start
@@ -4865,7 +5047,8 @@
     sprite: Civ14/Clothing/exported/hats/adrian_standard.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M15_Adrian_helmet
   start: start
@@ -4891,7 +5074,8 @@
     sprite: Civ14/Clothing/exported/hats/m26_medic.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Medic_M15_Adrian_helmet
   start: start
@@ -4917,7 +5101,8 @@
     sprite: Civ14/Clothing/exported/hats/adrian_russian.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Russian_M15_Adrian_helmet
   start: start
@@ -4943,7 +5128,8 @@
     sprite: Civ14/Clothing/exported/hats/m15_adrian_m.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Medic_M15_Adrian_helmet_1
   start: start
@@ -4969,7 +5155,8 @@
     sprite: Civ14/Clothing/exported/hats/m26_adrian.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M26_Adrian_helmet
   start: start
@@ -4995,7 +5182,8 @@
     sprite: Civ14/Clothing/exported/hats/m26_medic.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Medic_M26_Adrian_helmet
   start: start
@@ -5021,7 +5209,8 @@
     sprite: Civ14/Clothing/exported/hats/brodie_mk1_deb.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Mk1_Brodie_Helmet
   start: start
@@ -5047,7 +5236,8 @@
     sprite: Civ14/Clothing/exported/hats/brodie_mk1_ag.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Mk1_Brodie_Helmet_1
   start: start
@@ -5073,7 +5263,8 @@
     sprite: Civ14/Clothing/exported/hats/brodie_mk2_og.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Mk2_Brodie_Helmet
   start: start
@@ -5099,7 +5290,8 @@
     sprite: Civ14/Clothing/exported/hats/brodie_mk2_medic.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Mk2_Brodie_Medic_Helmet
   start: start
@@ -5125,7 +5317,8 @@
     sprite: Civ14/Clothing/exported/hats/brodie_mk2_irish.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Irish_Mk2_Brodie_Helmet
   start: start
@@ -5151,7 +5344,8 @@
     sprite: Civ14/Clothing/exported/hats/brodie_mk2_netgreen.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Mk2_Brodie_Helmet_with_green_netting
   start: start
@@ -5177,7 +5371,8 @@
     sprite: Civ14/Clothing/exported/hats/brodie_mk2_nettan.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Mk2_Brodie_Helmet_with_tan_netting
   start: start
@@ -5203,7 +5398,8 @@
     sprite: Civ14/Clothing/exported/hats/brodie_mk2_nettanf.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Camouflaged_Mk2_Brodie_Helmet
   start: start
@@ -5229,7 +5425,8 @@
     sprite: Civ14/Clothing/exported/hats/brodie_mk2_netgreenf.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Camouflaged_Mk2_Brodie_Helmet_1
   start: start
@@ -5255,7 +5452,8 @@
     sprite: Civ14/Clothing/exported/hats/pickelhaube2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Leather_pickelhaube
   start: start
@@ -5283,7 +5481,8 @@
     sprite: Civ14/Clothing/exported/hats/sakura_helm.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Japanese_sakura_helmet
   start: start
@@ -5311,7 +5510,8 @@
     sprite: Civ14/Clothing/exported/hats/japhelm.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Japanese_helmet
   start: start
@@ -5337,7 +5537,8 @@
     sprite: Civ14/Clothing/exported/hats/bandana.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_pirate_bandana
   start: start
@@ -5366,7 +5567,8 @@
     sprite: Civ14/Clothing/exported/hats/japhelm_snlf.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Japanese_SNLF_helmet
   start: start
@@ -5395,7 +5597,8 @@
     sprite: Civ14/Clothing/exported/hats/japhelm_medic.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Japanese_medic_helmet
   start: start
@@ -5424,7 +5627,8 @@
     sprite: Civ14/Clothing/exported/hats/japtanker.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Japanese_tanker_helmet
   start: start
@@ -5450,7 +5654,8 @@
     sprite: Civ14/Clothing/exported/hats/m1_mp_white.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_US_mp_helmet
   start: start
@@ -5476,7 +5681,8 @@
     sprite: Civ14/Clothing/exported/hats/stahlhelm.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_german_stahlhelm
   start: start
@@ -5502,7 +5708,8 @@
     sprite: Civ14/Clothing/exported/hats/stahlhelm_para.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Fallschirmjager_stahlhelm
   start: start
@@ -5530,7 +5737,8 @@
     sprite: Civ14/Clothing/exported/hats/gerhelm_medic.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_german_medic_stahlhelm
   start: start
@@ -5558,7 +5766,8 @@
     sprite: Civ14/Clothing/exported/hats/gerhelm_mp.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_german_stahlhelm_1
   start: start
@@ -5587,7 +5796,8 @@
     sprite: Civ14/Clothing/exported/hats/sshelm.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_German_SS_helmet
   start: start
@@ -5613,7 +5823,8 @@
     sprite: Civ14/Clothing/exported/hats/stahlhelm.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_German_SS_helmet_1
   start: start
@@ -5639,7 +5850,8 @@
     sprite: Civ14/Clothing/exported/hats/sovhelm.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_soviet_helmet
   start: start
@@ -5668,7 +5880,8 @@
     sprite: Civ14/Clothing/exported/hats/m33_helm.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Greek_M1934/39_Helmet
   start: start
@@ -5698,7 +5911,8 @@
     sprite: Civ14/Clothing/exported/hats/m33_helm.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M33_Helmet
   start: start
@@ -5728,7 +5942,8 @@
     sprite: Civ14/Clothing/exported/hats/m33_helm_med.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M33_Medic_Helmet
   start: start
@@ -5754,7 +5969,8 @@
     sprite: Civ14/Clothing/exported/hats/m1_greennet_leaves.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M1_Helmet_with_netting_1
   start: start
@@ -5782,7 +5998,8 @@
     sprite: Civ14/Clothing/exported/hats/m1_chaplain.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M1_Chaplain_Helmet
   start: start
@@ -5810,7 +6027,8 @@
     sprite: Civ14/Clothing/exported/hats/m1_mp_black.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Black_M1_MP_Helmet
   start: start
@@ -5838,7 +6056,8 @@
     sprite: Civ14/Clothing/exported/hats/m1_mp_green.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_M1_MP_Helmet
   start: start
@@ -5864,7 +6083,8 @@
     sprite: Civ14/Clothing/exported/hats/ushelmet_mar.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_USMC_helmet
   start: start
@@ -5892,7 +6112,8 @@
     sprite: Civ14/Clothing/exported/hats/ushelmet_mar_nco.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_USMC_sergeant_helmet
   start: start
@@ -5920,7 +6141,8 @@
     sprite: Civ14/Clothing/exported/hats/sovhelm_medic.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_soviet_medical_helmet
   start: start
@@ -5946,7 +6168,8 @@
     sprite: Civ14/Clothing/exported/hats/montefortino.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_bronze_montefortino_helmet
   start: start
@@ -5974,7 +6197,8 @@
     sprite: Civ14/Clothing/exported/hats/chefhat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_chefs_hat
   start: start
@@ -6000,7 +6224,8 @@
     sprite: Civ14/Clothing/exported/hats/captain.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_captains_hat
   start: start
@@ -6026,7 +6251,8 @@
     sprite: Civ14/Clothing/exported/hats/blackcap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_cap
   start: start
@@ -6053,7 +6279,8 @@
     sprite: Civ14/Clothing/exported/hats/chaplain_hood.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_preachers_hood
   start: start
@@ -6079,7 +6306,8 @@
     sprite: Civ14/Clothing/exported/hats/hairflower.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_hair_flower_pin
   start: start
@@ -6105,7 +6333,8 @@
     sprite: Civ14/Clothing/exported/hats/pwig.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_powdered_wig
   start: start
@@ -6131,7 +6360,8 @@
     sprite: Civ14/Clothing/exported/hats/tophat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_top_hat
   start: start
@@ -6157,7 +6387,8 @@
     sprite: Civ14/Clothing/exported/hats/pimp_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_pimp_hat
   start: start
@@ -6183,7 +6414,8 @@
     sprite: Civ14/Clothing/exported/hats/peakyblindercap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_flat_cap
   start: start
@@ -6209,7 +6441,8 @@
     sprite: Civ14/Clothing/exported/hats/peakyblindercap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_flat_cap_1
   start: start
@@ -6235,7 +6468,8 @@
     sprite: Civ14/Clothing/exported/hats/pirate.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_pirate_hat
   start: start
@@ -6261,7 +6495,8 @@
     sprite: Civ14/Clothing/exported/hats/toughguy.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_specialist_bandana
   start: start
@@ -6287,7 +6522,8 @@
     sprite: Civ14/Clothing/exported/hats/bandana_olive.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_olive_bandana
   start: start
@@ -6314,7 +6550,8 @@
     sprite: Civ14/Clothing/exported/hats/feathered_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_feather_trilby
   start: start
@@ -6340,7 +6577,8 @@
     sprite: Civ14/Clothing/exported/hats/fez.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_fez
   start: start
@@ -6366,7 +6604,8 @@
     sprite: Civ14/Clothing/exported/hats/bearpelt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_bearpelt_headcover
   start: start
@@ -6394,7 +6633,8 @@
     sprite: Civ14/Clothing/exported/hats/philosopher_wig.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_natural_philosophers_wig
   start: start
@@ -6420,7 +6660,8 @@
     sprite: Civ14/Clothing/exported/hats/orange_bandana.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_orange_bandana
   start: start
@@ -6446,7 +6687,8 @@
     sprite: Civ14/Clothing/exported/hats/dunce_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_dunce_cap
   start: start
@@ -6472,7 +6714,8 @@
     sprite: Civ14/Clothing/exported/hats/custom_beanie.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_beanie
   start: start
@@ -6499,7 +6742,8 @@
     sprite: Civ14/Clothing/exported/hats/customberet_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_beret
   start: start
@@ -6525,7 +6769,8 @@
     sprite: Civ14/Clothing/exported/hats/custombandana_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_bandana
   start: start
@@ -6551,7 +6796,8 @@
     sprite: Civ14/Clothing/exported/hats/customnoblehat_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_noble_hat
   start: start
@@ -6577,7 +6823,8 @@
     sprite: Civ14/Clothing/exported/hats/wool_hood.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_wool_hood
   start: start
@@ -6603,7 +6850,8 @@
     sprite: Civ14/Clothing/exported/hats/drill_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Drill_hat
   start: start
@@ -6629,7 +6877,8 @@
     sprite: Civ14/Clothing/exported/hats/taqiyah.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_taqiyah
   start: start
@@ -6655,7 +6904,8 @@
     sprite: Civ14/Clothing/exported/hats/hijab.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_hijab
   start: start
@@ -6681,7 +6931,8 @@
     sprite: Civ14/Clothing/exported/hats/kippa.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_kippa
   start: start
@@ -6707,7 +6958,8 @@
     sprite: Civ14/Clothing/exported/hats/bandana_ballas1.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_purple_bandana
   start: start
@@ -6733,7 +6985,8 @@
     sprite: Civ14/Clothing/exported/hats/bandana_grove.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_green_bandana
   start: start
@@ -6759,7 +7012,8 @@
     sprite: Civ14/Clothing/exported/hats/repofficer_navcaptain.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_imperial_naval_officer_cap
   start: start
@@ -6787,7 +7041,8 @@
     sprite: Civ14/Clothing/exported/hats/impofficer_stormofficer.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_imperial_black_field_cap
   start: start
@@ -6813,7 +7068,8 @@
     sprite: Civ14/Clothing/exported/hats/repnavalcaptain_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_republic_naval_officer_cap
   start: start
@@ -6839,7 +7095,8 @@
     sprite: Civ14/Clothing/exported/hats/repensign_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_republic_naval_ensign_cap
   start: start
@@ -6865,7 +7122,8 @@
     sprite: Civ14/Clothing/exported/hats/repmedicalofficer_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_republic_medical_officer_cap
   start: start
@@ -6891,7 +7149,8 @@
     sprite: Civ14/Clothing/exported/hats/impofficer_stormofficer.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_imperial_officer_cap
   start: start
@@ -6917,7 +7176,8 @@
     sprite: Civ14/Clothing/exported/hats/caubeen.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_caubeen
   start: start
@@ -6943,7 +7203,8 @@
     sprite: Civ14/Clothing/exported/hats/ainu.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_ainu_bandana
   start: start
@@ -6969,7 +7230,8 @@
     sprite: Civ14/Clothing/exported/hats/toxotai.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_toxotai_hat
   start: start
@@ -6995,7 +7257,8 @@
     sprite: Civ14/Clothing/exported/hats/egyptian_headdress_black.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_black_egyptian_headdress
   start: start
@@ -7021,7 +7284,8 @@
     sprite: Civ14/Clothing/exported/hats/egyptian_headdress_blue.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_blue_egyptian_headdress
   start: start
@@ -7047,7 +7311,8 @@
     sprite: Civ14/Clothing/exported/hats/egyptian_headdress_red.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_red_egyptian_headdress
   start: start
@@ -7073,7 +7338,8 @@
     sprite: Civ14/Clothing/exported/hats/pharoah_headdress.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_pharoah_headdress
   start: start
@@ -7099,7 +7365,8 @@
     sprite: Civ14/Clothing/exported/hats/nemes_headdress.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_nemes_headdress
   start: start
@@ -7125,7 +7392,8 @@
     sprite: Civ14/Clothing/exported/hats/doublecrown.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_double_crown
   start: start
@@ -7153,7 +7421,8 @@
     sprite: Civ14/Clothing/exported/hats/hedjet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_hedjet_crown
   start: start
@@ -7181,7 +7450,8 @@
     sprite: Civ14/Clothing/exported/hats/deshret.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_deshret_crown
   start: start
@@ -7209,7 +7479,8 @@
     sprite: Civ14/Clothing/exported/hats/pschent.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_pschent_crown
   start: start
@@ -7235,7 +7506,8 @@
     sprite: Civ14/Clothing/exported/hats/laurelcrown.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_laurel_crown
   start: start
@@ -7261,7 +7533,8 @@
     sprite: Civ14/Clothing/exported/hats/laurelcrown_gold.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_gold_laurel_crown
   start: start
@@ -7287,7 +7560,8 @@
     sprite: Civ14/Clothing/exported/hats/fiendish.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_fiendish_headdress
   start: start
@@ -7315,7 +7589,8 @@
     sprite: Civ14/Clothing/exported/hats/semitic_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_semitic_cap
   start: start
@@ -7341,7 +7616,8 @@
     sprite: Civ14/Clothing/exported/hats/wolfpelt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_wolfpelt_headcover
   start: start
@@ -7367,7 +7643,8 @@
     sprite: Civ14/Clothing/exported/hats/pantherpelt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_pantherpelt_headcover
   start: start
@@ -7393,7 +7670,8 @@
     sprite: Civ14/Clothing/exported/hats/lionpelt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_lionpelt_headcover
   start: start
@@ -7419,7 +7697,8 @@
     sprite: Civ14/Clothing/exported/hats/gatorpelt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_alligator_pelt_headcover
   start: start
@@ -7445,7 +7724,8 @@
     sprite: Civ14/Clothing/exported/hats/foxpelt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_foxpelt_headcover
   start: start
@@ -7473,7 +7753,8 @@
     sprite: Civ14/Clothing/exported/hats/sheeppelt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_sheep_pelt_headcover
   start: start
@@ -7501,7 +7782,8 @@
     sprite: Civ14/Clothing/exported/hats/goatpelt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_goatpelt_headcover
   start: start
@@ -7529,7 +7811,8 @@
     sprite: Civ14/Clothing/exported/hats/bisonpelt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_bisonpelt_headcover
   start: start
@@ -7557,7 +7840,8 @@
     sprite: Civ14/Clothing/exported/hats/deshret.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_atef_crown
   start: start
@@ -7583,7 +7867,8 @@
     sprite: Civ14/Clothing/exported/hats/sd_sheriffhat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_sheriffs_stratton_hat
   start: start
@@ -7609,7 +7894,8 @@
     sprite: Civ14/Clothing/exported/hats/sd_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_sheriffs_department_cap_1
   start: start
@@ -7635,7 +7921,8 @@
     sprite: Civ14/Clothing/exported/hats/traffic_cop.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_police_cap
   start: start
@@ -7661,7 +7948,8 @@
     sprite: Civ14/Clothing/exported/hats/beret_red.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_red_beret
   start: start
@@ -7687,7 +7975,8 @@
     sprite: Civ14/Clothing/exported/hats/beret_black.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_black_beret
   start: start
@@ -7713,7 +8002,8 @@
     sprite: Civ14/Clothing/exported/hats/beret_green_insig.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_green_beret
   start: start
@@ -7739,7 +8029,8 @@
     sprite: Civ14/Clothing/exported/hats/beret_green.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_green_beret_1
   start: start
@@ -7765,7 +8056,8 @@
     sprite: Civ14/Clothing/exported/hats/unitednations_beret.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_UN_beret
   start: start
@@ -7791,7 +8083,8 @@
     sprite: Civ14/Clothing/exported/hats/ghillie.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_ghillie_headcover
   start: start
@@ -7817,7 +8110,8 @@
     sprite: Civ14/Clothing/exported/hats/black_boonie.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_black_boonie
   start: start
@@ -7843,7 +8137,8 @@
     sprite: Civ14/Clothing/exported/hats/khaki_boonie.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_khaki_boonie
   start: start
@@ -7869,7 +8164,8 @@
     sprite: Civ14/Clothing/exported/hats/og107_boonie.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_olive_green_boonie
   start: start
@@ -7895,7 +8191,8 @@
     sprite: Civ14/Clothing/exported/hats/tilly_cadpat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_cadpat_tilly
   start: start
@@ -7921,7 +8218,8 @@
     sprite: Civ14/Clothing/exported/hats/rice_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_rice_hat
   start: start
@@ -7947,7 +8245,8 @@
     sprite: Civ14/Clothing/exported/hats/chinese_ushanka_up.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_chinese_ushanka
   start: start
@@ -7973,7 +8272,8 @@
     sprite: Civ14/Clothing/exported/hats/nva_off_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_NVA_cap
   start: start
@@ -7999,7 +8299,8 @@
     sprite: Civ14/Clothing/exported/hats/ushanka_new_up.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_soviet_ushanka
   start: start
@@ -8025,7 +8326,8 @@
     sprite: Civ14/Clothing/exported/hats/nkvd_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_NKVD_cap
   start: start
@@ -8051,7 +8353,8 @@
     sprite: Civ14/Clothing/exported/hats/nkvd_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_KGB_cap
   start: start
@@ -8077,7 +8380,8 @@
     sprite: Civ14/Clothing/exported/hats/sailor_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_US_sailor_hat
   start: start
@@ -8103,7 +8407,8 @@
     sprite: Civ14/Clothing/exported/hats/upapilotka.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Blugoslavian_sailor_hat
   start: start
@@ -8129,7 +8434,8 @@
     sprite: Civ14/Clothing/exported/hats/sailor_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Redmenian_sailor_hat
   start: start
@@ -8155,7 +8461,8 @@
     sprite: Civ14/Clothing/exported/hats/japcap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Japanese_Cap
   start: start
@@ -8181,7 +8488,8 @@
     sprite: Civ14/Clothing/exported/hats/japoffcap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Japanese_Officer_Cap
   start: start
@@ -8207,7 +8515,8 @@
     sprite: Civ14/Clothing/exported/hats/ww2_japcap_navy_officer.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Japanese_naval_officer_cap
   start: start
@@ -8233,7 +8542,8 @@
     sprite: Civ14/Clothing/exported/hats/ww2_japcap_navy.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Japanese_petty_officer_cap
   start: start
@@ -8259,7 +8569,8 @@
     sprite: Civ14/Clothing/exported/hats/japanese_sailor_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Japanese_sailor_cap
   start: start
@@ -8287,7 +8598,8 @@
     sprite: Civ14/Clothing/exported/hats/ww2_japcap_snlf.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Japanese_cap
   start: start
@@ -8313,7 +8625,8 @@
     sprite: Civ14/Clothing/exported/hats/japbandana.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Japanese_headband
   start: start
@@ -8339,7 +8652,8 @@
     sprite: Civ14/Clothing/exported/hats/jappilotcap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Japanese_pilot_cap
   start: start
@@ -8365,7 +8679,8 @@
     sprite: Civ14/Clothing/exported/hats/japcap_mp.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Kenpeitai_MP_cap
   start: start
@@ -8391,7 +8706,8 @@
     sprite: Civ14/Clothing/exported/hats/japwinter_up.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Japanese_winter_cap
   start: start
@@ -8417,7 +8733,8 @@
     sprite: Civ14/Clothing/exported/hats/ww2_british_officer.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_British_officer_cap
   start: start
@@ -8443,7 +8760,8 @@
     sprite: Civ14/Clothing/exported/hats/ww2_british_officer_tropical.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_British_officer_cap_1
   start: start
@@ -8469,7 +8787,8 @@
     sprite: Civ14/Clothing/exported/hats/ww2_aussie.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_British_hat
   start: start
@@ -8495,7 +8814,8 @@
     sprite: Civ14/Clothing/exported/hats/ww2_british_tropical.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_tropical_british_hat
   start: start
@@ -8521,7 +8841,8 @@
     sprite: Civ14/Clothing/exported/hats/ww2_british_beret.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_British_beret
   start: start
@@ -8547,7 +8868,8 @@
     sprite: Civ14/Clothing/exported/hats/fieldcap_china.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Chinese_cap
   start: start
@@ -8573,7 +8895,8 @@
     sprite: Civ14/Clothing/exported/hats/fieldcap_china2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Chinese_cap_1
   start: start
@@ -8599,7 +8922,8 @@
     sprite: Civ14/Clothing/exported/hats/cra_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Chinese_Red_Army_cap
   start: start
@@ -8625,7 +8949,8 @@
     sprite: Civ14/Clothing/exported/hats/usnco_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_US_nco_cap
   start: start
@@ -8651,7 +8976,8 @@
     sprite: Civ14/Clothing/exported/hats/ustanker.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_US_tanker_cap
   start: start
@@ -8677,7 +9003,8 @@
     sprite: Civ14/Clothing/exported/hats/gertanker.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_German_tanker_headset
   start: start
@@ -8703,7 +9030,8 @@
     sprite: Civ14/Clothing/exported/hats/gertanker.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Italian_tanker_headset
   start: start
@@ -8729,7 +9057,8 @@
     sprite: Civ14/Clothing/exported/hats/sovtanker.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Soviet_tanker_cap
   start: start
@@ -8755,7 +9084,8 @@
     sprite: Civ14/Clothing/exported/hats/ger_officercap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_German_officer_cap
   start: start
@@ -8781,7 +9111,8 @@
     sprite: Civ14/Clothing/exported/hats/ger_officercap_tanker.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_German_panzer_officer_cap
   start: start
@@ -8807,7 +9138,8 @@
     sprite: Civ14/Clothing/exported/hats/sov_officercap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_soviet_officer_cap
   start: start
@@ -8833,7 +9165,8 @@
     sprite: Civ14/Clothing/exported/hats/sovpilotka.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_soviet_pilotka
   start: start
@@ -8859,7 +9192,8 @@
     sprite: Civ14/Clothing/exported/hats/ushanka_up.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_soviet_ushanka_1
   start: start
@@ -8885,7 +9219,8 @@
     sprite: Civ14/Clothing/exported/hats/sscap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_SS_cap
   start: start
@@ -8911,7 +9246,8 @@
     sprite: Civ14/Clothing/exported/hats/fieldcap1.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_German_field_cap
   start: start
@@ -8937,7 +9273,8 @@
     sprite: Civ14/Clothing/exported/hats/fieldcap2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_soviet_field_cap
   start: start
@@ -8963,7 +9300,8 @@
     sprite: Civ14/Clothing/exported/hats/upa_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_UPA_field_cap
   start: start
@@ -8989,7 +9327,8 @@
     sprite: Civ14/Clothing/exported/hats/upapilotka.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_UPA_pilotka
   start: start
@@ -9015,7 +9354,8 @@
     sprite: Civ14/Clothing/exported/hats/upa_off.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_UPA_officer_cap
   start: start
@@ -9041,7 +9381,8 @@
     sprite: Civ14/Clothing/exported/hats/upa_commander.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_UPA_officer_cap_1
   start: start
@@ -9067,7 +9408,8 @@
     sprite: Civ14/Clothing/exported/hats/sov_officercap2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_soviet_officer_cap_1
   start: start
@@ -9093,7 +9435,8 @@
     sprite: Civ14/Clothing/exported/hats/cafr_officercap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_cafr_officer_cap
   start: start
@@ -9119,7 +9462,8 @@
     sprite: Civ14/Clothing/exported/hats/fieldcap_afghanka.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Afghanka_field_cap
   start: start
@@ -9145,7 +9489,8 @@
     sprite: Civ14/Clothing/exported/hats/beret_rus_vdv.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_VDV_beret_1
   start: start
@@ -9171,7 +9516,8 @@
     sprite: Civ14/Clothing/exported/hats/beret_rus_spez.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Spetznaz_beret
   start: start
@@ -9197,7 +9543,8 @@
     sprite: Civ14/Clothing/exported/hats/beret_rus_vdv.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Blugoslavian_beret
   start: start
@@ -9223,7 +9570,8 @@
     sprite: Civ14/Clothing/exported/hats/beret_rus_spez.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Redmenian_beret
   start: start
@@ -9249,7 +9597,8 @@
     sprite: Civ14/Clothing/exported/hats/blugoslavia_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Blugoslavian_navy_cap
   start: start
@@ -9275,7 +9624,8 @@
     sprite: Civ14/Clothing/exported/hats/redmenia_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Redmenian_navy_cap
   start: start
@@ -9301,7 +9651,8 @@
     sprite: Civ14/Clothing/exported/hats/commando_bandana.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_olive_drab_bandana
   start: start
@@ -9329,7 +9680,8 @@
     sprite: Civ14/Clothing/exported/hats/nbc.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_yellow_NBC_hood
   start: start
@@ -9357,7 +9709,8 @@
     sprite: Civ14/Clothing/exported/hats/nbc2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_olive_drab_NBC_hood
   start: start
@@ -9383,7 +9736,8 @@
     sprite: Civ14/Clothing/exported/hats/nbc2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_firefighting_hood
   start: start
@@ -9411,7 +9765,8 @@
     sprite: Civ14/Clothing/exported/hats/astronaut.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_astronaut_helmet
   start: start
@@ -9437,7 +9792,8 @@
     sprite: Civ14/Clothing/exported/hats/redguardcap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Chinese_Red_Guard_cap
   start: start
@@ -9463,7 +9819,8 @@
     sprite: Civ14/Clothing/exported/hats/bizarre_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_bizarre_dark_blue_hat
   start: start
@@ -9489,7 +9846,8 @@
     sprite: Civ14/Clothing/exported/hats/surgcap_white.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_white_surgical_cap
   start: start
@@ -9515,7 +9873,8 @@
     sprite: Civ14/Clothing/exported/hats/surgcap_darkgreen.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_dark_green_surgical_cap
   start: start
@@ -9541,7 +9900,8 @@
     sprite: Civ14/Clothing/exported/hats/surgcap_lightgreen.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_light_green_surgical_cap
   start: start
@@ -9567,7 +9927,8 @@
     sprite: Civ14/Clothing/exported/hats/surgcap_navy.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_navy_surgical_cap
   start: start
@@ -9593,7 +9954,8 @@
     sprite: Civ14/Clothing/exported/hats/ac_hood.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_creed_hood
   start: start
@@ -9619,7 +9981,8 @@
     sprite: Civ14/Clothing/exported/hats/abashiri_guard.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Abashiri_Guard_Cap
   start: start
@@ -9645,7 +10008,8 @@
     sprite: Civ14/Clothing/exported/hats/abashiri_guard_head.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Abashiri_Head_Guard_Cap
   start: start
@@ -9671,7 +10035,8 @@
     sprite: Civ14/Clothing/exported/hats/abashiri_guard_head.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Abashiri_Warden_Cap
   start: start
@@ -9697,7 +10062,8 @@
     sprite: Civ14/Clothing/exported/hats/abashiri_kasa.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Kasa
   start: start
@@ -9723,7 +10089,8 @@
     sprite: Civ14/Clothing/exported/hats/japcap2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Japanese_Cap_1
   start: start
@@ -9749,7 +10116,8 @@
     sprite: Civ14/Clothing/exported/hats/ruscap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Russian_Cap
   start: start
@@ -9775,7 +10143,8 @@
     sprite: Civ14/Clothing/exported/hats/rusoffcap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Russian_Officer_Cap
   start: start
@@ -9801,7 +10170,8 @@
     sprite: Civ14/Clothing/exported/hats/tophat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_top_hat_1
   start: start
@@ -9827,7 +10197,8 @@
     sprite: Civ14/Clothing/exported/hats/flatcap1.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_brown_flat_cap
   start: start
@@ -9853,7 +10224,8 @@
     sprite: Civ14/Clothing/exported/hats/flatcap2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_blue_flat_cap
   start: start
@@ -9879,7 +10251,8 @@
     sprite: Civ14/Clothing/exported/hats/flatcap3.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_grey_flat_cap
   start: start
@@ -9905,7 +10278,8 @@
     sprite: Civ14/Clothing/exported/hats/fedora.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_fedora_hat
   start: start
@@ -9931,7 +10305,8 @@
     sprite: Civ14/Clothing/exported/hats/cheka.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Cheka_cap
   start: start
@@ -9957,7 +10332,8 @@
     sprite: Civ14/Clothing/exported/hats/papakha.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_papakha
   start: start
@@ -9983,7 +10359,8 @@
     sprite: Civ14/Clothing/exported/hats/papakha_kuban.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Kuban_papakha
   start: start
@@ -10009,7 +10386,8 @@
     sprite: Civ14/Clothing/exported/hats/budenovka.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_budenovka
   start: start
@@ -10035,7 +10413,8 @@
     sprite: Civ14/Clothing/exported/hats/germcap2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_German_cap
   start: start
@@ -10061,7 +10440,8 @@
     sprite: Civ14/Clothing/exported/hats/frenchcap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_French_kepi
   start: start
@@ -10087,7 +10467,8 @@
     sprite: Civ14/Clothing/exported/hats/brittcap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_British_cap
   start: start
@@ -10113,7 +10494,8 @@
     sprite: Civ14/Clothing/exported/hats/fil_off_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Filipino_Officer_Cap
   start: start
@@ -10141,7 +10523,8 @@
     sprite: Civ14/Clothing/exported/hats/baliwag.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Baliwag
   start: start
@@ -10167,7 +10550,8 @@
     sprite: Civ14/Clothing/exported/hats/us_fp_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_US_Army_Hat
   start: start
@@ -10193,7 +10577,8 @@
     sprite: Civ14/Clothing/exported/hats/us_fp_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_cowboy_hat
   start: start
@@ -10219,7 +10604,8 @@
     sprite: Civ14/Clothing/exported/hats/ncr_beret_recon.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_NCR_1st_Recon_Beret
   start: start
@@ -10245,7 +10631,8 @@
     sprite: Civ14/Clothing/exported/hats/furhat_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_fur_hat
   start: start
@@ -10273,7 +10660,8 @@
     sprite: Civ14/Clothing/exported/hats/bison_fur_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_bisonhead_fur_hat
   start: start
@@ -10299,7 +10687,8 @@
     sprite: Civ14/Clothing/exported/hats/furcap_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_fur_cap
   start: start
@@ -10325,7 +10714,8 @@
     sprite: Civ14/Clothing/exported/hats/roundcap_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_roundcap
   start: start
@@ -10351,7 +10741,8 @@
     sprite: Civ14/Clothing/exported/hats/kerchief.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_kerchief
   start: start
@@ -10377,7 +10768,8 @@
     sprite: Civ14/Clothing/exported/hats/redberet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_red_sailor_beret
   start: start
@@ -10403,7 +10795,8 @@
     sprite: Civ14/Clothing/exported/hats/blueberet.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_blue_sailor_beret
   start: start
@@ -10429,7 +10822,8 @@
     sprite: Civ14/Clothing/exported/hats/tarred_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_tarred_hat
   start: start
@@ -10455,7 +10849,8 @@
     sprite: Civ14/Clothing/exported/hats/boater_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_straw_hat
   start: start
@@ -10481,7 +10876,8 @@
     sprite: Civ14/Clothing/exported/hats/tricorne_black.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_black_tricorne
   start: start
@@ -10507,7 +10903,8 @@
     sprite: Civ14/Clothing/exported/hats/capotain.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_capotain
   start: start
@@ -10533,7 +10930,8 @@
     sprite: Civ14/Clothing/exported/hats/pilgrim.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_capotain_1
   start: start
@@ -10559,7 +10957,8 @@
     sprite: Civ14/Clothing/exported/hats/piratehat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Pirate_hat
   start: start
@@ -10585,7 +10984,8 @@
     sprite: Civ14/Clothing/exported/hats/piratebandana1.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_bandana_1
   start: start
@@ -10611,7 +11011,8 @@
     sprite: Civ14/Clothing/exported/hats/tricorne_british.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_royal_navy_tricorne
   start: start
@@ -10637,7 +11038,8 @@
     sprite: Civ14/Clothing/exported/hats/tricorne_british2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_british_Army_tricorne
   start: start
@@ -10663,7 +11065,8 @@
     sprite: Civ14/Clothing/exported/hats/tricorne_british_soldier.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_black_bicorne
   start: start
@@ -10689,7 +11092,8 @@
     sprite: Civ14/Clothing/exported/hats/chasseur_br.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_british_feathered_hat
   start: start
@@ -10715,7 +11119,8 @@
     sprite: Civ14/Clothing/exported/hats/tricorne_portuguese.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_portuguese_navy_tricorne
   start: start
@@ -10741,7 +11146,8 @@
     sprite: Civ14/Clothing/exported/hats/chasseur_pt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_portuguese_feathered_hat
   start: start
@@ -10767,7 +11173,8 @@
     sprite: Civ14/Clothing/exported/hats/tricorne_portuguese.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_portuguese_army_tricorne
   start: start
@@ -10793,7 +11200,8 @@
     sprite: Civ14/Clothing/exported/hats/tricorne_spanish.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_spanish_navy_tricorne
   start: start
@@ -10819,7 +11227,8 @@
     sprite: Civ14/Clothing/exported/hats/tricorne_spanish.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_spanish_army_tricorne
   start: start
@@ -10845,7 +11254,8 @@
     sprite: Civ14/Clothing/exported/hats/tricorne_french.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_french_navy_tricorne
   start: start
@@ -10871,7 +11281,8 @@
     sprite: Civ14/Clothing/exported/hats/tricorne_french.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_french_army_tricorne
   start: start
@@ -10897,7 +11308,8 @@
     sprite: Civ14/Clothing/exported/hats/chasseur_fr.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_french_feathered_hat
   start: start
@@ -10923,7 +11335,8 @@
     sprite: Civ14/Clothing/exported/hats/tricorne_dutch.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_united_provinces_navy_tricorne
   start: start
@@ -10949,7 +11362,8 @@
     sprite: Civ14/Clothing/exported/hats/chasseur_nl.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_united_Provinces_feathered_hat
   start: start
@@ -10975,7 +11389,8 @@
     sprite: Civ14/Clothing/exported/hats/tricorne_dutch.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_united_Provinces_Army_tricorne
   start: start
@@ -11001,7 +11416,8 @@
     sprite: Civ14/Clothing/exported/hats/nursehat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_nurse_hat
   start: start
@@ -11027,7 +11443,8 @@
     sprite: Civ14/Clothing/exported/hats/bowler_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_bowler_hat
   start: start
@@ -11053,7 +11470,8 @@
     sprite: Civ14/Clothing/exported/hats/cowboy.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_cowboy_hat_1
   start: start
@@ -11079,7 +11497,8 @@
     sprite: Civ14/Clothing/exported/hats/cowboy2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_dark_cowboy_hat
   start: start
@@ -11107,7 +11526,8 @@
     sprite: Civ14/Clothing/exported/hats/vaquerohat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_vaquero_hat
   start: start
@@ -11135,7 +11555,8 @@
     sprite: Civ14/Clothing/exported/hats/bandit.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_bandit_hat
   start: start
@@ -11161,7 +11582,8 @@
     sprite: Civ14/Clothing/exported/hats/union_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_dark_union_hat
   start: start
@@ -11187,7 +11609,8 @@
     sprite: Civ14/Clothing/exported/hats/union_hat2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_light_union_hat
   start: start
@@ -11213,7 +11636,8 @@
     sprite: Civ14/Clothing/exported/hats/confederate_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_grey_confederate_hat
   start: start
@@ -11239,7 +11663,8 @@
     sprite: Civ14/Clothing/exported/hats/union_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_union_Cap
   start: start
@@ -11265,7 +11690,8 @@
     sprite: Civ14/Clothing/exported/hats/confederate_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_confederate_cap
   start: start
@@ -11291,7 +11717,8 @@
     sprite: Civ14/Clothing/exported/hats/sombrero.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_sombrero
   start: start
@@ -11319,7 +11746,8 @@
     sprite: Civ14/Clothing/exported/hats/ten_gallon_hat_white.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_white_ten_gallon_hat
   start: start
@@ -11345,7 +11773,8 @@
     sprite: Civ14/Clothing/exported/hats/artisan.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_artisan_hat
   start: start
@@ -11371,7 +11800,8 @@
     sprite: Civ14/Clothing/exported/hats/feathered_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_feathered_hat
   start: start
@@ -11397,7 +11827,8 @@
     sprite: Civ14/Clothing/exported/hats/medieval_count_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_count_hat
   start: start
@@ -11423,7 +11854,8 @@
     sprite: Civ14/Clothing/exported/hats/cavalier.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_cavalier_hat
   start: start
@@ -11449,7 +11881,8 @@
     sprite: Civ14/Clothing/exported/hats/noblehat1.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_brown_noble_hat
   start: start
@@ -11475,7 +11908,8 @@
     sprite: Civ14/Clothing/exported/hats/noblehat2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_black_noble_hat
   start: start
@@ -11503,7 +11937,8 @@
     sprite: Civ14/Clothing/exported/hats/phrigian_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_phrigian_hat
   start: start
@@ -11531,7 +11966,8 @@
     sprite: Civ14/Clothing/exported/hats/doge.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_doge_hat
   start: start
@@ -11559,7 +11995,8 @@
     sprite: Civ14/Clothing/exported/hats/black_cape.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_long_black_hooded_cape
   start: start
@@ -11587,7 +12024,8 @@
     sprite: Civ14/Clothing/exported/hats/plaguedoctor.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_plague_doctor_hat
   start: start
@@ -11615,7 +12053,8 @@
     sprite: Civ14/Clothing/exported/hats/nun_hood.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_nun_hood
   start: start
@@ -11641,7 +12080,8 @@
     sprite: Civ14/Clothing/exported/hats/turban1.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_turban
   start: start
@@ -11667,7 +12107,8 @@
     sprite: Civ14/Clothing/exported/hats/turban_w.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_white_turban
   start: start
@@ -11693,7 +12134,8 @@
     sprite: Civ14/Clothing/exported/hats/sultan.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_grand_turban
   start: start
@@ -11719,7 +12161,8 @@
     sprite: Civ14/Clothing/exported/hats/toadstool.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_toadstool_hat
   start: start
@@ -11745,7 +12188,8 @@
     sprite: Civ14/Clothing/exported/hats/keffiyeh_black.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_keffiyeh
   start: start
@@ -11771,7 +12215,8 @@
     sprite: Civ14/Clothing/exported/hats/pakol_rose.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_pakol
   start: start
@@ -11797,7 +12242,8 @@
     sprite: Civ14/Clothing/exported/hats/mayan_headdress.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_mayan_headdress
   start: start
@@ -11825,7 +12271,8 @@
     sprite: Civ14/Clothing/exported/hats/steppe_shaman_wool_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_steppe_shaman_wool_hat
   start: start
@@ -11851,7 +12298,8 @@
     sprite: Civ14/Clothing/exported/hats/gat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_gat_hat
   start: start
@@ -11877,7 +12325,8 @@
     sprite: Civ14/Clothing/exported/hats/fieldcap_rus_fed.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_Russian_Federal_Forces_service_cap
   start: start
@@ -11903,7 +12352,8 @@
     sprite: Civ14/Clothing/exported/hats/black_bandana.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_black_bandana
   start: start
@@ -11931,7 +12381,8 @@
     sprite: Civ14/Clothing/exported/hats/black_shemagh.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_black_shemagh
   start: start
@@ -11957,7 +12408,8 @@
     sprite: Civ14/Clothing/exported/hats/tfc.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_TFC_Cap
   start: start
@@ -11983,7 +12435,8 @@
     sprite: Civ14/Clothing/exported/hats/maga.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_MAGA_hat
   start: start
@@ -12009,7 +12462,8 @@
     sprite: Civ14/Clothing/exported/hats/fbi.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_FBI_hat
   start: start
@@ -12035,7 +12489,8 @@
     sprite: Civ14/Clothing/exported/hats/atf.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_ATF_hat
   start: start
@@ -12061,7 +12516,8 @@
     sprite: Civ14/Clothing/exported/hats/dea.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_DEA_hat
   start: start
@@ -12087,7 +12543,8 @@
     sprite: Civ14/Clothing/exported/hats/ukraine_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_ACU_field_cap
   start: start
@@ -12113,7 +12570,8 @@
     sprite: Civ14/Clothing/exported/hats/usec_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_USEC_field_cap
   start: start
@@ -12139,7 +12597,8 @@
     sprite: Civ14/Clothing/exported/hats/bear_cap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_BEAR_field_cap
   start: start
@@ -12165,7 +12624,8 @@
     sprite: Civ14/Clothing/exported/hats/black_beanie.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_black_beanie
   start: start
@@ -12193,7 +12653,8 @@
     sprite: Civ14/Clothing/exported/hats/zulu_umghele.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_umghele_headband
   start: start
@@ -12219,7 +12680,8 @@
     sprite: Civ14/Clothing/exported/hats/leaf_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_leaf_head_covering
   start: start
@@ -12245,7 +12707,8 @@
     sprite: Civ14/Clothing/exported/hats/leaf_crown.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_leaf_crown
   start: start
@@ -12273,7 +12736,8 @@
     sprite: Civ14/Clothing/exported/hats/star_platinum.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_star_platinum_headband
   start: start
@@ -12299,7 +12763,8 @@
     sprite: Civ14/Clothing/exported/hats/chief_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_chief_hat
   start: start
@@ -12325,7 +12790,8 @@
     sprite: Civ14/Clothing/exported/hats/lizardpelt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_lizard_pelt_headcover
   start: start
@@ -12351,7 +12817,8 @@
     sprite: Civ14/Clothing/exported/hats/mystic.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_mystic_hood
   start: start
@@ -12377,7 +12844,8 @@
     sprite: Civ14/Clothing/exported/hats/customcap.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_officer_cap
   start: start
@@ -12403,7 +12871,8 @@
     sprite: Civ14/Clothing/exported/hats/keffiyeh_custom.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_keffiyeh_1
   start: start
@@ -12429,7 +12898,8 @@
     sprite: Civ14/Clothing/exported/hats/custfeathercap_hat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_feathered_cap
   start: start
@@ -12455,7 +12925,8 @@
     sprite: Civ14/Clothing/exported/hats/custom_hennin.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_head_hennin
   start: start

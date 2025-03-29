@@ -10,7 +10,8 @@
     sprite: Civ14/Clothing/exported/shoes/white.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_shoes
   start: start
@@ -36,7 +37,8 @@
     sprite: Civ14/Clothing/exported/shoes/fur4.rsi
     state: icon
   objectType: Item
-
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_white_fur_boots
   start: start
@@ -63,7 +65,8 @@
     sprite: Civ14/Clothing/exported/shoes/fur1.rsi
     state: icon
   objectType: Item
-
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_brown_fur_boots
   start: start
@@ -89,7 +92,8 @@
     sprite: Civ14/Clothing/exported/shoes/red.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_red_shoes
   start: start
@@ -115,7 +119,8 @@
     sprite: Civ14/Clothing/exported/shoes/orange.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_orange_shoes
   start: start
@@ -141,7 +146,8 @@
     sprite: Civ14/Clothing/exported/shoes/jackboots.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_jackboots
   start: start
@@ -167,7 +173,8 @@
     sprite: Civ14/Clothing/exported/shoes/sovietboots.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_Soviet_sapogi_boots
   start: start
@@ -195,7 +202,8 @@
     sprite: Civ14/Clothing/exported/shoes/workboots.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_workboots
   start: start
@@ -222,7 +230,8 @@
     sprite: Civ14/Clothing/exported/shoes/fur3.rsi
     state: icon
   objectType: Item
-
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_black_fur_boots
   start: start
@@ -248,7 +257,8 @@
     sprite: Civ14/Clothing/exported/shoes/swat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_０military_boots
   start: start
@@ -274,7 +284,8 @@
     sprite: Civ14/Clothing/exported/shoes/wrappedboots.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_０wrapped_boots
   start: start
@@ -300,7 +311,8 @@
     sprite: Civ14/Clothing/exported/shoes/ncr_boots.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_NCR_wrapped_boots
   start: start
@@ -326,7 +338,8 @@
     sprite: Civ14/Clothing/exported/shoes/legion_boots.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_Legionaire_armored_boots
   start: start
@@ -352,7 +365,8 @@
     sprite: Civ14/Clothing/exported/shoes/japboots_ww2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_Leather_boots
   start: start
@@ -378,7 +392,8 @@
     sprite: Civ14/Clothing/exported/shoes/japboots_ww2_navy.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_Black_leather_boots
   start: start
@@ -404,7 +419,8 @@
     sprite: Civ14/Clothing/exported/shoes/swat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_SWAT_boots
   start: start
@@ -430,7 +446,8 @@
     sprite: Civ14/Clothing/exported/shoes/swat.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_combat_boots
   start: start
@@ -456,7 +473,8 @@
     sprite: Civ14/Clothing/exported/shoes/iogboot.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_IOG_boots
   start: start
@@ -482,7 +500,8 @@
     sprite: Civ14/Clothing/exported/shoes/sandals.rsi
     state: icon
   objectType: Item
-
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_sandals
   start: start
@@ -508,7 +527,8 @@
     sprite: Civ14/Clothing/exported/shoes/leather.rsi
     state: icon
   objectType: Item
-
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_leather_shoes
   start: start
@@ -534,7 +554,8 @@
     sprite: Civ14/Clothing/exported/shoes/black.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_magic_shoes
   start: start
@@ -561,7 +582,8 @@
     sprite: Civ14/Clothing/exported/shoes/laceups.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_laceup_shoes
   start: start
@@ -587,7 +609,8 @@
     sprite: Civ14/Clothing/exported/shoes/fur2.rsi
     state: icon
   objectType: Item
-
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_grey_fur_boots
   start: start
@@ -613,7 +636,8 @@
     sprite: Civ14/Clothing/exported/shoes/gator_laceups.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_alligator_scale_laceup_shoes
   start: start
@@ -639,7 +663,8 @@
     sprite: Civ14/Clothing/exported/shoes/chad.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_chad_shoes
   start: start
@@ -665,7 +690,8 @@
     sprite: Civ14/Clothing/exported/shoes/flipflops.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_flip_flops
   start: start
@@ -691,7 +717,8 @@
     sprite: Civ14/Clothing/exported/shoes/white.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_plastoid_boots
   start: start
@@ -717,7 +744,8 @@
     sprite: Civ14/Clothing/exported/shoes/redboots.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_red_plastoid_boots
   start: start
@@ -743,7 +771,8 @@
     sprite: Civ14/Clothing/exported/shoes/senateboots.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_blue_plastoid_boots
   start: start
@@ -769,7 +798,8 @@
     sprite: Civ14/Clothing/exported/shoes/roman.rsi
     state: icon
   objectType: Item
-
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_sandals_1
   start: start
@@ -795,7 +825,8 @@
     sprite: Civ14/Clothing/exported/shoes/aztec_sandals.rsi
     state: icon
   objectType: Item
-
+  agemin: 1
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_aztec_sandals
   start: start
@@ -821,7 +852,8 @@
     sprite: Civ14/Clothing/exported/shoes/fur1.rsi
     state: icon
   objectType: Item
-
+  agemin: 0
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_fur_boots
   start: start
@@ -847,7 +879,8 @@
     sprite: Civ14/Clothing/exported/shoes/fur5.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_human_skin_boots
   start: start
@@ -873,7 +906,8 @@
     sprite: Civ14/Clothing/exported/shoes/ork_warrior.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_orcish_sabatons
   start: start
@@ -901,7 +935,8 @@
     sprite: Civ14/Clothing/exported/shoes/toughguy.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_specialist_boots
   start: start
@@ -927,7 +962,8 @@
     sprite: Civ14/Clothing/exported/shoes/ac_boots.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_creed_boots
   start: start
@@ -953,7 +989,8 @@
     sprite: Civ14/Clothing/exported/shoes/japboots.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_Winter_wrapped_boots
   start: start
@@ -979,7 +1016,8 @@
     sprite: Civ14/Clothing/exported/shoes/sailorboots1.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_black_boots
   start: start
@@ -1005,7 +1043,8 @@
     sprite: Civ14/Clothing/exported/shoes/sailorboots2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_leather_boots
   start: start
@@ -1031,7 +1070,8 @@
     sprite: Civ14/Clothing/exported/shoes/winterboots.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_winter_boots
   start: start
@@ -1057,7 +1097,8 @@
     sprite: Civ14/Clothing/exported/shoes/whiteput.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_black_puttee_boots
   start: start
@@ -1083,7 +1124,8 @@
     sprite: Civ14/Clothing/exported/shoes/soldier_shoes.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_infantry_shoes
   start: start
@@ -1109,7 +1151,8 @@
     sprite: Civ14/Clothing/exported/shoes/sailorboots1.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_black_sailor_boots
   start: start
@@ -1135,7 +1178,8 @@
     sprite: Civ14/Clothing/exported/shoes/sailorboots2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_leather_sailor_boots
   start: start
@@ -1161,7 +1205,8 @@
     sprite: Civ14/Clothing/exported/shoes/usmc.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_military_boots
   start: start
@@ -1187,7 +1232,8 @@
     sprite: Civ14/Clothing/exported/shoes/cowboyboots1.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_black_riding_boots
   start: start
@@ -1213,7 +1259,8 @@
     sprite: Civ14/Clothing/exported/shoes/gator_cowboy.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_alligator_scale_riding_boots
   start: start
@@ -1239,7 +1286,8 @@
     sprite: Civ14/Clothing/exported/shoes/lizard_cowboy.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_lizard_scale_riding_boots
   start: start
@@ -1265,7 +1313,8 @@
     sprite: Civ14/Clothing/exported/shoes/cowboyboots2.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_leather_riding_boots
   start: start
@@ -1291,7 +1340,8 @@
     sprite: Civ14/Clothing/exported/shoes/gator_ankleboots.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_alligator_scale_ankle_boots
   start: start
@@ -1317,7 +1367,8 @@
     sprite: Civ14/Clothing/exported/shoes/medieval.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_leather_shoes_1
   start: start
@@ -1343,7 +1394,8 @@
     sprite: Civ14/Clothing/exported/shoes/arab.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_arabic_leather_shoes
   start: start
@@ -1371,7 +1423,8 @@
     sprite: Civ14/Clothing/exported/shoes/emir.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_emirate_leather_shoes
   start: start
@@ -1397,7 +1450,8 @@
     sprite: Civ14/Clothing/exported/shoes/knight.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_Sabatons
   start: start
@@ -1425,7 +1479,8 @@
     sprite: Civ14/Clothing/exported/shoes/steppe_wool_shoes.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_steppe_wool_shoe
   start: start
@@ -1451,7 +1506,8 @@
     sprite: Civ14/Clothing/exported/shoes/geta.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_geta_sandals
   start: start
@@ -1477,7 +1533,8 @@
     sprite: Civ14/Clothing/exported/shoes/tsuranuki.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_tsuranuki
   start: start
@@ -1503,7 +1560,8 @@
     sprite: Civ14/Clothing/exported/shoes/dwoots.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_dwemmer_boots
   start: start
@@ -1529,7 +1587,8 @@
     sprite: Civ14/Clothing/exported/shoes/courier_sneakers.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_courier_sneakers
   start: start
@@ -1555,7 +1614,8 @@
     sprite: Civ14/Clothing/exported/shoes/punk.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_punk_boots
   start: start
@@ -1581,7 +1641,8 @@
     sprite: Civ14/Clothing/exported/shoes/lizard_ankleboots.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_lizard_scale_ankle_boots
   start: start
@@ -1607,7 +1668,8 @@
     sprite: Civ14/Clothing/exported/shoes/lizard_laceups.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_lizard_scale_laceup_shoes
   start: start
@@ -1633,7 +1695,8 @@
     sprite: Civ14/Clothing/exported/shoes/brownboots.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_Brown_boots
   start: start
@@ -1662,7 +1725,8 @@
     sprite: Civ14/Clothing/exported/shoes/brownboots_us_ww2_alt.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_Brown_boots_with_leggings
   start: start
@@ -1688,7 +1752,8 @@
     sprite: Civ14/Clothing/exported/shoes/football.rsi
     state: icon
   objectType: Item
-
+  agemin: 8
+  agemax: 8
 - type: constructionGraph
   id: civ13_shoes_football_trainers
   start: start

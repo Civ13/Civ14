@@ -10,6 +10,8 @@
     sprite: Civ14/Clothing/exported/suits/chaplain_hoodie.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_preachers_robe
@@ -36,6 +38,8 @@
     sprite: Civ14/Clothing/exported/suits/squid_player.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_contestant_jacket
@@ -62,6 +66,8 @@
     sprite: Civ14/Clothing/exported/suits/rebel_vest.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_black_vest
@@ -88,6 +94,8 @@
     sprite: Civ14/Clothing/exported/suits/dra_officer.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_DRA_officer_jacket
@@ -114,6 +122,8 @@
     sprite: Civ14/Clothing/exported/suits/winter_afghanka.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_afghanka_coat
@@ -140,6 +150,8 @@
     sprite: Civ14/Clothing/exported/suits/cafr_pattern_afghanka.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_cafr_afghanka_coat
@@ -166,6 +178,8 @@
     sprite: Civ14/Clothing/exported/suits/forensics.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_forensics_jacket
@@ -192,6 +206,8 @@
     sprite: Civ14/Clothing/exported/suits/policevest.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_police_bulletproof_vest
@@ -219,6 +235,8 @@
     sprite: Civ14/Clothing/exported/suits/haori_jacket_custom.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_haori_jacket
@@ -248,6 +266,8 @@
     sprite: Civ14/Clothing/exported/suits/haori_jacket1.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Abashiri_Haori
@@ -276,6 +296,8 @@
     sprite: Civ14/Clothing/exported/suits/haori_jacket2.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Abashiri_Haori_1
@@ -304,6 +326,8 @@
     sprite: Civ14/Clothing/exported/suits/haori_jacket3.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Abashiri_Haori_1_2
@@ -330,6 +354,8 @@
     sprite: Civ14/Clothing/exported/suits/black_suit.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_black_suit
@@ -356,6 +382,8 @@
     sprite: Civ14/Clothing/exported/suits/really_black_suit.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_dark_black_suit
@@ -382,6 +410,8 @@
     sprite: Civ14/Clothing/exported/suits/charcoal_suit.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_charcoal_suit
@@ -408,6 +438,8 @@
     sprite: Civ14/Clothing/exported/suits/navy_suit.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_navy_suit
@@ -434,6 +466,8 @@
     sprite: Civ14/Clothing/exported/suits/checkered_suit.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_checkered_suit
@@ -460,6 +494,8 @@
     sprite: Civ14/Clothing/exported/suits/burgundy_suit.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_burgundy_suit
@@ -486,6 +522,8 @@
     sprite: Civ14/Clothing/exported/suits/labcoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_white_labcoat
@@ -512,6 +550,8 @@
     sprite: Civ14/Clothing/exported/suits/surgical.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_surgery_apron
@@ -538,6 +578,8 @@
     sprite: Civ14/Clothing/exported/suits/coveralls.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_coveralls
@@ -564,6 +606,8 @@
     sprite: Civ14/Clothing/exported/suits/piratejacket1.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_black_jacket
@@ -590,6 +634,8 @@
     sprite: Civ14/Clothing/exported/suits/piratejacket2.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_fancy_brown_jacket
@@ -616,6 +662,8 @@
     sprite: Civ14/Clothing/exported/suits/piratejacket3.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_blue_vest
@@ -642,6 +690,8 @@
     sprite: Civ14/Clothing/exported/suits/piratejacket4.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_black_vest_1
@@ -668,6 +718,8 @@
     sprite: Civ14/Clothing/exported/suits/piratejacket5.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_fancy_red_jacket
@@ -696,6 +748,8 @@
     sprite: Civ14/Clothing/exported/suits/british_captain.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_royal_navy_captain_jacket
@@ -722,6 +776,8 @@
     sprite: Civ14/Clothing/exported/suits/british_officer.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_royal_navy_officer_jacket
@@ -748,6 +804,8 @@
     sprite: Civ14/Clothing/exported/suits/british_soldier_jacket.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_british_red_jacket
@@ -776,6 +834,8 @@
     sprite: Civ14/Clothing/exported/suits/portuguese_captain.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_portuguese_captain_jacket
@@ -802,6 +862,8 @@
     sprite: Civ14/Clothing/exported/suits/portuguese_officer.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_portuguese_officer_jacket
@@ -830,6 +892,8 @@
     sprite: Civ14/Clothing/exported/suits/spanish_captain.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_spanish_captain_jacket
@@ -856,6 +920,8 @@
     sprite: Civ14/Clothing/exported/suits/spanish_officer.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_spanish_officer_jacket
@@ -882,6 +948,8 @@
     sprite: Civ14/Clothing/exported/suits/spanish_army.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_spanish_soldier_jacket
@@ -910,6 +978,8 @@
     sprite: Civ14/Clothing/exported/suits/french_captain.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_french_captain_jacket
@@ -936,6 +1006,8 @@
     sprite: Civ14/Clothing/exported/suits/french_officer.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_french_officer_jacket
@@ -964,6 +1036,8 @@
     sprite: Civ14/Clothing/exported/suits/dutch_captain.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_united_provinces_captain_jacket
@@ -992,6 +1066,8 @@
     sprite: Civ14/Clothing/exported/suits/dutch_officer.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_united_provinces_officer_jacket
@@ -1020,6 +1096,8 @@
     sprite: Civ14/Clothing/exported/suits/dutch_army.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_united_provinces_army_jacket
@@ -1046,6 +1124,8 @@
     sprite: Civ14/Clothing/exported/suits/spanish_officer.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_spanish_army_jacket
@@ -1072,6 +1152,8 @@
     sprite: Civ14/Clothing/exported/suits/portuguese_army.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_portuguese_army_jacket
@@ -1098,6 +1180,8 @@
     sprite: Civ14/Clothing/exported/suits/french_army.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_french_army_jacket
@@ -1124,6 +1208,8 @@
     sprite: Civ14/Clothing/exported/suits/british_officer.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_british_army_jacket
@@ -1150,6 +1236,8 @@
     sprite: Civ14/Clothing/exported/suits/victorian_tailcoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_victorian_tailcoat
@@ -1176,6 +1264,8 @@
     sprite: Civ14/Clothing/exported/suits/leather_overcoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_leather_overcoat
@@ -1202,6 +1292,8 @@
     sprite: Civ14/Clothing/exported/suits/black_leather_overcoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_black_leather_overcoat
@@ -1228,6 +1320,8 @@
     sprite: Civ14/Clothing/exported/suits/blackvest.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_black_vest_1_2
@@ -1254,6 +1348,8 @@
     sprite: Civ14/Clothing/exported/suits/olivevest.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_olive_vest
@@ -1280,6 +1376,8 @@
     sprite: Civ14/Clothing/exported/suits/bluevest.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_blue_vest_1
@@ -1306,6 +1404,8 @@
     sprite: Civ14/Clothing/exported/suits/texas.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_cream_short_jacket
@@ -1333,6 +1433,8 @@
     sprite: Civ14/Clothing/exported/suits/plaguedoctor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_plague_doctor_suit
@@ -1361,6 +1463,8 @@
     sprite: Civ14/Clothing/exported/suits/regal_cape.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_regal_ermine_cape
@@ -1389,6 +1493,8 @@
     sprite: Civ14/Clothing/exported/suits/steppe_shaman_wool_coat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_steppe_shaman_wool_coat
@@ -1417,6 +1523,8 @@
     sprite: Civ14/Clothing/exported/suits/motorist_jacket.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_motorist_jacket
@@ -1443,6 +1551,8 @@
     sprite: Civ14/Clothing/exported/suits/rus_winter_vsr93.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Russian_Federal_Forces_winter_jacket
@@ -1471,6 +1581,8 @@
     sprite: Civ14/Clothing/exported/suits/punk_vest.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_punk_jacket
@@ -1497,6 +1609,8 @@
     sprite: Civ14/Clothing/exported/suits/high_vis_jacket_yellow.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_high_visibility_jacket
@@ -1523,6 +1637,8 @@
     sprite: Civ14/Clothing/exported/suits/paramedic_jacket.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_paramedic_jacket
@@ -1549,6 +1665,8 @@
     sprite: Civ14/Clothing/exported/suits/tracksuit.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_track_suit
@@ -1575,6 +1693,8 @@
     sprite: Civ14/Clothing/exported/suits/bonearmor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_bone_armor
@@ -1601,6 +1721,8 @@
     sprite: Civ14/Clothing/exported/suits/imperial_officer.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_imperial_officer_armor
@@ -1630,6 +1752,8 @@
     sprite: Civ14/Clothing/exported/suits/commissar.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_commissar_jacket
@@ -1658,6 +1782,8 @@
     sprite: Civ14/Clothing/exported/suits/commissar.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_inquisitorial_jacket
@@ -1684,6 +1810,8 @@
     sprite: Civ14/Clothing/exported/suits/inqcape_alt.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_inquisitorial_jacket_1
@@ -1710,6 +1838,8 @@
     sprite: Civ14/Clothing/exported/suits/elf_warlock.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_elven_warlock_robe
@@ -1738,6 +1868,8 @@
     sprite: Civ14/Clothing/exported/suits/elf_harlequin.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_elven_harlequin_jacket
@@ -1764,6 +1896,8 @@
     sprite: Civ14/Clothing/exported/suits/customponcho.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_poncho
@@ -1790,6 +1924,8 @@
     sprite: Civ14/Clothing/exported/suits/customhoodie.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_hoodie
@@ -1816,6 +1952,8 @@
     sprite: Civ14/Clothing/exported/suits/customjacket.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_cloth_jacket
@@ -1842,6 +1980,8 @@
     sprite: Civ14/Clothing/exported/suits/customblazer.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_suit_blazer
@@ -1868,6 +2008,8 @@
     sprite: Civ14/Clothing/exported/suits/customcolonialcoat_full.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_colonial_coat
@@ -1894,6 +2036,8 @@
     sprite: Civ14/Clothing/exported/suits/customcolonial_full.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_colonial_jacket
@@ -1920,6 +2064,8 @@
     sprite: Civ14/Clothing/exported/suits/customtracksuit.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_track_suit_1
@@ -1946,6 +2092,8 @@
     sprite: Civ14/Clothing/exported/suits/wise_tutor_robe.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_wise_tutor_robes
@@ -1972,6 +2120,8 @@
     sprite: Civ14/Clothing/exported/suits/arrogant_student_robe.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_arrogant_student_robes
@@ -1998,6 +2148,8 @@
     sprite: Civ14/Clothing/exported/suits/fur_jacket1.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_fur_coat
@@ -2025,6 +2177,8 @@
     sprite: Civ14/Clothing/exported/suits/fur_jacket5.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_human_skin_coat
@@ -2051,6 +2205,8 @@
     sprite: Civ14/Clothing/exported/suits/fur_jacket7.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_M05_snow_pattern_coat
@@ -2077,6 +2233,8 @@
     sprite: Civ14/Clothing/exported/suits/fur_jacket8.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Ukrainian_winter_camo_coat
@@ -2103,6 +2261,8 @@
     sprite: Civ14/Clothing/exported/suits/fur_jacket10.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Klyaksa_camo_coat
@@ -2129,6 +2289,8 @@
     sprite: Civ14/Clothing/exported/suits/fur_jacket9.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Schneetarn_camo_coat
@@ -2155,6 +2317,8 @@
     sprite: Civ14/Clothing/exported/suits/fur_jacket6.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_orc_fur_coat
@@ -2181,6 +2345,8 @@
     sprite: Civ14/Clothing/exported/suits/modern_winter.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_dark_green_winter_coat
@@ -2207,6 +2373,8 @@
     sprite: Civ14/Clothing/exported/suits/jacket80s.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_red_jacket
@@ -2233,6 +2401,8 @@
     sprite: Civ14/Clothing/exported/suits/chinese_lamellar.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_bronze_chinese_lamellar
@@ -2259,6 +2429,8 @@
     sprite: Civ14/Clothing/exported/suits/us_coat_korea.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_american_coat
@@ -2285,6 +2457,8 @@
     sprite: Civ14/Clothing/exported/suits/bizarre_coat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_bizarre_dark_blue_coat
@@ -2311,6 +2485,8 @@
     sprite: Civ14/Clothing/exported/suits/leathercoat_c.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Cheka_leather_coat
@@ -2337,6 +2513,8 @@
     sprite: Civ14/Clothing/exported/suits/kuban_cossak.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Black_cherkesska_coat
@@ -2363,6 +2541,8 @@
     sprite: Civ14/Clothing/exported/suits/japcoat2.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Soviet_coat
@@ -2389,6 +2569,8 @@
     sprite: Civ14/Clothing/exported/suits/ww2_japcoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Japanese_coat
@@ -2415,6 +2597,8 @@
     sprite: Civ14/Clothing/exported/suits/priestwhite.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_priest_sleev
@@ -2441,6 +2625,8 @@
     sprite: Civ14/Clothing/exported/suits/japcoat2.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Japanese_Coat
@@ -2467,6 +2653,8 @@
     sprite: Civ14/Clothing/exported/suits/japcoat2.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Brown_trench_coat
@@ -2493,6 +2681,8 @@
     sprite: Civ14/Clothing/exported/suits/ruscoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Russian_Coat
@@ -2519,6 +2709,8 @@
     sprite: Civ14/Clothing/exported/suits/rusoffcoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Russian_officer_coat.
@@ -2545,6 +2737,8 @@
     sprite: Civ14/Clothing/exported/suits/winter_coat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_brown_winter_coat
@@ -2571,6 +2765,8 @@
     sprite: Civ14/Clothing/exported/suits/victorian_peacoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_black_peacoat
@@ -2597,6 +2793,8 @@
     sprite: Civ14/Clothing/exported/suits/kozhanka.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_fur_coat_1
@@ -2623,6 +2821,8 @@
     sprite: Civ14/Clothing/exported/suits/fancy_fur_coat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_fancy_fur_coat
@@ -2649,6 +2849,8 @@
     sprite: Civ14/Clothing/exported/suits/overlord_coat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_overlord_robe
@@ -2675,6 +2877,8 @@
     sprite: Civ14/Clothing/exported/suits/monk_robes.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_monk_robes
@@ -2701,6 +2905,8 @@
     sprite: Civ14/Clothing/exported/suits/fine_clothes.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_fine_clothing
@@ -2727,6 +2933,8 @@
     sprite: Civ14/Clothing/exported/suits/sealvest_blue.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_lifejacket
@@ -2753,6 +2961,8 @@
     sprite: Civ14/Clothing/exported/suits/firefighter.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_firefighter_coat
@@ -2779,6 +2989,8 @@
     sprite: Civ14/Clothing/exported/suits/biker.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_biker_jacket
@@ -2807,6 +3019,8 @@
     sprite: Civ14/Clothing/exported/suits/lizard_jacket.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_lizard_scale_jacket
@@ -2835,6 +3049,8 @@
     sprite: Civ14/Clothing/exported/suits/gator_jacket.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_alligator_scale_jacket
@@ -2861,6 +3077,8 @@
     sprite: Civ14/Clothing/exported/suits/ww2_japcoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Japanese_sand_colored_jacket
@@ -2887,6 +3105,8 @@
     sprite: Civ14/Clothing/exported/suits/jap_raincoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Japanese_rain_coat
@@ -2913,6 +3133,8 @@
     sprite: Civ14/Clothing/exported/suits/jappilotcoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Japanese_pilot_coat
@@ -2939,6 +3161,8 @@
     sprite: Civ14/Clothing/exported/suits/us_coat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_American_coat
@@ -2965,6 +3189,8 @@
     sprite: Civ14/Clothing/exported/suits/gerparka.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_German_parka
@@ -2991,6 +3217,8 @@
     sprite: Civ14/Clothing/exported/suits/ghillie_winter.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_winter_ghillie_suit
@@ -3017,6 +3245,8 @@
     sprite: Civ14/Clothing/exported/suits/gerparka.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Grey_parka
@@ -3043,6 +3273,8 @@
     sprite: Civ14/Clothing/exported/suits/ger_offcoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_German_officer_coat
@@ -3071,6 +3303,8 @@
     sprite: Civ14/Clothing/exported/suits/sssmock.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_SS_parka
@@ -3097,6 +3331,8 @@
     sprite: Civ14/Clothing/exported/suits/ruscoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Soviet_coat_1
@@ -3123,6 +3359,8 @@
     sprite: Civ14/Clothing/exported/suits/gulagguard.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_soviet_winter_coat
@@ -3149,6 +3387,8 @@
     sprite: Civ14/Clothing/exported/suits/gulagprisoner1.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Soviet_winter_coat
@@ -3175,6 +3415,8 @@
     sprite: Civ14/Clothing/exported/suits/sov_offcoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Soviet_officer_coat
@@ -3201,6 +3443,8 @@
     sprite: Civ14/Clothing/exported/suits/moderncoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_modern_coat
@@ -3227,6 +3471,8 @@
     sprite: Civ14/Clothing/exported/suits/woolcoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_black_coat
@@ -3253,6 +3499,8 @@
     sprite: Civ14/Clothing/exported/suits/expensivecoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_fancy__coat
@@ -3279,6 +3527,8 @@
     sprite: Civ14/Clothing/exported/suits/servicejacket.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_service_jacket
@@ -3305,6 +3555,8 @@
     sprite: Civ14/Clothing/exported/suits/bomberjacket.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_brown_bombers_jacket
@@ -3331,6 +3583,8 @@
     sprite: Civ14/Clothing/exported/suits/blackbomberjacket.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_black_bombers_jacket
@@ -3357,6 +3611,8 @@
     sprite: Civ14/Clothing/exported/suits/germtrench.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_German_coat
@@ -3383,6 +3639,8 @@
     sprite: Civ14/Clothing/exported/suits/frenchtrench.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_French_trench_coat
@@ -3409,6 +3667,8 @@
     sprite: Civ14/Clothing/exported/suits/britishtrench.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_British_coat
@@ -3435,6 +3695,8 @@
     sprite: Civ14/Clothing/exported/suits/royalcoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_royal_coat
@@ -3461,6 +3723,8 @@
     sprite: Civ14/Clothing/exported/suits/leathercoat_black.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_black_leather_long_coat
@@ -3487,6 +3751,8 @@
     sprite: Civ14/Clothing/exported/suits/mlongcoat_brown.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_modern_brown_coat
@@ -3513,6 +3779,8 @@
     sprite: Civ14/Clothing/exported/suits/mlongcoat_black.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_modern_black_coat
@@ -3539,6 +3807,8 @@
     sprite: Civ14/Clothing/exported/suits/gentlemancoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_gentleman_coat
@@ -3565,6 +3835,8 @@
     sprite: Civ14/Clothing/exported/suits/hazard.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_hazard_vest
@@ -3591,6 +3863,8 @@
     sprite: Civ14/Clothing/exported/suits/sealvest_yellow.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_lifejacket_1
@@ -3617,6 +3891,8 @@
     sprite: Civ14/Clothing/exported/suits/knight_green.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_green_plated_armor
@@ -3643,6 +3919,8 @@
     sprite: Civ14/Clothing/exported/suits/sealvest.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_seal_lifevest
@@ -3669,6 +3947,8 @@
     sprite: Civ14/Clothing/exported/suits/fbi2.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_FBI_jacket
@@ -3695,6 +3975,8 @@
     sprite: Civ14/Clothing/exported/suits/atf.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_ATF_jacket
@@ -3721,6 +4003,8 @@
     sprite: Civ14/Clothing/exported/suits/dea.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_DEA_jacket
@@ -3747,6 +4031,8 @@
     sprite: Civ14/Clothing/exported/suits/us_jacket.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_olive_drab_jacket
@@ -3773,6 +4059,8 @@
     sprite: Civ14/Clothing/exported/suits/ghillie.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_ghillie_suit
@@ -3801,6 +4089,8 @@
     sprite: Civ14/Clothing/exported/suits/closechest_apron_f.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_chest_length_apron
@@ -3829,6 +4119,8 @@
     sprite: Civ14/Clothing/exported/suits/openchest_apron_f.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_waist_length_apron
@@ -3855,6 +4147,8 @@
     sprite: Civ14/Clothing/exported/suits/apronchef.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_a_classic_chefs_apron.
@@ -3881,6 +4175,8 @@
     sprite: Civ14/Clothing/exported/suits/aprontfc.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Texas_Fried_Chicken_apron
@@ -3907,6 +4203,8 @@
     sprite: Civ14/Clothing/exported/suits/hawaiian_blue.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_blue_hawaiian_shirt.
@@ -3933,6 +4231,8 @@
     sprite: Civ14/Clothing/exported/suits/hawaiian_orange.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_orange_hawaiian_shirt.
@@ -3959,6 +4259,8 @@
     sprite: Civ14/Clothing/exported/suits/hawaiian_purple.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_purple_hawaiian_shirt.
@@ -3985,6 +4287,8 @@
     sprite: Civ14/Clothing/exported/suits/pimpcoat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_purple_pimp_jacket.
@@ -4011,6 +4315,8 @@
     sprite: Civ14/Clothing/exported/suits/bcj.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Blugoslavian_Jacket.
@@ -4039,6 +4345,8 @@
     sprite: Civ14/Clothing/exported/suits/bcj.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Blugoslavian_Flak_Jacket.
@@ -4067,6 +4375,8 @@
     sprite: Civ14/Clothing/exported/suits/gorilla_suit.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_full_body_gorilla_outfit
@@ -4093,6 +4403,8 @@
     sprite: Civ14/Clothing/exported/suits/replicant_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_replicant_trooper_armor
@@ -4119,6 +4431,8 @@
     sprite: Civ14/Clothing/exported/suits/reppilot_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_replicant_pilot_armor
@@ -4145,6 +4459,8 @@
     sprite: Civ14/Clothing/exported/suits/repmp_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_replicant_MP_armor
@@ -4171,6 +4487,8 @@
     sprite: Civ14/Clothing/exported/suits/repsgt_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_replicant_sergeant_armor
@@ -4199,6 +4517,8 @@
     sprite: Civ14/Clothing/exported/suits/repreinforced.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_replicant_reinforced_armor
@@ -4225,6 +4545,8 @@
     sprite: Civ14/Clothing/exported/suits/replieutenant_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_replicant_lieutenant_armor
@@ -4251,6 +4573,8 @@
     sprite: Civ14/Clothing/exported/suits/repcommando.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_replicant_commando_armor
@@ -4277,6 +4601,8 @@
     sprite: Civ14/Clothing/exported/suits/repcaptain_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_replicant_captain_armor
@@ -4303,6 +4629,8 @@
     sprite: Civ14/Clothing/exported/suits/repcommander_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_replicant_commander_armor
@@ -4331,6 +4659,8 @@
     sprite: Civ14/Clothing/exported/suits/redguard.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_red_guard_armor_with_robe.
@@ -4357,6 +4687,8 @@
     sprite: Civ14/Clothing/exported/suits/senateguard.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_senate_guard_armor_with_robe.
@@ -4383,6 +4715,8 @@
     sprite: Civ14/Clothing/exported/suits/stormtrooper_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_standard_stormtrooper_armor
@@ -4411,6 +4745,8 @@
     sprite: Civ14/Clothing/exported/suits/stormsurgeon_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_stormsurgeon_armor
@@ -4439,6 +4775,8 @@
     sprite: Civ14/Clothing/exported/suits/stormradio_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_light_stormtrooper_armor
@@ -4467,6 +4805,8 @@
     sprite: Civ14/Clothing/exported/suits/scale_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_segmented_armor
@@ -4493,6 +4833,8 @@
     sprite: Civ14/Clothing/exported/suits/chainmail.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_chainmail
@@ -4519,6 +4861,8 @@
     sprite: Civ14/Clothing/exported/suits/heavycloth_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_linothorax_armor
@@ -4545,6 +4889,8 @@
     sprite: Civ14/Clothing/exported/suits/egyptian_lamellar.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_bronze_egyptian_lamellar
@@ -4571,6 +4917,8 @@
     sprite: Civ14/Clothing/exported/suits/scaled_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_scaled_armor
@@ -4597,6 +4945,8 @@
     sprite: Civ14/Clothing/exported/suits/aztec_harness.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_aztec_harness
@@ -4623,6 +4973,8 @@
     sprite: Civ14/Clothing/exported/suits/gator_scale_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_alligator_scale_armor
@@ -4649,6 +5001,8 @@
     sprite: Civ14/Clothing/exported/suits/settra.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_pharoahic_armor_of_the_gods
@@ -4675,6 +5029,8 @@
     sprite: Civ14/Clothing/exported/suits/ac_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_creed_armor
@@ -4702,6 +5058,8 @@
     sprite: Civ14/Clothing/exported/suits/ac_armor_napol.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_creed_armor_1_2
@@ -4728,6 +5086,8 @@
     sprite: Civ14/Clothing/exported/suits/japvest.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Matagi_Vest
@@ -4754,6 +5114,8 @@
     sprite: Civ14/Clothing/exported/suits/ncr_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_NCR_Trooper_Armor
@@ -4782,6 +5144,8 @@
     sprite: Civ14/Clothing/exported/suits/imperial_breastplate.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_imperial_chestplate
@@ -4811,6 +5175,8 @@
     sprite: Civ14/Clothing/exported/suits/arbit.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_arbites_armor
@@ -4837,6 +5203,8 @@
     sprite: Civ14/Clothing/exported/suits/knight_simple.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_plated_armor
@@ -4863,6 +5231,8 @@
     sprite: Civ14/Clothing/exported/suits/samurai_lord1.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_red_samurai_lord_armor
@@ -4891,6 +5261,8 @@
     sprite: Civ14/Clothing/exported/suits/knight_templar.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_templar_plated_armor
@@ -4917,6 +5289,8 @@
     sprite: Civ14/Clothing/exported/suits/bronze_chestplate.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_bronze_chestplate
@@ -4943,6 +5317,8 @@
     sprite: Civ14/Clothing/exported/suits/iron_chestplate.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_iron_chestplate
@@ -4969,6 +5345,8 @@
     sprite: Civ14/Clothing/exported/suits/leather_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_leather_armor
@@ -4997,6 +5375,8 @@
     sprite: Civ14/Clothing/exported/suits/hauberk.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_hauberk
@@ -5025,6 +5405,8 @@
     sprite: Civ14/Clothing/exported/suits/emir_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_emirate_armor
@@ -5053,6 +5435,8 @@
     sprite: Civ14/Clothing/exported/suits/varangian_lamellar.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_varangian_lamellar_armor
@@ -5081,6 +5465,8 @@
     sprite: Civ14/Clothing/exported/suits/imperial_chinese.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_imperial_chinese_armor
@@ -5109,6 +5495,8 @@
     sprite: Civ14/Clothing/exported/suits/steppe_leather_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_steppe_leather_armor
@@ -5135,6 +5523,8 @@
     sprite: Civ14/Clothing/exported/suits/royalplate.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_royal_plated_armor
@@ -5163,6 +5553,8 @@
     sprite: Civ14/Clothing/exported/suits/samurai3.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_leather_samurai_armor
@@ -5191,6 +5583,8 @@
     sprite: Civ14/Clothing/exported/suits/samurai_warrior3.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_samurai_armor
@@ -5217,6 +5611,8 @@
     sprite: Civ14/Clothing/exported/suits/samurai_lord3.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_samurai_lord_armor
@@ -5243,6 +5639,8 @@
     sprite: Civ14/Clothing/exported/suits/dwarmor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_dwemmer_armor
@@ -5269,6 +5667,8 @@
     sprite: Civ14/Clothing/exported/suits/stormcloak.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_stormcloak_officer_armor
@@ -5297,6 +5697,8 @@
     sprite: Civ14/Clothing/exported/suits/zgz1_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_zgz1_advanced_armor
@@ -5325,6 +5727,8 @@
     sprite: Civ14/Clothing/exported/suits/zgz1med_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_Medical_zgz1_advanced_armor
@@ -5351,6 +5755,8 @@
     sprite: Civ14/Clothing/exported/suits/scraparmor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_scrap_plate_armor
@@ -5377,6 +5783,8 @@
     sprite: Civ14/Clothing/exported/suits/mechanicalarmor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_mechanized_armor
@@ -5403,6 +5811,8 @@
     sprite: Civ14/Clothing/exported/suits/chitin_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_chitin_chestplate
@@ -5429,6 +5839,8 @@
     sprite: Civ14/Clothing/exported/suits/sauronarmor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_saurons_armor
@@ -5455,6 +5867,8 @@
     sprite: Civ14/Clothing/exported/suits/ork_plate_elite.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_plated_armor_1
@@ -5481,6 +5895,8 @@
     sprite: Civ14/Clothing/exported/suits/ork_plate_commander.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_plated_armor_1_2
@@ -5507,6 +5923,8 @@
     sprite: Civ14/Clothing/exported/suits/urukhai_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_orc_urukhai_armor
@@ -5533,6 +5951,8 @@
     sprite: Civ14/Clothing/exported/suits/whitehand_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_orc_whitehand_armor
@@ -5559,6 +5979,8 @@
     sprite: Civ14/Clothing/exported/suits/grunt_armor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_orc_grunt_armor
@@ -5585,6 +6007,8 @@
     sprite: Civ14/Clothing/exported/suits/redcape.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_red_cape
@@ -5611,6 +6035,8 @@
     sprite: Civ14/Clothing/exported/suits/swat.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_swat_heavy_vest
@@ -5637,6 +6063,8 @@
     sprite: Civ14/Clothing/exported/suits/policevest.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_swat_bulletproof_vest
@@ -5663,6 +6091,8 @@
     sprite: Civ14/Clothing/exported/suits/6b3.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_6B3_body_armor
@@ -5691,6 +6121,8 @@
     sprite: Civ14/Clothing/exported/suits/nbc.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_yellow_NBC_suit
@@ -5719,6 +6151,8 @@
     sprite: Civ14/Clothing/exported/suits/nbc2.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_olive_drab_NBC_suit
@@ -5745,6 +6179,8 @@
     sprite: Civ14/Clothing/exported/suits/nbc2.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_firefighting_suit
@@ -5773,6 +6209,8 @@
     sprite: Civ14/Clothing/exported/suits/hazmat_suit.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_hazmat_suit
@@ -5801,6 +6239,8 @@
     sprite: Civ14/Clothing/exported/suits/nbcponcho.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_NBC_poncho
@@ -5829,6 +6269,8 @@
     sprite: Civ14/Clothing/exported/suits/astronaut.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_astronaut_suit
@@ -5855,6 +6297,8 @@
     sprite: Civ14/Clothing/exported/suits/bxsuit.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_carbon_black_suit
@@ -5883,6 +6327,8 @@
     sprite: Civ14/Clothing/exported/suits/a6b45.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_6B45_heavy_vest
@@ -5909,6 +6355,8 @@
     sprite: Civ14/Clothing/exported/suits/heavypolice.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_heavy_vest
@@ -5935,6 +6383,8 @@
     sprite: Civ14/Clothing/exported/suits/mediumvest.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_medium_vest
@@ -5961,6 +6411,8 @@
     sprite: Civ14/Clothing/exported/suits/a6b44.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_6B44_vest
@@ -5987,6 +6439,8 @@
     sprite: Civ14/Clothing/exported/suits/a6b28.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_6B28_plate_carrier
@@ -6013,6 +6467,8 @@
     sprite: Civ14/Clothing/exported/suits/sealvest.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_lifejacket_1_2
@@ -6042,6 +6498,8 @@
     sprite: Civ14/Clothing/exported/suits/native_bonearmor.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_primitive_bone_hair_pipe_armor
@@ -6070,6 +6528,8 @@
     sprite: Civ14/Clothing/exported/suits/zulu_mbata.rsi
     state: icon
   objectType: Item
+  agemin: 8
+  agemax: 8
 
 - type: constructionGraph
   id: civ13_suit_mbata_pelt_vest

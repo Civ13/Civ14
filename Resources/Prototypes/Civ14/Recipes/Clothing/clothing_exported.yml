@@ -11,7 +11,9 @@
   icon:
     sprite: Civ14/Clothing/exported/suits/prehistoric_fur4.rsi
     state: icon
-  objectType: Structure
+  objectType: Item
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
 - type: constructionGraph
   id: civ13_suit_primitive_pelt_coat
@@ -39,7 +41,9 @@
   icon:
     sprite: Civ14/Clothing/exported/suits/prehistoric_fur1.rsi
     state: icon
-  objectType: Structure
+  objectType: Item
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
 - type: constructionGraph
   id: civ13_suit_brown_primitive_pelt_coat
@@ -67,7 +71,9 @@
   icon:
     sprite: Civ14/Clothing/exported/suits/prehistoric_fur2.rsi
     state: icon
-  objectType: Structure
+  objectType: Item
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
 - type: constructionGraph
   id: civ13_suit_black_primitive_pelt_coat
@@ -95,7 +101,9 @@
   icon:
     sprite: Civ14/Clothing/exported/suits/prehistoric_fur3.rsi
     state: icon
-  objectType: Structure
+  objectType: Item
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
 - type: constructionGraph
   id: civ13_suit_white_primitive_pelt_coat
@@ -123,7 +131,9 @@
   icon:
     sprite: Civ14/Clothing/exported/suits/prehistoric_fur4.rsi
     state: icon
-  objectType: Structure
+  objectType: Item
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
 - type: constructionGraph
   id: civ13_suit_grey_primitive_pelt_coat
@@ -151,7 +161,9 @@
   icon:
     sprite: Civ14/Clothing/exported/suits/wooden_chestarmor.rsi
     state: icon
-  objectType: Structure
+  objectType: Item
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
 - type: constructionGraph
   id: civ13_suit_primitive_wood_armor

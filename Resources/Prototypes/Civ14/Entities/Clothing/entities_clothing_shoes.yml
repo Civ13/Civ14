@@ -18,8 +18,7 @@
           Heat: 0
           Radiation: 0
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_shoes
       node: end
       cost: 5
@@ -44,8 +43,7 @@
           Heat: 0.75
           Radiation: 0.65
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_white_fur_boots
       node: end
       cost: 3
@@ -71,8 +69,7 @@
           Heat: 0.75
           Radiation: 0.65
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_brown_fur_boots
       node: end
       cost: 3
@@ -98,8 +95,7 @@
           Heat: 0
           Radiation: 0
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_red_shoes
       node: end
       cost: 5
@@ -125,8 +121,7 @@
           Heat: 0
           Radiation: 0
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_orange_shoes
       node: end
       cost: 5
@@ -151,8 +146,7 @@
           Arrow: 0.8
           Heat: 0.85
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_jackboots
       node: end
       cost: 5
@@ -177,8 +171,7 @@
           Arrow: 0.8
           Heat: 0.85
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_Soviet_sapogi_boots
       node: end
       cost: 5
@@ -204,8 +197,7 @@
           Heat: 0.85
           Radiation: 0.8
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_workboots
       node: end
       cost: 4
@@ -231,8 +223,7 @@
           Heat: 0.75
           Radiation: 0.65
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_black_fur_boots
       node: end
       cost: 3
@@ -257,8 +248,7 @@
           Arrow: 0.7
           Heat: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_０military_boots
       node: end
       cost: 5
@@ -283,8 +273,7 @@
           Heat: 0.75
           Radiation: 0.6
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_０wrapped_boots
       node: end
       cost: 5
@@ -309,8 +298,7 @@
           Heat: 0.75
           Radiation: 0.6
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_NCR_wrapped_boots
       node: end
       cost: 5
@@ -335,8 +323,7 @@
           Heat: 0.75
           Radiation: 0.6
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_Legionaire_armored_boots
       node: end
       cost: 5
@@ -361,8 +348,7 @@
           Heat: 0.75
           Radiation: 0.6
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_Leather_boots
       node: end
       cost: 5
@@ -388,8 +374,7 @@
           Heat: 0
           Radiation: 0
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_Black_leather_boots
       node: end
       cost: 5
@@ -414,8 +399,7 @@
           Arrow: 0.7
           Heat: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_SWAT_boots
       node: end
       cost: 5
@@ -440,8 +424,7 @@
           Arrow: 0.7
           Heat: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_combat_boots
       node: end
       cost: 5
@@ -466,8 +449,7 @@
           Arrow: 0.30000000000000004
           Heat: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_IOG_boots
       node: end
       cost: 5
@@ -493,8 +475,7 @@
           Heat: 0
           Radiation: 0
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_sandals
       node: end
       cost: 1
@@ -520,8 +501,7 @@
           Heat: 0
           Radiation: 0
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_leather_shoes
       node: end
       cost: 3
@@ -547,8 +527,7 @@
           Heat: 0
           Radiation: 0
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_magic_shoes
       node: end
       cost: 5
@@ -575,8 +554,7 @@
           Heat: 0
           Radiation: 0
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_laceup_shoes
       node: end
       cost: 3
@@ -601,8 +579,7 @@
           Heat: 0.75
           Radiation: 0.65
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_grey_fur_boots
       node: end
       cost: 3
@@ -628,8 +605,7 @@
           Heat: 0
           Radiation: 0
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_alligator_scale_laceup_shoes
       node: end
       cost: 3
@@ -655,8 +631,7 @@
           Heat: 0
           Radiation: 0
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_chad_shoes
       node: end
       cost: 5
@@ -682,8 +657,7 @@
           Heat: 0
           Radiation: 0
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_flip_flops
       node: end
       cost: 5
@@ -708,8 +682,7 @@
           Arrow: 0.30000000000000004
           Heat: 0.55
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_plastoid_boots
       node: end
       cost: 5
@@ -734,8 +707,7 @@
           Arrow: 0.30000000000000004
           Heat: 0.35
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_red_plastoid_boots
       node: end
       cost: 5
@@ -760,8 +732,7 @@
           Arrow: 0.30000000000000004
           Heat: 0.35
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_blue_plastoid_boots
       node: end
       cost: 5
@@ -785,8 +756,7 @@
           Arrow: 0.95
           Heat: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_sandals_1
       node: end
       cost: 2
@@ -809,8 +779,7 @@
           Slash: 0.9
           Arrow: 0.95
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_aztec_sandals
       node: end
       cost: 2
@@ -835,8 +804,7 @@
           Heat: 0.75
           Radiation: 0.65
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_fur_boots
       node: end
       cost: 3
@@ -861,8 +829,7 @@
           Heat: 0.75
           Radiation: 0.65
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_human_skin_boots
       node: end
       cost: 3
@@ -887,8 +854,7 @@
           Arrow: 0.4
           Heat: 0.92
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_orcish_sabatons
       node: end
       cost: 5
@@ -915,8 +881,7 @@
           Heat: 0.98
           Radiation: 0.9
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_specialist_boots
       node: end
       cost: 5
@@ -941,8 +906,7 @@
           Heat: 0.92
           Radiation: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_creed_boots
       node: end
       cost: 5
@@ -967,8 +931,7 @@
           Heat: 0.92
           Radiation: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_Winter_wrapped_boots
       node: end
       cost: 5
@@ -992,8 +955,7 @@
           Arrow: 0.8
           Heat: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_black_boots
       node: end
       cost: 3
@@ -1017,8 +979,7 @@
           Arrow: 0.8
           Heat: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_leather_boots
       node: end
       cost: 3
@@ -1043,8 +1004,7 @@
           Heat: 0.75
           Radiation: 0.95
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_winter_boots
       node: end
       cost: 5
@@ -1068,8 +1028,7 @@
           Arrow: 0.8
           Heat: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_black_puttee_boots
       node: end
       cost: 5
@@ -1095,8 +1054,7 @@
           Heat: 0.85
           Radiation: 0.95
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_infantry_shoes
       node: end
       cost: 2
@@ -1120,8 +1078,7 @@
           Arrow: 0.8
           Heat: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_black_sailor_boots
       node: end
       cost: 5
@@ -1146,8 +1103,7 @@
           Heat: 0.75
           Radiation: 0.7
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_leather_sailor_boots
       node: end
       cost: 5
@@ -1172,8 +1128,7 @@
           Arrow: 0.8
           Heat: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_military_boots
       node: end
       cost: 5
@@ -1198,8 +1153,7 @@
           Heat: 0.75
           Radiation: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_black_riding_boots
       node: end
       cost: 3
@@ -1224,8 +1178,7 @@
           Heat: 0.75
           Radiation: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_alligator_scale_riding_boots
       node: end
       cost: 3
@@ -1250,8 +1203,7 @@
           Heat: 0.75
           Radiation: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_lizard_scale_riding_boots
       node: end
       cost: 3
@@ -1276,8 +1228,7 @@
           Heat: 0.75
           Radiation: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_leather_riding_boots
       node: end
       cost: 3
@@ -1302,8 +1253,7 @@
           Heat: 0.8
           Radiation: 0.8
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_alligator_scale_ankle_boots
       node: end
       cost: 3
@@ -1327,8 +1277,7 @@
           Arrow: 0.9
           Heat: 0.92
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_leather_shoes_1
       node: end
       cost: 3
@@ -1352,8 +1301,7 @@
           Arrow: 0.92
           Heat: 0.94
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_arabic_leather_shoes
       node: end
       cost: 2
@@ -1379,8 +1327,7 @@
           Arrow: 0.9
           Heat: 0.92
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_emirate_leather_shoes
       node: end
       cost: 4
@@ -1405,8 +1352,7 @@
           Arrow: 0.4
           Heat: 0.92
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_Sabatons
       node: end
       cost: 5
@@ -1432,8 +1378,7 @@
           Arrow: 0.92
           Heat: 0.94
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_steppe_wool_shoe
       node: end
       cost: 3
@@ -1456,8 +1401,7 @@
           Arrow: 0.97
           Heat: 0.95
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_geta_sandals
       node: end
       cost: 1
@@ -1482,8 +1426,7 @@
           Arrow: 0.7
           Heat: 0.92
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_tsuranuki
       node: end
       cost: 5
@@ -1508,8 +1451,7 @@
           Arrow: 0.5
           Heat: 0.92
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_dwemmer_boots
       node: end
       cost: 5
@@ -1534,8 +1476,7 @@
           Heat: 0.92
           Radiation: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_courier_sneakers
       node: end
       cost: 3
@@ -1560,8 +1501,7 @@
           Heat: 0.92
           Radiation: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_punk_boots
       node: end
       cost: 4
@@ -1587,8 +1527,7 @@
           Heat: 0
           Radiation: 0
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_lizard_scale_ankle_boots
       node: end
       cost: 3
@@ -1614,8 +1553,7 @@
           Heat: 0
           Radiation: 0
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_lizard_scale_laceup_shoes
       node: end
       cost: 3
@@ -1639,8 +1577,7 @@
           Arrow: 0.8
           Heat: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_Brown_boots
       node: end
       cost: 5
@@ -1667,8 +1604,7 @@
           Arrow: 0.8
           Heat: 0.75
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_Brown_boots_with_leggings
       node: end
       cost: 5
@@ -1694,8 +1630,7 @@
           Heat: 0
           Radiation: 0
     - type: Construction
-      agemin: 8
-      agemax: 8
+
       graph: civ13_shoes_football_trainers
       node: end
       cost: 5
