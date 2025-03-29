@@ -1176,7 +1176,7 @@
           Radiation: 0.25
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterWinterCoat
   id: suit-storage-coat-modern_winter
   name: dark green winter coat
   description: An army-style coat, in olive drab.
@@ -1216,7 +1216,7 @@
           Radiation: 0.3
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterWinterCoat
   id: suit-storage-coat-chinese
   name: chinese coat
   description: A chinese winter coat.
@@ -1236,7 +1236,7 @@
           Radiation: 0.3
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterWinterCoat
   id: suit-storage-coat-chinese-officer
   name: chinese officer coat
   description: A chinese winter coat, designed for officers.
@@ -1256,7 +1256,7 @@
           Radiation: 0.3
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterWinterCoat
   id: suit-storage-coat-american
   name: american coat
   description: An american winter coat.
@@ -1436,7 +1436,7 @@
           Radiation: 0.3
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterWinterCoat
   id: suit-storage-coat-japcoat2-brown
   name: Brown Winter Coat
   description: A thick winter coat.
@@ -1496,7 +1496,7 @@
           Radiation: 0.3
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterWinterCoat
   id: suit-storage-coat-ruscoat-grey
   name: Grey Winter Coat
   description: A thick winter coat.
@@ -1536,7 +1536,7 @@
           Radiation: 0.3
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterWinterCoat
   id: suit-storage-coat-winter_coat
   name: brown winter coat
   description: A thick winter coat.
@@ -1913,7 +1913,7 @@
           Radiation: 0.25
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterWinterCoat
   id: suit-storage-coat-ww2-sovcoat
   name: soviet winter coat
   description: A traditional Soviet coat, in dark yellow.
@@ -1933,7 +1933,7 @@
           Radiation: 0.3
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterWinterCoat
   id: suit-storage-coat-ww2-sovcoat2
   name: soviet winter coat
   description: A traditional Soviet coat, in light blue.
@@ -4300,7 +4300,7 @@
           Heat: 0
           Radiation: 0.05
 - type: entity
-  parent: ClothingOuterBase
+  parent: ClothingOuterWinterCoat
   id: suit-prehistoricfurcoat
   name: primitive pelt coat
   description: A makeshift pelt coat made from fur skins, worn to protect early man from the elements.
@@ -4326,7 +4326,7 @@
       time: 15
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: ClothingOuterWinterCoat
   id: suit-prehistoricfurcoat-brown
   name: brown primitive pelt coat
   description: A makeshift brown pelt coat made from fur skins, worn to protect early man from the elements.
@@ -4352,7 +4352,7 @@
       time: 15
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: ClothingOuterWinterCoat
   id: suit-prehistoricfurcoat-black
   name: black primitive pelt coat
   description: A makeshift black pelt coat made from fur skins, worn to protect early man from the elements.
@@ -4378,7 +4378,7 @@
       time: 15
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: ClothingOuterWinterCoat
   id: suit-prehistoricfurcoat-white
   name: white primitive pelt coat
   description: A makeshift white pelt coat made from fur skins, worn to protect early man from the elements.
@@ -4404,7 +4404,7 @@
       time: 15
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: ClothingOuterWinterCoat
   id: suit-prehistoricfurcoat-grey
   name: grey primitive pelt coat
   description: A makeshift grey pelt coat made from fur skins, worn to protect early man from the elements.
