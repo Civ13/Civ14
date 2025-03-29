@@ -957,7 +957,7 @@
 - type: entity
   name: NSDAP armband
   parent: ClothingNeckBase
-  id: civ13_accessory_NSDAP_armbandS
+  id: civ13_accessory_NSDAP_armband
   description: A red armband with the swastika on it.
   components:
     - type: Sprite
