@@ -167,7 +167,7 @@ namespace Content.Client.Construction.UI
             PopulateInfo(_selected);
         }
 
-        private void OnViewPopulateRecipes(object? sender, (string search, string catagory) args)
+        private void OnViewPopulateRecipes(object? sender, (string search, string category) args)
         {
             var (search, category) = args;
 
@@ -179,12 +179,13 @@ namespace Content.Client.Construction.UI
                 _selectedCategory = string.Empty;
             else
                 _selectedCategory = category;
-
             foreach (var recipe in _prototypeManager.EnumeratePrototypes<ConstructionPrototype>())
             {
+                var CurrentAge = 0; //hardcoded for now
                 if (recipe.Hide)
                     continue;
-
+                if (CurrentAge < recipe.AgeMin || CurrentAge > recipe.AgeMax)
+                    continue;
                 if (_playerManager.LocalSession == null
                 || _playerManager.LocalEntity == null
                 || _whitelistSystem.IsWhitelistFail(recipe.EntityWhitelist, _playerManager.LocalEntity.Value))

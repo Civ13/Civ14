@@ -44,10 +44,10 @@ namespace Content.Server.Construction.Components
         public string BuildMaterial { get; set; } = "WooodPlank";
 
         [DataField("agemax")]
-        public int ageMax { get; set; } = 8;
+        public int AgeMax { get; set; } = 8;
 
         [DataField("agemin")]
-        public int ageMin { get; set; } = 0;
+        public int AgeMin { get; set; } = 0;
 
         [ViewVariables]
         // TODO Force flush interaction queue before serializing to YAML.
