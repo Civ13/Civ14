@@ -72,7 +72,7 @@
         - state: copper_3
           map: ["base"]
     - type: Item
-      heldPrefix: iron
+      heldPrefix: copper
     - type: Appearance
     - type: Extractable
       grindableSolutionName: copper
@@ -86,16 +86,16 @@
 - type: entity
   parent: IngotCopper
   id: IngotCopper1
-  name: iron bar
+  name: copper bar
   suffix: Single
   components:
     - type: Sprite
-      state: sheet-iron
+      state: copper
     - type: Stack
       count: 1
 - type: stack
   id: Copper
   name: copper
-  icon: { sprite: /Textures/Objects/Materials/Sheets/ingots.rsi, state: copper }
+  icon: { sprite: /Textures/Objects/Materials/ingots.rsi, state: copper }
   spawn: IngotCopper1
   maxCount: 30
