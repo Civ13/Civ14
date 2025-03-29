@@ -93,9 +93,3 @@
       state: copper
     - type: Stack
       count: 1
-- type: stack
-  id: Copper
-  name: copper
-  icon: { sprite: /Textures/Objects/Materials/ingots.rsi, state: copper }
-  spawn: IngotCopper1
-  maxCount: 30
