@@ -45,6 +45,6 @@
 - type: stack
   id: Iron
   name: iron
-  icon: { sprite: /Textures/Objects/Materials/ingots.rsi, state: sheet-iron }
+  icon: { sprite: /Textures/Objects/Materials/Sheets/ingots.rsi, state: sheet-iron }
   spawn: IngotIron1
   maxCount: 30
