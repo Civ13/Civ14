@@ -1036,7 +1036,7 @@
       edges:
         - to: end
           steps:
-            - material: Bone
+            - material: Bones
               amount: 2
               doAfter: 8
     - node: end
@@ -5741,19 +5741,6 @@
     - node: end
       entity: civ13_accessory_Leather_webbing_vest
 
-- type: constructionGraph
-  id: civ13_accessory_SG_webbing_vest
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_SG_webbing_vest
 - type: construction
   name: Greek webbing vest
   id: civ13_accessory_Greek_webbing_vest
@@ -6912,7 +6899,7 @@
   category: construction-category-clothing
   description: A vest used by baily security units.
   icon:
-    sprite: Civ14/Clothing/exported/ties/bailyvest.rsi
+    sprite: Civ14/Clothing/exported/suits/bailyvest.rsi
     state: icon
   objectType: Item
   agemin: 8
