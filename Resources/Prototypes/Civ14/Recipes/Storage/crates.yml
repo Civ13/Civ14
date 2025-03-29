@@ -8,6 +8,8 @@
   description: A storage crate made of wood.
   icon: { sprite: Civ14/Objects/Storage/wood_crate.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: constructionGraph
   id: CrateWood

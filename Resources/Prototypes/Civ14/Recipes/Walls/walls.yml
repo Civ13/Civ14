@@ -10,7 +10,10 @@
     sprite: Civ14/Structures/walls.rsi
     state: straw_wallB1
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
@@ -27,7 +30,10 @@
     sprite: Civ14/Structures/Walls/dirtwall.rsi
     state: full
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
@@ -44,7 +50,10 @@
     sprite: Civ14/Structures/claystuff.rsi
     state: claybrickwall
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
@@ -61,7 +70,10 @@
     sprite: Civ14/Structures/Walls/oldwood.rsi
     state: full
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
@@ -134,7 +146,10 @@
     sprite: Civ14/Structures/Walls/stone_block_wall.rsi
     state: full
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
 - type: constructionGraph
   id: StoneBlockWall
   start: start
@@ -160,7 +175,10 @@
     sprite: Civ14/Structures/Walls/mayan.rsi
     state: full
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
 - type: constructionGraph
   id: MayanStoneWall
   start: start
@@ -186,7 +204,10 @@
     sprite: Civ14/Structures/Walls/new_stonebrick.rsi
     state: full
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
 - type: constructionGraph
   id: StoneBrickWall
   start: start
@@ -212,7 +233,10 @@
     sprite: Civ14/Structures/Walls/marble_block_wall.rsi
     state: full
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
 - type: constructionGraph
   id: MarbleBlockWall
   start: start
@@ -238,7 +262,10 @@
     sprite: Civ14/Structures/Walls/fortress_brickwall.rsi
     state: full
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
 - type: constructionGraph
   id: FortressBrickWall
   start: start
@@ -264,7 +291,10 @@
     sprite: Civ14/Structures/Walls/roman.rsi
     state: full
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
 - type: constructionGraph
   id: RomanStoneBrickWall
   start: start
@@ -290,7 +320,10 @@
     sprite: Civ14/Structures/Walls/grecian.rsi
     state: full
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
 - type: constructionGraph
   id: GrecianStoneBrickWall
   start: start
@@ -316,7 +349,10 @@
     sprite: Civ14/Structures/Walls/sandstone_block_wall.rsi
     state: full
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
 - type: constructionGraph
   id: SandstoneBlockWall
   start: start
@@ -342,7 +378,10 @@
     sprite: Civ14/Structures/Walls/egyptian.rsi
     state: full
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
 - type: constructionGraph
   id: EgyptianSandstoneBrickWall
   start: start
@@ -368,7 +407,10 @@
     sprite: Civ14/Structures/Walls/sandstone_brickwall.rsi
     state: full
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
 - type: constructionGraph
   id: SandstoneBrickWall
   start: start
@@ -394,7 +436,10 @@
     sprite: Civ14/Structures/Walls/redsandstone_block_wall.rsi
     state: full
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
 - type: constructionGraph
   id: RedSandstoneBlockWall
   start: start
@@ -420,7 +465,10 @@
     sprite: Civ14/Structures/Walls/sandstone_fortress.rsi
     state: full
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
+
 - type: constructionGraph
   id: FortressSandstoneBrickWall
   start: start

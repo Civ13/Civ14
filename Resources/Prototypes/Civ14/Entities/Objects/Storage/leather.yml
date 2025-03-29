@@ -9,6 +9,8 @@
     - type: Construction
       graph: LeatherClothingBackpack
       node: end
+      agemin: 0
+      agemax: 8
 
 - type: entity
   parent: ClothingBeltUtility
@@ -21,6 +23,8 @@
     - type: Construction
       graph: LeatherClothingBelt
       node: end
+      agemin: 0
+      agemax: 8
 
 - type: entity
   parent: DrinkBottleBaseEmpty
@@ -34,3 +38,5 @@
     - type: Construction
       graph: LeatherWaterskin
       node: end
+      agemin: 0
+      agemax: 8

@@ -1,9 +1,17 @@
 # Civ14 Wiki
 
+[Rules](rules/rules.md)
 [How to Play](wiki/playing.md)
 [Nomads](wiki/nomads.md)
-[Discord](https://discord.gg/hBEtg4x)
-[Github](https://github.com/civ13/civ14)
+
+[Guides]()
+
+-   [Farming](wiki/guide_to_farming.md)
+
+[Links]()
+
+-   [Discord](https://discord.gg/hBEtg4x)
+-   [Github](https://github.com/civ13/civ14)
 
 <!-- set a default theme -->
 
@@ -11,4 +19,4 @@
 
 <!-- show a theme chooser in the menu bar -->
 
-[gimmick:ThemeChooser](Change theme)
+[gimmick:ThemeChooser](Theme)

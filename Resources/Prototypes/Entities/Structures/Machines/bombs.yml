@@ -35,8 +35,7 @@
     - type: Fixtures
       fixtures:
         fix1:
-          shape:
-            !type:PhysShapeAabb
+          shape: !type:PhysShapeAabb
             bounds: "-0.3,-0.3,0.3,0.3"
           density: 190
           mask:
@@ -44,10 +43,6 @@
           layer:
             - MachineLayer
     - type: WiresPanel
-    - type: GuideHelp
-      openOnActivation: true
-      guides:
-      - Defusal
 
 - type: entity
   parent: BaseHardBomb
@@ -64,10 +59,10 @@
         - state: training-bomb
         - state: training-bomb-active
           visible: false
-          map: [ "primed" ]
+          map: ["primed"]
         - state: training-bomb-wires
           visible: false
-          map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+          map: ["enum.WiresVisualLayers.MaintenancePanel"]
     - type: GenericVisualizer
       visuals:
         enum.DefusableVisuals.Active:
@@ -103,10 +98,10 @@
         - state: syndicate-bomb
         - state: syndicate-bomb-active
           visible: false
-          map: [ "primed" ]
+          map: ["primed"]
         - state: syndicate-bomb-wires
           visible: false
-          map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+          map: ["enum.WiresVisualLayers.MaintenancePanel"]
     - type: GenericVisualizer
       visuals:
         enum.DefusableVisuals.Active:

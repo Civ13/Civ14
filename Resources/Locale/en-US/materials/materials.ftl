@@ -6,6 +6,8 @@ materials-reinforced-plasma-glass = reinforced plasma glass
 
 # Metals
 materials-steel = steel
+materials-brass = brass
+materials-iron = iron
 materials-gold = gold
 materials-silver = silver
 materials-plasteel = plasteel

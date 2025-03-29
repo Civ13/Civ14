@@ -10,10 +10,10 @@
   icon: "JobIconLawyer"
   supervisors: job-supervisors-hop
   access:
-  - Service
-  - Lawyer
-  - Brig
-  - Maintenance
+    - Service
+    - Lawyer
+    - Brig
+    - Maintenance
 
 - type: startingGear
   id: LawyerGear
@@ -25,5 +25,4 @@
     - BriefcaseBrownFilled
   storage:
     back:
-    - RubberStampLawyer
-    - BookSpaceLaw
+      - RubberStampLawyer

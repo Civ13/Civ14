@@ -11,21 +11,21 @@
   parent: HungerIcon
   icon:
     sprite: /Textures/Interface/Misc/food_icons.rsi
-    state: overfed
+    state: nutrition1
 
 - type: satiationIcon
   id: HungerIconPeckish
   parent: HungerIcon
   icon:
     sprite: /Textures/Interface/Misc/food_icons.rsi
-    state: peckish
+    state: nutrition2
 
 - type: satiationIcon
   id: HungerIconStarving
   parent: HungerIcon
   icon:
     sprite: /Textures/Interface/Misc/food_icons.rsi
-    state: starving
+    state: nutrition4
 
 #Thirst
 - type: satiationIcon

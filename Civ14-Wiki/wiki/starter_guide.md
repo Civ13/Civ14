@@ -1,8 +1,6 @@
 # Starter Guide
 
-<div class="alert alert-dismissible alert-danger">
-This guide was originally written for Civ13, and as such might not fully reflect the actual gameplay of Civ14.
-</div>
+**WARNING: This guide was originally written for Civ13, and as such might not fully reflect the actual gameplay of Civ14.**
 
 **This guide mostly pertains to survival in the sandbox [Nomads](nomads.md) game mode.**
 

@@ -4,7 +4,7 @@
   abstract: true
   id: BaseElectronicsRecipe
   categories:
-  - Circuitry
+    - Circuitry
   completetime: 2
   materials:
     Steel: 100
@@ -23,8 +23,8 @@
   parent: BaseElectronicsRecipe
   id: BaseCheapCircuitboardRecipe
   materials:
-     Steel: 50
-     Glass: 250
+    Steel: 50
+    Glass: 250
 
 - type: latheRecipe
   abstract: true
@@ -432,11 +432,6 @@
 
 - type: latheRecipe
   parent: BaseCircuitboardRecipe
-  id: CloningConsoleComputerCircuitboard
-  result: CloningConsoleComputerCircuitboard
-
-- type: latheRecipe
-  parent: BaseCircuitboardRecipe
   id: MicrowaveMachineCircuitboard
   result: MicrowaveMachineCircuitboard
 
@@ -524,11 +519,6 @@
   parent: BaseCircuitboardRecipe
   id: BoozeDispenserMachineCircuitboard
   result: BoozeDispenserMachineCircuitboard
-
-- type: latheRecipe
-  parent: BaseGoldCircuitboardRecipe
-  id: CargoTelepadMachineCircuitboard
-  result: CargoTelepadMachineCircuitboard
 
 - type: latheRecipe
   parent: BaseCircuitboardRecipe

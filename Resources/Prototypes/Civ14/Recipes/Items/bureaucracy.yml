@@ -8,6 +8,8 @@
   description: A simple wooden pencil.
   icon: { sprite: Civ14/Objects/bureaucracy.rsi, state: pencil }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: paper
@@ -19,6 +21,8 @@
   description: A simple sheet of paper.
   icon: { sprite: Civ14/Objects/bureaucracy.rsi, state: paper }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: constructionGraph
   id: Pencil

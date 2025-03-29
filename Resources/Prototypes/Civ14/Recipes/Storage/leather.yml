@@ -8,6 +8,8 @@
   description: A leather satchel worn around the waist.
   icon: { sprite: Civ14/Objects/Storage/satchel.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: leather backpack
@@ -19,6 +21,8 @@
   description: A sturdy leather backpack.
   icon: { sprite: Civ14/Objects/Storage/backpack.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: leather waterskin
@@ -30,6 +34,8 @@
   description: A leather waterskin, used to carry liquids.
   icon: { sprite: Civ14/Objects/Storage/storage.rsi, state: waterskin }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: constructionGraph
   id: LeatherClothingBelt

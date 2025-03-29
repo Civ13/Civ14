@@ -8,6 +8,8 @@
   description: A crude wood club.
   icon: { sprite: Civ14/Objects/StoneAge/club.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: constructionGraph
   id: WoodClub

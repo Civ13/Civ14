@@ -33,6 +33,8 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Construction
+      agemin: 0
+      agemax: 8
       node: end
 
 - type: entity
@@ -70,6 +72,8 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Construction
+      agemin: 0
+      agemax: 8
       node: end
 
 - type: entity
@@ -107,6 +111,8 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Construction
+      agemin: 0
+      agemax: 8
       node: end
 
 - type: entity
@@ -144,4 +150,6 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Construction
+      agemin: 0
+      agemax: 8
       node: end

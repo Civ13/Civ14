@@ -10,6 +10,8 @@
     - type: Construction
       graph: CrateWood
       node: end
+      agemin: 0
+      agemax: 8
       containers:
         - entity_storage
     - type: StaticPrice

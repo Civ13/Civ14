@@ -3,7 +3,7 @@
 # entity getting deleted.
 
 # e.g., you can swap all walls with windows and delete all tables by adding lines like:
-#
+
 # Window: WallSolid
 # WallSolid: Window
 # Table: null
@@ -331,9 +331,6 @@ WeaponRifleLecterRubber: WeaponRifleLecter
 
 # 2024-04-26
 GlassBoxLaserBroken: GlassBoxBroken
-ReinforcementRadioSyndicateMonkey: ReinforcementRadioSyndicateAncestor
-ReinforcementRadioSyndicateMonkeyNukeops: ReinforcementRadioSyndicateAncestorNukeops
-
 # 2024-05-01
 DrinkBottleGoldschlager: DrinkBottleGildlager
 
@@ -482,9 +479,6 @@ CrateCrewMonitoringBoards: CrateCrewMonitoring
 
 # 2024-11-25
 CrateSlimepersonLifeSupport: CrateNitrogenInternals
-
-# 2024-12-01
-DungeonMasterCircuitBoard: GameMasterCircuitBoard
 
 # 2024-12-12
 FloraRockSolid01: FloraRockSolid

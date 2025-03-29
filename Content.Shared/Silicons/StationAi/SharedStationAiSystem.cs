@@ -67,9 +67,6 @@ public abstract partial class SharedStationAiSystem : EntitySystem
     private EntityQuery<BroadphaseComponent> _broadphaseQuery;
     private EntityQuery<MapGridComponent> _gridQuery;
 
-    [ValidatePrototypeId<EntityPrototype>]
-    private static readonly EntProtoId DefaultAi = "StationAiBrain";
-
     private const float MaxVisionMultiplier = 5f;
 
     public override void Initialize()
@@ -114,18 +111,6 @@ public abstract partial class SharedStationAiSystem : EntitySystem
         }
 
         var user = args.User;
-
-        args.Verbs.Add(new Verb()
-        {
-            Text = Loc.GetString("station-ai-takeover"),
-            Category = VerbCategory.Debug,
-            Act = () =>
-            {
-                var brain = SpawnInContainerOrDrop(DefaultAi, ent.Owner, StationAiCoreComponent.Container);
-                _mind.ControlMob(user, brain);
-            },
-            Impact = LogImpact.High,
-        });
     }
 
     private void OnAiAccessible(Entity<StationAiOverlayComponent> ent, ref AccessibleOverrideEvent args)

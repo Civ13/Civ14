@@ -10,11 +10,11 @@
   tier: 1
   cost: 5000
   recipeUnlocks:
-  - BorgModuleGardening
-  - BorgModuleHarvesting
-  - SeedExtractorMachineCircuitboard
-  - HydroponicsTrayMachineCircuitboard
-  - ReagentGrinderIndustrialMachineCircuitboard
+    - BorgModuleGardening
+    - BorgModuleHarvesting
+    - SeedExtractorMachineCircuitboard
+    - HydroponicsTrayMachineCircuitboard
+    - ReagentGrinderIndustrialMachineCircuitboard
 
 - type: technology
   id: CritterMechs
@@ -26,15 +26,15 @@
   tier: 1
   cost: 7500
   recipeUnlocks:
-  - HamtrHarness
-  - HamtrLArm
-  - HamtrRArm
-  - HamtrLLeg
-  - HamtrRLeg
-  - HamtrCentralElectronics
-  - HamtrPeripheralsElectronics
-  - MechEquipmentGrabberSmall
-  - VimHarness
+    - HamtrHarness
+    - HamtrLArm
+    - HamtrRArm
+    - HamtrLLeg
+    - HamtrRLeg
+    - HamtrCentralElectronics
+    - HamtrPeripheralsElectronics
+    - MechEquipmentGrabberSmall
+    - VimHarness
 
 - type: technology
   id: AudioVisualCommunication
@@ -46,14 +46,14 @@
   tier: 1
   cost: 5000
   recipeUnlocks:
-  - SurveillanceCameraRouterCircuitboard
-  - SurveillanceCameraWirelessRouterCircuitboard
-  - SurveillanceWirelessCameraMovableCircuitboard
-  - SurveillanceWirelessCameraAnchoredCircuitboard
-  - SurveillanceCameraMonitorCircuitboard
-  - SurveillanceWirelessCameraMonitorCircuitboard
-  - TelecomServerCircuitboard
-  - HolopadMachineCircuitboard
+    - SurveillanceCameraRouterCircuitboard
+    - SurveillanceCameraWirelessRouterCircuitboard
+    - SurveillanceWirelessCameraMovableCircuitboard
+    - SurveillanceWirelessCameraAnchoredCircuitboard
+    - SurveillanceCameraMonitorCircuitboard
+    - SurveillanceWirelessCameraMonitorCircuitboard
+    - TelecomServerCircuitboard
+    - HolopadMachineCircuitboard
 
 - type: technology
   id: AdvancedEntertainment
@@ -81,7 +81,7 @@
   tier: 1
   cost: 5000
   recipeUnlocks:
-  - BorgModuleAdvancedCleaning
+    - BorgModuleAdvancedCleaning
 
 - type: technology
   id: MeatManipulation
@@ -93,9 +93,9 @@
   tier: 1
   cost: 7500
   recipeUnlocks:
-  - FatExtractorMachineCircuitboard
-  - BiofabricatorMachineCircuitboard
-  - BiomassReclaimerMachineCircuitboard
+    - FatExtractorMachineCircuitboard
+    - BiofabricatorMachineCircuitboard
+    - BiomassReclaimerMachineCircuitboard
 
 # Tier 2
 
@@ -109,12 +109,12 @@
   tier: 2
   cost: 5000
   recipeUnlocks:
-  - FauxTileAstroGrass
-  - FauxTileMowedAstroGrass
-  - FauxTileJungleAstroGrass
-  - FauxTileAstroIce
-  - FauxTileAstroSnow
-  - FauxTileAstroAsteroidSand
+    - FauxTileAstroGrass
+    - FauxTileMowedAstroGrass
+    - FauxTileJungleAstroGrass
+    - FauxTileAstroIce
+    - FauxTileAstroSnow
+    - FauxTileAstroAsteroidSand
 
 - type: technology
   id: BiochemicalStasis
@@ -126,10 +126,10 @@
   tier: 2
   cost: 7500
   recipeUnlocks:
-  - StasisBedMachineCircuitboard
-  - CryoPodMachineCircuitboard
-  - CryostasisBeaker
-  - SyringeCryostasis
+    - StasisBedMachineCircuitboard
+    - CryoPodMachineCircuitboard
+    - CryostasisBeaker
+    - SyringeCryostasis
 
 - type: technology
   id: MechanizedTreatment
@@ -141,8 +141,8 @@
   tier: 2
   cost: 5000
   recipeUnlocks:
-  - BorgModuleAdvancedTreatment
-  - BorgModuleDefibrillator
+    - BorgModuleAdvancedTreatment
+    - BorgModuleDefibrillator
 
 - type: technology
   id: AdvancedCleaning
@@ -154,8 +154,8 @@
   tier: 2
   cost: 10000
   recipeUnlocks:
-  - AdvMopItem
-  - MegaSprayBottle
+    - AdvMopItem
+    - MegaSprayBottle
 
 - type: technology
   id: HONKMech
@@ -167,15 +167,15 @@
   tier: 2
   cost: 7500
   recipeUnlocks:
-  - HonkerHarness
-  - HonkerLArm
-  - HonkerRArm
-  - HonkerLLeg
-  - HonkerRLeg
-  - HonkerCentralElectronics
-  - HonkerPeripheralsElectronics
-  - HonkerTargetingElectronics
-  - MechEquipmentHorn
+    - HonkerHarness
+    - HonkerLArm
+    - HonkerRArm
+    - HonkerLLeg
+    - HonkerRLeg
+    - HonkerCentralElectronics
+    - HonkerPeripheralsElectronics
+    - HonkerTargetingElectronics
+    - MechEquipmentHorn
 
 - type: technology
   id: AdvancedSpray
@@ -187,20 +187,8 @@
   tier: 2
   cost: 10000
   recipeUnlocks:
-  - WeaponSprayNozzle
-  - ClothingBackpackWaterTank
-
-- type: technology
-  id: BluespaceCargoTransport
-  name: research-technology-bluespace-cargo-transport
-  icon:
-    sprite: Structures/cargo_telepad.rsi
-    state: display
-  discipline: CivilianServices
-  tier: 2
-  cost: 15000
-  recipeUnlocks:
-  - CargoTelepadMachineCircuitboard
+    - WeaponSprayNozzle
+    - ClothingBackpackWaterTank
 
 # Tier 3
 
@@ -214,7 +202,7 @@
   tier: 3
   cost: 10000
   recipeUnlocks:
-  - ClothingShoesBootsSpeed
+    - ClothingShoesBootsSpeed
 
 - type: technology
   id: BluespaceChemistry
@@ -226,5 +214,5 @@
   tier: 3
   cost: 10000
   recipeUnlocks:
-  - BluespaceBeaker
-  - SyringeBluespace
+    - BluespaceBeaker
+    - SyringeBluespace

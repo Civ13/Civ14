@@ -1,0 +1,1115 @@
+- type: entity
+  name: gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_gloves
+  description: A pair of gloves, they don't look special in any way.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/latex.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/latex.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: white fur gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_white_fur_gloves
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/whitefur.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/whitefur.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_white_fur_gloves
+      node: end
+      cost: 3
+      material: Leather
+      time: 8
+- type: entity
+  name: orange gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_orange_gloves
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/orange.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/orange.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_orange_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: goalkeeper gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_goalkeeper_gloves
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/latex.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/latex.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_goalkeeper_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: goalkeeper gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_goalkeeper_gloves_1
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/latex.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/latex.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_goalkeeper_gloves_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: purple gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_purple_gloves
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/purple.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/purple.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_purple_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: grey fur gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_grey_fur_gloves
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/greyfur.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/greyfur.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_grey_fur_gloves
+      node: end
+      cost: 3
+      material: Leather
+      time: 8
+- type: entity
+  name: light brown gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_light_brown_gloves
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/lightbrown.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/lightbrown.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_light_brown_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: brown fur gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_brown_fur_gloves
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/brownfur.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/brownfur.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_brown_fur_gloves
+      node: end
+      cost: 3
+      material: Leather
+      time: 8
+- type: entity
+  name: red leather gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_red_leather_gloves
+  description: A pair of gloves, They look fancy and expensive.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/luxglove.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/luxglove.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_red_leather_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: pink colored gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_pink_colored_gloves
+  description: A pair of gloves, They look fancy.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/luxglove1.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/luxglove1.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_pink_colored_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: watch
+  parent: ClothingHandsBase
+  id: civ13_gloves_watch
+  description: A watch you wear on your hand.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/watch.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/watch.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_watch
+      node: end
+      cost: 6
+      material: Steel
+      time: 20
+- type: entity
+  name: expensive watch
+  parent: ClothingHandsBase
+  id: civ13_gloves_expensive_watch
+  description: A watch you wear on your hand. Looks quite expensive.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/specialwatch.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/specialwatch.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_expensive_watch
+      node: end
+      cost: 6
+      material: Silver
+      time: 20
+- type: entity
+  name: gold watch
+  parent: ClothingHandsBase
+  id: civ13_gloves_gold_watch
+  description: A watch you wear on your hand. This one is plated in gold.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/goldwatch.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/goldwatch.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_gold_watch
+      node: end
+      cost: 6
+      material: Gold
+      time: 20
+- type: entity
+  name: silver ring
+  parent: ClothingHandsBase
+  id: civ13_gloves_silver_ring
+  description: A shiny silver ring. Looks expensive.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/silver_ring.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/silver_ring.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_silver_ring
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: captain's gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_captains_gloves
+  description: Regal blue gloves, with a nice gold trim. Swanky.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/captain.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/captain.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_captains_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: black gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_black_gloves
+  description: These work gloves are thick and fire-resistant.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/black.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/black.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_black_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: leather gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_leather_gloves
+  description: These leather gloves are cold and fire-resistant.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/leather.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/leather.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_leather_gloves
+      node: end
+      cost: 3
+      material: Leather
+      time: 8
+- type: entity
+  name: black fur gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_black_fur_gloves
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/blackfur.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/blackfur.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_black_fur_gloves
+      node: end
+      cost: 3
+      material: Leather
+      time: 8
+- type: entity
+  name: human skin gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_human_skin_gloves
+  description: Gloves made of human skin. Barbaric.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/pinkfur.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/pinkfur.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_human_skin_gloves
+      node: end
+      cost: 3
+      material: Leather
+      time: 8
+- type: entity
+  name: orcish gauntlets
+  parent: ClothingHandsBase
+  id: civ13_gloves_orcish_gauntlets
+  description: A pair of orcish armored gauntlets.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/ork_gauntlet.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/ork_gauntlet.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.25
+          Slash: 0.25
+          Piercing: 0.9
+          Arrow: 0.4
+          Heat: 0.92
+    - type: Construction
+      graph: civ13_gloves_orcish_gauntlets
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: fire-resistant gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_fire_resistant_gloves
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/firefighter.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/firefighter.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_fire_resistant_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: combat gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_combat_gloves
+  description: These tactical gloves are somewhat fire and impact resistant.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/black.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/black.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_combat_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: swat gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_swat_gloves
+  description: Combat gloves used by swat officers.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/swat.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/swat.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_swat_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Officer gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_Officer_gloves
+  description: Shiny black gloves used by officers to keep their hands clean.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/swat.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/swat.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_Officer_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: gold plated gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_gold_plated_gloves
+  description: Gold plated gloves. These look expensive.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/salamon.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/salamon.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_gold_plated_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: botanist's leather gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_botanists_leather_gloves
+  description: >-
+    These leather work gloves protect against thorns, barbs, prickles, spikes
+    and other harmful objects of floral origin.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/leather.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/leather.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_botanists_leather_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: oven mittens
+  parent: ClothingHandsBase
+  id: civ13_gloves_oven_mittens
+  description: Thick padded gloves worn to protect the hands from heat retrieving food.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/oven_mitts.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/oven_mitts.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_oven_mittens
+      node: end
+      cost: 3
+      material: Cloth
+      time: 8
+- type: entity
+  name: cavalry gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_cavalry_gloves
+  description: Gloves worn by union cavalry and other military personel.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/union_gloves.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/union_gloves.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_cavalry_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: boxing gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_boxing_gloves
+  description: Because you really needed another excuse to punch your crewmates.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/boxing.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/boxing.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_boxing_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: latex gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_latex_gloves
+  description: Sterile gloves.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/latex.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/latex.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.98
+          Slash: 0.98
+          Arrow: 0.99
+          Heat: 0.75
+    - type: Construction
+      graph: civ13_gloves_latex_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: NBC gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_NBC_gloves
+  description: Sterile gloves which also protect you from ambient radiation.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/latex.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/latex.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.98
+          Slash: 0.98
+          Arrow: 0.99
+          Heat: 0.75
+          Radiation: 0.9
+    - type: Construction
+      graph: civ13_gloves_NBC_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: nitrile gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_nitrile_gloves
+  description: Sterile gloves.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/blue.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/blue.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.98
+          Slash: 0.98
+          Arrow: 0.99
+          Heat: 0.75
+    - type: Construction
+      graph: civ13_gloves_nitrile_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: plastoid gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_plastoid_gloves
+  description: A pair of plastoid gloves.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/replicant_gloves.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/replicant_gloves.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.55
+          Slash: 0.55
+          Piercing: 0.5
+          Arrow: 0.5
+          Heat: 0.55
+    - type: Construction
+      graph: civ13_gloves_plastoid_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: very black gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_very_black_gloves
+  description: A pair of void black gloves.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/veryblack.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/veryblack.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.9
+          Slash: 0.9
+          Piercing: 0.95
+          Arrow: 0.95
+          Heat: 0.98
+    - type: Construction
+      graph: civ13_gloves_very_black_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: specialist leather gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_specialist_leather_gloves
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/toughguy.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/toughguy.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.95
+          Arrow: 0.95
+          Heat: 0.85
+    - type: Construction
+      graph: civ13_gloves_specialist_leather_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: creed gauntlets
+  parent: ClothingHandsBase
+  id: civ13_gloves_creed_gauntlets
+  description: A pair of armored creed gauntlets with a hidden blade.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/ac_gauntlets.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/ac_gauntlets.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.9
+          Arrow: 0.6
+          Heat: 0.92
+          Radiation: 0.95
+    - type: Construction
+      graph: civ13_gloves_creed_gauntlets
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: fingerless black gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_fingerless_black_gloves
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/fingerless.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/fingerless.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_fingerless_black_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: hand wraps
+  parent: ClothingHandsBase
+  id: civ13_gloves_hand_wraps
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/ncr_handwraps.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/ncr_handwraps.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_hand_wraps
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: legionaire hand wraps
+  parent: ClothingHandsBase
+  id: civ13_gloves_legionaire_hand_wraps
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/legion_handwraps.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/legion_handwraps.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_legionaire_hand_wraps
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: fingerless combat gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_fingerless_combat_gloves
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/fingerless.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/fingerless.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.75
+          Slash: 0.75
+          Piercing: 0.95
+          Arrow: 0.75
+          Heat: 0.78
+          Radiation: 0.95
+    - type: Construction
+      graph: civ13_gloves_fingerless_combat_gloves
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: armored gauntlets
+  parent: ClothingHandsBase
+  id: civ13_gloves_armored_gauntlets
+  description: A pair of armored iron gauntlets.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/gauntlet.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/gauntlet.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.25
+          Slash: 0.25
+          Piercing: 0.9
+          Arrow: 0.4
+          Heat: 0.92
+    - type: Construction
+      graph: civ13_gloves_armored_gauntlets
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: kote gauntlets
+  parent: ClothingHandsBase
+  id: civ13_gloves_kote_gauntlets
+  description: A pair of armored iron bracer guards of japanese origin.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/kote.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/kote.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.55
+          Slash: 0.55
+          Piercing: 0.9299999999999999
+          Arrow: 0.7
+          Heat: 0.92
+    - type: Construction
+      graph: civ13_gloves_kote_gauntlets
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: dwemmer gauntlets
+  parent: ClothingHandsBase
+  id: civ13_gloves_dwemmer_gauntlets
+  description: A pair of armored dwemmer bracer guards of dwemmer origin.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/dwoves.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/dwoves.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.30000000000000004
+          Slash: 0.30000000000000004
+          Piercing: 0.9299999999999999
+          Arrow: 0.6
+          Heat: 0.92
+    - type: Construction
+      graph: civ13_gloves_dwemmer_gauntlets
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: black motorist gloves
+  parent: ClothingHandsBase
+  id: civ13_gloves_black_motorist_gloves
+  description: ''
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/gloves/motorist.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/gloves/motorist.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_gloves_black_motorist_gloves
+      node: end
+      cost: 3
+      material: Cloth
+      time: 8

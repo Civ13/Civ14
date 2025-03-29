@@ -124,8 +124,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robust.Shared.CompNetworkGe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robust.Serialization.Generator", "RobustToolbox\Robust.Serialization.Generator\Robust.Serialization.Generator.csproj", "{6FBF108E-5CB5-47DE-8D7E-B496ABA9E3E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content.PatreonParser", "Content.PatreonParser\Content.PatreonParser.csproj", "{D97D8258-D915-4D1D-B1E3-1A8D00CF9EB5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robust.Analyzers.Tests", "RobustToolbox\Robust.Analyzers.Tests\Robust.Analyzers.Tests.csproj", "{83F510FE-9B50-4D96-AFAB-CC13998D6AFE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Roslyn", "Roslyn", "{7844DA69-B0F0-49FB-A05E-ECA37372277A}"

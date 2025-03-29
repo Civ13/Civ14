@@ -4,9 +4,9 @@
   description: department-Cargo-description
   color: "#A46106"
   roles:
-  - CargoTechnician
-  - Quartermaster
-  - SalvageSpecialist
+    - CargoTechnician
+    - Quartermaster
+    - SalvageSpecialist
 
 - type: department
   id: Civilian
@@ -15,23 +15,23 @@
   color: "#9FED58"
   weight: -10
   roles:
-  - Bartender
-  - Botanist
-  - Boxer
-  - Chaplain
-  - Chef
-  - Clown
-  - HeadOfPersonnel
-  - Janitor
-  - Lawyer
-  - Librarian
-  - Mime
-  - Musician
-  - Passenger
-  - Reporter
-  - Visitor
-  - Zookeeper
-  - ServiceWorker
+    - Bartender
+    - Botanist
+    - Boxer
+    - Chaplain
+    - Chef
+    - Clown
+    - HeadOfPersonnel
+    - Janitor
+    - Lawyer
+    - Librarian
+    - Mime
+    - Musician
+    - Passenger
+    - Reporter
+    - Visitor
+    - Zookeeper
+    - ServiceWorker
 
 - type: department
   id: CentralCommand
@@ -39,15 +39,15 @@
   description: department-CentralCommand-description
   color: "#0c344d"
   roles:
-  - CentralCommandOfficial
-  - CBURN
-  - ERTLeader
-  - ERTChaplain
-  - ERTJanitor
-  - ERTMedical
-  - ERTSecurity
-  - ERTEngineer
-  - DeathSquad
+    - CentralCommandOfficial
+    - CBURN
+    - ERTLeader
+    - ERTChaplain
+    - ERTJanitor
+    - ERTMedical
+    - ERTSecurity
+    - ERTEngineer
+    - DeathSquad
   editorHidden: true
   weight: 120
 
@@ -57,22 +57,22 @@
   description: department-Command-description
   color: "#334E6D"
   roles:
-  - Captain
-  - ChiefEngineer
-  - ChiefMedicalOfficer
-  - HeadOfPersonnel
-  - HeadOfSecurity
-  - ResearchDirector
-  - Quartermaster
-  - CentralCommandOfficial
-  - CBURN
-  - ERTLeader
-  - ERTChaplain
-  - ERTJanitor
-  - ERTMedical
-  - ERTSecurity
-  - ERTEngineer
-  - DeathSquad
+    - Captain
+    - ChiefEngineer
+    - ChiefMedicalOfficer
+    - HeadOfPersonnel
+    - HeadOfSecurity
+    - ResearchDirector
+    - Quartermaster
+    - CentralCommandOfficial
+    - CBURN
+    - ERTLeader
+    - ERTChaplain
+    - ERTJanitor
+    - ERTMedical
+    - ERTSecurity
+    - ERTEngineer
+    - DeathSquad
   primary: false
   weight: 100
 
@@ -82,10 +82,10 @@
   description: department-Engineering-description
   color: "#EFB341"
   roles:
-  - AtmosphericTechnician
-  - ChiefEngineer
-  - StationEngineer
-  - TechnicalAssistant
+    - AtmosphericTechnician
+    - ChiefEngineer
+    - StationEngineer
+    - TechnicalAssistant
 
 - type: department
   id: Medical
@@ -93,12 +93,12 @@
   description: department-Medical-description
   color: "#52B4E9"
   roles:
-  - Chemist
-  - ChiefMedicalOfficer
-  - MedicalDoctor
-  - MedicalIntern
-  - Psychologist
-  - Paramedic
+    - Chemist
+    - ChiefMedicalOfficer
+    - MedicalDoctor
+    - MedicalIntern
+    - Psychologist
+    - Paramedic
 
 - type: department
   id: Security
@@ -107,11 +107,11 @@
   color: "#DE3A3A"
   weight: 20
   roles:
-  - HeadOfSecurity
-  - SecurityCadet
-  - SecurityOfficer
-  - Detective
-  - Warden
+    - HeadOfSecurity
+    - SecurityCadet
+    - SecurityOfficer
+    - Detective
+    - Warden
 
 - type: department
   id: Science
@@ -119,18 +119,9 @@
   description: department-Science-description
   color: "#D381C9"
   roles:
-  - ResearchDirector
-  - Scientist
-  - ResearchAssistant
-
-- type: department
-  id: Silicon
-  name: department-Silicon
-  description: department-Silicon-description
-  color: "#D381C9"
-  roles:
-  - Borg
-  - StationAi
+    - ResearchDirector
+    - Scientist
+    - ResearchAssistant
 
 - type: department
   id: Specific
@@ -139,8 +130,8 @@
   color: "#9FED58"
   weight: 10
   roles:
-  - Boxer
-  - Reporter
-  - Zookeeper
-  - Psychologist
+    - Boxer
+    - Reporter
+    - Zookeeper
+    - Psychologist
   primary: false

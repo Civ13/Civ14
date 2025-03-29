@@ -98,9 +98,6 @@
   - type: MobMover
   - type: Body
     prototype: Bot
-  - type: GuideHelp
-    guides:
-    - Robotics
   - type: Speech
     speechVerb: Robotic
     speechSounds: Pai #couldn't decide if this should be borg or pai sounds so I flipped a coin.

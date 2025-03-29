@@ -15,6 +15,8 @@
     - type: Construction
       graph: BoneShovel
       node: boneshovel
+      agemin: 0
+      agemax: 8
 
 - type: entity
   name: bone pickaxe
@@ -35,6 +37,8 @@
     - type: Construction
       graph: BonePickaxe
       node: bonepickaxe
+      agemin: 0
+      agemax: 8
 
 - type: entity
   name: bone knife
@@ -52,6 +56,8 @@
     - type: Construction
       graph: BoneKnife
       node: boneknife
+      agemin: 0
+      agemax: 8
     - type: Sprite
       sprite: Civ14/Objects/StoneAge/bone_knife.rsi
       size: 2
@@ -87,6 +93,8 @@
     - type: Construction
       graph: FlintAxe
       node: flintaxe
+      agemin: 0
+      agemax: 8
 
 - type: entity
   id: BoneAxe
@@ -115,6 +123,8 @@
     - type: Construction
       graph: BoneAxe
       node: boneaxe
+      agemin: 0
+      agemax: 8
 
 - type: entity
   parent: BaseItem
@@ -146,6 +156,8 @@
     - type: Construction
       graph: Plough
       node: plough
+      agemin: 0
+      agemax: 8
     - type: PloughTool
       delay: 8.0
 
@@ -182,3 +194,5 @@
     - type: Construction
       graph: WoodHammer
       node: woodhammer
+      agemin: 0
+      agemax: 8

@@ -14,11 +14,11 @@
         - state: teg
         - state: teg_mid
           shader: unshaded
-          map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+          map: ["enum.PowerDeviceVisualLayers.Powered"]
         - state: teg-op1
           shader: unshaded
           visible: false
-          map: [ "enum.TegVisualLayers.PowerOutput" ]
+          map: ["enum.TegVisualLayers.PowerOutput"]
     - type: GenericVisualizer
       visuals:
         enum.PowerDeviceVisuals.Powered:
@@ -45,11 +45,9 @@
     - type: NodeContainer
       examinable: true
       nodes:
-        output:
-          !type:CableDeviceNode
+        output: !type:CableDeviceNode
           nodeGroupID: HVPower
-        teg:
-          !type:TegNodeGenerator
+        teg: !type:TegNodeGenerator
           nodeGroupID: Teg
     - type: PowerMonitoringDevice
       group: Generator
@@ -96,10 +94,7 @@
       enabled: false
       sound:
         path: /Audio/Ambience/Objects/vending_machine_hum.ogg
-    - type: GuideHelp
-      guides:
-      - TEG
-      - Power
+
     - type: StealTarget
       stealGroup: Teg
 
@@ -119,10 +114,10 @@
       sprite: Structures/Power/Generation/teg.rsi
       layers:
         - state: circ-0
-          map: [ "enum.TegVisualLayers.CirculatorBase" ]
+          map: ["enum.TegVisualLayers.CirculatorBase"]
         - state: circ-0-light
           shader: unshaded
-          map: [ "enum.TegVisualLayers.CirculatorLight" ]
+          map: ["enum.TegVisualLayers.CirculatorLight"]
 
     - type: GenericVisualizer
       visuals:
@@ -157,26 +152,19 @@
     - type: Rotatable
     - type: Anchorable
     - type: Pullable
-    - type: GuideHelp
-      guides:
-      - TEG
-      - Power
 
     # functionality
     - type: NodeContainer
       nodes:
-        inlet:
-          !type:PipeNode
+        inlet: !type:PipeNode
           nodeGroupID: Pipe
           pipeDirection: North
           volume: 100
-        outlet:
-          !type:PipeNode
+        outlet: !type:PipeNode
           nodeGroupID: Pipe
           pipeDirection: South
           volume: 100
-        circulator:
-          !type:TegNodeCirculator
+        circulator: !type:TegNodeCirculator
           nodeGroupID: Teg
 
     - type: AtmosUnsafeUnanchor
@@ -188,7 +176,7 @@
 - # Spawned by the client-side circulator examine code to indicate the inlet/outlet direction.
   type: entity
   id: TegCirculatorArrow
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
     - type: Sprite
       sprite: Markers/teg_arrow.rsi

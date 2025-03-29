@@ -8,6 +8,8 @@
   description: A basic wood door. Flammable!
   icon: { sprite: Civ14/Structures/Doors/wood_door_classic.rsi, state: closed }
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCente
   canBuildInImpassable: false
   conditions:
@@ -23,6 +25,8 @@
   description: A rustic wood door. Flammable!
   icon: { sprite: Civ14/Structures/Doors/wood_door_rustic.rsi, state: closed }
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
@@ -40,6 +44,8 @@
     sprite: Civ14/Structures/windows.rsi
     state: straw_window
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
@@ -57,6 +63,8 @@
     sprite: Civ14/Structures/windows.rsi
     state: drysod_window
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
@@ -74,6 +82,8 @@
     sprite: Civ14/Structures/windows.rsi
     state: clay_windownew
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
@@ -91,6 +101,8 @@
     sprite: Civ14/Structures/windows.rsi
     state: log_window
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
