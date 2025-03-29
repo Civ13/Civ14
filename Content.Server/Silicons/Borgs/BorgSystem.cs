@@ -55,10 +55,6 @@ public sealed partial class BorgSystem : SharedBorgSystem
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
 
-
-    [ValidatePrototypeId<JobPrototype>]
-    public const string BorgJobId = "Borg";
-
     /// <inheritdoc/>
     public override void Initialize()
     {
@@ -317,9 +313,6 @@ public sealed partial class BorgSystem : SharedBorgSystem
     /// </summary>
     public bool CanPlayerBeBorged(ICommonSession session)
     {
-        if (_banManager.GetJobBans(session.UserId)?.Contains(BorgJobId) == true)
-            return false;
-
         return true;
     }
 }

@@ -289,9 +289,6 @@
       sprite: /Textures/Objects/Misc/monkeycube.rsi
       state: cube
       color: "#8A9A5B"
-    - type: GuideHelp
-      guides:
-        - Cloning
 
 - type: entity
   parent: MaterialBiomass
@@ -556,6 +553,51 @@
   components:
     - type: Sprite
       state: bananium
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialCopper
+  name: copper
+  suffix: Full
+  components:
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        Copper: 100
+    - type: Sprite
+      state: copper
+      layers:
+        - state: copper
+          map: ["base"]
+    - type: Stack
+      stackType: Copper
+      count: 10
+      baseLayer: base
+      layerStates:
+        - copper
+        - copper_2
+        - copper_3
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 10
+          reagents:
+            - ReagentId: Copper
+              Quantity: 10
+    - type: Appearance
+    - type: Item
+      heldPrefix: copper
+
+- type: entity
+  parent: MaterialCopper
+  id: MaterialCopper1
+  suffix: Single
+  components:
+    - type: Sprite
+      sprite: Objects/Materials/ingots.rsi
+      state: copper
     - type: Stack
       count: 1
 

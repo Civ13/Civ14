@@ -4,13 +4,13 @@
   id: MobCivilian
   description: A miserable pile of secrets.
   components:
-  - type: InputMover
-  - type: MobMover
-  - type: Loadout
-    prototypes: [LimitedPassengerGear]
-  - type: NpcFactionMember
-    factions:
-    - NanoTrasen
+    - type: InputMover
+    - type: MobMover
+    - type: Loadout
+      prototypes: [LimitedPassengerGear]
+    - type: NpcFactionMember
+      factions:
+        - NanoTrasen
 
 - type: entity
   name: salvager
@@ -28,24 +28,6 @@
     - type: HTN
       rootTask:
         task: SimpleHumanoidHostileCompound
-
-- type: entity
-  name: spirate
-  parent: BaseMobHuman
-  id: MobSpirate
-  description: Yarr!
-  components:
-  - type: NpcFactionMember
-    factions:
-      - Syndicate
-  - type: Loadout
-    prototypes:
-      - PirateGear
-  - type: InputMover
-  - type: MobMover
-  - type: HTN
-    rootTask:
-      task: SimpleHumanoidHostileCompound
 
 - type: entity
   name: syndicate footsoldier
@@ -77,17 +59,17 @@
   name: unidentified corpse
   description: I think they're dead.
   components:
-  - type: RandomHumanoidAppearance
-    randomizeName: false
-  - type: Damageable
-    damage:
-      types:
-        Bloodloss: 49
-        Asphyxiation: 76
-        Slash: 56
-        Blunt: 19
-  - type: Inventory
-    templateId: corpse
+    - type: RandomHumanoidAppearance
+      randomizeName: false
+    - type: Damageable
+      damage:
+        types:
+          Bloodloss: 49
+          Asphyxiation: 76
+          Slash: 56
+          Blunt: 19
+    - type: Inventory
+      templateId: corpse
 
 - type: entity
   parent: MobHuman
@@ -95,6 +77,6 @@
   name: person
   description: A polymorphed unfortunate.
   components:
-  - type: Cluwne
-  - type: Speech
-    speechVerb: Cluwne
+    - type: Cluwne
+    - type: Speech
+      speechVerb: Cluwne

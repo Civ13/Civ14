@@ -6,6 +6,8 @@ materials-reinforced-plasma-glass = reinforced plasma glass
 
 # Metals
 materials-steel = steel
+materials-brass = brass
+materials-iron = iron
 materials-gold = gold
 materials-silver = silver
 materials-plasteel = plasteel
@@ -35,6 +37,7 @@ materials-raw-gold = raw gold
 materials-raw-silver = raw silver
 materials-raw-plasma = raw plasma
 materials-raw-uranium = raw uranium
+materials-raw-copper = raw copper
 materials-raw-bananium = raw bananium
 materials-raw-salt = raw salt
 materials-raw-diamond = raw diamond

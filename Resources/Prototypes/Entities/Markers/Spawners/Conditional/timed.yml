@@ -12,7 +12,6 @@
     - type: Timer
     - type: TimedSpawner
       prototypes:
-        - MobSpirate
         - MobCivilian
       chance: 0.75
       intervalSeconds: 60
@@ -26,14 +25,14 @@
   components:
     - type: Sprite
       layers:
-      - state: blue
-      - sprite: Mobs/Aliens/Xenos/burrower.rsi
-        state: crit
-      - state: ai
+        - state: blue
+        - sprite: Mobs/Aliens/Xenos/burrower.rsi
+          state: crit
+        - state: ai
     - type: Timer
     - type: TimedSpawner
       prototypes:
-      - MobXeno
+        - MobXeno
       chance: 0.85
       intervalSeconds: 30
       minimumEntitiesSpawned: 2
