@@ -2113,9 +2113,9 @@
   description: A pin displaying the symbol of the NSDAP
   components:
     - type: Sprite
-      sprite: Civ14/Clothing/exported/badges/NSDAP.rsi
+      sprite: Civ14/Clothing/exported/badges/nsdap.rsi
     - type: Clothing
-      sprite: Civ14/Clothing/exported/badges/NSDAP.rsi
+      sprite: Civ14/Clothing/exported/badges/nsdap.rsi
     - type: Armor
       modifiers:
         coefficients:
