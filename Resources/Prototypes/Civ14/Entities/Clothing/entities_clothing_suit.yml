@@ -216,6 +216,9 @@
       sprite: Civ14/Clothing/exported/suits/prehistoric_fur2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/prehistoric_fur2.rsi
+    - type: TemperatureProtection
+      heatingCoefficient: 1.05
+      coolingCoefficient: 0.7
     - type: Armor
       modifiers:
         coefficients:
@@ -2030,6 +2033,9 @@
       sprite: Civ14/Clothing/exported/suits/prehistoric_fur1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/prehistoric_fur1.rsi
+    - type: TemperatureProtection
+      heatingCoefficient: 1.05
+      coolingCoefficient: 0.7
     - type: Armor
       modifiers:
         coefficients:
@@ -2057,6 +2063,9 @@
       sprite: Civ14/Clothing/exported/suits/prehistoric_fur3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/prehistoric_fur3.rsi
+    - type: TemperatureProtection
+      heatingCoefficient: 1.05
+      coolingCoefficient: 0.7
     - type: Armor
       modifiers:
         coefficients:
@@ -2084,6 +2093,9 @@
       sprite: Civ14/Clothing/exported/suits/prehistoric_fur4.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/prehistoric_fur4.rsi
+    - type: TemperatureProtection
+      heatingCoefficient: 1.05
+      coolingCoefficient: 0.7
     - type: Armor
       modifiers:
         coefficients:
@@ -5969,6 +5981,9 @@
       sprite: Civ14/Clothing/exported/suits/prehistoric_fur1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/prehistoric_fur1.rsi
+    - type: TemperatureProtection
+      heatingCoefficient: 1.05
+      coolingCoefficient: 0.7
     - type: Armor
       modifiers:
         coefficients:

@@ -46,3 +46,11 @@
   icon: { sprite: Objects/Materials/ingots.rsi, state: sheet-iron }
   color: "#792F2F"
   price: 0.10
+
+- type: material
+  id: Copper
+  stackEntity: IngotCopper1
+  name: materials-copper
+  icon: { sprite: Objects/Materials/ingots.rsi, state: copper }
+  color: "#B87333"
+  price: 0.05

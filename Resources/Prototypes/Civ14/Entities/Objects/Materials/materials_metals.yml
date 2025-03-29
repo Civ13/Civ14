@@ -48,3 +48,48 @@
   icon: { sprite: /Textures/Objects/Materials/ingots.rsi, state: sheet-iron }
   spawn: IngotIron1
   maxCount: 30
+
+- type: entity
+  parent: IngotBase
+  id: IngotCopper
+  name: copper bar
+  suffix: Full
+  components:
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        Copper: 100
+    - type: Stack
+      stackType: Copper
+      baseLayer: base
+      layerStates:
+        - copper
+        - copper_2
+        - copper_3
+    - type: Sprite
+      state: copper_3
+      layers:
+        - state: copper_3
+          map: ["base"]
+    - type: Item
+      heldPrefix: copper
+    - type: Appearance
+    - type: Extractable
+      grindableSolutionName: copper
+    - type: SolutionContainerManager
+      solutions:
+        iron:
+          reagents:
+            - ReagentId: Copper
+              Quantity: 10
+
+- type: entity
+  parent: IngotCopper
+  id: IngotCopper1
+  name: copper bar
+  suffix: Single
+  components:
+    - type: Sprite
+      state: copper
+    - type: Stack
+      count: 1
