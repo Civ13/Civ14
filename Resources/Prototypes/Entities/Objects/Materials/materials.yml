@@ -557,6 +557,17 @@
       count: 1
 
 - type: entity
+  parent: MaterialCopper
+  id: MaterialCopper1
+  suffix: Single
+  components:
+    - type: Sprite
+      sprite: Objects/Materials/ingots.rsi
+      state: copper
+    - type: Stack
+      count: 1
+
+- type: entity
   parent: MaterialBase
   id: MaterialWebSilk
   name: silk
