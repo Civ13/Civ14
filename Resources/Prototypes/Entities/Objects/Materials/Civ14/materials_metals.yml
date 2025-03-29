@@ -1,0 +1,44 @@
+- type: entity
+  parent: IngotBase
+  id: IngotIron
+  name: iron bar
+  suffix: Full
+  components:
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        Iron: 100
+    - type: Stack
+      stackType: Iron
+      baseLayer: base
+      layerStates:
+        - sheet-iron
+        - sheet-iron_2
+        - sheet-iron_3
+    - type: Sprite
+      state: sheet-iron_3
+      layers:
+        - state: sheet-iron_3
+          map: ["base"]
+    - type: Item
+      heldPrefix: iron
+    - type: Appearance
+    - type: Extractable
+      grindableSolutionName: iron
+    - type: SolutionContainerManager
+      solutions:
+        iron:
+          reagents:
+            - ReagentId: Iron
+              Quantity: 10
+
+- type: entity
+  parent: IngotIron
+  id: IngotIron1
+  name: iron bar
+  suffix: Single
+  components:
+    - type: Sprite
+      state: sheet-iron
+    - type: Stack
+      count: 1
