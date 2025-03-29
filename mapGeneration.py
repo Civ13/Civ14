@@ -356,7 +356,13 @@ def generate_main_entities(tile_map, chunk_size=16, decals_by_id=None):
                     {"type": "GridTree"},
                     {"type": "MovedGrids"},
                     {"type": "Broadphase"},
-                    {"type": "OccluderTree"}
+                    {"type": "OccluderTree"},
+                    {"type": "MapAtmosphere", "space": False, "mixture": {
+                    "volume": 2500,
+                    "immutable": True,
+                    "temperature": 300,
+                    "moles": [21.82, 82.1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                }}
                 ]
             },
             {
@@ -387,17 +393,18 @@ def generate_main_entities(tile_map, chunk_size=16, decals_by_id=None):
                     },
                     {"type": "BecomesStation", "id": "Nomads"},
                     {"type": "Weather"},
-                    {"type": "WeatherNomads", "weatherPrototype": "SnowfallHeavy", "interval": 15},
+                    {"type": "WeatherNomads", 
+                        "enabledWeathers": [
+                            "Rain",
+                            "Storm",
+                            "SnowfallLight",
+                            "SnowfallMedium",
+                            "SnowfallHeavy"
+                            ],
+                        "minSeasonMinutes": 10,
+                        "maxSeasonMinutes": 30,
+                        },
                     {"type": "DecalGrid", "chunkCollection": {"version": 2, "nodes": decal_nodes}},
-                    {
-                        "type": "GridAtmosphere",
-                        "version": 2,
-                        "data": {
-                            "tiles": atmosphere_tiles,
-                            "uniqueMixes": unique_mixes,
-                            "chunkSize": atmosphere_chunk_size
-                        }
-                    },
                     {"type": "GasTileOverlay"},
                     {"type": "RadiationGridResistance"}
                 ]
