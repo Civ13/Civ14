@@ -703,61 +703,12 @@
       node: end
       cost: 3
       time: 10
+
 - type: entity
-  name: indian accessories
-  parent: ClothingNeckBase
-  id: civ13_accessory_indian_accessories
-  description: red face paint and indian necklaces.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/ties/indian1.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/ties/indian1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_accessory_indian_accessories
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
-- type: entity
-  name: indian accessories
-  parent: ClothingNeckBase
-  id: civ13_accessory_indian_accessories_1
-  description: gold indian necklaces.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/ties/indian2.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/ties/indian2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
-    - type: Construction
-      graph: civ13_accessory_indian_accessories_1
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
-- type: entity
-  name: indian accessories
+  name: gold native necklace
   parent: ClothingNeckBase
   id: civ13_accessory_indian_accessories_1_2
-  description: gold indian necklaces.
+  description: gold native necklaces.
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/indian2.rsi
@@ -829,7 +780,7 @@
       material: Cloth
       time: 5
 - type: entity
-  name: green indian acessories
+  name: green native bodypaint
   parent: ClothingNeckBase
   id: civ13_accessory_green_indian_acessories
   description: green face paint and indian necklaces.
@@ -854,7 +805,7 @@
       material: Cloth
       time: 5
 - type: entity
-  name: blue indian acessories
+  name: blue native bodypaint
   parent: ClothingNeckBase
   id: civ13_accessory_blue_indian_acessories
   description: blue face paint and indian necklaces.
@@ -879,7 +830,7 @@
       material: Cloth
       time: 5
 - type: entity
-  name: yellow indian acessories
+  name: yellow native bodypaint
   parent: ClothingNeckBase
   id: civ13_accessory_yellow_indian_acessories
   description: yellow face paint and indian necklaces.
@@ -904,7 +855,7 @@
       material: Cloth
       time: 5
 - type: entity
-  name: white indian acessories
+  name: white native bodypaint
   parent: ClothingNeckBase
   id: civ13_accessory_white_indian_acessories
   description: white face paint and indian necklaces.
@@ -929,7 +880,7 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black indian acessories
+  name: black native bodypaint
   parent: ClothingNeckBase
   id: civ13_accessory_black_indian_acessories
   description: black face paint and indian necklaces.

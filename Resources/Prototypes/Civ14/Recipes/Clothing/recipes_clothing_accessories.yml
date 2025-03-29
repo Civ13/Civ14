@@ -788,64 +788,9 @@
               doAfter: 10
     - node: end
       entity: civ13_accessory_spiked_bracers
-- type: construction
-  name: indian accessories
-  id: civ13_accessory_indian_accessories
-  graph: civ13_accessory_indian_accessories
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: red face paint and indian necklaces.
-  icon:
-    sprite: Civ14/Clothing/exported/ties/indian1.rsi
-    state: icon
-  objectType: Item
-  agemin: 8
-  agemax: 8
 
-- type: constructionGraph
-  id: civ13_accessory_indian_accessories
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_indian_accessories
 - type: construction
-  name: indian accessories
-  id: civ13_accessory_indian_accessories_1
-  graph: civ13_accessory_indian_accessories_1
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: gold indian necklaces.
-  icon:
-    sprite: Civ14/Clothing/exported/ties/indian2.rsi
-    state: icon
-  objectType: Item
-  agemin: 8
-  agemax: 8
-
-- type: constructionGraph
-  id: civ13_accessory_indian_accessories_1
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_indian_accessories_1
-- type: construction
-  name: indian accessories
+  name: gold native accessories
   id: civ13_accessory_indian_accessories_1_2
   graph: civ13_accessory_indian_accessories_1_2
   startNode: start
@@ -856,8 +801,8 @@
     sprite: Civ14/Clothing/exported/ties/indian2.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 0
+  agemax: 2
 
 - type: constructionGraph
   id: civ13_accessory_indian_accessories_1_2
@@ -867,8 +812,8 @@
       edges:
         - to: end
           steps:
-            - material: Cloth
-              amount: 5
+            - material: Leather
+              amount: 1
               doAfter: 5
     - node: end
       entity: civ13_accessory_indian_accessories_1_2
@@ -884,8 +829,8 @@
     sprite: Civ14/Clothing/exported/ties/indianshaman.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 0
+  agemax: 2
 
 - type: constructionGraph
   id: civ13_accessory_indian_shaman_bodypaint
@@ -895,13 +840,13 @@
       edges:
         - to: end
           steps:
-            - material: Cloth
-              amount: 5
+            - material: Leather
+              amount: 1
               doAfter: 5
     - node: end
       entity: civ13_accessory_indian_shaman_bodypaint
 - type: construction
-  name: red indian acessories
+  name: red native bodypaint
   id: civ13_accessory_red_indian_acessories
   graph: civ13_accessory_red_indian_acessories
   startNode: start
@@ -912,8 +857,8 @@
     sprite: Civ14/Clothing/exported/ties/indianr.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 0
+  agemax: 2
 
 - type: constructionGraph
   id: civ13_accessory_red_indian_acessories
@@ -923,13 +868,13 @@
       edges:
         - to: end
           steps:
-            - material: Cloth
-              amount: 5
+            - material: Leather
+              amount: 1
               doAfter: 5
     - node: end
       entity: civ13_accessory_red_indian_acessories
 - type: construction
-  name: green indian acessories
+  name: green native bodypaint
   id: civ13_accessory_green_indian_acessories
   graph: civ13_accessory_green_indian_acessories
   startNode: start
@@ -940,8 +885,8 @@
     sprite: Civ14/Clothing/exported/ties/indiang.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 0
+  agemax: 2
 
 - type: constructionGraph
   id: civ13_accessory_green_indian_acessories
@@ -951,13 +896,13 @@
       edges:
         - to: end
           steps:
-            - material: Cloth
-              amount: 5
+            - material: Leather
+              amount: 1
               doAfter: 5
     - node: end
       entity: civ13_accessory_green_indian_acessories
 - type: construction
-  name: blue indian acessories
+  name: blue native bodypaint
   id: civ13_accessory_blue_indian_acessories
   graph: civ13_accessory_blue_indian_acessories
   startNode: start
@@ -968,8 +913,8 @@
     sprite: Civ14/Clothing/exported/ties/indianb.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 0
+  agemax: 2
 
 - type: constructionGraph
   id: civ13_accessory_blue_indian_acessories
@@ -979,13 +924,13 @@
       edges:
         - to: end
           steps:
-            - material: Cloth
-              amount: 5
+            - material: Leather
+              amount: 1
               doAfter: 5
     - node: end
       entity: civ13_accessory_blue_indian_acessories
 - type: construction
-  name: yellow indian acessories
+  name: yellow native bodypaint
   id: civ13_accessory_yellow_indian_acessories
   graph: civ13_accessory_yellow_indian_acessories
   startNode: start
@@ -996,8 +941,8 @@
     sprite: Civ14/Clothing/exported/ties/indiany.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 0
+  agemax: 2
 
 - type: constructionGraph
   id: civ13_accessory_yellow_indian_acessories
@@ -1007,13 +952,13 @@
       edges:
         - to: end
           steps:
-            - material: Cloth
-              amount: 5
+            - material: Leather
+              amount: 1
               doAfter: 5
     - node: end
       entity: civ13_accessory_yellow_indian_acessories
 - type: construction
-  name: white indian acessories
+  name: white native bodypaint
   id: civ13_accessory_white_indian_acessories
   graph: civ13_accessory_white_indian_acessories
   startNode: start
@@ -1024,8 +969,8 @@
     sprite: Civ14/Clothing/exported/ties/indianw.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 0
+  agemax: 2
 
 - type: constructionGraph
   id: civ13_accessory_white_indian_acessories
@@ -1035,13 +980,13 @@
       edges:
         - to: end
           steps:
-            - material: Cloth
-              amount: 5
+            - material: Leather
+              amount: 1
               doAfter: 5
     - node: end
       entity: civ13_accessory_white_indian_acessories
 - type: construction
-  name: black indian acessories
+  name: black native bodypaint
   id: civ13_accessory_black_indian_acessories
   graph: civ13_accessory_black_indian_acessories
   startNode: start
@@ -1052,8 +997,8 @@
     sprite: Civ14/Clothing/exported/ties/indianbl.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 0
+  agemax: 2
 
 - type: constructionGraph
   id: civ13_accessory_black_indian_acessories
@@ -1063,8 +1008,8 @@
       edges:
         - to: end
           steps:
-            - material: Cloth
-              amount: 5
+            - material: Leather
+              amount: 1
               doAfter: 5
     - node: end
       entity: civ13_accessory_black_indian_acessories
