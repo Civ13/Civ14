@@ -308,10 +308,39 @@
   components:
     - type: Stack
       count: 1
+- type: entity
+  parent: OreBase
+  id: CopperOre
+  name: copper ore
+  suffix: Full
+  components:
+    - type: Stack
+      stackType: CopperOre
+    - type: Sprite
+      state: gold
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        RawCopper: 100
+    - type: PointLight
+      radius: 1.2
+      energy: 1
+      castShadows: false
+      color: "#eef066"
+    - type: Extractable
+      grindableSolutionName: copperore
+    - type: SolutionContainerManager
+      solutions:
+        copperore:
+          reagents:
+            - ReagentId: Copper
+              Quantity: 10
+    - type: Item
+      heldPrefix: copper
 
 - type: entity
   parent: CopperOre
-  id: CopperOOre1
+  id: CopperOre1
   suffix: Single
   components:
     - type: Stack
