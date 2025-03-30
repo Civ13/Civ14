@@ -1,11 +1,11 @@
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Weather;
 using Content.Shared.Atmos;
-using Content.Shared.Light.Components; // Adicionado para ExpendableLightComponent
-using Content.Server.Light.Components; // Adicionado para ExpendableLightComponent
+using Content.Shared.Light.Components;
+using Content.Server.Light.Components;
 using Robust.Shared.Map;
-using Robust.Shared.Map.Components; // Para MapGridComponent
-using Robust.Shared.Maths; // Para Vector2i
+using Robust.Shared.Map.Components;
+using Robust.Shared.Maths;
 using Robust.Shared.Timing;
 using Content.Server.Atmos.Components;
 using Robust.Server.GameObjects;
@@ -70,8 +70,6 @@ public sealed class HeatEmitterSystem : EntitySystem
                     var heatCapacity = _atmosphere.GetHeatCapacity(tileMixture, true); // Heat capacity in J/K
                     var deltaT = heater.HeatingRate * deltaTime;
                     var dQ = heatCapacity * deltaT; // Heat in Joules
-
-                    Log.Debug($"Adicionando {dQ} Joules ao tile {tileIndices} para aumentar a temperatura em {deltaT} K");
 
                     _atmosphere.AddHeat(tileMixture, dQ);
 
