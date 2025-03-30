@@ -47,7 +47,6 @@ public sealed class HeatEmitterSystem : EntitySystem
         {
             if (!TryComp<PointLightComponent>(uid, out var pointLight) || !pointLight.Enabled)
             {
-                Log.Debug($"Tocha {uid} não tem PointLightComponent ou ele está desativado.");
                 continue;
             }
 
@@ -59,35 +58,24 @@ public sealed class HeatEmitterSystem : EntitySystem
             var position = transform.Coordinates;
             var tileIndices = grid.WorldToTile(position.Position);
 
-            // Obter a mistura de gases do tile onde a tocha está
-            //var tileMixture = _atmosphere.GetTileMixture(gridUid.Value, transform.MapUid, tileIndices);
             var tileMixture = _atmosphere.GetContainingMixture(uid, true);
 
             if (tileMixture != null && tileMixture.Temperature != null)
             {
                 var currentTemp = tileMixture.Temperature;
-                Log.Debug($"Tile {tileIndices} - Temperatura atual: {currentTemp}");
 
                 // Apply heat only while temp is less than 30 celsius. Less load for the update (303.15 K)
                 if (currentTemp < heater.MaxTemperature)
                 {
-                    var heatCapacity = _atmosphere.GetHeatCapacity(tileMixture, true); // Capacidade térmica em J/K
-                    var deltaT = heater.HeatingRate * deltaTime; // Variação desejada de temperatura em K
-                    var dQ = heatCapacity * deltaT; // Calor em Joules
+                    var heatCapacity = _atmosphere.GetHeatCapacity(tileMixture, true); // Heat capacity in J/K
+                    var deltaT = heater.HeatingRate * deltaTime;
+                    var dQ = heatCapacity * deltaT; // Heat in Joules
 
                     Log.Debug($"Adicionando {dQ} Joules ao tile {tileIndices} para aumentar a temperatura em {deltaT} K");
 
                     _atmosphere.AddHeat(tileMixture, dQ);
 
                 }
-                else
-                {
-                    Log.Debug($"Tile {tileIndices} já está acima de 30°C ({currentTemp} K), aquecimento não aplicado.");
-                }
-            }
-            else
-            {
-                Log.Debug($"Nenhuma mistura de gases encontrada para tile {tileIndices}.");
             }
         }
     }
