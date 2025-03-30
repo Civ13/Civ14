@@ -977,7 +977,7 @@ start_time = time.time()
 seed_base = random.randint(0, 1000000)
 print(f"Seed base gerado: {seed_base}")
 
-width, height = 100, 100
+width, height = 500, 500
 chunk_size = 16
 
 biome_tile_layers = [layer for layer in MAP_CONFIG if layer["type"] == "BiomeTileLayer"]
