@@ -46,6 +46,9 @@
     - type: IgnitionSource
       temperature: 400
       ignited: false
+    - type: HeatEmitter
+      heatingRate: 10 # Heating rate in K/s
+      radius: 1 # Radius in tiles
     - type: LightBehaviour
       behaviours:
         - !type:RandomizeBehaviour # immediately make it bright and flickery
