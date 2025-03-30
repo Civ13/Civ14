@@ -20,7 +20,7 @@ import os
 TILEMAP = {
     0: "Space",
     1: "FloorDirt",
-    2: "FloorGrass",
+    2: "FloorPlanetGrass",
     3: "FloorGrassDark",
     4: "FloorSand",
     5: "FloorDirtRock",
