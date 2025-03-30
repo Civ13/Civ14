@@ -42,8 +42,8 @@ public sealed class HeatEmitterSystem : EntitySystem
         var deltaTime = currentTime - _lastUpdateTime;
         _lastUpdateTime = currentTime;
 
-        var query = EntityQueryEnumerator<HeatEmitterComponent, ExpendableLightComponent, TransformComponent>();
-        while (query.MoveNext(out var uid, out var heater, out var light, out var transform))
+        var query = EntityQueryEnumerator<HeatEmitterComponent, TransformComponent>();
+        while (query.MoveNext(out var uid, out var heater, out var transform))
         {
             if (!TryComp<PointLightComponent>(uid, out var pointLight) || !pointLight.Enabled)
             {
@@ -68,24 +68,17 @@ public sealed class HeatEmitterSystem : EntitySystem
                 var currentTemp = tileMixture.Temperature;
                 Log.Debug($"Tile {tileIndices} - Temperatura atual: {currentTemp}");
 
-                // Aplicar aquecimento apenas se a temperatura for menor que 30°C (303.15 K)
-                if (currentTemp < 303.15f)
+                // Apply heat only while temp is less than 30 celsius. Less load for the update (303.15 K)
+                if (currentTemp < heater.MaxTemperature)
                 {
-                    // Calcular a quantidade de calor a ser adicionada
                     var heatCapacity = _atmosphere.GetHeatCapacity(tileMixture, true); // Capacidade térmica em J/K
                     var deltaT = heater.HeatingRate * deltaTime; // Variação desejada de temperatura em K
                     var dQ = heatCapacity * deltaT; // Calor em Joules
 
                     Log.Debug($"Adicionando {dQ} Joules ao tile {tileIndices} para aumentar a temperatura em {deltaT} K");
 
-                    // Adicionar o calor usando AddHeat
                     _atmosphere.AddHeat(tileMixture, dQ);
 
-                    // Invalidar o tile para o sistema atmosférico processar, se necessário
-                    //if (TryComp<GridAtmosphereComponent>(gridUid.Value, out var gridAtmos))
-                    //{
-                    //    gridAtmos.InvalidatedCoords.Add(tileIndices);
-                    //}
                 }
                 else
                 {

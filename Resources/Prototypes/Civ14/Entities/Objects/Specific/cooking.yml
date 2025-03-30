@@ -75,6 +75,8 @@
       radius: 4
       energy: 3
       color: "#E25822"
+    - type: HeatEmitter
+      heatingRate: 10
     - type: GenericVisualizer
       visuals:
         enum.PowerDeviceVisuals.VisualState:
