@@ -3102,7 +3102,7 @@
           Blunt: 0.30
           Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.098
+          Arrow: 0.1
           Heat: 0.85
     - type: Construction
 
@@ -3127,7 +3127,7 @@
           Blunt: 0.30
           Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.098
+          Arrow: 0.1
           Heat: 0.85
     - type: Construction
 
@@ -3431,7 +3431,7 @@
           Blunt: 0.30
           Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.098
+          Arrow: 0.1
           Heat: 0.85
     - type: Construction
 
@@ -3483,7 +3483,7 @@
           Blunt: 0.30
           Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.098
+          Arrow: 0.1
           Heat: 0.85
     - type: Construction
 
@@ -3510,7 +3510,7 @@
           Blunt: 0.30
           Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.098
+          Arrow: 0.1
           Heat: 0.85
     - type: Construction
 
@@ -3537,7 +3537,7 @@
           Blunt: 0.30
           Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.098
+          Arrow: 0.1
           Heat: 0.85
     - type: Construction
 
@@ -3564,7 +3564,7 @@
           Blunt: 0.30
           Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.098
+          Arrow: 0.1
           Heat: 0.85
     - type: Construction
 
@@ -3592,7 +3592,7 @@
           Blunt: 0.30
           Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.098
+          Arrow: 0.1
           Heat: 0.85
     - type: Construction
 
@@ -3777,7 +3777,7 @@
           Blunt: 0.30
           Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.098
+          Arrow: 0.1
           Heat: 0.85
     - type: Construction
 
@@ -3831,7 +3831,7 @@
           Blunt: 0.30
           Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.098
+          Arrow: 0.1
           Heat: 0.85
     - type: Construction
 
@@ -3858,7 +3858,7 @@
           Blunt: 0.30
           Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.098
+          Arrow: 0.1
           Heat: 0.85
     - type: Construction
 
@@ -3883,7 +3883,7 @@
           Blunt: 0.30
           Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.098
+          Arrow: 0.1
           Heat: 0.85
     - type: Construction
 
@@ -3910,7 +3910,7 @@
           Blunt: 0.30
           Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.098
+          Arrow: 0.1
           Heat: 0.85
     - type: Construction
 
@@ -4503,7 +4503,7 @@
           Blunt: 0.19
           Slash: 0.19
           Piercing: 0.7
-          Arrow: 0.098
+          Arrow: 0.1
           Heat: 0.8
           Radiation: 0.55
     - type: Construction
@@ -4552,7 +4552,7 @@
         coefficients:
           Blunt: 0.19
           Slash: 0.19
-          Arrow: 0.098
+          Arrow: 0.1
           Radiation: 0.9
     - type: Construction
 
