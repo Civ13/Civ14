@@ -38,6 +38,8 @@
     - type: Construction
       graph: TableWoodClassic
       node: end
+      agemin: 0
+      agemax: 8
     - type: Tag
       tags:
         - Wooden

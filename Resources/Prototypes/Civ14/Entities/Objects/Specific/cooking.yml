@@ -56,6 +56,8 @@
         inputContainer: !type:Container
     - type: Construction
       node: end
+      agemin: 0
+      agemax: 8
 
 - type: entity
   id: KitchenCampfire
@@ -137,3 +139,5 @@
         - FoodRecipes
     - type: Construction
       node: end
+      agemin: 0
+      agemax: 8

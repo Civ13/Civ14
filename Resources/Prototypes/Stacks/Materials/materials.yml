@@ -62,6 +62,13 @@
   maxCount: 10
 
 - type: stack
+  id: Copper
+  name: copper
+  icon: { sprite: /Textures/Objects/Materials/ingots.rsi, state: copper }
+  spawn: MaterialCopper1
+  maxCount: 10
+
+- type: stack
   id: MeatSheets
   name: meat sheet
   icon: { sprite: /Textures/Objects/Materials/Sheets/meaterial.rsi, state: meat }
