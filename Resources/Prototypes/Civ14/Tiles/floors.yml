@@ -113,7 +113,7 @@
 
 - type: entity
   id: FloorThatch
-  parent: BaseStructure
+  parent: FloorWoodClassic
   name: thatch floor
   description: "A floor made of compressed dried straw."
   components:
