@@ -13,12 +13,12 @@
         - Wooden
         - Wall
     - type: Sprite
-      sprite: Civ14/Structures/walls.rsi
-      layers:
-        - state: straw_wallB1
+      sprite: Civ14/Structures/Walls/straw.rsi
     - type: Icon
-      sprite: Civ14/Structures/walls.rsi
-      state: straw_wallB1
+      sprite: Civ14/Structures/Walls/straw.rsi
+    - type: IconSmooth
+      key: walls
+      base: straw
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
