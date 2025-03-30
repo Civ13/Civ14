@@ -22,7 +22,7 @@ TILEMAP = {
     1: "FloorDirt",
     2: "FloorGrass",
     3: "FloorGrassDark",
-    4: "FloorAsteroidSand",
+    4: "FloorSand",
     5: "FloorDirtRock",
 }
 TILEMAP_REVERSE = {v: k for k, v in TILEMAP.items()}
