@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by Valithor for Space Station 14",
+    "size": {
+    "x": 32,
+    "y": 32
+    },
+    "states": [
+    {
+        "name": "full"
+    },
+    {
+        "name": "straw0",
+        "directions": 4
+    },
+    {
+        "name": "straw1",
+        "directions": 4
+    },
+    {
+        "name": "straw2",
+        "directions": 4
+    },
+    {
+        "name": "straw3",
+        "directions": 4
+    },
+    {
+        "name": "straw4",
+        "directions": 4
+    },
+    {
+        "name": "straw5",
+        "directions": 4
+    },
+    {
+        "name": "straw6",
+        "directions": 4
+    },
+    {
+        "name": "straw7",
+        "directions": 4
+    }
+    ]
+}

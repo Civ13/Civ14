@@ -11,12 +11,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_gloves
       node: end
@@ -27,7 +27,7 @@
   name: white fur gloves
   parent: ClothingHandsBase
   id: civ13_gloves_white_fur_gloves
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/whitefur.rsi
@@ -36,12 +36,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_white_fur_gloves
       node: end
@@ -52,7 +52,7 @@
   name: orange gloves
   parent: ClothingHandsBase
   id: civ13_gloves_orange_gloves
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/orange.rsi
@@ -61,12 +61,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_orange_gloves
       node: end
@@ -77,7 +77,7 @@
   name: goalkeeper gloves
   parent: ClothingHandsBase
   id: civ13_gloves_goalkeeper_gloves
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/latex.rsi
@@ -86,12 +86,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_goalkeeper_gloves
       node: end
@@ -102,7 +102,7 @@
   name: goalkeeper gloves
   parent: ClothingHandsBase
   id: civ13_gloves_goalkeeper_gloves_1
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/latex.rsi
@@ -111,12 +111,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_goalkeeper_gloves_1
       node: end
@@ -127,7 +127,7 @@
   name: purple gloves
   parent: ClothingHandsBase
   id: civ13_gloves_purple_gloves
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/purple.rsi
@@ -136,12 +136,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_purple_gloves
       node: end
@@ -152,7 +152,7 @@
   name: grey fur gloves
   parent: ClothingHandsBase
   id: civ13_gloves_grey_fur_gloves
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/greyfur.rsi
@@ -161,12 +161,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_grey_fur_gloves
       node: end
@@ -177,7 +177,7 @@
   name: light brown gloves
   parent: ClothingHandsBase
   id: civ13_gloves_light_brown_gloves
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/lightbrown.rsi
@@ -186,12 +186,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_light_brown_gloves
       node: end
@@ -202,7 +202,7 @@
   name: brown fur gloves
   parent: ClothingHandsBase
   id: civ13_gloves_brown_fur_gloves
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/brownfur.rsi
@@ -211,12 +211,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_brown_fur_gloves
       node: end
@@ -236,12 +236,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_red_leather_gloves
       node: end
@@ -261,12 +261,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_pink_colored_gloves
       node: end
@@ -286,12 +286,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_watch
       node: end
@@ -311,12 +311,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_expensive_watch
       node: end
@@ -336,12 +336,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_gold_watch
       node: end
@@ -361,12 +361,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_silver_ring
       node: end
@@ -386,12 +386,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_captains_gloves
       node: end
@@ -411,12 +411,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_black_gloves
       node: end
@@ -436,12 +436,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_leather_gloves
       node: end
@@ -452,7 +452,7 @@
   name: black fur gloves
   parent: ClothingHandsBase
   id: civ13_gloves_black_fur_gloves
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/blackfur.rsi
@@ -461,12 +461,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_black_fur_gloves
       node: end
@@ -486,12 +486,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_human_skin_gloves
       node: end
@@ -526,7 +526,7 @@
   name: fire-resistant gloves
   parent: ClothingHandsBase
   id: civ13_gloves_fire_resistant_gloves
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/firefighter.rsi
@@ -535,12 +535,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_fire_resistant_gloves
       node: end
@@ -560,12 +560,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_combat_gloves
       node: end
@@ -585,12 +585,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_swat_gloves
       node: end
@@ -610,12 +610,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_Officer_gloves
       node: end
@@ -635,12 +635,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_gold_plated_gloves
       node: end
@@ -662,12 +662,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_botanists_leather_gloves
       node: end
@@ -687,12 +687,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_oven_mittens
       node: end
@@ -712,12 +712,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_cavalry_gloves
       node: end
@@ -737,12 +737,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_boxing_gloves
       node: end
@@ -871,7 +871,7 @@
   name: specialist leather gloves
   parent: ClothingHandsBase
   id: civ13_gloves_specialist_leather_gloves
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/toughguy.rsi
@@ -920,7 +920,7 @@
   name: fingerless black gloves
   parent: ClothingHandsBase
   id: civ13_gloves_fingerless_black_gloves
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/fingerless.rsi
@@ -929,12 +929,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_fingerless_black_gloves
       node: end
@@ -945,7 +945,7 @@
   name: hand wraps
   parent: ClothingHandsBase
   id: civ13_gloves_hand_wraps
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/ncr_handwraps.rsi
@@ -954,12 +954,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_hand_wraps
       node: end
@@ -970,7 +970,7 @@
   name: legionaire hand wraps
   parent: ClothingHandsBase
   id: civ13_gloves_legionaire_hand_wraps
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/legion_handwraps.rsi
@@ -979,12 +979,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_legionaire_hand_wraps
       node: end
@@ -995,7 +995,7 @@
   name: fingerless combat gloves
   parent: ClothingHandsBase
   id: civ13_gloves_fingerless_combat_gloves
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/fingerless.rsi
@@ -1055,7 +1055,7 @@
         coefficients:
           Blunt: 0.55
           Slash: 0.55
-          Piercing: 0.9299999999999999
+          Piercing: 0.92
           Arrow: 0.7
           Heat: 0.92
     - type: Construction
@@ -1077,9 +1077,9 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
-          Piercing: 0.9299999999999999
+          Blunt: 0.3
+          Slash: 0.3
+          Piercing: 0.92
           Arrow: 0.6
           Heat: 0.92
     - type: Construction
@@ -1092,7 +1092,7 @@
   name: black motorist gloves
   parent: ClothingHandsBase
   id: civ13_gloves_black_motorist_gloves
-  description: ''
+  description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/motorist.rsi
@@ -1101,12 +1101,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_gloves_black_motorist_gloves
       node: end
