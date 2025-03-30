@@ -10,6 +10,8 @@
         - state: closed
           map: ["enum.DoorVisualLayers.Base"]
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: WoodDoorRustic
       node: end
 
@@ -25,5 +27,7 @@
         - state: closed
           map: ["enum.DoorVisualLayers.Base"]
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: WoodDoorClassic
       node: end

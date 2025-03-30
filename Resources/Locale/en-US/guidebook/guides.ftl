@@ -1,4 +1,4 @@
-guide-entry-ss14 = Station and Shifts
+guide-entry-ss14 = Guides
 guide-entry-engineering = Engineering
 guide-entry-construction = Construction
 guide-entry-expandingrepairingstation = Expanding and Repairing Stations

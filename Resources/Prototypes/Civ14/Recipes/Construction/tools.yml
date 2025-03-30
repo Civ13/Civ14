@@ -8,6 +8,8 @@
   description: A crude bone shovel.
   icon: { sprite: Civ14/Objects/StoneAge/bone_shovel.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: bone pickaxe
@@ -19,6 +21,8 @@
   description: A crude bone pickaxe.
   icon: { sprite: Civ14/Objects/StoneAge/bone_pickaxe.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: bone axe
@@ -30,6 +34,8 @@
   description: A crude bone axe.
   icon: { sprite: Civ14/Objects/StoneAge/bone_axe.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: bone knife
@@ -41,6 +47,8 @@
   description: A crude bone knife.
   icon: { sprite: Civ14/Objects/StoneAge/bone_knife.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: flint axe
@@ -52,6 +60,8 @@
   description: A crude flint axe.
   icon: { sprite: Civ14/Objects/StoneAge/flint_axe.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: plough
@@ -63,6 +73,8 @@
   description: A simple wood plough.
   icon: { sprite: Civ14/Objects/items.rsi, state: plough }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: wood hammer
@@ -74,6 +86,8 @@
   description: A simple wood hammer.
   icon: { sprite: Civ14/Objects/StoneAge/wood_hammer.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: wood bucket
@@ -85,6 +99,8 @@
   description: A simple wood bucket.
   icon: { sprite: Objects/Tools/bucket.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: constructionGraph
   id: BoneShovel

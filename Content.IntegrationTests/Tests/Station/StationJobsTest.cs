@@ -38,7 +38,7 @@ public sealed class StationJobsTest
   id: FooStation
   minPlayers: 0
   mapName: FooStation
-  mapPath: /Maps/civ/nomads.yml
+  mapPath: /Maps/civ/nomads_classic.yml
   stations:
     Station:
       mapNameTemplate: FooStation

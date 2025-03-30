@@ -56,6 +56,8 @@
         inputContainer: !type:Container
     - type: Construction
       node: end
+      agemin: 0
+      agemax: 8
 
 - type: entity
   id: KitchenCampfire
@@ -74,6 +76,7 @@
     - type: PointLight
       radius: 4
       energy: 3
+      color: "#E25822"
     - type: GenericVisualizer
       visuals:
         enum.PowerDeviceVisuals.VisualState:
@@ -134,3 +137,5 @@
         - FoodRecipes
     - type: Construction
       node: end
+      agemin: 0
+      agemax: 8

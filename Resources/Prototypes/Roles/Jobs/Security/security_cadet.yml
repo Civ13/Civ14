@@ -15,15 +15,15 @@
   supervisors: job-supervisors-security
   canBeAntag: false
   access:
-  - Security
-  - Brig
-  - Maintenance
-  - Service
-  - External
-  - Cryogenics
+    - Security
+    - Brig
+    - Maintenance
+    - Service
+    - External
+    - Cryogenics
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
 
 - type: startingGear
   id: SecurityCadetGear
@@ -34,8 +34,7 @@
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponPistolMk58
-    pocket2: BookSecurity
   storage:
     back:
-    - Flash
-    - MagazinePistol
+      - Flash
+      - MagazinePistol

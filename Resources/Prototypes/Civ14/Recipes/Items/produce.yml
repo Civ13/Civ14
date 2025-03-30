@@ -8,6 +8,8 @@
   description: A small, hand-powered, wood mill.
   icon: { sprite: Civ14/Objects/structures.rsi, state: flour_mill }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: campfire
@@ -19,6 +21,8 @@
   description: "Keeps you warm and cooks your food."
   icon: { sprite: Civ14/Objects/kitchen.rsi, state: fireplace_on }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: constructionGraph
   id: KitchenMill

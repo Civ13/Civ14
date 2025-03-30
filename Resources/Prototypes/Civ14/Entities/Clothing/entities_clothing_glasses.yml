@@ -1,0 +1,610 @@
+- type: entity
+  name: eyepatch
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_eyepatch
+  description: Yarr.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/eyepatch.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/eyepatch.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_eyepatch
+      node: end
+      cost: 2
+      material: Cloth
+      time: 6
+- type: entity
+  name: monocle
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_monocle
+  description: Such a dapper eyepiece!
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/monocle.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/monocle.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_monocle
+      node: end
+      cost: 3
+      material: Iron
+      time: 11
+- type: entity
+  name: Prescription Glasses
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_Prescription_Glasses
+  description: Made by Nerd. Co.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/glasses.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/glasses.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_Prescription_Glasses
+      node: end
+      cost: 6
+      time: 12
+- type: entity
+  name: Prescription Glasses
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_Prescription_Glasses_1
+  description: Made by Uncool. Co.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/hipster_glasses.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/hipster_glasses.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_Prescription_Glasses_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Green Glasses
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_Green_Glasses
+  description: Forest green glasses, like the kind you'd wear when hatching a nasty scheme.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/gglasses.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/gglasses.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_Green_Glasses
+      node: end
+      cost: 6
+      time: 12
+- type: entity
+  name: sunglasses
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_sunglasses
+  description: >-
+    Strangely ancient technology used to help provide rudimentary eye cover.
+    Enhanced lenses blocks deadly sun rays.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/sun.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/sun.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_sunglasses
+      node: end
+      cost: 2
+      time: 9
+- type: entity
+  name: blindfold
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_blindfold
+  description: Covers the eyes, preventing sight.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/blindfold.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/blindfold.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_blindfold
+      node: end
+      cost: 2
+      material: Cloth
+      time: 6
+- type: entity
+  name: large sunglasses
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_large_sunglasses
+  description: >-
+    Strangely ancient technology used to help provide rudimentary eye cover.
+    Enhanced shielding blocks many flashes.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/bigsunglasses.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/bigsunglasses.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_large_sunglasses
+      node: end
+      cost: 2
+      time: 9
+- type: entity
+  name: red vintage glasses
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_red_vintage_glasses
+  description: A pair of glasses that look like they're from the 60's, Groovy BAY'BE.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/redlense.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/redlense.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_red_vintage_glasses
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: blue vintage glasses
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_blue_vintage_glasses
+  description: A pair of glasses that look like they're from the 60's, Groovy BAY'BE.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/bluelense.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/bluelense.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_blue_vintage_glasses
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: green vintage glasses
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_green_vintage_glasses
+  description: A pair of glasses that look like they're from the 60's, Groovy BAY'BE.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/greenlense.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/greenlense.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_green_vintage_glasses
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: yellow vintage glasses
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_yellow_vintage_glasses
+  description: A pair of glasses that look like they're from the 60's, Groovy BAY'BE.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/yellowlense.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/yellowlense.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_yellow_vintage_glasses
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: univisor red
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_univisor_red
+  description: >-
+    A uni lense visor that look like they're from the 80's, Looks a bit
+    futuristic.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/univisor_r.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/univisor_r.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_univisor_red
+      node: end
+      cost: 2
+      time: 9
+- type: entity
+  name: univisor cyan
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_univisor_cyan
+  description: >-
+    A uni lense visor that look like they're from the 80's, Looks a bit
+    futuristic.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/univisor_c.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/univisor_c.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_univisor_cyan
+      node: end
+      cost: 2
+      time: 9
+- type: entity
+  name: univisor green
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_univisor_green
+  description: >-
+    A uni lense visor that look like they're from the 80's, Looks a bit
+    futuristic.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/univisor_g.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/univisor_g.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_univisor_green
+      node: end
+      cost: 2
+      time: 9
+- type: entity
+  name: univisor yellow
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_univisor_yellow
+  description: >-
+    A uni lense visor that look like they're from the 80's, Looks a bit
+    futuristic.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/univisor_y.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/univisor_y.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_univisor_yellow
+      node: end
+      cost: 2
+      time: 9
+- type: entity
+  name: univisor white
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_univisor_white
+  description: >-
+    A uni lense visor that look like they're from the 80's, Looks a bit
+    futuristic.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/univisor_w.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/univisor_w.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_univisor_white
+      node: end
+      cost: 2
+      time: 9
+- type: entity
+  name: univisor flashy
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_univisor_flashy
+  description: >-
+    A uni lense visor that look like they're from the 80's, Looks a bit
+    futuristic.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/univisor_flashy.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/univisor_flashy.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_univisor_flashy
+      node: end
+      cost: 3
+      time: 9
+- type: entity
+  name: goggles
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_goggles
+  description: Standard combat goggles.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/tactical_goggles.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/tactical_goggles.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_goggles
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Ballistic goggles
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_Ballistic_goggles
+  description: Standard ballistic combat goggles, they protect your eyes from shrapnel.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/tactical_goggles.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/tactical_goggles.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.85
+          Piercing: 0.75
+          Arrow: 0.09999999999999998
+          Heat: 0.85
+          Radiation: 0.8
+    - type: Construction
+      graph: civ13_glasses_Ballistic_goggles
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Pilot goggles
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_Pilot_goggles
+  description: Early 20th century pilot goggles.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/biker.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/biker.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_Pilot_goggles
+      node: end
+      cost: 2
+      material: Leather
+      time: 6
+- type: entity
+  name: Night Vision Goggles
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_Night_Vision_Goggles
+  description: >-
+    Enhances vision in low-light conditions, allowing you to see clearly in the
+    dark.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/nvg_off.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/nvg_off.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_Night_Vision_Goggles
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Thermal Vision Goggles
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_Thermal_Vision_Goggles
+  description: Greatly enhances vision of thermal objects.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/thermal_off.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/thermal_off.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_Thermal_Vision_Goggles
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Modern Thermal Vision Goggles
+  parent: ClothingEyesGlasses
+  id: civ13_glasses_Modern_Thermal_Vision_Goggles
+  description: >-
+    Modern Set of thermal vision goggles which also allow you to see in the
+    dark.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/glasses/thermal_off.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/glasses/thermal_off.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_glasses_Modern_Thermal_Vision_Goggles
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5

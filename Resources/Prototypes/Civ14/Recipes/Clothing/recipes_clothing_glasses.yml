@@ -1,0 +1,692 @@
+- type: construction
+  name: eyepatch
+  id: civ13_glasses_eyepatch
+  graph: civ13_glasses_eyepatch
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: Yarr.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/eyepatch.rsi
+    state: icon
+  objectType: Item
+  agemin: 0
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_eyepatch
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 2
+              doAfter: 6
+    - node: end
+      entity: civ13_glasses_eyepatch
+- type: construction
+  name: monocle
+  id: civ13_glasses_monocle
+  graph: civ13_glasses_monocle
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: Such a dapper eyepiece!
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/monocle.rsi
+    state: icon
+  objectType: Item
+  agemin: 4
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_monocle
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Iron
+              amount: 3
+              doAfter: 11
+    - node: end
+      entity: civ13_glasses_monocle
+- type: construction
+  name: Prescription Glasses
+  id: civ13_glasses_Prescription_Glasses
+  graph: civ13_glasses_Prescription_Glasses
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: Made by Nerd. Co.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/glasses.rsi
+    state: icon
+  objectType: Item
+  agemin: 3
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_Prescription_Glasses
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 6
+              doAfter: 12
+    - node: end
+      entity: civ13_glasses_Prescription_Glasses
+- type: construction
+  name: Prescription Glasses
+  id: civ13_glasses_Prescription_Glasses_1
+  graph: civ13_glasses_Prescription_Glasses_1
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: Made by Uncool. Co.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/hipster_glasses.rsi
+    state: icon
+  objectType: Item
+  agemin: 6
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_Prescription_Glasses_1
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_glasses_Prescription_Glasses_1
+- type: construction
+  name: Green Glasses
+  id: civ13_glasses_Green_Glasses
+  graph: civ13_glasses_Green_Glasses
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: Forest green glasses, like the kind you'd wear when hatching a nasty scheme.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/gglasses.rsi
+    state: icon
+  objectType: Item
+  agemin: 5
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_Green_Glasses
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 6
+              doAfter: 12
+    - node: end
+      entity: civ13_glasses_Green_Glasses
+- type: construction
+  name: sunglasses
+  id: civ13_glasses_sunglasses
+  graph: civ13_glasses_sunglasses
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: >-
+    Strangely ancient technology used to help provide rudimentary eye cover.
+    Enhanced lenses blocks deadly sun rays.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/sun.rsi
+    state: icon
+  objectType: Item
+  agemin: 5
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_sunglasses
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 2
+              doAfter: 9
+    - node: end
+      entity: civ13_glasses_sunglasses
+- type: construction
+  name: blindfold
+  id: civ13_glasses_blindfold
+  graph: civ13_glasses_blindfold
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: Covers the eyes, preventing sight.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/blindfold.rsi
+    state: icon
+  objectType: Item
+  agemin: 0
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_blindfold
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 2
+              doAfter: 6
+    - node: end
+      entity: civ13_glasses_blindfold
+- type: construction
+  name: large sunglasses
+  id: civ13_glasses_large_sunglasses
+  graph: civ13_glasses_large_sunglasses
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: >-
+    Strangely ancient technology used to help provide rudimentary eye cover.
+    Enhanced shielding blocks many flashes.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/bigsunglasses.rsi
+    state: icon
+  objectType: Item
+  agemin: 5
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_large_sunglasses
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 2
+              doAfter: 9
+    - node: end
+      entity: civ13_glasses_large_sunglasses
+- type: construction
+  name: red vintage glasses
+  id: civ13_glasses_red_vintage_glasses
+  graph: civ13_glasses_red_vintage_glasses
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: A pair of glasses that look like they're from the 60's, Groovy BAY'BE.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/redlense.rsi
+    state: icon
+  objectType: Item
+  agemin: 7
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_red_vintage_glasses
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_glasses_red_vintage_glasses
+- type: construction
+  name: blue vintage glasses
+  id: civ13_glasses_blue_vintage_glasses
+  graph: civ13_glasses_blue_vintage_glasses
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: A pair of glasses that look like they're from the 60's, Groovy BAY'BE.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/bluelense.rsi
+    state: icon
+  objectType: Item
+  agemin: 7
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_blue_vintage_glasses
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_glasses_blue_vintage_glasses
+- type: construction
+  name: green vintage glasses
+  id: civ13_glasses_green_vintage_glasses
+  graph: civ13_glasses_green_vintage_glasses
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: A pair of glasses that look like they're from the 60's, Groovy BAY'BE.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/greenlense.rsi
+    state: icon
+  objectType: Item
+  agemin: 7
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_green_vintage_glasses
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_glasses_green_vintage_glasses
+- type: construction
+  name: yellow vintage glasses
+  id: civ13_glasses_yellow_vintage_glasses
+  graph: civ13_glasses_yellow_vintage_glasses
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: A pair of glasses that look like they're from the 60's, Groovy BAY'BE.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/yellowlense.rsi
+    state: icon
+  objectType: Item
+  agemin: 7
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_yellow_vintage_glasses
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_glasses_yellow_vintage_glasses
+- type: construction
+  name: univisor red
+  id: civ13_glasses_univisor_red
+  graph: civ13_glasses_univisor_red
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: >-
+    A uni lense visor that look like they're from the 80's, Looks a bit
+    futuristic.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/univisor_r.rsi
+    state: icon
+  objectType: Item
+  agemin: 7
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_univisor_red
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 2
+              doAfter: 9
+    - node: end
+      entity: civ13_glasses_univisor_red
+- type: construction
+  name: univisor cyan
+  id: civ13_glasses_univisor_cyan
+  graph: civ13_glasses_univisor_cyan
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: >-
+    A uni lense visor that look like they're from the 80's, Looks a bit
+    futuristic.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/univisor_c.rsi
+    state: icon
+  objectType: Item
+  agemin: 7
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_univisor_cyan
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 2
+              doAfter: 9
+    - node: end
+      entity: civ13_glasses_univisor_cyan
+- type: construction
+  name: univisor green
+  id: civ13_glasses_univisor_green
+  graph: civ13_glasses_univisor_green
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: >-
+    A uni lense visor that look like they're from the 80's, Looks a bit
+    futuristic.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/univisor_g.rsi
+    state: icon
+  objectType: Item
+  agemin: 7
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_univisor_green
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 2
+              doAfter: 9
+    - node: end
+      entity: civ13_glasses_univisor_green
+- type: construction
+  name: univisor yellow
+  id: civ13_glasses_univisor_yellow
+  graph: civ13_glasses_univisor_yellow
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: >-
+    A uni lense visor that look like they're from the 80's, Looks a bit
+    futuristic.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/univisor_y.rsi
+    state: icon
+  objectType: Item
+  agemin: 7
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_univisor_yellow
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 2
+              doAfter: 9
+    - node: end
+      entity: civ13_glasses_univisor_yellow
+- type: construction
+  name: univisor white
+  id: civ13_glasses_univisor_white
+  graph: civ13_glasses_univisor_white
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: >-
+    A uni lense visor that look like they're from the 80's, Looks a bit
+    futuristic.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/univisor_w.rsi
+    state: icon
+  objectType: Item
+  agemin: 7
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_univisor_white
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 2
+              doAfter: 9
+    - node: end
+      entity: civ13_glasses_univisor_white
+- type: construction
+  name: univisor flashy
+  id: civ13_glasses_univisor_flashy
+  graph: civ13_glasses_univisor_flashy
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: >-
+    A uni lense visor that look like they're from the 80's, Looks a bit
+    futuristic.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/univisor_flashy.rsi
+    state: icon
+  objectType: Item
+  agemin: 7
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_univisor_flashy
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 3
+              doAfter: 9
+    - node: end
+      entity: civ13_glasses_univisor_flashy
+- type: construction
+  name: goggles
+  id: civ13_glasses_goggles
+  graph: civ13_glasses_goggles
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: Standard combat goggles.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/tactical_goggles.rsi
+    state: icon
+  objectType: Item
+  agemin: 7
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_goggles
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_glasses_goggles
+- type: construction
+  name: Ballistic goggles
+  id: civ13_glasses_Ballistic_goggles
+  graph: civ13_glasses_Ballistic_goggles
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: Standard ballistic combat goggles, they protect your eyes from shrapnel.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/tactical_goggles.rsi
+    state: icon
+  objectType: Item
+  agemin: 7
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_Ballistic_goggles
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_glasses_Ballistic_goggles
+- type: construction
+  name: Pilot goggles
+  id: civ13_glasses_Pilot_goggles
+  graph: civ13_glasses_Pilot_goggles
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: Early 20th century pilot goggles.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/biker.rsi
+    state: icon
+  objectType: Item
+  agemin: 5
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_Pilot_goggles
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 2
+              doAfter: 6
+    - node: end
+      entity: civ13_glasses_Pilot_goggles
+- type: construction
+  name: Night Vision Goggles
+  id: civ13_glasses_Night_Vision_Goggles
+  graph: civ13_glasses_Night_Vision_Goggles
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: >-
+    Enhances vision in low-light conditions, allowing you to see clearly in the
+    dark.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/nvg_off.rsi
+    state: icon
+  objectType: Item
+  agemin: 8
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_Night_Vision_Goggles
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_glasses_Night_Vision_Goggles
+- type: construction
+  name: Thermal Vision Goggles
+  id: civ13_glasses_Thermal_Vision_Goggles
+  graph: civ13_glasses_Thermal_Vision_Goggles
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: Greatly enhances vision of thermal objects.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/thermal_off.rsi
+    state: icon
+  objectType: Item
+  agemin: 8
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_Thermal_Vision_Goggles
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_glasses_Thermal_Vision_Goggles
+- type: construction
+  name: Modern Thermal Vision Goggles
+  id: civ13_glasses_Modern_Thermal_Vision_Goggles
+  graph: civ13_glasses_Modern_Thermal_Vision_Goggles
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: >-
+    Modern Set of thermal vision goggles which also allow you to see in the
+    dark.
+  icon:
+    sprite: Civ14/Clothing/exported/glasses/thermal_off.rsi
+    state: icon
+  objectType: Item
+  agemin: 8
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_glasses_Modern_Thermal_Vision_Goggles
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_glasses_Modern_Thermal_Vision_Goggles

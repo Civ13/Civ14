@@ -9,9 +9,6 @@
       components:
         - type: StationNameSetup
           mapNameTemplate: "Nomads Classic"
-        - type: StationBiome
-          biome: NomadsGrasslands
-          mapLightColor: "#D8B059"
         - type: StationJobs
           availableJobs:
             Nomad: [-1, -1]

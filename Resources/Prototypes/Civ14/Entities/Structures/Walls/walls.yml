@@ -38,6 +38,8 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: StrawWall
       node: end
       cost: 5
@@ -58,12 +60,12 @@
       tags:
         - Wall
     - type: Sprite
-      sprite: Civ14/Structures/walls.rsi
-      layers:
-        - state: drysod_wall
+      sprite: Civ14/Structures/Walls/dirtwall.rsi
     - type: Icon
-      sprite: Civ14/Structures/walls.rsi
-      state: drysod_wall
+      sprite: Civ14/Structures/Walls/dirtwall.rsi
+    - type: IconSmooth
+      key: walls
+      base: dirtwall
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
@@ -83,6 +85,8 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: DirtWall
       node: end
       cost: 5
@@ -122,6 +126,8 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: ClayWall
       node: end
       cost: 5
@@ -164,6 +170,8 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: LogWall
       node: end
       cost: 5
@@ -198,6 +206,8 @@
       key: walls
       base: stone_block_wall
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: StoneBlockWall
       node: end
       cost: 6
@@ -217,6 +227,8 @@
       key: walls
       base: mayan
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: MayanStoneWall
       node: end
       cost: 6
@@ -236,6 +248,8 @@
       key: walls
       base: new_stonebrick
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: StoneBrickWall
       node: end
       cost: 6
@@ -255,6 +269,8 @@
       key: walls
       base: marble_block_wall
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: MarbleBlockWall
       node: end
       cost: 8
@@ -281,6 +297,8 @@
       key: walls
       base: fortress_brickwall
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: FortressBrickWall
       node: end
       cost: 6
@@ -300,6 +318,8 @@
       key: walls
       base: roman
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: RomanStoneBrickWall
       node: end
       cost: 6
@@ -319,6 +339,8 @@
       key: walls
       base: grecian
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: GrecianStoneBrickWall
       node: end
       cost: 6
@@ -349,6 +371,8 @@
       key: walls
       base: sandstone_block_wall
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: SandstoneBlockWall
       node: end
       cost: 6
@@ -368,6 +392,8 @@
       key: walls
       base: egyptian
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: EgyptianSandstoneBrickWall
       node: end
       cost: 6
@@ -387,6 +413,8 @@
       key: walls
       base: sandstone_brickwall
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: SandstoneBrickWall
       node: end
       cost: 6
@@ -406,6 +434,8 @@
       key: walls
       base: redsandstone_block_wall
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: RedSandstoneBlockWall
       node: end
       cost: 6
@@ -432,8 +462,40 @@
       key: walls
       base: sandstone_fortress
     - type: Construction
+      agemin: 0
+      agemax: 8
       graph: FortressSandstoneBrickWall
       node: end
       cost: 7
       time: 8
       material: Sandstone
+
+# Rocks and ore veins
+- type: entity
+  id: WallRockIndestructible
+  parent: BaseWall
+  name: rock
+  suffix: planetmap
+  description: This wall cannot be destroyed.
+  components:
+    - type: Transform
+      noRot: true
+    - type: IconSmooth
+      key: walls
+      mode: NoSprite
+    - type: Icon
+      sprite: Structures/Walls/rock.rsi
+      state: rocky
+    - type: SmoothEdge
+    - type: Sprite
+      sprite: Structures/Walls/rock.rsi
+      layers:
+        - state: rocky
+        - map: ["enum.EdgeLayer.South"]
+          state: rocky_south
+        - map: ["enum.EdgeLayer.East"]
+          state: rocky_east
+        - map: ["enum.EdgeLayer.North"]
+          state: rocky_north
+        - map: ["enum.EdgeLayer.West"]
+          state: rocky_west

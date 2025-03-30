@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 64,
+    "y": 96
+  },
+  "states": [
+    {
+      "name": "bamboowall1"
+    },
+    {
+      "name": "bamboowall_single1"
+    },
+    {
+      "name": "bamboowall_destroyed"
+    },
+    {
+      "name": "bamboowall_single_destroyed"
+    },
+    {
+      "name": "bamboowall2"
+    },
+    {
+      "name": "bamboowall3"
+    },
+    {
+      "name": "bamboowall_single2"
+    },
+    {
+      "name": "bamboowall_single3"
+    }
+  ]
+}

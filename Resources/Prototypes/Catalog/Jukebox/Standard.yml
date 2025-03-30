@@ -1,16 +1,4 @@
 - type: jukebox
-  id: FlipFlap
-  name: X-CEED - Flip Flap
-  path:
-    path: /Audio/Jukebox/flip-flap.ogg
-
-- type: jukebox
-  id: Tintin
-  name: Jeroen Tel - Tintin on the Moon
-  path:
-    path: /Audio/Jukebox/title3.ogg
-
-- type: jukebox
   id: Thunderdome
   name: MashedByMachines - Sector 11
   path:

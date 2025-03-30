@@ -1,0 +1,95 @@
+- type: entity
+  parent: IngotBase
+  id: IngotIron
+  name: iron bar
+  suffix: Full
+  components:
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        Iron: 100
+    - type: Stack
+      stackType: Iron
+      baseLayer: base
+      layerStates:
+        - sheet-iron
+        - sheet-iron_2
+        - sheet-iron_3
+    - type: Sprite
+      state: sheet-iron_3
+      layers:
+        - state: sheet-iron_3
+          map: ["base"]
+    - type: Item
+      heldPrefix: iron
+    - type: Appearance
+    - type: Extractable
+      grindableSolutionName: iron
+    - type: SolutionContainerManager
+      solutions:
+        iron:
+          reagents:
+            - ReagentId: Iron
+              Quantity: 10
+
+- type: entity
+  parent: IngotIron
+  id: IngotIron1
+  name: iron bar
+  suffix: Single
+  components:
+    - type: Sprite
+      state: sheet-iron
+    - type: Stack
+      count: 1
+- type: stack
+  id: Iron
+  name: iron
+  icon: { sprite: /Textures/Objects/Materials/ingots.rsi, state: sheet-iron }
+  spawn: IngotIron1
+  maxCount: 30
+
+- type: entity
+  parent: IngotBase
+  id: IngotCopper
+  name: copper bar
+  suffix: Full
+  components:
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        Copper: 100
+    - type: Stack
+      stackType: Copper
+      baseLayer: base
+      layerStates:
+        - copper
+        - copper_2
+        - copper_3
+    - type: Sprite
+      state: copper_3
+      layers:
+        - state: copper_3
+          map: ["base"]
+    - type: Item
+      heldPrefix: copper
+    - type: Appearance
+    - type: Extractable
+      grindableSolutionName: copper
+    - type: SolutionContainerManager
+      solutions:
+        iron:
+          reagents:
+            - ReagentId: Copper
+              Quantity: 10
+
+- type: entity
+  parent: IngotCopper
+  id: IngotCopper1
+  name: copper bar
+  suffix: Single
+  components:
+    - type: Sprite
+      state: copper
+    - type: Stack
+      count: 1
