@@ -10,7 +10,7 @@
       prototypes: [LimitedPassengerGear]
     - type: NpcFactionMember
       factions:
-        - NanoTrasen
+        - Nomads
 
 - type: entity
   name: salvager

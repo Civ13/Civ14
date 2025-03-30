@@ -38,8 +38,8 @@
         coefficients:
           Blunt: 0.4
           Slash: 0.4
-          Piercing: 0.15000000000000002
-          Arrow: 0.19999999999999996
+          Piercing: 0.15
+          Arrow: 0.19
           Heat: 0.35
     - type: Construction
 
@@ -63,8 +63,8 @@
         coefficients:
           Blunt: 0.4
           Slash: 0.4
-          Piercing: 0.15000000000000002
-          Arrow: 0.19999999999999996
+          Piercing: 0.15
+          Arrow: 0.19
           Heat: 0.35
     - type: Construction
 
@@ -140,7 +140,7 @@
           Slash: 0.65
           Piercing: 0.65
           Arrow: 0.5
-          Heat: 0.44999999999999996
+          Heat: 0.44
     - type: Construction
 
       graph: civ13_head_Phase_I_Replicant_Airborne_Helmet
@@ -213,7 +213,7 @@
         coefficients:
           Blunt: 0.7
           Slash: 0.7
-          Piercing: 0.44999999999999996
+          Piercing: 0.44
           Arrow: 0.5
           Heat: 0.5
     - type: Construction
@@ -312,8 +312,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.55
           Arrow: 0.35
           Heat: 0.4
@@ -341,7 +341,7 @@
           Slash: 0.7
           Piercing: 0.6
           Arrow: 0.5
-          Heat: 0.44999999999999996
+          Heat: 0.44
     - type: Construction
 
       graph: civ13_head_Phase_I_Replicant_Pilot_Helmet
@@ -387,8 +387,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.85
           Arrow: 0.55
           Heat: 0.85
@@ -412,12 +412,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_M1_camo_helmet
@@ -442,7 +442,7 @@
           Slash: 0.7
           Piercing: 0.6
           Arrow: 0.5
-          Heat: 0.44999999999999996
+          Heat: 0.44
     - type: Construction
 
       graph: civ13_head_Phase_I_Replicant_Captain_Helmet
@@ -467,7 +467,7 @@
           Slash: 0.7
           Piercing: 0.6
           Arrow: 0.5
-          Heat: 0.44999999999999996
+          Heat: 0.44
     - type: Construction
 
       graph: civ13_head_Phase_I_Replicant_Commander_Helmet
@@ -492,7 +492,7 @@
           Slash: 0.6
           Piercing: 0.6
           Arrow: 0.4
-          Heat: 0.42000000000000004
+          Heat: 0.42
     - type: Construction
 
       graph: civ13_head_Phase_II_Replicant_Trooper_Helmet
@@ -519,7 +519,7 @@
           Slash: 0.6
           Piercing: 0.6
           Arrow: 0.4
-          Heat: 0.42000000000000004
+          Heat: 0.42
     - type: Construction
 
       graph: civ13_head_Phase_II_Replicant_Trooper_Helmet_1
@@ -544,7 +544,7 @@
           Slash: 0.6
           Piercing: 0.6
           Arrow: 0.4
-          Heat: 0.42000000000000004
+          Heat: 0.42
     - type: Construction
 
       graph: civ13_head_Phase_II_501st_Replicant_Trooper_Helmet
@@ -615,12 +615,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_ushanka
@@ -804,8 +804,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.8
           Arrow: 0.4
           Heat: 0.85
@@ -937,8 +937,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.8
           Arrow: 0.4
           Heat: 0.85
@@ -964,8 +964,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.8
           Arrow: 0.4
           Heat: 0.85
@@ -1244,12 +1244,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_VDV_beret
@@ -1270,8 +1270,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.85
           Arrow: 0.55
           Heat: 0.85
@@ -1295,8 +1295,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.85
           Arrow: 0.55
           Heat: 0.85
@@ -1320,12 +1320,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_UN_medic_helmet
@@ -1346,12 +1346,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_camo_6B47_helmet
@@ -1422,8 +1422,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.65
           Arrow: 0.55
           Heat: 0.75
@@ -1449,7 +1449,7 @@
         coefficients:
           Blunt: 0.65
           Slash: 0.65
-          Piercing: 0.19999999999999996
+          Piercing: 0.19
           Arrow: 0.4
           Heat: 0.6
     - type: Construction
@@ -1474,12 +1474,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_SSh_68_helmet
@@ -1549,12 +1549,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_yellow_cap
@@ -1701,7 +1701,7 @@
         coefficients:
           Blunt: 0.38
           Slash: 0.38
-          Piercing: 0.44999999999999996
+          Piercing: 0.44
           Arrow: 0.25
           Heat: 0.85
     - type: Construction
@@ -1726,7 +1726,7 @@
         coefficients:
           Blunt: 0.38
           Slash: 0.38
-          Piercing: 0.44999999999999996
+          Piercing: 0.44
           Arrow: 0.25
           Heat: 0.85
     - type: Construction
@@ -1749,12 +1749,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_white_papakha
@@ -1775,11 +1775,11 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.31999999999999995
-          Slash: 0.31999999999999995
+          Blunt: 0.315
+          Slash: 0.315
           Piercing: 0.35
-          Arrow: 0.32999999999999996
-          Heat: 0.8200000000000001
+          Arrow: 0.32
+          Heat: 0.82
     - type: Construction
 
       graph: civ13_head_LWH_helmet
@@ -1802,12 +1802,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_sheriffs_department_cap
@@ -1830,8 +1830,8 @@
         coefficients:
           Blunt: 0.25
           Slash: 0.25
-          Piercing: 0.06999999999999995
-          Arrow: 0.050000000000000044
+          Piercing: 0.065
+          Arrow: 0.054
           Heat: 0.78
     - type: Construction
 
@@ -1855,8 +1855,8 @@
         coefficients:
           Blunt: 0.25
           Slash: 0.25
-          Piercing: 0.06999999999999995
-          Arrow: 0.050000000000000044
+          Piercing: 0.065
+          Arrow: 0.054
           Heat: 0.78
     - type: Construction
 
@@ -1906,12 +1906,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_6B47_helmet
@@ -1932,12 +1932,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_blugo_6B47_helmet
@@ -1958,12 +1958,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_blugo_command_6B47_helmet
@@ -1986,12 +1986,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Sfera_helmet
@@ -2014,12 +2014,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_ZSh_1_helmet
@@ -2042,12 +2042,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_ZSh_2_helmet
@@ -2071,7 +2071,7 @@
           Blunt: 0.38
           Slash: 0.38
           Piercing: 0.49
-          Arrow: 0.44999999999999996
+          Arrow: 0.44
           Heat: 0.85
     - type: Construction
 
@@ -2093,12 +2093,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_firefighter_helmet
@@ -2119,11 +2119,11 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.27
-          Arrow: 0.32999999999999996
-          Heat: 0.8200000000000001
+          Arrow: 0.32
+          Heat: 0.82
     - type: Construction
 
       graph: civ13_head_Mk6_helmet
@@ -2144,12 +2144,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_CG634_helmet
@@ -2172,9 +2172,9 @@
         coefficients:
           Blunt: -0.75
           Slash: -0.75
-          Piercing: -0.19999999999999996
+          Piercing: -0.19
           Arrow: 0.010000000000000009
-          Heat: 0.5800000000000001
+          Heat: 0.58
     - type: Construction
 
       graph: civ13_head_Mechanical_Helmet
@@ -2198,7 +2198,7 @@
           Blunt: 0.35
           Slash: 0.35
           Piercing: 0.35
-          Arrow: 0.19999999999999996
+          Arrow: 0.19
           Heat: 0.85
     - type: Construction
 
@@ -2224,7 +2224,7 @@
         coefficients:
           Blunt: 0.38
           Slash: 0.38
-          Piercing: 0.44999999999999996
+          Piercing: 0.44
           Arrow: 0.25
           Heat: 0.85
     - type: Construction
@@ -2454,12 +2454,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_NCR_Officer_Beret
@@ -2482,12 +2482,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Goggles_Helmet
@@ -2585,7 +2585,7 @@
           Blunt: 0.65
           Slash: 0.65
           Piercing: 0.92
-          Arrow: 0.6799999999999999
+          Arrow: 0.67
           Heat: 0.85
     - type: Construction
 
@@ -2632,12 +2632,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_brown_bear_pelt_hat
@@ -2658,12 +2658,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_blue_cap
@@ -2684,12 +2684,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_red_cap
@@ -3018,8 +3018,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
@@ -3045,8 +3045,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
@@ -3072,8 +3072,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
@@ -3099,10 +3099,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.09999999999999998
+          Arrow: 0.098
           Heat: 0.85
     - type: Construction
 
@@ -3124,10 +3124,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.09999999999999998
+          Arrow: 0.098
           Heat: 0.85
     - type: Construction
 
@@ -3224,8 +3224,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.9
           Arrow: 0.55
           Heat: 0.85
@@ -3249,8 +3249,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.9
           Arrow: 0.55
           Heat: 0.85
@@ -3376,8 +3376,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
@@ -3403,8 +3403,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
@@ -3428,10 +3428,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.09999999999999998
+          Arrow: 0.098
           Heat: 0.85
     - type: Construction
 
@@ -3455,8 +3455,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
@@ -3480,10 +3480,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.09999999999999998
+          Arrow: 0.098
           Heat: 0.85
     - type: Construction
 
@@ -3507,10 +3507,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.09999999999999998
+          Arrow: 0.098
           Heat: 0.85
     - type: Construction
 
@@ -3534,10 +3534,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.09999999999999998
+          Arrow: 0.098
           Heat: 0.85
     - type: Construction
 
@@ -3561,10 +3561,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.09999999999999998
+          Arrow: 0.098
           Heat: 0.85
     - type: Construction
 
@@ -3589,10 +3589,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.09999999999999998
+          Arrow: 0.098
           Heat: 0.85
     - type: Construction
 
@@ -3619,7 +3619,7 @@
           Blunt: 0.4
           Slash: 0.4
           Piercing: 0.95
-          Arrow: 0.30000000000000004
+          Arrow: 0.30
           Heat: 0.85
     - type: Construction
 
@@ -3646,7 +3646,7 @@
           Blunt: 0.4
           Slash: 0.4
           Piercing: 0.95
-          Arrow: 0.30000000000000004
+          Arrow: 0.30
           Heat: 0.85
     - type: Construction
 
@@ -3668,8 +3668,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
@@ -3720,8 +3720,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
@@ -3747,8 +3747,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
@@ -3774,10 +3774,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.09999999999999998
+          Arrow: 0.098
           Heat: 0.85
     - type: Construction
 
@@ -3801,8 +3801,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
@@ -3828,10 +3828,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.09999999999999998
+          Arrow: 0.098
           Heat: 0.85
     - type: Construction
 
@@ -3855,10 +3855,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.09999999999999998
+          Arrow: 0.098
           Heat: 0.85
     - type: Construction
 
@@ -3880,10 +3880,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.09999999999999998
+          Arrow: 0.098
           Heat: 0.85
     - type: Construction
 
@@ -3907,10 +3907,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.09999999999999998
+          Arrow: 0.098
           Heat: 0.85
     - type: Construction
 
@@ -3932,12 +3932,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_dwemmer_helmet
@@ -3962,7 +3962,7 @@
         coefficients:
           Blunt: 0.55
           Slash: 0.55
-          Piercing: 0.9299999999999999
+          Piercing: 0.92
           Arrow: 0.6
           Heat: 0.85
     - type: Construction
@@ -4062,8 +4062,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.9
           Arrow: 0.5
           Heat: 0.85
@@ -4191,12 +4191,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_black_kevlar_helmet
@@ -4219,12 +4219,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Press_kevlar_helmet
@@ -4245,8 +4245,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.95
           Arrow: 0.35
           Heat: 0.65
@@ -4272,8 +4272,8 @@
         coefficients:
           Blunt: 0.35
           Slash: 0.35
-          Piercing: 0.15000000000000002
-          Arrow: 0.050000000000000044
+          Piercing: 0.15
+          Arrow: 0.054
           Heat: 0.73
     - type: Construction
 
@@ -4295,10 +4295,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.15000000000000002
-          Slash: 0.15000000000000002
-          Piercing: 0.15000000000000002
-          Arrow: 0.050000000000000044
+          Blunt: 0.15
+          Slash: 0.15
+          Piercing: 0.15
+          Arrow: 0.054
           Heat: 0.73
     - type: Construction
 
@@ -4320,12 +4320,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_FT1_advanced_helmet
@@ -4346,12 +4346,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_tactical_helmet
@@ -4372,12 +4372,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_IOG_helmet
@@ -4398,12 +4398,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_IOG_helmet_1
@@ -4424,10 +4424,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
           Piercing: 0.8
-          Arrow: 0.15000000000000002
+          Arrow: 0.15
           Heat: 0.8
           Radiation: 0.6
     - type: Construction
@@ -4475,12 +4475,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_chitin_helmet
@@ -4500,10 +4500,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.19999999999999996
-          Slash: 0.19999999999999996
+          Blunt: 0.19
+          Slash: 0.19
           Piercing: 0.7
-          Arrow: 0.09999999999999998
+          Arrow: 0.098
           Heat: 0.8
           Radiation: 0.55
     - type: Construction
@@ -4526,9 +4526,9 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
-          Arrow: 0.19999999999999996
+          Blunt: 0.30
+          Slash: 0.30
+          Arrow: 0.19
           Radiation: 0.9
     - type: Construction
 
@@ -4550,9 +4550,9 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.19999999999999996
-          Slash: 0.19999999999999996
-          Arrow: 0.09999999999999998
+          Blunt: 0.19
+          Slash: 0.19
+          Arrow: 0.098
           Radiation: 0.9
     - type: Construction
 
@@ -4574,9 +4574,9 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30000000000000004
-          Slash: 0.30000000000000004
-          Arrow: 0.30000000000000004
+          Blunt: 0.30
+          Slash: 0.30
+          Arrow: 0.30
           Radiation: 0.9
     - type: Construction
 
@@ -4598,8 +4598,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.9
           Arrow: 0.55
           Heat: 0.85
@@ -4623,8 +4623,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44999999999999996
-          Slash: 0.44999999999999996
+          Blunt: 0.44
+          Slash: 0.44
           Piercing: 0.9
           Arrow: 0.55
           Heat: 0.85
@@ -4873,12 +4873,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Mk1_Brodie_Helmet_1
@@ -4899,12 +4899,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Mk2_Brodie_Helmet
@@ -4925,12 +4925,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Mk2_Brodie_Medic_Helmet
@@ -4951,12 +4951,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Irish_Mk2_Brodie_Helmet
@@ -4977,12 +4977,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Mk2_Brodie_Helmet_with_green_netting
@@ -5003,12 +5003,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Mk2_Brodie_Helmet_with_tan_netting
@@ -5029,12 +5029,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Camouflaged_Mk2_Brodie_Helmet
@@ -5055,12 +5055,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Camouflaged_Mk2_Brodie_Helmet_1
@@ -5108,8 +5108,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.6699999999999999
-          Slash: 0.6699999999999999
+          Blunt: 0.66
+          Slash: 0.66
           Piercing: 0.92
           Arrow: 0.75
           Heat: 0.85
@@ -5135,10 +5135,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5700000000000001
-          Slash: 0.5700000000000001
+          Blunt: 0.57
+          Slash: 0.57
           Piercing: 0.9
-          Arrow: 0.6699999999999999
+          Arrow: 0.66
           Heat: 0.85
     - type: Construction
 
@@ -5160,12 +5160,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_pirate_bandana
@@ -5189,10 +5189,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5700000000000001
-          Slash: 0.5700000000000001
+          Blunt: 0.57
+          Slash: 0.57
           Piercing: 0.9
-          Arrow: 0.6699999999999999
+          Arrow: 0.66
           Heat: 0.85
     - type: Construction
 
@@ -5217,10 +5217,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5700000000000001
-          Slash: 0.5700000000000001
+          Blunt: 0.57
+          Slash: 0.57
           Piercing: 0.9
-          Arrow: 0.6699999999999999
+          Arrow: 0.66
           Heat: 0.85
     - type: Construction
 
@@ -5402,10 +5402,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5800000000000001
-          Slash: 0.5800000000000001
+          Blunt: 0.58
+          Slash: 0.58
           Piercing: 0.88
-          Arrow: 0.6799999999999999
+          Arrow: 0.67
           Heat: 0.85
     - type: Construction
 
@@ -5427,10 +5427,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5800000000000001
-          Slash: 0.5800000000000001
+          Blunt: 0.58
+          Slash: 0.58
           Piercing: 0.88
-          Arrow: 0.6799999999999999
+          Arrow: 0.67
           Heat: 0.85
     - type: Construction
 
@@ -5773,12 +5773,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_chefs_hat
@@ -5799,12 +5799,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_captains_hat
@@ -5825,12 +5825,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_cap
@@ -5852,12 +5852,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_preachers_hood
@@ -5878,12 +5878,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_hair_flower_pin
@@ -5904,12 +5904,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_powdered_wig
@@ -5930,12 +5930,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_top_hat
@@ -5956,12 +5956,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_pimp_hat
@@ -5982,12 +5982,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_flat_cap
@@ -6008,12 +6008,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_flat_cap_1
@@ -6034,12 +6034,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_pirate_hat
@@ -6060,12 +6060,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_specialist_bandana
@@ -6086,12 +6086,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_olive_bandana
@@ -6113,12 +6113,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_feather_trilby
@@ -6139,12 +6139,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_fez
@@ -6165,12 +6165,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_bearpelt_headcover
@@ -6193,12 +6193,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_natural_philosophers_wig
@@ -6219,12 +6219,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_orange_bandana
@@ -6245,12 +6245,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_dunce_cap
@@ -6271,12 +6271,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_beanie
@@ -6298,12 +6298,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_beret
@@ -6324,12 +6324,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_bandana
@@ -6350,12 +6350,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_noble_hat
@@ -6376,12 +6376,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_wool_hood
@@ -6401,12 +6401,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Drill_hat
@@ -6427,12 +6427,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_taqiyah
@@ -6453,12 +6453,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_hijab
@@ -6479,12 +6479,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_kippa
@@ -6505,12 +6505,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_purple_bandana
@@ -6531,12 +6531,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_green_bandana
@@ -6557,12 +6557,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_imperial_naval_officer_cap
@@ -6585,12 +6585,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_imperial_black_field_cap
@@ -6611,12 +6611,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_republic_naval_officer_cap
@@ -6637,12 +6637,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_republic_naval_ensign_cap
@@ -6663,12 +6663,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_republic_medical_officer_cap
@@ -6689,12 +6689,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_imperial_officer_cap
@@ -6715,12 +6715,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_caubeen
@@ -6741,12 +6741,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_ainu_bandana
@@ -6767,12 +6767,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_toxotai_hat
@@ -6793,12 +6793,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_black_egyptian_headdress
@@ -6819,12 +6819,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_blue_egyptian_headdress
@@ -6845,12 +6845,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_red_egyptian_headdress
@@ -6871,12 +6871,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_pharoah_headdress
@@ -6897,12 +6897,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_nemes_headdress
@@ -6923,12 +6923,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_double_crown
@@ -6951,12 +6951,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_hedjet_crown
@@ -6979,12 +6979,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_deshret_crown
@@ -7007,12 +7007,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_pschent_crown
@@ -7033,12 +7033,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_laurel_crown
@@ -7058,12 +7058,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_gold_laurel_crown
@@ -7083,12 +7083,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_fiendish_headdress
@@ -7111,12 +7111,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_semitic_cap
@@ -7137,12 +7137,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_wolfpelt_headcover
@@ -7163,12 +7163,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_pantherpelt_headcover
@@ -7189,12 +7189,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_lionpelt_headcover
@@ -7215,12 +7215,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_alligator_pelt_headcover
@@ -7241,12 +7241,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_foxpelt_headcover
@@ -7269,12 +7269,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_sheep_pelt_headcover
@@ -7297,12 +7297,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_goatpelt_headcover
@@ -7325,12 +7325,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_bisonpelt_headcover
@@ -7353,12 +7353,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_atef_crown
@@ -7379,12 +7379,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_sheriffs_stratton_hat
@@ -7405,12 +7405,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_sheriffs_department_cap_1
@@ -7431,12 +7431,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_police_cap
@@ -7457,12 +7457,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_red_beret
@@ -7483,12 +7483,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_black_beret
@@ -7509,12 +7509,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_green_beret
@@ -7535,12 +7535,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_green_beret_1
@@ -7561,12 +7561,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_UN_beret
@@ -7587,12 +7587,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_ghillie_headcover
@@ -7613,12 +7613,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_black_boonie
@@ -7639,12 +7639,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_khaki_boonie
@@ -7665,12 +7665,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_olive_green_boonie
@@ -7691,12 +7691,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_cadpat_tilly
@@ -7717,12 +7717,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_rice_hat
@@ -7742,12 +7742,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_chinese_ushanka
@@ -7768,12 +7768,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_NVA_cap
@@ -7794,12 +7794,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_soviet_ushanka
@@ -7820,12 +7820,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_NKVD_cap
@@ -7846,12 +7846,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_KGB_cap
@@ -7872,12 +7872,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_US_sailor_hat
@@ -7898,12 +7898,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Blugoslavian_sailor_hat
@@ -7924,12 +7924,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Redmenian_sailor_hat
@@ -7950,12 +7950,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Japanese_Cap
@@ -7976,12 +7976,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Japanese_Officer_Cap
@@ -8002,12 +8002,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Japanese_naval_officer_cap
@@ -8028,12 +8028,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Japanese_petty_officer_cap
@@ -8054,12 +8054,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Japanese_sailor_cap
@@ -8082,12 +8082,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Japanese_cap
@@ -8108,12 +8108,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Japanese_headband
@@ -8134,12 +8134,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Japanese_pilot_cap
@@ -8160,12 +8160,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Kenpeitai_MP_cap
@@ -8186,12 +8186,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Japanese_winter_cap
@@ -8212,12 +8212,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_British_officer_cap
@@ -8238,12 +8238,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_British_officer_cap_1
@@ -8264,12 +8264,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_British_hat
@@ -8290,12 +8290,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_tropical_british_hat
@@ -8316,12 +8316,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_British_beret
@@ -8342,12 +8342,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Chinese_cap
@@ -8368,12 +8368,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Chinese_cap_1
@@ -8394,12 +8394,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Chinese_Red_Army_cap
@@ -8420,12 +8420,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_US_nco_cap
@@ -8544,12 +8544,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_German_officer_cap
@@ -8570,12 +8570,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_German_panzer_officer_cap
@@ -8596,12 +8596,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_soviet_officer_cap
@@ -8622,12 +8622,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_soviet_pilotka
@@ -8648,12 +8648,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_soviet_ushanka_1
@@ -8674,12 +8674,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_SS_cap
@@ -8700,12 +8700,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_German_field_cap
@@ -8726,12 +8726,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_soviet_field_cap
@@ -8752,12 +8752,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_UPA_field_cap
@@ -8778,12 +8778,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_UPA_pilotka
@@ -8804,12 +8804,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_UPA_officer_cap
@@ -8830,12 +8830,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_UPA_officer_cap_1
@@ -8856,12 +8856,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_soviet_officer_cap_1
@@ -8882,12 +8882,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_cafr_officer_cap
@@ -8908,12 +8908,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Afghanka_field_cap
@@ -8934,12 +8934,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_VDV_beret_1
@@ -8960,12 +8960,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Spetznaz_beret
@@ -8986,12 +8986,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Blugoslavian_beret
@@ -9012,12 +9012,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Redmenian_beret
@@ -9038,12 +9038,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Blugoslavian_navy_cap
@@ -9064,12 +9064,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Redmenian_navy_cap
@@ -9090,12 +9090,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_olive_drab_bandana
@@ -9119,7 +9119,7 @@
       modifiers:
         coefficients:
           Heat: 0.75
-          Radiation: 0.19999999999999996
+          Radiation: 0.19
     - type: Construction
 
       graph: civ13_head_yellow_NBC_hood
@@ -9143,7 +9143,7 @@
       modifiers:
         coefficients:
           Heat: 0.75
-          Radiation: 0.19999999999999996
+          Radiation: 0.19
     - type: Construction
 
       graph: civ13_head_olive_drab_NBC_hood
@@ -9166,7 +9166,7 @@
         coefficients:
           Blunt: 0.6
           Slash: 0.6
-          Heat: 0.19999999999999996
+          Heat: 0.19
           Radiation: 0.6
     - type: Construction
 
@@ -9216,12 +9216,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Chinese_Red_Guard_cap
@@ -9242,12 +9242,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_bizarre_dark_blue_hat
@@ -9268,12 +9268,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_white_surgical_cap
@@ -9294,12 +9294,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_dark_green_surgical_cap
@@ -9320,12 +9320,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_light_green_surgical_cap
@@ -9346,12 +9346,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_navy_surgical_cap
@@ -9372,12 +9372,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_creed_hood
@@ -9398,12 +9398,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Abashiri_Guard_Cap
@@ -9424,12 +9424,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Abashiri_Head_Guard_Cap
@@ -9450,12 +9450,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Abashiri_Warden_Cap
@@ -9476,12 +9476,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Kasa
@@ -9502,12 +9502,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Japanese_Cap_1
@@ -9528,12 +9528,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Russian_Cap
@@ -9554,12 +9554,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Russian_Officer_Cap
@@ -9580,12 +9580,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_top_hat_1
@@ -9606,12 +9606,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_brown_flat_cap
@@ -9632,12 +9632,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_blue_flat_cap
@@ -9658,12 +9658,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_grey_flat_cap
@@ -9684,12 +9684,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_fedora_hat
@@ -9710,12 +9710,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Cheka_cap
@@ -9736,12 +9736,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_papakha
@@ -9762,12 +9762,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Kuban_papakha
@@ -9788,12 +9788,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_budenovka
@@ -9814,12 +9814,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_German_cap
@@ -9840,12 +9840,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_French_kepi
@@ -9866,12 +9866,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_British_cap
@@ -9892,12 +9892,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Filipino_Officer_Cap
@@ -9920,12 +9920,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Baliwag
@@ -9946,12 +9946,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_US_Army_Hat
@@ -9972,12 +9972,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_cowboy_hat
@@ -9998,12 +9998,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_NCR_1st_Recon_Beret
@@ -10024,12 +10024,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_fur_hat
@@ -10052,12 +10052,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_bisonhead_fur_hat
@@ -10078,12 +10078,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_fur_cap
@@ -10104,12 +10104,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_roundcap
@@ -10130,12 +10130,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_kerchief
@@ -10156,12 +10156,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_red_sailor_beret
@@ -10182,12 +10182,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_blue_sailor_beret
@@ -10208,12 +10208,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_tarred_hat
@@ -10234,12 +10234,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_straw_hat
@@ -10260,12 +10260,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_black_tricorne
@@ -10286,12 +10286,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_capotain
@@ -10312,12 +10312,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_capotain_1
@@ -10338,12 +10338,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Pirate_hat
@@ -10364,12 +10364,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_bandana_1
@@ -10390,12 +10390,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_royal_navy_tricorne
@@ -10416,12 +10416,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_british_Army_tricorne
@@ -10442,12 +10442,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_black_bicorne
@@ -10468,12 +10468,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_british_feathered_hat
@@ -10494,12 +10494,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_portuguese_navy_tricorne
@@ -10520,12 +10520,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_portuguese_feathered_hat
@@ -10546,12 +10546,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_portuguese_army_tricorne
@@ -10572,12 +10572,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_spanish_navy_tricorne
@@ -10598,12 +10598,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_spanish_army_tricorne
@@ -10624,12 +10624,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_french_navy_tricorne
@@ -10650,12 +10650,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_french_army_tricorne
@@ -10676,12 +10676,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_french_feathered_hat
@@ -10702,12 +10702,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_united_provinces_navy_tricorne
@@ -10728,12 +10728,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_united_Provinces_feathered_hat
@@ -10754,12 +10754,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_united_Provinces_Army_tricorne
@@ -10780,12 +10780,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_nurse_hat
@@ -10806,12 +10806,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_bowler_hat
@@ -10832,12 +10832,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_cowboy_hat_1
@@ -10858,12 +10858,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_dark_cowboy_hat
@@ -10886,12 +10886,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_vaquero_hat
@@ -10914,12 +10914,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_bandit_hat
@@ -10940,12 +10940,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_dark_union_hat
@@ -10966,12 +10966,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_light_union_hat
@@ -10992,12 +10992,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_grey_confederate_hat
@@ -11018,12 +11018,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_union_Cap
@@ -11044,12 +11044,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_confederate_cap
@@ -11070,12 +11070,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_sombrero
@@ -11098,12 +11098,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_white_ten_gallon_hat
@@ -11124,12 +11124,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_artisan_hat
@@ -11150,12 +11150,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_feathered_hat
@@ -11176,12 +11176,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_count_hat
@@ -11202,12 +11202,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_cavalier_hat
@@ -11228,12 +11228,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_brown_noble_hat
@@ -11254,12 +11254,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_black_noble_hat
@@ -11282,12 +11282,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_phrigian_hat
@@ -11310,12 +11310,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_doge_hat
@@ -11338,12 +11338,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_long_black_hooded_cape
@@ -11366,12 +11366,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_plague_doctor_hat
@@ -11394,12 +11394,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_nun_hood
@@ -11420,12 +11420,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_turban
@@ -11446,12 +11446,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_white_turban
@@ -11472,12 +11472,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_grand_turban
@@ -11498,12 +11498,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_toadstool_hat
@@ -11524,12 +11524,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_keffiyeh
@@ -11550,12 +11550,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_pakol
@@ -11576,12 +11576,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_mayan_headdress
@@ -11604,12 +11604,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_steppe_shaman_wool_hat
@@ -11629,12 +11629,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_gat_hat
@@ -11655,12 +11655,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_Russian_Federal_Forces_service_cap
@@ -11681,12 +11681,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_black_bandana
@@ -11709,12 +11709,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_black_shemagh
@@ -11735,12 +11735,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_TFC_Cap
@@ -11761,12 +11761,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_MAGA_hat
@@ -11787,12 +11787,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_FBI_hat
@@ -11813,12 +11813,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_ATF_hat
@@ -11839,12 +11839,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_DEA_hat
@@ -11865,12 +11865,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_ACU_field_cap
@@ -11891,12 +11891,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_USEC_field_cap
@@ -11917,12 +11917,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_BEAR_field_cap
@@ -11943,12 +11943,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_black_beanie
@@ -11971,12 +11971,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_umghele_headband
@@ -11997,12 +11997,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_leaf_head_covering
@@ -12022,12 +12022,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_leaf_crown
@@ -12049,12 +12049,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_star_platinum_headband
@@ -12075,12 +12075,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_chief_hat
@@ -12101,12 +12101,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_lizard_pelt_headcover
@@ -12127,12 +12127,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_mystic_hood
@@ -12153,12 +12153,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_officer_cap
@@ -12179,12 +12179,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_keffiyeh_1
@@ -12205,12 +12205,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_feathered_cap
@@ -12231,12 +12231,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
 
       graph: civ13_head_hennin
