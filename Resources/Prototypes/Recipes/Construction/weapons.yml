@@ -19,6 +19,8 @@
   description: A simple round wooden shield.
   icon: { sprite: Civ14/Objects/weapons.rsi, state: buckler }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: blue wooden buckler
@@ -30,6 +32,8 @@
   description: A simple round wooden shield. This one is painted blue.
   icon: { sprite: Civ14/Objects/Weapons/buckler.rsi, state: blue_buckler-icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: red wooden buckler
@@ -41,6 +45,8 @@
   description: A simple round wooden shield. This one is painted red.
   icon: { sprite: Civ14/Objects/Weapons/buckler.rsi, state: red_buckler-icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: simple arrow
@@ -52,6 +58,8 @@
   description: A sharpened wood arrow, for use with a bow.
   icon: { sprite: Civ14/Objects/weapons.rsi, state: arrow }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: ancient bow
@@ -63,6 +71,8 @@
   description: A simple bow made out of wood and fiber.
   icon: { sprite: Civ14/Objects/StoneAge/bow.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: bone spear
@@ -74,3 +84,5 @@
   description: A spear topped with sharpened bone.
   icon: { sprite: Objects/Weapons/Melee/bone_spear.rsi, state: spear }
   objectType: Item
+  agemin: 0
+  agemax: 8
