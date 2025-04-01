@@ -32,6 +32,9 @@
       collectTime: 5.0
       minAmount: 0
       maxAmount: 2
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/belts/knife.rsi
+      slots: [Belt]
 
 - type: entity
   name: kitchen knife
