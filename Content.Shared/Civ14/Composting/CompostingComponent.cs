@@ -19,7 +19,7 @@ public sealed partial class CompostingComponent : Component
     /// Time in minutes for each item to be composted.
     /// </summary>
     [DataField("compostTime")]
-    public float CompostTime = 20.0f;
+    public float CompostTime = 6.0f;
 
     /// <summary>
     /// Items currently being composted and their completion times.
