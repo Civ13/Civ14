@@ -247,6 +247,14 @@
 
 - type: jobIcon
   parent: JobIcon
+  id: JobIconNomad
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: Nanotrasen
+  jobName: job-name-nomad
+
+- type: jobIcon
+  parent: JobIcon
   id: JobIconChiefEngineer
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
