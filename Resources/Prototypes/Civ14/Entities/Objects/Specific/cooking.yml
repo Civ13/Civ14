@@ -61,78 +61,37 @@
 
 - type: entity
   id: KitchenCampfire
-  parent: [BaseMachinePowered, SmallConstructibleMachine]
+  parent: [KitchenElectricGrill]
   name: campfire
   description: Keeps you warm and cooks your food.
   components:
-    - type: Animateable
-    - type: InteractionOutline
-    - type: ApcPowerReceiver
-      needsPower: false
-      powerLoad: 0
-    - type: Microwave
-      capacity: 3
-    - type: Appearance
-    - type: PointLight
-      radius: 4
-      energy: 3
-      color: "#E25822"
-    - type: HeatEmitter
-      heatingRate: 10
-    - type: GenericVisualizer
-      visuals:
-        enum.PowerDeviceVisuals.VisualState:
-          enum.MicrowaveVisualizerLayers.Base:
-            Idle: { state: "fireplace2" }
-            Cooking: { state: "fireplace_on" }
-          enum.MicrowaveVisualizerLayers.BaseUnlit:
-            Idle: { state: "fireplace" }
-            Cooking: { state: "fireplace_on" }
-        enum.PowerDeviceVisuals.Powered:
-          enum.MicrowaveVisualizerLayers.BaseUnlit:
-            True: { visible: true }
-            False: { visible: false }
-    - type: ActivatableUI
-      key: enum.MicrowaveUiKey.Key
-    - type: UserInterface
-      interfaces:
-        enum.MicrowaveUiKey.Key:
-          type: MicrowaveBoundUserInterface
-    - type: Physics
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PhysShapeAabb
-            bounds: "-0.3,-0.16,0.3,0.16"
-          density: 190
-          mask:
-            - TabletopMachineMask
-          layer:
-            - TabletopMachineLayer
     - type: Sprite
       sprite: Civ14/Objects/kitchen.rsi
       drawdepth: SmallObjects
       snapCardinals: true
       layers:
         - state: fireplace2
-          map: ["enum.MicrowaveVisualizerLayers.Base"]
-        - state: fireplace
+        - map: ["enum.EntityHeaterVisuals.Setting"]
           shader: unshaded
-          map: ["enum.MicrowaveVisualizerLayers.BaseUnlit"]
           visible: false
-    - type: Destructible
-      thresholds:
-        - trigger: !type:DamageTrigger
-            damage: 25
-          behaviors:
-            - !type:DoActsBehavior
-              acts: ["Breakage"]
-    - type: ContainerContainer
-      containers:
-        microwave_entity_container: !type:Container
-    - type: EmptyOnMachineDeconstruct
-      containers:
-        - microwave_entity_container
+    - type: ApcPowerReceiver
+      needsPower: false
+      powerLoad: 0
+    - type: PointLight
+      radius: 4
+      energy: 4
+      color: "#E25822"
+    - type: HeatEmitter
+      heatingRate: 10
+    - type: GenericVisualizer
+      visuals:
+        enum.EntityHeaterVisuals.Setting:
+          enum.EntityHeaterVisuals.Setting:
+            Off: { visible: false }
+            Low: { visible: true, state: fireplace2 }
+            Medium: { visible: true, state: fireplace_on }
+            High: { visible: true, state: fireplace_on }
+
     - type: GuideHelp
       guides:
         - Chef
