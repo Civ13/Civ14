@@ -135,3 +135,11 @@
     - Zookeeper
     - Psychologist
   primary: false
+
+- type: department
+  id: Nomads
+  name: department-Nomads
+  description: department-Nomads-description
+  color: "#a36156"
+  roles:
+    - Nomad

@@ -4,7 +4,7 @@
   description: job-description-nomad
   playTimeTracker: JobNomad
   startingGear: NomadGear
-  icon: "JobIconPassenger"
+  icon: "JobIconNomad"
   supervisors: job-supervisors-everyone
   access:
     - Maintenance
