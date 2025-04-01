@@ -1,0 +1,39 @@
+- type: soundCollection
+  id: AmbienceCivWoodland
+  files:
+    - /Audio/Ambience/Civ/woodland.ogg
+
+- type: soundCollection
+  id: AmbienceCivBattle
+  files:
+    - /Audio/Ambience/Civ/battle.ogg
+
+- type: soundCollection
+  id: AmbienceCivDesert
+  files:
+    - /Audio/Ambience/Civ/desert.ogg
+
+- type: soundCollection
+  id: AmbienceCivJungle
+  files:
+    - /Audio/Ambience/Civ/jungle.ogg
+
+- type: soundCollection
+  id: AmbienceCivRain
+  files:
+    - /Audio/Ambience/Civ/rain.ogg
+
+- type: soundCollection
+  id: AmbienceCivShip
+  files:
+    - /Audio/Ambience/Civ/ship.ogg
+
+- type: soundCollection
+  id: AmbienceCivShore
+  files:
+    - /Audio/Ambience/Civ/shore.ogg
+
+- type: soundCollection
+  id: AmbienceCivWinter
+  files:
+    - /Audio/Ambience/Civ/winter.ogg
