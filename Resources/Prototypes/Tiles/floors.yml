@@ -251,6 +251,7 @@
     collection: BarestepWood
   itemDrop: FloorTileItemWood
   heatCapacity: 10000
+  weather: false
 
 - type: tile
   id: FloorWhite

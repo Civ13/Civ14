@@ -2,7 +2,8 @@
   id: Woodland
   sound:
     params:
-      volume: -12
+      loop: true
+      volume: -3
     collection: AmbienceCivWoodland
   rules: NearGrass
   fadeIn: true
@@ -28,7 +29,8 @@
   id: Desert
   sound:
     params:
-      volume: -12
+      loop: true
+      volume: -3
     collection: AmbienceCivDesert
   rules: NearDesert
   fadeIn: true
@@ -54,7 +56,8 @@
   id: Jungle
   sound:
     params:
-      volume: -12
+      loop: true
+      volume: -3
     collection: AmbienceCivJungle
   rules: NearJungle
   fadeIn: true
@@ -77,37 +80,11 @@
       range: 3
 
 - type: ambientMusic
-  id: Rain
-  sound:
-    params:
-      volume: -12
-    collection: AmbienceCivRain
-  rules: IsRaining
-  fadeIn: true
-  interruptable: true
-  priority: 1
-
-- type: soundCollection
-  id: AmbienceCivRain
-  files:
-    - /Audio/Ambience/Civ/rain.ogg
-
-# Placeholder for now, needs to check raining component
-- type: rules
-  id: IsRaining
-  rules:
-    - !type:NearbyTilesPercentRule
-      ignoreAnchored: true
-      percent: 0.5
-      tiles:
-        - FloorWhite
-      range: 3
-
-- type: ambientMusic
   id: Shore
   sound:
     params:
-      volume: -12
+      loop: true
+      volume: -3
     collection: AmbienceCivShore
   rules: NearShore
   fadeIn: true
@@ -133,7 +110,8 @@
   id: Winter
   sound:
     params:
-      volume: -12
+      loop: true
+      volume: -3
     collection: AmbienceCivWinter
   rules: NearWinter
   fadeIn: true
