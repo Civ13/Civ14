@@ -176,5 +176,8 @@
             - material: WoodPlank
               amount: 8
               doAfter: 12
+            - material: Rope
+              amount: 2
+              doAfter: 8
     - node: end
       entity: civ13_suit_primitive_wood_armor

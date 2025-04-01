@@ -80,6 +80,7 @@
     collection: BarestepWood
   itemDrop: FloorTileItemThatch
   heatCapacity: 10000
+  weather: false
 
 - type: stack
   id: FloorTileThatch
@@ -121,15 +122,6 @@
       sprite: Civ14/Structures/Floors/wood.rsi
       state: thatch2
       drawdepth: FloorTiles
-    - type: IsRoof
-    - type: Tag
-      tags:
-        - ForceFixRotations
-    - type: Physics
-      canCollide: false
-    - type: Fixtures
-    - type: Damageable
-      damageContainer: Inorganic
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -164,6 +156,8 @@
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]
+    - type: BlockWeather
+    - type: SunShadowCast
 
 - type: tile
   id: FloorRoad
@@ -171,6 +165,7 @@
   sprite: /Textures/Civ14/Structures/Floors/roads.rsi/r_roadfull.png
   variants: 1
   baseTurf: Plating
+  weather: true
   isSubfloor: false
   deconstructTools: [Prying]
   footstepSounds:

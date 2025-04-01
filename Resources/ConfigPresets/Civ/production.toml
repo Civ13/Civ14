@@ -1,0 +1,77 @@
+# Welcome to the example configuration file!
+# Remember that if this is in bin/Content.Server or such, it may be overwritten on build.
+# Consider copying it and using the --config-file and --data-dir options.
+
+[log]
+path = "logs"
+format = "log_%(date)s-%(time)s.txt"
+level = 1
+enabled = true
+
+[net]
+tickrate = 20
+port = 1212
+bindto = "::,0.0.0.0"
+max_connections = 256
+
+[status]
+enabled = true
+
+[game]
+hostname = "Civilization 14 (UN)"
+lobbyenabled = true
+desc = "An unofficial Civilization 14 server"
+maxplayers = 256
+lobbyduration = 60
+disallowlatejoins = false
+defaultpreset = "extended"
+
+[console]
+loginlocal = true
+login_host_user = ""
+
+[hub]
+# Set to true to show this server on the public server list
+# Before enabling this, read: https://docs.spacestation14.io/hosts/hub-rules
+advertise = true
+# Comma-separated list of tags, useful for categorizing your server.
+# See https://docs.spacestation14.io/hosts/hub-rules for more details on this when it becomes relevant.
+tags = "region:eu_w,rp:med"
+# URL of your server. Fill this in if you have a domain name,
+# want to use HTTPS (with a reverse proxy), or other advanced scenarios.
+# Must be in the form of an ss14:// or ss14s:// URI pointing to the status API.
+server_url = "ss14://civ13.com:1212"
+# Comma-separated list of URLs of hub servers to advertise to.
+hub_urls = "https://hub.spacestation14.com/"
+
+[auth]
+# Authentication (accounts):
+# 0 = Optional, 1 = Required, 2 = Disabled
+# Presumably do require authentication on any public server.
+mode = 0
+# If true, even if authentication is required, localhost is still allowed to login directly regardless.
+allowlocal = true
+
+[database]
+# Database type to use. Can be "sqlite" or "postgres" currently.
+engine = "sqlite"
+
+# Path to store the database at when using SQLite. Note that is NOT a disk path.
+# This is relative to the server data directory, which is specified by --data-dir when starting the server from the command (or automatically set by SS14.Watchdog)
+sqlite_dbpath = "preferences.db"
+
+# PostgreSQL database configuration, should be self explanatory.
+pg_host = "localhost"
+pg_port = 5432
+pg_database = "ss14"
+pg_username = ""
+pg_password = ""
+
+[infolinks]
+discord = "https://discord.gg/hBEtg4x"
+website = "https://civ13.com"
+github = "https://github.com/Civ13/Civ14"
+wiki = "https://civ13.github.io/Civ14/Civ14-Wiki"
+
+[server]
+lobby_right_panel_width = 300

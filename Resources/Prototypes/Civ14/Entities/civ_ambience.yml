@@ -1,0 +1,134 @@
+- type: ambientMusic
+  id: Woodland
+  sound:
+    params:
+      loop: true
+      volume: -3
+    collection: AmbienceCivWoodland
+  rules: NearGrass
+  fadeIn: true
+  interruptable: true
+  priority: 1
+
+- type: soundCollection
+  id: AmbienceCivWoodland
+  files:
+    - /Audio/Ambience/Civ/woodland.ogg
+
+- type: rules
+  id: NearGrass
+  rules:
+    - !type:NearbyTilesPercentRule
+      ignoreAnchored: true
+      percent: 0.5
+      tiles:
+        - FloorPlanetGrass
+      range: 3
+
+- type: ambientMusic
+  id: Desert
+  sound:
+    params:
+      loop: true
+      volume: -3
+    collection: AmbienceCivDesert
+  rules: NearDesert
+  fadeIn: true
+  interruptable: true
+  priority: 1
+
+- type: soundCollection
+  id: AmbienceCivDesert
+  files:
+    - /Audio/Ambience/Civ/desert.ogg
+
+- type: rules
+  id: NearDesert
+  rules:
+    - !type:NearbyTilesPercentRule
+      ignoreAnchored: true
+      percent: 0.5
+      tiles:
+        - FloorDesert
+      range: 3
+
+- type: ambientMusic
+  id: Jungle
+  sound:
+    params:
+      loop: true
+      volume: -3
+    collection: AmbienceCivJungle
+  rules: NearJungle
+  fadeIn: true
+  interruptable: true
+  priority: 1
+
+- type: soundCollection
+  id: AmbienceCivJungle
+  files:
+    - /Audio/Ambience/Civ/jungle.ogg
+
+- type: rules
+  id: NearJungle
+  rules:
+    - !type:NearbyTilesPercentRule
+      ignoreAnchored: true
+      percent: 0.5
+      tiles:
+        - FloorGrassJungle
+      range: 3
+
+- type: ambientMusic
+  id: Shore
+  sound:
+    params:
+      loop: true
+      volume: -3
+    collection: AmbienceCivShore
+  rules: NearShore
+  fadeIn: true
+  interruptable: true
+  priority: 1
+
+- type: soundCollection
+  id: AmbienceCivShore
+  files:
+    - /Audio/Ambience/Civ/shore.ogg
+
+- type: rules
+  id: NearShore
+  rules:
+    - !type:NearbyTilesPercentRule
+      ignoreAnchored: true
+      percent: 0.2
+      tiles:
+        - FloorSand
+      range: 3
+
+- type: ambientMusic
+  id: Winter
+  sound:
+    params:
+      loop: true
+      volume: -3
+    collection: AmbienceCivWinter
+  rules: NearWinter
+  fadeIn: true
+  interruptable: true
+  priority: 1
+
+- type: soundCollection
+  id: AmbienceCivWinter
+  files:
+    - /Audio/Ambience/Civ/winter.ogg
+
+- type: rules
+  id: NearWinter
+  rules:
+    - !type:NearbyTilesPercentRule
+      ignoreAnchored: true
+      percent: 0.6
+      tiles:
+        - FloorSnow
+      range: 3

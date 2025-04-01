@@ -264,7 +264,7 @@
         - state: sheet-sandstone
           map: ["base"]
     - type: Stack
-      stackType: Sandstone
+      stackType: Rope
       baseLayer: base
       layerStates:
         - rope

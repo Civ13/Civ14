@@ -286,11 +286,11 @@
   clickEvent: !type:ToggleInternalsAlertEvent
   icons:
     - sprite: /Textures/Interface/Alerts/internals.rsi
-      state: internal0
+      state: mask0
     - sprite: /Textures/Interface/Alerts/internals.rsi
-      state: internal1
+      state: mask1
     - sprite: /Textures/Interface/Alerts/internals.rsi
-      state: internal2
+      state: mask2
   name: alerts-internals-name
   description: alerts-internals-desc
   minSeverity: 0
@@ -309,7 +309,7 @@
   category: Hunger
   icons:
     - sprite: /Textures/Interface/Alerts/hunger.rsi
-      state: peckish
+      state: nutrition2
   name: alerts-hunger-name
   description: alerts-hunger-desc
 
@@ -318,19 +318,19 @@
   category: Stamina
   icons:
     - sprite: /Textures/Interface/Alerts/stamina.rsi
-      state: stamina0
+      state: staminaciv0
     - sprite: /Textures/Interface/Alerts/stamina.rsi
-      state: stamina1
+      state: staminaciv1
     - sprite: /Textures/Interface/Alerts/stamina.rsi
-      state: stamina2
+      state: staminaciv2
     - sprite: /Textures/Interface/Alerts/stamina.rsi
-      state: stamina3
+      state: staminaciv3
     - sprite: /Textures/Interface/Alerts/stamina.rsi
-      state: stamina4
+      state: staminaciv4
     - sprite: /Textures/Interface/Alerts/stamina.rsi
-      state: stamina5
+      state: staminaciv5
     - sprite: /Textures/Interface/Alerts/stamina.rsi
-      state: stamina6
+      state: staminaciv6
   name: alerts-stamina-name
   description: alerts-stamina-desc
   minSeverity: 0
@@ -341,7 +341,7 @@
   category: Hunger
   icons:
     - sprite: /Textures/Interface/Alerts/hunger.rsi
-      state: starving
+      state: nutrition0
   name: alerts-starving-name
   description: alerts-starving-desc
 
