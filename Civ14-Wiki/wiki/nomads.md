@@ -1,6 +1,6 @@
 # Nomads
 
-**Tip: If this is your first time playing, you should probably also check the [starter guide](starter_guide.md).**
+**Tip: If this is your first time playing, you should probably check the [starter guide](starter_guide.md) as well.**
 
 ## What is the Nomads mode?
 
