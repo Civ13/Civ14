@@ -25,7 +25,7 @@ public sealed partial class GrillFuelBurnComponent : Component
     /// Current heating setting of the campfire based on fuel level.
     /// </summary>
     [DataField("setting")]
-    public EntityHeaterSetting Setting = EntityHeaterSetting.Off;
+    public EntityHeaterSetting Setting = EntityHeaterSetting.Low;
 
     /// <summary>
     /// Optional sound played when the setting changes.

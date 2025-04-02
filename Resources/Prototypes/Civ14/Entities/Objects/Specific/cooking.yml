@@ -118,8 +118,8 @@
         enum.EntityHeaterVisuals.Setting:
           enum.EntityHeaterVisuals.Setting:
             Off: { visible: false }
-            Low: { visible: true, state: fireplace2 }
-            Medium: { visible: true, state: fireplace_on }
+            Low: { visible: true, state: fireplace3 }
+            Medium: { visible: true, state: fireplace2 }
             High: { visible: true, state: fireplace_on }
 
     - type: GuideHelp

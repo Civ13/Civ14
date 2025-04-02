@@ -21,7 +21,6 @@ public sealed class GrillFuelBurnSystem : EntitySystem
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly SharedStackSystem _stackSystem = default!;
 
-    // Tracks remaining burn time for each campfire entity (in seconds)
     private readonly Dictionary<EntityUid, float> _remainingBurnTime = new();
 
     public override void Initialize()
@@ -36,7 +35,8 @@ public sealed class GrillFuelBurnSystem : EntitySystem
 
     private void OnMapInit(EntityUid uid, GrillFuelBurnComponent component, MapInitEvent args)
     {
-        _remainingBurnTime[uid] = component.Fuel * 60f; // Initial fuel in seconds (assuming 1 fuel = 1 minute default)
+        _remainingBurnTime[uid] = component.Fuel * 2f * 60f; // Assuming 2 minutes per initial fuel unit
+        AdjustHeaterSetting(uid, component);
     }
 
     private void OnItemPlaced(EntityUid uid, GrillFuelBurnComponent comp, ref ItemPlacedEvent args)
@@ -56,23 +56,19 @@ public sealed class GrillFuelBurnSystem : EntitySystem
         var itemProto = _entityManager.GetComponent<MetaDataComponent>(args.Used).EntityPrototype?.ID;
         Log.Debug($"InteractUsing on campfire with: {itemProto}, BurnTime: {burnFuel.BurnTime}");
 
-        // Check if the item has a StackComponent
         if (_entityManager.TryGetComponent<StackComponent>(args.Used, out var stackComp))
         {
-            int availableFuel = stackComp.Count; // How many items in the stack
-            int fuelNeeded = comp.MaxFuel - comp.Fuel; // How many more fuel units the campfire can take
-            int fuelToAdd = Math.Min(availableFuel, fuelNeeded); // Add only what’s needed or available
+            int availableFuel = stackComp.Count;
+            int fuelNeeded = comp.MaxFuel - comp.Fuel;
+            int fuelToAdd = Math.Min(availableFuel, fuelNeeded);
 
             if (fuelToAdd > 0)
             {
                 Log.Debug($"Adding {fuelToAdd} fuel units from stack of {stackComp.Count}");
                 comp.Fuel += fuelToAdd;
                 _remainingBurnTime[uid] = _remainingBurnTime.GetValueOrDefault(uid) + (fuelToAdd * burnFuel.BurnTime * 60f);
-
-                // Reduce the stack count using SharedStackSystem
                 _stackSystem.SetCount(args.Used, stackComp.Count - fuelToAdd, stackComp);
 
-                // If stack is depleted, delete it
                 if (stackComp.Count <= 0)
                 {
                     Log.Debug("Stack depleted, deleting item");
@@ -80,7 +76,7 @@ public sealed class GrillFuelBurnSystem : EntitySystem
                 }
 
                 AdjustHeaterSetting(uid, comp);
-                //_audio.PlayPvs("/Audio/Effects/click.ogg", uid);
+                //_audio.PlayPvs("/Audio/Effects/click.ogg", uid); //Fuel added sound asset
                 args.Handled = true;
             }
             else
@@ -90,7 +86,6 @@ public sealed class GrillFuelBurnSystem : EntitySystem
         }
         else
         {
-            // Non-stack item (single unit)
             if (comp.Fuel < comp.MaxFuel)
             {
                 Log.Debug("Adding 1 fuel unit from non-stack item");
@@ -98,7 +93,7 @@ public sealed class GrillFuelBurnSystem : EntitySystem
                 _remainingBurnTime[uid] = _remainingBurnTime.GetValueOrDefault(uid) + (burnFuel.BurnTime * 60f);
                 QueueDel(args.Used);
                 AdjustHeaterSetting(uid, comp);
-                //_audio.PlayPvs("/Audio/Effects/click.ogg", uid);
+                //_audio.PlayPvs("/Audio/Effects/click.ogg", uid); // Fuel added, consume the whole stack
                 args.Handled = true;
             }
             else
@@ -119,16 +114,12 @@ public sealed class GrillFuelBurnSystem : EntitySystem
                 Spawn("Coal1", coordinates);
                 QueueDel(uid);
                 _remainingBurnTime.Remove(uid);
+                AdjustHeaterSetting(uid, comp); // Ensure Off state
                 continue;
             }
 
             _remainingBurnTime[uid] -= deltaTime;
-            if (_remainingBurnTime[uid] <= 0)
-            {
-                comp.Fuel--;
-                _remainingBurnTime[uid] = 0f;
-                AdjustHeaterSetting(uid, comp);
-            }
+            AdjustHeaterSetting(uid, comp); // Check setting based on remaining time
 
             if (comp.Setting != EntityHeaterSetting.Off)
             {
@@ -156,24 +147,29 @@ public sealed class GrillFuelBurnSystem : EntitySystem
             return;
 
         comp.Setting = setting;
+        Log.Debug($"Changing setting to {setting} for campfire {uid}");
         _appearance.SetData(uid, EntityHeaterVisuals.Setting, setting);
-        _audio.PlayPvs(comp.SettingSound, uid);
     }
 
     private void AdjustHeaterSetting(EntityUid uid, GrillFuelBurnComponent comp)
     {
-        var fuelRatio = (float)comp.Fuel / comp.MaxFuel;
+        var remainingTimeSeconds = _remainingBurnTime.GetValueOrDefault(uid);
         EntityHeaterSetting newSetting;
-        if (fuelRatio > 2f / 3f)
+
+        if (remainingTimeSeconds > 600f) // > 6 minutes
             newSetting = EntityHeaterSetting.High;
-        else if (fuelRatio > 1f / 3f)
+        else if (remainingTimeSeconds > 300f) // 5-10 minutes
             newSetting = EntityHeaterSetting.Medium;
-        else if (fuelRatio > 0f)
+        else if (remainingTimeSeconds > 0f) // < 5 minutes
             newSetting = EntityHeaterSetting.Low;
         else
             newSetting = EntityHeaterSetting.Off;
 
-        ChangeSetting(uid, newSetting, comp);
+        if (comp.Setting != newSetting)
+        {
+            Log.Debug($"Adjusting heater setting from {comp.Setting} to {newSetting} (Remaining Time: {remainingTimeSeconds / 60f:F1} minutes)");
+            ChangeSetting(uid, newSetting, comp);
+        }
     }
 
     private float SettingPower(EntityHeaterSetting setting)
