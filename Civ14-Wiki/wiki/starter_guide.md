@@ -4,6 +4,8 @@
 
 ## Spawning in
 
+![arrival](./../img/arrival.png)
+
 -   You start out with nothing but age-appropriate clothes on your person and a torch in your pocket. If it is dark, drag the torch to your hand slot and press **Z** to turn it on.
 
 -   Your **hunger** and **thirst** levels will both be at around 50%. You will get alerts if you get hungry or thirsty on the right side of the screen, below your health and stamina indicators. Keep an eye out for them.
