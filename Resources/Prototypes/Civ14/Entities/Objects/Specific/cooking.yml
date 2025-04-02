@@ -60,6 +60,28 @@
       agemax: 8
 
 - type: entity
+  abstract: true
+  parent: BaseStructure
+  id: BaseHeaterStructure
+  components:
+  - type: Transform
+    anchored: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.08,-0.35,0.15,0.25"
+        mask:
+        - TabletopMachineMask
+        layer:
+        - Impassable
+        - MidImpassable
+        - LowImpassable
+        hard: false
+  - type: Appearance
+
+- type: entity
   id: KitchenCampfire
   parent: [KitchenElectricGrill]
   name: campfire
@@ -83,6 +105,14 @@
       color: "#E25822"
     - type: HeatEmitter
       heatingRate: 10
+    - type: GrillFuelBurn
+      fuel: 2
+      maxFuel: 10
+    - type: ItemPlacer
+      maxEntities: 2
+      whitelist:
+        components:
+        - Temperature
     - type: GenericVisualizer
       visuals:
         enum.EntityHeaterVisuals.Setting:
