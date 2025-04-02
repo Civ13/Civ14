@@ -4,21 +4,23 @@
 
 ## Spawning in
 
-![arrival](./../img/arrival.png)
-
 -   You start out with nothing but age-appropriate clothes on your person and a torch in your pocket. If it is dark, drag the torch to your hand slot and press **Z** to turn it on.
+
+    -   ![arrival](./../img/arrival.png)
+
+-   If it's **winter season** or **Ice Age** map, you also spawn with a **fur coat**. Losing this will mean cold and miserable **death** in the icy outdoors.
 
 -   Your **hunger** and **thirst** levels will both be at around 50%. You will get alerts if you get hungry or thirsty on the right side of the screen, below your health and stamina indicators. Keep an eye out for them.
 
 -   Your first priority will be gathering flint to make a flint axe.
 
     -   Find a large rock or boulder and right-click on it. You should see an option to search for flint.
+        ![boulder](./../img/boulder.png)
     -   Click the rock repeatedly with the flint to sharpen it (you will get a message when it is sharpened).
     -   Now go to a tree and right click on it. There should be an option to remove a branch from the tree, if there are any suitable ones available. This will pull a branch from the tree and place it on the ground.
     -   Click the branch with an empty hand on **Grab intent** to clear the leaves, then click again on **Harm intent** to pull out the twigs.
     -   Use the sharpened flint on the stick to sharpen it, then click the sharpened stick with the flint again to craft yourself a trusty flint axe, a tool and a weapon.
-
--   If it's **winter season** or **Ice Age** map, you also spawn with a **fur coat**. Losing this will mean cold and miserable **death** in the icy outdoors.
+        ![flint axe crafting menu](./../img/flint_axe.png)
 
 ## Crafting Basics
 
@@ -55,7 +57,8 @@ To survive, you will need to keep yourself nourished and warm. Pay attention to 
 
 The easiest way to get food early on is by killing animals and eating the meat after cooking it. Also, you can eat bird eggs, even uncooked!
 
--   Find an animal, preferably one that doesn't have fangs, claws, tusks, or poison. and kill it with any means (even bare fists work). Remember to press the **harm intent** button to enter combat mode! ![harm intent](./../../Resources/Textures/Interface/Actions/harm.png) ![harm intent](./../../Resources/Textures/Interface/Actions/harmOff.png)
+-   Find an animal, preferably one that doesn't have fangs, claws, tusks, or poison. and kill it with any means (even bare fists work). Remember to press the **harm intent** button to enter combat mode!
+    <img src="./../../Resources/Textures/Interface/Actions/harm.png" style="width:64px;height:64px;image-rendering: pixelated;"> <img src="./../../Resources/Textures/Interface/Actions/harmOff.png" style="width:64px;height:64px;image-rendering: pixelated;">
 
 **Tip: For now, stay away from bears, alligators, wolves, snakes, and mammoths. They will fight back and very probably kill you. Wait until you have proper equipment or a hunting party with you.**
 
@@ -67,8 +70,7 @@ Farming is another good source of food (although not an immediate one) that does
 
 ### Thirst
 
-The easiest way to quench your thirst early on is by drinking water or
-milk.
+The easiest way to quench your thirst early on is by drinking water or milk.
 
 #### Water
 
@@ -81,8 +83,7 @@ You can get water from **puddles**, any **water tiles (except saltwater - do not
 
 -   Find a **cow**, **sheep ewe**, or **goat ewe**.
 -   Make a **bucket** from **wood**.
--   Use the **bucket** on **Help intent** on the animal of choice to
-    gather milk.
+-   Use the **bucket** on **Help intent** on the animal of choice to gather milk.
 -   Pour the milk into the **mug** or **glass** and drink.
 -   You don't have to boil milk.
 
@@ -99,9 +100,8 @@ Southern climates could be merciless in their own way, so be careful that you do
 
 ### Fur Clothing
 
-Fur clothing can keep you warm in the winter, but it will not save you if you are caught in a blizzard.
-
-You can make fur clothing by skinning large furry animals like **bears** and **wolves**. <sub>Yes, you can finally skin furries with no repercussions.</sub>
+<img src="./../../Resources/Textures/Civ14/Clothing/exported/suits/prehistoric_fur2.rsi/icon.png" style="width:64px;height:64px;image-rendering: pixelated;"><img src="./../../Resources/Textures/Civ14/Clothing/exported/suits/fur_jacket1.rsi/icon.png" style="width:64px;height:64px;image-rendering: pixelated;">
+Fur clothing can keep you warm in the winter, but it will not save you if you are caught in a blizzard. You can make fur clothing by skinning large furry animals like **bears** and **wolves**. <sub>Yes, you can finally skin furries with no repercussions.</sub>
 
 -   Kill one of the following animals: **bear, wolf, bison, monkey, fox, sheep**.
 -   Bucher the animal by using the **knife** on **Harm Intent**.
@@ -122,11 +122,10 @@ Any roofed area is considered a shelter.
 
 ## Fire
 
-Crackling fires will keep you warm even without a coat.
+<img src="./../../Resources/Textures/Civ14/Objects/kitchen.rsi/fireplace_on.png" style="width:64px;height:64px;image-rendering: pixelated;">Crackling fires will keep you warm even without a coat. Both campfires and braziers are refueled by adding **wood**, **coal** and **charcoal**. The brazier could also be refueled with **paper- and cloth-based items**.
 
 -   A **campfire** warms you when you are right next to it, or within 2 tile.
 -   A **brazier** (made with **stone**) provides more heat and warms you within 3 tiles.
--   Both campfires and braziers are refueled by adding **wood**, **coal** and **charcoal**. The brazier could also be refueled with **paper- and cloth-based items**.
 
 ## Dangerous animals
 
@@ -134,14 +133,11 @@ Crackling fires will keep you warm even without a coat.
 
 You want to avoid these, unless you're robust or need some pelts:
 
--   Bears (can provide fur)
--   Wolves (can provide fur)
--   Mammoths
--   Panthers, Jaguars, Tigers, and other big cats
--   Snakes
--   Piranhas (inhabit jungle river waters. Throw some meat in the water if it looks suspicious)
--   Mosquitoes
--   Alligators
+-   ![brown bear](./../../Resources/Textures/Civ14/Mobs/animal_64.rsi/brownbear.png)Bears (can provide fur)
+-   ![white wolf](./../../Resources/Textures/Civ14/Mobs/animal.rsi/whitewolf.png)![grey wolf](./../../Resources/Textures/Civ14/Mobs/animal.rsi/greywolf.png)Wolves (can provide fur)
+-   ![mammoth](./../../Resources/Textures/Civ14/Mobs/animal_128.rsi/mammoth.png)Mammoths
+-   ![sabertooth](./../../Resources/Textures/Civ14/Mobs/animal_big.rsi/sabertoothcat_brown.png)![liom](./../../Resources/Textures/Civ14/Mobs/animal_big.rsi/lion.png)Panthers, Jaguars, Lions, and other big cats
+-   ![alligator](./../../Resources/Textures/Civ14/Mobs/animal_big.rsi/alligator.png)Alligators
 
 ## Night time
 

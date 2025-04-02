@@ -11,7 +11,7 @@
       layers:
         - map: ["enum.DamageStateVisualLayers.Base"]
           state: brownbear
-          sprite: Civ14/Mobs/animal.rsi
+          sprite: Civ14/Mobs/animal_64.rsi
     - type: Fixtures
       fixtures:
         fix1:
