@@ -1,32 +1,32 @@
 # Starter Guide
 
-**Note: This guide mostly pertains to survival in the sandbox [Nomads](nomads.md) game mode.**
+**Note:** This guide primarily focuses on survival in the sandbox [Nomads](nomads.md) game mode.
 
 ## Spawning in
 
--   You start out with nothing but age-appropriate clothes on your person and a torch in your pocket. If it is dark, drag the torch to your hand slot and press **Z** to turn it on.
+-   You begin with only age-appropriate clothing and a torch in your pocket. If it's dark, drag the torch to your hand slot and press **Z** to activate it.
 
     -   ![arrival](./../img/arrival.png)
 
 -   If it's **winter season** or **Ice Age** map, you also spawn with a **fur coat**. Losing this will mean cold and miserable **death** in the icy outdoors.
 
--   Your **hunger** and **thirst** levels will both be at around 50%. You will get alerts if you get hungry or thirsty on the right side of the screen, below your health and stamina indicators. Keep an eye out for them.
+-   Your **hunger** and **thirst** levels will start at approximately 50%. You'll receive alerts on the right side of the screen (below your health and stamina indicators) when you're hungry or thirsty. Pay close attention to these alerts.
 
--   Your first priority will be gathering flint to make a flint axe.
+-   Your first priority is to gather flint to craft a flint axe.
 
-    -   Find a large rock or boulder and right-click on it. You should see an option to search for flint.
+    -   Locate a large rock or boulder and right-click on it. You should see an option to search for flint.
         ![boulder](./../img/boulder.png)
     -   Click the rock repeatedly with the flint to sharpen it (you will get a message when it is sharpened).
     -   Now go to a tree and right click on it. There should be an option to remove a branch from the tree, if there are any suitable ones available. This will pull a branch from the tree and place it on the ground.
-    -   Click the branch with an empty hand on **Grab intent** to clear the leaves, then click again on **Harm intent** to pull out the twigs.
-    -   Use the sharpened flint on the stick to sharpen it, then click the sharpened stick with the flint again to craft yourself a trusty flint axe, a tool and a weapon.
+    -   Click the branch with an empty hand to clear the leaves.
+    -   Use the sharpened flint on the stick to sharpen the stick. Then, click the sharpened stick with the flint again to craft a flint axe, which serves as both a tool and a weapon.
         ![flint axe crafting menu](./../img/flint_axe.png)
 
 ## Crafting Basics
 
 ### Crafting Menu
 
-**Tip: Press G to open the crafting menu.**
+**Tip:** Press **G** to open the crafting menu.
 
 You will need some basic things to survive. At the very start you will most likely be using **wood, leather, bone, stone, and straw** to make them.
 
@@ -60,7 +60,7 @@ The easiest way to get food early on is by killing animals and eating the meat a
 -   Find an animal, preferably one that doesn't have fangs, claws, tusks, or poison. and kill it with any means (even bare fists work). Remember to press the **harm intent** button to enter combat mode!
     <img src="./../../Resources/Textures/Interface/Actions/harm.png" style="width:64px;height:64px;image-rendering: pixelated;"> <img src="./../../Resources/Textures/Interface/Actions/harmOff.png" style="width:64px;height:64px;image-rendering: pixelated;">
 
-**Tip: For now, stay away from bears, alligators, wolves, snakes, and mammoths. They will fight back and very probably kill you. Wait until you have proper equipment or a hunting party with you.**
+**Tip:** For now, stay away from bears, alligators, wolves, snakes, and mammoths. They will fight back and very probably kill you. Wait until you have proper equipment or a hunting party with you.
 
 -   Use your knife (flint axe works too) on the dead animal with **Harm intent** to butcher it.
 -   **Raw meat** causes **food poisoning**! You'll want to **cook** it first, but if you're starving, food poisoning is the least of your worries.
@@ -92,7 +92,7 @@ you'll never go thirsty.
 
 ## Temperature
 
-**Tip: Keep an eye out for the temperature alert! If it is flashing blue with a white snowflake, you are freezing! If it is red and there is sun instead, you are melting from the heat!**
+**Tip:** Keep an eye out for the temperature alert! If it is flashing blue with a white snowflake, you are freezing! If it is red and there is sun instead, you are melting from the heat!
 
 Winter seasons can bring an icy chill that can seriously hurt and slow you down, or even kill you. Blizzards are especially deadly, and just wearing a fur coat will not cut it, so make sure you have a shelter ready before it is too late.
 
