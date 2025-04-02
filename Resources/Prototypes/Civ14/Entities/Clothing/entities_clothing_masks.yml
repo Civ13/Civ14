@@ -1,27 +1,4 @@
 - type: entity
-  name: gas mask
-  parent: ClothingMaskGas
-  id: civ13_mask_gas_mask
-  description: A face-covering mask that filters harmful gases from the air.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/masks/gas_alt.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/masks/gas_alt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.9
-          Slash: 0.9
-          Heat: 0.65
-          Radiation: 0.2
-    - type: Construction
-      graph: civ13_mask_gas_mask
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
-- type: entity
   name: Half mask
   parent: ClothingMaskGas
   id: civ13_mask_Half_mask
@@ -166,31 +143,6 @@
       material: Cloth
       time: 5
 
-- type: entity
-  name: length of tape
-  parent: ClothingMaskBase
-  id: civ13_mask_length_of_tape
-  description: It's a robust DIY muzzle!
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/masks/tape_cross.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/masks/tape_cross.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
-    - type: Construction
-      graph: civ13_mask_length_of_tape
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: plague doctor's mask
   parent: ClothingMaskBase
@@ -1090,31 +1042,7 @@
       cost: 5
       material: Cloth
       time: 5
-- type: entity
-  name: skull face balaclava
-  parent: ClothingMaskBase
-  id: civ13_mask_skull_face_balaclava
-  description: A balaclava with a skull imprint, covering the face.
-  components:
-    - type: Sprite
-      sprite: Civ14/Clothing/exported/masks/skullclava.rsi
-    - type: Clothing
-      sprite: Civ14/Clothing/exported/masks/skullclava.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
-    - type: Construction
-      graph: civ13_mask_skull_face_balaclava
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: grey headscarf
   parent: ClothingMaskBase

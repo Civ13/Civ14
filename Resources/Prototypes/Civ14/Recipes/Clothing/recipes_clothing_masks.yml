@@ -1,32 +1,4 @@
 - type: construction
-  name: gas mask
-  id: civ13_mask_gas_mask
-  graph: civ13_mask_gas_mask
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: A face-covering mask that filters harmful gases from the air.
-  icon:
-    sprite: Civ14/Clothing/exported/masks/gas_alt.rsi
-    state: icon
-  objectType: Item
-  agemin: 8
-  agemax: 8
-
-- type: constructionGraph
-  id: civ13_mask_gas_mask
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_mask_gas_mask
-- type: construction
   name: Half mask
   id: civ13_mask_Half_mask
   graph: civ13_mask_Half_mask
@@ -198,34 +170,6 @@
       entity: civ13_mask_M2_gas_mask
 
 - type: construction
-  name: length of tape
-  id: civ13_mask_length_of_tape
-  graph: civ13_mask_length_of_tape
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: It's a robust DIY muzzle!
-  icon:
-    sprite: Civ14/Clothing/exported/masks/tape_cross.rsi
-    state: icon
-  objectType: Item
-  agemin: 8
-  agemax: 8
-
-- type: constructionGraph
-  id: civ13_mask_length_of_tape
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_mask_length_of_tape
-- type: construction
   name: plague doctor's mask
   id: civ13_mask_plague_doctors_mask
   graph: civ13_mask_plague_doctors_mask
@@ -280,7 +224,8 @@
       edges:
         - to: end
           steps:
-            - amount: 1
+            - material: Cloth
+              amount: 1
               doAfter: 14
     - node: end
       entity: civ13_mask_sterile_mask
@@ -365,7 +310,8 @@
       edges:
         - to: end
           steps:
-            - amount: 3
+            - material: Cloth
+              amount: 3
               doAfter: 6
     - node: end
       entity: civ13_mask_rat_mask
@@ -392,7 +338,8 @@
       edges:
         - to: end
           steps:
-            - amount: 3
+            - material: Cloth
+              amount: 3
               doAfter: 6
     - node: end
       entity: civ13_mask_raven_mask
@@ -419,7 +366,8 @@
       edges:
         - to: end
           steps:
-            - amount: 3
+            - material: Cloth
+              amount: 3
               doAfter: 6
     - node: end
       entity: civ13_mask_bat_mask
@@ -446,7 +394,8 @@
       edges:
         - to: end
           steps:
-            - amount: 3
+            - material: Cloth
+              amount: 3
               doAfter: 6
     - node: end
       entity: civ13_mask_bear_mask
@@ -473,7 +422,8 @@
       edges:
         - to: end
           steps:
-            - amount: 3
+            - material: Cloth
+              amount: 3
               doAfter: 6
     - node: end
       entity: civ13_mask_owl_mask
@@ -500,7 +450,8 @@
       edges:
         - to: end
           steps:
-            - amount: 3
+            - material: Cloth
+              amount: 3
               doAfter: 6
     - node: end
       entity: civ13_mask_bee_mask
@@ -527,7 +478,8 @@
       edges:
         - to: end
           steps:
-            - amount: 3
+            - material: Cloth
+              amount: 3
               doAfter: 6
     - node: end
       entity: civ13_mask_jackal_mask
@@ -582,7 +534,8 @@
       edges:
         - to: end
           steps:
-            - amount: 3
+            - material: Cloth
+              amount: 3
               doAfter: 6
     - node: end
       entity: civ13_mask_frog_mask
@@ -609,7 +562,8 @@
       edges:
         - to: end
           steps:
-            - amount: 3
+            - material: Cloth
+              amount: 3
               doAfter: 6
     - node: end
       entity: civ13_mask_cow_mask
@@ -636,7 +590,8 @@
       edges:
         - to: end
           steps:
-            - amount: 3
+            - material: Cloth
+              amount: 3
               doAfter: 6
     - node: end
       entity: civ13_mask_pig_mask
@@ -663,7 +618,8 @@
       edges:
         - to: end
           steps:
-            - amount: 3
+            - material: Cloth
+              amount: 3
               doAfter: 6
     - node: end
       entity: civ13_mask_joy
@@ -690,7 +646,8 @@
       edges:
         - to: end
           steps:
-            - amount: 3
+            - material: Cloth
+              amount: 3
               doAfter: 6
     - node: end
       entity: civ13_mask_gorilla_mask
@@ -1255,34 +1212,7 @@
               doAfter: 5
     - node: end
       entity: civ13_mask_snow_balaclava_1
-- type: construction
-  name: skull face balaclava
-  id: civ13_mask_skull_face_balaclava
-  graph: civ13_mask_skull_face_balaclava
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: A balaclava with a skull imprint, covering the face.
-  icon:
-    sprite: Civ14/Clothing/exported/masks/skullclava.rsi
-    state: icon
-  objectType: Item
-  agemin: 8
-  agemax: 8
 
-- type: constructionGraph
-  id: civ13_mask_skull_face_balaclava
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_mask_skull_face_balaclava
 - type: construction
   name: grey headscarf
   id: civ13_mask_grey_headscarf
@@ -1698,7 +1628,8 @@
       edges:
         - to: end
           steps:
-            - amount: 4
+            - material: Cloth
+              amount: 4
               doAfter: 7
     - node: end
       entity: civ13_mask_chitin_mask
