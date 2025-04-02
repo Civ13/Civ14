@@ -6,6 +6,7 @@
 
 [Guides]()
 
+-   [Starter Guide](wiki/starter_guide.md)
 -   [Farming](wiki/guide_to_farming.md)
 
 [Links]()
