@@ -27,3 +27,33 @@
               amount: 1
     - node: end
       entity: FloorTileItemThatch
+
+- type: construction
+  name: ancient road
+  id: TileRoad
+  graph: TileRoad
+  startNode: start
+  targetNode: end
+  category: construction-category-tiles
+  description: An ancient rough cobblestone road.
+  icon: { sprite: Civ14/Structures/Floors/roads.rsi, state: r_roadfull }
+  objectType: Item
+  agemin: 0
+  agemax: 8
+
+- type: constructionGraph
+  id: TileRoad
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            # Needs StackType ID
+            - material: Stone
+              amount: 1
+    - node: end
+      entity: FloorTileItemRoad

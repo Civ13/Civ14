@@ -1,0 +1,376 @@
+- type: entity
+  parent: MaterialBase
+  id: MaterialStraw
+  name: straw
+  suffix: Full
+  components:
+    - type: Sprite
+      state: straw
+      layers:
+        - state: straw
+          map: ["base"]
+    - type: Stack
+      stackType: Straw
+      baseLayer: base
+      layerStates:
+        - straw
+        - straw_2
+        - straw_3
+    - type: Appearance
+    - type: Item
+      heldPrefix: straw
+    - type: Tag
+      tags:
+        - RawMaterial
+
+- type: entity
+  parent: MaterialStraw
+  id: MaterialStraw10
+  suffix: 10
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: MaterialStraw
+  id: MaterialStraw1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialLeather
+  name: leather
+  suffix: Full
+  components:
+    - type: Sprite
+      state: leather
+      layers:
+        - state: leather
+          map: ["base"]
+    - type: Stack
+      stackType: Leather
+      baseLayer: base
+      layerStates:
+        - leather
+        - leather_2
+        - leather_3
+    - type: Appearance
+    - type: Item
+      heldPrefix: leather
+    - type: Tag
+      tags:
+        - RawMaterial
+
+- type: entity
+  parent: MaterialLeather
+  id: MaterialLeather10
+  suffix: 10
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: MaterialLeather
+  id: MaterialLeather1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialDirt
+  name: dirt
+  suffix: Full
+  components:
+    - type: Sprite
+      state: dirt_pile
+      layers:
+        - state: dirt_pile
+          map: ["base"]
+    - type: Stack
+      stackType: Dirt
+      baseLayer: base
+      layerStates:
+        - dirt_pile
+        - dirt_pile_2
+        - dirt_pile_3
+    - type: Appearance
+    - type: Item
+      heldPrefix: dirt
+    - type: Tag
+      tags:
+        - RawMaterial
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 30
+          reagents:
+            - ReagentId: Dirt
+              Quantity: 30
+    - type: Extractable
+      grindableSolutionName: food
+- type: entity
+  parent: MaterialDirt
+  id: MaterialDirt10
+  suffix: 10
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: MaterialDirt
+  id: MaterialDirt1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialStone
+  name: stone
+  suffix: Full
+  components:
+    - type: Sprite
+      state: stone
+      layers:
+        - state: stone
+          map: ["base"]
+    - type: Stack
+      stackType: Stone
+      baseLayer: base
+      layerStates:
+        - stone
+        - stone_2
+        - stone_3
+    - type: Appearance
+    - type: Item
+      heldPrefix: stone
+    - type: Tag
+      tags:
+        - RawMaterial
+
+- type: entity
+  parent: MaterialStone
+  id: MaterialStone10
+  suffix: 10
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: MaterialStone
+  id: MaterialStone1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialSandstone
+  name: stone
+  suffix: Full
+  components:
+    - type: Sprite
+      state: sheet-sandstone
+      layers:
+        - state: sheet-sandstone
+          map: ["base"]
+    - type: Stack
+      stackType: Sandstone
+      baseLayer: base
+      layerStates:
+        - sheet-sandstone
+        - sheet-sandstone_2
+        - sheet-sandstone_3
+    - type: Appearance
+    - type: Item
+      heldPrefix: stone
+    - type: Tag
+      tags:
+        - RawMaterial
+
+- type: entity
+  parent: MaterialSandstone
+  id: MaterialSandstone10
+  suffix: 10
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: MaterialSandstone
+  id: MaterialSandstone1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialClay
+  name: clay
+  suffix: Full
+  components:
+    - type: Sprite
+      state: clay
+      layers:
+        - state: claylump
+          map: ["base"]
+    - type: Stack
+      stackType: Clay
+      baseLayer: base
+      layerStates:
+        - claylump
+        - claylump_2
+        - claylump_3
+    - type: Appearance
+    - type: Item
+      heldPrefix: clay
+    - type: Tag
+      tags:
+        - RawMaterial
+
+- type: entity
+  parent: MaterialClay
+  id: MaterialClay10
+  suffix: 10
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: MaterialClay
+  id: MaterialClay1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialRope
+  name: rope
+  suffix: Full
+  components:
+    - type: Sprite
+      state: sheet-sandstone
+      layers:
+        - state: sheet-sandstone
+          map: ["base"]
+    - type: Stack
+      stackType: Rope
+      baseLayer: base
+      layerStates:
+        - rope
+        - rope_2
+        - rope_3
+    - type: Appearance
+    - type: Item
+      heldPrefix: rope
+    - type: Tag
+      tags:
+        - RawMaterial
+
+- type: entity
+  parent: MaterialRope
+  id: MaterialRope10
+  suffix: 10
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: MaterialRope
+  id: MaterialRope1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialPeltBrownBear
+  name: brown bear pelt
+  suffix: Full
+  components:
+    - type: Sprite
+      state: sheet-brownbearpelt
+      layers:
+        - state: sheet-brownbearpelt
+          map: ["base"]
+    - type: Stack
+      stackType: PeltBrownBear
+      baseLayer: base
+      layerStates:
+        - sheet-brownbearpelt
+        - sheet-brownbearpelt_2
+        - sheet-brownbearpelt_3
+    - type: Appearance
+    - type: Item
+      heldPrefix: pelt
+    - type: Tag
+      tags:
+        - RawMaterial
+
+- type: entity
+  parent: MaterialPeltBrownBear
+  id: MaterialPeltBrownBear10
+  suffix: 10
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: MaterialPeltBrownBear
+  id: MaterialPeltBrownBear1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialPeltGreyWolf
+  name: grey wolf pelt
+  suffix: Full
+  components:
+    - type: Sprite
+      state: sheet-wolfpelt
+      layers:
+        - state: sheet-wolfpelt
+          map: ["base"]
+    - type: Stack
+      stackType: PeltGreyWolf
+      baseLayer: base
+      layerStates:
+        - sheet-wolfpelt
+        - sheet-wolfpelt_2
+        - sheet-wolfpelt_3
+    - type: Appearance
+    - type: Item
+      heldPrefix: pelt
+    - type: Tag
+      tags:
+        - RawMaterial
+
+- type: entity
+  parent: MaterialPeltGreyWolf
+  id: MaterialPeltGreyWolf10
+  suffix: 10
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: MaterialPeltGreyWolf
+  id: MaterialPeltGreyWolf1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1

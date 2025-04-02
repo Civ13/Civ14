@@ -11,12 +11,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_eyepatch
       node: end
@@ -36,12 +36,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_monocle
       node: end
@@ -61,12 +61,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_Prescription_Glasses
       node: end
@@ -85,12 +85,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_Prescription_Glasses_1
       node: end
@@ -110,12 +110,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_Green_Glasses
       node: end
@@ -136,12 +136,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_sunglasses
       node: end
@@ -160,12 +160,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_blindfold
       node: end
@@ -187,12 +187,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_large_sunglasses
       node: end
@@ -211,12 +211,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_red_vintage_glasses
       node: end
@@ -236,12 +236,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_blue_vintage_glasses
       node: end
@@ -261,12 +261,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_green_vintage_glasses
       node: end
@@ -286,12 +286,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_yellow_vintage_glasses
       node: end
@@ -313,12 +313,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_univisor_red
       node: end
@@ -339,12 +339,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_univisor_cyan
       node: end
@@ -365,12 +365,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_univisor_green
       node: end
@@ -391,12 +391,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_univisor_yellow
       node: end
@@ -417,12 +417,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_univisor_white
       node: end
@@ -443,12 +443,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_univisor_flashy
       node: end
@@ -467,12 +467,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_goggles
       node: end
@@ -495,7 +495,7 @@
           Blunt: 0.85
           Slash: 0.85
           Piercing: 0.75
-          Arrow: 0.09999999999999998
+          Arrow: 0.1
           Heat: 0.85
           Radiation: 0.8
     - type: Construction
@@ -517,12 +517,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_Pilot_goggles
       node: end
@@ -544,12 +544,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_Night_Vision_Goggles
       node: end
@@ -569,12 +569,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_Thermal_Vision_Goggles
       node: end
@@ -596,12 +596,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Arrow: 0
-          Heat: 0
-          Radiation: 0
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
     - type: Construction
       graph: civ13_glasses_Modern_Thermal_Vision_Goggles
       node: end

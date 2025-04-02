@@ -3,7 +3,14 @@ import yaml
 import base64
 import struct
 import random
-from pyfastnoiselite.pyfastnoiselite import FastNoiseLite, NoiseType, FractalType, CellularReturnType, CellularDistanceFunction, DomainWarpType
+from pyfastnoiselite.pyfastnoiselite import (
+    FastNoiseLite,
+    NoiseType,
+    FractalType,
+    CellularReturnType,
+    CellularDistanceFunction,
+    DomainWarpType,
+)
 import time
 import os
 
@@ -13,12 +20,13 @@ import os
 TILEMAP = {
     0: "Space",
     1: "FloorDirt",
-    2: "FloorAstroGrass",
+    2: "FloorPlanetGrass",
     3: "FloorGrassDark",
-    4: "FloorAsteroidSand",
-    5: "FloorDirtRock"
+    4: "FloorSand",
+    5: "FloorDirtRock",
 }
 TILEMAP_REVERSE = {v: k for k, v in TILEMAP.items()}
+
 
 # -----------------------------------------------------------------------------
 # Funções Auxiliares
@@ -27,23 +35,28 @@ def round_to_chunk(number, chunk):
     """Arredonda um número para o múltiplo inferior mais próximo do tamanho do chunk."""
     return number - (number % chunk)
 
+
 def add_border(tile_map, border_value):
     """Adiciona uma borda ao tile_map com o valor especificado."""
-    bordered = np.pad(tile_map, pad_width=1, mode='constant', constant_values=border_value)
+    bordered = np.pad(
+        tile_map, pad_width=1, mode="constant", constant_values=border_value
+    )
     return bordered.astype(np.int32)
+
 
 def encode_tiles(tile_map):
     """Codifica os tiles em formato base64 para o YAML."""
     tile_bytes = bytearray()
-    for y in range(tile_map.shape[0]): # u
+    for y in range(tile_map.shape[0]):  # u
         for x in range(tile_map.shape[1]):
             tile_id = tile_map[y, x]
             flags = 0
             variant = 0
-            tile_bytes.extend(struct.pack("<I", tile_id)) # 4 bytes tile_id
-            tile_bytes.append(flags)                      # 1 byte flag
-            tile_bytes.append(variant)                    # 1 byte variant
-    return base64.b64encode(tile_bytes).decode('utf-8')
+            tile_bytes.extend(struct.pack("<I", tile_id))  # 4 bytes tile_id
+            tile_bytes.append(flags)  # 1 byte flag
+            tile_bytes.append(variant)  # 1 byte variant
+    return base64.b64encode(tile_bytes).decode("utf-8")
+
 
 # -----------------------------------------------------------------------------
 # Geração do Tile Map com Múltiplas Camadas
@@ -53,15 +66,17 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
     tile_map = np.full((height, width), TILEMAP_REVERSE["FloorDirt"], dtype=np.int32)
 
     # Ordena as camadas por prioridade (menor para maior)
-    sorted_layers = sorted(biome_tile_layers, key=lambda layer: layer.get("priority", 1))
-    
+    sorted_layers = sorted(
+        biome_tile_layers, key=lambda layer: layer.get("priority", 1)
+    )
+
     for layer in sorted_layers:
         noise = FastNoiseLite()
         noise.noise_type = layer["noise_type"]
         noise.fractal_octaves = layer["octaves"]
         noise.frequency = layer["frequency"]
         noise.fractal_type = layer["fractal_type"]
-        
+
         if "cellular_distance_function" in layer:
             noise.cellular_distance_function = layer["cellular_distance_function"]
         if "cellular_return_type" in layer:
@@ -70,7 +85,7 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
             noise.cellular_jitter = layer["cellular_jitter"]
         if "fractal_lacunarity" in layer:
             noise.fractal_lacunarity = layer["fractal_lacunarity"]
-        
+
         if seed_base is not None:
             seed_key = layer.get("seed_key", layer["tile_type"])
             noise.seed = (seed_base + hash(seed_key)) % (2**31)
@@ -80,9 +95,13 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
         if "modulation" in layer:
             mod_config = layer["modulation"]
             mod_noise = FastNoiseLite()
-            mod_noise.noise_type = mod_config.get("noise_type", NoiseType.NoiseType_OpenSimplex2)
+            mod_noise.noise_type = mod_config.get(
+                "noise_type", NoiseType.NoiseType_OpenSimplex2
+            )
             if "cellular_distance_function" in mod_config:
-                mod_noise.cellular_distance_function = mod_config["cellular_distance_function"]
+                mod_noise.cellular_distance_function = mod_config[
+                    "cellular_distance_function"
+                ]
             if "cellular_return_type" in mod_config:
                 mod_noise.cellular_return_type = mod_config["cellular_return_type"]
             if "cellular_jitter" in mod_config:
@@ -101,7 +120,7 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
             for x in range(width):
                 noise_value = noise.get_noise(x, y)
                 noise_value = (noise_value + 1) / 2  # Normalizar para [0, 1]
-                
+
                 place_tile = False
                 if mod_noise:
                     mod_value = mod_noise.get_noise(x, y)
@@ -110,32 +129,41 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
                         if mod_value > threshold_max:
                             place_tile = True
                         elif mod_value > threshold_min:
-                            probability = (mod_value - threshold_min) / (threshold_max - threshold_min)
+                            probability = (mod_value - threshold_min) / (
+                                threshold_max - threshold_min
+                            )
                             place_tile = random.random() < probability
                 else:
                     if noise_value > layer["threshold"]:
                         place_tile = True
-                
+
                 if place_tile:
                     current_tile = tile_map[y, x]
                     if current_tile not in dont_overwrite:
-                        if layer.get("overwrite", True) or current_tile == TILEMAP_REVERSE["Space"]:
+                        if (
+                            layer.get("overwrite", True)
+                            or current_tile == TILEMAP_REVERSE["Space"]
+                        ):
                             tile_map[y, x] = TILEMAP_REVERSE[layer["tile_type"]]
                             count += 1
-        
+
         print(f"Camada {layer['tile_type']}: {count} tiles colocados")
     return tile_map
+
 
 # -----------------------------------------------------------------------------
 # Geração de Entidades
 # -----------------------------------------------------------------------------
 global_uid = 3
+
+
 def next_uid():
     """Gera um UID único para cada entidade."""
     global global_uid
     uid = global_uid
     global_uid += 1
     return uid
+
 
 def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
     """Gera entidades dinâmicas com base nas camadas de entidades, respeitando prioridades."""
@@ -145,7 +173,9 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
     occupied_positions = set()  # Set to trace occupied positions
 
     # Order layers by priority. Highest first
-    sorted_layers = sorted(biome_entity_layers, key=lambda layer: layer.get("priority", 0), reverse=True)
+    sorted_layers = sorted(
+        biome_entity_layers, key=lambda layer: layer.get("priority", 0), reverse=True
+    )
 
     for layer in sorted_layers:
         # Get entity_protos list
@@ -183,17 +213,21 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
                 tile_val = tile_map[y, x]
                 noise_value = noise.get_noise(x, y)
                 noise_value = (noise_value + 1) / 2  # Normalizar para [0, 1]
-                if noise_value > layer["threshold"] and layer["tile_condition"](tile_val):
+                if noise_value > layer["threshold"] and layer["tile_condition"](
+                    tile_val
+                ):
                     # Chooses randomly a proto
                     proto = random.choice(entity_protos)
                     if proto not in groups:
                         groups[proto] = []
-                    groups[proto].append({
-                        "uid": next_uid(),
-                        "components": [
-                            {"type": "Transform", "parent": 2, "pos": f"{x},{y}"}
-                        ]
-                    })
+                    groups[proto].append(
+                        {
+                            "uid": next_uid(),
+                            "components": [
+                                {"type": "Transform", "parent": 2, "pos": f"{x},{y}"}
+                            ],
+                        }
+                    )
                     occupied_positions.add((x, y))
                     # Counts entities by proto
                     entity_count[proto] = entity_count.get(proto, 0) + 1
@@ -203,22 +237,29 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
     for y in range(h):
         for x in range(w):
             if x == 0 or x == w - 1 or y == 0 or y == h - 1:
-                groups["WallRockIndestructible"].append({
-                    "uid": next_uid(),
-                    "components": [
-                        {"type": "Transform", "parent": 2, "pos": f"{x},{y}"}
-                    ]
-                })
+                groups["WallRockIndestructible"].append(
+                    {
+                        "uid": next_uid(),
+                        "components": [
+                            {"type": "Transform", "parent": 2, "pos": f"{x},{y}"}
+                        ],
+                    }
+                )
                 # Count undestructible walls
-                entity_count["WallRockIndestructible"] = entity_count.get("WallRockIndestructible", 0) + 1
+                entity_count["WallRockIndestructible"] = (
+                    entity_count.get("WallRockIndestructible", 0) + 1
+                )
 
-    dynamic_groups = [{"proto": proto, "entities": ents} for proto, ents in groups.items()]
+    dynamic_groups = [
+        {"proto": proto, "entities": ents} for proto, ents in groups.items()
+    ]
 
     # Print generated protos
     for proto, count in entity_count.items():
         print(f"Generated {count} amount of {proto}")
 
     return dynamic_groups
+
 
 def generate_decals(tile_map, biome_decal_layers, seed_base=None, chunk_size=16):
     """Generate decals using biome_decal_layers and log the count of each decal type."""
@@ -235,10 +276,21 @@ def generate_decals(tile_map, biome_decal_layers, seed_base=None, chunk_size=16)
         noise.fractal_type = layer["fractal_type"]
 
         if seed_base is not None:
-            seed_key = layer.get("seed_key", tuple(layer["decal_id"]) if isinstance(layer["decal_id"], list) else layer["decal_id"])
+            seed_key = layer.get(
+                "seed_key",
+                (
+                    tuple(layer["decal_id"])
+                    if isinstance(layer["decal_id"], list)
+                    else layer["decal_id"]
+                ),
+            )
             noise.seed = (seed_base + hash(seed_key)) % (2**31)
 
-        decal_ids = layer["decal_id"] if isinstance(layer["decal_id"], list) else [layer["decal_id"]]
+        decal_ids = (
+            layer["decal_id"]
+            if isinstance(layer["decal_id"], list)
+            else [layer["decal_id"]]
+        )
 
         for y in range(h):
             for x in range(w):
@@ -249,24 +301,32 @@ def generate_decals(tile_map, biome_decal_layers, seed_base=None, chunk_size=16)
                 tile_val = tile_map[y, x]
                 noise_value = noise.get_noise(x, y)
                 noise_value = (noise_value + 1) / 2
-                if noise_value > layer["threshold"] and layer["tile_condition"](tile_val):
+                if noise_value > layer["threshold"] and layer["tile_condition"](
+                    tile_val
+                ):
                     chosen_decal_id = random.choice(decal_ids)
                     if chosen_decal_id not in decals_by_id:
                         decals_by_id[chosen_decal_id] = []
                     # Small random offset for decals
-                    offset_x = (noise.get_noise(x + 1000, y + 1000) + 1) / 4 - 0.25  # Between -0.25 and 0.25
-                    offset_y = (noise.get_noise(x + 2000, y + 2000) + 1) / 4 - 0.25  # Between -0.25 and 0.25
+                    offset_x = (
+                        noise.get_noise(x + 1000, y + 1000) + 1
+                    ) / 4 - 0.25  # Between -0.25 and 0.25
+                    offset_y = (
+                        noise.get_noise(x + 2000, y + 2000) + 1
+                    ) / 4 - 0.25  # Between -0.25 and 0.25
                     pos_x = x + offset_x
                     pos_y = y + offset_y
                     pos_str = f"{pos_x:.7f},{pos_y:.7f}"
-                    decals_by_id[chosen_decal_id].append({
-                        "color": layer.get("color", "#FFFFFFFF"),
-                        "position": pos_str
-                    })
+                    decals_by_id[chosen_decal_id].append(
+                        {"color": layer.get("color", "#FFFFFFFF"), "position": pos_str}
+                    )
                     occupied_tiles.add((x, y))
-                    decal_count[chosen_decal_id] = decal_count.get(chosen_decal_id, 0) + 1
+                    decal_count[chosen_decal_id] = (
+                        decal_count.get(chosen_decal_id, 0) + 1
+                    )
 
     return decals_by_id
+
 
 # Definir uniqueMixes para atmosfera
 unique_mixes = [
@@ -274,14 +334,15 @@ unique_mixes = [
         "volume": 2500,
         "immutable": True,
         "temperature": 278.15,
-        "moles": [21.82478, 82.10312, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        "moles": [21.82478, 82.10312, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     },
     {
         "volume": 2500,
         "temperature": 278.15,
-        "moles": [21.824879, 82.10312, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    }
+        "moles": [21.824879, 82.10312, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    },
 ]
+
 
 def generate_atmosphere_tiles(width, height, chunk_size):
     """Gera os tiles de atmosfera com base no tamanho do mapa."""
@@ -296,6 +357,7 @@ def generate_atmosphere_tiles(width, height, chunk_size):
                 tiles[f"{x},{y}"] = {1: 65535}
     return tiles
 
+
 def generate_main_entities(tile_map, chunk_size=16, decals_by_id=None):
     """Generates entities, decals and atmos."""
     if decals_by_id is None:
@@ -306,17 +368,17 @@ def generate_main_entities(tile_map, chunk_size=16, decals_by_id=None):
     for cy in range(0, h, chunk_size):
         for cx in range(0, w, chunk_size):
             chunk_key = f"{cx//chunk_size},{cy//chunk_size}"
-            chunk_tiles = tile_map[cy:cy+chunk_size, cx:cx+chunk_size]
+            chunk_tiles = tile_map[cy : cy + chunk_size, cx : cx + chunk_size]
             if chunk_tiles.shape[0] < chunk_size or chunk_tiles.shape[1] < chunk_size:
                 full_chunk = np.zeros((chunk_size, chunk_size), dtype=np.int32)
-                full_chunk[:chunk_tiles.shape[0], :chunk_tiles.shape[1]] = chunk_tiles
+                full_chunk[: chunk_tiles.shape[0], : chunk_tiles.shape[1]] = chunk_tiles
                 chunk_tiles = full_chunk
             chunks[chunk_key] = {
                 "ind": f"{cx//chunk_size},{cy//chunk_size}",
                 "tiles": encode_tiles(chunk_tiles),
-                "version": 6
+                "version": 6,
             }
-    
+
     atmosphere_chunk_size = 4
     atmosphere_tiles = generate_atmosphere_tiles(w, h, atmosphere_chunk_size)
 
@@ -330,14 +392,11 @@ def generate_main_entities(tile_map, chunk_size=16, decals_by_id=None):
                 node_decals[str(global_index)] = decal["position"]
                 global_index += 1
             node = {
-                "node": {
-                    "color": decals[0]["color"],
-                    "id": decal_id
-                },
-                "decals": node_decals
+                "node": {"color": decals[0]["color"], "id": decal_id},
+                "decals": node_decals,
             }
             decal_nodes.append(node)
-    
+
     print(f"Total decal nodes generated: {len(decal_nodes)}")
     print(f"Total decals: {global_index}")
 
@@ -356,8 +415,8 @@ def generate_main_entities(tile_map, chunk_size=16, decals_by_id=None):
                     {"type": "GridTree"},
                     {"type": "MovedGrids"},
                     {"type": "Broadphase"},
-                    {"type": "OccluderTree"}
-                ]
+                    {"type": "OccluderTree"},
+                ],
             },
             {
                 "uid": 2,
@@ -366,12 +425,13 @@ def generate_main_entities(tile_map, chunk_size=16, decals_by_id=None):
                     {"type": "Transform", "parent": 1, "pos": "0,0"},
                     {"type": "MapGrid", "chunks": chunks},
                     {"type": "Broadphase"},
-                    {"type": "Physics",
-                     "angularDamping": 0.05,
-                     "bodyStatus": "InAir",
-                     "bodyType": "Dynamic",
-                     "fixedRotation": True,
-                     "linearDamping": 0.05
+                    {
+                        "type": "Physics",
+                        "angularDamping": 0.05,
+                        "bodyStatus": "InAir",
+                        "bodyType": "Dynamic",
+                        "fixedRotation": True,
+                        "linearDamping": 0.05,
                     },
                     {"type": "Fixtures", "fixtures": {}},
                     {"type": "OccluderTree"},
@@ -380,47 +440,78 @@ def generate_main_entities(tile_map, chunk_size=16, decals_by_id=None):
                     {"type": "SunShadow"},
                     {"type": "SunShadowCycle"},
                     {"type": "GridPathfinding"},
-                    {"type": "Gravity",
-                     "gravityShakeSound": { "!type:SoundPathSpecifier": {"path": "/Audio/Effects/alert.ogg"} },
-                     "inherent": True,
-                     "enabled": True
+                    {
+                        "type": "Gravity",
+                        "gravityShakeSound": {
+                            "!type:SoundPathSpecifier": {
+                                "path": "/Audio/Effects/alert.ogg"
+                            }
+                        },
+                        "inherent": True,
+                        "enabled": True,
                     },
                     {"type": "BecomesStation", "id": "Nomads"},
-                    {"type": "DecalGrid", "chunkCollection": {"version": 2, "nodes": decal_nodes}},
+                    {"type": "Weather"},
+                    {
+                        "type": "WeatherNomads",
+                        "enabledWeathers": [
+                            "Rain",
+                            "Storm",
+                            "SnowfallLight",
+                            "SnowfallMedium",
+                            "SnowfallHeavy",
+                        ],
+                        "minSeasonMinutes": 10,
+                        "maxSeasonMinutes": 30,
+                    },
+                    {
+                        "type": "DecalGrid",
+                        "chunkCollection": {"version": 2, "nodes": decal_nodes},
+                    },
                     {
                         "type": "GridAtmosphere",
                         "version": 2,
                         "data": {
                             "tiles": atmosphere_tiles,
                             "uniqueMixes": unique_mixes,
-                            "chunkSize": atmosphere_chunk_size
-                        }
+                            "chunkSize": atmosphere_chunk_size,
+                        },
                     },
                     {"type": "GasTileOverlay"},
-                    {"type": "RadiationGridResistance"}
-                ]
-            }
-        ]
+                    {"type": "RadiationGridResistance"},
+                ],
+            },
+        ],
     }
     return main
+
 
 def generate_all_entities(tile_map, chunk_size=16, biome_layers=None, seed_base=None):
     """Combines tiles, entities and decals."""
     entities = []
     if biome_layers is None:
         biome_layers = []
-    biome_tile_layers = [layer for layer in biome_layers if layer["type"] == "BiomeTileLayer"]
-    biome_entity_layers = [layer for layer in biome_layers if layer["type"] == "BiomeEntityLayer"]
-    biome_decal_layers = [layer for layer in biome_layers if layer["type"] == "BiomeDecalLayer"]
+    biome_tile_layers = [
+        layer for layer in biome_layers if layer["type"] == "BiomeTileLayer"
+    ]
+    biome_entity_layers = [
+        layer for layer in biome_layers if layer["type"] == "BiomeEntityLayer"
+    ]
+    biome_decal_layers = [
+        layer for layer in biome_layers if layer["type"] == "BiomeDecalLayer"
+    ]
 
     dynamic_groups = generate_dynamic_entities(tile_map, biome_entity_layers, seed_base)
-    decals_by_chunk = generate_decals(tile_map, biome_decal_layers, seed_base, chunk_size)
+    decals_by_chunk = generate_decals(
+        tile_map, biome_decal_layers, seed_base, chunk_size
+    )
     main_entities = generate_main_entities(tile_map, chunk_size, decals_by_chunk)
     entities.append(main_entities)
     entities.extend(dynamic_groups)
     spawn_points = generate_spawn_points(tile_map)
     entities.extend(spawn_points)
     return entities
+
 
 # -----------------------------------------------------------------------------
 # Salvar YAML
@@ -434,7 +525,15 @@ def represent_sound_path_specifier(dumper, data):
                 return dumper.represent_mapping(tag, value)
     return dumper.represent_dict(data)
 
-def save_map_to_yaml(tile_map, biome_layers, output_dir, filename="output.yml", chunk_size=16, seed_base=None):
+
+def save_map_to_yaml(
+    tile_map,
+    biome_layers,
+    output_dir,
+    filename="output.yml",
+    chunk_size=16,
+    seed_base=None,
+):
     """Salva o mapa gerado em um arquivo YAML no diretório especificado."""
     all_entities = generate_all_entities(tile_map, chunk_size, biome_layers, seed_base)
     count = sum(len(group.get("entities", [])) for group in all_entities)
@@ -446,30 +545,31 @@ def save_map_to_yaml(tile_map, biome_layers, output_dir, filename="output.yml", 
             "forkId": "",
             "forkVersion": "",
             "time": "03/23/2025 18:21:23",
-            "entityCount": count
+            "entityCount": count,
         },
         "maps": [1],
         "grids": [2],
         "orphans": [],
         "nullspace": [],
         "tilemap": TILEMAP,
-        "entities": all_entities
+        "entities": all_entities,
     }
     yaml.add_representer(dict, represent_sound_path_specifier)
     output_path = os.path.join(output_dir, filename)
-    with open(output_path, 'w') as outfile:
+    with open(output_path, "w") as outfile:
         yaml.dump(map_data, outfile, default_flow_style=False, sort_keys=False)
 
 
 import numpy as np
 from collections import defaultdict
 
+
 def apply_erosion(tile_map, tile_type, min_neighbors=3):
     h, w = tile_map.shape
     new_map = tile_map.copy()
-    
-    for y in range(1, h-1):
-        for x in range(1, w-1):
+
+    for y in range(1, h - 1):
+        for x in range(1, w - 1):
             if tile_map[y, x] == tile_type:
                 neighbors = 0
                 neighbor_types = []
@@ -495,19 +595,26 @@ def apply_erosion(tile_map, tile_type, min_neighbors=3):
                         new_map[y, x] = majority_type
     return new_map
 
+
 def count_isolated_tiles(tile_map, tile_type, min_neighbors=3):
     h, w = tile_map.shape
     isolated = 0
-    for y in range(1, h-1):
-        for x in range(1, w-1):
+    for y in range(1, h - 1):
+        for x in range(1, w - 1):
             if tile_map[y, x] == tile_type:
-                neighbors = sum(1 for dy in [-1, 0, 1] for dx in [-1, 0, 1] 
-                               if not (dy == 0 and dx == 0) and 
-                               0 <= y + dy < h and 0 <= x + dx < w and 
-                               tile_map[y + dy, x + dx] == tile_type)
+                neighbors = sum(
+                    1
+                    for dy in [-1, 0, 1]
+                    for dx in [-1, 0, 1]
+                    if not (dy == 0 and dx == 0)
+                    and 0 <= y + dy < h
+                    and 0 <= x + dx < w
+                    and tile_map[y + dy, x + dx] == tile_type
+                )
                 if neighbors < min_neighbors:
                     isolated += 1
     return isolated
+
 
 def apply_iterative_erosion(tile_map, tile_type, min_neighbors=3, max_iterations=10):
     """Applies erosion interactively untill there are no more tiles with the declared min neighbors"""
@@ -517,22 +624,23 @@ def apply_iterative_erosion(tile_map, tile_type, min_neighbors=3, max_iterations
         tile_map = apply_erosion(tile_map, tile_type, min_neighbors)
         isolated_after = count_isolated_tiles(tile_map, tile_type, min_neighbors)
         if isolated_after == isolated_before or isolated_after == 0:
-            break 
+            break
         iteration += 1
     return tile_map
+
 
 # -----------------------------------------------------------------------------
 # Geração de Spawn Points
 # -----------------------------------------------------------------------------
 def generate_spawn_points(tile_map, num_points_per_corner=1):
-    """Gera 4 SpawnPointNomads e 4 SpawnPointLatejoin, um de cada em cada canto do mapa em FloorAstroGrass."""
+    """Gera 4 SpawnPointNomads e 4 SpawnPointLatejoin, um de cada em cada canto do mapa em FloorPlanetGrass."""
     h, w = tile_map.shape
     spawn_positions = set()
     nomads_entities = []
-    latejoin_entities = [] 
-    corners = ['top_left', 'top_right', 'bottom_left', 'bottom_right']
-    astro_grass_id = TILEMAP_REVERSE["FloorAstroGrass"]
-    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)] 
+    latejoin_entities = []
+    corners = ["top_left", "top_right", "bottom_left", "bottom_right"]
+    astro_grass_id = TILEMAP_REVERSE["FloorPlanetGrass"]
+    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     for corner in corners:
         found = False
@@ -543,14 +651,20 @@ def generate_spawn_points(tile_map, num_points_per_corner=1):
             # Searchs for AstroTileGrass in the initial size in the corners
             for y in range(y_min, y_max + 1):
                 for x in range(x_min, x_max + 1):
-                    if tile_map[y, x] == astro_grass_id and (x, y) not in spawn_positions:
+                    if (
+                        tile_map[y, x] == astro_grass_id
+                        and (x, y) not in spawn_positions
+                    ):
                         # Verifica tiles adjacentes válidos
                         adjacent = []
                         for dx, dy in directions:
                             nx, ny = x + dx, y + dy
-                            if (0 <= nx < w and 0 <= ny < h and 
-                                tile_map[ny, nx] == astro_grass_id and 
-                                (nx, ny) not in spawn_positions):
+                            if (
+                                0 <= nx < w
+                                and 0 <= ny < h
+                                and tile_map[ny, nx] == astro_grass_id
+                                and (nx, ny) not in spawn_positions
+                            ):
                                 adjacent.append((nx, ny))
                         if adjacent:
                             candidates.append((x, y, adjacent))
@@ -563,25 +677,39 @@ def generate_spawn_points(tile_map, num_points_per_corner=1):
                 else:
                     nomads_pos = (adj_x, adj_y)
                     latejoin_pos = (x, y)
-                nomads_entities.append({
-                    "uid": next_uid(),
-                    "components": [
-                        {"type": "Transform", "parent": 2, "pos": f"{nomads_pos[0]},{nomads_pos[1]}"}
-                    ]
-                })
-                latejoin_entities.append({
-                    "uid": next_uid(),
-                    "components": [
-                        {"type": "Transform", "parent": 2, "pos": f"{latejoin_pos[0]},{latejoin_pos[1]}"}
-                    ]
-                })
+                nomads_entities.append(
+                    {
+                        "uid": next_uid(),
+                        "components": [
+                            {
+                                "type": "Transform",
+                                "parent": 2,
+                                "pos": f"{nomads_pos[0]},{nomads_pos[1]}",
+                            }
+                        ],
+                    }
+                )
+                latejoin_entities.append(
+                    {
+                        "uid": next_uid(),
+                        "components": [
+                            {
+                                "type": "Transform",
+                                "parent": 2,
+                                "pos": f"{latejoin_pos[0]},{latejoin_pos[1]}",
+                            }
+                        ],
+                    }
+                )
                 spawn_positions.add(nomads_pos)
                 spawn_positions.add(latejoin_pos)
                 found = True
             else:
                 initial_size += 1
         if not found:
-            print(f"Possible to find an available position at the corner for spawn points {corner}")
+            print(
+                f"Possible to find an available position at the corner for spawn points {corner}"
+            )
 
     print("SpawnPointNomads positions:")
     for ent in nomads_entities:
@@ -595,40 +723,42 @@ def generate_spawn_points(tile_map, num_points_per_corner=1):
     # Retorna as entidades no formato correto para o YAML
     return [
         {"proto": "SpawnPointNomads", "entities": nomads_entities},
-        {"proto": "SpawnPointLatejoin", "entities": latejoin_entities}
+        {"proto": "SpawnPointLatejoin", "entities": latejoin_entities},
     ]
+
 
 def get_corner_region(corner, w, h, initial_size):
     """Defines a region to search in the map's corners."""
-    if corner == 'top_left':
+    if corner == "top_left":
         x_min = 1
-        x_max = min(initial_size, w-2)
+        x_max = min(initial_size, w - 2)
         y_min = 1
-        y_max = min(initial_size, h-2)
-    elif corner == 'top_right':
-        x_min = max(w-1-initial_size, 1)
-        x_max = w-2
+        y_max = min(initial_size, h - 2)
+    elif corner == "top_right":
+        x_min = max(w - 1 - initial_size, 1)
+        x_max = w - 2
         y_min = 1
-        y_max = min(initial_size, h-2)
-    elif corner == 'bottom_left':
+        y_max = min(initial_size, h - 2)
+    elif corner == "bottom_left":
         x_min = 1
-        x_max = min(initial_size, w-2)
-        y_min = max(h-1-initial_size, 1)
-        y_max = h-2
-    elif corner == 'bottom_right':
-        x_min = max(w-1-initial_size, 1)
-        x_max = w-2
-        y_min = max(h-1-initial_size, 1)
-        y_max = h-2
+        x_max = min(initial_size, w - 2)
+        y_min = max(h - 1 - initial_size, 1)
+        y_max = h - 2
+    elif corner == "bottom_right":
+        x_min = max(w - 1 - initial_size, 1)
+        x_max = w - 2
+        y_min = max(h - 1 - initial_size, 1)
+        y_max = h - 2
     else:
         raise ValueError("Invalid corner")
     return x_min, x_max, y_min, y_max
+
 
 # -----------------------------------------------------------------------------
 # Configuração do Mapa (MAP_CONFIG)
 # -----------------------------------------------------------------------------
 MAP_CONFIG = [
-    {   # Rock dirt formations
+    {  # Rock dirt formations
         "type": "BiomeTileLayer",
         "tile_type": "FloorDirtRock",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
@@ -636,9 +766,9 @@ MAP_CONFIG = [
         "frequency": 0.01,
         "fractal_type": FractalType.FractalType_None,
         "threshold": -1.0,
-        "overwrite": True
+        "overwrite": True,
     },
-    { # Sprinkled dirt around the map
+    {  # Sprinkled dirt around the map
         "type": "BiomeTileLayer",
         "tile_type": "FloorDirt",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
@@ -647,20 +777,20 @@ MAP_CONFIG = [
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.825,
         "overwrite": True,
-        "dontOverwrite": ["FloorAsteroidSand", "FloorDirtRock"],
-        "priority": 10
+        "dontOverwrite": ["FloorSand", "FloorDirtRock"],
+        "priority": 10,
     },
     {
         "type": "BiomeTileLayer",
-        "tile_type": "FloorAstroGrass",
+        "tile_type": "FloorPlanetGrass",
         "noise_type": NoiseType.NoiseType_Perlin,
         "octaves": 3,
         "frequency": 0.02,
         "fractal_type": FractalType.FractalType_None,
         "threshold": 0.4,
-        "overwrite": True
+        "overwrite": True,
     },
-    { # Boulders for flints
+    {  # Boulders for flints
         "type": "BiomeEntityLayer",
         "entity_protos": "FloraRockSolid",
         "noise_type": NoiseType.NoiseType_OpenSimplex2S,
@@ -668,10 +798,15 @@ MAP_CONFIG = [
         "frequency": 0.3,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.815,
-        "tile_condition": lambda tile: tile in [TILEMAP_REVERSE["FloorAstroGrass"], TILEMAP_REVERSE["FloorDirt"], TILEMAP_REVERSE["FloorDirtRock"]],
-        "priority": 1
+        "tile_condition": lambda tile: tile
+        in [
+            TILEMAP_REVERSE["FloorPlanetGrass"],
+            TILEMAP_REVERSE["FloorDirt"],
+            TILEMAP_REVERSE["FloorDirtRock"],
+        ],
+        "priority": 1,
     },
-    { # Rocks
+    {  # Rocks
         "type": "BiomeEntityLayer",
         "entity_protos": "WallRock",
         "noise_type": NoiseType.NoiseType_Cellular,
@@ -683,26 +818,26 @@ MAP_CONFIG = [
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.30,
         "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorDirtRock"],
-        "priority": 2
+        "priority": 2,
     },
-    { # Wild crops
+    {  # Wild crops
         "type": "BiomeEntityLayer",
         "entity_protos": [
             "WildPlantPotato",
             "WildPlantCorn",
             "WildPlantRice",
             "WildPlantWheat",
-            "WildPlantHemp"
-            ],
+            "WildPlantHemp",
+        ],
         "noise_type": NoiseType.NoiseType_OpenSimplex2S,
         "octaves": 6,
         "frequency": 0.3,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.84,
-        "tile_condition": lambda tile: tile in [TILEMAP_REVERSE["FloorAstroGrass"]],
-        "priority": 1
+        "tile_condition": lambda tile: tile in [TILEMAP_REVERSE["FloorPlanetGrass"]],
+        "priority": 1,
     },
-    { # Rivers
+    {  # Rivers
         "type": "BiomeEntityLayer",
         "entity_protos": "FloorWaterEntity",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
@@ -712,12 +847,12 @@ MAP_CONFIG = [
         "fractal_type": FractalType.FractalType_Ridged,
         "threshold": 0.95,
         "tile_condition": lambda tile: True,
-        "priority": 10 ,
-        "seed_key": "river_noise" 
+        "priority": 10,
+        "seed_key": "river_noise",
     },
-    { # River sand
+    {  # River sand
         "type": "BiomeTileLayer",
-        "tile_type": "FloorAsteroidSand",
+        "tile_type": "FloorSand",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.003,  # Same as the river
@@ -726,9 +861,9 @@ MAP_CONFIG = [
         "overwrite": True,
         "seed_key": "river_noise",
     },
-    { # Additional River Sand with More Curves
+    {  # Additional River Sand with More Curves
         "type": "BiomeTileLayer",
-        "tile_type": "FloorAsteroidSand",
+        "tile_type": "FloorSand",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.003,
@@ -740,10 +875,10 @@ MAP_CONFIG = [
             "noise_type": NoiseType.NoiseType_Perlin,  # Different noise for variation
             "frequency": 0.01,  # Controls the scale of the variation
             "threshold_min": 0.43,  # Lower bound where sand starts appearing
-            "threshold_max": 0.55  # Upper bound for a smooth transition
-        }
+            "threshold_max": 0.55,  # Upper bound for a smooth transition
+        },
     },
-    { # Trees
+    {  # Trees
         "type": "BiomeEntityLayer",
         "entity_protos": "TreeTemperate",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
@@ -751,11 +886,11 @@ MAP_CONFIG = [
         "frequency": 0.5,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.9,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "priority": 0
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "priority": 0,
     },
     ####### PREDATORS
-    { # Wolves
+    {  # Wolves
         "type": "BiomeEntityLayer",
         "entity_protos": "SpawnMobGreyWolf",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
@@ -763,10 +898,10 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.9981,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "priority": 11
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "priority": 11,
     },
-    { # Bears
+    {  # Bears
         "type": "BiomeEntityLayer",
         "entity_protos": "SpawnMobBear",
         "noise_type": NoiseType.NoiseType_Perlin,
@@ -774,10 +909,11 @@ MAP_CONFIG = [
         "frequency": 0.300,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.958,
-        "tile_condition": lambda tile: tile in [TILEMAP_REVERSE["FloorAstroGrass"], TILEMAP_REVERSE["FloorDirtRock"]],
-        "priority": 1
+        "tile_condition": lambda tile: tile
+        in [TILEMAP_REVERSE["FloorPlanetGrass"], TILEMAP_REVERSE["FloorDirtRock"]],
+        "priority": 1,
     },
-    { # Sabertooth
+    {  # Sabertooth
         "type": "BiomeEntityLayer",
         "entity_protos": "SpawnMobSabertooth",
         "noise_type": NoiseType.NoiseType_Perlin,
@@ -785,11 +921,11 @@ MAP_CONFIG = [
         "frequency": 0.300,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96882,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "priority": 11
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "priority": 11,
     },
     ####### Preys
-    { # Rabbits
+    {  # Rabbits
         "type": "BiomeEntityLayer",
         "entity_protos": "SpawnMobRabbit",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
@@ -797,10 +933,10 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.9989,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "priority": 11
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "priority": 11,
     },
-    { # Chicken
+    {  # Chicken
         "type": "BiomeEntityLayer",
         "entity_protos": "SpawnMobChicken",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
@@ -808,10 +944,10 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.9989,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "priority": 11
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "priority": 11,
     },
-    { # Deers
+    {  # Deers
         "type": "BiomeEntityLayer",
         "entity_protos": "SpawnMobDeer",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
@@ -819,10 +955,10 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.9989,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "priority": 11
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "priority": 11,
     },
-    { # Pigs
+    {  # Pigs
         "type": "BiomeEntityLayer",
         "entity_protos": "SpawnMobPig",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
@@ -830,33 +966,43 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.9992,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "priority": 11
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "priority": 11,
     },
     # DECALS
-    { # Bush Temperate group 1
+    {  # Bush Temperate group 1
         "type": "BiomeDecalLayer",
-        "decal_id": ["BushTemperate1", "BushTemperate2", "BushTemperate3", "BushTemperate4"],
+        "decal_id": [
+            "BushTemperate1",
+            "BushTemperate2",
+            "BushTemperate3",
+            "BushTemperate4",
+        ],
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "color": "#FFFFFFFF"
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "color": "#FFFFFFFF",
     },
-    { # Bush Temperate group 2
+    {  # Bush Temperate group 2
         "type": "BiomeDecalLayer",
-        "decal_id": ["BushTemperate5", "BushTemperate6", "BushTemperate7", "BushTemperate8"],
+        "decal_id": [
+            "BushTemperate5",
+            "BushTemperate6",
+            "BushTemperate7",
+            "BushTemperate8",
+        ],
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "color": "#FFFFFFFF"
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "color": "#FFFFFFFF",
     },
-    { # Bush Temperate group 3
+    {  # Bush Temperate group 3
         "type": "BiomeDecalLayer",
         "decal_id": ["BushTemperate9", "BushTemperate10", "BushTemperate11"],
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
@@ -864,21 +1010,26 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "color": "#FFFFFFFF"
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "color": "#FFFFFFFF",
     },
-    { # Bush Temperate group 4
+    {  # Bush Temperate group 4
         "type": "BiomeDecalLayer",
-        "decal_id": ["BushTemperate12", "BushTemperate13", "BushTemperate14", "BushTemperate15"],
+        "decal_id": [
+            "BushTemperate12",
+            "BushTemperate13",
+            "BushTemperate14",
+            "BushTemperate15",
+        ],
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "color": "#FFFFFFFF"
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "color": "#FFFFFFFF",
     },
-    { # Bush Temperate group 5
+    {  # Bush Temperate group 5
         "type": "BiomeDecalLayer",
         "decal_id": ["BushTemperate16", "BushTemperate17", "BushTemperate18"],
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
@@ -886,21 +1037,26 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "color": "#FFFFFFFF"
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "color": "#FFFFFFFF",
     },
-    { # Bush Temperate group 6
+    {  # Bush Temperate group 6
         "type": "BiomeDecalLayer",
-        "decal_id": ["BushTemperate19", "BushTemperate20", "BushTemperate21", "BushTemperate22"],
+        "decal_id": [
+            "BushTemperate19",
+            "BushTemperate20",
+            "BushTemperate21",
+            "BushTemperate22",
+        ],
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "color": "#FFFFFFFF"
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "color": "#FFFFFFFF",
     },
-    { # Bush Temperate group 7
+    {  # Bush Temperate group 7
         "type": "BiomeDecalLayer",
         "decal_id": ["BushTemperate23", "BushTemperate24", "BushTemperate25"],
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
@@ -908,10 +1064,10 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "color": "#FFFFFFFF"
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "color": "#FFFFFFFF",
     },
-    { # Bush Temperate group 8
+    {  # Bush Temperate group 8
         "type": "BiomeDecalLayer",
         "decal_id": ["BushTemperate26", "BushTemperate27", "BushTemperate28"],
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
@@ -919,41 +1075,58 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "color": "#FFFFFFFF"
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "color": "#FFFFFFFF",
     },
-    { # Bush Temperate group 9
+    {  # Bush Temperate group 9
         "type": "BiomeDecalLayer",
-        "decal_id": ["BushTemperate29", "BushTemperate30", "BushTemperate31", "BushTemperate32"],
+        "decal_id": [
+            "BushTemperate29",
+            "BushTemperate30",
+            "BushTemperate31",
+            "BushTemperate32",
+        ],
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "color": "#FFFFFFFF"
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "color": "#FFFFFFFF",
     },
-    { # Bush Temperate group 10
+    {  # Bush Temperate group 10
         "type": "BiomeDecalLayer",
-        "decal_id": ["BushTemperate33", "BushTemperate34", "BushTemperate35", "BushTemperate36"],
+        "decal_id": [
+            "BushTemperate33",
+            "BushTemperate34",
+            "BushTemperate35",
+            "BushTemperate36",
+        ],
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "color": "#FFFFFFFF"
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "color": "#FFFFFFFF",
     },
-    { # Bush Temperate group 11 - High grass
+    {  # Bush Temperate group 11 - High grass
         "type": "BiomeDecalLayer",
-        "decal_id": ["BushTemperate37", "BushTemperate38", "BushTemperate39", "BushTemperate40", "BushTemperate41", "BushTemperate42"],
+        "decal_id": [
+            "BushTemperate37",
+            "BushTemperate38",
+            "BushTemperate39",
+            "BushTemperate40",
+            "BushTemperate41",
+            "BushTemperate42",
+        ],
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorAstroGrass"],
-        "color": "#FFFFFFFF"
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "color": "#FFFFFFFF",
     },
 ]
 
@@ -969,7 +1142,9 @@ width, height = 500, 500
 chunk_size = 16
 
 biome_tile_layers = [layer for layer in MAP_CONFIG if layer["type"] == "BiomeTileLayer"]
-biome_entity_layers = [layer for layer in MAP_CONFIG if layer["type"] == "BiomeEntityLayer"]
+biome_entity_layers = [
+    layer for layer in MAP_CONFIG if layer["type"] == "BiomeEntityLayer"
+]
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 output_dir = os.path.join(script_dir, "Resources", "Maps", "civ")
@@ -977,12 +1152,21 @@ os.makedirs(output_dir, exist_ok=True)
 
 tile_map = generate_tile_map(width, height, biome_tile_layers, seed_base)
 
- # Applies erosion to lone sand tiles, overwritting it with surrounding tiles
-tile_map = apply_iterative_erosion(tile_map, TILEMAP_REVERSE["FloorAsteroidSand"], min_neighbors=1)
+# Applies erosion to lone sand tiles, overwritting it with surrounding tiles
+tile_map = apply_iterative_erosion(
+    tile_map, TILEMAP_REVERSE["FloorSand"], min_neighbors=1
+)
 
 bordered_tile_map = add_border(tile_map, border_value=TILEMAP_REVERSE["FloorDirt"])
 
-save_map_to_yaml(bordered_tile_map, MAP_CONFIG, output_dir, filename="nomads_classic.yml", chunk_size=chunk_size, seed_base=seed_base)
+save_map_to_yaml(
+    bordered_tile_map,
+    MAP_CONFIG,
+    output_dir,
+    filename="nomads_classic.yml",
+    chunk_size=chunk_size,
+    seed_base=seed_base,
+)
 
 end_time = time.time()
 total_time = end_time - start_time

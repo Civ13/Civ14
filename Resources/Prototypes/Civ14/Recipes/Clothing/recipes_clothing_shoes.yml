@@ -37,7 +37,7 @@
     sprite: Civ14/Clothing/exported/shoes/fur4.rsi
     state: icon
   objectType: Item
-  agemin: 0
+  agemin: 8
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_white_fur_boots
@@ -75,8 +75,8 @@
       edges:
         - to: end
           steps:
-            - material: Leather
-              amount: 3
+            - material: PeltBrownBear
+              amount: 2
               doAfter: 8
     - node: end
       entity: civ13_shoes_brown_fur_boots
@@ -230,7 +230,7 @@
     sprite: Civ14/Clothing/exported/shoes/fur3.rsi
     state: icon
   objectType: Item
-  agemin: 0
+  agemin: 8
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_black_fur_boots
@@ -619,7 +619,7 @@
       edges:
         - to: end
           steps:
-            - material: Leather
+            - material: PeltGreyWolf
               amount: 3
               doAfter: 8
     - node: end
@@ -852,7 +852,7 @@
     sprite: Civ14/Clothing/exported/shoes/fur1.rsi
     state: icon
   objectType: Item
-  agemin: 0
+  agemin: 8
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_fur_boots

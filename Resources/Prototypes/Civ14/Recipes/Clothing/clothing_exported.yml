@@ -12,7 +12,7 @@
     sprite: Civ14/Clothing/exported/suits/prehistoric_fur4.rsi
     state: icon
   objectType: Item
-  agemin: 0
+  agemin: 8
   agemax: 8
   placementMode: SnapgridCenter
 - type: constructionGraph
@@ -53,8 +53,8 @@
       edges:
         - to: end
           steps:
-            - material: Leather
-              amount: 8
+            - material: PeltBrownBear
+              amount: 5
               doAfter: 15
     - node: end
       entity: civ13_suit_brown_primitive_pelt_coat
@@ -72,7 +72,7 @@
     sprite: Civ14/Clothing/exported/suits/prehistoric_fur2.rsi
     state: icon
   objectType: Item
-  agemin: 0
+  agemin: 8
   agemax: 8
   placementMode: SnapgridCenter
 - type: constructionGraph
@@ -102,7 +102,7 @@
     sprite: Civ14/Clothing/exported/suits/prehistoric_fur3.rsi
     state: icon
   objectType: Item
-  agemin: 0
+  agemin: 8
   agemax: 8
   placementMode: SnapgridCenter
 - type: constructionGraph
@@ -143,8 +143,8 @@
       edges:
         - to: end
           steps:
-            - material: Leather
-              amount: 8
+            - material: PeltGreyWolf
+              amount: 5
               doAfter: 15
     - node: end
       entity: civ13_suit_grey_primitive_pelt_coat
@@ -176,5 +176,8 @@
             - material: WoodPlank
               amount: 8
               doAfter: 12
+            - material: Rope
+              amount: 2
+              doAfter: 8
     - node: end
       entity: civ13_suit_primitive_wood_armor

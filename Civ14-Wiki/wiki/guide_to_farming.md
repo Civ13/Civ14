@@ -2,63 +2,18 @@
 
 **WARNING: This guide was originally written for Civ13, and as such might not fully reflect the actual gameplay of Civ14.**
 
-Being a grower of crops is an important role. You farm both food and
-cash crops. Growing food is vital for a nation to increase in wealth and
+Being a grower of crops is an important role. You farm both food and cash crops. Growing food is vital for a nation to increase in wealth and
 power.
 
 ## Tools
 
 To farm, you will require some basic tools.
 
-<table>
-<tbody>
-<tr>
-<td width="5%">
-<img src="assets/images/e.png">
-</td>
-<td>
-<b>Knife</b>
-</td>
-<td>Used for harvesting crops. Can be made out of Wood, Bone, Copper, Bronze, Iron, Steel, Silver, Gold and Diamond.</td>
-</tr>
-<tr>
-<td>
-<img src="assets/images/plough_normal.png">
-</td>
-<td>
-<b>Plough</b>
-</td>
-<td>A plough is made out of wood and used to plough fields for farming! Used once on the grass and once on the dirt underneath the grass. You can also plough snowy dirt and flooded plains dirt (found along the jungle rivers). In case of snowy grass, you will have to shovel the snow first. Lastly, there are places where you cannot plough: infertile soil, permafrost etc. You can also make an iron plough out of iron ingots to plough land faster.</td>
-</tr>
-<tr>
-<td>
-<img src="assets/images/bone_shovel.png">
-</td>
-<td>
-<b>Shovel</b>
-</td>
-<td>Made with either 2 bone pieces or a <b><a href="Guide_to_Metallurgy#molds">cast shovel head</a></b>, plus a wooden handle. Used to dig irrigation channels that water crops and do not hinder your movement, unlike flooded trenches. TO dig an irrigation channel, hold a shovel in the active hand and click it, or press Ctrl-Z or Z in the hotkeys mode, then choose the respective option.</td>
-</tr>
-<tr>
-<td>
-<img src="assets/images/seeds.png">
-</td>
-<td>
-<b>Seeds</b>
-</td>
-<td>Some sort of seeds to plant and grow. You may find seeds simply lying on the ground, but you can also collect them in the wilderness by using any type of knife on bushes and small bushes.</td>
-</tr>
-<tr>
-<td>
-<img src="assets/images/seed_collector.png">
-</td>
-<td>
-<b>Seed collector</b>
-</td>
-<td>Made out of leather. Very useful for picking up seeds during large-scale farming. Have a seed collector in your active hand, stand over the seeds on the ground, then click the collector or press Ctrl-Z, and you will put the seeds in the bag. Just do not misplace it.</td>
-</tr>
-</tbody>
-</table>
+|                                                                                       |        |                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ------------------------------------------------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![knife](./../../Resources/Textures/Objects/Weapons/Melee/kitchen_knife.rsi/icon.png) | Knife  | Used for harvesting crops. Can be made out of lots of different materials, such as bone and stone.                                                                                                                                                                                                                                                                                                                                                         |
+| ![plough](./../../Resources/Textures/Civ14/Objects/items.rsi/plough.png)              | Plough | A plough is made out of wood and used to plough fields for farming! Used once on the grass and once on the dirt underneath the grass. You can also plough snowy dirt and flooded plains dirt (found along the jungle rivers). In case of snowy grass, you will have to shovel the snow first. Lastly, there are places where you cannot plough: infertile soil, permafrost etc. You can also make an iron plough out of iron ingots to plough land faster. |
+| ![seeds](./../../Resources/Textures/Civ14/Objects/Farming/seeds.rsi/seeds_old.png)    | Seeds  | Some sort of seeds to plant and grow. You may find seeds simply lying on the ground, but you can also collect them in the wilderness by using any type of knife on bushes and small bushes.                                                                                                                                                                                                                                                                |
 
 ## Farming
 

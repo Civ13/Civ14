@@ -13,6 +13,20 @@
   maxCount: 30
 
 - type: stack
+  id: PeltBrownBear
+  name: brown bear pelt
+  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: sheet-brownbearpelt }
+  spawn: MaterialPeltBrownBear1
+  maxCount: 30
+
+- type: stack
+  id: PeltGreyWolf
+  name: grey wolf pelt
+  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: sheet-wolfpelt }
+  spawn: MaterialPeltGreyWolf1
+  maxCount: 30
+
+- type: stack
   id: Clay
   name: clay
   icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: claylump }

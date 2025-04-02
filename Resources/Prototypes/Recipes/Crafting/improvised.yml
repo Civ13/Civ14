@@ -23,6 +23,8 @@
   icon:
     sprite: Objects/Specific/Medical/medical.rsi
     state: gauze
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: blindfold
@@ -36,6 +38,8 @@
   icon:
     sprite: Clothing/Eyes/Misc/blindfold.rsi
     state: icon
+  agemin: 0
+  agemax: 8
 
 - type: construction
   name: flower wreath
@@ -75,3 +79,5 @@
     sprite: Clothing/Head/Hats/straw_hat.rsi
     state: icon
   objectType: Item
+  agemin: 0
+  agemax: 8

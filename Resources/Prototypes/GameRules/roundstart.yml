@@ -11,7 +11,7 @@
     - type: RespawnDeadRule
       alwaysRespawnDead: true
     - type: RespawnTracker
-      respawnDelay: 10
+      respawnDelay: 600
       deleteBody: false
 
 - type: entity

@@ -274,10 +274,22 @@
             "name": "sheet-wolfpelt"
         },
         {
+            "name": "sheet-wolfpelt_2"
+        },
+        {
+            "name": "sheet-wolfpelt_3"
+        },
+        {
             "name": "sheet-whitebearpelt"
         },
         {
             "name": "sheet-brownbearpelt"
+        },
+        {
+            "name": "sheet-brownbearpelt_2"
+        },
+        {
+            "name": "sheet-brownbearpelt_3"
         },
         {
             "name": "sheet-gorillapelt"
@@ -394,13 +406,19 @@
             "name": "sheet-copper"
         },
         {
-            "name": "sheet-iron"
-        },
-        {
             "name": "sheet-tin"
         },
         {
             "name": "sheet-lead"
+        },
+        {
+            "name": "copper"
+        },
+        {
+            "name": "copper_2"
+        },
+        {
+            "name": "copper_3"
         },
         {
             "name": "sheet-obsidian"
@@ -440,6 +458,12 @@
         },
         {
             "name": "rope"
+        },
+        {
+            "name": "rope_2"
+        },
+        {
+            "name": "rope_3"
         },
         {
             "name": "barbwire_stack"

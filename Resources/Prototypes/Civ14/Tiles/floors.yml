@@ -80,6 +80,7 @@
     collection: BarestepWood
   itemDrop: FloorTileItemThatch
   heatCapacity: 10000
+  weather: false
 
 - type: stack
   id: FloorTileThatch
@@ -113,7 +114,7 @@
 
 - type: entity
   id: FloorThatch
-  parent: BaseStructure
+  parent: FloorWoodClassic
   name: thatch floor
   description: "A floor made of compressed dried straw."
   components:
@@ -121,15 +122,6 @@
       sprite: Civ14/Structures/Floors/wood.rsi
       state: thatch2
       drawdepth: FloorTiles
-    - type: IsRoof
-    - type: Tag
-      tags:
-        - ForceFixRotations
-    - type: Physics
-      canCollide: false
-    - type: Fixtures
-    - type: Damageable
-      damageContainer: Inorganic
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -161,6 +153,80 @@
       thresholds:
         - trigger: !type:DamageTrigger
             damage: 40
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: BlockWeather
+    - type: SunShadowCast
+
+- type: tile
+  id: FloorRoad
+  name: ancient road
+  sprite: /Textures/Civ14/Structures/Floors/roads.rsi/r_roadfull.png
+  variants: 1
+  baseTurf: Plating
+  weather: true
+  isSubfloor: false
+  deconstructTools: [Prying]
+  footstepSounds:
+    collection: FootstepFloor
+  barestepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemRoad
+  heatCapacity: 10000
+
+- type: stack
+  id: FloorTileRoad
+  name: ancient road
+  spawn: FloorTileItemRoad
+  maxCount: 30
+
+- type: entity
+  name: ancient road
+  parent: FloorTileItemBase
+  id: FloorTileItemRoad
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Floors/roads.rsi
+      state: r_roadfull
+    - type: Item
+      heldPrefix: cobblestone
+    - type: FloorTile
+      outputs:
+        - Plating
+        - FloorRoad
+    - type: Stack
+      stackType: FloorTileRoad
+    - type: SpawnAfterInteract #Nuke after convert to FloorTile
+      prototype: FloorRoad
+      doAfter: 0.5
+      removeOnInteract: true
+    - type: Construction
+      graph: TileRoad
+      node: end
+
+- type: entity
+  id: FloorRoad
+  parent: BaseStructure
+  name: ancient road
+  description: "An ancient rough cobblestone road."
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Floors/roads.rsi
+      state: r_roadfull
+      drawdepth: FloorTiles
+    - type: Tag
+      tags:
+        - ForceFixRotations
+    - type: Physics
+      canCollide: false
+    - type: Fixtures
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 180
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]

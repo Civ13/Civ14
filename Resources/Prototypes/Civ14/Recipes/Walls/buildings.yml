@@ -32,81 +32,6 @@
   conditions:
     - !type:TileNotBlocked
 
-- type: construction
-  name: straw wall window
-  id: StrawWallWindow
-  graph: StrawWallWindow
-  startNode: start
-  targetNode: end
-  category: construction-category-structures
-  description: A basic wall made of straw and dry leaves. Burns easily.
-  icon:
-    sprite: Civ14/Structures/windows.rsi
-    state: straw_window
-  objectType: Structure
-  agemin: 0
-  agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
-  name: dirt wall window
-  id: DirtWallWindow
-  graph: DirtWallWindow
-  startNode: start
-  targetNode: end
-  category: construction-category-structures
-  description: A basic wall made of dried mud bricks.
-  icon:
-    sprite: Civ14/Structures/windows.rsi
-    state: drysod_window
-  objectType: Structure
-  agemin: 0
-  agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
-  name: clay wall
-  id: ClayWallWindow
-  graph: ClayWallWindow
-  startNode: start
-  targetNode: end
-  category: construction-category-structures
-  description: A wall made of fired clay bricks.
-  icon:
-    sprite: Civ14/Structures/windows.rsi
-    state: clay_windownew
-  objectType: Structure
-  agemin: 0
-  agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
-  name: log wall window
-  id: LogWallWindow
-  graph: LogWallWindow
-  startNode: start
-  targetNode: end
-  category: construction-category-structures
-  description: A wall made of stacked hardwood logs. For that rustic feel.
-  icon:
-    sprite: Civ14/Structures/windows.rsi
-    state: log_window
-  objectType: Structure
-  agemin: 0
-  agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
 - type: constructionGraph
   id: WoodDoorClassic
   start: start
@@ -135,22 +60,25 @@
     - node: end
       entity: WoodDoorRustic
 
-- type: constructionGraph
-  id: StrawWallWindow
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Straw
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: StrawWallWindow
+- type: construction
+  name: wood window
+  id: WoodWindowClassic
+  graph: WoodWindowClassic
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A rustic wood window.
+  icon: { sprite: Civ14/Structures/windows.rsi, state: windownew_frame }
+  objectType: Structure
+  agemin: 0
+  agemax: 8
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
 
 - type: constructionGraph
-  id: LogWallWindow
+  id: WoodWindowClassic
   start: start
   graph:
     - node: start
@@ -158,36 +86,7 @@
         - to: end
           steps:
             - material: WoodPlank
-              amount: 5
-              doAfter: 5
+              amount: 4
+              doAfter: 3
     - node: end
-      entity: LogWallWindow
-
-- type: constructionGraph
-  id: DirtWallWindow
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Dirt
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: DirtWallWindow
-
-- type: constructionGraph
-
-  id: ClayWallWindow
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Clay
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: ClayWallWindow
+      entity: WoodWindowClassic

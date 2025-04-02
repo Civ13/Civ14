@@ -9,7 +9,9 @@
   icon:
     sprite: Civ14/Objects/bed_chair.rsi
     state: stool_wood
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
@@ -26,7 +28,9 @@
   icon:
     sprite: Civ14/Objects/bed_chair.rsi
     state: wooden_chair
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
@@ -43,7 +47,9 @@
   icon:
     sprite: Structures/Furniture/chairs.rsi
     state: wooden-bench
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
@@ -60,7 +66,9 @@
   icon:
     sprite: Structures/Furniture/Tables/wood.rsi
     state: full
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
@@ -77,7 +85,9 @@
   icon:
     sprite: Structures/Furniture/Tables/counterwood.rsi
     state: full
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
@@ -96,6 +106,8 @@
     sprite: Civ14/Objects/bed_chair.rsi
     state: bed_wood
   objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
@@ -112,7 +124,9 @@
   icon:
     sprite: Structures/Furniture/furniture.rsi
     state: dresser
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
@@ -129,7 +143,9 @@
   icon:
     sprite: Structures/Decoration/Curtains/hospital.rsi
     state: closed
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: true
 
@@ -144,7 +160,9 @@
   icon:
     sprite: Structures/Decoration/Curtains/black.rsi
     state: closed
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: true
 
@@ -159,7 +177,9 @@
   icon:
     sprite: Structures/Decoration/Curtains/blue.rsi
     state: closed
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: true
 
@@ -174,7 +194,9 @@
   icon:
     sprite: Structures/Decoration/Curtains/cyan.rsi
     state: closed
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: true
 
@@ -189,7 +211,9 @@
   icon:
     sprite: Structures/Decoration/Curtains/green.rsi
     state: closed
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: true
 
@@ -204,7 +228,9 @@
   icon:
     sprite: Structures/Decoration/Curtains/orange.rsi
     state: closed
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: true
 
@@ -219,7 +245,9 @@
   icon:
     sprite: Structures/Decoration/Curtains/pink.rsi
     state: closed
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: true
 
@@ -234,7 +262,9 @@
   icon:
     sprite: Structures/Decoration/Curtains/purple.rsi
     state: closed
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: true
 
@@ -249,7 +279,9 @@
   icon:
     sprite: Structures/Decoration/Curtains/red.rsi
     state: closed
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: true
 
@@ -264,7 +296,9 @@
   icon:
     sprite: Structures/Decoration/Curtains/white.rsi
     state: closed
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: true
 
@@ -279,7 +313,9 @@
   icon:
     sprite: Structures/Furniture/bookshelf.rsi
     state: base
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
@@ -296,7 +332,9 @@
   icon:
     sprite: Structures/Wallmounts/noticeboard.rsi
     state: noticeboard
-  objectType: Structure
+    objectType: Structure
+  agemin: 0
+  agemax: 8
   placementMode: SnapgridCenter
   canRotate: true
   canBuildInImpassable: true

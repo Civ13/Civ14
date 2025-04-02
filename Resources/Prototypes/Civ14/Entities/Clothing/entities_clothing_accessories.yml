@@ -1,0 +1,6394 @@
+- type: entity
+  name: armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_armband
+  description: A cloth armband.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/customarmband.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/customarmband.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_armband
+      node: end
+      cost: 1
+      material: Cloth
+      time: 3
+- type: entity
+  name: Dayfield body-armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_Dayfield_body_armor
+  description: British-made wearable armor made of steel sheets.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/modern_dayfield.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/modern_dayfield.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.30
+          Slash: 0.30
+          Piercing: 0.6
+          Arrow: 0.1
+          Heat: 0.88
+          Radiation: 0.85
+    - type: Construction
+      graph: civ13_accessory_Dayfield_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: yellow armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_yellow_armband
+  description: A fancy yellow armband!
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/spanish.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/spanish.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_yellow_armband
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Spanish Republican armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_Spanish_Republican_armband
+  description: A fancy Spanish Republican Armband!
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/spanishrep.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/spanishrep.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Spanish_Republican_armband
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: French webbing vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_French_webbing_vest
+  description: ""
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/french_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/french_vest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_French_webbing_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: UN armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_UN_armband
+  description: A blue UN armband.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/un.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/un.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_UN_armband
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: green armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_green_armband
+  description: A fancy green armband!
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/portuguese.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/portuguese.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_green_armband
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: orange armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_orange_armband
+  description: A fancy orange armband!
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/dutch.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/dutch.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_orange_armband
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: polish armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_polish_armband
+  description: A polish armband!
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/polisharmband.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/polisharmband.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_polish_armband
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: red wagner armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_red_wagner_armband
+  description: A PMC group armband
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/wagred.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/wagred.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_red_wagner_armband
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: iron arm bangle
+  parent: ClothingNeckBase
+  id: civ13_accessory_iron_arm_bangle
+  description: Iron bangles to wear on your arms.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/iron_arm.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/iron_arm.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_iron_arm_bangle
+      node: end
+      cost: 2
+      material: Iron
+      time: 10
+- type: entity
+  name: golden Public Order ribbon
+  parent: ClothingNeckBase
+  id: civ13_accessory_golden_Public_Order_ribbon
+  description: >-
+    A ribbon given to law enforcement officers that distinguished themselves
+    during their service.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/police_gold.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/police_gold.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_golden_Public_Order_ribbon
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: silver Public Order ribbon
+  parent: ClothingNeckBase
+  id: civ13_accessory_silver_Public_Order_ribbon
+  description: >-
+    A ribbon given to law enforcement officers that distinguished themselves
+    during their service.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/police_silver.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/police_silver.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_silver_Public_Order_ribbon
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: copper arm bangle
+  parent: ClothingNeckBase
+  id: civ13_accessory_copper_arm_bangle
+  description: Copper bangles to wear on your arms.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/copper_arm.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/copper_arm.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_copper_arm_bangle
+      node: end
+      cost: 2
+      material: Copper
+      time: 10
+- type: entity
+  name: bronze Public Order ribbon
+  parent: ClothingNeckBase
+  id: civ13_accessory_bronze_Public_Order_ribbon
+  description: >-
+    A ribbon given to law enforcement officers that distinguished themselves
+    during their service.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/police_bronze.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/police_bronze.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_bronze_Public_Order_ribbon
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Sheriff Star
+  parent: ClothingNeckBase
+  id: civ13_accessory_Sheriff_Star
+  description: A golden star of the town's Sheriff.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/sheriff.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/sheriff.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Sheriff_Star
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: deputy armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_deputy_armband
+  description: A yellow armband, used to identify the Sheriff's deputies.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/spanish.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/spanish.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_deputy_armband
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: police badge
+  parent: ClothingNeckBase
+  id: civ13_accessory_police_badge
+  description: A police badge in a star shape, with an officer's name engraved.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/sheriff.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/sheriff.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_police_badge
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: red armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_red_armband
+  description: A red armband
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/red.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/red.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_red_armband
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: blue armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_blue_armband
+  description: A red armband
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/french.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/french.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_blue_armband
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Light black breastplate body-armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_Light_black_breastplate_body_armor
+  description: Wearable light armor made of steel sheets.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/modern_blackvest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/modern_blackvest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.65
+          Arrow: 0.054
+          Heat: 0.85
+          Radiation: 0.8
+    - type: Construction
+      graph: civ13_accessory_Light_black_breastplate_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: blue tie
+  parent: ClothingNeckBase
+  id: civ13_accessory_blue_tie
+  description: A blue tie.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/blue_tie.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/blue_tie.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_blue_tie
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: blue scarf
+  parent: ClothingNeckBase
+  id: civ13_accessory_blue_scarf
+  description: A blue scarf, used by royal navy sailors.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/british_scarf.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/british_scarf.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_blue_scarf
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: blue scarf
+  parent: ClothingNeckBase
+  id: civ13_accessory_blue_scarf_1
+  description: A light cotton scarf, in blue.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/british_scarf.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/british_scarf.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_blue_scarf_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: grey scarf
+  parent: ClothingNeckBase
+  id: civ13_accessory_grey_scarf
+  description: A light cotton scarf, in grey.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/grey_scarf.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/grey_scarf.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_grey_scarf
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: red scarf
+  parent: ClothingNeckBase
+  id: civ13_accessory_red_scarf
+  description: A light cotton scarf, in red.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/red_scarf.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/red_scarf.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_red_scarf
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: yellow scarf
+  parent: ClothingNeckBase
+  id: civ13_accessory_yellow_scarf
+  description: A light cotton scarf, in yellow.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/yellow_scarf.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/yellow_scarf.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_yellow_scarf
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: spiked bracers
+  parent: ClothingNeckBase
+  id: civ13_accessory_spiked_bracers
+  description: A pair of punkish spiked bracers.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/spiked_bracers.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/spiked_bracers.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_spiked_bracers
+      node: end
+      cost: 3
+      time: 10
+
+- type: entity
+  name: gold native necklace
+  parent: ClothingNeckBase
+  id: civ13_accessory_indian_accessories_1_2
+  description: gold native necklaces.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/indian2.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/indian2.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_indian_accessories_1_2
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: indian shaman bodypaint
+  parent: ClothingNeckBase
+  id: civ13_accessory_indian_shaman_bodypaint
+  description: Red and white bodypaint, worn by native shamans.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/indianshaman.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/indianshaman.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_indian_shaman_bodypaint
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: red indian acessories
+  parent: ClothingNeckBase
+  id: civ13_accessory_red_indian_acessories
+  description: red face paint and indian necklaces.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/indianr.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/indianr.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_red_indian_acessories
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: green native bodypaint
+  parent: ClothingNeckBase
+  id: civ13_accessory_green_indian_acessories
+  description: green face paint and indian necklaces.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/indiang.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/indiang.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_green_indian_acessories
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: blue native bodypaint
+  parent: ClothingNeckBase
+  id: civ13_accessory_blue_indian_acessories
+  description: blue face paint and indian necklaces.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/indianb.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/indianb.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_blue_indian_acessories
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: yellow native bodypaint
+  parent: ClothingNeckBase
+  id: civ13_accessory_yellow_indian_acessories
+  description: yellow face paint and indian necklaces.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/indiany.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/indiany.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_yellow_indian_acessories
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: white native bodypaint
+  parent: ClothingNeckBase
+  id: civ13_accessory_white_indian_acessories
+  description: white face paint and indian necklaces.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/indianw.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/indianw.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_white_indian_acessories
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: black native bodypaint
+  parent: ClothingNeckBase
+  id: civ13_accessory_black_indian_acessories
+  description: black face paint and indian necklaces.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/indianbl.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/indianbl.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_black_indian_acessories
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: bone talisman
+  parent: ClothingNeckBase
+  id: civ13_accessory_bone_talisman
+  description: A bone talisman.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/talisman.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/talisman.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_bone_talisman
+      node: end
+      cost: 2
+      material: Bone
+      time: 8
+- type: entity
+  name: red cross armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_red_cross_armband
+  description: A white armband with the red cross in it.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/redcross.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/redcross.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_red_cross_armband
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: NSDAP armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_NSDAP_armband
+  description: A red armband with the swastika on it.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/nsdap.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/nsdap.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_NSDAP_armband
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Kenpeitai armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_Kenpeitai_armband
+  description: A white armband with red japanese characters on it.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/japanesemp.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/japanesemp.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Kenpeitai_armband
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: military police armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_military_police_armband
+  description: A black armband with "MP" written on it.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/usmp.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/usmp.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_military_police_armband
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Volkssturm armband
+  parent: ClothingNeckBase
+  id: civ13_accessory_Volkssturm_armband
+  description: A red, white and black armband of the Volkssturm
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/volkssturm.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/volkssturm.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Volkssturm_armband
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: cat tail and ears
+  parent: ClothingNeckBase
+  id: civ13_accessory_cat_tail_and_ears
+  description: intresting
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/kitty.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/kitty.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_cat_tail_and_ears
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: scarf
+  parent: ClothingNeckBase
+  id: civ13_accessory_scarf
+  description: A cloth scarf.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/customscarf.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/customscarf.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_scarf
+      node: end
+      cost: 2
+      material: Cloth
+      time: 3
+- type: entity
+  name: sash
+  parent: ClothingNeckBase
+  id: civ13_accessory_sash
+  description: A cloth sash.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/customsash.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/customsash.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_sash
+      node: end
+      cost: 1
+      material: Cloth
+      time: 3
+- type: entity
+  name: tabard
+  parent: ClothingNeckBase
+  id: civ13_accessory_tabard
+  description: A cloth tabard.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/customtabard.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/customtabard.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_tabard
+      node: end
+      cost: 2
+      material: Cloth
+      time: 3
+- type: entity
+  name: apron
+  parent: ClothingNeckBase
+  id: civ13_accessory_apron
+  description: A cloth apron.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/apron.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/apron.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_apron
+      node: end
+      cost: 2
+      material: Cloth
+      time: 3
+- type: entity
+  name: priest band
+  parent: ClothingNeckBase
+  id: civ13_accessory_priest_band
+  description: A priest band.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/customizable_priest_band.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/customizable_priest_band.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_priest_band
+      node: end
+      cost: 1
+      material: Cloth
+      time: 5
+- type: entity
+  name: cape
+  parent: ClothingNeckBase
+  id: civ13_accessory_cape
+  description: A cloth cape.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/customcape.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/customcape.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_cape
+      node: end
+      cost: 2
+      material: Cloth
+      time: 3
+- type: entity
+  name: black tie
+  parent: ClothingNeckBase
+  id: civ13_accessory_black_tie
+  description: A black tie.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/black_tie.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/black_tie.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_black_tie
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: black bowtie
+  parent: ClothingNeckBase
+  id: civ13_accessory_black_bowtie
+  description: A black bowtie.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/black_bowtie.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/black_bowtie.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_black_bowtie
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: marksman patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_marksman_patch
+  description: A patch with a marksman logo on it. Usually worn by skilled shooters.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/patch_marksman.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/patch_marksman.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_marksman_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Russia patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Russia_patch
+  description: A patch with the flag of Russia.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/patch_russia.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/patch_russia.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Russia_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Spetsgruppa A patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Spetsgruppa_A_patch
+  description: A special forces patch, this one is of spetsnaz.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/patch_spets.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/patch_spets.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Spetsgruppa_A_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: SWAT patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_SWAT_patch
+  description: A SWAT tag.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/swat.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/swat.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_SWAT_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: special forces patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_special_forces_patch
+  description: A patch used by special forces.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/patch_specialforces.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/patch_specialforces.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_special_forces_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: SECURITY
+  parent: ClothingNeckBase
+  id: civ13_accessory_SECURITY
+  description: A tag used by security forces.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/policetag.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/policetag.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_SECURITY
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: "Standard Single Pauldron "
+  parent: ClothingNeckBase
+  id: civ13_accessory_Standard_Single_Pauldron_
+  description: A plastoid armored shoulder cover.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/pauldron_s.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/pauldron_s.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Standard_Single_Pauldron_
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: green PASGT body armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_green_PASGT_body_armor
+  description: Wearable armor that can stop most pistol rounds. This one is green colored.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/pasgt_green.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/pasgt_green.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.32
+          Slash: 0.32
+          Piercing: 0.48
+          Arrow: 0.054
+          Heat: 0.78
+    - type: Construction
+      graph: civ13_accessory_green_PASGT_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: red tie
+  parent: ClothingNeckBase
+  id: civ13_accessory_red_tie
+  description: A red tie.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/red_tie.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/red_tie.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_red_tie
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: "Standard Double Pauldron "
+  parent: ClothingNeckBase
+  id: civ13_accessory_Standard_Double_Pauldron_
+  description: Dual plastoid shoulder cover.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/pauldron_d.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/pauldron_d.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Standard_Double_Pauldron_
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: wearable sign
+  parent: ClothingNeckBase
+  id: civ13_accessory_wearable_sign
+  description: A wooden sign with a string, wearable over the clothing.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/wearable_sign.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/wearable_sign.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_wearable_sign
+      node: end
+      cost: 2
+      material: WoodPlank
+      time: 6
+- type: entity
+  name: Combat Medical Badge
+  parent: ClothingNeckBase
+  id: civ13_accessory_Combat_Medical_Badge
+  description: A badge given to those who excel in providing medical care during combat.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/combat_medical_badge.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/combat_medical_badge.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Combat_Medical_Badge
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: German webbing vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_German_webbing_vest
+  description: ""
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_German_webbing_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Webbing vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_Webbing_vest
+  description: >-
+    This webbing vest includes two sturdy leather belts equipped with small
+    pouches for ammunition and grenades, providing essential storage for
+    frontline soldiers.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Webbing_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Iron Cross
+  parent: ClothingNeckBase
+  id: civ13_accessory_Iron_Cross
+  description: An iron cross given to 1st class ranking personnel
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/EK_1st.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/EK_1st.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Iron_Cross
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Iron Cross
+  parent: ClothingNeckBase
+  id: civ13_accessory_Iron_Cross_1
+  description: An iron cross given to 2nd class ranking personnel
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/EK_2nd.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/EK_2nd.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Iron_Cross_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Great Iron Cross
+  parent: ClothingNeckBase
+  id: civ13_accessory_Great_Iron_Cross
+  description: A great iron cross
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/GEK.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/GEK.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Great_Iron_Cross
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Knight Iron Cross
+  parent: ClothingNeckBase
+  id: civ13_accessory_Knight_Iron_Cross
+  description: A knight iron cross
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/Knight_EK.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/Knight_EK.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Knight_Iron_Cross
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Knight Iron Cross
+  parent: ClothingNeckBase
+  id: civ13_accessory_Knight_Iron_Cross_1
+  description: An oak knight iron cross
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/Knight_EK_oaken.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/Knight_EK_oaken.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Knight_Iron_Cross_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Knight Iron Cross
+  parent: ClothingNeckBase
+  id: civ13_accessory_Knight_Iron_Cross_1_2
+  description: A gold oak knight iron cross
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/knight_EK_gold_oaken.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/knight_EK_gold_oaken.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Knight_Iron_Cross_1_2
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Long Service Medal
+  parent: ClothingNeckBase
+  id: civ13_accessory_Long_Service_Medal
+  description: A Wehrmacht long service medal
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/wehrmacht_long_service.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/wehrmacht_long_service.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Long_Service_Medal
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Eastern Front Medal
+  parent: ClothingNeckBase
+  id: civ13_accessory_Eastern_Front_Medal
+  description: A Wehrmacht eastern front medal
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/eastern_front.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/eastern_front.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Eastern_Front_Medal
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Assault Badge
+  parent: ClothingNeckBase
+  id: civ13_accessory_Assault_Badge
+  description: An assault badge for assistance in infantry assaults
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/assault_badge.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/assault_badge.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Assault_Badge
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Tank Destruction Badge
+  parent: ClothingNeckBase
+  id: civ13_accessory_Tank_Destruction_Badge
+  description: A badge showing the wearer has destroyed an enemy tank
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/silver_tank_destruction.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/silver_tank_destruction.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Tank_Destruction_Badge
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Tank Destruction Badge
+  parent: ClothingNeckBase
+  id: civ13_accessory_Tank_Destruction_Badge_1
+  description: A badge showing the wearer has destroyed an enemy tank
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/golden_tank_destruction.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/golden_tank_destruction.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Tank_Destruction_Badge_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Wounded Badge
+  parent: ClothingNeckBase
+  id: civ13_accessory_Wounded_Badge
+  description: A black badge showing the wearer has been wounded for the fatherland
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/black_wound.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/black_wound.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Wounded_Badge
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Wounded Badge
+  parent: ClothingNeckBase
+  id: civ13_accessory_Wounded_Badge_1
+  description: A silver badge showing the wearer has been wounded for the fatherland
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/silver_wound.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/silver_wound.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Wounded_Badge_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Wounded Badge
+  parent: ClothingNeckBase
+  id: civ13_accessory_Wounded_Badge_1_2
+  description: A gold badge showing the wearer has been wounded for the fatherland
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/gold_wound.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/gold_wound.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Wounded_Badge_1_2
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Wehrmacht Sadler
+  parent: ClothingNeckBase
+  id: civ13_accessory_Wehrmacht_Sadler
+  description: An eagle pin displaying the symbol of the wehrmacht
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/wehrmacht_sadler.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/wehrmacht_sadler.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Wehrmacht_Sadler
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: SS Sadler
+  parent: ClothingNeckBase
+  id: civ13_accessory_SS_Sadler
+  description: An eagle pin displaying the symbol of the schutzstaffel
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/ss_wehrmacht_sadler.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/ss_wehrmacht_sadler.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_SS_Sadler
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: SS pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_SS_pin
+  description: A pin displaying the symbol of the Schutzstaffel
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/ss_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/ss_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_SS_pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: NSDAP pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_NSDAP_pin
+  description: A pin displaying the symbol of the 3rd Reich
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/nazi_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/nazi_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_NSDAP_pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Totenkopf pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Totenkopf_pin
+  description: A pin displaying the symbol of the SS Totenkopf
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/totenkopf.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/totenkopf.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Totenkopf_pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: NSDAP pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_NSDAP_pin_1
+  description: A pin displaying the symbol of the NSDAP
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/nsdap.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/nsdap.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_NSDAP_pin_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: East Asia War medal
+  parent: ClothingNeckBase
+  id: civ13_accessory_East_Asia_War_medal
+  description: A medal given to those who fought in the pacific theatre.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/east_asia_war.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/east_asia_war.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_East_Asia_War_medal
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: China Incident medal
+  parent: ClothingNeckBase
+  id: civ13_accessory_China_Incident_medal
+  description: A medal given to those who fought in China and Manchuria from 1931-1937.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/china_incident1931.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/china_incident1931.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_China_Incident_medal
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: China Incident medal
+  parent: ClothingNeckBase
+  id: civ13_accessory_China_Incident_medal_1
+  description: A medal given to those who fought in Chinafrom 1937-1945.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/china_incident1937.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/china_incident1937.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_China_Incident_medal_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Order of the Rising Sun
+  parent: ClothingNeckBase
+  id: civ13_accessory_Order_of_the_Rising_Sun
+  description: >-
+    A medal given to those who fought valiantly for japan and contributed
+    greatly to war efforts.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/order_rising_sun.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/order_rising_sun.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Order_of_the_Rising_Sun
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Supreme Soviet of the Soviet Union
+  parent: ClothingNeckBase
+  id: civ13_accessory_Supreme_Soviet_of_the_Soviet_Union
+  description: >-
+    A Soviet flag pin signifying that the wearer is part of the supreme council
+    as a delegate.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/delegate_supreme_soviet.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/delegate_supreme_soviet.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Supreme_Soviet_of_the_Soviet_Union
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: People's Commissariat of Internal Affairs Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Peoples_Commissariat_of_Internal_Affairs_Pin
+  description: A pin used by the interior ministry of the soviet union.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/nkvd.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/nkvd.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Peoples_Commissariat_of_Internal_Affairs_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Hero of the Soviet Union Medal
+  parent: ClothingNeckBase
+  id: civ13_accessory_Hero_of_the_Soviet_Union_Medal
+  description: >-
+    A medal given to soldiers of the soviet union who have achevied heroic feats
+    in service to the Soviet state and society.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/Hero of the Soviet Union.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/Hero of the Soviet Union.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Hero_of_the_Soviet_Union_Medal
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Order of the Red Star Medal
+  parent: ClothingNeckBase
+  id: civ13_accessory_Order_of_the_Red_Star_Medal
+  description: >-
+    The Order of the Red Star was awarded to soldiers of the Soviet Army, Navy,
+    border and internal security forces, employees of the State Security
+    Committee of the USSR, as well as NCOs and officers of the bodies of
+    internal affairs; to units, warships, associations, enterprises,
+    institutions and organizations; as well as to military personnel of foreign
+    countries.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/Order of the Red Star.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/Order of the Red Star.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Order_of_the_Red_Star_Medal
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: For the Defence of Stalingrad Medal
+  parent: ClothingNeckBase
+  id: civ13_accessory_For_the_Defence_of_Stalingrad_Medal
+  description: >-
+    Given to soldiers who have defended Stalingrad during the harsh war against
+    the german invaders.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/For the Defence of Stalingrad.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/For the Defence of Stalingrad.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_For_the_Defence_of_Stalingrad_Medal
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: For the Defence of Leningrad Medal
+  parent: ClothingNeckBase
+  id: civ13_accessory_For_the_Defence_of_Leningrad_Medal
+  description: >-
+    Given to soldiers who have defended Leningrad during the harsh war against
+    the german invaders.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/For the Defence of Leningrad.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/For the Defence of Leningrad.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_For_the_Defence_of_Leningrad_Medal
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Guards Unit Badge
+  parent: ClothingNeckBase
+  id: civ13_accessory_Guards_Unit_Badge
+  description: >-
+    Given to soldiers who have shown that they are to be distinguished from
+    basic infantry and are now under the rank of Guard.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/Guards Unit Badge.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/Guards Unit Badge.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Guards_Unit_Badge
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Italian webbing vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_Italian_webbing_vest
+  description: ""
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Italian_webbing_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Fascist Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Fascist_Party_Pin
+  description: Given to members of the Italian Fascist party.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/Fascist pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/Fascist pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Fascist_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Officer's Colonial Order of the Star of Italy Medal
+  parent: ClothingNeckBase
+  id: civ13_accessory_Officers_Colonial_Order_of_the_Star_of_Italy_Medal
+  description: >-
+    Given to members of the Italian millitary who have served in the colonies of
+    the Kingdom of Italy, showing the rank of Officer .
+  components:
+    - type: Sprite
+      sprite: >-
+        Civ14/Clothing/exported/badges/Officer's Colonial Order of the Star of
+        Italy.rsi
+    - type: Clothing
+      sprite: >-
+        Civ14/Clothing/exported/badges/Officer's Colonial Order of the Star of
+        Italy.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Officers_Colonial_Order_of_the_Star_of_Italy_Medal
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Knight's Colonial Order of the Star of Italy Medal
+  parent: ClothingNeckBase
+  id: civ13_accessory_Knights_Colonial_Order_of_the_Star_of_Italy_Medal
+  description: >-
+    Given to members of the Italian millitary who have served in the colonies of
+    the Kingdom of Italy, showing the rank of Knight .
+  components:
+    - type: Sprite
+      sprite: >-
+        Civ14/Clothing/exported/badges/Knight's Colonial Order of the Star of
+        Italy.rsi
+    - type: Clothing
+      sprite: >-
+        Civ14/Clothing/exported/badges/Knight's Colonial Order of the Star of
+        Italy.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Knights_Colonial_Order_of_the_Star_of_Italy_Medal
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Communist Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Communist_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of
+    Communism.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/communist_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/communist_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Communist_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Anarcho-communist Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Anarcho_communist_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of
+    Anarcho-communism.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/ancom_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/ancom_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Anarcho_communist_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Anarchist Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Anarchist_Party_Pin
+  description: A political pin signifying that the wearer supports the beliefs of Anarchy.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/anarchist_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/anarchist_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Anarchist_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Monarchist Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Monarchist_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of a
+    Monarchy.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/monarchist_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/monarchist_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Monarchist_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Republican Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Republican_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of a
+    Republic.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/republicanist_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/republicanist_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Republican_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Fascist Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Fascist_Party_Pin_1
+  description: A political pin signifying that the wearer supports the beliefs of Fascism.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/fascist_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/fascist_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Fascist_Party_Pin_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: National-socialist Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_National_socialist_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of
+    National-Socialism.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/nazi_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/nazi_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_National_socialist_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Minarchist Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Minarchist_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of
+    Minarchism.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/minarchist_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/minarchist_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Minarchist_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Anarcho-capitalist Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Anarcho_capitalist_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of
+    Anarcho-capitalism.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/ancap_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/ancap_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Anarcho_capitalist_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Libertarian Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Libertarian_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of
+    Libertarianism.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/libertarian_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/libertarian_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Libertarian_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: MSF Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_MSF_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of
+    Muslim-Students-Front.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/msf_flag_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/msf_flag_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_MSF_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Liberal Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Liberal_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of
+    Liberalism.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/liberal_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/liberal_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Liberal_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Anarcho-liberal Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Anarcho_liberal_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of
+    Anarcho-liberalism.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/anlib_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/anlib_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Anarcho_liberal_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Anarcho-primitist Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Anarcho_primitist_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of
+    Anarcho-primitism.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/anprim_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/anprim_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Anarcho_primitist_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Evironmentalist Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Evironmentalist_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of
+    Evironmentalism.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/environmentalist_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/environmentalist_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Evironmentalist_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Christian Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Christian_Party_Pin
+  description: A political pin signifying that the wearer supports the beliefs of Christ.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/christian_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/christian_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Christian_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Muslim Brotherhood Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Muslim_Brotherhood_Party_Pin
+  description: A political pin signifying that the wearer supports the beliefs of Muhammad.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/muslim_brotherhood_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/muslim_brotherhood_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Muslim_Brotherhood_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Conservative Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Conservative_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of
+    Conservatism.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/conservative_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/conservative_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Conservative_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Nationalist Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Nationalist_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of
+    Nationalism.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/nationalist_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/nationalist_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Nationalist_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Egalitarian Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Egalitarian_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of
+    Egalitarianism.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/egalitarian_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/egalitarian_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Egalitarian_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Globalist Party Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Globalist_Party_Pin
+  description: >-
+    A political pin signifying that the wearer supports the beliefs of
+    Globalism.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/globalist_flag_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/globalist_flag_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Globalist_Party_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Farmer's Union Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Farmers_Union_Pin
+  description: >-
+    A Union pin signifying that the wearer supports the beliefs of working to
+    protect and further farmer's rights.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/farmers_union_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/farmers_union_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Farmers_Union_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Miner's Union Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Miners_Union_Pin
+  description: >-
+    A Union pin signifying that the wearer supports the beliefs of working to
+    protect and further miner's rights.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/miners_union_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/miners_union_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Miners_Union_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Factory Worker's Union Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Factory_Workers_Union_Pin
+  description: >-
+    A Union pin signifying that the wearer supports the beliefs of working to
+    protect and further worker's rights.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/factory_workers_union_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/factory_workers_union_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Factory_Workers_Union_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Labour Worker's Union Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Labour_Workers_Union_Pin
+  description: >-
+    A Union pin signifying that the wearer supports the beliefs of working to
+    protect and further Labourer's rights.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/workers_union_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/workers_union_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Labour_Workers_Union_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Medical Worker's Guild Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Medical_Workers_Guild_Pin
+  description: >-
+    A Union pin signifying that the wearer supports the beliefs of working to
+    protect and further Medical Worker's rights.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/medics_guild_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/medics_guild_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Medical_Workers_Guild_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Office Worker's Union Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Office_Workers_Union_Pin
+  description: >-
+    A Union pin signifying that the wearer supports the beliefs of working to
+    protect and further Office Worker's rights.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/corporate_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/corporate_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Office_Workers_Union_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Hospitality Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Hospitality_Pin
+  description: >-
+    A Political pin signifying that the wearer supports the beliefs of
+    Hospitality Worker's rights.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/aristocratic_league_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/aristocratic_league_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Hospitality_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Lumberjack's Union Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Lumberjacks_Union_Pin
+  description: >-
+    A Union pin signifying that the wearer supports the beliefs of working to
+    protect and further Lumberjack's rights.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/lumberjacks_union_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/lumberjacks_union_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Lumberjacks_Union_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Merchant's Guild Pin
+  parent: ClothingNeckBase
+  id: civ13_accessory_Merchants_Guild_Pin
+  description: >-
+    A Guild pin signifying that the wearer supports the beliefs of working to
+    protect and further the Guild's rights.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/badges/zionist_party_pin.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/badges/zionist_party_pin.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Merchants_Guild_Pin
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Kapitan rank epaulettes
+  parent: ClothingNeckBase
+  id: civ13_accessory_Kapitan_rank_epaulettes
+  description: the rank of Kapitan, Captain, epaulettes.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/fp_cpt.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/fp_cpt.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Kapitan_rank_epaulettes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Tenyente rank epaulettes
+  parent: ClothingNeckBase
+  id: civ13_accessory_Tenyente_rank_epaulettes
+  description: the rank of Tenyente, Lieutenant, epaulettes.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/fp_lt.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/fp_lt.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Tenyente_rank_epaulettes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Sarhente rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Sarhente_rank_patch
+  description: the rank of Sarhente, Sergeant, sleeve patches.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/fp_sgt.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/fp_sgt.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Sarhente_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Kabo rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Kabo_rank_patch
+  description: the rank of Kabo, Corporal, sleeve patches.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/fp_cpl.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/fp_cpl.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Kabo_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Nitohei rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Nitohei_rank_patch
+  description: the rank of 2nd class soldier, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/jap_nitohei.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/jap_nitohei.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Nitohei_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Ittohei rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Ittohei_rank_patch
+  description: the rank of 1st class soldier, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/jap_ittohei.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/jap_ittohei.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Ittohei_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Jotohei rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Jotohei_rank_patch
+  description: >-
+    the rank of senior soldier (lance corporal or specialist), to be sewn into
+    the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/jap_jotohei.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/jap_jotohei.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Jotohei_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Gunso rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Gunso_rank_patch
+  description: >-
+    the rank of Gunso, squad leader or sergeanr, to be sewn into the collar of a
+    uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/jap_gunso.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/jap_gunso.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Gunso_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Shoi rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Shoi_rank_patch
+  description: the rank of Shoi, 2nd Lieutenant, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/jap_2lt.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/jap_2lt.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Shoi_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Chui rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Chui_rank_patch
+  description: the rank of Chui, 1st Lieutenant, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/jap_1lt.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/jap_1lt.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Chui_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Tai-i rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Tai_i_rank_patch
+  description: the rank of Rikugun Tai-i, Captain, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/jap_taii.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/jap_taii.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Tai_i_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Schutze rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Schutze_rank_patch
+  description: the rank of 2nd class soldier, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/germ_schtz.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/germ_schtz.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Schutze_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Oberschutze rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Oberschutze_rank_patch
+  description: the rank of 1st class soldier, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/germ_obrschtz.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/germ_obrschtz.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Oberschutze_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Gefreiter rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Gefreiter_rank_patch
+  description: the rank of Acting Corporal, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/germ_gftr.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/germ_gftr.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Gefreiter_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Obergefreiter rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Obergefreiter_rank_patch
+  description: the rank of Corporal, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/germ_obrgftr.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/germ_obrgftr.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Obergefreiter_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Unteroffizier rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Unteroffizier_rank_patch
+  description: the rank of Sergeant, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/germ_grppnfher.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/germ_grppnfher.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Unteroffizier_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Ober Leutnant rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Ober_Leutnant_rank_patch
+  description: the rank of 1st Lieutenant, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/germ_1lt.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/germ_1lt.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Ober_Leutnant_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Hauptmann rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Hauptmann_rank_patch
+  description: the rank of Captain, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/germ_hptmn.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/germ_hptmn.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Hauptmann_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Untersturmfuhrer rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Untersturmfuhrer_rank_patch
+  description: the rank of SS 2nd Lieutenant, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/germ_2lt.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/germ_2lt.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Untersturmfuhrer_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Scharfuhrer rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Scharfuhrer_rank_patch
+  description: the rank of SS Sergeant, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/germ_grppnfher.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/germ_grppnfher.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Scharfuhrer_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Obersturmfuhrer rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Obersturmfuhrer_rank_patch
+  description: the rank of SS 1st Lieutenant, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/germ_1lt.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/germ_1lt.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Obersturmfuhrer_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Hauptsturmfuhrer rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Hauptsturmfuhrer_rank_patch
+  description: the rank of SS Captain, to be sewn into the collar of a uniform.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/germ_hptmn.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/germ_hptmn.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Hauptsturmfuhrer_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Khorunzhyj rank patches
+  parent: ClothingNeckBase
+  id: civ13_accessory_Khorunzhyj_rank_patches
+  description: the rank of Khorunzhyj, 2nd Lieutenant.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/upa_lt.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/upa_lt.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Khorunzhyj_rank_patches
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Vistun rank patch
+  parent: ClothingNeckBase
+  id: civ13_accessory_Vistun_rank_patch
+  description: the rank of Vistun, Sergeant, sleeve patches.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/upa_sgt.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/upa_sgt.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Vistun_rank_patch
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: shoulder holster
+  parent: ClothingNeckBase
+  id: civ13_accessory_shoulder_holster
+  description: A handgun holster.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/holster.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/holster.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_shoulder_holster
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: armpit holster
+  parent: ClothingNeckBase
+  id: civ13_accessory_armpit_holster
+  description: A worn-out handgun holster. Perfect for concealed carry
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/holster.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/holster.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_armpit_holster
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: waist holster
+  parent: ClothingNeckBase
+  id: civ13_accessory_waist_holster
+  description: A handgun holster. Made of expensive leather.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/holster.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/holster.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_waist_holster
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: chest holster
+  parent: ClothingNeckBase
+  id: civ13_accessory_chest_holster
+  description: A handgun holster with slung around the chest.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/waist_holster.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/waist_holster.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_chest_holster
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: hip holster
+  parent: ClothingNeckBase
+  id: civ13_accessory_hip_holster
+  description: A handgun holster slung low on the hip.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/holster_hip.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/holster_hip.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_hip_holster
+      node: end
+      cost: 2
+      material: Leather
+      time: 5
+- type: entity
+  name: double hip holster
+  parent: ClothingNeckBase
+  id: civ13_accessory_double_hip_holster
+  description: A double handgun holster slung low on the hip.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/holster_hip2.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/holster_hip2.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_double_hip_holster
+      node: end
+      cost: 3
+      material: Leather
+      time: 7
+- type: entity
+  name: hip holster
+  parent: ClothingNeckBase
+  id: civ13_accessory_hip_holster_1
+  description: A handgun holster slung low on the hip.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/tacholster.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/tacholster.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_hip_holster_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: replicant kama
+  parent: ClothingNeckBase
+  id: civ13_accessory_replicant_kama
+  description: A kama skirt with a built in holster slung low on the hip.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/replicant_kama.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/replicant_kama.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_replicant_kama
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: silver locket
+  parent: ClothingNeckBase
+  id: civ13_accessory_silver_locket
+  description: >-
+    This oval shaped, argentium sterling silver locket hangs on an incredibly
+    fine, refractive string, almost thin as hair and microweaved from links to a
+    deceptive strength, of similar material. The edges are engraved very
+    delicately with an elegant curving design, but overall the main is unmarked
+    and smooth to the touch, leaving room for either remaining as a stolid piece
+    or future alterations. There is an obvious internal place for a picture or
+    lock of some sort, but even behind that is a very thin compartment unhinged
+    with the pinch of a thumb and forefinger.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/locket.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/locket.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_silver_locket
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: load bearing equipment
+  parent: ClothingNeckBase
+  id: civ13_accessory_load_bearing_equipment
+  description: Used to hold things when you don't have enough hands.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/webbing.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/webbing.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_load_bearing_equipment
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: short sword sheath
+  parent: ClothingNeckBase
+  id: civ13_accessory_short_sword_sheath
+  description: A case of leather for a shorter length sword.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/short_sheath.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/short_sheath.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_short_sword_sheath
+      node: end
+      cost: 3
+      material: Leather
+      time: 8
+- type: entity
+  name: long sword sheath
+  parent: ClothingNeckBase
+  id: civ13_accessory_long_sword_sheath
+  description: A large leather case. Looks long enough to accommodate most swords.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/longsword_sheath.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/longsword_sheath.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_long_sword_sheath
+      node: end
+      cost: 4
+      material: Leather
+      time: 8
+- type: entity
+  name: katana sheath
+  parent: ClothingNeckBase
+  id: civ13_accessory_katana_sheath
+  description: A case of leather for a katana.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/katana_sheath.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/katana_sheath.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_katana_sheath
+      node: end
+      cost: 3
+      material: Leather
+      time: 8
+- type: entity
+  name: daisho sheaths
+  parent: ClothingNeckBase
+  id: civ13_accessory_daisho_sheaths
+  description: A pair of leather cases for a matched weapon set.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/daisho_sheath.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/daisho_sheath.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_daisho_sheaths
+      node: end
+      cost: 6
+      material: Leather
+      time: 8
+- type: entity
+  name: sword sheath
+  parent: ClothingNeckBase
+  id: civ13_accessory_sword_sheath
+  description: A case of leather for holding a sword, it is of intermediate length.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/longer_sheath.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/longer_sheath.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_sword_sheath
+      node: end
+      cost: 3
+      material: Leather
+      time: 8
+- type: entity
+  name: knife sheath
+  parent: ClothingNeckBase
+  id: civ13_accessory_knife_sheath
+  description: A leather case for holding a knife.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/knifeholster.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/knifeholster.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_knife_sheath
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: belt loop
+  parent: ClothingNeckBase
+  id: civ13_accessory_belt_loop
+  description: A loop for your belt. You could probably store something dibilitating there.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/knifeholster.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/knifeholster.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_belt_loop
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: duty rig
+  parent: ClothingNeckBase
+  id: civ13_accessory_duty_rig
+  description: >-
+    A set of loops and cases on a belt. You could probably store some
+    enforcement tool there.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/tacholster.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/tacholster.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_duty_rig
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: loose pouches
+  parent: ClothingNeckBase
+  id: civ13_accessory_loose_pouches
+  description: A pair of loose pouches, perfect for getting some pacifying tools quickly.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/tan_pouches.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/tan_pouches.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_loose_pouches
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: thrown weapon bandolier
+  parent: ClothingNeckBase
+  id: civ13_accessory_thrown_weapon_bandolier
+  description: >-
+    A set of leather cases on belts for storing and retrieving thrown weapons
+    quickly.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/bandolier.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/bandolier.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_thrown_weapon_bandolier
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: bandolier
+  parent: ClothingNeckBase
+  id: civ13_accessory_bandolier
+  description: two leather belts with small pouches for ammunition.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/bandolier.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/bandolier.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_bandolier
+      node: end
+      cost: 3
+      material: Leather
+      time: 7
+- type: entity
+  name: green chest webbing
+  parent: ClothingNeckBase
+  id: civ13_accessory_green_chest_webbing
+  description: A green chest-level webbing, with three medium sized pouches.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/green_webbing.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/green_webbing.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_green_chest_webbing
+      node: end
+      cost: 2
+      material: Leather
+      time: 6
+- type: entity
+  name: NLF small pouches
+  parent: ClothingNeckBase
+  id: civ13_accessory_NLF_small_pouches
+  description: A green chest-level webbing with multiple small-sized pouches.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/nlfchestrig_v2.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/nlfchestrig_v2.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_NLF_small_pouches
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: NLF chestrig
+  parent: ClothingNeckBase
+  id: civ13_accessory_NLF_chestrig
+  description: >-
+    A green chest-level webbing, with three medium-sized pouches along with two
+    smaller ones.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/nlfchestrig_v1.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/nlfchestrig_v1.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_NLF_chestrig
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: khaki chest webbing
+  parent: ClothingNeckBase
+  id: civ13_accessory_khaki_chest_webbing
+  description: A khaki chest-level webbing, with three medium sized pouches.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/khaki_webbing.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/khaki_webbing.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_khaki_chest_webbing
+      node: end
+      cost: 2
+      material: Leather
+      time: 6
+- type: entity
+  name: black pouches
+  parent: ClothingNeckBase
+  id: civ13_accessory_black_pouches
+  description: A set of pouches to store magazines in.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/black_pouches.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/black_pouches.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_black_pouches
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: large black pouches
+  parent: ClothingNeckBase
+  id: civ13_accessory_large_black_pouches
+  description: A large set of pouches to store magazines in.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/largepouches.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/largepouches.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_large_black_pouches
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: large tan pouches
+  parent: ClothingNeckBase
+  id: civ13_accessory_large_tan_pouches
+  description: A large set of pouches to store magazines in.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/largepouches_tan.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/largepouches_tan.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_large_tan_pouches
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: tan pouches
+  parent: ClothingNeckBase
+  id: civ13_accessory_tan_pouches
+  description: A set of pouches to store magazines in.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/tan_pouches.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/tan_pouches.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_tan_pouches
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: tan UBAC
+  parent: ClothingNeckBase
+  id: civ13_accessory_tan_UBAC
+  description: >-
+    A flexible, close-fitting shirt with camouflage sleeves designed to be worn
+    under combat equipment. This one is tan.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/ubac_tan.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/ubac_tan.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_tan_UBAC
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: green UBAC
+  parent: ClothingNeckBase
+  id: civ13_accessory_green_UBAC
+  description: >-
+    A flexible, close-fitting shirt with camouflage sleeves designed to be worn
+    under combat equipment. This one is green.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/ubac_green.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/ubac_green.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_green_UBAC
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: black UBAC
+  parent: ClothingNeckBase
+  id: civ13_accessory_black_UBAC
+  description: >-
+    A flexible, close-fitting shirt with camouflage sleeves designed to be worn
+    under combat equipment. This one is black.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/ubac_black.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/ubac_black.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_black_UBAC
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: grey sweater
+  parent: ClothingNeckBase
+  id: civ13_accessory_grey_sweater
+  description: A sweater to help you be comfy.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/sweater.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/sweater.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_grey_sweater
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: light webbing
+  parent: ClothingNeckBase
+  id: civ13_accessory_light_webbing
+  description: A light webbing, with lower capacity but permitting fast movement.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_light_webbing
+      node: end
+      cost: 1
+      material: Leather
+      time: 5
+- type: entity
+  name: Chinese light webbing
+  parent: ClothingNeckBase
+  id: civ13_accessory_Chinese_light_webbing
+  description: ""
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Chinese_light_webbing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: US Army webbing
+  parent: ClothingNeckBase
+  id: civ13_accessory_US_Army_webbing
+  description: A large webbing with several small pockets.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/us_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/us_vest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_US_Army_webbing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: US Army bandolier
+  parent: ClothingNeckBase
+  id: civ13_accessory_US_Army_bandolier
+  description: A large cotton bandolier with several small pouches.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/us_bandolier.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/us_bandolier.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_US_Army_bandolier
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: shotgun bandolier
+  parent: ClothingNeckBase
+  id: civ13_accessory_shotgun_bandolier
+  description: A bandolier with several holes made to fit shotgun shells.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/shotgun_bandolier.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/shotgun_bandolier.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_shotgun_bandolier
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: US Army M79 Vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_US_Army_M79_Vest
+  description: A large webbing with several small pockets.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_US_Army_M79_Vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Grenadier Webbing
+  parent: ClothingNeckBase
+  id: civ13_accessory_Grenadier_Webbing
+  description: A large webbing with several small pockets.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Grenadier_Webbing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Grenadier Webbing
+  parent: ClothingNeckBase
+  id: civ13_accessory_Grenadier_Webbing_1
+  description: A large webbing with several small pockets.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Grenadier_Webbing_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: survival webbing
+  parent: ClothingNeckBase
+  id: civ13_accessory_survival_webbing
+  description: >-
+    A green set of chest and knee-level pouches for storing a pistol, magazines
+    and other gear needed to survive in the wilderness.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/survival_webbing.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/survival_webbing.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_survival_webbing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Imperial Russian Army bandolier
+  parent: ClothingNeckBase
+  id: civ13_accessory_Imperial_Russian_Army_bandolier
+  description: A large leather bandolier 6 small pouches for strip clips.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/ru_band.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/ru_band.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Imperial_Russian_Army_bandolier
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: filipino webbing
+  parent: ClothingNeckBase
+  id: civ13_accessory_filipino_webbing
+  description: 8 black leather pouches.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/fp_webbing.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/fp_webbing.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_filipino_webbing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: cartridge rigging
+  parent: ClothingNeckBase
+  id: civ13_accessory_cartridge_rigging
+  description: A rig of cases for ammo and a bayonet.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/civil_war.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/civil_war.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_cartridge_rigging
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: CAF Tacvest
+  parent: ClothingNeckBase
+  id: civ13_accessory_CAF_Tacvest
+  description: A large webbing with several pouches.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/caf_tacvest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/caf_tacvest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_CAF_Tacvest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Leather webbing vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_Leather_webbing_vest
+  description: ""
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/british_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/british_vest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Leather_webbing_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+
+- type: entity
+  name: Greek webbing vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_Greek_webbing_vest
+  description: ""
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Greek_webbing_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Russian webbing vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_Russian_webbing_vest
+  description: This webbing appears to have four green polyester pouches.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/russian_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/russian_vest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_Russian_webbing_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: US webbing
+  parent: ClothingNeckBase
+  id: civ13_accessory_US_webbing
+  description: >-
+    A khaki canvas pouch rig with 10 pouches total for ammo and other various
+    items
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/us_webbing.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/us_webbing.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_US_webbing
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+
+- type: entity
+  name: stethoscope
+  parent: ClothingNeckBase
+  id: civ13_accessory_stethoscope
+  description: A medical apparatus for listening to the sounds of the human body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/stethoscope.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/stethoscope.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_stethoscope
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: TATBA-7 vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_TATBA_7_vest
+  description: Chinese light plate carrier, comes with a single plate inserted.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/tatba.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/tatba.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_TATBA_7_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: 6B3 body armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_6B3_body_armor
+  description: A ballistic vest of Soviet origin, issued in the mid 1980s.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/6b3.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/6b3.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_6B3_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: 6B3 green camo body armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_6B3_green_camo_body_armor
+  description: ""
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/6b3cam.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/6b3cam.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_6B3_green_camo_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: 6B2 body armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_6B2_body_armor
+  description: A ballistic vest of Soviet origin, issued in the early 1980s.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/6b2.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/6b2.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.32
+          Slash: 0.32
+          Piercing: 0.7
+          Arrow: 0.054
+          Heat: 0.85
+    - type: Construction
+      graph: civ13_accessory_6B2_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: 6B5 body armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_6B5_body_armor
+  description: A ballistic vest of Soviet origin, issued in the late 1980s.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/6b5.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/6b5.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.30
+          Slash: 0.30
+          Piercing: 0.30
+          Arrow: 0.054
+          Heat: 0.7
+    - type: Construction
+      graph: civ13_accessory_6B5_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: N34-B body armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_N34_B_body_armor
+  description: >-
+    A modern piece of Blugoslavian armor introduced in 2023, made fully out of
+    kevlar while also having some space left for plate inserts
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/n34bm.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/n34bm.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.30
+          Slash: 0.30
+          Piercing: 0.28
+          Arrow: 0.054
+          Heat: 0.7
+    - type: Construction
+      graph: civ13_accessory_N34_B_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: N34-BM body armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_N34_BM_body_armor
+  description: >-
+    A Blugoslavian armor used by medics and doctors alike, comes with a white
+    medical cross on the back.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/n34bmm.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/n34bmm.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.30
+          Slash: 0.30
+          Piercing: 0.28
+          Arrow: 0.054
+          Heat: 0.7
+    - type: Construction
+      graph: civ13_accessory_N34_BM_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: black Interceptor Body Armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_black_Interceptor_Body_Armor
+  description: >-
+    Wearable armor that can stop even some rifle rounds. Can be fitted with
+    plates to increase protection.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/iba_black.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/iba_black.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.25
+          Slash: 0.25
+          Piercing: 0.35
+          Arrow: 0
+          Heat: 0.75
+    - type: Construction
+      graph: civ13_accessory_black_Interceptor_Body_Armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: UCP Interceptor Body Armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_UCP_Interceptor_Body_Armor
+  description: >-
+    Wearable armor that can stop even some rifle rounds. Can be fitted with
+    plates to increase protection. This one has the Universal Camouflage
+    Pattern.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/iba_ucp.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/iba_ucp.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.25
+          Slash: 0.25
+          Piercing: 0.35
+          Arrow: 0
+          Heat: 0.75
+    - type: Construction
+      graph: civ13_accessory_UCP_Interceptor_Body_Armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: OCP Interceptor Body Armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_OCP_Interceptor_Body_Armor
+  description: >-
+    Wearable armor that can stop even some rifle rounds. Can be fitted with
+    plates to increase protection. This one has the Operational Camouflage
+    Pattern.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/iba_ocp.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/iba_ocp.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.25
+          Slash: 0.25
+          Piercing: 0.35
+          Arrow: 0
+          Heat: 0.75
+    - type: Construction
+      graph: civ13_accessory_OCP_Interceptor_Body_Armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: tan plate carrier
+  parent: ClothingNeckBase
+  id: civ13_accessory_tan_plate_carrier
+  description: A plate carrier that can store magazines and pouches. This one is tan.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/platecarrier_tan.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/platecarrier_tan.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.6
+          Arrow: 0.8
+          Heat: 0.8
+    - type: Construction
+      graph: civ13_accessory_tan_plate_carrier
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: olive plate carrier
+  parent: ClothingNeckBase
+  id: civ13_accessory_olive_plate_carrier
+  description: A plate carrier that can store magazines and pouches. This one is olive.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/platecarrier_green.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/platecarrier_green.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.6
+          Arrow: 0.8
+          Heat: 0.8
+    - type: Construction
+      graph: civ13_accessory_olive_plate_carrier
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: black plate carrier
+  parent: ClothingNeckBase
+  id: civ13_accessory_black_plate_carrier
+  description: A plate carrier that can store magazines and pouches. This one is black.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/platecarrier_black.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/platecarrier_black.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.6
+          Arrow: 0.8
+          Heat: 0.8
+    - type: Construction
+      graph: civ13_accessory_black_plate_carrier
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: UARM plate carrier
+  parent: ClothingNeckBase
+  id: civ13_accessory_UARM_plate_carrier
+  description: >-
+    A plate carrier that can store magazines and pouches. This one is made by
+    UARM.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/ukraine_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/ukraine_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.6
+          Slash: 0.6
+          Piercing: 0.6
+          Arrow: 0.8
+          Heat: 0.8
+    - type: Construction
+      graph: civ13_accessory_UARM_plate_carrier
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: 6B45 body armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_6B45_body_armor
+  description: A modern body armor of Russian origin.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/6b45.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/6b45.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.32
+          Slash: 0.32
+          Piercing: 0.48
+          Arrow: 0.054
+          Heat: 0.78
+    - type: Construction
+      graph: civ13_accessory_6B45_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: 6B45 extended body armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_6B45_extended_body_armor
+  description: A modern body armor of Russian origin.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/6b45_ext.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/6b45_ext.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.30
+          Slash: 0.30
+          Piercing: 0.4
+          Arrow: 0.054
+          Heat: 0.78
+    - type: Construction
+      graph: civ13_accessory_6B45_extended_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: 6B46 body armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_6B46_body_armor
+  description: >-
+    A modern plate carrier of Russian origin. This one is used by paratroopers
+    and vehicle crewmen as it is a lighter version of the 6B45.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/6b46.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/6b46.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.4
+          Slash: 0.4
+          Piercing: 0.5
+          Arrow: 0.054
+          Heat: 0.78
+    - type: Construction
+      graph: civ13_accessory_6B46_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: M-1952 Flak Jacket
+  parent: ClothingNeckBase
+  id: civ13_accessory_M_1952_Flak_Jacket
+  description: >-
+    Wearable armor meant to protect against shrapnel and light hits. Won't do
+    much against large caliber weapons.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/flakjacket.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/flakjacket.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_M_1952_Flak_Jacket
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: M-1969 Flak Jacket
+  parent: ClothingNeckBase
+  id: civ13_accessory_M_1969_Flak_Jacket
+  description: >-
+    Wearable armor with neck protection meant to protect against shrapnel and
+    light hits. Won't do much against large caliber weapons.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/flakjacket1969.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/flakjacket1969.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_M_1969_Flak_Jacket
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: 6B1 vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_6B1_vest
+  description: >-
+    Wearable Armor meant to protect against shrapnel and light caliber weaponry.
+    Won't do much against large caliber weapons.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/6b1.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/6b1.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_6B1_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: woodland PASGT body armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_woodland_PASGT_body_armor
+  description: >-
+    Wearable armor that can stop most pistol rounds. This one is in U.S.
+    Woodland pattern.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/pasgt_woodland.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/pasgt_woodland.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.32
+          Slash: 0.32
+          Piercing: 0.48
+          Arrow: 0.054
+          Heat: 0.78
+    - type: Construction
+      graph: civ13_accessory_woodland_PASGT_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: khaki PASGT body armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_khaki_PASGT_body_armor
+  description: Wearable armor that can stop most pistol rounds. This one is khaki colored.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/pasgt_khaki.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/pasgt_khaki.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.32
+          Slash: 0.32
+          Piercing: 0.48
+          Arrow: 0.054
+          Heat: 0.78
+    - type: Construction
+      graph: civ13_accessory_khaki_PASGT_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: blizzard PASGT body armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_blizzard_PASGT_body_armor
+  description: >-
+    Wearable armor that can stop most pistol rounds. This one has a blizzard
+    pattern.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/pasgt_blizzard.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/pasgt_blizzard.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.32
+          Slash: 0.32
+          Piercing: 0.48
+          Arrow: 0.054
+          Heat: 0.78
+    - type: Construction
+      graph: civ13_accessory_blizzard_PASGT_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: RB-23 body armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_RB_23_body_armor
+  description: A modern ballistic vest of Redmenian origin.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/rb23.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/rb23.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.30
+          Slash: 0.30
+          Piercing: 0.28
+          Arrow: 0.054
+          Heat: 0.7
+    - type: Construction
+      graph: civ13_accessory_RB_23_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Masada body armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_Masada_body_armor
+  description: Israeli wearable armor that can stop most pistol rounds. This one is green.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/greenkevlarvest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/greenkevlarvest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.32
+          Slash: 0.32
+          Piercing: 0.48
+          Arrow: 0.054
+          Heat: 0.78
+    - type: Construction
+      graph: civ13_accessory_Masada_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: chainmail
+  parent: ClothingNeckBase
+  id: civ13_accessory_chainmail
+  description: Wearable armor made of several small interlinked chains.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/chainmail.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/chainmail.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.92
+          Arrow: 0.65
+          Heat: 0.85
+    - type: Construction
+      graph: civ13_accessory_chainmail
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: knee protections
+  parent: ClothingNeckBase
+  id: civ13_accessory_knee_protections
+  description: Used to increase the protection of the legs.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/knee_protections.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/knee_protections.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_knee_protections
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: leg guards
+  parent: ClothingNeckBase
+  id: civ13_accessory_leg_guards
+  description: Used to increase the protection of the legs.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/legguards.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/legguards.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_leg_guards
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: elbow protections
+  parent: ClothingNeckBase
+  id: civ13_accessory_elbow_protections
+  description: Used to increase the protection of the arms.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/elbow_protections.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/elbow_protections.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_elbow_protections
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: arm guards
+  parent: ClothingNeckBase
+  id: civ13_accessory_arm_guards
+  description: Used to increase the protection of the arms.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/armguards.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/armguards.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_arm_guards
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: tan carrier vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_tan_carrier_vest
+  description: A kevlar vest with pouches, it is tan.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/pcarrier_tan.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/pcarrier_tan.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.35
+          Slash: 0.35
+          Piercing: 0.24
+          Arrow: 0.054
+          Heat: 0.78
+    - type: Construction
+      graph: civ13_accessory_tan_carrier_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: black carrier vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_black_carrier_vest
+  description: A kevlar vest with pouches, it is black.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/pcarrier_black.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/pcarrier_black.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.35
+          Slash: 0.35
+          Piercing: 0.24
+          Arrow: 0.054
+          Heat: 0.78
+    - type: Construction
+      graph: civ13_accessory_black_carrier_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: heavy carrier vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_heavy_carrier_vest
+  description: A tan carrier vest for holding various items.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/thickcarrier.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/thickcarrier.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.217
+          Arrow: 0.7
+          Heat: 0.84
+    - type: Construction
+      graph: civ13_accessory_heavy_carrier_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: black kevlar vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_black_kevlar_vest
+  description: Standard kevlar, can stop low caliber bullets. This one is black.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/kevlarvest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/kevlarvest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.2
+          Slash: 0.2
+          Piercing: 0.35
+          Arrow: 0.05
+          Heat: 0.65
+    - type: Construction
+      graph: civ13_accessory_black_kevlar_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: civilian kevlar vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_civilian_kevlar_vest
+  description: A black kevlar vest for commercial use.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/civilianvest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/civilianvest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.4
+          Slash: 0.4
+          Piercing: 0.48
+          Arrow: 0.1
+          Heat: 0.78
+    - type: Construction
+      graph: civ13_accessory_civilian_kevlar_vest
+      node: end
+      cost: 10
+      time: 21
+- type: entity
+  name: Press kevlar vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_Press_kevlar_vest
+  description: A blue kevlar vest, with 'PRESS' written across the chest.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/press_kevlarvest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/press_kevlarvest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.4
+          Slash: 0.4
+          Piercing: 0.48
+          Arrow: 0.1
+          Heat: 0.78
+    - type: Construction
+      graph: civ13_accessory_Press_kevlar_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: baily vest
+  parent: ClothingNeckBase
+  id: civ13_accessory_baily_vest
+  description: A vest used by baily security units.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/bailyvest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/bailyvest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_baily_vest
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: IOG heavy vest B-7
+  parent: ClothingNeckBase
+  id: civ13_accessory_IOG_heavy_vest_B_7
+  description: A heavy suit made of strong materials.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/iogsuit.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/iogsuit.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_IOG_heavy_vest_B_7
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Breastplate body-armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_Breastplate_body_armor
+  description: Wearable armor made of steel sheets.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/modern_platearmor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/modern_platearmor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.30
+          Slash: 0.30
+          Piercing: 0.55
+          Arrow: 0.054
+          Heat: 0.85
+          Radiation: 0.8
+    - type: Construction
+      graph: civ13_accessory_Breastplate_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Light breastplate body-armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_Light_breastplate_body_armor
+  description: Wearable light armor made of steel sheets.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/modern_armorvest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/modern_armorvest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.65
+          Arrow: 0.054
+          Heat: 0.85
+          Radiation: 0.8
+    - type: Construction
+      graph: civ13_accessory_Light_breastplate_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Lead breastplate body-armor
+  parent: ClothingNeckBase
+  id: civ13_accessory_Lead_breastplate_body_armor
+  description: Wearable breastplate armor made out of steel sheets and lead.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/modern_blackvest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/modern_blackvest.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.4
+          Slash: 0.4
+          Piercing: 0.65
+          Arrow: 0.054
+          Heat: 0.85
+          Radiation: 0.4
+    - type: Construction
+      graph: civ13_accessory_Lead_breastplate_body_armor
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: White Sash
+  parent: ClothingNeckBase
+  id: civ13_accessory_White_Sash
+  description: A white sash, used by the Japanese White Sash Brigade.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/sash.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/sash.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_White_Sash
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: neck ruffle
+  parent: ClothingNeckBase
+  id: civ13_accessory_neck_ruffle
+  description: A ruffle neck collar made of soft material.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/ruffle_neck.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/ruffle_neck.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_neck_ruffle
+      node: end
+      cost: 2
+      material: Cloth
+      time: 3
+- type: entity
+  name: suspenders
+  parent: ClothingNeckBase
+  id: civ13_accessory_suspenders
+  description: Leather suspenders.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/suspenders1.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/suspenders1.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_suspenders
+      node: end
+      cost: 1
+      material: Leather
+      time: 6
+- type: entity
+  name: dark suspenders
+  parent: ClothingNeckBase
+  id: civ13_accessory_dark_suspenders
+  description: Dark leather suspenders.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/suspenders2.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/suspenders2.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_accessory_dark_suspenders
+      node: end
+      cost: 1
+      material: Leather
+      time: 7
+- type: entity
+  name: Japanese pilot harness
+  parent: ClothingNeckBase
+  id: civ13_accessory_Japanese_pilot_harness
+  description: A harness made to strap someone to a plane.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/jap_harn.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/jap_harn.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Arrow: 0
+          Heat: 0
+          Radiation: 0
+    - type: Construction
+      graph: civ13_accessory_Japanese_pilot_harness
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5

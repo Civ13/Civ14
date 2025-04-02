@@ -6,7 +6,7 @@ Civilization 14 is a port of [Civilization 13](https://github.com/Civ13/civ13) f
 
 ## Links
 
-[Civ14 Website](https://civ13.com/) | [Civ14 Discord](https://discord.gg/hBEtg4x) | [SS14 Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [SS14 Standalone Download](https://spacestation14.io/about/nightlies/)
+[Civ14 Website](https://civ13.com/) | [Civ14 Discord](https://discord.gg/hBEtg4x) | [Civ14 Wiki](https://civ13.github.io/Civ14/Civ14-Wiki) | [SS14 Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [SS14 Standalone Download](https://spacestation14.io/about/nightlies/)
 
 ## Documentation/Wiki
 
