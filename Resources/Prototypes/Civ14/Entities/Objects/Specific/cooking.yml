@@ -83,7 +83,7 @@
 
 - type: entity
   id: KitchenCampfire
-  parent: BaseHeaterMachine
+  parent: KitchenElectricGrill
   name: campfire
   description: Keeps you warm and cooks your food.
   components:

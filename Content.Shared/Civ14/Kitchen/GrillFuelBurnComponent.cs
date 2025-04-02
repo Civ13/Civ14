@@ -22,23 +22,14 @@ public sealed partial class GrillFuelBurnComponent : Component
     public int MaxFuel = 10;
 
     /// <summary>
-    /// Dictionary mapping accepted fuel entities (e.g., prototype IDs) to their burn time per unit in minutes.
-    /// </summary>
-    [DataField("fuelBurnTimes")]
-    public Dictionary<string, float> FuelBurnTimes = new()
-    {
-        { "MaterialWoodPlank", 2.0f } // Example: 2 minutes per unit
-    };
-
-    /// <summary>
     /// Current heating setting of the campfire based on fuel level.
     /// </summary>
-    [DataField]
+    [DataField("setting")]
     public EntityHeaterSetting Setting = EntityHeaterSetting.Off;
 
     /// <summary>
     /// Optional sound played when the setting changes.
     /// </summary>
-    [DataField]
+    [DataField("settingSound")]
     public SoundPathSpecifier? SettingSound;
 }
