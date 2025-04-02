@@ -27,8 +27,8 @@
       spawned:
         - id: FoodMeat
           amount: 4
-        - id: MaterialLeather1
-          amount: 3
+        - id: MaterialPeltBrownBear1
+          amount: 5
         - id: MaterialBones1
           amount: 3
     - type: DamageStateVisuals
@@ -87,8 +87,8 @@
       spawned:
         - id: FoodMeat
           amount: 2
-        - id: MaterialLeather1
-          amount: 1
+        - id: MaterialPeltGreyWolf1
+          amount: 3
         - id: MaterialBones1
           amount: 1
     - type: DamageStateVisuals

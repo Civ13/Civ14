@@ -38,7 +38,7 @@
     sprite: Civ14/Clothing/exported/gloves/whitefur.rsi
     state: icon
   objectType: Item
-  agemin: 0
+  agemin: 8
   agemax: 8
 
 - type: constructionGraph
@@ -50,7 +50,7 @@
         - to: end
           steps:
             - material: Leather
-              amount: 3
+              amount: 2
               doAfter: 8
     - node: end
       entity: civ13_gloves_white_fur_gloves
@@ -189,8 +189,8 @@
       edges:
         - to: end
           steps:
-            - material: Leather
-              amount: 3
+            - material: PeltGreyWolf
+              amount: 2
               doAfter: 8
     - node: end
       entity: civ13_gloves_grey_fur_gloves
@@ -245,8 +245,8 @@
       edges:
         - to: end
           steps:
-            - material: Leather
-              amount: 3
+            - material: PeltBrownBear
+              amount: 2
               doAfter: 8
     - node: end
       entity: civ13_gloves_brown_fur_gloves
@@ -514,7 +514,7 @@
     sprite: Civ14/Clothing/exported/gloves/blackfur.rsi
     state: icon
   objectType: Item
-  agemin: 0
+  agemin: 8
   agemax: 8
 
 - type: constructionGraph
@@ -526,7 +526,7 @@
         - to: end
           steps:
             - material: Leather
-              amount: 3
+              amount: 2
               doAfter: 8
     - node: end
       entity: civ13_gloves_black_fur_gloves
