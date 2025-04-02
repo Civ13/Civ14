@@ -105,7 +105,9 @@ Fur clothing can keep you warm in the winter, but it will not save you if you ar
 
 -   Kill one of the following animals: **bear, wolf, bison, monkey, fox, sheep**.
 -   Bucher the animal by using the **knife** on **Harm Intent**.
--   Collect enough pelts and craft **fur coat, boots, headcover and gloves** (you will need to hunt several animals for the whole set).
+-   Collect enough pelts and craft **fur coat, boots, headcover and gloves** (you might need to hunt several animals for the whole set).
+
+    -   <img src="./../../Resources/Textures/Objects/Materials/materials.rsi/sheet-brownbearpelt.png" style="width:64px;height:64px;image-rendering: pixelated;"><img src="./../../Resources/Textures/Objects/Materials/materials.rsi/sheet-wolfpelt.png" style="width:64px;height:64px;image-rendering: pixelated;">
 
 ## Shelter
 
