@@ -32,17 +32,16 @@
           opaqueKey: false
       tasks: #this bit picks a random open tile & paths to it, also dodges away from the target
         - !type:HTNPrimitiveTask #this needs to be made so it picks a random tile away from the target, aka the hostile creature.
-          operator: !type:PickAccessibleOperator #RN there is something that is like 50% of the way in the file for that in the file
+          operator:
+            !type:PickAccessibleOperator #RN there is something that is like 50% of the way in the file for that in the file
             rangeKey: FleeRange
-            TargetCoordinates: FleeCoordinates
-            IsSafe: true #this is *supposed* to toggle the bit I wrote
+            targetCoordinates: FleeCoordinates
         - !type:HTNPrimitiveTask
           operator: !type:MoveToOperator #performs the actual
             pathfindInPlanning: false
         - !type:HTNPrimitiveTask
           operator: !type:JukeOperator
-          jukeType: Away
-
+            jukeType: Away
 
 #Utility Operators
 
@@ -61,9 +60,9 @@
       curve: !type:PresetCurve
         preset: TargetHealth
     - !type:TargetAccessibleCon
-      curve: !type:BoolCurve
+      curve: !type:BoolCurve #Preset curve for the consideration in nearbyhostiles
 
-#Preset curve for the consideration in nearbyhostiles
+
 - type: utilityCurvePreset
   id: HostileDistance
   curve: !type:QuadraticCurve

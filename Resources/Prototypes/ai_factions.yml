@@ -160,33 +160,33 @@
 - type: npcFaction
   id: Predator
   hostile:
-  - NanoTrasen
-  - Nomads
-  - Dragon
-  - Mouse
-  - Passive
-  - PetsNT
-  - SimpleHostile
-  - SimpleNeutral
-  - Syndicate
-  - Xeno
-  - Zombie
-  - Revolutionary
-  - Prey
+    - NanoTrasen
+    - Nomads
+    - Dragon
+    - Mouse
+    - Passive
+    - PetsNT
+    - SimpleHostile
+    - SimpleNeutral
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Prey
 
 - type: npcFaction
   id: Prey
-  Hostile:
-  - NanoTrasen
-  - Nomads
-  - Dragon
-  - Mouse
-  - Passive
-  - PetsNT
-  - SimpleHostile
-  - SimpleNeutral
-  - Syndicate
-  - Xeno
-  - Zombie
-  - Revolutionary
-  - Predator
+  hostile:
+    - NanoTrasen
+    - Nomads
+    - Dragon
+    - Mouse
+    - Passive
+    - PetsNT
+    - SimpleHostile
+    - SimpleNeutral
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Predator
