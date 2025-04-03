@@ -34,3 +34,6 @@ preload_grids = false
 
 [admin]
 see_own_notes = true
+
+[net]
+tickrate = 20

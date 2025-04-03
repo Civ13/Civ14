@@ -6,8 +6,22 @@
       edges:
         - to: gauze
           steps:
-            - material: Leather
+            - material: Cloth
               amount: 2
               doAfter: 3
     - node: gauze
       entity: Gauze1
+
+- type: constructionGraph
+  id: GauzeLeather
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Leather
+              amount: 1
+              doAfter: 3
+    - node: end
+      entity: GauzeLeather1

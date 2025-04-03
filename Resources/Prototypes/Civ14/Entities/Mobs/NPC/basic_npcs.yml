@@ -1,0 +1,46 @@
+- type: entity
+  name: scavenger
+  parent: BaseMobHuman
+  id: MobScavenger
+  suffix: AI
+  components:
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Loadout
+      prototypes:
+        - ScavengerGear
+    - type: InputMover
+    - type: MobMover
+    - type: HTN
+      rootTask:
+        task: SimpleHumanoidHostileCompound
+    - type: Gun
+      fireRate: 1
+      minAngle: 1
+      maxAngle: 20
+      angleIncrease: 8
+      angleDecay: 9
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
+      useKey: false
+      selectedMode: SemiAuto
+    - type: BallisticAmmoProvider
+      proto: CartridgePistol
+      capacity: 15
+    - type: CombatMode
+
+- type: startingGear
+  id: ScavengerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorBlack
+    back: ClothingBackpack
+    head: ClothingHeadBandSkull
+    eyes: ClothingEyesGlassesSunglasses
+    outerClothing: ClothingOuterCoatGentle
+    gloves: ClothingHandsGlovesFingerless
+    shoes: ClothingShoesBootsJack
+    pocket1: WeaponPistolN1984
+    pocket2: MagazinePistol

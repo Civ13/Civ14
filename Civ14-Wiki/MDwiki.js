@@ -3523,6 +3523,7 @@
 
     var themes = [
         { name: "bootstrap", url: "netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" },
+        { name: "cyborg", url: "netdna.bootstrapcdn.com/bootswatch/3.0.0/cyborg/bootstrap.min.css" },
         { name: "slate", url: "netdna.bootstrapcdn.com/bootswatch/3.0.0/slate/bootstrap.min.css" },
         { name: "darkly", url: "cdn.jsdelivr.net/npm/bootswatch@3.2.0/darkly/bootstrap.min.css" },
     ];

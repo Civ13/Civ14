@@ -1,0 +1,154 @@
+<Document>
+# Starter Guide
+
+## Spawning in
+
+-   You begin with only age-appropriate clothing and a torch in your pocket. If it's dark, drag the torch to your hand slot and press [bold]Z[/bold] to activate it.
+    <GuideEntityEmbed Entity="Torch" />
+-   If it's [bold]winter season[/bold] or [bold]Ice Age[/bold] map, you also spawn with a [bold]fur coat[/bold]. Losing this will mean cold and miserable [bold]death[/bold] in the icy outdoors.
+
+-   Your [bold]hunger[/bold] and [bold]thirst[/bold] levels will start at approximately 50%. You'll receive alerts on the right side of the screen (below your health and stamina indicators) when you're hungry or thirsty. Pay close attention to these alerts.
+
+-   Your first priority is to gather flint to craft a flint axe.
+
+    -   Locate a large rock or boulder and right-click on it. You should see an option to search for flint.
+        <GuideEntityEmbed Entity="FloraRockSolid" />
+    -   Click the rock repeatedly with the flint to sharpen it (you will get a message when it is sharpened).
+    -   Now go to a tree and right click on it. There should be an option to remove a branch from the tree, if there are any suitable ones available. This will pull a branch from the tree and place it on the ground.
+    -   Click the branch with an empty hand to clear the leaves.
+    -   Use the sharpened flint on the stick to sharpen the stick. Then, click the sharpened stick with the flint again to craft a flint axe, which serves as both a tool and a weapon.
+        <GuideEntityEmbed Entity="FlintAxe" />
+
+## Crafting Basics
+
+### Crafting Menu
+
+[bold]Tip:[/bold] Press [bold]G[/bold] to open the crafting menu.
+
+You will need some basic things to survive. At the very start you will most likely be using [bold]wood, leather, bone, stone, and straw[/bold] to make them.
+
+-   Hit a tree with your flint hatchet until it breaks. You will then find some [bold]wood[/bold] on the floor.
+
+-   Hunt and butcher some animals to get [bold]leather[/bold] and [bold]bone[/bold].
+
+-   Use your knife on a grass tile to gather some [bold]straw[/bold].
+
+-   Use your pickaxe on a rock tile to gather [bold]stone[/bold] (see below).
+
+### Mining 101
+
+Ores are valuable crafting materials which you mine out of the rock.
+
+-   You'll need [bold]wood[/bold] and [bold]bone[/bold] for this. Go gather them (bones are obtained by butchering animals - click the carcass with something sharp, like a flint axe or a knife),
+-   Make a [bold]bone pickaxe[/bold].
+-   Find a [bold]rock[/bold] tile.
+-   Right click on it while holding the [bold]pickaxe[/bold] on your active hand.
+
+## Food and Water
+
+To survive, you will need to keep yourself nourished and warm. Pay attention to the alerts on the right side of the screen, they will tell you when you need to eat and drink.
+
+[bold]Warning: Letting either hunger or thirst reach 0% will cause your body to start shutting down, leading to inevitable death![/bold]
+
+### Hunger
+
+The easiest way to get food early on is by killing animals and eating the meat after cooking it. Also, you can eat bird eggs, even uncooked!
+
+-   Find an animal, preferably one that doesn't have fangs, claws, tusks, or poison. and kill it with any means (even bare fists work). Remember to press the [bold]harm intent[/bold] button to enter combat mode!
+
+[bold]Tip:[/bold] For now, stay away from bears, alligators, wolves, snakes, and mammoths. They will fight back and very probably kill you. Wait until you have proper equipment or a hunting party with you.
+
+-   Use your knife (flint axe works too) on the dead animal with [bold]Harm intent[/bold] to butcher it.
+-   [bold]Raw meat[/bold] causes [bold]food poisoning[/bold]! You'll want to [bold]cook[/bold] it first, but if you're starving, food poisoning is the least of your worries.
+-   To cook meat, place it on a [bold]campfire[/bold] and click the campfire. The campfire is made with [bold]wood logs[/bold].
+
+Farming is another good source of food (although not an immediate one) that does not involve getting maimed by wild animals. Check the [guide to farming](guide_to_farming.md).
+
+### Thirst
+
+The easiest way to quench your thirst early on is by drinking water or milk.
+
+#### Water
+
+You can get water from [bold]puddles[/bold], any [bold]water tiles (except saltwater - do not drink nor boil it!)[/bold], or [bold]wells[/bold].
+
+-   To drink, you need to make a [bold]mug[/bold] from [bold]wood[/bold] or [bold]drinking glass[/bold] from [bold]glass[/bold].
+-   [bold]Wells[/bold] have disease-free freshwater ([bold]however, if there are some... excrements within 4 tiles of a well, the water becomes contaminated and unsafe to drink!)[/bold]. You can build them over a [bold]puddle[/bold] by using with [bold]stone[/bold]... if your faction has the research levels required.
+
+#### Milk
+
+-   Find a [bold]cow[/bold], [bold]sheep ewe[/bold], or [bold]goat ewe[/bold].
+-   Make a [bold]bucket[/bold] from [bold]wood[/bold].
+-   Use the [bold]bucket[/bold] on [bold]Help intent[/bold] on the animal of choice to gather milk.
+-   Pour the milk into the [bold]mug[/bold] or [bold]glass[/bold] and drink.
+-   You don't have to boil milk.
+
+Milk is regenerated in the animals over time, so keep them alive, and
+you'll never go thirsty.
+
+## Temperature
+
+[bold]Tip:[/bold] Keep an eye out for the temperature alert! If it is flashing blue with a white snowflake, you are freezing! If it is red and there is sun instead, you are melting from the heat!
+
+Winter seasons can bring an icy chill that can seriously hurt and slow you down, or even kill you. Blizzards are especially deadly, and just wearing a fur coat will not cut it, so make sure you have a shelter ready before it is too late.
+
+Southern climates could be merciless in their own way, so be careful that you do not overheat to the point of a heat stroke. Resting in a roofed shelter from time to time and wearing appropriate clothing (for instance, "traditional" desert clothes) can save you from fainting and shrivelling in a sweltering heat.
+
+### Fur Clothing
+
+<GuideEntityEmbed Entity="civ13_suit_brown_primitive_pelt_coat" />
+<GuideEntityEmbed Entity="civ13_suit_fur_coat" />
+Fur clothing can keep you warm in the winter, but it will not save you if you are caught in a blizzard. You can make fur clothing by skinning large furry animals like [bold]bears[/bold] and [bold]wolves[/bold].
+
+-   Kill one of the following animals: [bold]bear, wolf, bison, monkey, fox, sheep[/bold].
+-   Bucher the animal by using the [bold]knife[/bold] on [bold]Harm Intent[/bold].
+-   Collect enough pelts and craft [bold]fur coat, boots, headcover and gloves[/bold] (you might need to hunt several animals for the whole set).
+
+<GuideEntityEmbed Entity="MaterialPeltGreyWolf" />
+<GuideEntityEmbed Entity="MaterialPeltBrownBear" />
+
+## Shelter
+
+Shelter can save you from even the toughest of conditions.
+
+Any roofed area is considered a shelter.
+
+-   [bold]Caves[/bold]: There's a reason that stone-age men were called cavemen. Look for entrances in rocks. If it has a roof, it will be darker inside. That means it will keep snow, cold, blazing sun and rain out. The easiest way of surviving inclement weather.
+-   [bold]Building a Roof[/bold]: Target your inner Bob the Builder and build your own roof.
+
+    -   Build [bold]walls[/bold] to prop the ceiling up. Craft floor tiles and place them to automatically build a roof overhead.
+
+    -   You can also build walls with [bold]dirt[/bold] or [bold]snow[/bold] by using the [bold]shovel[/bold] directly on the ground.
+
+## Fire
+
+<GuideEntityEmbed Entity="KitchenCampfire" />
+
+Crackling fires will keep you warm even without a coat. Both campfires and braziers are refueled by adding [bold]wood[/bold], [bold]coal[/bold] and [bold]charcoal[/bold]. The brazier could also be refueled with [bold]paper- and cloth-based items[/bold].
+
+-   A [bold]campfire[/bold] warms you when you are right next to it, or within 2 tile.
+-   A [bold]brazier[/bold] (made with [bold]stone[/bold]) provides more heat and warms you within 3 tiles.
+
+## Dangerous animals
+
+[bold]Warning: The world is teeming with wildlife. Most of them are pretty tame and easy prey, but steer clear of the big game unless you're a skilled hunter, otherwise you'll become minced meat yourself![/bold]
+
+You want to avoid these, unless you're robust or need some pelts:
+<Box>
+<GuideEntityEmbed Entity="MobBrownBear" />
+<GuideEntityEmbed Entity="MobGreyWolf" />
+<GuideEntityEmbed Entity="MobSabertooth" />
+</Box>
+## Night time
+
+You'll need a light source to see in the night and in dark indoor areas. The basic source of light is the [bold]torch[/bold].
+
+-   Gather some [bold]wood[/bold]. Craft a [bold]torch[/bold] and press [bold]Z[/bold] to light it. Torches will last for [bold]5 minutes[/bold] and then burn out.
+
+-   For a static source of light, you can make a [bold]campfire[/bold], which will also help you cook some food.
+
+-   You can also make lanterns with [bold]iron[/bold]. Lanterns require fuel - any form of liquid fuel will do, like olive oil, fat, or petroleum.
+
+-   For a more [bold]permanent[/bold] light source, you can build [bold]braziers[/bold] from [bold]stone[/bold]. You can fuel it with any organic matter like wood or clothing - simply use items on the brazier.
+
+</Document>

@@ -264,7 +264,7 @@
         - state: sheet-sandstone
           map: ["base"]
     - type: Stack
-      stackType: Sandstone
+      stackType: Rope
       baseLayer: base
       layerStates:
         - rope
@@ -288,6 +288,88 @@
 - type: entity
   parent: MaterialRope
   id: MaterialRope1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialPeltBrownBear
+  name: brown bear pelt
+  suffix: Full
+  components:
+    - type: Sprite
+      state: sheet-brownbearpelt
+      layers:
+        - state: sheet-brownbearpelt
+          map: ["base"]
+    - type: Stack
+      stackType: PeltBrownBear
+      baseLayer: base
+      layerStates:
+        - sheet-brownbearpelt
+        - sheet-brownbearpelt_2
+        - sheet-brownbearpelt_3
+    - type: Appearance
+    - type: Item
+      heldPrefix: pelt
+    - type: Tag
+      tags:
+        - RawMaterial
+
+- type: entity
+  parent: MaterialPeltBrownBear
+  id: MaterialPeltBrownBear10
+  suffix: 10
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: MaterialPeltBrownBear
+  id: MaterialPeltBrownBear1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialPeltGreyWolf
+  name: grey wolf pelt
+  suffix: Full
+  components:
+    - type: Sprite
+      state: sheet-wolfpelt
+      layers:
+        - state: sheet-wolfpelt
+          map: ["base"]
+    - type: Stack
+      stackType: PeltGreyWolf
+      baseLayer: base
+      layerStates:
+        - sheet-wolfpelt
+        - sheet-wolfpelt_2
+        - sheet-wolfpelt_3
+    - type: Appearance
+    - type: Item
+      heldPrefix: pelt
+    - type: Tag
+      tags:
+        - RawMaterial
+
+- type: entity
+  parent: MaterialPeltGreyWolf
+  id: MaterialPeltGreyWolf10
+  suffix: 10
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: MaterialPeltGreyWolf
+  id: MaterialPeltGreyWolf1
   suffix: Single
   components:
     - type: Stack

@@ -20,9 +20,9 @@ import os
 TILEMAP = {
     0: "Space",
     1: "FloorDirt",
-    2: "FloorGrass",
+    2: "FloorPlanetGrass",
     3: "FloorGrassDark",
-    4: "FloorAsteroidSand",
+    4: "FloorSand",
     5: "FloorDirtRock",
 }
 TILEMAP_REVERSE = {v: k for k, v in TILEMAP.items()}
@@ -451,6 +451,19 @@ def generate_main_entities(tile_map, chunk_size=16, decals_by_id=None):
                         "enabled": True,
                     },
                     {"type": "BecomesStation", "id": "Nomads"},
+                    {"type": "Weather"},
+                    {
+                        "type": "WeatherNomads",
+                        "enabledWeathers": [
+                            "Rain",
+                            "Storm",
+                            "SnowfallLight",
+                            "SnowfallMedium",
+                            "SnowfallHeavy",
+                        ],
+                        "minSeasonMinutes": 10,
+                        "maxSeasonMinutes": 30,
+                    },
                     {
                         "type": "DecalGrid",
                         "chunkCollection": {"version": 2, "nodes": decal_nodes},
@@ -620,13 +633,13 @@ def apply_iterative_erosion(tile_map, tile_type, min_neighbors=3, max_iterations
 # Geração de Spawn Points
 # -----------------------------------------------------------------------------
 def generate_spawn_points(tile_map, num_points_per_corner=1):
-    """Gera 4 SpawnPointNomads e 4 SpawnPointLatejoin, um de cada em cada canto do mapa em FloorGrass."""
+    """Gera 4 SpawnPointNomads e 4 SpawnPointLatejoin, um de cada em cada canto do mapa em FloorPlanetGrass."""
     h, w = tile_map.shape
     spawn_positions = set()
     nomads_entities = []
     latejoin_entities = []
     corners = ["top_left", "top_right", "bottom_left", "bottom_right"]
-    astro_grass_id = TILEMAP_REVERSE["FloorGrass"]
+    astro_grass_id = TILEMAP_REVERSE["FloorPlanetGrass"]
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     for corner in corners:
@@ -764,12 +777,12 @@ MAP_CONFIG = [
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.825,
         "overwrite": True,
-        "dontOverwrite": ["FloorAsteroidSand", "FloorDirtRock"],
+        "dontOverwrite": ["FloorSand", "FloorDirtRock"],
         "priority": 10,
     },
     {
         "type": "BiomeTileLayer",
-        "tile_type": "FloorGrass",
+        "tile_type": "FloorPlanetGrass",
         "noise_type": NoiseType.NoiseType_Perlin,
         "octaves": 3,
         "frequency": 0.02,
@@ -787,7 +800,7 @@ MAP_CONFIG = [
         "threshold": 0.815,
         "tile_condition": lambda tile: tile
         in [
-            TILEMAP_REVERSE["FloorGrass"],
+            TILEMAP_REVERSE["FloorPlanetGrass"],
             TILEMAP_REVERSE["FloorDirt"],
             TILEMAP_REVERSE["FloorDirtRock"],
         ],
@@ -821,7 +834,7 @@ MAP_CONFIG = [
         "frequency": 0.3,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.84,
-        "tile_condition": lambda tile: tile in [TILEMAP_REVERSE["FloorGrass"]],
+        "tile_condition": lambda tile: tile in [TILEMAP_REVERSE["FloorPlanetGrass"]],
         "priority": 1,
     },
     {  # Rivers
@@ -839,7 +852,7 @@ MAP_CONFIG = [
     },
     {  # River sand
         "type": "BiomeTileLayer",
-        "tile_type": "FloorAsteroidSand",
+        "tile_type": "FloorSand",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.003,  # Same as the river
@@ -850,7 +863,7 @@ MAP_CONFIG = [
     },
     {  # Additional River Sand with More Curves
         "type": "BiomeTileLayer",
-        "tile_type": "FloorAsteroidSand",
+        "tile_type": "FloorSand",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.003,
@@ -873,7 +886,7 @@ MAP_CONFIG = [
         "frequency": 0.5,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.9,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "priority": 0,
     },
     ####### PREDATORS
@@ -885,7 +898,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.9981,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "priority": 11,
     },
     {  # Bears
@@ -897,7 +910,7 @@ MAP_CONFIG = [
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.958,
         "tile_condition": lambda tile: tile
-        in [TILEMAP_REVERSE["FloorGrass"], TILEMAP_REVERSE["FloorDirtRock"]],
+        in [TILEMAP_REVERSE["FloorPlanetGrass"], TILEMAP_REVERSE["FloorDirtRock"]],
         "priority": 1,
     },
     {  # Sabertooth
@@ -908,7 +921,7 @@ MAP_CONFIG = [
         "frequency": 0.300,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96882,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "priority": 11,
     },
     ####### Preys
@@ -920,7 +933,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.9989,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "priority": 11,
     },
     {  # Chicken
@@ -931,7 +944,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.9989,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "priority": 11,
     },
     {  # Deers
@@ -942,7 +955,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.9989,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "priority": 11,
     },
     {  # Pigs
@@ -953,7 +966,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.9992,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "priority": 11,
     },
     # DECALS
@@ -970,7 +983,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "color": "#FFFFFFFF",
     },
     {  # Bush Temperate group 2
@@ -986,7 +999,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "color": "#FFFFFFFF",
     },
     {  # Bush Temperate group 3
@@ -997,7 +1010,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "color": "#FFFFFFFF",
     },
     {  # Bush Temperate group 4
@@ -1013,7 +1026,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "color": "#FFFFFFFF",
     },
     {  # Bush Temperate group 5
@@ -1024,7 +1037,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "color": "#FFFFFFFF",
     },
     {  # Bush Temperate group 6
@@ -1040,7 +1053,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "color": "#FFFFFFFF",
     },
     {  # Bush Temperate group 7
@@ -1051,7 +1064,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "color": "#FFFFFFFF",
     },
     {  # Bush Temperate group 8
@@ -1062,7 +1075,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "color": "#FFFFFFFF",
     },
     {  # Bush Temperate group 9
@@ -1078,7 +1091,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "color": "#FFFFFFFF",
     },
     {  # Bush Temperate group 10
@@ -1094,7 +1107,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "color": "#FFFFFFFF",
     },
     {  # Bush Temperate group 11 - High grass
@@ -1112,7 +1125,7 @@ MAP_CONFIG = [
         "frequency": 0.1,
         "fractal_type": FractalType.FractalType_FBm,
         "threshold": 0.96,
-        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorGrass"],
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
         "color": "#FFFFFFFF",
     },
 ]
@@ -1141,7 +1154,7 @@ tile_map = generate_tile_map(width, height, biome_tile_layers, seed_base)
 
 # Applies erosion to lone sand tiles, overwritting it with surrounding tiles
 tile_map = apply_iterative_erosion(
-    tile_map, TILEMAP_REVERSE["FloorAsteroidSand"], min_neighbors=1
+    tile_map, TILEMAP_REVERSE["FloorSand"], min_neighbors=1
 )
 
 bordered_tile_map = add_border(tile_map, border_value=TILEMAP_REVERSE["FloorDirt"])

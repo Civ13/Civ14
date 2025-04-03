@@ -10,3 +10,5 @@
   description: "Four pieces of wooden station flooring."
   icon: { sprite: Objects/Tiles/tile.rsi, state: wood }
   objectType: Item
+  agemin: 0
+  agemax: 8

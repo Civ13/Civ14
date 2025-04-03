@@ -8,3 +8,5 @@
   description: A torch fashioned from some wood.
   icon: { sprite: Objects/Misc/torch.rsi, state: icon }
   objectType: Item
+  agemin: 0
+  agemax: 8

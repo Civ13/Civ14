@@ -7,8 +7,8 @@
   category: construction-category-structures
   description: A basic wall made of straw and dry leaves. Burns easily.
   icon:
-    sprite: Civ14/Structures/walls.rsi
-    state: straw_wallB1
+    sprite: Civ14/Structures/Walls/straw.rsi
+    state: full
   objectType: Structure
   agemin: 0
   agemax: 8

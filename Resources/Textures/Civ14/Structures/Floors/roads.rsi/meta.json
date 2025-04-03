@@ -1,0 +1,382 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "",
+      "delays": [
+        [
+          0.120000005,
+          0.120000005,
+          0.120000005,
+          0.120000005
+        ]
+      ]
+    },
+    {
+      "name": "d_roadh"
+    },
+    {
+      "name": "d_tracksv"
+    },
+    {
+      "name": "d_roadv"
+    },
+    {
+      "name": "d_tracksne"
+    },
+    {
+      "name": "d_tracksh0"
+    },
+    {
+      "name": "d_tracksh1"
+    },
+    {
+      "name": "d_tracksh2"
+    },
+    {
+      "name": "d_tracksh3"
+    },
+    {
+      "name": "s_tracksv"
+    },
+    {
+      "name": "s_tracksne"
+    },
+    {
+      "name": "s_tracksh0"
+    },
+    {
+      "name": "s_tracksh1"
+    },
+    {
+      "name": "s_tracksh2"
+    },
+    {
+      "name": "s_tracksh3"
+    },
+    {
+      "name": "s_roadh"
+    },
+    {
+      "name": "s_roadv"
+    },
+    {
+      "name": "s_tracksnw"
+    },
+    {
+      "name": "s_tracksse"
+    },
+    {
+      "name": "s_trackssw"
+    },
+    {
+      "name": "d_tracksnw"
+    },
+    {
+      "name": "d_tracksse"
+    },
+    {
+      "name": "d_trackssw"
+    },
+    {
+      "name": "s_roadnw"
+    },
+    {
+      "name": "s_roadsw"
+    },
+    {
+      "name": "s_roadse"
+    },
+    {
+      "name": "s_roadne"
+    },
+    {
+      "name": "s_roadtnwe"
+    },
+    {
+      "name": "s_roadtnsw"
+    },
+    {
+      "name": "s_roadtnse"
+    },
+    {
+      "name": "s_road\u002B"
+    },
+    {
+      "name": "s_roadhr"
+    },
+    {
+      "name": "s_roadvr"
+    },
+    {
+      "name": "s_roadtswe"
+    },
+    {
+      "name": "d_roadtnse"
+    },
+    {
+      "name": "d_roadtnwe"
+    },
+    {
+      "name": "d_roadtswe"
+    },
+    {
+      "name": "d_roadtnsw"
+    },
+    {
+      "name": "d_roadsw"
+    },
+    {
+      "name": "d_roadse"
+    },
+    {
+      "name": "d_roadnw"
+    },
+    {
+      "name": "d_roadne"
+    },
+    {
+      "name": "d_road\u002B"
+    },
+    {
+      "name": "d_roadhr"
+    },
+    {
+      "name": "d_roadvr"
+    },
+    {
+      "name": "d_roadnwc"
+    },
+    {
+      "name": "d_roadnec"
+    },
+    {
+      "name": "d_roadsec"
+    },
+    {
+      "name": "d_roadswc"
+    },
+    {
+      "name": "d_roadfull"
+    },
+    {
+      "name": "tarmactnse"
+    },
+    {
+      "name": "tarmactnwe"
+    },
+    {
+      "name": "tarmactswe"
+    },
+    {
+      "name": "tarmactnsw"
+    },
+    {
+      "name": "tarmacsw"
+    },
+    {
+      "name": "tarmacse"
+    },
+    {
+      "name": "tarmacnw"
+    },
+    {
+      "name": "tarmacne"
+    },
+    {
+      "name": "tarmac\u002B"
+    },
+    {
+      "name": "tarmachr"
+    },
+    {
+      "name": "tarmacvr"
+    },
+    {
+      "name": "tarmacnwc"
+    },
+    {
+      "name": "tarmacnec"
+    },
+    {
+      "name": "tarmacsec"
+    },
+    {
+      "name": "tarmacswc"
+    },
+    {
+      "name": "tarmacfull"
+    },
+    {
+      "name": "r_roadtnse"
+    },
+    {
+      "name": "r_roadtnwe"
+    },
+    {
+      "name": "r_roadtswe"
+    },
+    {
+      "name": "r_roadtnsw"
+    },
+    {
+      "name": "r_roadsw"
+    },
+    {
+      "name": "r_roadse"
+    },
+    {
+      "name": "r_roadnw"
+    },
+    {
+      "name": "r_roadne"
+    },
+    {
+      "name": "r_road\u002B"
+    },
+    {
+      "name": "r_roadhr"
+    },
+    {
+      "name": "r_roadvr"
+    },
+    {
+      "name": "r_roadnwc"
+    },
+    {
+      "name": "r_roadnec"
+    },
+    {
+      "name": "r_roadsec"
+    },
+    {
+      "name": "r_roadswc"
+    },
+    {
+      "name": "r_roadfull"
+    },
+    {
+      "name": "streettnse"
+    },
+    {
+      "name": "streettnwe"
+    },
+    {
+      "name": "streettswe"
+    },
+    {
+      "name": "streettnsw"
+    },
+    {
+      "name": "streetsw"
+    },
+    {
+      "name": "streetse"
+    },
+    {
+      "name": "streetnw"
+    },
+    {
+      "name": "streetne"
+    },
+    {
+      "name": "street\u002B"
+    },
+    {
+      "name": "streethr"
+    },
+    {
+      "name": "streetvr"
+    },
+    {
+      "name": "streetnwc"
+    },
+    {
+      "name": "streetnec"
+    },
+    {
+      "name": "streetsec"
+    },
+    {
+      "name": "streetswc"
+    },
+    {
+      "name": "streetfull"
+    },
+    {
+      "name": "r_road"
+    },
+    {
+      "name": "street"
+    },
+    {
+      "name": "tarmac"
+    },
+    {
+      "name": "d_road"
+    },
+    {
+      "name": "s_stonetnse"
+    },
+    {
+      "name": "s_stonetnwe"
+    },
+    {
+      "name": "s_stonetswe"
+    },
+    {
+      "name": "s_stonetnsw"
+    },
+    {
+      "name": "s_stonesw"
+    },
+    {
+      "name": "s_stonese"
+    },
+    {
+      "name": "s_stonenw"
+    },
+    {
+      "name": "s_stonene"
+    },
+    {
+      "name": "s_stone\u002B"
+    },
+    {
+      "name": "s_stonehr"
+    },
+    {
+      "name": "s_stonevr"
+    },
+    {
+      "name": "s_stonenwc"
+    },
+    {
+      "name": "s_stonenec"
+    },
+    {
+      "name": "s_stonesec"
+    },
+    {
+      "name": "s_stoneswc"
+    },
+    {
+      "name": "s_stonefull"
+    },
+    {
+      "name": "s_stone"
+    },
+    {
+      "name": "generic_frame1"
+    },
+    {
+      "name": "generic_frame2"
+    }
+  ]
+}

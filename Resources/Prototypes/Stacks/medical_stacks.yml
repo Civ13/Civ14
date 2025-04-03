@@ -20,6 +20,13 @@
   maxCount: 10
 
 - type: stack
+  id: GauzeLeather
+  name: leather bandage
+  icon: { sprite: "/Textures/Civ14/Objects/surgery.rsi", state: leatherbandage }
+  spawn: GauzeLeather
+  maxCount: 10
+
+- type: stack
   id: Brutepack
   name: brutepack
   icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: gauze }
@@ -36,14 +43,13 @@
 - type: stack
   id: MedicatedSuture
   name: medicated-suture
-  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: medicated-suture }
+  icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: medicated-suture }
   spawn: MedicatedSuture
   maxCount: 10
 
 - type: stack
   id: RegenerativeMesh
   name: regenerative-mesh
-  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: regenerative-mesh}
+  icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: regenerative-mesh }
   spawn: RegenerativeMesh
   maxCount: 10
-
