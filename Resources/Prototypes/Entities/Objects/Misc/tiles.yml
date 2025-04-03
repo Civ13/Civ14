@@ -1476,8 +1476,6 @@
       outputs:
         - Plating
         - FloorMowedAstroGrass
-    - type: Stack
-      stackType: FloorTileAstroGrass
 
 - type: entity
   id: FloorTileItemJungleAstroGrass
@@ -1493,8 +1491,6 @@
       outputs:
         - Plating
         - FloorJungleAstroGrass
-    - type: Stack
-      stackType: FloorTileAstroGrass
 
 - type: entity
   id: FloorTileItemAstroIce
