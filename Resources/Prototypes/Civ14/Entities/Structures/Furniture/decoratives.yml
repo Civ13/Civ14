@@ -27,7 +27,7 @@
       node: end
       cost: 8
       time: 20
-      material: Wood
+      material: WoodPlank
 
 - type: entity
   parent: StructureDecorativeBase
