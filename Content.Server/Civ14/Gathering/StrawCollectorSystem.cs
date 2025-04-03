@@ -26,7 +26,6 @@ public sealed partial class StrawCollectorSystem : EntitySystem
         "FloorGrassJungle",
         "FloorGrassDark",
         "FloorGrassLight",
-        "FloorAstroGrass",
         "FloorPlanetGrass",
         "FloorJungleAstroGrass",
         "FloorMowedAstroGrass"

@@ -43,6 +43,16 @@
     - 1.0
     - 1.0
   isSubfloor: true
+  edgeSpritePriority: 3
+  edgeSprites:
+    SouthEast: /Textures/Tiles/Planet/Desert/single_edge.png
+    NorthEast: /Textures/Tiles/Planet/Desert/single_edge.png
+    NorthWest: /Textures/Tiles/Planet/Desert/single_edge.png
+    SouthWest: /Textures/Tiles/Planet/Desert/single_edge.png
+    South: /Textures/Tiles/Planet/Desert/double_edge.png
+    East: /Textures/Tiles/Planet/Desert/double_edge.png
+    North: /Textures/Tiles/Planet/Desert/double_edge.png
+    West: /Textures/Tiles/Planet/Desert/double_edge.png
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000
@@ -54,6 +64,16 @@
   name: tiles-sand-floor
   sprite: /Textures/Tiles/Planet/Desert/sand.png
   isSubfloor: true
+  edgeSpritePriority: 4
+  edgeSprites:
+    SouthEast: /Textures/Tiles/Planet/Desert/single_edge_sand.png
+    NorthEast: /Textures/Tiles/Planet/Desert/single_edge_sand.png
+    NorthWest: /Textures/Tiles/Planet/Desert/single_edge_sand.png
+    SouthWest: /Textures/Tiles/Planet/Desert/single_edge_sand.png
+    South: /Textures/Tiles/Planet/Desert/double_edge_sand.png
+    East: /Textures/Tiles/Planet/Desert/double_edge_sand.png
+    North: /Textures/Tiles/Planet/Desert/double_edge_sand.png
+    West: /Textures/Tiles/Planet/Desert/double_edge_sand.png
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000

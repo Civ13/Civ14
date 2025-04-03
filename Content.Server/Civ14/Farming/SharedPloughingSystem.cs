@@ -41,7 +41,6 @@ namespace Content.Server.Farming
                     "FloorGrassJungle",
                     "FloorGrassDark",
                     "FloorGrassLight",
-                    "FloorAstroGrass",
                     "FloorPlanetGrass",
                     "FloorJungleAstroGrass",
                     "FloorMowedAstroGrass"
