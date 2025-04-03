@@ -1460,7 +1460,7 @@
       edges:
         - to: end
           steps:
-            - material: Bone
+            - material: Bones
               amount: 5
               doAfter: 10
     - node: end
