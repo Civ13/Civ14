@@ -92,7 +92,7 @@
       drawdepth: SmallObjects
       snapCardinals: true
       layers:
-        - state: fireplace2
+        - state: fireplace
         - map: ["enum.EntityHeaterVisuals.Setting"]
           shader: unshaded
           visible: false
@@ -100,6 +100,7 @@
       needsPower: false
       powerLoad: 0
     - type: PointLight
+      enabled: false
       radius: 4
       energy: 4
       color: "#E25822"

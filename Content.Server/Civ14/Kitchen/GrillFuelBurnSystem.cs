@@ -9,6 +9,9 @@ using Content.Shared.Temperature;
 using Robust.Server.Audio;
 using Robust.Shared.Timing;
 using System.Linq;
+using Content.Server.IgnitionSource;
+using Robust.Server.GameObjects;
+using Robust.Shared.GameObjects;
 
 namespace Content.Server.Kitchen;
 
@@ -21,11 +24,12 @@ public sealed class GrillFuelBurnSystem : EntitySystem
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly SharedStackSystem _stackSystem = default!;
 
+    [Dependency] private readonly SharedPointLightSystem _pointLightSystem = default!;
+
     private readonly Dictionary<EntityUid, float> _remainingBurnTime = new();
 
     public override void Initialize()
     {
-        Log.Debug("INITIALIZING");
         base.Initialize();
         SubscribeLocalEvent<GrillFuelBurnComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<GrillFuelBurnComponent, ExaminedEvent>(OnExamined);
@@ -35,8 +39,9 @@ public sealed class GrillFuelBurnSystem : EntitySystem
 
     private void OnMapInit(EntityUid uid, GrillFuelBurnComponent component, MapInitEvent args)
     {
-        _remainingBurnTime[uid] = component.Fuel * 2f * 60f; // Assuming 2 minutes per initial fuel unit
-        AdjustHeaterSetting(uid, component);
+        Log.Debug($"ON MAP INIT for campfire {uid}");
+        _remainingBurnTime[uid] = component.Fuel * 2f * 60f;
+        component.IsLit = false;
     }
 
     private void OnItemPlaced(EntityUid uid, GrillFuelBurnComponent comp, ref ItemPlacedEvent args)
@@ -47,6 +52,19 @@ public sealed class GrillFuelBurnSystem : EntitySystem
 
     private void OnInteractUsing(EntityUid uid, GrillFuelBurnComponent comp, InteractUsingEvent args)
     {
+        if (_entityManager.TryGetComponent<IgnitionSourceComponent>(args.Used, out var ignitionSource))
+        {
+            if (!comp.IsLit)
+            {
+                comp.IsLit = true;
+                AdjustHeaterSetting(uid, comp);
+                Log.Debug($"Campfire {uid} lit by {args.Used}");
+            }
+            args.Handled = true;
+            return;
+        }
+
+        // Lógica existente para adicionar combustível
         if (!_entityManager.TryGetComponent<BurnFuelComponent>(args.Used, out var burnFuel))
         {
             Log.Debug($"Item {args.Used} has no BurnFuelComponent");
@@ -66,7 +84,7 @@ public sealed class GrillFuelBurnSystem : EntitySystem
             {
                 Log.Debug($"Adding {fuelToAdd} fuel units from stack of {stackComp.Count}");
                 comp.Fuel += fuelToAdd;
-                _remainingBurnTime[uid] = _remainingBurnTime.GetValueOrDefault(uid) + (fuelToAdd * burnFuel.BurnTime * 60f);
+                _remainingBurnTime[uid] += fuelToAdd * burnFuel.BurnTime * 60f;
                 _stackSystem.SetCount(args.Used, stackComp.Count - fuelToAdd, stackComp);
 
                 if (stackComp.Count <= 0)
@@ -76,7 +94,6 @@ public sealed class GrillFuelBurnSystem : EntitySystem
                 }
 
                 AdjustHeaterSetting(uid, comp);
-                //_audio.PlayPvs("/Audio/Effects/click.ogg", uid); //Fuel added sound asset
                 args.Handled = true;
             }
             else
@@ -90,10 +107,9 @@ public sealed class GrillFuelBurnSystem : EntitySystem
             {
                 Log.Debug("Adding 1 fuel unit from non-stack item");
                 comp.Fuel++;
-                _remainingBurnTime[uid] = _remainingBurnTime.GetValueOrDefault(uid) + (burnFuel.BurnTime * 60f);
+                _remainingBurnTime[uid] += burnFuel.BurnTime * 60f;
                 QueueDel(args.Used);
                 AdjustHeaterSetting(uid, comp);
-                //_audio.PlayPvs("/Audio/Effects/click.ogg", uid); // Fuel added, consume the whole stack
                 args.Handled = true;
             }
             else
@@ -108,25 +124,29 @@ public sealed class GrillFuelBurnSystem : EntitySystem
         var query = EntityQueryEnumerator<GrillFuelBurnComponent, ItemPlacerComponent>();
         while (query.MoveNext(out var uid, out var comp, out var placer))
         {
-            if (comp.Fuel <= 0 || _remainingBurnTime.GetValueOrDefault(uid) <= 0)
+            if (comp.IsLit)
             {
-                var coordinates = Transform(uid).Coordinates;
-                Spawn("Coal1", coordinates);
-                QueueDel(uid);
-                _remainingBurnTime.Remove(uid);
-                AdjustHeaterSetting(uid, comp); // Ensure Off state
-                continue;
-            }
-
-            _remainingBurnTime[uid] -= deltaTime;
-            AdjustHeaterSetting(uid, comp); // Check setting based on remaining time
-
-            if (comp.Setting != EntityHeaterSetting.Off)
-            {
-                var energy = SettingPower(comp.Setting) * deltaTime;
-                foreach (var ent in placer.PlacedEntities)
+                if (comp.Fuel <= 0 || _remainingBurnTime.GetValueOrDefault(uid) <= 0)
                 {
-                    _temperature.ChangeHeat(ent, energy);
+                    var coordinates = Transform(uid).Coordinates;
+                    Spawn("Coal1", coordinates);
+                    QueueDel(uid);
+                    _remainingBurnTime.Remove(uid);
+                    comp.IsLit = false;
+                    AdjustHeaterSetting(uid, comp);
+                    continue;
+                }
+
+                _remainingBurnTime[uid] -= deltaTime;
+                AdjustHeaterSetting(uid, comp);
+
+                if (comp.Setting != EntityHeaterSetting.Off)
+                {
+                    var energy = SettingPower(comp.Setting) * deltaTime;
+                    foreach (var ent in placer.PlacedEntities)
+                    {
+                        _temperature.ChangeHeat(ent, energy);
+                    }
                 }
             }
         }
@@ -149,18 +169,56 @@ public sealed class GrillFuelBurnSystem : EntitySystem
         comp.Setting = setting;
         Log.Debug($"Changing setting to {setting} for campfire {uid}");
         _appearance.SetData(uid, EntityHeaterVisuals.Setting, setting);
-    }
 
+        // Adjust the PointLight based on the Setting
+        if (_entityManager.TryGetComponent<PointLightComponent>(uid, out var lightComp))
+        {
+            switch (setting)
+            {
+                case EntityHeaterSetting.Off:
+                    _pointLightSystem.SetEnabled(uid, false, lightComp);
+                    break;
+                case EntityHeaterSetting.Low:
+                    _pointLightSystem.SetEnabled(uid, true, lightComp);
+                    _pointLightSystem.SetRadius(uid, 2.0f, lightComp);
+                    _pointLightSystem.SetEnergy(uid, 2.0f, lightComp);
+                    break;
+                case EntityHeaterSetting.Medium:
+                    _pointLightSystem.SetEnabled(uid, true, lightComp);
+                    _pointLightSystem.SetRadius(uid, 4.0f, lightComp);
+                    _pointLightSystem.SetEnergy(uid, 4.0f, lightComp);
+                    break;
+                case EntityHeaterSetting.High:
+                    _pointLightSystem.SetEnabled(uid, true, lightComp);
+                    _pointLightSystem.SetRadius(uid, 6.0f, lightComp);
+                    _pointLightSystem.SetEnergy(uid, 6.0f, lightComp);
+                    break;
+            }
+        }
+        else
+        {
+            Log.Warning($"No PointLightComponent found for campfire {uid}");
+        }
+    }
     private void AdjustHeaterSetting(EntityUid uid, GrillFuelBurnComponent comp)
     {
+        if (!comp.IsLit) // Se não estiver acesa, força o estado Off
+        {
+            if (comp.Setting != EntityHeaterSetting.Off)
+            {
+                ChangeSetting(uid, EntityHeaterSetting.Off, comp);
+            }
+            return;
+        }
+
         var remainingTimeSeconds = _remainingBurnTime.GetValueOrDefault(uid);
         EntityHeaterSetting newSetting;
 
-        if (remainingTimeSeconds > 600f) // > 6 minutes
+        if (remainingTimeSeconds > 600f) // > 10 minutos
             newSetting = EntityHeaterSetting.High;
-        else if (remainingTimeSeconds > 300f) // 5-10 minutes
+        else if (remainingTimeSeconds > 300f) // 5-10 minutos
             newSetting = EntityHeaterSetting.Medium;
-        else if (remainingTimeSeconds > 0f) // < 5 minutes
+        else if (remainingTimeSeconds > 0f) // < 5 minutos
             newSetting = EntityHeaterSetting.Low;
         else
             newSetting = EntityHeaterSetting.Off;
