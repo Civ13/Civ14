@@ -40,7 +40,6 @@
           operator: !type:SetFloatOperator
             targetKey: WaitTime
             amount: 8
-            shutdownState: TaskFinished
 
 #compound that performs the actual process of melee combat, including pathfinding to the target
 - type: htnCompound
@@ -93,6 +92,7 @@
         preset: TargetHealth
     - !type:TargetAccessibleCon
       curve: !type:BoolCurve #curve preset for above
+
 
 - type: utilityCurvePreset
   id: PreyDistance

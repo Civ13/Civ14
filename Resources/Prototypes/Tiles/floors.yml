@@ -1521,6 +1521,16 @@
     - 1.0
     - 1.0
   baseTurf: Plating
+  edgeSpritePriority: 2
+  edgeSprites:
+    SouthEast: /Textures/Tiles/Planet/dirt.rsi/single_edge.png
+    NorthEast: /Textures/Tiles/Planet/dirt.rsi/single_edge.png
+    NorthWest: /Textures/Tiles/Planet/dirt.rsi/single_edge.png
+    SouthWest: /Textures/Tiles/Planet/dirt.rsi/single_edge.png
+    South: /Textures/Tiles/Planet/dirt.rsi/double_edge.png
+    East: /Textures/Tiles/Planet/dirt.rsi/double_edge.png
+    North: /Textures/Tiles/Planet/dirt.rsi/double_edge.png
+    West: /Textures/Tiles/Planet/dirt.rsi/double_edge.png
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid

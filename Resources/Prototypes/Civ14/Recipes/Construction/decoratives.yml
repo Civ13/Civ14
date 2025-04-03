@@ -21,7 +21,7 @@
       edges:
         - to: end
           steps:
-            - material: Wood
+            - material: WoodPlank
               amount: 8
               doAfter: 20
     - node: end
