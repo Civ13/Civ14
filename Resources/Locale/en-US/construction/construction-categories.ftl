@@ -9,6 +9,7 @@ construction-category-weapons = Weapons
 construction-category-tiles = Tiles
 construction-category-utilities = Utilities
 construction-category-misc = Misc
+construction-category-decoration = Decoration
 construction-category-clothing = Clothing
 construction-category-favorites = Favorites
 construction-add-favorite-button = Add to favorites

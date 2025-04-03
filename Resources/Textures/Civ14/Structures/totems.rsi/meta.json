@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "license": null,
+    "copyright": null,
+    "size": {
+        "x": 32,
+        "y": 64
+    },
+    "states": [
+        {
+            "name": "supplybook"
+        },
+        {
+            "name": "supplybook2"
+        },
+        {
+            "name": "bear"
+        },
+        {
+            "name": "mouse"
+        },
+        {
+            "name": "wolf"
+        },
+        {
+            "name": "goose"
+        },
+        {
+            "name": "turkey"
+        },
+        {
+            "name": "monkey"
+        },
+        {
+            "name": "cross"
+        },
+        {
+            "name": "totem_pole"
+        },
+        {
+            "name": "moai1"
+        },
+        {
+            "name": "moai2"
+        }
+    ]
+}

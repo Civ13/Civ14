@@ -1,4 +1,3 @@
-
 #Primary Wolf NPC Behavior
 - type: htnCompound
   id: predatorActivityCompound
@@ -29,19 +28,18 @@
   id: PredatorWarnCompound
   branches:
     - preconditions:
-      - !type:TargetInRangePrecondition
-        targetKey: Target
-        rangeKey: MeleeRange
+        - !type:TargetInRangePrecondition
+          targetKey: Target
+          rangeKey: MeleeRange
       tasks:
-      - !type:HTNPrimitiveTask
-        operator: !type:SpeakOperator
-          speech: "Growls"
-          hidden: false
-      - !type:HTNPrimitiveTask
-        operator: !type:SetFloatOperator
-         targetKey: WaitTime
-         amount: 8
-         shutdownState: TaskFinished
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: "Growls"
+            hidden: false
+        - !type:HTNPrimitiveTask
+          operator: !type:SetFloatOperator
+            targetKey: WaitTime
+            amount: 8
 
 #compound that performs the actual process of melee combat, including pathfinding to the target
 - type: htnCompound
@@ -76,8 +74,6 @@
           operator: !type:UtilityOperator
             proto: NearbyPrey
 
-
-
 #Utility queries
 
 #finds nearby hostile mobs and marks it to the blackboard casting them as the target
@@ -95,9 +91,9 @@
       curve: !type:PresetCurve
         preset: TargetHealth
     - !type:TargetAccessibleCon
-      curve: !type:BoolCurve
+      curve: !type:BoolCurve #curve preset for above
 
-#curve preset for above
+
 - type: utilityCurvePreset
   id: PreyDistance
   curve: !type:QuadraticCurve

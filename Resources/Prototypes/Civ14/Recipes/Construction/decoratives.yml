@@ -1,0 +1,364 @@
+- type: construction
+  name: wood totem
+  id: TotemWood
+  graph: TotemWood
+  startNode: start
+  targetNode: end
+  category: construction-category-decoration
+  description: A wood totem.
+  icon:
+    sprite: Civ14/Structures/totems.rsi
+    state: totem_pole
+  objectType: Structure
+  placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 2
+- type: constructionGraph
+  id: TotemWood
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 8
+              doAfter: 20
+    - node: end
+      entity: TotemWood
+- type: construction
+  name: monkey totem
+  id: TotemStoneMonkey
+  graph: TotemStoneMonkey
+  startNode: start
+  targetNode: end
+  category: construction-category-decoration
+  description: A stone statue of a monkey.
+  icon:
+    sprite: Civ14/Structures/religious.rsi
+    state: monkey
+  objectType: Structure
+  placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 2
+- type: constructionGraph
+  id: TotemStoneMonkey
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 6
+              doAfter: 20
+    - node: end
+      entity: TotemStoneMonkey
+- type: construction
+  name: mouse totem
+  id: TotemStoneMouse
+  graph: TotemStoneMouse
+  startNode: start
+  targetNode: end
+  category: construction-category-decoration
+  description: A stone statue of a mouse.
+  icon:
+    sprite: Civ14/Structures/religious.rsi
+    state: mouse
+  objectType: Structure
+  placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 2
+- type: constructionGraph
+  id: TotemStoneMouse
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 6
+              doAfter: 20
+    - node: end
+      entity: TotemStoneMouse
+- type: construction
+  name: bear totem
+  id: TotemStoneBear
+  graph: TotemStoneBear
+  startNode: start
+  targetNode: end
+  category: construction-category-decoration
+  description: A stone statue of a bear.
+  icon:
+    sprite: Civ14/Structures/religious.rsi
+    state: bear
+  objectType: Structure
+  placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 2
+- type: constructionGraph
+  id: TotemStoneBear
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 6
+              doAfter: 20
+    - node: end
+      entity: TotemStoneBear
+- type: construction
+  name: wolf totem
+  id: TotemStoneWolf
+  graph: TotemStoneWolf
+  startNode: start
+  targetNode: end
+  category: construction-category-decoration
+  description: A stone statue of a wolf.
+  icon:
+    sprite: Civ14/Structures/religious.rsi
+    state: wolf
+  objectType: Structure
+  placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 2
+- type: constructionGraph
+  id: TotemStoneWolf
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 6
+              doAfter: 20
+    - node: end
+      entity: TotemStoneWolf
+- type: construction
+  name: turkey totem
+  id: TotemStoneTurkey
+  graph: TotemStoneTurkey
+  startNode: start
+  targetNode: end
+  category: construction-category-decoration
+  description: A stone statue of a turkey.
+  icon:
+    sprite: Civ14/Structures/religious.rsi
+    state: turkey
+  objectType: Structure
+  placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 2
+- type: constructionGraph
+  id: TotemStoneTurkey
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 6
+              doAfter: 20
+    - node: end
+      entity: TotemStoneTurkey
+- type: construction
+  name: goose totem
+  id: TotemStoneGoose
+  graph: TotemStoneGoose
+  startNode: start
+  targetNode: end
+  category: construction-category-decoration
+  description: A stone statue of a goose.
+  icon:
+    sprite: Civ14/Structures/religious.rsi
+    state: goose
+  objectType: Structure
+  placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 2
+- type: constructionGraph
+  id: TotemStoneGoose
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 6
+              doAfter: 20
+    - node: end
+      entity: TotemStoneGoose
+- type: construction
+  name: moai statue
+  id: StatueMoai
+  graph: StatueMoai
+  startNode: start
+  targetNode: end
+  category: construction-category-decoration
+  description: A large stone statue of a head.
+  icon:
+    sprite: Civ14/Structures/totems.rsi
+    state: moai1
+  objectType: Structure
+  placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 2
+- type: constructionGraph
+  id: StatueMoai
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 10
+              doAfter: 20
+    - node: end
+      entity: StatueMoai
+- type: construction
+  name: moai statue
+  id: StatueMoai1
+  graph: StatueMoai1
+  startNode: start
+  targetNode: end
+  category: construction-category-decoration
+  description: A large stone statue of a head.
+  icon:
+    sprite: Civ14/Structures/totems.rsi
+    state: moai2
+  objectType: Structure
+  placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 2
+- type: constructionGraph
+  id: StatueMoai1
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 10
+              doAfter: 20
+    - node: end
+      entity: StatueMoai1
+- type: construction
+  name: tiki statue
+  id: StatueTiki
+  graph: StatueTiki
+  startNode: start
+  targetNode: end
+  category: construction-category-decoration
+  description: A wooden polinesian statue.
+  icon:
+    sprite: Civ14/Structures/religious.rsi
+    state: tikistatue1
+  objectType: Structure
+  placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 2
+- type: constructionGraph
+  id: StatueTiki
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 6
+              doAfter: 20
+    - node: end
+      entity: StatueTiki
+- type: construction
+  name: tiki statue
+  id: StatueTiki1
+  graph: StatueTiki1
+  startNode: start
+  targetNode: end
+  category: construction-category-decoration
+  description: A wooden polinesian statue.
+  icon:
+    sprite: Civ14/Structures/religious.rsi
+    state: tikistatue2
+  objectType: Structure
+  placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 2
+- type: constructionGraph
+  id: StatueTiki1
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 6
+              doAfter: 20
+    - node: end
+      entity: StatueTiki1
+- type: construction
+  name: aztec statue
+  id: StatueAztec
+  graph: StatueAztec
+  startNode: start
+  targetNode: end
+  category: construction-category-decoration
+  description: A mesoamerican stone statue.
+  icon:
+    sprite: Civ14/Structures/religious.rsi
+    state: aztec_statue
+  objectType: Structure
+  placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 2
+- type: constructionGraph
+  id: StatueAztec
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 8
+              doAfter: 20
+    - node: end
+      entity: StatueAztec
+- type: construction
+  name: olmec statue
+  id: StatueOlmec
+  graph: StatueOlmec
+  startNode: start
+  targetNode: end
+  category: construction-category-decoration
+  description: A mesoamerican stone head.
+  icon:
+    sprite: Civ14/Structures/religious.rsi
+    state: olmec_head
+  objectType: Structure
+  placementMode: SnapgridCenter
+  agemin: 0
+  agemax: 2
+- type: constructionGraph
+  id: StatueOlmec
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 8
+              doAfter: 20
+    - node: end
+      entity: StatueOlmec

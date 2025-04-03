@@ -124,11 +124,11 @@
         - Predator
     - type: HTN
       rootTask:
-#        task: predatorActivityCompound #civ14 coustom predator system
-          task: SimpleHostileCompound
+        #        task: predatorActivityCompound #civ14 coustom predator system
+        task: SimpleHostileCompound
 
     - type: ReplacementAccent #lets wolf vocalize
-      accent: accent-words-dog-1
+      accent: dog
     - type: Speech
       speechVerb: LargeMob
 
@@ -183,7 +183,7 @@
       animation: WeaponArcBite
     - type: NPCRetaliation
       attackMemoryLength: 10
-#    - type: FactionException
+    #    - type: FactionException
     - type: NpcFactionMember
       factions:
         - SimpleHostile

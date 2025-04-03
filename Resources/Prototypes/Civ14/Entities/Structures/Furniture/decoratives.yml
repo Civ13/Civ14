@@ -1,0 +1,246 @@
+- type: entity
+  parent: BaseStructure
+  id: StructureDecorativeBase
+  name: decorative piece
+  description: A basic decoration.
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Structures/totems.rsi
+      state: cross
+      drawdepth: Mobs
+      offset: "0.0,0.5"
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: TotemWood
+  name: wood totem
+  description: A wood totem.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/totems.rsi
+      state: totem_pole
+    - type: Construction
+      agemin: 0
+      agemax: 8
+      graph: TotemWood
+      node: end
+      cost: 8
+      time: 20
+      material: WoodPlank
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: TotemStoneMonkey
+  name: monkey totem
+  description: A stone statue of a monkey.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/religious.rsi
+      state: monkey
+    - type: Construction
+      agemin: 0
+      agemax: 8
+      graph: TotemStoneMonkey
+      node: end
+      cost: 6
+      time: 20
+      material: Stone
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: TotemStoneMouse
+  name: mouse totem
+  description: A stone statue of a mouse.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/religious.rsi
+      state: mouse
+    - type: Construction
+      agemin: 0
+      agemax: 8
+      graph: TotemStoneMouse
+      node: end
+      cost: 6
+      time: 20
+      material: Stone
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: TotemStoneBear
+  name: bear totem
+  description: A stone statue of a bear.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/religious.rsi
+      state: bear
+    - type: Construction
+      agemin: 0
+      agemax: 8
+      graph: TotemStoneBear
+      node: end
+      cost: 6
+      time: 20
+      material: Stone
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: TotemStoneWolf
+  name: wolf totem
+  description: A stone statue of a wolf.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/religious.rsi
+      state: wolf
+    - type: Construction
+      agemin: 0
+      agemax: 8
+      graph: TotemStoneWolf
+      node: end
+      cost: 6
+      time: 20
+      material: Stone
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: TotemStoneTurkey
+  name: turkey totem
+  description: A stone statue of a turkey.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/religious.rsi
+      state: turkey
+    - type: Construction
+      agemin: 0
+      agemax: 8
+      graph: TotemStoneTurkey
+      node: end
+      cost: 6
+      time: 20
+      material: Stone
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: TotemStoneGoose
+  name: goose totem
+  description: A stone statue of a goose.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/religious.rsi
+      state: goose
+    - type: Construction
+      agemin: 0
+      agemax: 8
+      graph: TotemStoneGoose
+      node: end
+      cost: 6
+      time: 20
+      material: Stone
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: StatueMoai
+  name: moai statue
+  description: A large stone statue of a head.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/totems.rsi
+      state: moai1
+    - type: Construction
+      agemin: 0
+      agemax: 8
+      graph: StatueMoai
+      node: end
+      cost: 10
+      time: 20
+      material: Stone
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: StatueMoai1
+  name: moai statue
+  description: A large stone statue of a head.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/totems.rsi
+      state: moai2
+    - type: Construction
+      agemin: 0
+      agemax: 8
+      graph: StatueMoai1
+      node: end
+      cost: 10
+      time: 20
+      material: Stone
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: StatueTiki
+  name: tiki statue
+  description: A wooden polinesian statue.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/religious.rsi
+      state: tikistatue1
+    - type: Construction
+      agemin: 0
+      agemax: 8
+      graph: StatueTiki
+      node: end
+      cost: 6
+      time: 20
+      material: WoodPlank
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: StatueTiki1
+  name: tiki statue
+  description: A wooden polinesian statue.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/religious.rsi
+      state: tikistatue2
+    - type: Construction
+      agemin: 0
+      agemax: 8
+      graph: StatueTiki1
+      node: end
+      cost: 6
+      time: 20
+      material: WoodPlank
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: StatueAztec
+  name: aztec statue
+  description: A mesoamerican stone statue.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/religious.rsi
+      state: aztec_statue
+    - type: Construction
+      agemin: 0
+      agemax: 8
+      graph: StatueAztec
+      node: end
+      cost: 8
+      time: 20
+      material: Stone
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: StatueOlmec
+  name: olmec statue
+  description: A mesoamerican stone head.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/religious.rsi
+      state: olmec_head
+    - type: Construction
+      agemin: 0
+      agemax: 8
+      graph: StatueOlmec
+      node: end
+      cost: 8
+      time: 20
+      material: Stone
