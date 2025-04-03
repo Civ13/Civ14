@@ -8,7 +8,7 @@
   description: A wood totem.
   icon:
     sprite: Civ14/Structures/totems.rsi
-    state: default
+    state: totem_pole
   objectType: Structure
   placementMode: SnapgridCenter
   agemin: 0
@@ -36,7 +36,7 @@
   description: A stone statue of a monkey.
   icon:
     sprite: Civ14/Structures/religious.rsi
-    state: default
+    state: monkey
   objectType: Structure
   placementMode: SnapgridCenter
   agemin: 0
@@ -64,7 +64,7 @@
   description: A stone statue of a mouse.
   icon:
     sprite: Civ14/Structures/religious.rsi
-    state: default
+    state: mouse
   objectType: Structure
   placementMode: SnapgridCenter
   agemin: 0
@@ -92,7 +92,7 @@
   description: A stone statue of a bear.
   icon:
     sprite: Civ14/Structures/religious.rsi
-    state: default
+    state: bear
   objectType: Structure
   placementMode: SnapgridCenter
   agemin: 0
@@ -120,7 +120,7 @@
   description: A stone statue of a wolf.
   icon:
     sprite: Civ14/Structures/religious.rsi
-    state: default
+    state: wolf
   objectType: Structure
   placementMode: SnapgridCenter
   agemin: 0
@@ -148,7 +148,7 @@
   description: A stone statue of a turkey.
   icon:
     sprite: Civ14/Structures/religious.rsi
-    state: default
+    state: turkey
   objectType: Structure
   placementMode: SnapgridCenter
   agemin: 0
@@ -176,7 +176,7 @@
   description: A stone statue of a goose.
   icon:
     sprite: Civ14/Structures/religious.rsi
-    state: default
+    state: goose
   objectType: Structure
   placementMode: SnapgridCenter
   agemin: 0
@@ -204,7 +204,7 @@
   description: A large stone statue of a head.
   icon:
     sprite: Civ14/Structures/totems.rsi
-    state: default
+    state: moai1
   objectType: Structure
   placementMode: SnapgridCenter
   agemin: 0
@@ -232,7 +232,7 @@
   description: A large stone statue of a head.
   icon:
     sprite: Civ14/Structures/totems.rsi
-    state: default
+    state: moai2
   objectType: Structure
   placementMode: SnapgridCenter
   agemin: 0
@@ -260,7 +260,7 @@
   description: A wooden polinesian statue.
   icon:
     sprite: Civ14/Structures/religious.rsi
-    state: default
+    state: tikistatue1
   objectType: Structure
   placementMode: SnapgridCenter
   agemin: 0
@@ -288,7 +288,7 @@
   description: A wooden polinesian statue.
   icon:
     sprite: Civ14/Structures/religious.rsi
-    state: default
+    state: tikistatue2
   objectType: Structure
   placementMode: SnapgridCenter
   agemin: 0
@@ -316,7 +316,7 @@
   description: A mesoamerican stone statue.
   icon:
     sprite: Civ14/Structures/religious.rsi
-    state: default
+    state: aztec_statue
   objectType: Structure
   placementMode: SnapgridCenter
   agemin: 0
@@ -344,7 +344,7 @@
   description: A mesoamerican stone head.
   icon:
     sprite: Civ14/Structures/religious.rsi
-    state: default
+    state: olmec_head
   objectType: Structure
   placementMode: SnapgridCenter
   agemin: 0
