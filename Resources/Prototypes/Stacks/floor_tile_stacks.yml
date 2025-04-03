@@ -592,13 +592,6 @@
   spawn: FloorTileItemWeb
   maxCount: 30
 
-# Faux science tiles
-- type: stack
-  id: FloorTileAstroGrass
-  name: astro-grass floor
-  spawn: FloorTileItemAstroGrass
-  maxCount: 30
-
 - type: stack
   id: FloorTileMowedAstroGrass
   name: mowed astro-grass floor
