@@ -23,6 +23,21 @@
   icon:
     sprite: Objects/Specific/Medical/medical.rsi
     state: gauze
+  agemin: 1
+  agemax: 8
+
+- type: construction
+  name: leather bandage
+  id: GauzeLeather
+  graph: GauzeLeather
+  startNode: start
+  targetNode: end
+  category: construction-category-tools
+  objectType: Item
+  description: When you've really got nothing left.
+  icon:
+    sprite: Civ14/Objects/surgery.rsi
+    state: leatherbandage
   agemin: 0
   agemax: 8
 
