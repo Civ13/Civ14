@@ -60,30 +60,8 @@
       agemax: 8
 
 - type: entity
-  abstract: true
-  parent: BaseStructure
-  id: BaseHeaterStructure
-  components:
-  - type: Transform
-    anchored: true
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.08,-0.35,0.15,0.25"
-        mask:
-        - TabletopMachineMask
-        layer:
-        - Impassable
-        - MidImpassable
-        - LowImpassable
-        hard: false
-  - type: Appearance
-
-- type: entity
   id: KitchenCampfire
-  parent: KitchenElectricGrill
+  parent: BaseHeaterMachine
   name: campfire
   description: Keeps you warm and cooks your food.
   components:
@@ -109,6 +87,7 @@
     - type: GrillFuelBurn
       fuel: 2
       maxFuel: 10
+    - type: PlaceableSurface
     - type: ItemPlacer
       maxEntities: 2
       whitelist:

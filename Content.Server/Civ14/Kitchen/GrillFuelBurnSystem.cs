@@ -54,7 +54,7 @@ public sealed class GrillFuelBurnSystem : EntitySystem
     {
         if (_entityManager.TryGetComponent<IgnitionSourceComponent>(args.Used, out var ignitionSource))
         {
-            if (!comp.IsLit)
+            if (!comp.IsLit && ignitionSource.Ignited && _remainingBurnTime[uid] > 0)
             {
                 comp.IsLit = true;
                 AdjustHeaterSetting(uid, comp);
