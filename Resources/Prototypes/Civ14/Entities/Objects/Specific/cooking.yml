@@ -61,7 +61,7 @@
 
 - type: entity
   id: KitchenCampfire
-  parent: [KitchenElectricGrill]
+  parent: BaseHeaterMachine
   name: campfire
   description: Keeps you warm and cooks your food.
   components:
@@ -70,7 +70,7 @@
       drawdepth: SmallObjects
       snapCardinals: true
       layers:
-        - state: fireplace2
+        - state: fireplace
         - map: ["enum.EntityHeaterVisuals.Setting"]
           shader: unshaded
           visible: false
@@ -78,18 +78,28 @@
       needsPower: false
       powerLoad: 0
     - type: PointLight
+      enabled: false
       radius: 4
       energy: 4
       color: "#E25822"
     - type: HeatEmitter
       heatingRate: 10
+    - type: GrillFuelBurn
+      fuel: 2
+      maxFuel: 10
+    - type: PlaceableSurface
+    - type: ItemPlacer
+      maxEntities: 2
+      whitelist:
+        components:
+        - Temperature
     - type: GenericVisualizer
       visuals:
         enum.EntityHeaterVisuals.Setting:
           enum.EntityHeaterVisuals.Setting:
             Off: { visible: false }
-            Low: { visible: true, state: fireplace2 }
-            Medium: { visible: true, state: fireplace_on }
+            Low: { visible: true, state: fireplace3 }
+            Medium: { visible: true, state: fireplace2 }
             High: { visible: true, state: fireplace_on }
 
     - type: GuideHelp
