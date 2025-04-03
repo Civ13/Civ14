@@ -4,15 +4,30 @@
   priority: 0
   text: "/ServerInfo/Guidebook/NewPlayer/NewPlayer.xml"
   children:
-  - Controls
-  - CharacterCreation
+    - Controls
+    - CharacterCreation
+    - Nomads
+
+- type: guideEntry
+  id: Nomads
+  name: guide-entry-nomads
+  priority: 0
+  text: "/ServerInfo/Guidebook/Nomads/nomads.xml"
+  children:
+    - NomadsStarterGuide
+
+- type: guideEntry
+  id: NomadsStarterGuide
+  name: guide-entry-nomads-starterguide
+  priority: 0
+  text: "/ServerInfo/Guidebook/Nomads/nomadsguide.xml"
 
 - type: guideEntry
   id: Controls
   name: guide-entry-controls
   text: "/ServerInfo/Guidebook/NewPlayer/Controls/Controls.xml"
   children:
-  - Radio
+    - Radio
 
 - type: guideEntry
   id: Radio
@@ -24,8 +39,7 @@
   name: guide-entry-charactercreation
   text: "/ServerInfo/Guidebook/NewPlayer/CharacterCreation.xml"
   children:
-  - YourFirstCharacter
-  - Species
+    - YourFirstCharacter
 
 - type: guideEntry
   id: YourFirstCharacter
