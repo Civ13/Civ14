@@ -1863,25 +1863,6 @@
     collection: FootstepHull
   itemDrop: PartRodMetal1 #same case as FloorHull
 
-# Faux sci tiles
-
-- type: tile
-  id: FloorMowedAstroGrass
-  name: tiles-mowed-astro-grass
-  parent: FloorGrass
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [Cutting]
-  itemDrop: FloorTileItemMowedAstroGrass
-
-- type: tile
-  id: FloorJungleAstroGrass
-  name: tiles-jungle-astro-grass
-  parent: FloorGrassJungle
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [Cutting]
-  itemDrop: FloorTileItemJungleAstroGrass
 
 # Ice
 - type: tile

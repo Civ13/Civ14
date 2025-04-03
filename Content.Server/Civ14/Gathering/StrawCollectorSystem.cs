@@ -27,8 +27,6 @@ public sealed partial class StrawCollectorSystem : EntitySystem
         "FloorGrassDark",
         "FloorGrassLight",
         "FloorPlanetGrass",
-        "FloorJungleAstroGrass",
-        "FloorMowedAstroGrass"
     };
 
     public override void Initialize()

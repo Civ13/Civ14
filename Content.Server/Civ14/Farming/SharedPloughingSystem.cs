@@ -42,8 +42,6 @@ namespace Content.Server.Farming
                     "FloorGrassDark",
                     "FloorGrassLight",
                     "FloorPlanetGrass",
-                    "FloorJungleAstroGrass",
-                    "FloorMowedAstroGrass"
                 };
 
             var ploughableTiles = new HashSet<string> // I'd rather do it in another way, but Asphalt has a FloorDirt BaseTurf, so I cant use it
