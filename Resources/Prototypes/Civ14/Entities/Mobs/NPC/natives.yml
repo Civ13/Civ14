@@ -78,7 +78,7 @@
 - type: loadoutGroup
   id: NativeNeck
   name: "Native Accessory Loadout"
-  minLimit: 0
+  minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCNeck1
@@ -98,7 +98,7 @@
 - type: loadoutGroup
   id: NativeJumpsuit
   name: "Native Jumpsuit Loadout"
-  minLimit: 0
+  minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCJumpsuit1
@@ -110,7 +110,7 @@
   id: NativePockets
   name: "Native Pockets Loadout"
   minLimit: 1
-  maxLimit: 2
+  maxLimit: 1
   loadouts:
     - NativePocketHerbs
     - NativePocketArrow
@@ -119,7 +119,7 @@
 - type: loadoutGroup
   id: NativeInhandRanged
   name: "Native Ranged Weapons"
-  minLimit: 0
+  minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeInhandRanged
@@ -127,7 +127,7 @@
 - type: loadoutGroup
   id: NativeInhandMelee
   name: "Native Melee Weapons"
-  minLimit: 0
+  minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeInhandMeleeFlintAxe

@@ -3,6 +3,8 @@ import yaml
 import base64
 import struct
 import random
+import sys
+
 from pyfastnoiselite.pyfastnoiselite import (
     FastNoiseLite,
     NoiseType,
@@ -13,6 +15,15 @@ from pyfastnoiselite.pyfastnoiselite import (
 )
 import time
 import os
+
+if len(sys.argv) == 1:
+    mapWidth = 300
+    mapHeight = 300
+    print(f"No custom mapsize specified, using defaults: {mapWidth}w x {mapHeight}h")
+else:
+    mapWidth = int(sys.argv[1])
+    mapHeight = int(sys.argv[2])
+    print(f"Using specified mapsize: {mapWidth}w x {mapHeight}h")
 
 # -----------------------------------------------------------------------------
 # Tilemap
@@ -1139,7 +1150,7 @@ start_time = time.time()
 seed_base = random.randint(0, 1000000)
 print(f"Generated seed: {seed_base}")
 
-width, height = 300, 300
+width, height = mapWidth, mapHeight
 chunk_size = 16
 
 biome_tile_layers = [layer for layer in MAP_CONFIG if layer["type"] == "BiomeTileLayer"]
