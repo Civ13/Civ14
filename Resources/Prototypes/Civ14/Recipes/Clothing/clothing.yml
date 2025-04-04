@@ -81,12 +81,12 @@
   graph:
     - node: start
       edges:
-        - to: leatherloincloth
+        - to: end
           steps:
             - material: Leather
               amount: 1
               doAfter: 10
-    - node: leatherloincloth
+    - node: end
       entity: civ13_uniform_leather_loincloth
 
 - type: constructionGraph

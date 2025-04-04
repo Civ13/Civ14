@@ -9,7 +9,17 @@
         - Syndicate
     - type: Loadout
       prototypes: [NativeInhandMeleeSpear, NativeInhandMeleeBoneAxe, NativeInhandMeleeFlintAxe]
-      roleLoadout: [NativeLoadout1, NativeLoadout2, NativeLoadout3, NativeLoadout4, NativeLoadout5, NativeLoadout6]
+      roleLoadout:
+        [
+          NativeLoadout1,
+          NativeLoadout2,
+          NativeLoadout3,
+          NativeLoadout4,
+          NativeLoadout5,
+          NativeLoadout6,
+          NativeLoadout7,
+          NativeLoadout8,
+        ]
     - type: InputMover
     - type: MobMover
     - type: HTN
@@ -27,12 +37,36 @@
         - Syndicate
     - type: Loadout
       prototypes: [NativeInhandRanged]
-      roleLoadout: [NativeLoadout1, NativeLoadout2, NativeLoadout3, NativeLoadout4, NativeLoadout5, NativeLoadout6]
+      roleLoadout:
+        [
+          NativeLoadout1,
+          NativeLoadout2,
+          NativeLoadout3,
+          NativeLoadout4,
+          NativeLoadout5,
+          NativeLoadout6,
+          NativeLoadout7,
+          NativeLoadout8,
+        ]
     - type: InputMover
     - type: MobMover
     - type: HTN
       rootTask:
         task: SimpleHumanoidHostileCompound
+    - type: Gun
+      minAngle: 0
+      maxAngle: 5
+      fireRate: 1
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        collection: BulletMiss
+      soundEmpty: null
+    - type: BallisticAmmoProvider
+      proto: ArrowImprovised
+      capacity: 30
+    - type: CombatMode
 
 # role loadouts
 - type: roleLoadout
@@ -66,9 +100,9 @@
 - type: roleLoadout
   id: NativeLoadout4
   groups:
-    - NativeMask2
+    - NativeMask3
     - NativeNeck4
-    - NativeJumpsuit4
+    - NativeJumpsuit3
     - NativePocketBandage
 
 - type: roleLoadout
@@ -84,7 +118,24 @@
   groups:
     - NativeNeck3
     - NativeJumpsuit1
-    - NativeMask3
+    - NativeMask4
+    - NativeShoes
+    - NativePocketBandage
+
+- type: roleLoadout
+  id: NativeLoadout7
+  groups:
+    - NativeNeck5
+    - NativeJumpsuit3
+    - NativeShoes
+    - NativePocketHerbs
+
+- type: roleLoadout
+  id: NativeLoadout8
+  groups:
+    - NativeNeck1
+    - NativeJumpsuit2
+    - NativeMask4
     - NativeShoes
     - NativePocketBandage
 
@@ -92,14 +143,14 @@
 - type: loadoutGroup
   id: NativeHead1
   name: loadout-group-native-head
-  minLimit: 0
+  minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCHead1
 - type: loadoutGroup
   id: NativeHead2
   name: loadout-group-native-head
-  minLimit: 0
+  minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCHead2
@@ -107,21 +158,21 @@
 - type: loadoutGroup
   id: NativeMask1
   name: loadout-group-native-mask
-  minLimit: 0
+  minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCMask1
 - type: loadoutGroup
   id: NativeMask2
   name: loadout-group-native-mask
-  minLimit: 0
+  minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCMask2
 - type: loadoutGroup
   id: NativeMask3
   name: loadout-group-native-mask
-  minLimit: 0
+  minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCMask3
@@ -165,7 +216,7 @@
 - type: loadoutGroup
   id: NativeShoes
   name: loadout-group-native-shoes
-  minLimit: 0
+  minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCShoes1
@@ -306,5 +357,4 @@
   id: NativeInhandRanged
   equipment:
     belt: ClothingBeltQuiver
-  inhand:
-    - BowImprovised
+    back: BowImprovised
