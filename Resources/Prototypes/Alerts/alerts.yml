@@ -350,7 +350,7 @@
   category: Thirst
   icons:
     - sprite: /Textures/Interface/Alerts/thirst.rsi
-      state: thirsty
+      state: thirst3
   name: alerts-thirsty-name
   description: alerts-thirsty-desc
 
@@ -359,7 +359,7 @@
   category: Thirst
   icons:
     - sprite: /Textures/Interface/Alerts/thirst.rsi
-      state: parched
+      state: thirst2
   name: alerts-parched-name
   description: alerts-parched-desc
 

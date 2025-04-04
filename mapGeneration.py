@@ -828,6 +828,7 @@ MAP_CONFIG = [
             "WildPlantRice",
             "WildPlantWheat",
             "WildPlantHemp",
+            "WildPlantHealing",
         ],
         "noise_type": NoiseType.NoiseType_OpenSimplex2S,
         "octaves": 6,
@@ -1138,7 +1139,7 @@ start_time = time.time()
 seed_base = random.randint(0, 1000000)
 print(f"Seed base gerado: {seed_base}")
 
-width, height = 500, 500
+width, height = 300, 300
 chunk_size = 16
 
 biome_tile_layers = [layer for layer in MAP_CONFIG if layer["type"] == "BiomeTileLayer"]

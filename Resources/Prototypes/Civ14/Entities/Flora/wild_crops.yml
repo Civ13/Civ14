@@ -148,3 +148,25 @@
     - id: MaterialRope1
       amount: 1
       maxAmount: 1
+
+- type: entity
+  name: healing plant
+  parent: WildPlantBase
+  id: WildPlantHealing
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/aloe.rsi
+      state: harvest
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: HealingHerbsHarvest
+
+- type: entityLootTable
+  id: HealingHerbsHarvest
+  entries:
+    - id: HealingHerbs
+      amount: 2
+      maxAmount: 3
