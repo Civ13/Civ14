@@ -7,6 +7,7 @@
     - type: NpcFactionMember
       factions:
         - Syndicate
+    - type: NukeOperative
     - type: Loadout
       prototypes: [NativeInhandMeleeSpear, NativeInhandMeleeBoneAxe, NativeInhandMeleeFlintAxe]
       roleLoadout:
@@ -35,6 +36,7 @@
     - type: NpcFactionMember
       factions:
         - Syndicate
+    - type: NukeOperative
     - type: Loadout
       prototypes: [NativeInhandRanged]
       roleLoadout:
