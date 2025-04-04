@@ -494,9 +494,6 @@
         - FloorWood
     - type: Stack
       stackType: FloorTileWood
-      outputs:
-        - Plating
-        - FloorThatch
     - type: SpawnAfterInteract #Nuke after convert to FloorTile
       prototype: FloorWoodClassic
       doAfter: 0.5
