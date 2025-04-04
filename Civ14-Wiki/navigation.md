@@ -6,6 +6,7 @@
 
 [Guides]()
 
+-   [Starter Guide](wiki/starter_guide.md)
 -   [Farming](wiki/guide_to_farming.md)
 
 [Links]()
@@ -15,7 +16,7 @@
 
 <!-- set a default theme -->
 
-[gimmick:theme (inverse: false)](darkly)
+[gimmick:theme (inverse: false)](cyborg)
 
 <!-- show a theme chooser in the menu bar -->
 

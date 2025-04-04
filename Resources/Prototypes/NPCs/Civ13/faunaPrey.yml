@@ -1,0 +1,72 @@
+#main prey activity
+- type: htnCompound
+  id: SimplePreyCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: PreyFleeCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
+
+#finds the hostile target & sets up the flee compound
+- type: htnCompound
+  id: PreyFleeCompound
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: NearbyHostiles
+        - !type:HTNCompoundTask
+          task: FleeHostileCompound
+
+- type: htnCompound
+  id: FleeHostileCompound
+  branches:
+    - preconditions:
+        - !type:KeyExistsPrecondition
+          key: Target
+        - !type:TargetInLOSPrecondition
+          targetKey: Target
+          rangeKey: VisionRadius
+          opaqueKey: false
+      tasks: #this bit picks a random open tile & paths to it, also dodges away from the target
+        - !type:HTNPrimitiveTask #this needs to be made so it picks a random tile away from the target, aka the hostile creature.
+          operator:
+            !type:PickAccessibleOperator #RN there is something that is like 50% of the way in the file for that in the file
+            rangeKey: FleeRange
+            targetCoordinates: FleeCoordinates
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator #performs the actual
+            pathfindInPlanning: false
+        - !type:HTNPrimitiveTask
+          operator: !type:JukeOperator
+            jukeType: Away
+
+#Utility Operators
+
+#Identifies nearby hostiles & casts them as a target
+- type: utilityQuery
+  id: NearbyHostiles
+  query:
+    - !type:NearbyHostilesQuery
+  considerations:
+    - !type:TargetIsAliveCon
+      curve: !type:BoolCurve
+    - !type:TargetDistanceCon
+      curve: !type:PresetCurve
+        preset: HostileDistance
+    - !type:TargetHealthCon
+      curve: !type:PresetCurve
+        preset: TargetHealth
+    - !type:TargetAccessibleCon
+      curve: !type:BoolCurve #Preset curve for the consideration in nearbyhostiles
+
+
+- type: utilityCurvePreset
+  id: HostileDistance
+  curve: !type:QuadraticCurve
+    slope: -1
+    exponent: 1
+    yOffset: 1
+    xOffset: 0

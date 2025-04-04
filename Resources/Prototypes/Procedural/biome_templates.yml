@@ -104,7 +104,7 @@
     # Dense vegetation
     - !type:BiomeDecalLayer
       allowedTiles:
-      - FloorPlanetGrass
+        - FloorPlanetGrass
       divisions: 1
       threshold: -0.35
       noise:
@@ -139,7 +139,7 @@
     - !type:BiomeEntityLayer
       allowedTiles:
         - FloorPlanetGrass
-        - FloorPlanetDirt
+        - FloorDirt
       threshold: -0.30
       noise:
         seed: 0
@@ -158,7 +158,7 @@
     - !type:BiomeEntityLayer
       allowedTiles:
         - FloorPlanetGrass
-        - FloorPlanetDirt
+        - FloorDirt
       threshold: 0.95
       noise:
         seed: 3
@@ -172,7 +172,7 @@
     # Fill remainder with dirt.
     - !type:BiomeTileLayer
       threshold: -1.0
-      tile: FloorPlanetDirt
+      tile: FloorDirt
     - !type:BiomeTileLayer
       threshold: -0.90
       tile: FloorPlanetGrass
@@ -182,7 +182,7 @@
         fractalType: None
     # Water sand
     - !type:BiomeTileLayer
-      tile: FloorPlanetDirt
+      tile: FloorDirt
       threshold: 0.95
       noise:
         seed: 3
@@ -193,7 +193,7 @@
         octaves: 1
     # Rock formation sand
     - !type:BiomeTileLayer
-      tile: FloorPlanetDirt
+      tile: FloorDirt
       threshold: -0.30
       noise:
         seed: 0
@@ -403,8 +403,8 @@
     # Liquid plasma rivers. Ice moon baby
     - !type:BiomeEntityLayer
       allowedTiles:
-      - FloorSnow
-      - FloorIce
+        - FloorSnow
+        - FloorIce
       threshold: 0.95
       noise:
         seed: 3
@@ -414,7 +414,7 @@
         fractalType: Ridged
         octaves: 1
       entities:
-      - FloorLiquidPlasmaEntity
+        - FloorLiquidPlasmaEntity
     - !type:BiomeDummyLayer
       id: Loot
     - !type:BiomeTileLayer
@@ -479,7 +479,7 @@
     # chasm time
     - !type:BiomeEntityLayer
       allowedTiles:
-      - FloorChromite
+        - FloorChromite
       threshold: 0.2
       noise:
         seed: 3
@@ -489,7 +489,7 @@
         lacunarity: 2
         gain: 0.4
       entities:
-      - FloorChromiteChasm
+        - FloorChromiteChasm
     - !type:BiomeDummyLayer
       id: Loot
     # Fill chromite
@@ -524,9 +524,9 @@
         noiseType: OpenSimplex2
         frequency: 1
       allowedTiles:
-      - FloorAsteroidSand
+        - FloorAsteroidSand
       entities:
-      - FloraStalagmite
+        - FloraStalagmite
     - !type:BiomeEntityLayer
       threshold: -0.5
       invert: true

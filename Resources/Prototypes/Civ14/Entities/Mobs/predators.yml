@@ -11,7 +11,7 @@
       layers:
         - map: ["enum.DamageStateVisualLayers.Base"]
           state: brownbear
-          sprite: Civ14/Mobs/animal.rsi
+          sprite: Civ14/Mobs/animal_64.rsi
     - type: Fixtures
       fixtures:
         fix1:
@@ -27,8 +27,8 @@
       spawned:
         - id: FoodMeat
           amount: 4
-        - id: MaterialLeather1
-          amount: 3
+        - id: MaterialPeltBrownBear1
+          amount: 5
         - id: MaterialBones1
           amount: 3
     - type: DamageStateVisuals
@@ -87,10 +87,20 @@
       spawned:
         - id: FoodMeat
           amount: 2
-        - id: MaterialLeather1
-          amount: 1
+        - id: MaterialPeltGreyWolf1
+          amount: 3
         - id: MaterialBones1
           amount: 1
+
+    - type: Hunger #enables the wolf to get hungry
+      thresholds:
+        Overfed: 35
+        Okay: 25
+        Peckish: 15
+        Starving: 10
+        Dead: 0
+      baseDecayRate: 0.2
+
     - type: DamageStateVisuals
       states:
         Alive:
@@ -99,6 +109,8 @@
           Base: greywolf_dead
         Dead:
           Base: greywolf_dead
+    - type: Bloodstream #can't bleed out without this methinks
+      bloodMaxVolume: 300
     - type: MeleeWeapon
       damage:
         types:
@@ -109,10 +121,16 @@
     - type: FactionException
     - type: NpcFactionMember
       factions:
-        - SimpleHostile
+        - Predator
     - type: HTN
       rootTask:
+        #        task: predatorActivityCompound #civ14 coustom predator system
         task: SimpleHostileCompound
+
+    - type: ReplacementAccent #lets wolf vocalize
+      accent: dog
+    - type: Speech
+      speechVerb: LargeMob
 
 - type: entity
   name: sabertooth tiger
@@ -165,7 +183,7 @@
       animation: WeaponArcBite
     - type: NPCRetaliation
       attackMemoryLength: 10
-    - type: FactionException
+    #    - type: FactionException
     - type: NpcFactionMember
       factions:
         - SimpleHostile

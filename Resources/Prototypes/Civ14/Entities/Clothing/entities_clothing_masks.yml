@@ -1,0 +1,1452 @@
+- type: entity
+  name: Half mask
+  parent: ClothingMaskGas
+  id: civ13_mask_Half_mask
+  description: ""
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/halfmask.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/halfmask.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.95
+          Slash: 0.95
+          Heat: 0.85
+          Radiation: 0.3
+    - type: Construction
+      graph: civ13_mask_Half_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: GP-9 gas mask
+  parent: ClothingMaskGas
+  id: civ13_mask_GP_9_gas_mask
+  description: A panoramic gas mask intented for civilian use and civil denfense.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/russiamask.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/russiamask.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.9
+          Slash: 0.9
+          Heat: 0.65
+          Radiation: 0.2
+    - type: Construction
+      graph: civ13_mask_GP_9_gas_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: ShM-1 gas mask
+  parent: ClothingMaskGas
+  id: civ13_mask_ShM_1_gas_mask
+  description: A Soviet helmet styled-rubber mask introduced right before WW2.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/shm1.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/shm1.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.9
+          Slash: 0.9
+          Heat: 0.65
+          Radiation: 0.2
+    - type: Construction
+      graph: civ13_mask_ShM_1_gas_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: GP-5 gas mask
+  parent: ClothingMaskGas
+  id: civ13_mask_GP_5_gas_mask
+  description: A Soviet helmet styled-rubber mask.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/gp5.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/gp5.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_GP_5_gas_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: PMK-1 gas mask
+  parent: ClothingMaskGas
+  id: civ13_mask_PMK_1_gas_mask
+  description: >-
+    Compact combined mask designed in the late 1970s, used by Soviet and Russian
+    Armed Forces.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/pmk1.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/pmk1.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_PMK_1_gas_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: M2 gas mask
+  parent: ClothingMaskGas
+  id: civ13_mask_M2_gas_mask
+  description: Compact combined mask designed in 1939, used by the US army.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/m2.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/m2.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.9
+          Slash: 0.9
+          Heat: 0.65
+          Radiation: 0.2
+    - type: Construction
+      graph: civ13_mask_M2_gas_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+
+- type: entity
+  name: plague doctor's mask
+  parent: ClothingMaskBase
+  id: civ13_mask_plague_doctors_mask
+  description: >-
+    A covid shaped mask stuffed with herbs to better protect against malanges &
+    plagues.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/plaguedoctor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/plaguedoctor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_plague_doctors_mask
+      node: end
+      cost: 4
+      material: Cloth
+      time: 9
+- type: entity
+  name: sterile mask
+  parent: ClothingMaskBase
+  id: civ13_mask_sterile_mask
+  description: >-
+    A thin surgical mask, worn by medical professionals to stop the spread of
+    disease or transmission.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/sterile.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/sterile.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Radiation: 0.95
+    - type: Construction
+      graph: civ13_mask_sterile_mask
+      node: end
+      cost: 1
+      time: 14
+- type: entity
+  name: a cloth sack mask
+  parent: ClothingMaskBase
+  id: civ13_mask_a_cloth_sack_mask
+  description: A cloth bag placed on the head by force, or by choice.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/sack.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/sack.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_a_cloth_sack_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: a cloth sack mask with eyeholes
+  parent: ClothingMaskBase
+  id: civ13_mask_a_cloth_sack_mask_with_eyeholes
+  description: >-
+    A cloth sack placed on the head by force, or by choice. It has crude
+    eyeholes cut into it
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/scarecrow_sack.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/scarecrow_sack.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_a_cloth_sack_mask_with_eyeholes
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: rat mask
+  parent: ClothingMaskBase
+  id: civ13_mask_rat_mask
+  description: A plastic mask in the form of a verminous rat.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/rat.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/rat.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_rat_mask
+      node: end
+      cost: 3
+      time: 6
+- type: entity
+  name: raven mask
+  parent: ClothingMaskBase
+  id: civ13_mask_raven_mask
+  description: A plastic mask in the form of a carrion eating raven.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/raven.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/raven.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_raven_mask
+      node: end
+      cost: 3
+      time: 6
+- type: entity
+  name: bat mask
+  parent: ClothingMaskBase
+  id: civ13_mask_bat_mask
+  description: A plastic mask in the form of a frightening bat.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/bat.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/bat.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_bat_mask
+      node: end
+      cost: 3
+      time: 6
+- type: entity
+  name: bear mask
+  parent: ClothingMaskBase
+  id: civ13_mask_bear_mask
+  description: A plastic mask in the form of a not so cuddly bear.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/bear.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/bear.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_bear_mask
+      node: end
+      cost: 3
+      time: 6
+- type: entity
+  name: owl mask
+  parent: ClothingMaskBase
+  id: civ13_mask_owl_mask
+  description: A plastic mask in the form of a all seeing owl.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/owl.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/owl.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_owl_mask
+      node: end
+      cost: 3
+      time: 6
+- type: entity
+  name: bee mask
+  parent: ClothingMaskBase
+  id: civ13_mask_bee_mask
+  description: A plastic mask in the form of a buzzy bee.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/bee.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/bee.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_bee_mask
+      node: end
+      cost: 3
+      time: 6
+- type: entity
+  name: jackal mask
+  parent: ClothingMaskBase
+  id: civ13_mask_jackal_mask
+  description: A plastic mask in the form of a scavenging jackal.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/jackal.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/jackal.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_jackal_mask
+      node: end
+      cost: 3
+      time: 6
+- type: entity
+  name: fox mask
+  parent: ClothingMaskBase
+  id: civ13_mask_fox_mask
+  description: A plastic mask in the form of a crafty fox.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/fox.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/fox.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_fox_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: frog mask
+  parent: ClothingMaskBase
+  id: civ13_mask_frog_mask
+  description: A plastic mask in the form of a slimy frog. 'Ribbit!'
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/frog.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/frog.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_frog_mask
+      node: end
+      cost: 3
+      time: 6
+- type: entity
+  name: cow mask
+  parent: ClothingMaskBase
+  id: civ13_mask_cow_mask
+  description: A plastic mask in the form of a cow. 'Moo!'
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/cowmask.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/cowmask.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_cow_mask
+      node: end
+      cost: 3
+      time: 6
+- type: entity
+  name: pig mask
+  parent: ClothingMaskBase
+  id: civ13_mask_pig_mask
+  description: A plastic mask in the form of a pig. 'Oink!'
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/pig.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/pig.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_pig_mask
+      node: end
+      cost: 3
+      time: 6
+- type: entity
+  name: joy
+  parent: ClothingMaskBase
+  id: civ13_mask_joy
+  description: A plastic mask in the form of a joy emojii.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/joy.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/joy.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_joy
+      node: end
+      cost: 3
+      time: 6
+- type: entity
+  name: gorilla mask
+  parent: ClothingMaskBase
+  id: civ13_mask_gorilla_mask
+  description: A plastic mask in the form of a gorilla. 'Oook ook!'
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/gorilla.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/gorilla.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_gorilla_mask
+      node: end
+      cost: 3
+      time: 6
+- type: entity
+  name: clown mask
+  parent: ClothingMaskBase
+  id: civ13_mask_clown_mask
+  description: A mask used around the world by clowns.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/clownmask.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/clownmask.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_clown_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: clown mask
+  parent: ClothingMaskBase
+  id: civ13_mask_clown_mask_1
+  description: A plastic mask to hide your identity, used around the world by clowns.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/clownmask.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/clownmask.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.5
+          Arrow: 0.9
+    - type: Construction
+      graph: civ13_mask_clown_mask_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: american flag mask
+  parent: ClothingMaskBase
+  id: civ13_mask_american_flag_mask
+  description: A plastic mask to hide your identity. This one has an American flag on it.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/payday1.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/payday1.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.5
+          Arrow: 0.9
+    - type: Construction
+      graph: civ13_mask_american_flag_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: clown mask
+  parent: ClothingMaskBase
+  id: civ13_mask_clown_mask_1_2
+  description: A plastic clown mask to hide your identity.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/payday2.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/payday2.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.5
+          Arrow: 0.9
+    - type: Construction
+      graph: civ13_mask_clown_mask_1_2
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: clown mask
+  parent: ClothingMaskBase
+  id: civ13_mask_clown_mask_1_2_3
+  description: A plastic clown mask to hide your identity.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/payday3.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/payday3.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.5
+          Arrow: 0.9
+    - type: Construction
+      graph: civ13_mask_clown_mask_1_2_3
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: clown mask
+  parent: ClothingMaskBase
+  id: civ13_mask_clown_mask_1_2_3_4
+  description: A plastic clown mask to hide your identity.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/payday4.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/payday4.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.5
+          Arrow: 0.9
+    - type: Construction
+      graph: civ13_mask_clown_mask_1_2_3_4
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+
+- type: entity
+  name: red kerchief
+  parent: ClothingMaskBase
+  id: civ13_mask_red_kerchief
+  description: A piece of light cloth, worn around the neck.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/redkerchief0.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/redkerchief0.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_red_kerchief
+      node: end
+      cost: 2
+      material: Cloth
+      time: 5
+- type: entity
+  name: shemagh
+  parent: ClothingMaskBase
+  id: civ13_mask_shemagh
+  description: A piece of light cloth, used to protect the head and face.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/shemagh0.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/shemagh0.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_shemagh
+      node: end
+      cost: 2
+      material: Cloth
+      time: 6
+- type: entity
+  name: blue kerchief
+  parent: ClothingMaskBase
+  id: civ13_mask_blue_kerchief
+  description: A piece of light cloth, worn around the neck.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/bluekerchief0.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/bluekerchief0.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_blue_kerchief
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: yellow kerchief
+  parent: ClothingMaskBase
+  id: civ13_mask_yellow_kerchief
+  description: A piece of light cloth, worn around the neck.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/yellowkerchief0.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/yellowkerchief0.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_yellow_kerchief
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: grey kerchief
+  parent: ClothingMaskBase
+  id: civ13_mask_grey_kerchief
+  description: A piece of light cloth, worn around the neck.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/greykerchief0.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/greykerchief0.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_grey_kerchief
+      node: end
+      cost: 2
+      material: Cloth
+      time: 5
+- type: entity
+  name: anubis mask
+  parent: ClothingMaskBase
+  id: civ13_mask_anubis_mask
+  description: A bronze mask in the form of a the egyptian god of the dead, anubis.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/anubis.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/anubis.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.85
+          Arrow: 0.85
+          Heat: 0.85
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_anubis_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: christian gold necklace
+  parent: ClothingMaskBase
+  id: civ13_mask_christian_gold_necklace
+  description: " A golden necklace with a christian cross. It is made out of gold. Looks expensive."
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/necklace_christian_gold.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/necklace_christian_gold.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_christian_gold_necklace
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: osiris mask
+  parent: ClothingMaskBase
+  id: civ13_mask_osiris_mask
+  description: A mask in the form of a the egyptian god of the underworld, osiris.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/osiris.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/osiris.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.85
+          Arrow: 0.85
+          Heat: 0.85
+    - type: Construction
+      graph: civ13_mask_osiris_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: stone mask
+  parent: ClothingMaskBase
+  id: civ13_mask_stone_mask
+  description: A stone mask with a masculine apperance with fangs.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/stone_mask.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/stone_mask.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.95
+          Slash: 0.95
+          Arrow: 0.9
+          Heat: 0.88
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_stone_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: jewelled stone mask
+  parent: ClothingMaskBase
+  id: civ13_mask_jewelled_stone_mask
+  description: A jewelled stone mask, possibly sometype of honorific attire?
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/stone_mask_jeweled.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/stone_mask_jeweled.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Arrow: 0.8
+          Heat: 0.92
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_jewelled_stone_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: woodlands face camo
+  parent: ClothingMaskBase
+  id: civ13_mask_woodlands_face_camo
+  description: Face painting in woodland camo pattern.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/painting_woodland.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/painting_woodland.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_woodlands_face_camo
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: black balaclava
+  parent: ClothingMaskBase
+  id: civ13_mask_black_balaclava
+  description: A black balaclava, covering the face.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/balaclava.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/balaclava.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_black_balaclava
+      node: end
+      cost: 2
+      material: Cloth
+      time: 13
+- type: entity
+  name: snow balaclava
+  parent: ClothingMaskBase
+  id: civ13_mask_snow_balaclava
+  description: A white balaclava, covering the face.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/snowclava.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/snowclava.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_snow_balaclava
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: snow balaclava
+  parent: ClothingMaskBase
+  id: civ13_mask_snow_balaclava_1
+  description: A green balaclava, covering the face.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/swatclava.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/swatclava.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_snow_balaclava_1
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+
+- type: entity
+  name: grey headscarf
+  parent: ClothingMaskBase
+  id: civ13_mask_grey_headscarf
+  description: A headscarf,it protects your face from the cold.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/headscarfgrey.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/headscarfgrey.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_grey_headscarf
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: Asbestos headscarf
+  parent: ClothingMaskBase
+  id: civ13_mask_Asbestos_headscarf
+  description: A Heavy Asbestos farbic headscarf, it protects your head from heat and cold.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/headscarfgreyA.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/headscarfgreyA.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.95
+          Slash: 0.95
+          Heat: 0.65
+          Radiation: 0.95
+    - type: Construction
+      graph: civ13_mask_Asbestos_headscarf
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: olive headscarf
+  parent: ClothingMaskBase
+  id: civ13_mask_olive_headscarf
+  description: ""
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/headscarfolive.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/headscarfolive.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_olive_headscarf
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: white headscarf
+  parent: ClothingMaskBase
+  id: civ13_mask_white_headscarf
+  description: ""
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/headscarfwhite.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/headscarfwhite.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_white_headscarf
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: green balaclava
+  parent: ClothingMaskBase
+  id: civ13_mask_green_balaclava
+  description: A green balaclava, covering the mouth.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/sovietbala.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/sovietbala.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+          Arrow: 1
+          Heat: 1
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_green_balaclava
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: samurai mask
+  parent: ClothingMaskBase
+  id: civ13_mask_samurai_mask
+  description: A mask of metal, often worn by lords to protect their face.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/samurai1.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/samurai1.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.95
+          Arrow: 0.85
+          Heat: 0.85
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_samurai_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: red samurai mask
+  parent: ClothingMaskBase
+  id: civ13_mask_red_samurai_mask
+  description: ""
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/samurai2.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/samurai2.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.95
+          Arrow: 0.85
+          Heat: 0.85
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_red_samurai_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: blue samurai mask
+  parent: ClothingMaskBase
+  id: civ13_mask_blue_samurai_mask
+  description: ""
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/samurai3.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/samurai3.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.95
+          Arrow: 0.85
+          Heat: 0.85
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_blue_samurai_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: skull mask
+  parent: ClothingMaskBase
+  id: civ13_mask_skull_mask
+  description: A skull mask, used by shamans.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/skull_mask.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/skull_mask.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.75
+          Slash: 0.75
+          Arrow: 0.9
+    - type: Construction
+      graph: civ13_mask_skull_mask
+      node: end
+      cost: 5
+      material: Bone
+      time: 10
+- type: entity
+  name: wooden mask
+  parent: ClothingMaskBase
+  id: civ13_mask_wooden_mask
+  description: A tribal wooden mask.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/woodenmask.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/woodenmask.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.85
+          Arrow: 0.9
+    - type: Construction
+      graph: civ13_mask_wooden_mask
+      node: end
+      cost: 2
+      material: WoodPlank
+      time: 5
+- type: entity
+  name: expressive wooden mask
+  parent: ClothingMaskBase
+  id: civ13_mask_expressive_wooden_mask
+  description: A tribal wooden mask. This one has a grin transfixed on its face
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/bumba.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/bumba.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.85
+          Arrow: 0.9
+    - type: Construction
+      graph: civ13_mask_expressive_wooden_mask
+      node: end
+      cost: 3
+      material: WoodPlank
+      time: 5
+- type: entity
+  name: black african wooden mask
+  parent: ClothingMaskBase
+  id: civ13_mask_black_african_wooden_mask
+  description: A african tribal wooden mask. Often used for ceremonial purposes
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/african1.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/african1.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.85
+          Arrow: 0.9
+    - type: Construction
+      graph: civ13_mask_black_african_wooden_mask
+      node: end
+      cost: 3
+      material: WoodPlank
+      time: 5
+- type: entity
+  name: face plate
+  parent: ClothingMaskBase
+  id: civ13_mask_face_plate
+  description: A bulletproof face plate. Used to protect your pretty face.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/iogplate.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/iogplate.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.2
+          Slash: 0.2
+          Piercing: 0.1
+          Arrow: 0.3
+          Heat: 0.8
+    - type: Construction
+      graph: civ13_mask_face_plate
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: gold plated mask
+  parent: ClothingMaskBase
+  id: civ13_mask_gold_plated_mask
+  description: A mask plated in gold. Looks expensive.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/salamon.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/salamon.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.95
+          Slash: 0.95
+          Piercing: 0.9
+          Arrow: 0.86
+          Heat: 0.8
+    - type: Construction
+      graph: civ13_mask_gold_plated_mask
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: chitin mask
+  parent: ClothingMaskBase
+  id: civ13_mask_chitin_mask
+  description: A mask made from insect chitin.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/chitin_mask.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/chitin_mask.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.81
+          Slash: 0.81
+          Arrow: 0.91
+    - type: Construction
+      graph: civ13_mask_chitin_mask
+      node: end
+      cost: 4
+      time: 7
+- type: entity
+  name: "'rite nasty boss jawpiece"
+  parent: ClothingMaskBase
+  id: civ13_mask_rite_nasty_boss_jawpiece
+  description: >-
+    A chunk of crude metal crafted into the shape of a orcish jaw, cements
+    status amongst brutes making them appear larger.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/bossjaw.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/bossjaw.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.85
+          Arrow: 0.95
+          Heat: 0.85
+    - type: Construction
+      graph: civ13_mask_rite_nasty_boss_jawpiece
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5
+- type: entity
+  name: solitaire masque
+  parent: ClothingMaskBase
+  id: civ13_mask_solitaire_masque
+  description: >-
+    A hauntingly chiselled and androgynous mask. Often worn by elite elven
+    assassins who only work alone.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/masks/solitaire.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/masks/solitaire.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.95
+          Arrow: 0.85
+          Heat: 0.85
+          Radiation: 1
+    - type: Construction
+      graph: civ13_mask_solitaire_masque
+      node: end
+      cost: 5
+      material: Cloth
+      time: 5

@@ -378,6 +378,8 @@
         Coal: 100
     - type: Item
       heldPrefix: coal
+    - type: BurnFuel
+      burnTime: 4
 
 - type: entity
   parent: Coal

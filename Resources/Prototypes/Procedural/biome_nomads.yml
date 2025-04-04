@@ -67,7 +67,7 @@
     - !type:BiomeEntityLayer
       allowedTiles:
         - FloorPlanetGrass
-        - FloorPlanetDirt
+        - FloorDirt
       threshold: -0.30
       noise:
         seed: 0
@@ -86,7 +86,7 @@
     - !type:BiomeEntityLayer
       allowedTiles:
         - FloorPlanetGrass
-        - FloorPlanetDirt
+        - FloorDirt
       threshold: 0.95
       noise:
         seed: 3
@@ -100,7 +100,7 @@
     # Fill remainder with dirt.
     - !type:BiomeTileLayer
       threshold: -1.0
-      tile: FloorPlanetDirt
+      tile: FloorDirt
     - !type:BiomeTileLayer
       threshold: -0.90
       tile: FloorPlanetGrass
@@ -110,7 +110,7 @@
         fractalType: None
     # Water sand
     - !type:BiomeTileLayer
-      tile: FloorPlanetDirt
+      tile: FloorDirt
       threshold: 0.95
       noise:
         seed: 3
@@ -121,7 +121,7 @@
         octaves: 1
     # Rock formation sand
     - !type:BiomeTileLayer
-      tile: FloorPlanetDirt
+      tile: FloorDirt
       threshold: -0.30
       noise:
         seed: 0

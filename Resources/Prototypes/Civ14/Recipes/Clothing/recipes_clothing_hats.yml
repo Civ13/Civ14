@@ -2823,12 +2823,12 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: "A menacing brown bear pelt headcover, to show your enemies how dangerous you are."
   icon:
     sprite: Civ14/Clothing/exported/hats/brownbearpelt.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 0
   agemax: 8
 - type: constructionGraph
   id: civ13_head_brown_bear_pelt_hat
@@ -2838,7 +2838,7 @@
       edges:
         - to: end
           steps:
-            - material: Leather
+            - material: PeltBrownBear
               amount: 4
               doAfter: 15
     - node: end
@@ -4765,33 +4765,7 @@
               doAfter: 5
     - node: end
       entity: civ13_head_scrap_metal_helmet
-- type: construction
-  name: bone helmet
-  id: civ13_head_bone_helmet
-  graph: civ13_head_bone_helmet
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: A helmet made of bones.
-  icon:
-    sprite: Civ14/Clothing/exported/hats/bone_helmet.rsi
-    state: icon
-  objectType: Item
-  agemin: 8
-  agemax: 8
-- type: constructionGraph
-  id: civ13_head_bone_helmet
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Bones
-              amount: 10
-              doAfter: 10
-    - node: end
-      entity: civ13_head_bone_helmet
+
 - type: construction
   name: chitin helmet
   id: civ13_head_chitin_helmet
@@ -7616,7 +7590,7 @@
     sprite: Civ14/Clothing/exported/hats/wolfpelt.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 0
   agemax: 8
 - type: constructionGraph
   id: civ13_head_wolfpelt_headcover
@@ -7626,7 +7600,7 @@
       edges:
         - to: end
           steps:
-            - material: Leather
+            - material: PeltGreyWolf
               amount: 4
               doAfter: 15
     - node: end
@@ -7811,7 +7785,7 @@
     sprite: Civ14/Clothing/exported/hats/bisonpelt.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 0
   agemax: 8
 - type: constructionGraph
   id: civ13_head_bisonpelt_headcover
@@ -10660,7 +10634,7 @@
     sprite: Civ14/Clothing/exported/hats/bison_fur_hat.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 0
   agemax: 8
 - type: constructionGraph
   id: civ13_head_bisonhead_fur_hat
@@ -12758,12 +12732,12 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A hat made with with feathers. Worn by tribal leaders.
+  description: A hat made with with straw and feathers. Worn by tribal leaders.
   icon:
     sprite: Civ14/Clothing/exported/hats/chief_hat.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 0
   agemax: 8
 - type: constructionGraph
   id: civ13_head_chief_hat
@@ -12773,9 +12747,9 @@
       edges:
         - to: end
           steps:
-            - material: Cloth
+            - material: Straw
               amount: 5
-              doAfter: 5
+              doAfter: 10
     - node: end
       entity: civ13_head_chief_hat
 - type: construction
