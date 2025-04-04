@@ -61,7 +61,7 @@ private void OnGetVerbs(EntityUid uid, TreeBranchesComponent component, ref GetV
 
     var verb = new AlternativeVerb
     {
-        Text = Loc.GetString("collect-branch-verb"),
+        Text = "Collect Branch",
         Act = () => StartCollectingBranch(uid, component, user)
     };
     args.Verbs.Add(verb);
