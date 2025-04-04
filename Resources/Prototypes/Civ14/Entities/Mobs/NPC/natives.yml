@@ -8,7 +8,8 @@
       factions:
         - Syndicate
     - type: Loadout
-      roleLoadout: [NativeLoadoutMelee]
+      startingGear: [NativeInhandMeleeSpear, NativeInhandMeleeBoneAxe, NativeInhandMeleeFlintAxe]
+      roleLoadout: [NativeLoadout1, NativeLoadout2, NativeLoadout3, NativeLoadout4, NativeLoadout5, NativeLoadout6]
     - type: InputMover
     - type: MobMover
     - type: HTN
@@ -25,66 +26,140 @@
       factions:
         - Syndicate
     - type: Loadout
-      roleLoadout: [NativeLoadoutRanged]
+      startingGear: [NativeInhandRanged]
+      roleLoadout: [NativeLoadout1, NativeLoadout2, NativeLoadout3, NativeLoadout4, NativeLoadout5, NativeLoadout6]
     - type: InputMover
     - type: MobMover
     - type: HTN
       rootTask:
         task: SimpleHumanoidHostileCompound
 
+# role loadouts
 - type: roleLoadout
-  id: NativeLoadoutMelee
+  id: NativeLoadout1
   groups:
-    - NativeHead
-    - NativeMask
-    - NativeNeck
+    - NativeHead1
+    - NativeMask1
+    - NativeNeck1
     - NativeShoes
-    - NativeJumpsuit
-    - NativePockets
-    - NativeInhandMelee
+    - NativeJumpsuit1
+    - NativePocketHerbs
 
 - type: roleLoadout
-  id: NativeLoadoutRanged
+  id: NativeLoadout2
   groups:
-    - NativeHead
-    - NativeMask
-    - NativeNeck
+    - NativeHead1
+    - NativeNeck5
     - NativeShoes
-    - NativeJumpsuit
-    - NativePockets
-    - NativeInhandRanged
+    - NativeJumpsuit2
+    - NativePocketHerbs
+
+- type: roleLoadout
+  id: NativeLoadout3
+  groups:
+    - NativeHead2
+    - NativeMask2
+    - NativeNeck2
+    - NativeJumpsuit3
+    - NativePocketHerbs
+
+- type: roleLoadout
+  id: NativeLoadout4
+  groups:
+    - NativeMask2
+    - NativeNeck4
+    - NativeJumpsuit4
+    - NativePocketBandage
+
+- type: roleLoadout
+  id: NativeLoadout5
+  groups:
+    - NativeNeck2
+    - NativeJumpsuit4
+    - NativeShoes
+    - NativePocketBandage
+
+- type: roleLoadout
+  id: NativeLoadout6
+  groups:
+    - NativeNeck3
+    - NativeJumpsuit1
+    - NativeMask3
+    - NativeShoes
+    - NativePocketBandage
 
 ## loadout groups
-
 - type: loadoutGroup
-  id: NativeHead
+  id: NativeHead1
   name: "Native Head Loadout"
   minLimit: 0
   maxLimit: 1
   loadouts:
     - NativeNPCHead1
+- type: loadoutGroup
+  id: NativeHead2
+  name: "Native Head Loadout"
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
     - NativeNPCHead2
 
 - type: loadoutGroup
-  id: NativeMask
+  id: NativeMask1
   name: "Native Mask Loadout"
   minLimit: 0
   maxLimit: 1
   loadouts:
     - NativeNPCMask1
+- type: loadoutGroup
+  id: NativeMask2
+  name: "Native Mask Loadout"
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
     - NativeNPCMask2
+- type: loadoutGroup
+  id: NativeMask3
+  name: "Native Mask Loadout"
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
     - NativeNPCMask3
 
 - type: loadoutGroup
-  id: NativeNeck
+  id: NativeNeck1
   name: "Native Accessory Loadout"
   minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCNeck1
+- type: loadoutGroup
+  id: NativeNeck2
+  name: "Native Accessory Loadout"
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
     - NativeNPCNeck2
+- type: loadoutGroup
+  id: NativeNeck3
+  name: "Native Accessory Loadout"
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
     - NativeNPCNeck3
+- type: loadoutGroup
+  id: NativeNeck4
+  name: "Native Accessory Loadout"
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
     - NativeNPCNeck4
+- type: loadoutGroup
+  id: NativeNeck5
+  name: "Native Accessory Loadout"
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
     - NativeNPCNeck5
 
 - type: loadoutGroup
@@ -96,123 +171,124 @@
     - NativeNPCShoes1
 
 - type: loadoutGroup
-  id: NativeJumpsuit
+  id: NativeJumpsuit1
   name: "Native Jumpsuit Loadout"
   minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCJumpsuit1
+- type: loadoutGroup
+  id: NativeJumpsuit2
+  name: "Native Jumpsuit Loadout"
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
     - NativeNPCJumpsuit2
+- type: loadoutGroup
+  id: NativeJumpsuit3
+  name: "Native Jumpsuit Loadout"
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
     - NativeNPCJumpsuit3
+- type: loadoutGroup
+  id: NativeJumpsuit4
+  name: "Native Jumpsuit Loadout"
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
     - NativeNPCJumpsuit4
 
 - type: loadoutGroup
-  id: NativePockets
+  id: NativePocketHerbs
   name: "Native Pockets Loadout"
   minLimit: 1
   maxLimit: 1
   loadouts:
     - NativePocketHerbs
-    - NativePocketArrow
+- type: loadoutGroup
+  id: NativePocketBandage
+  name: "Native Pockets Loadout"
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
     - NativePocketBandage
 
-- type: loadoutGroup
-  id: NativeInhandRanged
-  name: "Native Ranged Weapons"
-  minLimit: 1
-  maxLimit: 1
-  loadouts:
-    - NativeInhandRanged
-
-- type: loadoutGroup
-  id: NativeInhandMelee
-  name: "Native Melee Weapons"
-  minLimit: 1
-  maxLimit: 1
-  loadouts:
-    - NativeInhandMeleeFlintAxe
-    - NativeInhandMeleeBoneAxe
-    - NativeInhandMeleeSpear
-
 ## starting gears
-
-- type: startingGear
+- type: loadout
   id: NativeNPCJumpsuit1
   equipment:
-    head: civ13_uniform_long_leather_loincloth
-- type: startingGear
+    jumpsuit: civ13_uniform_long_leather_loincloth
+- type: loadout
   id: NativeNPCJumpsuit2
   equipment:
-    head: civ13_uniform_leather_loincloth
-- type: startingGear
+    jumpsuit: civ13_uniform_leather_loincloth
+- type: loadout
   id: NativeNPCJumpsuit3
   equipment:
-    head: civ13_uniform_short_leather_loincloth
-- type: startingGear
+    jumpsuit: civ13_uniform_short_leather_loincloth
+- type: loadout
   id: NativeNPCJumpsuit4
   equipment:
     head: civ13_uniform_cotton_loincloth
-- type: startingGear
+- type: loadout
   id: NativeNPCHead1
   equipment:
     head: civ13_head_chief_hat
-- type: startingGear
+- type: loadout
   id: NativeNPCHead2
   equipment:
     head: civ13_head_wolfpelt_headcover
 
-- type: startingGear
+- type: loadout
   id: NativeNPCMask1
   equipment:
     mask: civ13_mask_stone_mask
-- type: startingGear
+- type: loadout
   id: NativeNPCMask2
   equipment:
     mask: civ13_mask_wooden_mask
-- type: startingGear
+- type: loadout
   id: NativeNPCMask3
   equipment:
     mask: civ13_mask_expressive_wooden_mask
 
-- type: startingGear
+- type: loadout
   id: NativeNPCNeck1
   equipment:
     neck: civ13_accessory_blue_indian_acessories
-- type: startingGear
+- type: loadout
   id: NativeNPCNeck2
   equipment:
     neck: civ13_accessory_indian_accessories_1_2
-- type: startingGear
+- type: loadout
   id: NativeNPCNeck3
   equipment:
     neck: civ13_accessory_indian_shaman_bodypaint
-- type: startingGear
+- type: loadout
   id: NativeNPCNeck4
   equipment:
     neck: civ13_accessory_red_indian_acessories
-- type: startingGear
+- type: loadout
   id: NativeNPCNeck5
   equipment:
     neck: civ13_accessory_white_indian_acessories
 
-- type: startingGear
+- type: loadout
   id: NativeNPCShoes1
   equipment:
     shoes: civ13_shoes_sandals
 
-- type: startingGear
+- type: loadout
   id: NativePocketBandage
   equipment:
     pocket1: GauzeLeather1
-- type: startingGear
+- type: loadout
   id: NativePocketHerbs
   equipment:
     pocket1: HealingHerbs1
-- type: startingGear
-  id: NativePocketArrow
-  equipment:
-    pocket1: ImprovisedArrow
 
+## starting gears (weapons)
 - type: startingGear
   id: NativeInhandMeleeSpear
   inhand:
@@ -231,4 +307,4 @@
   equipment:
     belt: ClothingBeltQuiver
   inhand:
-    - ImprovisedBow
+    - BowImprovised
