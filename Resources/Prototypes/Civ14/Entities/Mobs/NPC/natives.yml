@@ -72,13 +72,45 @@
 
 - type: entity
   name: friendly tribesman
-  parent: MobNativeRanged
+  parent: BaseMobHuman
   id: MobNativeRangedFriendly
   suffix: "Ranged, Friendly"
   components:
     - type: NpcFactionMember
       factions:
         - Nomads
+    - type: Loadout
+      prototypes: [NativeInhandRanged]
+      roleLoadout:
+        [
+          NativeLoadout1,
+          NativeLoadout2,
+          NativeLoadout3,
+          NativeLoadout4,
+          NativeLoadout5,
+          NativeLoadout6,
+          NativeLoadout7,
+          NativeLoadout8,
+        ]
+    - type: InputMover
+    - type: MobMover
+    - type: HTN
+      rootTask:
+        task: SimpleHumanoidHostileCompound
+    - type: Gun
+      minAngle: 0
+      maxAngle: 5
+      fireRate: 1
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        collection: BulletMiss
+      soundEmpty: null
+    - type: BallisticAmmoProvider
+      proto: ArrowImprovised
+      capacity: 30
+    - type: CombatMode
 
 - type: entity
   name: friendly tribesman
@@ -89,7 +121,24 @@
     - type: NpcFactionMember
       factions:
         - Nomads
-
+    - type: Loadout
+      prototypes: [NativeInhandMeleeSpear, NativeInhandMeleeBoneAxe, NativeInhandMeleeFlintAxe]
+      roleLoadout:
+        [
+          NativeLoadout1,
+          NativeLoadout2,
+          NativeLoadout3,
+          NativeLoadout4,
+          NativeLoadout5,
+          NativeLoadout6,
+          NativeLoadout7,
+          NativeLoadout8,
+        ]
+    - type: InputMover
+    - type: MobMover
+    - type: HTN
+      rootTask:
+        task: SimpleHumanoidHostileCompound
 # role loadouts
 - type: roleLoadout
   id: NativeLoadout1
