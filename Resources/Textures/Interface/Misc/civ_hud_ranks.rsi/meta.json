@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "commander",
+      "directions": 1
+    },
+    {
+      "name": "designated_marksman",
+      "directions": 1
+    },
+    {
+      "name": "i_cpl",
+      "directions": 1
+    },
+    {
+      "name": "i_cpt",
+      "directions": 1
+    },
+    {
+      "name": "i_lt",
+      "directions": 1
+    },
+    {
+      "name": "i_maj",
+      "directions": 1
+    },
+    {
+      "name": "i_sgt",
+      "directions": 1
+    },
+    {
+      "name": "i_ssgt",
+      "directions": 1
+    },
+    {
+      "name": "medic",
+      "directions": 1
+    },
+    {
+      "name": "mg",
+      "directions": 1
+    },
+    {
+      "name": "nco",
+      "directions": 1
+    },
+    {
+      "name": "officer",
+      "directions": 1
+    },
+    {
+      "name": "rifleman",
+      "directions": 1
+    }
+  ]
+}
