@@ -91,14 +91,14 @@
 ## loadout groups
 - type: loadoutGroup
   id: NativeHead1
-  name: "Native Head Loadout"
+  name: loadout-group-native-head
   minLimit: 0
   maxLimit: 1
   loadouts:
     - NativeNPCHead1
 - type: loadoutGroup
   id: NativeHead2
-  name: "Native Head Loadout"
+  name: loadout-group-native-head
   minLimit: 0
   maxLimit: 1
   loadouts:
@@ -106,21 +106,21 @@
 
 - type: loadoutGroup
   id: NativeMask1
-  name: "Native Mask Loadout"
+  name: loadout-group-native-mask
   minLimit: 0
   maxLimit: 1
   loadouts:
     - NativeNPCMask1
 - type: loadoutGroup
   id: NativeMask2
-  name: "Native Mask Loadout"
+  name: loadout-group-native-mask
   minLimit: 0
   maxLimit: 1
   loadouts:
     - NativeNPCMask2
 - type: loadoutGroup
   id: NativeMask3
-  name: "Native Mask Loadout"
+  name: loadout-group-native-mask
   minLimit: 0
   maxLimit: 1
   loadouts:
@@ -128,35 +128,35 @@
 
 - type: loadoutGroup
   id: NativeNeck1
-  name: "Native Accessory Loadout"
+  name: loadout-group-native-neck
   minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCNeck1
 - type: loadoutGroup
   id: NativeNeck2
-  name: "Native Accessory Loadout"
+  name: loadout-group-native-neck
   minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCNeck2
 - type: loadoutGroup
   id: NativeNeck3
-  name: "Native Accessory Loadout"
+  name: loadout-group-native-neck
   minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCNeck3
 - type: loadoutGroup
   id: NativeNeck4
-  name: "Native Accessory Loadout"
+  name: loadout-group-native-neck
   minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCNeck4
 - type: loadoutGroup
   id: NativeNeck5
-  name: "Native Accessory Loadout"
+  name: loadout-group-native-neck
   minLimit: 1
   maxLimit: 1
   loadouts:
@@ -164,7 +164,7 @@
 
 - type: loadoutGroup
   id: NativeShoes
-  name: "Native Shoes Loadout"
+  name: loadout-group-native-shoes
   minLimit: 0
   maxLimit: 1
   loadouts:
@@ -172,28 +172,28 @@
 
 - type: loadoutGroup
   id: NativeJumpsuit1
-  name: "Native Jumpsuit Loadout"
+  name: loadout-group-native-jumpsuit
   minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCJumpsuit1
 - type: loadoutGroup
   id: NativeJumpsuit2
-  name: "Native Jumpsuit Loadout"
+  name: loadout-group-native-jumpsuit
   minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCJumpsuit2
 - type: loadoutGroup
   id: NativeJumpsuit3
-  name: "Native Jumpsuit Loadout"
+  name: loadout-group-native-jumpsuit
   minLimit: 1
   maxLimit: 1
   loadouts:
     - NativeNPCJumpsuit3
 - type: loadoutGroup
   id: NativeJumpsuit4
-  name: "Native Jumpsuit Loadout"
+  name: loadout-group-native-jumpsuit
   minLimit: 1
   maxLimit: 1
   loadouts:
@@ -201,14 +201,14 @@
 
 - type: loadoutGroup
   id: NativePocketHerbs
-  name: "Native Pockets Loadout"
+  name: loadout-group-native-pockets
   minLimit: 1
   maxLimit: 1
   loadouts:
     - NativePocketHerbs
 - type: loadoutGroup
   id: NativePocketBandage
-  name: "Native Pockets Loadout"
+  name: loadout-group-native-pockets
   minLimit: 1
   maxLimit: 1
   loadouts:
