@@ -494,6 +494,10 @@
         - FloorWood
     - type: Stack
       stackType: FloorTileWood
+    - type: SpawnAfterInteract #Nuke after convert to FloorTile
+      prototype: FloorWoodClassic
+      doAfter: 0.5
+      removeOnInteract: true
     - type: Construction
       graph: TileWood
       node: woodtile

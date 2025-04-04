@@ -18,12 +18,11 @@
       damageModifierSet: Wood
     - type: Destructible
       thresholds:
-        - trigger:
-            !type:DamageTrigger
+        - trigger: !type:DamageTrigger
             damage: 80
           behaviors:
             - !type:DoActsBehavior
-              acts: [ "Destruction" ]
+              acts: ["Destruction"]
 
 - type: entity
   name: wild plant
@@ -38,14 +37,17 @@
         components:
           - Hands
       loot:
-        All: PotatoWildHarverst
+        All: PotatoWildHarvest
 
 - type: entityLootTable
-  id: PotatoWildHarverst
+  id: PotatoWildHarvest
   entries:
-  - id: FoodPotato
-    amount: 1
-    maxAmount: 1
+    - id: FoodPotato
+      amount: 1
+      maxAmount: 1
+    - id: PotatoSeedsCiv
+      amount: 1
+      maxAmount: 1
 
 - type: entity
   name: wild plant
@@ -60,14 +62,17 @@
         components:
           - Hands
       loot:
-        All: CornWildHarverst
+        All: CornWildHarvest
 
 - type: entityLootTable
-  id: CornWildHarverst
+  id: CornWildHarvest
   entries:
-  - id: FoodCorn
-    amount: 1
-    maxAmount: 1
+    - id: FoodCorn
+      amount: 1
+      maxAmount: 1
+    - id: CornSeedsCiv
+      amount: 1
+      maxAmount: 1
 
 - type: entity
   name: wild plant
@@ -82,14 +87,17 @@
         components:
           - Hands
       loot:
-        All: RiceWildHarverst
+        All: RiceWildHarvest
 
 - type: entityLootTable
-  id: RiceWildHarverst
+  id: RiceWildHarvest
   entries:
-  - id: RiceBushel
-    amount: 1
-    maxAmount: 1
+    - id: RiceBushel
+      amount: 1
+      maxAmount: 1
+    - id: RiceSeedsCiv
+      amount: 1
+      maxAmount: 1
 
 - type: entity
   name: wild plant
@@ -104,14 +112,17 @@
         components:
           - Hands
       loot:
-        All: WheatWildHarverst
+        All: WheatWildHarvest
 
 - type: entityLootTable
-  id: WheatWildHarverst
+  id: WheatWildHarvest
   entries:
-  - id: WheatBushel
-    amount: 1
-    maxAmount: 1
+    - id: WheatBushel
+      amount: 1
+      maxAmount: 1
+    - id: WheatSeedsCiv
+      amount: 1
+      maxAmount: 1
 
 - type: entity
   name: wild plant
@@ -126,14 +137,36 @@
         components:
           - Hands
       loot:
-        All: HempWildHarverst
+        All: HempWildHarvest
 
 - type: entityLootTable
-  id: HempWildHarverst
+  id: HempWildHarvest
   entries:
-  - id: HempSeedsCiv
-    amount: 1
-    maxAmount: 1
-  - id: MaterialRope1
-    amount: 1
-    maxAmount: 1
+    - id: HempSeedsCiv
+      amount: 1
+      maxAmount: 1
+    - id: MaterialRope1
+      amount: 1
+      maxAmount: 1
+
+- type: entity
+  name: healing plant
+  parent: WildPlantBase
+  id: WildPlantHealing
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/aloe.rsi
+      state: harvest
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: HealingHerbsHarvest
+
+- type: entityLootTable
+  id: HealingHerbsHarvest
+  entries:
+    - id: HealingHerbs1
+      amount: 2
+      maxAmount: 3

@@ -3,6 +3,8 @@ import yaml
 import base64
 import struct
 import random
+import sys
+
 from pyfastnoiselite.pyfastnoiselite import (
     FastNoiseLite,
     NoiseType,
@@ -13,6 +15,15 @@ from pyfastnoiselite.pyfastnoiselite import (
 )
 import time
 import os
+
+if len(sys.argv) == 1:
+    mapWidth = 300
+    mapHeight = 300
+    print(f"No custom mapsize specified, using defaults: {mapWidth}w x {mapHeight}h")
+else:
+    mapWidth = int(sys.argv[1])
+    mapHeight = int(sys.argv[2])
+    print(f"Using specified mapsize: {mapWidth}w x {mapHeight}h")
 
 # -----------------------------------------------------------------------------
 # Tilemap
@@ -29,15 +40,15 @@ TILEMAP_REVERSE = {v: k for k, v in TILEMAP.items()}
 
 
 # -----------------------------------------------------------------------------
-# Funções Auxiliares
+# Helper Functions
 # -----------------------------------------------------------------------------
 def round_to_chunk(number, chunk):
-    """Arredonda um número para o múltiplo inferior mais próximo do tamanho do chunk."""
+    """Rounds a number to the inferior multiplier of a chunk."""
     return number - (number % chunk)
 
 
 def add_border(tile_map, border_value):
-    """Adiciona uma borda ao tile_map com o valor especificado."""
+    """Adds a border to tile_map with the specified value."""
     bordered = np.pad(
         tile_map, pad_width=1, mode="constant", constant_values=border_value
     )
@@ -45,7 +56,7 @@ def add_border(tile_map, border_value):
 
 
 def encode_tiles(tile_map):
-    """Codifica os tiles em formato base64 para o YAML."""
+    """Codifies the tiles in base64 for the YAML."""
     tile_bytes = bytearray()
     for y in range(tile_map.shape[0]):  # u
         for x in range(tile_map.shape[1]):
@@ -59,13 +70,13 @@ def encode_tiles(tile_map):
 
 
 # -----------------------------------------------------------------------------
-# Geração do Tile Map com Múltiplas Camadas
+# Generating a TileMap with multiple layers
 # -----------------------------------------------------------------------------
 def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
-    """Gera o tile_map com base nas camadas de tiles definidas em biome_tile_layers."""
+    """Generates the tile_map based on the layers defined in biome_tile_layers."""
     tile_map = np.full((height, width), TILEMAP_REVERSE["FloorDirt"], dtype=np.int32)
 
-    # Ordena as camadas por prioridade (menor para maior)
+    # Orders the layers by priority (largest to smallest)
     sorted_layers = sorted(
         biome_tile_layers, key=lambda layer: layer.get("priority", 1)
     )
@@ -90,7 +101,7 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
             seed_key = layer.get("seed_key", layer["tile_type"])
             noise.seed = (seed_base + hash(seed_key)) % (2**31)
 
-        # Configuração de modulação, se presente
+        # Modulation config, if present
         mod_noise = None
         if "modulation" in layer:
             mod_config = layer["modulation"]
@@ -119,7 +130,7 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
         for y in range(height):
             for x in range(width):
                 noise_value = noise.get_noise(x, y)
-                noise_value = (noise_value + 1) / 2  # Normalizar para [0, 1]
+                noise_value = (noise_value + 1) / 2  # Normalise into [0, 1]
 
                 place_tile = False
                 if mod_noise:
@@ -147,18 +158,18 @@ def generate_tile_map(width, height, biome_tile_layers, seed_base=None):
                             tile_map[y, x] = TILEMAP_REVERSE[layer["tile_type"]]
                             count += 1
 
-        print(f"Camada {layer['tile_type']}: {count} tiles colocados")
+        print(f"Layer {layer['tile_type']}: {count} tiles placed")
     return tile_map
 
 
 # -----------------------------------------------------------------------------
-# Geração de Entidades
+# Entity generation
 # -----------------------------------------------------------------------------
 global_uid = 3
 
 
 def next_uid():
-    """Gera um UID único para cada entidade."""
+    """Generates an unique UID for each entity."""
     global global_uid
     uid = global_uid
     global_uid += 1
@@ -166,7 +177,7 @@ def next_uid():
 
 
 def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
-    """Gera entidades dinâmicas com base nas camadas de entidades, respeitando prioridades."""
+    """Generates dynamic entities based on the entity layers, respecting priorities."""
     groups = {}
     entity_count = {}  # Count entities by proto
     h, w = tile_map.shape
@@ -212,7 +223,7 @@ def generate_dynamic_entities(tile_map, biome_entity_layers, seed_base=None):
                     continue
                 tile_val = tile_map[y, x]
                 noise_value = noise.get_noise(x, y)
-                noise_value = (noise_value + 1) / 2  # Normalizar para [0, 1]
+                noise_value = (noise_value + 1) / 2  # Normalise into [0, 1]
                 if noise_value > layer["threshold"] and layer["tile_condition"](
                     tile_val
                 ):
@@ -328,7 +339,7 @@ def generate_decals(tile_map, biome_decal_layers, seed_base=None, chunk_size=16)
     return decals_by_id
 
 
-# Definir uniqueMixes para atmosfera
+# Defines uniqueMixes for the atmosphere
 unique_mixes = [
     {
         "volume": 2500,
@@ -345,7 +356,7 @@ unique_mixes = [
 
 
 def generate_atmosphere_tiles(width, height, chunk_size):
-    """Gera os tiles de atmosfera com base no tamanho do mapa."""
+    """Generates the atmos tiles based on the map size."""
     max_x = (width + chunk_size - 1) // chunk_size - 1
     max_y = (height + chunk_size - 1) // chunk_size - 1
     tiles = {}
@@ -514,10 +525,10 @@ def generate_all_entities(tile_map, chunk_size=16, biome_layers=None, seed_base=
 
 
 # -----------------------------------------------------------------------------
-# Salvar YAML
+# Save YAML
 # -----------------------------------------------------------------------------
 def represent_sound_path_specifier(dumper, data):
-    """Representação personalizada para SoundPathSpecifier no YAML."""
+    """Customised representation for the SoundPathSpecifier in the YAML."""
     for key, value in data.items():
         if isinstance(key, str) and key.startswith("!type:"):
             tag = key
@@ -534,7 +545,7 @@ def save_map_to_yaml(
     chunk_size=16,
     seed_base=None,
 ):
-    """Salva o mapa gerado em um arquivo YAML no diretório especificado."""
+    """Saves the generated map in a YAML file in the specified folder."""
     all_entities = generate_all_entities(tile_map, chunk_size, biome_layers, seed_base)
     count = sum(len(group.get("entities", [])) for group in all_entities)
     map_data = {
@@ -630,10 +641,10 @@ def apply_iterative_erosion(tile_map, tile_type, min_neighbors=3, max_iterations
 
 
 # -----------------------------------------------------------------------------
-# Geração de Spawn Points
+# Spawn Point Generation
 # -----------------------------------------------------------------------------
 def generate_spawn_points(tile_map, num_points_per_corner=1):
-    """Gera 4 SpawnPointNomads e 4 SpawnPointLatejoin, um de cada em cada canto do mapa em FloorPlanetGrass."""
+    """Generates 4 SpawnPointNomads and 4 SpawnPointLatejoin, one on each corner, on FloorPlanetGrass."""
     h, w = tile_map.shape
     spawn_positions = set()
     nomads_entities = []
@@ -655,7 +666,7 @@ def generate_spawn_points(tile_map, num_points_per_corner=1):
                         tile_map[y, x] == astro_grass_id
                         and (x, y) not in spawn_positions
                     ):
-                        # Verifica tiles adjacentes válidos
+                        # Verifies adjacent valid tiles
                         adjacent = []
                         for dx, dy in directions:
                             nx, ny = x + dx, y + dy
@@ -828,6 +839,7 @@ MAP_CONFIG = [
             "WildPlantRice",
             "WildPlantWheat",
             "WildPlantHemp",
+            "WildPlantHealing",
         ],
         "noise_type": NoiseType.NoiseType_OpenSimplex2S,
         "octaves": 6,
@@ -1131,14 +1143,14 @@ MAP_CONFIG = [
 ]
 
 # -----------------------------------------------------------------------------
-# Execução
+# Execution
 # -----------------------------------------------------------------------------
 start_time = time.time()
 
 seed_base = random.randint(0, 1000000)
-print(f"Seed base gerado: {seed_base}")
+print(f"Generated seed: {seed_base}")
 
-width, height = 500, 500
+width, height = mapWidth, mapHeight
 chunk_size = 16
 
 biome_tile_layers = [layer for layer in MAP_CONFIG if layer["type"] == "BiomeTileLayer"]
@@ -1170,4 +1182,4 @@ save_map_to_yaml(
 
 end_time = time.time()
 total_time = end_time - start_time
-print(f"Mapa gerado e salvo em {total_time:.2f} segundos!")
+print(f"Map generated and saved in {total_time:.2f} seconds!")

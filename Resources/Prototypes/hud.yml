@@ -2,7 +2,7 @@
   id: SS14DefaultTheme
   name: ui-options-hud-theme-default
   path: Default
-  order: -1
+  order: 1
 
 - type: hudTheme
   id: SS14PlasmafireTheme
@@ -32,7 +32,7 @@
   id: SS14MinimalistTheme
   name: ui-options-hud-theme-minimalist
   path: Minimalist
-  order: 1
+  order: 7
 
 - type: hudTheme
   id: SS14AshenTheme

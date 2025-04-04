@@ -23,7 +23,7 @@
               amount: 4
           steps:
             # Needs StackType ID
-            - material: WoodPlank
+            - material: Straw
               amount: 1
     - node: end
       entity: FloorTileItemThatch

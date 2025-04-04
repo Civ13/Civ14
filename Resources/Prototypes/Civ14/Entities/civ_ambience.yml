@@ -3,7 +3,7 @@
   sound:
     params:
       loop: true
-      volume: -3
+      volume: -6
     collection: AmbienceCivWoodland
   rules: NearGrass
   fadeIn: true
@@ -30,7 +30,7 @@
   sound:
     params:
       loop: true
-      volume: -3
+      volume: -6
     collection: AmbienceCivDesert
   rules: NearDesert
   fadeIn: true
@@ -57,7 +57,7 @@
   sound:
     params:
       loop: true
-      volume: -3
+      volume: -6
     collection: AmbienceCivJungle
   rules: NearJungle
   fadeIn: true
@@ -84,7 +84,7 @@
   sound:
     params:
       loop: true
-      volume: -3
+      volume: -6
     collection: AmbienceCivShore
   rules: NearShore
   fadeIn: true
@@ -111,7 +111,7 @@
   sound:
     params:
       loop: true
-      volume: -3
+      volume: -6
     collection: AmbienceCivWinter
   rules: NearWinter
   fadeIn: true

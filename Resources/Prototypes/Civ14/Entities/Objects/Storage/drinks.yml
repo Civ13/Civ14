@@ -1,0 +1,31 @@
+- type: entity
+  parent: DrinkBaseCup
+  id: WoodCup
+  name: wood cup
+  description: A crude cup, made of wood.
+  components:
+    - type: Drink
+    - type: Sprite
+      sprite: "Civ14/Objects/drinks.rsi"
+      state: wood_cup2
+    - type: Construction
+      graph: WoodCup
+      node: end
+      agemin: 0
+      agemax: 8
+
+- type: entity
+  parent: DrinkBaseCup
+  id: WoodMug
+  name: wood mug
+  description: A crude mug, made of wood.
+  components:
+    - type: Drink
+    - type: Sprite
+      sprite: "Civ14/Objects/drinks.rsi"
+      state: wood_cup
+    - type: Construction
+      graph: WoodMug
+      node: end
+      agemin: 0
+      agemax: 8

@@ -7,7 +7,7 @@
   startNode: start
   targetNode: woodtile
   category: construction-category-tiles
-  description: "Four pieces of wooden station flooring."
+  description: "Four pieces of wooden flooring."
   icon: { sprite: Objects/Tiles/tile.rsi, state: wood }
   objectType: Item
   agemin: 0

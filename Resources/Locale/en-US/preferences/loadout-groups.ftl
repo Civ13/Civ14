@@ -204,3 +204,10 @@ loadout-group-psychologist-jumpsuit = Psychologist jumpsuit
 
 loadout-group-boxer-jumpsuit = Boxer jumpsuit
 loadout-group-boxer-gloves = Boxer gloves
+
+loadout-group-native-head = Native Head Loadout
+loadout-group-native-mask = Native Mask Loadout
+loadout-group-native-jumpsuit = Native Jumpsuit Loadout
+loadout-group-native-shoes = Native Shoes Loadout
+loadout-group-native-neck = Native Neck Loadout
+loadout-group-native-pockets = Native Pocket Loadout

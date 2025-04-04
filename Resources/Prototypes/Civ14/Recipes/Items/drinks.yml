@@ -1,0 +1,53 @@
+- type: construction
+  name: wood cup
+  id: WoodCup
+  graph: WoodCup
+  startNode: start
+  targetNode: end
+  category: construction-category-storage
+  description: A crude cup, made of wood.
+  icon: { sprite: "Civ14/Objects/drinks.rsi", state: wood_cup2 }
+  objectType: Item
+  agemin: 0
+  agemax: 8
+
+- type: constructionGraph
+  id: WoodCup
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 1
+              doAfter: 2
+    - node: end
+      entity: WoodCup
+
+- type: construction
+  name: wood mug
+  id: WoodMug
+  graph: WoodMug
+  startNode: start
+  targetNode: end
+  category: construction-category-storage
+  description: A crude mug, made of wood.
+  icon: { sprite: "Civ14/Objects/drinks.rsi", state: wood_cup }
+  objectType: Item
+  agemin: 0
+  agemax: 8
+
+- type: constructionGraph
+  id: WoodMug
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 1
+              doAfter: 2
+    - node: end
+      entity: WoodMug
