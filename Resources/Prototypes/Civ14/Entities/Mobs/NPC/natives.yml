@@ -2,7 +2,7 @@
   name: native tribesman
   parent: BaseMobHuman
   id: MobNativeMelee
-  suffix: "Melee"
+  suffix: "Melee, Hostile"
   components:
     - type: NpcFactionMember
       factions:
@@ -30,7 +30,7 @@
   name: native tribesman
   parent: BaseMobHuman
   id: MobNativeRanged
-  suffix: "Ranged"
+  suffix: "Ranged, Hostile"
   components:
     - type: NpcFactionMember
       factions:
@@ -67,6 +67,26 @@
       proto: ArrowImprovised
       capacity: 30
     - type: CombatMode
+
+- type: entity
+  name: friendly tribesman
+  parent: MobNativeRanged
+  id: MobNativeRangedFriendly
+  suffix: "Ranged, Friendly"
+  components:
+    - type: NpcFactionMember
+      factions:
+        - Nomads
+
+- type: entity
+  name: friendly tribesman
+  parent: MobNativeMelee
+  id: MobNativeMeleeFriendly
+  suffix: "Melee, Friendly"
+  components:
+    - type: NpcFactionMember
+      factions:
+        - Nomads
 
 # role loadouts
 - type: roleLoadout
