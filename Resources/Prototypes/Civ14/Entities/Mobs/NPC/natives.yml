@@ -8,7 +8,7 @@
       factions:
         - Syndicate
     - type: Loadout
-      startingGear: [NativeInhandMeleeSpear, NativeInhandMeleeBoneAxe, NativeInhandMeleeFlintAxe]
+      prototypes: [NativeInhandMeleeSpear, NativeInhandMeleeBoneAxe, NativeInhandMeleeFlintAxe]
       roleLoadout: [NativeLoadout1, NativeLoadout2, NativeLoadout3, NativeLoadout4, NativeLoadout5, NativeLoadout6]
     - type: InputMover
     - type: MobMover
@@ -26,7 +26,7 @@
       factions:
         - Syndicate
     - type: Loadout
-      startingGear: [NativeInhandRanged]
+      prototypes: [NativeInhandRanged]
       roleLoadout: [NativeLoadout1, NativeLoadout2, NativeLoadout3, NativeLoadout4, NativeLoadout5, NativeLoadout6]
     - type: InputMover
     - type: MobMover
