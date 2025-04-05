@@ -275,7 +275,7 @@ public sealed class WeatherNomadsSystem : EntitySystem
             {
                 // Change the season
                 nomads.CurrentSeason = GetNextSeason(nomads.CurrentSeason);
-                nomads.NextSeasonChange = _timing.CurTime + TimeSpan.FromMinutes(5);
+                nomads.NextSeasonChange = _timing.CurTime + TimeSpan.FromMinutes(45);
                 Dirty(uid, nomads);
                 Log.Debug($"Changed season to {nomads.CurrentSeason}");
                 _chat.DispatchGlobalAnnouncement($"Changed season to {nomads.CurrentSeason}",
