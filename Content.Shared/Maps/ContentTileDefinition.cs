@@ -41,6 +41,8 @@ namespace Content.Shared.Maps
 
         [DataField("isSubfloor")] public bool IsSubFloor { get; private set; }
 
+        [DataField("biome")] public string Biome { get; private set; } = "Temperate";
+
         [DataField("baseTurf")]
         public string BaseTurf { get; private set; } = string.Empty;
 

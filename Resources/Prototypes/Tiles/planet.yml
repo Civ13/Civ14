@@ -11,6 +11,20 @@
   heatCapacity: 10000
   weather: true
   indestructible: true
+  biome: SemiArid
+  suffix: SemiArid
+
+- type: tile
+  id: FloorPlanetDryDirtDesert
+  parent: FloorPlanetDryDirt
+  biome: Desert
+  suffix: Desert
+
+- type: tile
+  id: FloorPlanetDryDirtSavanna
+  parent: FloorPlanetDryDirt
+  biome: Savanna
+  suffix: Savanna
 
 # Desert
 - type: tile
@@ -41,7 +55,9 @@
   heatCapacity: 10000
   weather: true
   indestructible: true
-# Desert
+  biome: Desert
+  suffix: Desert
+
 - type: tile
   id: FloorSand
   name: tiles-sand-floor
@@ -62,6 +78,32 @@
   heatCapacity: 10000
   weather: true
   indestructible: true
+  biome: Temperate
+  suffix: Temperate
+
+- type: tile
+  id: FloorSandSemiArid
+  parent: FloorSand
+  biome: SemiArid
+  suffix: SemiArid
+
+- type: tile
+  id: FloorSandTaiga
+  parent: FloorSand
+  biome: Taiga
+  suffix: Taiga
+
+- type: tile
+  id: FloorSandSavanna
+  parent: FloorSand
+  biome: Savanna
+  suffix: Savanna
+
+- type: tile
+  id: FloorSandJungle
+  parent: FloorSand
+  biome: Jungle
+  suffix: Jungle
 
 - type: tile
   id: FloorLowDesert
@@ -112,6 +154,23 @@
   weather: true
   indestructible: true
 
+- type: tile
+  id: FloorPlanetGrassTaiga
+  parent: FloorPlanetGrass
+  biome: Taiga
+  suffix: Taiga
+
+- type: tile
+  id: FloorPlanetGrassSemiArid
+  parent: FloorPlanetGrass
+  biome: SemiArid
+  suffix: SemiArid
+
+- type: tile
+  id: FloorPlanetGrassJungle
+  parent: FloorPlanetGrass
+  biome: Jungle
+  suffix: Jungle
 # Lava
 - type: tile
   id: FloorBasalt
@@ -156,7 +215,8 @@
   heatCapacity: 10000
   weather: true
   indestructible: true
-
+  biome: Tundra
+  suffix: Tundra
 # Ice
 - type: tile
   id: FloorIce
@@ -170,6 +230,8 @@
   mobFrictionNoInput: 0.05
   mobAcceleration: 2
   indestructible: true
+  biome: Tundra
+  suffix: Tundra
 
 # Dug snow
 - type: tile
@@ -188,4 +250,5 @@
   heatCapacity: 10000
   weather: true
   indestructible: true
-# Wasteland
+  biome: Tundra
+  suffix: Tundra
