@@ -114,6 +114,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowSyndicateIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud.rsi
     state: hostile
