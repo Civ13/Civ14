@@ -301,7 +301,7 @@ public sealed class PlantHolderSystem : EntitySystem
             return;
         }
 
-        if (TryComp<ProduceComponent>(args.Used, out var produce))
+        if (TryComp<ProduceComponent>(args.Used, out var produce) && false) // Deactivated untill we ballance composting directly into the field
         {
             args.Handled = true;
             _popup.PopupCursor(Loc.GetString("plant-holder-component-compost-message",
