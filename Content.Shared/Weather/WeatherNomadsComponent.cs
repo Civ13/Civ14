@@ -20,4 +20,10 @@ public sealed partial class WeatherNomadsComponent : Component
 
     [DataField("nextSwitchTime")]
     public TimeSpan NextSwitchTime { get; set; } = TimeSpan.Zero;
+
+    [DataField("nextSeasonChange")]
+    public TimeSpan NextSeasonChange { get; set; } = TimeSpan.Zero;
+
+    [DataField("currentSeason")]
+    public string CurrentSeason { get; set; } = "Spring";
 }
