@@ -5,18 +5,17 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
-namespace Content.Shared.NukeOps;
 
 /// <summary>
-/// This is used for tagging a mob as a nuke operative.
+/// This is used for tagging a mob as hostile.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
-public sealed partial class NukeOperativeComponent : Component
+public sealed partial class HostileHUDComponent : Component
 {
 
     /// <summary>
     ///
     /// </summary>
-    [DataField("syndStatusIcon", customTypeSerializer: typeof(PrototypeIdSerializer<FactionIconPrototype>))]
-    public string SyndStatusIcon = "SyndicateFaction";
+    [DataField("statusIcon", customTypeSerializer: typeof(PrototypeIdSerializer<FactionIconPrototype>))]
+    public string StatusIcon = "HostileFaction";
 }

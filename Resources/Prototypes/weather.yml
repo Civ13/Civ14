@@ -48,8 +48,7 @@
     sprite: /Textures/Effects/weather.rsi
     state: hail
   sound:
-    path:
-      /Audio/Effects/Weather/rain.ogg
+    path: /Audio/Effects/Weather/rain.ogg
     params:
       loop: true
       volume: -6

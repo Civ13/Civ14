@@ -1,0 +1,263 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "ah_basic",
+      "directions": 1
+    },
+    {
+      "name": "arab_basic",
+      "directions": 1
+    },
+    {
+      "name": "ballas",
+      "directions": 1
+    },
+    {
+      "name": "barbarian_basic",
+      "directions": 1
+    },
+    {
+      "name": "blugoslavia",
+      "directions": 1
+    },
+    {
+      "name": "brit_basic",
+      "directions": 1
+    },
+    {
+      "name": "chechen_basic",
+      "directions": 1
+    },
+    {
+      "name": "danish_basic",
+      "directions": 1
+    },
+    {
+      "name": "eastern",
+      "directions": 1
+    },
+    {
+      "name": "empire",
+      "directions": 1
+    },
+    {
+      "name": "eng_basic",
+      "directions": 1
+    },
+    {
+      "name": "finnish_basic",
+      "directions": 1
+    },
+    {
+      "name": "fp_basic",
+      "directions": 1
+    },
+    {
+      "name": "fr2_basic",
+      "directions": 1
+    },
+    {
+      "name": "fr_basic",
+      "directions": 1
+    },
+    {
+      "name": "ger0_basic",
+      "directions": 1
+    },
+    {
+      "name": "ger2_basic",
+      "directions": 1
+    },
+    {
+      "name": "ger3_basic",
+      "directions": 1
+    },
+    {
+      "name": "ger_basic",
+      "directions": 1
+    },
+    {
+      "name": "greek_basic",
+      "directions": 1
+    },
+    {
+      "name": "hez_basic",
+      "directions": 1
+    },
+    {
+      "name": "ichiwa",
+      "directions": 1
+    },
+    {
+      "name": "idf_basic",
+      "directions": 1
+    },
+    {
+      "name": "imp_basic",
+      "directions": 1
+    },
+    {
+      "name": "ind_basic",
+      "directions": 1
+    },
+    {
+      "name": "isis_basic",
+      "directions": 1
+    },
+    {
+      "name": "it_basic",
+      "directions": 1
+    },
+    {
+      "name": "jp_basic",
+      "directions": 1
+    },
+    {
+      "name": "nl_basic",
+      "directions": 1
+    },
+    {
+      "name": "nl_old_basic",
+      "directions": 1
+    },
+    {
+      "name": "norway_basic",
+      "directions": 1
+    },
+    {
+      "name": "ot_basic",
+      "directions": 1
+    },
+    {
+      "name": "pirate_basic",
+      "directions": 1
+    },
+    {
+      "name": "police",
+      "directions": 1
+    },
+    {
+      "name": "pol_basic",
+      "directions": 1
+    },
+    {
+      "name": "pt2_basic",
+      "directions": 1
+    },
+    {
+      "name": "pt_basic",
+      "directions": 1
+    },
+    {
+      "name": "rebel_basic",
+      "directions": 1
+    },
+    {
+      "name": "redmenia",
+      "directions": 1
+    },
+    {
+      "name": "rednikov",
+      "directions": 1
+    },
+    {
+      "name": "rn2_basic",
+      "directions": 1
+    },
+    {
+      "name": "rn_basic",
+      "directions": 1
+    },
+    {
+      "name": "robbers",
+      "directions": 1
+    },
+    {
+      "name": "roc_basic",
+      "directions": 1
+    },
+    {
+      "name": "roman_basic",
+      "directions": 1
+    },
+    {
+      "name": "ru_basic",
+      "directions": 1
+    },
+    {
+      "name": "sov_basic",
+      "directions": 1
+    },
+    {
+      "name": "spn_basic",
+      "directions": 1
+    },
+    {
+      "name": "spr_basic",
+      "directions": 1
+    },
+    {
+      "name": "sp_basic",
+      "directions": 1
+    },
+    {
+      "name": "stormcloak",
+      "directions": 1
+    },
+    {
+      "name": "swedish_basic",
+      "directions": 1
+    },
+    {
+      "name": "syria_basic",
+      "directions": 1
+    },
+    {
+      "name": "syria_fsa",
+      "directions": 1
+    },
+    {
+      "name": "ukr_basic",
+      "directions": 1
+    },
+    {
+      "name": "un",
+      "directions": 1
+    },
+    {
+      "name": "upa_basic",
+      "directions": 1
+    },
+    {
+      "name": "us_basic",
+      "directions": 1
+    },
+    {
+      "name": "vc_basic",
+      "directions": 1
+    },
+    {
+      "name": "vn_basic",
+      "directions": 1
+    },
+    {
+      "name": "wagner",
+      "directions": 1
+    },
+    {
+      "name": "western",
+      "directions": 1
+    },
+    {
+      "name": "yamaguchi",
+      "directions": 1
+    }
+  ]
+}

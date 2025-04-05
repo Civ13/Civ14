@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "license": null,
+    "copyright": null,
+    "size": {
+        "x": 9,
+        "y": 9
+    },
+    "states": [
+        {
+            "name": "civ1",
+            "directions": 1
+        },
+        {
+            "name": "civ2",
+            "directions": 1
+        },
+        {
+            "name": "civ3",
+            "directions": 1
+        },
+        {
+            "name": "civ4",
+            "directions": 1
+        },
+        {
+            "name": "civ5",
+            "directions": 1
+        },
+        {
+            "name": "civ6",
+            "directions": 1
+        },
+        {
+            "name": "civp",
+            "directions": 1
+        },
+        {
+            "name": "civpl",
+            "directions": 1
+        },
+        {
+            "name": "hostile",
+            "directions": 1
+        }
+    ]
+}
