@@ -11,10 +11,10 @@ public sealed partial class RespawnableSpawnerComponent : Component
     public List<string> Prototypes = new(); //Enities proto to be spawned
 
     [DataField("minDelay"), ViewVariables(VVAccess.ReadWrite)]
-    public float MinDelay = 1f; // Minimum delay in seconds
+    public float MinDelay = 60f; // Minimum delay in seconds
 
     [DataField("maxDelay"), ViewVariables(VVAccess.ReadWrite)]
-    public float MaxDelay = 2f; // Maximum delay in seconds
+    public float MaxDelay = 300f; // Maximum delay in seconds
 
     [ViewVariables]
     public Dictionary<EntityUid, float> RespawnTimers = new();
