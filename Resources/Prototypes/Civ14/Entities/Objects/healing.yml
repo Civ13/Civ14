@@ -22,6 +22,7 @@
           Cold: -8
           Shock: -5
           Caustic: -5
+        groups:
           Brute: -5
       healingBeginSound:
         path: "/Audio/Items/Medical/ointment_begin.ogg"
