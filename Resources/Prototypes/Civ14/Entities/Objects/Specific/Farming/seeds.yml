@@ -67,6 +67,6 @@
   name: "healing herbs seeds"
   components:
     - type: Seed
-      seedId: healingHerb
+      seedId: healingHerbs
     - type: Sprite
       color: "#17211B"
