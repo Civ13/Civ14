@@ -167,6 +167,6 @@
 - type: entityLootTable
   id: HealingHerbsHarvest
   entries:
-    - id: HealingHerbs1
+    - id: HealingHerbs
       amount: 2
       maxAmount: 3

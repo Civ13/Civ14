@@ -337,7 +337,7 @@
 - type: loadout
   id: NativePocketHerbs
   equipment:
-    pocket1: HealingHerbs1
+    pocket1: HealingHerbs
 
 ## starting gears (weapons)
 - type: startingGear
