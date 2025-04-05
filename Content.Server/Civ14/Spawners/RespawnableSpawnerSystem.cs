@@ -19,7 +19,6 @@ public sealed class RespawnableSpawnerSystem : EntitySystem
         SubscribeLocalEvent<SpawnedByComponent, EntityTerminatingEvent>(OnEntityTerminating);
     }
 
-    // Called when the spawner is initialized on the map to spawn an initial entity
     private void OnMapInit(EntityUid uid, RespawnableSpawnerComponent component, MapInitEvent args)
     {
         if (component.Prototypes.Count > 0)
@@ -31,18 +30,23 @@ public sealed class RespawnableSpawnerSystem : EntitySystem
         }
     }
 
-    // Called when an entity with SpawnedByComponent is terminated (e.g., killed)
     private void OnEntityTerminating(EntityUid uid, SpawnedByComponent spawnedBy, EntityTerminatingEvent args)
     {
         if (_entityManager.TryGetComponent<RespawnableSpawnerComponent>(spawnedBy.Spawner, out var spawner))
         {
-            var delay = _random.NextFloat(spawner.MinDelay, spawner.MaxDelay);
-            var respawnTime = (float)_gameTiming.CurTime.TotalSeconds + delay;
-            spawner.RespawnTimers[uid] = respawnTime;
+            if (spawner != null)
+            {
+                var delay = _random.NextFloat(spawner.MinDelay, spawner.MaxDelay);
+                var respawnTime = (float)_gameTiming.CurTime.TotalSeconds + delay;
+                spawner.RespawnTimers[uid] = respawnTime;
+            }
+        }
+        else
+        {
+            Log.Warning($"Spawner {spawnedBy.Spawner} not found or lacks RespawnableSpawnerComponent for entity {uid}");
         }
     }
 
-    // Runs every frame to check and trigger respawns when timers expire
     public override void Update(float frameTime)
     {
         var query = EntityQueryEnumerator<RespawnableSpawnerComponent>();
@@ -54,11 +58,21 @@ public sealed class RespawnableSpawnerSystem : EntitySystem
                 var currentTime = (float)_gameTiming.CurTime.TotalSeconds;
                 if (currentTime >= respawnTime)
                 {
-                    var prototype = component.Prototypes[_random.Next(component.Prototypes.Count)];
-                    var newEntity = _entityManager.SpawnEntity(prototype, Transform(uid).Coordinates);
-                    var spawnedBy = _entityManager.AddComponent<SpawnedByComponent>(newEntity);
-                    spawnedBy.Spawner = uid;
-                    toRemove.Add(entity);
+                    try
+                    {
+                        var prototype = component.Prototypes[_random.Next(component.Prototypes.Count)];
+                        var newEntity = _entityManager.SpawnEntity(prototype, Transform(uid).Coordinates);
+                        var spawnedBy = _entityManager.AddComponent<SpawnedByComponent>(newEntity);
+                        spawnedBy.Spawner = uid;
+                    }
+                    catch (Exception ex)
+                    {
+                        Log.Error($"Failed to spawn entity for spawner {uid}: {ex.Message}");
+                    }
+                    finally
+                    {
+                        toRemove.Add(entity); // Marks it to remove from RespawnTimers, even if it fails
+                    }
                 }
             }
             foreach (var remove in toRemove)
