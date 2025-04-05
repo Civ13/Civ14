@@ -247,13 +247,18 @@ public sealed class WeatherNomadsSystem : EntitySystem
             .ToList();
 
         if (enabledTypes.Any())
-        {
+        {S
             component.CurrentWeather = enabledTypes.First().PrototypeId ?? "";
             SetWeatherAndTemperature(uid, component);
             component.NextSwitchTime = _timing.CurTime + TimeSpan.FromMinutes(GetRandomSeasonDuration(component));
             component.NextSeasonChange = _timing.CurTime + TimeSpan.FromMinutes(45); // Initialize season change time
             Dirty(uid, component);
             Log.Debug($"Weather started for entity {uid} with {component.CurrentWeather}");
+             Log.Debug($"Seasons started for entity {uid} with {component.CurrentSeason}");
+            _chat.DispatchGlobalAnnouncement($"Current season: {component.CurrentSeason}", null,
+                false,
+                null,
+                null);
         }
         else
         {
