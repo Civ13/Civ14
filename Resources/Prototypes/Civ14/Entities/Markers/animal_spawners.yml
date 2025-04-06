@@ -38,7 +38,7 @@
   components:
     - type: Sprite
       sprite: Civ14/Objects/animal_spawner.rsi
-      state: cave_den-folliage
+      state: cave_den-foliage
     - type: ConditionalSpawner
       prototypes:
         - MobGreyWolf
