@@ -35,6 +35,14 @@
     - type: Tag
       tags:
         - SharpenedStick
+    - type: Sharp
+    - type: MeleeWeapon
+      wideAnimationRotation: -135
+      damage:
+        types:
+          Piercing: 8
+      angle: 0
+      animation: WeaponArcThrust
     - type: DamageOtherOnHit
       damage:
         types:

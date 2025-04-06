@@ -3,7 +3,6 @@
   description: Probably not a good idea to stay here.
   abstract: true
   id: SpawnMobDen
-  parent: MarkerBase
   placement:
     mode: SnapgridCenter
   components:

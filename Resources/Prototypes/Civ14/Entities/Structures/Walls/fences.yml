@@ -5,7 +5,7 @@
   description: "A rustic wood fence for your garden."
   components:
     - type: Sprite
-      drawdepth: SmallObjects
+      drawdepth: Mobs
       sprite: Civ14/Structures/fence.rsi
       state: fence
     - type: Icon
@@ -45,6 +45,7 @@
   components:
     - type: Sprite
       sprite: Civ14/Structures/Doors/material_doors.rsi
+      drawdepth: Mobs
       layers:
         - state: fence
           map: ["enum.DoorVisualLayers.Base"]
