@@ -36,7 +36,7 @@
         - id: MaterialLeather1
           amount: 2
         - id: MaterialBones1
-          amount: 1
+          amount: 2
     - type: Bloodstream
       bloodMaxVolume: 300
       # Horns though
@@ -53,9 +53,9 @@
     - type: NpcFactionMember
       factions:
         - Prey
-#    - type: HTN
-#      rootTask:
-#        task: SimplePreyCompound
+    #    - type: HTN
+    #      rootTask:
+    #        task: SimplePreyCompound
     - type: Puller
       needsHands: false
 
@@ -83,7 +83,6 @@
           Base: deer_f_dead
         Dead:
           Base: deer_f_dead
-
 
 - type: entity
   name: rabbit
@@ -197,7 +196,6 @@
       price: 50
     - type: BadFood
     - type: NonSpreaderZombie
-
 
 - type: entity
   name: black rabbit
