@@ -60,3 +60,13 @@
       seedId: hemp
     - type: Sprite
       color: "#B87333"
+
+- type: entity
+  parent: SeedBaseCiv
+  id: HealingHerbsSeedsCiv
+  name: "healing herbs seeds"
+  components:
+    - type: Seed
+      seedId: healingHerbs
+    - type: Sprite
+      color: "#17211B"

@@ -22,29 +22,13 @@
           Cold: -8
           Shock: -5
           Caustic: -5
+        groups:
           Brute: -5
       healingBeginSound:
         path: "/Audio/Items/Medical/ointment_begin.ogg"
       healingEndSound:
         path: "/Audio/Items/Medical/ointment_end.ogg"
-    - type: Stack
-      stackType: HealingHerbs
-      count: 10
-    - type: StackPrice
+    - type: StaticPrice
       price: 20
-
-- type: entity
-  id: HealingHerbs1
-  parent: HealingHerbs
-  suffix: Single
-  components:
-    - type: Stack
-      stackType: HealingHerbs
-      count: 1
-
-- type: stack
-  id: HealingHerbs
-  name: healing herbs
-  icon: { sprite: "/Textures/Civ14/Objects/surgery.rsi", state: healing_herbs }
-  spawn: HealingHerbs
-  maxCount: 10
+    - type: Produce
+      seedId: healingHerbs

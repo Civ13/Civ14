@@ -13,7 +13,7 @@
       agemax: 8
 
 - type: entity
-  parent: ClothingBeltUtility
+  parent: ClothingBeltStorageBase
   id: LeatherClothingBelt
   name: leather satchel
   description: A leather satchel worn around the waist.
