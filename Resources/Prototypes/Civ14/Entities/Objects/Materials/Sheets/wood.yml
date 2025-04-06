@@ -35,3 +35,7 @@
     - type: Tag
       tags:
         - SharpenedStick
+    - type: DamageOtherOnHit
+      damage:
+        types:
+          Piercing: 8

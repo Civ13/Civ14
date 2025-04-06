@@ -255,7 +255,7 @@ public sealed class WeatherNomadsSystem : EntitySystem
             Dirty(uid, component);
             Log.Debug($"Weather started for entity {uid} with {component.CurrentWeather}");
             Log.Debug($"Seasons started for entity {uid} with {component.CurrentSeason}");
-            _chat.DispatchGlobalAnnouncement($"Current season: {component.CurrentSeason}", null,
+            _chat.DispatchGlobalAnnouncement($"Current season: {component.CurrentSeason}", "World",
                 false,
                 null,
                 null);
