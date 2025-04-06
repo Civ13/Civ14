@@ -9,6 +9,8 @@
       layers:
         - state: closed
           map: ["enum.DoorVisualLayers.Base"]
+    - type: Door
+      changeAirtight: false
     - type: Construction
       agemin: 0
       agemax: 8
@@ -26,6 +28,8 @@
       layers:
         - state: closed
           map: ["enum.DoorVisualLayers.Base"]
+    - type: Door
+      changeAirtight: false
     - type: Construction
       agemin: 0
       agemax: 8

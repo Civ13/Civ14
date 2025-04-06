@@ -30,7 +30,7 @@
         - id: MaterialPeltBrownBear1
           amount: 5
         - id: MaterialBones1
-          amount: 3
+          amount: 5
     - type: DamageStateVisuals
       states:
         Alive:
@@ -90,7 +90,7 @@
         - id: MaterialPeltGreyWolf1
           amount: 3
         - id: MaterialBones1
-          amount: 1
+          amount: 3
 
     - type: Hunger #enables the wolf to get hungry
       thresholds:
@@ -164,7 +164,7 @@
         - id: MaterialLeather1
           amount: 2
         - id: MaterialBones1
-          amount: 2
+          amount: 4
     - type: MovementSpeedModifier
       baseWalkSpeed: 3.5
       baseSprintSpeed: 4.5

@@ -1,38 +1,55 @@
 - type: entity
-  name: Bear Spawner
+  name: animal den
+  description: Probably not a good idea to stay here.
+  abstract: true
+  id: SpawnMobDen
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Tag
+      tags:
+        - ForceFixRotations
+    - type: Transform
+      anchored: true
+    - type: Sprite
+      sprite: Civ14/Objects/animal_spawner.rsi
+      state: cave_den2
+- type: entity
+  name: bear cave
   id: SpawnMobBear
-  parent: MarkerBase
+  parent: SpawnMobDen
+  placement:
+    mode: SnapgridCenter
   components:
     - type: Sprite
-      layers:
-        - state: green
-        - state: ai
+      sprite: Civ14/Objects/animal_spawner.rsi
+      state: cave_den2
     - type: RespawnableSpawner
       prototypes:
         - MobBrownBear
 
 - type: entity
-  name: Wolf Spawner
+  name: wolf den
   id: SpawnMobGreyWolf
-  parent: MarkerBase
+  parent: SpawnMobDen
   components:
     - type: Sprite
-      layers:
-        - state: green
-        - state: ai
+      sprite: Civ14/Objects/animal_spawner.rsi
+      state: cave_den-foliage
     - type: RespawnableSpawner
       prototypes:
         - MobGreyWolf
 
 - type: entity
-  name: Sabertooth Spawner
+  name: sabertooth den
   id: SpawnMobSabertooth
-  parent: MarkerBase
+  parent: SpawnMobDen
   components:
     - type: Sprite
-      layers:
-        - state: green
-        - state: ai
+      sprite: Civ14/Objects/animal_spawner.rsi
+      state: cave_den
     - type: RespawnableSpawner
       prototypes:
         - MobSabertooth

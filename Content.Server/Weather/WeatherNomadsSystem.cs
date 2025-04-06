@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using Content.Shared.Weather;
 using Robust.Shared.Map;
@@ -11,7 +12,7 @@ using Content.Shared.Light.Components;
 using Content.Shared.Maps;
 using Robust.Shared.Map.Components;
 using Content.Shared.Light.EntitySystems;
-
+using Content.Server.Chat.Systems;
 
 namespace Content.Server.Weather;
 
@@ -29,7 +30,7 @@ public sealed class WeatherNomadsSystem : EntitySystem
     [Dependency] private readonly SharedRoofSystem _roofSystem = default!;
     [Dependency] private readonly ITileDefinitionManager _tileDefManager = default!;
     [Dependency] private readonly SharedMapSystem _mapSystem = default!;
-
+    [Dependency] private readonly ChatSystem _chat = default!;
     /// <summary>
     /// Structure representing properties of a weather type.
     /// </summary>
@@ -48,10 +49,181 @@ public sealed class WeatherNomadsSystem : EntitySystem
     {
         { "None", new WeatherType { PrototypeId = "", Weight = 0, MinTemperature = 293.15f, MaxTemperature = 293.15f } },
         { "Rain", new WeatherType { PrototypeId = "Rain", Weight = 1, MinTemperature = 278.15f, MaxTemperature = 288.15f } },
-        { "Storm", new WeatherType { PrototypeId = "Storm", Weight = 2, MinTemperature = 273.15f, MaxTemperature = 278.15f } },
-        { "SnowfallLight", new WeatherType { PrototypeId = "SnowfallLight", Weight = 3, MinTemperature = 268.15f, MaxTemperature = 273.15f } },
-        { "SnowfallMedium", new WeatherType { PrototypeId = "SnowfallMedium", Weight = 4, MinTemperature = 258.15f, MaxTemperature = 268.15f } },
-        { "SnowfallHeavy", new WeatherType { PrototypeId = "SnowfallHeavy", Weight = 5, MinTemperature = 243.15f, MaxTemperature = 258.15f } }
+        { "Storm", new WeatherType { PrototypeId = "Storm", Weight = 3, MinTemperature = 273.15f, MaxTemperature = 278.15f } },
+        { "SnowfallLight", new WeatherType { PrototypeId = "SnowfallLight", Weight = 4, MinTemperature = 268.15f, MaxTemperature = 273.15f } },
+        { "SnowfallMedium", new WeatherType { PrototypeId = "SnowfallMedium", Weight = 5, MinTemperature = 258.15f, MaxTemperature = 268.15f } },
+        { "SnowfallHeavy", new WeatherType { PrototypeId = "SnowfallHeavy", Weight = 6, MinTemperature = 243.15f, MaxTemperature = 258.15f } },
+        { "Hail", new WeatherType { PrototypeId = "Hail", Weight = 7, MinTemperature = 273.15f, MaxTemperature = 278.15f } },
+        { "Sandstorm", new WeatherType { PrototypeId = "Sandstorm", Weight = 9, MinTemperature = 293.15f, MaxTemperature = 313.15f } },
+        { "SandstormHeavy", new WeatherType { PrototypeId = "SandstormHeavy", Weight = 10, MinTemperature = 293.15f, MaxTemperature = 313.15f } },
+    };
+
+    public enum Biome
+    {
+        Tundra,
+        Taiga,
+        Temperate,
+        Sea,
+        SemiArid,
+        Desert,
+        Savanna,
+        Jungle
+    }
+
+    public enum Precipitation
+    {
+        Dry,
+        LightWet,
+        HeavyWet,
+        Storm
+    }
+
+
+    public class WeatherTransition
+    {
+        public Biome Biome { get; set; }
+        public Precipitation Precipitation { get; set; }
+        public string Season { get; set; } = "Spring";
+        public string WeatherType { get; set; } = "None";
+    }
+
+    private readonly List<WeatherTransition> _weatherTransitions = new()
+    {
+        // Summer
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.Dry, Season = "Summer", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.LightWet, Season = "Summer", WeatherType = "SnowfallLight" },
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.HeavyWet, Season = "Summer", WeatherType = "SnowfallMedium" },
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.Storm, Season = "Summer", WeatherType = "SnowfallHeavy" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.Dry, Season = "Summer", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.LightWet, Season = "Summer", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.HeavyWet, Season = "Summer", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.Storm, Season = "Summer", WeatherType = "Hail" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.Dry, Season = "Summer", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.LightWet, Season = "Summer", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.HeavyWet, Season = "Summer", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.Storm, Season = "Summer", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.Dry, Season = "Summer", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.LightWet, Season = "Summer", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.HeavyWet, Season = "Summer", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.Storm, Season = "Summer", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.Dry, Season = "Summer", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.LightWet, Season = "Summer", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.HeavyWet, Season = "Summer", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.Storm, Season = "Summer", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.Dry, Season = "Summer", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.LightWet, Season = "Summer", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.HeavyWet, Season = "Summer", WeatherType = "Sandstorm" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.Storm, Season = "Summer", WeatherType = "SandstormHeavy" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.Dry, Season = "Summer", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.LightWet, Season = "Summer", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.HeavyWet, Season = "Summer", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.Storm, Season = "Summer", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.Dry, Season = "Summer", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.LightWet, Season = "Summer", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.HeavyWet, Season = "Summer", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.Storm, Season = "Summer", WeatherType = "Storm" },
+
+        // Spring
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.Dry, Season = "Spring", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.LightWet, Season = "Spring", WeatherType = "SnowfallLight" },
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.HeavyWet, Season = "Spring", WeatherType = "SnowfallMedium" },
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.Storm, Season = "Spring", WeatherType = "SnowfallHeavy" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.Dry, Season = "Spring", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.LightWet, Season = "Spring", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.HeavyWet, Season = "Spring", WeatherType = "SnowfallLight" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.Storm, Season = "Spring", WeatherType = "SnowfallHeavy" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.Dry, Season = "Spring", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.LightWet, Season = "Spring", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.HeavyWet, Season = "Spring", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.Storm, Season = "Spring", WeatherType = "SnowfallMedium" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.Dry, Season = "Spring", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.LightWet, Season = "Spring", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.HeavyWet, Season = "Spring", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.Storm, Season = "Spring", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.Dry, Season = "Spring", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.LightWet, Season = "Spring", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.HeavyWet, Season = "Spring", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.Storm, Season = "Spring", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.Dry, Season = "Spring", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.LightWet, Season = "Spring", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.HeavyWet, Season = "Spring", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.Storm, Season = "Spring", WeatherType = "Sandstorm" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.Dry, Season = "Spring", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.LightWet, Season = "Spring", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.HeavyWet, Season = "Spring", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.Storm, Season = "Spring", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.Dry, Season = "Spring", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.LightWet, Season = "Spring", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.HeavyWet, Season = "Spring", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.Storm, Season = "Spring", WeatherType = "Storm" },
+
+        // Autumn
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.Dry, Season = "Autumn", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.LightWet, Season = "Autumn", WeatherType = "SnowfallLight" },
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.HeavyWet, Season = "Autumn", WeatherType = "SnowfallMedium" },
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.Storm, Season = "Autumn", WeatherType = "SnowfallHeavy" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.Dry, Season = "Autumn", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.LightWet, Season = "Autumn", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.HeavyWet, Season = "Autumn", WeatherType = "SnowfallLight" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.Storm, Season = "Autumn", WeatherType = "SnowfallHeavy" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.Dry, Season = "Autumn", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.LightWet, Season = "Autumn", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.HeavyWet, Season = "Autumn", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.Storm, Season = "Autumn", WeatherType = "SnowfallMedium" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.Dry, Season = "Autumn", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.LightWet, Season = "Autumn", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.HeavyWet, Season = "Autumn", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.Storm, Season = "Autumn", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.Dry, Season = "Autumn", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.LightWet, Season = "Autumn", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.HeavyWet, Season = "Autumn", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.Storm, Season = "Autumn", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.Dry, Season = "Autumn", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.LightWet, Season = "Autumn", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.HeavyWet, Season = "Autumn", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.Storm, Season = "Autumn", WeatherType = "Sandstorm" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.Dry, Season = "Autumn", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.LightWet, Season = "Autumn", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.HeavyWet, Season = "Autumn", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.Storm, Season = "Autumn", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.Dry, Season = "Autumn", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.LightWet, Season = "Autumn", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.HeavyWet, Season = "Autumn", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.Storm, Season = "Autumn", WeatherType = "Storm" },
+
+        // Winter
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.Dry, Season = "Winter", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.LightWet, Season = "Winter", WeatherType = "SnowfallMedium" },
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.HeavyWet, Season = "Winter", WeatherType = "SnowfallHeavy" },
+        new WeatherTransition { Biome = Biome.Tundra, Precipitation = Precipitation.Storm, Season = "Winter", WeatherType = "SnowfallHeavy" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.Dry, Season = "Winter", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.LightWet, Season = "Winter", WeatherType = "SnowfallLight" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.HeavyWet, Season = "Winter", WeatherType = "SnowfallHeavy" },
+        new WeatherTransition { Biome = Biome.Taiga, Precipitation = Precipitation.Storm, Season = "Winter", WeatherType = "SnowfallHeavy" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.Dry, Season = "Winter", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.LightWet, Season = "Winter", WeatherType = "SnowfallLight" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.HeavyWet, Season = "Winter", WeatherType = "SnowfallMedium" },
+        new WeatherTransition { Biome = Biome.Temperate, Precipitation = Precipitation.Storm, Season = "Winter", WeatherType = "SnowfallHeavy" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.Dry, Season = "Winter", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.LightWet, Season = "Winter", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.HeavyWet, Season = "Winter", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.Sea, Precipitation = Precipitation.Storm, Season = "Winter", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.Dry, Season = "Winter", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.LightWet, Season = "Winter", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.HeavyWet, Season = "Winter", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.SemiArid, Precipitation = Precipitation.Storm, Season = "Winter", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.Dry, Season = "Winter", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.LightWet, Season = "Winter", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.HeavyWet, Season = "Winter", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Desert, Precipitation = Precipitation.Storm, Season = "Winter", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.Dry, Season = "Winter", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.LightWet, Season = "Winter", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.HeavyWet, Season = "Winter", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.Savanna, Precipitation = Precipitation.Storm, Season = "Winter", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.Dry, Season = "Winter", WeatherType = "Clear" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.LightWet, Season = "Winter", WeatherType = "Rain" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.HeavyWet, Season = "Winter", WeatherType = "Storm" },
+        new WeatherTransition { Biome = Biome.Jungle, Precipitation = Precipitation.Storm, Season = "Winter", WeatherType = "Storm" },
     };
 
     /// <summary>
@@ -79,8 +251,14 @@ public sealed class WeatherNomadsSystem : EntitySystem
             component.CurrentWeather = enabledTypes.First().PrototypeId ?? "";
             SetWeatherAndTemperature(uid, component);
             component.NextSwitchTime = _timing.CurTime + TimeSpan.FromMinutes(GetRandomSeasonDuration(component));
+            component.NextSeasonChange = _timing.CurTime + TimeSpan.FromMinutes(45); // Initialize season change time
             Dirty(uid, component);
             Log.Debug($"Weather started for entity {uid} with {component.CurrentWeather}");
+            Log.Debug($"Seasons started for entity {uid} with {component.CurrentSeason}");
+            _chat.DispatchGlobalAnnouncement($"Current season: {component.CurrentSeason}", "World",
+                false,
+                null,
+                null);
         }
         else
         {
@@ -98,9 +276,25 @@ public sealed class WeatherNomadsSystem : EntitySystem
         var query = EntityQueryEnumerator<WeatherNomadsComponent>();
         while (query.MoveNext(out var uid, out var nomads))
         {
+            if (_timing.CurTime >= nomads.NextSeasonChange)
+            {
+                // Change the season
+                nomads.CurrentSeason = GetNextSeason(nomads.CurrentSeason);
+                nomads.NextSeasonChange = _timing.CurTime + TimeSpan.FromMinutes(45);
+                Dirty(uid, nomads);
+                Log.Debug($"Changed season to {nomads.CurrentSeason}");
+                _chat.DispatchGlobalAnnouncement($"Changed season to {nomads.CurrentSeason}",
+                null,
+                false,
+                null,
+                null);
+            }
+
             if (_timing.CurTime < nomads.NextSwitchTime)
                 continue;
 
+            //This is where we would determine the biome, precipitation and season.
+            //For now, we will just use a random weather type.
             var enabledTypes = _weatherTypes.Values
                 .Where(w => nomads.EnabledWeathers.Contains(w.PrototypeId ?? string.Empty) || w.PrototypeId == "")
                 .OrderBy(w => w.Weight)
@@ -269,5 +463,20 @@ public sealed class WeatherNomadsSystem : EntitySystem
             return grids.First().Owner;
         }
         return null;
+    }
+
+    /// <summary>
+    /// Gets the next season in the cycle.
+    /// </summary>
+    private string GetNextSeason(string current)
+    {
+        return current switch
+        {
+            "Spring" => "Summer",
+            "Summer" => "Autumn",
+            "Autumn" => "Winter",
+            "Winter" => "Spring",
+            _ => "Spring", // Default to Spring if something goes wrong
+        };
     }
 }

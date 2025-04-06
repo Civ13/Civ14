@@ -1,11 +1,11 @@
 - type: entity
-  parent: BaseRailing
+  parent: BaseFenceWood
   id: FenceWoodClassic
-  name: "wood fence"
+  name: "wooden fence"
   description: "A rustic wood fence for your garden."
   components:
     - type: Sprite
-      drawdepth: SmallObjects
+      drawdepth: Mobs
       sprite: Civ14/Structures/fence.rsi
       state: fence
     - type: Icon
@@ -32,6 +32,57 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Construction
+      graph: FenceWoodClassic
+      agemin: 0
+      agemax: 8
+      node: end
+
+- type: entity
+  parent: FenceWoodSmallGate
+  id: FenceWoodClassicGate
+  name: wooden fence gate
+  description: A rustic wood fence gate.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Doors/material_doors.rsi
+      drawdepth: Mobs
+      layers:
+        - state: fence
+          map: ["enum.DoorVisualLayers.Base"]
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.5,-0.1,0.5,0.1"
+          density: 1000
+          mask:
+            - FullTileMask
+          layer:
+            - MidImpassable
+            - LowImpassable
+            - BulletImpassable
+    - type: InteractionOutline
+    - type: Door
+      openSpriteState: fenceopen
+      closedSpriteState: fence
+      canPry: false
+      occludes: false
+      changeAirtight: false
+      bumpOpen: true
+      clickOpen: true
+      canCrush: false
+      closeTimeOne: 0
+      closeTimeTwo: 0
+      openTimeOne: 0
+      openTimeTwo: 0
+      openingAnimationTime: 0
+      closingAnimationTime: 0
+      openSound:
+        path: /Audio/Effects/door_open.ogg
+      closeSound:
+        path: /Audio/Effects/door_close.ogg
+    - type: Construction
+      graph: FenceWoodClassicGate
       agemin: 0
       agemax: 8
       node: end

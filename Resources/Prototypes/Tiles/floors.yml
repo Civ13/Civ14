@@ -1452,6 +1452,8 @@
   itemDrop: FloorTileItemGrass
   heatCapacity: 10000
   weather: true
+  biome: Temperate
+  suffix: Temperate
 
 - type: tile
   id: FloorGrassJungle
@@ -1464,6 +1466,8 @@
   itemDrop: FloorTileItemGrassJungle
   heatCapacity: 10000
   weather: true
+  biome: Jungle
+  suffix: Jungle
 
 - type: tile
   id: FloorGrassDark
@@ -1481,6 +1485,8 @@
     collection: FootstepGrass
   heatCapacity: 10000
   weather: true
+  biome: Temperate
+  suffix: Temperate
 
 - type: tile
   id: FloorGrassLight
@@ -1498,6 +1504,8 @@
     collection: FootstepGrass
   heatCapacity: 10000
   weather: true
+  biome: Temperate
+  suffix: Temperate
 
 - type: tile
   id: FloorGrassDry
@@ -1509,6 +1517,8 @@
     collection: FootstepGrass
   heatCapacity: 10000
   weather: true
+  biome: Savanna
+  suffix: Savanna
 
 - type: tile
   id: FloorDirt
@@ -1537,6 +1547,35 @@
   heatCapacity: 10000
   weather: true
 
+- type: tile
+  id: FloorDirtTaiga
+  parent: FloorDirt
+  biome: Taiga
+  suffix: Taiga
+
+- type: tile
+  id: FloorDirtSemiArid
+  parent: FloorDirt
+  biome: SemiArid
+  suffix: SemiArid
+
+- type: tile
+  id: FloorDirtDesert
+  parent: FloorDirt
+  biome: Desert
+  suffix: Desert
+
+- type: tile
+  id: FloorDirtSavanna
+  parent: FloorDirt
+  biome: Savanna
+  suffix: Savanna
+
+- type: tile
+  id: FloorDirtJungle
+  parent: FloorDirt
+  biome: Jungle
+  suffix: Jungle
 # Asteroid
 
 - type: tile
@@ -1862,7 +1901,6 @@
   footstepSounds:
     collection: FootstepHull
   itemDrop: PartRodMetal1 #same case as FloorHull
-
 
 # Ice
 - type: tile
