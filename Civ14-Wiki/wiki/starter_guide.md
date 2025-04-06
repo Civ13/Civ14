@@ -141,6 +141,11 @@ You want to avoid these, unless you're robust or need some pelts:
 -   ![sabertooth](./../../Resources/Textures/Civ14/Mobs/animal_big.rsi/sabertoothcat_brown.png)![liom](./../../Resources/Textures/Civ14/Mobs/animal_big.rsi/lion.png)Panthers, Jaguars, Lions, and other big cats
 -   ![alligator](./../../Resources/Textures/Civ14/Mobs/animal_big.rsi/alligator.png)Alligators
 
+Also keep an eye for animal dens. Dangerous animals will spawn here!
+
+![cave den](./../../Resources/Textures/Civ14/Objects/animal_spawner.rsi/cave_den2.png)
+![cave den](./../../Resources/Textures/Civ14/Objects/animal_spawner.rsi/cave_den-foliage.png)
+
 ## Night time
 
 You'll need a light source to see in the night and in dark indoor areas. The basic source of light is the **torch**.

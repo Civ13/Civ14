@@ -139,6 +139,10 @@ You want to avoid these, unless you're robust or need some pelts:
 <GuideEntityEmbed Entity="MobGreyWolf" />
 <GuideEntityEmbed Entity="MobSabertooth" />
 </Box>
+
+Also keep an eye for animal dens. Dangerous animals will spawn here!
+<GuideEntityEmbed Entity="SpawnMobDen" />
+
 ## Night time
 
 You'll need a light source to see in the night and in dark indoor areas. The basic source of light is the [bold]torch[/bold].
