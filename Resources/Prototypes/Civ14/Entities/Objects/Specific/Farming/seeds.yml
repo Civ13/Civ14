@@ -70,3 +70,43 @@
       seedId: healingHerbs
     - type: Sprite
       color: "#17211B"
+
+- type: entity
+  parent: SeedBaseCiv
+  id: ComfreySeedsCiv
+  name: "comfrey seeds"
+  components:
+    - type: Seed
+      seedId: ComfreySeeds
+    - type: Sprite
+      color: "#A020F0"
+
+- type: entity
+  parent: SeedBaseCiv
+  id: YarrowSeedsCiv
+  name: "yarrow seeds"
+  components:
+    - type: Seed
+      seedId: YarrowSeeds
+    - type: Sprite
+      color: "#eef1a9"
+
+- type: entity
+  parent: SeedBaseCiv
+  id: ElderflowerSeedsCiv
+  name: "elderflower seeds"
+  components:
+    - type: Seed
+      seedId: ElderflowerSeeds
+    - type: Sprite
+      color: "#e4e5ce"
+
+- type: entity
+  parent: SeedBaseCiv
+  id: MilkThistleSeedsCiv
+  name: "milk thistle seeds"
+  components:
+    - type: Seed
+      seedId: MilkThistleSeeds
+    - type: Sprite
+      color: "#730561"
