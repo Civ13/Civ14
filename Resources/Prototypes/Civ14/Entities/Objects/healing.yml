@@ -1,6 +1,6 @@
 - type: entity
   name: healing herbs
-  description: A bunch of healing herbs collected from bushes. Helps clean wounds.
+  description: A bunch of healing herbs collected from bushes. Helps clean burns and superficial wounds.
   parent: BaseHealingItem
   id: HealingHerbs
   suffix: Full
@@ -18,12 +18,12 @@
         - Biological
       damage:
         types:
-          Heat: -8
-          Cold: -8
+          Heat: -5
+          Cold: -5
           Shock: -5
           Caustic: -5
         groups:
-          Brute: -5
+          Brute: -2
       healingBeginSound:
         path: "/Audio/Items/Medical/ointment_begin.ogg"
       healingEndSound:
@@ -31,4 +31,124 @@
     - type: StaticPrice
       price: 20
     - type: Produce
-      seedId: healingHerbs
+      seedId: HealingHerbs
+
+- type: entity
+  name: medicinal yarrow
+  description: Yarrow is a coagulant, and will help reduce bleeding when applied.
+  parent: BaseHealingItem
+  id: YarrowHealingHerbs
+  suffix: Full
+  components:
+    - type: Tag
+      tags:
+        - Ointment
+    - type: Sprite
+      sprite: Civ14/Objects/Farming/yarrow.rsi
+      state: produce
+    - type: Item
+      heldPrefix: regenerative-mesh
+    - type: Healing
+      damageContainers:
+        - Biological
+      damage:
+        types:
+          Bloodloss: -10
+      healingBeginSound:
+        path: "/Audio/Items/Medical/ointment_begin.ogg"
+      healingEndSound:
+        path: "/Audio/Items/Medical/ointment_end.ogg"
+    - type: StaticPrice
+      price: 20
+    - type: Produce
+      seedId: YarrowHerbs
+
+- type: entity
+  name: medicinal comfrey
+  description: Comfrey has been used historically to heal bruises due to its anti-inflammatory and tissue-repair properties. Heals brute damage.
+  parent: BaseHealingItem
+  id: ComfreyHealingHerbs
+  suffix: Full
+  components:
+    - type: Tag
+      tags:
+        - Ointment
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/spacemans_trumpet.rsi
+      state: produce
+    - type: Item
+      heldPrefix: regenerative-mesh
+    - type: Healing
+      damageContainers:
+        - Biological
+      damage:
+        groups:
+          Brute: -10
+      healingBeginSound:
+        path: "/Audio/Items/Medical/ointment_begin.ogg"
+      healingEndSound:
+        path: "/Audio/Items/Medical/ointment_end.ogg"
+    - type: StaticPrice
+      price: 20
+    - type: Produce
+      seedId: ComfreyHerbs
+
+- type: entity
+  name: medicinal milk thistle
+  description: Milk thistle has long been used as a liver tonic. Heals poisoning.
+  parent: BaseHealingItem
+  id: MilkThistleHealingHerbs
+  suffix: Full
+  components:
+    - type: Tag
+      tags:
+        - Ointment
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/galaxythistle.rsi
+      state: produce
+    - type: Item
+      heldPrefix: regenerative-mesh
+    - type: Healing
+      damageContainers:
+        - Biological
+      damage:
+        types:
+          Poison: -10
+      healingBeginSound:
+        path: "/Audio/Items/Medical/ointment_begin.ogg"
+      healingEndSound:
+        path: "/Audio/Items/Medical/ointment_end.ogg"
+    - type: StaticPrice
+      price: 20
+    - type: Produce
+      seedId: MilkThistleHerbs
+
+- type: entity
+  name: medicinal elderflower
+  description: Elderflower reduces asphyxiation by clearing airways and boosting oxygen intake.
+  parent: BaseHealingItem
+  id: ElderflowerHealingHerbs
+  suffix: Full
+  components:
+    - type: Tag
+      tags:
+        - Ointment
+    - type: Sprite
+      sprite: Civ14/Objects/Farming/elderflower.rsi
+      state: produce
+    - type: Item
+      heldPrefix: regenerative-mesh
+    - type: Healing
+      damageContainers:
+        - Biological
+      damage:
+        types:
+          Asphyxiation: -8
+      healingBeginSound:
+        path: "/Audio/Items/Medical/ointment_begin.ogg"
+      healingEndSound:
+        path: "/Audio/Items/Medical/ointment_end.ogg"
+    - type: StaticPrice
+      price: 20
+    - type: Produce
+      seedId: ElderflowerHerbs

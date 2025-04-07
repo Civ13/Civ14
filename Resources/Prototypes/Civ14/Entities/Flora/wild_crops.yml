@@ -170,3 +170,150 @@
     - id: HealingHerbs
       amount: 2
       maxAmount: 3
+
+- type: entity
+  name: wild yarrow
+  parent: WildPlantBase
+  id: WildPlantYarrow
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Farming/yarrow.rsi
+      state: harvest
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: YarrowHarvest
+
+- type: entityLootTable
+  id: YarrowHarvest
+  entries:
+    - id: YarrowHealingHerbs
+      amount: 2
+      maxAmount: 3
+
+- type: entity
+  name: wild milk thistle
+  parent: WildPlantBase
+  id: WildPlantMilkThistle
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/galaxythistle.rsi
+      state: harvest
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: MilkThistleHarvest
+
+- type: entityLootTable
+  id: MilkThistleHarvest
+  entries:
+    - id: MilkThistleHealingHerbs
+      amount: 2
+      maxAmount: 3
+    - id: MilkThistleSeedsCiv
+      amount: 2
+      maxAmount: 2
+
+- type: entity
+  name: wild elderflower
+  parent: WildPlantBase
+  id: WildPlantElderflower
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Farming/elderflower.rsi
+      state: harvest
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: ElderflowerHarvest
+
+- type: entityLootTable
+  id: ElderflowerHarvest
+  entries:
+    - id: ElderflowerHealingHerbs
+      amount: 2
+      maxAmount: 3
+    - id: ElderflowerSeedsCiv
+      amount: 2
+      maxAmount: 2
+
+- type: entity
+  name: wild comfrey
+  parent: WildPlantBase
+  id: WildPlantComfrey
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/spacemans_trumpet.rsi
+      state: harvest
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: ComfreyHarvest
+
+- type: entityLootTable
+  id: ComfreyHarvest
+  entries:
+    - id: ComfreyHealingHerbs
+      amount: 2
+      maxAmount: 3
+    - id: ComfreySeedsCiv
+      amount: 2
+      maxAmount: 2
+
+- type: entity
+  name: wild poppy
+  parent: WildPlantBase
+  id: WildPlantPoppy
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/poppy.rsi
+      state: harvest
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: PoppyHarvest
+
+- type: entityLootTable
+  id: PoppyHarvest
+  entries:
+    - id: FoodPoppy
+      amount: 1
+      maxAmount: 2
+    - id: PoppySeedsCiv
+      amount: 2
+      maxAmount: 2
+
+- type: entity
+  name: wild aloe vera
+  parent: WildPlantBase
+  id: WildPlantAloe
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/aloe.rsi
+      state: harvest
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: AloeHarvest
+
+- type: entityLootTable
+  id: AloeHarvestarvest
+  entries:
+    - id: FoodAloe
+      amount: 1
+      maxAmount: 3
+    - id: AloeSeedsCiv
+      amount: 2
+      maxAmount: 2
