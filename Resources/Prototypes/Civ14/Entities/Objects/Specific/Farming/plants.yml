@@ -1,0 +1,113 @@
+- type: seed
+  id: HealingHerbs
+  name: healing herbs
+  noun: seeds-noun-seeds
+  displayName: healing herbs
+  plantRsi: Objects/Specific/Hydroponics/aloe.rsi
+  packetPrototype: HealingHerbsSeedsCiv
+  productPrototypes:
+    - HealingHerbs
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 5
+  waterConsumption: 0.60
+  chemicals:
+    Dermaline:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+    Bicaridine:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: seed
+  id: ComfreyHerbs
+  name: comfrey
+  noun: seeds-noun-seeds
+  displayName: comfrey
+  plantRsi: Objects/Specific/Hydroponics/spacemans_trumpet.rsi
+  packetPrototype: ComfreySeedsCiv
+  productPrototypes:
+    - HealingHerbs
+  lifespan: 20
+  maturation: 8
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 5
+  waterConsumption: 0.60
+  chemicals:
+    Bruizine:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: seed
+  id: YarrowHerbs
+  name: yarrow
+  noun: seeds-noun-seeds
+  displayName: yarrow
+  plantRsi: Civ14/Objects/Farming/yarrow.rsi
+  packetPrototype: YarrowSeedsCiv
+  productPrototypes:
+    - HealingHerbs
+  lifespan: 20
+  maturation: 8
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 5
+  waterConsumption: 0.60
+  chemicals:
+    TranexamicAcid:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: seed
+  id: ElderflowerHerbs
+  name: elderflower
+  noun: seeds-noun-seeds
+  displayName: elderflower
+  plantRsi: Civ14/Objects/Farming/elderflower.rsi
+  packetPrototype: ElderflowerSeedsCiv
+  productPrototypes:
+    - HealingHerbs
+  lifespan: 22
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 5
+  waterConsumption: 0.60
+  chemicals:
+    Dexalin:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: seed
+  id: MilkThistleHerbs
+  name: milk thistle
+  noun: seeds-noun-seeds
+  displayName: milk thistle
+  plantRsi: Objects/Specific/Hydroponics/galaxythistle.rsi
+  packetPrototype: MilkThistleSeedsCiv
+  productPrototypes:
+    - HealingHerbs
+  lifespan: 15
+  maturation: 6
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 5
+  waterConsumption: 0.60
+  chemicals:
+    Dylovene:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10

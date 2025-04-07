@@ -1191,32 +1191,6 @@
       PotencyDivisor: 5
 
 - type: seed
-  id: healingHerbs
-  name: hearling herbs
-  noun: seeds-noun-seeds
-  displayName: healing herbs
-  plantRsi: Objects/Specific/Hydroponics/aloe.rsi
-  packetPrototype: HealingHerbsSeedsCiv
-  productPrototypes:
-    - HealingHerbs
-  lifespan: 25
-  maturation: 10
-  production: 3
-  yield: 3
-  potency: 10
-  growthStages: 5
-  waterConsumption: 0.60
-  chemicals:
-    Dermaline:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
-    Bicaridine:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
-
-- type: seed
   id: aloe
   name: seeds-aloe-name
   noun: seeds-noun-seeds

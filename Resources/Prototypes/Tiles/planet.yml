@@ -217,6 +217,69 @@
   indestructible: true
   biome: Tundra
   suffix: Tundra
+
+# Snow
+- type: tile
+  id: FloorSnowGrass
+  name: tiles-snowgrass
+  sprite: /Textures/Tiles/Planet/Snow/snowgrass.png
+  edgeSpritePriority: 2
+  edgeSprites:
+    South: /Textures/Tiles/Planet/Snow/snow_double_edge_south.png
+    East: /Textures/Tiles/Planet/Snow/snow_double_edge_east.png
+    North: /Textures/Tiles/Planet/Snow/snow_double_edge_north.png
+    West: /Textures/Tiles/Planet/Snow/snow_double_edge_west.png
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepSnow
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
+  biome: Tundra
+  suffix: Tundra
+
+- type: tile
+  id: FloorSnowGrassTaiga
+  parent: FloorSnowGrass
+  biome: Taiga
+  suffix: Taiga
+
+- type: tile
+  id: FloorSnowGrassTemperate
+  parent: FloorSnowGrass
+  biome: Temperate
+  suffix: Temperate
+# Snow
+- type: tile
+  id: FloorSnowDirt
+  name: tiles-snowdirt
+  sprite: /Textures/Tiles/Planet/Snow/snowdirt.png
+  edgeSpritePriority: 2
+  edgeSprites:
+    South: /Textures/Tiles/Planet/Snow/snow_double_edge_south.png
+    East: /Textures/Tiles/Planet/Snow/snow_double_edge_east.png
+    North: /Textures/Tiles/Planet/Snow/snow_double_edge_north.png
+    West: /Textures/Tiles/Planet/Snow/snow_double_edge_west.png
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepSnow
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
+  biome: Tundra
+  suffix: Tundra
+
+- type: tile
+  id: FloorSnowDirtTaiga
+  parent: FloorSnowDirt
+  biome: Taiga
+  suffix: Taiga
+
+- type: tile
+  id: FloorSnowDirtTemperate
+  parent: FloorSnowDirt
+  biome: Temperate
+  suffix: Temperate
 # Ice
 - type: tile
   id: FloorIce

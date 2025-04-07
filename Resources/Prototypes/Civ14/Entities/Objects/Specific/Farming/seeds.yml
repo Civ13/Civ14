@@ -67,6 +67,66 @@
   name: "healing herbs seeds"
   components:
     - type: Seed
-      seedId: healingHerbs
+      seedId: HealingHerbs
     - type: Sprite
       color: "#17211B"
+
+- type: entity
+  parent: SeedBaseCiv
+  id: ComfreySeedsCiv
+  name: "comfrey seeds"
+  components:
+    - type: Seed
+      seedId: ComfreyHerbs
+    - type: Sprite
+      color: "#A020F0"
+
+- type: entity
+  parent: SeedBaseCiv
+  id: YarrowSeedsCiv
+  name: "yarrow seeds"
+  components:
+    - type: Seed
+      seedId: YarrowHerbs
+    - type: Sprite
+      color: "#eef1a9"
+
+- type: entity
+  parent: SeedBaseCiv
+  id: ElderflowerSeedsCiv
+  name: "elderflower seeds"
+  components:
+    - type: Seed
+      seedId: ElderflowerHerbs
+    - type: Sprite
+      color: "#e4e5ce"
+
+- type: entity
+  parent: SeedBaseCiv
+  id: MilkThistleSeedsCiv
+  name: "milk thistle seeds"
+  components:
+    - type: Seed
+      seedId: MilkThistleHerbs
+    - type: Sprite
+      color: "#730561"
+
+- type: entity
+  parent: SeedBaseCiv
+  id: AloeSeedsCiv
+  name: "aloe vera seeds"
+  components:
+    - type: Seed
+      seedId: aloe
+    - type: Sprite
+      color: "#7E9B39"
+
+- type: entity
+  parent: SeedBaseCiv
+  id: PoppySeedsCiv
+  name: "poppy seeds"
+  components:
+    - type: Seed
+      seedId: poppy
+    - type: Sprite
+      color: "#580000"
