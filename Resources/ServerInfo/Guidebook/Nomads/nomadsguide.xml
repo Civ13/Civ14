@@ -155,4 +155,28 @@ You'll need a light source to see in the night and in dark indoor areas. The bas
 
 -   For a more [bold]permanent[/bold] light source, you can build [bold]braziers[/bold] from [bold]stone[/bold]. You can fuel it with any organic matter like wood or clothing - simply use items on the brazier.
 
+
+## Medicine
+
+In the Stone age, most of the medicine you will find is restricted to bandages and medicinal herbs.
+
+<GuideEntityEmbed Entity="GauzeLeather" /> You can craft bandages from [bold]cloth[/bold] and [bold]leather[/bold]. They will help you stop bleeding.
+
+You can find medicinal herbs growing wild around the map. If you harvest them, you will also get some seeds so you can plant them yourself.
+
+<GuideEntityEmbed Entity="WildPlantElderflower" /><GuideEntityEmbed Entity="ElderflowerHealingHerb" />
+[bold]Elderflower[/bold] has a long history in European folk medicine for treating colds and sinus issues. It reduces asphyxiation by clearing airways and boosting oxygen intake.
+
+<GuideEntityEmbed Entity="WildPlantYarrow" /><GuideEntityEmbed Entity="YarrowHealingHerb" />
+[bold]Yarrow[/bold] has been used since ancient times as a hemostatic (blood-clotting) agent. It's known for its astringent properties that help staunch bleeding.
+
+<GuideEntityEmbed Entity="WildPlantComfrey" /><GuideEntityEmbed Entity="ComfreyHealingHerb" />
+[bold]Comfrey[/bold] has been used historically to heal bruises, sprains, and fractures due to its anti-inflammatory and tissue-repair properties. Heals brute damage.
+
+<GuideEntityEmbed Entity="WildPlantMilkThistle" /><GuideEntityEmbed Entity="MilkThistleHealingHerb" /> [bold]Milk Thistle[/bold] has long been used as a liver tonic, with silymarin compounds believed to detoxify and protect against poisons.
+
+<GuideEntityEmbed Entity="WildPlantPoppy" /><GuideEntityEmbed Entity="FoodPoppy" />[bold]Poppy[/bold] is the source of opium and morphine, known for sedative and pain-relieving effects, but it can also stabilize shock in small doses by calming the nervous system. Historically, it's been used for pain and trauma management.
+
+<GuideEntityEmbed Entity="WildPlantAloe" /><GuideEntityEmbed Entity="FoodAloe" />[bold]Aloe vera[/bold]'s gel is a well-documented remedy for burns, soothing inflammation and promoting skin healing.
+
 </Document>

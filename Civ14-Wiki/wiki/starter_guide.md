@@ -141,10 +141,9 @@ You want to avoid these, unless you're robust or need some pelts:
 -   ![sabertooth](./../../Resources/Textures/Civ14/Mobs/animal_big.rsi/sabertoothcat_brown.png)![liom](./../../Resources/Textures/Civ14/Mobs/animal_big.rsi/lion.png)Panthers, Jaguars, Lions, and other big cats
 -   ![alligator](./../../Resources/Textures/Civ14/Mobs/animal_big.rsi/alligator.png)Alligators
 
-Also keep an eye for animal dens. Dangerous animals will spawn here!
-
 ![cave den](./../../Resources/Textures/Civ14/Objects/animal_spawner.rsi/cave_den2.png)
 ![cave den](./../../Resources/Textures/Civ14/Objects/animal_spawner.rsi/cave_den-foliage.png)
+Also keep an eye for animal dens. Dangerous animals will spawn here!
 
 ## Night time
 
@@ -157,3 +156,23 @@ You'll need a light source to see in the night and in dark indoor areas. The bas
 -   You can also make lanterns with **iron**. Lanterns require fuel - any form of liquid fuel will do, like olive oil, fat, or petroleum.
 
 -   For a more **permanent** light source, you can build **braziers** from **stone**. You can fuel it with any organic matter like wood or clothing - simply use items on the brazier.
+
+## Medicine
+
+In the Stone age, most of the medicine you will find is restricted to bandages and medicinal herbs.
+
+![leather bandage](./../../Resources/Textures/Civ14/Objects/surgery.rsi/leatherbandage.png)![cloth bandage](./../../Resources/Textures/Civ14/Objects/surgery.rsi/bint.png) You can craft bandages from **cloth** or **leather**. They will help you stop bleeding.
+
+You can find medicinal herbs growing wild around the map. If you harvest them, you will also get some seeds so you can plant them yourself - see the [guide to farming](guide_to_farming.md).
+
+<img src="./../../Resources/Textures/Civ14/Objects/Farming/elderflower.rsi/harvest.png" style="width:64px;height:64px;image-rendering: pixelated;"><img src="./../../Resources/Textures/Civ14/Objects/Farming/elderflower.rsi/produce.png" style="width:64px;height:64px;image-rendering: pixelated;"> **Elderflower** has a long history in European folk medicine for treating colds and sinus issues. It reduces asphyxiation by clearing airways and boosting oxygen intake.
+
+<img src="./../../Resources/Textures/Civ14/Objects/Farming/yarrow.rsi/harvest.png" style="width:64px;height:64px;image-rendering: pixelated;"><img src="./../../Resources/Textures/Civ14/Objects/Farming/yarrow.rsi/produce.png" style="width:64px;height:64px;image-rendering: pixelated;"> **Yarrow** has been used since ancient times as a hemostatic (blood-clotting) agent. It’s known for its astringent properties that help staunch bleeding.
+
+<img src="./../../Resources/Textures/Objects/Specific/Hydroponics/spacemans_trumpet.rsi/harvest.png" style="width:64px;height:64px;image-rendering: pixelated;"><img src="./../../Resources/Textures/Objects/Specific/Hydroponics/spacemans_trumpet.rsi/produce.png" style="width:64px;height:64px;image-rendering: pixelated;"> **Comfrey** has been used historically to heal bruises, sprains, and fractures due to its anti-inflammatory and tissue-repair properties. Heals brute damage.
+
+<img src="./../../Resources/Textures/Objects/Specific/Hydroponics/galaxythistle.rsi/harvest.png" style="width:64px;height:64px;image-rendering: pixelated;"><img src="./../../Resources/Textures/Objects/Specific/Hydroponics/galaxythistle.rsi/produce.png" style="width:64px;height:64px;image-rendering: pixelated;"> **Milk Thistle** has long been used as a liver tonic, with silymarin compounds believed to detoxify and protect against poisons.
+
+<img src="./../../Resources/Textures/Objects/Specific/Hydroponics/poppy.rsi/harvest.png" style="width:64px;height:64px;image-rendering: pixelated;"><img src="./../../Resources/Textures/Objects/Specific/Hydroponics/poppy.rsi/produce.png" style="width:64px;height:64px;image-rendering: pixelated;"> **Poppy** is the source of opium and morphine, known for sedative and pain-relieving effects, but it can also stabilize shock in small doses by calming the nervous system. Historically, it’s been used for pain and trauma management.
+
+<img src="./../../Resources/Textures/Objects/Specific/Hydroponics/aloe.rsi/harvest.png" style="width:64px;height:64px;image-rendering: pixelated;"><img src="./../../Resources/Textures/Objects/Specific/Hydroponics/aloe.rsi/produce.png" style="width:64px;height:64px;image-rendering: pixelated;"> **Aloe vera**’s gel is a well-documented remedy for burns, soothing inflammation and promoting skin healing.
