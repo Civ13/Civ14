@@ -30,7 +30,7 @@
       expends: false
     - type: Damageable
       damageContainer: StructuralInorganic
-      damageModifierSet: Metal
+      damageModifierSet: Metallic
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
