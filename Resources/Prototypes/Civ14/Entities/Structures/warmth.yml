@@ -71,9 +71,6 @@
       iconStateSpent: torch_spent
       turnOnBehaviourID: turn_on
       fadeOutBehaviourID: fade_out
-      # Sounds legit nuff
-      litSound:
-        path: /Audio/Items/Flare/flare_on.ogg
     - type: Sprite
       sprite: Civ14/Objects/lighting.rsi
       layers:
@@ -94,10 +91,7 @@
       color: "#E25822"
       radius: 3.0
       energy: 5.0
-      netsync: false
-    - type: IgnitionSource
-      temperature: 400
-      ignited: false
+      netsync: true
     - type: Transform
       anchored: true
     - type: Physics
