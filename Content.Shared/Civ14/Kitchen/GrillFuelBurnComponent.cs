@@ -34,6 +34,13 @@ public sealed partial class GrillFuelBurnComponent : Component
     public bool IsLit { get; set; } = false; // Estado aceso/apagado
 
     /// <summary>
+    /// Whether the campfire turns into coal when done (true) or not (false)
+    /// </summary>
+    [DataField("expends")]
+    public bool Expends { get; set; } = true; //
+
+
+    /// <summary>
     /// Optional sound played when the setting changes.
     /// </summary>
     [DataField("settingSound")]

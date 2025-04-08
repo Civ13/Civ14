@@ -101,7 +101,6 @@
             Low: { visible: true, state: fireplace3 }
             Medium: { visible: true, state: fireplace2 }
             High: { visible: true, state: fireplace_on }
-
     - type: GuideHelp
       guides:
         - FoodRecipes

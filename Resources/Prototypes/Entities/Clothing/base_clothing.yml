@@ -3,17 +3,19 @@
   parent: BaseItem
   id: Clothing
   components:
-  - type: Item
-    size: Normal
-  - type: Sprite
-  - type: Tag
-    tags:
-      - WhitelistChameleon
-  - type: StaticPrice
-    price: 10
-  - type: FlavorProfile #yes not every peice of clothing is edible, but this way every edible piece of clothing should have the flavor without me having to track down what specific clothing can and cannot be eaten.
-    flavors:
-    - fiber
+    - type: Item
+      size: Normal
+    - type: Sprite
+    - type: Tag
+      tags:
+        - WhitelistChameleon
+    - type: StaticPrice
+      price: 10
+    - type: FlavorProfile #yes not every peice of clothing is edible, but this way every edible piece of clothing should have the flavor without me having to track down what specific clothing can and cannot be eaten.
+      flavors:
+        - fiber
+    - type: BurnFuel
+      burnTime: 2
 
 - type: entity
   abstract: true
@@ -26,16 +28,16 @@
   abstract: true
   id: AllowSuitStorageClothing
   components:
-  - type: AllowSuitStorage
+    - type: AllowSuitStorage
 
 - type: entity
   abstract: true
   id: AllowSuitStorageClothingGasTanks
   components:
-  - type: AllowSuitStorage
-    whitelist:
-      tags:
-      - GasTank
+    - type: AllowSuitStorage
+      whitelist:
+        tags:
+          - GasTank
 
 # for clothing that has a single item slot to insert and alt click out.
 # inheritors add a whitelisted slot named item
@@ -43,29 +45,29 @@
   abstract: true
   id: ClothingSlotBase
   components:
-  - type: ItemSlots
-  - type: ContainerContainer
-    containers:
-      item: !type:ContainerSlot
+    - type: ItemSlots
+    - type: ContainerContainer
+      containers:
+        item: !type:ContainerSlot # a piece of clothing that has explosion resistance *for its contents*, not the wearer
 
-# a piece of clothing that has explosion resistance *for its contents*, not the wearer
+
 - type: entity
   abstract: true
   id: ContentsExplosionResistanceBase
   components:
-  - type: ExplosionResistance
-    worn: false # only apply to the clothing itself and items inside, not the wearer
-    examine: explosion-resistance-contents-coefficient-value
-  # to show explosion resistance examine
-  - type: GroupExamine
-  - type: Armor
-    modifiers: {}
+    - type: ExplosionResistance
+      worn: false # only apply to the clothing itself and items inside, not the wearer
+      examine: explosion-resistance-contents-coefficient-value
+    # to show explosion resistance examine
+    - type: GroupExamine
+    - type: Armor
+      modifiers: {}
 
 # for clothing that can be toggled, like magboots
 - type: entity
   abstract: true
   id: BaseToggleClothing
   components:
-  - type: ItemToggle
-    onUse: false # can't really wear it like that
-  - type: ToggleClothing
+    - type: ItemToggle
+      onUse: false # can't really wear it like that
+    - type: ToggleClothing

@@ -1,0 +1,53 @@
+- type: construction
+  name: brazier
+  id: Brazier
+  graph: Brazier
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A stone firepit, provides warmth. Can be refueled with wood and garbage.
+  icon: { sprite: Civ14/Objects/structures.rsi, state: s_brazier0 }
+  objectType: Structure
+  agemin: 0
+  agemax: 8
+
+- type: constructionGraph
+  id: Brazier
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 6
+              doAfter: 10
+    - node: end
+      entity: Brazier
+
+- type: construction
+  name: tiki torch
+  id: TikiTorch
+  graph: TikiTorch
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  description: A static torch.
+  icon: { sprite: Civ14/Objects/lighting.rsi, state: tikitorch-on }
+  objectType: Structure
+  agemin: 0
+  agemax: 8
+
+- type: constructionGraph
+  id: TikiTorch
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 3
+              doAfter: 8
+    - node: end
+      entity: TikiTorch
