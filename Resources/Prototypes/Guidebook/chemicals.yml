@@ -45,12 +45,6 @@
   filterEnabled: True
 
 - type: guideEntry
-  id: Botanical
-  name: guide-entry-botanical
-  text: "/ServerInfo/Guidebook/Medical/Botanicals.xml"
-  filterEnabled: True
-
-- type: guideEntry
   id: Biological
   name: guide-entry-biological
   text: "/ServerInfo/Guidebook/ChemicalTabs/Biological.xml"
