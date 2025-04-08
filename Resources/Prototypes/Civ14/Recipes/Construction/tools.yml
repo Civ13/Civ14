@@ -245,3 +245,30 @@
               doAfter: 3
     - node: bucket
       entity: Bucket
+
+- type: construction
+  name: hoe
+  id: Hoe
+  graph: Hoe
+  startNode: start
+  targetNode: end
+  category: construction-category-tools
+  description: Used to remove weeds.
+  icon: { sprite: Objects/Tools/Hydroponics/hoe.rsi, state: icon }
+  objectType: Item
+  agemin: 0
+  agemax: 8
+
+- type: constructionGraph
+  id: Hoe
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 3
+              doAfter: 6
+    - node: end
+      entity: HydroponicsToolMiniHoe

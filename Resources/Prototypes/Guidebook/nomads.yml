@@ -9,5 +9,11 @@
 - type: guideEntry
   id: NomadsStarterGuide
   name: guide-entry-nomads-starterguide
-  priority: 0
+  priority: 1
   text: "/ServerInfo/Guidebook/Nomads/nomadsguide.xml"
+
+- type: guideEntry
+  id: NomadsFarming
+  name: guide-entry-nomads-farming
+  priority: 2
+  text: "/ServerInfo/Guidebook/Nomads/farming.xml"
