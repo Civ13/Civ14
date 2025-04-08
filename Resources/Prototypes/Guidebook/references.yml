@@ -4,10 +4,10 @@
   priority: 30
   text: "/ServerInfo/Guidebook/References.xml"
   children:
-  - Chemicals
-  - Drinks
-  - FoodRecipes
-  - Writing
+    - Chemicals
+    - Drinks
+    - FoodRecipes
+    - Writing
 
 - type: guideEntry
   id: Drinks
@@ -21,21 +21,21 @@
   text: "/ServerInfo/Guidebook/Service/FoodRecipes.xml"
   filterEnabled: True
   children:
-  - PizzaRecipes
-  - SavoryRecipes
-  - BreadRecipes
-  - BreakfastRecipes
-  - MothRecipes
-  - PastaRecipes
-  - DessertRecipes
-  - SoupRecipes
-  - PieRecipes
-  - BarsAndCookiesRecipes
-  - CakeRecipes
-  - SaladRecipes
-  - OtherRecipes
-  - MedicinalRecipes
-  - SecretRecipes
+    - PizzaRecipes
+    - SavoryRecipes
+    - BreadRecipes
+    - BreakfastRecipes
+    - MothRecipes
+    - PastaRecipes
+    - DessertRecipes
+    - SoupRecipes
+    - PieRecipes
+    - BarsAndCookiesRecipes
+    - CakeRecipes
+    - SaladRecipes
+    - OtherRecipes
+    - MedicinalRecipes
+    - SecretRecipes
 
 - type: guideEntry
   id: PizzaRecipes
@@ -132,4 +132,14 @@
   name: guide-entry-writing
   text: "/ServerInfo/Guidebook/Writing.xml"
 
+- type: guideEntry
+  id: Species
+  name: guide-entry-species
+  text: "/ServerInfo/Guidebook/Mobs/Species.xml"
+  children:
+    - Human
 
+- type: guideEntry
+  id: Human
+  name: species-name-human
+  text: "/ServerInfo/Guidebook/Mobs/Human.xml"
