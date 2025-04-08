@@ -92,7 +92,7 @@
       maxEntities: 2
       whitelist:
         components:
-        - Temperature
+          - Temperature
     - type: GenericVisualizer
       visuals:
         enum.EntityHeaterVisuals.Setting:
@@ -101,10 +101,8 @@
             Low: { visible: true, state: fireplace3 }
             Medium: { visible: true, state: fireplace2 }
             High: { visible: true, state: fireplace_on }
-
     - type: GuideHelp
       guides:
-        - Chef
         - FoodRecipes
     - type: Construction
       node: end

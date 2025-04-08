@@ -1,0 +1,19 @@
+- type: guideEntry
+  id: Nomads
+  name: guide-entry-nomads
+  priority: 0
+  text: "/ServerInfo/Guidebook/Nomads/nomads.xml"
+  children:
+    - NomadsStarterGuide
+
+- type: guideEntry
+  id: NomadsStarterGuide
+  name: guide-entry-nomads-starterguide
+  priority: 1
+  text: "/ServerInfo/Guidebook/Nomads/nomadsguide.xml"
+
+- type: guideEntry
+  id: NomadsFarming
+  name: guide-entry-nomads-farming
+  priority: 2
+  text: "/ServerInfo/Guidebook/Nomads/farming.xml"

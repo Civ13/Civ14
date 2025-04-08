@@ -3,16 +3,14 @@
   name: guide-entry-chemicals
   text: "/ServerInfo/Guidebook/Chemicals.xml"
   children:
-  - Elements
-  - Medicine
-  - Narcotics
-  - Pyrotechnic
-  - Toxins
-  - Foods
-  - Botanical
-  - Biological
-  - Special
-  - Others
+    - Elements
+    - Narcotics
+    - Pyrotechnic
+    - Toxins
+    - Foods
+    - Biological
+    - Special
+    - Others
   filterEnabled: True
 
 - type: guideEntry
@@ -43,12 +41,6 @@
   id: Foods
   name: guide-entry-foods
   text: "/ServerInfo/Guidebook/ChemicalTabs/Foods.xml"
-  filterEnabled: True
-
-- type: guideEntry
-  id: Botanical
-  name: guide-entry-botanical
-  text: "/ServerInfo/Guidebook/Medical/Botanicals.xml"
   filterEnabled: True
 
 - type: guideEntry

@@ -24,6 +24,7 @@ using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Content.Server.Labels.Components;
 using Content.Shared.Containers.ItemSlots;
+using Content.Shared.Weather;
 
 namespace Content.Server.Botany.Systems;
 
@@ -42,7 +43,6 @@ public sealed class PlantHolderSystem : EntitySystem
     [Dependency] private readonly RandomHelperSystem _randomHelper = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ItemSlotsSystem _itemSlots = default!;
-
 
     public const float HydroponicsSpeedMultiplier = 1f;
     public const float HydroponicsConsumptionMultiplier = 2f;
@@ -452,10 +452,21 @@ public sealed class PlantHolderSystem : EntitySystem
         // Water consumption.
         if (component.Seed.WaterConsumption > 0 && component.WaterLevel > 0 && _random.Prob(0.75f))
         {
+            var weather = EntityQueryEnumerator<WeatherNomadsComponent>();
+            while (weather.MoveNext(out var uuid, out var weatherComponent))
+            {
+                if (weatherComponent.CurrentWeather == "Rain" || weatherComponent.CurrentWeather == "Storm")
+                {
+                    component.WaterLevel += 2f;
+                }
+            }
+
             component.WaterLevel -= MathF.Max(0f,
-                component.Seed.WaterConsumption * HydroponicsConsumptionMultiplier * HydroponicsSpeedMultiplier);
+            component.Seed.WaterConsumption * HydroponicsConsumptionMultiplier * HydroponicsSpeedMultiplier);
             if (component.DrawWarnings)
                 component.UpdateSpriteAfterUpdate = true;
+
+
         }
 
         var healthMod = _random.Next(1, 3) * HydroponicsSpeedMultiplier;

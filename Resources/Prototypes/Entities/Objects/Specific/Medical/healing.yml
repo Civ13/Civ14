@@ -12,6 +12,9 @@
     # Inherited
     - type: StaticPrice
       price: 0
+    - type: GuideHelp
+      guides:
+        - Medical
 
 - type: entity
   name: ointment

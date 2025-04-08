@@ -108,7 +108,7 @@ public sealed class GrillFuelBurnSystem : EntitySystem
         var query = EntityQueryEnumerator<GrillFuelBurnComponent, ItemPlacerComponent>();
         while (query.MoveNext(out var uid, out var comp, out var placer))
         {
-            if (comp.IsLit)
+            if (comp.IsLit && comp.Expends == true)
             {
                 if (comp.Fuel <= 0 || _remainingBurnTime.GetValueOrDefault(uid) <= 0)
                 {
@@ -142,7 +142,7 @@ public sealed class GrillFuelBurnSystem : EntitySystem
             return;
 
         var remainingTime = _remainingBurnTime.GetValueOrDefault(uid) / 60f;
-        args.PushMarkup($"The campfire has approximately {remainingTime:F1} minutes of fuel remaining.");
+        args.PushMarkup($"Has approximately {remainingTime:F1} minutes of fuel remaining.");
     }
 
     public void ChangeSetting(EntityUid uid, EntityHeaterSetting setting, GrillFuelBurnComponent? comp = null)

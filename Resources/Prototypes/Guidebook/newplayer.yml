@@ -6,21 +6,6 @@
   children:
     - Controls
     - CharacterCreation
-    - Nomads
-
-- type: guideEntry
-  id: Nomads
-  name: guide-entry-nomads
-  priority: 0
-  text: "/ServerInfo/Guidebook/Nomads/nomads.xml"
-  children:
-    - NomadsStarterGuide
-
-- type: guideEntry
-  id: NomadsStarterGuide
-  name: guide-entry-nomads-starterguide
-  priority: 0
-  text: "/ServerInfo/Guidebook/Nomads/nomadsguide.xml"
 
 - type: guideEntry
   id: Controls

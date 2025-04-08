@@ -4,6 +4,8 @@
   id: Torch
   description: A torch fashioned from some wood.
   components:
+    - type: BurnFuel
+      burnTime: 1
     - type: ExpendableLight
       spentName: expendable-light-burnt-torch-name
       spentDesc: expendable-light-burnt-torch-desc

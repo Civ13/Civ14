@@ -1483,6 +1483,9 @@
       entries:
         Taco: Aloe
         Burger: Aloe
+    - type: GuideHelp
+      guides:
+        - Medical
 
 - type: entity
   name: poppy
@@ -1519,6 +1522,9 @@
       entries:
         Taco: Poppy
         Burger: Poppy
+    - type: GuideHelp
+      guides:
+        - Medical
 
 - type: entity
   name: lily

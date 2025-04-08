@@ -879,7 +879,6 @@
         task: RuminantCompound
     - type: GuideHelp
       guides:
-        - Chef
         - FoodRecipes
 
 - type: entity

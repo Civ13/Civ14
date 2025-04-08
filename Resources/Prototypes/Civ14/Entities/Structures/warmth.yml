@@ -1,0 +1,108 @@
+- type: entity
+  id: Brazier
+  parent: BaseHeaterMachine
+  name: brazier
+  description: A stone firepit, provides warmth. Can be refueled with wood and garbage.
+  components:
+    - type: Transform
+      anchored: true
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/structures.rsi
+      layers:
+        - state: s_brazier0
+        - map: ["enum.EntityHeaterVisuals.Setting"]
+          shader: unshaded
+          visible: false
+    - type: PointLight
+      enabled: false
+      radius: 5
+      energy: 5
+      color: "#E25822"
+    - type: ApcPowerReceiver
+      needsPower: false
+      powerLoad: 0
+    - type: HeatEmitter
+      heatingRate: 15
+    - type: GrillFuelBurn
+      fuel: 0
+      maxFuel: 60
+      expends: false
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 200
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: AmbientSound
+      volume: -5
+      range: 5
+      sound:
+        path: /Audio/Ambience/Objects/fireplace.ogg
+    - type: Construction
+      graph: Brazier
+      node: end
+      agemin: 0
+      agemax: 8
+    - type: GenericVisualizer
+      visuals:
+        enum.EntityHeaterVisuals.Setting:
+          enum.EntityHeaterVisuals.Setting:
+            Off: { visible: false }
+            Low: { visible: true, state: s_brazier1 }
+            Medium: { visible: true, state: s_brazier1 }
+            High: { visible: true, state: s_brazier1 }
+
+- type: entity
+  name: tiki torch
+  parent: Torch
+  id: TikiTorch
+  description: A static light source.
+  components:
+    - type: ExpendableLight
+      spentName: expendable-light-burnt-torch-name
+      spentDesc: expendable-light-burnt-torch-desc
+      glowDuration: 600
+      fadeOutDuration: 4
+      iconStateSpent: torch_spent
+      turnOnBehaviourID: turn_on
+      fadeOutBehaviourID: fade_out
+    - type: Sprite
+      sprite: Civ14/Objects/lighting.rsi
+      layers:
+        - map: [enum.ExpendableLightVisualLayers.Base]
+          state: tikitorch
+        - map: [enum.ExpendableLightVisualLayers.Glow]
+          state: tikitorch-on
+          visible: true
+          shader: unshaded
+    - type: Icon
+      sprite: Civ14/Objects/lighting.rsi
+      state: tikitorch
+    - type: Construction
+      graph: TikiTorch
+      node: end
+    - type: PointLight
+      enabled: true
+      color: "#E25822"
+      radius: 3.0
+      energy: 5.0
+      netsync: true
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.25,-0.5,0.25,0.5"
+          density: 190
+          mask:
+            - MachineMask
+          layer:
+            - MachineLayer
