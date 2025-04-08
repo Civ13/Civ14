@@ -1,32 +1,25 @@
 <Document>
 # Medical
-This is the department where people go to when they're hurt, it's up to the folks working here to fix them.
 
-## Personnel
-[color=#5b97bc]Medical[/color]'s staff is made up of Medical Interns, Medical Doctors, Paramedics and Chemists. [color=#5b97bc]Medical[/color] is run by the Chief Medical Officer.
+In the Stone age, most of the medicine you will find is restricted to bandages and medicinal herbs.
 
-  <Box>
-    <GuideEntityEmbed Entity="ToyFigurineMedicalDoctor" Caption="Doctor"/>
-    <GuideEntityEmbed Entity="ToyFigurineParamedic" Caption="Paramedic"/>
-    <GuideEntityEmbed Entity="ToyFigurineChemist" Caption="Chemist"/>
-    <GuideEntityEmbed Entity="ToyFigurineChiefMedicalOfficer" Caption="CMO"/>
-  </Box>
-  
-Right now, medbay is divided into two different sets of care:
+<GuideEntityEmbed Entity="GauzeLeather" /> You can craft bandages from [bold]cloth[/bold] and [bold]leather[/bold]. They will help you stop bleeding.
 
-## Medical Treatment
-  <Box>
-    <GuideEntityEmbed Entity="Brutepack"/>
-    <GuideEntityEmbed Entity="Bloodpack"/>
-    <GuideEntityEmbed Entity="Ointment"/>
-    <GuideEntityEmbed Entity="Gauze"/>
-    <GuideEntityEmbed Entity="HandheldHealthAnalyzer"/>
-  </Box>
-## Chemical Production
-  <Box>
-    <GuideEntityEmbed Entity="ChemDispenser"/>
-    <GuideEntityEmbed Entity="LargeBeaker"/>
-    <GuideEntityEmbed Entity="PillCanister"/>
-    <GuideEntityEmbed Entity="ChemMaster"/>
-  </Box>
+You can find medicinal herbs growing wild around the map. If you harvest them, you will also get some seeds so you can plant them yourself.
+
+<GuideEntityEmbed Entity="WildPlantElderflower" /><GuideEntityEmbed Entity="ElderflowerHealingHerbs" />
+[bold]Elderflower[/bold] has a long history in European folk medicine for treating colds and sinus issues. It reduces asphyxiation by clearing airways and boosting oxygen intake.
+
+<GuideEntityEmbed Entity="WildPlantYarrow" /><GuideEntityEmbed Entity="YarrowHealingHerbs" />
+[bold]Yarrow[/bold] has been used since ancient times as a hemostatic (blood-clotting) agent. It's known for its astringent properties that help staunch bleeding.
+
+<GuideEntityEmbed Entity="WildPlantComfrey" /><GuideEntityEmbed Entity="ComfreyHealingHerbs" />
+[bold]Comfrey[/bold] has been used historically to heal bruises, sprains, and fractures due to its anti-inflammatory and tissue-repair properties. Heals brute damage.
+
+<GuideEntityEmbed Entity="WildPlantMilkThistle" /><GuideEntityEmbed Entity="MilkThistleHealingHerbs" /> [bold]Milk Thistle[/bold] has long been used as a liver tonic, with silymarin compounds believed to detoxify and protect against poisons.
+
+<GuideEntityEmbed Entity="WildPlantPoppy" /><GuideEntityEmbed Entity="FoodPoppy" />[bold]Poppy[/bold] is the source of opium and morphine, known for sedative and pain-relieving effects, but it can also stabilize shock in small doses by calming the nervous system. Historically, it's been used for pain and trauma management.
+
+<GuideEntityEmbed Entity="WildPlantAloe" /><GuideEntityEmbed Entity="FoodAloe" />[bold]Aloe vera[/bold]'s gel is a well-documented remedy for burns, soothing inflammation and promoting skin healing.
+
 </Document>

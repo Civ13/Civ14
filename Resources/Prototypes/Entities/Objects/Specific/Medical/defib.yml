@@ -10,7 +10,7 @@
       layers:
         - state: icon
         - state: screen
-          map: [ "enum.ToggleVisuals.Layer" ]
+          map: ["enum.ToggleVisuals.Layer"]
           visible: false
           shader: unshaded
     - type: Appearance
@@ -39,26 +39,26 @@
       price: 30
     - type: GuideHelp
       guides:
-      - Medical Doctor
+        - Medical
 
 - type: entity
   id: Defibrillator
-  parent: [ BaseDefibrillator, PowerCellSlotMediumItem ]
+  parent: [BaseDefibrillator, PowerCellSlotMediumItem]
   components:
-  - type: MultiHandedItem
-  - type: ToggleCellDraw
-  - type: PowerCellDraw
-    useRate: 100
+    - type: MultiHandedItem
+    - type: ToggleCellDraw
+    - type: PowerCellDraw
+      useRate: 100
 
 - type: entity
   id: DefibrillatorEmpty
   parent: Defibrillator
   suffix: Empty
   components:
-  - type: ItemSlots
-    slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: power-cell-slot-component-slot-name-default
 
 - type: entity
   id: DefibrillatorOneHandedUnpowered
@@ -67,33 +67,33 @@
 
 - type: entity
   id: DefibrillatorCompact # This should be a research item at some point
-  parent: [ BaseDefibrillator, PowerCellSlotMediumItem ]
+  parent: [BaseDefibrillator, PowerCellSlotMediumItem]
   name: compact defibrillator
   description: Now in fun size!
   components:
-  - type: Sprite
-    sprite: Objects/Specific/Medical/defibsmall.rsi
-    layers:
-      - state: icon
-      - state: screen
-        map: [ "enum.ToggleVisuals.Layer" ]
-        visible: false
-        shader: unshaded
-      - state: ready
-        map: ["enum.PowerDeviceVisualLayers.Powered"]
-        shader: unshaded
-  - type: Item
-    size: Normal
-  - type: ToggleCellDraw
-  - type: PowerCellDraw
-    useRate: 100
-  - type: Defibrillator
-    zapHeal:
-      types:
-        Asphyxiation: -40
-    doAfterDuration: 6
-  - type: DoAfter
-  - type: UseDelay
+    - type: Sprite
+      sprite: Objects/Specific/Medical/defibsmall.rsi
+      layers:
+        - state: icon
+        - state: screen
+          map: ["enum.ToggleVisuals.Layer"]
+          visible: false
+          shader: unshaded
+        - state: ready
+          map: ["enum.PowerDeviceVisualLayers.Powered"]
+          shader: unshaded
+    - type: Item
+      size: Normal
+    - type: ToggleCellDraw
+    - type: PowerCellDraw
+      useRate: 100
+    - type: Defibrillator
+      zapHeal:
+        types:
+          Asphyxiation: -40
+      doAfterDuration: 6
+    - type: DoAfter
+    - type: UseDelay
 
 - type: entity
   id: DefibrillatorSyndicate
@@ -101,32 +101,32 @@
   name: interdyne defibrillator
   description: Doubles as a self-defense weapon against war-crime inclined tiders.
   components:
-  - type: Sprite
-    sprite: Objects/Specific/Medical/defibsyndi.rsi
-    layers:
-      - state: icon
-      - state: screen
-        map: [ "enum.ToggleVisuals.Layer" ]
-        visible: false
-        shader: unshaded
-      - state: ready
-        map: ["enum.PowerDeviceVisualLayers.Powered"]
-        shader: unshaded
-  - type: MeleeWeapon
-    damage:
-      types:
-        Blunt: 8
-  - type: ItemToggleMeleeWeapon
-    activatedSoundOnHit:
-      path: /Audio/Items/Defib/defib_zap.ogg
-      params:
-        variation: 0.250
-    activatedSoundOnHitNoDamage:
-      path: /Audio/Items/Defib/defib_zap.ogg
-      params:
-        variation: 0.250
-        volume: -10
-    activatedDamage:
-      types:
-        Blunt: 8
-        Shock: 16
+    - type: Sprite
+      sprite: Objects/Specific/Medical/defibsyndi.rsi
+      layers:
+        - state: icon
+        - state: screen
+          map: ["enum.ToggleVisuals.Layer"]
+          visible: false
+          shader: unshaded
+        - state: ready
+          map: ["enum.PowerDeviceVisualLayers.Powered"]
+          shader: unshaded
+    - type: MeleeWeapon
+      damage:
+        types:
+          Blunt: 8
+    - type: ItemToggleMeleeWeapon
+      activatedSoundOnHit:
+        path: /Audio/Items/Defib/defib_zap.ogg
+        params:
+          variation: 0.250
+      activatedSoundOnHitNoDamage:
+        path: /Audio/Items/Defib/defib_zap.ogg
+        params:
+          variation: 0.250
+          volume: -10
+      activatedDamage:
+        types:
+          Blunt: 8
+          Shock: 16

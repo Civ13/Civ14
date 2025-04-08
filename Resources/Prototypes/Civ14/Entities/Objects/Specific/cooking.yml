@@ -92,7 +92,7 @@
       maxEntities: 2
       whitelist:
         components:
-        - Temperature
+          - Temperature
     - type: GenericVisualizer
       visuals:
         enum.EntityHeaterVisuals.Setting:
@@ -104,7 +104,6 @@
 
     - type: GuideHelp
       guides:
-        - Chef
         - FoodRecipes
     - type: Construction
       node: end

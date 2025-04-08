@@ -53,7 +53,6 @@
       sprite: Objects/Weapons/Melee/kitchen_knife.rsi
     - type: GuideHelp
       guides:
-        - Chef
         - FoodRecipes
 
 - type: entity
@@ -80,7 +79,6 @@
       sprite: Objects/Weapons/Melee/cleaver.rsi
     - type: GuideHelp
       guides:
-        - Chef
         - FoodRecipes
 
 - type: entity
