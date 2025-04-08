@@ -216,7 +216,7 @@
         - state: overlay_blood
     - type: GuideHelp
       guides:
-        - Survival
+        - NomadsStarterGuide
 
 - type: entity
   id: BookChemicalCompendium
