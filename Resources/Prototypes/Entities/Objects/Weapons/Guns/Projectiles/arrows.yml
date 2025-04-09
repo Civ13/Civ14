@@ -71,9 +71,6 @@
       damage:
         types:
           Piercing: 15
-    - type: Construction
-      graph: ImprovisedArrow
-      node: ImprovisedArrow
 
 - type: entity
   parent: BaseArrow
