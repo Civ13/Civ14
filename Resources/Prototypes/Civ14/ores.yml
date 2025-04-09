@@ -3,3 +3,14 @@
   oreEntity: MaterialStone1
   minOreYield: 1
   maxOreYield: 3
+
+- type: weightedRandomOre
+  id: RandomOreDistributionCiv
+  weights:
+    OreStone: 40
+    OreIron: 25
+    OreCopper: 12
+    OreTin: 4
+    OreCoal: 10
+    OreSilver: 6
+    OreGold: 3

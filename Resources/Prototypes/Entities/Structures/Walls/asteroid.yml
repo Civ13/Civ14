@@ -717,8 +717,8 @@
       damageContainer: StructuralInorganic
       damageModifierSet: Metallic
     - type: OreVein
-      oreChance: 0.7
-      currentOre: OreStone
+      oreChance: 1
+      oreRarityPrototypeId: RandomOreDistributionCiv
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
