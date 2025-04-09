@@ -1,0 +1,59 @@
+- type: entity
+  parent: BaseLathe
+  id: FletchersWorkstation
+  name: fletcher's workstation
+  description: Used to produce bows and arrows.
+  components:
+    - type: Transform
+      noRot: false
+    - type: Sprite
+      sprite: Civ14/Objects/structures.rsi
+      snapCardinals: true
+      state: fletchersbench
+    - type: Machine
+      board: UniformPrinterMachineCircuitboard
+    - type: ApcPowerReceiver
+      needsPower: false
+      powerLoad: 0
+    - type: Anchorable
+      delay: 2
+    - type: Lathe
+      producingSound: /Audio/Machines/uniformprinter.ogg
+      idleState: fletchersbench
+      runningState: fletchersbench
+      staticPacks:
+        - FletchersPack
+    - type: MaterialStorage
+      whitelist:
+        tags:
+          - Sheet
+          - RawMaterial
+          - Ingot
+
+- type: latheCategory
+  id: Fletcher
+  name: lathe-category-fletcher
+
+- type: latheRecipePack
+  id: FletchersPack
+  recipes:
+    - AncientBow
+    - AncientArrow
+
+- type: latheRecipe
+  id: AncientBow
+  categories:
+    - Fletcher
+  completetime: 10
+  materials:
+    Wood: 800
+  result: BowImprovised
+
+- type: latheRecipe
+  id: AncientArrow
+  categories:
+    - Fletcher
+  completetime: 3
+  materials:
+    Wood: 200
+  result: ArrowRegular

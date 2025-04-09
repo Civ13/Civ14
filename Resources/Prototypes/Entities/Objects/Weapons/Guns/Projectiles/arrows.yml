@@ -62,7 +62,7 @@
   parent: BaseArrow
   id: ArrowRegular
   name: arrow
-  description: You can feel the power of the steppe within you.
+  description: A basic sharpened arrow.
   components:
     - type: Sprite
       sprite: Civ14/Objects/weapons.rsi
@@ -70,10 +70,7 @@
     - type: Projectile
       damage:
         types:
-          Piercing: 35
-    - type: Construction
-      graph: ImprovisedArrow
-      node: ImprovisedArrow
+          Piercing: 15
 
 - type: entity
   parent: BaseArrow
@@ -97,9 +94,6 @@
       damage:
         types:
           Piercing: 12
-    - type: Construction
-      graph: ImprovisedArrow
-      node: ImprovisedArrow
 
 - type: entity
   parent: BaseArrow

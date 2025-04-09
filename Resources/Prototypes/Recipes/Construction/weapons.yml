@@ -49,32 +49,6 @@
   agemax: 8
 
 - type: construction
-  name: simple arrow
-  id: ImprovisedArrow
-  graph: ImprovisedArrow
-  startNode: start
-  targetNode: ImprovisedArrow
-  category: construction-category-weapons
-  description: A sharpened wood arrow, for use with a bow.
-  icon: { sprite: Civ14/Objects/weapons.rsi, state: arrow }
-  objectType: Item
-  agemin: 0
-  agemax: 8
-
-- type: construction
-  name: ancient bow
-  id: ImprovisedBow
-  graph: ImprovisedBow
-  startNode: start
-  targetNode: ImprovisedBow
-  category: construction-category-weapons
-  description: A simple bow made out of wood and fiber.
-  icon: { sprite: Civ14/Objects/StoneAge/bow.rsi, state: icon }
-  objectType: Item
-  agemin: 0
-  agemax: 8
-
-- type: construction
   name: bone spear
   id: SpearBone
   graph: SpearBone

@@ -1,19 +1,4 @@
 ﻿- type: constructionGraph
-  id: ImprovisedArrow
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: ImprovisedArrow
-          steps:
-            - material: WoodPlank
-              amount: 1
-              doAfter: 0.5
-
-    - node: ImprovisedArrow
-      entity: ArrowRegular
-
-- type: constructionGraph
   id: ImprovisedArrowPlasma
   start: start
   graph:
