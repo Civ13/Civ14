@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main # Trigger on push to main branch
-  workflow_dispatch: # Allow manual triggering
 
 jobs:
   compile-and-push:
@@ -43,11 +42,14 @@ jobs:
 
       # Copy compiled output to target repo
       - name: Update Target Repo
-        run: |
-          cp -r bin/Content.Client/* target-repo/
-          cd target-repo
+        run: | # Copy files from source-repo/output to target repo, preserving timestamps
+          rsync -av --ignore-existing target-repo/ . || true
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add .
-          git commit -m "Update from source repo compilation" || echo "No changes to commit"
-          git push
+          if git status --porcelain | grep .; then
+            git commit -m "Update from source repo compilation - changed files only"
+            git push
+          else
+            echo "No changes detected, skipping commit and push"
+          fi
