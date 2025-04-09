@@ -1,0 +1,53 @@
+name: Compile and Update Target Repo
+
+on:
+  push:
+    branches:
+      - main # Trigger on push to main branch
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  compile-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependencies
+        run: sudo apt-get install -y python3-paramiko python3-lxml
+
+      - uses: actions/checkout@v3.6.0
+        with:
+          submodules: "recursive"
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v3.2.0
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Get Engine Tag
+        run: |
+          cd RobustToolbox
+          git fetch --depth=1
+
+      - name: Install dependencies
+        run: dotnet restore
+
+      # Run your compilation script
+      - name: Package Client
+        run: dotnet run --project Content.Client --configuration Release
+
+      # Checkout the target repository
+      - name: Checkout Target Repo
+        uses: actions/checkout@v4
+        with:
+          repository: taislin/civ14_compiled_client
+          token: ${{ secrets.TARGET_REPO_TOKEN }}
+          path: target-repo # Clone into a subdirectory
+
+      # Copy compiled output to target repo
+      - name: Update Target Repo
+        run: |
+          cp -r bin/Content.Client/* target-repo/
+          cd target-repo
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add .
+          git commit -m "Update from source repo compilation" || echo "No changes to commit"
+          git push
