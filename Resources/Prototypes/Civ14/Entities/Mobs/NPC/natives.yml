@@ -66,7 +66,7 @@
         collection: BulletMiss
       soundEmpty: null
     - type: BallisticAmmoProvider
-      proto: ArrowImprovised
+      proto: ArrowRegular
       capacity: 30
     - type: CombatMode
 
@@ -108,7 +108,7 @@
         collection: BulletMiss
       soundEmpty: null
     - type: BallisticAmmoProvider
-      proto: ArrowImprovised
+      proto: ArrowRegular
       capacity: 30
     - type: CombatMode
 
