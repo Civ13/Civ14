@@ -20,10 +20,16 @@ jobs:
         with:
           dotnet-version: 9.0.x
 
-      - name: Get Engine Tag
+      - name: Setup Submodule
         run: |
-          cd RobustToolbox
-          git fetch --depth=1
+          git submodule update --init --recursive
+      - name: Pull engine updates
+        uses: space-wizards/submodule-dependency@v0.1.5
+
+      - name: Update Engine Submodules
+        run: |
+          cd RobustToolbox/
+          git submodule update --init --recursive
 
       - name: Install dependencies
         run: dotnet restore
