@@ -36,7 +36,7 @@ jobs:
 
       # Run your compilation script
       - name: Package Client
-        run: dotnet run --project Content.Client --configuration Release
+        run: dotnet build --configuration Release
 
       # Checkout the target repository
       - name: Checkout Target Repo
