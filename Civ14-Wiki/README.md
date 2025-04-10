@@ -4,4 +4,4 @@
 
 ## See <http://www.mdwiki.info> for more info and documentation
 
-Add articles to the `wiki/` subfolder.
+Add articles as markdown files in the this folder or any of its subfolders.

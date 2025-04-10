@@ -1,13 +1,23 @@
 # Civ14 Wiki
 
 [Rules](rules/rules.md)
-[How to Play](wiki/playing.md)
-[Nomads](wiki/nomads.md)
+[How to Play](guides/playing.md)
+
+[Gamemodes]()
+
+-   [Nomads](gamemodes/nomads.md)
+-   [TDM](gamemodes/tdm.md)
+-   [Art of the Deal](gamemodes/aotd.md)
 
 [Guides]()
 
--   [Starter Guide](wiki/starter_guide.md)
--   [Farming](wiki/guide_to_farming.md)
+-   [Starter Guide](guides/starter_guide.md)
+-   [Farming](guides/guide_to_farming.md)
+-   [Construction](guides/guide_to_construction.md)
+-   [Crafting](guides/guide_to_crafting.md)
+-   [Metallurgy](guides/guide_to_metallurgy.md)
+-   [Medical](guides/guide_to_medical.md)
+-   [Combat](guides/guide_to_combat.md)
 
 [Links]()
 
