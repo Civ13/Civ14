@@ -57,6 +57,7 @@
       materialComposition:
         Tin: 100
     - type: Sprite
+      sprite: "Objects/Materials/ingots.rsi"
       state: iron
       layers:
         - state: iron

@@ -21,8 +21,6 @@
           reagents:
             - ReagentId: Iron
               Quantity: 10
-    - type: Item
-      heldPrefix: iron
 
 - type: entity
   parent: IronOre
