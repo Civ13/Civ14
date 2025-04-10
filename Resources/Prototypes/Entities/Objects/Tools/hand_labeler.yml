@@ -8,8 +8,8 @@
       sprite: Civ14/Objects/items.rsi
       state: paintbrush
     - type: Item
-      sprite: Objects/Tools/scissors.rsi
-      storedRotation: -90
+      sprite: Objects/Misc/pens.rsi
+      heldPrefix: pen
     - type: UseDelay
       delay: 2.0
     - type: ActivatableUI
