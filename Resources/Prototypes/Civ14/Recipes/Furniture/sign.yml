@@ -1,0 +1,26 @@
+- type: construction
+  name: wood sign
+  id: SignCustom
+  graph: SignCustom
+  startNode: start
+  targetNode: end
+  category: construction-category-furniture
+  description: A wooden sign, can be painted over with a paintbrush.
+  icon: { sprite: "Civ14/Objects/decals.rsi", state: woodsign2 }
+  objectType: Structure
+  agemin: 0
+  agemax: 8
+
+- type: constructionGraph
+  id: SignCustom
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 4
+              doAfter: 6
+    - node: end
+      entity: SignCustom

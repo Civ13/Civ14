@@ -1,0 +1,18 @@
+- type: entity
+  parent: BaseSign
+  id: SignCustom
+  name: wood sign
+  description: ""
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: woodsign2
+    - type: Tag
+      tags:
+        - Paintable
+    - type: Construction
+      graph: SignCustom
+      node: end
+      cost: 4
+      material: WoodPlank
+      time: 6

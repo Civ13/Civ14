@@ -1,14 +1,14 @@
 - type: entity
   parent: BaseItem
   id: HandLabeler
-  name: hand labeler
-  description: A hand labeler, used to label items and objects.
+  name: paintbrush
+  description: A paintbrush, used to paint signs and label things.
   components:
     - type: Sprite
-      sprite: Objects/Tools/hand_labeler.rsi
-      state: hand_labeler
+      sprite: Civ14/Objects/items.rsi
+      state: paintbrush
     - type: Item
-      sprite: Objects/Tools/hand_labeler.rsi
+      sprite: Objects/Tools/scissors.rsi
       storedRotation: -90
     - type: UseDelay
       delay: 2.0
@@ -24,4 +24,39 @@
         components:
           - Item
         tags:
-          - Structure
+          - Paintable
+    - type: Construction
+      graph: HandLabeler
+      node: end
+      cost: 3
+      material: WoodPlank
+      time: 5
+
+- type: construction
+  name: paintbrush
+  id: HandLabeler
+  graph: HandLabeler
+  startNode: start
+  targetNode: end
+  category: construction-category-tools
+  description: A paintbrush, used to paint signs and label things.
+  icon:
+    sprite: Civ14/Objects/items.rsi
+    state: paintbrush
+  objectType: Item
+  agemin: 0
+  agemax: 8
+
+- type: constructionGraph
+  id: HandLabeler
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 3
+              doAfter: 5
+    - node: end
+      entity: HandLabeler
