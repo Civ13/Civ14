@@ -8,13 +8,16 @@ reagent-name-carbon = carbon
 reagent-desc-carbon = A black, crystalline solid.
 
 reagent-name-charcoal = charcoal
-reagent-desc-charcoal = A black, porous solid
+reagent-desc-charcoal = A black, porous solid.
 
 reagent-name-chlorine = chlorine
 reagent-desc-chlorine = A yellow-green gas which is toxic to humans.
 
 reagent-name-copper = copper
 reagent-desc-copper = A soft, malleable, and ductile metal with very high thermal and electrical conductivity.
+
+reagent-name-tin = tin
+reagent-desc-tin = A soft, pliable metal.
 
 reagent-name-fluorine = fluorine
 reagent-desc-fluorine = A highly toxic pale yellow gas. Extremely reactive.

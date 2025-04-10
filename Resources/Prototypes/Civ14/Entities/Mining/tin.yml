@@ -1,0 +1,125 @@
+- type: ore
+  id: OreTin
+  oreEntity: TinOre1
+  minOreYield: 2
+  maxOreYield: 4
+
+- type: entity
+  parent: OreBase
+  id: TinOre
+  name: tin ore
+  suffix: Full
+  components:
+    - type: Stack
+      stackType: TinOre
+    - type: Sprite
+      sprite: "Civ14/Objects/mining.rsi"
+      state: ore_tin
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        RawTin: 100
+    - type: Extractable
+      grindableSolutionName: tinore
+    - type: SolutionContainerManager
+      solutions:
+        tinore:
+          reagents:
+            - ReagentId: Tin
+              Quantity: 10
+    - type: Item
+      heldPrefix: coal
+
+- type: entity
+  parent: TinOre
+  id: TinOre1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: material
+  id: Tin
+  stackEntity: IngotTin1
+  name: materials-tin
+  icon: { sprite: Objects/Materials/ingots.rsi, state: iron }
+  color: "#919191"
+  price: 0.05
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialTin
+  name: tin
+  suffix: Full
+  components:
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        Tin: 100
+    - type: Sprite
+      state: iron
+      layers:
+        - state: iron
+          map: ["base"]
+    - type: Stack
+      stackType: Tin
+      count: 10
+      baseLayer: base
+      layerStates:
+        - iron
+        - iron_2
+        - iron_3
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 10
+          reagents:
+            - ReagentId: Tin
+              Quantity: 10
+    - type: Appearance
+    - type: Item
+      heldPrefix: iron
+
+- type: entity
+  parent: MaterialTin
+  id: MaterialTin1
+  suffix: Single
+  components:
+    - type: Sprite
+      sprite: Objects/Materials/ingots.rsi
+      state: iron
+    - type: Stack
+      count: 1
+
+- type: stack
+  id: Tin
+  name: tin
+  icon: { sprite: /Textures/Objects/Materials/ingots.rsi, state: iron }
+  spawn: MaterialTin1
+  maxCount: 10
+
+- type: stack
+  id: TinOre
+  name: iron ore
+  icon: { sprite: /Textures/Civ14/Objects/mining.rsi, state: ore_iron }
+  spawn: IronOre1
+  maxCount: 30
+
+- type: material
+  id: RawTin
+  stackEntity: TinOre1
+  name: materials-raw-tin
+  unit: materials-unit-chunk
+  icon: { sprite: Civ14/Objects/mining.rsi, state: ore_tin }
+  price: 0.1
+
+- type: reagent
+  id: Tin
+  name: reagent-name-tin
+  group: Elements
+  desc: reagent-desc-tin
+  physicalDesc: reagent-physical-desc-metallic
+  flavor: metallic
+  color: "#919191"
+  boilingPoint: 2859.0
+  meltingPoint: 505.0

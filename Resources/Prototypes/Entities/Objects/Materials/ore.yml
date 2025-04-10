@@ -317,16 +317,12 @@
     - type: Stack
       stackType: CopperOre
     - type: Sprite
-      state: gold
+      sprite: "Civ14/Objects/mining.rsi"
+      state: ore_copper
     - type: Material
     - type: PhysicalComposition
       materialComposition:
         RawCopper: 100
-    - type: PointLight
-      radius: 1.2
-      energy: 1
-      castShadows: false
-      color: "#eef066"
     - type: Extractable
       grindableSolutionName: copperore
     - type: SolutionContainerManager

@@ -83,5 +83,5 @@
   stackEntity: CopperOre1
   name: materials-raw-copper
   unit: materials-unit-chunk
-  icon: { sprite: Objects/Materials/ore.rsi, state: gold }
+  icon: { sprite: Civ14/Objects/mining.rsi, state: ore_copper }
   price: 0.05

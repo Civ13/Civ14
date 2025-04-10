@@ -1,0 +1,33 @@
+- type: entity
+  parent: OreBase
+  id: IronOre
+  name: iron ore
+  suffix: Full
+  components:
+    - type: Stack
+      stackType: IronOre
+    - type: Sprite
+      sprite: "Civ14/Objects/mining.rsi"
+      state: ore_iron
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        RawIron: 100
+    - type: Extractable
+      grindableSolutionName: ironore
+    - type: SolutionContainerManager
+      solutions:
+        ironore:
+          reagents:
+            - ReagentId: Iron
+              Quantity: 10
+    - type: Item
+      heldPrefix: iron
+
+- type: entity
+  parent: IronOre
+  id: IronOre1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1

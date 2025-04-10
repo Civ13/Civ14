@@ -65,6 +65,12 @@
   maxOreYield: 4
 
 - type: ore
+  id: OreIron
+  oreEntity: IronOre1
+  minOreYield: 2
+  maxOreYield: 4
+
+- type: ore
   id: OreDiamond
   oreEntity: DiamondOre1
   minOreYield: 1
