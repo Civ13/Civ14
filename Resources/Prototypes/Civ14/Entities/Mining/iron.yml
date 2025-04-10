@@ -29,3 +29,10 @@
   components:
     - type: Stack
       count: 1
+
+- type: stack
+  id: IronOre
+  name: iron ore
+  icon: { sprite: /Textures/Civ14/Objects/mining.rsi, state: ore_iron }
+  spawn: IronOre1
+  maxCount: 30

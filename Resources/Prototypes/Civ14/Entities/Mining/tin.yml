@@ -40,7 +40,7 @@
 
 - type: material
   id: Tin
-  stackEntity: IngotTin1
+  stackEntity: MaterialTin1
   name: materials-tin
   icon: { sprite: Objects/Materials/ingots.rsi, state: iron }
   color: "#919191"
