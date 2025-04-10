@@ -100,9 +100,9 @@
 
 - type: stack
   id: TinOre
-  name: iron ore
-  icon: { sprite: /Textures/Civ14/Objects/mining.rsi, state: ore_iron }
-  spawn: IronOre1
+  name: tin ore
+  icon: { sprite: /Textures/Civ14/Objects/mining.rsi, state: ore_tin }
+  spawn: TinOre1
   maxCount: 30
 
 - type: material
