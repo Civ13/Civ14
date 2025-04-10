@@ -1,0 +1,61 @@
+- type: material
+  id: Bronze
+  stackEntity: MaterialBronze1
+  name: materials-bronze
+  icon: { sprite: Objects/Materials/ingots.rsi, state: sheet-bronze }
+  color: "#cd7f32"
+  price: 0.05
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialBronze
+  name: bronze
+  suffix: Full
+  components:
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        Tin: 10
+        Copper: 90
+    - type: Sprite
+      sprite: "Objects/Materials/ingots.rsi"
+      state: sheet-bronze
+      layers:
+        - state: sheet-bronze
+          map: ["base"]
+    - type: Stack
+      stackType: Bronze
+      count: 10
+      baseLayer: base
+      layerStates:
+        - sheet-bronze
+        - sheet-bronze_2
+        - sheet-bronze_3
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 10
+          reagents:
+            - ReagentId: Copper
+              Quantity: 9
+            - ReagentId: Tin
+              Quantity: 1
+    - type: Appearance
+
+- type: entity
+  parent: MaterialBronze
+  id: MaterialBronze1
+  suffix: Single
+  components:
+    - type: Sprite
+      sprite: Objects/Materials/ingots.rsi
+      state: sheet-bronze
+    - type: Stack
+      count: 1
+
+- type: stack
+  id: Bronze
+  name: bronze
+  icon: { sprite: /Textures/Objects/Materials/ingots.rsi, state: sheet-bronze }
+  spawn: MaterialBronze1
+  maxCount: 10

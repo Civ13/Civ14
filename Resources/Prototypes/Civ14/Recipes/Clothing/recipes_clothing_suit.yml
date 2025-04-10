@@ -12,7 +12,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_preachers_robe
   start: start
@@ -40,7 +39,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_contestant_jacket
   start: start
@@ -68,7 +66,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_black_vest
   start: start
@@ -96,7 +93,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_DRA_officer_jacket
   start: start
@@ -124,7 +120,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_afghanka_coat
   start: start
@@ -152,7 +147,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_cafr_afghanka_coat
   start: start
@@ -180,7 +174,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_forensics_jacket
   start: start
@@ -208,7 +201,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_police_bulletproof_vest
   start: start
@@ -222,7 +214,6 @@
               doAfter: 5
     - node: end
       entity: civ13_suit_police_bulletproof_vest
-
 - type: construction
   name: haori jacket
   id: civ13_suit_haori_jacket
@@ -237,7 +228,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_haori_jacket
   start: start
@@ -251,7 +241,6 @@
               doAfter: 8
     - node: end
       entity: civ13_suit_haori_jacket
-
 - type: construction
   name: Abashiri Haori
   id: civ13_suit_Abashiri_Haori
@@ -259,16 +248,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A simple haori jacket usually worn over a haori outfit. This one is
-    designated with Wing1 on its back.
+  description: A simple haori jacket usually worn over a haori outfit. This one is designated with Wing1 on its back.
   icon:
     sprite: Civ14/Clothing/exported/suits/haori_jacket1.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Abashiri_Haori
   start: start
@@ -289,16 +275,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A simple haori jacket usually worn over a haori outfit. This one is
-    designated with Wing 2 on its back.
+  description: A simple haori jacket usually worn over a haori outfit. This one is designated with Wing 2 on its back.
   icon:
     sprite: Civ14/Clothing/exported/suits/haori_jacket2.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Abashiri_Haori_1
   start: start
@@ -319,16 +302,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A simple haori jacket usually worn over a haori outfit. This one is
-    designated with Wing 3 on its back.
+  description: A simple haori jacket usually worn over a haori outfit. This one is designated with Wing 3 on its back.
   icon:
     sprite: Civ14/Clothing/exported/suits/haori_jacket3.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Abashiri_Haori_1_2
   start: start
@@ -354,9 +334,8 @@
     sprite: Civ14/Clothing/exported/suits/black_suit.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_black_suit
   start: start
@@ -382,9 +361,8 @@
     sprite: Civ14/Clothing/exported/suits/really_black_suit.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_dark_black_suit
   start: start
@@ -410,9 +388,8 @@
     sprite: Civ14/Clothing/exported/suits/charcoal_suit.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_charcoal_suit
   start: start
@@ -438,9 +415,8 @@
     sprite: Civ14/Clothing/exported/suits/navy_suit.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_navy_suit
   start: start
@@ -466,9 +442,8 @@
     sprite: Civ14/Clothing/exported/suits/checkered_suit.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_checkered_suit
   start: start
@@ -494,9 +469,8 @@
     sprite: Civ14/Clothing/exported/suits/burgundy_suit.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_burgundy_suit
   start: start
@@ -522,9 +496,8 @@
     sprite: Civ14/Clothing/exported/suits/labcoat.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_white_labcoat
   start: start
@@ -550,9 +523,8 @@
     sprite: Civ14/Clothing/exported/suits/surgical.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_surgery_apron
   start: start
@@ -578,9 +550,8 @@
     sprite: Civ14/Clothing/exported/suits/coveralls.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 6
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_coveralls
   start: start
@@ -606,9 +577,8 @@
     sprite: Civ14/Clothing/exported/suits/piratejacket1.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_black_jacket
   start: start
@@ -634,9 +604,8 @@
     sprite: Civ14/Clothing/exported/suits/piratejacket2.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_fancy_brown_jacket
   start: start
@@ -664,7 +633,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_blue_vest
   start: start
@@ -692,7 +660,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_black_vest_1
   start: start
@@ -720,7 +687,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_fancy_red_jacket
   start: start
@@ -741,16 +707,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A standard captain jacket of the royal navy. Blue with golden buttons, white
-    laces and golden cuffs.
+  description: A standard captain jacket of the royal navy. Blue with golden buttons, white laces and golden cuffs.
   icon:
     sprite: Civ14/Clothing/exported/suits/british_captain.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_royal_navy_captain_jacket
   start: start
@@ -776,9 +739,8 @@
     sprite: Civ14/Clothing/exported/suits/british_officer.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_royal_navy_officer_jacket
   start: start
@@ -804,9 +766,8 @@
     sprite: Civ14/Clothing/exported/suits/british_soldier_jacket.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_british_red_jacket
   start: start
@@ -827,16 +788,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A standard captain jacket of the portuguese navy. Blue with golden buttons,
-    white laces and golden cuffs.
+  description: A standard captain jacket of the portuguese navy. Blue with golden buttons, white laces and golden cuffs.
   icon:
     sprite: Civ14/Clothing/exported/suits/portuguese_captain.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_portuguese_captain_jacket
   start: start
@@ -862,9 +820,8 @@
     sprite: Civ14/Clothing/exported/suits/portuguese_officer.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_portuguese_officer_jacket
   start: start
@@ -885,16 +842,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A standard Captain jacket of the spanish navy. Yellow with golden buttons,
-    white laces and golden cuffs.
+  description: A standard Captain jacket of the spanish navy. Yellow with golden buttons, white laces and golden cuffs.
   icon:
     sprite: Civ14/Clothing/exported/suits/spanish_captain.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_spanish_captain_jacket
   start: start
@@ -920,9 +874,8 @@
     sprite: Civ14/Clothing/exported/suits/spanish_officer.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_spanish_officer_jacket
   start: start
@@ -948,9 +901,8 @@
     sprite: Civ14/Clothing/exported/suits/spanish_army.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_spanish_soldier_jacket
   start: start
@@ -971,16 +923,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A standard captain jacket of the french navy. White with golden buttons,
-    blue laces and golden cuffs.
+  description: A standard captain jacket of the french navy. White with golden buttons, blue laces and golden cuffs.
   icon:
     sprite: Civ14/Clothing/exported/suits/french_captain.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_french_captain_jacket
   start: start
@@ -1006,9 +955,8 @@
     sprite: Civ14/Clothing/exported/suits/french_officer.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_french_officer_jacket
   start: start
@@ -1029,16 +977,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A standard captain jacket of the united provinces navy. Orange with golden
-    buttons, white laces and golden cuffs.
+  description: A standard captain jacket of the united provinces navy. Orange with golden buttons, white laces and golden cuffs.
   icon:
     sprite: Civ14/Clothing/exported/suits/dutch_captain.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_united_provinces_captain_jacket
   start: start
@@ -1059,16 +1004,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A standard officer jacket of the united provinces navy. Orange with golden
-    buttons.
+  description: A standard officer jacket of the united provinces navy. Orange with golden buttons.
   icon:
     sprite: Civ14/Clothing/exported/suits/dutch_officer.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_united_provinces_officer_jacket
   start: start
@@ -1089,16 +1031,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A standard army jacket of the united provinces army. Orange with golden
-    buttons.
+  description: A standard army jacket of the united provinces army. Orange with golden buttons.
   icon:
     sprite: Civ14/Clothing/exported/suits/dutch_army.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_united_provinces_army_jacket
   start: start
@@ -1124,9 +1063,8 @@
     sprite: Civ14/Clothing/exported/suits/spanish_officer.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_spanish_army_jacket
   start: start
@@ -1152,9 +1090,8 @@
     sprite: Civ14/Clothing/exported/suits/portuguese_army.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_portuguese_army_jacket
   start: start
@@ -1180,9 +1117,8 @@
     sprite: Civ14/Clothing/exported/suits/french_army.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_french_army_jacket
   start: start
@@ -1208,9 +1144,8 @@
     sprite: Civ14/Clothing/exported/suits/british_officer.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 3
+  agemax: 4
 - type: constructionGraph
   id: civ13_suit_british_army_jacket
   start: start
@@ -1238,7 +1173,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_victorian_tailcoat
   start: start
@@ -1266,7 +1200,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_leather_overcoat
   start: start
@@ -1294,7 +1227,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_black_leather_overcoat
   start: start
@@ -1322,7 +1254,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_black_vest_1_2
   start: start
@@ -1350,7 +1281,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_olive_vest
   start: start
@@ -1378,7 +1308,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_blue_vest_1
   start: start
@@ -1406,7 +1335,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_cream_short_jacket
   start: start
@@ -1420,7 +1348,6 @@
               doAfter: 20
     - node: end
       entity: civ13_suit_cream_short_jacket
-
 - type: construction
   name: plague doctor suit
   id: civ13_suit_plague_doctor_suit
@@ -1435,7 +1362,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_plague_doctor_suit
   start: start
@@ -1456,16 +1382,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A large cape finely decked in stylized fur pattern often used to denote the
-    most prominent members amongst noble circles.
+  description: A large cape finely decked in stylized fur pattern often used to denote the most prominent members amongst noble circles.
   icon:
     sprite: Civ14/Clothing/exported/suits/regal_cape.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_regal_ermine_cape
   start: start
@@ -1486,16 +1409,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A colorful woolen coat, used by shamans to wrap warm whilst performing
-    rituals on the open steppe.
+  description: A colorful woolen coat, used by shamans to wrap warm whilst performing rituals on the open steppe.
   icon:
     sprite: Civ14/Clothing/exported/suits/steppe_shaman_wool_coat.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_steppe_shaman_wool_coat
   start: start
@@ -1516,16 +1436,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A jacket often worn by enthusiasts of vehicles, speed and the smell of
-    burning rubber.
+  description: A jacket often worn by enthusiasts of vehicles, speed and the smell of burning rubber.
   icon:
     sprite: Civ14/Clothing/exported/suits/motorist_jacket.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_motorist_jacket
   start: start
@@ -1553,7 +1470,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Russian_Federal_Forces_winter_jacket
   start: start
@@ -1574,16 +1490,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A loose jacket often worn by counter-cultural types, commonly additional
-    inscriptions can be found on the back.
+  description: A loose jacket often worn by counter-cultural types, commonly additional inscriptions can be found on the back.
   icon:
     sprite: Civ14/Clothing/exported/suits/punk_vest.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_punk_jacket
   start: start
@@ -1611,7 +1524,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_high_visibility_jacket
   start: start
@@ -1639,7 +1551,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_paramedic_jacket
   start: start
@@ -1667,7 +1578,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_track_suit
   start: start
@@ -1693,9 +1603,8 @@
     sprite: Civ14/Clothing/exported/suits/bonearmor.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 0
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_bone_armor
   start: start
@@ -1723,7 +1632,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_imperial_officer_armor
   start: start
@@ -1744,17 +1652,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A red jacket belonging to overzealous leaders of large squadrons of
-    infantry. The authority this grants means rejecting orders will by no means
-    be acceptable...
+  description: A red jacket belonging to overzealous leaders of large squadrons of infantry. The authority this grants means rejecting orders will by no means be acceptable...
   icon:
     sprite: Civ14/Clothing/exported/suits/commissar.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_commissar_jacket
   start: start
@@ -1775,16 +1679,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A black jacket with red arm stripes belonging to expert investigators of
-    intrigue and heresy. By all means nessecary...
+  description: A black jacket with red arm stripes belonging to expert investigators of intrigue and heresy. By all means nessecary...
   icon:
     sprite: Civ14/Clothing/exported/suits/commissar.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_inquisitorial_jacket
   start: start
@@ -1812,7 +1713,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_inquisitorial_jacket_1
   start: start
@@ -1840,7 +1740,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_elven_warlock_robe
   start: start
@@ -1861,16 +1760,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A flamboyant jacket worn by roaming troupes of deadly elven assassins with
-    theatrical motifs.
+  description: A flamboyant jacket worn by roaming troupes of deadly elven assassins with theatrical motifs.
   icon:
     sprite: Civ14/Clothing/exported/suits/elf_harlequin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_elven_harlequin_jacket
   start: start
@@ -1898,7 +1794,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_poncho
   start: start
@@ -1926,7 +1821,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_hoodie
   start: start
@@ -1954,7 +1848,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_cloth_jacket
   start: start
@@ -1982,7 +1875,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_suit_blazer
   start: start
@@ -2008,9 +1900,8 @@
     sprite: Civ14/Clothing/exported/suits/customcolonialcoat_full.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 3
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_colonial_coat
   start: start
@@ -2036,9 +1927,8 @@
     sprite: Civ14/Clothing/exported/suits/customcolonial_full.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 3
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_colonial_jacket
   start: start
@@ -2066,7 +1956,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_track_suit_1
   start: start
@@ -2094,7 +1983,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_wise_tutor_robes
   start: start
@@ -2122,7 +2010,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_arrogant_student_robes
   start: start
@@ -2150,7 +2037,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_fur_coat
   start: start
@@ -2164,7 +2050,6 @@
               doAfter: 15
     - node: end
       entity: civ13_suit_fur_coat
-
 - type: construction
   name: human skin coat
   id: civ13_suit_human_skin_coat
@@ -2179,7 +2064,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_human_skin_coat
   start: start
@@ -2207,7 +2091,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_M05_snow_pattern_coat
   start: start
@@ -2235,7 +2118,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Ukrainian_winter_camo_coat
   start: start
@@ -2263,7 +2145,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Klyaksa_camo_coat
   start: start
@@ -2291,7 +2172,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Schneetarn_camo_coat
   start: start
@@ -2319,7 +2199,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_orc_fur_coat
   start: start
@@ -2347,7 +2226,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_dark_green_winter_coat
   start: start
@@ -2375,7 +2253,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_red_jacket
   start: start
@@ -2403,7 +2280,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_bronze_chinese_lamellar
   start: start
@@ -2431,7 +2307,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_american_coat
   start: start
@@ -2459,7 +2334,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_bizarre_dark_blue_coat
   start: start
@@ -2487,7 +2361,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Cheka_leather_coat
   start: start
@@ -2515,7 +2388,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Black_cherkesska_coat
   start: start
@@ -2543,7 +2415,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Soviet_coat
   start: start
@@ -2571,7 +2442,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Japanese_coat
   start: start
@@ -2599,7 +2469,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_priest_sleev
   start: start
@@ -2627,7 +2496,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Japanese_Coat
   start: start
@@ -2655,7 +2523,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Brown_trench_coat
   start: start
@@ -2683,7 +2550,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Russian_Coat
   start: start
@@ -2711,7 +2577,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Russian_officer_coat.
   start: start
@@ -2739,7 +2604,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_brown_winter_coat
   start: start
@@ -2767,7 +2631,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_black_peacoat
   start: start
@@ -2795,7 +2658,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_fur_coat_1
   start: start
@@ -2823,7 +2685,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_fancy_fur_coat
   start: start
@@ -2851,7 +2712,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_overlord_robe
   start: start
@@ -2879,7 +2739,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_monk_robes
   start: start
@@ -2907,7 +2766,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_fine_clothing
   start: start
@@ -2935,7 +2793,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_lifejacket
   start: start
@@ -2963,7 +2820,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_firefighter_coat
   start: start
@@ -2991,7 +2847,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_biker_jacket
   start: start
@@ -3012,16 +2867,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A sleek lizard scale jacket, bold and impression-setting like the people who
-    wear it. `Too cool for S-s-s-school'.
+  description: A sleek lizard scale jacket, bold and impression-setting like the people who wear it. `Too cool for S-s-s-school'.
   icon:
     sprite: Civ14/Clothing/exported/suits/lizard_jacket.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_lizard_scale_jacket
   start: start
@@ -3042,16 +2894,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A sleek alligator scale jacket, bold and impression-setting like the people
-    who wear it. 'See-ya later alligator'.
+  description: A sleek alligator scale jacket, bold and impression-setting like the people who wear it. 'See-ya later alligator'.
   icon:
     sprite: Civ14/Clothing/exported/suits/gator_jacket.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_alligator_scale_jacket
   start: start
@@ -3079,7 +2928,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Japanese_sand_colored_jacket
   start: start
@@ -3107,7 +2955,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Japanese_rain_coat
   start: start
@@ -3135,7 +2982,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Japanese_pilot_coat
   start: start
@@ -3163,7 +3009,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_American_coat
   start: start
@@ -3191,7 +3036,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_German_parka
   start: start
@@ -3219,7 +3063,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_winter_ghillie_suit
   start: start
@@ -3247,7 +3090,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Grey_parka
   start: start
@@ -3275,7 +3117,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_German_officer_coat
   start: start
@@ -3296,16 +3137,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A german 'SS' parka, in 1944 Erbsenmuster dot-camo, worn by soldaten in the
-    Schutzstaffel.
+  description: A german 'SS' parka, in 1944 Erbsenmuster dot-camo, worn by soldaten in the Schutzstaffel.
   icon:
     sprite: Civ14/Clothing/exported/suits/sssmock.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_SS_parka
   start: start
@@ -3333,7 +3171,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Soviet_coat_1
   start: start
@@ -3361,7 +3198,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_soviet_winter_coat
   start: start
@@ -3389,7 +3225,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Soviet_winter_coat
   start: start
@@ -3417,7 +3252,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Soviet_officer_coat
   start: start
@@ -3445,7 +3279,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_modern_coat
   start: start
@@ -3473,7 +3306,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_black_coat
   start: start
@@ -3501,7 +3333,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_fancy__coat
   start: start
@@ -3529,7 +3360,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_service_jacket
   start: start
@@ -3557,7 +3387,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_brown_bombers_jacket
   start: start
@@ -3585,7 +3414,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_black_bombers_jacket
   start: start
@@ -3613,7 +3441,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_German_coat
   start: start
@@ -3641,7 +3468,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_French_trench_coat
   start: start
@@ -3669,7 +3495,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_British_coat
   start: start
@@ -3697,7 +3522,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_royal_coat
   start: start
@@ -3725,7 +3549,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_black_leather_long_coat
   start: start
@@ -3753,7 +3576,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_modern_brown_coat
   start: start
@@ -3781,7 +3603,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_modern_black_coat
   start: start
@@ -3809,7 +3630,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_gentleman_coat
   start: start
@@ -3837,7 +3657,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_hazard_vest
   start: start
@@ -3865,7 +3684,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_lifejacket_1
   start: start
@@ -3893,7 +3711,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_green_plated_armor
   start: start
@@ -3921,7 +3738,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_seal_lifevest
   start: start
@@ -3949,7 +3765,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_FBI_jacket
   start: start
@@ -3977,7 +3792,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_ATF_jacket
   start: start
@@ -4005,7 +3819,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_DEA_jacket
   start: start
@@ -4033,7 +3846,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_olive_drab_jacket
   start: start
@@ -4061,7 +3873,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_ghillie_suit
   start: start
@@ -4082,16 +3893,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A white apron that covers up to the chest, the ruffles are popular with the
-    french.
+  description: A white apron that covers up to the chest, the ruffles are popular with the french.
   icon:
     sprite: Civ14/Clothing/exported/suits/closechest_apron_f.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_chest_length_apron
   start: start
@@ -4112,16 +3920,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A white apron that covers up to the waist, the ruffles are popular with the
-    french.
+  description: A white apron that covers up to the waist, the ruffles are popular with the french.
   icon:
     sprite: Civ14/Clothing/exported/suits/openchest_apron_f.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_waist_length_apron
   start: start
@@ -4149,7 +3954,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_a_classic_chefs_apron.
   start: start
@@ -4177,7 +3981,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Texas_Fried_Chicken_apron
   start: start
@@ -4205,7 +4008,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_blue_hawaiian_shirt.
   start: start
@@ -4233,7 +4035,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_orange_hawaiian_shirt.
   start: start
@@ -4261,7 +4062,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_purple_hawaiian_shirt.
   start: start
@@ -4289,7 +4089,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_purple_pimp_jacket.
   start: start
@@ -4317,7 +4116,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Blugoslavian_Jacket.
   start: start
@@ -4338,16 +4136,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A Blugo Jacket, feels pretty heavy and is probably stuffed with a mix of
-    kevlar and canvas
+  description: A Blugo Jacket, feels pretty heavy and is probably stuffed with a mix of kevlar and canvas
   icon:
     sprite: Civ14/Clothing/exported/suits/bcj.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Blugoslavian_Flak_Jacket.
   start: start
@@ -4368,16 +4163,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A lifelike full body gorilla suit-outfit, ideal for costume parties and
-    pranksters.
+  description: A lifelike full body gorilla suit-outfit, ideal for costume parties and pranksters.
   icon:
     sprite: Civ14/Clothing/exported/suits/gorilla_suit.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_full_body_gorilla_outfit
   start: start
@@ -4403,9 +4195,8 @@
     sprite: Civ14/Clothing/exported/suits/replicant_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_suit_replicant_trooper_armor
   start: start
@@ -4431,9 +4222,8 @@
     sprite: Civ14/Clothing/exported/suits/reppilot_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_suit_replicant_pilot_armor
   start: start
@@ -4459,9 +4249,8 @@
     sprite: Civ14/Clothing/exported/suits/repmp_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_suit_replicant_MP_armor
   start: start
@@ -4487,9 +4276,8 @@
     sprite: Civ14/Clothing/exported/suits/repsgt_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_suit_replicant_sergeant_armor
   start: start
@@ -4510,16 +4298,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A thick, expensive plastoid armor with a blast plate, covering most of the
-    body.
+  description: A thick, expensive plastoid armor with a blast plate, covering most of the body.
   icon:
     sprite: Civ14/Clothing/exported/suits/repreinforced.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_suit_replicant_reinforced_armor
   start: start
@@ -4545,9 +4330,8 @@
     sprite: Civ14/Clothing/exported/suits/replieutenant_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_suit_replicant_lieutenant_armor
   start: start
@@ -4573,9 +4357,8 @@
     sprite: Civ14/Clothing/exported/suits/repcommando.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_suit_replicant_commando_armor
   start: start
@@ -4601,9 +4384,8 @@
     sprite: Civ14/Clothing/exported/suits/repcaptain_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_suit_replicant_captain_armor
   start: start
@@ -4629,9 +4411,8 @@
     sprite: Civ14/Clothing/exported/suits/repcommander_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_suit_replicant_commander_armor
   start: start
@@ -4652,16 +4433,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A thick, extremely expensive plastoid armor with a crimson red robe
-    attached.
+  description: A thick, extremely expensive plastoid armor with a crimson red robe attached.
   icon:
     sprite: Civ14/Clothing/exported/suits/redguard.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_suit_red_guard_armor_with_robe.
   start: start
@@ -4687,9 +4465,8 @@
     sprite: Civ14/Clothing/exported/suits/senateguard.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_suit_senate_guard_armor_with_robe.
   start: start
@@ -4715,9 +4492,8 @@
     sprite: Civ14/Clothing/exported/suits/stormtrooper_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_suit_standard_stormtrooper_armor
   start: start
@@ -4738,16 +4514,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A thick, expensive imperial stormsurgeon plastoid armor with mint green
-    highlights, covering most of the body.
+  description: A thick, expensive imperial stormsurgeon plastoid armor with mint green highlights, covering most of the body.
   icon:
     sprite: Civ14/Clothing/exported/suits/stormsurgeon_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_suit_stormsurgeon_armor
   start: start
@@ -4768,16 +4541,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A light, substandard imperial stormtrooper plastoid armor with removed
-    plates for added mobility , covering some of the body.
+  description: A light, substandard imperial stormtrooper plastoid armor with removed plates for added mobility , covering some of the body.
   icon:
     sprite: Civ14/Clothing/exported/suits/stormradio_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
-
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_suit_light_stormtrooper_armor
   start: start
@@ -4798,16 +4568,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A thick and expensive segmented piece of iron armor, its scales protect the
-    torso.
+  description: A thick and expensive segmented piece of iron armor, its scales protect the torso.
   icon:
     sprite: Civ14/Clothing/exported/suits/scale_armor.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_segmented_armor
   start: start
@@ -4835,7 +4602,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_chainmail
   start: start
@@ -4861,9 +4627,8 @@
     sprite: Civ14/Clothing/exported/suits/heavycloth_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_linothorax_armor
   start: start
@@ -4889,9 +4654,8 @@
     sprite: Civ14/Clothing/exported/suits/egyptian_lamellar.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_bronze_egyptian_lamellar
   start: start
@@ -4900,9 +4664,9 @@
       edges:
         - to: end
           steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
+            - material: Bronze
+              amount: 6
+              doAfter: 10
     - node: end
       entity: civ13_suit_bronze_egyptian_lamellar
 - type: construction
@@ -4917,9 +4681,8 @@
     sprite: Civ14/Clothing/exported/suits/scaled_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_scaled_armor
   start: start
@@ -4928,9 +4691,9 @@
       edges:
         - to: end
           steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
+            - material: Bronze
+              amount: 6
+              doAfter: 10
     - node: end
       entity: civ13_suit_scaled_armor
 - type: construction
@@ -4945,9 +4708,8 @@
     sprite: Civ14/Clothing/exported/suits/aztec_harness.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_aztec_harness
   start: start
@@ -4956,7 +4718,7 @@
       edges:
         - to: end
           steps:
-            - material: Cloth
+            - material: Leather
               amount: 4
               doAfter: 8
     - node: end
@@ -4973,9 +4735,8 @@
     sprite: Civ14/Clothing/exported/suits/gator_scale_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_alligator_scale_armor
   start: start
@@ -5003,7 +4764,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_pharoahic_armor_of_the_gods
   start: start
@@ -5031,7 +4791,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_creed_armor
   start: start
@@ -5045,7 +4804,6 @@
               doAfter: 5
     - node: end
       entity: civ13_suit_creed_armor
-
 - type: construction
   name: creed armor
   id: civ13_suit_creed_armor_1_2
@@ -5060,7 +4818,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_creed_armor_1_2
   start: start
@@ -5088,7 +4845,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Matagi_Vest
   start: start
@@ -5116,7 +4872,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_NCR_Trooper_Armor
   start: start
@@ -5137,16 +4892,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    An iron chestplate made in a imperial style, it is not wholly protective
-    against bullets but allows more maneuverability to avoid them.
+  description: An iron chestplate made in a imperial style, it is not wholly protective against bullets but allows more maneuverability to avoid them.
   icon:
     sprite: Civ14/Clothing/exported/suits/imperial_breastplate.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_imperial_chestplate
   start: start
@@ -5167,17 +4919,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A thick, authoritive red armor with reinforced steel leggings and shoulder
-    plates, covering most of the body. Futile attempts to assault arbite
-    enforcers of the law find that rebellion is fruitless.
+  description: A thick, authoritive red armor with reinforced steel leggings and shoulder plates, covering most of the body. Futile attempts to assault arbite enforcers of the law find that rebellion is fruitless.
   icon:
     sprite: Civ14/Clothing/exported/suits/arbit.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_arbites_armor
   start: start
@@ -5205,7 +4953,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_plated_armor
   start: start
@@ -5233,7 +4980,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_red_samurai_lord_armor
   start: start
@@ -5254,16 +5000,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A thick, expensive iron armor, covering most of the body. This one is
-    covered by white linen with the cross.
+  description: A thick, expensive iron armor, covering most of the body. This one is covered by white linen with the cross.
   icon:
     sprite: Civ14/Clothing/exported/suits/knight_templar.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_templar_plated_armor
   start: start
@@ -5289,9 +5032,8 @@
     sprite: Civ14/Clothing/exported/suits/bronze_chestplate.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_bronze_chestplate
   start: start
@@ -5300,7 +5042,7 @@
       edges:
         - to: end
           steps:
-            - material: Cloth
+            - material: Bronze
               amount: 6
               doAfter: 17
     - node: end
@@ -5317,9 +5059,8 @@
     sprite: Civ14/Clothing/exported/suits/iron_chestplate.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_iron_chestplate
   start: start
@@ -5345,9 +5086,8 @@
     sprite: Civ14/Clothing/exported/suits/leather_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_leather_armor
   start: start
@@ -5368,16 +5108,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A longer version of the chainmail, worn as a coat. Offers greater
-    protection.
+  description: A longer version of the chainmail, worn as a coat. Offers greater protection.
   icon:
     sprite: Civ14/Clothing/exported/suits/hauberk.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_hauberk
   start: start
@@ -5398,16 +5135,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A loosely fitting but protective suit of armor to wrap around the body &
-    tunic for a emirate lord
+  description: A loosely fitting but protective suit of armor to wrap around the body & tunic for a emirate lord
   icon:
     sprite: Civ14/Clothing/exported/suits/emir_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_emirate_armor
   start: start
@@ -5428,16 +5162,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A close fitting armor of small iron rectangular shapes to make a scale vest.
-    Manageably heavy but flexible.
+  description: A close fitting armor of small iron rectangular shapes to make a scale vest. Manageably heavy but flexible.
   icon:
     sprite: Civ14/Clothing/exported/suits/varangian_lamellar.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_varangian_lamellar_armor
   start: start
@@ -5458,16 +5189,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A well built & laquered armor with iron plates concealed inwardly and
-    outwardly protecting the body, made in imperial chinese style
+  description: A well built & laquered armor with iron plates concealed inwardly and outwardly protecting the body, made in imperial chinese style
   icon:
     sprite: Civ14/Clothing/exported/suits/imperial_chinese.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_imperial_chinese_armor
   start: start
@@ -5488,16 +5216,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    Leather armor made from sheets of leather bound in a steppe nomad style,
-    making adequate protection for prospective warriors.
+  description: Leather armor made from sheets of leather bound in a steppe nomad style, making adequate protection for prospective warriors.
   icon:
     sprite: Civ14/Clothing/exported/suits/steppe_leather_armor.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_steppe_leather_armor
   start: start
@@ -5523,9 +5248,8 @@
     sprite: Civ14/Clothing/exported/suits/royalplate.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_royal_plated_armor
   start: start
@@ -5546,16 +5270,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A protective & lightweight armor, bound to and covering most of the body yet
-    slightly flexible. Often worn by a lord's bodyguards.
+  description: A protective & lightweight armor, bound to and covering most of the body yet slightly flexible. Often worn by a lord's bodyguards.
   icon:
     sprite: Civ14/Clothing/exported/suits/samurai3.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_leather_samurai_armor
   start: start
@@ -5576,16 +5297,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A dense, metal armor of japanese origin, covering most of the body. Often
-    worn by a loyal warriors to a feudal lord.
+  description: A dense, metal armor of japanese origin, covering most of the body. Often worn by a loyal warriors to a feudal lord.
   icon:
     sprite: Civ14/Clothing/exported/suits/samurai_warrior3.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_samurai_armor
   start: start
@@ -5611,9 +5329,8 @@
     sprite: Civ14/Clothing/exported/suits/samurai_lord3.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_samurai_lord_armor
   start: start
@@ -5641,7 +5358,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_dwemmer_armor
   start: start
@@ -5669,7 +5385,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_stormcloak_officer_armor
   start: start
@@ -5690,16 +5405,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    An advanced piece of armor that provides medium protection against kinetic
-    and other projectiles. This armor is mostly used by the Chinese.
+  description: An advanced piece of armor that provides medium protection against kinetic and other projectiles. This armor is mostly used by the Chinese.
   icon:
     sprite: Civ14/Clothing/exported/suits/zgz1_armor.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_zgz1_advanced_armor
   start: start
@@ -5720,16 +5432,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    An advanced piece of armor that provides medium protection against kinetic
-    and other projectiles. This armor is mostly used by the Chinese medics.
+  description: An advanced piece of armor that provides medium protection against kinetic and other projectiles. This armor is mostly used by the Chinese medics.
   icon:
     sprite: Civ14/Clothing/exported/suits/zgz1med_armor.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_Medical_zgz1_advanced_armor
   start: start
@@ -5755,9 +5464,8 @@
     sprite: Civ14/Clothing/exported/suits/scraparmor.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 4
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_scrap_plate_armor
   start: start
@@ -5785,7 +5493,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_mechanized_armor
   start: start
@@ -5813,7 +5520,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_chitin_chestplate
   start: start
@@ -5841,7 +5547,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_saurons_armor
   start: start
@@ -5869,7 +5574,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_plated_armor_1
   start: start
@@ -5897,7 +5601,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_plated_armor_1_2
   start: start
@@ -5925,7 +5628,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_orc_urukhai_armor
   start: start
@@ -5953,7 +5655,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_orc_whitehand_armor
   start: start
@@ -5981,7 +5682,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_orc_grunt_armor
   start: start
@@ -6007,9 +5707,8 @@
     sprite: Civ14/Clothing/exported/suits/redcape.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_red_cape
   start: start
@@ -6037,7 +5736,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_swat_heavy_vest
   start: start
@@ -6065,7 +5763,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_swat_bulletproof_vest
   start: start
@@ -6093,7 +5790,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_6B3_body_armor
   start: start
@@ -6114,16 +5810,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A yellow coloured NBC suit, made protect against biological, chemical and
-    nuclear threats.
+  description: A yellow coloured NBC suit, made protect against biological, chemical and nuclear threats.
   icon:
     sprite: Civ14/Clothing/exported/suits/nbc.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_yellow_NBC_suit
   start: start
@@ -6144,16 +5837,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    An olive drab coloured NBC suit, made protect against biological, chemical
-    and nuclear threats.
+  description: An olive drab coloured NBC suit, made protect against biological, chemical and nuclear threats.
   icon:
     sprite: Civ14/Clothing/exported/suits/nbc2.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_olive_drab_NBC_suit
   start: start
@@ -6181,7 +5871,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_firefighting_suit
   start: start
@@ -6202,16 +5891,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A bright hazard protection suit, made to protect against biological,
-    chemical and nuclear threats.
+  description: A bright hazard protection suit, made to protect against biological, chemical and nuclear threats.
   icon:
     sprite: Civ14/Clothing/exported/suits/hazmat_suit.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_hazmat_suit
   start: start
@@ -6232,16 +5918,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A NBC poncho,very light and easy to put on, made to protect against
-    biological, chemical and nuclear threats.
+  description: A NBC poncho,very light and easy to put on, made to protect against biological, chemical and nuclear threats.
   icon:
     sprite: Civ14/Clothing/exported/suits/nbcponcho.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_NBC_poncho
   start: start
@@ -6262,16 +5945,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A grey space suit, made protect to against low pressure, temperature and
-    radioactive threats.
+  description: A grey space suit, made protect to against low pressure, temperature and radioactive threats.
   icon:
     sprite: Civ14/Clothing/exported/suits/astronaut.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_astronaut_suit
   start: start
@@ -6299,7 +5979,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_carbon_black_suit
   start: start
@@ -6320,16 +5999,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    6B45 is a modular bullet-resistant vest. It comprises frontal and rear
-    section and soft-armour shoulder and side protection.
+  description: 6B45 is a modular bullet-resistant vest. It comprises frontal and rear section and soft-armour shoulder and side protection.
   icon:
     sprite: Civ14/Clothing/exported/suits/a6b45.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_6B45_heavy_vest
   start: start
@@ -6357,7 +6033,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_heavy_vest
   start: start
@@ -6385,7 +6060,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_medium_vest
   start: start
@@ -6413,7 +6087,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_6B44_vest
   start: start
@@ -6441,7 +6114,6 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_6B28_plate_carrier
   start: start
@@ -6467,9 +6139,8 @@
     sprite: Civ14/Clothing/exported/suits/sealvest.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_lifejacket_1_2
   start: start
@@ -6483,7 +6154,6 @@
               doAfter: 5
     - node: end
       entity: civ13_suit_lifejacket_1_2
-
 - type: construction
   name: primitive bone hair-pipe armor
   id: civ13_suit_primitive_bone_hair_pipe_armor
@@ -6491,16 +6161,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A bone set of chest armor made of tightly packed small bones held together
-    by plant fiber ropes.
+  description: A bone set of chest armor made of tightly packed small bones held together by plant fiber ropes.
   icon:
     sprite: Civ14/Clothing/exported/suits/native_bonearmor.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 0
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_primitive_bone_hair_pipe_armor
   start: start
@@ -6521,16 +6188,13 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A shoulder vest made from big cat pelt, worn ceremonially & military dress
-    by the zulu.
+  description: A shoulder vest made from big cat pelt, worn ceremonially & military dress by the zulu.
   icon:
     sprite: Civ14/Clothing/exported/suits/zulu_mbata.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
-
 - type: constructionGraph
   id: civ13_suit_mbata_pelt_vest
   start: start

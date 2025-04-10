@@ -10,7 +10,7 @@
     sprite: Civ14/Clothing/exported/shoes/white.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_shoes
@@ -37,7 +37,7 @@
     sprite: Civ14/Clothing/exported/shoes/fur4.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 0
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_white_fur_boots
@@ -52,7 +52,6 @@
               doAfter: 8
     - node: end
       entity: civ13_shoes_white_fur_boots
-
 - type: construction
   name: brown fur boots
   id: civ13_shoes_brown_fur_boots
@@ -92,7 +91,7 @@
     sprite: Civ14/Clothing/exported/shoes/red.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_red_shoes
@@ -119,7 +118,7 @@
     sprite: Civ14/Clothing/exported/shoes/orange.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_orange_shoes
@@ -146,7 +145,7 @@
     sprite: Civ14/Clothing/exported/shoes/jackboots.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 6
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_jackboots
@@ -173,7 +172,7 @@
     sprite: Civ14/Clothing/exported/shoes/sovietboots.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 6
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_Soviet_sapogi_boots
@@ -195,14 +194,12 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A pair of steel-toed work boots designed for use in industrial settings.
-    Safety first.
+  description: A pair of steel-toed work boots designed for use in industrial settings. Safety first.
   icon:
     sprite: Civ14/Clothing/exported/shoes/workboots.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 7
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_workboots
@@ -217,7 +214,6 @@
               doAfter: 8
     - node: end
       entity: civ13_shoes_workboots
-
 - type: construction
   name: black fur boots
   id: civ13_shoes_black_fur_boots
@@ -230,7 +226,7 @@
     sprite: Civ14/Clothing/exported/shoes/fur3.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 0
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_black_fur_boots
@@ -257,7 +253,7 @@
     sprite: Civ14/Clothing/exported/shoes/swat.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_０military_boots
@@ -284,7 +280,7 @@
     sprite: Civ14/Clothing/exported/shoes/wrappedboots.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_０wrapped_boots
@@ -311,8 +307,8 @@
     sprite: Civ14/Clothing/exported/shoes/ncr_boots.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_shoes_NCR_wrapped_boots
   start: start
@@ -338,8 +334,8 @@
     sprite: Civ14/Clothing/exported/shoes/legion_boots.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_shoes_Legionaire_armored_boots
   start: start
@@ -365,7 +361,7 @@
     sprite: Civ14/Clothing/exported/shoes/japboots_ww2.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_Leather_boots
@@ -392,7 +388,7 @@
     sprite: Civ14/Clothing/exported/shoes/japboots_ww2_navy.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_Black_leather_boots
@@ -419,7 +415,7 @@
     sprite: Civ14/Clothing/exported/shoes/swat.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 7
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_SWAT_boots
@@ -446,7 +442,7 @@
     sprite: Civ14/Clothing/exported/shoes/swat.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 7
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_combat_boots
@@ -554,8 +550,8 @@
     sprite: Civ14/Clothing/exported/shoes/black.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_shoes_magic_shoes
   start: start
@@ -569,7 +565,6 @@
               doAfter: 5
     - node: end
       entity: civ13_shoes_magic_shoes
-
 - type: construction
   name: laceup shoes
   id: civ13_shoes_laceup_shoes
@@ -582,7 +577,7 @@
     sprite: Civ14/Clothing/exported/shoes/laceups.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_laceup_shoes
@@ -636,7 +631,7 @@
     sprite: Civ14/Clothing/exported/shoes/gator_laceups.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_alligator_scale_laceup_shoes
@@ -663,8 +658,8 @@
     sprite: Civ14/Clothing/exported/shoes/chad.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_shoes_chad_shoes
   start: start
@@ -690,7 +685,7 @@
     sprite: Civ14/Clothing/exported/shoes/flipflops.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 7
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_flip_flops
@@ -717,8 +712,8 @@
     sprite: Civ14/Clothing/exported/shoes/white.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_shoes_plastoid_boots
   start: start
@@ -744,8 +739,8 @@
     sprite: Civ14/Clothing/exported/shoes/redboots.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_shoes_red_plastoid_boots
   start: start
@@ -771,8 +766,8 @@
     sprite: Civ14/Clothing/exported/shoes/senateboots.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_shoes_blue_plastoid_boots
   start: start
@@ -852,8 +847,8 @@
     sprite: Civ14/Clothing/exported/shoes/fur1.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_shoes_fur_boots
   start: start
@@ -879,8 +874,8 @@
     sprite: Civ14/Clothing/exported/shoes/fur5.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_shoes_human_skin_boots
   start: start
@@ -906,8 +901,8 @@
     sprite: Civ14/Clothing/exported/shoes/ork_warrior.rsi
     state: icon
   objectType: Item
-  agemin: 8
-  agemax: 8
+  agemin: 9
+  agemax: 9
 - type: constructionGraph
   id: civ13_shoes_orcish_sabatons
   start: start
@@ -928,9 +923,7 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A well made and importantly quiet treading pair of army-issue leather
-    boots..
+  description: A well made and importantly quiet treading pair of army-issue leather boots..
   icon:
     sprite: Civ14/Clothing/exported/shoes/toughguy.rsi
     state: icon
@@ -962,7 +955,7 @@
     sprite: Civ14/Clothing/exported/shoes/ac_boots.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 3
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_creed_boots
@@ -989,7 +982,7 @@
     sprite: Civ14/Clothing/exported/shoes/japboots.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 4
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_Winter_wrapped_boots
@@ -1016,7 +1009,7 @@
     sprite: Civ14/Clothing/exported/shoes/sailorboots1.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_black_boots
@@ -1043,7 +1036,7 @@
     sprite: Civ14/Clothing/exported/shoes/sailorboots2.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_leather_boots
@@ -1070,7 +1063,7 @@
     sprite: Civ14/Clothing/exported/shoes/winterboots.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_winter_boots
@@ -1097,7 +1090,7 @@
     sprite: Civ14/Clothing/exported/shoes/whiteput.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 4
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_black_puttee_boots
@@ -1124,7 +1117,7 @@
     sprite: Civ14/Clothing/exported/shoes/soldier_shoes.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 3
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_infantry_shoes
@@ -1151,7 +1144,7 @@
     sprite: Civ14/Clothing/exported/shoes/sailorboots1.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 3
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_black_sailor_boots
@@ -1178,7 +1171,7 @@
     sprite: Civ14/Clothing/exported/shoes/sailorboots2.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 3
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_leather_sailor_boots
@@ -1205,7 +1198,7 @@
     sprite: Civ14/Clothing/exported/shoes/usmc.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_military_boots
@@ -1232,7 +1225,7 @@
     sprite: Civ14/Clothing/exported/shoes/cowboyboots1.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 4
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_black_riding_boots
@@ -1259,7 +1252,7 @@
     sprite: Civ14/Clothing/exported/shoes/gator_cowboy.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 4
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_alligator_scale_riding_boots
@@ -1286,7 +1279,7 @@
     sprite: Civ14/Clothing/exported/shoes/lizard_cowboy.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 4
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_lizard_scale_riding_boots
@@ -1313,7 +1306,7 @@
     sprite: Civ14/Clothing/exported/shoes/cowboyboots2.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 4
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_leather_riding_boots
@@ -1340,7 +1333,7 @@
     sprite: Civ14/Clothing/exported/shoes/gator_ankleboots.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 4
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_alligator_scale_ankle_boots
@@ -1367,7 +1360,7 @@
     sprite: Civ14/Clothing/exported/shoes/medieval.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_leather_shoes_1
@@ -1394,7 +1387,7 @@
     sprite: Civ14/Clothing/exported/shoes/arab.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_arabic_leather_shoes
@@ -1416,14 +1409,12 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A pair of simple, arabic style leather shoes. Extra padded & loose at the
-    tip.
+  description: A pair of simple, arabic style leather shoes. Extra padded & loose at the tip.
   icon:
     sprite: Civ14/Clothing/exported/shoes/emir.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_emirate_leather_shoes
@@ -1450,7 +1441,7 @@
     sprite: Civ14/Clothing/exported/shoes/knight.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_Sabatons
@@ -1472,14 +1463,12 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A pair of insulated rough woolen shoes for keeping feet warm on the open
-    steppe.
+  description: A pair of insulated rough woolen shoes for keeping feet warm on the open steppe.
   icon:
     sprite: Civ14/Clothing/exported/shoes/steppe_wool_shoes.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_steppe_wool_shoe
@@ -1506,7 +1495,7 @@
     sprite: Civ14/Clothing/exported/shoes/geta.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 3
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_geta_sandals
@@ -1533,7 +1522,7 @@
     sprite: Civ14/Clothing/exported/shoes/tsuranuki.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 4
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_tsuranuki
@@ -1587,7 +1576,7 @@
     sprite: Civ14/Clothing/exported/shoes/courier_sneakers.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 7
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_courier_sneakers
@@ -1614,7 +1603,7 @@
     sprite: Civ14/Clothing/exported/shoes/punk.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 7
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_punk_boots
@@ -1641,7 +1630,7 @@
     sprite: Civ14/Clothing/exported/shoes/lizard_ankleboots.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_lizard_scale_ankle_boots
@@ -1668,7 +1657,7 @@
     sprite: Civ14/Clothing/exported/shoes/lizard_laceups.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_lizard_scale_laceup_shoes
@@ -1695,7 +1684,7 @@
     sprite: Civ14/Clothing/exported/shoes/brownboots.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_Brown_boots
@@ -1717,10 +1706,7 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    These combat boots are crafted from durable brown leather, featuring a toe
-    cap and rubber sole. They come complete with protective leggings, providing
-    extra coverage and support for the wearer's legs.
+  description: These combat boots are crafted from durable brown leather, featuring a toe cap and rubber sole. They come complete with protective leggings, providing extra coverage and support for the wearer's legs.
   icon:
     sprite: Civ14/Clothing/exported/shoes/brownboots_us_ww2_alt.rsi
     state: icon
@@ -1752,7 +1738,7 @@
     sprite: Civ14/Clothing/exported/shoes/football.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 7
   agemax: 8
 - type: constructionGraph
   id: civ13_shoes_football_trainers

@@ -12,20 +12,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 1
-              doAfter: 3
-    - node: end
-      entity: civ13_accessory_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 1
+        doAfter: 3
+  - node: end
+    entity: civ13_accessory_armband
 - type: construction
   name: Dayfield body-armor
   id: civ13_accessory_Dayfield_body_armor
@@ -40,20 +39,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Dayfield_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Dayfield_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Dayfield_body_armor
 - type: construction
   name: yellow armband
   id: civ13_accessory_yellow_armband
@@ -68,20 +66,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_yellow_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_yellow_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_yellow_armband
 - type: construction
   name: Spanish Republican armband
   id: civ13_accessory_Spanish_Republican_armband
@@ -96,20 +93,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Spanish_Republican_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Spanish_Republican_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Spanish_Republican_armband
 - type: construction
   name: French webbing vest
   id: civ13_accessory_French_webbing_vest
@@ -117,27 +113,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: ''
   icon:
     sprite: Civ14/Clothing/exported/ties/french_vest.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_French_webbing_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_French_webbing_vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_French_webbing_vest
 - type: construction
   name: UN armband
   id: civ13_accessory_UN_armband
@@ -152,20 +147,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_UN_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_UN_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_UN_armband
 - type: construction
   name: green armband
   id: civ13_accessory_green_armband
@@ -180,20 +174,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_green_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_green_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_green_armband
 - type: construction
   name: orange armband
   id: civ13_accessory_orange_armband
@@ -208,20 +201,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_orange_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_orange_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_orange_armband
 - type: construction
   name: polish armband
   id: civ13_accessory_polish_armband
@@ -236,20 +228,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_polish_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_polish_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_polish_armband
 - type: construction
   name: red wagner armband
   id: civ13_accessory_red_wagner_armband
@@ -264,20 +255,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_red_wagner_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_red_wagner_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_red_wagner_armband
 - type: construction
   name: iron arm bangle
   id: civ13_accessory_iron_arm_bangle
@@ -292,20 +282,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_iron_arm_bangle
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Iron
-              amount: 2
-              doAfter: 10
-    - node: end
-      entity: civ13_accessory_iron_arm_bangle
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Iron
+        amount: 2
+        doAfter: 10
+  - node: end
+    entity: civ13_accessory_iron_arm_bangle
 - type: construction
   name: golden Public Order ribbon
   id: civ13_accessory_golden_Public_Order_ribbon
@@ -313,29 +302,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A ribbon given to law enforcement officers that distinguished themselves
-    during their service.
+  description: A ribbon given to law enforcement officers that distinguished themselves during their service.
   icon:
     sprite: Civ14/Clothing/exported/badges/police_gold.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_golden_Public_Order_ribbon
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_golden_Public_Order_ribbon
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_golden_Public_Order_ribbon
 - type: construction
   name: silver Public Order ribbon
   id: civ13_accessory_silver_Public_Order_ribbon
@@ -343,29 +329,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A ribbon given to law enforcement officers that distinguished themselves
-    during their service.
+  description: A ribbon given to law enforcement officers that distinguished themselves during their service.
   icon:
     sprite: Civ14/Clothing/exported/badges/police_silver.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_silver_Public_Order_ribbon
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_silver_Public_Order_ribbon
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_silver_Public_Order_ribbon
 - type: construction
   name: copper arm bangle
   id: civ13_accessory_copper_arm_bangle
@@ -380,20 +363,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_copper_arm_bangle
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Copper
-              amount: 2
-              doAfter: 10
-    - node: end
-      entity: civ13_accessory_copper_arm_bangle
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Copper
+        amount: 2
+        doAfter: 10
+  - node: end
+    entity: civ13_accessory_copper_arm_bangle
 - type: construction
   name: bronze Public Order ribbon
   id: civ13_accessory_bronze_Public_Order_ribbon
@@ -401,29 +383,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A ribbon given to law enforcement officers that distinguished themselves
-    during their service.
+  description: A ribbon given to law enforcement officers that distinguished themselves during their service.
   icon:
     sprite: Civ14/Clothing/exported/badges/police_bronze.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_bronze_Public_Order_ribbon
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_bronze_Public_Order_ribbon
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_bronze_Public_Order_ribbon
 - type: construction
   name: Sheriff Star
   id: civ13_accessory_Sheriff_Star
@@ -438,20 +417,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Sheriff_Star
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Sheriff_Star
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Sheriff_Star
 - type: construction
   name: deputy armband
   id: civ13_accessory_deputy_armband
@@ -466,20 +444,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_deputy_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_deputy_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_deputy_armband
 - type: construction
   name: police badge
   id: civ13_accessory_police_badge
@@ -494,20 +471,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_police_badge
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_police_badge
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_police_badge
 - type: construction
   name: red armband
   id: civ13_accessory_red_armband
@@ -522,20 +498,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_red_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_red_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_red_armband
 - type: construction
   name: blue armband
   id: civ13_accessory_blue_armband
@@ -550,20 +525,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_blue_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_blue_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_blue_armband
 - type: construction
   name: Light black breastplate body-armor
   id: civ13_accessory_Light_black_breastplate_body_armor
@@ -578,20 +552,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Light_black_breastplate_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Light_black_breastplate_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Light_black_breastplate_body_armor
 - type: construction
   name: blue tie
   id: civ13_accessory_blue_tie
@@ -606,20 +579,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_blue_tie
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_blue_tie
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_blue_tie
 - type: construction
   name: blue scarf
   id: civ13_accessory_blue_scarf
@@ -634,20 +606,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_blue_scarf
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_blue_scarf
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_blue_scarf
 - type: construction
   name: blue scarf
   id: civ13_accessory_blue_scarf_1
@@ -662,20 +633,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_blue_scarf_1
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_blue_scarf_1
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_blue_scarf_1
 - type: construction
   name: grey scarf
   id: civ13_accessory_grey_scarf
@@ -690,20 +660,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_grey_scarf
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_grey_scarf
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_grey_scarf
 - type: construction
   name: red scarf
   id: civ13_accessory_red_scarf
@@ -718,20 +687,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_red_scarf
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_red_scarf
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_red_scarf
 - type: construction
   name: yellow scarf
   id: civ13_accessory_yellow_scarf
@@ -746,20 +714,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_yellow_scarf
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_yellow_scarf
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_yellow_scarf
 - type: construction
   name: spiked bracers
   id: civ13_accessory_spiked_bracers
@@ -774,21 +741,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_spiked_bracers
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Iron
-              amount: 3
-              doAfter: 10
-    - node: end
-      entity: civ13_accessory_spiked_bracers
-
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Iron
+        amount: 3
+        doAfter: 10
+  - node: end
+    entity: civ13_accessory_spiked_bracers
 - type: construction
   name: gold native accessories
   id: civ13_accessory_indian_accessories_1_2
@@ -803,20 +768,19 @@
   objectType: Item
   agemin: 0
   agemax: 2
-
 - type: constructionGraph
   id: civ13_accessory_indian_accessories_1_2
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 1
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_indian_accessories_1_2
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 1
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_indian_accessories_1_2
 - type: construction
   name: indian shaman bodypaint
   id: civ13_accessory_indian_shaman_bodypaint
@@ -831,20 +795,19 @@
   objectType: Item
   agemin: 0
   agemax: 2
-
 - type: constructionGraph
   id: civ13_accessory_indian_shaman_bodypaint
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 1
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_indian_shaman_bodypaint
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 1
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_indian_shaman_bodypaint
 - type: construction
   name: red native bodypaint
   id: civ13_accessory_red_indian_acessories
@@ -859,20 +822,19 @@
   objectType: Item
   agemin: 0
   agemax: 2
-
 - type: constructionGraph
   id: civ13_accessory_red_indian_acessories
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 1
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_red_indian_acessories
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 1
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_red_indian_acessories
 - type: construction
   name: green native bodypaint
   id: civ13_accessory_green_indian_acessories
@@ -887,20 +849,19 @@
   objectType: Item
   agemin: 0
   agemax: 2
-
 - type: constructionGraph
   id: civ13_accessory_green_indian_acessories
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 1
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_green_indian_acessories
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 1
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_green_indian_acessories
 - type: construction
   name: blue native bodypaint
   id: civ13_accessory_blue_indian_acessories
@@ -915,20 +876,19 @@
   objectType: Item
   agemin: 0
   agemax: 2
-
 - type: constructionGraph
   id: civ13_accessory_blue_indian_acessories
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 1
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_blue_indian_acessories
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 1
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_blue_indian_acessories
 - type: construction
   name: yellow native bodypaint
   id: civ13_accessory_yellow_indian_acessories
@@ -943,20 +903,19 @@
   objectType: Item
   agemin: 0
   agemax: 2
-
 - type: constructionGraph
   id: civ13_accessory_yellow_indian_acessories
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 1
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_yellow_indian_acessories
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 1
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_yellow_indian_acessories
 - type: construction
   name: white native bodypaint
   id: civ13_accessory_white_indian_acessories
@@ -971,20 +930,19 @@
   objectType: Item
   agemin: 0
   agemax: 2
-
 - type: constructionGraph
   id: civ13_accessory_white_indian_acessories
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 1
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_white_indian_acessories
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 1
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_white_indian_acessories
 - type: construction
   name: black native bodypaint
   id: civ13_accessory_black_indian_acessories
@@ -999,20 +957,19 @@
   objectType: Item
   agemin: 0
   agemax: 2
-
 - type: constructionGraph
   id: civ13_accessory_black_indian_acessories
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 1
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_black_indian_acessories
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 1
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_black_indian_acessories
 - type: construction
   name: bone talisman
   id: civ13_accessory_bone_talisman
@@ -1025,22 +982,21 @@
     sprite: Civ14/Clothing/exported/ties/talisman.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 0
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_bone_talisman
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Bones
-              amount: 2
-              doAfter: 8
-    - node: end
-      entity: civ13_accessory_bone_talisman
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Bones
+        amount: 2
+        doAfter: 8
+  - node: end
+    entity: civ13_accessory_bone_talisman
 - type: construction
   name: red cross armband
   id: civ13_accessory_red_cross_armband
@@ -1053,22 +1009,21 @@
     sprite: Civ14/Clothing/exported/ties/redcross.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 4
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_red_cross_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_red_cross_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_red_cross_armband
 - type: construction
   name: NSDAP armband
   id: civ13_accessory_NSDAP_armband
@@ -1081,22 +1036,21 @@
     sprite: Civ14/Clothing/exported/ties/nsdap.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 6
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_NSDAP_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_NSDAP_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_NSDAP_armband
 - type: construction
   name: Kenpeitai armband
   id: civ13_accessory_Kenpeitai_armband
@@ -1109,22 +1063,21 @@
     sprite: Civ14/Clothing/exported/ties/japanesemp.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 6
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Kenpeitai_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Kenpeitai_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Kenpeitai_armband
 - type: construction
   name: military police armband
   id: civ13_accessory_military_police_armband
@@ -1137,22 +1090,21 @@
     sprite: Civ14/Clothing/exported/ties/usmp.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_military_police_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_military_police_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_military_police_armband
 - type: construction
   name: Volkssturm armband
   id: civ13_accessory_Volkssturm_armband
@@ -1165,22 +1117,21 @@
     sprite: Civ14/Clothing/exported/ties/volkssturm.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 6
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Volkssturm_armband
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Volkssturm_armband
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Volkssturm_armband
 - type: construction
   name: cat tail and ears
   id: civ13_accessory_cat_tail_and_ears
@@ -1195,20 +1146,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_cat_tail_and_ears
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_cat_tail_and_ears
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_cat_tail_and_ears
 - type: construction
   name: scarf
   id: civ13_accessory_scarf
@@ -1221,22 +1171,21 @@
     sprite: Civ14/Clothing/exported/ties/customscarf.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_scarf
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 2
-              doAfter: 3
-    - node: end
-      entity: civ13_accessory_scarf
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 2
+        doAfter: 3
+  - node: end
+    entity: civ13_accessory_scarf
 - type: construction
   name: sash
   id: civ13_accessory_sash
@@ -1249,22 +1198,21 @@
     sprite: Civ14/Clothing/exported/ties/customsash.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_sash
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 1
-              doAfter: 3
-    - node: end
-      entity: civ13_accessory_sash
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 1
+        doAfter: 3
+  - node: end
+    entity: civ13_accessory_sash
 - type: construction
   name: tabard
   id: civ13_accessory_tabard
@@ -1277,22 +1225,21 @@
     sprite: Civ14/Clothing/exported/ties/customtabard.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_tabard
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 2
-              doAfter: 3
-    - node: end
-      entity: civ13_accessory_tabard
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 2
+        doAfter: 3
+  - node: end
+    entity: civ13_accessory_tabard
 - type: construction
   name: apron
   id: civ13_accessory_apron
@@ -1305,22 +1252,21 @@
     sprite: Civ14/Clothing/exported/ties/apron.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_apron
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 2
-              doAfter: 3
-    - node: end
-      entity: civ13_accessory_apron
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 2
+        doAfter: 3
+  - node: end
+    entity: civ13_accessory_apron
 - type: construction
   name: priest band
   id: civ13_accessory_priest_band
@@ -1333,22 +1279,21 @@
     sprite: Civ14/Clothing/exported/ties/customizable_priest_band.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_priest_band
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 1
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_priest_band
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 1
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_priest_band
 - type: construction
   name: cape
   id: civ13_accessory_cape
@@ -1361,22 +1306,21 @@
     sprite: Civ14/Clothing/exported/ties/customcape.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_cape
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 2
-              doAfter: 3
-    - node: end
-      entity: civ13_accessory_cape
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 2
+        doAfter: 3
+  - node: end
+    entity: civ13_accessory_cape
 - type: construction
   name: black tie
   id: civ13_accessory_black_tie
@@ -1389,22 +1333,21 @@
     sprite: Civ14/Clothing/exported/ties/black_tie.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 4
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_black_tie
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_black_tie
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_black_tie
 - type: construction
   name: black bowtie
   id: civ13_accessory_black_bowtie
@@ -1417,22 +1360,21 @@
     sprite: Civ14/Clothing/exported/ties/black_bowtie.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 4
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_black_bowtie
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_black_bowtie
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_black_bowtie
 - type: construction
   name: marksman patch
   id: civ13_accessory_marksman_patch
@@ -1447,20 +1389,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_marksman_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_marksman_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_marksman_patch
 - type: construction
   name: Russia patch
   id: civ13_accessory_Russia_patch
@@ -1475,20 +1416,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Russia_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Russia_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Russia_patch
 - type: construction
   name: Spetsgruppa A patch
   id: civ13_accessory_Spetsgruppa_A_patch
@@ -1503,20 +1443,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Spetsgruppa_A_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Spetsgruppa_A_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Spetsgruppa_A_patch
 - type: construction
   name: SWAT patch
   id: civ13_accessory_SWAT_patch
@@ -1531,20 +1470,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_SWAT_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_SWAT_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_SWAT_patch
 - type: construction
   name: special forces patch
   id: civ13_accessory_special_forces_patch
@@ -1559,20 +1497,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_special_forces_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_special_forces_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_special_forces_patch
 - type: construction
   name: SECURITY
   id: civ13_accessory_SECURITY
@@ -1587,22 +1524,21 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_SECURITY
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_SECURITY
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_SECURITY
 - type: construction
-  name: "Standard Single Pauldron "
+  name: 'Standard Single Pauldron '
   id: civ13_accessory_Standard_Single_Pauldron_
   graph: civ13_accessory_Standard_Single_Pauldron_
   startNode: start
@@ -1615,20 +1551,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Standard_Single_Pauldron_
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Standard_Single_Pauldron_
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Standard_Single_Pauldron_
 - type: construction
   name: green PASGT body armor
   id: civ13_accessory_green_PASGT_body_armor
@@ -1643,20 +1578,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_green_PASGT_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_green_PASGT_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_green_PASGT_body_armor
 - type: construction
   name: red tie
   id: civ13_accessory_red_tie
@@ -1671,22 +1605,21 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_red_tie
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_red_tie
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_red_tie
 - type: construction
-  name: "Standard Double Pauldron "
+  name: 'Standard Double Pauldron '
   id: civ13_accessory_Standard_Double_Pauldron_
   graph: civ13_accessory_Standard_Double_Pauldron_
   startNode: start
@@ -1699,20 +1632,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Standard_Double_Pauldron_
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Standard_Double_Pauldron_
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Standard_Double_Pauldron_
 - type: construction
   name: wearable sign
   id: civ13_accessory_wearable_sign
@@ -1727,20 +1659,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_wearable_sign
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: WoodPlank
-              amount: 2
-              doAfter: 6
-    - node: end
-      entity: civ13_accessory_wearable_sign
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 6
+  - node: end
+    entity: civ13_accessory_wearable_sign
 - type: construction
   name: Combat Medical Badge
   id: civ13_accessory_Combat_Medical_Badge
@@ -1755,20 +1686,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Combat_Medical_Badge
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Combat_Medical_Badge
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Combat_Medical_Badge
 - type: construction
   name: German webbing vest
   id: civ13_accessory_German_webbing_vest
@@ -1776,27 +1706,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: ''
   icon:
     sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_German_webbing_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_German_webbing_vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_German_webbing_vest
 - type: construction
   name: Webbing vest
   id: civ13_accessory_Webbing_vest
@@ -1804,30 +1733,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    This webbing vest includes two sturdy leather belts equipped with small
-    pouches for ammunition and grenades, providing essential storage for
-    frontline soldiers.
+  description: This webbing vest includes two sturdy leather belts equipped with small pouches for ammunition and grenades, providing essential storage for frontline soldiers.
   icon:
     sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Webbing_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Webbing_vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Webbing_vest
 - type: construction
   name: Iron Cross
   id: civ13_accessory_Iron_Cross
@@ -1842,20 +1767,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Iron_Cross
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Iron_Cross
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Iron_Cross
 - type: construction
   name: Iron Cross
   id: civ13_accessory_Iron_Cross_1
@@ -1870,20 +1794,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Iron_Cross_1
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Iron_Cross_1
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Iron_Cross_1
 - type: construction
   name: Great Iron Cross
   id: civ13_accessory_Great_Iron_Cross
@@ -1898,20 +1821,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Great_Iron_Cross
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Great_Iron_Cross
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Great_Iron_Cross
 - type: construction
   name: Knight Iron Cross
   id: civ13_accessory_Knight_Iron_Cross
@@ -1926,20 +1848,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Knight_Iron_Cross
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Knight_Iron_Cross
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Knight_Iron_Cross
 - type: construction
   name: Knight Iron Cross
   id: civ13_accessory_Knight_Iron_Cross_1
@@ -1954,20 +1875,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Knight_Iron_Cross_1
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Knight_Iron_Cross_1
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Knight_Iron_Cross_1
 - type: construction
   name: Knight Iron Cross
   id: civ13_accessory_Knight_Iron_Cross_1_2
@@ -1982,20 +1902,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Knight_Iron_Cross_1_2
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Knight_Iron_Cross_1_2
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Knight_Iron_Cross_1_2
 - type: construction
   name: Long Service Medal
   id: civ13_accessory_Long_Service_Medal
@@ -2010,20 +1929,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Long_Service_Medal
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Long_Service_Medal
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Long_Service_Medal
 - type: construction
   name: Eastern Front Medal
   id: civ13_accessory_Eastern_Front_Medal
@@ -2038,20 +1956,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Eastern_Front_Medal
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Eastern_Front_Medal
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Eastern_Front_Medal
 - type: construction
   name: Assault Badge
   id: civ13_accessory_Assault_Badge
@@ -2066,20 +1983,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Assault_Badge
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Assault_Badge
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Assault_Badge
 - type: construction
   name: Tank Destruction Badge
   id: civ13_accessory_Tank_Destruction_Badge
@@ -2094,20 +2010,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Tank_Destruction_Badge
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Tank_Destruction_Badge
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Tank_Destruction_Badge
 - type: construction
   name: Tank Destruction Badge
   id: civ13_accessory_Tank_Destruction_Badge_1
@@ -2122,20 +2037,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Tank_Destruction_Badge_1
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Tank_Destruction_Badge_1
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Tank_Destruction_Badge_1
 - type: construction
   name: Wounded Badge
   id: civ13_accessory_Wounded_Badge
@@ -2150,20 +2064,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Wounded_Badge
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Wounded_Badge
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Wounded_Badge
 - type: construction
   name: Wounded Badge
   id: civ13_accessory_Wounded_Badge_1
@@ -2178,20 +2091,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Wounded_Badge_1
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Wounded_Badge_1
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Wounded_Badge_1
 - type: construction
   name: Wounded Badge
   id: civ13_accessory_Wounded_Badge_1_2
@@ -2206,20 +2118,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Wounded_Badge_1_2
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Wounded_Badge_1_2
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Wounded_Badge_1_2
 - type: construction
   name: Wehrmacht Sadler
   id: civ13_accessory_Wehrmacht_Sadler
@@ -2234,20 +2145,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Wehrmacht_Sadler
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Wehrmacht_Sadler
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Wehrmacht_Sadler
 - type: construction
   name: SS Sadler
   id: civ13_accessory_SS_Sadler
@@ -2262,20 +2172,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_SS_Sadler
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_SS_Sadler
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_SS_Sadler
 - type: construction
   name: SS pin
   id: civ13_accessory_SS_pin
@@ -2290,20 +2199,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_SS_pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_SS_pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_SS_pin
 - type: construction
   name: NSDAP pin
   id: civ13_accessory_NSDAP_pin
@@ -2318,20 +2226,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_NSDAP_pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_NSDAP_pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_NSDAP_pin
 - type: construction
   name: Totenkopf pin
   id: civ13_accessory_Totenkopf_pin
@@ -2346,20 +2253,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Totenkopf_pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Totenkopf_pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Totenkopf_pin
 - type: construction
   name: NSDAP pin
   id: civ13_accessory_NSDAP_pin_1
@@ -2374,20 +2280,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_NSDAP_pin_1
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_NSDAP_pin_1
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_NSDAP_pin_1
 - type: construction
   name: East Asia War medal
   id: civ13_accessory_East_Asia_War_medal
@@ -2402,20 +2307,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_East_Asia_War_medal
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_East_Asia_War_medal
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_East_Asia_War_medal
 - type: construction
   name: China Incident medal
   id: civ13_accessory_China_Incident_medal
@@ -2430,20 +2334,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_China_Incident_medal
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_China_Incident_medal
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_China_Incident_medal
 - type: construction
   name: China Incident medal
   id: civ13_accessory_China_Incident_medal_1
@@ -2458,20 +2361,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_China_Incident_medal_1
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_China_Incident_medal_1
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_China_Incident_medal_1
 - type: construction
   name: Order of the Rising Sun
   id: civ13_accessory_Order_of_the_Rising_Sun
@@ -2479,29 +2381,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A medal given to those who fought valiantly for japan and contributed
-    greatly to war efforts.
+  description: A medal given to those who fought valiantly for japan and contributed greatly to war efforts.
   icon:
     sprite: Civ14/Clothing/exported/badges/order_rising_sun.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Order_of_the_Rising_Sun
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Order_of_the_Rising_Sun
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Order_of_the_Rising_Sun
 - type: construction
   name: Supreme Soviet of the Soviet Union
   id: civ13_accessory_Supreme_Soviet_of_the_Soviet_Union
@@ -2509,29 +2408,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A Soviet flag pin signifying that the wearer is part of the supreme council
-    as a delegate.
+  description: A Soviet flag pin signifying that the wearer is part of the supreme council as a delegate.
   icon:
     sprite: Civ14/Clothing/exported/badges/delegate_supreme_soviet.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Supreme_Soviet_of_the_Soviet_Union
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Supreme_Soviet_of_the_Soviet_Union
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Supreme_Soviet_of_the_Soviet_Union
 - type: construction
   name: People's Commissariat of Internal Affairs Pin
   id: civ13_accessory_Peoples_Commissariat_of_Internal_Affairs_Pin
@@ -2546,20 +2442,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Peoples_Commissariat_of_Internal_Affairs_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Peoples_Commissariat_of_Internal_Affairs_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Peoples_Commissariat_of_Internal_Affairs_Pin
 - type: construction
   name: Hero of the Soviet Union Medal
   id: civ13_accessory_Hero_of_the_Soviet_Union_Medal
@@ -2567,29 +2462,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A medal given to soldiers of the soviet union who have achevied heroic feats
-    in service to the Soviet state and society.
+  description: A medal given to soldiers of the soviet union who have achevied heroic feats in service to the Soviet state and society.
   icon:
     sprite: Civ14/Clothing/exported/badges/Hero of the Soviet Union.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Hero_of_the_Soviet_Union_Medal
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Hero_of_the_Soviet_Union_Medal
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Hero_of_the_Soviet_Union_Medal
 - type: construction
   name: Order of the Red Star Medal
   id: civ13_accessory_Order_of_the_Red_Star_Medal
@@ -2597,33 +2489,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    The Order of the Red Star was awarded to soldiers of the Soviet Army, Navy,
-    border and internal security forces, employees of the State Security
-    Committee of the USSR, as well as NCOs and officers of the bodies of
-    internal affairs; to units, warships, associations, enterprises,
-    institutions and organizations; as well as to military personnel of foreign
-    countries.
+  description: The Order of the Red Star was awarded to soldiers of the Soviet Army, Navy, border and internal security forces, employees of the State Security Committee of the USSR, as well as NCOs and officers of the bodies of internal affairs; to units, warships, associations, enterprises, institutions and organizations; as well as to military personnel of foreign countries.
   icon:
     sprite: Civ14/Clothing/exported/badges/Order of the Red Star.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Order_of_the_Red_Star_Medal
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Order_of_the_Red_Star_Medal
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Order_of_the_Red_Star_Medal
 - type: construction
   name: For the Defence of Stalingrad Medal
   id: civ13_accessory_For_the_Defence_of_Stalingrad_Medal
@@ -2631,29 +2516,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    Given to soldiers who have defended Stalingrad during the harsh war against
-    the german invaders.
+  description: Given to soldiers who have defended Stalingrad during the harsh war against the german invaders.
   icon:
     sprite: Civ14/Clothing/exported/badges/For the Defence of Stalingrad.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_For_the_Defence_of_Stalingrad_Medal
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_For_the_Defence_of_Stalingrad_Medal
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_For_the_Defence_of_Stalingrad_Medal
 - type: construction
   name: For the Defence of Leningrad Medal
   id: civ13_accessory_For_the_Defence_of_Leningrad_Medal
@@ -2661,29 +2543,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    Given to soldiers who have defended Leningrad during the harsh war against
-    the german invaders.
+  description: Given to soldiers who have defended Leningrad during the harsh war against the german invaders.
   icon:
     sprite: Civ14/Clothing/exported/badges/For the Defence of Leningrad.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_For_the_Defence_of_Leningrad_Medal
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_For_the_Defence_of_Leningrad_Medal
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_For_the_Defence_of_Leningrad_Medal
 - type: construction
   name: Guards Unit Badge
   id: civ13_accessory_Guards_Unit_Badge
@@ -2691,29 +2570,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    Given to soldiers who have shown that they are to be distinguished from
-    basic infantry and are now under the rank of Guard.
+  description: Given to soldiers who have shown that they are to be distinguished from basic infantry and are now under the rank of Guard.
   icon:
     sprite: Civ14/Clothing/exported/badges/Guards Unit Badge.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Guards_Unit_Badge
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Guards_Unit_Badge
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Guards_Unit_Badge
 - type: construction
   name: Italian webbing vest
   id: civ13_accessory_Italian_webbing_vest
@@ -2721,27 +2597,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: ''
   icon:
     sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Italian_webbing_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Italian_webbing_vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Italian_webbing_vest
 - type: construction
   name: Fascist Party Pin
   id: civ13_accessory_Fascist_Party_Pin
@@ -2756,20 +2631,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Fascist_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Fascist_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Fascist_Party_Pin
 - type: construction
   name: Officer's Colonial Order of the Star of Italy Medal
   id: civ13_accessory_Officers_Colonial_Order_of_the_Star_of_Italy_Medal
@@ -2777,31 +2651,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    Given to members of the Italian millitary who have served in the colonies of
-    the Kingdom of Italy, showing the rank of Officer .
+  description: Given to members of the Italian millitary who have served in the colonies of the Kingdom of Italy, showing the rank of Officer .
   icon:
-    sprite: >-
-      Civ14/Clothing/exported/badges/Officer's Colonial Order of the Star of
-      Italy.rsi
+    sprite: Civ14/Clothing/exported/badges/Officer's Colonial Order of the Star of Italy.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Officers_Colonial_Order_of_the_Star_of_Italy_Medal
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Officers_Colonial_Order_of_the_Star_of_Italy_Medal
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Officers_Colonial_Order_of_the_Star_of_Italy_Medal
 - type: construction
   name: Knight's Colonial Order of the Star of Italy Medal
   id: civ13_accessory_Knights_Colonial_Order_of_the_Star_of_Italy_Medal
@@ -2809,31 +2678,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    Given to members of the Italian millitary who have served in the colonies of
-    the Kingdom of Italy, showing the rank of Knight .
+  description: Given to members of the Italian millitary who have served in the colonies of the Kingdom of Italy, showing the rank of Knight .
   icon:
-    sprite: >-
-      Civ14/Clothing/exported/badges/Knight's Colonial Order of the Star of
-      Italy.rsi
+    sprite: Civ14/Clothing/exported/badges/Knight's Colonial Order of the Star of Italy.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Knights_Colonial_Order_of_the_Star_of_Italy_Medal
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Knights_Colonial_Order_of_the_Star_of_Italy_Medal
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Knights_Colonial_Order_of_the_Star_of_Italy_Medal
 - type: construction
   name: Communist Party Pin
   id: civ13_accessory_Communist_Party_Pin
@@ -2841,29 +2705,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Communism.
+  description: A political pin signifying that the wearer supports the beliefs of Communism.
   icon:
     sprite: Civ14/Clothing/exported/badges/communist_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Communist_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Communist_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Communist_Party_Pin
 - type: construction
   name: Anarcho-communist Party Pin
   id: civ13_accessory_Anarcho_communist_Party_Pin
@@ -2871,29 +2732,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Anarcho-communism.
+  description: A political pin signifying that the wearer supports the beliefs of Anarcho-communism.
   icon:
     sprite: Civ14/Clothing/exported/badges/ancom_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Anarcho_communist_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Anarcho_communist_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Anarcho_communist_Party_Pin
 - type: construction
   name: Anarchist Party Pin
   id: civ13_accessory_Anarchist_Party_Pin
@@ -2908,20 +2766,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Anarchist_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Anarchist_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Anarchist_Party_Pin
 - type: construction
   name: Monarchist Party Pin
   id: civ13_accessory_Monarchist_Party_Pin
@@ -2929,29 +2786,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of a
-    Monarchy.
+  description: A political pin signifying that the wearer supports the beliefs of a Monarchy.
   icon:
     sprite: Civ14/Clothing/exported/badges/monarchist_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Monarchist_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Monarchist_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Monarchist_Party_Pin
 - type: construction
   name: Republican Party Pin
   id: civ13_accessory_Republican_Party_Pin
@@ -2959,29 +2813,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of a
-    Republic.
+  description: A political pin signifying that the wearer supports the beliefs of a Republic.
   icon:
     sprite: Civ14/Clothing/exported/badges/republicanist_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Republican_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Republican_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Republican_Party_Pin
 - type: construction
   name: Fascist Party Pin
   id: civ13_accessory_Fascist_Party_Pin_1
@@ -2996,20 +2847,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Fascist_Party_Pin_1
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Fascist_Party_Pin_1
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Fascist_Party_Pin_1
 - type: construction
   name: National-socialist Party Pin
   id: civ13_accessory_National_socialist_Party_Pin
@@ -3017,29 +2867,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    National-Socialism.
+  description: A political pin signifying that the wearer supports the beliefs of National-Socialism.
   icon:
     sprite: Civ14/Clothing/exported/badges/nazi_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_National_socialist_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_National_socialist_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_National_socialist_Party_Pin
 - type: construction
   name: Minarchist Party Pin
   id: civ13_accessory_Minarchist_Party_Pin
@@ -3047,29 +2894,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Minarchism.
+  description: A political pin signifying that the wearer supports the beliefs of Minarchism.
   icon:
     sprite: Civ14/Clothing/exported/badges/minarchist_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Minarchist_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Minarchist_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Minarchist_Party_Pin
 - type: construction
   name: Anarcho-capitalist Party Pin
   id: civ13_accessory_Anarcho_capitalist_Party_Pin
@@ -3077,29 +2921,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Anarcho-capitalism.
+  description: A political pin signifying that the wearer supports the beliefs of Anarcho-capitalism.
   icon:
     sprite: Civ14/Clothing/exported/badges/ancap_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Anarcho_capitalist_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Anarcho_capitalist_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Anarcho_capitalist_Party_Pin
 - type: construction
   name: Libertarian Party Pin
   id: civ13_accessory_Libertarian_Party_Pin
@@ -3107,29 +2948,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Libertarianism.
+  description: A political pin signifying that the wearer supports the beliefs of Libertarianism.
   icon:
     sprite: Civ14/Clothing/exported/badges/libertarian_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Libertarian_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Libertarian_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Libertarian_Party_Pin
 - type: construction
   name: MSF Party Pin
   id: civ13_accessory_MSF_Party_Pin
@@ -3137,29 +2975,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Muslim-Students-Front.
+  description: A political pin signifying that the wearer supports the beliefs of Muslim-Students-Front.
   icon:
     sprite: Civ14/Clothing/exported/badges/msf_flag_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_MSF_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_MSF_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_MSF_Party_Pin
 - type: construction
   name: Liberal Party Pin
   id: civ13_accessory_Liberal_Party_Pin
@@ -3167,29 +3002,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Liberalism.
+  description: A political pin signifying that the wearer supports the beliefs of Liberalism.
   icon:
     sprite: Civ14/Clothing/exported/badges/liberal_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Liberal_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Liberal_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Liberal_Party_Pin
 - type: construction
   name: Anarcho-liberal Party Pin
   id: civ13_accessory_Anarcho_liberal_Party_Pin
@@ -3197,29 +3029,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Anarcho-liberalism.
+  description: A political pin signifying that the wearer supports the beliefs of Anarcho-liberalism.
   icon:
     sprite: Civ14/Clothing/exported/badges/anlib_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Anarcho_liberal_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Anarcho_liberal_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Anarcho_liberal_Party_Pin
 - type: construction
   name: Anarcho-primitist Party Pin
   id: civ13_accessory_Anarcho_primitist_Party_Pin
@@ -3227,29 +3056,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Anarcho-primitism.
+  description: A political pin signifying that the wearer supports the beliefs of Anarcho-primitism.
   icon:
     sprite: Civ14/Clothing/exported/badges/anprim_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Anarcho_primitist_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Anarcho_primitist_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Anarcho_primitist_Party_Pin
 - type: construction
   name: Evironmentalist Party Pin
   id: civ13_accessory_Evironmentalist_Party_Pin
@@ -3257,29 +3083,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Evironmentalism.
+  description: A political pin signifying that the wearer supports the beliefs of Evironmentalism.
   icon:
     sprite: Civ14/Clothing/exported/badges/environmentalist_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Evironmentalist_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Evironmentalist_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Evironmentalist_Party_Pin
 - type: construction
   name: Christian Party Pin
   id: civ13_accessory_Christian_Party_Pin
@@ -3294,20 +3117,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Christian_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Christian_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Christian_Party_Pin
 - type: construction
   name: Muslim Brotherhood Party Pin
   id: civ13_accessory_Muslim_Brotherhood_Party_Pin
@@ -3322,20 +3144,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Muslim_Brotherhood_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Muslim_Brotherhood_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Muslim_Brotherhood_Party_Pin
 - type: construction
   name: Conservative Party Pin
   id: civ13_accessory_Conservative_Party_Pin
@@ -3343,29 +3164,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Conservatism.
+  description: A political pin signifying that the wearer supports the beliefs of Conservatism.
   icon:
     sprite: Civ14/Clothing/exported/badges/conservative_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Conservative_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Conservative_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Conservative_Party_Pin
 - type: construction
   name: Nationalist Party Pin
   id: civ13_accessory_Nationalist_Party_Pin
@@ -3373,29 +3191,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Nationalism.
+  description: A political pin signifying that the wearer supports the beliefs of Nationalism.
   icon:
     sprite: Civ14/Clothing/exported/badges/nationalist_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Nationalist_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Nationalist_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Nationalist_Party_Pin
 - type: construction
   name: Egalitarian Party Pin
   id: civ13_accessory_Egalitarian_Party_Pin
@@ -3403,29 +3218,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Egalitarianism.
+  description: A political pin signifying that the wearer supports the beliefs of Egalitarianism.
   icon:
     sprite: Civ14/Clothing/exported/badges/egalitarian_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Egalitarian_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Egalitarian_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Egalitarian_Party_Pin
 - type: construction
   name: Globalist Party Pin
   id: civ13_accessory_Globalist_Party_Pin
@@ -3433,29 +3245,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Globalism.
+  description: A political pin signifying that the wearer supports the beliefs of Globalism.
   icon:
     sprite: Civ14/Clothing/exported/badges/globalist_flag_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Globalist_Party_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Globalist_Party_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Globalist_Party_Pin
 - type: construction
   name: Farmer's Union Pin
   id: civ13_accessory_Farmers_Union_Pin
@@ -3463,29 +3272,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A Union pin signifying that the wearer supports the beliefs of working to
-    protect and further farmer's rights.
+  description: A Union pin signifying that the wearer supports the beliefs of working to protect and further farmer's rights.
   icon:
     sprite: Civ14/Clothing/exported/badges/farmers_union_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Farmers_Union_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Farmers_Union_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Farmers_Union_Pin
 - type: construction
   name: Miner's Union Pin
   id: civ13_accessory_Miners_Union_Pin
@@ -3493,29 +3299,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A Union pin signifying that the wearer supports the beliefs of working to
-    protect and further miner's rights.
+  description: A Union pin signifying that the wearer supports the beliefs of working to protect and further miner's rights.
   icon:
     sprite: Civ14/Clothing/exported/badges/miners_union_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Miners_Union_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Miners_Union_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Miners_Union_Pin
 - type: construction
   name: Factory Worker's Union Pin
   id: civ13_accessory_Factory_Workers_Union_Pin
@@ -3523,29 +3326,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A Union pin signifying that the wearer supports the beliefs of working to
-    protect and further worker's rights.
+  description: A Union pin signifying that the wearer supports the beliefs of working to protect and further worker's rights.
   icon:
     sprite: Civ14/Clothing/exported/badges/factory_workers_union_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Factory_Workers_Union_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Factory_Workers_Union_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Factory_Workers_Union_Pin
 - type: construction
   name: Labour Worker's Union Pin
   id: civ13_accessory_Labour_Workers_Union_Pin
@@ -3553,29 +3353,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A Union pin signifying that the wearer supports the beliefs of working to
-    protect and further Labourer's rights.
+  description: A Union pin signifying that the wearer supports the beliefs of working to protect and further Labourer's rights.
   icon:
     sprite: Civ14/Clothing/exported/badges/workers_union_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Labour_Workers_Union_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Labour_Workers_Union_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Labour_Workers_Union_Pin
 - type: construction
   name: Medical Worker's Guild Pin
   id: civ13_accessory_Medical_Workers_Guild_Pin
@@ -3583,29 +3380,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A Union pin signifying that the wearer supports the beliefs of working to
-    protect and further Medical Worker's rights.
+  description: A Union pin signifying that the wearer supports the beliefs of working to protect and further Medical Worker's rights.
   icon:
     sprite: Civ14/Clothing/exported/badges/medics_guild_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Medical_Workers_Guild_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Medical_Workers_Guild_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Medical_Workers_Guild_Pin
 - type: construction
   name: Office Worker's Union Pin
   id: civ13_accessory_Office_Workers_Union_Pin
@@ -3613,29 +3407,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A Union pin signifying that the wearer supports the beliefs of working to
-    protect and further Office Worker's rights.
+  description: A Union pin signifying that the wearer supports the beliefs of working to protect and further Office Worker's rights.
   icon:
     sprite: Civ14/Clothing/exported/badges/corporate_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Office_Workers_Union_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Office_Workers_Union_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Office_Workers_Union_Pin
 - type: construction
   name: Hospitality Pin
   id: civ13_accessory_Hospitality_Pin
@@ -3643,29 +3434,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A Political pin signifying that the wearer supports the beliefs of
-    Hospitality Worker's rights.
+  description: A Political pin signifying that the wearer supports the beliefs of Hospitality Worker's rights.
   icon:
     sprite: Civ14/Clothing/exported/badges/aristocratic_league_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Hospitality_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Hospitality_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Hospitality_Pin
 - type: construction
   name: Lumberjack's Union Pin
   id: civ13_accessory_Lumberjacks_Union_Pin
@@ -3673,29 +3461,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A Union pin signifying that the wearer supports the beliefs of working to
-    protect and further Lumberjack's rights.
+  description: A Union pin signifying that the wearer supports the beliefs of working to protect and further Lumberjack's rights.
   icon:
     sprite: Civ14/Clothing/exported/badges/lumberjacks_union_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Lumberjacks_Union_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Lumberjacks_Union_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Lumberjacks_Union_Pin
 - type: construction
   name: Merchant's Guild Pin
   id: civ13_accessory_Merchants_Guild_Pin
@@ -3703,29 +3488,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A Guild pin signifying that the wearer supports the beliefs of working to
-    protect and further the Guild's rights.
+  description: A Guild pin signifying that the wearer supports the beliefs of working to protect and further the Guild's rights.
   icon:
     sprite: Civ14/Clothing/exported/badges/zionist_party_pin.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Merchants_Guild_Pin
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Merchants_Guild_Pin
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Merchants_Guild_Pin
 - type: construction
   name: Kapitan rank epaulettes
   id: civ13_accessory_Kapitan_rank_epaulettes
@@ -3740,20 +3522,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Kapitan_rank_epaulettes
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Kapitan_rank_epaulettes
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Kapitan_rank_epaulettes
 - type: construction
   name: Tenyente rank epaulettes
   id: civ13_accessory_Tenyente_rank_epaulettes
@@ -3768,20 +3549,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Tenyente_rank_epaulettes
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Tenyente_rank_epaulettes
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Tenyente_rank_epaulettes
 - type: construction
   name: Sarhente rank patch
   id: civ13_accessory_Sarhente_rank_patch
@@ -3796,20 +3576,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Sarhente_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Sarhente_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Sarhente_rank_patch
 - type: construction
   name: Kabo rank patch
   id: civ13_accessory_Kabo_rank_patch
@@ -3824,20 +3603,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Kabo_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Kabo_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Kabo_rank_patch
 - type: construction
   name: Nitohei rank patch
   id: civ13_accessory_Nitohei_rank_patch
@@ -3852,20 +3630,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Nitohei_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Nitohei_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Nitohei_rank_patch
 - type: construction
   name: Ittohei rank patch
   id: civ13_accessory_Ittohei_rank_patch
@@ -3880,20 +3657,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Ittohei_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Ittohei_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Ittohei_rank_patch
 - type: construction
   name: Jotohei rank patch
   id: civ13_accessory_Jotohei_rank_patch
@@ -3901,29 +3677,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    the rank of senior soldier (lance corporal or specialist), to be sewn into
-    the collar of a uniform.
+  description: the rank of senior soldier (lance corporal or specialist), to be sewn into the collar of a uniform.
   icon:
     sprite: Civ14/Clothing/exported/ties/jap_jotohei.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Jotohei_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Jotohei_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Jotohei_rank_patch
 - type: construction
   name: Gunso rank patch
   id: civ13_accessory_Gunso_rank_patch
@@ -3931,29 +3704,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    the rank of Gunso, squad leader or sergeanr, to be sewn into the collar of a
-    uniform.
+  description: the rank of Gunso, squad leader or sergeanr, to be sewn into the collar of a uniform.
   icon:
     sprite: Civ14/Clothing/exported/ties/jap_gunso.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Gunso_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Gunso_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Gunso_rank_patch
 - type: construction
   name: Shoi rank patch
   id: civ13_accessory_Shoi_rank_patch
@@ -3968,20 +3738,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Shoi_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Shoi_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Shoi_rank_patch
 - type: construction
   name: Chui rank patch
   id: civ13_accessory_Chui_rank_patch
@@ -3996,20 +3765,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Chui_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Chui_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Chui_rank_patch
 - type: construction
   name: Tai-i rank patch
   id: civ13_accessory_Tai_i_rank_patch
@@ -4024,20 +3792,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Tai_i_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Tai_i_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Tai_i_rank_patch
 - type: construction
   name: Schutze rank patch
   id: civ13_accessory_Schutze_rank_patch
@@ -4052,20 +3819,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Schutze_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Schutze_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Schutze_rank_patch
 - type: construction
   name: Oberschutze rank patch
   id: civ13_accessory_Oberschutze_rank_patch
@@ -4080,20 +3846,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Oberschutze_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Oberschutze_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Oberschutze_rank_patch
 - type: construction
   name: Gefreiter rank patch
   id: civ13_accessory_Gefreiter_rank_patch
@@ -4108,20 +3873,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Gefreiter_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Gefreiter_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Gefreiter_rank_patch
 - type: construction
   name: Obergefreiter rank patch
   id: civ13_accessory_Obergefreiter_rank_patch
@@ -4136,20 +3900,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Obergefreiter_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Obergefreiter_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Obergefreiter_rank_patch
 - type: construction
   name: Unteroffizier rank patch
   id: civ13_accessory_Unteroffizier_rank_patch
@@ -4164,20 +3927,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Unteroffizier_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Unteroffizier_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Unteroffizier_rank_patch
 - type: construction
   name: Ober Leutnant rank patch
   id: civ13_accessory_Ober_Leutnant_rank_patch
@@ -4192,20 +3954,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Ober_Leutnant_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Ober_Leutnant_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Ober_Leutnant_rank_patch
 - type: construction
   name: Hauptmann rank patch
   id: civ13_accessory_Hauptmann_rank_patch
@@ -4220,20 +3981,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Hauptmann_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Hauptmann_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Hauptmann_rank_patch
 - type: construction
   name: Untersturmfuhrer rank patch
   id: civ13_accessory_Untersturmfuhrer_rank_patch
@@ -4248,20 +4008,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Untersturmfuhrer_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Untersturmfuhrer_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Untersturmfuhrer_rank_patch
 - type: construction
   name: Scharfuhrer rank patch
   id: civ13_accessory_Scharfuhrer_rank_patch
@@ -4276,20 +4035,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Scharfuhrer_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Scharfuhrer_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Scharfuhrer_rank_patch
 - type: construction
   name: Obersturmfuhrer rank patch
   id: civ13_accessory_Obersturmfuhrer_rank_patch
@@ -4304,20 +4062,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Obersturmfuhrer_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Obersturmfuhrer_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Obersturmfuhrer_rank_patch
 - type: construction
   name: Hauptsturmfuhrer rank patch
   id: civ13_accessory_Hauptsturmfuhrer_rank_patch
@@ -4332,20 +4089,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Hauptsturmfuhrer_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Hauptsturmfuhrer_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Hauptsturmfuhrer_rank_patch
 - type: construction
   name: Khorunzhyj rank patches
   id: civ13_accessory_Khorunzhyj_rank_patches
@@ -4360,20 +4116,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Khorunzhyj_rank_patches
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Khorunzhyj_rank_patches
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Khorunzhyj_rank_patches
 - type: construction
   name: Vistun rank patch
   id: civ13_accessory_Vistun_rank_patch
@@ -4388,20 +4143,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Vistun_rank_patch
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Vistun_rank_patch
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Vistun_rank_patch
 - type: construction
   name: shoulder holster
   id: civ13_accessory_shoulder_holster
@@ -4416,20 +4170,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_shoulder_holster
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_shoulder_holster
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_shoulder_holster
 - type: construction
   name: armpit holster
   id: civ13_accessory_armpit_holster
@@ -4444,20 +4197,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_armpit_holster
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_armpit_holster
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_armpit_holster
 - type: construction
   name: waist holster
   id: civ13_accessory_waist_holster
@@ -4472,20 +4224,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_waist_holster
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_waist_holster
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_waist_holster
 - type: construction
   name: chest holster
   id: civ13_accessory_chest_holster
@@ -4500,20 +4251,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_chest_holster
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_chest_holster
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_chest_holster
 - type: construction
   name: hip holster
   id: civ13_accessory_hip_holster
@@ -4528,20 +4278,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_hip_holster
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 2
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_hip_holster
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 2
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_hip_holster
 - type: construction
   name: double hip holster
   id: civ13_accessory_double_hip_holster
@@ -4556,20 +4305,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_double_hip_holster
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 3
-              doAfter: 7
-    - node: end
-      entity: civ13_accessory_double_hip_holster
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 3
+        doAfter: 7
+  - node: end
+    entity: civ13_accessory_double_hip_holster
 - type: construction
   name: hip holster
   id: civ13_accessory_hip_holster_1
@@ -4582,22 +4330,21 @@
     sprite: Civ14/Clothing/exported/ties/tacholster.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 4
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_hip_holster_1
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_hip_holster_1
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_hip_holster_1
 - type: construction
   name: replicant kama
   id: civ13_accessory_replicant_kama
@@ -4612,20 +4359,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_replicant_kama
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_replicant_kama
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_replicant_kama
 - type: construction
   name: silver locket
   id: civ13_accessory_silver_locket
@@ -4633,35 +4379,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    This oval shaped, argentium sterling silver locket hangs on an incredibly
-    fine, refractive string, almost thin as hair and microweaved from links to a
-    deceptive strength, of similar material. The edges are engraved very
-    delicately with an elegant curving design, but overall the main is unmarked
-    and smooth to the touch, leaving room for either remaining as a stolid piece
-    or future alterations. There is an obvious internal place for a picture or
-    lock of some sort, but even behind that is a very thin compartment unhinged
-    with the pinch of a thumb and forefinger.
+  description: This oval shaped, argentium sterling silver locket hangs on an incredibly fine, refractive string, almost thin as hair and microweaved from links to a deceptive strength, of similar material. The edges are engraved very delicately with an elegant curving design, but overall the main is unmarked and smooth to the touch, leaving room for either remaining as a stolid piece or future alterations. There is an obvious internal place for a picture or lock of some sort, but even behind that is a very thin compartment unhinged with the pinch of a thumb and forefinger.
   icon:
     sprite: Civ14/Clothing/exported/ties/locket.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_silver_locket
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_silver_locket
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_silver_locket
 - type: construction
   name: load bearing equipment
   id: civ13_accessory_load_bearing_equipment
@@ -4676,20 +4413,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_load_bearing_equipment
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_load_bearing_equipment
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_load_bearing_equipment
 - type: construction
   name: short sword sheath
   id: civ13_accessory_short_sword_sheath
@@ -4702,22 +4438,21 @@
     sprite: Civ14/Clothing/exported/ties/short_sheath.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_short_sword_sheath
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 3
-              doAfter: 8
-    - node: end
-      entity: civ13_accessory_short_sword_sheath
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 3
+        doAfter: 8
+  - node: end
+    entity: civ13_accessory_short_sword_sheath
 - type: construction
   name: long sword sheath
   id: civ13_accessory_long_sword_sheath
@@ -4730,22 +4465,21 @@
     sprite: Civ14/Clothing/exported/ties/longsword_sheath.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_long_sword_sheath
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 4
-              doAfter: 8
-    - node: end
-      entity: civ13_accessory_long_sword_sheath
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 4
+        doAfter: 8
+  - node: end
+    entity: civ13_accessory_long_sword_sheath
 - type: construction
   name: katana sheath
   id: civ13_accessory_katana_sheath
@@ -4758,22 +4492,21 @@
     sprite: Civ14/Clothing/exported/ties/katana_sheath.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 3
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_katana_sheath
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 3
-              doAfter: 8
-    - node: end
-      entity: civ13_accessory_katana_sheath
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 3
+        doAfter: 8
+  - node: end
+    entity: civ13_accessory_katana_sheath
 - type: construction
   name: daisho sheaths
   id: civ13_accessory_daisho_sheaths
@@ -4786,22 +4519,21 @@
     sprite: Civ14/Clothing/exported/ties/daisho_sheath.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 3
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_daisho_sheaths
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 6
-              doAfter: 8
-    - node: end
-      entity: civ13_accessory_daisho_sheaths
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 6
+        doAfter: 8
+  - node: end
+    entity: civ13_accessory_daisho_sheaths
 - type: construction
   name: sword sheath
   id: civ13_accessory_sword_sheath
@@ -4814,22 +4546,21 @@
     sprite: Civ14/Clothing/exported/ties/longer_sheath.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_sword_sheath
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 3
-              doAfter: 8
-    - node: end
-      entity: civ13_accessory_sword_sheath
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 3
+        doAfter: 8
+  - node: end
+    entity: civ13_accessory_sword_sheath
 - type: construction
   name: knife sheath
   id: civ13_accessory_knife_sheath
@@ -4842,22 +4573,21 @@
     sprite: Civ14/Clothing/exported/ties/knifeholster.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 3
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_knife_sheath
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_knife_sheath
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_knife_sheath
 - type: construction
   name: belt loop
   id: civ13_accessory_belt_loop
@@ -4872,20 +4602,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_belt_loop
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_belt_loop
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_belt_loop
 - type: construction
   name: duty rig
   id: civ13_accessory_duty_rig
@@ -4893,29 +4622,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A set of loops and cases on a belt. You could probably store some
-    enforcement tool there.
+  description: A set of loops and cases on a belt. You could probably store some enforcement tool there.
   icon:
     sprite: Civ14/Clothing/exported/ties/tacholster.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_duty_rig
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_duty_rig
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_duty_rig
 - type: construction
   name: loose pouches
   id: civ13_accessory_loose_pouches
@@ -4930,20 +4656,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_loose_pouches
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_loose_pouches
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_loose_pouches
 - type: construction
   name: thrown weapon bandolier
   id: civ13_accessory_thrown_weapon_bandolier
@@ -4951,29 +4676,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A set of leather cases on belts for storing and retrieving thrown weapons
-    quickly.
+  description: A set of leather cases on belts for storing and retrieving thrown weapons quickly.
   icon:
     sprite: Civ14/Clothing/exported/ties/bandolier.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 4
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_thrown_weapon_bandolier
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_thrown_weapon_bandolier
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_thrown_weapon_bandolier
 - type: construction
   name: bandolier
   id: civ13_accessory_bandolier
@@ -4988,20 +4710,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_bandolier
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 3
-              doAfter: 7
-    - node: end
-      entity: civ13_accessory_bandolier
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 3
+        doAfter: 7
+  - node: end
+    entity: civ13_accessory_bandolier
 - type: construction
   name: green chest webbing
   id: civ13_accessory_green_chest_webbing
@@ -5016,20 +4737,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_green_chest_webbing
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 2
-              doAfter: 6
-    - node: end
-      entity: civ13_accessory_green_chest_webbing
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 2
+        doAfter: 6
+  - node: end
+    entity: civ13_accessory_green_chest_webbing
 - type: construction
   name: NLF small pouches
   id: civ13_accessory_NLF_small_pouches
@@ -5044,20 +4764,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_NLF_small_pouches
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_NLF_small_pouches
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_NLF_small_pouches
 - type: construction
   name: NLF chestrig
   id: civ13_accessory_NLF_chestrig
@@ -5065,29 +4784,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A green chest-level webbing, with three medium-sized pouches along with two
-    smaller ones.
+  description: A green chest-level webbing, with three medium-sized pouches along with two smaller ones.
   icon:
     sprite: Civ14/Clothing/exported/ties/nlfchestrig_v1.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_NLF_chestrig
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_NLF_chestrig
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_NLF_chestrig
 - type: construction
   name: khaki chest webbing
   id: civ13_accessory_khaki_chest_webbing
@@ -5102,20 +4818,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_khaki_chest_webbing
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 2
-              doAfter: 6
-    - node: end
-      entity: civ13_accessory_khaki_chest_webbing
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 2
+        doAfter: 6
+  - node: end
+    entity: civ13_accessory_khaki_chest_webbing
 - type: construction
   name: black pouches
   id: civ13_accessory_black_pouches
@@ -5130,20 +4845,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_black_pouches
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_black_pouches
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_black_pouches
 - type: construction
   name: large black pouches
   id: civ13_accessory_large_black_pouches
@@ -5158,20 +4872,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_large_black_pouches
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_large_black_pouches
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_large_black_pouches
 - type: construction
   name: large tan pouches
   id: civ13_accessory_large_tan_pouches
@@ -5186,20 +4899,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_large_tan_pouches
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_large_tan_pouches
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_large_tan_pouches
 - type: construction
   name: tan pouches
   id: civ13_accessory_tan_pouches
@@ -5214,20 +4926,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_tan_pouches
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_tan_pouches
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_tan_pouches
 - type: construction
   name: tan UBAC
   id: civ13_accessory_tan_UBAC
@@ -5235,29 +4946,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A flexible, close-fitting shirt with camouflage sleeves designed to be worn
-    under combat equipment. This one is tan.
+  description: A flexible, close-fitting shirt with camouflage sleeves designed to be worn under combat equipment. This one is tan.
   icon:
     sprite: Civ14/Clothing/exported/ties/ubac_tan.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_tan_UBAC
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_tan_UBAC
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_tan_UBAC
 - type: construction
   name: green UBAC
   id: civ13_accessory_green_UBAC
@@ -5265,29 +4973,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A flexible, close-fitting shirt with camouflage sleeves designed to be worn
-    under combat equipment. This one is green.
+  description: A flexible, close-fitting shirt with camouflage sleeves designed to be worn under combat equipment. This one is green.
   icon:
     sprite: Civ14/Clothing/exported/ties/ubac_green.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_green_UBAC
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_green_UBAC
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_green_UBAC
 - type: construction
   name: black UBAC
   id: civ13_accessory_black_UBAC
@@ -5295,29 +5000,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A flexible, close-fitting shirt with camouflage sleeves designed to be worn
-    under combat equipment. This one is black.
+  description: A flexible, close-fitting shirt with camouflage sleeves designed to be worn under combat equipment. This one is black.
   icon:
     sprite: Civ14/Clothing/exported/ties/ubac_black.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_black_UBAC
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_black_UBAC
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_black_UBAC
 - type: construction
   name: grey sweater
   id: civ13_accessory_grey_sweater
@@ -5332,20 +5034,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_grey_sweater
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_grey_sweater
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_grey_sweater
 - type: construction
   name: light webbing
   id: civ13_accessory_light_webbing
@@ -5360,20 +5061,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_light_webbing
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 1
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_light_webbing
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 1
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_light_webbing
 - type: construction
   name: Chinese light webbing
   id: civ13_accessory_Chinese_light_webbing
@@ -5381,27 +5081,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: ''
   icon:
     sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Chinese_light_webbing
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Chinese_light_webbing
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Chinese_light_webbing
 - type: construction
   name: US Army webbing
   id: civ13_accessory_US_Army_webbing
@@ -5416,20 +5115,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_US_Army_webbing
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_US_Army_webbing
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_US_Army_webbing
 - type: construction
   name: US Army bandolier
   id: civ13_accessory_US_Army_bandolier
@@ -5444,20 +5142,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_US_Army_bandolier
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_US_Army_bandolier
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_US_Army_bandolier
 - type: construction
   name: shotgun bandolier
   id: civ13_accessory_shotgun_bandolier
@@ -5470,22 +5167,21 @@
     sprite: Civ14/Clothing/exported/ties/shotgun_bandolier.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 4
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_shotgun_bandolier
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_shotgun_bandolier
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_shotgun_bandolier
 - type: construction
   name: US Army M79 Vest
   id: civ13_accessory_US_Army_M79_Vest
@@ -5500,20 +5196,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_US_Army_M79_Vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_US_Army_M79_Vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_US_Army_M79_Vest
 - type: construction
   name: Grenadier Webbing
   id: civ13_accessory_Grenadier_Webbing
@@ -5528,20 +5223,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Grenadier_Webbing
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Grenadier_Webbing
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Grenadier_Webbing
 - type: construction
   name: Grenadier Webbing
   id: civ13_accessory_Grenadier_Webbing_1
@@ -5556,20 +5250,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Grenadier_Webbing_1
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Grenadier_Webbing_1
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Grenadier_Webbing_1
 - type: construction
   name: survival webbing
   id: civ13_accessory_survival_webbing
@@ -5577,29 +5270,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A green set of chest and knee-level pouches for storing a pistol, magazines
-    and other gear needed to survive in the wilderness.
+  description: A green set of chest and knee-level pouches for storing a pistol, magazines and other gear needed to survive in the wilderness.
   icon:
     sprite: Civ14/Clothing/exported/ties/survival_webbing.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_survival_webbing
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_survival_webbing
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_survival_webbing
 - type: construction
   name: Imperial Russian Army bandolier
   id: civ13_accessory_Imperial_Russian_Army_bandolier
@@ -5614,20 +5304,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Imperial_Russian_Army_bandolier
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Imperial_Russian_Army_bandolier
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Imperial_Russian_Army_bandolier
 - type: construction
   name: filipino webbing
   id: civ13_accessory_filipino_webbing
@@ -5642,20 +5331,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_filipino_webbing
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_filipino_webbing
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_filipino_webbing
 - type: construction
   name: cartridge rigging
   id: civ13_accessory_cartridge_rigging
@@ -5670,20 +5358,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_cartridge_rigging
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_cartridge_rigging
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_cartridge_rigging
 - type: construction
   name: CAF Tacvest
   id: civ13_accessory_CAF_Tacvest
@@ -5698,20 +5385,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_CAF_Tacvest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_CAF_Tacvest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_CAF_Tacvest
 - type: construction
   name: Leather webbing vest
   id: civ13_accessory_Leather_webbing_vest
@@ -5719,28 +5405,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: ''
   icon:
     sprite: Civ14/Clothing/exported/ties/british_vest.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Leather_webbing_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Leather_webbing_vest
-
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Leather_webbing_vest
 - type: construction
   name: Greek webbing vest
   id: civ13_accessory_Greek_webbing_vest
@@ -5748,27 +5432,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: ''
   icon:
     sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Greek_webbing_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Greek_webbing_vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Greek_webbing_vest
 - type: construction
   name: Russian webbing vest
   id: civ13_accessory_Russian_webbing_vest
@@ -5783,20 +5466,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Russian_webbing_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Russian_webbing_vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Russian_webbing_vest
 - type: construction
   name: US webbing
   id: civ13_accessory_US_webbing
@@ -5804,30 +5486,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A khaki canvas pouch rig with 10 pouches total for ammo and other various
-    items
+  description: A khaki canvas pouch rig with 10 pouches total for ammo and other various items
   icon:
     sprite: Civ14/Clothing/exported/ties/us_webbing.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_US_webbing
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_US_webbing
-
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_US_webbing
 - type: construction
   name: stethoscope
   id: civ13_accessory_stethoscope
@@ -5842,20 +5520,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_stethoscope
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_stethoscope
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_stethoscope
 - type: construction
   name: TATBA-7 vest
   id: civ13_accessory_TATBA_7_vest
@@ -5870,20 +5547,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_TATBA_7_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_TATBA_7_vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_TATBA_7_vest
 - type: construction
   name: 6B3 body armor
   id: civ13_accessory_6B3_body_armor
@@ -5898,20 +5574,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_6B3_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_6B3_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_6B3_body_armor
 - type: construction
   name: 6B3 green camo body armor
   id: civ13_accessory_6B3_green_camo_body_armor
@@ -5919,27 +5594,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: ''
   icon:
     sprite: Civ14/Clothing/exported/ties/6b3cam.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_6B3_green_camo_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_6B3_green_camo_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_6B3_green_camo_body_armor
 - type: construction
   name: 6B2 body armor
   id: civ13_accessory_6B2_body_armor
@@ -5954,20 +5628,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_6B2_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_6B2_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_6B2_body_armor
 - type: construction
   name: 6B5 body armor
   id: civ13_accessory_6B5_body_armor
@@ -5982,20 +5655,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_6B5_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_6B5_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_6B5_body_armor
 - type: construction
   name: N34-B body armor
   id: civ13_accessory_N34_B_body_armor
@@ -6003,29 +5675,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A modern piece of Blugoslavian armor introduced in 2023, made fully out of
-    kevlar while also having some space left for plate inserts
+  description: A modern piece of Blugoslavian armor introduced in 2023, made fully out of kevlar while also having some space left for plate inserts
   icon:
     sprite: Civ14/Clothing/exported/ties/n34bm.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_N34_B_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_N34_B_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_N34_B_body_armor
 - type: construction
   name: N34-BM body armor
   id: civ13_accessory_N34_BM_body_armor
@@ -6033,29 +5702,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A Blugoslavian armor used by medics and doctors alike, comes with a white
-    medical cross on the back.
+  description: A Blugoslavian armor used by medics and doctors alike, comes with a white medical cross on the back.
   icon:
     sprite: Civ14/Clothing/exported/ties/n34bmm.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_N34_BM_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_N34_BM_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_N34_BM_body_armor
 - type: construction
   name: black Interceptor Body Armor
   id: civ13_accessory_black_Interceptor_Body_Armor
@@ -6063,29 +5729,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    Wearable armor that can stop even some rifle rounds. Can be fitted with
-    plates to increase protection.
+  description: Wearable armor that can stop even some rifle rounds. Can be fitted with plates to increase protection.
   icon:
     sprite: Civ14/Clothing/exported/ties/iba_black.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_black_Interceptor_Body_Armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_black_Interceptor_Body_Armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_black_Interceptor_Body_Armor
 - type: construction
   name: UCP Interceptor Body Armor
   id: civ13_accessory_UCP_Interceptor_Body_Armor
@@ -6093,30 +5756,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    Wearable armor that can stop even some rifle rounds. Can be fitted with
-    plates to increase protection. This one has the Universal Camouflage
-    Pattern.
+  description: Wearable armor that can stop even some rifle rounds. Can be fitted with plates to increase protection. This one has the Universal Camouflage Pattern.
   icon:
     sprite: Civ14/Clothing/exported/ties/iba_ucp.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_UCP_Interceptor_Body_Armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_UCP_Interceptor_Body_Armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_UCP_Interceptor_Body_Armor
 - type: construction
   name: OCP Interceptor Body Armor
   id: civ13_accessory_OCP_Interceptor_Body_Armor
@@ -6124,30 +5783,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    Wearable armor that can stop even some rifle rounds. Can be fitted with
-    plates to increase protection. This one has the Operational Camouflage
-    Pattern.
+  description: Wearable armor that can stop even some rifle rounds. Can be fitted with plates to increase protection. This one has the Operational Camouflage Pattern.
   icon:
     sprite: Civ14/Clothing/exported/ties/iba_ocp.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_OCP_Interceptor_Body_Armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_OCP_Interceptor_Body_Armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_OCP_Interceptor_Body_Armor
 - type: construction
   name: tan plate carrier
   id: civ13_accessory_tan_plate_carrier
@@ -6162,20 +5817,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_tan_plate_carrier
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_tan_plate_carrier
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_tan_plate_carrier
 - type: construction
   name: olive plate carrier
   id: civ13_accessory_olive_plate_carrier
@@ -6190,20 +5844,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_olive_plate_carrier
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_olive_plate_carrier
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_olive_plate_carrier
 - type: construction
   name: black plate carrier
   id: civ13_accessory_black_plate_carrier
@@ -6218,20 +5871,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_black_plate_carrier
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_black_plate_carrier
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_black_plate_carrier
 - type: construction
   name: UARM plate carrier
   id: civ13_accessory_UARM_plate_carrier
@@ -6239,29 +5891,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A plate carrier that can store magazines and pouches. This one is made by
-    UARM.
+  description: A plate carrier that can store magazines and pouches. This one is made by UARM.
   icon:
     sprite: Civ14/Clothing/exported/ties/ukraine_armor.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_UARM_plate_carrier
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_UARM_plate_carrier
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_UARM_plate_carrier
 - type: construction
   name: 6B45 body armor
   id: civ13_accessory_6B45_body_armor
@@ -6276,20 +5925,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_6B45_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_6B45_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_6B45_body_armor
 - type: construction
   name: 6B45 extended body armor
   id: civ13_accessory_6B45_extended_body_armor
@@ -6304,20 +5952,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_6B45_extended_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_6B45_extended_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_6B45_extended_body_armor
 - type: construction
   name: 6B46 body armor
   id: civ13_accessory_6B46_body_armor
@@ -6325,29 +5972,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A modern plate carrier of Russian origin. This one is used by paratroopers
-    and vehicle crewmen as it is a lighter version of the 6B45.
+  description: A modern plate carrier of Russian origin. This one is used by paratroopers and vehicle crewmen as it is a lighter version of the 6B45.
   icon:
     sprite: Civ14/Clothing/exported/ties/6b46.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_6B46_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_6B46_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_6B46_body_armor
 - type: construction
   name: M-1952 Flak Jacket
   id: civ13_accessory_M_1952_Flak_Jacket
@@ -6355,29 +5999,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    Wearable armor meant to protect against shrapnel and light hits. Won't do
-    much against large caliber weapons.
+  description: Wearable armor meant to protect against shrapnel and light hits. Won't do much against large caliber weapons.
   icon:
     sprite: Civ14/Clothing/exported/ties/flakjacket.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_M_1952_Flak_Jacket
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_M_1952_Flak_Jacket
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_M_1952_Flak_Jacket
 - type: construction
   name: M-1969 Flak Jacket
   id: civ13_accessory_M_1969_Flak_Jacket
@@ -6385,29 +6026,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    Wearable armor with neck protection meant to protect against shrapnel and
-    light hits. Won't do much against large caliber weapons.
+  description: Wearable armor with neck protection meant to protect against shrapnel and light hits. Won't do much against large caliber weapons.
   icon:
     sprite: Civ14/Clothing/exported/ties/flakjacket1969.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_M_1969_Flak_Jacket
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_M_1969_Flak_Jacket
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_M_1969_Flak_Jacket
 - type: construction
   name: 6B1 vest
   id: civ13_accessory_6B1_vest
@@ -6415,29 +6053,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    Wearable Armor meant to protect against shrapnel and light caliber weaponry.
-    Won't do much against large caliber weapons.
+  description: Wearable Armor meant to protect against shrapnel and light caliber weaponry. Won't do much against large caliber weapons.
   icon:
     sprite: Civ14/Clothing/exported/ties/6b1.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_6B1_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_6B1_vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_6B1_vest
 - type: construction
   name: woodland PASGT body armor
   id: civ13_accessory_woodland_PASGT_body_armor
@@ -6445,29 +6080,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    Wearable armor that can stop most pistol rounds. This one is in U.S.
-    Woodland pattern.
+  description: Wearable armor that can stop most pistol rounds. This one is in U.S. Woodland pattern.
   icon:
     sprite: Civ14/Clothing/exported/ties/pasgt_woodland.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_woodland_PASGT_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_woodland_PASGT_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_woodland_PASGT_body_armor
 - type: construction
   name: khaki PASGT body armor
   id: civ13_accessory_khaki_PASGT_body_armor
@@ -6482,20 +6114,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_khaki_PASGT_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_khaki_PASGT_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_khaki_PASGT_body_armor
 - type: construction
   name: blizzard PASGT body armor
   id: civ13_accessory_blizzard_PASGT_body_armor
@@ -6503,29 +6134,26 @@
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    Wearable armor that can stop most pistol rounds. This one has a blizzard
-    pattern.
+  description: Wearable armor that can stop most pistol rounds. This one has a blizzard pattern.
   icon:
     sprite: Civ14/Clothing/exported/ties/pasgt_blizzard.rsi
     state: icon
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_blizzard_PASGT_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_blizzard_PASGT_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_blizzard_PASGT_body_armor
 - type: construction
   name: RB-23 body armor
   id: civ13_accessory_RB_23_body_armor
@@ -6540,20 +6168,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_RB_23_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_RB_23_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_RB_23_body_armor
 - type: construction
   name: Masada body armor
   id: civ13_accessory_Masada_body_armor
@@ -6568,20 +6195,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Masada_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Masada_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Masada_body_armor
 - type: construction
   name: chainmail
   id: civ13_accessory_chainmail
@@ -6596,20 +6222,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_chainmail
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_chainmail
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_chainmail
 - type: construction
   name: knee protections
   id: civ13_accessory_knee_protections
@@ -6624,20 +6249,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_knee_protections
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_knee_protections
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_knee_protections
 - type: construction
   name: leg guards
   id: civ13_accessory_leg_guards
@@ -6652,20 +6276,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_leg_guards
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_leg_guards
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_leg_guards
 - type: construction
   name: elbow protections
   id: civ13_accessory_elbow_protections
@@ -6680,20 +6303,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_elbow_protections
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_elbow_protections
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_elbow_protections
 - type: construction
   name: arm guards
   id: civ13_accessory_arm_guards
@@ -6708,20 +6330,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_arm_guards
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_arm_guards
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_arm_guards
 - type: construction
   name: tan carrier vest
   id: civ13_accessory_tan_carrier_vest
@@ -6736,20 +6357,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_tan_carrier_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_tan_carrier_vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_tan_carrier_vest
 - type: construction
   name: black carrier vest
   id: civ13_accessory_black_carrier_vest
@@ -6764,20 +6384,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_black_carrier_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_black_carrier_vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_black_carrier_vest
 - type: construction
   name: heavy carrier vest
   id: civ13_accessory_heavy_carrier_vest
@@ -6792,20 +6411,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_heavy_carrier_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_heavy_carrier_vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_heavy_carrier_vest
 - type: construction
   name: black kevlar vest
   id: civ13_accessory_black_kevlar_vest
@@ -6820,20 +6438,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_black_kevlar_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_black_kevlar_vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_black_kevlar_vest
 - type: construction
   name: civilian kevlar vest
   id: civ13_accessory_civilian_kevlar_vest
@@ -6848,20 +6465,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_civilian_kevlar_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Steel
-              amount: 10
-              doAfter: 21
-    - node: end
-      entity: civ13_accessory_civilian_kevlar_vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Steel
+        amount: 10
+        doAfter: 21
+  - node: end
+    entity: civ13_accessory_civilian_kevlar_vest
 - type: construction
   name: Press kevlar vest
   id: civ13_accessory_Press_kevlar_vest
@@ -6876,20 +6492,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Press_kevlar_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Press_kevlar_vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Press_kevlar_vest
 - type: construction
   name: baily vest
   id: civ13_accessory_baily_vest
@@ -6904,20 +6519,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_baily_vest
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_baily_vest
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_baily_vest
 - type: construction
   name: IOG heavy vest B-7
   id: civ13_accessory_IOG_heavy_vest_B_7
@@ -6932,20 +6546,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_IOG_heavy_vest_B_7
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_IOG_heavy_vest_B_7
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_IOG_heavy_vest_B_7
 - type: construction
   name: Breastplate body-armor
   id: civ13_accessory_Breastplate_body_armor
@@ -6960,20 +6573,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Breastplate_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Breastplate_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Breastplate_body_armor
 - type: construction
   name: Light breastplate body-armor
   id: civ13_accessory_Light_breastplate_body_armor
@@ -6988,20 +6600,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Light_breastplate_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Light_breastplate_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Light_breastplate_body_armor
 - type: construction
   name: Lead breastplate body-armor
   id: civ13_accessory_Lead_breastplate_body_armor
@@ -7016,20 +6627,19 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Lead_breastplate_body_armor
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Lead_breastplate_body_armor
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Lead_breastplate_body_armor
 - type: construction
   name: White Sash
   id: civ13_accessory_White_Sash
@@ -7042,22 +6652,21 @@
     sprite: Civ14/Clothing/exported/ties/sash.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 5
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_White_Sash
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_White_Sash
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_White_Sash
 - type: construction
   name: neck ruffle
   id: civ13_accessory_neck_ruffle
@@ -7070,22 +6679,21 @@
     sprite: Civ14/Clothing/exported/ties/ruffle_neck.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 3
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_neck_ruffle
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 2
-              doAfter: 3
-    - node: end
-      entity: civ13_accessory_neck_ruffle
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 2
+        doAfter: 3
+  - node: end
+    entity: civ13_accessory_neck_ruffle
 - type: construction
   name: suspenders
   id: civ13_accessory_suspenders
@@ -7098,22 +6706,21 @@
     sprite: Civ14/Clothing/exported/ties/suspenders1.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 3
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_suspenders
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 1
-              doAfter: 6
-    - node: end
-      entity: civ13_accessory_suspenders
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 1
+        doAfter: 6
+  - node: end
+    entity: civ13_accessory_suspenders
 - type: construction
   name: dark suspenders
   id: civ13_accessory_dark_suspenders
@@ -7126,22 +6733,21 @@
     sprite: Civ14/Clothing/exported/ties/suspenders2.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 3
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_dark_suspenders
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Leather
-              amount: 1
-              doAfter: 7
-    - node: end
-      entity: civ13_accessory_dark_suspenders
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Leather
+        amount: 1
+        doAfter: 7
+  - node: end
+    entity: civ13_accessory_dark_suspenders
 - type: construction
   name: Japanese pilot harness
   id: civ13_accessory_Japanese_pilot_harness
@@ -7156,17 +6762,16 @@
   objectType: Item
   agemin: 8
   agemax: 8
-
 - type: constructionGraph
   id: civ13_accessory_Japanese_pilot_harness
   start: start
   graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_accessory_Japanese_pilot_harness
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 5
+  - node: end
+    entity: civ13_accessory_Japanese_pilot_harness
