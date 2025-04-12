@@ -73,7 +73,7 @@ The easiest way to get food early on is by killing animals and eating the meat a
 For now, stay away from bears, alligators, wolves, snakes, and mammoths. They will fight back and very probably kill you. Wait until you have proper equipment or a hunting party with you.
 ```
 
--   Use your knife (flint axe works too) on the dead animal with **Harm intent** to butcher it.
+-   Use your knife (flint axe works too) on the dead animal to butcher it.
 -   **Raw meat** causes **food poisoning**! You'll want to **cook** it first, but if you're starving, food poisoning is the least of your worries.
 -   To cook meat, place it on a **campfire** and click the campfire. The campfire is made with **wood logs**.
 
