@@ -1,5 +1,5 @@
 using Robust.Shared.GameStates;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
+using Robust.Shared.Serialization.TypeSerializers.Implementations;
 
 namespace Content.Shared.Weather;
 
@@ -7,21 +7,27 @@ namespace Content.Shared.Weather;
 public sealed partial class WeatherNomadsComponent : Component
 {
     [DataField("enabledWeathers")]
-    public List<string> EnabledWeathers { get; set; } = new();
+    public HashSet<string> EnabledWeathers { get; set; } = new();
 
     [DataField("minSeasonMinutes")]
-    public int MinSeasonMinutes { get; set; } = 10;
+    public int MinSeasonMinutes { get; set; } = 30;
 
     [DataField("maxSeasonMinutes")]
-    public int MaxSeasonMinutes { get; set; } = 30;
+    public int MaxSeasonMinutes { get; set; } = 45;
 
-    [DataField("currentWeather")]
-    public string CurrentWeather { get; set; } = "None";
+    [DataField("minPrecipitationDurationMinutes")]
+    public int MinPrecipitationDurationMinutes { get; set; } = 5;
 
-    [DataField("nextSwitchTime")]
+    [DataField("maxPrecipitationDurationMinutes")]
+    public int MaxPrecipitationDurationMinutes { get; set; } = 10;
+
+    [DataField("currentPrecipitation")]
+    public Precipitation CurrentPrecipitation { get; set; } = Precipitation.Dry;
+
+    [DataField("nextSwitchTime", customTypeSerializer: typeof(TimespanSerializer))]
     public TimeSpan NextSwitchTime { get; set; } = TimeSpan.Zero;
 
-    [DataField("nextSeasonChange")]
+    [DataField("nextSeasonChange", customTypeSerializer: typeof(TimespanSerializer))]
     public TimeSpan NextSeasonChange { get; set; } = TimeSpan.Zero;
 
     [DataField("currentSeason")]
