@@ -472,8 +472,10 @@ def generate_main_entities(tile_map, chunk_size=16, decals_by_id=None):
                             "SnowfallMedium",
                             "SnowfallHeavy",
                         ],
-                        "minSeasonMinutes": 10,
-                        "maxSeasonMinutes": 30,
+                        "minSeasonMinutes": 30,
+                        "maxSeasonMinutes": 45,
+                        "minPrecipitationDurationMinutes": 5,
+                        "maxPrecipitationDurationMinutes": 10
                     },
                     {
                         "type": "DecalGrid",
