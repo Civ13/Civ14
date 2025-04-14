@@ -59,8 +59,8 @@
           enum.EntityHeaterVisuals.Setting:
             Off: { visible: false }
             Low: { visible: true, state: s_brazier1 }
-            Medium: { visible: true, state: s_brazier1 }
-            High: { visible: true, state: s_brazier1 }
+            Medium: { visible: true, state: s_brazier2 }
+            High: { visible: true, state: s_brazier2 }
 
 - type: entity
   name: tiki torch
