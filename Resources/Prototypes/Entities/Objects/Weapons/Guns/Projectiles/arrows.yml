@@ -67,7 +67,10 @@
     - type: Sprite
       sprite: Civ14/Objects/weapons.rsi
       state: arrow
+    - type: ThrowingAngle
+      angle: 225
     - type: Projectile
+      angle: 225
       damage:
         types:
           Piercing: 22
