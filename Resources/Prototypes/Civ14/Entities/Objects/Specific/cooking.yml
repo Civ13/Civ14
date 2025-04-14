@@ -86,7 +86,7 @@
       heatingRate: 10
     - type: GrillFuelBurn
       fuel: 2
-      maxFuel: 10
+      maxFuel: 30
     - type: PlaceableSurface
     - type: ItemPlacer
       maxEntities: 2

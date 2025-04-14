@@ -13,13 +13,13 @@ public sealed partial class GrillFuelBurnComponent : Component
     /// Current amount of fuel in the campfire.
     /// </summary>
     [DataField("fuel")]
-    public int Fuel = 2;
+    public float Fuel = 2;
 
     /// <summary>
     /// Maximum amount of fuel the campfire can hold.
     /// </summary>
     [DataField("maxFuel")]
-    public int MaxFuel = 10;
+    public float MaxFuel = 30;
 
     /// <summary>
     /// Current heating setting of the campfire based on fuel level.

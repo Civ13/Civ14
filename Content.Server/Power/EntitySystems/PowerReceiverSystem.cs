@@ -42,7 +42,10 @@ namespace Content.Server.Power.EntitySystems
 
         private void OnExamined(Entity<ApcPowerReceiverComponent> ent, ref ExaminedEvent args)
         {
-            args.PushMarkup(GetExamineText(ent.Comp.Powered));
+            if (ent.Comp.NeedsPower)
+            {
+                args.PushMarkup(GetExamineText(ent.Comp.Powered));
+            }
         }
 
         private void OnGetVerbs(EntityUid uid, ApcPowerReceiverComponent component, GetVerbsEvent<Verb> args)

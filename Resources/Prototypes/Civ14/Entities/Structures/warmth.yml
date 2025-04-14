@@ -16,7 +16,7 @@
           visible: false
     - type: PointLight
       enabled: false
-      radius: 5
+      radius: 6
       energy: 5
       color: "#E25822"
     - type: ApcPowerReceiver
@@ -24,6 +24,11 @@
       powerLoad: 0
     - type: HeatEmitter
       heatingRate: 15
+    - type: ItemPlacer
+      maxEntities: 2
+      whitelist:
+        components:
+          - Temperature
     - type: GrillFuelBurn
       fuel: 0
       maxFuel: 60

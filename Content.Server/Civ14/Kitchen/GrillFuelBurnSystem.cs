@@ -71,15 +71,15 @@ public sealed class GrillFuelBurnSystem : EntitySystem
 
         if (_entityManager.TryGetComponent<StackComponent>(args.Used, out var stackComp))
         {
-            int availableFuel = stackComp.Count;
-            int fuelNeeded = comp.MaxFuel - comp.Fuel;
-            int fuelToAdd = Math.Min(availableFuel, fuelNeeded);
+            float availableFuel = stackComp.Count;
+            float fuelNeeded = comp.MaxFuel - comp.Fuel;
+            float fuelToAdd = Math.Min(availableFuel, fuelNeeded);
 
             if (fuelToAdd > 0)
             {
                 comp.Fuel += fuelToAdd;
                 _remainingBurnTime[uid] += fuelToAdd * burnFuel.BurnTime * 60f;
-                _stackSystem.SetCount(args.Used, stackComp.Count - fuelToAdd, stackComp);
+                _stackSystem.SetCount(args.Used, stackComp.Count - (int)fuelToAdd, stackComp);
 
                 if (stackComp.Count <= 0)
                 {
@@ -108,20 +108,24 @@ public sealed class GrillFuelBurnSystem : EntitySystem
         var query = EntityQueryEnumerator<GrillFuelBurnComponent, ItemPlacerComponent>();
         while (query.MoveNext(out var uid, out var comp, out var placer))
         {
-            if (comp.IsLit && comp.Expends == true)
+            if (comp.IsLit)
             {
                 if (comp.Fuel <= 0 || _remainingBurnTime.GetValueOrDefault(uid) <= 0)
                 {
-                    var coordinates = Transform(uid).Coordinates;
-                    Spawn("Coal1", coordinates);
-                    QueueDel(uid);
                     _remainingBurnTime.Remove(uid);
                     comp.IsLit = false;
                     AdjustHeaterSetting(uid, comp);
+                    if (comp.Expends == true)
+                    {
+                        var coordinates = Transform(uid).Coordinates;
+                        Spawn("Coal1", coordinates);
+                        QueueDel(uid);
+                    }
                     continue;
                 }
 
                 _remainingBurnTime[uid] -= deltaTime;
+                comp.Fuel -= deltaTime/60f;
                 AdjustHeaterSetting(uid, comp);
 
                 if (comp.Setting != EntityHeaterSetting.Off)
