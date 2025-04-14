@@ -209,7 +209,6 @@ public sealed class WeatherNomadsSystem : EntitySystem
     {
         base.Initialize();
         SubscribeLocalEvent<WeatherNomadsComponent, MapInitEvent>(OnMapInit);
-        Log.Debug("WeatherNomadsSystem initialized successfully");
     }
 
     /// <summary>
@@ -222,22 +221,8 @@ public sealed class WeatherNomadsSystem : EntitySystem
         component.NextSwitchTime = _timing.CurTime + TimeSpan.FromMinutes(GetRandomPrecipitationDuration(component));
         component.NextSeasonChange = _timing.CurTime + TimeSpan.FromMinutes(GetRandomSeasonDuration(component));
 
-        Log.Debug($"OnMapInit for entity {uid}:");
-        Log.Debug($"  MinSeasonMinutes: {component.MinSeasonMinutes}");
-        Log.Debug($"  MaxSeasonMinutes: {component.MaxSeasonMinutes}");
-        Log.Debug($"  MinPrecipitationDurationMinutes: {component.MinPrecipitationDurationMinutes}");
-        Log.Debug($"  MaxPrecipitationDurationMinutes: {component.MaxPrecipitationDurationMinutes}");
-        Log.Debug($"  Current time: {_timing.CurTime.TotalSeconds} seconds");
-        Log.Debug($"  Set CurrentPrecipitation: {component.CurrentPrecipitation}");
-        Log.Debug($"  Set CurrentWeather: {component.CurrentWeather}");
-        Log.Debug($"  Set NextSwitchTime: {component.NextSwitchTime.TotalSeconds} seconds ({component.NextSwitchTime.TotalMinutes:F2} minutes)");
-        Log.Debug($"  Set CurrentSeason: {component.CurrentSeason}");
-        Log.Debug($"  Set NextSeasonChange: {component.NextSeasonChange.TotalSeconds} seconds ({component.NextSeasonChange.TotalMinutes:F2} minutes)");
-
         Dirty(uid, component);
         UpdateTileWeathers(uid, component);
-        Log.Debug($"Weather started for entity {uid} with {component.CurrentPrecipitation} ({component.CurrentWeather})");
-        Log.Debug($"Seasons started for entity {uid} with {component.CurrentSeason}");
         _chat.DispatchGlobalAnnouncement($"Current season: {component.CurrentSeason}", "World", false, null, null);
     }
 
@@ -248,63 +233,33 @@ public sealed class WeatherNomadsSystem : EntitySystem
     {
         base.Update(frameTime);
 
-        Log.Debug($"Update tick at {Math.Floor(_timing.CurTime.TotalSeconds)} seconds:");
-
         var query = EntityQueryEnumerator<WeatherNomadsComponent>();
-        var componentCount = 0;
         while (query.MoveNext(out var uid, out var nomads))
         {
-            componentCount++;
-            Log.Debug($"  Processing WeatherNomadsComponent on entity {uid}:");
-            Log.Debug($"    MinSeasonMinutes: {nomads.MinSeasonMinutes}");
-            Log.Debug($"    MaxSeasonMinutes: {nomads.MaxSeasonMinutes}");
-            Log.Debug($"    MinPrecipitationDurationMinutes: {nomads.MinPrecipitationDurationMinutes}");
-            Log.Debug($"    MaxPrecipitationDurationMinutes: {nomads.MaxPrecipitationDurationMinutes}");
-            Log.Debug($"    CurrentSeason: {nomads.CurrentSeason}");
-            Log.Debug($"    NextSeasonChange: {nomads.NextSeasonChange.TotalSeconds} seconds ({nomads.NextSeasonChange.TotalMinutes:F2} minutes)");
-            Log.Debug($"    Current time: {_timing.CurTime.TotalSeconds} seconds");
-            Log.Debug($"    Time until season change: {(nomads.NextSeasonChange - _timing.CurTime).TotalSeconds:F2} seconds");
-
             // Handle season changes
             if (_timing.CurTime >= nomads.NextSeasonChange)
             {
-                Log.Debug($"    Season change triggered for entity {uid}");
                 var oldSeason = nomads.CurrentSeason;
                 nomads.CurrentSeason = GetNextSeason(nomads.CurrentSeason);
                 nomads.NextSeasonChange = _timing.CurTime + TimeSpan.FromMinutes(GetRandomSeasonDuration(nomads));
-                Log.Debug($"    Changed season from {oldSeason} to {nomads.CurrentSeason}");
-                Log.Debug($"    New NextSeasonChange: {nomads.NextSeasonChange.TotalSeconds} seconds ({nomads.NextSeasonChange.TotalMinutes:F2} minutes)");
                 Dirty(uid, nomads);
                 _chat.DispatchGlobalAnnouncement($"Changed season to {nomads.CurrentSeason}", null, false, null, null);
                 UpdateTileWeathers(uid, nomads);
             }
-            else
-            {
-                Log.Debug($"    Season change not ready for entity {uid} (time remaining: {(nomads.NextSeasonChange - _timing.CurTime).TotalMinutes:F2} minutes)");
-            }
 
             // Handle precipitation changes
-            Log.Debug($"    CurrentPrecipitation: {nomads.CurrentPrecipitation}");
-            Log.Debug($"    CurrentWeather: {nomads.CurrentWeather}");
-            Log.Debug($"    NextSwitchTime: {nomads.NextSwitchTime.TotalSeconds} seconds ({nomads.NextSwitchTime.TotalMinutes:F2} minutes)");
-            Log.Debug($"    Time until precipitation change: {(nomads.NextSwitchTime - _timing.CurTime).TotalSeconds:F2} seconds");
-
             if (_timing.CurTime < nomads.NextSwitchTime)
             {
-                Log.Debug($"    Precipitation change not ready for entity {uid} (time remaining: {(nomads.NextSwitchTime - _timing.CurTime).TotalMinutes:F2} minutes)");
                 continue;
             }
 
             var oldPrecipitation = nomads.CurrentPrecipitation;
             nomads.CurrentPrecipitation = GetNextPrecipitation(nomads.CurrentPrecipitation);
             nomads.NextSwitchTime = _timing.CurTime + TimeSpan.FromMinutes(GetRandomPrecipitationDuration(nomads));
-            Log.Debug($"    Changed precipitation from {oldPrecipitation} to {nomads.CurrentPrecipitation}");
-            Log.Debug($"    New NextSwitchTime: {nomads.NextSwitchTime.TotalSeconds} seconds ({nomads.NextSwitchTime.TotalMinutes:F2} minutes)");
             Dirty(uid, nomads);
             UpdateTileWeathers(uid, nomads);
         }
 
-        Log.Debug($"  Processed {componentCount} WeatherNomadsComponent instances");
     }
 
     /// <summary>
@@ -377,7 +332,6 @@ public sealed class WeatherNomadsSystem : EntitySystem
         {
             nomads.CurrentWeather = weatherType;
             Dirty(weatherUid, nomads);
-            Log.Debug($"Updated CurrentWeather to {weatherType} for entity {weatherUid}");
         }
 
         // Apply weather visuals globally
@@ -386,12 +340,10 @@ public sealed class WeatherNomadsSystem : EntitySystem
             _prototypeManager.TryIndex<WeatherPrototype>(weatherData.PrototypeId, out var proto))
         {
             _weatherSystem.SetWeather(mapId, proto, null);
-            Log.Debug($"Set weather {weatherType} for map {mapId}");
         }
         else
         {
             _weatherSystem.SetWeather(mapId, null, null);
-            Log.Debug($"Set no weather (Clear) for map {mapId}");
         }
 
         // Adjust temperature
@@ -406,7 +358,6 @@ public sealed class WeatherNomadsSystem : EntitySystem
         }
         air.Temperature = temperature;
 
-        Log.Debug($"Set weather {weatherType} and temperature {temperature} K for tile at {tileRef.GridIndices}");
     }
 
     /// <summary>
@@ -430,7 +381,6 @@ public sealed class WeatherNomadsSystem : EntitySystem
     private double GetRandomSeasonDuration(WeatherNomadsComponent component)
     {
         var duration = Random.Shared.Next(component.MinSeasonMinutes, component.MaxSeasonMinutes + 1);
-        Log.Debug($"GetRandomSeasonDuration: Min={component.MinSeasonMinutes}, Max={component.MaxSeasonMinutes}, Result={duration}");
         return duration;
     }
 
@@ -440,7 +390,6 @@ public sealed class WeatherNomadsSystem : EntitySystem
     private double GetRandomPrecipitationDuration(WeatherNomadsComponent component)
     {
         var duration = Random.Shared.Next(component.MinPrecipitationDurationMinutes, component.MaxPrecipitationDurationMinutes + 1);
-        Log.Debug($"GetRandomPrecipitationDuration: Min={component.MinPrecipitationDurationMinutes}, Max={component.MaxPrecipitationDurationMinutes}, Result={duration}");
         return duration;
     }
 
