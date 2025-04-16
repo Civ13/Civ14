@@ -1,23 +1,23 @@
 {
-    "version": 1,
-    "license": null,
-    "copyright": null,
-    "size": {
-        "x": 32,
-        "y": 32
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "lpo_flamethrower_back",
+      "directions": 1
     },
-    "states": [
-        {
-            "name": "lpo_flamethrower_back",
-            "directions": 1
-        },
-        {
-            "name": "equipped-BACKPACK",
-            "directions": 4
-        },
-        {
-            "name": "icon",
-            "directions": 1
-        }
-    ]
+    {
+      "name": "equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "icon",
+      "directions": 1
+    }
+  ]
 }

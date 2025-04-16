@@ -22,6 +22,10 @@
     {
       "name": "open",
       "directions": 1
+    },
+    {
+      "name": "empty",
+      "directions": 1
     }
   ]
 }

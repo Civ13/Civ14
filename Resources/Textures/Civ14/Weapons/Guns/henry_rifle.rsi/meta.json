@@ -14,6 +14,14 @@
     {
       "name": "icon",
       "directions": 1
+    },
+    {
+      "name": "empty",
+      "directions": 1
+    },
+    {
+      "name": "open",
+      "directions": 1
     }
   ]
 }

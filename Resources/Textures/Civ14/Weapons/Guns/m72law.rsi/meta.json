@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "license": null,
-  "copyright": null,
+  "license": "AGPL-3.0",
+  "copyright": "Exported from https://github.com/civ13/civ13",
   "size": {
     "x": 32,
     "y": 32
@@ -22,6 +22,14 @@
     {
       "name": "inhand-right",
       "directions": 4
+    },
+    {
+      "name": "empty",
+      "directions": 1
+    },
+    {
+      "name": "open",
+      "directions": 1
     }
   ]
 }
