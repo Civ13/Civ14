@@ -11,6 +11,8 @@
           map: ["enum.DoorVisualLayers.Base"]
     - type: Door
       changeAirtight: false
+    - type: Airtight
+      airBlocked: false
     - type: Construction
       agemin: 0
       agemax: 8
@@ -30,6 +32,8 @@
           map: ["enum.DoorVisualLayers.Base"]
     - type: Door
       changeAirtight: false
+    - type: Airtight
+      airBlocked: false
     - type: Construction
       agemin: 0
       agemax: 8

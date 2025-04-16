@@ -70,7 +70,7 @@
       changeAirtight: false
       bumpOpen: true
       clickOpen: true
-      canCrush: false
+      canCrush: true
       closeTimeOne: 0
       closeTimeTwo: 0
       openTimeOne: 0
