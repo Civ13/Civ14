@@ -1,4 +1,15 @@
 - type: entity
+  id: civ13_magazine_default
+  name: pistol magazine
+  parent: BaseMagazinePistol
+  components:
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - civ13_caliber_a9x19
+      capacity: 10
+- type: entity
   id: civ13_magazine_clip_(7.62x54mm)
   name: clip (7.62x54mm)
   parent: BaseMagazinePistol
@@ -51,7 +62,7 @@
       mayTransfer: true
       whitelist:
         tags:
-          - civ13_caliber_a762x51_weak
+          - civ13_caliber_a762x51
       capacity: 100
 - type: entity
   id: civ13_magazine_clip_(7.65x53mm)
@@ -205,7 +216,7 @@
       mayTransfer: true
       whitelist:
         tags:
-          - civ13_caliber_a762x54_weak
+          - civ13_caliber_a762x54
       capacity: 250
 - type: entity
   id: civ13_magazine_MG08_ammo_belt
@@ -216,7 +227,7 @@
       mayTransfer: true
       whitelist:
         tags:
-          - civ13_caliber_a792x57_weak
+          - civ13_caliber_a792x57
       capacity: 250
 - type: entity
   id: civ13_magazine_Vickers_ammo_belt
@@ -227,7 +238,7 @@
       mayTransfer: true
       whitelist:
         tags:
-          - civ13_caliber_a303_weak
+          - civ13_caliber_a303
       capacity: 250
 - type: entity
   id: civ13_magazine_Hotchkiss_ammo_belt
@@ -238,7 +249,7 @@
       mayTransfer: true
       whitelist:
         tags:
-          - civ13_caliber_a8x50_weak
+          - civ13_caliber_a8x50
       capacity: 250
 - type: entity
   id: civ13_magazine_Type_3_ammo_belt
@@ -249,7 +260,7 @@
       mayTransfer: true
       whitelist:
         tags:
-          - civ13_caliber_a65x50_weak
+          - civ13_caliber_a65x50
       capacity: 250
 - type: entity
   id: civ13_magazine_MG_34_ammo_belt
@@ -260,7 +271,7 @@
       mayTransfer: true
       whitelist:
         tags:
-          - civ13_caliber_a792x57_weak
+          - civ13_caliber_a792x57
       capacity: 250
 - type: entity
   id: civ13_magazine_Nambu_magazine
@@ -789,7 +800,7 @@
       mayTransfer: true
       whitelist:
         tags:
-          - civ13_caliber_a792x57_weak
+          - civ13_caliber_a792x57
       capacity: 50
 - type: entity
   id: civ13_magazine_MG13_magazine_(7.92x57mm)
@@ -800,7 +811,7 @@
       mayTransfer: true
       whitelist:
         tags:
-          - civ13_caliber_a792x57_weak
+          - civ13_caliber_a792x57
       capacity: 25
 - type: entity
   id: civ13_magazine_M3A1_magazine_(.45_ACP)
@@ -844,7 +855,7 @@
       mayTransfer: true
       whitelist:
         tags:
-          - civ13_caliber_a762x54_weak
+          - civ13_caliber_a762x54
       capacity: 47
 - type: entity
   id: civ13_magazine_DT_magazine_(7.62x54mmR)
@@ -1031,7 +1042,7 @@
       mayTransfer: true
       whitelist:
         tags:
-          - civ13_caliber_a3006_weak
+          - civ13_caliber_a3006
       capacity: 20
 - type: entity
   id: civ13_magazine_Thompson_magazine_(.45)
@@ -1077,182 +1088,7 @@
         tags:
           - civ13_caliber_a9x19
       capacity: 13
-- type: entity
-  id: civ13_magazine_Tibanna_Gas_Cartridge
-  name: Tibanna Gas Cartridge
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laser
-      capacity: 500
-- type: entity
-  id: civ13_magazine_DC_15_Tibanna_Gas_Cartridge
-  name: DC-15 Tibanna Gas Cartridge
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laserb
-      capacity: 200
-- type: entity
-  id: civ13_magazine_DC_15A_Tibanna_Gas_Cartridge
-  name: DC-15A Tibanna Gas Cartridge
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laserb
-      capacity: 500
-- type: entity
-  id: civ13_magazine_DC_17_Tibanna_Gas_Cartridge
-  name: DC-17 Tibanna Gas Cartridge
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laserb
-      capacity: 50
-- type: entity
-  id: civ13_magazine_E_5_Tibanna_Gas_Cartridge
-  name: E-5 Tibanna Gas Cartridge
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laser
-      capacity: 100
-- type: entity
-  id: civ13_magazine_Repeating_Blaster_Tibanna_Gas_Cartridge
-  name: Repeating Blaster Tibanna Gas Cartridge
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laser
-      capacity: 2000
-- type: entity
-  id: civ13_magazine_Blaster_Power_Pack
-  name: Blaster Power Pack
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laserb
-      capacity: 400
-- type: entity
-  id: civ13_magazine_DL_44_Tibanna_Gas_Cartridge
-  name: DL-44 Tibanna Gas Cartridge
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laser
-      capacity: 50
-- type: entity
-  id: civ13_magazine_A280_Tibanna_Gas_Cartridge
-  name: A280 Tibanna Gas Cartridge
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laser
-      capacity: 100
-- type: entity
-  id: civ13_magazine_E_11_Tibanna_Gas_Cartridge
-  name: E-11 Tibanna Gas Cartridge
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laser
-      capacity: 100
-- type: entity
-  id: civ13_magazine_DH_17_Tibanna_Gas_Cartridge
-  name: DH-17 Tibanna Gas Cartridge
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laser
-      capacity: 500
-- type: entity
-  id: civ13_magazine_Westar_34_Tibanna_Gas_Cartridge
-  name: Westar-34 Tibanna Gas Cartridge
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laser
-      capacity: 20
-- type: entity
-  id: civ13_magazine_Qblz1_plasma_mag
-  name: Qblz1 plasma mag
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laserb
-      capacity: 40
-- type: entity
-  id: civ13_magazine_Dcb_2_Plasma_cartridge
-  name: Dcb-2 Plasma cartridge
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laserb
-      capacity: 15
-- type: entity
-  id: civ13_magazine_Lasgun_power_pack
-  name: Lasgun power pack
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laser
-      capacity: 150
-- type: entity
-  id: civ13_magazine_Laspistol_power_pack
-  name: Laspistol power pack
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_laser
-      capacity: 80
+
 - type: entity
   id: civ13_magazine_Makeshift_AK_47_magazine_(7.62x39mm)
   name: Makeshift AK-47 magazine (7.62x39mm)
@@ -1450,7 +1286,7 @@
       mayTransfer: true
       whitelist:
         tags:
-          - civ13_caliber_a762x54_weak
+          - civ13_caliber_a762x54
       capacity: 250
 - type: entity
   id: civ13_magazine_PKM_ammo_belt_(7.62x54mmR)_100
@@ -1461,7 +1297,7 @@
       mayTransfer: true
       whitelist:
         tags:
-          - civ13_caliber_a762x54_weak
+          - civ13_caliber_a762x54
       capacity: 100
 - type: entity
   id: civ13_magazine_Ammo_can_(12.7x108mm)
@@ -2091,17 +1927,7 @@
         tags:
           - civ13_caliber_a556x45
       capacity: 20
-- type: entity
-  id: civ13_magazine_taser_cartridge
-  name: taser cartridge
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_taser
-      capacity: 5
+
 - type: entity
   id: civ13_magazine_bullet_pouch_(20)
   name: bullet pouch (20)
