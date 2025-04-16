@@ -56,3 +56,21 @@ Entries:
     id: 5
     time: "2025-04-13T00:00:00.0000000+00:00"
     url: https://github.com/Civ13/Civ14/pull/107
+
+  - author: Taislin
+    changes:
+      - message: Fixed door atmos bug.
+        type: Fix
+      - message: Fixed missing recipes for anvil and kiln.
+        type: Fix
+      - message: Fixed missing plant sprites.
+        type: Fix
+      - message: Fixed fuel consumption bug for braziers.
+        type: Fix
+      - message: Weather should match the seasons now.
+        type: Add
+      - message: Added deep water to the middle of the rivers.
+        type: Add
+    id: 5
+    time: "2025-04-16T00:00:00.0000000+00:00"
+    url: https://github.com/Civ13/Civ14/pull/118

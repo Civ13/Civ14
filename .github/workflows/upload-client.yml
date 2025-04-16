@@ -39,33 +39,40 @@ jobs:
 
       - name: Package Client
         run: dotnet build -c Release -r win-x64 Content.Client
+      - name: Package Server
+        run: dotnet build -c Release -r win-x64 Content.Server
 
       - name: Checkout Target Repo (Compiled Client)
         uses: actions/checkout@v4
         with:
-          repository: taislin/civ14_compiled_client
+          repository: taislin/civ14_compileds
           token: ${{ secrets.TARGET_REPO_TOKEN }}
           path: target-repo
-
-      - name: Debug Build Output
-        run: |
-          echo "Current directory: $(pwd)"
-          ls -la
-          find . -type d -name "bin"  # Find all 'bin' directories
-          find . -type f -name "*.dll"  # Find compiled DLLs
-          find . -type f -name "*.exe"  # Find compiled EXEs
-          ls -la ./bin/Content.Client/ || echo "Directory not found"
 
       - name: Update Target Repo
         run: |
           # Copy compiled output to target-repo/
-          rsync -av --ignore-existing ./bin/Content.Client/win-x64/ target-repo/ || true
+          rsync -av --ignore-existing ./bin/Content.Client/win-x64/ target-repo/Content.Client/ || true
           cd target-repo
+          cd Content.Client
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add .
           if git status --porcelain | grep .; then
             git commit -m "Update compiled client from Civ14 - changed files only"
+            git push
+          else
+            echo "No changes detected, skipping commit and push"
+          fi
+          cd -
+          # Copy compiled output to target-repo/
+          rsync -av --ignore-existing ./../bin/Content.Server/win-x64/ Content.Server/ || true
+          cd Content.Server
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add .
+          if git status --porcelain | grep .; then
+            git commit -m "Update compiled server from Civ14 - changed files only"
             git push
           else
             echo "No changes detected, skipping commit and push"
