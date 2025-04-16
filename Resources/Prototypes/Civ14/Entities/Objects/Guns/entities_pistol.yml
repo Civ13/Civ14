@@ -5,7 +5,7 @@
   description: A generic laser shooter
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/DC-17.rsi
+      sprite: Civ14/Weapons/Guns/DC-17.rsi
       layers:
         - state: icon
           map:
@@ -14,7 +14,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/DC-17.rsi
+      sprite: Civ14/Weapons/Guns/DC-17.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -59,7 +59,7 @@
   description: A DC-17 blaster pistol most commonly used by the Grand Army of the Republic.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/DC-17.rsi
+      sprite: Civ14/Weapons/Guns/DC-17.rsi
       layers:
         - state: icon
           map:
@@ -68,7 +68,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/DC-17.rsi
+      sprite: Civ14/Weapons/Guns/DC-17.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -115,7 +115,7 @@
     Republic Commandos.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/DC-17c.rsi
+      sprite: Civ14/Weapons/Guns/DC-17c.rsi
       layers:
         - state: icon
           map:
@@ -124,7 +124,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/DC-17c.rsi
+      sprite: Civ14/Weapons/Guns/DC-17c.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -169,7 +169,7 @@
   description: A DL-44 blaster pistol used by various organizations throughout the galaxy.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/DL-44.rsi
+      sprite: Civ14/Weapons/Guns/DL-44.rsi
       layers:
         - state: icon
           map:
@@ -178,7 +178,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/DL-44.rsi
+      sprite: Civ14/Weapons/Guns/DL-44.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -225,7 +225,7 @@
     common within the Rebel Alliance.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/DH-17.rsi
+      sprite: Civ14/Weapons/Guns/DH-17.rsi
       layers:
         - state: icon
           map:
@@ -234,7 +234,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/DH-17.rsi
+      sprite: Civ14/Weapons/Guns/DH-17.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -281,7 +281,7 @@
     lethal sidearm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/Westar-34.rsi
+      sprite: Civ14/Weapons/Guns/Westar-34.rsi
       layers:
         - state: icon
           map:
@@ -290,7 +290,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/Westar-34.rsi
+      sprite: Civ14/Weapons/Guns/Westar-34.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -335,7 +335,7 @@
   description: A plasma pistol used by the Chinese.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/dcb2.rsi
+      sprite: Civ14/Weapons/Guns/dcb2.rsi
       layers:
         - state: icon
           map:
@@ -344,7 +344,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/dcb2.rsi
+      sprite: Civ14/Weapons/Guns/dcb2.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -389,7 +389,7 @@
   description: A laspistol used by the imperial gaurd.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/laspistol.rsi
+      sprite: Civ14/Weapons/Guns/laspistol.rsi
       layers:
         - state: icon
           map:
@@ -398,7 +398,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/laspistol.rsi
+      sprite: Civ14/Weapons/Guns/laspistol.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -443,7 +443,7 @@
   description: Standard issue Japanese pistol. Chambered in 8x22mm Nambu.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/nambu_ww2.rsi
+      sprite: Civ14/Weapons/Guns/nambu_ww2.rsi
       layers:
         - state: icon
           map:
@@ -452,7 +452,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/nambu_ww2.rsi
+      sprite: Civ14/Weapons/Guns/nambu_ww2.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -497,7 +497,7 @@
   description: A Luger P08 chambered in 9x19mm parabellum, german design.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/luger.rsi
+      sprite: Civ14/Weapons/Guns/luger.rsi
       layers:
         - state: icon
           map:
@@ -506,7 +506,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/luger.rsi
+      sprite: Civ14/Weapons/Guns/luger.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -551,7 +551,7 @@
   description: A Walther P38 chambered in 9x19mm parabellum, german design.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/waltherp38.rsi
+      sprite: Civ14/Weapons/Guns/waltherp38.rsi
       layers:
         - state: icon
           map:
@@ -560,7 +560,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/waltherp38.rsi
+      sprite: Civ14/Weapons/Guns/waltherp38.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -605,7 +605,7 @@
   description: A modern pistol, loaded on 9x19mm, reliable and fast.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/glock17.rsi
+      sprite: Civ14/Weapons/Guns/glock17.rsi
       layers:
         - state: icon
           map:
@@ -614,7 +614,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/glock17.rsi
+      sprite: Civ14/Weapons/Guns/glock17.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -659,7 +659,7 @@
   description: A modern pistol, loaded on 9x19mm, reliable and fast.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/sig250.rsi
+      sprite: Civ14/Weapons/Guns/sig250.rsi
       layers:
         - state: icon
           map:
@@ -668,7 +668,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/sig250.rsi
+      sprite: Civ14/Weapons/Guns/sig250.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -713,7 +713,7 @@
   description: A modern experimental pistol made by Kalashnikov (chambered in 9x19mm).
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/pl14.rsi
+      sprite: Civ14/Weapons/Guns/pl14.rsi
       layers:
         - state: icon
           map:
@@ -722,7 +722,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/pl14.rsi
+      sprite: Civ14/Weapons/Guns/pl14.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -767,7 +767,7 @@
   description: A Russian made pistol firing loaded on 9x19mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/mp443.rsi
+      sprite: Civ14/Weapons/Guns/mp443.rsi
       layers:
         - state: icon
           map:
@@ -776,7 +776,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/mp443.rsi
+      sprite: Civ14/Weapons/Guns/mp443.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -821,7 +821,7 @@
   description: A modern pistol, loaded on 9x19mm, reliable and fast.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/tarusg3.rsi
+      sprite: Civ14/Weapons/Guns/tarusg3.rsi
       layers:
         - state: icon
           map:
@@ -830,7 +830,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/tarusg3.rsi
+      sprite: Civ14/Weapons/Guns/tarusg3.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -875,7 +875,7 @@
   description: The SIG Sauer P220 is a semi-automatic pistol. Designed in 1975.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/p220.rsi
+      sprite: Civ14/Weapons/Guns/p220.rsi
       layers:
         - state: icon
           map:
@@ -884,7 +884,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/p220.rsi
+      sprite: Civ14/Weapons/Guns/p220.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -929,7 +929,7 @@
   description: Some fake shit invented by Re1taz.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/iogb7.rsi
+      sprite: Civ14/Weapons/Guns/iogb7.rsi
       layers:
         - state: icon
           map:
@@ -938,7 +938,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/iogb7.rsi
+      sprite: Civ14/Weapons/Guns/iogb7.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -983,7 +983,7 @@
   description: An early German pistol that can chamber 7.62x25mm TT.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/mauser.rsi
+      sprite: Civ14/Weapons/Guns/mauser.rsi
       layers:
         - state: icon
           map:
@@ -992,7 +992,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/mauser.rsi
+      sprite: Civ14/Weapons/Guns/mauser.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1037,7 +1037,7 @@
   description: A German semi-automatic pistol chambered in 7.65x25mm Borchardt.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/borchardt.rsi
+      sprite: Civ14/Weapons/Guns/borchardt.rsi
       layers:
         - state: icon
           map:
@@ -1046,7 +1046,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/borchardt.rsi
+      sprite: Civ14/Weapons/Guns/borchardt.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1091,7 +1091,7 @@
   description: An early, compact Colt pistol chambered in .32 ACP.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/coltpockethammerless.rsi
+      sprite: Civ14/Weapons/Guns/coltpockethammerless.rsi
       layers:
         - state: icon
           map:
@@ -1100,7 +1100,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/coltpockethammerless.rsi
+      sprite: Civ14/Weapons/Guns/coltpockethammerless.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1145,7 +1145,7 @@
   description: A later version of the compact Colt pistol, chambered in .380 ACP.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/coltpockethammerless.rsi
+      sprite: Civ14/Weapons/Guns/coltpockethammerless.rsi
       layers:
         - state: icon
           map:
@@ -1154,7 +1154,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/coltpockethammerless.rsi
+      sprite: Civ14/Weapons/Guns/coltpockethammerless.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1199,7 +1199,7 @@
   description: A particularly unique-in-appearance early German semi-automatic pistol.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/bergmann.rsi
+      sprite: Civ14/Weapons/Guns/bergmann.rsi
       layers:
         - state: icon
           map:
@@ -1208,7 +1208,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/bergmann.rsi
+      sprite: Civ14/Weapons/Guns/bergmann.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1255,7 +1255,7 @@
     Chambered in .45 ACP.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/colt.rsi
+      sprite: Civ14/Weapons/Guns/colt.rsi
       layers:
         - state: icon
           map:
@@ -1264,7 +1264,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/colt.rsi
+      sprite: Civ14/Weapons/Guns/colt.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1309,7 +1309,7 @@
   description: A slightly upgraded model of the M1911A1. Chambered in .45 ACP.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/colt.rsi
+      sprite: Civ14/Weapons/Guns/colt.rsi
       layers:
         - state: icon
           map:
@@ -1318,7 +1318,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/colt.rsi
+      sprite: Civ14/Weapons/Guns/colt.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1365,7 +1365,7 @@
     in 7.62x25mm Tokarev.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/tt30.rsi
+      sprite: Civ14/Weapons/Guns/tt30.rsi
       layers:
         - state: icon
           map:
@@ -1374,7 +1374,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/tt30.rsi
+      sprite: Civ14/Weapons/Guns/tt30.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1421,7 +1421,7 @@
     the 1950's. Chambered in 9x18mm Makarov.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/makarov.rsi
+      sprite: Civ14/Weapons/Guns/makarov.rsi
       layers:
         - state: icon
           map:
@@ -1430,7 +1430,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/makarov.rsi
+      sprite: Civ14/Weapons/Guns/makarov.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1475,7 +1475,7 @@
   description: A Soviet selective fire machine pistol. Chambered in 9x18mm Makarov.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/aps.rsi
+      sprite: Civ14/Weapons/Guns/aps.rsi
       layers:
         - state: icon
           map:
@@ -1484,7 +1484,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/aps.rsi
+      sprite: Civ14/Weapons/Guns/aps.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1531,7 +1531,7 @@
     9mm Luger.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/m9beretta.rsi
+      sprite: Civ14/Weapons/Guns/m9beretta.rsi
       layers:
         - state: icon
           map:
@@ -1540,7 +1540,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/m9beretta.rsi
+      sprite: Civ14/Weapons/Guns/m9beretta.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1587,7 +1587,7 @@
     9mm Luger. This one blends in with the desert.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/tanm9.rsi
+      sprite: Civ14/Weapons/Guns/tanm9.rsi
       layers:
         - state: icon
           map:
@@ -1596,7 +1596,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/tanm9.rsi
+      sprite: Civ14/Weapons/Guns/tanm9.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1643,7 +1643,7 @@
     9mm Parabellum.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/jericho941.rsi
+      sprite: Civ14/Weapons/Guns/jericho941.rsi
       layers:
         - state: icon
           map:
@@ -1652,7 +1652,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/jericho941.rsi
+      sprite: Civ14/Weapons/Guns/jericho941.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1697,7 +1697,7 @@
   description: Designed and developed by Magnum Research Inc. Chambered in 50cal.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/deagle.rsi
+      sprite: Civ14/Weapons/Guns/deagle.rsi
       layers:
         - state: icon
           map:
@@ -1706,7 +1706,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/deagle.rsi
+      sprite: Civ14/Weapons/Guns/deagle.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1751,7 +1751,7 @@
   description: Designed and developed by Magnum Research Inc. Chambered in 44.magnum.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/deagle.rsi
+      sprite: Civ14/Weapons/Guns/deagle.rsi
       layers:
         - state: icon
           map:
@@ -1760,7 +1760,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/deagle.rsi
+      sprite: Civ14/Weapons/Guns/deagle.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1807,7 +1807,7 @@
     9mm Parabellum.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/browning_hp.rsi
+      sprite: Civ14/Weapons/Guns/browning_hp.rsi
       layers:
         - state: icon
           map:
@@ -1816,7 +1816,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/browning_hp.rsi
+      sprite: Civ14/Weapons/Guns/browning_hp.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1863,7 +1863,7 @@
     marshal service chambered .45 S&W.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/sti2011.rsi
+      sprite: Civ14/Weapons/Guns/sti2011.rsi
       layers:
         - state: icon
           map:
@@ -1872,7 +1872,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/sti2011.rsi
+      sprite: Civ14/Weapons/Guns/sti2011.rsi
       quickEquip: false
       slots:
         - suitStorage
@@ -1919,7 +1919,7 @@
     control and temporarily incapacitate a person.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/taser_new.rsi
+      sprite: Civ14/Weapons/Guns/taser_new.rsi
       layers:
         - state: icon
           map:
@@ -1928,7 +1928,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Objects/Weapons/Guns/taser_new.rsi
+      sprite: Civ14/Weapons/Guns/taser_new.rsi
       quickEquip: false
       slots:
         - suitStorage
