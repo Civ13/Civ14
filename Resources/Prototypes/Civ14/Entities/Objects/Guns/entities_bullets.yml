@@ -1,0 +1,110 @@
+- type: entity
+  id: civ13_bullet_shrapnel
+  name: shrapnel
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 7
+- type: entity
+  id: civ13_bullet_buckshot_pellet
+  name: buckshot pellet
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 45
+- type: entity
+  id: civ13_bullet_rubber_bullet
+  name: rubber bullet
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 1
+- type: entity
+  id: civ13_bullet_rubber_ball
+  name: rubber ball
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 1
+- type: entity
+  id: civ13_bullet_shotgun_slug
+  name: shotgun slug
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 20
+- type: entity
+  id: civ13_bullet_beanbag
+  name: beanbag
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 2
+- type: entity
+  id: civ13_bullet_breaching_slug
+  name: breaching slug
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 18
+- type: entity
+  id: civ13_bullet_incendiary_slug
+  name: incendiary slug
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 16
+- type: entity
+  id: civ13_bullet_dart
+  name: dart
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 2
+- type: entity
+  id: civ13_bullet_bone_dart
+  name: bone dart
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 1

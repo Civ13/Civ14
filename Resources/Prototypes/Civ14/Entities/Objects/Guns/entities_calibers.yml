@@ -1,0 +1,756 @@
+- type: entity
+  id: civ13_caliber_RPG_rocket
+  name: RPG rocket
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_RPG_rocket
+- type: entity
+  id: civ13_caliber_M6A1_HEAT_rocket
+  name: M6A1 HEAT rocket
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_M6A1_HEAT_rocket
+- type: entity
+  id: civ13_caliber_RPzB._Gr._4312
+  name: RPzB. Gr. 4312
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_RPzB._Gr._4312
+- type: entity
+  id: civ13_caliber_Panzerfaust_rocket
+  name: Panzerfaust rocket
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_Panzerfaust_rocket
+- type: entity
+  id: civ13_caliber_M72_LAW_rocket
+  name: M72 LAW rocket
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_M72_LAW_rocket
+- type: entity
+  id: civ13_caliber_RPG_22_rocket
+  name: RPG-22 rocket
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_RPG_22_rocket
+- type: entity
+  id: civ13_caliber_PG_7V_rocket
+  name: PG-7V rocket
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_PG_7V_rocket
+- type: entity
+  id: civ13_caliber_OG_7V_rocket
+  name: OG-7V rocket
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_OG_7V_rocket
+- type: entity
+  id: civ13_caliber_SrB._HEAT_MK_I
+  name: SrB. HEAT MK I
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_SrB._HEAT_MK_I
+- type: entity
+  id: civ13_caliber_SrB._HEAT_MK_III
+  name: SrB. HEAT MK III
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_SrB._HEAT_MK_III
+- type: entity
+  id: civ13_caliber_Nuclear_warhead
+  name: Nuclear warhead
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_Nuclear_warhead
+- type: entity
+  id: civ13_caliber_HEAT_ATGM_rocket
+  name: HEAT ATGM rocket
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_HEAT_ATGM_rocket
+- type: entity
+  id: civ13_caliber_HE_ATGM_rocket
+  name: HE ATGM rocket
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_HE_ATGM_rocket
+- type: entity
+  id: civ13_caliber_taser_dart
+  name: taser dart
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_taser_dart
+- type: entity
+  id: civ13_caliber_musketball_cartridge
+  name: musketball cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_musketball_cartridge
+- type: entity
+  id: civ13_caliber_stone_ball_projectile
+  name: stone ball projectile
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_stone_ball_projectile
+- type: entity
+  id: civ13_caliber_pistol_cartridge
+  name: pistol cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_pistol_cartridge
+- type: entity
+  id: civ13_caliber_blunderbuss_cartridge
+  name: blunderbuss cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_blunderbuss_cartridge
+- type: entity
+  id: civ13_caliber_arrow_shaft
+  name: arrow shaft
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_arrow_shaft
+- type: entity
+  id: civ13_caliber_gods_finger
+  name: gods finger
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_gods_finger
+- type: entity
+  id: civ13_caliber_flint_bolt
+  name: flint bolt
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_flint_bolt
+- type: entity
+  id: civ13_caliber_rock
+  name: rock
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_rock
+- type: entity
+  id: civ13_caliber_sandstone_bolt
+  name: sandstone bolt
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_sandstone_bolt
+- type: entity
+  id: civ13_caliber_copper_bolt
+  name: copper bolt
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_copper_bolt
+- type: entity
+  id: civ13_caliber_iron_bolt
+  name: iron bolt
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_iron_bolt
+- type: entity
+  id: civ13_caliber_bronze_bolt
+  name: bronze bolt
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_bronze_bolt
+- type: entity
+  id: civ13_caliber_steel_bolt
+  name: steel bolt
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_steel_bolt
+- type: entity
+  id: civ13_caliber_fiberglass_bolt
+  name: fiberglass bolt
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_fiberglass_bolt
+- type: entity
+  id: civ13_caliber_vial_arrow
+  name: vial arrow
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_vial_arrow
+- type: entity
+  id: civ13_caliber_poison_arrow
+  name: poison arrow
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_poison_arrow
+- type: entity
+  id: civ13_caliber_bolt_shaft
+  name: bolt shaft
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_bolt_shaft
+- type: entity
+  id: civ13_caliber_6.5x50mm_Arisaka_cartridge
+  name: 6.5x50mm Arisaka cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_6.5x50mm_Arisaka_cartridge
+- type: entity
+  id: civ13_caliber_.50_BMG_cartridge
+  name: .50 BMG cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.50_BMG_cartridge
+- type: entity
+  id: civ13_caliber_.50_BMG_AP_cartridge
+  name: .50 BMG AP cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.50_BMG_AP_cartridge
+- type: entity
+  id: civ13_caliber_.50_BMG_HE_cartridge
+  name: .50 BMG HE cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.50_BMG_HE_cartridge
+- type: entity
+  id: civ13_caliber_14.5x114_cartridge
+  name: 14.5x114 cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_14.5x114_cartridge
+- type: entity
+  id: civ13_caliber_12.7x108_cartridge
+  name: 12.7x108 cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_12.7x108_cartridge
+- type: entity
+  id: civ13_caliber_14.5x114_AP_cartridge
+  name: 14.5x114 AP cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_14.5x114_AP_cartridge
+- type: entity
+  id: civ13_caliber_15x115_cartridge
+  name: 15x115 cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_15x115_cartridge
+- type: entity
+  id: civ13_caliber_15x115_AP_cartridge
+  name: 15x115 AP cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_15x115_AP_cartridge
+- type: entity
+  id: civ13_caliber_15x115_APHE_cartridge
+  name: 15x115 APHE cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_15x115_APHE_cartridge
+- type: entity
+  id: civ13_caliber_7.92x94mm_cartridge
+  name: 7.92x94mm cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_7.92x94mm_cartridge
+- type: entity
+  id: civ13_caliber_7.92x94mm_AP_cartridge
+  name: 7.92x94mm AP cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_7.92x94mm_AP_cartridge
+- type: entity
+  id: civ13_caliber_6.5x52mm_Carcano_cartridge
+  name: 6.5x52mm Carcano cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_6.5x52mm_Carcano_cartridge
+- type: entity
+  id: civ13_caliber_8x53mm_Murata_cartridge
+  name: 8x53mm Murata cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_8x53mm_Murata_cartridge
+- type: entity
+  id: civ13_caliber_8x50mmR_Lebel_cartridge
+  name: 8x50mmR Lebel cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_8x50mmR_Lebel_cartridge
+- type: entity
+  id: civ13_caliber_9x22mm_Type_26_cartridge
+  name: 9x22mm Type 26 cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_9x22mm_Type_26_cartridge
+- type: entity
+  id: civ13_caliber_.41_Short_cartridge
+  name: .41 Short cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.41_Short_cartridge
+- type: entity
+  id: civ13_caliber_.43_Spanish_cartridge
+  name: .43 Spanish cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.43_Spanish_cartridge
+- type: entity
+  id: civ13_caliber_.32_S&W_cartridge
+  name: .32 S&W cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.32_S&W_cartridge
+- type: entity
+  id: civ13_caliber_.38_cartridge
+  name: .38 cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.38_cartridge
+- type: entity
+  id: civ13_caliber_.380_ACP_Cartridge
+  name: .380 ACP Cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.380_ACP_Cartridge
+- type: entity
+  id: civ13_caliber_.45_Long_Colt_cartridge
+  name: .45 Long Colt cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.45_Long_Colt_cartridge
+- type: entity
+  id: civ13_caliber_.45_ACP_cartridge
+  name: .45 ACP cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.45_ACP_cartridge
+- type: entity
+  id: civ13_caliber_.455_Webley_cartridge
+  name: .455 Webley cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.455_Webley_cartridge
+- type: entity
+  id: civ13_caliber_.44_40_Winchester_cartridge
+  name: .44-40 Winchester cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.44_40_Winchester_cartridge
+- type: entity
+  id: civ13_caliber_.44_Magnum_cartridge
+  name: .44 Magnum cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.44_Magnum_cartridge
+- type: entity
+  id: civ13_caliber_.45_70_Government_cartridge
+  name: .45-70 Government cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.45_70_Government_cartridge
+- type: entity
+  id: civ13_caliber_7.92x57mm_Mauser_cartridge
+  name: 7.92x57mm Mauser cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_7.92x57mm_Mauser_cartridge
+- type: entity
+  id: civ13_caliber_7.65x53mm_Mauser_cartridge
+  name: 7.65x53mm Mauser cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_7.65x53mm_Mauser_cartridge
+- type: entity
+  id: civ13_caliber_7.65x25_Borchardt_cartridge
+  name: 7.65x25 Borchardt cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_7.65x25_Borchardt_cartridge
+- type: entity
+  id: civ13_caliber_7x57mm_Mauser_cartridge
+  name: 7x57mm Mauser cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_7x57mm_Mauser_cartridge
+- type: entity
+  id: civ13_caliber_7.7x58mm_Arisaka_cartridge
+  name: 7.7x58mm Arisaka cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_7.7x58mm_Arisaka_cartridge
+- type: entity
+  id: civ13_caliber_7.7x58mm_bullet
+  name: 7.7x58mm bullet
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_7.7x58mm_bullet
+- type: entity
+  id: civ13_caliber_.577/450_Martini_Henry_cartridge
+  name: .577/450 Martini-Henry cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.577/450_Martini_Henry_cartridge
+- type: entity
+  id: civ13_caliber_7.62x54mmR_cartridge
+  name: 7.62x54mmR cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_7.62x54mmR_cartridge
+- type: entity
+  id: civ13_caliber_.303_british_cartridge
+  name: .303 british cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.303_british_cartridge
+- type: entity
+  id: civ13_caliber_.30_06_cartridge
+  name: .30-06 cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.30_06_cartridge
+- type: entity
+  id: civ13_caliber_7.62x38mmR_cartridge
+  name: 7.62x38mmR cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_7.62x38mmR_cartridge
+- type: entity
+  id: civ13_caliber_8x27mmR_french_ordnance_cartridge
+  name: 8x27mmR french ordnance cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_8x27mmR_french_ordnance_cartridge
+- type: entity
+  id: civ13_caliber_8x22mm_Nambu_Cartridge
+  name: 8x22mm Nambu Cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_8x22mm_Nambu_Cartridge
+- type: entity
+  id: civ13_caliber_9x19mm_cartridge
+  name: 9x19mm cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_9x19mm_cartridge
+- type: entity
+  id: civ13_caliber_9x18mm_Makarov_cartridge
+  name: 9x18mm Makarov cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_9x18mm_Makarov_cartridge
+- type: entity
+  id: civ13_caliber_7.62x25mm_TT_cartridge
+  name: 7.62x25mm TT cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_7.62x25mm_TT_cartridge
+- type: entity
+  id: civ13_caliber_rubber_shot
+  name: rubber shot
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_rubber_shot
+- type: entity
+  id: civ13_caliber_7.92x33mm_cartridge
+  name: 7.92x33mm cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_7.92x33mm_cartridge
+- type: entity
+  id: civ13_caliber_5.45x39mm_cartridge
+  name: 5.45x39mm cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_5.45x39mm_cartridge
+- type: entity
+  id: civ13_caliber_.32_ACP_cartridge
+  name: .32 ACP cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.32_ACP_cartridge
+- type: entity
+  id: civ13_caliber_Bugged_bullet
+  name: Bugged bullet
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_Bugged_bullet
+- type: entity
+  id: civ13_caliber_5.56x45mm_NATO_cartridge
+  name: 5.56x45mm NATO cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_5.56x45mm_NATO_cartridge
+- type: entity
+  id: civ13_caliber_7.62x51mm_NATO_cartridge
+  name: 7.62x51mm NATO cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_7.62x51mm_NATO_cartridge
+- type: entity
+  id: civ13_caliber_7.62x39mm_cartridge
+  name: 7.62x39mm cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_7.62x39mm_cartridge
+- type: entity
+  id: civ13_caliber_7.62x33mm_cartridge
+  name: 7.62x33mm cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_7.62x33mm_cartridge
+- type: entity
+  id: civ13_caliber_9x39mm_cartridge
+  name: 9x39mm cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_9x39mm_cartridge
+- type: entity
+  id: civ13_caliber_Bugged_bullet
+  name: Bugged bullet
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_Bugged_bullet
+- type: entity
+  id: civ13_caliber_57x28mm_cartridge
+  name: 57x28mm cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_57x28mm_cartridge
+- type: entity
+  id: civ13_caliber_5.8x42mm_cartridge
+  name: 5.8x42mm cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_5.8x42mm_cartridge
+- type: entity
+  id: civ13_caliber_20mm_APHE_cartridge
+  name: 20mm APHE cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_20mm_APHE_cartridge
+- type: entity
+  id: civ13_caliber_25mm_AP_cartridge
+  name: 25mm AP cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_25mm_AP_cartridge
+- type: entity
+  id: civ13_caliber_25mm_HE_cartridge
+  name: 25mm HE cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_25mm_HE_cartridge
+- type: entity
+  id: civ13_caliber_30mm_AP_T_cartridge
+  name: 30mm AP-T cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_30mm_AP_T_cartridge
+- type: entity
+  id: civ13_caliber_30mm_HE_T_cartridge
+  name: 30mm HE-T cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_30mm_HE_T_cartridge
+- type: entity
+  id: civ13_caliber_30mm_HEI_T_cartridge
+  name: 30mm HEI-T cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_30mm_HEI_T_cartridge
+- type: entity
+  id: civ13_caliber_30mm_FAP_cartridge
+  name: 30mm FAP cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_30mm_FAP_cartridge
+- type: entity
+  id: civ13_caliber_.357_Magnum_cartridge
+  name: .357 Magnum cartridge
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_.357_Magnum_cartridge
+- type: entity
+  id: civ13_caliber_buckshot_shell
+  name: buckshot shell
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_buckshot_shell
+- type: entity
+  id: civ13_caliber_shotgun_slug
+  name: shotgun slug
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_shotgun_slug
+- type: entity
+  id: civ13_caliber_beanbag_shell
+  name: beanbag shell
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_beanbag_shell
+- type: entity
+  id: civ13_caliber_breaching_slug
+  name: breaching slug
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_breaching_slug
+- type: entity
+  id: civ13_caliber_incendiary_shotgun_slug
+  name: incendiary shotgun slug
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_incendiary_shotgun_slug
+- type: entity
+  id: civ13_caliber_flare_shell
+  name: flare shell
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_flare_shell
+- type: entity
+  id: civ13_caliber_laser_bolt
+  name: laser bolt
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_laser_bolt
+- type: entity
+  id: civ13_caliber_pistol_laser_bolt
+  name: pistol laser bolt
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_pistol_laser_bolt
+- type: entity
+  id: civ13_caliber_pistol_laser_bolt
+  name: pistol laser bolt
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_pistol_laser_bolt
+- type: entity
+  id: civ13_caliber_pistol_laser_bolt
+  name: pistol laser bolt
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_pistol_laser_bolt
+- type: entity
+  id: civ13_caliber_laser_bolt
+  name: laser bolt
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_laser_bolt
+- type: entity
+  id: civ13_caliber_chemical_dart
+  name: chemical dart
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_chemical_dart
+- type: entity
+  id: civ13_caliber_bone_dart
+  name: bone dart
+  parent: CartridgePistol
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_bone_dart
