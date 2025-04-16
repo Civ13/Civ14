@@ -94,10 +94,10 @@
   description: Saltwater. Looks quite deep.
   components:
     - type: Sprite
-      sprite: Tiles/Planet/water.rsi
+      sprite: Tiles/Planet/saltwater_deep.rsi
       drawdepth: BelowFloor
       layers:
-        - state: seadeep
+        - state: full
     - type: Fixtures
       fixtures:
         fix1:
@@ -116,10 +116,10 @@
   description: Shallow saltwater.
   components:
     - type: Sprite
-      sprite: Tiles/Planet/water.rsi
+      sprite: Tiles/Planet/saltwater_shallow.rsi
       drawdepth: BelowFloor
       layers:
-        - state: seashallow
+        - state: full
 
 - type: entity
   id: FloorWaterSwampEntity

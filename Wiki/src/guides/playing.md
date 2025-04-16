@@ -8,11 +8,11 @@ This article is about how to download and join the game. If you are looking for 
 
 There are two options to play online: Either use SS14's launcher and hub (requires an account), or use Civ13's dedicated client (only available for Windows for now).
 
-### Civ13 Client
+### Civ13 Launcher
 
-1. Download the Civ13 client [here](https://github.com/Civ13/civ14-launcher/releases/).
+1. Download the Civ13 launcher [here](https://github.com/Civ13/civ14-launcher/releases/).
 2. Run it and let it update the game files.
-3. Input the server's address (civ13.com for the official one) and press join.
+3. Input the server's address (`civ13.com` for the official server) and press join.
 
 ### SS14 Launcher
 
@@ -23,4 +23,4 @@ There are two options to play online: Either use SS14's launcher and hub (requir
 
 ## Playtesting / Hosting Locally
 
-If you want to play it locally to test/etc, you will need to download the source code and follow the instructions on the [github](https://github.com/Civ13/Civ14).
+If you want to play it locally to test/etc, you can either download the source code and follow the instructions on the [github](https://github.com/Civ13/Civ14), or use the Civ14 Launcher mentioned above and launch `civ14_server.exe`.
