@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "modern_rifle_suppressor",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "modern_rifle_suppressor",
       "directions": 1
     }
   ]

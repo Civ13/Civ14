@@ -8,12 +8,15 @@
   },
   "states": [
     {
-      "name": "enfield",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "equipped-BACKPACK",
       "directions": 4
+    },
+    {
+      "name": "icon",
+      "directions": 1
     },
     {
       "name": "inhand-left",

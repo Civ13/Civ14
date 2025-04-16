@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "istinggar_cocked",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "istinggar_cocked",
       "directions": 1
     }
   ]

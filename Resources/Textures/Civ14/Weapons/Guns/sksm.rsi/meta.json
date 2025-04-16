@@ -8,8 +8,7 @@
   },
   "states": [
     {
-      "name": "sksm",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "equipped-BACKPACK",
@@ -26,6 +25,10 @@
     {
       "name": "inhand-right",
       "directions": 4
+    },
+    {
+      "name": "sksm",
+      "directions": 1
     }
   ]
 }

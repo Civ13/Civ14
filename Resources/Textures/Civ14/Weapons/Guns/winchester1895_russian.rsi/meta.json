@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "winchester1895_russian",
+      "name": "mag"
+    },
+    {
+      "name": "empty",
       "directions": 1
     },
     {
@@ -16,11 +19,11 @@
       "directions": 1
     },
     {
-      "name": "empty",
+      "name": "open",
       "directions": 1
     },
     {
-      "name": "open",
+      "name": "winchester1895_russian",
       "directions": 1
     }
   ]

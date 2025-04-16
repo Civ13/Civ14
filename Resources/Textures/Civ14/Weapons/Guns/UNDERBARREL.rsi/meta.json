@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "UNDERBARREL",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "UNDERBARREL",
       "directions": 1
     }
   ]

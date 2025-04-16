@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "sb1-droid",
-      "directions": 4
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 4
+    },
+    {
+      "name": "sb1-droid",
       "directions": 4
     }
   ]

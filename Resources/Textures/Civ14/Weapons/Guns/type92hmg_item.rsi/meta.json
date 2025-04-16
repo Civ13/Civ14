@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "type92hmg_item",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "type92hmg_item",
       "directions": 1
     }
   ]

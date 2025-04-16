@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "marlin1888_carbine",
+      "name": "mag"
+    },
+    {
+      "name": "empty",
       "directions": 1
     },
     {
@@ -16,7 +19,7 @@
       "directions": 1
     },
     {
-      "name": "empty",
+      "name": "marlin1888_carbine",
       "directions": 1
     },
     {

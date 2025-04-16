@@ -8,15 +8,18 @@
   },
   "states": [
     {
+      "name": "mag"
+    },
+    {
       "name": "congreverocket",
       "directions": 1
     },
     {
-      "name": "icon",
+      "name": "empty",
       "directions": 1
     },
     {
-      "name": "empty",
+      "name": "icon",
       "directions": 1
     },
     {

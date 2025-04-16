@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "mts225-1",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "mts225-1",
       "directions": 1
     }
   ]

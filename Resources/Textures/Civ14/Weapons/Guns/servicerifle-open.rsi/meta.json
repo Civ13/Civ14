@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "servicerifle-open",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "servicerifle-open",
       "directions": 1
     }
   ]

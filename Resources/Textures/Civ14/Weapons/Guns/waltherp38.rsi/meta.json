@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "open",
+      "name": "mag"
+    },
+    {
+      "name": "icon",
       "directions": 1
     },
     {
-      "name": "waltherp38",
+      "name": "open",
       "directions": 1
     }
   ]

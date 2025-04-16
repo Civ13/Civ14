@@ -8,20 +8,7 @@
   },
   "states": [
     {
-      "name": "rpb54",
-      "directions": 1
-    },
-    {
-      "name": "icon",
-      "directions": 1
-    },
-    {
-      "name": "inhand-left",
-      "directions": 4
-    },
-    {
-      "name": "inhand-right",
-      "directions": 4
+      "name": "mag"
     },
     {
       "name": "empty",
@@ -36,7 +23,23 @@
       "directions": 4
     },
     {
+      "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    },
+    {
       "name": "open",
+      "directions": 1
+    },
+    {
+      "name": "rpb54",
       "directions": 1
     }
   ]

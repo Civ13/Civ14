@@ -8,6 +8,9 @@
   },
   "states": [
     {
+      "name": "mag"
+    },
+    {
       "name": "b2-droid-cannon",
       "directions": 4
     },

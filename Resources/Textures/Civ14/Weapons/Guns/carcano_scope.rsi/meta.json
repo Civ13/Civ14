@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "carcano_scope",
+      "name": "mag"
+    },
+    {
+      "name": "icon",
       "directions": 1
     },
     {

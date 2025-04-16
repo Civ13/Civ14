@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "laser",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "laser",
       "directions": 1
     }
   ]

@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "RPS-6 In-Slot",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "RPS-6 In-Slot",
       "directions": 1
     }
   ]

@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "mcar_mag30",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "mcar_mag30",
       "directions": 1
     }
   ]

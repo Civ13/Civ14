@@ -8,8 +8,7 @@
   },
   "states": [
     {
-      "name": "saiga12",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "equipped-BACKPACK",
@@ -26,6 +25,10 @@
     {
       "name": "inhand-right",
       "directions": 4
+    },
+    {
+      "name": "saiga12",
+      "directions": 1
     }
   ]
 }

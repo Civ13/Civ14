@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "pcrossbow1",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "pcrossbow1",
       "directions": 1
     }
   ]

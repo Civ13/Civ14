@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "DC-17c",
+      "name": "mag"
+    },
+    {
+      "name": "icon",
       "directions": 1
     },
     {

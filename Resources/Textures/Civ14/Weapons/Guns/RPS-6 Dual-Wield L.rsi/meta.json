@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "RPS-6 Dual-Wield L",
-      "directions": 4
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 4
+    },
+    {
+      "name": "RPS-6 Dual-Wield L",
       "directions": 4
     }
   ]

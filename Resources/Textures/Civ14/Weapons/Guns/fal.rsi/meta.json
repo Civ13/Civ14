@@ -8,12 +8,15 @@
   },
   "states": [
     {
-      "name": "fal",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "equipped-BACKPACK",
       "directions": 4
+    },
+    {
+      "name": "fal",
+      "directions": 1
     },
     {
       "name": "icon",

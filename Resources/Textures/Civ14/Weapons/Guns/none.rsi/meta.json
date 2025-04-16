@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "none",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "none",
       "directions": 1
     }
   ]

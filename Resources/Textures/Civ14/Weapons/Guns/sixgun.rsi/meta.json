@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "sixgun",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "sixgun",
       "directions": 1
     }
   ]

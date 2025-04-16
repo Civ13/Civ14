@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "redbolt",
-      "directions": 4
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 4
+    },
+    {
+      "name": "redbolt",
       "directions": 4
     }
   ]

@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "springfield1795",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "springfield1795",
       "directions": 1
     }
   ]

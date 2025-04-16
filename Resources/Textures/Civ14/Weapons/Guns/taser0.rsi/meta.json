@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "taser0",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "taser0",
       "directions": 1
     }
   ]

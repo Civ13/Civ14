@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "m72law",
+      "name": "mag"
+    },
+    {
+      "name": "empty",
       "directions": 1
     },
     {
@@ -24,7 +27,7 @@
       "directions": 4
     },
     {
-      "name": "empty",
+      "name": "m72law",
       "directions": 1
     },
     {

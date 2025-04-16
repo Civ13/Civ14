@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "DL-44",
+      "name": "mag"
+    },
+    {
+      "name": "icon",
       "directions": 1
     },
     {

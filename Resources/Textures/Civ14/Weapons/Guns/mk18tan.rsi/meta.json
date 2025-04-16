@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "mk18tan",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "mk18tan",
       "directions": 1
     }
   ]

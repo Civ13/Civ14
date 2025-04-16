@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "service_rifle_mag",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "service_rifle_mag",
       "directions": 1
     }
   ]

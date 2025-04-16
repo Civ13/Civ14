@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "mg3hmg",
+      "name": "mag"
+    },
+    {
+      "name": "empty",
       "directions": 4
     },
     {
@@ -16,7 +19,7 @@
       "directions": 4
     },
     {
-      "name": "empty",
+      "name": "mg3hmg",
       "directions": 4
     },
     {

@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "mysorerocket",
+      "name": "mag"
+    },
+    {
+      "name": "empty",
       "directions": 1
     },
     {
@@ -16,7 +19,7 @@
       "directions": 1
     },
     {
-      "name": "empty",
+      "name": "mysorerocket",
       "directions": 1
     },
     {

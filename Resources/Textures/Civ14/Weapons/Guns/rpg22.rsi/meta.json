@@ -8,12 +8,7 @@
   },
   "states": [
     {
-      "name": "rpg22",
-      "directions": 1
-    },
-    {
-      "name": "open",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
@@ -26,6 +21,14 @@
     {
       "name": "inhand-right",
       "directions": 4
+    },
+    {
+      "name": "open",
+      "directions": 1
+    },
+    {
+      "name": "rpg22",
+      "directions": 1
     }
   ]
 }

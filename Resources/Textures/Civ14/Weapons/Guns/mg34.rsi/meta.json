@@ -8,8 +8,15 @@
   },
   "states": [
     {
+      "name": "mag"
+    },
+    {
       "name": "equipped-BACKPACK",
       "directions": 4
+    },
+    {
+      "name": "icon",
+      "directions": 1
     },
     {
       "name": "inhand-left",
@@ -18,10 +25,6 @@
     {
       "name": "inhand-right",
       "directions": 4
-    },
-    {
-      "name": "mg34",
-      "directions": 1
     },
     {
       "name": "open",

@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "type97_tank",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "type97_tank",
       "directions": 1
     }
   ]

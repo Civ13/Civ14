@@ -8,15 +8,14 @@
   },
   "states": [
     {
-      "name": "dtm_folded",
+      "name": "mag"
+    },
+    {
+      "name": "folded",
       "directions": 1
     },
     {
       "name": "icon",
-      "directions": 1
-    },
-    {
-      "name": "folded",
       "directions": 1
     }
   ]

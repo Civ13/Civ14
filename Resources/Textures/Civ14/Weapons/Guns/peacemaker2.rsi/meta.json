@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "peacemaker2",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "peacemaker2",
       "directions": 1
     }
   ]

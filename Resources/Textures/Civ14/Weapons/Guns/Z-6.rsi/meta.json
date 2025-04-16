@@ -1,33 +1,14 @@
 {
     "version": 1,
-    "license": null,
-    "copyright": null,
+    "license": "AGPL-3.0",
+    "copyright": "Exported from https://github.com/civ13/civ13",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
         {
-            "name": "Z-6",
-            "directions": 1,
-            "delays": [
-                [
-                    0.16,
-                    0.16
-                ],
-                [
-                    0.16,
-                    0.16
-                ],
-                [
-                    0.16,
-                    0.16
-                ],
-                [
-                    0.16,
-                    0.16
-                ]
-            ]
+            "name": "mag"
         },
         {
             "name": "icon",
@@ -39,6 +20,10 @@
         },
         {
             "name": "inhand-right",
+            "directions": 1
+        },
+        {
+            "name": "Z-6",
             "directions": 1
         }
     ]

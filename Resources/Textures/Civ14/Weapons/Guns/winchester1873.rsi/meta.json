@@ -8,15 +8,18 @@
   },
   "states": [
     {
+      "name": "mag"
+    },
+    {
       "name": "equipped-BACKPACK",
       "directions": 4
     },
     {
-      "name": "open",
+      "name": "icon",
       "directions": 1
     },
     {
-      "name": "winchester1873",
+      "name": "open",
       "directions": 1
     }
   ]

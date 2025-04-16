@@ -8,30 +8,11 @@
   },
   "states": [
     {
+      "name": "mag"
+    },
+    {
       "name": "EStaff On Dual-Wield R",
-      "directions": 1,
-      "delays": [
-        [
-          0.1,
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1,
-          0.1
-        ]
-      ]
+      "directions": 1
     },
     {
       "name": "icon",

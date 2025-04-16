@@ -8,6 +8,9 @@
   },
   "states": [
     {
+      "name": "mag"
+    },
+    {
       "name": "glock_mag",
       "directions": 1
     },

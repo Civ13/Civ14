@@ -8,11 +8,14 @@
   },
   "states": [
     {
+      "name": "mag"
+    },
+    {
       "name": "equipped-BACKPACK",
       "directions": 4
     },
     {
-      "name": "gewehr98",
+      "name": "icon",
       "directions": 1
     },
     {

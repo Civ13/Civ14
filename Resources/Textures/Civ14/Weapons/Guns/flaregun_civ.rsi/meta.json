@@ -8,7 +8,14 @@
   },
   "states": [
     {
-      "name": "flaregun_civ",
+      "name": "mag"
+    },
+    {
+      "name": "empty",
+      "directions": 1
+    },
+    {
+      "name": "icon",
       "directions": 1
     },
     {
@@ -21,10 +28,6 @@
     },
     {
       "name": "open",
-      "directions": 1
-    },
-    {
-      "name": "empty",
       "directions": 1
     }
   ]

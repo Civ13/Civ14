@@ -8,6 +8,9 @@
   },
   "states": [
     {
+      "name": "mag"
+    },
+    {
       "name": "elcan_arid",
       "directions": 1
     },

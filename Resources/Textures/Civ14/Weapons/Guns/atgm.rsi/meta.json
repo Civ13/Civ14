@@ -8,15 +8,18 @@
   },
   "states": [
     {
+      "name": "mag"
+    },
+    {
       "name": "atgm",
       "directions": 4
     },
     {
-      "name": "icon",
+      "name": "empty",
       "directions": 4
     },
     {
-      "name": "empty",
+      "name": "icon",
       "directions": 4
     },
     {

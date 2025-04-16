@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "aks74uso_folded",
+      "name": "mag"
+    },
+    {
+      "name": "folded",
       "directions": 1
     },
     {
@@ -22,10 +25,6 @@
     {
       "name": "inhand-right",
       "directions": 4
-    },
-    {
-      "name": "folded",
-      "directions": 1
     }
   ]
 }

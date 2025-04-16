@@ -8,6 +8,13 @@
   },
   "states": [
     {
+      "name": "mag"
+    },
+    {
+      "name": "icon",
+      "directions": 1
+    },
+    {
       "name": "inhand-left",
       "directions": 4
     },
@@ -17,10 +24,6 @@
     },
     {
       "name": "open",
-      "directions": 1
-    },
-    {
-      "name": "service_rifle",
       "directions": 1
     }
   ]

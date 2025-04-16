@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "marlin",
+      "name": "mag"
+    },
+    {
+      "name": "icon",
       "directions": 1
     },
     {

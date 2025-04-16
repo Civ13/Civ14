@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "open",
+      "name": "mag"
+    },
+    {
+      "name": "icon",
       "directions": 1
     },
     {
-      "name": "winchester1876",
+      "name": "open",
       "directions": 1
     }
   ]

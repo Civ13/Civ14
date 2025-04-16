@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "E-5",
+      "name": "mag"
+    },
+    {
+      "name": "icon",
       "directions": 1
     },
     {

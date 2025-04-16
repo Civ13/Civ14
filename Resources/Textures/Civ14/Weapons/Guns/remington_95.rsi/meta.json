@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "remington_95",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "remington_95",
       "directions": 1
     }
   ]

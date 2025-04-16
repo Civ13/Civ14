@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "srm_mag",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "srm_mag",
       "directions": 1
     }
   ]

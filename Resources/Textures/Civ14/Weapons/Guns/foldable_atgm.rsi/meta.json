@@ -8,15 +8,18 @@
   },
   "states": [
     {
+      "name": "mag"
+    },
+    {
+      "name": "empty",
+      "directions": 4
+    },
+    {
       "name": "foldable_atgm",
       "directions": 4
     },
     {
       "name": "icon",
-      "directions": 4
-    },
-    {
-      "name": "empty",
       "directions": 4
     },
     {

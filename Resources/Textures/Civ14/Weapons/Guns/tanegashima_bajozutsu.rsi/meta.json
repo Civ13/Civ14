@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "tanegashima_bajozutsu",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "tanegashima_bajozutsu",
       "directions": 1
     }
   ]

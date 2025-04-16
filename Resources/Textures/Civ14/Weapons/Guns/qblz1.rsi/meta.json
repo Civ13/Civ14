@@ -8,12 +8,15 @@
   },
   "states": [
     {
-      "name": "open",
-      "directions": 1
+      "name": "mag"
     },
     {
-      "name": "qblz1",
+      "name": "icon",
       "directions": 4
+    },
+    {
+      "name": "open",
+      "directions": 1
     }
   ]
 }

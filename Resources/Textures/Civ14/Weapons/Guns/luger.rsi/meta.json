@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "luger",
+      "name": "mag"
+    },
+    {
+      "name": "icon",
       "directions": 1
     },
     {

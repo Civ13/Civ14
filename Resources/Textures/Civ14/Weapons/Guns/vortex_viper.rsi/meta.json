@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "vortex_viper",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "vortex_viper",
       "directions": 1
     }
   ]

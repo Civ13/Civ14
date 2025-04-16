@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "lemat_36_cocked",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "lemat_36_cocked",
       "directions": 1
     }
   ]

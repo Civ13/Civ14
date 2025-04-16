@@ -8,8 +8,19 @@
   },
   "states": [
     {
+      "name": "mag"
+    },
+    {
       "name": "bazooka",
       "directions": 1
+    },
+    {
+      "name": "empty",
+      "directions": 1
+    },
+    {
+      "name": "empty_inhand-right",
+      "directions": 4
     },
     {
       "name": "icon",
@@ -21,14 +32,6 @@
     },
     {
       "name": "inhand-right",
-      "directions": 4
-    },
-    {
-      "name": "empty",
-      "directions": 1
-    },
-    {
-      "name": "empty_inhand-right",
       "directions": 4
     },
     {

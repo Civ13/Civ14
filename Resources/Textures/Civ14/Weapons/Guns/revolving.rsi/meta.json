@@ -8,8 +8,7 @@
   },
   "states": [
     {
-      "name": "revolving",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
@@ -22,6 +21,10 @@
     {
       "name": "inhand-right",
       "directions": 4
+    },
+    {
+      "name": "revolving",
+      "directions": 1
     }
   ]
 }

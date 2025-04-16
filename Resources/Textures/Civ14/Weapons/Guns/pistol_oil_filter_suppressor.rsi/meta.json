@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "pistol_oil_filter_suppressor",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "pistol_oil_filter_suppressor",
       "directions": 1
     }
   ]

@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "dcb2",
+      "name": "mag"
+    },
+    {
+      "name": "icon",
       "directions": 4
     },
     {

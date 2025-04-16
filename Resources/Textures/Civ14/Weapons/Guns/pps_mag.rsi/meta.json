@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "pps_mag",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "pps_mag",
       "directions": 1
     }
   ]

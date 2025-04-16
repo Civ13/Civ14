@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "snw10_cocked",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "snw10_cocked",
       "directions": 1
     }
   ]

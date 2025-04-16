@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "plastic_bottle_suppressor",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "plastic_bottle_suppressor",
       "directions": 1
     }
   ]

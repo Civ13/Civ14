@@ -8,7 +8,10 @@
     },
     "states": [
         {
-            "name": "nsvt",
+            "name": "mag"
+        },
+        {
+            "name": "empty",
             "directions": 4
         },
         {
@@ -16,7 +19,7 @@
             "directions": 4
         },
         {
-            "name": "empty",
+            "name": "nsvt",
             "directions": 4
         },
         {

@@ -8,8 +8,7 @@
   },
   "states": [
     {
-      "name": "roks2_flamethrower_back",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "equipped-BACKPACK",
@@ -17,6 +16,10 @@
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "roks2_flamethrower_back",
       "directions": 1
     }
   ]

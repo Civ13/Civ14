@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "lasgunm36_left",
+      "name": "mag"
+    },
+    {
+      "name": "icon",
       "directions": 4
     },
     {

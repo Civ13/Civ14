@@ -8,19 +8,14 @@
   },
   "states": [
     {
-      "name": "m2_flamethrower_on",
-      "delays": [
-        [
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ]
-      ],
-      "directions": 4
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 4
+    },
+    {
+      "name": "m2_flamethrower_on",
       "directions": 4
     }
   ]

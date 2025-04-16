@@ -8,11 +8,14 @@
   },
   "states": [
     {
-      "name": "pistolet_modele1733",
-      "directions": 1
+      "name": "mag"
     },
     {
       "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "pistolet_modele1733",
       "directions": 1
     }
   ]
