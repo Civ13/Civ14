@@ -2213,17 +2213,7 @@
         tags:
           - civ13_caliber_a762x54
       capacity: 10
-- type: entity
-  id: civ13_magazine_belt_(5.56x45mm)
-  name: belt (5.56x45mm)
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_a556x45
-      capacity: 10
+
 - type: entity
   id: civ13_magazine_dart_cartridge
   name: dart cartridge
