@@ -5,10 +5,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_default
 - type: entity
   id: civ13_magazine_clip_(7.62x54mm)
   name: clip (7.62x54mm)
@@ -16,10 +20,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x54
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a762x54
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(7.62x54mm)
 - type: entity
   id: civ13_magazine_magazine_box_(7.62x54mm)
   name: magazine box (7.62x54mm)
@@ -27,10 +35,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x54
+      capacity: 50
       whitelist:
         tags:
           - civ13_caliber_a762x54
-      capacity: 50
+    - type: Tag
+      tags:
+        - civ13_magazine_magazine_box_(7.62x54mm)
 - type: entity
   id: civ13_magazine_magazine_(7.62x54mm)
   name: magazine (7.62x54mm)
@@ -38,10 +50,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x54
+      capacity: 25
       whitelist:
         tags:
           - civ13_caliber_a762x54
-      capacity: 25
+    - type: Tag
+      tags:
+        - civ13_magazine_magazine_(7.62x54mm)
 - type: entity
   id: civ13_magazine_Ammo_Box_(9x39mm)
   name: Ammo Box (9x39mm)
@@ -49,10 +65,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x39
+      capacity: 100
       whitelist:
         tags:
           - civ13_caliber_a9x39
-      capacity: 100
+    - type: Tag
+      tags:
+        - civ13_magazine_Ammo_Box_(9x39mm)
 - type: entity
   id: civ13_magazine_belt_(7.62x51mm)
   name: belt (7.62x51mm)
@@ -60,10 +80,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x51
+      capacity: 100
       whitelist:
         tags:
           - civ13_caliber_a762x51
-      capacity: 100
+    - type: Tag
+      tags:
+        - civ13_magazine_belt_(7.62x51mm)
 - type: entity
   id: civ13_magazine_clip_(7.65x53mm)
   name: clip (7.65x53mm)
@@ -71,10 +95,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a765x53
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a765x53
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(7.65x53mm)
 - type: entity
   id: civ13_magazine_magazine_box_(7.65x53mm)
   name: magazine box (7.65x53mm)
@@ -82,10 +110,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a765x53
+      capacity: 50
       whitelist:
         tags:
           - civ13_caliber_a765x53
-      capacity: 50
+    - type: Tag
+      tags:
+        - civ13_magazine_magazine_box_(7.65x53mm)
 - type: entity
   id: civ13_magazine_clip_(7.92x57mm)
   name: clip (7.92x57mm)
@@ -93,10 +125,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a792x57
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a792x57
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(7.92x57mm)
 - type: entity
   id: civ13_magazine_clip_(7.92x33mm)
   name: clip (7.92x33mm)
@@ -104,10 +140,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a792x33
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a792x33
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(7.92x33mm)
 - type: entity
   id: civ13_magazine_clip_(7x53mm)
   name: clip (7x53mm)
@@ -115,10 +155,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a7x57
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a7x57
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(7x53mm)
 - type: entity
   id: civ13_magazine_magazine_box_(7.92x57mm)
   name: magazine box (7.92x57mm)
@@ -126,10 +170,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a792x57
+      capacity: 50
       whitelist:
         tags:
           - civ13_caliber_a792x57
-      capacity: 50
+    - type: Tag
+      tags:
+        - civ13_magazine_magazine_box_(7.92x57mm)
 - type: entity
   id: civ13_magazine_magazine_box_(7x53mm)
   name: magazine box (7x53mm)
@@ -137,10 +185,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a7x57
+      capacity: 50
       whitelist:
         tags:
           - civ13_caliber_a7x57
-      capacity: 50
+    - type: Tag
+      tags:
+        - civ13_magazine_magazine_box_(7x53mm)
 - type: entity
   id: civ13_magazine_ammo_box_(.45_70_Government)
   name: ammo box (.45-70 Government)
@@ -148,10 +200,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a4570
+      capacity: 15
       whitelist:
         tags:
           - civ13_caliber_a4570
-      capacity: 15
+    - type: Tag
+      tags:
+        - civ13_magazine_ammo_box_(.45_70_Government)
 - type: entity
   id: civ13_magazine_ammo_box_(.577/450_Martini_Henry)
   name: ammo box (.577/450 Martini-Henry)
@@ -159,10 +215,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a577
+      capacity: 12
       whitelist:
         tags:
           - civ13_caliber_a577
-      capacity: 12
+    - type: Tag
+      tags:
+        - civ13_magazine_ammo_box_(.577/450_Martini_Henry)
 - type: entity
   id: civ13_magazine_clip_(6.5x50mm)
   name: clip (6.5x50mm)
@@ -170,10 +230,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a65x50
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a65x50
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(6.5x50mm)
 - type: entity
   id: civ13_magazine_magazine_box_(6.5x50mm)
   name: magazine box (6.5x50mm)
@@ -181,10 +245,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a65x50
+      capacity: 50
       whitelist:
         tags:
           - civ13_caliber_a65x50
-      capacity: 50
+    - type: Tag
+      tags:
+        - civ13_magazine_magazine_box_(6.5x50mm)
 - type: entity
   id: civ13_magazine_clip_(6.5x52mm)
   name: clip (6.5x52mm)
@@ -192,10 +260,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a65x52
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a65x52
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(6.5x52mm)
 - type: entity
   id: civ13_magazine_magazine_box_(6.5x52mm)
   name: magazine box (6.5x52mm)
@@ -203,10 +275,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a65x52
+      capacity: 50
       whitelist:
         tags:
           - civ13_caliber_a65x52
-      capacity: 50
+    - type: Tag
+      tags:
+        - civ13_magazine_magazine_box_(6.5x52mm)
 - type: entity
   id: civ13_magazine_Maxim_ammo_belt
   name: Maxim ammo belt
@@ -214,10 +290,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x54
+      capacity: 250
       whitelist:
         tags:
           - civ13_caliber_a762x54
-      capacity: 250
+    - type: Tag
+      tags:
+        - civ13_magazine_Maxim_ammo_belt
 - type: entity
   id: civ13_magazine_MG08_ammo_belt
   name: MG08 ammo belt
@@ -225,10 +305,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a792x57
+      capacity: 250
       whitelist:
         tags:
           - civ13_caliber_a792x57
-      capacity: 250
+    - type: Tag
+      tags:
+        - civ13_magazine_MG08_ammo_belt
 - type: entity
   id: civ13_magazine_Vickers_ammo_belt
   name: Vickers ammo belt
@@ -236,10 +320,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a303
+      capacity: 250
       whitelist:
         tags:
           - civ13_caliber_a303
-      capacity: 250
+    - type: Tag
+      tags:
+        - civ13_magazine_Vickers_ammo_belt
 - type: entity
   id: civ13_magazine_Hotchkiss_ammo_belt
   name: Hotchkiss ammo belt
@@ -247,10 +335,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a8x50
+      capacity: 250
       whitelist:
         tags:
           - civ13_caliber_a8x50
-      capacity: 250
+    - type: Tag
+      tags:
+        - civ13_magazine_Hotchkiss_ammo_belt
 - type: entity
   id: civ13_magazine_Type_3_ammo_belt
   name: Type 3 ammo belt
@@ -258,10 +350,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a65x50
+      capacity: 250
       whitelist:
         tags:
           - civ13_caliber_a65x50
-      capacity: 250
+    - type: Tag
+      tags:
+        - civ13_magazine_Type_3_ammo_belt
 - type: entity
   id: civ13_magazine_MG_34_ammo_belt
   name: MG 34 ammo belt
@@ -269,10 +365,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a792x57
+      capacity: 250
       whitelist:
         tags:
           - civ13_caliber_a792x57
-      capacity: 250
+    - type: Tag
+      tags:
+        - civ13_magazine_MG_34_ammo_belt
 - type: entity
   id: civ13_magazine_Nambu_magazine
   name: Nambu magazine
@@ -280,10 +380,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_c8mmnambu
+      capacity: 8
       whitelist:
         tags:
           - civ13_caliber_c8mmnambu
-      capacity: 8
+    - type: Tag
+      tags:
+        - civ13_magazine_Nambu_magazine
 - type: entity
   id: civ13_magazine_Luger_magazine
   name: Luger magazine
@@ -291,10 +395,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 8
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 8
+    - type: Tag
+      tags:
+        - civ13_magazine_Luger_magazine
 - type: entity
   id: civ13_magazine_Walther_magazine
   name: Walther magazine
@@ -302,10 +410,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 8
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 8
+    - type: Tag
+      tags:
+        - civ13_magazine_Walther_magazine
 - type: entity
   id: civ13_magazine_Borchardt_magazine
   name: Borchardt magazine
@@ -313,10 +425,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a765x25
+      capacity: 8
       whitelist:
         tags:
           - civ13_caliber_a765x25
-      capacity: 8
+    - type: Tag
+      tags:
+        - civ13_magazine_Borchardt_magazine
 - type: entity
   id: civ13_magazine_Mauser_clip_(7.63mm)
   name: Mauser clip (7.63mm)
@@ -324,10 +440,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x25
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_a762x25
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_Mauser_clip_(7.63mm)
 - type: entity
   id: civ13_magazine_bullet_pouch_(7.62x38mmR)
   name: bullet pouch (7.62x38mmR)
@@ -335,10 +455,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x38
+      capacity: 21
       whitelist:
         tags:
           - civ13_caliber_a762x38
-      capacity: 21
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(7.62x38mmR)
 - type: entity
   id: civ13_magazine_bullet_pouch_(8x27mmR)
   name: bullet pouch (8x27mmR)
@@ -346,10 +470,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a8x27
+      capacity: 24
       whitelist:
         tags:
           - civ13_caliber_a8x27
-      capacity: 24
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(8x27mmR)
 - type: entity
   id: civ13_magazine_bullet_pouch_(9mm)
   name: bullet pouch (9mm)
@@ -357,10 +485,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_c9mm_jap_revolver
+      capacity: 18
       whitelist:
         tags:
           - civ13_caliber_c9mm_jap_revolver
-      capacity: 18
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(9mm)
 - type: entity
   id: civ13_magazine_bullet_pouch_(.32_S&W_Long)
   name: bullet pouch (.32 S&W Long)
@@ -368,10 +500,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a32
+      capacity: 26
       whitelist:
         tags:
           - civ13_caliber_a32
-      capacity: 26
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(.32_S&W_Long)
 - type: entity
   id: civ13_magazine_bullet_pouch_(.32_ACP)
   name: bullet pouch (.32 ACP)
@@ -379,10 +515,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a32
+      capacity: 26
       whitelist:
         tags:
           - civ13_caliber_a32
-      capacity: 26
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(.32_ACP)
 - type: entity
   id: civ13_magazine_bullet_pouch_(9x19mm)
   name: bullet pouch (9x19mm)
@@ -390,10 +530,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(9x19mm)
 - type: entity
   id: civ13_magazine_bullet_pouch_(.38_long)
   name: bullet pouch (.38 long)
@@ -401,10 +545,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a38
+      capacity: 26
       whitelist:
         tags:
           - civ13_caliber_a38
-      capacity: 26
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(.38_long)
 - type: entity
   id: civ13_magazine_bullet_pouch_(.45_Colt)
   name: bullet pouch (.45 Colt)
@@ -412,10 +560,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a45
+      capacity: 24
       whitelist:
         tags:
           - civ13_caliber_a45
-      capacity: 24
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(.45_Colt)
 - type: entity
   id: civ13_magazine_bullet_pouch_(.455_Webley)
   name: bullet pouch (.455 Webley)
@@ -423,10 +575,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a455
+      capacity: 24
       whitelist:
         tags:
           - civ13_caliber_a455
-      capacity: 24
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(.455_Webley)
 - type: entity
   id: civ13_magazine_bullet_pouch_(.41_Short)
   name: bullet pouch (.41 Short)
@@ -434,10 +590,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a41
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_a41
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(.41_Short)
 - type: entity
   id: civ13_magazine_bullet_pouch_(.43_Spanish)
   name: bullet pouch (.43 Spanish)
@@ -445,10 +605,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a43
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a43
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(.43_Spanish)
 - type: entity
   id: civ13_magazine_bullet_pouch_(.445_webly)
   name: bullet pouch (.445 webly)
@@ -456,10 +620,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_webly445
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_webly445
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(.445_webly)
 - type: entity
   id: civ13_magazine_bullet_pouch_(.44_40_Winchester)
   name: bullet pouch (.44-40 Winchester)
@@ -467,10 +635,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a44
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a44
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(.44_40_Winchester)
 - type: entity
   id: civ13_magazine_bullet_pouch_(.44_magnum)
   name: bullet pouch (.44 magnum)
@@ -478,10 +650,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a44magnum
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a44magnum
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(.44_magnum)
 - type: entity
   id: civ13_magazine_bullet_pouch_(8x50mmR_Lebel)
   name: bullet pouch (8x50mmR Lebel)
@@ -489,10 +665,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a8x50
+      capacity: 24
       whitelist:
         tags:
           - civ13_caliber_a8x50
-      capacity: 24
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(8x50mmR_Lebel)
 - type: entity
   id: civ13_magazine_clip_(8x53mm)
   name: clip (8x53mm)
@@ -500,10 +680,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a8x53
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a8x53
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(8x53mm)
 - type: entity
   id: civ13_magazine_magazine_box_(8x53mm)
   name: magazine box (8x53mm)
@@ -511,10 +695,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a8x53
+      capacity: 50
       whitelist:
         tags:
           - civ13_caliber_a8x53
-      capacity: 50
+    - type: Tag
+      tags:
+        - civ13_magazine_magazine_box_(8x53mm)
 - type: entity
   id: civ13_magazine_clip_(.303)
   name: clip (.303)
@@ -522,10 +710,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a303
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a303
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(.303)
 - type: entity
   id: civ13_magazine_magazine_box_(.303)
   name: magazine box (.303)
@@ -533,10 +725,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a303
+      capacity: 50
       whitelist:
         tags:
           - civ13_caliber_a303
-      capacity: 50
+    - type: Tag
+      tags:
+        - civ13_magazine_magazine_box_(.303)
 - type: entity
   id: civ13_magazine_clip_(8x50mmR_Lebel,_3u)
   name: clip (8x50mmR Lebel, 3u)
@@ -544,10 +740,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a8x50
+      capacity: 3
       whitelist:
         tags:
           - civ13_caliber_a8x50
-      capacity: 3
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(8x50mmR_Lebel,_3u)
 - type: entity
   id: civ13_magazine_clip_(8x50mmR_Lebel,_5u)
   name: clip (8x50mmR Lebel, 5u)
@@ -555,10 +755,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a8x50
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a8x50
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(8x50mmR_Lebel,_5u)
 - type: entity
   id: civ13_magazine_bullet_pouch_(.44)
   name: bullet pouch (.44)
@@ -566,10 +770,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a44p
+      capacity: 18
       whitelist:
         tags:
           - civ13_caliber_a44p
-      capacity: 18
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(.44)
 - type: entity
   id: civ13_magazine_bullet_pouch_(.357_magnum)
   name: bullet pouch (.357 magnum)
@@ -577,10 +785,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a357
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a357
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(.357_magnum)
 - type: entity
   id: civ13_magazine_shotgun_buckshot_box_(.12_gauge)
   name: shotgun buckshot box (.12 gauge)
@@ -588,10 +800,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_12gauge
+      capacity: 12
       whitelist:
         tags:
           - civ13_caliber_12gauge
-      capacity: 12
+    - type: Tag
+      tags:
+        - civ13_magazine_shotgun_buckshot_box_(.12_gauge)
 - type: entity
   id: civ13_magazine_USAS_12_magazine_(slug)
   name: USAS-12 magazine (slug)
@@ -599,10 +815,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: CartridgePistol
+      capacity: 10
       whitelist:
         tags:
           - CartridgePistol
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_USAS_12_magazine_(slug)
 - type: entity
   id: civ13_magazine_shotgun_beanbag_box_(.12_gauge)
   name: shotgun beanbag box (.12 gauge)
@@ -610,10 +830,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: CartridgePistol
+      capacity: 10
       whitelist:
         tags:
           - CartridgePistol
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_shotgun_beanbag_box_(.12_gauge)
 - type: entity
   id: civ13_magazine_AK_74_magazine_(5.45x39mm_Rubber)
   name: AK-74 magazine (5.45x39mm Rubber)
@@ -621,10 +845,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a545x39
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a545x39
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_AK_74_magazine_(5.45x39mm_Rubber)
 - type: entity
   id: civ13_magazine_shotgun_breaching_slug_box_(.12_gauge)
   name: shotgun breaching slug box (.12 gauge)
@@ -632,10 +860,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: CartridgePistol
+      capacity: 10
       whitelist:
         tags:
           - CartridgePistol
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_shotgun_breaching_slug_box_(.12_gauge)
 - type: entity
   id: civ13_magazine_clip_(7.7x58mm)
   name: clip (7.7x58mm)
@@ -643,10 +875,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a77x58
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a77x58
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(7.7x58mm)
 - type: entity
   id: civ13_magazine_magazine_box_(7.7x58mm)
   name: magazine box (7.7x58mm)
@@ -654,11 +890,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a77x58
+      capacity: 50
       whitelist:
         tags:
           - civ13_caliber_a77x58
-      capacity: 50
-
+    - type: Tag
+      tags:
+        - civ13_magazine_magazine_box_(7.7x58mm)
 - type: entity
   id: civ13_magazine_Type_100_Magazine
   name: Type 100 Magazine
@@ -666,10 +905,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_c8mmnambu
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_c8mmnambu
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_Type_100_Magazine
 - type: entity
   id: civ13_magazine_Type_99_Magazine
   name: Type-99 Magazine
@@ -677,10 +920,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a77x58
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a77x58
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_Type_99_Magazine
 - type: entity
   id: civ13_magazine_Type_97_Magazine
   name: Type-97 Magazine
@@ -688,10 +935,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a77x58
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a77x58
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_Type_97_Magazine
 - type: entity
   id: civ13_magazine_Type_96_Magazine
   name: Type-96 Magazine
@@ -699,10 +950,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a65x50
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a65x50
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_Type_96_Magazine
 - type: entity
   id: civ13_magazine_Type_92_ammo_belt
   name: Type 92 ammo belt
@@ -710,10 +965,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a77x58
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a77x58
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_Type_92_ammo_belt
 - type: entity
   id: civ13_magazine_Breda_30_clip_(6.5x52mm)
   name: Breda 30 clip (6.5x52mm)
@@ -721,10 +980,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a65x52
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a65x52
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_Breda_30_clip_(6.5x52mm)
 - type: entity
   id: civ13_magazine_APHE_clip_(20mm)
   name: APHE clip (20mm)
@@ -732,10 +995,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a20
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_a20
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_APHE_clip_(20mm)
 - type: entity
   id: civ13_magazine_Sten_Magazine_(9x19mm)
   name: Sten Magazine (9x19mm)
@@ -743,10 +1010,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 32
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 32
+    - type: Tag
+      tags:
+        - civ13_magazine_Sten_Magazine_(9x19mm)
 - type: entity
   id: civ13_magazine_erma_emp_magazine_(9x19mm)
   name: erma-emp magazine (9x19mm)
@@ -754,10 +1025,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 32
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 32
+    - type: Tag
+      tags:
+        - civ13_magazine_erma_emp_magazine_(9x19mm)
 - type: entity
   id: civ13_magazine_MP5_magazine_(9x19mm)
   name: MP5 magazine (9x19mm)
@@ -765,10 +1040,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: CartridgePistol
+      capacity: 10
       whitelist:
         tags:
           - CartridgePistol
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_MP5_magazine_(9x19mm)
 - type: entity
   id: civ13_magazine_MAB_38_magazine_(9x19mm)
   name: MAB 38 magazine (9x19mm)
@@ -776,10 +1055,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_MAB_38_magazine_(9x19mm)
 - type: entity
   id: civ13_magazine_FG_42_magazine_(7.92x57mm)
   name: FG 42 magazine (7.92x57mm)
@@ -787,10 +1070,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a792x57
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a792x57
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_FG_42_magazine_(7.92x57mm)
 - type: entity
   id: civ13_magazine_MG34_magazine_(7.92x57mm)
   name: MG34 magazine (7.92x57mm)
@@ -798,10 +1085,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a792x57
+      capacity: 50
       whitelist:
         tags:
           - civ13_caliber_a792x57
-      capacity: 50
+    - type: Tag
+      tags:
+        - civ13_magazine_MG34_magazine_(7.92x57mm)
 - type: entity
   id: civ13_magazine_MG13_magazine_(7.92x57mm)
   name: MG13 magazine (7.92x57mm)
@@ -809,10 +1100,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a792x57
+      capacity: 25
       whitelist:
         tags:
           - civ13_caliber_a792x57
-      capacity: 25
+    - type: Tag
+      tags:
+        - civ13_magazine_MG13_magazine_(7.92x57mm)
 - type: entity
   id: civ13_magazine_M3A1_magazine_(.45_ACP)
   name: M3A1 magazine (.45 ACP)
@@ -820,10 +1115,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a45acp
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a45acp
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_M3A1_magazine_(.45_ACP)
 - type: entity
   id: civ13_magazine_PPS_43_magazine_(7.62x25mm)
   name: PPS-43 magazine (7.62x25mm)
@@ -831,10 +1130,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x25
+      capacity: 35
       whitelist:
         tags:
           - civ13_caliber_a762x25
-      capacity: 35
+    - type: Tag
+      tags:
+        - civ13_magazine_PPS_43_magazine_(7.62x25mm)
 - type: entity
   id: civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
   name: PPSh-41 drum magazine (7.62x25mm)
@@ -842,10 +1145,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x25
+      capacity: 65
       whitelist:
         tags:
           - civ13_caliber_a762x25
-      capacity: 65
+    - type: Tag
+      tags:
+        - civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
 - type: entity
   id: civ13_magazine_DP_pan_(7.62x54mmR)
   name: DP pan (7.62x54mmR)
@@ -853,10 +1160,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x54
+      capacity: 47
       whitelist:
         tags:
           - civ13_caliber_a762x54
-      capacity: 47
+    - type: Tag
+      tags:
+        - civ13_magazine_DP_pan_(7.62x54mmR)
 - type: entity
   id: civ13_magazine_DT_magazine_(7.62x54mmR)
   name: DT magazine (7.62x54mmR)
@@ -864,10 +1175,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: CartridgePistol
+      capacity: 60
       whitelist:
         tags:
           - CartridgePistol
-      capacity: 60
+    - type: Tag
+      tags:
+        - civ13_magazine_DT_magazine_(7.62x54mmR)
 - type: entity
   id: civ13_magazine_StG_44_magazine_(7.92x33mm)
   name: StG 44 magazine (7.92x33mm)
@@ -875,10 +1190,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a792x33
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a792x33
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_StG_44_magazine_(7.92x33mm)
 - type: entity
   id: civ13_magazine_G43_magazine_(7.92x57mm)
   name: G43 magazine (7.92x57mm)
@@ -886,10 +1205,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a792x57
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_a792x57
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_G43_magazine_(7.92x57mm)
 - type: entity
   id: civ13_magazine_SVD_magazine_(7.62x54mmR)
   name: SVD magazine (7.62x54mmR)
@@ -897,10 +1220,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x54
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_a762x54
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_SVD_magazine_(7.62x54mmR)
 - type: entity
   id: civ13_magazine_avtomat_magazine_(6.5x50mm)
   name: avtomat magazine (6.5x50mm)
@@ -908,10 +1235,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a65x50
+      capacity: 25
       whitelist:
         tags:
           - civ13_caliber_a65x50
-      capacity: 25
+    - type: Tag
+      tags:
+        - civ13_magazine_avtomat_magazine_(6.5x50mm)
 - type: entity
   id: civ13_magazine_SVT_40_magazine_(7.62x54mm)
   name: SVT-40 magazine (7.62x54mm)
@@ -919,10 +1250,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x54
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_a762x54
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_SVT_40_magazine_(7.62x54mm)
 - type: entity
   id: civ13_magazine_M1911_magazine_(.45)
   name: M1911 magazine (.45)
@@ -930,10 +1265,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a45acp
+      capacity: 7
       whitelist:
         tags:
           - civ13_caliber_a45acp
-      capacity: 7
+    - type: Tag
+      tags:
+        - civ13_magazine_M1911_magazine_(.45)
 - type: entity
   id: civ13_magazine_magazine_box_(.45)
   name: magazine box (.45)
@@ -941,10 +1280,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a45acp
+      capacity: 65
       whitelist:
         tags:
           - civ13_caliber_a45acp
-      capacity: 65
+    - type: Tag
+      tags:
+        - civ13_magazine_magazine_box_(.45)
 - type: entity
   id: civ13_magazine_TT_33_magazine_(7.62x25mm)
   name: TT-33 magazine (7.62x25mm)
@@ -952,10 +1295,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x25
+      capacity: 8
       whitelist:
         tags:
           - civ13_caliber_a762x25
-      capacity: 8
+    - type: Tag
+      tags:
+        - civ13_magazine_TT_33_magazine_(7.62x25mm)
 - type: entity
   id: civ13_magazine_PM_Makarov_magazine_(9x18mm)
   name: PM Makarov magazine (9x18mm)
@@ -963,10 +1310,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x18
+      capacity: 8
       whitelist:
         tags:
           - civ13_caliber_a9x18
-      capacity: 8
+    - type: Tag
+      tags:
+        - civ13_magazine_PM_Makarov_magazine_(9x18mm)
 - type: entity
   id: civ13_magazine_clip_(30_06)_8_rounds
   name: clip (30-06) 8 rounds
@@ -974,10 +1325,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a3006
+      capacity: 8
       whitelist:
         tags:
           - civ13_caliber_a3006
-      capacity: 8
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(30_06)_8_rounds
 - type: entity
   id: civ13_magazine_M1_Carbine_Small_magazine_(7.62x33mm)
   name: M1 Carbine Small magazine (7.62x33mm)
@@ -985,10 +1340,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x33
+      capacity: 15
       whitelist:
         tags:
           - civ13_caliber_a762x33
-      capacity: 15
+    - type: Tag
+      tags:
+        - civ13_magazine_M1_Carbine_Small_magazine_(7.62x33mm)
 - type: entity
   id: civ13_magazine_M1_Carbine_magazine_(7.62x33mm)
   name: M1 Carbine magazine (7.62x33mm)
@@ -996,10 +1355,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: CartridgePistol
+      capacity: 30
       whitelist:
         tags:
           - CartridgePistol
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_M1_Carbine_magazine_(7.62x33mm)
 - type: entity
   id: civ13_magazine_magazine_box_(30_06)
   name: magazine box (30-06)
@@ -1007,10 +1370,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a3006
+      capacity: 50
       whitelist:
         tags:
           - civ13_caliber_a3006
-      capacity: 50
+    - type: Tag
+      tags:
+        - civ13_magazine_magazine_box_(30_06)
 - type: entity
   id: civ13_magazine_clip_(30_06)
   name: clip (30-06)
@@ -1018,10 +1385,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a3006
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a3006
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(30_06)
 - type: entity
   id: civ13_magazine_browning_ammo_belt
   name: browning ammo belt
@@ -1029,10 +1400,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a3006
+      capacity: 250
       whitelist:
         tags:
           - civ13_caliber_a3006
-      capacity: 250
+    - type: Tag
+      tags:
+        - civ13_magazine_browning_ammo_belt
 - type: entity
   id: civ13_magazine_BAR_magazine_(30_06)
   name: BAR magazine (30-06)
@@ -1040,10 +1415,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a3006
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a3006
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_BAR_magazine_(30_06)
 - type: entity
   id: civ13_magazine_Thompson_magazine_(.45)
   name: Thompson magazine (.45)
@@ -1051,10 +1430,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a45acp
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a45acp
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_Thompson_magazine_(.45)
 - type: entity
   id: civ13_magazine_Desert_eagle_magazine_(50cal)
   name: Desert eagle magazine (50cal)
@@ -1062,10 +1445,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a50cal
+      capacity: 7
       whitelist:
         tags:
           - civ13_caliber_a50cal
-      capacity: 7
+    - type: Tag
+      tags:
+        - civ13_magazine_Desert_eagle_magazine_(50cal)
 - type: entity
   id: civ13_magazine_Desert_eagle_magazine_(44.magnum)
   name: Desert eagle magazine (44.magnum)
@@ -1073,22 +1460,29 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a44magnum
+      capacity: 8
       whitelist:
         tags:
           - civ13_caliber_a44magnum
-      capacity: 8
+    - type: Tag
+      tags:
+        - civ13_magazine_Desert_eagle_magazine_(44.magnum)
 - type: entity
-  id: civ13_magazine_Browning_hi_power_magazine_(9mm_Parabellum)
+  id: civ13_magazine_Browning_hi_power_magazine
   name: Browning hi-power magazine (9mm Parabellum)
   parent: BaseMagazinePistol
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 13
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 13
-
+    - type: Tag
+      tags:
+        - civ13_magazine_Browning_hi_power_magazine
 - type: entity
   id: civ13_magazine_Makeshift_AK_47_magazine_(7.62x39mm)
   name: Makeshift AK-47 magazine (7.62x39mm)
@@ -1096,10 +1490,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x39
+      capacity: 28
       whitelist:
         tags:
           - civ13_caliber_a762x39
-      capacity: 28
+    - type: Tag
+      tags:
+        - civ13_magazine_Makeshift_AK_47_magazine_(7.62x39mm)
 - type: entity
   id: civ13_magazine_RPK_47_drum_(7.62x39mm)
   name: RPK-47 drum (7.62x39mm)
@@ -1107,10 +1505,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x39
+      capacity: 75
       whitelist:
         tags:
           - civ13_caliber_a762x39
-      capacity: 75
+    - type: Tag
+      tags:
+        - civ13_magazine_RPK_47_drum_(7.62x39mm)
 - type: entity
   id: civ13_magazine_SKS_M_magazine_(7.62x39mm)
   name: SKS-M magazine (7.62x39mm)
@@ -1118,10 +1520,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x39
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a762x39
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_SKS_M_magazine_(7.62x39mm)
 - type: entity
   id: civ13_magazine_AK_74M_magazine_(5.45x39mm)
   name: AK-74M magazine (5.45x39mm)
@@ -1129,10 +1535,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: CartridgePistol
+      capacity: 10
       whitelist:
         tags:
           - CartridgePistol
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_AK_74M_magazine_(5.45x39mm)
 - type: entity
   id: civ13_magazine_AK_101_magazine_(5.46x45mm)
   name: AK-101 magazine (5.46x45mm)
@@ -1140,10 +1550,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a556x45
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a556x45
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_AK_101_magazine_(5.46x45mm)
 - type: entity
   id: civ13_magazine_BX_7_(.50_caliber)
   name: BX-7 (.50 caliber)
@@ -1151,10 +1565,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a50cal
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a50cal
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_BX_7_(.50_caliber)
 - type: entity
   id: civ13_magazine_MAG5_60_STANAG_(5.56x45mm)
   name: MAG5-60 STANAG (5.56x45mm)
@@ -1162,10 +1580,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a556x45
+      capacity: 60
       whitelist:
         tags:
           - civ13_caliber_a556x45
-      capacity: 60
+    - type: Tag
+      tags:
+        - civ13_magazine_MAG5_60_STANAG_(5.56x45mm)
 - type: entity
   id: civ13_magazine_AR_10_magazine_(7.62x51mm)
   name: AR-10 magazine (7.62x51mm)
@@ -1173,10 +1595,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x51
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a762x51
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_AR_10_magazine_(7.62x51mm)
 - type: entity
   id: civ13_magazine_M14_magazine_(7.62x51mm)
   name: M14 magazine (7.62x51mm)
@@ -1184,10 +1610,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x51
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a762x51
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_M14_magazine_(7.62x51mm)
 - type: entity
   id: civ13_magazine_ammo_box_(7.62x51mm)
   name: ammo box (7.62x51mm)
@@ -1195,10 +1625,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x51
+      capacity: 65
       whitelist:
         tags:
           - civ13_caliber_a762x51
-      capacity: 65
+    - type: Tag
+      tags:
+        - civ13_magazine_ammo_box_(7.62x51mm)
 - type: entity
   id: civ13_magazine_G3_magazine_(7.62x51mm)
   name: G3 magazine (7.62x51mm)
@@ -1206,10 +1640,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x51
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a762x51
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_G3_magazine_(7.62x51mm)
 - type: entity
   id: civ13_magazine_FN_Fal_magazine_(7.62x51mm)
   name: FN Fal magazine (7.62x51mm)
@@ -1217,10 +1655,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x51
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a762x51
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_FN_Fal_magazine_(7.62x51mm)
 - type: entity
   id: civ13_magazine_MK18_magazine_(5.56mm_NATO)
   name: MK18 magazine (5.56mm NATO)
@@ -1228,10 +1670,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a556x45
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a556x45
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_MK18_magazine_(5.56mm_NATO)
 - type: entity
   id: civ13_magazine_SCAR_H_magazine_(7.62x51mm)
   name: SCAR-H magazine (7.62x51mm)
@@ -1239,10 +1685,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x51
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a762x51
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_SCAR_H_magazine_(7.62x51mm)
 - type: entity
   id: civ13_magazine_AR_12_magazine_(12gauge)
   name: AR-12 magazine (12gauge)
@@ -1250,10 +1700,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_12gauge
+      capacity: 12
       whitelist:
         tags:
           - civ13_caliber_12gauge
-      capacity: 12
+    - type: Tag
+      tags:
+        - civ13_magazine_AR_12_magazine_(12gauge)
 - type: entity
   id: civ13_magazine_Saiga_12K_magazine_(12gauge_buckshot)
   name: Saiga-12K magazine (12gauge buckshot)
@@ -1261,10 +1715,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_12gauge
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_12gauge
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_Saiga_12K_magazine_(12gauge_buckshot)
 - type: entity
   id: civ13_magazine_USAS_12_magazine_(buckshot)
   name: USAS-12 magazine (buckshot)
@@ -1272,11 +1730,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_12gauge
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_12gauge
-      capacity: 10
-
+    - type: Tag
+      tags:
+        - civ13_magazine_USAS_12_magazine_(buckshot)
 - type: entity
   id: civ13_magazine_PKM_ammo_belt_(7.62x54mmR)
   name: PKM ammo belt (7.62x54mmR)
@@ -1284,10 +1745,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x54
+      capacity: 250
       whitelist:
         tags:
           - civ13_caliber_a762x54
-      capacity: 250
+    - type: Tag
+      tags:
+        - civ13_magazine_PKM_ammo_belt_(7.62x54mmR)
 - type: entity
   id: civ13_magazine_PKM_ammo_belt_(7.62x54mmR)_100
   name: PKM ammo belt (7.62x54mmR)
@@ -1295,10 +1760,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x54
+      capacity: 100
       whitelist:
         tags:
           - civ13_caliber_a762x54
-      capacity: 100
+    - type: Tag
+      tags:
+        - civ13_magazine_PKM_ammo_belt_(7.62x54mmR)_100
 - type: entity
   id: civ13_magazine_Ammo_can_(12.7x108mm)
   name: Ammo can (12.7x108mm)
@@ -1306,10 +1775,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a127
+      capacity: 50
       whitelist:
         tags:
           - civ13_caliber_a127
-      capacity: 50
+    - type: Tag
+      tags:
+        - civ13_magazine_Ammo_can_(12.7x108mm)
 - type: entity
   id: civ13_magazine_RPD_drum_(7.62x39)
   name: RPD drum (7.62x39)
@@ -1317,10 +1790,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x39
+      capacity: 100
       whitelist:
         tags:
           - civ13_caliber_a762x39
-      capacity: 100
+    - type: Tag
+      tags:
+        - civ13_magazine_RPD_drum_(7.62x39)
 - type: entity
   id: civ13_magazine_RPK_74_magazine_(5.45x39)
   name: RPK-74 magazine (5.45x39)
@@ -1328,10 +1805,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a545x39
+      capacity: 45
       whitelist:
         tags:
           - civ13_caliber_a545x39
-      capacity: 45
+    - type: Tag
+      tags:
+        - civ13_magazine_RPK_74_magazine_(5.45x39)
 - type: entity
   id: civ13_magazine_RPK_47_magazine_(7.62x39mm)
   name: RPK-47 magazine (7.62x39mm)
@@ -1339,10 +1820,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x39
+      capacity: 45
       whitelist:
         tags:
           - civ13_caliber_a762x39
-      capacity: 45
+    - type: Tag
+      tags:
+        - civ13_magazine_RPK_47_magazine_(7.62x39mm)
 - type: entity
   id: civ13_magazine_Beretta_M9_magazine_(9x19mm)
   name: Beretta M9 magazine (9x19mm)
@@ -1350,10 +1835,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 15
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 15
+    - type: Tag
+      tags:
+        - civ13_magazine_Beretta_M9_magazine_(9x19mm)
 - type: entity
   id: civ13_magazine_Jericho_941_magazine_(9x19mm)
   name: Jericho 941 magazine (9x19mm)
@@ -1361,10 +1850,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 16
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 16
+    - type: Tag
+      tags:
+        - civ13_magazine_Jericho_941_magazine_(9x19mm)
 - type: entity
   id: civ13_magazine_Negev_Belt_(5.56x45mm)
   name: Negev Belt (5.56x45mm)
@@ -1372,10 +1865,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a556x45
+      capacity: 150
       whitelist:
         tags:
           - civ13_caliber_a556x45
-      capacity: 150
+    - type: Tag
+      tags:
+        - civ13_magazine_Negev_Belt_(5.56x45mm)
 - type: entity
   id: civ13_magazine_belt_(5.56x45mm)
   name: belt (5.56x45mm)
@@ -1383,10 +1880,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a556x45
+      capacity: 100
       whitelist:
         tags:
           - civ13_caliber_a556x45
-      capacity: 100
+    - type: Tag
+      tags:
+        - civ13_magazine_belt_(5.56x45mm)
 - type: entity
   id: civ13_magazine_clip_(7.62x51mm)
   name: clip (7.62x51mm)
@@ -1394,10 +1895,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x51
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a762x51
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(7.62x51mm)
 - type: entity
   id: civ13_magazine_P90_magazine_(50)
   name: P90 magazine (50)
@@ -1405,10 +1910,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: CartridgePistol
+      capacity: 15
       whitelist:
         tags:
           - CartridgePistol
-      capacity: 15
+    - type: Tag
+      tags:
+        - civ13_magazine_P90_magazine_(50)
 - type: entity
   id: civ13_magazine_Stechkin_APS_magazine_(9x18mm)
   name: Stechkin APS magazine (9x18mm)
@@ -1416,10 +1925,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x18
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a9x18
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_Stechkin_APS_magazine_(9x18mm)
 - type: entity
   id: civ13_magazine_G17_Glock_(9x19mm)
   name: G17 Glock (9x19mm)
@@ -1427,10 +1940,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 17
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 17
+    - type: Tag
+      tags:
+        - civ13_magazine_G17_Glock_(9x19mm)
 - type: entity
   id: civ13_magazine_Kriss_Vector_(9x19mm)
   name: Kriss Vector (9x19mm)
@@ -1438,10 +1955,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 33
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 33
+    - type: Tag
+      tags:
+        - civ13_magazine_Kriss_Vector_(9x19mm)
 - type: entity
   id: civ13_magazine_STI_2011_magazine_(9x19mm)
   name: STI 2011 magazine (9x19mm)
@@ -1449,10 +1970,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a45acp
+      capacity: 14
       whitelist:
         tags:
           - civ13_caliber_a45acp
-      capacity: 14
+    - type: Tag
+      tags:
+        - civ13_magazine_STI_2011_magazine_(9x19mm)
 - type: entity
   id: civ13_magazine_SIG_250_magazine_(9x19mm)
   name: SIG 250 magazine (9x19mm)
@@ -1460,10 +1985,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 17
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 17
+    - type: Tag
+      tags:
+        - civ13_magazine_SIG_250_magazine_(9x19mm)
 - type: entity
   id: civ13_magazine_PL_14_(9x19mm)
   name: PL-14 (9x19mm)
@@ -1471,10 +2000,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 16
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 16
+    - type: Tag
+      tags:
+        - civ13_magazine_PL_14_(9x19mm)
 - type: entity
   id: civ13_magazine_MP_443_(9x19mm)
   name: MP-443 (9x19mm)
@@ -1482,10 +2015,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 17
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 17
+    - type: Tag
+      tags:
+        - civ13_magazine_MP_443_(9x19mm)
 - type: entity
   id: civ13_magazine_Uzi_magazine_(9x19mm_Parabellum)
   name: Uzi magazine (9x19mm Parabellum)
@@ -1493,10 +2030,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 25
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 25
+    - type: Tag
+      tags:
+        - civ13_magazine_Uzi_magazine_(9x19mm_Parabellum)
 - type: entity
   id: civ13_magazine_MAC_10_magazine_(.45_ACP)
   name: MAC-10 magazine (.45 ACP)
@@ -1504,10 +2045,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a45acp
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a45acp
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_MAC_10_magazine_(.45_ACP)
 - type: entity
   id: civ13_magazine_TEC_9_(9x19mm_Parabellum)
   name: TEC-9 (9x19mm Parabellum)
@@ -1515,10 +2060,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 32
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 32
+    - type: Tag
+      tags:
+        - civ13_magazine_TEC_9_(9x19mm_Parabellum)
 - type: entity
   id: civ13_magazine_Skorpion_magazine_(9x19mm_Parabellum)
   name: Skorpion magazine (9x19mm Parabellum)
@@ -1526,10 +2075,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_Skorpion_magazine_(9x19mm_Parabellum)
 - type: entity
   id: civ13_magazine_P220_(.45)
   name: P220 (.45)
@@ -1537,10 +2090,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a45
+      capacity: 7
       whitelist:
         tags:
           - civ13_caliber_a45
-      capacity: 7
+    - type: Tag
+      tags:
+        - civ13_magazine_P220_(.45)
 - type: entity
   id: civ13_magazine_thompson_(.45_ACP)
   name: thompson (.45 ACP)
@@ -1548,10 +2105,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a45acp
+      capacity: 100
       whitelist:
         tags:
           - civ13_caliber_a45acp
-      capacity: 100
+    - type: Tag
+      tags:
+        - civ13_magazine_thompson_(.45_ACP)
 - type: entity
   id: civ13_magazine_Colt_Hammerless_(.32)
   name: Colt Hammerless (.32)
@@ -1559,10 +2120,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a32acp
+      capacity: 8
       whitelist:
         tags:
           - civ13_caliber_a32acp
-      capacity: 8
+    - type: Tag
+      tags:
+        - civ13_magazine_Colt_Hammerless_(.32)
 - type: entity
   id: civ13_magazine_Colt_Hammerless_(.380)
   name: Colt Hammerless (.380)
@@ -1570,10 +2135,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a380acp
+      capacity: 7
       whitelist:
         tags:
           - civ13_caliber_a380acp
-      capacity: 7
+    - type: Tag
+      tags:
+        - civ13_magazine_Colt_Hammerless_(.380)
 - type: entity
   id: civ13_magazine_bergmann_(8x22mm)
   name: bergmann (8x22mm)
@@ -1581,10 +2150,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_c8mmnambu
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_c8mmnambu
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_bergmann_(8x22mm)
 - type: entity
   id: civ13_magazine_AR15_magazine_(5.56x45mm)
   name: AR15 magazine (5.56x45mm)
@@ -1592,10 +2165,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a556x45
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a556x45
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_AR15_magazine_(5.56x45mm)
 - type: entity
   id: civ13_magazine_clip_(7.62x39mm)
   name: clip (7.62x39mm)
@@ -1603,10 +2180,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x39
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a762x39
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(7.62x39mm)
 - type: entity
   id: civ13_magazine_clip_(14.5x114mm)
   name: clip (14.5x114mm)
@@ -1614,10 +2195,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a145
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a145
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(14.5x114mm)
 - type: entity
   id: civ13_magazine_VSS_Vintorez_magazine_(9x39mm)
   name: VSS Vintorez magazine (9x39mm)
@@ -1625,10 +2210,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x39
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_a9x39
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_VSS_Vintorez_magazine_(9x39mm)
 - type: entity
   id: civ13_magazine_SR_3_magazine_(9x39mm)
   name: SR-3 magazine (9x39mm)
@@ -1636,10 +2225,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x39
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a9x39
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_SR_3_magazine_(9x39mm)
 - type: entity
   id: civ13_magazine_SR_3_small_magazine_(9x39mm)
   name: SR-3 small magazine (9x39mm)
@@ -1647,11 +2240,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x39
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a9x39
-      capacity: 20
-
+    - type: Tag
+      tags:
+        - civ13_magazine_SR_3_small_magazine_(9x39mm)
 - type: entity
   id: civ13_magazine_heavy_bullet_pouch_(.50_BMG)
   name: heavy bullet pouch (.50 BMG)
@@ -1659,10 +2255,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a50cal
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_a50cal
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_heavy_bullet_pouch_(.50_BMG)
 - type: entity
   id: civ13_magazine_heavy_bullet_pouch_(.50_BMG_HE)
   name: heavy bullet pouch (.50 BMG HE)
@@ -1670,10 +2270,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a50cal
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_a50cal
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_heavy_bullet_pouch_(.50_BMG_HE)
 - type: entity
   id: civ13_magazine_magazine_(.50_BMG)
   name: magazine (.50 BMG)
@@ -1681,10 +2285,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a50cal
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_a50cal
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_magazine_(.50_BMG)
 - type: entity
   id: civ13_magazine_BAM_AP_magazine_(15x115mm)
   name: BAM AP magazine (15x115mm)
@@ -1692,10 +2300,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a15115
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a15115
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_BAM_AP_magazine_(15x115mm)
 - type: entity
   id: civ13_magazine_BAM_HE_magazine_(15x115mm)
   name: BAM HE magazine (15x115mm)
@@ -1703,10 +2315,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a15115
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a15115
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_BAM_HE_magazine_(15x115mm)
 - type: entity
   id: civ13_magazine_BAM_magazine_(15x115mm)
   name: BAM magazine (15x115mm)
@@ -1714,10 +2330,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a15115
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_a15115
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_BAM_magazine_(15x115mm)
 - type: entity
   id: civ13_magazine_heavy_bullet_pouch_(14.5x114mm)
   name: heavy bullet pouch (14.5x114mm)
@@ -1725,10 +2345,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a145
+      capacity: 6
       whitelist:
         tags:
           - civ13_caliber_a145
-      capacity: 6
+    - type: Tag
+      tags:
+        - civ13_magazine_heavy_bullet_pouch_(14.5x114mm)
 - type: entity
   id: civ13_magazine_14.5x114mm_AP_cartridge_box
   name: 14.5x114mm AP cartridge box
@@ -1736,10 +2360,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a145
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a145
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_14.5x114mm_AP_cartridge_box
 - type: entity
   id: civ13_magazine_14.5x114mm_cartridge_box
   name: 14.5x114mm cartridge box
@@ -1747,10 +2375,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a145
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a145
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_14.5x114mm_cartridge_box
 - type: entity
   id: civ13_magazine_7.92x94mm_case
   name: 7.92x94mm case
@@ -1758,10 +2390,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a792x94
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_a792x94
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_7.92x94mm_case
 - type: entity
   id: civ13_magazine_7.92x94mm_AP_case
   name: 7.92x94mm AP case
@@ -1769,10 +2405,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a792x94_ap
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_a792x94_ap
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_7.92x94mm_AP_case
 - type: entity
   id: civ13_magazine_heavy_bullet_pouch_(7.92x94mm)
   name: heavy bullet pouch (7.92x94mm)
@@ -1780,10 +2420,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a792x94
+      capacity: 6
       whitelist:
         tags:
           - civ13_caliber_a792x94
-      capacity: 6
+    - type: Tag
+      tags:
+        - civ13_magazine_heavy_bullet_pouch_(7.92x94mm)
 - type: entity
   id: civ13_magazine_heavy_bullet_pouch_(7.92x94mm_AP)
   name: heavy bullet pouch (7.92x94mm AP)
@@ -1791,10 +2435,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a792x94
+      capacity: 6
       whitelist:
         tags:
           - civ13_caliber_a792x94
-      capacity: 6
+    - type: Tag
+      tags:
+        - civ13_magazine_heavy_bullet_pouch_(7.92x94mm_AP)
 - type: entity
   id: civ13_magazine_.50_BMG_ammo_can
   name: .50 BMG ammo can
@@ -1802,10 +2450,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a50cal
+      capacity: 150
       whitelist:
         tags:
           - civ13_caliber_a50cal
-      capacity: 150
+    - type: Tag
+      tags:
+        - civ13_magazine_.50_BMG_ammo_can
 - type: entity
   id: civ13_magazine_C6_GPMG_ammo_belt
   name: C6 GPMG ammo belt
@@ -1813,10 +2465,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x51
+      capacity: 110
       whitelist:
         tags:
           - civ13_caliber_a762x51
-      capacity: 110
+    - type: Tag
+      tags:
+        - civ13_magazine_C6_GPMG_ammo_belt
 - type: entity
   id: civ13_magazine_C6_GPMG_ammo_can
   name: C6 GPMG ammo can
@@ -1824,10 +2480,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x51
+      capacity: 220
       whitelist:
         tags:
           - civ13_caliber_a762x51
-      capacity: 220
+    - type: Tag
+      tags:
+        - civ13_magazine_C6_GPMG_ammo_can
 - type: entity
   id: civ13_magazine_QBZ_95_magazine_(5.8x42mm)
   name: QBZ-95 magazine (5.8x42mm)
@@ -1835,10 +2495,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a58x42
+      capacity: 30
       whitelist:
         tags:
           - civ13_caliber_a58x42
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_QBZ_95_magazine_(5.8x42mm)
 - type: entity
   id: civ13_magazine_AP_T_ammo_belt_(25_mm)
   name: AP-T ammo belt (25 mm)
@@ -1846,10 +2510,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a25
+      capacity: 150
       whitelist:
         tags:
           - civ13_caliber_a25
-      capacity: 150
+    - type: Tag
+      tags:
+        - civ13_magazine_AP_T_ammo_belt_(25_mm)
 - type: entity
   id: civ13_magazine_HE_T_ammo_belt_(25_mm)
   name: HE-T ammo belt (25 mm)
@@ -1857,10 +2525,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a25
+      capacity: 150
       whitelist:
         tags:
           - civ13_caliber_a25
-      capacity: 150
+    - type: Tag
+      tags:
+        - civ13_magazine_HE_T_ammo_belt_(25_mm)
 - type: entity
   id: civ13_magazine_AP_T_ammo_belt_(30mm)
   name: AP-T ammo belt (30mm)
@@ -1868,10 +2540,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a30
+      capacity: 150
       whitelist:
         tags:
           - civ13_caliber_a30
-      capacity: 150
+    - type: Tag
+      tags:
+        - civ13_magazine_AP_T_ammo_belt_(30mm)
 - type: entity
   id: civ13_magazine_HE_T_ammo_belt_(30mm)
   name: HE-T ammo belt (30mm)
@@ -1879,10 +2555,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a30
+      capacity: 150
       whitelist:
         tags:
           - civ13_caliber_a30
-      capacity: 150
+    - type: Tag
+      tags:
+        - civ13_magazine_HE_T_ammo_belt_(30mm)
 - type: entity
   id: civ13_magazine_FAP_ammo_belt_(35mm)
   name: FAP ammo belt (35mm)
@@ -1890,10 +2570,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a35
+      capacity: 150
       whitelist:
         tags:
           - civ13_caliber_a35
-      capacity: 150
+    - type: Tag
+      tags:
+        - civ13_magazine_FAP_ammo_belt_(35mm)
 - type: entity
   id: civ13_magazine_HEI_T_ammo_belt_(35mm)
   name: HEI-T ammo belt (35mm)
@@ -1901,10 +2585,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a35
+      capacity: 150
       whitelist:
         tags:
           - civ13_caliber_a35
-      capacity: 150
+    - type: Tag
+      tags:
+        - civ13_magazine_HEI_T_ammo_belt_(35mm)
 - type: entity
   id: civ13_magazine_flare_casing_pouch_(.50_BMG)
   name: flare casing pouch (.50 BMG)
@@ -1912,10 +2600,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_flare
+      capacity: 8
       whitelist:
         tags:
           - civ13_caliber_flare
-      capacity: 8
+    - type: Tag
+      tags:
+        - civ13_magazine_flare_casing_pouch_(.50_BMG)
 - type: entity
   id: civ13_magazine_service_rifle_magazine_(5.56x45mm)
   name: service rifle magazine (5.56x45mm)
@@ -1923,11 +2615,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a556x45
+      capacity: 20
       whitelist:
         tags:
           - civ13_caliber_a556x45
-      capacity: 20
-
+    - type: Tag
+      tags:
+        - civ13_magazine_service_rifle_magazine_(5.56x45mm)
 - type: entity
   id: civ13_magazine_bullet_pouch_(20)
   name: bullet pouch (20)
@@ -1935,10 +2630,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: CartridgePistol
+      capacity: 20
       whitelist:
         tags:
           - CartridgePistol
-      capacity: 20
+    - type: Tag
+      tags:
+        - civ13_magazine_bullet_pouch_(20)
 - type: entity
   id: civ13_magazine_clip_(5)
   name: clip (5)
@@ -1946,11 +2645,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: CartridgePistol
+      capacity: 5
       whitelist:
         tags:
           - CartridgePistol
-      capacity: 5
-
+    - type: Tag
+      tags:
+        - civ13_magazine_clip_(5)
 - type: entity
   id: civ13_magazine_speedloader_(6)
   name: speedloader (6)
@@ -1958,10 +2660,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a44magnum
+      capacity: 6
       whitelist:
         tags:
           - civ13_caliber_a44magnum
-      capacity: 6
+    - type: Tag
+      tags:
+        - civ13_magazine_speedloader_(6)
 - type: entity
   id: civ13_magazine_drum_magazine_(65)
   name: drum magazine (65)
@@ -1969,10 +2675,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: CartridgePistol
+      capacity: 65
       whitelist:
         tags:
           - CartridgePistol
-      capacity: 65
+    - type: Tag
+      tags:
+        - civ13_magazine_drum_magazine_(65)
 - type: entity
   id: civ13_magazine_magazine_(30)
   name: magazine (30)
@@ -1980,10 +2690,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: CartridgePistol
+      capacity: 30
       whitelist:
         tags:
           - CartridgePistol
-      capacity: 30
+    - type: Tag
+      tags:
+        - civ13_magazine_magazine_(30)
 - type: entity
   id: civ13_magazine_pistol_magazine_(9mm)
   name: pistol magazine (9mm)
@@ -1991,10 +2705,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a9x19
+      capacity: 15
       whitelist:
         tags:
           - civ13_caliber_a9x19
-      capacity: 15
+    - type: Tag
+      tags:
+        - civ13_magazine_pistol_magazine_(9mm)
 - type: entity
   id: civ13_magazine_pistol_magazine_(15)
   name: pistol magazine (15)
@@ -2002,10 +2720,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: CartridgePistol
+      capacity: 15
       whitelist:
         tags:
           - CartridgePistol
-      capacity: 15
+    - type: Tag
+      tags:
+        - civ13_magazine_pistol_magazine_(15)
 - type: entity
   id: civ13_magazine_pistol_magazine_(8)
   name: pistol magazine (8)
@@ -2013,10 +2735,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: CartridgePistol
+      capacity: 8
       whitelist:
         tags:
           - CartridgePistol
-      capacity: 8
+    - type: Tag
+      tags:
+        - civ13_magazine_pistol_magazine_(8)
 - type: entity
   id: civ13_magazine_belt_(100)
   name: belt (100)
@@ -2024,10 +2750,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: CartridgePistol
+      capacity: 100
       whitelist:
         tags:
           - CartridgePistol
-      capacity: 100
+    - type: Tag
+      tags:
+        - civ13_magazine_belt_(100)
 - type: entity
   id: civ13_magazine_belt_(7.62x54mm)
   name: belt (7.62x54mm)
@@ -2035,11 +2765,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_a762x54
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_a762x54
-      capacity: 10
-
+    - type: Tag
+      tags:
+        - civ13_magazine_belt_(7.62x54mm)
 - type: entity
   id: civ13_magazine_dart_cartridge
   name: dart cartridge
@@ -2047,10 +2780,14 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_dart
+      capacity: 10
       whitelist:
         tags:
           - civ13_caliber_dart
-      capacity: 10
+    - type: Tag
+      tags:
+        - civ13_magazine_dart_cartridge
 - type: entity
   id: civ13_magazine_dart_magazine
   name: dart magazine
@@ -2058,7 +2795,11 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
+      proto: civ13_caliber_dart
+      capacity: 5
       whitelist:
         tags:
           - civ13_caliber_dart
-      capacity: 5
+    - type: Tag
+      tags:
+        - civ13_magazine_dart_magazine

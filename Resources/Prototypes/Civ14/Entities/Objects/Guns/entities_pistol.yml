@@ -1,22 +1,22 @@
-
 - type: entity
-  name: Type 14 Nambu
+  name: BasePistolCiv
   parent: BaseWeaponPistol
-  id: civ13_pistol_Type_14_Nambu
-  description: Standard issue Japanese pistol. Chambered in 8x22mm Nambu.
+  id: civ13_pistol
+  abstract: true
+  description: Standard issue pistol. Chambered in 9x19mm.
   components:
     - type: Sprite
-      sprite: Civ14/Weapons/Guns/nambu_ww2.rsi
+      sprite: Civ14/Weapons/Guns/m9beretta.rsi
       layers:
         - state: icon
           map:
             - enum.GunVisualLayers.Base
-        - state: mag
+        - state: mag-0
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Civ14/Weapons/Guns/nambu_ww2.rsi
-      quickEquip: false
+      sprite: Civ14/Weapons/Guns/m9beretta.rsi
+      quickEquip: true
       slots:
         - suitStorage
         - Belt
@@ -26,7 +26,7 @@
       availableModes:
         - SemiAuto
       soundGunshot:
-        path: /Audio/Weapons/Guns/Fire/Nambu.ogg
+        path: /Audio/Weapons/Guns/Fire/9mm.ogg
     - type: ChamberMagazineAmmoProvider
       soundRack:
         path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
@@ -37,6 +37,50 @@
           startingItem: civ13_magazine_default
           insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
           ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_default
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a9x19
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a9x19
+    - type: MagazineVisuals
+      magstate: mag
+      steps: 1
+      zeroVisible: true
+
+- type: entity
+  name: Type 14 Nambu
+  parent: civ13_pistol
+  id: civ13_pistol_Type_14_Nambu
+  description: Standard issue Japanese pistol. Chambered in 8x22mm Nambu.
+  components:
+    - type: Sprite
+      sprite: Civ14/Weapons/Guns/nambu_ww2.rsi
+
+    - type: Clothing
+      sprite: Civ14/Weapons/Guns/nambu_ww2.rsi
+      quickEquip: false
+
+    - type: Gun
+      fireRate: 3
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/Nambu.ogg
+
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_default
+
           priority: 2
           whitelist:
             tags:
@@ -49,31 +93,19 @@
           whitelist:
             tags:
               - civ13_caliber_c8mmnambu
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Luger P08
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Luger_P08
   description: A Luger P08 chambered in 9x19mm parabellum, german design.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/luger.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/luger.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -81,16 +113,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/9mm.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -103,31 +132,19 @@
           whitelist:
             tags:
               - civ13_caliber_a9x19
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Walther P38
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Walther_P38
   description: A Walther P38 chambered in 9x19mm parabellum, german design.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/waltherp38.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/waltherp38.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -135,16 +152,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/9mm.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -157,31 +171,19 @@
           whitelist:
             tags:
               - civ13_caliber_a9x19
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Glock 17
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Glock_17
   description: A modern pistol, loaded on 9x19mm, reliable and fast.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/glock17.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/glock17.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 4
       selectedMode: SemiAuto
@@ -189,16 +191,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/9mm.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -211,31 +210,19 @@
           whitelist:
             tags:
               - civ13_caliber_a9x19
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: SIG 250
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_SIG_250
   description: A modern pistol, loaded on 9x19mm, reliable and fast.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/sig250.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/sig250.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 4
       selectedMode: SemiAuto
@@ -243,16 +230,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/pistol.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -265,31 +249,19 @@
           whitelist:
             tags:
               - civ13_caliber_a9x19
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: PL-14
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_PL_14
   description: A modern experimental pistol made by Kalashnikov (chambered in 9x19mm).
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/pl14.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/pl14.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 6
       selectedMode: SemiAuto
@@ -297,16 +269,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/pistol.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -319,31 +288,19 @@
           whitelist:
             tags:
               - civ13_caliber_a9x19
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: MP-443 Grach
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_MP_443_Grach
   description: A Russian made pistol firing loaded on 9x19mm.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/mp443.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/mp443.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -351,16 +308,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/pistol.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -373,31 +327,19 @@
           whitelist:
             tags:
               - civ13_caliber_a9x19
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Tarus G3
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Tarus_G3
   description: A modern pistol, loaded on 9x19mm, reliable and fast.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/tarusg3.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/tarusg3.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 4
       selectedMode: SemiAuto
@@ -405,16 +347,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/pistol.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -427,31 +366,19 @@
           whitelist:
             tags:
               - civ13_caliber_a9x19
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: SIG Sauer P220
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_SIG_Sauer_P220
   description: The SIG Sauer P220 is a semi-automatic pistol. Designed in 1975.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/p220.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/p220.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -459,16 +386,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/45ACP.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -481,31 +405,19 @@
           whitelist:
             tags:
               - civ13_caliber_a45
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: IOQ B-72
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_IOQ_B_72
   description: Some fake shit invented by Re1taz.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/iogb7.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/iogb7.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 9
       selectedMode: SemiAuto
@@ -513,16 +425,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/pistol.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -535,31 +444,19 @@
           whitelist:
             tags:
               - civ13_caliber_a9x19
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Mauser C96
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Mauser_C96
   description: An early German pistol that can chamber 7.62x25mm TT.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/mauser.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/mauser.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -567,16 +464,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/762x25.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -589,31 +483,19 @@
           whitelist:
             tags:
               - civ13_caliber_a762x25
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Borchardt C93
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Borchardt_C93
   description: A German semi-automatic pistol chambered in 7.65x25mm Borchardt.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/borchardt.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/borchardt.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -621,16 +503,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/762x25.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -643,31 +522,19 @@
           whitelist:
             tags:
               - civ13_caliber_a765x25
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Colt M1903 Pocket Hammerless
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Colt_M1903_Pocket_Hammerless
   description: An early, compact Colt pistol chambered in .32 ACP.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/coltpockethammerless.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/coltpockethammerless.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -675,16 +542,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/32ACP.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -697,31 +561,19 @@
           whitelist:
             tags:
               - civ13_caliber_a32acp
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Colt M1908 Pocket Hammerless
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Colt_M1908_Pocket_Hammerless
   description: A later version of the compact Colt pistol, chambered in .380 ACP.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/coltpockethammerless.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/coltpockethammerless.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -729,16 +581,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/9mm.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -751,31 +600,19 @@
           whitelist:
             tags:
               - civ13_caliber_a380acp
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Bergmann No.2
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Bergmann_No.2
   description: A particularly unique-in-appearance early German semi-automatic pistol.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/bergmann.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/bergmann.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -783,16 +620,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/Nambu.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -805,13 +639,9 @@
           whitelist:
             tags:
               - civ13_caliber_c8mmnambu
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: M1911A1
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_M1911A1
   description: >-
     The standard issue pistol of the US Armed forces from 1911 to 1985.
@@ -819,19 +649,11 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/colt.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/colt.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -839,16 +661,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/45ACP.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -861,31 +680,19 @@
           whitelist:
             tags:
               - civ13_caliber_a45acp
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Colt Mark IV
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Colt_Mark_IV
   description: A slightly upgraded model of the M1911A1. Chambered in .45 ACP.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/colt.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/colt.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -893,16 +700,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/45ACP.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -915,13 +719,9 @@
           whitelist:
             tags:
               - civ13_caliber_a45acp
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: TT-33
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_TT_33
   description: >-
     The standard issue pistol of the Soviet Union before the 1950's. Chambered
@@ -929,19 +729,11 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/tt30.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/tt30.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -949,16 +741,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/762x25.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -971,13 +760,9 @@
           whitelist:
             tags:
               - civ13_caliber_a762x25
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Makarov PM
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Makarov_PM
   description: >-
     The standard issue pistol of the Soviet Union and Russian Federation after
@@ -985,19 +770,11 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/makarov.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/makarov.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -1005,16 +782,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/762x25.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -1027,31 +801,19 @@
           whitelist:
             tags:
               - civ13_caliber_a9x18
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Stechkin APS
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Stechkin_APS
   description: A Soviet selective fire machine pistol. Chambered in 9x18mm Makarov.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/aps.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/aps.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -1059,16 +821,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/762x25.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -1081,13 +840,9 @@
           whitelist:
             tags:
               - civ13_caliber_a9x18
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Beretta M9
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Beretta_M9
   description: >-
     The standard issue pistol of US Armed Forces from 1985 to 2017. Chambered in
@@ -1095,19 +850,11 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/m9beretta.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/m9beretta.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -1115,16 +862,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/9mm.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -1137,13 +881,9 @@
           whitelist:
             tags:
               - civ13_caliber_a9x19
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Beretta M9
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Beretta_M9_tan
   description: >-
     The standard issue pistol of US Armed Forces from 1985 to 2017. Chambered in
@@ -1151,19 +891,11 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/tanm9.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/tanm9.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -1171,16 +903,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/9mm.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -1193,13 +922,9 @@
           whitelist:
             tags:
               - civ13_caliber_a9x19
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Jericho 941
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Jericho_941
   description: >-
     The standard issue pistol of the IDF of the late 20th century. Chambered in
@@ -1207,19 +932,11 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/jericho941.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/jericho941.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -1227,16 +944,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/9mm.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -1249,31 +963,19 @@
           whitelist:
             tags:
               - civ13_caliber_a9x19
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Desert Eagle
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Desert_Eagle
   description: Designed and developed by Magnum Research Inc. Chambered in 50cal.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/deagle.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/deagle.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -1281,16 +983,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/deagle.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -1303,31 +1002,19 @@
           whitelist:
             tags:
               - civ13_caliber_a50cal
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Desert Eagle (44.magnum)
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Desert_Eagle_(44.magnum)
   description: Designed and developed by Magnum Research Inc. Chambered in 44.magnum.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/deagle.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/deagle.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -1335,16 +1022,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/deagle.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -1357,13 +1041,9 @@
           whitelist:
             tags:
               - civ13_caliber_a44magnum
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: Browning hi-power
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_Browning_hi_power
   description: >-
     Produced by Fabrique Nationale of Belgium, This old handgun is chambered in
@@ -1371,19 +1051,11 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/browning_hp.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/browning_hp.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -1391,20 +1063,17 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/9mm.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
-          startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          startingItem: civ13_magazine_Browning_hi_power_magazine
+
           priority: 2
           whitelist:
             tags:
-              - civ13_magazine_default
+              - civ13_magazine_Browning_hi_power_magazine
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
@@ -1413,13 +1082,9 @@
           whitelist:
             tags:
               - civ13_caliber_a9x19
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
 - type: entity
   name: STI 2011
-  parent: BaseWeaponPistol
+  parent: civ13_pistol
   id: civ13_pistol_STI_2011
   description: >-
     A high end specialized version of a m1911 made by the request of the US
@@ -1427,19 +1092,11 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/sti2011.rsi
-      layers:
-        - state: icon
-          map:
-            - enum.GunVisualLayers.Base
-        - state: mag
-          map:
-            - enum.GunVisualLayers.Mag
+
     - type: Clothing
       sprite: Civ14/Weapons/Guns/sti2011.rsi
       quickEquip: false
-      slots:
-        - suitStorage
-        - Belt
+
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -1447,16 +1104,13 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/45ACP.ogg
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_default
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+
           priority: 2
           whitelist:
             tags:
@@ -1469,8 +1123,3 @@
           whitelist:
             tags:
               - civ13_caliber_a45acp
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
-

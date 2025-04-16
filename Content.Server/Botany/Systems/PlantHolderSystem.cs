@@ -455,7 +455,7 @@ public sealed class PlantHolderSystem : EntitySystem
             var weather = EntityQueryEnumerator<WeatherNomadsComponent>();
             while (weather.MoveNext(out var uuid, out var weatherComponent))
             {
-                if (weatherComponent.CurrentWeather == "Rain" || weatherComponent.CurrentWeather == "Storm")
+                if (weatherComponent.CurrentPrecipitation == Precipitation.LightWet || weatherComponent.CurrentPrecipitation == Precipitation.HeavyWet  || weatherComponent.CurrentPrecipitation == Precipitation.Storm)
                 {
                     component.WaterLevel += 2f;
                 }

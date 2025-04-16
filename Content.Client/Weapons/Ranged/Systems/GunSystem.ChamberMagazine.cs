@@ -30,11 +30,11 @@ public sealed partial class GunSystem
         // Maybe re-using base layer for this will bite me someday but screw you future sloth.
         if (boltClosed)
         {
-            args.Sprite.LayerSetState(boltLayer, "base");
+            args.Sprite.LayerSetState(boltLayer, "icon");
         }
         else
         {
-            args.Sprite.LayerSetState(boltLayer, "bolt-open");
+            args.Sprite.LayerSetState(boltLayer, "open");
         }
     }
 
