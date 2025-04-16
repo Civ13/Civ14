@@ -1,7 +1,7 @@
 - type: entity
   name: Laser pistol
   parent: BaseWeaponPistol
-  id: civ13_pistol_Laser_pistol
+  id: civ13_pistol_laser_pistol
   description: A generic laser shooter
   components:
     - type: Sprite
@@ -1581,10 +1581,10 @@
 - type: entity
   name: Beretta M9
   parent: BaseWeaponPistol
-  id: civ13_pistol_Beretta_M9
+  id: civ13_pistol_Beretta_M9_tan
   description: >-
     The standard issue pistol of US Armed Forces from 1985 to 2017. Chambered in
-    9mm Luger. This one blends in with the desert
+    9mm Luger. This one blends in with the desert.
   components:
     - type: Sprite
       sprite: Objects/Weapons/Guns/tanm9.rsi

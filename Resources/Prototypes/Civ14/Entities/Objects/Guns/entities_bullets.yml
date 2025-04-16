@@ -1,6 +1,6 @@
 - type: entity
-  id: civ13_bullet_shrapnel
-  name: shrapnel
+  id: civ13_bullet_pellet
+  name: civ13_bullet_pellet
   parent: BaseBullet
   categories:
     - HideSpawnMenu
@@ -10,8 +10,8 @@
         types:
           Piercing: 7
 - type: entity
-  id: civ13_bullet_buckshot_pellet
-  name: buckshot pellet
+  id: civ13_bullet_pellet_fragment
+  name: civ13_bullet_pellet_fragment
   parent: BaseBullet
   categories:
     - HideSpawnMenu
@@ -19,32 +19,11 @@
     - type: Projectile
       damage:
         types:
-          Piercing: 45
+          Piercing: 6
+
 - type: entity
-  id: civ13_bullet_rubber_bullet
-  name: rubber bullet
-  parent: BaseBullet
-  categories:
-    - HideSpawnMenu
-  components:
-    - type: Projectile
-      damage:
-        types:
-          Piercing: 1
-- type: entity
-  id: civ13_bullet_rubber_ball
-  name: rubber ball
-  parent: BaseBullet
-  categories:
-    - HideSpawnMenu
-  components:
-    - type: Projectile
-      damage:
-        types:
-          Piercing: 1
-- type: entity
-  id: civ13_bullet_shotgun_slug
-  name: shotgun slug
+  id: civ13_bullet_pistol_strong
+  name: civ13_bullet_pistol_strong
   parent: BaseBullet
   categories:
     - HideSpawnMenu
@@ -54,8 +33,8 @@
         types:
           Piercing: 20
 - type: entity
-  id: civ13_bullet_beanbag
-  name: beanbag
+  id: civ13_bullet_pellet_buckshot
+  name: civ13_bullet_pellet_buckshot
   parent: BaseBullet
   categories:
     - HideSpawnMenu
@@ -63,10 +42,484 @@
     - type: Projectile
       damage:
         types:
-          Piercing: 2
+          Piercing: 45
 - type: entity
-  id: civ13_bullet_breaching_slug
-  name: breaching slug
+  id: civ13_bullet_pistol_rubber
+  name: civ13_bullet_pistol_rubber
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 1
+- type: entity
+  id: civ13_bullet_pellet_rubberball
+  name: civ13_bullet_pellet_rubberball
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 1
+
+- type: entity
+  id: civ13_bullet_rifle_stoneball
+  name: civ13_bullet_rifle_stoneball
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 42
+- type: entity
+  id: civ13_bullet_rifle_musketball
+  name: civ13_bullet_rifle_musketball
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 49
+- type: entity
+  id: civ13_bullet_rifle_musketball_pistol
+  name: civ13_bullet_rifle_musketball_pistol
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 31
+- type: entity
+  id: civ13_bullet_rifle_blunderbuss
+  name: civ13_bullet_rifle_blunderbuss
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 45
+- type: entity
+  id: civ13_bullet_rifle_a65x50
+  name: civ13_bullet_rifle_a65x50
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 37
+- type: entity
+  id: civ13_bullet_rifle_a65x52
+  name: civ13_bullet_rifle_a65x52
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 33
+- type: entity
+  id: civ13_bullet_rifle_a8x53
+  name: civ13_bullet_rifle_a8x53
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 38
+- type: entity
+  id: civ13_bullet_rifle_a8x50
+  name: civ13_bullet_rifle_a8x50
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 40
+- type: entity
+  id: civ13_bullet_rifle_a762x54
+  name: civ13_bullet_rifle_a762x54
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 47
+- type: entity
+  id: civ13_bullet_rifle_a44
+  name: civ13_bullet_rifle_a44
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 28
+- type: entity
+  id: civ13_bullet_rifle_a44magnum
+  name: civ13_bullet_rifle_a44magnum
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 43
+- type: entity
+  id: civ13_bullet_rifle_a4570
+  name: civ13_bullet_rifle_a4570
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 53
+- type: entity
+  id: civ13_bullet_rifle_a792x57
+  name: civ13_bullet_rifle_a792x57
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 49
+- type: entity
+  id: civ13_bullet_rifle_a765x53
+  name: civ13_bullet_rifle_a765x53
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 40
+- type: entity
+  id: civ13_bullet_pistol_a765x25
+  name: civ13_bullet_pistol_a765x25
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 17
+- type: entity
+  id: civ13_bullet_rifle_a7x57
+  name: civ13_bullet_rifle_a7x57
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 39
+- type: entity
+  id: civ13_bullet_rifle_a77x58
+  name: civ13_bullet_rifle_a77x58
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 40
+- type: entity
+  id: civ13_bullet_rifle_a77x58_wood
+  name: civ13_bullet_rifle_a77x58_wood
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 1
+- type: entity
+  id: civ13_bullet_rifle_a577
+  name: civ13_bullet_rifle_a577
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 63
+- type: entity
+  id: civ13_bullet_rifle_a303
+  name: civ13_bullet_rifle_a303
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 40
+- type: entity
+  id: civ13_bullet_rifle_a3006
+  name: civ13_bullet_rifle_a3006
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 45
+- type: entity
+  id: civ13_bullet_rifle_a762x33
+  name: civ13_bullet_rifle_a762x33
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 30
+- type: entity
+  id: civ13_bullet_rifle_a762x39
+  name: civ13_bullet_rifle_a762x39
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 31
+- type: entity
+  id: civ13_bullet_rifle_a545x39
+  name: civ13_bullet_rifle_a545x39
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 25
+- type: entity
+  id: civ13_bullet_rifle_a762x51
+  name: civ13_bullet_rifle_a762x51
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 41
+- type: entity
+  id: civ13_bullet_rifle_a556x45
+  name: civ13_bullet_rifle_a556x45
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 28
+- type: entity
+  id: civ13_bullet_rifle_a58x42
+  name: civ13_bullet_rifle_a58x42
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 27
+- type: entity
+  id: civ13_bullet_rifle_a50cal
+  name: civ13_bullet_rifle_a50cal
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 98
+- type: entity
+  id: civ13_bullet_rifle_a50cal_ap
+  name: civ13_bullet_rifle_a50cal_ap
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 20
+- type: entity
+  id: civ13_bullet_rifle_a50cal_he
+  name: civ13_bullet_rifle_a50cal_he
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 23
+- type: entity
+  id: civ13_bullet_rifle_a127
+  name: civ13_bullet_rifle_a127
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 88
+- type: entity
+  id: civ13_bullet_rifle_a145
+  name: civ13_bullet_rifle_a145
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 97
+- type: entity
+  id: civ13_bullet_rifle_a15115
+  name: civ13_bullet_rifle_a15115
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 97
+- type: entity
+  id: civ13_bullet_rifle_a15115_ap
+  name: civ13_bullet_rifle_a15115_ap
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 40
+- type: entity
+  id: civ13_bullet_rifle_a15115_aphe
+  name: civ13_bullet_rifle_a15115_aphe
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 24
+- type: entity
+  id: civ13_bullet_rifle_a145_ap
+  name: civ13_bullet_rifle_a145_ap
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 93
+- type: entity
+  id: civ13_bullet_rifle_a792x94
+  name: civ13_bullet_rifle_a792x94
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 95
+- type: entity
+  id: civ13_bullet_rifle_a792x94_ap
+  name: civ13_bullet_rifle_a792x94_ap
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 93
+- type: entity
+  id: civ13_bullet_rifle_a9x39
+  name: civ13_bullet_rifle_a9x39
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 41
+- type: entity
+  id: civ13_bullet_rifle_a357
+  name: civ13_bullet_rifle_a357
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 37
+- type: entity
+  id: civ13_bullet_pistol
+  name: civ13_bullet_pistol
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 7
+- type: entity
+  id: civ13_bullet_pistol_a762x38
+  name: civ13_bullet_pistol_a762x38
   parent: BaseBullet
   categories:
     - HideSpawnMenu
@@ -76,8 +529,129 @@
         types:
           Piercing: 18
 - type: entity
-  id: civ13_bullet_incendiary_slug
-  name: incendiary slug
+  id: civ13_bullet_pistol_a8x27
+  name: civ13_bullet_pistol_a8x27
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 14
+- type: entity
+  id: civ13_bullet_pistol_a32
+  name: civ13_bullet_pistol_a32
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 15
+- type: entity
+  id: civ13_bullet_pistol_a32acp
+  name: civ13_bullet_pistol_a32acp
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 13
+- type: entity
+  id: civ13_bullet_pistol_webly445
+  name: civ13_bullet_pistol_webly445
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 22
+- type: entity
+  id: civ13_bullet_pistol_a38
+  name: civ13_bullet_pistol_a38
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 20
+- type: entity
+  id: civ13_bullet_pistol_a380acp
+  name: civ13_bullet_pistol_a380acp
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 13
+- type: entity
+  id: civ13_bullet_pistol_a41
+  name: civ13_bullet_pistol_a41
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 12
+- type: entity
+  id: civ13_bullet_pistol_a43
+  name: civ13_bullet_pistol_a43
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 32
+- type: entity
+  id: civ13_bullet_pistol_a45
+  name: civ13_bullet_pistol_a45
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 32
+- type: entity
+  id: civ13_bullet_pistol_a455
+  name: civ13_bullet_pistol_a455
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 22
+- type: entity
+  id: civ13_bullet_pistol_c9mm_jap_revolver
+  name: civ13_bullet_pistol_c9mm_jap_revolver
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 17
+- type: entity
+  id: civ13_bullet_pistol_c8mmnambu
+  name: civ13_bullet_pistol_c8mmnambu
   parent: BaseBullet
   categories:
     - HideSpawnMenu
@@ -87,8 +661,107 @@
         types:
           Piercing: 16
 - type: entity
-  id: civ13_bullet_dart
-  name: dart
+  id: civ13_bullet_pistol_a9x19
+  name: civ13_bullet_pistol_a9x19
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 16
+- type: entity
+  id: civ13_bullet_pistol_a9x18
+  name: civ13_bullet_pistol_a9x18
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 16
+- type: entity
+  id: civ13_bullet_pistol_a792x33
+  name: civ13_bullet_pistol_a792x33
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 28
+- type: entity
+  id: civ13_bullet_pistol_a762x25
+  name: civ13_bullet_pistol_a762x25
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 21
+- type: entity
+  id: civ13_bullet_pistol_rubber_a54x39
+  name: civ13_bullet_pistol_rubber_a54x39
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 1
+- type: entity
+  id: civ13_bullet_pistol_a57x28
+  name: civ13_bullet_pistol_a57x28
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 12
+- type: entity
+  id: civ13_bullet_pistol_a44p
+  name: civ13_bullet_pistol_a44p
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 9
+- type: entity
+  id: civ13_bullet_pistol_medium
+  name: civ13_bullet_pistol_medium
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 8
+- type: entity
+  id: civ13_bullet_shotgun_slug
+  name: civ13_bullet_shotgun_slug
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 20
+- type: entity
+  id: civ13_bullet_shotgun_beanbag
+  name: civ13_bullet_shotgun_beanbag
   parent: BaseBullet
   categories:
     - HideSpawnMenu
@@ -98,8 +771,41 @@
         types:
           Piercing: 2
 - type: entity
-  id: civ13_bullet_bone_dart
-  name: bone dart
+  id: civ13_bullet_shotgun_breaching
+  name: civ13_bullet_shotgun_breaching
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 18
+- type: entity
+  id: civ13_bullet_shotgun_incendiary
+  name: civ13_bullet_shotgun_incendiary
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 16
+- type: entity
+  id: civ13_bullet_chemdart
+  name: civ13_bullet_chemdart
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 2
+- type: entity
+  id: civ13_bullet_chemdart_bone
+  name: civ13_bullet_chemdart_bone
   parent: BaseBullet
   categories:
     - HideSpawnMenu
@@ -108,3 +814,14 @@
       damage:
         types:
           Piercing: 1
+- type: entity
+  id: civ13_bullet_blank
+  name: civ13_bullet_blank
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 0

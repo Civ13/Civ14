@@ -263,17 +263,6 @@
           - civ13_caliber_a792x57_weak
       capacity: 250
 - type: entity
-  id: civ13_magazine_belt_(7.62x51mm)
-  name: belt (7.62x51mm)
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_a762x51_weak
-      capacity: 100
-- type: entity
   id: civ13_magazine_Nambu_magazine
   name: Nambu magazine
   parent: BaseMagazinePistol
@@ -658,17 +647,7 @@
         tags:
           - civ13_caliber_a77x58
       capacity: 50
-- type: entity
-  id: civ13_magazine_clip_(7.7x58mm)
-  name: clip (7.7x58mm)
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_a77x58_wood
-      capacity: 5
+
 - type: entity
   id: civ13_magazine_Type_100_Magazine
   name: Type 100 Magazine
@@ -1461,17 +1440,7 @@
         tags:
           - civ13_caliber_12gauge
       capacity: 10
-- type: entity
-  id: civ13_magazine_USAS_12_magazine_(buckshot)
-  name: USAS-12 magazine (buckshot)
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_12gauge
-      capacity: 20
+
 - type: entity
   id: civ13_magazine_PKM_ammo_belt_(7.62x54mmR)
   name: PKM ammo belt (7.62x54mmR)
@@ -1484,7 +1453,7 @@
           - civ13_caliber_a762x54_weak
       capacity: 250
 - type: entity
-  id: civ13_magazine_PKM_ammo_belt_(7.62x54mmR)
+  id: civ13_magazine_PKM_ammo_belt_(7.62x54mmR)_100
   name: PKM ammo belt (7.62x54mmR)
   parent: BaseMagazinePistol
   components:
@@ -1846,17 +1815,7 @@
         tags:
           - civ13_caliber_a9x39
       capacity: 20
-- type: entity
-  id: civ13_magazine_heavy_bullet_pouch_(.50_BMG)
-  name: heavy bullet pouch (.50 BMG)
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - civ13_caliber_a50cal
-      capacity: 10
+
 - type: entity
   id: civ13_magazine_heavy_bullet_pouch_(.50_BMG)
   name: heavy bullet pouch (.50 BMG)
@@ -2165,17 +2124,7 @@
         tags:
           - CartridgePistol
       capacity: 5
-- type: entity
-  id: civ13_magazine_speedloader_(6)
-  name: speedloader (6)
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-          - CartridgePistol
-      capacity: 6
+
 - type: entity
   id: civ13_magazine_speedloader_(6)
   name: speedloader (6)

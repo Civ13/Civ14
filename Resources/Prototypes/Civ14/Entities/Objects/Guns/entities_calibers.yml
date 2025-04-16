@@ -544,13 +544,7 @@
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_.32_ACP_cartridge
-- type: entity
-  id: civ13_caliber_Bugged_bullet
-  name: Bugged bullet
-  parent: CartridgePistol
-  components:
-    - type: CartridgeAmmo
-      proto: civ13_bullet_Bugged_bullet
+
 - type: entity
   id: civ13_caliber_5.56x45mm_NATO_cartridge
   name: 5.56x45mm NATO cartridge
@@ -705,27 +699,6 @@
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_flare_shell
-- type: entity
-  id: civ13_caliber_laser_bolt
-  name: laser bolt
-  parent: CartridgePistol
-  components:
-    - type: CartridgeAmmo
-      proto: civ13_bullet_laser_bolt
-- type: entity
-  id: civ13_caliber_pistol_laser_bolt
-  name: pistol laser bolt
-  parent: CartridgePistol
-  components:
-    - type: CartridgeAmmo
-      proto: civ13_bullet_pistol_laser_bolt
-- type: entity
-  id: civ13_caliber_pistol_laser_bolt
-  name: pistol laser bolt
-  parent: CartridgePistol
-  components:
-    - type: CartridgeAmmo
-      proto: civ13_bullet_pistol_laser_bolt
 - type: entity
   id: civ13_caliber_pistol_laser_bolt
   name: pistol laser bolt
