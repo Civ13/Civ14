@@ -1,0 +1,26 @@
+- type: construction
+  name: silver coins
+  id: SilverCoins
+  graph: SilverCoins
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  description: The basic unit of money, 10 coins equals one ingot of silver.
+  icon: { sprite: Civ14/Objects/money.rsi, state: coin_silver_new_10 }
+  objectType: Item
+  agemin: 0
+  agemax: 8
+
+- type: constructionGraph
+  id: SilverCoins
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Silver
+              amount: 1
+              doAfter: 3
+    - node: end
+      entity: SilverCoins10

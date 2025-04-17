@@ -81,9 +81,10 @@ Entries:
         type: Add
       - message: Ancient shields are now craftable at the anvil (for metallic ones) and in the crafting menu (for others).
         type: Add
+      - message: Adds craftable silver coins.
+        type: Add
       - message: Wolves and Bears now drop leather as well as pelts.
         type: Fix
     id: 5
     time: "2025-04-17T00:00:00.0000000+00:00"
     url: https://github.com/Civ13/Civ14/pull/121
-

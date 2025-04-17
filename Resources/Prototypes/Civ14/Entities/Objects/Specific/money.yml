@@ -1,0 +1,91 @@
+- type: entity
+  parent: BaseItem
+  id: SilverCoins
+  name: silver coins
+  description: The basic unit of money, 10 coins equals one ingot of silver.
+  components:
+    - type: Cash
+    - type: Item
+      shape:
+        - 0,0,1,0
+      storedOffset: 0,-2
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        SilverCoins: 1
+    - type: StaticPrice
+      price: 0
+    - type: Stack
+      stackType: SilverCoins
+      count: 1
+      baseLayer: base
+      layerStates:
+        - coin_silver_new
+        - coin_silver_new_2
+        - coin_silver_new_3
+        - coin_silver_new_4
+        - coin_silver_new_5
+        - coin_silver_new_6
+        - coin_silver_new_7
+        - coin_silver_new_8
+        - coin_silver_new_9
+        - coin_silver_new_10
+    - type: Sprite
+      sprite: Civ14/Objects/money.rsi
+      state: coin_silver_new
+      layers:
+        - state: coin_silver_new
+          map: ["base"]
+    - type: Physics
+      bodyType: Dynamic
+    - type: Fixtures
+      fixtures:
+        fix1:
+          density: 30
+          shape: !type:PhysShapeAabb
+            bounds: "-0.35,-0.2,0.25,0.1"
+          mask:
+            - ItemMask
+    - type: Appearance
+
+- type: material
+  id: SilverCoins
+  name: silver coins
+  unit: materials-unit-coin
+  stackEntity: SilverCoins
+  icon: { sprite: /Textures/Civ14/Objects/money.rsi, state: coin_silver_new }
+  price: 1
+
+- type: stack
+  id: SilverCoins
+  name: silver coins
+  icon: { sprite: /Textures/Civ14/Objects/money.rsi, state: coin_silver_new }
+  spawn: SilverCoins
+  maxCount: 100
+
+- type: entity
+  parent: SilverCoins
+  id: SilverCoins10
+  suffix: 10
+  components:
+    - type: Icon
+      sprite: Civ14/Objects/money.rsi
+      state: coin_silver_new_10
+    - type: Stack
+      count: 10
+    - type: Construction
+      graph: SilverCoins
+      node: end
+      agemin: 0
+      agemax: 8
+
+- type: entity
+  parent: SilverCoins
+  id: SilverCoins100
+  suffix: 100
+  components:
+    - type: Icon
+      sprite: Civ14/Objects/money.rsi
+      state: coin_silver_new_100
+    - type: Stack
+      count: 100

@@ -1,0 +1,44 @@
+{
+    "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taislin for Civ14",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "coin_silver_new"
+        },
+        {
+            "name": "coin_silver_new_2"
+        },
+        {
+            "name": "coin_silver_new_3"
+        },
+        {
+            "name": "coin_silver_new_4"
+        },
+        {
+            "name": "coin_silver_new_5"
+        },
+        {
+            "name": "coin_silver_new_6"
+        },
+        {
+            "name": "coin_silver_new_7"
+        },
+        {
+            "name": "coin_silver_new_8"
+        },
+        {
+            "name": "coin_silver_new_9"
+        },
+        {
+            "name": "coin_silver_new_10"
+        },
+        {
+            "name": "coin_silver_new_100"
+        }
+    ]
+}
