@@ -1,0 +1,125 @@
+- type: latheCategory
+  id: AnvilShieldsAncient
+  name: lathe-category-shields-ancient
+
+- type: latheCategory
+  id: AnvilShieldsMedieval
+  name: lathe-category-shields-medieval
+
+- type: latheRecipePack
+  id: AnvilShieldsAncient
+  recipes:
+    - civ13_shield_bronze_shield
+    - civ13_shield_athenian_aspis
+    - civ13_shield_aspis_with_image_of_a_pegasus
+    - civ13_shield_aspis_with_image_of_a_owl
+    - civ13_shield_spartan_aspis
+    - civ13_shield_egyptian_shield
+    - civ13_shield_praetorian_roman_shield
+
+- type: latheRecipe
+  id: civ13_shield_bronze_shield
+  categories:
+    - AnvilShieldsAncient
+  completetime: 10
+  materials:
+    Bronze: 800
+  result: civ13_shield_bronze_shield
+
+- type: latheRecipe
+  id: civ13_shield_athenian_aspis
+  categories:
+    - AnvilShieldsAncient
+  completetime: 12
+  materials:
+    Bronze: 1000
+  result: civ13_shield_athenian_aspis
+
+- type: latheRecipe
+  id: civ13_shield_aspis_with_image_of_a_pegasus
+  categories:
+    - AnvilShieldsAncient
+  completetime: 12
+  materials:
+    Bronze: 1000
+  result: civ13_shield_aspis_with_image_of_a_pegasus
+
+- type: latheRecipe
+  id: civ13_shield_aspis_with_image_of_a_owl
+  categories:
+    - AnvilShieldsAncient
+  completetime: 12
+  materials:
+    Bronze: 1000
+  result: civ13_shield_aspis_with_image_of_a_owl
+
+- type: latheRecipe
+  id: civ13_shield_spartan_aspis
+  categories:
+    - AnvilShieldsAncient
+  completetime: 12
+  materials:
+    Bronze: 1000
+  result: civ13_shield_spartan_aspis
+
+- type: latheRecipe
+  id: civ13_shield_egyptian_shield
+  categories:
+    - AnvilShieldsAncient
+  completetime: 12
+  materials:
+    Bronze: 800
+  result: civ13_shield_egyptian_shield
+
+- type: latheRecipe
+  id: civ13_shield_praetorian_roman_shield
+  categories:
+    - AnvilShieldsAncient
+  completetime: 12
+  materials:
+    Iron: 1000
+  result: civ13_shield_praetorian_roman_shield
+
+- type: latheRecipePack
+  id: AnvilShieldsMedieval
+  recipes:
+    - civ13_shield_steel_shield
+    - civ13_shield_iron_shield
+    - civ13_shield_semioval_iron_shield
+    - civ13_shield_arabic_round_shield
+
+- type: latheRecipe
+  id: civ13_shield_iron_shield
+  categories:
+    - AnvilShieldsMedieval
+  completetime: 12
+  materials:
+    Iron: 800
+  result: civ13_shield_iron_shield
+
+- type: latheRecipe
+  id: civ13_shield_semioval_iron_shield
+  categories:
+    - AnvilShieldsMedieval
+  completetime: 12
+  materials:
+    Iron: 1000
+  result: civ13_shield_semioval_iron_shield
+
+- type: latheRecipe
+  id: civ13_shield_steel_shield
+  categories:
+    - AnvilShieldsMedieval
+  completetime: 12
+  materials:
+    Steel: 1000
+  result: civ13_shield_steel_shield
+
+- type: latheRecipe
+  id: civ13_shield_arabic_round_shield
+  categories:
+    - AnvilShieldsMedieval
+  completetime: 12
+  materials:
+    Steel: 700
+  result: civ13_shield_arabic_round_shield

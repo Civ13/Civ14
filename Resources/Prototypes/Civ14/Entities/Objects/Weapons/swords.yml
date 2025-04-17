@@ -261,24 +261,6 @@
     - type: DisarmMalus
 
 - type: entity
-  name: Plasmaquan
-  parent: BaseSword
-  id: civ13_sword_Plasmaquan
-  description: A sword based on the longquan.
-  components:
-    - type: Sprite
-      sprite: Civ14/Weapons/plasmaquan.rsi
-    - type: MeleeWeapon
-      damage:
-        types:
-          Slash: 66
-      soundHit:
-        path: /Audio/Weapons/bladeslice.ogg
-    - type: Item
-      sprite: Civ14/Weapons/plasmaquan.rsi
-    - type: DisarmMalus
-
-- type: entity
   name: saif
   parent: BaseSword
   id: civ13_sword_saif
@@ -467,7 +449,7 @@
   description: A small sword, used by hellenic soldiers.
   components:
     - type: Sprite
-      sprite: Civ14/Weapons/xiphos.rsi
+      sprite: Civ14/Weapons/gladius.rsi
     - type: MeleeWeapon
       damage:
         types:
@@ -475,7 +457,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
-      sprite: Civ14/Weapons/xiphos.rsi
+      sprite: Civ14/Weapons/gladius.rsi
     - type: DisarmMalus
 
 - type: entity

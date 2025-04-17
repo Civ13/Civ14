@@ -181,7 +181,7 @@ namespace Content.Client.Construction.UI
                 _selectedCategory = category;
             foreach (var recipe in _prototypeManager.EnumeratePrototypes<ConstructionPrototype>())
             {
-                var CurrentAge = 0; //hardcoded for now
+                var CurrentAge = 1; //hardcoded for now
                 if (recipe.Hide)
                     continue;
                 if (CurrentAge < recipe.AgeMin || CurrentAge > recipe.AgeMax)

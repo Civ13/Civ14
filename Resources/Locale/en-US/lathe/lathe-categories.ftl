@@ -29,3 +29,5 @@ lathe-category-bronze = Bronze
 lathe-category-swords-ancient = Ancient Swords
 lathe-category-swords-medieval = Medieval Swords
 lathe-category-swords-imperial = Imperial Swords
+lathe-category-shields-ancient = Ancient Shields
+lathe-category-shields-medieval = Medieval Shields

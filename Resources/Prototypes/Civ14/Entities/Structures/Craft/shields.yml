@@ -1,0 +1,670 @@
+- type: entity
+  name: nguni shield
+  parent: WoodenBuckler
+  id: civ13_shield_nguni_shield
+  description: A shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/nguni_shield.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.750
+          Slash: 0.750
+          Piercing: 0.750
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.660
+          Slash: 0.660
+          Piercing: 0.660
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/nguni_shield.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 62.5
+          behaviors:
+            - acts:
+                - Destruction
+    - type: Construction
+      graph: civ13_shield_nguni_shield
+      node: end
+- type: entity
+  name: steel shield
+  parent: WoodenBuckler
+  id: civ13_shield_steel_shield
+  description: A shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/steel_shield.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.620
+          Slash: 0.620
+          Piercing: 0.620
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.546
+          Slash: 0.546
+          Piercing: 0.546
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/steel_shield.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 75
+          behaviors:
+            - acts:
+                - Destruction
+
+- type: entity
+  name: iron shield
+  parent: WoodenBuckler
+  id: civ13_shield_iron_shield
+  description: A shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/iron_shield.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.670
+          Slash: 0.670
+          Piercing: 0.670
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.590
+          Slash: 0.590
+          Piercing: 0.590
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/iron_shield.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 62.5
+          behaviors:
+            - acts:
+                - Destruction
+
+- type: entity
+  name: semioval iron shield
+  parent: WoodenBuckler
+  id: civ13_shield_semioval_iron_shield
+  description: A shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/semioval_shield.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.630
+          Slash: 0.630
+          Piercing: 0.630
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.554
+          Slash: 0.554
+          Piercing: 0.554
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/semioval_shield.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 62.5
+          behaviors:
+            - acts:
+                - Destruction
+
+- type: entity
+  name: semioval iron templar shield
+  parent: WoodenBuckler
+  id: civ13_shield_semioval_iron_templar_shield
+  description: A shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/semioval_shield_templar.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.850
+          Slash: 0.850
+          Piercing: 0.850
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.748
+          Slash: 0.748
+          Piercing: 0.748
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/semioval_shield_templar.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 60
+          behaviors:
+            - acts:
+                - Destruction
+
+- type: entity
+  name: semioval iron templar shield
+  parent: WoodenBuckler
+  id: civ13_shield_semioval_iron_templar_shield_2
+  description: A shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/semioval_shield_templar2.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.850
+          Slash: 0.850
+          Piercing: 0.850
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.748
+          Slash: 0.748
+          Piercing: 0.748
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/semioval_shield_templar2.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 60
+          behaviors:
+            - acts:
+                - Destruction
+
+- type: entity
+  name: uruk-hai shield
+  parent: WoodenBuckler
+  id: civ13_shield_uruk_hai_shield
+  description: A shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/orc_shield.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.600
+          Slash: 0.600
+          Piercing: 0.600
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.528
+          Slash: 0.528
+          Piercing: 0.528
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/orc_shield.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 62.5
+          behaviors:
+            - acts:
+                - Destruction
+
+- type: entity
+  name: bronze shield
+  parent: WoodenBuckler
+  id: civ13_shield_bronze_shield
+  description: A shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/bronze_shield.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.750
+          Slash: 0.750
+          Piercing: 0.750
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.65
+          Slash: 0.65
+          Piercing: 0.65
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/bronze_shield.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 57.5
+          behaviors:
+            - acts:
+                - Destruction
+
+- type: entity
+  name: athenian aspis
+  parent: WoodenBuckler
+  id: civ13_shield_athenian_aspis
+  description: A greek shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/athenian_shield.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.650
+          Slash: 0.650
+          Piercing: 0.650
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.572
+          Slash: 0.572
+          Piercing: 0.572
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/athenian_shield.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 57.5
+          behaviors:
+            - acts:
+                - Destruction
+
+- type: entity
+  name: aspis with image of a pegasus
+  parent: WoodenBuckler
+  id: civ13_shield_aspis_with_image_of_a_pegasus
+  description: A greek shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/pegasus_shield.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.650
+          Slash: 0.650
+          Piercing: 0.650
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.572
+          Slash: 0.572
+          Piercing: 0.572
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/pegasus_shield.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 57.5
+          behaviors:
+            - acts:
+                - Destruction
+
+- type: entity
+  name: aspis with image of an owl
+  parent: WoodenBuckler
+  id: civ13_shield_aspis_with_image_of_a_owl
+  description: A greek shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/owl_shield.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.650
+          Slash: 0.650
+          Piercing: 0.650
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.572
+          Slash: 0.572
+          Piercing: 0.572
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/owl_shield.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 57.5
+          behaviors:
+            - acts:
+                - Destruction
+
+- type: entity
+  name: spartan aspis
+  parent: WoodenBuckler
+  id: civ13_shield_spartan_aspis
+  description: A greek shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/spartan_shield.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.650
+          Slash: 0.650
+          Piercing: 0.650
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.572
+          Slash: 0.572
+          Piercing: 0.572
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/spartan_shield.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 57.5
+          behaviors:
+            - acts:
+                - Destruction
+
+- type: entity
+  name: egyptian shield
+  parent: WoodenBuckler
+  id: civ13_shield_egyptian_shield
+  description: A shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/egyptian_shield.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.750
+          Slash: 0.750
+          Piercing: 0.750
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.65
+          Slash: 0.65
+          Piercing: 0.65
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/egyptian_shield.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 57.5
+          behaviors:
+            - acts:
+                - Destruction
+
+- type: entity
+  name: scutum shield
+  parent: WoodenBuckler
+  id: civ13_shield_scutum_shield
+  description: A shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/scutum.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.630
+          Slash: 0.630
+          Piercing: 0.630
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.554
+          Slash: 0.554
+          Piercing: 0.554
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/scutum.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 57.5
+          behaviors:
+            - acts:
+                - Destruction
+    - type: Construction
+      graph: civ13_shield_scutum_shield
+      node: end
+
+- type: entity
+  name: praetorian roman shield
+  parent: WoodenBuckler
+  id: civ13_shield_praetorian_roman_shield
+  description: A shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/prae_roman_shield.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.630
+          Slash: 0.630
+          Piercing: 0.630
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.554
+          Slash: 0.554
+          Piercing: 0.554
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/prae_roman_shield.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 75
+          behaviors:
+            - acts:
+                - Destruction
+
+- type: entity
+  name: chimalli
+  parent: WoodenBuckler
+  id: civ13_shield_chimalli
+  description: A mesoamerican wood shield.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/chimalli.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.700
+          Slash: 0.700
+          Piercing: 0.700
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.616
+          Slash: 0.616
+          Piercing: 0.616
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/chimalli.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 50
+          behaviors:
+            - acts:
+                - Destruction
+    - type: Construction
+      graph: civ13_shield_chimalli
+      node: end
+
+- type: entity
+  name: arabic round shield
+  parent: WoodenBuckler
+  id: civ13_shield_arabic_round_shield
+  description: A shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/arabic_shield.rsi
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.700
+          Slash: 0.700
+          Piercing: 0.700
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.616
+          Slash: 0.616
+          Piercing: 0.616
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      sprite: Civ14/Weapons/arabic_shield.rsi
+    - type: Destructible
+      thresholds:
+        - trigger:
+            damage: 50
+          behaviors:
+            - acts:
+                - Destruction
+
+- type: construction
+  name: nguni shield
+  id: civ13_shield_nguni_shield
+  graph: civ13_shield_nguni_shield
+  startNode: start
+  targetNode: end
+  category: weapons
+  description: "An african wooden shield."
+  icon:
+    sprite: Civ14/Weapons/nguni_shield.rsi
+    state: icon
+  objectType: Item
+  agemin: 1
+  agemax: 3
+
+- type: constructionGraph
+  id: civ13_shield_nguni_shield
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 6
+              doAfter: 10
+    - node: end
+      entity: civ13_shield_nguni_shield
+- type: construction
+  name: scutum shield
+  id: civ13_shield_scutum_shield
+  graph: civ13_shield_scutum_shield
+  startNode: start
+  targetNode: end
+  category: weapons
+  description: A rounded rectangular shield, with celtic motifs.
+  icon:
+    sprite: Civ14/Weapons/scutum.rsi
+    state: icon
+  objectType: Item
+  agemin: 1
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_shield_scutum_shield
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 6
+              doAfter: 10
+    - node: end
+      entity: civ13_shield_scutum_shield
+- type: construction
+  name: chimalli
+  id: civ13_shield_chimalli
+  graph: civ13_shield_chimalli
+  startNode: start
+  targetNode: end
+  category: weapons
+  description: An oval Mesoamerican shield, furnished with feathers.
+  icon:
+    sprite: Civ14/Weapons/chimalli.rsi
+    state: icon
+  objectType: Item
+  agemin: 1
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_shield_chimalli
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 6
+              doAfter: 10
+    - node: end
+      entity: civ13_shield_chimalli
