@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "license": "AGPL-3.0",
+  "copyright": "Exported from https://github.com/civ13/civ13",
+  "size": {
+    "width": 32,
+    "height": 32
+  },
+  "states": [
+    {
+      "name": "dagger",
+      "directions": 1
+    },
+    {
+      "name": "icon",
+      "directions": 1
+    }
+  ]
+}

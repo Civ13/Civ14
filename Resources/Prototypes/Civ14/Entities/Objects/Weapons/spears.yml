@@ -1,0 +1,299 @@
+- type: entity
+  name: assagai spear
+  parent: Spear
+  id: civ13_spear_assagai
+  description: >-
+    A long hafted wood spear with a finely sharpened iron point; rewnown for
+    being the weapon of choice of zulu warriors.
+  components:
+    - type: Sprite
+      sprite: Civ14/Weapons/assagai.rsi
+    - type: MeleeWeapon
+      damage:
+        types:
+          Slash: 44
+      soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+    - type: Item
+      sprite: Civ14/Weapons/assagai.rsi
+    - type: DisarmMalus
+    - type: Construction
+      graph: civ13_spear_assagai
+      node: end
+- type: entity
+  name: dory
+  parent: Spear
+  id: civ13_spear_dory
+  description: A 2 meter long spear, used by soldiers of the Hellenic culture.
+  components:
+    - type: Sprite
+      sprite: Civ14/Weapons/dory.rsi
+    - type: MeleeWeapon
+      damage:
+        types:
+          Slash: 47
+      soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+    - type: Item
+      sprite: Civ14/Weapons/dory.rsi
+    - type: DisarmMalus
+    - type: Construction
+      graph: civ13_spear_dory
+      node: end
+- type: entity
+  name: sarissa
+  parent: Spear
+  id: civ13_spear_sarissa
+  description: A 5 meter long spear, used by phalanx soldiers.
+  components:
+    - type: Sprite
+      sprite: Civ14/Weapons/sarissa.rsi
+    - type: MeleeWeapon
+      damage:
+        types:
+          Slash: 47
+      soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+    - type: Item
+      sprite: Civ14/Weapons/sarissa.rsi
+    - type: DisarmMalus
+    - type: Construction
+      graph: civ13_spear_sarissa
+      node: end
+
+- type: entity
+  name: pike
+  parent: Spear
+  id: civ13_spear_pike
+  description: A long spear.
+  components:
+    - type: Sprite
+      sprite: Civ14/Weapons/pike.rsi
+    - type: MeleeWeapon
+      damage:
+        types:
+          Slash: 47
+      soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+    - type: Item
+      sprite: Civ14/Weapons/pike.rsi
+    - type: DisarmMalus
+    - type: Construction
+      graph: civ13_spear_pike
+      node: end
+- type: entity
+  name: naginata
+  parent: Spear
+  id: civ13_spear_naginata
+  description: >-
+    A wood staff with a blade on the end, good for impaling those who insult
+    your lord.
+  components:
+    - type: Sprite
+      sprite: Civ14/Weapons/naginata.rsi
+    - type: MeleeWeapon
+      damage:
+        types:
+          Slash: 47
+      soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+    - type: Item
+      sprite: Civ14/Weapons/naginata.rsi
+    - type: DisarmMalus
+    - type: Construction
+      graph: civ13_spear_naginata
+      node: end
+- type: entity
+  name: halberd
+  parent: Spear
+  id: civ13_spear_halberd
+  description: A spear topped by an axe blade.
+  components:
+    - type: Sprite
+      sprite: Civ14/Weapons/halberd.rsi
+    - type: MeleeWeapon
+      damage:
+        types:
+          Slash: 44
+      soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+    - type: Item
+      sprite: Civ14/Weapons/halberd.rsi
+    - type: DisarmMalus
+    - type: Construction
+      graph: civ13_spear_halberd
+      node: end
+
+- type: construction
+  name: assagai spear
+  id: civ13_spear_assagai
+  graph: civ13_spear_assagai
+  startNode: start
+  targetNode: end
+  category: weapons
+  description: >-
+    A long hafted wood spear with a finely sharpened iron point; rewnown for
+    being the weapon of choice of zulu warriors.
+  icon:
+    sprite: Civ14/Weapons/assagai.rsi
+    state: icon
+  objectType: Item
+  agemin: 2
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_spear_assagai
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Iron
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_spear_assagai
+- type: construction
+  name: dory
+  id: civ13_spear_dory
+  graph: civ13_spear_dory
+  startNode: start
+  targetNode: end
+  category: weapons
+  description: A 2 meter long spear, used by soldiers of the Hellenic culture.
+  icon:
+    sprite: Civ14/Weapons/dory.rsi
+    state: icon
+  objectType: Item
+  agemin: 1
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_spear_dory
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 6
+              doAfter: 7
+    - node: end
+      entity: civ13_spear_dory
+- type: construction
+  name: sarissa
+  id: civ13_spear_sarissa
+  graph: civ13_spear_sarissa
+  startNode: start
+  targetNode: end
+  category: weapons
+  description: A 5 meter long spear, used by phalanx soldiers.
+  icon:
+    sprite: Civ14/Weapons/sarissa.rsi
+    state: icon
+  objectType: Item
+  agemin: 1
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_spear_sarissa
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 8
+              doAfter: 9
+    - node: end
+      entity: civ13_spear_sarissa
+
+- type: construction
+  name: pike
+  id: civ13_spear_pike
+  graph: civ13_spear_pike
+  startNode: start
+  targetNode: end
+  category: weapons
+  description: A long spear.
+  icon:
+    sprite: Civ14/Weapons/pike.rsi
+    state: icon
+  objectType: Item
+  agemin: 2
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_spear_pike
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_spear_pike
+- type: construction
+  name: naginata
+  id: civ13_spear_naginata
+  graph: civ13_spear_naginata
+  startNode: start
+  targetNode: end
+  category: weapons
+  description: >-
+    A wood staff with a blade on the end, good for impaling those who insult
+    your lord.
+  icon:
+    sprite: Civ14/Weapons/naginata.rsi
+    state: icon
+  objectType: Item
+  agemin: 2
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_spear_naginata
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_spear_naginata
+- type: construction
+  name: halberd
+  id: civ13_spear_halberd
+  graph: civ13_spear_halberd
+  startNode: start
+  targetNode: end
+  category: weapons
+  description: A spear topped by an axe blade.
+  icon:
+    sprite: Civ14/Weapons/halberd.rsi
+    state: icon
+  objectType: Item
+  agemin: 2
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_spear_halberd
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: civ13_spear_halberd

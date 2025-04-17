@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "width": 64,
+    "height": 64
+  },
+  "states": [
+    {
+      "name": "sarissa",
+      "directions": 1
+    },
+    {
+      "name": "equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "equipped-BELT",
+      "directions": 4
+    },
+    {
+      "name": "icon",
+      "directions": 1
+    }
+  ]
+}

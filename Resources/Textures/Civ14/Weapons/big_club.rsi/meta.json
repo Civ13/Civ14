@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "width": 32,
+    "height": 32
+  },
+  "states": [
+    {
+      "name": "big_club",
+      "directions": 1
+    },
+    {
+      "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    }
+  ]
+}

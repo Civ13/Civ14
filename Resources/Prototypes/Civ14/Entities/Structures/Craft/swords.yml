@@ -1,0 +1,295 @@
+- type: latheCategory
+  id: AnvilSwordsAncient
+  name: lathe-category-swords-ancient
+
+- type: latheCategory
+  id: AnvilSwordsMedieval
+  name: lathe-category-swords-medieval
+
+- type: latheCategory
+  id: AnvilSwordsImperial
+  name: lathe-category-swords-imperial
+
+- type: latheRecipePack
+  id: AnvilSwordsAncient
+  recipes:
+    - civ13_sword_gaelic
+    - civ13_sword_longquan
+    - civ13_sword_gladius
+    - civ13_sword_gaelic_shortsword
+    - civ13_sword_khopesh
+    - civ13_sword_xiphos
+
+- type: latheRecipePack
+  id: AnvilSwordsMedieval
+  recipes:
+    - civ13_sword_katana
+    - civ13_sword_wakazashi
+    - civ13_sword_small_sword
+    - civ13_sword_arming_sword
+    - civ13_sword_carolingian_sword
+    - civ13_sword_mersks_sword
+    - civ13_sword_scimitar
+    - civ13_sword_saif
+    - civ13_sword_sabre
+    - civ13_sword_longsword
+    - civ13_sword_Zweihander
+    - civ13_sword_claymore
+    - civ13_sword_broadsword
+    - civ13_sword_ceremonial_saif_sword
+    - civ13_sword_ceremonial_scimitar_sword
+
+- type: latheRecipePack
+  id: AnvilSwordsImperial
+  recipes:
+    - civ13_sword_katana
+    - civ13_sword_wakazashi
+    - civ13_sword_spadroon
+    - civ13_sword_bolo
+    - civ13_sword_kukri
+    - civ13_sword_cutlass
+    - civ13_sword_saif
+    - civ13_sword_sabre
+    - civ13_sword_rapier
+    - civ13_sword_shashka_sword
+    - civ13_sword_ceremonial_saif_sword
+    - civ13_sword_ceremonial_scimitar_sword
+
+- type: latheRecipe
+  id: civ13_sword_katana
+  categories:
+    - AnvilSwordsMedieval
+    - AnvilSwordsImperial
+  completetime: 10
+  materials:
+    Steel: 1000
+  result: civ13_sword_katana
+
+- type: latheRecipe
+  id: civ13_sword_wakazashi
+  categories:
+    - AnvilSwordsMedieval
+    - AnvilSwordsImperial
+  completetime: 10
+  materials:
+    Steel: 800
+  result: civ13_sword_wakazashi
+
+- type: latheRecipe
+  id: civ13_sword_small_sword
+  categories:
+    - AnvilSwordsMedieval
+  completetime: 10
+  materials:
+    Iron: 700
+  result: civ13_sword_small_sword
+
+- type: latheRecipe
+  id: civ13_sword_spadroon
+  categories:
+    - AnvilSwordsImperial
+  completetime: 10
+  materials:
+    Steel: 1000
+  result: civ13_sword_spadroon
+
+- type: latheRecipe
+  id: civ13_sword_arming_sword
+  categories:
+    - AnvilSwordsMedieval
+  completetime: 10
+  materials:
+    Steel: 1000
+  result: civ13_sword_arming_sword
+
+- type: latheRecipe
+  id: civ13_sword_carolingian_sword
+  categories:
+    - AnvilSwordsMedieval
+  completetime: 10
+  materials:
+    Iron: 600
+  result: civ13_sword_carolingian_sword
+
+- type: latheRecipe
+  id: civ13_sword_mersks_sword
+  categories:
+    - AnvilSwordsMedieval
+  completetime: 10
+  materials:
+    Iron: 600
+  result: civ13_sword_mersks_sword
+
+- type: latheRecipe
+  id: civ13_sword_bolo
+  categories:
+    - AnvilSwordsImperial
+  completetime: 10
+  materials:
+    Steel: 1000
+  result: civ13_sword_bolo
+
+- type: latheRecipe
+  id: civ13_sword_kukri
+  categories:
+    - AnvilSwordsImperial
+  completetime: 10
+  materials:
+    Steel: 1000
+  result: civ13_sword_kukri
+
+- type: latheRecipe
+  id: civ13_sword_cutlass
+  categories:
+    - AnvilSwordsImperial
+  completetime: 10
+  materials:
+    Steel: 900
+  result: civ13_sword_cutlass
+
+- type: latheRecipe
+  id: civ13_sword_scimitar
+  categories:
+    - AnvilSwordsMedieval
+  completetime: 10
+  materials:
+    Steel: 900
+  result: civ13_sword_scimitar
+
+- type: latheRecipe
+  id: civ13_sword_longquan
+  categories:
+    - AnvilSwordsAncient
+    - AnvilSwordsMedieval
+  completetime: 10
+  materials:
+    Iron: 900
+  result: civ13_sword_longquan
+
+- type: latheRecipe
+  id: civ13_sword_saif
+  categories:
+    - AnvilSwordsMedieval
+  completetime: 10
+  materials:
+    Steel: 1000
+  result: civ13_sword_saif
+
+- type: latheRecipe
+  id: civ13_sword_sabre
+  categories:
+    - AnvilSwordsImperial
+  completetime: 10
+  materials:
+    Steel: 900
+  result: civ13_sword_sabre
+
+- type: latheRecipe
+  id: civ13_sword_longsword
+  categories:
+    - AnvilSwordsMedieval
+  completetime: 12
+  materials:
+    Steel: 1200
+  result: civ13_sword_longsword
+
+- type: latheRecipe
+  id: civ13_sword_Zweihander
+  categories:
+    - AnvilSwordsMedieval
+  completetime: 18
+  materials:
+    Steel: 1500
+  result: civ13_sword_Zweihander
+
+- type: latheRecipe
+  id: civ13_sword_claymore
+  categories:
+    - AnvilSwordsMedieval
+  completetime: 18
+  materials:
+    Steel: 1500
+  result: civ13_sword_claymore
+
+- type: latheRecipe
+  id: civ13_sword_rapier
+  categories:
+    - AnvilSwordsImperial
+  completetime: 10
+  materials:
+    Steel: 800
+  result: civ13_sword_rapier
+
+- type: latheRecipe
+  id: civ13_sword_broadsword
+  categories:
+    - AnvilSwordsMedieval
+  completetime: 20
+  materials:
+    Steel: 2000
+  result: civ13_sword_broadsword
+
+- type: latheRecipe
+  id: civ13_sword_gladius
+  categories:
+    - AnvilSwordsAncient
+  completetime: 10
+  materials:
+    Iron: 700
+  result: civ13_sword_gladius
+
+- type: latheRecipe
+  id: civ13_sword_gaelic_shortsword
+  categories:
+    - AnvilSwordsAncient
+  completetime: 10
+  materials:
+    Iron: 700
+  result: civ13_sword_gaelic_shortsword
+
+- type: latheRecipe
+  id: civ13_sword_khopesh
+  categories:
+    - AnvilSwordsAncient
+  completetime: 10
+  materials:
+    Iron: 900
+  result: civ13_sword_khopesh
+
+- type: latheRecipe
+  id: civ13_sword_xiphos
+  categories:
+    - AnvilSwordsAncient
+  completetime: 10
+  materials:
+    Iron: 900
+  result: civ13_sword_xiphos
+
+- type: latheRecipe
+  id: civ13_sword_shashka_sword
+  categories:
+    - AnvilSwordsImperial
+  completetime: 10
+  materials:
+    Steel: 900
+  result: civ13_sword_shashka_sword
+
+- type: latheRecipe
+  id: civ13_sword_ceremonial_saif_sword
+  categories:
+    - AnvilSwordsMedieval
+    - AnvilSwordsImperial
+  completetime: 10
+  materials:
+    Steel: 800 # Reduced cost for ceremonial?
+  result: civ13_sword_ceremonial_saif_sword
+
+- type: latheRecipe
+  id: civ13_sword_ceremonial_scimitar_sword
+  categories:
+    - AnvilSwordsMedieval
+    - AnvilSwordsImperial
+  completetime: 10
+  materials:
+    Steel: 800 # Reduced cost for ceremonial?
+  result: civ13_sword_ceremonial_scimitar_sword

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "license": "AGPL-3.0",
+  "copyright": "Exported from https://github.com/civ13/civ13",
+  "size": {
+    "width": 64,
+    "height": 64
+  },
+  "states": [
+    {
+      "name": "boltf",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ],
+      "directions": 4
+    },
+    {
+      "name": "icon",
+      "directions": 4
+    }
+  ]
+}

@@ -26,3 +26,6 @@ lathe-category-neck = Neck
 lathe-category-fletcher = Fletcher
 lathe-category-gold = Gold
 lathe-category-bronze = Bronze
+lathe-category-swords-ancient = Ancient Swords
+lathe-category-swords-medieval = Medieval Swords
+lathe-category-swords-imperial = Imperial Swords
