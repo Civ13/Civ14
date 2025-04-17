@@ -27,7 +27,7 @@
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
-            damage: 62.5
+            damage: 62
 
           behaviors:
             - !type:DoActsBehavior
@@ -99,7 +99,7 @@
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
-            damage: 62.5
+            damage: 62
 
           behaviors:
             - !type:DoActsBehavior
@@ -134,7 +134,7 @@
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
-            damage: 62.5
+            damage: 62
 
           behaviors:
             - !type:DoActsBehavior
@@ -239,7 +239,7 @@
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
-            damage: 62.5
+            damage: 62
 
           behaviors:
             - !type:DoActsBehavior
@@ -274,7 +274,7 @@
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
-            damage: 57.5
+            damage: 57
 
           behaviors:
             - !type:DoActsBehavior
@@ -309,7 +309,7 @@
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
-            damage: 57.5
+            damage: 57
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]
@@ -343,7 +343,7 @@
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
-            damage: 57.5
+            damage: 57
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]
@@ -377,7 +377,7 @@
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
-            damage: 57.5
+            damage: 57
 
           behaviors:
             - !type:DoActsBehavior
@@ -412,7 +412,7 @@
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
-            damage: 57.5
+            damage: 57
 
           behaviors:
             - !type:DoActsBehavior
@@ -447,7 +447,7 @@
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
-            damage: 57.5
+            damage: 57
 
           behaviors:
             - !type:DoActsBehavior
@@ -482,7 +482,7 @@
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
-            damage: 57.5
+            damage: 57
 
           behaviors:
             - !type:DoActsBehavior
