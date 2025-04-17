@@ -26,11 +26,12 @@
       sprite: Civ14/Weapons/nguni_shield.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 62.5
+
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
     - type: Construction
       graph: civ13_shield_nguni_shield
       node: end
@@ -62,11 +63,12 @@
       sprite: Civ14/Weapons/steel_shield.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 75
+
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   name: iron shield
@@ -96,11 +98,12 @@
       sprite: Civ14/Weapons/iron_shield.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 62.5
+
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   name: semioval iron shield
@@ -130,11 +133,12 @@
       sprite: Civ14/Weapons/semioval_shield.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 62.5
+
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   name: semioval iron templar shield
@@ -164,11 +168,12 @@
       sprite: Civ14/Weapons/semioval_shield_templar.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 60
+
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   name: semioval iron templar shield
@@ -198,11 +203,12 @@
       sprite: Civ14/Weapons/semioval_shield_templar2.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 60
+
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   name: uruk-hai shield
@@ -232,11 +238,12 @@
       sprite: Civ14/Weapons/orc_shield.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 62.5
+
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   name: bronze shield
@@ -266,11 +273,12 @@
       sprite: Civ14/Weapons/bronze_shield.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 57.5
+
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   name: athenian aspis
@@ -300,11 +308,11 @@
       sprite: Civ14/Weapons/athenian_shield.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 57.5
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   name: aspis with image of a pegasus
@@ -334,11 +342,11 @@
       sprite: Civ14/Weapons/pegasus_shield.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 57.5
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   name: aspis with image of an owl
@@ -368,11 +376,12 @@
       sprite: Civ14/Weapons/owl_shield.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 57.5
+
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   name: spartan aspis
@@ -402,11 +411,12 @@
       sprite: Civ14/Weapons/spartan_shield.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 57.5
+
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   name: egyptian shield
@@ -436,11 +446,12 @@
       sprite: Civ14/Weapons/egyptian_shield.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 57.5
+
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   name: scutum shield
@@ -470,11 +481,12 @@
       sprite: Civ14/Weapons/scutum.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 57.5
+
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
     - type: Construction
       graph: civ13_shield_scutum_shield
       node: end
@@ -507,11 +519,12 @@
       sprite: Civ14/Weapons/prae_roman_shield.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 75
+
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   name: chimalli
@@ -541,11 +554,12 @@
       sprite: Civ14/Weapons/chimalli.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 50
+
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
     - type: Construction
       graph: civ13_shield_chimalli
       node: end
@@ -578,11 +592,12 @@
       sprite: Civ14/Weapons/arabic_shield.rsi
     - type: Destructible
       thresholds:
-        - trigger:
+        - trigger: !type:DamageTrigger
             damage: 50
+
           behaviors:
-            - acts:
-                - Destruction
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: construction
   name: nguni shield
