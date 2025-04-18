@@ -11,7 +11,7 @@
       key: enum.MedBookUiKey.Key
     - type: UserInterface
       interfaces:
-        enum.MedBookrUiKey.Key:
+        enum.MedBookUiKey.Key:
           type: MedBookBoundUserInterface
     - type: MedBook
     - type: Appearance
