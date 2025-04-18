@@ -14,6 +14,8 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Content.Shared.Coordinates; // Added for Log
+using Robust.Shared.Utility; // Added for FormattedMessage
 
 namespace Content.Server.Botany.Systems;
 
@@ -149,30 +151,33 @@ public sealed partial class BotanySystem : EntitySystem
 
         var products = new List<EntityUid>();
 
-        if (totalYield > 1 || proto.HarvestRepeat != HarvestType.NoRepeat)
+        // If yield is > 1 OR there's more than one product type OR harvest repeats, it's not unique.
+        if (totalYield > 1 || proto.ProductPrototypes.Count > 1 || proto.HarvestRepeat != HarvestType.NoRepeat)
             proto.Unique = false;
 
         for (var i = 0; i < totalYield; i++)
         {
-            var product = _robustRandom.Pick(proto.ProductPrototypes);
-
-            var entity = Spawn(product, position);
-            _randomHelper.RandomOffset(entity, 0.25f);
-            products.Add(entity);
-
-            var produce = EnsureComp<ProduceComponent>(entity);
-
-            produce.Seed = proto;
-            ProduceGrown(entity, produce);
-
-            _appearance.SetData(entity, ProduceVisuals.Potency, proto.Potency);
-
-            if (proto.Mysterious)
+            // Iterate through ALL product prototypes defined in the seed data
+            foreach (var productPrototypeId in proto.ProductPrototypes)
             {
-                var metaData = MetaData(entity);
-                _metaData.SetEntityName(entity, metaData.EntityName + "?", metaData);
-                _metaData.SetEntityDescription(entity,
-                    metaData.EntityDescription + " " + Loc.GetString("botany-mysterious-description-addon"), metaData);
+                var entity = Spawn(productPrototypeId, position);
+                _randomHelper.RandomOffset(entity, 0.25f);
+                products.Add(entity);
+
+                var produce = EnsureComp<ProduceComponent>(entity);
+
+                produce.Seed = proto;
+                ProduceGrown(entity, produce); // Apply specific produce logic (like solutions)
+
+                _appearance.SetData(entity, ProduceVisuals.Potency, proto.Potency);
+
+                if (proto.Mysterious)
+                {
+                    var metaData = MetaData(entity);
+                    _metaData.SetEntityName(entity, metaData.EntityName + "?", metaData);
+                    _metaData.SetEntityDescription(entity,
+                        metaData.EntityDescription + " " + Loc.GetString("botany-mysterious-description-addon"), metaData);
+                }
             }
         }
 

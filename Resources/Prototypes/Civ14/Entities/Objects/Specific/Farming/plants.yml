@@ -7,6 +7,7 @@
   packetPrototype: HealingHerbsSeedsCiv
   productPrototypes:
     - HealingHerbs
+    - HealingHerbsSeedsCiv
   lifespan: 25
   maturation: 10
   production: 3
@@ -33,6 +34,7 @@
   packetPrototype: ComfreySeedsCiv
   productPrototypes:
     - ComfreyHealingHerbs
+    - ComfreySeedsCiv
   lifespan: 20
   maturation: 8
   production: 3
@@ -55,6 +57,7 @@
   packetPrototype: YarrowSeedsCiv
   productPrototypes:
     - YarrowHealingHerbs
+    - YarrowSeedsCiv
   lifespan: 20
   maturation: 8
   production: 3
@@ -77,6 +80,7 @@
   packetPrototype: ElderflowerSeedsCiv
   productPrototypes:
     - ElderflowerHealingHerbs
+    - ElderflowerSeedsCiv
   lifespan: 22
   maturation: 10
   production: 3
@@ -99,6 +103,7 @@
   packetPrototype: MilkThistleSeedsCiv
   productPrototypes:
     - MilkThistleHealingHerbs
+    - MilkThistleSeedsCiv
   lifespan: 15
   maturation: 6
   production: 3
