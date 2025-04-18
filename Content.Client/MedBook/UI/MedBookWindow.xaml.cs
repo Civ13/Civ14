@@ -60,16 +60,6 @@ namespace Content.Client.MedBook.UI
 
             NoPatientDataText.Visible = false;
 
-            // Scan Mode
-
-            ScanModeLabel.Text = msg.ScanMode.HasValue
-                ? msg.ScanMode.Value
-                    ? Loc.GetString("health-analyzer-window-scan-mode-active")
-                    : Loc.GetString("health-analyzer-window-scan-mode-inactive")
-                : Loc.GetString("health-analyzer-window-entity-unknown-text");
-
-            ScanModeLabel.FontColorOverride = msg.ScanMode.HasValue && msg.ScanMode.Value ? Color.Green : Color.Red;
-
             // Patient Information
 
             SpriteView.SetEntity(target.Value);
@@ -90,23 +80,37 @@ namespace Content.Client.MedBook.UI
                     : Loc.GetString("health-analyzer-window-entity-unknown-species-text");
 
             // Basic Diagnostic
-            var parsedBlood = Loc.GetString("medbook-status-normal");;
+            var parsedBlood = Loc.GetString("medbook-status-normal");
+            BloodLabel.FontColorOverride = Color.Green;
             if (msg.BloodLevel <= 0.6)
             {
                 parsedBlood = Loc.GetString("medbook-status-critical");
+                BloodLabel.FontColorOverride = Color.Red;
             }
             else if (msg.BloodLevel <= 0.8)
             {
                 parsedBlood = Loc.GetString("medbook-status-low");
+                BloodLabel.FontColorOverride = Color.Yellow;
+
             }
             BloodLabel.Text = !float.IsNaN(msg.BloodLevel)
-                ? $"{parsedBlood}"
+                ? parsedBlood
                 : Loc.GetString("health-analyzer-window-entity-unknown-value-text");
-
-            StatusLabel.Text =
-                _entityManager.TryGetComponent<MobStateComponent>(target.Value, out var mobStateComponent)
-                    ? GetStatus(mobStateComponent.CurrentState)
-                    : Loc.GetString("health-analyzer-window-entity-unknown-text");
+            StatusLabel.Text = Loc.GetString("health-analyzer-window-entity-alive-text");
+            StatusLabel.FontColorOverride = Color.Green;
+            if (_entityManager.TryGetComponent<MobStateComponent>(target.Value, out var mobStateComponent))
+            {
+                if (mobStateComponent.CurrentState == MobState.Critical)
+                {
+                    StatusLabel.FontColorOverride = Color.Yellow;
+                    StatusLabel.Text = Loc.GetString("health-analyzer-window-entity-critical-text");
+                }
+                else if (mobStateComponent.CurrentState == MobState.Dead)
+                {
+                    StatusLabel.FontColorOverride = Color.Red;
+                    StatusLabel.Text = Loc.GetString("health-analyzer-window-entity-dead-text");
+                }
+            }
 
             // Alerts
 
@@ -166,11 +170,33 @@ namespace Content.Client.MedBook.UI
             {
                 if (damageAmount == 0)
                     continue;
+                var parsedDamage = "None";
+                var color = Color.Green;
+                if (damageAmount > 0 && damageAmount <= 20)
+                {
+                    parsedDamage = "Minimal";
+                    color = Color.Yellow;
+                }
+                else if (damageAmount <= 60)
+                {
+                    parsedDamage = "Medium";
+                    color = Color.Orange;
+                }
+                else if (damageAmount <= 100)
+                {
+                    parsedDamage = "High";
+                    color = Color.Red;
 
+                }
+                else
+                {
+                    parsedDamage = "Extreme";
+                    color = Color.DarkRed;
+                }
                 var groupTitleText = $"{Loc.GetString(
                     "health-analyzer-window-damage-group-text",
                     ("damageGroup", _prototypes.Index<DamageGroupPrototype>(damageGroupId).LocalizedName),
-                    ("amount", damageAmount)
+                    ("amount", parsedDamage)
                 )}";
 
                 var groupContainer = new BoxContainer
@@ -179,26 +205,9 @@ namespace Content.Client.MedBook.UI
                     Orientation = BoxContainer.LayoutOrientation.Vertical,
                 };
 
-                groupContainer.AddChild(CreateDiagnosticGroupTitle(groupTitleText, damageGroupId));
+                groupContainer.AddChild(CreateDiagnosticGroupTitle(groupTitleText, damageGroupId, color));
 
                 GroupsContainer.AddChild(groupContainer);
-
-                // Show the damage for each type in that group.
-                var group = _prototypes.Index<DamageGroupPrototype>(damageGroupId);
-
-                foreach (var type in group.DamageTypes)
-                {
-                    if (!damageDict.TryGetValue(type, out var typeAmount) || typeAmount <= 0)
-                        continue;
-
-                    var damageString = Loc.GetString(
-                        "health-analyzer-window-damage-type-text",
-                        ("damageType", _prototypes.Index<DamageTypePrototype>(type).LocalizedName),
-                        ("amount", typeAmount)
-                    );
-
-                    groupContainer.AddChild(CreateDiagnosticItemLabel(damageString.Insert(0, " · ")));
-                }
             }
         }
 
@@ -216,15 +225,16 @@ namespace Content.Client.MedBook.UI
             return _spriteSystem.Frame0(rsiSprite);
         }
 
-        private static Label CreateDiagnosticItemLabel(string text)
+        private static Label CreateDiagnosticItemLabel(string text, Color color)
         {
             return new Label
             {
                 Text = text,
+                FontColorOverride = color
             };
         }
 
-        private BoxContainer CreateDiagnosticGroupTitle(string text, string id)
+        private BoxContainer CreateDiagnosticGroupTitle(string text, string id, Color color)
         {
             var rootContainer = new BoxContainer
             {
@@ -239,7 +249,7 @@ namespace Content.Client.MedBook.UI
                 Texture = GetTexture(id.ToLower())
             });
 
-            rootContainer.AddChild(CreateDiagnosticItemLabel(text));
+            rootContainer.AddChild(CreateDiagnosticItemLabel(text, color));
 
             return rootContainer;
         }

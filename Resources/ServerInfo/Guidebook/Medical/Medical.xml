@@ -5,6 +5,14 @@ In the Stone age, most of the medicine you will find is restricted to bandages a
 
 <GuideEntityEmbed Entity="GauzeLeather" /> You can craft bandages from [bold]cloth[/bold] and [bold]leather[/bold]. They will help you stop bleeding.
 
+## Doctor's Handbook
+
+<GuideEntityEmbed Entity="DoctorsHandbook" />
+
+The doctor's handbook is a tool that can be used to help you diagnose patients. It will give you a rough overview of their status, and any damages they might have.
+
+## Medicinal Herbs
+
 You can find medicinal herbs growing wild around the map. If you harvest them, you will also get some seeds so you can plant them yourself.
 
 <GuideEntityEmbed Entity="WildPlantElderflower" /><GuideEntityEmbed Entity="ElderflowerHealingHerbs" />
