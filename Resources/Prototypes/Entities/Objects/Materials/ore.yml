@@ -345,7 +345,7 @@
     - type: Item
       heldPrefix: coal
     - type: BurnFuel
-      burnTime: 4
+      burnTime: 5
 
 - type: entity
   parent: Coal
