@@ -88,3 +88,17 @@ Entries:
     id: 5
     time: "2025-04-17T00:00:00.0000000+00:00"
     url: https://github.com/Civ13/Civ14/pull/121
+
+  - author: Taislin
+    changes:
+      - message: Adds the doctor's handbook as a simplified health analyser.
+        type: Add
+      - message: Buffed bed healing rates.
+        type: Tweak
+      - message: Reduced threshold of current blood to inflict bloodloss damage.
+        type: Tweak
+      - message: Buffed healing effect from herbs.
+        type: Tweak
+    id: 5
+    time: "2025-04-18T00:00:00.0000000+00:00"
+    url: https://github.com/Civ13/Civ14/pull/122

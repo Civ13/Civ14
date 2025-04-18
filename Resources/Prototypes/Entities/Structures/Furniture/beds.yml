@@ -7,8 +7,14 @@
     - type: HealOnBuckle
       damage:
         types:
-          Poison: -0.1
-          Blunt: -0.1
+          Poison: -0.2
+          Cold: -0.1
+          Shock: -0.1
+          Blunt: -0.2
+          Bloodloss: -0.1
+          Asphyxiation: -0.1
+        groups:
+          Brute: -0.1
     - type: Physics
       bodyType: Static
     - type: Fixtures

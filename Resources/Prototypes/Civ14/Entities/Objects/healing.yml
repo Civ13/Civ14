@@ -53,7 +53,7 @@
         - Biological
       damage:
         types:
-          Bloodloss: -10
+          Bloodloss: -24
       healingBeginSound:
         path: "/Audio/Items/Medical/ointment_begin.ogg"
       healingEndSound:
@@ -83,7 +83,7 @@
         - Biological
       damage:
         groups:
-          Brute: -10
+          Brute: -18
       healingBeginSound:
         path: "/Audio/Items/Medical/ointment_begin.ogg"
       healingEndSound:
@@ -113,7 +113,7 @@
         - Biological
       damage:
         types:
-          Poison: -10
+          Poison: -12
       healingBeginSound:
         path: "/Audio/Items/Medical/ointment_begin.ogg"
       healingEndSound:
@@ -143,7 +143,7 @@
         - Biological
       damage:
         types:
-          Asphyxiation: -8
+          Asphyxiation: -16
       healingBeginSound:
         path: "/Audio/Items/Medical/ointment_begin.ogg"
       healingEndSound:
