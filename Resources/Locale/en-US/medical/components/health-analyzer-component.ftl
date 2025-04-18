@@ -3,9 +3,9 @@ health-analyzer-window-entity-unknown-text = Unknown
 health-analyzer-window-entity-unknown-species-text = Non-Humanoid
 health-analyzer-window-entity-unknown-value-text = N/A
 
-health-analyzer-window-entity-alive-text = Alive
-health-analyzer-window-entity-dead-text = Dead
-health-analyzer-window-entity-critical-text = Critical
+health-analyzer-window-entity-alive-text = [color=green]Alive[/color]
+health-analyzer-window-entity-dead-text = [color=red]Dead[/color]
+health-analyzer-window-entity-critical-text = [color=yellow]Critical[/color]
 
 health-analyzer-window-entity-temperature-text = Temperature:
 health-analyzer-window-entity-blood-level-text = Blood Level:
@@ -23,3 +23,8 @@ health-analyzer-window-scan-mode-active = Active
 health-analyzer-window-scan-mode-inactive = Inactive
 
 health-analyzer-popup-scan-target = {CAPITALIZE(THE($user))} is trying to scan you!
+
+medbook-popup-scan-target = {CAPITALIZE(THE($user))} is trying to examine you!
+medbook-status-critical = [color=red]Critical[/color]
+medbook-status-low = [color=yellow]Low[/color]
+medbook-status-normal = Normal

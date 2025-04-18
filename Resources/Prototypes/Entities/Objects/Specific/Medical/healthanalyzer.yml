@@ -25,8 +25,6 @@
     - type: ItemToggle
       onUse: false
     - type: HealthAnalyzer
-      scanningEndSound:
-        path: "/Audio/Items/Medical/healthscanner.ogg"
     - type: Tag
       tags:
         - DiscreteHealthAnalyzer

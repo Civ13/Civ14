@@ -60,7 +60,7 @@ namespace Content.Server.Body.Components
         ///     What percentage of current blood is necessary to avoid dealing blood loss damage?
         /// </summary>
         [DataField]
-        public float BloodlossThreshold = 0.8f;
+        public float BloodlossThreshold = 0.75f;
 
         /// <summary>
         ///     The base bloodloss damage to be incurred if below <see cref="BloodlossThreshold"/>

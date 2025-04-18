@@ -1,0 +1,49 @@
+- type: entity
+  id: DoctorsHandbook
+  parent: BaseItem
+  name: "doctor's handbook"
+  description: A medical guidebook that helps you diagnose patients.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/library.rsi
+      state: bookmed
+    - type: ActivatableUI
+      key: enum.MedBookUiKey.Key
+    - type: UserInterface
+      interfaces:
+        enum.MedBookrUiKey.Key:
+          type: MedBookBoundUserInterface
+    - type: MedBook
+    - type: Appearance
+    - type: Construction
+      graph: DoctorsHandbook
+      node: end
+      agemin: 0
+      agemax: 8
+
+- type: construction
+  name: "doctor's handbook"
+  id: DoctorsHandbook
+  graph: DoctorsHandbook
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  description: A medical guidebook that helps you diagnose patients.
+  icon: { sprite: Civ14/Objects/library.rsi, state: bookmed }
+  objectType: Item
+  agemin: 0
+  agemax: 8
+
+- type: constructionGraph
+  id: DoctorsHandbook
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 20
+              doAfter: 15
+    - node: end
+      entity: DoctorsHandbook
