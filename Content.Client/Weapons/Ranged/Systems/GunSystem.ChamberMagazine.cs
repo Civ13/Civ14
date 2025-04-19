@@ -34,7 +34,7 @@ public sealed partial class GunSystem
         }
         else
         {
-            args.Sprite.LayerSetState(boltLayer, "open");
+            args.Sprite.LayerSetState(boltLayer, "bolt-open");
         }
     }
 

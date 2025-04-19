@@ -65,6 +65,9 @@
     - type: IconSmooth
       key: floor
       base: water
+    - type: Tag
+      tags:
+        - Water
 - type: entity
   parent: FloorWaterEntity
   id: FloorWaterDeepEntity
@@ -87,6 +90,10 @@
             - HighImpassable
           layer:
             - HighImpassable
+    - type: Tag
+      tags:
+        - Water
+        - Bridgeable
 - type: entity
   parent: FloorWaterEntity
   id: FloorWaterDeepSaltEntity
@@ -109,6 +116,9 @@
             - HighImpassable
           layer:
             - HighImpassable
+    - type: Tag
+      tags:
+        - Water
 - type: entity
   parent: FloorWaterEntity
   id: FloorWaterSaltEntity
