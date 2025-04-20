@@ -4,6 +4,8 @@
   parent: BaseItem
   description: A forensic pad for collecting fingerprints or fibers.
   components:
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
     - type: ForensicPad

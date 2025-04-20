@@ -223,6 +223,8 @@
   components:
     - type: Sprite
       sprite: Objects/Specific/Hydroponics/nettle.rsi
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       sprite: Objects/Specific/Hydroponics/nettle.rsi
@@ -254,6 +256,8 @@
   components:
     - type: Sprite
       sprite: Objects/Specific/Hydroponics/death_nettle.rsi
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       sprite: Objects/Specific/Hydroponics/death_nettle.rsi
@@ -1172,6 +1176,8 @@
     - type: Sprite
       sprite: Objects/Specific/Hydroponics/corn.rsi
       state: cob
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
     - type: Tag
@@ -1717,6 +1723,8 @@
   id: FoodGlasstle
   description: A fragile crystal plant with lot of spiky thorns.
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       sprite: Objects/Specific/Hydroponics/glasstle.rsi
@@ -2011,6 +2019,8 @@
   id: FoodWatermelon
   description: Round green object that you can slice and eat.
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: produce
@@ -2073,6 +2083,8 @@
   id: FoodWatermelonSlice
   description: Juicy green and red slice.
   components:
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
     - type: FlavorProfile
@@ -2112,6 +2124,8 @@
   id: FoodHolymelon
   description: The water within this melon has been blessed by some deity that's particularly fond of watermelon.
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: produce
@@ -2175,6 +2189,8 @@
   id: FoodHolymelonSlice
   description: Juicy golden and red slice.
   components:
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
     - type: FlavorProfile
@@ -2417,6 +2433,8 @@
   id: FoodPumpkin
   description: A large, orange... berry. Seriously.
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: produce
@@ -2466,6 +2484,8 @@
   id: FoodBluePumpkin
   description: A large, blue... berry. Seriously.
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: produce

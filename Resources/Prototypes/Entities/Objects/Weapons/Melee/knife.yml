@@ -20,6 +20,8 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Sprite
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
     - type: Tool
@@ -74,6 +76,8 @@
       damage:
         types:
           Slash: 13
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
       sprite: Objects/Weapons/Melee/cleaver.rsi

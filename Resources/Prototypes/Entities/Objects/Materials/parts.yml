@@ -42,6 +42,8 @@
       layers:
         - state: rods_5
           map: ["base"]
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
       heldPrefix: rods

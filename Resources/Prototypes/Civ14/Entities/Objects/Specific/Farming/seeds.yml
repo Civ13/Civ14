@@ -8,6 +8,8 @@
     - type: Sprite
       sprite: Civ14/Objects/farming.rsi
       state: seeds
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
 

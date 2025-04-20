@@ -66,6 +66,8 @@
             remains4: ""
             remains5: ""
             remains6: ""
+    - type: STWeight
+      self: 8
     - type: Item
       size: Huge
     - type: Tag

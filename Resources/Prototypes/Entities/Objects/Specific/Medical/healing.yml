@@ -5,6 +5,8 @@
   components:
     - type: Sprite
       sprite: Objects/Specific/Medical/medical.rsi
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       sprite: Objects/Specific/Medical/medical.rsi

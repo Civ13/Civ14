@@ -103,6 +103,8 @@
       noMovementLayers:
         movement:
           state: rabbitgrey
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
       heldPrefix: 0

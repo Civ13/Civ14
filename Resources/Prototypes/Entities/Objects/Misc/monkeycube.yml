@@ -4,13 +4,13 @@
   id: MonkeyCubeBox
   description: Drymate brand monkey cubes. Just add water!
   components:
-  - type: StorageFill
-    contents:
-      - id: MonkeyCubeWrapped
-        amount: 8
-  - type: Sprite
-    sprite: Objects/Misc/monkeycube.rsi
-    state: box
+    - type: StorageFill
+      contents:
+        - id: MonkeyCubeWrapped
+          amount: 8
+    - type: Sprite
+      sprite: Objects/Misc/monkeycube.rsi
+      state: box
 
 - type: entity
   parent: BaseItem
@@ -19,19 +19,21 @@
   id: MonkeyCubeWrapped
   description: Unwrap this to get a monkey cube.
   components:
-  - type: Item
-    size: Tiny
-  - type: SpawnItemsOnUse
-    items:
-      - id: MonkeyCube
-    sound:
-      path: /Audio/Effects/unwrap.ogg
-  - type: Sprite
-    sprite: Objects/Misc/monkeycube.rsi
-    state: wrapper
-  - type: Tag
-    tags:
-    - MonkeyCube
+    - type: STWeight
+      self: 0.75
+    - type: Item
+      size: Tiny
+    - type: SpawnItemsOnUse
+      items:
+        - id: MonkeyCube
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+    - type: Sprite
+      sprite: Objects/Misc/monkeycube.rsi
+      state: wrapper
+    - type: Tag
+      tags:
+        - MonkeyCube
 
 - type: entity
   parent: MonkeyCubeBox
@@ -39,13 +41,13 @@
   id: KoboldCubeBox
   description: Condensed kobolds in a cube. Just add water!
   components:
-  - type: StorageFill
-    contents:
-      - id: KoboldCubeWrapped
-        amount: 8
-  - type: Sprite
-    sprite: Objects/Misc/monkeycube.rsi
-    state: box_kobold
+    - type: StorageFill
+      contents:
+        - id: KoboldCubeWrapped
+          amount: 8
+    - type: Sprite
+      sprite: Objects/Misc/monkeycube.rsi
+      state: box_kobold
 
 - type: entity
   parent: MonkeyCubeBox
@@ -53,15 +55,15 @@
   id: VariantCubeBox
   description: Both kobold cubes and monkey cubes. Just add water!
   components:
-  - type: StorageFill
-    contents:
-      - id: KoboldCubeWrapped
-        amount: 4
-      - id: MonkeyCubeWrapped
-        amount: 4
-  - type: Sprite
-    sprite: Objects/Misc/monkeycube.rsi
-    state: box_variant
+    - type: StorageFill
+      contents:
+        - id: KoboldCubeWrapped
+          amount: 4
+        - id: MonkeyCubeWrapped
+          amount: 4
+    - type: Sprite
+      sprite: Objects/Misc/monkeycube.rsi
+      state: box_variant
 
 - type: entity
   parent: MonkeyCubeWrapped
@@ -70,14 +72,14 @@
   id: KoboldCubeWrapped
   description: Unwrap this to get a kobold cube.
   components:
-  - type: SpawnItemsOnUse
-    items:
-      - id: KoboldCube
-    sound:
-      path: /Audio/Effects/unwrap.ogg
-  - type: Sprite
-    sprite: Objects/Misc/monkeycube.rsi
-    state: wrapper_kobold
+    - type: SpawnItemsOnUse
+      items:
+        - id: KoboldCube
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+    - type: Sprite
+      sprite: Objects/Misc/monkeycube.rsi
+      state: wrapper_kobold
 
 - type: entity
   parent: MonkeyCubeBox
@@ -86,13 +88,13 @@
   id: SyndicateSpongeBox
   description: Drymate brand monkey cubes. Just add water!
   components:
-  - type: StorageFill
-    contents:
-      - id: SyndicateSpongeWrapped
-        amount: 6
-  - type: Sprite
-    sprite: Objects/Misc/monkeycube.rsi
-    state: box
+    - type: StorageFill
+      contents:
+        - id: SyndicateSpongeWrapped
+          amount: 6
+    - type: Sprite
+      sprite: Objects/Misc/monkeycube.rsi
+      state: box
 
 - type: entity
   parent: MonkeyCubeWrapped
@@ -101,16 +103,18 @@
   id: SyndicateSpongeWrapped
   description: Unwrap this to get a monkey cube.
   components:
-  - type: SpawnItemsOnUse
-    items:
-      - id: SyndicateSponge
-    sound:
-      path: /Audio/Effects/unwrap.ogg
-  - type: Sprite
-    sprite: Objects/Misc/monkeycube.rsi
-    state: wrapper
-  - type: Item
-    size: Tiny
-  - type: Tag
-    tags:
-    - MonkeyCube
+    - type: SpawnItemsOnUse
+      items:
+        - id: SyndicateSponge
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+    - type: Sprite
+      sprite: Objects/Misc/monkeycube.rsi
+      state: wrapper
+    - type: STWeight
+      self: 0.75
+    - type: Item
+      size: Tiny
+    - type: Tag
+      tags:
+        - MonkeyCube

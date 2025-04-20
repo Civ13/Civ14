@@ -10,6 +10,8 @@
     - type: Sprite
       sprite: Civ14/Objects/StoneAge/bone_shovel.rsi
       state: icon
+    - type: STWeight
+      self: 5
     - type: Item
       size: Large
     - type: Construction
@@ -32,6 +34,8 @@
         types:
           Piercing: 8
           Blunt: 3
+    - type: STWeight
+      self: 5
     - type: Item
       size: Large
     - type: Construction
@@ -62,6 +66,8 @@
       sprite: Civ14/Objects/StoneAge/bone_knife.rsi
       size: 2
       state: icon
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       sprite: Civ14/Objects/StoneAge/bone_knife.rsi
@@ -82,6 +88,8 @@
           Blunt: 4
           Slash: 8
           Structural: 4
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
     - type: Clothing
@@ -112,6 +120,8 @@
           Blunt: 5
           Slash: 8
           Structural: 4
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
     - type: Clothing
@@ -141,6 +151,8 @@
           Blunt: 6
       soundHit:
         collection: MetalThud
+    - type: STWeight
+      self: 5
     - type: Item
       size: Large
       shape:
@@ -170,6 +182,8 @@
     - type: Sprite
       sprite: Civ14/Objects/items.rsi
       state: hammer
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
     - type: MeleeWeapon

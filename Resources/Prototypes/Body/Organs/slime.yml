@@ -10,7 +10,7 @@
     - type: Stomach
     - type: Metabolizer
       maxReagents: 6
-      metabolizerTypes: [ Slime ]
+      metabolizerTypes: [Slime]
       removeEmpty: true
       groups:
         - id: Food
@@ -27,52 +27,55 @@
         food:
           maxVol: 5
           reagents:
-          - ReagentId: GreyMatter
-            Quantity: 5
+            - ReagentId: GreyMatter
+              Quantity: 5
         organ:
           reagents:
-          - ReagentId: Slime
-            Quantity: 10
+            - ReagentId: Slime
+              Quantity: 10
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: brain
 
-      
 - type: entity
   id: OrganSlimeLungs
   parent: BaseHumanOrgan
   name: slime gas sacs
   description: "Collects nitrogen, which slime cells use for maintenance."
   components:
-  - type: Sprite
-    sprite: Mobs/Species/Slime/organs.rsi
-    layers:
-      - state: lung-l-slime
-      - state: lung-r-slime
-  - type: Lung
-    alert: LowNitrogen
-  - type: Metabolizer
-    removeEmpty: true
-    solutionOnBody: false
-    solution: "Lung"
-    metabolizerTypes: [ Slime ]
-    groups:
-    - id: Gas
-      rateModifier: 100.0
-  - type: SolutionContainerManager
-    solutions:
-      organ:
-        reagents:
-        - ReagentId: Slime
-          Quantity: 10
-      Lung:
-        maxVol: 100.0
-        canReact: false
-      food:
-        maxVol: 5
-        reagents:
-        - ReagentId: UncookedAnimalProteins
-          Quantity: 5
-  - type: Item
-    size: Small
-    heldPrefix: lungs
+    - type: Sprite
+      sprite: Mobs/Species/Slime/organs.rsi
+      layers:
+        - state: lung-l-slime
+        - state: lung-r-slime
+    - type: Lung
+      alert: LowNitrogen
+    - type: Metabolizer
+      removeEmpty: true
+      solutionOnBody: false
+      solution: "Lung"
+      metabolizerTypes: [Slime]
+      groups:
+        - id: Gas
+          rateModifier: 100.0
+    - type: SolutionContainerManager
+      solutions:
+        organ:
+          reagents:
+            - ReagentId: Slime
+              Quantity: 10
+        Lung:
+          maxVol: 100.0
+          canReact: false
+        food:
+          maxVol: 5
+          reagents:
+            - ReagentId: UncookedAnimalProteins
+              Quantity: 5
+    - type: STWeight
+      self: 1
+    - type: Item
+      size: Small
+      heldPrefix: lungs

@@ -27,6 +27,8 @@
           Brute: 10
         types:
           Structural: 30
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
       shape:
@@ -146,6 +148,8 @@
           Slash: 2.5
           Structural: 30
     - type: GunRequiresWield
+    - type: STWeight
+      self: 10
     - type: Item
       size: Ginormous
       sprite: Objects/Weapons/Melee/crusher-inhands.rsi
@@ -200,6 +204,8 @@
     - type: Tag
       tags:
         - Pickaxe
+    - type: STWeight
+      self: 10
     - type: Item
       size: Ginormous
       sprite: Objects/Weapons/Melee/crusher_glaive-inhands.rsi

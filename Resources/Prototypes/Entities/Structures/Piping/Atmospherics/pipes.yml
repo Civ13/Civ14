@@ -9,6 +9,8 @@
   components:
     - type: Visibility
       layer: 1
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
     - type: Transform
@@ -101,6 +103,8 @@
     - type: Construction
       graph: GasPipe
       node: straight
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
       storedSprite:
@@ -133,6 +137,8 @@
     - type: Construction
       graph: GasPipe
       node: bend
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       shape:
@@ -172,6 +178,8 @@
     - type: Construction
       graph: GasPipe
       node: tjunction
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
       shape:
@@ -209,6 +217,8 @@
     - type: Construction
       graph: GasPipe
       node: fourway
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
       shape:

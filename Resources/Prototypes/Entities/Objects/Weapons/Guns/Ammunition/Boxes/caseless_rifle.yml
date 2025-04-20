@@ -4,25 +4,27 @@
   id: BaseMagazineBoxCaselessRifle
   name: ammunition box (.25 caseless)
   components:
-  - type: BallisticAmmoProvider
-    mayTransfer: true
-    whitelist:
-      tags:
-        - CartridgeCaselessRifle
-    proto: CartridgeCaselessRifle
-    capacity: 60
-  - type: Item
-    size: Small
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi
-  - type: MagazineVisuals
-    magState: mag
-    steps: 4
-    zeroVisible: false
-  - type: Appearance
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeCaselessRifle
+      proto: CartridgeCaselessRifle
+      capacity: 60
+    - type: STWeight
+      self: 1
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi
+    - type: MagazineVisuals
+      magState: mag
+      steps: 4
+      zeroVisible: false
+    - type: Appearance
 
 # Boxes
 - type: entity
@@ -30,26 +32,26 @@
   id: MagazineBoxCaselessRifle
   name: ammunition box (.25 caseless)
   components:
-  - type: BallisticAmmoProvider
-    proto: CartridgeCaselessRifle
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
+    - type: BallisticAmmoProvider
+      proto: CartridgeCaselessRifle
+    - type: Sprite
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
   parent: BaseMagazineBoxCaselessRifle
   id: MagazineBoxCaselessRiflePractice
   name: ammunition box (.25 caseless practice)
   components:
-  - type: BallisticAmmoProvider
-    proto: CartridgeCaselessRiflePractice
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: practice
+    - type: BallisticAmmoProvider
+      proto: CartridgeCaselessRiflePractice
+    - type: Sprite
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: practice

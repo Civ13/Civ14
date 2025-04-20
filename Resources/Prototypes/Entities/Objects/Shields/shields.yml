@@ -398,6 +398,8 @@
           visible: false
           shader: unshaded
           map: ["shield"]
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       sprite: Objects/Weapons/Melee/e_shield.rsi
@@ -508,6 +510,8 @@
         - state: teleriot-on
           visible: false
           map: ["shield"]
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       sprite: Objects/Weapons/Melee/teleriot_shield.rsi

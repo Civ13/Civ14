@@ -46,6 +46,8 @@
           reagents:
             - ReagentId: Fiber
               Quantity: 1
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
 
@@ -506,6 +508,8 @@
       interfaces:
         enum.PaperUiKey.Key:
           type: PaperBoundUserInterface
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
     - type: Tag

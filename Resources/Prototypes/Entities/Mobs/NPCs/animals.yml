@@ -116,6 +116,8 @@
     - type: Butcherable
       spawned:
         - id: null # Should give nothing when you butcher it so we set the item id it needs to spawn to null
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
     - type: Tag
@@ -325,6 +327,8 @@
       layers:
         - map: ["enum.DamageStateVisualLayers.Base"]
           state: cockroach
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
     - type: HTN
@@ -482,6 +486,8 @@
       noMovementLayers:
         movement:
           state: mothroach
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
     - type: Clothing
@@ -783,6 +789,8 @@
     - type: Butcherable
       spawned:
         - id: null # Should give nothing when you butcher it so we set the item id it needs to spawn to null
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
     - type: Tag
@@ -1581,6 +1589,8 @@
       noMovementLayers:
         movement:
           state: mouse-0
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
       heldPrefix: 0
@@ -1775,6 +1785,8 @@
           Base: dead-1
         Dead:
           Base: splat-1
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
       heldPrefix: 1
@@ -1804,6 +1816,8 @@
           Base: dead-2
         Dead:
           Base: splat-2
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
       heldPrefix: 2
@@ -2163,6 +2177,8 @@
       damage:
         groups:
           Brute: 5
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
     - type: OnUseTimerTrigger
@@ -3187,6 +3203,8 @@
       noMovementLayers:
         movement:
           state: hamster-0
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
     - type: Physics

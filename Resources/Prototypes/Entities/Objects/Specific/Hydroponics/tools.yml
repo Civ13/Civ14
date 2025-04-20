@@ -60,6 +60,8 @@
       damage:
         types:
           Slash: 10
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
     - type: Clothing

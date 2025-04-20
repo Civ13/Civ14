@@ -135,6 +135,8 @@
             animal_remains1: ""
             animal_remains2: ""
             animal_remains3: ""
+    - type: STWeight
+      self: 8
     - type: Item
       size: Huge
     - type: Tag

@@ -3,6 +3,8 @@
   parent: BaseItem
   id: Clothing
   components:
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
     - type: Sprite

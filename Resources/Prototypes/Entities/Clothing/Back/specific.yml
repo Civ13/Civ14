@@ -25,53 +25,55 @@
   name: backpack water tank
   description: Holds a large amount of fluids. Supplies to spray nozzles in your hands, and has a slot on the side for said spray nozzles.
   components:
-  - type: Tag
-    tags:
-    - NozzleBackTank
-    - WhitelistChameleon
-  - type: Sprite
-    sprite: Clothing/Back/Backpacks/waterbackpack.rsi
-    state: icon
-  - type: Item
-    size: Ginormous
-  - type: Clothing
-    slots: BACK
-    sprite: Clothing/Back/Backpacks/waterbackpack.rsi
-  - type: ItemSlots
-    slots:
-      item:
-        priority: 2
-        whitelist:
-          tags:
-          - SprayNozzle
-  - type: ItemMapper
-    mapLayers:
-      icon-filled:
-        whitelist:
-          tags:
-            - SprayNozzle
-  - type: Appearance
-  - type: SolutionAmmoProvider
-    solutionId: tank
-    proto: BulletWaterShot
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        maxVol: 1000 #much water
-  - type: SolutionTransfer
-    transferAmount: 50
-    maxTransferAmount: 100
-    minTransferAmount: 10
-    canChangeTransferAmount: true
-  - type: UserInterface
-    interfaces:
-      enum.TransferAmountUiKey.Key:
-        type: TransferAmountBoundUserInterface
-  - type: DrawableSolution
-    solution: tank
-  - type: RefillableSolution
-    solution: tank
-  - type: DrainableSolution
-    solution: tank
-  - type: ExaminableSolution
-    solution: tank
+    - type: Tag
+      tags:
+        - NozzleBackTank
+        - WhitelistChameleon
+    - type: Sprite
+      sprite: Clothing/Back/Backpacks/waterbackpack.rsi
+      state: icon
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: Clothing
+      slots: BACK
+      sprite: Clothing/Back/Backpacks/waterbackpack.rsi
+    - type: ItemSlots
+      slots:
+        item:
+          priority: 2
+          whitelist:
+            tags:
+              - SprayNozzle
+    - type: ItemMapper
+      mapLayers:
+        icon-filled:
+          whitelist:
+            tags:
+              - SprayNozzle
+    - type: Appearance
+    - type: SolutionAmmoProvider
+      solutionId: tank
+      proto: BulletWaterShot
+    - type: SolutionContainerManager
+      solutions:
+        tank:
+          maxVol: 1000 #much water
+    - type: SolutionTransfer
+      transferAmount: 50
+      maxTransferAmount: 100
+      minTransferAmount: 10
+      canChangeTransferAmount: true
+    - type: UserInterface
+      interfaces:
+        enum.TransferAmountUiKey.Key:
+          type: TransferAmountBoundUserInterface
+    - type: DrawableSolution
+      solution: tank
+    - type: RefillableSolution
+      solution: tank
+    - type: DrainableSolution
+      solution: tank
+    - type: ExaminableSolution
+      solution: tank
