@@ -22,7 +22,7 @@ public sealed partial class StaminaActiveComponent : Component
     /// Stamina damage to apply when entity is running
     /// </summary>
     [DataField("runStaminaDamage"), ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
-    public float RunStaminaDamage = 0.2f;
+    public float RunStaminaDamage = 0.4f;
 
     /// <summary>
     /// Modifier to set entity sprint speed to a walking speed. Counts himself.
