@@ -9,6 +9,8 @@ using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
+using Content.Shared._Shitmed.DoAfter;
+
 namespace Content.Shared.DoAfter;
 
 public abstract partial class SharedDoAfterSystem : EntitySystem
@@ -174,7 +176,7 @@ public abstract partial class SharedDoAfterSystem : EntitySystem
     {
         DebugTools.Assert(args.Broadcast || Exists(args.EventTarget) || args.Event.GetType() == typeof(AwaitedDoAfterEvent));
         DebugTools.Assert(args.Event.GetType().HasCustomAttribute<NetSerializableAttribute>()
-            || args.Event.GetType().Namespace is {} ns && ns.StartsWith("Content.IntegrationTests"), // classes defined in tests cannot be marked as serializable.
+            || args.Event.GetType().Namespace is { } ns && ns.StartsWith("Content.IntegrationTests"), // classes defined in tests cannot be marked as serializable.
             $"Do after event is not serializable. Event: {args.Event.GetType()}");
 
         if (!Resolve(args.User, ref comp))
@@ -281,7 +283,7 @@ public abstract partial class SharedDoAfterSystem : EntitySystem
         return IsDuplicate(args, otherArgs, otherArgs.DuplicateCondition);
     }
 
-    private bool IsDuplicate(DoAfterArgs args, DoAfterArgs otherArgs, DuplicateConditions conditions )
+    private bool IsDuplicate(DoAfterArgs args, DoAfterArgs otherArgs, DuplicateConditions conditions)
     {
         if ((conditions & DuplicateConditions.SameTarget) != 0
             && args.Target != otherArgs.Target)

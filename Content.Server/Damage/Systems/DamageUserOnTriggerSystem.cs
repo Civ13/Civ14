@@ -35,13 +35,13 @@ public sealed class DamageUserOnTriggerSystem : EntitySystem
         var ev = new BeforeDamageUserOnTriggerEvent(damage, target);
         RaiseLocalEvent(source, ev);
 
-        return _damageableSystem.TryChangeDamage(target, ev.Damage, component.IgnoreResistances, origin: source) is not null;
+        return _damageableSystem.TryChangeDamage(target, ev.Damage, component.IgnoreResistances, origin: source, targetPart: component.TargetPart) is not null; // Shitmed Change
     }
 }
 
 public sealed class BeforeDamageUserOnTriggerEvent : EntityEventArgs
 {
-    public DamageSpecifier Damage { get; set;  }
+    public DamageSpecifier Damage { get; set; }
     public EntityUid Tripper { get; }
 
     public BeforeDamageUserOnTriggerEvent(DamageSpecifier damage, EntityUid target)

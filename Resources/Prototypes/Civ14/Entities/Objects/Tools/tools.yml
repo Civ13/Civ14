@@ -130,6 +130,13 @@
       slots:
         - back
         - belt
+    - type: Scalpel # Shitmed
+      speed: 0.3
+    - type: BoneSaw # Shitmed
+      speed: 0.5
+    - type: SurgeryTool # Shitmed
+      startSound:
+        path: /Audio/_Shitmed/Medical/Surgery/saw.ogg
     - type: Construction
       graph: BoneAxe
       node: boneaxe

@@ -23,6 +23,7 @@ using Robust.Shared.Physics.Systems;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using PullableComponent = Content.Shared.Movement.Pulling.Components.PullableComponent;
+using Robust.Shared.Maths; // Shitmed Change
 
 namespace Content.Shared.Movement.Systems;
 
@@ -32,20 +33,20 @@ namespace Content.Shared.Movement.Systems;
 /// </summary>
 public abstract partial class SharedMoverController : VirtualController
 {
-    [Dependency] private   readonly IConfigurationManager _configManager = default!;
+    [Dependency] private readonly IConfigurationManager _configManager = default!;
     [Dependency] protected readonly IGameTiming Timing = default!;
-    [Dependency] private   readonly IMapManager _mapManager = default!;
-    [Dependency] private   readonly ITileDefinitionManager _tileDefinitionManager = default!;
-    [Dependency] private   readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private   readonly InventorySystem _inventory = default!;
-    [Dependency] private   readonly MobStateSystem _mobState = default!;
-    [Dependency] private   readonly SharedAudioSystem _audio = default!;
-    [Dependency] private   readonly SharedContainerSystem _container = default!;
-    [Dependency] private   readonly SharedMapSystem _mapSystem = default!;
-    [Dependency] private   readonly SharedGravitySystem _gravity = default!;
+    [Dependency] private readonly IMapManager _mapManager = default!;
+    [Dependency] private readonly ITileDefinitionManager _tileDefinitionManager = default!;
+    [Dependency] private readonly EntityLookupSystem _lookup = default!;
+    [Dependency] private readonly InventorySystem _inventory = default!;
+    [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly SharedContainerSystem _container = default!;
+    [Dependency] private readonly SharedMapSystem _mapSystem = default!;
+    [Dependency] private readonly SharedGravitySystem _gravity = default!;
     [Dependency] protected readonly SharedPhysicsSystem Physics = default!;
-    [Dependency] private   readonly SharedTransformSystem _transform = default!;
-    [Dependency] private   readonly TagSystem _tags = default!;
+    [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private readonly TagSystem _tags = default!;
 
     protected EntityQuery<InputMoverComponent> MoverQuery;
     protected EntityQuery<MobMoverComponent> MobMoverQuery;
@@ -124,7 +125,9 @@ public abstract partial class SharedMoverController : VirtualController
         {
             if (_mobState.IsIncapacitated(relayTarget.Source) ||
                 TryComp<SleepingComponent>(relayTarget.Source, out _) ||
-                !MoverQuery.TryGetComponent(relayTarget.Source, out var relayedMover))
+                !PhysicsQuery.TryGetComponent(relayTarget.Source, out var relayedPhysicsComponent) ||
+                !MoverQuery.TryGetComponent(relayTarget.Source, out var relayedMover) ||
+                !XformQuery.TryGetComponent(relayTarget.Source, out var relayedXform))
             {
                 canMove = false;
             }
@@ -136,17 +139,28 @@ public abstract partial class SharedMoverController : VirtualController
             }
         }
 
+
         // Update relative movement
-        if (mover.LerpTarget < Timing.CurTime)
+        // Shitmed Change Start
+        else
         {
-            if (TryUpdateRelative(mover, xform))
+            if (mover.LerpTarget < Timing.CurTime)
             {
-                Dirty(uid, mover);
+                if (TryComp(uid, out RelayInputMoverComponent? relay)
+                    && TryComp(relay.RelayEntity, out TransformComponent? relayXform))
+                {
+                    if (TryUpdateRelative(mover, relayXform))
+                        Dirty(uid, mover);
+                }
+                else
+                {
+                    if (TryUpdateRelative(mover, xform))
+                        Dirty(uid, mover);
+                }
             }
+            LerpRotation(uid, mover, frameTime);
         }
-
-        LerpRotation(uid, mover, frameTime);
-
+        // Shitmed Change End
         if (!canMove
             || physicsComponent.BodyStatus != BodyStatus.OnGround && !CanMoveInAirQuery.HasComponent(uid)
             || PullableQuery.TryGetComponent(uid, out var pullable) && pullable.BeingPulled)
@@ -189,7 +203,7 @@ public abstract partial class SharedMoverController : VirtualController
             && _mapSystem.TryGetTileRef(xform.GridUid.Value, gridComp, xform.Coordinates, out var tile)
             && !(weightless || physicsComponent.BodyStatus == BodyStatus.InAir))
         {
-            tileDef = (ContentTileDefinition) _tileDefinitionManager[tile.Tile.TypeId];
+            tileDef = (ContentTileDefinition)_tileDefinitionManager[tile.Tile.TypeId];
         }
 
         // Regular movement.
@@ -501,7 +515,7 @@ public abstract partial class SharedMoverController : VirtualController
         // if we have it
         if (tileDef == null && grid.TryGetTileRef(position, out var tileRef))
         {
-            tileDef = (ContentTileDefinition) _tileDefinitionManager[tileRef.Tile.TypeId];
+            tileDef = (ContentTileDefinition)_tileDefinitionManager[tileRef.Tile.TypeId];
         }
 
         if (tileDef == null)

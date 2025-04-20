@@ -210,6 +210,8 @@
         - FootstepSound
         - DoorBumpOpener
         - AnomalyHost
+
+    - type: Targeting # Shitmed Change
     ## Stalker stuff
     - type: STLay
     - type: StaminaActive

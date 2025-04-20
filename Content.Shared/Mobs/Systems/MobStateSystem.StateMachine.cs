@@ -1,5 +1,6 @@
 ﻿using Content.Shared.Database;
 using Content.Shared.Mobs.Components;
+using Content.Shared._Shitmed.Body.Organ;
 
 namespace Content.Shared.Mobs.Systems;
 
@@ -31,7 +32,7 @@ public partial class MobStateSystem
         if (!_mobStateQuery.Resolve(entity, ref component))
             return;
 
-        var ev = new UpdateMobStateEvent {Target = entity, Component = component, Origin = origin};
+        var ev = new UpdateMobStateEvent { Target = entity, Component = component, Origin = origin };
         RaiseLocalEvent(entity, ref ev);
         ChangeState(entity, component, ev.State, origin: origin);
     }
@@ -102,7 +103,8 @@ public partial class MobStateSystem
         //make sure we are allowed to enter the new state
         if (oldState == newState || !component.AllowedStates.Contains(newState))
             return;
-
+        if (oldState == MobState.Dead && HasComp<DebrainedComponent>(target)) // Shitmed Change
+            return;
         OnExitState(target, component, oldState);
         component.CurrentState = newState;
         OnEnterState(target, component, newState);

@@ -195,7 +195,7 @@ public sealed partial class ExplosionSystem
         if (!_physicsQuery.TryGetComponent(uid, out var physics))
             return false;
 
-        return physics.CanCollide && physics.Hard && (physics.CollisionLayer & (int) CollisionGroup.Impassable) != 0;
+        return physics.CanCollide && physics.Hard && (physics.CollisionLayer & (int)CollisionGroup.Impassable) != 0;
     }
 
     /// <summary>
@@ -464,7 +464,7 @@ public sealed partial class ExplosionSystem
                 }
 
                 // TODO EXPLOSIONS turn explosions into entities, and pass the the entity in as the damage origin.
-                _damageableSystem.TryChangeDamage(entity, damage * _damageableSystem.UniversalExplosionDamageModifier, ignoreResistances: true);
+                _damageableSystem.TryChangeDamage(entity, damage * _damageableSystem.UniversalExplosionDamageModifier, ignoreResistances: true, partMultiplier: 0.3f); // Shitmed: Temp change, nerf explosion delimbing
 
             }
         }

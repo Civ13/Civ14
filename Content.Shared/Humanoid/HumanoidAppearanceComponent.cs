@@ -65,7 +65,7 @@ public sealed partial class HumanoidAppearanceComponent : Component
     ///     sprite on this humanoid layer, and any markings that sit above it.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public Dictionary<HumanoidVisualLayers, SlotFlags> HiddenLayers = new();
+    public HashSet<HumanoidVisualLayers> HiddenLayers = new();
 
     [DataField, AutoNetworkedField]
     public Sex Sex = Sex.Male;

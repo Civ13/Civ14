@@ -18,6 +18,8 @@ using Content.Shared.Mobs.Systems;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Content.Shared._Shitmed.Body.Components; // Shitmed Change
+using Content.Shared._Shitmed.Body.Organ; // Shitmed Change
 
 namespace Content.Server.Body.Systems;
 
@@ -70,13 +72,12 @@ public sealed class RespiratorSystem : EntitySystem
                 continue;
 
             respirator.NextUpdate += respirator.UpdateInterval;
-
-            if (_mobState.IsDead(uid))
+            if (_mobState.IsDead(uid) || HasComp<BreathingImmunityComponent>(uid)) // Shitmed: BreathingImmunity
                 continue;
 
-            UpdateSaturation(uid, -(float) respirator.UpdateInterval.TotalSeconds, respirator);
+            UpdateSaturation(uid, -(float)respirator.UpdateInterval.TotalSeconds, respirator);
 
-            if (!_mobState.IsIncapacitated(uid)) // cannot breathe in crit.
+            if (!_mobState.IsIncapacitated(uid) && !HasComp<DebrainedComponent>(uid)) // Shitmed Change - Cannot breathe in crit or when no brain.
             {
                 switch (respirator.Status)
                 {
@@ -207,7 +208,7 @@ public sealed class RespiratorSystem : EntitySystem
 
         gas = new GasMixture(gas);
         var lungRatio = 1.0f / organs.Count;
-        gas.Multiply(MathF.Min(lungRatio * gas.Volume/Atmospherics.BreathVolume, lungRatio));
+        gas.Multiply(MathF.Min(lungRatio * gas.Volume / Atmospherics.BreathVolume, lungRatio));
         var solution = _lungSystem.GasToReagent(gas);
 
         float saturation = 0;
