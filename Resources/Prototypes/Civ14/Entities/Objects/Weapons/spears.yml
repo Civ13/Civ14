@@ -34,10 +34,10 @@
       damage:
         types:
           Piercing: 16
-    - type: STWeight
-      self: 16
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
+    - type: STWeight
+      self: 16        
     - type: Item
       sprite: Civ14/Weapons/dory.rsi
     - type: DisarmMalus
@@ -58,10 +58,10 @@
       damage:
         types:
           Piercing: 16
-    - type: STWeight
-      self: 16
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
+    - type: STWeight
+      self: 16        
     - type: Item
       sprite: Civ14/Weapons/sarissa.rsi
     - type: DisarmMalus
@@ -80,11 +80,11 @@
     - type: MeleeWeapon
       damage:
         types:
-          Piercing: 15
-    - type: STWeight
-      self: 12      
+          Piercing: 15   
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
+    - type: STWeight
+      self: 12     
     - type: Item
       sprite: Civ14/Weapons/pike.rsi
     - type: DisarmMalus
@@ -114,6 +114,11 @@
         Slash: 2
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
+    - type: IncreaseDamageOnWield
+      damage: 
+        types:
+          Piercing: 5
+          Slash: 2
     - type: Item
       sprite: Civ14/Weapons/naginata.rsi
     - type: DisarmMalus
