@@ -986,11 +986,6 @@
   abstract: true
   components:
     - type: CombatMode
-    # Shitmed Change Start
-    - type: Targeting
-    - type: HumanoidAppearance
-      species: Monkey
-    # Shitmed Change End
     - type: Inventory
       templateId: monkey
       speciesId: monkey
@@ -1013,45 +1008,6 @@
     - type: Stripping
     - type: Sprite
       drawdepth: Mobs
-      layers:
-        # Shitmed Change Start
-        - map: ["enum.HumanoidVisualLayers.Chest"]
-        - map: ["enum.HumanoidVisualLayers.Head"]
-        - map: ["enum.HumanoidVisualLayers.Snout"]
-        - map: ["enum.HumanoidVisualLayers.Eyes"]
-        - map: ["enum.HumanoidVisualLayers.RArm"]
-        - map: ["enum.HumanoidVisualLayers.LArm"]
-        - map: ["enum.HumanoidVisualLayers.RLeg"]
-        - map: ["enum.HumanoidVisualLayers.LLeg"]
-        - map: ["jumpsuit"]
-        - map: ["enum.HumanoidVisualLayers.LFoot"]
-        - map: ["enum.HumanoidVisualLayers.RFoot"]
-        - map: ["enum.HumanoidVisualLayers.LHand"]
-        - map: ["enum.HumanoidVisualLayers.RHand"]
-        - map: ["enum.HumanoidVisualLayers.Handcuffs"]
-          color: "#ffffff"
-          sprite: Objects/Misc/handcuffs.rsi
-          state: body-overlay-2
-          visible: false
-        - map: ["gloves"]
-        - map: ["shoes"]
-        - map: ["ears"]
-        - map: ["id"]
-        - map: ["outerClothing"]
-        - map: ["eyes"]
-        - map: ["belt"]
-        - map: ["neck"]
-        - map: ["back"]
-        - map: ["enum.HumanoidVisualLayers.FacialHair"]
-        - map: ["enum.HumanoidVisualLayers.Hair"]
-        - map: ["enum.HumanoidVisualLayers.HeadSide"]
-        - map: ["enum.HumanoidVisualLayers.HeadTop"]
-        - map: ["enum.HumanoidVisualLayers.Tail"]
-        - map: ["mask"]
-        - map: ["head"]
-        - map: ["pocket1"]
-        - map: ["pocket2"]
-    # Shitmed Change End
     - type: Hands
     - type: ComplexInteraction
     - type: GenericVisualizer
@@ -1162,13 +1118,6 @@
     - type: LizardAccent
     - type: ReplacementAccent
       accent: kobold
-    # Shitmed Change Start
-    - type: HumanoidAppearance
-      species: Kobold
-    - type: Body
-      prototype: Kobold
-      requiredLegs: 2
-    # Shitmed Change End
     - type: Speech
       speechSounds: Lizard
       speechVerb: Reptilian
