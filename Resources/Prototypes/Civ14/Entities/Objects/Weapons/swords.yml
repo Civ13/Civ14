@@ -317,14 +317,14 @@
       damage: 
         types:
           Slash: 38
+      soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
     - type: Wieldable
     - type: IncreaseDamageOnWield 
       damage:
         types:
           Piercing: 5
           Slash: 2
-      soundHit:
-        path: /Audio/Weapons/bladeslice.ogg
     - type: Item
       sprite: Civ14/Weapons/longsword.rsi
     - type: DisarmMalus
@@ -341,14 +341,14 @@
       damage:
         types:
           Slash: 35
+      soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
     - type: Wieldable
     - type: IncreaseDamageOnWield 
       damage:
         types:
           Piercing: 8
           Slash: 13
-      soundHit:
-        path: /Audio/Weapons/bladeslice.ogg
     - type: Item
       sprite: Civ14/Weapons/zweihander.rsi
     - type: DisarmMalus
@@ -365,14 +365,14 @@
       damage:
         types:
           Slash: 32
+      soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
     - type: Wieldable
     - type: IncreaseDamageOnWield 
       damage:
         types:
           Piercing: 8
           Slash: 13
-      soundHit:
-        path: /Audio/Weapons/bladeslice.ogg
     - type: Item
       sprite: Civ14/Weapons/claymore.rsi
     - type: DisarmMalus
@@ -410,15 +410,15 @@
     - type: MeleeWeapon
       damage:
         types:
-          Slash: 36
+          Slash: 36     
+      soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
     - type: Wieldable
     - type: IncreaseDamageOnWield 
       damage:
         types:
           Piercing: 2
-          Slash: 15      
-      soundHit:
-        path: /Audio/Weapons/bladeslice.ogg
+          Slash: 15 
     - type: Item
       sprite: Civ14/Weapons/broadsword.rsi
     - type: DisarmMalus
