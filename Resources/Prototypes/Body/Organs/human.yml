@@ -172,7 +172,7 @@
     - type: Speech
       enabled: false
     - type: TypingIndicator
-      proto: empty
+      proto: default
     - type: Emoting
       enabled: false
     - type: Sprite
@@ -247,7 +247,6 @@
         - Organ
         - Tongue
 
-
 - type: entity
   id: OrganHumanAppendix
   parent: BaseHumanOrgan
@@ -268,7 +267,6 @@
     - type: Sprite
       state: ears
     - type: Ears # Shitmed Change
-
 
 - type: entity
   id: OrganHumanLungs
@@ -389,7 +387,6 @@
         - Meat
         - Organ
         - Stomach
-
 
 - type: entity
   id: OrganHumanLiver
