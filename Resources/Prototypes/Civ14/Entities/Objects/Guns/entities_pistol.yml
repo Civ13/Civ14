@@ -649,11 +649,9 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/colt.rsi
-
     - type: Clothing
       sprite: Civ14/Weapons/Guns/colt.rsi
       quickEquip: false
-
     - type: Gun
       fireRate: 3
       selectedMode: SemiAuto
@@ -661,17 +659,15 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/45ACP.ogg
-
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
-          startingItem: civ13_magazine_default
-
+          startingItem: civ13_magazine_M1911_magazine_(.45)
           priority: 2
           whitelist:
             tags:
-              - civ13_magazine_default
+              - civ13_magazine_M1911_magazine_(.45)
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber

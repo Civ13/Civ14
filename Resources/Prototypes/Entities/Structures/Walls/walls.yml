@@ -43,6 +43,7 @@
           density: 1000
     - type: Occluder
     - type: Airtight
+      airBlocked: false
     - type: StaticPrice
       price: 75
     - type: RadiationBlocker
