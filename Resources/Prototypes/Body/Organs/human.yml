@@ -160,9 +160,6 @@
   abstract: true
   components:
     - type: Gibbable
-    - type: PhysicalComposition #Goobstation - Recycle update
-      materialComposition:
-        Biomass: 5
 
 - type: entity
   id: OrganHumanBrain
@@ -230,6 +227,8 @@
         - Meat
         - Organ
         - Eyes
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: eyeballs
@@ -247,6 +246,7 @@
         - Meat
         - Organ
         - Tongue
+
 
 - type: entity
   id: OrganHumanAppendix
@@ -269,6 +269,7 @@
       state: ears
     - type: Ears # Shitmed Change
 
+
 - type: entity
   id: OrganHumanLungs
   parent: BaseHumanOrgan
@@ -277,10 +278,13 @@
   components:
     - type: Organ # Shitmed Change
       slotId: lungs # Shitmed Change
+
     - type: Sprite
       layers:
         - state: lung-l
         - state: lung-r
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: lungs
@@ -339,6 +343,8 @@
         - Meat
         - Organ
         - Heart
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: heart
@@ -353,6 +359,8 @@
       slotId: stomach # Shitmed Change
     - type: Sprite
       state: stomach
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: stomach
@@ -382,6 +390,7 @@
         - Organ
         - Stomach
 
+
 - type: entity
   id: OrganHumanLiver
   parent: BaseHumanOrgan
@@ -393,6 +402,8 @@
       slotId: liver # Shitmed Change
     - type: Sprite
       state: liver
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: liver
@@ -420,6 +431,8 @@
       layers:
         - state: kidney-l
         - state: kidney-r
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: kidneys

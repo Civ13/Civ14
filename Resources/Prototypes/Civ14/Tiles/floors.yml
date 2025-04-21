@@ -111,6 +111,9 @@
     - type: Construction
       graph: TileThatch
       node: end
+    - type: Tag
+      tags:
+        - Bridging
 
 - type: entity
   id: FloorThatch
