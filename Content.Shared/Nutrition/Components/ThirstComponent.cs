@@ -1,4 +1,5 @@
 using Content.Shared.Alert;
+using Content.Shared.Damage;
 using Content.Shared.Nutrition.EntitySystems;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
@@ -30,6 +31,13 @@ public sealed partial class ThirstComponent : Component
     [DataField("startingThirst")]
     [AutoNetworkedField]
     public float CurrentThirst = -1f;
+
+    /// <summary>
+    /// Damage dealt when your current threshold is at HungerThreshold.Dead
+    /// </summary>
+    [DataField("thirstDamage")]
+    public DamageSpecifier? ThirstDamage;
+
 
     /// <summary>
     /// The time when the hunger will update next.
