@@ -39,6 +39,11 @@ public sealed partial class MedBookComponent : Component
     public EntityUid? ScannedEntity;
 
     /// <summary>
+    /// Shitmed Change: The body part that is currently being scanned.
+    /// </summary>
+    [DataField]
+    public EntityUid? CurrentBodyPart;
+    /// <summary>
     /// The maximum range in tiles at which the analyzer can receive continuous updates
     /// </summary>
     [DataField]
