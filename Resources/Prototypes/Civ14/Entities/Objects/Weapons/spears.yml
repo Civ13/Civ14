@@ -107,11 +107,6 @@
         types:
           Slash: 1
           Piercing: 13
-    - type: IncreaseDamageOnWield
-      damage: 
-       types:
-        Piercing: 5
-        Slash: 2
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: IncreaseDamageOnWield
