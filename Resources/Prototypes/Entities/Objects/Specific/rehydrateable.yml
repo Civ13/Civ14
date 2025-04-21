@@ -83,31 +83,12 @@
 
 - type: entity
   parent: MonkeyCube
-  id: MothroachCube
-  name: mothroach cube
-  components:
-    - type: Rehydratable
-      possibleSpawns:
-        - MobMothroach
-
-- type: entity
-  parent: MonkeyCube
   id: MouseCube
   name: mouse cube
   components:
     - type: Rehydratable
       possibleSpawns:
         - MobMouse
-
-- type: entity
-  parent: MonkeyCube
-  id: CockroachCube
-  name: cockroach cube
-  description: Just add wa- OH GOD!
-  components:
-    - type: Rehydratable
-      possibleSpawns:
-        - MobCockroach
 
 - type: entity
   parent: MonkeyCube

@@ -28,3 +28,5 @@ medbook-popup-scan-target = {CAPITALIZE(THE($user))} is trying to examine you!
 medbook-status-critical = Critical
 medbook-status-low = Low
 medbook-status-normal = Normal
+
+health-analyzer-window-return-button-text = Return

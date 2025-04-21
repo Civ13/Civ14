@@ -72,7 +72,8 @@ public sealed partial class BodySystem : SharedBodySystem
     {
         // TODO: Predict this probably.
         base.AddPart(bodyEnt, partEnt, slotId);
-
+        if (!TryComp<HumanoidAppearanceComponent>(bodyEnt, out var humanoid))
+            return;
         var layer = partEnt.Comp.ToHumanoidLayers();
         if (layer != null)
         {
@@ -98,7 +99,7 @@ public sealed partial class BodySystem : SharedBodySystem
 
         var layers = HumanoidVisualLayersExtension.Sublayers(layer.Value);
         _humanoidSystem.SetLayersVisibility(
-            bodyEnt, layers, visible: false, false, humanoid);
+            bodyEnt, layers, visible: false, permanent: true, humanoid);
         _appearance.SetData(bodyEnt, layer, true); // Shitmed Change
     }
 
