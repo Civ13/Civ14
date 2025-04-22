@@ -8,7 +8,7 @@
       sprite: Clothing/Back/Backpacks/backpack.rsi
       state: icon
     - type: STWeight
-      self: 8
+      self: 2
     - type: Item
       size: Huge
     - type: Clothing
