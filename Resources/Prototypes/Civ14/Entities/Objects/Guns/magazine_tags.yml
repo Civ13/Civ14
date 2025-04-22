@@ -160,7 +160,18 @@
 
 - type: Tag
   id: civ13_caliber_webly445
-
+- type: Tag
+  id: civ13_caliber_musketball
+- type: Tag
+  id: civ13_caliber_stoneball
+- type: Tag
+  id: civ13_caliber_musketball_pistol
+- type: Tag
+  id: civ13_caliber_blunderbuss
+- type: Tag
+  id: civ13_caliber_a77x58_wood
+- type: Tag
+  id: civ13_caliber_a57x28
 # Generated list of entity IDs from entities_magazines.yml as Tags
 
 - type: Tag
