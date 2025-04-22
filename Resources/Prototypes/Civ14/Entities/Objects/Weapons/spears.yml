@@ -8,6 +8,7 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/assagai.rsi
+
     - type: MeleeWeapon
       damage:
         types:
@@ -15,6 +16,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/assagai.rsi
     - type: DisarmMalus
     - type: Construction
@@ -28,6 +30,7 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/dory.rsi
+
     - type: MeleeWeapon
       damage:
         types:
@@ -35,6 +38,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/dory.rsi
     - type: DisarmMalus
     - type: Construction
@@ -48,6 +52,7 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/sarissa.rsi
+
     - type: MeleeWeapon
       damage:
         types:
@@ -55,6 +60,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/sarissa.rsi
     - type: DisarmMalus
     - type: Construction
@@ -69,6 +75,7 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/pike.rsi
+
     - type: MeleeWeapon
       damage:
         types:
@@ -76,6 +83,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/pike.rsi
     - type: DisarmMalus
     - type: Construction
@@ -91,6 +99,7 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/naginata.rsi
+
     - type: MeleeWeapon
       damage:
         types:
@@ -98,6 +107,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/naginata.rsi
     - type: DisarmMalus
     - type: Construction
@@ -111,6 +121,7 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/halberd.rsi
+
     - type: MeleeWeapon
       damage:
         types:
@@ -118,6 +129,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/halberd.rsi
     - type: DisarmMalus
     - type: Construction

@@ -7,6 +7,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/nguni_shield.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -23,6 +24,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/nguni_shield.rsi
     - type: Destructible
       thresholds:
@@ -44,6 +46,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/steel_shield.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -60,6 +63,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/steel_shield.rsi
     - type: Destructible
       thresholds:
@@ -79,6 +83,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/iron_shield.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -95,6 +100,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/iron_shield.rsi
     - type: Destructible
       thresholds:
@@ -114,6 +120,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/semioval_shield.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -130,6 +137,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/semioval_shield.rsi
     - type: Destructible
       thresholds:
@@ -149,6 +157,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/semioval_shield_templar.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -165,6 +174,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/semioval_shield_templar.rsi
     - type: Destructible
       thresholds:
@@ -184,6 +194,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/semioval_shield_templar2.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -200,6 +211,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/semioval_shield_templar2.rsi
     - type: Destructible
       thresholds:
@@ -219,6 +231,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/orc_shield.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -235,6 +248,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/orc_shield.rsi
     - type: Destructible
       thresholds:
@@ -254,6 +268,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/bronze_shield.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -270,6 +285,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/bronze_shield.rsi
     - type: Destructible
       thresholds:
@@ -289,6 +305,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/athenian_shield.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -305,6 +322,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/athenian_shield.rsi
     - type: Destructible
       thresholds:
@@ -323,6 +341,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/pegasus_shield.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -339,6 +358,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/pegasus_shield.rsi
     - type: Destructible
       thresholds:
@@ -357,6 +377,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/owl_shield.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -373,6 +394,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/owl_shield.rsi
     - type: Destructible
       thresholds:
@@ -392,6 +414,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/spartan_shield.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -408,6 +431,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/spartan_shield.rsi
     - type: Destructible
       thresholds:
@@ -427,6 +451,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/egyptian_shield.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -443,6 +468,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/egyptian_shield.rsi
     - type: Destructible
       thresholds:
@@ -462,6 +488,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/scutum.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -478,6 +505,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/scutum.rsi
     - type: Destructible
       thresholds:
@@ -500,6 +528,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/prae_roman_shield.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -516,6 +545,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/prae_roman_shield.rsi
     - type: Destructible
       thresholds:
@@ -535,6 +565,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/chimalli.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -551,6 +582,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/chimalli.rsi
     - type: Destructible
       thresholds:
@@ -573,6 +605,7 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/arabic_shield.rsi
+
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -589,6 +622,7 @@
           Slash: 1
           Piercing: 1
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/arabic_shield.rsi
     - type: Destructible
       thresholds:

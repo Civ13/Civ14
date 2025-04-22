@@ -18,6 +18,7 @@
     - type: STWeight
       self: 3
     - type: Item
+      heldPrefix: null
       size: Normal
     - type: Clothing
       sprite: Civ14/Objects/StoneAge/club.rsi

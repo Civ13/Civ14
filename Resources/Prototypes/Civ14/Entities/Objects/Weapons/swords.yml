@@ -13,6 +13,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/wood_sword.rsi
     - type: DisarmMalus
     - type: Construction
@@ -33,6 +34,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/bokken_sword.rsi
     - type: DisarmMalus
     - type: Construction
@@ -55,6 +57,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/katana.rsi
     - type: DisarmMalus
 
@@ -75,6 +78,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/wakazashi.rsi
     - type: DisarmMalus
 
@@ -93,6 +97,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/smallsword.rsi
     - type: DisarmMalus
 
@@ -111,6 +116,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/spadroon.rsi
     - type: DisarmMalus
 
@@ -129,6 +135,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/armingsword.rsi
     - type: DisarmMalus
 
@@ -147,6 +154,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/viking_sword.rsi
     - type: DisarmMalus
 
@@ -165,6 +173,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/mersksword.rsi
     - type: DisarmMalus
 
@@ -183,6 +192,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/bolo.rsi
     - type: DisarmMalus
 
@@ -203,6 +213,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/kukri.rsi
     - type: DisarmMalus
 
@@ -221,6 +232,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/cutlass.rsi
     - type: DisarmMalus
 
@@ -239,6 +251,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/scimitar.rsi
     - type: DisarmMalus
 
@@ -257,6 +270,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/longquan.rsi
     - type: DisarmMalus
 
@@ -275,6 +289,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/umar_sword.rsi
     - type: DisarmMalus
 
@@ -293,6 +308,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/sabre.rsi
     - type: DisarmMalus
 
@@ -311,6 +327,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/longsword.rsi
     - type: DisarmMalus
 
@@ -329,6 +346,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/zweihander.rsi
     - type: DisarmMalus
 
@@ -347,6 +365,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/claymore.rsi
     - type: DisarmMalus
 
@@ -367,6 +386,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/rapier.rsi
     - type: DisarmMalus
 
@@ -385,6 +405,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/broadsword.rsi
     - type: DisarmMalus
 
@@ -403,6 +424,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/gladius.rsi
     - type: DisarmMalus
 
@@ -421,6 +443,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/gaelic_short.rsi
     - type: DisarmMalus
 
@@ -439,6 +462,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/khopesh.rsi
     - type: DisarmMalus
 
@@ -457,6 +481,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/gladius.rsi
     - type: DisarmMalus
 
@@ -477,6 +502,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/imperial.rsi
     - type: DisarmMalus
 
@@ -497,6 +523,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/longclaw.rsi
     - type: DisarmMalus
 
@@ -515,6 +542,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/shashka.rsi
     - type: DisarmMalus
 
@@ -535,6 +563,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/arabsword1.rsi
     - type: DisarmMalus
 
@@ -555,6 +584,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/arabsword2.rsi
     - type: DisarmMalus
 
@@ -573,6 +603,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/urukhaiscimitar.rsi
     - type: DisarmMalus
 
