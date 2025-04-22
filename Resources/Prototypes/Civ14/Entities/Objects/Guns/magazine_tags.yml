@@ -7,9 +7,15 @@
 
 - type: Tag
   id: civ13_caliber_a145
+- type: Tag
+  id: civ13_caliber_a145_ap
 
 - type: Tag
   id: civ13_caliber_a15115
+- type: Tag
+  id: civ13_caliber_a15115_ap
+- type: Tag
+  id: civ13_caliber_a15115_aphe
 
 - type: Tag
   id: civ13_caliber_a3006
@@ -61,6 +67,12 @@
 
 - type: Tag
   id: civ13_caliber_a50cal
+
+- type: Tag
+  id: civ13_caliber_a50cal_ap
+
+- type: Tag
+  id: civ13_caliber_a50cal_he
 
 - type: Tag
   id: civ13_caliber_a545x39

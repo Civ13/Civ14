@@ -12,7 +12,7 @@
         - state: mag-0
           map: ["enum.GunVisualLayers.Mag"]
     - type: STWeight
-      self: 1
+      self: 1.5
     - type: Item
       size: Small
       shape:
