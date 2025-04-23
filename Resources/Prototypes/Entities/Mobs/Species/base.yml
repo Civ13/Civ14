@@ -223,7 +223,7 @@
     - type: StaminaDecayModifier
     - type: StaminaCritThresholdModifier
     - type: STWeight
-      self: 63
+      self: 53
 
 - type: entity
   save: false
