@@ -34,6 +34,7 @@ entities:
       mapPaused: true
     - type: PhysicsMap
     - type: GridTree
+    - type: CivResearch
     - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree

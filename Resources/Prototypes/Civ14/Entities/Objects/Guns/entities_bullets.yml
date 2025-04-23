@@ -76,7 +76,7 @@
     - type: Projectile
       damage:
         types:
-          Piercing: 42
+          Piercing: 35
 - type: entity
   id: civ13_bullet_musketball
   name: civ13_bullet_musketball
@@ -87,7 +87,7 @@
     - type: Projectile
       damage:
         types:
-          Piercing: 49
+          Piercing: 37
 - type: entity
   id: civ13_bullet_musketball_pistol
   name: civ13_bullet_musketball_pistol
@@ -98,7 +98,7 @@
     - type: Projectile
       damage:
         types:
-          Piercing: 31
+          Piercing: 20
 - type: entity
   id: civ13_bullet_blunderbuss
   name: civ13_bullet_blunderbuss
