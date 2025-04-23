@@ -118,7 +118,7 @@
     - type: MeleeWeapon
       damage:
         types:
-          Slash: 15
+          Slash: 10
       animation: WeaponArcBite
     - type: NPCRetaliation
       attackMemoryLength: 10

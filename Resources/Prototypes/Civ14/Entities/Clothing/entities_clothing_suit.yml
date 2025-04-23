@@ -11,12 +11,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 1
+          Blunt: 0.98
           Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+          Piercing: 0.99
+          Arrow: 0.97
+          Heat: 0.99
+          Radiation: 0.99
     - type: Construction
 
       graph: civ13_suit_preachers_robe
@@ -37,10 +37,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
+          Blunt: 0.99
+          Slash: 0.98
+          Piercing: 0.99
+          Arrow: 0.98
           Heat: 1
           Radiation: 1
     - type: Construction
@@ -63,12 +63,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+          Blunt: 0.96
+          Slash: 0.99
+          Piercing: 0.99
+          Arrow: 0.97
+          Heat: 0.98
+          Radiation: 0.99
     - type: Construction
 
       graph: civ13_suit_black_vest
@@ -89,12 +89,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+          Blunt: 0.91
+          Slash: 0.92
+          Piercing: 0.82
+          Arrow: 0.91
+          Heat: 0.78
+          Radiation: 0.99
     - type: Construction
 
       graph: civ13_suit_DRA_officer_jacket
@@ -165,7 +165,7 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 1
+          Blunt: 0.99
           Slash: 1
           Piercing: 1
           Arrow: 1
@@ -247,12 +247,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+          Blunt: 0.94
+          Slash: 0.92
+          Piercing: 0.99
+          Arrow: 0.99
+          Heat: 0.91
+          Radiation: 0.99
     - type: Construction
 
       graph: civ13_suit_haori_jacket
@@ -276,12 +276,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+          Blunt: 0.94
+          Slash: 0.92
+          Piercing: 0.99
+          Arrow: 0.99
+          Heat: 0.91
+          Radiation: 0.99
     - type: Construction
 
       graph: civ13_suit_Abashiri_Haori
@@ -304,12 +304,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+          Blunt: 0.94
+          Slash: 0.92
+          Piercing: 0.99
+          Arrow: 0.99
+          Heat: 0.91
+          Radiation: 0.99
     - type: Construction
 
       graph: civ13_suit_Abashiri_Haori_1
@@ -332,12 +332,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+          Blunt: 0.94
+          Slash: 0.92
+          Piercing: 0.99
+          Arrow: 0.99
+          Heat: 0.91
+          Radiation: 0.99
     - type: Construction
 
       graph: civ13_suit_Abashiri_Haori_1_2
@@ -358,12 +358,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+          Blunt: 0.99
+          Slash: 0.98
+          Piercing: 0.98
+          Arrow: 0.97
+          Heat: 0.99
+          Radiation: 0.99
     - type: Construction
 
       graph: civ13_suit_black_suit
