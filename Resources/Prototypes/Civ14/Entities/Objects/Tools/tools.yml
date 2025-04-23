@@ -212,6 +212,14 @@
       damage:
         types:
           Blunt: 3
+    - type: Tag
+      tags:
+        - Wrench
+    - type: Tool
+      qualities:
+        - Anchoring
+      useSound:
+        path: /Audio/Items/ratchet.ogg
     - type: Construction
       graph: WoodHammer
       node: woodhammer

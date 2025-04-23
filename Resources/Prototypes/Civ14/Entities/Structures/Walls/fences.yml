@@ -68,7 +68,7 @@
       canPry: false
       occludes: false
       changeAirtight: false
-      bumpOpen: true
+      bumpOpen: false
       clickOpen: true
       canCrush: true
       closeTimeOne: 0
