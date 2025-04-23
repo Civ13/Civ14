@@ -8,7 +8,7 @@
     - type: Clothing
       slots: [eyes]
     - type: STWeight
-      self: 1
+      self: 0.02
     - type: Item
       size: Small
       storedRotation: -90
