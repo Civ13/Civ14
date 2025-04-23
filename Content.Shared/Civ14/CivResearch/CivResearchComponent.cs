@@ -30,5 +30,12 @@ public sealed partial class CivResearchComponent : Component
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("researchSpeed")]
     public float ResearchSpeed { get; set; } = 0.000057f;
+    /// <summary>
+    /// The maximum research level.
+    /// Should probably stay below 900 as 9 is used as the research level for disabled and futuristic stuff.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite)]
+    [DataField("maxResearch")]
+    public float MaxResearch { get; set; } = 800;
 }
 

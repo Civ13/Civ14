@@ -44,6 +44,10 @@ public sealed partial class CivResearchSystem : EntitySystem
                 // Use frameTime for frame-rate independent accumulation
                 // comp.ResearchLevel += comp.ResearchSpeed * frameTime * Timing.TickRate; // More robust way
                 // Or keep the original logic if ResearchSpeed is per-tick
+                if (comp.ResearchLevel >= comp.MaxResearch)
+                {
+                    continue;
+                }
                 comp.ResearchLevel += comp.ResearchSpeed;
 
                 // Mark component dirty if necessary (often handled automatically for networked components)
