@@ -17,7 +17,9 @@
     - type: Appearance
     - type: Extractable
       grindableSolutionName: food
-
+    - type: Tag
+      tags:
+        - Compostable
 # For produce that can be immediately eaten
 
 - type: entity
@@ -57,6 +59,7 @@
     - type: Tag
       tags:
         - Wheat
+        - Compostable
 
 - type: entity
   name: meatwheat bushel

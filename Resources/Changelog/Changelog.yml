@@ -123,3 +123,12 @@ Entries:
     id: 10
     time: "2025-04-21T00:00:00.0000000+00:00"
     url: https://github.com/Civ13/Civ14/pull/127
+  - author: Taislin
+    changes:
+      - message: Adds plant matter and some other foods to the compostables list.
+        type: Tweak
+      - message: Dough can be cooked in the campfire/brazier now.
+        type: Add
+    id: 11
+    time: "2025-04-23T00:00:00.0000000+00:00"
+    #url: https://github.com/Civ13/Civ14/pull/127

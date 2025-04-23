@@ -45,7 +45,8 @@
         - Bread
         - Pizza
         - Cheese
-      compostTime: 20.0
+        - Compostable
+      compostTime: 10.0
     - type: Construction
       agemin: 0
       agemax: 8

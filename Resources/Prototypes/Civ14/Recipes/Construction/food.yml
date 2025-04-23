@@ -1,0 +1,24 @@
+- type: constructionGraph
+  id: CookBread
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: bread
+          completed:
+            - !type:PlaySound
+              sound: /Audio/Effects/sizzle.ogg
+          steps:
+            - minTemperature: 305
+
+    - node: bread
+      entity: FoodBreadPlain
+
+- type: foodSequenceElement
+  id: CookBread
+  sprites:
+    - sprite: Objects/Consumable/Food/Baked/bread.rsi
+      state: plain
+  tags:
+    - Cooked
+    - Bread
