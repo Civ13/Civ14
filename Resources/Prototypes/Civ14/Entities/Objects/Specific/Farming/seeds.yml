@@ -198,6 +198,13 @@
   maxCount: 30
 
 - type: stack
+  id: StackWheatSeedsCiv
+  name: wheat seeds
+  icon: { sprite: /Textures/Civ14/Objects/Farming/seeds.rsi, state: seeds_old }
+  spawn: WheatSeedsCiv
+  maxCount: 30
+
+- type: stack
   id: StackCornSeedsCiv
   name: corn seeds
   icon: { sprite: /Textures/Civ14/Objects/Farming/seeds.rsi, state: seeds_old }
@@ -223,4 +230,18 @@
   name: hemp seeds
   icon: { sprite: /Textures/Civ14/Objects/Farming/seeds.rsi, state: seeds_old }
   spawn: HempSeedsCiv
+  maxCount: 30
+
+- type: stack
+  id: StackAloeSeedsCiv
+  name: aloe vera seeds
+  icon: { sprite: /Textures/Civ14/Objects/Farming/seeds.rsi, state: seeds_old }
+  spawn: AloeSeedsCiv
+  maxCount: 30
+
+- type: stack
+  id: StackPoppySeedsCiv
+  name: poppy seeds
+  icon: { sprite: /Textures/Civ14/Objects/Farming/seeds.rsi, state: seeds_old }
+  spawn: PoppySeedsCiv
   maxCount: 30
