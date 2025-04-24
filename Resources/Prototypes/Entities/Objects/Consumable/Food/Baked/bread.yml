@@ -22,14 +22,13 @@
           reagents:
             - ReagentId: Nutriment
               Quantity: 20
-
+    - type: STWeight
+      self: 0.75
 - type: entity
   parent: FoodBreadBase
   id: FoodBreadSliceBase
   abstract: true
   components:
-    - type: STWeight
-      self: 0.75
     - type: Item
       size: Tiny
     - type: FlavorProfile
@@ -415,6 +414,9 @@
         - state: plain
     - type: SliceableFood
       slice: FoodBreadPlainSlice
+    - type: Construction
+      graph: CookBread
+      node: bread
 
 - type: entity
   name: bread slice

@@ -53,3 +53,8 @@
             animalpoo2: ""
             animalpoo3: ""
     - type: Compost
+    - type: Tag
+      tags:
+        - Burnable
+    - type: BurnFuel
+      burnTime: 3

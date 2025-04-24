@@ -12,7 +12,7 @@
       heatingCoefficient: 1.1
       coolingCoefficient: 0.1
     - type: STWeight
-      self: 3
+      self: 1
     - type: Item
       size: Normal
     - type: Armor

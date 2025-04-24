@@ -1,0 +1,32 @@
+- type: constructionGraph
+  id: CookBread
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: bread
+          steps:
+            - minTemperature: 305
+    - node: bread
+      entity: FoodBreadPlain
+
+- type: foodSequenceElement
+  id: CookBread
+  sprites:
+    - sprite: Objects/Consumable/Food/Baked/bread.rsi
+      state: plain
+  tags:
+    - Cooked
+    - Bread
+
+- type: constructionGraph
+  id: RoastPotato
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: roastpotato
+          steps:
+            - minTemperature: 305
+    - node: roastpotato
+      entity: FoodPotatoRoast
