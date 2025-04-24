@@ -307,7 +307,7 @@
     - type: InternalTemperature
       thickness: 0.02
       area: 0.02 # arbitrary number
-      conductivity: 0.3
+      conductivity: 0.8
 - type: entity
   name: dough slice
   parent: FoodBakingBase

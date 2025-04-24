@@ -18,3 +18,15 @@
   tags:
     - Cooked
     - Bread
+
+- type: constructionGraph
+  id: RoastPotato
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: roastpotato
+          steps:
+            - minTemperature: 305
+    - node: roastpotato
+      entity: FoodPotatoRoast
