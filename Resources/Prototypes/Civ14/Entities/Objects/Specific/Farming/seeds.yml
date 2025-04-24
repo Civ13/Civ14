@@ -12,7 +12,11 @@
       self: 0.01
     - type: Item
       size: Small
-
+    - type: Tags
+      tags:
+        - Burnable
+    - type: BurnFuel
+      burnTime: 0.3
 - type: entity
   parent: SeedBaseCiv
   id: WheatSeedsCiv
