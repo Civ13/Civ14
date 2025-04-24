@@ -129,6 +129,8 @@ Entries:
         type: Tweak
       - message: Dough can be cooked in the campfire/brazier now.
         type: Add
+      - message: Potatoes can be cooked in the campfire/brazier now. Eating raw potatoes will make you sick now!
+        type: Add
     id: 11
     time: "2025-04-23T00:00:00.0000000+00:00"
-    #url: https://github.com/Civ13/Civ14/pull/127
+    url: https://github.com/Civ13/Civ14/pull/151
