@@ -58,9 +58,8 @@ jobs:
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add .
-          git commit -m "Update compiled client from Civ14 - changed files only"
+          git commit -m "Update compiled client from Civ14"
           git push
-
           cd -
           # Copy compiled output to target-repo/
           rsync -av --update ./../bin/Content.Server/win-x64/ Content.Server/ || true
@@ -68,5 +67,5 @@ jobs:
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add .
-          git commit -m "Update compiled server from Civ14 - changed files only"
+          git commit -m "Update compiled server from Civ14"
           git push

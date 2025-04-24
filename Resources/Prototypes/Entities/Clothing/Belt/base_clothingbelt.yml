@@ -6,7 +6,7 @@
     - type: Sprite
       state: icon
     - type: STWeight
-      self: 3
+      self: 0.5
     - type: Item
       size: Normal
     - type: Clothing
@@ -31,7 +31,7 @@
       grid:
         - 0,0,7,1
     - type: STWeight
-      self: 10
+      self: 0.1
     - type: Item
       size: Ginormous
     - type: ContainerContainer
@@ -51,7 +51,7 @@
     - type: BallisticAmmoProvider
       mayTransfer: true
     - type: STWeight
-      self: 10
+      self: 0.2
     - type: Item
       size: Ginormous
     - type: ContainerContainer

@@ -9,7 +9,7 @@
     - type: Sprite
       state: icon
     - type: STWeight
-      self: 1
+      self: 0.1
     - type: Item
       size: Small
       storedRotation: -90
