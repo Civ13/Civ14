@@ -51,21 +51,34 @@ jobs:
 
       - name: Update Target Repo
         run: |
-          # Copy compiled output to target-repo/
-          rsync -av --update ./bin/Content.Client/win-x64/ target-repo/Content.Client/ || true
-          cd target-repo
-          cd Content.Client
+          echo "--- Updating Client ---"
+          # Add --delete to remove files in target that are gone from source
+          rsync -av --delete --update ./bin/Content.Client/win-x64/ target-repo/Content.Client/
+          cd target-repo/Content.Client
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add .
-          git commit -m "Update compiled client from Civ14"
-          git push
-          cd -
-          # Copy compiled output to target-repo/
-          rsync -av --update ./../bin/Content.Server/win-x64/ Content.Server/ || true
-          cd Content.Server
+          # Check if there are staged changes. git diff exits 0 if no changes, 1 if changes.
+          if git diff --staged --quiet; then
+            echo "No client changes to commit."
+          else
+            git commit -m "Update compiled client from Civ14"
+            git push
+          fi
+          # Go back to the workspace root before processing the server
+          cd ../..
+
+          echo "--- Updating Server ---"
+          # Corrected rsync source path assuming script runs from Civ14 root
+          rsync -av --delete --update ./bin/Content.Server/win-x64/ target-repo/Content.Server/
+          cd target-repo/Content.Server
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add .
-          git commit -m "Update compiled server from Civ14"
-          git push
+          # Check if there are staged changes
+          if git diff --staged --quiet; then
+            echo "No server changes to commit."
+          else
+            git commit -m "Update compiled server from Civ14"
+            git push
+          fi
