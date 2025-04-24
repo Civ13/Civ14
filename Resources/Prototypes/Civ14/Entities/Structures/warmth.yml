@@ -123,3 +123,11 @@
             - MachineMask
           layer:
             - MachineLayer
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 40
+
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
