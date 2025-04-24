@@ -17,9 +17,6 @@
     - type: GuideHelp
       guides:
         - Medical
-    - type: Tags
-      tags:
-        - Burnable
     - type: BurnFuel
       burnTime: 0.5
 - type: entity
