@@ -1,0 +1,18 @@
+<windows:CharacterWindow
+    xmlns="https://spacestation14.io"
+    xmlns:cc="clr-namespace:Content.Client.UserInterface.Controls"
+    xmlns:windows="clr-namespace:Content.Client.Civ14.Faction.Windows"
+    Title="Factions"
+    MinWidth="400"
+    MinHeight="545">
+    <ScrollContainer>
+        <BoxContainer Orientation="Vertical">
+            <Label Name="RoleType"
+                   VerticalAlignment="Top"
+                   Margin="0 6 0 10"
+                   HorizontalAlignment="Center"
+                   StyleClasses="LabelHeading"
+                   Access="Public"/>
+        </BoxContainer>
+    </ScrollContainer>
+</windows:CharacterWindow>
