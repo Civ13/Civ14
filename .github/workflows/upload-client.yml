@@ -52,7 +52,6 @@ jobs:
       - name: Update Target Repo
         run: |
           echo "--- Updating Client ---"
-          # Add --delete to remove files in target that are gone from source
           rsync -av --delete --update ./bin/Content.Client/win-x64/ target-repo/Content.Client/
           cd target-repo/Content.Client
           git config user.name "GitHub Action"
@@ -66,10 +65,9 @@ jobs:
             git push
           fi
           # Go back to the workspace root before processing the server
-          cd ../..
+          cd ${{ github.workspace }}
 
           echo "--- Updating Server ---"
-          # Corrected rsync source path assuming script runs from Civ14 root
           rsync -av --delete --update ./bin/Content.Server/win-x64/ target-repo/Content.Server/
           cd target-repo/Content.Server
           git config user.name "GitHub Action"
