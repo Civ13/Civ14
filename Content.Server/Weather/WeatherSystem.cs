@@ -29,6 +29,19 @@ public sealed class WeatherSystem : SharedWeatherSystem
         args.State = new WeatherComponentState(component.Weather);
     }
 
+    /// <summary>
+    /// Handles the "weather" admin console command to set the weather on a specified map, optionally for a set duration, and updates precipitation states for all entities with <c>WeatherNomadsComponent</c>.
+    /// </summary>
+    /// <param name="shell">The console shell executing the command.</param>
+    /// <param name="argStr">The raw argument string.</param>
+    /// <param name="args">
+    /// Command arguments:
+    /// <list type="number">
+    /// <item><description>Map ID (integer).</description></item>
+    /// <item><description>Weather prototype ID or "null" to clear weather.</description></item>
+    /// <item><description>(Optional) Duration in seconds for the weather effect.</description></item>
+    /// </list>
+    /// </param>
     [AdminCommand(AdminFlags.Fun)]
     private void WeatherTwo(IConsoleShell shell, string argStr, string[] args)
     {
