@@ -9,7 +9,7 @@ public sealed partial class SleepZoneComponent : Component
     /// The original coordinates the entity was teleported from.
     /// </summary>
     [DataField("origin")]
-    public EntityCoordinates Origin;
+    public MapCoordinates Origin = MapCoordinates.Nullspace;
     /// <summary>
     /// Is the entity currently in the sleep zone?
     /// </summary>

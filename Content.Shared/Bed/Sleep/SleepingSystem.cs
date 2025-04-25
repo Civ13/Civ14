@@ -24,6 +24,7 @@ using Content.Shared.Verbs;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Content.Shared.Civ14.SleepZone;
 
 namespace Content.Shared.Bed.Sleep;
 
@@ -36,7 +37,7 @@ public sealed partial class SleepingSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedEmitSoundSystem _emitSound = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffectsSystem = default!;
-
+    [Dependency] private readonly SleepZoneSystem _sleepzone = default!;
     public static readonly EntProtoId SleepActionId = "ActionSleep";
     public static readonly EntProtoId WakeActionId = "ActionWake";
 
@@ -270,6 +271,10 @@ public sealed partial class SleepingSystem : EntitySystem
             return false;
 
         EnsureComp<SleepingComponent>(ent);
+        if (TryComp<SleepZoneComponent>(ent, out var sleepZone))
+        {
+            _sleepzone.StartSleep(ent);
+        }
         return true;
     }
 
@@ -314,7 +319,10 @@ public sealed partial class SleepingSystem : EntitySystem
             _audio.PlayPredicted(ent.Comp.WakeAttemptSound, ent, user);
             _popupSystem.PopupClient(Loc.GetString("wake-other-success", ("target", Identity.Entity(ent, EntityManager))), ent, user);
         }
-
+        if (TryComp<SleepZoneComponent>(ent, out var sleepZone))
+        {
+            _sleepzone.WakeUp(ent);
+        }
         Wake((ent, ent.Comp));
         return true;
     }

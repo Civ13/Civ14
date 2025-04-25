@@ -56,3 +56,8 @@
     - type: Construction
       graph: BedRollPrim14
       node: bedroll
+
+- type: entity
+  name: sleepzone bed
+  id: SleepZoneBed
+  parent: Bed
