@@ -113,3 +113,10 @@ Entries:
     id: 9
     time: "2025-04-19T00:00:00.0000000+00:00"
     url: https://github.com/Civ13/Civ14/pull/124
+  - author: Taislin
+    changes:
+      - message: Adds RMC-14/GoobStation's gun prediction mechanics, reducing lag between clicks and firing a weapon.
+        type: Add
+    id: 12
+    time: "2025-04-25T00:00:00.0000000+00:00"
+    url: https://github.com/Civ13/Civ14/pull/158
