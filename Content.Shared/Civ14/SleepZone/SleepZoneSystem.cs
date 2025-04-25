@@ -89,16 +89,12 @@ public sealed partial class SleepZoneSystem : EntitySystem
                 return false;
             }
 
-            // --- FIX: Create EntityCoordinates relative to the bed ---
-            // This makes entityToTeleport a child of bedEntity at its local (0,0)
-            // This avoids issues with GetMapCoordinates returning nullspace if the bed isn't on a map.
             var targetCoords = Transform(bedEntity).Coordinates;
-            // ---
 
             _sawmill.Info($"Found bed {bedEntity}, teleporting {entityToTeleport} into it at {targetCoords}.");
 
             // Use _xform for SetCoordinates
-            _xform.SetCoordinates(entityToTeleport, new EntityCoordinates(bedEntity, Vector2.Zero));
+            _xform.SetCoordinates(entityToTeleport, targetCoords);
             return true; // Teleport successful
         }
         else
