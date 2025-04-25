@@ -2,7 +2,7 @@
 using Robust.Client.UserInterface.CustomControls;
 using Robust.Client.UserInterface.XAML;
 
-namespace Content.Client.Civ14.Faction.Windows;
+namespace Content.Client.UserInterface.Systems.Faction.Windows;
 
 [GenerateTypedNameReferences]
 public sealed partial class FactionWindow : DefaultWindow
@@ -12,3 +12,4 @@ public sealed partial class FactionWindow : DefaultWindow
         RobustXamlLoader.Load(this);
     }
 }
+

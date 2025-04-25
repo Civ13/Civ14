@@ -1,7 +1,7 @@
-<windows:CharacterWindow
+<windows:FactionWindow
     xmlns="https://spacestation14.io"
     xmlns:cc="clr-namespace:Content.Client.UserInterface.Controls"
-    xmlns:windows="clr-namespace:Content.Client.Civ14.Faction.Windows"
+    xmlns:windows="clr-namespace:Content.Client.UserInterface.Systems.Faction.Windows"
     Title="Factions"
     MinWidth="400"
     MinHeight="545">
@@ -15,4 +15,4 @@
                    Access="Public"/>
         </BoxContainer>
     </ScrollContainer>
-</windows:CharacterWindow>
+</windows:FactionWindow>
