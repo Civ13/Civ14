@@ -46,7 +46,7 @@ public sealed class PlantHolderSystem : EntitySystem
 
     public const float HydroponicsSpeedMultiplier = 1f;
     public const float HydroponicsConsumptionMultiplier = 2f;
-
+    private ISawmill _sawmill = default!;
     public override void Initialize()
     {
         base.Initialize();
@@ -54,6 +54,7 @@ public sealed class PlantHolderSystem : EntitySystem
         SubscribeLocalEvent<PlantHolderComponent, InteractUsingEvent>(OnInteractUsing);
         SubscribeLocalEvent<PlantHolderComponent, InteractHandEvent>(OnInteractHand);
         SubscribeLocalEvent<PlantHolderComponent, SolutionTransferredEvent>(OnSolutionTransferred);
+        _sawmill = LogManager.GetSawmill("entity");
     }
 
     public override void Update(float frameTime)
@@ -264,7 +265,7 @@ public sealed class PlantHolderSystem : EntitySystem
                 return;
             }
 
-            component.Health -= (_random.Next(3, 5) * 10);
+            component.Health -= _random.Next(3, 5) * 10;
 
             float? healthOverride;
             if (component.Harvest)
@@ -450,23 +451,25 @@ public sealed class PlantHolderSystem : EntitySystem
         }
 
         // Water consumption.
+
+        var weather = EntityQueryEnumerator<WeatherNomadsComponent>();
+        while (weather.MoveNext(out var uuid, out var weatherComponent))
+        {
+            if (weatherComponent.CurrentPrecipitation == Precipitation.LightWet || weatherComponent.CurrentPrecipitation == Precipitation.HeavyWet || weatherComponent.CurrentPrecipitation == Precipitation.Storm)
+            {
+                component.WaterLevel += 2f;
+            }
+            if (weatherComponent.CurrentPrecipitation == Precipitation.Storm)
+            {
+                component.Health -= _random.Next(1, 3) * HydroponicsSpeedMultiplier;
+            }
+        }
         if (component.Seed.WaterConsumption > 0 && component.WaterLevel > 0 && _random.Prob(0.75f))
         {
-            var weather = EntityQueryEnumerator<WeatherNomadsComponent>();
-            while (weather.MoveNext(out var uuid, out var weatherComponent))
-            {
-                if (weatherComponent.CurrentPrecipitation == Precipitation.LightWet || weatherComponent.CurrentPrecipitation == Precipitation.HeavyWet  || weatherComponent.CurrentPrecipitation == Precipitation.Storm)
-                {
-                    component.WaterLevel += 2f;
-                }
-            }
-
             component.WaterLevel -= MathF.Max(0f,
             component.Seed.WaterConsumption * HydroponicsConsumptionMultiplier * HydroponicsSpeedMultiplier);
             if (component.DrawWarnings)
                 component.UpdateSpriteAfterUpdate = true;
-
-
         }
 
         var healthMod = _random.Next(1, 3) * HydroponicsSpeedMultiplier;

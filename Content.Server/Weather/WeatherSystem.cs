@@ -76,6 +76,27 @@ public sealed class WeatherSystem : SharedWeatherSystem
                 shell.WriteError(Loc.GetString("cmd-weather-error-wrong-time"));
             }
         }
+        var nomadsweather = EntityQueryEnumerator<WeatherNomadsComponent>();
+        while (nomadsweather.MoveNext(out var uuid, out var weatherComponent))
+        {
+            var parsedprec = Precipitation.Dry;
+            if (!args[1].Equals("null"))
+            {
+                if (args[1].Equals("Hail") || args[1].Equals("SandstormHeavy") || args[1].Equals("Storm") || args[1].Equals("SnowfallHeavy"))
+                {
+                    parsedprec = Precipitation.Storm;
+                }
+                if (args[1].Equals("Rain") || args[1].Equals("SnowfallLight"))
+                {
+                    parsedprec = Precipitation.LightWet;
+                }
+                if (args[1].Equals("SnowfallMedium"))
+                {
+                    parsedprec = Precipitation.HeavyWet;
+                }
+            }
+            weatherComponent.CurrentPrecipitation = parsedprec;
+        }
 
         SetWeather(mapId, weather, endTime);
     }
