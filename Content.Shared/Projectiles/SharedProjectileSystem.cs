@@ -1,11 +1,10 @@
 using System.Numerics;
-using Content.Shared._RMC14.Projectiles.Penetration;
 using Content.Shared._RMC14.Weapons.Ranged.Prediction;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Camera;
+using Content.Shared.CombatMode.Pacification;
 using Content.Shared.Damage;
 using Content.Shared.Database;
-using Content.Shared.Destructible;
 using Content.Shared.DoAfter;
 using Content.Shared.Effects;
 using Content.Shared.Hands.EntitySystems;
@@ -21,7 +20,6 @@ using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Serialization;
-using Robust.Shared.Utility;
 
 namespace Content.Shared.Projectiles;
 
@@ -29,9 +27,8 @@ public abstract partial class SharedProjectileSystem : EntitySystem
 {
     public const string ProjectileFixture = "projectile";
 
-    [Dependency] private readonly INetManager _net = default!;
+    [Dependency] private readonly INetManager _netManager = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly SharedDestructibleSystem _destructible = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
@@ -52,16 +49,13 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         SubscribeLocalEvent<EmbeddableProjectileComponent, ThrowDoHitEvent>(OnEmbedThrowDoHit);
         SubscribeLocalEvent<EmbeddableProjectileComponent, ActivateInWorldEvent>(OnEmbedActivate);
         SubscribeLocalEvent<EmbeddableProjectileComponent, RemoveEmbeddedProjectileEvent>(OnEmbedRemove);
-        SubscribeLocalEvent<EmbeddableProjectileComponent, ComponentShutdown>(OnEmbeddableCompShutdown);
-
-        SubscribeLocalEvent<EmbeddedContainerComponent, EntityTerminatingEvent>(OnEmbeddableTermination);
     }
 
     private void OnStartCollide(EntityUid uid, ProjectileComponent component, ref StartCollideEvent args)
     {
         // This is so entities that shouldn't get a collision are ignored.
         if (args.OurFixtureId != ProjectileFixture || !args.OtherFixture.Hard
-            || component.ProjectileSpent || component is { Weapon: null, OnlyCollideWhenShot: true })
+            || component.DamagedEntity || component is { Weapon: null, OnlyCollideWhenShot: true })
             return;
 
         ProjectileCollide((uid, component, args.OurBody), args.OtherEntity);
@@ -70,9 +64,9 @@ public abstract partial class SharedProjectileSystem : EntitySystem
     public void ProjectileCollide(Entity<ProjectileComponent, PhysicsComponent> projectile, EntityUid target, bool predicted = false)
     {
         var (uid, component, ourBody) = projectile;
-        if (projectile.Comp1.ProjectileSpent)
+        if (projectile.Comp1.DamagedEntity)
         {
-            if (_net.IsServer && component.DeleteOnCollide)
+            if (_netManager.IsServer && component.DeleteOnCollide)
                 QueueDel(uid);
 
             return;
@@ -87,14 +81,15 @@ public abstract partial class SharedProjectileSystem : EntitySystem
             return;
         }
 
-        var ev = new ProjectileHitEvent(component.Damage * _damageableSystem.UniversalProjectileDamageModifier, target, component.Shooter);
+        var ev = new ProjectileHitEvent(component.Damage, target, component.Shooter);
         RaiseLocalEvent(uid, ref ev);
         if (ev.Handled)
             return;
 
         var coordinates = Transform(projectile).Coordinates;
         var otherName = ToPrettyString(target);
-        var modifiedDamage = _net.IsServer
+        var direction = ourBody.LinearVelocity.Normalized();
+        var modifiedDamage = _netManager.IsServer
             ? _damageableSystem.TryChangeDamage(target,
                 ev.Damage,
                 component.IgnoreResistances,
@@ -103,12 +98,8 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         var deleted = Deleted(target);
 
         var filter = Filter.Pvs(coordinates, entityMan: EntityManager);
-        if (_guns.GunPrediction &&
-            TryComp(projectile, out PredictedProjectileServerComponent? serverProjectile) &&
-            serverProjectile.Shooter is { } shooter)
-        {
-            filter = filter.RemovePlayer(shooter);
-        }
+        if (_guns.GunPrediction && TryComp(projectile, out PredictedProjectileServerComponent? serverProjectile))
+            filter = filter.RemovePlayer(serverProjectile.Shooter);
 
         if (modifiedDamage is not null && (EntityManager.EntityExists(component.Shooter) || EntityManager.EntityExists(component.Weapon)))
         {
@@ -120,75 +111,22 @@ public abstract partial class SharedProjectileSystem : EntitySystem
             var shooterOrWeapon = EntityManager.EntityExists(component.Shooter) ? component.Shooter!.Value : component.Weapon!.Value;
 
             _adminLogger.Add(LogType.BulletHit,
-                LogImpact.Medium,
+                HasComp<ActorComponent>(target) ? LogImpact.Extreme : LogImpact.High,
                 $"Projectile {ToPrettyString(uid):projectile} shot by {ToPrettyString(shooterOrWeapon):source} hit {otherName:target} and dealt {modifiedDamage.GetTotal():damage} damage");
         }
-
-        // TODO RMC14 move destructible to shared
-        // If penetration is to be considered, we need to do some checks to see if the projectile should stop.
-        // if (modifiedDamage is not null && component.PenetrationThreshold != 0)
-        // {
-        //     // If a damage type is required, stop the bullet if the hit entity doesn't have that type.
-        //     if (component.PenetrationDamageTypeRequirement != null)
-        //     {
-        //         var stopPenetration = false;
-        //         foreach (var requiredDamageType in component.PenetrationDamageTypeRequirement)
-        //         {
-        //             if (!modifiedDamage.DamageDict.Keys.Contains(requiredDamageType))
-        //             {
-        //                 stopPenetration = true;
-        //                 break;
-        //             }
-        //         }
-        //         if (stopPenetration)
-        //             component.ProjectileSpent = true;
-        //     }
-        //
-        //     var damageRequired = _destructible.DestroyedAt(target);
-        //     // If the object won't be destroyed, it "tanks" the penetration hit.
-        //     if (modifiedDamage.GetTotal() < damageRequired)
-        //     {
-        //         component.ProjectileSpent = true;
-        //     }
-        //
-        //     if (!component.ProjectileSpent)
-        //     {
-        //         component.PenetrationAmount += damageRequired;
-        //         // The projectile has dealt enough damage to be spent.
-        //         if (component.PenetrationAmount >= component.PenetrationThreshold)
-        //         {
-        //             component.ProjectileSpent = true;
-        //         }
-        //     }
-        // }
-        // else
-        // {
-        //     component.ProjectileSpent = true;
-        // }
 
         if (!deleted)
         {
             _guns.PlayImpactSound(target, modifiedDamage, component.SoundHit, component.ForceSound, filter, projectile);
-
-            if (!ourBody.LinearVelocity.IsLengthZero())
-            {
-                var direction = ourBody.LinearVelocity.Normalized();
-                if (!float.IsNaN(direction.X))
-                    _sharedCameraRecoil.KickCamera(target, direction);
-            }
+            _sharedCameraRecoil.KickCamera(target, direction);
         }
 
-        component.ProjectileSpent = true;
+        component.DamagedEntity = true;
         Dirty(uid, component);
 
-        // RMC14
-        var additionalHits = new AfterProjectileHitEvent(projectile, target);
-        RaiseLocalEvent(uid, ref additionalHits);
-
-        if (!predicted && component.DeleteOnCollide && (_net.IsServer || IsClientSide(uid)))
+        if (!predicted && component.DeleteOnCollide && (_netManager.IsServer || IsClientSide(uid)))
             QueueDel(uid);
-
-        else if (_net.IsServer && component.DeleteOnCollide)
+        else if (_netManager.IsServer && component.DeleteOnCollide)
         {
             var predictedComp = EnsureComp<PredictedProjectileHitComponent>(uid);
             predictedComp.Origin = _transform.GetMoverCoordinates(coordinates);
@@ -200,75 +138,86 @@ public abstract partial class SharedProjectileSystem : EntitySystem
             Dirty(uid, predictedComp);
         }
 
-        if ((_net.IsServer || IsClientSide(uid)) && component.ImpactEffect != null)
+        if ((_netManager.IsServer || IsClientSide(uid)) && component.ImpactEffect != null)
         {
             var impactEffectEv = new ImpactEffectEvent(component.ImpactEffect, GetNetCoordinates(coordinates));
-            if (_net.IsServer)
+            if (_netManager.IsServer)
                 RaiseNetworkEvent(impactEffectEv, filter);
             else
                 RaiseLocalEvent(impactEffectEv);
         }
     }
 
-    private void OnEmbedActivate(Entity<EmbeddableProjectileComponent> embeddable, ref ActivateInWorldEvent args)
+    private void OnEmbedActivate(EntityUid uid, EmbeddableProjectileComponent component, ActivateInWorldEvent args)
     {
-        // Unremovable embeddables moment
-        if (embeddable.Comp.RemovalTime == null)
+        // Nuh uh
+        if (component.RemovalTime == null)
             return;
 
-        if (args.Handled || !args.Complex || !TryComp<PhysicsComponent>(embeddable, out var physics) ||
-            physics.BodyType != BodyType.Static)
+        if (args.Handled || !args.Complex || !TryComp<PhysicsComponent>(uid, out var physics) || physics.BodyType != BodyType.Static)
             return;
 
         args.Handled = true;
 
-        _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager,
-            args.User,
-            embeddable.Comp.RemovalTime.Value,
-            new RemoveEmbeddedProjectileEvent(),
-            eventTarget: embeddable,
-            target: embeddable));
+        _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, args.User, component.RemovalTime.Value,
+            new RemoveEmbeddedProjectileEvent(), eventTarget: uid, target: uid));
     }
 
-    private void OnEmbedRemove(Entity<EmbeddableProjectileComponent> embeddable, ref RemoveEmbeddedProjectileEvent args)
+    private void OnEmbedRemove(EntityUid uid, EmbeddableProjectileComponent component, RemoveEmbeddedProjectileEvent args)
     {
-        if (args.Cancelled)
+        // Whacky prediction issues.
+        if (args.Cancelled || _netManager.IsClient)
             return;
 
-        EmbedDetach(embeddable, embeddable.Comp, args.User);
+        if (component.DeleteOnRemove)
+        {
+            QueueDel(uid);
+            return;
+        }
+
+        var xform = Transform(uid);
+        TryComp<PhysicsComponent>(uid, out var physics);
+        _physics.SetBodyType(uid, BodyType.Dynamic, body: physics, xform: xform);
+        _transform.AttachToGridOrMap(uid, xform);
+
+        // Reset whether the projectile has damaged anything if it successfully was removed
+        if (TryComp<ProjectileComponent>(uid, out var projectile))
+        {
+            projectile.Shooter = null;
+            projectile.Weapon = null;
+            projectile.DamagedEntity = false;
+        }
+
+        // Land it just coz uhhh yeah
+        var landEv = new LandEvent(args.User, true);
+        RaiseLocalEvent(uid, ref landEv);
+        _physics.WakeBody(uid, body: physics);
 
         // try place it in the user's hand
-        _hands.TryPickupAnyHand(args.User, embeddable);
+        _hands.TryPickupAnyHand(args.User, uid);
     }
 
-    private void OnEmbeddableCompShutdown(Entity<EmbeddableProjectileComponent> embeddable, ref ComponentShutdown arg)
+    private void OnEmbedThrowDoHit(EntityUid uid, EmbeddableProjectileComponent component, ThrowDoHitEvent args)
     {
-        EmbedDetach(embeddable, embeddable.Comp);
-    }
-
-    private void OnEmbedThrowDoHit(Entity<EmbeddableProjectileComponent> embeddable, ref ThrowDoHitEvent args)
-    {
-        if (!embeddable.Comp.EmbedOnThrow)
+        if (!component.EmbedOnThrow)
             return;
 
-        EmbedAttach(embeddable, args.Target, null, embeddable.Comp);
+        Embed(uid, args.Target, null, component);
     }
 
-    private void OnEmbedProjectileHit(Entity<EmbeddableProjectileComponent> embeddable, ref ProjectileHitEvent args)
+    private void OnEmbedProjectileHit(EntityUid uid, EmbeddableProjectileComponent component, ref ProjectileHitEvent args)
     {
-        EmbedAttach(embeddable, args.Target, args.Shooter, embeddable.Comp);
+        Embed(uid, args.Target, args.Shooter, component);
 
         // Raise a specific event for projectiles.
-        if (TryComp(embeddable, out ProjectileComponent? projectile) &&
-            projectile.Shooter is { } shooter &&
-            projectile.Weapon is { } weapon)
+        if (TryComp(uid, out ProjectileComponent? projectile))
         {
-            var ev = new ProjectileEmbedEvent(shooter, weapon, args.Target);
-            RaiseLocalEvent(embeddable, ref ev);
+            var ev = new ProjectileEmbedEvent(projectile.Shooter!.Value, projectile.Weapon!.Value, args.Target);
+            RaiseLocalEvent(uid, ref ev);
         }
     }
 
-    private void EmbedAttach(EntityUid uid, EntityUid target, EntityUid? user, EmbeddableProjectileComponent component)
+    private void Embed(EntityUid uid, EntityUid target, EntityUid? user, EmbeddableProjectileComponent component)
     {
         TryComp<PhysicsComponent>(uid, out var physics);
         _physics.SetLinearVelocity(uid, Vector2.Zero, body: physics);
@@ -281,88 +230,13 @@ public abstract partial class SharedProjectileSystem : EntitySystem
             var rotation = xform.LocalRotation;
             if (TryComp<ThrowingAngleComponent>(uid, out var throwingAngleComp))
                 rotation += throwingAngleComp.Angle;
-            _transform.SetLocalPosition(uid, xform.LocalPosition + rotation.RotateVec(component.Offset), xform);
+            _transform.SetLocalPosition(uid, xform.LocalPosition + rotation.RotateVec(component.Offset),
+                xform);
         }
 
         _audio.PlayPredicted(component.Sound, uid, null);
-        component.EmbeddedIntoUid = target;
         var ev = new EmbedEvent(user, target);
         RaiseLocalEvent(uid, ref ev);
-        Dirty(uid, component);
-
-        EnsureComp<EmbeddedContainerComponent>(target, out var embeddedContainer);
-
-        //Assert that this entity not embed
-        DebugTools.AssertEqual(embeddedContainer.EmbeddedObjects.Contains(uid), false);
-
-        embeddedContainer.EmbeddedObjects.Add(uid);
-    }
-
-    public void EmbedDetach(EntityUid uid, EmbeddableProjectileComponent? component, EntityUid? user = null)
-    {
-        if (!Resolve(uid, ref component))
-            return;
-
-        if (component.EmbeddedIntoUid is not null)
-        {
-            if (TryComp<EmbeddedContainerComponent>(component.EmbeddedIntoUid.Value, out var embeddedContainer))
-            {
-                embeddedContainer.EmbeddedObjects.Remove(uid);
-                Dirty(component.EmbeddedIntoUid.Value, embeddedContainer);
-                if (embeddedContainer.EmbeddedObjects.Count == 0)
-                    RemCompDeferred<EmbeddedContainerComponent>(component.EmbeddedIntoUid.Value);
-            }
-        }
-
-        if (component.DeleteOnRemove && _net.IsServer)
-        {
-            QueueDel(uid);
-            return;
-        }
-
-        var xform = Transform(uid);
-        if (TerminatingOrDeleted(xform.GridUid) && TerminatingOrDeleted(xform.MapUid))
-            return;
-        TryComp<PhysicsComponent>(uid, out var physics);
-        _physics.SetBodyType(uid, BodyType.Dynamic, body: physics, xform: xform);
-        _transform.AttachToGridOrMap(uid, xform);
-        component.EmbeddedIntoUid = null;
-        Dirty(uid, component);
-
-        // Reset whether the projectile has damaged anything if it successfully was removed
-        if (TryComp<ProjectileComponent>(uid, out var projectile))
-        {
-            projectile.Shooter = null;
-            projectile.Weapon = null;
-            projectile.ProjectileSpent = false;
-
-            Dirty(uid, projectile);
-        }
-
-        if (user != null)
-        {
-            // Land it just coz uhhh yeah
-            var landEv = new LandEvent(user, true);
-            RaiseLocalEvent(uid, ref landEv);
-        }
-
-        _physics.WakeBody(uid, body: physics);
-    }
-
-    private void OnEmbeddableTermination(Entity<EmbeddedContainerComponent> container, ref EntityTerminatingEvent args)
-    {
-        DetachAllEmbedded(container);
-    }
-
-    public void DetachAllEmbedded(Entity<EmbeddedContainerComponent> container)
-    {
-        foreach (var embedded in container.Comp.EmbeddedObjects)
-        {
-            if (!TryComp<EmbeddableProjectileComponent>(embedded, out var embeddedComp))
-                continue;
-
-            EmbedDetach(embedded, embeddedComp);
-        }
     }
 
     private void PreventCollision(EntityUid uid, ProjectileComponent component, ref PreventCollideEvent args)
