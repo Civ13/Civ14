@@ -134,3 +134,14 @@ Entries:
     id: 11
     time: "2025-04-23T00:00:00.0000000+00:00"
     url: https://github.com/Civ13/Civ14/pull/151
+  - author: Taislin
+    changes:
+      - message: Increased damage from cold.
+        type: Tweak
+      - message: Rain waters plants now.
+        type: Add
+      - message: Storms, blizzards damage plants now.
+        type: Add
+    id: 12
+    time: "2025-04-25T00:00:00.0000000+00:00"
+    url: https://github.com/Civ13/Civ14/pull/159

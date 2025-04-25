@@ -457,7 +457,7 @@ public sealed class PlantHolderSystem : EntitySystem
         {
             if (weatherComponent.CurrentPrecipitation == Precipitation.LightWet || weatherComponent.CurrentPrecipitation == Precipitation.HeavyWet || weatherComponent.CurrentPrecipitation == Precipitation.Storm)
             {
-                component.WaterLevel += 2f;
+                component.WaterLevel += 3f;
             }
             if (weatherComponent.CurrentPrecipitation == Precipitation.Storm)
             {
