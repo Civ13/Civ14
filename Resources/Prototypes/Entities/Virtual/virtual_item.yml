@@ -2,8 +2,10 @@
 - type: entity
   id: VirtualItem
   name: VIRTUAL ITEM YOU SHOULD NOT SEE THIS
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-  - type: Item
-    size: Ginormous # no storage insertion visuals
-  - type: VirtualItem
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous # no storage insertion visuals
+    - type: VirtualItem

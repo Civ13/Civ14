@@ -5,41 +5,41 @@
   description: ded
   suffix: DEBUG
   components:
-  - type: Tag
-    tags:
-      - Debug
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Pistols/debug.rsi
-    state: icon
-  - type: Clothing
-    sprite: Objects/Weapons/Guns/Pistols/debug.rsi
-  - type: Gun
-    fireRate: 100
-    selectedMode: FullAuto
-    availableModes:
-      - SemiAuto
-      - FullAuto
-  - type: AmmoCounter
-  - type: ChamberMagazineAmmoProvider
-    boltClosed: null
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazinePistolDebug
-        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - Debug
-      gun_chamber:
-        name: Chamber
-        startingItem: CartridgeDebug
-        priority: 1
-        whitelist:
-          tags:
-            - CartridgePistol
+    - type: Tag
+      tags:
+        - Debug
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Pistols/debug.rsi
+      state: icon
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/Pistols/debug.rsi
+    - type: Gun
+      fireRate: 100
+      selectedMode: FullAuto
+      availableModes:
+        - SemiAuto
+        - FullAuto
+    - type: AmmoCounter
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazinePistolDebug
+          insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Debug
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgeDebug
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgePistol
 
 - type: entity
   id: MagazinePistolDebug
@@ -47,29 +47,29 @@
   parent: BaseMagazinePistol
   suffix: DEBUG
   components:
-  - type: Tag
-    tags:
-      - Debug
-  - type: BallisticAmmoProvider
-    proto: CartridgeDebug
-    capacity: 1000
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
+    - type: Tag
+      tags:
+        - Debug
+    - type: BallisticAmmoProvider
+      proto: CartridgeDebug
+      capacity: 1000
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
 
 - type: entity
   id: BulletDebug
   name: bang, ded bullet
   parent: BaseBullet
-  categories: [ Debug, HideSpawnMenu ]
+  categories: [Debug, HideSpawnMenu]
   suffix: DEBUG
   components:
-  - type: Tag
-    tags:
-      - Debug
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 20000
+    - type: Tag
+      tags:
+        - Debug
+    - type: Projectile
+      damage:
+        types:
+          Blunt: 20000
 
 - type: entity
   id: CartridgeDebug
@@ -77,11 +77,11 @@
   parent: BaseCartridgePistol
   suffix: DEBUG
   components:
-  - type: Tag
-    tags:
-      - Debug
-  - type: CartridgeAmmo
-    proto: BulletDebug
+    - type: Tag
+      tags:
+        - Debug
+    - type: CartridgeAmmo
+      proto: BulletDebug
 
 - type: entity
   name: bang stick gibber
@@ -90,42 +90,44 @@
   description: hit hard ye
   suffix: DEBUG
   components:
-  - type: Tag
-    tags:
-      - Debug
-  - type: Sprite
-    sprite: Objects/Weapons/Melee/debug.rsi
-    state: icon
-  - type: MeleeWeapon
-    damage:
-      types:
-        Blunt: 20000
-  - type: Item
-    size: Tiny
-    sprite: Objects/Weapons/Melee/debug.rsi
+    - type: Tag
+      tags:
+        - Debug
+    - type: Sprite
+      sprite: Objects/Weapons/Melee/debug.rsi
+      state: icon
+    - type: MeleeWeapon
+      damage:
+        types:
+          Blunt: 20000
+    - type: STWeight
+      self: 0.75
+    - type: Item
+      size: Tiny
+      sprite: Objects/Weapons/Melee/debug.rsi
 
 - type: entity
   name: bang stick 100dmg
   parent: MeleeDebugGib
   id: MeleeDebug100
   components:
-  - type: Tag
-    tags:
-      - Debug
-  - type: MeleeWeapon
-    damage:
-      types:
-        Blunt: 100
+    - type: Tag
+      tags:
+        - Debug
+    - type: MeleeWeapon
+      damage:
+        types:
+          Blunt: 100
 
 - type: entity
   name: bang stick 200dmg
   parent: MeleeDebugGib
   id: MeleeDebug200
   components:
-  - type: Tag
-    tags:
-      - Debug
-  - type: MeleeWeapon
-    damage:
-      types:
-        Blunt: 200
+    - type: Tag
+      tags:
+        - Debug
+    - type: MeleeWeapon
+      damage:
+        types:
+          Blunt: 200

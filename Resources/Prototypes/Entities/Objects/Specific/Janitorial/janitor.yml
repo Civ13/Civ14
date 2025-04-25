@@ -30,6 +30,8 @@
       damage:
         types:
           Blunt: 5
+    - type: STWeight
+      self: 5
     - type: Item
       size: Large
       sprite: Objects/Specific/Janitorial/mop.rsi
@@ -82,6 +84,8 @@
       damage:
         types:
           Blunt: 5
+    - type: STWeight
+      self: 5
     - type: Item
       size: Large
       sprite: Objects/Specific/Janitorial/advmop.rsi
@@ -277,7 +281,6 @@
   weights:
     RandomSpawner100: 56
     SpacemenFigureSpawner: 28
-    SpawnMobCockroach: 5
     MaintenanceToolSpawner: 5
 
 - type: entity
@@ -305,6 +308,8 @@
       damage:
         types:
           Blunt: 0
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       sprite: Objects/Specific/Janitorial/rag.rsi

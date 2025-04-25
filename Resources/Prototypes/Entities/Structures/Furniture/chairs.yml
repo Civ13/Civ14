@@ -335,6 +335,8 @@
         - state: folding_folded
           map: ["foldedLayer"]
           visible: false
+    - type: STWeight
+      self: 8
     - type: Item
       size: Huge
     - type: Appearance

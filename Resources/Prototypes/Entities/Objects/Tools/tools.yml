@@ -127,7 +127,6 @@
     - type: StaticPrice
       price: 22
 
-
 - type: entity
   name: multitool
   parent: BaseItem
@@ -143,6 +142,8 @@
         - state: icon
         - state: green-unlit
           shader: unshaded
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
     - type: Clothing
@@ -192,6 +193,8 @@
         - state: mode-link
           map: ["enum.NetworkConfiguratorLayers.ModeLight"]
           shader: unshaded
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
     - type: Clothing
@@ -313,6 +316,8 @@
     - type: Sprite
       sprite: Objects/Tools/rcd.rsi
       state: icon
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
     - type: Clothing
@@ -467,6 +472,8 @@
           Blunt: 14
       soundHit:
         collection: MetalThud
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
       sprite: Objects/Tools/shovel.rsi

@@ -4,6 +4,8 @@
   name: body bag
   description: A plastic bag designed for the storage and transportation of cadavers to stop body decomposition.
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: bag
@@ -115,6 +117,8 @@
   name: ash
   description: This used to be something, but now it's not.
   components:
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
     - type: Sprite

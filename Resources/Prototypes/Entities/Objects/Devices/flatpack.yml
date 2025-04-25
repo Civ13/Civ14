@@ -6,6 +6,8 @@
   categories:
     - HideSpawnMenu
   components:
+    - type: STWeight
+      self: 5
     - type: Item
       size: Large
     - type: Sprite

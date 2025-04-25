@@ -57,3 +57,32 @@
               amount: 1
     - node: end
       entity: FloorTileItemRoad
+
+- type: construction
+  name: bridging tile
+  id: TileBridge
+  graph: TileBridge
+  startNode: start
+  targetNode: end
+  category: construction-category-tiles
+  description: A tile used to make a makeshift bridge.
+  icon: { sprite: Civ14/Structures/Floors/wood.rsi, state: woodalt7 }
+  objectType: Item
+  agemin: 0
+  agemax: 8
+
+- type: constructionGraph
+  id: TileBridge
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          completed:
+            - !type:SetStackCount
+              amount: 1
+          steps:
+            - material: WoodPlank
+              amount: 1
+    - node: end
+      entity: FloorTileItemBridge

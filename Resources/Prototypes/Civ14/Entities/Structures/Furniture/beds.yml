@@ -49,6 +49,8 @@
           Blunt: -0.1
     - type: Clickable
     - type: InteractionOutline
+    - type: STWeight
+      self: 5
     - type: Item
       size: Large
     - type: Construction

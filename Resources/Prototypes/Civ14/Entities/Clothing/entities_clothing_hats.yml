@@ -16,12 +16,6 @@
           Piercing: 0.95
           Arrow: 0.6
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_mamluk_conical_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Imperial Red Guard Helmet
   parent: ClothingHeadBase
@@ -40,17 +34,12 @@
           Piercing: 0.15
           Arrow: 0.19
           Heat: 0.35
-    - type: Construction
-      graph: civ13_head_Imperial_Red_Guard_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Imperial Senate Guard Helmet
   parent: ClothingHeadBase
   id: civ13_head_Imperial_Senate_Guard_Helmet
-  description: A reinforced plastoid helmet of the Extra-Galactic Empire's Senate Guards.
+  description: A reinforced plastoid helmet of the Extra-Galactic Empire's Senate
+    Guards.
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/senateguard.rsi
@@ -64,12 +53,6 @@
           Piercing: 0.15
           Arrow: 0.19
           Heat: 0.35
-    - type: Construction
-      graph: civ13_head_Imperial_Senate_Guard_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Phase I Replicant Trooper Helmet
   parent: ClothingHeadBase
@@ -88,12 +71,6 @@
           Piercing: 0.55
           Arrow: 0.55
           Heat: 0.55
-    - type: Construction
-      graph: civ13_head_Phase_I_Replicant_Trooper_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Phase I Replicant ARF Helmet
   parent: ClothingHeadBase
@@ -112,12 +89,6 @@
           Piercing: 0.6
           Arrow: 0.5
           Heat: 0.55
-    - type: Construction
-      graph: civ13_head_Phase_I_Replicant_ARF_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Phase I Replicant Airborne Helmet
   parent: ClothingHeadBase
@@ -136,12 +107,6 @@
           Piercing: 0.65
           Arrow: 0.5
           Heat: 0.44
-    - type: Construction
-      graph: civ13_head_Phase_I_Replicant_Airborne_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Stormtrooper Helmet
   parent: ClothingHeadBase
@@ -160,12 +125,6 @@
           Piercing: 0.35
           Arrow: 0.4
           Heat: 0.5
-    - type: Construction
-      graph: civ13_head_Stormtrooper_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Storm-Surgeon Helmet
   parent: ClothingHeadBase
@@ -184,12 +143,6 @@
           Piercing: 0.35
           Arrow: 0.4
           Heat: 0.5
-    - type: Construction
-      graph: civ13_head_Storm_Surgeon_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Stormtrooper Radio Technician Helmet
   parent: ClothingHeadBase
@@ -208,12 +161,6 @@
           Piercing: 0.44
           Arrow: 0.5
           Heat: 0.5
-    - type: Construction
-      graph: civ13_head_Stormtrooper_Radio_Technician_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: AT-RT Replicant Driver Helmet
   parent: ClothingHeadBase
@@ -232,12 +179,6 @@
           Piercing: 0.55
           Arrow: 0.55
           Heat: 0.55
-    - type: Construction
-      graph: civ13_head_AT_RT_Replicant_Driver_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Phase I Replicant Radio Technician Helmet
   parent: ClothingHeadBase
@@ -256,12 +197,6 @@
           Piercing: 0.6
           Arrow: 0.5
           Heat: 0.5
-    - type: Construction
-      graph: civ13_head_Phase_I_Replicant_Radio_Technician_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Replicant Engineer Helmet
   parent: ClothingHeadBase
@@ -281,12 +216,6 @@
           Arrow: 0.5
           Heat: 0.5
           Radiation: 0.65
-    - type: Construction
-      graph: civ13_head_Replicant_Engineer_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Replicant Commando Helmet
   parent: ClothingHeadBase
@@ -305,12 +234,6 @@
           Piercing: 0.55
           Arrow: 0.35
           Heat: 0.4
-    - type: Construction
-      graph: civ13_head_Replicant_Commando_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Phase I Replicant Pilot Helmet
   parent: ClothingHeadBase
@@ -329,12 +252,6 @@
           Piercing: 0.6
           Arrow: 0.5
           Heat: 0.44
-    - type: Construction
-      graph: civ13_head_Phase_I_Replicant_Pilot_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Phase I Replicant MP Helmet
   parent: ClothingHeadBase
@@ -353,12 +270,6 @@
           Piercing: 0.6
           Arrow: 0.5
           Heat: 0.55
-    - type: Construction
-      graph: civ13_head_Phase_I_Replicant_MP_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M1 helmet 2nd LT
   parent: ClothingHeadBase
@@ -377,12 +288,6 @@
           Piercing: 0.85
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M1_helmet_2nd_LT
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M1 camo helmet
   parent: ClothingHeadBase
@@ -394,12 +299,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/m1_camo_mitchell_lt.rsi
 
-    - type: Construction
-      graph: civ13_head_M1_camo_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Phase I Replicant Captain Helmet
   parent: ClothingHeadBase
@@ -418,12 +317,6 @@
           Piercing: 0.6
           Arrow: 0.5
           Heat: 0.44
-    - type: Construction
-      graph: civ13_head_Phase_I_Replicant_Captain_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Phase I Replicant Commander Helmet
   parent: ClothingHeadBase
@@ -442,12 +335,6 @@
           Piercing: 0.6
           Arrow: 0.5
           Heat: 0.44
-    - type: Construction
-      graph: civ13_head_Phase_I_Replicant_Commander_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Phase II Replicant Trooper Helmet
   parent: ClothingHeadBase
@@ -466,12 +353,6 @@
           Piercing: 0.6
           Arrow: 0.4
           Heat: 0.42
-    - type: Construction
-      graph: civ13_head_Phase_II_Replicant_Trooper_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Phase II Replicant Trooper Helmet
   parent: ClothingHeadBase
@@ -492,12 +373,6 @@
           Piercing: 0.6
           Arrow: 0.4
           Heat: 0.42
-    - type: Construction
-      graph: civ13_head_Phase_II_Replicant_Trooper_Helmet_1
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Phase II 501st Replicant Trooper Helmet
   parent: ClothingHeadBase
@@ -516,12 +391,6 @@
           Piercing: 0.6
           Arrow: 0.4
           Heat: 0.42
-    - type: Construction
-      graph: civ13_head_Phase_II_501st_Replicant_Trooper_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Rebel Fleet Trooper Helmet
   parent: ClothingHeadBase
@@ -540,12 +409,6 @@
           Piercing: 0.6
           Arrow: 0.5
           Heat: 0.55
-    - type: Construction
-      graph: civ13_head_Rebel_Fleet_Trooper_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: roman legionary helmet
   parent: ClothingHeadBase
@@ -564,12 +427,6 @@
           Piercing: 0.9
           Arrow: 0.6
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_roman_legionary_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: ushanka
   parent: ClothingHeadBase
@@ -607,12 +464,7 @@
           Piercing: 0.9
           Arrow: 0.6
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_roman_decurion_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: roman centurion helmet
   parent: ClothingHeadBase
@@ -633,12 +485,7 @@
           Piercing: 0.9
           Arrow: 0.6
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_roman_centurion_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: gladiator helmet
   parent: ClothingHeadBase
@@ -657,12 +504,6 @@
           Piercing: 0.9
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_gladiator_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: sol invictus helmet
   parent: ClothingHeadBase
@@ -763,12 +604,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Greek_M15_Adrian_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: lochagos helmet
   parent: ClothingHeadBase
@@ -909,12 +744,6 @@
           Slash: 0.73
           Arrow: 0.85
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_leather_helmet
-      node: end
-      cost: 3
-      material: Leather
-      time: 9
 - type: entity
   name: hatchigane headband
   parent: ClothingHeadBase
@@ -978,12 +807,6 @@
           Slash: 0.55
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_horned_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: winged helmet
   parent: ClothingHeadBase
@@ -1003,12 +826,6 @@
           Slash: 0.55
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_winged_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: conspicious gaelic helmet
   parent: ClothingHeadBase
@@ -1029,12 +846,6 @@
           Piercing: 0.95
           Arrow: 0.6
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_conspicious_gaelic_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: conspicious gaelic helmet
   parent: ClothingHeadBase
@@ -1054,12 +865,6 @@
           Slash: 0.55
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_conspicious_gaelic_helmet_1
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: chinese warrior helmet
   parent: ClothingHeadBase
@@ -1138,12 +943,6 @@
           Piercing: 0.85
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M1_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: UN helmet
   parent: ClothingHeadBase
@@ -1162,12 +961,6 @@
           Piercing: 0.85
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_UN_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: UN medic helmet
   parent: ClothingHeadBase
@@ -1179,12 +972,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/unitednations_medic.rsi
 
-    - type: Construction
-      graph: civ13_head_UN_medic_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: camo 6B47 helmet
   parent: ClothingHeadBase
@@ -1196,12 +983,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/a6b47cam.rsi
 
-    - type: Construction
-      graph: civ13_head_camo_6B47_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: CVC helmet
   parent: ClothingHeadBase
@@ -1220,12 +1001,6 @@
           Piercing: 0.5
           Arrow: 0.25
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_CVC_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Chinese helmet
   parent: ClothingHeadBase
@@ -1244,12 +1019,6 @@
           Piercing: 0.85
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Chinese_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Chinese helmet
   parent: ClothingHeadBase
@@ -1268,12 +1037,6 @@
           Piercing: 0.65
           Arrow: 0.55
           Heat: 0.75
-    - type: Construction
-      graph: civ13_head_Chinese_helmet_1
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Medical FT1 advanced helmet
   parent: ClothingHeadBase
@@ -1292,12 +1055,6 @@
           Piercing: 0.19
           Arrow: 0.4
           Heat: 0.6
-    - type: Construction
-      graph: civ13_head_Medical_FT1_advanced_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: SSh-68 helmet
   parent: ClothingHeadBase
@@ -1311,12 +1068,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/ssh_68_sovhelm.rsi
 
-    - type: Construction
-      graph: civ13_head_SSh_68_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: viet pith helmet
   parent: ClothingHeadBase
@@ -1335,12 +1086,6 @@
           Piercing: 0.85
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_viet_pith_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: white hard hat
   parent: ClothingHeadBase
@@ -1494,12 +1239,6 @@
           Piercing: 0.9
           Arrow: 0.6
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_pith_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: PASGT helmet
   parent: ClothingHeadBase
@@ -1518,12 +1257,6 @@
           Piercing: 0.44
           Arrow: 0.25
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_PASGT_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Red PASGT helmet
   parent: ClothingHeadBase
@@ -1542,12 +1275,6 @@
           Piercing: 0.44
           Arrow: 0.25
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Red_PASGT_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: white papakha
   parent: ClothingHeadBase
@@ -1583,12 +1310,6 @@
           Piercing: 0.35
           Arrow: 0.32
           Heat: 0.82
-    - type: Construction
-      graph: civ13_head_LWH_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: sheriff's department cap
   parent: ClothingHeadBase
@@ -1626,12 +1347,6 @@
           Piercing: 0.065
           Arrow: 0.054
           Heat: 0.78
-    - type: Construction
-      graph: civ13_head_OCP_ACH_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: ACH helmet
   parent: ClothingHeadBase
@@ -1650,12 +1365,6 @@
           Piercing: 0.065
           Arrow: 0.054
           Heat: 0.78
-    - type: Construction
-      graph: civ13_head_ACH_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: MASKA 1 helmet
   parent: ClothingHeadBase
@@ -1674,13 +1383,6 @@
           Piercing: 0.05
           Arrow: -0.1
           Heat: 0.73
-    - type: Construction
-      graph: civ13_head_MASKA_1_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
-
 - type: entity
   name: 6B47 helmet
   parent: ClothingHeadBase
@@ -1694,12 +1396,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/a6b47.rsi
 
-    - type: Construction
-      graph: civ13_head_6B47_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: blugo 6B47 helmet
   parent: ClothingHeadBase
@@ -1711,12 +1407,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/a6b47b.rsi
 
-    - type: Construction
-      graph: civ13_head_blugo_6B47_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: blugo command 6B47 helmet
   parent: ClothingHeadBase
@@ -1728,12 +1418,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/a6b47bc.rsi
 
-    - type: Construction
-      graph: civ13_head_blugo_command_6B47_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Sfera helmet
   parent: ClothingHeadBase
@@ -1747,12 +1431,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/sfera_helmet.rsi
 
-    - type: Construction
-      graph: civ13_head_Sfera_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: ZSh-1 helmet
   parent: ClothingHeadBase
@@ -1766,12 +1444,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/zsh1.rsi
 
-    - type: Construction
-      graph: civ13_head_ZSh_1_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: ZSh-2 helmet
   parent: ClothingHeadBase
@@ -1785,12 +1457,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/zsh2.rsi
 
-    - type: Construction
-      graph: civ13_head_ZSh_2_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: IDF helmet
   parent: ClothingHeadBase
@@ -1809,12 +1475,6 @@
           Piercing: 0.49
           Arrow: 0.44
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_IDF_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: firefighter helmet
   parent: ClothingHeadBase
@@ -1826,12 +1486,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/hardhat_yellow.rsi
 
-    - type: Construction
-      graph: civ13_head_firefighter_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Mk6 helmet
   parent: ClothingHeadBase
@@ -1850,12 +1504,6 @@
           Piercing: 0.27
           Arrow: 0.32
           Heat: 0.82
-    - type: Construction
-      graph: civ13_head_Mk6_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: CG634 helmet
   parent: ClothingHeadBase
@@ -1867,12 +1515,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/cg634.rsi
 
-    - type: Construction
-      graph: civ13_head_CG634_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Mechanical Helmet
   parent: ClothingHeadBase
@@ -1891,12 +1533,6 @@
           Piercing: -0.19
           Arrow: 0.010000000000000009
           Heat: 0.58
-    - type: Construction
-      graph: civ13_head_Mechanical_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: QGF03 helmet
   parent: ClothingHeadBase
@@ -1915,12 +1551,6 @@
           Piercing: 0.35
           Arrow: 0.19
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_QGF03_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M95 helmet
   parent: ClothingHeadBase
@@ -1941,12 +1571,6 @@
           Piercing: 0.44
           Arrow: 0.25
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M95_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M1 Helmet
   parent: ClothingHeadBase
@@ -1965,12 +1589,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M1_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M1 Helmet with netting
   parent: ClothingHeadBase
@@ -1989,12 +1607,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M1_Helmet_with_netting
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M1 Helmet with green netting
   parent: ClothingHeadBase
@@ -2013,12 +1625,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M1_Helmet_with_green_netting
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M1 Medic Helmet
   parent: ClothingHeadBase
@@ -2037,12 +1643,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M1_Medic_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M1 2nd LT Helmet
   parent: ClothingHeadBase
@@ -2063,12 +1663,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M1_2nd_LT_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M1 1st LT Helmet
   parent: ClothingHeadBase
@@ -2089,12 +1683,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M1_1st_LT_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M1 Captain Helmet
   parent: ClothingHeadBase
@@ -2115,12 +1703,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M1_Captain_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: constable helmet
   parent: ClothingHeadBase
@@ -2141,11 +1723,6 @@
           Piercing: 0.95
           Arrow: 0.4
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_constable_helmet
-      node: end
-      cost: 6
-      time: 17
 - type: entity
   name: NCR Officer Beret
   parent: ClothingHeadBase
@@ -2176,12 +1753,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/ncr_helmet_goggles.rsi
 
-    - type: Construction
-      graph: civ13_head_Goggles_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Legionaire Cap
   parent: ClothingHeadBase
@@ -2223,17 +1794,12 @@
           Piercing: 0.9
           Arrow: 0.6
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_imperial_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: morion helmet
   parent: ClothingHeadBase
   id: civ13_head_morion_helmet
-  description: A protective and hardy morion helmet covering the dome of the head and ears.
+  description: A protective and hardy morion helmet covering the dome of the head
+    and ears.
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/morion_helmet.rsi
@@ -2247,17 +1813,12 @@
           Piercing: 0.95
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_morion_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: cabasset helmet
   parent: ClothingHeadBase
   id: civ13_head_cabasset_helmet
-  description: A protective and hardy morion helmet without the narrow ridge dent covering.
+  description: A protective and hardy morion helmet without the narrow ridge dent
+    covering.
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/morion_helmet.rsi
@@ -2271,17 +1832,12 @@
           Piercing: 0.92
           Arrow: 0.67
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_cabasset_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: leather infantry cap
   parent: ClothingHeadBase
   id: civ13_head_leather_infantry_cap
-  description: A protective leather cap often worn by soldiers of early era modern warfare.
+  description: A protective leather cap often worn by soldiers of early era modern
+    warfare.
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/nap_lea_infantry_cap.rsi
@@ -2398,17 +1954,12 @@
           Piercing: 0.9
           Arrow: 0.75
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_prussian_leather_infantry_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: satsuma infantry hat
   parent: ClothingHeadBase
   id: civ13_head_satsuma_infantry_hat
-  description: A pointed black hat often worn by soldiers of imperial japan's satsuma era.
+  description: A pointed black hat often worn by soldiers of imperial japan's satsuma
+    era.
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/nap_satsuma.rsi
@@ -2450,11 +2001,6 @@
           Arrow: 0.6
           Heat: 0.85
           Radiation: 0
-    - type: Construction
-      graph: civ13_head_dragoon_helmet
-      node: end
-      cost: 7
-      time: 10
 - type: entity
   name: black napoleonic bearskin hat
   parent: ClothingHeadBase
@@ -2768,12 +2314,6 @@
           Piercing: 0.9
           Arrow: 0.1
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_knight_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: protective conical helmet
   parent: ClothingHeadBase
@@ -2792,12 +2332,6 @@
           Piercing: 0.95
           Arrow: 0.6
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_protective_conical_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: kettle helmet
   parent: ClothingHeadBase
@@ -2816,12 +2350,6 @@
           Piercing: 0.95
           Arrow: 0.65
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_kettle_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: conical helmet
   parent: ClothingHeadBase
@@ -2840,12 +2368,6 @@
           Piercing: 0.95
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_conical_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: coif wrapped mamluk helmet
   parent: ClothingHeadBase
@@ -2864,12 +2386,6 @@
           Piercing: 0.9
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_coif_wrapped_mamluk_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: iron coif and helmet
   parent: ClothingHeadBase
@@ -2888,12 +2404,6 @@
           Piercing: 0.9
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_iron_coif_and_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: purple arabic turban helmet
   parent: ClothingHeadBase
@@ -2912,12 +2422,6 @@
           Piercing: 0.95
           Arrow: 0.6
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_purple_arabic_turban_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 8
 - type: entity
   name: red arabic turban helmet
   parent: ClothingHeadBase
@@ -2936,12 +2440,6 @@
           Piercing: 0.95
           Arrow: 0.6
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_red_arabic_turban_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 8
 - type: entity
   name: green arabic turban helmet
   parent: ClothingHeadBase
@@ -2960,12 +2458,6 @@
           Piercing: 0.95
           Arrow: 0.6
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_green_arabic_turban_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 8
 - type: entity
   name: blue arabic turban helmet
   parent: ClothingHeadBase
@@ -2984,12 +2476,6 @@
           Piercing: 0.95
           Arrow: 0.6
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_blue_arabic_turban_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 8
 - type: entity
   name: long arabic helmet
   parent: ClothingHeadBase
@@ -3010,12 +2496,6 @@
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_long_arabic_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: feminine long arabic helmet
   parent: ClothingHeadBase
@@ -3036,12 +2516,6 @@
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_feminine_long_arabic_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: templar knight helmet
   parent: ClothingHeadBase
@@ -3060,12 +2534,6 @@
           Piercing: 0.9
           Arrow: 0.1
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_templar_knight_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: emirate helmet
   parent: ClothingHeadBase
@@ -3086,12 +2554,6 @@
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_emirate_helmet
-      node: end
-      cost: 7
-      material: Cloth
-      time: 9
 - type: entity
   name: crusader helmet
   parent: ClothingHeadBase
@@ -3110,12 +2572,6 @@
           Piercing: 0.9
           Arrow: 0.1
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_crusader_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: crusader king helmet
   parent: ClothingHeadBase
@@ -3136,12 +2592,6 @@
           Piercing: 0.9
           Arrow: 0.1
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_crusader_king_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: baltic crusader helmet
   parent: ClothingHeadBase
@@ -3162,12 +2612,6 @@
           Piercing: 0.9
           Arrow: 0.1
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_baltic_crusader_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: baltic grandmaster helmet
   parent: ClothingHeadBase
@@ -3188,12 +2632,6 @@
           Piercing: 0.9
           Arrow: 0.1
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_baltic_grandmaster_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: baltic crusader king helmet
   parent: ClothingHeadBase
@@ -3215,12 +2653,6 @@
           Piercing: 0.9
           Arrow: 0.1
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_baltic_crusader_king_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: templar priest helmet
   parent: ClothingHeadBase
@@ -3241,12 +2673,6 @@
           Piercing: 0.95
           Arrow: 0.30
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_templar_priest_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: baltic priest helmet
   parent: ClothingHeadBase
@@ -3267,12 +2693,6 @@
           Piercing: 0.95
           Arrow: 0.30
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_baltic_priest_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: viking helmet
   parent: ClothingHeadBase
@@ -3291,12 +2711,6 @@
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_viking_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: royal mamluk conical helmet
   parent: ClothingHeadBase
@@ -3317,12 +2731,6 @@
           Piercing: 0.9
           Arrow: 0.5
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_royal_mamluk_conical_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: royal viking helmet
   parent: ClothingHeadBase
@@ -3341,12 +2749,6 @@
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_royal_viking_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: royal viking helmet
   parent: ClothingHeadBase
@@ -3367,12 +2769,6 @@
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_royal_viking_helmet_1
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: varangian helmet
   parent: ClothingHeadBase
@@ -3393,12 +2789,6 @@
           Piercing: 0.9
           Arrow: 0.1
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_varangian_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: imperial chinese helmet
   parent: ClothingHeadBase
@@ -3419,12 +2809,6 @@
           Piercing: 0.95
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_imperial_chinese_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: penlianal_whitestrake helmet
   parent: ClothingHeadBase
@@ -3445,12 +2829,6 @@
           Piercing: 0.9
           Arrow: 0.1
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_penlianal_whitestrake_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: hell knight helmet
   parent: ClothingHeadBase
@@ -3471,17 +2849,12 @@
           Piercing: 0.9
           Arrow: 0.1
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_hell_knight_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: saint helmet
   parent: ClothingHeadBase
   id: civ13_head_saint_helmet
-  description: The thick helmet of those chosen of divinity, a angelic halo hangs overhead.
+  description: The thick helmet of those chosen of divinity, a angelic halo hangs
+    overhead.
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/crusader_saint.rsi
@@ -3495,12 +2868,6 @@
           Piercing: 0.9
           Arrow: 0.1
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_saint_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: lordran helmet
   parent: ClothingHeadBase
@@ -3521,12 +2888,6 @@
           Piercing: 0.9
           Arrow: 0.1
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_lordran_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: dwemmer helmet
   parent: ClothingHeadBase
@@ -3538,12 +2899,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/dwelmet.rsi
 
-    - type: Construction
-      graph: civ13_head_dwemmer_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: leather samurai helmet
   parent: ClothingHeadBase
@@ -3564,12 +2919,6 @@
           Piercing: 0.92
           Arrow: 0.6
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_leather_samurai_helmet
-      node: end
-      cost: 7
-      material: Leather
-      time: 9
 - type: entity
   name: hide helmet
   parent: ClothingHeadBase
@@ -3588,12 +2937,6 @@
           Piercing: 0.9
           Arrow: 0.8
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_hide_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: iron helmet
   parent: ClothingHeadBase
@@ -3614,12 +2957,6 @@
           Piercing: 0.85
           Arrow: 0.7
           Heat: 0.75
-    - type: Construction
-      graph: civ13_head_iron_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: stormcloak officer helmet
   parent: ClothingHeadBase
@@ -3638,12 +2975,6 @@
           Piercing: 0.9
           Arrow: 0.55
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_stormcloak_officer_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: imperial officer helmet
   parent: ClothingHeadBase
@@ -3662,12 +2993,6 @@
           Piercing: 0.9
           Arrow: 0.5
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_imperial_officer_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: leather skullcap helmet
   parent: ClothingHeadBase
@@ -3688,12 +3013,6 @@
           Arrow: 0.8
           Heat: 0.85
           Radiation: 0
-    - type: Construction
-      graph: civ13_head_leather_skullcap_helmet
-      node: end
-      cost: 3
-      material: Leather
-      time: 10
 - type: entity
   name: samurai helmet
   parent: ClothingHeadBase
@@ -3712,12 +3031,6 @@
           Piercing: 0.9
           Arrow: 0.5
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_samurai_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: jingasa
   parent: ClothingHeadBase
@@ -3779,12 +3092,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/kevlarhelmet.rsi
 
-    - type: Construction
-      graph: civ13_head_black_kevlar_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Press kevlar helmet
   parent: ClothingHeadBase
@@ -3798,12 +3105,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/kevlarhelmet_press.rsi
 
-    - type: Construction
-      graph: civ13_head_Press_kevlar_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: motorcycle helmet
   parent: ClothingHeadBase
@@ -3822,12 +3123,6 @@
           Piercing: 0.95
           Arrow: 0.35
           Heat: 0.65
-    - type: Construction
-      graph: civ13_head_motorcycle_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: swat helmet
   parent: ClothingHeadBase
@@ -3846,12 +3141,6 @@
           Piercing: 0.15
           Arrow: 0.054
           Heat: 0.73
-    - type: Construction
-      graph: civ13_head_swat_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: swat helmet
   parent: ClothingHeadBase
@@ -3870,12 +3159,6 @@
           Piercing: 0.15
           Arrow: 0.054
           Heat: 0.73
-    - type: Construction
-      graph: civ13_head_swat_helmet_1
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: FT1 advanced helmet
   parent: ClothingHeadBase
@@ -3887,12 +3170,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/ft1_helmet.rsi
 
-    - type: Construction
-      graph: civ13_head_FT1_advanced_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: tactical helmet
   parent: ClothingHeadBase
@@ -3904,12 +3181,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/tacticalhelmet.rsi
 
-    - type: Construction
-      graph: civ13_head_tactical_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: IOG helmet
   parent: ClothingHeadBase
@@ -3921,12 +3192,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/ioghelmet.rsi
 
-    - type: Construction
-      graph: civ13_head_IOG_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: IOG helmet
   parent: ClothingHeadBase
@@ -3938,12 +3203,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/iogmask1.rsi
 
-    - type: Construction
-      graph: civ13_head_IOG_helmet_1
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: scrap metal helmet
   parent: ClothingHeadBase
@@ -3963,12 +3222,6 @@
           Arrow: 0.15
           Heat: 0.8
           Radiation: 0.6
-    - type: Construction
-      graph: civ13_head_scrap_metal_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: bone helmet
   parent: ClothingHeadBase
@@ -3989,8 +3242,8 @@
           Heat: 0.84
     - type: Construction
       graph: BoneHelmet
-      node: end
-      cost: 10
+      node: bonehelmet
+      cost: 4
       material: Bones
       time: 10
 - type: entity
@@ -4004,11 +3257,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/chitin_helmet.rsi
 
-    - type: Construction
-      graph: civ13_head_chitin_helmet
-      node: end
-      cost: 7
-      time: 12
 - type: entity
   name: sauron's helmet
   parent: ClothingHeadBase
@@ -4028,12 +3276,6 @@
           Arrow: 0.1
           Heat: 0.8
           Radiation: 0.55
-    - type: Construction
-      graph: civ13_head_saurons_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: orc beserker helm
   parent: ClothingHeadBase
@@ -4074,12 +3316,6 @@
           Slash: 0.19
           Arrow: 0.1
           Radiation: 0.9
-    - type: Construction
-      graph: civ13_head_iron_helmet_1
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: iron helmet
   parent: ClothingHeadBase
@@ -4097,12 +3333,6 @@
           Slash: 0.30
           Arrow: 0.30
           Radiation: 0.9
-    - type: Construction
-      graph: civ13_head_iron_helmet_1_2
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: orc spearman helm
   parent: ClothingHeadBase
@@ -4193,12 +3423,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Greek_M15_Adrian_helmet_1
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M15 Adrian helmet
   parent: ClothingHeadBase
@@ -4217,12 +3441,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M15_Adrian_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Medic M15 Adrian helmet
   parent: ClothingHeadBase
@@ -4241,12 +3459,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Medic_M15_Adrian_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Russian M15 Adrian helmet
   parent: ClothingHeadBase
@@ -4265,12 +3477,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Russian_M15_Adrian_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Medic M15 Adrian helmet
   parent: ClothingHeadBase
@@ -4289,12 +3495,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Medic_M15_Adrian_helmet_1
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M26 Adrian helmet
   parent: ClothingHeadBase
@@ -4313,12 +3513,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M26_Adrian_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Medic M26 Adrian helmet
   parent: ClothingHeadBase
@@ -4337,12 +3531,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Medic_M26_Adrian_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Mk1 Brodie Helmet
   parent: ClothingHeadBase
@@ -4361,12 +3549,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Mk1_Brodie_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Mk1 Brodie Helmet
   parent: ClothingHeadBase
@@ -4378,12 +3560,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/brodie_mk1_ag.rsi
 
-    - type: Construction
-      graph: civ13_head_Mk1_Brodie_Helmet_1
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Mk2 Brodie Helmet
   parent: ClothingHeadBase
@@ -4395,12 +3571,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/brodie_mk2_og.rsi
 
-    - type: Construction
-      graph: civ13_head_Mk2_Brodie_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Mk2 Brodie Medic Helmet
   parent: ClothingHeadBase
@@ -4412,12 +3582,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/brodie_mk2_medic.rsi
 
-    - type: Construction
-      graph: civ13_head_Mk2_Brodie_Medic_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Irish Mk2 Brodie Helmet
   parent: ClothingHeadBase
@@ -4429,12 +3593,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/brodie_mk2_irish.rsi
 
-    - type: Construction
-      graph: civ13_head_Irish_Mk2_Brodie_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Mk2 Brodie Helmet with green netting
   parent: ClothingHeadBase
@@ -4446,12 +3604,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/brodie_mk2_netgreen.rsi
 
-    - type: Construction
-      graph: civ13_head_Mk2_Brodie_Helmet_with_green_netting
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Mk2 Brodie Helmet with tan netting
   parent: ClothingHeadBase
@@ -4463,12 +3615,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/brodie_mk2_nettan.rsi
 
-    - type: Construction
-      graph: civ13_head_Mk2_Brodie_Helmet_with_tan_netting
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Camouflaged Mk2 Brodie Helmet
   parent: ClothingHeadBase
@@ -4480,12 +3626,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/brodie_mk2_nettanf.rsi
 
-    - type: Construction
-      graph: civ13_head_Camouflaged_Mk2_Brodie_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Camouflaged Mk2 Brodie Helmet
   parent: ClothingHeadBase
@@ -4497,12 +3637,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/brodie_mk2_netgreenf.rsi
 
-    - type: Construction
-      graph: civ13_head_Camouflaged_Mk2_Brodie_Helmet_1
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Leather pickelhaube
   parent: ClothingHeadBase
@@ -4547,12 +3681,6 @@
           Piercing: 0.92
           Arrow: 0.75
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Japanese_sakura_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Japanese helmet
   parent: ClothingHeadBase
@@ -4573,12 +3701,6 @@
           Piercing: 0.9
           Arrow: 0.66
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Japanese_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: pirate bandana
   parent: ClothingHeadBase
@@ -4617,12 +3739,6 @@
           Piercing: 0.9
           Arrow: 0.66
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Japanese_SNLF_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Japanese medic helmet
   parent: ClothingHeadBase
@@ -4644,12 +3760,6 @@
           Piercing: 0.9
           Arrow: 0.66
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Japanese_medic_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Japanese tanker helmet
   parent: ClothingHeadBase
@@ -4671,17 +3781,12 @@
           Piercing: 0.8
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Japanese_tanker_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: US mp helmet
   parent: ClothingHeadBase
   id: civ13_head_US_mp_helmet
-  description: A typical rounded steel helmet. This one has the markings of MP on it.
+  description: A typical rounded steel helmet. This one has the markings of MP on
+    it.
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/m1_mp_white.rsi
@@ -4695,12 +3800,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_US_mp_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: german stahlhelm
   parent: ClothingHeadBase
@@ -4822,12 +3921,6 @@
           Piercing: 0.88
           Arrow: 0.67
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_German_SS_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: German 'SS' helmet
   parent: ClothingHeadBase
@@ -4846,12 +3939,6 @@
           Piercing: 0.88
           Arrow: 0.67
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_German_SS_helmet_1
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: soviet helmet
   parent: ClothingHeadBase
@@ -4870,12 +3957,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_soviet_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Greek M1934/39 Helmet
   parent: ClothingHeadBase
@@ -4897,12 +3978,6 @@
           Piercing: 0.92
           Arrow: 0.75
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Greek_M1934/39_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M33 Helmet
   parent: ClothingHeadBase
@@ -4925,12 +4000,6 @@
           Piercing: 0.91
           Arrow: 0.75
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M33_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M33 Medic Helmet
   parent: ClothingHeadBase
@@ -4953,12 +4022,6 @@
           Piercing: 0.91
           Arrow: 0.75
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M33_Medic_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M1 Helmet with netting
   parent: ClothingHeadBase
@@ -4977,12 +4040,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M1_Helmet_with_netting_1
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M1 Chaplain Helmet
   parent: ClothingHeadBase
@@ -5003,12 +4060,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M1_Chaplain_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Black M1 MP Helmet
   parent: ClothingHeadBase
@@ -5029,12 +4080,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_Black_M1_MP_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: M1 MP Helmet
   parent: ClothingHeadBase
@@ -5055,12 +4100,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_M1_MP_Helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: USMC helmet
   parent: ClothingHeadBase
@@ -5079,12 +4118,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_USMC_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: USMC sergeant helmet
   parent: ClothingHeadBase
@@ -5105,12 +4138,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_USMC_sergeant_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: soviet medical helmet
   parent: ClothingHeadBase
@@ -5131,12 +4158,6 @@
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_soviet_medical_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: bronze montefortino helmet
   parent: ClothingHeadBase
@@ -5154,11 +4175,6 @@
           Slash: 0.62
           Arrow: 0.75
           Heat: 0.85
-    - type: Construction
-      graph: civ13_head_bronze_montefortino_helmet
-      node: end
-      cost: 4
-      time: 10
 - type: entity
   name: chef's hat
   parent: ClothingHeadBase
@@ -5892,7 +4908,6 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/pharoah_headdress.rsi
 
-
 - type: entity
   name: nemes headdress
   parent: ClothingHeadBase
@@ -5903,7 +4918,6 @@
       sprite: Civ14/Clothing/exported/hats/nemes_headdress.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/nemes_headdress.rsi
-
 
 - type: entity
   name: double crown
@@ -7464,12 +6478,6 @@
           Arrow: 0.9
           Heat: 0.9
           Radiation: -0.95
-    - type: Construction
-      graph: civ13_head_astronaut_helmet
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
 - type: entity
   name: Chinese Red Guard cap
   parent: ClothingHeadBase

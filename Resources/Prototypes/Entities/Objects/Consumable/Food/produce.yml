@@ -17,7 +17,11 @@
     - type: Appearance
     - type: Extractable
       grindableSolutionName: food
-
+    - type: Tag
+      tags:
+        - Compostable
+    - type: STWeight
+      self: 0.5
 # For produce that can be immediately eaten
 
 - type: entity
@@ -57,6 +61,7 @@
     - type: Tag
       tags:
         - Wheat
+        - Compostable
 
 - type: entity
   name: meatwheat bushel
@@ -223,6 +228,8 @@
   components:
     - type: Sprite
       sprite: Objects/Specific/Hydroponics/nettle.rsi
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       sprite: Objects/Specific/Hydroponics/nettle.rsi
@@ -254,6 +261,8 @@
   components:
     - type: Sprite
       sprite: Objects/Specific/Hydroponics/death_nettle.rsi
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       sprite: Objects/Specific/Hydroponics/death_nettle.rsi
@@ -787,7 +796,7 @@
   name: potato
   parent: FoodProduceBase
   id: FoodPotato
-  description: The space Irish starved to death after their potato crops died. Sadly they were unable to fish for space carp due to it being the queen's space. Bringing this up to any space IRA member will drive them insane with anger.
+  description: A simple potato. You should cook it before eating.
   components:
     - type: FlavorProfile
       flavors:
@@ -795,12 +804,14 @@
     - type: SolutionContainerManager
       solutions:
         food:
-          maxVol: 14
+          maxVol: 8
           reagents:
+            - ReagentId: Toxin
+              Quantity: 2
             - ReagentId: Nutriment
-              Quantity: 10
-            - ReagentId: Vitamin
               Quantity: 4
+            - ReagentId: Vitamin
+              Quantity: 2
     - type: Sprite
       sprite: Objects/Specific/Hydroponics/potato.rsi
     - type: Item
@@ -816,11 +827,53 @@
       tags:
         - Potato
         - Vegetable
+        - Compostable
     - type: FoodSequenceElement
       entries:
         Burger: Potato
         Taco: Potato
-
+    - type: Construction
+      graph: RoastPotato
+      node: start
+      defaultTarget: roastpotato
+    - type: AtmosExposed
+    - type: Temperature
+      currentTemperature: 290
+    # required for cooking to work
+    - type: InternalTemperature
+      thickness: 0.02
+      area: 0.02 # arbitrary number
+      conductivity: 0.8
+- type: entity
+  name: roast potato
+  parent: FoodPotato
+  id: FoodPotatoRoast
+  description: A roast potato.
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 14
+          reagents:
+            - ReagentId: Nutriment
+              Quantity: 10
+            - ReagentId: Vitamin
+              Quantity: 4
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/potato.rsi
+    - type: Extractable
+      juiceSolution:
+        reagents:
+          - ReagentId: JuicePotato
+            Quantity: 10
+    - type: Tag
+      tags:
+        - Potato
+        - Vegetable
+        - Compostable
+    - type: Construction
+      graph: RoastPotato
+      node: roastpotato
 - type: entity
   name: tomato
   parent: [FoodProduceBase, ItemHeftyBase]
@@ -1172,6 +1225,8 @@
     - type: Sprite
       sprite: Objects/Specific/Hydroponics/corn.rsi
       state: cob
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
     - type: Tag
@@ -1717,6 +1772,8 @@
   id: FoodGlasstle
   description: A fragile crystal plant with lot of spiky thorns.
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       sprite: Objects/Specific/Hydroponics/glasstle.rsi
@@ -2011,6 +2068,8 @@
   id: FoodWatermelon
   description: Round green object that you can slice and eat.
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: produce
@@ -2073,6 +2132,8 @@
   id: FoodWatermelonSlice
   description: Juicy green and red slice.
   components:
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
     - type: FlavorProfile
@@ -2112,6 +2173,8 @@
   id: FoodHolymelon
   description: The water within this melon has been blessed by some deity that's particularly fond of watermelon.
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: produce
@@ -2175,6 +2238,8 @@
   id: FoodHolymelonSlice
   description: Juicy golden and red slice.
   components:
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
     - type: FlavorProfile
@@ -2417,6 +2482,8 @@
   id: FoodPumpkin
   description: A large, orange... berry. Seriously.
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: produce
@@ -2466,6 +2533,8 @@
   id: FoodBluePumpkin
   description: A large, blue... berry. Seriously.
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       heldPrefix: produce

@@ -3,17 +3,19 @@
   id: GlockenspielInstrument
   name: glockenspiel
   components:
-  - type: Instrument
-    program: 9
-  - type: Sprite
-    sprite: Objects/Fun/Instruments/glockenspiel.rsi
-    state: icon
-  - type: Item
-    size: Normal
-    sprite: Objects/Fun/Instruments/glockenspiel.rsi
-  - type: Tag
-    tags:
-    - PercussionInstrument
+    - type: Instrument
+      program: 9
+    - type: Sprite
+      sprite: Objects/Fun/Instruments/glockenspiel.rsi
+      state: icon
+    - type: STWeight
+      self: 3
+    - type: Item
+      size: Normal
+      sprite: Objects/Fun/Instruments/glockenspiel.rsi
+    - type: Tag
+      tags:
+        - PercussionInstrument
 
 - type: entity
   parent: BaseHandheldInstrument
@@ -21,11 +23,11 @@
   name: music box
   description: Playing this makes you feel safe from scary animatronics.
   components:
-  - type: Instrument
-    program: 10
-  - type: Sprite
-    sprite: Objects/Fun/Instruments/musicbox.rsi
-    state: icon
+    - type: Instrument
+      program: 10
+    - type: Sprite
+      sprite: Objects/Fun/Instruments/musicbox.rsi
+      state: icon
 
 - type: entity
   parent: BaseHandheldInstrument
@@ -33,14 +35,14 @@
   name: xylophone
   description: Rainbow colored glockenspiel.
   components:
-  - type: Instrument
-    program: 13
-  - type: Sprite
-    sprite: Objects/Fun/Instruments/structureinstruments.rsi
-    state: xylophone
-  - type: Tag
-    tags:
-    - PercussionInstrument
+    - type: Instrument
+      program: 13
+    - type: Sprite
+      sprite: Objects/Fun/Instruments/structureinstruments.rsi
+      state: xylophone
+    - type: Tag
+      tags:
+        - PercussionInstrument
 
 - type: entity
   parent: BaseHandheldInstrument
@@ -48,42 +50,46 @@
   name: microphone
   description: Perfect for singing your heart out.
   components:
-  - type: Instrument
-    program: 52
-  - type: SwappableInstrument
-    instrumentList:
-      "Aah": {52: 0}
-      "Ooh": {53: 0}
-      "Kweh": {4: 1}
-  - type: Sprite
-    sprite: Objects/Fun/Instruments/microphone.rsi
-    state: icon
-  - type: Item
-    size: Small
-    sprite: Objects/Fun/Instruments/microphone.rsi
+    - type: Instrument
+      program: 52
+    - type: SwappableInstrument
+      instrumentList:
+        "Aah": { 52: 0 }
+        "Ooh": { 53: 0 }
+        "Kweh": { 4: 1 }
+    - type: Sprite
+      sprite: Objects/Fun/Instruments/microphone.rsi
+      state: icon
+    - type: STWeight
+      self: 1
+    - type: Item
+      size: Small
+      sprite: Objects/Fun/Instruments/microphone.rsi
 
 - type: entity
   parent: BaseHandheldInstrument
   id: SynthesizerInstrument
   name: synthesizer
   components:
-  - type: Instrument
-    program: 62
-  - type: SwappableInstrument
-    instrumentList:
-      "Electro": {62: 0} #i needed generic sounding synth presets, sue me
-      "Bubbles": {63: 0}
-  - type: Sprite
-    sprite: Objects/Fun/Instruments/h_synthesizer.rsi
-    state: icon
-  - type: Item
-    size: Normal
-    sprite: Objects/Fun/Instruments/h_synthesizer.rsi
-  - type: Tag
-    tags:
-    - KeyedInstrument
-  - type: StaticPrice
-    price: 90
+    - type: Instrument
+      program: 62
+    - type: SwappableInstrument
+      instrumentList:
+        "Electro": { 62: 0 } #i needed generic sounding synth presets, sue me
+        "Bubbles": { 63: 0 }
+    - type: Sprite
+      sprite: Objects/Fun/Instruments/h_synthesizer.rsi
+      state: icon
+    - type: STWeight
+      self: 3
+    - type: Item
+      size: Normal
+      sprite: Objects/Fun/Instruments/h_synthesizer.rsi
+    - type: Tag
+      tags:
+        - KeyedInstrument
+    - type: StaticPrice
+      price: 90
 
 - type: entity
   parent: BaseHandheldInstrument
@@ -91,16 +97,18 @@
   name: kalimba
   description: The power of a piano right at your thumbs.
   components:
-  - type: Instrument
-    program: 108
-  - type: Sprite
-    sprite: Objects/Fun/Instruments/kalimba.rsi
-    state: icon
-  - type: Tag
-    tags:
-    - KeyedInstrument
-  - type: Item
-    size: Small
+    - type: Instrument
+      program: 108
+    - type: Sprite
+      sprite: Objects/Fun/Instruments/kalimba.rsi
+      state: icon
+    - type: Tag
+      tags:
+        - KeyedInstrument
+    - type: STWeight
+      self: 1
+    - type: Item
+      size: Small
 
 - type: entity
   parent: BaseHandheldInstrument
@@ -108,14 +116,14 @@
   name: woodblock
   description: If you listen to this enough it'll start driving itself into your mind.
   components:
-  - type: Instrument
-    program: 115
-  - type: Sprite
-    sprite: Objects/Fun/Instruments/woodblock.rsi
-    state: icon
-  - type: Tag
-    tags:
-    - PercussionInstrument
+    - type: Instrument
+      program: 115
+    - type: Sprite
+      sprite: Objects/Fun/Instruments/woodblock.rsi
+      state: icon
+    - type: Tag
+      tags:
+        - PercussionInstrument
 
 - type: entity
   parent: BaseHandheldInstrument
@@ -123,11 +131,11 @@
   name: reverse cymbals
   description: I think you have it the wrong way around?
   components:
-  - type: Instrument
-    program: 119
-  - type: Sprite
-    sprite: Objects/Fun/Instruments/reversecymbal.rsi
-    state: icon
+    - type: Instrument
+      program: 119
+    - type: Sprite
+      sprite: Objects/Fun/Instruments/reversecymbal.rsi
+      state: icon
 
 - type: entity
   parent: BaseHandheldInstrument
@@ -135,14 +143,14 @@
   name: super synthesizer
   description: Blasting the ghetto with Touhou MIDIs since 2020.
   components:
-  - type: Instrument
-    allowPercussion: true
-    allowProgramChange: true
-    respectMidiLimits: false
-  - type: Sprite
-    sprite: Objects/Fun/Instruments/h_synthesizer.rsi
-    state: supersynth
-  - type: Item
-    heldPrefix: super
-    size: Normal
-    sprite: Objects/Fun/Instruments/h_synthesizer.rsi
+    - type: Instrument
+      allowPercussion: true
+      allowProgramChange: true
+      respectMidiLimits: false
+    - type: Sprite
+      sprite: Objects/Fun/Instruments/h_synthesizer.rsi
+      state: supersynth
+    - type: Item
+      heldPrefix: super
+      size: Normal
+      sprite: Objects/Fun/Instruments/h_synthesizer.rsi

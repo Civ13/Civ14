@@ -53,6 +53,8 @@
         enum.IntercomUiKey.Key:
           type: IntercomBoundUserInterface
     - type: Appearance
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
       sprite: Objects/Specific/Xenoarchaeology/item_artifacts.rsi
@@ -144,6 +146,8 @@
             wizardball5: ""
             wizardball6: ""
     - type: Appearance
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
     - type: Tag

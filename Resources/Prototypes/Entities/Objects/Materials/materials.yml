@@ -247,6 +247,7 @@
       tags:
         - Wooden
         - RawMaterial
+        - Burnable
     - type: Extractable
       grindableSolutionName: wood
     - type: SolutionContainerManager
@@ -747,6 +748,8 @@
     - type: PhysicalComposition
       materialComposition:
         Gunpowder: 100
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
 
@@ -774,6 +777,8 @@
         - goliath_hide
         - goliath_hide_2
         - goliath_hide_3
+    - type: STWeight
+      self: 5
     - type: Item
       size: Large
       heldPrefix: goliathhide

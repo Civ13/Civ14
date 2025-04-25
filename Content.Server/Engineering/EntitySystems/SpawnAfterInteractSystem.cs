@@ -8,6 +8,7 @@ using Content.Shared.Physics;
 using Content.Shared.Stacks;
 using JetBrains.Annotations;
 using Robust.Shared.Map.Components;
+using Content.Shared.Tag;
 
 namespace Content.Server.Engineering.EntitySystems
 {
@@ -17,7 +18,8 @@ namespace Content.Server.Engineering.EntitySystems
         [Dependency] private readonly SharedDoAfterSystem _doAfterSystem = default!;
         [Dependency] private readonly StackSystem _stackSystem = default!;
         [Dependency] private readonly TurfSystem _turfSystem = default!;
-
+        [Dependency] private readonly TagSystem _tagSystem = default!;
+        [Dependency] private readonly EntityLookupSystem _lookup = default!;
         public override void Initialize()
         {
             base.Initialize();
@@ -67,6 +69,18 @@ namespace Content.Server.Engineering.EntitySystems
 
             EntityManager.SpawnEntity(component.Prototype, args.ClickLocation.SnapToGrid(grid));
 
+            if (_tagSystem.HasTag(uid, "Bridging"))
+            {
+                var loc_entities = _lookup.GetEntitiesInRange(uid, 1);
+                foreach (var ent in loc_entities)
+                {
+                    if (_tagSystem.HasTag(ent, "Water") && _tagSystem.HasTag(ent, "Bridgeable"))
+                    {
+                        var coordinates = Transform(ent).Coordinates;
+                        QueueDel(ent);
+                    }
+                }
+            }
             if (component.RemoveOnInteract && stackComp == null)
                 TryQueueDel(uid);
         }

@@ -17,6 +17,11 @@ using Content.Shared.Popups;
 using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
 using Robust.Shared.Timing;
+// Shitmed Change
+using Content.Shared.Body.Part;
+using Content.Shared.Body.Systems;
+using Content.Shared._Shitmed.Targeting;
+using System.Linq;
 
 namespace Content.Server.Medical;
 
@@ -25,6 +30,7 @@ public sealed class MedBookSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly PowerCellSystem _cell = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfterSystem = default!;
+    [Dependency] private readonly SharedBodySystem _bodySystem = default!; // Shitmed Change
     [Dependency] private readonly ItemToggleSystem _toggle = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solutionContainerSystem = default!;
     [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
@@ -38,6 +44,12 @@ public sealed class MedBookSystem : EntitySystem
         SubscribeLocalEvent<MedBookComponent, EntGotInsertedIntoContainerMessage>(OnInsertedIntoContainer);
         SubscribeLocalEvent<MedBookComponent, ItemToggledEvent>(OnToggled);
         SubscribeLocalEvent<MedBookComponent, DroppedEvent>(OnDropped);
+        // Shitmed Change Start
+        Subs.BuiEvents<MedBookComponent>(MedBookUiKey.Key, subs =>
+        {
+            subs.Event<MedBookPartMessage>(OnMedBookPartSelected);
+        });
+        // Shitmed Change End
     }
 
     public override void Update(float frameTime)
@@ -57,7 +69,16 @@ public sealed class MedBookSystem : EntitySystem
                 StopAnalyzingEntity((uid, component), patient);
                 continue;
             }
-
+            // Shitmed Change Start
+            if (component.CurrentBodyPart != null
+                && (Deleted(component.CurrentBodyPart)
+                || TryComp(component.CurrentBodyPart, out BodyPartComponent? bodyPartComponent)
+                && bodyPartComponent.Body is null))
+            {
+                BeginAnalyzingEntity((uid, component), patient, null);
+                continue;
+            }
+            // Shitmed Change End
             component.NextUpdate = _timing.CurTime + component.UpdateInterval;
 
             //Get distance between health analyzer and the scanned entity
@@ -69,7 +90,7 @@ public sealed class MedBookSystem : EntitySystem
                 continue;
             }
 
-            UpdateScannedUser(uid, patient, true);
+            UpdateScannedUser(uid, patient, true, component.CurrentBodyPart); // Shitmed Change
         }
     }
 
@@ -144,14 +165,16 @@ public sealed class MedBookSystem : EntitySystem
     /// </summary>
     /// <param name="medBook">The health analyzer that should receive the updates</param>
     /// <param name="target">The entity to start analyzing</param>
-    private void BeginAnalyzingEntity(Entity<MedBookComponent> medBook, EntityUid target)
+    /// <param name="part">Shitmed Change: The body part to analyze, if any</param>
+    private void BeginAnalyzingEntity(Entity<MedBookComponent> medBook, EntityUid target, EntityUid? part = null)
     {
         //Link the health analyzer to the scanned entity
         medBook.Comp.ScannedEntity = target;
+        medBook.Comp.CurrentBodyPart = part; // Shitmed Change
 
         _toggle.TryActivate(medBook.Owner);
 
-        UpdateScannedUser(medBook, target, true);
+        UpdateScannedUser(medBook, target, true, part); // Shitmed Change
     }
 
     /// <summary>
@@ -163,19 +186,43 @@ public sealed class MedBookSystem : EntitySystem
     {
         //Unlink the analyzer
         medBook.Comp.ScannedEntity = null;
-
+        medBook.Comp.CurrentBodyPart = null; // Shitmed Change
         _toggle.TryDeactivate(medBook.Owner);
 
         UpdateScannedUser(medBook, target, false);
     }
 
+    // Shitmed Change Start
+    /// <summary>
+    /// Shitmed Change: Handle the selection of a body part on the health analyzer
+    /// </summary>
+    /// <param name="medBook">The health analyzer that's receiving the updates</param>
+    /// <param name="args">The message containing the selected part</param>
+    private void OnMedBookPartSelected(Entity<MedBookComponent> medBook, ref MedBookPartMessage args)
+    {
+        if (!TryGetEntity(args.Owner, out var owner))
+            return;
+
+        if (args.BodyPart == null)
+        {
+            BeginAnalyzingEntity(medBook, owner.Value, null);
+        }
+        else
+        {
+            var (targetType, targetSymmetry) = _bodySystem.ConvertTargetBodyPart(args.BodyPart.Value);
+            if (_bodySystem.GetBodyChildrenOfType(owner.Value, targetType, symmetry: targetSymmetry) is { } part)
+                BeginAnalyzingEntity(medBook, owner.Value, part.FirstOrDefault().Id);
+        }
+    }
+    // Shitmed Change End
     /// <summary>
     /// Send an update for the target to the medBook
     /// </summary>
     /// <param name="medBook">The health analyzer</param>
     /// <param name="target">The entity being scanned</param>
     /// <param name="scanMode">True makes the UI show ACTIVE, False makes the UI show INACTIVE</param>
-    public void UpdateScannedUser(EntityUid medBook, EntityUid target, bool scanMode)
+    /// <param name="part">Shitmed Change: The body part being scanned, if any</param>
+    public void UpdateScannedUser(EntityUid medBook, EntityUid target, bool scanMode, EntityUid? part = null)
     {
         if (!_uiSystem.HasUi(medBook, MedBookUiKey.Key))
             return;
@@ -199,7 +246,11 @@ public sealed class MedBookSystem : EntitySystem
             bloodAmount = bloodSolution.FillFraction;
             bleeding = bloodstream.BleedAmount > 0;
         }
-
+        // Shitmed Change Start
+        Dictionary<TargetBodyPart, TargetIntegrity>? body = null;
+        if (HasComp<TargetingComponent>(target))
+            body = _bodySystem.GetBodyPartStatus(target);
+        // Shitmed Change End
         if (TryComp<UnrevivableComponent>(target, out var unrevivableComp) && unrevivableComp.Analyzable)
             unrevivable = true;
 
@@ -209,7 +260,10 @@ public sealed class MedBookSystem : EntitySystem
             bloodAmount,
             scanMode,
             bleeding,
-            unrevivable
+            unrevivable,
+            // Shitmed Change
+            body,
+            part != null ? GetNetEntity(part) : null
         ));
     }
 }

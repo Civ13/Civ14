@@ -6,10 +6,16 @@
   abstract: true
   components:
     - type: Hunger
+      starvationDamage:
+        types:
+          Poison: 0.0166
     - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
       sprite: Mobs/Species/Human/parts.rsi
       state: full
     - type: Thirst
+      thirstDamage:
+        types:
+          Poison: 0.0166
     - type: RotInto
       entity: HumanRemains
       stage: 2
@@ -66,6 +72,8 @@
             remains4: ""
             remains5: ""
             remains6: ""
+    - type: STWeight
+      self: 8
     - type: Item
       size: Huge
     - type: Tag

@@ -383,9 +383,6 @@
           maxAmount: 1
         - id: MobKangarooSpace
           orGroup: fauna
-        - id: MobMothroach
-          orGroup: fauna
-          maxAmount: 2
         - id: MobMouse
           orGroup: fauna
         - id: MobParrot

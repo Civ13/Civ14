@@ -8,13 +8,15 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/assagai.rsi
+
     - type: MeleeWeapon
       damage:
         types:
-          Slash: 44
+          Piercing: 19
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/assagai.rsi
     - type: DisarmMalus
     - type: Construction
@@ -28,13 +30,19 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/dory.rsi
+
     - type: MeleeWeapon
+      range: 1.8
+      attackRate: 0.8
       damage:
         types:
-          Slash: 47
+          Piercing: 16
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
+    - type: STWeight
+      self: 16        
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/dory.rsi
     - type: DisarmMalus
     - type: Construction
@@ -48,13 +56,19 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/sarissa.rsi
+
     - type: MeleeWeapon
+      attackRate: 0.6
+      range: 2.1
       damage:
         types:
-          Slash: 47
+          Piercing: 16
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
+    - type: STWeight
+      self: 16        
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/sarissa.rsi
     - type: DisarmMalus
     - type: Construction
@@ -69,13 +83,17 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/pike.rsi
+
     - type: MeleeWeapon
       damage:
         types:
-          Slash: 47
+          Piercing: 15   
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
+    - type: STWeight
+      self: 12     
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/pike.rsi
     - type: DisarmMalus
     - type: Construction
@@ -91,13 +109,22 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/naginata.rsi
+
     - type: MeleeWeapon
+      range: 1.6
       damage:
         types:
-          Slash: 47
+          Slash: 1
+          Piercing: 13
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
+    - type: IncreaseDamageOnWield
+      damage: 
+        types:
+          Piercing: 5
+          Slash: 2
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/naginata.rsi
     - type: DisarmMalus
     - type: Construction
@@ -111,13 +138,16 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/halberd.rsi
+
     - type: MeleeWeapon
       damage:
         types:
-          Slash: 44
+          Slash: 8
+          Piercing: 13
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Item
+      heldPrefix: null
       sprite: Civ14/Weapons/halberd.rsi
     - type: DisarmMalus
     - type: Construction

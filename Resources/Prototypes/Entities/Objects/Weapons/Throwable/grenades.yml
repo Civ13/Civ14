@@ -8,6 +8,8 @@
       layers:
         - state: icon
           map: ["enum.TriggerVisualLayers.Base"]
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
     - type: Clothing
@@ -302,6 +304,8 @@
       layers:
         - state: empty
           map: ["enum.ConstructionVisuals.Layer"]
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
     - type: PayloadCase

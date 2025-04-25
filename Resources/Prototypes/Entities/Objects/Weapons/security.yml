@@ -102,6 +102,8 @@
       soundHit:
         collection: MetalThud
       bluntStaminaDamageFactor: 1.5
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
     - type: Tag
@@ -143,6 +145,8 @@
         types:
           Blunt: 0 # melee weapon to allow flashing individual targets
       angle: 10
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       sprite: Objects/Weapons/Melee/flash.rsi

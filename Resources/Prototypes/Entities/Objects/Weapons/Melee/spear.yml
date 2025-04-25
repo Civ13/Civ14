@@ -47,6 +47,8 @@
       damage:
         types:
           Piercing: 15
+    - type: STWeight
+      self: 10
     - type: Item
       size: Ginormous
     - type: Clothing

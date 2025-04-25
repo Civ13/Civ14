@@ -3,17 +3,17 @@
   id: WeaponWandPolymorphBase
   abstract: true
   components:
-  - type: Sprite
-    layers:
-    - state: poly
-    - state: poly-effect
-      map: ["effect"]
-  - type: Gun
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/Magic/staff_animation.ogg
-  - type: BasicEntityAmmoProvider
-    proto: ProjectilePolyboltCarp
-    capacity: 5
+    - type: Sprite
+      layers:
+        - state: poly
+        - state: poly-effect
+          map: ["effect"]
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/Magic/staff_animation.ogg
+    - type: BasicEntityAmmoProvider
+      proto: ProjectilePolyboltCarp
+      capacity: 5
 
 - type: entity
   name: wand of carp polymorph
@@ -21,10 +21,10 @@
   id: WeaponWandPolymorphCarp
   description: For when you need a carp filet quick and the clown is looking juicy.
   components:
-  - type: BasicEntityAmmoProvider
-    proto: ProjectilePolyboltCarp
-    capacity: 5
-    count: 5
+    - type: BasicEntityAmmoProvider
+      proto: ProjectilePolyboltCarp
+      capacity: 5
+      count: 5
 
 - type: entity
   name: wand of monkey polymorph
@@ -32,10 +32,10 @@
   id: WeaponWandPolymorphMonkey
   description: For when you need a monkey friend.
   components:
-  - type: BasicEntityAmmoProvider
-    proto: ProjectilePolyboltMonkey
-    capacity: 5
-    count: 5
+    - type: BasicEntityAmmoProvider
+      proto: ProjectilePolyboltMonkey
+      capacity: 5
+      count: 5
 
 - type: entity
   name: wand of fireball
@@ -43,19 +43,19 @@
   id: WeaponWandFireball
   description: Great big balls of fire!
   components:
-  - type: Sprite
-    layers:
-    - state: fire
-    - state: fire-effect
-      map: ["effect"]
-  - type: Gun
-    fireRate: 0.25
-    soundGunshot:
-      path: /Audio/Magic/fireball.ogg
-  - type: BasicEntityAmmoProvider
-    proto: ProjectileFireball
-    capacity: 5
-    count: 5
+    - type: Sprite
+      layers:
+        - state: fire
+        - state: fire-effect
+          map: ["effect"]
+    - type: Gun
+      fireRate: 0.25
+      soundGunshot:
+        path: /Audio/Magic/fireball.ogg
+    - type: BasicEntityAmmoProvider
+      proto: ProjectileFireball
+      capacity: 5
+      count: 5
 
 - type: entity
   name: wand of the locker
@@ -63,35 +63,37 @@
   parent: WeaponWandBase
   id: WeaponWandLocker
   components:
-  - type: Sprite
-    layers:
-    - state: locker
-      map: ["base"]
-    - state: locker-effect
-      map: ["effect"]
-  - type: Gun
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/Magic/staff_animation.ogg
-  - type: BasicEntityAmmoProvider
-    proto: ProjectileLocker
-    capacity: 5
-    count: 5
-  - type: Item
-    size: Normal
-    inhandVisuals:
-      left:
-      - state: locker-inhand-left
-      right:
-      - state: locker-inhand-right
-  - type: GenericVisualizer
-    visuals:
-      enum.AmmoVisuals.HasAmmo:
-        effect:
-          True: { visible: False }
-          False: { visible: True }
-        base:
-          True: { visible: True }
-          False: { visible: False }
+    - type: Sprite
+      layers:
+        - state: locker
+          map: ["base"]
+        - state: locker-effect
+          map: ["effect"]
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/Magic/staff_animation.ogg
+    - type: BasicEntityAmmoProvider
+      proto: ProjectileLocker
+      capacity: 5
+      count: 5
+    - type: STWeight
+      self: 3
+    - type: Item
+      size: Normal
+      inhandVisuals:
+        left:
+          - state: locker-inhand-left
+        right:
+          - state: locker-inhand-right
+    - type: GenericVisualizer
+      visuals:
+        enum.AmmoVisuals.HasAmmo:
+          effect:
+            True: { visible: False }
+            False: { visible: True }
+          base:
+            True: { visible: True }
+            False: { visible: False }
 
 - type: entity
   name: magical wand of instant death
@@ -99,18 +101,18 @@
   id: WeaponWandDeath
   description: Only the best and brightest of the Space Wizards R&D team worked together to create this beauty.
   components:
-  - type: Sprite
-    layers:
-    - state: death
-    - state: death-effect
-      map: ["effect"]
-  - type: Gun
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/mateba.ogg # PUNCH
-  - type: BasicEntityAmmoProvider
-    proto: BulletInstakillMagic
-    capacity: 3
-    count: 3
+    - type: Sprite
+      layers:
+        - state: death
+        - state: death-effect
+          map: ["effect"]
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/mateba.ogg # PUNCH
+    - type: BasicEntityAmmoProvider
+      proto: BulletInstakillMagic
+      capacity: 3
+      count: 3
 
 - type: entity
   name: wand of entrance
@@ -118,18 +120,18 @@
   id: WeaponWandPolymorphDoor
   description: For when you need a get-away route.
   components:
-  - type: Sprite
-    layers:
-    - state: door
-    - state: door-effect
-      map: ["effect"]
-  - type: Gun
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/Magic/staff_door.ogg
-  - type: BasicEntityAmmoProvider
-    proto: ProjectilePolyboltDoor
-    capacity: 10
-    count: 10
+    - type: Sprite
+      layers:
+        - state: door
+        - state: door-effect
+          map: ["effect"]
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/Magic/staff_door.ogg
+    - type: BasicEntityAmmoProvider
+      proto: ProjectilePolyboltDoor
+      capacity: 10
+      count: 10
 
 - type: entity
   name: wand of cluwning
@@ -137,10 +139,10 @@
   id: WeaponWandCluwne
   description: Make their situation worse by turning them into a cluwne.
   components:
-  - type: BasicEntityAmmoProvider
-    proto: ProjectilePolyboltCluwne
-    capacity: 3
-    count: 3
+    - type: BasicEntityAmmoProvider
+      proto: ProjectilePolyboltCluwne
+      capacity: 3
+      count: 3
 
 - type: entity
   parent: WeaponWandPolymorphBase
@@ -148,7 +150,7 @@
   name: magic bread wand
   description: Turn all your friends into bread! Your boss! Your enemies! Your dog! Make everything bread!
   components:
-  - type: BasicEntityAmmoProvider
-    proto: ProjectilePolyboltBread
-    capacity: 10
-    count: 10
+    - type: BasicEntityAmmoProvider
+      proto: ProjectilePolyboltBread
+      capacity: 10
+      count: 10

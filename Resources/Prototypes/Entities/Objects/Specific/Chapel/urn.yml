@@ -4,16 +4,18 @@
   parent: BaseStorageItem
   id: Urn
   components:
-  - type: Storage
-    grid:
-      - 0,0,0,1
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
-  - type: Sprite
-    sprite: Objects/Specific/Chapel/chaplainurn.rsi
-    state: icon
-  - type: Item
-    size: Normal
-    sprite: Objects/Specific/Chapel/chaplainurn.rsi
+    - type: Storage
+      grid:
+        - 0,0,0,1
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+    - type: Sprite
+      sprite: Objects/Specific/Chapel/chaplainurn.rsi
+      state: icon
+    - type: STWeight
+      self: 3
+    - type: Item
+      size: Normal
+      sprite: Objects/Specific/Chapel/chaplainurn.rsi

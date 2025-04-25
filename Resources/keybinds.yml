@@ -234,6 +234,9 @@ binds:
   - function: OpenCraftingMenu
     type: State
     key: G
+  - function: OpenFactionsMenu
+    type: State
+    key: NumpadNum1
   - function: OpenGuidebook
     type: State
     key: NumpadNum0

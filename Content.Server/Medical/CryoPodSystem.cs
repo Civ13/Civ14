@@ -32,6 +32,9 @@ using Robust.Shared.Containers;
 using Robust.Shared.Timing;
 using SharedToolSystem = Content.Shared.Tools.Systems.SharedToolSystem;
 
+using Content.Shared.Actions; // Shitmed Change
+using Content.Shared.Bed.Sleep; // Shitmed Change
+
 namespace Content.Server.Medical;
 
 public sealed partial class CryoPodSystem : SharedCryoPodSystem
@@ -50,7 +53,7 @@ public sealed partial class CryoPodSystem : SharedCryoPodSystem
     [Dependency] private readonly ReactiveSystem _reactiveSystem = default!;
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly NodeContainerSystem _nodeContainer = default!;
-
+    [Dependency] private readonly SleepingSystem _sleepingSystem = default!;
     public override void Initialize()
     {
         base.Initialize();
@@ -202,7 +205,8 @@ public sealed partial class CryoPodSystem : SharedCryoPodSystem
                 : 0,
             null,
             null,
-            null
+            null,
+            null // Shitmed Change
         ));
     }
 
@@ -237,7 +241,7 @@ public sealed partial class CryoPodSystem : SharedCryoPodSystem
         {
             return;
         }
-
+        var insidePod = entity.Comp.BodyContainer.ContainedEntity; // Shitmed Change
         if (args.Powered)
         {
             EnsureComp<ActiveCryoPodComponent>(entity);
@@ -245,6 +249,8 @@ public sealed partial class CryoPodSystem : SharedCryoPodSystem
         else
         {
             RemComp<ActiveCryoPodComponent>(entity);
+            if (insidePod is { } patient) // Shitmed Change
+                _sleepingSystem.TryWaking(patient);
             _uiSystem.CloseUi(entity.Owner, HealthAnalyzerUiKey.Key);
         }
         UpdateAppearance(entity.Owner, entity.Comp);

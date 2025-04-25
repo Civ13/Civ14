@@ -20,6 +20,8 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Sprite
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
     - type: Tool
@@ -35,6 +37,8 @@
     - type: Clothing
       sprite: Civ14/Clothing/exported/belts/knife.rsi
       slots: [Belt]
+    - type: Scalpel # Shitmed
+      speed: 0.65
 
 - type: entity
   name: kitchen knife
@@ -74,12 +78,18 @@
       damage:
         types:
           Slash: 13
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
       sprite: Objects/Weapons/Melee/cleaver.rsi
     - type: GuideHelp
       guides:
         - FoodRecipes
+    - type: Scalpel # Shitmed
+      speed: 0.3
+    - type: BoneSaw # Shitmed: Better than tg 25% because its a cleaver its meant to hack off limbs
+      speed: 0.5
 
 - type: entity
   name: combat knife

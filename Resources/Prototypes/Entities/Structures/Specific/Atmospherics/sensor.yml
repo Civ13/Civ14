@@ -91,6 +91,8 @@
   name: air sensor assembly
   description: Air sensor assembly. An assembly of air sensors?
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
     - type: Anchorable

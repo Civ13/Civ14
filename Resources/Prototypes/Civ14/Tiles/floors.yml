@@ -111,6 +111,9 @@
     - type: Construction
       graph: TileThatch
       node: end
+    - type: Tag
+      tags:
+        - Bridging
 
 - type: entity
   id: FloorThatch
@@ -223,6 +226,73 @@
     - type: Fixtures
     - type: Damageable
       damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 180
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: tile
+  id: FloorBridge
+  name: bridge
+  sprite: /Textures/Civ14/Structures/Floors/wood.rsi/woodalt7.png
+  variants: 1
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [Prying]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemBridge
+  heatCapacity: 10000
+  weather: false
+
+- type: stack
+  id: FloorTileBridge
+  name: bridging tile
+  spawn: FloorTileItemBridge
+  maxCount: 10
+
+- type: entity
+  name: bridging tile
+  parent: FloorTileItemBase
+  id: FloorTileItemBridge
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Floors/wood.rsi
+      state: bridge_hand
+    - type: Item
+      heldPrefix: wood
+    - type: FloorTile
+      outputs:
+        - Plating
+        - FloorBridge
+    - type: Stack
+      stackType: FloorTileBridge
+    - type: SpawnAfterInteract #Nuke after convert to FloorTile
+      prototype: FloorBridge
+      doAfter: 0.5
+      removeOnInteract: true
+    - type: Construction
+      graph: TileBridge
+      node: end
+    - type: Tag
+      tags:
+        - Bridging
+
+- type: entity
+  id: FloorBridge
+  parent: FloorWoodClassic
+  name: bridge
+  description: "A makeshift wooden bridge."
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Floors/wood.rsi
+      state: woodalt7
+      drawdepth: FloorTiles
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger

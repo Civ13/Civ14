@@ -20,12 +20,13 @@
     - type: Fixtures
       fixtures:
         fix1:
-          shape:
-            !type:PhysShapeAabb
+          shape: !type:PhysShapeAabb
             bounds: "-0.25,-0.4,0.25,0.1"
           density: 20
           mask:
             - Impassable
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
     - type: Foldable
@@ -46,7 +47,7 @@
       noRot: true
       layers:
         - state: extraction_point
-          map: [ "foldedLayer" ]
+          map: ["foldedLayer"]
 
 - type: entity
   id: Fulton
@@ -55,26 +56,25 @@
   name: fulton
   description: Used to extract containers, items, or forcibly recruit people into your base of operations.
   components:
-  - type: Fulton
-  - type: Item
-    size: Normal
-  - type: Stack
-    stackType: Fulton
-    count: 10
-  - type: Sprite
-    drawdepth: SmallObjects
-    sprite: Objects/Tools/fulton.rsi
-    state: extraction_pack
-  - type: Damageable
-    damageContainer: Inorganic
-  - type: Destructible
-    thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 100
-        behaviors:
-          - !type:DoActsBehavior
-            acts: [ "Destruction" ]
+    - type: Fulton
+    - type: Item
+      size: Normal
+    - type: Stack
+      stackType: Fulton
+      count: 10
+    - type: Sprite
+      drawdepth: SmallObjects
+      sprite: Objects/Tools/fulton.rsi
+      state: extraction_pack
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   id: Fulton1
@@ -82,25 +82,25 @@
   name: fulton
   suffix: One
   components:
-  - type: Stack
-    count: 1
+    - type: Stack
+      count: 1
 
 - type: entity
   id: FultonEffect
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   name: fulton effect
   components:
-  - type: TimedDespawn
-    lifetime: 60
-  - type: Sprite
-    drawdepth: Effects
-    noRot: true
-    offset: 0,0.5
-    layers:
-      - map: [ "enum.FultonVisualLayers.Base" ]
-        sprite: Objects/Tools/fulton_balloon.rsi
-        state: fulton_balloon
-  - type: Tag
-    tags:
-      - HideContextMenu
-  - type: AnimationPlayer
+    - type: TimedDespawn
+      lifetime: 60
+    - type: Sprite
+      drawdepth: Effects
+      noRot: true
+      offset: 0,0.5
+      layers:
+        - map: ["enum.FultonVisualLayers.Base"]
+          sprite: Objects/Tools/fulton_balloon.rsi
+          state: fulton_balloon
+    - type: Tag
+      tags:
+        - HideContextMenu
+    - type: AnimationPlayer

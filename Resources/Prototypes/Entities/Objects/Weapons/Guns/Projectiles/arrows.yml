@@ -3,6 +3,8 @@
   id: BaseArrow
   abstract: true
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
     - type: Sprite

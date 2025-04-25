@@ -4,6 +4,8 @@
   abstract: true
   components:
     - type: Sprite
+    - type: STWeight
+      self: 8
     - type: Item
       size: Huge
     - type: Clothing
@@ -32,6 +34,8 @@
   abstract: true
   components:
     - type: Sprite
+    - type: STWeight
+      self: 8
     - type: Item
       size: Huge
     - type: AmmoCounter
@@ -66,6 +70,8 @@
   parent: BaseWeaponBattery
   abstract: true
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       shape:
@@ -86,6 +92,8 @@
   parent: BaseWeaponPowerCell
   abstract: true
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
     - type: Tag
@@ -378,6 +386,8 @@
   id: WeaponParticleDecelerator
   description: A portable particle decelerator capable of decomposing a tesla or singularity.
   components:
+    - type: STWeight
+      self: 10
     - type: Item
       size: Ginormous
     - type: MultiHandedItem
@@ -500,6 +510,8 @@
   id: WeaponDisablerSMG
   description: Advanced weapon that exhausts organic targets, weakening them until they collapse.
   components:
+    - type: STWeight
+      self: 5
     - type: Item
       size: Large
     - type: Tag
@@ -618,6 +630,8 @@
   id: WeaponAdvancedLaser
   description: An experimental high-energy laser pistol with a self-charging nuclear battery.
   components:
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal # Intentionally larger than other pistols
     - type: Sprite
@@ -772,6 +786,8 @@
           fireCost: 200
         - proto: BulletDisablerSmgSpread
           fireCost: 120
+    - type: STWeight
+      self: 5
     - type: Item
       size: Large
       shape:

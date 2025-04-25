@@ -23,6 +23,8 @@
               Quantity: 1
             - ReagentId: Fat
               Quantity: 5
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
     - type: Fixtures

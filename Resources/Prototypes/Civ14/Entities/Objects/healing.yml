@@ -3,7 +3,7 @@
   description: A bunch of healing herbs collected from bushes. Helps clean burns and superficial wounds.
   parent: BaseHealingItem
   id: HealingHerbs
-  suffix: Full
+  suffix: Single
   components:
     - type: Tag
       tags:
@@ -18,12 +18,12 @@
         - Biological
       damage:
         types:
-          Heat: -5
-          Cold: -5
-          Shock: -5
-          Caustic: -5
+          Heat: -8
+          Cold: -8
+          Shock: -8
+          Caustic: -8
         groups:
-          Brute: -2
+          Brute: -6
       healingBeginSound:
         path: "/Audio/Items/Medical/ointment_begin.ogg"
       healingEndSound:
@@ -32,13 +32,16 @@
       price: 20
     - type: Produce
       seedId: HealingHerbs
+    - type: Stack
+      stackType: StackHealingHerbs
+      count: 1
 
 - type: entity
   name: medicinal yarrow
   description: Yarrow is a coagulant, and will help reduce bleeding when applied.
   parent: BaseHealingItem
   id: YarrowHealingHerbs
-  suffix: Full
+  suffix: Single
   components:
     - type: Tag
       tags:
@@ -62,13 +65,15 @@
       price: 20
     - type: Produce
       seedId: YarrowHerbs
-
+    - type: Stack
+      stackType: StackYarrowHealingHerbs
+      count: 1
 - type: entity
   name: medicinal comfrey
   description: Comfrey has been used historically to heal bruises due to its anti-inflammatory and tissue-repair properties. Heals brute damage.
   parent: BaseHealingItem
   id: ComfreyHealingHerbs
-  suffix: Full
+  suffix: Single
   components:
     - type: Tag
       tags:
@@ -92,13 +97,15 @@
       price: 20
     - type: Produce
       seedId: ComfreyHerbs
-
+    - type: Stack
+      stackType: StackComfreyHealingHerbs
+      count: 1
 - type: entity
   name: medicinal milk thistle
   description: Milk thistle has long been used as a liver tonic. Heals poisoning.
   parent: BaseHealingItem
   id: MilkThistleHealingHerbs
-  suffix: Full
+  suffix: Single
   components:
     - type: Tag
       tags:
@@ -122,13 +129,15 @@
       price: 20
     - type: Produce
       seedId: MilkThistleHerbs
-
+    - type: Stack
+      stackType: StackMilkThistleHealingHerbs
+      count: 1
 - type: entity
   name: medicinal elderflower
   description: Elderflower reduces asphyxiation by clearing airways and boosting oxygen intake.
   parent: BaseHealingItem
   id: ElderflowerHealingHerbs
-  suffix: Full
+  suffix: Single
   components:
     - type: Tag
       tags:
@@ -152,3 +161,41 @@
       price: 20
     - type: Produce
       seedId: ElderflowerHerbs
+    - type: Stack
+      stackType: StackElderflowerHealingHerbs
+      count: 1
+
+- type: stack
+  id: StackElderflowerHealingHerbs
+  name: elderflower
+  icon: { sprite: /Textures/Civ14/Objects/Farming/elderflower.rsi, state: produce }
+  spawn: ElderflowerHealingHerbs
+  maxCount: 10
+
+- type: stack
+  id: StackMilkThistleHealingHerbs
+  name: milk thistle
+  icon: { sprite: /Textures/Objects/Specific/Hydroponics/galaxythistle.rsi, state: produce }
+  spawn: MilkThistleHealingHerbs
+  maxCount: 10
+
+- type: stack
+  id: StackComfreyHealingHerbs
+  name: comfrey
+  icon: { sprite: /Textures/Objects/Specific/Hydroponics/spacemans_trumpet.rsi, state: produce }
+  spawn: ComfreyHealingHerbs
+  maxCount: 10
+
+- type: stack
+  id: StackYarrowHealingHerbs
+  name: yarrow
+  icon: { sprite: /Textures/Civ14/Objects/Farming/yarrow.rsi, state: produce }
+  spawn: YarrowHealingHerbs
+  maxCount: 10
+
+- type: stack
+  id: StackHealingHerbs
+  name: healing herbs
+  icon: { sprite: /Textures/Civ14/Objects/surgery.rsi, state: healing_herbs }
+  spawn: HealingHerbs
+  maxCount: 10

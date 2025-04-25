@@ -20,7 +20,7 @@ We are happy to accept contributions from anybody. Get in Discord if you want to
 
 1. Clone this repo.
 2. Run `RUN_THIS.py` to init submodules and download the engine.
-3. Compile the solution. You can use `runclient.bat` and `runserver.bat` to launch it locally for testing.
+3. Compile the solution. You can use `Scripts/bat/runclient.bat` and `Scripts/bat/runserver.bat` to launch it locally for testing on Windows (use the scripts in `Scripts/sh/` for linux).
 
 [More detailed instructions on building the project.](https://docs.spacestation14.com/en/general-development/setup.html)
 

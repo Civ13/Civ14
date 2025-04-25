@@ -19,6 +19,18 @@
       radius: 6
       energy: 5
       color: "#E25822"
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.08,-0.35,0.15,0.25"
+          mask:
+            - TabletopMachineMask
+          layer:
+            - Impassable
+            - MidImpassable
+            - LowImpassable
+          hard: true
     - type: ApcPowerReceiver
       needsPower: false
       powerLoad: 0
@@ -111,3 +123,11 @@
             - MachineMask
           layer:
             - MachineLayer
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 40
+
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]

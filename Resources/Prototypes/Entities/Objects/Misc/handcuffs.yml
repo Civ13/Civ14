@@ -4,6 +4,8 @@
   id: Handcuffs
   parent: [BaseItem, BaseSecurityCommandContraband]
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
       storedRotation: 90
@@ -72,6 +74,8 @@
   id: Zipties
   parent: Handcuffs
   components:
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
       storedRotation: 0
@@ -100,6 +104,8 @@
   parent: BaseItem
   abstract: true
   components:
+    - type: STWeight
+      self: 1
     - type: Item
       size: Small
     - type: Tag
@@ -144,6 +150,8 @@
   name: straitjacket
   description: Used to restrain those who may cause harm to themselves or others.
   components:
+    - type: STWeight
+      self: 3
     - type: Item
       size: Normal
     - type: Handcuff

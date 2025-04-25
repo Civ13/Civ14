@@ -7,11 +7,11 @@
     - type: Sprite
       sprite: Objects/Specific/Hydroponics/seeds.rsi
       layers:
-      - state: seed
-      - state: paper
-        visible: false
-        map: ["enum.PaperLabelVisuals.Layer"]
-        sprite: Objects/Specific/Hydroponics/seeds.rsi
+        - state: seed
+        - state: paper
+          visible: false
+          map: ["enum.PaperLabelVisuals.Layer"]
+          sprite: Objects/Specific/Hydroponics/seeds.rsi
     - type: Appearance
     - type: GenericVisualizer
       visuals:
@@ -19,6 +19,8 @@
           enum.PaperLabelVisuals.Layer:
             True: { visible: true }
             False: { visible: false }
+    - type: STWeight
+      self: 0.75
     - type: Item
       size: Tiny
     - type: StaticPrice
@@ -33,10 +35,10 @@
         ejectVerbText: comp-paper-label-eject
         whitelist:
           components:
-          - Paper
+            - Paper
         blacklist:
           tags:
-          - Book
+            - Book
 
 - type: entity
   parent: SeedBase

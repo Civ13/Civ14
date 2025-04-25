@@ -3,17 +3,15 @@
 - type: latheRecipePack
   id: FriendlyCubesStatic
   recipes:
-  - MonkeyCube
-  - KoboldCube
-  - CowCube
-  - GoatCube
-  - MothroachCube
-  - MouseCube
-  - CockroachCube
+    - MonkeyCube
+    - KoboldCube
+    - CowCube
+    - GoatCube
+    - MouseCube
 
 - type: latheRecipePack
   id: HostileCubesStatic
   recipes:
-  - AbominationCube
-  - SpaceCarpCube
-  - SpaceTickCube
+    - AbominationCube
+    - SpaceCarpCube
+    - SpaceTickCube
