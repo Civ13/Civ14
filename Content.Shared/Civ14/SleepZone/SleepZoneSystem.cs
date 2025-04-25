@@ -5,12 +5,13 @@ using Robust.Shared.Log; // Added for ILogManager and ISawmill
 using Robust.Shared.IoC; // Added for Dependency attribute
 using Robust.Shared.GameStates; // Needed for [RegisterComponent] if SleepZoneComponent wasn't partial
 using Robust.Shared.Serialization.Manager.Attributes; // Needed for [DataField]
+using System.Numerics; // <--- Add this using statement
 
 namespace Content.Shared.Civ14.SleepZone;
 public sealed partial class SleepZoneSystem : EntitySystem
 {
     [Dependency] private readonly ILogManager _log = default!;
-    [Dependency] private readonly SharedTransformSystem _xform = default!; // Keep this for SetCoordinates
+    [Dependency] private readonly SharedTransformSystem _xform = default!;
     [Dependency] private readonly IEntityManager _entities = default!;
     private ISawmill _sawmill = default!;
 
@@ -59,11 +60,8 @@ public sealed partial class SleepZoneSystem : EntitySystem
             return;
         }
 
-        // --- FIX: Use Transform(uid).Coordinates to get EntityCoordinates ---
-        // The Transform() helper method is provided by EntitySystem.
-        sleepZone.Origin = _xform.GetMapCoordinates(entity);
-        // ---
-
+        // Store the original absolute world position
+        sleepZone.Origin = Transform(entity).Coordinates;
         _sawmill.Info($"Saved origin {sleepZone.Origin} for entity {entity}.");
 
 
@@ -75,7 +73,8 @@ public sealed partial class SleepZoneSystem : EntitySystem
         else
         {
             _sawmill.Warning($"Entity {entity} failed to start sleeping because teleportation to bed failed.");
-            // Reset origin if teleport fails
+            // Reset origin if teleport fails, as the entity hasn't moved.
+            sleepZone.Origin = EntityCoordinates.Invalid;
         }
     }
 
@@ -90,14 +89,16 @@ public sealed partial class SleepZoneSystem : EntitySystem
                 return false;
             }
 
-            // --- FIX: Use Transform(uid).Coordinates to get EntityCoordinates ---
-            var bedCoords = _xform.GetMapCoordinates(bedEntity);
+            // --- FIX: Create EntityCoordinates relative to the bed ---
+            // This makes entityToTeleport a child of bedEntity at its local (0,0)
+            // This avoids issues with GetMapCoordinates returning nullspace if the bed isn't on a map.
+            var targetCoords = Transform(bedEntity).Coordinates;
             // ---
 
-            _sawmill.Info($"Found bed {bedEntity} at {bedCoords}, teleporting {entityToTeleport}.");
-            var parsedBedCoords = _xform.ToCoordinates(bedCoords);
-            // Use _xform for SetCoordinates as it's the dedicated system for transform manipulation
-            _xform.SetCoordinates(entityToTeleport, parsedBedCoords);
+            _sawmill.Info($"Found bed {bedEntity}, teleporting {entityToTeleport} into it at {targetCoords}.");
+
+            // Use _xform for SetCoordinates
+            _xform.SetCoordinates(entityToTeleport, new EntityCoordinates(bedEntity, Vector2.Zero));
             return true; // Teleport successful
         }
         else
@@ -118,13 +119,24 @@ public sealed partial class SleepZoneSystem : EntitySystem
                 return;
             }
 
+            // Check if the origin is valid before teleporting
+            if (sleepZone.Origin == EntityCoordinates.Invalid)
+            {
+                _sawmill.Warning($"Entity {entity} has invalid origin {sleepZone.Origin}, cannot teleport back.");
+                // Decide what to do here - maybe leave them in bed? Or teleport to a default spot?
+                // For now, just mark as not sleeping.
+                sleepZone.IsSleeping = false;
+                return;
+            }
 
             _sawmill.Info($"Waking up entity {entity}, returning to {sleepZone.Origin}.");
 
-            // Use _xform for SetCoordinates
-            _xform.SetCoordinates(entity, _xform.ToCoordinates(sleepZone.Origin));
+            _xform.SetCoordinates(entity, sleepZone.Origin);
+
 
             sleepZone.IsSleeping = false;
+            // Clear the origin after use
+            sleepZone.Origin = EntityCoordinates.Invalid;
         }
         else
         {
