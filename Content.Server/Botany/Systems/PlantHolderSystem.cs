@@ -47,6 +47,9 @@ public sealed class PlantHolderSystem : EntitySystem
     public const float HydroponicsSpeedMultiplier = 1f;
     public const float HydroponicsConsumptionMultiplier = 2f;
     private ISawmill _sawmill = default!;
+    /// <summary>
+    /// Sets up event subscriptions for plant holder interactions and initialises the entity logger.
+    /// </summary>
     public override void Initialize()
     {
         base.Initialize();
@@ -57,6 +60,9 @@ public sealed class PlantHolderSystem : EntitySystem
         _sawmill = LogManager.GetSawmill("entity");
     }
 
+    /// <summary>
+    /// Periodically updates all plant holders, advancing their growth and state if their scheduled update time has elapsed.
+    /// </summary>
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -149,6 +155,18 @@ public sealed class PlantHolderSystem : EntitySystem
         }
     }
 
+    /// <summary>
+    /// Handles interactions with a plant holder using an item, enabling planting, weeding, plant removal, sampling, and harvesting based on the item used.
+    /// </summary>
+    /// <remarks>
+    /// - Seeds can be planted if the holder is empty, or a message is shown if already seeded.
+    /// - Hoes remove weeds if present.
+    /// - Shovels remove the plant if one exists.
+    /// - Plant sample takers allow sampling if the plant is alive, mature, and not already sampled, reducing plant health and possibly marking it as sampled.
+    /// - Sharp tools trigger harvesting.
+    /// - Composting with produce is currently disabled.
+    /// Displays appropriate feedback messages to the user for each action.
+    /// </remarks>
     private void OnInteractUsing(Entity<PlantHolderComponent> entity, ref InteractUsingEvent args)
     {
         var (uid, component) = entity;
@@ -351,6 +369,12 @@ public sealed class PlantHolderSystem : EntitySystem
     }
 
 
+    /// <summary>
+    /// Advances the growth cycle and health state of a plant holder, applying mutation, environmental, weather, and resource effects.
+    /// </summary>
+    /// <remarks>
+    /// This method processes plant growth, mutation, weed and pest dynamics, resource consumption, environmental hazards (such as gas, pressure, temperature, and toxins), and weather effects. It also manages plant death, harvest readiness, and visual updates. If no seed is present or the plant is dead, only relevant state and visuals are updated.
+    /// </remarks>
     public void Update(EntityUid uid, PlantHolderComponent? component = null)
     {
         if (!Resolve(uid, ref component))
