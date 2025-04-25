@@ -5,6 +5,10 @@ on:
     paths:
       - "**.rsi/**.png"
 
+permissions:
+  contents: read # Required for actions/checkout
+  pull-requests: write # Required for commenting on pull requests
+
 jobs:
   diff:
     name: Diff
