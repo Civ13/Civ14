@@ -113,7 +113,6 @@ Entries:
     id: 9
     time: "2025-04-19T00:00:00.0000000+00:00"
     url: https://github.com/Civ13/Civ14/pull/124
-
   - author: Taislin
     changes:
       - message: Adds goobstation's limb targeting system.
@@ -134,10 +133,27 @@ Entries:
     id: 11
     time: "2025-04-23T00:00:00.0000000+00:00"
     url: https://github.com/Civ13/Civ14/pull/151
+      - message: Increased damage from cold.
+        type: Tweak
+      - message: Rain waters plants now.
+        type: Add
+      - message: Storms, blizzards damage plants now.
+        type: Add
+    id: 12
+    time: "2025-04-25T00:00:00.0000000+00:00"
+    url: https://github.com/Civ13/Civ14/pull/159
+  - author: Taislin
+    changes:
+      - message: Adds RMC-14/GoobStations gun prediction mechanics, reducing lag between clicks and firing a weapon.
+        type: Add
+    id: 13
+    time: "2025-04-25T00:00:00.0000000+00:00"
+    url: https://github.com/Civ13/Civ14/pull/158
   - author: Taislin
     changes:
       - message: Adds the sleeping mechanic, which teleports you to the safezone.
         type: Add
-    id: 13
+    id: 14
     time: "2025-04-26T00:00:00.0000000+00:00"
     url: https://github.com/Civ13/Civ14/pull/156
+

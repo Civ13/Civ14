@@ -8,6 +8,7 @@ using Content.Shared.Weapons.Ranged.Events;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Serialization;
+using Content.Shared._RMC14.Weapons.Ranged;
 
 namespace Content.Shared.Weapons.Ranged.Systems;
 

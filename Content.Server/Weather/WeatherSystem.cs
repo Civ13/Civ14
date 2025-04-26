@@ -29,6 +29,19 @@ public sealed class WeatherSystem : SharedWeatherSystem
         args.State = new WeatherComponentState(component.Weather);
     }
 
+    /// <summary>
+    /// Handles the "weather" admin console command to set the weather on a specified map, optionally for a set duration, and updates precipitation states for all entities with <c>WeatherNomadsComponent</c>.
+    /// </summary>
+    /// <param name="shell">The console shell executing the command.</param>
+    /// <param name="argStr">The raw argument string.</param>
+    /// <param name="args">
+    /// Command arguments:
+    /// <list type="number">
+    /// <item><description>Map ID (integer).</description></item>
+    /// <item><description>Weather prototype ID or "null" to clear weather.</description></item>
+    /// <item><description>(Optional) Duration in seconds for the weather effect.</description></item>
+    /// </list>
+    /// </param>
     [AdminCommand(AdminFlags.Fun)]
     private void WeatherTwo(IConsoleShell shell, string argStr, string[] args)
     {
@@ -75,6 +88,27 @@ public sealed class WeatherSystem : SharedWeatherSystem
             {
                 shell.WriteError(Loc.GetString("cmd-weather-error-wrong-time"));
             }
+        }
+        var nomadsweather = EntityQueryEnumerator<WeatherNomadsComponent>();
+        while (nomadsweather.MoveNext(out var uuid, out var weatherComponent))
+        {
+            var parsedprec = Precipitation.Dry;
+            if (!args[1].Equals("null"))
+            {
+                if (args[1].Equals("Hail") || args[1].Equals("SandstormHeavy") || args[1].Equals("Storm") || args[1].Equals("SnowfallHeavy"))
+                {
+                    parsedprec = Precipitation.Storm;
+                }
+                if (args[1].Equals("Rain") || args[1].Equals("SnowfallLight"))
+                {
+                    parsedprec = Precipitation.LightWet;
+                }
+                if (args[1].Equals("SnowfallMedium"))
+                {
+                    parsedprec = Precipitation.HeavyWet;
+                }
+            }
+            weatherComponent.CurrentPrecipitation = parsedprec;
         }
 
         SetWeather(mapId, weather, endTime);

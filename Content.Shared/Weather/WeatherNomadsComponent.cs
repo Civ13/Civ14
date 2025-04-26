@@ -22,7 +22,7 @@ public sealed partial class WeatherNomadsComponent : Component
     public int MaxPrecipitationDurationMinutes { get; set; } = 10;
 
     [DataField("currentPrecipitation")]
-    public Precipitation CurrentPrecipitation { get; set; } = Precipitation.Dry;
+    public Precipitation CurrentPrecipitation { get; set; } = Precipitation.LightWet;
 
     [DataField("currentWeather")]
     public string CurrentWeather { get; set; } = "Clear";
