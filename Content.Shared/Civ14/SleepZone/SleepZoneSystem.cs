@@ -29,11 +29,11 @@ public sealed partial class SleepZoneSystem : EntitySystem
     public bool TryFindSleepZoneBed(out EntityUid bedId)
     {
         const string bedPrototypeId = "SleepZoneBed";
-        // Use EntityQuery with MetaDataComponent for prototype checking
-        var query = EntityQueryEnumerator<MetaDataComponent>();
-        while (query.MoveNext(out var uid, out var meta))
+
+        // More efficient: directly query for the prototype we want
+        var query = _entities.EntityQueryEnumerator<MetaDataComponent, TransformComponent>();
+        while (query.MoveNext(out var uid, out var meta, out _))
         {
-            // Check if the prototype exists and its ID matches
             if (meta.EntityPrototype?.ID == bedPrototypeId)
             {
                 bedId = uid;

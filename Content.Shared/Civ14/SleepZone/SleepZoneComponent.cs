@@ -1,8 +1,11 @@
+using Robust.Shared.GameStates;
 using Robust.Shared.Map;
 
 namespace Content.Shared.Civ14.SleepZone;
-
-[RegisterComponent]
+/// <summary>
+/// Enables an entity to go to sleep in the safezone.
+/// </summary>
+[RegisterComponent, NetworkedComponent]
 public sealed partial class SleepZoneComponent : Component
 {
     /// <summary>
