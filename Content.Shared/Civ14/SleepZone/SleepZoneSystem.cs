@@ -5,7 +5,7 @@ using Robust.Shared.Log; // Added for ILogManager and ISawmill
 using Robust.Shared.IoC; // Added for Dependency attribute
 using Robust.Shared.GameStates; // Needed for [RegisterComponent] if SleepZoneComponent wasn't partial
 using Robust.Shared.Serialization.Manager.Attributes; // Needed for [DataField]
-using System.Numerics; // <--- Add this using statement
+using System.Numerics;
 
 namespace Content.Shared.Civ14.SleepZone;
 public sealed partial class SleepZoneSystem : EntitySystem
@@ -116,23 +116,26 @@ public sealed partial class SleepZoneSystem : EntitySystem
             }
 
             // Check if the origin is valid before teleporting
-            if (sleepZone.Origin == EntityCoordinates.Invalid)
+            if (!sleepZone.Origin.HasValue) // Use .HasValue for nullable types
+
             {
-                _sawmill.Warning($"Entity {entity} has invalid origin {sleepZone.Origin}, cannot teleport back.");
+                // Use ToPrettyString for better entity logging if available, otherwise fallback
+                var entityString = _entities.ToPrettyString(entity);
+                _sawmill.Warning($"Entity {entityString} has no Origin coordinates stored, cannot teleport back.");
                 // Decide what to do here - maybe leave them in bed? Or teleport to a default spot?
                 // For now, just mark as not sleeping.
                 sleepZone.IsSleeping = false;
                 return;
             }
 
-            _sawmill.Info($"Waking up entity {entity}, returning to {sleepZone.Origin}.");
+            _sawmill.Info($"Waking up entity {_entities.ToPrettyString(entity)}, returning to {sleepZone.Origin.Value}."); // Log the .Value
 
-            _xform.SetCoordinates(entity, sleepZone.Origin);
+            _xform.SetCoordinates(entity, sleepZone.Origin.Value);
 
 
             sleepZone.IsSleeping = false;
             // Clear the origin after use
-            sleepZone.Origin = EntityCoordinates.Invalid;
+            sleepZone.Origin = null;
         }
         else
         {

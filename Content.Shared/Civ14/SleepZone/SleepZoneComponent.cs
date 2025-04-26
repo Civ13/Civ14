@@ -11,8 +11,8 @@ public sealed partial class SleepZoneComponent : Component
     /// <summary>
     /// The original coordinates the entity was teleported from.
     /// </summary>
-    [DataField("origin")]
-    public EntityCoordinates Origin = EntityCoordinates.Invalid;
+    [DataField("origin"), NeverPushInheritance] // Prevent prototype system from copying this during creation
+    public EntityCoordinates? Origin; // Needs to be nullable
     /// <summary>
     /// Is the entity currently in the sleep zone?
     /// </summary>
