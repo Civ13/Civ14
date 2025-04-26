@@ -1,20 +1,13 @@
-﻿using Content.Server.GameTicking;
-using Content.Server.Movement.Components;
-using Content.Server.Movement.Systems;
+﻿using Content.Server.Movement.Components;
 using Content.Server.Weapons.Ranged.Systems;
+using Content.Shared._RMC14.CCVar;
 using Content.Shared._RMC14.Weapons.Ranged.Prediction;
-using Content.Shared.Coordinates;
 using Content.Shared.GameTicking;
-using Content.Shared.Physics;
 using Content.Shared.Projectiles;
 using Content.Shared.Weapons.Ranged.Events;
 using Robust.Server.GameObjects;
-using Robust.Server.Player;
-using Robust.Shared;
 using Robust.Shared.Configuration;
-using Robust.Shared.Enums;
 using Robust.Shared.Map;
-using Robust.Shared.Network;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
@@ -27,11 +20,8 @@ namespace Content.Server._RMC14.Weapons.Ranged.Prediction;
 public sealed class GunPredictionSystem : SharedGunPredictionSystem
 {
     [Dependency] private readonly IConfigurationManager _config = default!;
-    [Dependency] private readonly LagCompensationSystem _lagCompensation = default!;
     [Dependency] private readonly GunSystem _gun = default!;
-    [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
-    [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly SharedProjectileSystem _projectile = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
@@ -65,27 +55,23 @@ public sealed class GunPredictionSystem : SharedGunPredictionSystem
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestartCleanup);
         SubscribeNetworkEvent<RequestShootEvent>(OnShootRequest);
         SubscribeNetworkEvent<PredictedProjectileHitEvent>(OnPredictedProjectileHit);
-        SubscribeLocalEvent<GameRunLevelChangedEvent>(OnSendLinearVelocityAll);
 
         SubscribeLocalEvent<PredictedProjectileServerComponent, MapInitEvent>(OnPredictedMapInit);
         SubscribeLocalEvent<PredictedProjectileServerComponent, ComponentRemove>(OnPredictedRemove);
         SubscribeLocalEvent<PredictedProjectileServerComponent, EntityTerminatingEvent>(OnPredictedRemove);
         SubscribeLocalEvent<PredictedProjectileServerComponent, PreventCollideEvent>(OnPredictedPreventCollide);
 
-        Subs.CVar(_config, CVars.MaxLinVelocity, OnSendLinearVelocityAll);
-        _player.PlayerStatusChanged += OnPlayerStatusChanged;
-    }
+        Subs.CVar(_config, RMCCVars.RMCGunPredictionPreventCollision, v => _preventCollision = v, true);
+        Subs.CVar(_config, RMCCVars.RMCGunPredictionLogHits, v => _logHits = v, true);
+        Subs.CVar(_config, RMCCVars.RMCGunPredictionCoordinateDeviation, v => _coordinateDeviation = v, true);
+        Subs.CVar(_config, RMCCVars.RMCGunPredictionLowestCoordinateDeviation, v => _lowestCoordinateDeviation = v, true);
+        Subs.CVar(_config, RMCCVars.RMCGunPredictionAabbEnlargement, v => _aabbEnlargement = v, true);
 
-    public override void Shutdown()
-    {
-        base.Shutdown();
-        _player.PlayerStatusChanged -= OnPlayerStatusChanged;
     }
 
     private void OnRoundRestartCleanup(RoundRestartCleanupEvent ev)
     {
         _predicted.Clear();
-        OnSendLinearVelocityAll(ev);
     }
 
     private void OnShootRequest(RequestShootEvent ev, EntitySessionEventArgs args)
@@ -95,27 +81,26 @@ public sealed class GunPredictionSystem : SharedGunPredictionSystem
 
     private void OnPredictedMapInit(Entity<PredictedProjectileServerComponent> ent, ref MapInitEvent args)
     {
+        if (ent.Comp.Shooter == null)
+        {
+            Log.Warning($"{nameof(PredictedProjectileServerComponent)} map initialized with a null shooter session!");
+            return;
+        }
+
         _predicted[(ent.Comp.Shooter.UserId, ent.Comp.ClientId)] = ent;
     }
 
     private void OnPredictedRemove<T>(Entity<PredictedProjectileServerComponent> ent, ref T args)
     {
+        if (ent.Comp.Shooter == null)
+            return;
+
         _predicted.Remove((ent.Comp.Shooter.UserId, ent.Comp.ClientId));
     }
 
     private void OnPredictedProjectileHit(PredictedProjectileHitEvent ev, EntitySessionEventArgs args)
     {
         _predictedHits.Add((ev, args.SenderSession));
-    }
-
-    private void OnSendLinearVelocityAll<T>(T ev)
-    {
-        if (_net.IsClient)
-            return;
-
-        // TODO gun prediction remove this when we pull engine with a replicated physics maxlinvelocity
-        var msg = new MaxLinearVelocityMsg(_config.GetCVar(CVars.MaxLinVelocity));
-        RaiseNetworkEvent(msg);
     }
 
     private void OnPredictedPreventCollide(Entity<PredictedProjectileServerComponent> ent, ref PreventCollideEvent args)
@@ -146,16 +131,6 @@ public sealed class GunPredictionSystem : SharedGunPredictionSystem
         }
     }
 
-    private void OnPlayerStatusChanged(object? sender, SessionStatusEventArgs e)
-    {
-        if (e.NewStatus != SessionStatus.Connected && e.NewStatus != SessionStatus.InGame)
-            return;
-
-        // TODO gun prediction remove this when we pull engine with a replicated physics maxlinvelocity
-        var msg = new MaxLinearVelocityMsg(_config.GetCVar(CVars.MaxLinVelocity));
-        RaiseNetworkEvent(msg, e.Session.Channel);
-    }
-
     private bool Collides(
         Entity<PredictedProjectileServerComponent, PhysicsComponent> projectile,
         Entity<LagCompensationComponent, FixturesComponent, PhysicsComponent, TransformComponent> other,
@@ -166,7 +141,7 @@ public sealed class GunPredictionSystem : SharedGunPredictionSystem
 
         MapCoordinates lowestCoordinate = default;
         var otherCoordinates = EntityCoordinates.Invalid;
-        var ping = projectile.Comp1.Shooter.Channel.Ping;
+        var ping = projectile.Comp1.Shooter?.Channel.Ping ?? 0;
         // Use 1.5 due to the trip buffer.
         var sentTime = _timing.CurTime - TimeSpan.FromMilliseconds(ping * 1.5);
         var pingTime = TimeSpan.FromMilliseconds(ping);
@@ -229,7 +204,7 @@ public sealed class GunPredictionSystem : SharedGunPredictionSystem
             return;
         }
 
-        if (predictedProjectile.Shooter.UserId != player.UserId.UserId)
+        if (predictedProjectile.Shooter?.UserId != player.UserId.UserId)
             return;
 
         if (!_projectileQuery.TryComp(projectile, out var projectileComp) ||

@@ -1,4 +1,5 @@
 ﻿using Robust.Shared.Configuration;
+using Content.Shared._RMC14.CCVar;
 
 namespace Content.Shared._RMC14.Weapons.Ranged.Prediction;
 
@@ -10,5 +11,6 @@ public abstract class SharedGunPredictionSystem : EntitySystem
 
     public override void Initialize()
     {
+        Subs.CVar(_config, RMCCVars.RMCGunPrediction, v => GunPrediction = v, true);
     }
 }
