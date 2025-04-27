@@ -86,9 +86,10 @@
             bounds: "-0.5,-0.5,0.5,0.5"
           density: 100
           mask:
-            - Impassable
+            - MidImpassable
             - HighImpassable
           layer:
+            - MidImpassable
             - HighImpassable
     - type: Tag
       tags:
@@ -112,9 +113,10 @@
             bounds: "-0.5,-0.5,0.5,0.5"
           density: 100
           mask:
-            - Impassable
+            - MidImpassable
             - HighImpassable
           layer:
+            - MidImpassable
             - HighImpassable
     - type: Tag
       tags:
