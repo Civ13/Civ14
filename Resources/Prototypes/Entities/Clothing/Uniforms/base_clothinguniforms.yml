@@ -13,7 +13,7 @@
     butcheringType: Knife
     spawned:
     - id: MaterialCloth1
-      amount: 3
+      amount: 1
   - type: Food
     requiresSpecialDigestion: true
   - type: SolutionContainerManager

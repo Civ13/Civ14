@@ -39,6 +39,7 @@
     - type: Projectile
       deleteOnCollide: false
       onlyCollideWhenShot: true
+      angle: 225
       damage:
         types:
           Piercing: 25
@@ -72,7 +73,7 @@
     - type: ThrowingAngle
       angle: 225
     - type: Projectile
-      angle: 225
+      angle: 0
       damage:
         types:
           Piercing: 22
