@@ -1,7 +1,6 @@
 using Content.Client.Gameplay;
 using Content.Client.UserInterface.Controls;
-// FIX 2: Using the corrected namespace for FactionWindow
-using Content.Client.Civ14.Faction.Windows;
+using Content.Client.UserInterface.Systems.Faction.Windows;
 using Content.Shared.Input;
 using JetBrains.Annotations;
 using Robust.Client.Player;
@@ -20,6 +19,7 @@ using Robust.Client.GameObjects;
 using Robust.Shared.Network;
 using Robust.Shared.GameObjects;
 
+
 namespace Content.Client.UserInterface.Systems.Faction;
 
 [UsedImplicitly]
@@ -30,9 +30,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IClientConsoleHost _consoleHost = default!;
-    [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
-    [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
-
+    [Dependency] private readonly IClientNetManager _netManager = default!;
     private ISawmill _sawmill = default!;
     private FactionWindow _window = default!;
     private MenuButton? FactionButton => UIManager.GetActiveUIWidgetOrNull<MenuBar.Widgets.GameTopMenuBar>()?.FactionButton;
@@ -100,7 +98,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
 
         var message = $"{msg.InviterName} invited you to join faction '{msg.FactionName}'.\nType 'acceptfactioninvite {msg.FactionName}' to accept.";
         // TODO: Replace with a proper UI confirmation window
-        _popupSystem.PopupEntity(message, _player.LocalPlayer?.ControlledEntity ?? EntityUid.Invalid);
+        _ent.System<SharedPopupSystem>().PopupEntity(message, _player.LocalPlayer?.ControlledEntity ?? EntityUid.Invalid);
     }
 
     private (bool IsInFaction, string? FactionName) GetPlayerFactionStatus()
@@ -149,7 +147,8 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         var listBuilder = new StringBuilder();
         foreach (var faction in factionsComp.FactionList.OrderBy(f => f.FactionName))
         {
-            listBuilder.AppendLine($"{faction.FactionName}: {faction.FactionMembers.Count} members");
+            listBuilder.AppendLine(string.Format("{0}: {1} members", faction.FactionName, faction.FactionMembers.Count));
+
         }
 
         _window.UpdateFactionList(listBuilder.ToString());
@@ -166,10 +165,11 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     {
         _sawmill.Info("Leave Faction button pressed.");
         var leaveEvent = new LeaveFactionRequestEvent();
-        // FIX 3: Use RaiseNetworkEvent to send the event
-        RaiseNetworkEvent(leaveEvent);
+        //TODO: Raise event
+        // _ent.RaiseNetworkEvent(leaveEvent);
         _sawmill.Info("Sent LeaveFactionRequestEvent to server.");
     }
+
 
     private void HandleInvitePlayerPressed()
     {
@@ -226,9 +226,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         else
         {
             var (isInFaction, factionName) = GetPlayerFactionStatus();
-            _window.UpdateState(isInFaction, factionName);
-            if (_window == null) return;
 
+            if (_window == null) return;
+            _window.UpdateState(isInFaction, factionName);
             _window.Open();
         }
         // FIX 1: Use null-conditional operator ?. and ?? false for SetClickPressed

@@ -5,7 +5,7 @@ using Robust.Client.UserInterface.Controls; // Required for ButtonEventArgs
 using System; // Required for Action
 using Content.Client.UserInterface.Systems.Faction;
 
-namespace Content.Client.Civ14.Faction.Windows;
+namespace Content.Client.UserInterface.Systems.Faction.Windows;
 
 [GenerateTypedNameReferences]
 public sealed partial class FactionWindow : DefaultWindow

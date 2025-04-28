@@ -427,6 +427,7 @@ def generate_main_entities(tile_map, chunk_size=16, decals_by_id=None):
                     {"type": "MovedGrids"},
                     {"type": "Broadphase"},
                     {"type": "OccluderTree"},
+                    {"type": "CivFactions"},
                 ],
             },
             {
@@ -475,7 +476,7 @@ def generate_main_entities(tile_map, chunk_size=16, decals_by_id=None):
                         "minSeasonMinutes": 30,
                         "maxSeasonMinutes": 45,
                         "minPrecipitationDurationMinutes": 5,
-                        "maxPrecipitationDurationMinutes": 10
+                        "maxPrecipitationDurationMinutes": 10,
                     },
                     {
                         "type": "DecalGrid",
