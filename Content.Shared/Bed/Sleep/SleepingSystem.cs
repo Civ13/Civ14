@@ -25,6 +25,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Content.Shared.Civ14.SleepZone;
+using Content.Shared.Standing;
 
 namespace Content.Shared.Bed.Sleep;
 
@@ -270,6 +271,7 @@ public sealed partial class SleepingSystem : EntitySystem
         RaiseLocalEvent(ent.Owner, ref tryingToSleepEvent); // Use EntityUid (ent.Owner)
         if (tryingToSleepEvent.Cancelled)
             return false;
+        RaiseLocalEvent(ent.Owner, new DropHandItemsEvent(), false);
         // Specific logic if the entity also has a SleepZoneComponent.
         // Use TryComp with the original Entity<T> struct 'ent'.
         if (TryComp<SleepZoneComponent>(ent, out var sleepZone))
