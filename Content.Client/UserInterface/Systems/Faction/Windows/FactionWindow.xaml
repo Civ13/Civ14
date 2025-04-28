@@ -1,0 +1,62 @@
+<windows:FactionWindow
+    xmlns="https://spacestation14.io"
+    xmlns:cc="clr-namespace:Content.Client.UserInterface.Controls"
+    xmlns:windows="clr-namespace:Content.Client.UserInterface.Systems.Faction.Windows"
+    Title="Factions"
+    MinWidth="400"
+    MinHeight="300">
+    <!-- Adjusted MinHeight -->
+    <BoxContainer Orientation="Vertical"
+            Margin="5">
+
+        <!-- View when NOT in a faction -->
+        <BoxContainer Name="NotInFactionView"
+                Orientation="Vertical"
+                Visible="True">
+            <Label Text="You are not currently in a faction."
+                    Align="Center"
+                    Margin="0 0 0 10"/>
+            <Button Name="CreateFactionButton"
+                    Text="Create Faction"
+                    Access="Public"
+                    Margin="0 5"/>
+            <Button Name="ListFactionsButtonNotInFaction"
+                    Text="List Factions"
+                    Access="Public"
+                    Margin="0 5"/>
+        </BoxContainer>
+
+        <!-- View when IN a faction -->
+        <BoxContainer Name="InFactionView"
+                Orientation="Vertical"
+                Visible="False">
+            <Label Name="CurrentFactionLabel"
+                    Text="Current Faction: -"
+                    Align="Center"
+                    Margin="0 0 0 10"/>
+            <Button Name="InvitePlayerButton"
+                    Text="Invite Player"
+                    Access="Public"
+                    Margin="0 5"/>
+            <Button Name="LeaveFactionButton"
+                    Text="Leave Faction"
+                    Access="Public"
+                    Margin="0 5"/>
+            <Button Name="ListFactionsButtonInFaction"
+                    Text="List Factions"
+                    Access="Public"
+                    Margin="0 5"/>
+        </BoxContainer>
+
+        <!-- Area to display the faction list -->
+        <ScrollContainer VerticalExpand="True"
+                Margin="0 10 0 0">
+            <Label Name="FactionListLabel"
+                    Text="Faction list will appear here..."
+                    Access="Public"/>
+            <!-- Consider using RichTextLabel for better formatting later -->
+            <!-- <RichTextLabel Name="FactionListLabel" /> -->
+        </ScrollContainer>
+
+    </BoxContainer>
+</windows:FactionWindow>
