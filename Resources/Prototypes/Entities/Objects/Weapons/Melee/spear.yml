@@ -31,9 +31,6 @@
       sprite: Objects/Weapons/Melee/spear.rsi
       layers:
         - state: spear
-        - state: spear
-          map: ["enum.SolutionContainerLayers.Fill"]
-          visible: false
     - type: MeleeWeapon
       wideAnimationRotation: -135
       damage:
@@ -59,21 +56,6 @@
     - type: Construction
       graph: Spear
       node: spear
-    - type: SolutionContainerManager
-      solutions:
-        melee:
-          maxVol: 2
-    - type: MeleeChemicalInjector
-      solution: melee
-    - type: RefillableSolution
-      solution: melee
-    - type: InjectableSolution
-      solution: melee
-    - type: SolutionInjectOnEmbed
-      transferAmount: 2
-      solution: melee
-    - type: SolutionTransfer
-      maxTransferAmount: 2
     - type: Wieldable
     - type: IncreaseDamageOnWield
       damage:
@@ -96,11 +78,6 @@
                 collection: GlassBreak
                 params:
                   volume: -4
-            - !type:SpawnEntitiesBehavior
-              spawn:
-                PartRodMetal1:
-                  min: 1
-                  max: 1
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: DamageOnLand
@@ -109,13 +86,6 @@
           Blunt: 5
     - type: UseDelay
     - type: Appearance
-    - type: SolutionContainerVisuals
-      maxFillLevels: 1
-      fillBaseName: spear
-      inHandsFillBaseName: -fill-
-      inHandsMaxFillLevels: 1
-      equippedFillBaseName: -fill-
-      equippedMaxFillLevels: 1
 
 - type: entity
   name: reinforced spear

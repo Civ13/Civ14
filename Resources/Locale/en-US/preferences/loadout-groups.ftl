@@ -211,3 +211,10 @@ loadout-group-native-jumpsuit = Native Jumpsuit Loadout
 loadout-group-native-shoes = Native Shoes Loadout
 loadout-group-native-neck = Native Neck Loadout
 loadout-group-native-pockets = Native Pocket Loadout
+
+
+loadout-group-roman-head = Roman Head Loadout
+loadout-group-roman-jumpsuit = Roman Jumpsuit Loadout
+loadout-group-roman-shoes = Roman Shoes Loadout
+loadout-group-roman-pockets = Roman Pocket Loadout
+loadout-group-roman-armor = Roman Pocket Loadout

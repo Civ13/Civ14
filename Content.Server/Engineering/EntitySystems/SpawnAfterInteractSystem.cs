@@ -78,6 +78,7 @@ namespace Content.Server.Engineering.EntitySystems
                     {
                         var coordinates = Transform(ent).Coordinates;
                         QueueDel(ent);
+                        EntityManager.SpawnEntity("FloorWaterEntity", coordinates);
                     }
                 }
             }

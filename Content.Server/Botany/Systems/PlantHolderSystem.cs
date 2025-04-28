@@ -25,6 +25,8 @@ using Robust.Shared.Timing;
 using Content.Server.Labels.Components;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Weather;
+using Content.Server.Stack;
+using Content.Shared.Stacks;
 
 namespace Content.Server.Botany.Systems;
 
@@ -43,10 +45,13 @@ public sealed class PlantHolderSystem : EntitySystem
     [Dependency] private readonly RandomHelperSystem _randomHelper = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ItemSlotsSystem _itemSlots = default!;
-
+    [Dependency] private readonly StackSystem _stack = default!;
     public const float HydroponicsSpeedMultiplier = 1f;
     public const float HydroponicsConsumptionMultiplier = 2f;
-
+    private ISawmill _sawmill = default!;
+    /// <summary>
+    /// Sets up event subscriptions for plant holder interactions and initialises the entity logger.
+    /// </summary>
     public override void Initialize()
     {
         base.Initialize();
@@ -54,8 +59,12 @@ public sealed class PlantHolderSystem : EntitySystem
         SubscribeLocalEvent<PlantHolderComponent, InteractUsingEvent>(OnInteractUsing);
         SubscribeLocalEvent<PlantHolderComponent, InteractHandEvent>(OnInteractHand);
         SubscribeLocalEvent<PlantHolderComponent, SolutionTransferredEvent>(OnSolutionTransferred);
+        _sawmill = LogManager.GetSawmill("entity");
     }
 
+    /// <summary>
+    /// Periodically updates all plant holders, advancing their growth and state if their scheduled update time has elapsed.
+    /// </summary>
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -148,6 +157,18 @@ public sealed class PlantHolderSystem : EntitySystem
         }
     }
 
+    /// <summary>
+    /// Handles interactions with a plant holder using an item, enabling planting, weeding, plant removal, sampling, and harvesting based on the item used.
+    /// </summary>
+    /// <remarks>
+    /// - Seeds can be planted if the holder is empty, or a message is shown if already seeded.
+    /// - Hoes remove weeds if present.
+    /// - Shovels remove the plant if one exists.
+    /// - Plant sample takers allow sampling if the plant is alive, mature, and not already sampled, reducing plant health and possibly marking it as sampled.
+    /// - Sharp tools trigger harvesting.
+    /// - Composting with produce is currently disabled.
+    /// Displays appropriate feedback messages to the user for each action.
+    /// </remarks>
     private void OnInteractUsing(Entity<PlantHolderComponent> entity, ref InteractUsingEvent args)
     {
         var (uid, component) = entity;
@@ -183,7 +204,22 @@ public sealed class PlantHolderSystem : EntitySystem
                 {
                     _itemSlots.TryEjectToHands(args.Used, paperLabel.LabelSlot, args.User);
                 }
-                QueueDel(args.Used);
+
+                if (TryComp<StackComponent>(args.Used, out var stack))
+                {
+                    //Not deleting whole stack piece will make troubles with grinding object
+                    if (stack.Count > 1)
+                    {
+                        _stack.SetCount(args.Used, stack.Count - 1);
+                        return;
+                    }
+                    else
+                    {
+                        QueueDel(args.Used);
+                    }
+                }
+                else { QueueDel(args.Used); }
+
 
                 CheckLevelSanity(uid, component);
                 UpdateSprite(uid, component);
@@ -264,7 +300,7 @@ public sealed class PlantHolderSystem : EntitySystem
                 return;
             }
 
-            component.Health -= (_random.Next(3, 5) * 10);
+            component.Health -= _random.Next(3, 5) * 10;
 
             float? healthOverride;
             if (component.Harvest)
@@ -350,6 +386,12 @@ public sealed class PlantHolderSystem : EntitySystem
     }
 
 
+    /// <summary>
+    /// Advances the growth cycle and health state of a plant holder, applying mutation, environmental, weather, and resource effects.
+    /// </summary>
+    /// <remarks>
+    /// This method processes plant growth, mutation, weed and pest dynamics, resource consumption, environmental hazards (such as gas, pressure, temperature, and toxins), and weather effects. It also manages plant death, harvest readiness, and visual updates. If no seed is present or the plant is dead, only relevant state and visuals are updated.
+    /// </remarks>
     public void Update(EntityUid uid, PlantHolderComponent? component = null)
     {
         if (!Resolve(uid, ref component))
@@ -450,23 +492,25 @@ public sealed class PlantHolderSystem : EntitySystem
         }
 
         // Water consumption.
+
+        var weather = EntityQueryEnumerator<WeatherNomadsComponent>();
+        while (weather.MoveNext(out var uuid, out var weatherComponent))
+        {
+            if (weatherComponent.CurrentPrecipitation == Precipitation.LightWet || weatherComponent.CurrentPrecipitation == Precipitation.HeavyWet || weatherComponent.CurrentPrecipitation == Precipitation.Storm)
+            {
+                component.WaterLevel += 3f;
+            }
+            if (weatherComponent.CurrentPrecipitation == Precipitation.Storm)
+            {
+                component.Health -= _random.Next(1, 3) * HydroponicsSpeedMultiplier;
+            }
+        }
         if (component.Seed.WaterConsumption > 0 && component.WaterLevel > 0 && _random.Prob(0.75f))
         {
-            var weather = EntityQueryEnumerator<WeatherNomadsComponent>();
-            while (weather.MoveNext(out var uuid, out var weatherComponent))
-            {
-                if (weatherComponent.CurrentPrecipitation == Precipitation.LightWet || weatherComponent.CurrentPrecipitation == Precipitation.HeavyWet  || weatherComponent.CurrentPrecipitation == Precipitation.Storm)
-                {
-                    component.WaterLevel += 2f;
-                }
-            }
-
             component.WaterLevel -= MathF.Max(0f,
             component.Seed.WaterConsumption * HydroponicsConsumptionMultiplier * HydroponicsSpeedMultiplier);
             if (component.DrawWarnings)
                 component.UpdateSpriteAfterUpdate = true;
-
-
         }
 
         var healthMod = _random.Next(1, 3) * HydroponicsSpeedMultiplier;

@@ -24,6 +24,8 @@ using Content.Shared.Verbs;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Content.Shared.Civ14.SleepZone;
+using Content.Shared.Standing;
 
 namespace Content.Shared.Bed.Sleep;
 
@@ -36,10 +38,11 @@ public sealed partial class SleepingSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedEmitSoundSystem _emitSound = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffectsSystem = default!;
-
+    [Dependency] private readonly SleepZoneSystem _sleepzone = default!;
+    [Dependency] private readonly ILogManager _log = default!;
     public static readonly EntProtoId SleepActionId = "ActionSleep";
     public static readonly EntProtoId WakeActionId = "ActionWake";
-
+    private ISawmill _sawmill = default!;
     public override void Initialize()
     {
         base.Initialize();
@@ -67,6 +70,7 @@ public sealed partial class SleepingSystem : EntitySystem
         SubscribeLocalEvent<SleepingComponent, EmoteAttemptEvent>(OnEmoteAttempt);
 
         SubscribeLocalEvent<SleepingComponent, BeforeForceSayEvent>(OnChangeForceSay, after: new[] { typeof(PainNumbnessSystem) });
+        _sawmill = _log.GetSawmill("sleeping");
     }
 
     private void OnUnbuckleAttempt(Entity<SleepingComponent> ent, ref UnbuckleAttemptEvent args)
@@ -74,7 +78,11 @@ public sealed partial class SleepingSystem : EntitySystem
         // TODO is this necessary?
         // Shouldn't the interaction have already been blocked by a general interaction check?
         if (ent.Owner == args.User)
-            args.Cancelled = true;
+            //if mob has the sleepzone component, do not wake up when moved
+            if (!TryComp<SleepZoneComponent>(ent, out var sleepZone))
+            {
+                args.Cancelled = true;
+            }
     }
 
     private void OnBedSleepAction(Entity<ActionsContainerComponent> ent, ref SleepActionEvent args)
@@ -128,13 +136,6 @@ public sealed partial class SleepingSystem : EntitySystem
         RemComp<SpamEmitSoundComponent>(ent);
     }
 
-    private void OnMapInit(Entity<SleepingComponent> ent, ref MapInitEvent args)
-    {
-        var ev = new SleepStateChangedEvent(true);
-        RaiseLocalEvent(ent, ref ev);
-        _blindableSystem.UpdateIsBlind(ent.Owner);
-        _actionsSystem.AddAction(ent, ref ent.Comp.WakeAction, WakeActionId, ent);
-    }
 
     private void OnSpeakAttempt(Entity<SleepingComponent> ent, ref SpeakAttemptEvent args)
     {
@@ -261,18 +262,43 @@ public sealed partial class SleepingSystem : EntitySystem
     /// </summary>
     public bool TrySleeping(Entity<MobStateComponent?> ent)
     {
+        // Use Resolve to get the MobStateComponent if it exists, otherwise return false.
         if (!Resolve(ent, ref ent.Comp, logMissing: false))
             return false;
 
+        // Raise an event to see if anything wants to prevent sleeping.
         var tryingToSleepEvent = new TryingToSleepEvent(ent);
-        RaiseLocalEvent(ent, ref tryingToSleepEvent);
+        RaiseLocalEvent(ent.Owner, ref tryingToSleepEvent); // Use EntityUid (ent.Owner)
         if (tryingToSleepEvent.Cancelled)
             return false;
+        RaiseLocalEvent(ent.Owner, new DropHandItemsEvent(), false);
+        // Specific logic if the entity also has a SleepZoneComponent.
+        // Use TryComp with the original Entity<T> struct 'ent'.
+        if (TryComp<SleepZoneComponent>(ent, out var sleepZone))
+        {
+            _sleepzone.StartSleep(ent);
+        }
+        // Ensure the SleepingComponent exists and get a reference to it.
+        // Use ent.Owner (the EntityUid) with EnsureComp.
+        var sleepComp = EnsureComp<SleepingComponent>(ent.Owner);
 
-        EnsureComp<SleepingComponent>(ent);
+        // Raise the state changed event *after* the component is added. Use ent.Owner (the EntityUid).
+        var ev = new SleepStateChangedEvent(true);
+        RaiseLocalEvent(ent.Owner, ref ev);
+        _blindableSystem.UpdateIsBlind(ent.Owner);
+        _actionsSystem.AddAction(ent.Owner, ref sleepComp.WakeAction, WakeActionId, ent.Owner);
+
+
         return true;
     }
 
+    private void OnMapInit(Entity<SleepingComponent> ent, ref MapInitEvent args)
+    {
+        var ev = new SleepStateChangedEvent(true);
+        RaiseLocalEvent(ent, ref ev);
+        _blindableSystem.UpdateIsBlind(ent.Owner);
+        _actionsSystem.AddAction(ent, ref ent.Comp.WakeAction, WakeActionId, ent);
+    }
     /// <summary>
     /// Tries to wake up <paramref name="ent"/>, with a cooldown between attempts to prevent spam.
     /// </summary>
@@ -314,8 +340,11 @@ public sealed partial class SleepingSystem : EntitySystem
             _audio.PlayPredicted(ent.Comp.WakeAttemptSound, ent, user);
             _popupSystem.PopupClient(Loc.GetString("wake-other-success", ("target", Identity.Entity(ent, EntityManager))), ent, user);
         }
-
         Wake((ent, ent.Comp));
+        if (TryComp<SleepZoneComponent>(ent, out var sleepZone))
+        {
+            _sleepzone.WakeUp(ent);
+        }
         return true;
     }
 

@@ -192,6 +192,9 @@
     - id: YarrowHealingHerbs
       amount: 2
       maxAmount: 3
+    - id: YarrowSeedsCiv
+      amount: 2
+      maxAmount: 2
 
 - type: entity
   name: wild milk thistle

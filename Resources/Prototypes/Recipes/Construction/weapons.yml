@@ -30,7 +30,7 @@
   targetNode: woodenBucklerBlue
   category: construction-category-weapons
   description: A simple round wooden shield. This one is painted blue.
-  icon: { sprite: Civ14/Weapons/buckler.rsi, state: blue_buckler-icon }
+  icon: { sprite: Civ14/Weapons/blue_buckler.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8
@@ -43,7 +43,7 @@
   targetNode: woodenBucklerRed
   category: construction-category-weapons
   description: A simple round wooden shield. This one is painted red.
-  icon: { sprite: Civ14/Weapons/buckler.rsi, state: red_buckler-icon }
+  icon: { sprite: Civ14/Weapons/red_buckler.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8

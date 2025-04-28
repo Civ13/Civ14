@@ -861,7 +861,7 @@
     sprite: Civ14/Clothing/exported/uniforms/customroman.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
 
 - type: constructionGraph
@@ -889,7 +889,7 @@
     sprite: Civ14/Clothing/exported/uniforms/customtoga.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
 
 - type: constructionGraph
@@ -917,7 +917,7 @@
     sprite: Civ14/Clothing/exported/uniforms/toga2.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
 
 - type: constructionGraph
@@ -929,8 +929,8 @@
         - to: end
           steps:
             - material: Cloth
-              amount: 5
-              doAfter: 5
+              amount: 3
+              doAfter: 6
     - node: end
       entity: civ13_uniform_half_shoulder_white_toga
 - type: construction
@@ -1088,7 +1088,7 @@
     sprite: Civ14/Clothing/exported/uniforms/celtic_short_braccae.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
 
 - type: constructionGraph
@@ -1116,7 +1116,7 @@
     sprite: Civ14/Clothing/exported/uniforms/celtic_long_braccae.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
 
 - type: constructionGraph
@@ -1200,7 +1200,7 @@
     sprite: Civ14/Clothing/exported/uniforms/pharaoh.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
 
 - type: constructionGraph
@@ -1228,7 +1228,7 @@
     sprite: Civ14/Clothing/exported/uniforms/greatshendyt.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
 
 - type: constructionGraph
@@ -1314,7 +1314,7 @@
     sprite: Civ14/Clothing/exported/uniforms/kimono.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 2
   agemax: 8
 
 - type: constructionGraph
@@ -2657,7 +2657,7 @@
     sprite: Civ14/Clothing/exported/uniforms/customtoga.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
 
 - type: constructionGraph
@@ -2669,7 +2669,7 @@
         - to: end
           steps:
             - material: Cloth
-              amount: 5
+              amount: 6
               doAfter: 5
     - node: end
       entity: civ13_uniform_purple_toga
@@ -8653,7 +8653,7 @@
     sprite: Civ14/Clothing/exported/uniforms/huipil.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
 
 - type: constructionGraph
@@ -8681,7 +8681,7 @@
     sprite: Civ14/Clothing/exported/uniforms/halfhuipil.rsi
     state: icon
   objectType: Item
-  agemin: 8
+  agemin: 1
   agemax: 8
 
 - type: constructionGraph
@@ -10616,6 +10616,62 @@
               doAfter: 8
     - node: end
       entity: civ13_uniform_stola
+- type: construction
+  name: red tunic
+  id: civ13_uniform_red_tunic
+  graph: civ13_uniform_red_tunic
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: A red tunic.
+  icon:
+    sprite: Civ14/Clothing/exported/uniforms/red_tunic.rsi
+    state: icon
+  objectType: Item
+  agemin: 1
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_uniform_red_tunic
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 3
+              doAfter: 8
+    - node: end
+      entity: civ13_uniform_red_tunic
+- type: construction
+  name: blue tunic
+  id: civ13_uniform_blue_tunic
+  graph: civ13_uniform_blue_tunic
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: A blue tunic.
+  icon:
+    sprite: Civ14/Clothing/exported/uniforms/blue_tunic.rsi
+    state: icon
+  objectType: Item
+  agemin: 1
+  agemax: 8
+
+- type: constructionGraph
+  id: civ13_uniform_blue_tunic
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 3
+              doAfter: 8
+    - node: end
+      entity: civ13_uniform_blue_tunic
 - type: construction
   name: short loincloth
   id: civ13_uniform_short_loincloth

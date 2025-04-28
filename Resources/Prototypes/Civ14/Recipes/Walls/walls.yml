@@ -33,7 +33,6 @@
   agemin: 0
   agemax: 8
   placementMode: SnapgridCenter
-
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
@@ -291,7 +290,7 @@
     sprite: Civ14/Structures/Walls/roman.rsi
     state: full
   objectType: Structure
-  agemin: 0
+  agemin: 1
   agemax: 8
   placementMode: SnapgridCenter
 
@@ -320,7 +319,7 @@
     sprite: Civ14/Structures/Walls/grecian.rsi
     state: full
   objectType: Structure
-  agemin: 0
+  agemin: 1
   agemax: 8
   placementMode: SnapgridCenter
 
@@ -349,7 +348,7 @@
     sprite: Civ14/Structures/Walls/sandstone_block_wall.rsi
     state: full
   objectType: Structure
-  agemin: 0
+  agemin: 1
   agemax: 8
   placementMode: SnapgridCenter
 
@@ -482,3 +481,69 @@
               doAfter: 5
     - node: end
       entity: FortressSandstoneBrickWall
+
+- type: construction
+  name: aztec wall
+  id: AztecWall
+  graph: AztecWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A wood wall in the Aztec style.
+  icon:
+    sprite: Civ14/Structures/Walls/aztec.rsi
+    state: full
+  objectType: Structure
+  agemin: 1
+  agemax: 8
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: constructionGraph
+  id: AztecWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: AztecWall
+
+- type: construction
+  name: nordic wall
+  id: NordicWall
+  graph: NordicWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A wood wall in the Nordic european style.
+  icon:
+    sprite: Civ14/Structures/Walls/nordic.rsi
+    state: full
+  objectType: Structure
+  agemin: 1
+  agemax: 8
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: constructionGraph
+  id: NordicWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: NordicWall

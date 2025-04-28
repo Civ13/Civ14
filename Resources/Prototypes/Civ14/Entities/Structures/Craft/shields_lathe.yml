@@ -16,6 +16,8 @@
     - civ13_shield_spartan_aspis
     - civ13_shield_egyptian_shield
     - civ13_shield_praetorian_roman_shield
+    - civ13_shield_roman_shield
+    - civ13_shield_roman_shield_blue
 
 - type: latheRecipe
   id: civ13_shield_bronze_shield
@@ -79,7 +81,22 @@
   materials:
     Iron: 1000
   result: civ13_shield_praetorian_roman_shield
-
+- type: latheRecipe
+  id: civ13_shield_roman_shield
+  categories:
+    - AnvilShieldsAncient
+  completetime: 12
+  materials:
+    Iron: 1000
+  result: civ13_shield_roman_shield
+- type: latheRecipe
+  id: civ13_shield_roman_shield_blue
+  categories:
+    - AnvilShieldsAncient
+  completetime: 12
+  materials:
+    Iron: 1000
+  result: civ13_shield_roman_shield_blue
 - type: latheRecipePack
   id: AnvilShieldsMedieval
   recipes:

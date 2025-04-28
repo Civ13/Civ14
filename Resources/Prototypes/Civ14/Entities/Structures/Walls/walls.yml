@@ -501,3 +501,99 @@
           state: rocky_north
         - map: ["enum.EdgeLayer.West"]
           state: rocky_west
+
+- type: entity
+  parent: BaseWall
+  id: AztecWall
+  name: aztec wall
+  description: A wood wall in the Aztec style.
+  components:
+    - type: MeleeSound
+      soundGroups:
+        Brute:
+          path: "/Audio/Weapons/boxingpunch1.ogg"
+    - type: Tag
+      tags:
+        - Wooden
+        - Wall
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/aztec.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/aztec.rsi
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: WoodDestroy
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                MaterialWoodPlank:
+                  min: 1
+                  max: 2
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Construction
+      agemin: 1
+      agemax: 8
+      graph: AztecWall
+      node: end
+      cost: 5
+      time: 8
+      material: WoodPlank
+    - type: IconSmooth
+      key: walls
+      base: aztec
+
+- type: entity
+  parent: BaseWall
+  id: NordicWall
+  name: nordic wall
+  description: A wood wall in the Nordic european style.
+  components:
+    - type: MeleeSound
+      soundGroups:
+        Brute:
+          path: "/Audio/Weapons/boxingpunch1.ogg"
+    - type: Tag
+      tags:
+        - Wooden
+        - Wall
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/nordic.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/nordic.rsi
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: WoodDestroy
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                MaterialWoodPlank:
+                  min: 1
+                  max: 2
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Construction
+      agemin: 1
+      agemax: 8
+      graph: NordicWall
+      node: end
+      cost: 5
+      time: 8
+      material: WoodPlank
+    - type: IconSmooth
+      key: walls
+      base: nordic

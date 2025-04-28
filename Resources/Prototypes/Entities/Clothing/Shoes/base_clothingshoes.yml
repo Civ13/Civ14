@@ -31,12 +31,6 @@
   abstract: true
   parent: ClothingShoesBase
   id: ClothingShoesBaseButcherable
-  components:
-    - type: Butcherable
-      butcheringType: Knife
-      spawned:
-        - id: MaterialCloth1
-          amount: 1
 
 # stuff common to all military boots
 - type: entity

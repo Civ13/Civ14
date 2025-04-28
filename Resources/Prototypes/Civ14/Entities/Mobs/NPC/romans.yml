@@ -1,0 +1,294 @@
+- type: entity
+  name: roman legionary
+  parent: BaseMobHuman
+  id: MobRomanMelee
+  suffix: "Melee, Hostile"
+  components:
+    - type: NpcFactionMember
+      factions:
+        - Syndicate
+    - type: NukeOperative
+    - type: Loadout
+      prototypes: [RomanInhandGladius]
+      roleLoadout: [RomanLoadoutLegionary]
+    - type: InputMover
+    - type: MobMover
+    - type: HTN
+      rootTask:
+        task: SimpleHumanoidHostileCompound
+
+- type: entity
+  name: roman sagittarius
+  parent: BaseMobHuman
+  id: MobRomanRanged
+  suffix: "Ranged, Hostile"
+  components:
+    - type: NpcFactionMember
+      factions:
+        - Syndicate
+    - type: NukeOperative
+    - type: Loadout
+      prototypes: [RomanInhandRanged]
+      roleLoadout: [RomanLoadoutSagittarius]
+    - type: InputMover
+    - type: MobMover
+    - type: HTN
+      rootTask:
+        task: SimpleHumanoidHostileCompound
+    - type: Gun
+      minAngle: 0
+      maxAngle: 5
+      fireRate: 0.3
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        collection: BulletMiss
+      soundEmpty: null
+    - type: BallisticAmmoProvider
+      proto: ArrowRegular
+      capacity: 40
+    - type: CombatMode
+
+- type: entity
+  name: allied sagittarius
+  parent: BaseMobHuman
+  id: MobRomanRangedFriendly
+  suffix: "Ranged, Friendly"
+  components:
+    - type: NpcFactionMember
+      factions:
+        - Nomads
+    - type: Loadout
+      prototypes: [RomanInhandRangedFriendly]
+      roleLoadout: [RomanLoadoutSagittariusFriendly]
+    - type: InputMover
+    - type: MobMover
+    - type: HTN
+      rootTask:
+        task: SimpleHumanoidHostileCompound
+    - type: Gun
+      minAngle: 0
+      maxAngle: 5
+      fireRate: 0.3
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        collection: BulletMiss
+      soundEmpty: null
+    - type: BallisticAmmoProvider
+      proto: ArrowRegular
+      capacity: 30
+    - type: CombatMode
+
+- type: entity
+  name: allied legionary
+  parent: MobRomanMelee
+  id: MobRomanMeleeFriendly
+  suffix: "Melee, Friendly"
+  components:
+    - type: NpcFactionMember
+      factions:
+        - Nomads
+    - type: Loadout
+      prototypes: [RomanInhandGladiusFriendly]
+      roleLoadout: [RomanLoadoutLegionaryFriendly]
+    - type: InputMover
+    - type: MobMover
+    - type: HTN
+      rootTask:
+        task: SimpleHumanoidHostileCompound
+# role loadouts
+- type: roleLoadout
+  id: RomanLoadoutSagittarius
+  groups:
+    - RomanHelmetSagittarius
+    - RomanShoes
+    - RomanUniformSagittarius
+    - RomanPocketHerbs
+
+- type: roleLoadout
+  id: RomanLoadoutLegionary
+  groups:
+    - RomanHelmetLegionary
+    - RomanShoes
+    - RomanUniformLegionary
+    - RomanArmorLegionary
+    - RomanPocketBandage
+- type: roleLoadout
+  id: RomanLoadoutSagittariusFriendly
+  groups:
+    - RomanHelmetSagittariusFriendly
+    - RomanShoes
+    - RomanUniformSagittariusFriendly
+    - RomanPocketHerbs
+
+- type: roleLoadout
+  id: RomanLoadoutLegionaryFriendly
+  groups:
+    - RomanHelmetLegionary
+    - RomanShoes
+    - RomanUniformLegionaryFriendly
+    - RomanArmorLegionary
+    - RomanPocketBandage
+
+## loadout groups
+- type: loadoutGroup
+  id: RomanHelmetLegionary
+  name: loadout-group-roman-head
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+    - RomanNPCHelmetLegionary
+- type: loadoutGroup
+  id: RomanHelmetSagittarius
+  name: loadout-group-roman-head
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+    - RomanNPCHelmetSagittarius
+- type: loadoutGroup
+  id: RomanHelmetSagittariusFriendly
+  name: loadout-group-roman-head
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+    - RomanNPCHelmetSagittariusFriendly
+- type: loadoutGroup
+  id: RomanShoes
+  name: loadout-group-roman-shoes
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+    - RomanNPCShoes
+
+- type: loadoutGroup
+  id: RomanUniformLegionary
+  name: loadout-group-roman-jumpsuit
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+    - RomanNPCUniformLegionary
+
+- type: loadoutGroup
+  id: RomanUniformSagittarius
+  name: loadout-group-roman-jumpsuit
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+    - RomanNPCUniformSagittarius
+- type: loadoutGroup
+  id: RomanUniformLegionaryFriendly
+  name: loadout-group-roman-jumpsuit
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+    - RomanNPCUniformLegionaryFriendly
+
+- type: loadoutGroup
+  id: RomanUniformSagittariusFriendly
+  name: loadout-group-roman-jumpsuit
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+    - RomanNPCUniformSagittariusFriendly
+- type: loadoutGroup
+  id: RomanPocketHerbs
+  name: loadout-group-roman-pockets
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+    - RomanPocketHerbs
+- type: loadoutGroup
+  id: RomanPocketBandage
+  name: loadout-group-roman-pockets
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+    - RomanPocketBandage
+- type: loadoutGroup
+  id: RomanArmorLegionary
+  name: loadout-group-roman-armor
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+    - RomanNPCArmorLegionary
+## starting gears
+- type: loadout
+  id: RomanNPCUniformLegionary
+  equipment:
+    jumpsuit: civ13_uniform_red_tunic
+- type: loadout
+  id: RomanNPCUniformSagittarius
+  equipment:
+    jumpsuit: civ13_uniform_red_tunic
+- type: loadout
+  id: RomanNPCUniformLegionaryFriendly
+  equipment:
+    jumpsuit: civ13_uniform_blue_tunic
+- type: loadout
+  id: RomanNPCUniformSagittariusFriendly
+  equipment:
+    jumpsuit: civ13_uniform_blue_tunic
+
+- type: loadout
+  id: RomanNPCHelmetSagittarius
+  equipment:
+    head: civ13_head_wolfpelt_headcover
+- type: loadout
+  id: RomanNPCHelmetSagittariusFriendly
+  equipment:
+    head: civ13_head_foxpelt_headcover
+- type: loadout
+  id: RomanNPCHelmetLegionary
+  equipment:
+    head: civ13_head_roman_legionary_helmet
+
+- type: loadout
+  id: RomanNPCArmorLegionary
+  equipment:
+    outerClothing: civ13_suit_segmented_armor
+
+- type: loadout
+  id: RomanNPCShoes
+  equipment:
+    shoes: civ13_shoes_sandals_1
+
+- type: loadout
+  id: RomanPocketBandage
+  equipment:
+    pocket1: GauzeLeather1
+- type: loadout
+  id: RomanPocketHerbs
+  equipment:
+    pocket1: HealingHerbs
+
+## starting gears (weapons)
+- type: startingGear
+  id: RomanInhandGladius
+  inhand:
+    - civ13_sword_gladius
+    - civ13_shield_roman_shield
+
+- type: startingGear
+  id: RomanInhandRanged
+  equipment:
+    belt: ClothingBeltQuiver
+  inhand:
+    - WoodenBucklerRed
+    - BowImprovised
+
+- type: startingGear
+  id: RomanInhandGladiusFriendly
+  inhand:
+    - civ13_sword_gladius
+    - civ13_shield_roman_shield_blue
+
+- type: startingGear
+  id: RomanInhandRangedFriendly
+  equipment:
+    belt: ClothingBeltQuiver
+  inhand:
+    - WoodenBucklerBlue
+    - BowImprovised

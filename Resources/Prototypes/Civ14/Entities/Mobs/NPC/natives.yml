@@ -58,7 +58,7 @@
     - type: Gun
       minAngle: 0
       maxAngle: 5
-      fireRate: 1
+      fireRate: 0.3
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -100,7 +100,7 @@
     - type: Gun
       minAngle: 0
       maxAngle: 5
-      fireRate: 1
+      fireRate: 0.3
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto

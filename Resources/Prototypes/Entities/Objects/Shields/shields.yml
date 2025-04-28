@@ -171,7 +171,8 @@
   description: A small round wooden shield. This one is red.
   components:
     - type: Sprite
-      state: red_buckler-icon
+      sprite: Civ14/Weapons/red_buckler.rsi
+      state: icon
     - type: Construction
       graph: WoodenBuckler
       node: woodenBucklerRed
@@ -183,7 +184,8 @@
   description: A small round wooden shield. This one is blue.
   components:
     - type: Sprite
-      state: blue_buckler-icon
+      sprite: Civ14/Weapons/blue_buckler.rsi
+      state: icon
     - type: Construction
       graph: WoodenBuckler
       node: woodenBucklerBlue

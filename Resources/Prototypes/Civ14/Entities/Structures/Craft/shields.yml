@@ -557,6 +557,51 @@
               acts: ["Destruction"]
 
 - type: entity
+  name: roman shield
+  parent: WoodenBuckler
+  id: civ13_shield_roman_shield
+  description: A shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/roman_shield.rsi
+
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.630
+          Slash: 0.630
+          Piercing: 0.630
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.554
+          Slash: 0.554
+          Piercing: 0.554
+        flatReductions:
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
+    - type: Item
+      heldPrefix: null
+      sprite: Civ14/Weapons/roman_shield.rsi
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 75
+
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+- type: entity
+  name: blue roman shield
+  parent: WoodenBuckler
+  id: civ13_shield_roman_shield_blue
+  description: A shield. Blocks melee damage.
+  components:
+    - type: Sprite
+      state: icon
+      sprite: Civ14/Weapons/roman_shield_blue.rsi
+- type: entity
   name: chimalli
   parent: WoodenBuckler
   id: civ13_shield_chimalli

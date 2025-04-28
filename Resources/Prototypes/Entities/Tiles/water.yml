@@ -85,11 +85,13 @@
           shape: !type:PhysShapeAabb
             bounds: "-0.5,-0.5,0.5,0.5"
           density: 100
+          hard: true
           mask:
-            - Impassable
-            - HighImpassable
+            - LowImpassable
+            - MidImpassable
           layer:
-            - HighImpassable
+            - LowImpassable
+            - MidImpassable
     - type: Tag
       tags:
         - Water
@@ -111,11 +113,13 @@
           shape: !type:PhysShapeAabb
             bounds: "-0.5,-0.5,0.5,0.5"
           density: 100
+          hard: true
           mask:
-            - Impassable
-            - HighImpassable
+            - LowImpassable
+            - MidImpassable
           layer:
-            - HighImpassable
+            - LowImpassable
+            - MidImpassable
     - type: Tag
       tags:
         - Water

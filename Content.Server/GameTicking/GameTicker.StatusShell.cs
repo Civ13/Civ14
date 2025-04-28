@@ -3,6 +3,7 @@ using System.Text.Json.Nodes;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Robust.Server.ServerStatus;
+using Robust.Shared.Collections;
 using Robust.Shared.Configuration;
 
 namespace Content.Server.GameTicking
@@ -37,7 +38,12 @@ namespace Content.Server.GameTicking
         private void GetStatusResponse(JsonNode jObject)
         {
             var preset = CurrentPreset ?? Preset;
+            var _parsedPlayerList = new ValueList<JsonNode>();
+            foreach (var player in _playerManager.Sessions)
+            {
+                _parsedPlayerList.Add(JsonValue.Create(player.Name.ToString())!);
 
+            }
             // This method is raised from another thread, so this better be thread safe!
             lock (_statusShellLock)
             {
@@ -49,13 +55,14 @@ namespace Content.Server.GameTicking
                     : _playerManager.PlayerCount - _adminManager.ActiveAdmins.Count();
                 jObject["soft_max_players"] = _cfg.GetCVar(CCVars.SoftMaxPlayers);
                 jObject["panic_bunker"] = _cfg.GetCVar(CCVars.PanicBunkerEnabled);
-                jObject["run_level"] = (int) _runLevel;
+                jObject["run_level"] = (int)_runLevel;
                 if (preset != null)
                     jObject["preset"] = Loc.GetString(preset.ModeTitle);
                 if (_runLevel >= GameRunLevel.InRound)
                 {
                     jObject["round_start_time"] = _roundStartDateTime.ToString("o");
                 }
+                jObject["playerlist"] = new JsonArray(_parsedPlayerList.ToArray());
             }
         }
     }

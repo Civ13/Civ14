@@ -422,8 +422,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5
-          Slash: 0.5
+          Blunt: 0.75
+          Slash: 0.75
           Piercing: 0.9
           Arrow: 0.6
           Heat: 0.85
@@ -459,8 +459,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5
-          Slash: 0.5
+          Blunt: 0.75
+          Slash: 0.75
           Piercing: 0.9
           Arrow: 0.6
           Heat: 0.85
@@ -480,8 +480,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5
-          Slash: 0.5
+          Blunt: 0.75
+          Slash: 0.75
           Piercing: 0.9
           Arrow: 0.6
           Heat: 0.85
