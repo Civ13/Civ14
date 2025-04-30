@@ -1,14 +1,17 @@
 - type: job
-  id: JobEnglishLord
+  id: EnglishLord
   name: job-name-civ-english-lord
   description: job-description-civ-english-lord
-  playTimeTracker: Overall
+  playTimeTracker: JobEnglishLord
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 10800 #3 hrs
   startingGear: EnglishLordGear
   icon: "JobIconCommander"
   supervisors: job-supervisors-nobody
+
+- type: playTimeTracker
+  id: JobEnglishLord
 
 - type: startingGear
   id: EnglishLordGear
@@ -18,3 +21,9 @@
     jumpsuit: civ13_uniform_white_tunic_1
     belt: civ13_sword_arming_sword
     head: civ13_head_brown_noble_hat
+
+# Wildcards
+- type: roleLoadout
+  id: JobEnglishLord
+  groups:
+    - Glasses

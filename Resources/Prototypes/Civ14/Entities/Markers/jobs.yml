@@ -11,3 +11,24 @@
       layers:
         - state: green
         - state: passenger
+
+- type: entity
+  id: SpawnPointEnglish
+  parent: SpawnPointJobBase
+  name: nomad
+  components:
+    - type: SpawnPoint
+      job_id: EnglishLord
+    - type: Sprite
+      layers:
+        - state: green
+- type: entity
+  id: SpawnPointFrench
+  parent: SpawnPointJobBase
+  name: nomad
+  components:
+    - type: SpawnPoint
+      job_id: FrenchLord
+    - type: Sprite
+      layers:
+        - state: green

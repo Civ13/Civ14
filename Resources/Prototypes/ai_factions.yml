@@ -190,3 +190,32 @@
     - Zombie
     - Revolutionary
     - Predator
+
+## TDM
+- type: npcFaction
+  id: French
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - English
+
+- type: npcFaction
+  id: English
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - French

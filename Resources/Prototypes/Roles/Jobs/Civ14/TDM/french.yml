@@ -1,0 +1,23 @@
+- type: job
+  id: FrenchLord
+  name: job-name-civ-french-lord
+  description: job-description-civ-french-lord
+  playTimeTracker: JobFrenchLord
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10800 #3 hrs
+  startingGear: FrenchLordGear
+  icon: "JobIconCommander"
+  supervisors: job-supervisors-nobody
+
+- type: playTimeTracker
+  id: JobFrenchLord
+
+- type: startingGear
+  id: FrenchLordGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_iron_chestplate
+    jumpsuit: civ13_uniform_white_tunic_1
+    belt: civ13_sword_arming_sword
+    head: civ13_head_brown_noble_hat
