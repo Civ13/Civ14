@@ -1,0 +1,15 @@
+- type: gameMap
+  id: Camp
+  mapName: "Camp (Medieval)"
+  mapPath: /Maps/civ/tdm/camp.yml
+  minPlayers: 0
+  maxPlayers: 128
+  stations:
+    Nomads:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Camp (Medieval)"
+        - type: StationJobs
+          availableJobs:
+            EnglishLord: [1, 1]

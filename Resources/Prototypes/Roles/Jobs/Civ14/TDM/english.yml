@@ -1,0 +1,20 @@
+- type: job
+  id: JobEnglishLord
+  name: job-name-civ-english-lord
+  description: job-description-civ-english-lord
+  playTimeTracker: Overall
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10800 #3 hrs
+  startingGear: EnglishLordGear
+  icon: "JobIconCommander"
+  supervisors: job-supervisors-nobody
+
+- type: startingGear
+  id: EnglishLordGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_iron_chestplate
+    jumpsuit: civ13_uniform_white_tunic_1
+    belt: civ13_sword_arming_sword
+    head: civ13_head_brown_noble_hat

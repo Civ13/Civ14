@@ -1,0 +1,116 @@
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  id: JobIconCommander
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: commander
+  jobName: job-name-commander
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  id: JobIconDesignatedMarksman
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: designated_marksman
+  jobName: job-name-designated-marksman
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  id: JobIconICpl
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: i_cpl
+  jobName: job-name-i-cpl
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  id: JobIconICpt
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: i_cpt
+  jobName: job-name-i-cpt
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  id: JobIconILt
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: i_lt
+  jobName: job-name-i-lt
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  id: JobIconIMaj
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: i_maj
+  jobName: job-name-i-maj
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  id: JobIconISgt
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: i_sgt
+  jobName: job-name-i-sgt
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  id: JobIconISsgt
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: i_ssgt
+  jobName: job-name-i-ssgt
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  id: JobIconMedic
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: medic
+  jobName: job-name-medic
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  id: JobIconMg
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: mg
+  jobName: job-name-mg
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  id: JobIconNco
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: nco
+  jobName: job-name-nco
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  id: JobIconOfficer
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: officer
+  jobName: job-name-officer
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  id: JobIconRifleman
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: rifleman
+  jobName: job-name-rifleman
