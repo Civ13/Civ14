@@ -4,12 +4,9 @@
     "copyright": "Exported from https://github.com/civ13/civ13",
     "size": {
         "x": 32,
-        "y": 32
+        "y": 96
     },
     "states": [
-        {
-            "name": "mag-0"
-        },
         {
             "name": "icon",
             "directions": 1
@@ -27,7 +24,8 @@
             "directions": 1
         },
         {
-            "name": "bolt-open"
+            "name": "bolt-open",
+            "directions": 1
         }
     ]
 }

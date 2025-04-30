@@ -8,82 +8,108 @@
   },
   "states": [
     {
-      "name": "primitive_axe_1"
+      "name": "primitive_axe_1",
+      "directions": 1
     },
     {
-      "name": "primitive_axe_2"
+      "name": "primitive_axe_2",
+      "directions": 1
     },
     {
-      "name": "primitive_axe_3"
+      "name": "primitive_axe_3",
+      "directions": 1
     },
     {
-      "name": "primitive_knife_1"
+      "name": "primitive_knife_1",
+      "directions": 1
     },
     {
-      "name": "primitive_knife_2"
+      "name": "primitive_knife_2",
+      "directions": 1
     },
     {
-      "name": "primitive_knife_3"
+      "name": "primitive_knife_3",
+      "directions": 1
     },
     {
-      "name": "primitive_hammer_1"
+      "name": "primitive_hammer_1",
+      "directions": 1
     },
     {
-      "name": "primitive_handle"
+      "name": "primitive_handle",
+      "directions": 1
     },
     {
-      "name": "primitive_handle_twined"
+      "name": "primitive_handle_twined",
+      "directions": 1
     },
     {
-      "name": "primitive_hammerhead_1"
+      "name": "primitive_hammerhead_1",
+      "directions": 1
     },
     {
-      "name": "primitive_axehead_1"
+      "name": "primitive_axehead_1",
+      "directions": 1
     },
     {
-      "name": "primitive_axehead_2"
+      "name": "primitive_axehead_2",
+      "directions": 1
     },
     {
-      "name": "primitive_axehead_3"
+      "name": "primitive_axehead_3",
+      "directions": 1
     },
     {
-      "name": "primitive_knifehead_1"
+      "name": "primitive_knifehead_1",
+      "directions": 1
     },
     {
-      "name": "primitive_knifehead_2"
+      "name": "primitive_knifehead_2",
+      "directions": 1
     },
     {
-      "name": "primitive_knifehead_3"
+      "name": "primitive_knifehead_3",
+      "directions": 1
     },
     {
-      "name": "twine"
+      "name": "twine",
+      "directions": 1
     },
     {
-      "name": "flint"
+      "name": "flint",
+      "directions": 1
     },
     {
-      "name": "primitive_spearhead_1"
+      "name": "primitive_spearhead_1",
+      "directions": 1
     },
     {
-      "name": "primitive_spearhead_2"
+      "name": "primitive_spearhead_2",
+      "directions": 1
     },
     {
-      "name": "primitive_spearhead_3"
+      "name": "primitive_spearhead_3",
+      "directions": 1
     },
     {
-      "name": "primitive_spear_1"
+      "name": "primitive_spear_1",
+      "directions": 1
     },
     {
-      "name": "primitive_spear_2"
+      "name": "primitive_spear_2",
+      "directions": 1
     },
     {
-      "name": "primitive_spear_3"
+      "name": "primitive_spear_3",
+      "directions": 1
     },
     {
-      "name": "obsidian"
+      "name": "obsidian",
+      "directions": 1
     },
     {
-      "name": "rock"
+      "name": "rock",
+      "directions": 1
     }
   ]
 }

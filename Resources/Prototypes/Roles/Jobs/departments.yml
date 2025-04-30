@@ -153,8 +153,8 @@
     - FrenchLord
     - FrenchKnight
     - FrenchSwordsman
-    # - FrenchSpearman
-    # - FrenchRanged
+    - FrenchSpearman
+    - FrenchRanged
     # - FrenchMedic
 
 - type: department
@@ -166,6 +166,6 @@
     - EnglishLord
     - EnglishKnight
     - EnglishSwordsman
-    # - EnglishSpearman
-    # - EnglishRanged
+    - EnglishSpearman
+    - EnglishRanged
     # - EnglishMedic

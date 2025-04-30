@@ -5,6 +5,8 @@ lobbyenabled = true
 map = "Camp"
 role_timers = false
 lobbyduration = 30
+disallowlatejoins = false
+defaultpreset = "tdm"
 
 [events]
 enabled = false

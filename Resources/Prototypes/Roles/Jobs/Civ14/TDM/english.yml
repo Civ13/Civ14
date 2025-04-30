@@ -76,3 +76,56 @@
   inhand:
     - WoodenBucklerRed
     - civ13_sword_arming_sword
+
+# Spearman
+
+- type: job
+  id: EnglishSpearman
+  name: job-name-civ-english-spearman
+  description: job-description-civ-english-spearman
+  playTimeTracker: JobEnglishSpearman
+  requirements:
+  startingGear: EnglishSpearmanGear
+  icon: "JobIconSoldier"
+  supervisors: job-supervisors-lord
+
+- type: playTimeTracker
+  id: JobEnglishSpearman
+
+- type: startingGear
+  id: EnglishSpearmanGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_accessory_chainmail
+    jumpsuit: civ13_uniform_yellow_red_tunic
+    head: civ13_head_protective_conical_helmet
+  inhand:
+    - WoodenBucklerRed
+    - civ13_spear_pike
+
+# Ranged
+
+- type: job
+  id: EnglishRanged
+  name: job-name-civ-english-ranged
+  description: job-description-civ-english-ranged
+  playTimeTracker: JobEnglishRanged
+  requirements:
+  startingGear: EnglishRangedGear
+  icon: "JobIconSoldier"
+  supervisors: job-supervisors-lord
+
+- type: playTimeTracker
+  id: JobEnglishRanged
+
+- type: startingGear
+  id: EnglishRangedGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_leather_armor
+    jumpsuit: civ13_uniform_yellow_red_tunic
+    head: civ13_head_conical_helmet
+    belt: ClothingBeltQuiver
+  inhand:
+    - WoodenBucklerRed
+    - BowImprovised
