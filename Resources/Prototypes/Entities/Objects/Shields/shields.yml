@@ -133,7 +133,10 @@
       sprite: Civ14/Weapons/buckler.rsi
       state: buckler-icon
     - type: Item
-      heldPrefix: buckler
+      heldPrefix: null
+    - type: Clothing
+      sprite: Civ14/Weapons/buckler.rsi
+      slots: [Back]
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -173,6 +176,11 @@
     - type: Sprite
       sprite: Civ14/Weapons/red_buckler.rsi
       state: icon
+    - type: Clothing
+      sprite: Civ14/Weapons/red_buckler.rsi
+      slots: [Back]
+    - type: Item
+      heldPrefix: null
     - type: Construction
       graph: WoodenBuckler
       node: woodenBucklerRed
@@ -186,6 +194,11 @@
     - type: Sprite
       sprite: Civ14/Weapons/blue_buckler.rsi
       state: icon
+    - type: Clothing
+      sprite: Civ14/Weapons/blue_buckler.rsi
+      slots: [Back]
+    - type: Item
+      heldPrefix: null
     - type: Construction
       graph: WoodenBuckler
       node: woodenBucklerBlue

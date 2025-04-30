@@ -23,7 +23,7 @@ job-name-civ-english-lord = English Lord
 job-name-civ-english-knight = English Knight
 job-name-civ-english-man-at-arms = English Man-At-Arms
 job-name-civ-english-spearman = English Spearman
-job-name-civ-english-archer = English Longbowman
+job-name-civ-english-ranged = English Longbowman
 job-name-civ-english-medic = English Field Surgeon
 
 
@@ -31,5 +31,5 @@ job-name-civ-french-lord = French Lord
 job-name-civ-french-knight = French Knight
 job-name-civ-french-man-at-arms = French Man-At-Arms
 job-name-civ-french-spearman = French Pikeman
-job-name-civ-french-archer = French Archer
+job-name-civ-french-ranged = French Archer
 job-name-civ-french-medic = French Field Surgeon
