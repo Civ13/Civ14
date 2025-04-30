@@ -2,6 +2,7 @@ job-supervisors-nobody = nobody, you are the highest ranking person in your fact
 job-supervisors-sgt = your Sargeant
 job-supervisors-officer = any Officer
 job-supervisors-squadleader = your Squad Leader
+job-supervisors-lord = your Lord
 
 job-name-commander = Commander
 job-name-designated-marksman = Designated Marksman
@@ -16,6 +17,7 @@ job-name-mg = Machine Gunner
 job-name-nco = NCO
 job-name-officer = Officer
 job-name-rifleman = Rifleman
+job-name-soldier = Soldier
 
 job-name-civ-english-lord = English Lord
 job-name-civ-english-knight = English Knight

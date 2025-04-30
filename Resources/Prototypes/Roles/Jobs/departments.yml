@@ -151,8 +151,8 @@
   color: "#6490ce"
   roles:
     - FrenchLord
-    # - FrenchKnight
-    # - FrenchSwordsman
+    - FrenchKnight
+    - FrenchSwordsman
     # - FrenchSpearman
     # - FrenchRanged
     # - FrenchMedic
@@ -164,8 +164,8 @@
   color: "#dc3f3f"
   roles:
     - EnglishLord
-    # - EnglishKnight
-    # - EnglishSwordsman
+    - EnglishKnight
+    - EnglishSwordsman
     # - EnglishSpearman
     # - EnglishRanged
     # - EnglishMedic

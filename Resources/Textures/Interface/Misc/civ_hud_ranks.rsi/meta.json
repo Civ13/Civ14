@@ -58,6 +58,10 @@
         {
             "name": "rifleman",
             "directions": 1
+        },
+        {
+            "name": "soldier",
+            "directions": 1
         }
     ]
 }

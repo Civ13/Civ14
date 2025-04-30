@@ -21,3 +21,57 @@
     jumpsuit: civ13_uniform_white_tunic_1
     belt: civ13_sword_arming_sword
     head: civ13_head_brown_noble_hat
+# Knight
+
+- type: job
+  id: FrenchKnight
+  name: job-name-civ-french-knight
+  description: job-description-civ-french-knight
+  playTimeTracker: JobFrenchKnight
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 5400 #1.5 hrs
+  startingGear: FrenchKnightGear
+  icon: "JobIconOfficer"
+  supervisors: job-supervisors-lord
+
+- type: playTimeTracker
+  id: JobFrenchKnight
+
+- type: startingGear
+  id: FrenchKnightGear
+  equipment:
+    shoes: civ13_shoes_Sabatons
+    outerClothing: civ13_suit_blue_plated_armor
+    jumpsuit: civ13_uniform_blue_tunic
+    head: civ13_head_hounskull_bascinet
+    gloves: civ13_gloves_armored_gauntlets
+  inhand:
+    - civ13_shield_semioval_iron_shield
+    - civ13_sword_arming_sword
+
+# Swordsman
+
+- type: job
+  id: FrenchSwordsman
+  name: job-name-civ-french-man-at-arms
+  description: job-description-civ-french-man-at-arms
+  playTimeTracker: JobFrenchSwordsman
+  requirements:
+  startingGear: FrenchSwordsmanGear
+  icon: "JobIconSoldier"
+  supervisors: job-supervisors-lord
+
+- type: playTimeTracker
+  id: JobFrenchSwordsman
+
+- type: startingGear
+  id: FrenchSwordsmanGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_accessory_chainmail
+    jumpsuit: civ13_uniform_blue_tunic
+    head: civ13_head_kettle_helmet
+  inhand:
+    - WoodenBucklerBlue
+    - civ13_sword_arming_sword

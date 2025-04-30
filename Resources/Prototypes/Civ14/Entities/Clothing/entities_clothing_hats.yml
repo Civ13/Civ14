@@ -2285,10 +2285,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30
-          Slash: 0.30
-          Piercing: 0.9
-          Arrow: 0.1
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.7
+          Arrow: 0.6
           Heat: 0.85
     - type: Construction
       graph: civ13_head_hounskull_bascinet

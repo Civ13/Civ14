@@ -8,7 +8,7 @@
       time: 10800 #3 hrs
   startingGear: EnglishLordGear
   icon: "JobIconCommander"
-  supervisors: job-supervisors-nobody
+  supervisors: job-supervisors-lorn
 
 - type: playTimeTracker
   id: JobEnglishLord
@@ -22,8 +22,57 @@
     belt: civ13_sword_arming_sword
     head: civ13_head_brown_noble_hat
 
-# Wildcards
-- type: roleLoadout
-  id: JobEnglishLord
-  groups:
-    - Glasses
+# Knight
+
+- type: job
+  id: EnglishKnight
+  name: job-name-civ-english-knight
+  description: job-description-civ-english-knight
+  playTimeTracker: JobEnglishKnight
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 5400 #1.5 hrs
+  startingGear: EnglishKnightGear
+  icon: "JobIconOfficer"
+  supervisors: job-supervisors-lord
+
+- type: playTimeTracker
+  id: JobEnglishKnight
+
+- type: startingGear
+  id: EnglishKnightGear
+  equipment:
+    shoes: civ13_shoes_Sabatons
+    outerClothing: civ13_suit_red_plated_armor
+    jumpsuit: civ13_uniform_red_tunic
+    head: civ13_head_hounskull_bascinet
+    gloves: civ13_gloves_armored_gauntlets
+  inhand:
+    - civ13_shield_semioval_iron_shield
+    - civ13_sword_arming_sword
+
+# Swordsman
+
+- type: job
+  id: EnglishSwordsman
+  name: job-name-civ-english-man-at-arms
+  description: job-description-civ-english-man-at-arms
+  playTimeTracker: JobEnglishSwordsman
+  requirements:
+  startingGear: EnglishSwordsmanGear
+  icon: "JobIconSoldier"
+  supervisors: job-supervisors-lord
+
+- type: playTimeTracker
+  id: JobEnglishSwordsman
+
+- type: startingGear
+  id: EnglishSwordsmanGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_accessory_chainmail
+    jumpsuit: civ13_uniform_red_tunic
+    head: civ13_head_kettle_helmet
+  inhand:
+    - WoodenBucklerRed
+    - civ13_sword_arming_sword

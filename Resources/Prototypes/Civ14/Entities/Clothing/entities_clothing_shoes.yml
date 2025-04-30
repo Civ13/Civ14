@@ -1346,17 +1346,15 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.25
-          Slash: 0.25
+          Blunt: 0.8
+          Slash: 0.7
           Piercing: 0.9
-          Arrow: 0.4
-          Heat: 0.92
+          Arrow: 0.7
     - type: Construction
-
       graph: civ13_shoes_Sabatons
       node: end
       cost: 5
-      material: Cloth
+      material: Steel
       time: 5
 - type: entity
   name: steppe wool shoe

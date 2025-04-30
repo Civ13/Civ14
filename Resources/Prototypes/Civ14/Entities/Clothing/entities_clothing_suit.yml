@@ -3601,18 +3601,55 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.15
-          Slash: 0.15
-          Piercing: 0.9
-          Arrow: 0.1
+          Blunt: 0.3
+          Slash: 0.3
+          Piercing: 0.4
+          Arrow: 0.15
           Heat: 0.85
     - type: Construction
-
       graph: civ13_suit_green_plated_armor
       node: end
       cost: 5
-      material: Cloth
+      material: Steel
       time: 5
+
+- type: entity
+  name: red plated armor
+  parent: ClothingOuterBase
+  id: civ13_suit_red_plated_armor
+  description: A thick, expensive iron armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/knight_red.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/knight_red.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.3
+          Slash: 0.3
+          Piercing: 0.4
+          Arrow: 0.15
+          Heat: 0.85
+- type: entity
+  name: blue plated armor
+  parent: ClothingOuterBase
+  id: civ13_suit_blue_plated_armor
+  description: A thick, expensive iron armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/knight_blue.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/knight_blue.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.3
+          Slash: 0.3
+          Piercing: 0.4
+          Arrow: 0.15
+          Heat: 0.85
+
 - type: entity
   name: seal lifevest
   parent: ClothingOuterBase
