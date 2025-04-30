@@ -36,5 +36,10 @@ public sealed partial class CivFactionComponent : Component
     /// </summary>
     [DataField("factionTreasury")]
     public float FactionTreasury { get; set; } = 0f;
+    /// <summary>
+    /// People registered as leaders of the faction (can invite others)
+    /// </summary>
+    [DataField("factionLeaders")]
+    public List<string> FactionLeaders { get; set; } = [];
 }
 

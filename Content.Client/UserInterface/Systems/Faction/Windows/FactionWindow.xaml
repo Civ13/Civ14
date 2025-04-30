@@ -4,18 +4,32 @@
     xmlns:windows="clr-namespace:Content.Client.UserInterface.Systems.Faction.Windows"
     Title="Factions"
     MinWidth="400"
-    MinHeight="300">
-    <!-- Adjusted MinHeight -->
+    MinHeight="350">
+    <!-- Increased MinHeight slightly -->
     <BoxContainer Orientation="Vertical"
-            Margin="5">
+                  Margin="5">
 
         <!-- View when NOT in a faction -->
         <BoxContainer Name="NotInFactionView"
-                Orientation="Vertical"
-                Visible="True">
+                      Orientation="Vertical"
+                      Visible="True">
             <Label Text="You are not currently in a faction."
-                    Align="Center"
-                    Margin="0 0 0 10"/>
+                   Align="Center"
+                   Margin="0 0 0 10"/>
+
+            <!-- *** ADDED THIS SECTION *** -->
+            <BoxContainer Orientation="Horizontal"
+                    Margin="0 5">
+                <Label Text="Faction Name:"
+                        MinWidth="100"
+                        VerticalAlignment="Center"/>
+                <LineEdit Name="FactionNameInput"
+                          Access="Public"
+                          HorizontalExpand="True"
+                          PlaceHolder="Enter desired faction name"/>
+            </BoxContainer>
+            <!-- *** END ADDED SECTION *** -->
+
             <Button Name="CreateFactionButton"
                     Text="Create Faction"
                     Access="Public"
@@ -28,12 +42,12 @@
 
         <!-- View when IN a faction -->
         <BoxContainer Name="InFactionView"
-                Orientation="Vertical"
-                Visible="False">
+                      Orientation="Vertical"
+                      Visible="False">
             <Label Name="CurrentFactionLabel"
-                    Text="Current Faction: -"
-                    Align="Center"
-                    Margin="0 0 0 10"/>
+                   Text="Current Faction: -"
+                   Align="Center"
+                   Margin="0 0 0 10"/>
             <Button Name="InvitePlayerButton"
                     Text="Invite Player"
                     Access="Public"
@@ -50,10 +64,10 @@
 
         <!-- Area to display the faction list -->
         <ScrollContainer VerticalExpand="True"
-                Margin="0 10 0 0">
+                         Margin="0 10 0 0">
             <Label Name="FactionListLabel"
-                    Text="Faction list will appear here..."
-                    Access="Public"/>
+                   Text="Faction list will appear here..."
+                   Access="Public"/>
             <!-- Consider using RichTextLabel for better formatting later -->
             <!-- <RichTextLabel Name="FactionListLabel" /> -->
         </ScrollContainer>

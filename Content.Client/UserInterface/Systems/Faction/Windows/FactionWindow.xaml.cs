@@ -3,7 +3,8 @@ using Robust.Client.UserInterface.CustomControls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Client.UserInterface.Controls; // Required for ButtonEventArgs
 using System; // Required for Action
-using Content.Client.UserInterface.Systems.Faction;
+// Remove the duplicate/unused using directive if FactionUIController isn't directly used here
+// using Content.Client.UserInterface.Systems.Faction;
 
 namespace Content.Client.UserInterface.Systems.Faction.Windows;
 
@@ -16,16 +17,30 @@ public sealed partial class FactionWindow : DefaultWindow
     public event Action? OnLeaveFactionPressed;
     public event Action? OnInvitePlayerPressed;
 
+    // This property relies on the XAML generator succeeding
+    public string FactionNameInputText => FactionNameInput?.Text ?? string.Empty;
+
     public FactionWindow()
     {
         RobustXamlLoader.Load(this);
 
         // Wire up button presses to invoke the public events
+        // These lines will only compile AFTER the XAML is fixed and the project is rebuilt
         ListFactionsButtonNotInFaction.OnPressed += (args) => OnListFactionsPressed?.Invoke();
         ListFactionsButtonInFaction.OnPressed += (args) => OnListFactionsPressed?.Invoke(); // Both list buttons trigger the same event
         CreateFactionButton.OnPressed += (args) => OnCreateFactionPressed?.Invoke();
         LeaveFactionButton.OnPressed += (args) => OnLeaveFactionPressed?.Invoke();
         InvitePlayerButton.OnPressed += (args) => OnInvitePlayerPressed?.Invoke();
+
+        // The closing brace for the constructor is here
+    } // <-- END OF CONSTRUCTOR
+
+    // FIX: Move this method definition OUTSIDE the constructor
+    public void ClearFactionNameInput()
+    {
+        // This line relies on the XAML generator succeeding
+        if (FactionNameInput != null)
+            FactionNameInput.Text = string.Empty;
     }
 
     /// <summary>
@@ -35,11 +50,13 @@ public sealed partial class FactionWindow : DefaultWindow
     /// <param name="factionName">The name of the faction if isInFaction is true.</param>
     public void UpdateState(bool isInFaction, string? factionName = null)
     {
+        // These lines rely on the XAML generator succeeding
         NotInFactionView.Visible = !isInFaction;
         InFactionView.Visible = isInFaction;
 
         if (isInFaction)
         {
+            // This line relies on the XAML generator succeeding
             CurrentFactionLabel.Text = $"Current Faction: {factionName ?? "Unknown"}";
         }
 
@@ -53,8 +70,9 @@ public sealed partial class FactionWindow : DefaultWindow
     /// <param name="listData">The text to display.</param>
     public void UpdateFactionList(string listData)
     {
+        // This line relies on the XAML generator succeeding
         FactionListLabel.Text = listData;
         // If using RichTextLabel:
         // FactionListLabel.SetMarkup(listData);
     }
-}
+} // <-- END OF CLASS

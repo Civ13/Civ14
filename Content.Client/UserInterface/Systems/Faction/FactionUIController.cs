@@ -11,11 +11,12 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using static Robust.Client.UserInterface.Controls.BaseButton;
 using Robust.Client.Console;
-using Content.Shared.Civ14.CivFactions;
+using Content.Shared.Civ14.CivFactions; // <-- Ensure this is present
+using Content.Client.Popups; // <-- Add this for the client-side PopupSystem
+using Content.Shared.Popups;
 using System.Linq;
 using System.Text;
-using Content.Shared.Popups;
-using Robust.Client.GameObjects;
+// using Content.Shared.Popups; // <-- Remove or comment out this
 using Robust.Shared.Network;
 using Robust.Shared.GameObjects;
 // Make sure this using directive is present for MenuBar.Widgets
@@ -33,6 +34,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IClientConsoleHost _consoleHost = default!;
     [Dependency] private readonly IClientNetManager _netManager = default!;
+    private readonly PopupSystem _popupSystem = default!;
     private ISawmill _sawmill = default!;
     private FactionWindow? _window; // Make nullable
     // Ensure the namespace and class name are correct for GameTopMenuBar
@@ -139,12 +141,19 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     {
         _sawmill.Info($"Received faction invite from {msg.InviterName} for faction '{msg.FactionName}'.");
 
-        var message = $"{msg.InviterName} invited you to join faction '{msg.FactionName}'.\nType 'acceptfactioninvite {msg.FactionName}' to accept.";
-        // TODO: Replace with a proper UI confirmation window
-        var popupSys = _ent.System<SharedPopupSystem>();
+        // Improved feedback using a clickable popup or chat message
+        var message = $"{msg.InviterName} invited you to join faction '{msg.FactionName}'.";
+        var acceptCommand = $"/acceptfactioninvite \"{msg.FactionName}\""; // Use quotes for names with spaces
+
+        // You could use a more interactive popup system if available,
+        // but for now, let's add the command hint to the popup/chat.
+        var fullMessage = $"{message}\nType '{acceptCommand}' in chat to accept.";
+
         if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity)
         {
-            popupSys.PopupEntity(message, playerEntity);
+
+            _popupSystem.PopupEntity(fullMessage, playerEntity, PopupType.Medium);
+
         }
         else
         {
@@ -225,17 +234,61 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         _window.UpdateFactionList(listBuilder.ToString());
         _sawmill.Info($"Displayed faction list with {factionsComp.FactionList.Count} factions.");
     }
-
     private void HandleCreateFactionPressed()
     {
-        _sawmill.Info("Create Faction button pressed.");
-        // TODO: Implement UI prompt for faction name
-        // Example: Show a prompt, then send a network event
-        // For now, just log or use a placeholder command
-        _consoleHost.ExecuteCommand("echo \"[TODO] Implement UI prompt and send create faction request to server...\"");
-        // Example of sending event (replace with actual event type and data)
-        // var createEvent = new CreateFactionRequestEvent { DesiredName = "SomeNameFromPrompt" };
-        // _netManager.ClientSendMessage(createEvent); // Or use RaiseNetworkEvent if appropriate
+        if (_window == null)
+        {
+            _sawmill.Error("Attempted to create faction, but FactionWindow is null!");
+            return;
+        }
+
+        // Get the desired name from the window's input field
+        // Assumes FactionWindow has a public property 'FactionNameInputText'
+        var desiredName = _window.FactionNameInputText.Trim();
+
+        // --- Client-side validation (Good practice) ---
+        if (string.IsNullOrWhiteSpace(desiredName))
+        {
+            _sawmill.Warning("Create Faction pressed with empty name.");
+            if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity)
+                _popupSystem.PopupEntity("Faction name cannot be empty.", playerEntity, PopupType.SmallCaution);
+            else
+                // FIX: Use PopupCursor as a fallback when entity isn't available
+                _popupSystem.PopupCursor("Faction name cannot be empty.");
+            return;
+        }
+
+        // Check length (sync this limit with server-side validation in CivFactionsSystem)
+        const int maxNameLength = 32;
+        if (desiredName.Length > maxNameLength)
+        {
+            _sawmill.Warning($"Create Faction pressed with name too long: {desiredName}");
+            var msg = $"Faction name is too long (max {maxNameLength} characters).";
+            if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity)
+                _popupSystem.PopupEntity(msg, playerEntity, PopupType.SmallCaution);
+            else
+                // FIX: Use PopupCursor as a fallback when entity isn't available
+                _popupSystem.PopupCursor(msg);
+            return;
+        }
+        // --- End Client-side validation ---
+
+        _sawmill.Info($"Requesting to create faction with name: '{desiredName}'");
+
+        // FIX: Call the constructor directly with the required argument
+        var createEvent = new CreateFactionRequestEvent(desiredName);
+
+        // Send the event to the server
+        _ent.RaisePredictiveEvent(createEvent);
+
+        _sawmill.Debug("Sent CreateFactionRequestEvent to server.");
+
+        // Optional: Clear the input field in the UI after sending the request
+        _window.ClearFactionNameInput(); // Assumes FactionWindow has this method
+
+        // Optional: Close the window after sending the request?
+        // Or maybe wait for server confirmation before closing/updating UI state.
+        // CloseWindow();
     }
 
     private void HandleLeaveFactionPressed()
@@ -245,6 +298,8 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // Raise the network event to send it to the server
         _ent.RaisePredictiveEvent(leaveEvent); // Use RaisePredictiveEvent for client-initiated actions
         _sawmill.Info("Sent LeaveFactionRequestEvent to server.");
+        // Maybe close the window or update state after sending
+        // CloseWindow();
     }
 
 
@@ -253,10 +308,18 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         _sawmill.Info("Invite Player button pressed.");
         // TODO: Implement player selection UI (e.g., targeting system or player list)
         // Example: Show a prompt for player name/ID
-        _consoleHost.ExecuteCommand("echo \"[TODO] Implement player selection and send invite request to server...\"");
-        // Example of sending event (replace with actual event type and data)
-        // var inviteEvent = new InvitePlayerToFactionRequestEvent { TargetPlayerName = "PlayerToInvite" };
+        _consoleHost.ExecuteCommand("echo \"[TODO] Implement player selection UI (e.g., targeting or name input) and send InviteFactionRequestEvent to server...\"");
+
+        // --- Example of how sending would look (needs target player info) ---
+        // 1. Get Target Player's NetUserId (e.g., from a selection UI or input field)
+        // NetUserId targetUserId = ... get this from UI ...;
+
+        // 2. Create the event
+        // var inviteEvent = new InviteFactionRequestEvent { TargetPlayerUserId = targetUserId };
+
+        // 3. Send the event
         // _ent.RaisePredictiveEvent(inviteEvent);
+        // _sawmill.Info($"Sent InviteFactionRequestEvent for target {targetUserId} to server.");
     }
 
     public void UnloadButton()
