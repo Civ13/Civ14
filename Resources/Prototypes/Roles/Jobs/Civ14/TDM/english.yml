@@ -8,7 +8,7 @@
       time: 10800 #3 hrs
   startingGear: EnglishLordGear
   icon: "JobIconCommander"
-  supervisors: job-supervisors-lorn
+  supervisors: job-supervisors-nobody
 
 - type: playTimeTracker
   id: JobEnglishLord

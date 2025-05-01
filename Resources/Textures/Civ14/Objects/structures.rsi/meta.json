@@ -28,12 +28,6 @@
             ]
         },
         {
-            "name": "wood_barricade"
-        },
-        {
-            "name": "barricade"
-        },
-        {
             "name": "table_horizontal",
             "directions": 4
         },
@@ -382,10 +376,6 @@
             "name": "fence1-2"
         },
         {
-            "name": "dirt_wall",
-            "directions": 4
-        },
-        {
             "name": "barricade sareas"
         },
         {
@@ -484,32 +474,6 @@
         },
         {
             "name": "siren"
-        },
-        {
-            "name": "rock_barricade",
-            "directions": 4
-        },
-        {
-            "name": "sandbag_66%",
-            "directions": 4
-        },
-        {
-            "name": "sandbag_33%",
-            "directions": 4
-        },
-        {
-            "name": "dirt_wall_66%",
-            "directions": 4
-        },
-        {
-            "name": "dirt_wall_33%",
-            "directions": 4
-        },
-        {
-            "name": "woodbarricade_vertical"
-        },
-        {
-            "name": "woodbarricade_horizontal"
         },
         {
             "name": "woodbarricade_vertical1"
@@ -743,18 +707,6 @@
             "name": "wood_pole_good"
         },
         {
-            "name": "snow_wall",
-            "directions": 4
-        },
-        {
-            "name": "snow_wall_66%",
-            "directions": 4
-        },
-        {
-            "name": "snow_wall_33%",
-            "directions": 4
-        },
-        {
             "name": "support_h"
         },
         {
@@ -811,10 +763,6 @@
         },
         {
             "name": "support_st2"
-        },
-        {
-            "name": "sandbag",
-            "directions": 4
         },
         {
             "name": "concrete",
@@ -899,10 +847,6 @@
         },
         {
             "name": "shellrack16"
-        },
-        {
-            "name": "sandstone_barricade",
-            "directions": 4
         },
         {
             "name": "sandstone_brazier1",

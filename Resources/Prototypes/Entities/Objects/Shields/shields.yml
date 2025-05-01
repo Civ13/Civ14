@@ -134,6 +134,7 @@
       state: buckler-icon
     - type: Item
       heldPrefix: null
+      sprite: Civ14/Weapons/buckler.rsi
     - type: Clothing
       sprite: Civ14/Weapons/buckler.rsi
       slots: [Back]
@@ -180,6 +181,7 @@
       sprite: Civ14/Weapons/red_buckler.rsi
       slots: [Back]
     - type: Item
+      sprite: Civ14/Weapons/red_buckler.rsi
       heldPrefix: null
     - type: Construction
       graph: WoodenBuckler
@@ -198,6 +200,7 @@
       sprite: Civ14/Weapons/blue_buckler.rsi
       slots: [Back]
     - type: Item
+      sprite: Civ14/Weapons/blue_buckler.rsi
       heldPrefix: null
     - type: Construction
       graph: WoodenBuckler
