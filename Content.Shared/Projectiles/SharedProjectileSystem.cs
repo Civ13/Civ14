@@ -20,6 +20,8 @@ using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Serialization;
+using Content.Shared.Barricade;
+using Robust.Shared.Random;
 
 namespace Content.Shared.Projectiles;
 
@@ -38,7 +40,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly SharedGunSystem _guns = default!;
     [Dependency] private readonly SharedCameraRecoilSystem _sharedCameraRecoil = default!;
-
+    [Dependency] private readonly IRobustRandom _random = default!;
     public override void Initialize()
     {
         base.Initialize();
@@ -58,6 +60,14 @@ public abstract partial class SharedProjectileSystem : EntitySystem
             || component.DamagedEntity || component is { Weapon: null, OnlyCollideWhenShot: true })
             return;
 
+        //check for barricade component (percentage of chance to hit/pass over)
+        if (TryComp(args.OtherEntity, out BarricadeComponent? barricade))
+        {
+            if (_random.NextFloat(0.0f, 100.0f) <= barricade.Blocking)
+            {
+                return;
+            }
+        }
         ProjectileCollide((uid, component, args.OurBody), args.OtherEntity);
     }
 

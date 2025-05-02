@@ -251,7 +251,7 @@
   heatCapacity: 10000
 
 - type: stack
-  id: FloorTileRoad
+  id: FloorTileCobblestone
   name: cobblestone floor
   spawn: FloorTileItemCobblestone
   maxCount: 30
