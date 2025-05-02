@@ -60,14 +60,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
             || component.DamagedEntity || component is { Weapon: null, OnlyCollideWhenShot: true })
             return;
 
-        //check for barricade component (percentage of chance to hit/pass over)
-        if (TryComp(args.OtherEntity, out BarricadeComponent? barricade))
-        {
-            if (_random.NextFloat(0.0f, 100.0f) <= barricade.Blocking)
-            {
-                return;
-            }
-        }
+
         ProjectileCollide((uid, component, args.OurBody), args.OtherEntity);
     }
 
@@ -254,6 +247,14 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         if (component.IgnoreShooter && (args.OtherEntity == component.Shooter || args.OtherEntity == component.Weapon))
         {
             args.Cancelled = true;
+        }
+        //check for barricade component (percentage of chance to hit/pass over)
+        if (TryComp(args.OtherEntity, out BarricadeComponent? barricade))
+        {
+            if (_random.NextFloat(0.0f, 100.0f) <= barricade.Blocking)
+            {
+                args.Cancelled = true;
+            }
         }
     }
 
