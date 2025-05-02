@@ -1,7 +1,7 @@
 - type: jobIcon
   locationPreference: Left
   parent: JobIcon
-  priority: 0
+  priority: 1
   id: JobIconCommander
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
@@ -11,48 +11,8 @@
 - type: jobIcon
   locationPreference: Left
   parent: JobIcon
-  priority: 4
-  id: JobIconDesignatedMarksman
-  icon:
-    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
-    state: designated_marksman
-  jobName: job-name-designated-marksman
-
-- type: jobIcon
-  locationPreference: Left
-  parent: JobIcon
-  priority: 5
-  id: JobIconICpl
-  icon:
-    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
-    state: i_cpl
-  jobName: job-name-i-cpl
-
-- type: jobIcon
-  locationPreference: Left
-  parent: JobIcon
-  priority: 1
-  id: JobIconICpt
-  icon:
-    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
-    state: i_cpt
-  jobName: job-name-i-cpt
-
-- type: jobIcon
-  locationPreference: Left
-  parent: JobIcon
-  priority: 2
-  id: JobIconILt
-  icon:
-    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
-    state: i_lt
-  jobName: job-name-i-lt
-
-- type: jobIcon
-  locationPreference: Left
-  parent: JobIcon
   id: JobIconIMaj
-  priority: 0
+  priority: 2
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
     state: i_maj
@@ -62,16 +22,36 @@
   locationPreference: Left
   parent: JobIcon
   priority: 3
-  id: JobIconISgt
+  id: JobIconICpt
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
-    state: i_sgt
-  jobName: job-name-i-sgt
+    state: i_cpt
+  jobName: job-name-i-cpt
 
 - type: jobIcon
   locationPreference: Left
   parent: JobIcon
-  priority: 3
+  priority: 4
+  id: JobIconOfficer
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: officer
+  jobName: job-name-officer
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  priority: 4
+  id: JobIconILt
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: i_lt
+  jobName: job-name-i-lt
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  priority: 5
   id: JobIconISsgt
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
@@ -82,6 +62,43 @@
   locationPreference: Left
   parent: JobIcon
   priority: 6
+  id: JobIconISgt
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: i_sgt
+  jobName: job-name-i-sgt
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  priority: 6
+  id: JobIconNco
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: nco
+  jobName: job-name-nco
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  priority: 7
+  id: JobIconICpl
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: i_cpl
+  jobName: job-name-i-cpl
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  priority: 8
+  id: JobIconDesignatedMarksman
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
+    state: designated_marksman
+  jobName: job-name-designated-marksman
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  priority: 8
   id: JobIconMedic
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
@@ -91,32 +108,12 @@
 - type: jobIcon
   locationPreference: Left
   parent: JobIcon
-  priority: 6
+  priority: 8
   id: JobIconMg
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
     state: mg
   jobName: job-name-mg
-
-- type: jobIcon
-  locationPreference: Left
-  parent: JobIcon
-  priority: 4
-  id: JobIconNco
-  icon:
-    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
-    state: nco
-  jobName: job-name-nco
-
-- type: jobIcon
-  locationPreference: Left
-  parent: JobIcon
-  priority: 1
-  id: JobIconOfficer
-  icon:
-    sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
-    state: officer
-  jobName: job-name-officer
 
 - type: jobIcon
   locationPreference: Left
