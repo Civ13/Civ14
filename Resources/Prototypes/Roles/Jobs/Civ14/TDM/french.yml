@@ -125,6 +125,53 @@
     jumpsuit: civ13_uniform_blue_white_tunic
     head: civ13_head_conical_helmet
     belt: ClothingBeltQuiver
+    pocket1: CombatKnife
   inhand:
     - WoodenBucklerBlue
     - BowImprovised
+  storage:
+    belt:
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+# Medic
+
+- type: job
+  id: FrenchMedic
+  name: job-name-civ-french-medic
+  description: job-description-civ-french-medic
+  playTimeTracker: JobFrenchMedic
+  requirements:
+  startingGear: FrenchMedicGear
+  icon: "JobIconMedic"
+  supervisors: job-supervisors-lord
+
+- type: playTimeTracker
+  id: JobFrenchMedic
+
+- type: startingGear
+  id: FrenchMedicGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_leather_armor
+    jumpsuit: civ13_uniform_blue_tunic
+    head: civ13_head_kettle_helmet
+    belt: LeatherClothingBelt
+    pocket1: CombatKnife
+  storage:
+    belt:
+      - ComfreyHealingHerbs
+      - ComfreyHealingHerbs
+      - FoodPoppy
+      - FoodPoppy
+      - YarrowHealingHerbs
+      - YarrowHealingHerbs
+      - ElderflowerHealingHerbs
+      - ElderflowerHealingHerbs
+      - GauzeLeather1
+      - GauzeLeather1

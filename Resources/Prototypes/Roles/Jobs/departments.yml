@@ -155,7 +155,7 @@
     - FrenchSwordsman
     - FrenchSpearman
     - FrenchRanged
-    # - FrenchMedic
+    - FrenchMedic
 
 - type: department
   id: DepEnglish
@@ -168,4 +168,4 @@
     - EnglishSwordsman
     - EnglishSpearman
     - EnglishRanged
-    # - EnglishMedic
+    - EnglishMedic

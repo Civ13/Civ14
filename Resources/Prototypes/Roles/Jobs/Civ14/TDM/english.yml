@@ -126,6 +126,53 @@
     jumpsuit: civ13_uniform_yellow_red_tunic
     head: civ13_head_conical_helmet
     belt: ClothingBeltQuiver
+    pocket1: CombatKnife
   inhand:
     - WoodenBucklerRed
     - BowImprovised
+  storage:
+    belt:
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+# Medic
+
+- type: job
+  id: EnglishMedic
+  name: job-name-civ-english-medic
+  description: job-description-civ-english-medic
+  playTimeTracker: JobEnglishMedic
+  requirements:
+  startingGear: EnglishMedicGear
+  icon: "JobIconMedic"
+  supervisors: job-supervisors-lord
+
+- type: playTimeTracker
+  id: JobEnglishMedic
+
+- type: startingGear
+  id: EnglishMedicGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_leather_armor
+    jumpsuit: civ13_uniform_red_tunic
+    head: civ13_head_kettle_helmet
+    belt: LeatherClothingBelt
+    pocket1: CombatKnife
+  storage:
+    belt:
+      - ComfreyHealingHerbs
+      - ComfreyHealingHerbs
+      - FoodPoppy
+      - FoodPoppy
+      - YarrowHealingHerbs
+      - YarrowHealingHerbs
+      - ElderflowerHealingHerbs
+      - ElderflowerHealingHerbs
+      - GauzeLeather1
+      - GauzeLeather1

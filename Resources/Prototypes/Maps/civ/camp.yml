@@ -20,7 +20,7 @@
             EnglishSwordsman: [5, 20]
             EnglishSpearman: [20, 50]
             EnglishRanged: [5, 20]
-            # EnglishMedic: [1,3]
+            EnglishMedic: [1, 3]
 
             # French
             FrenchLord: [1, 1]
@@ -28,4 +28,4 @@
             FrenchSwordsman: [5, 20]
             FrenchSpearman: [20, 50]
             FrenchRanged: [5, 20]
-            # FrenchMedic: [1,3]
+            FrenchMedic: [1, 3]
