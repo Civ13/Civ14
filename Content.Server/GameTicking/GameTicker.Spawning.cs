@@ -212,9 +212,12 @@ namespace Content.Server.GameTicking
                     JoinAsObserver(player);
                 }
 
+                if (LobbyEnabled)
+                {
+                    PlayerJoinLobby(player);
+                }
                 var evNoJobs = new NoJobsAvailableSpawningEvent(player); // Used by gamerules to wipe their antag slot, if they got one
                 RaiseLocalEvent(evNoJobs);
-
                 _chatManager.DispatchServerMessage(player,
                     Loc.GetString("game-ticker-player-no-jobs-available-when-joining"));
                 return;
@@ -239,7 +242,7 @@ namespace Content.Server.GameTicking
 
             _mind.TransferTo(newMind, mob);
 
-            _roles.MindAddJobRole(newMind, silent: silent, jobPrototype:jobId);
+            _roles.MindAddJobRole(newMind, silent: silent, jobPrototype: jobId);
             var jobName = _jobs.MindTryGetJobName(newMind);
             _admin.UpdatePlayerList(player);
 

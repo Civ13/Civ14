@@ -1,6 +1,7 @@
 - type: job
   id: FrenchLord
   name: job-name-civ-french-lord
+  originalName: Seigneur
   description: job-description-civ-french-lord
   playTimeTracker: JobFrenchLord
   requirements:
@@ -25,6 +26,7 @@
 
 - type: job
   id: FrenchKnight
+  originalName: Chevalier
   name: job-name-civ-french-knight
   description: job-description-civ-french-knight
   playTimeTracker: JobFrenchKnight
@@ -54,12 +56,12 @@
 
 - type: job
   id: FrenchSwordsman
+  originalName: Homme d'Armes
   name: job-name-civ-french-man-at-arms
   description: job-description-civ-french-man-at-arms
   playTimeTracker: JobFrenchSwordsman
-  requirements:
   startingGear: FrenchSwordsmanGear
-  icon: "JobIconSoldier"
+  icon: "JobIconSword"
   supervisors: job-supervisors-lord
 
 - type: playTimeTracker
@@ -80,12 +82,12 @@
 
 - type: job
   id: FrenchSpearman
+  originalName: Piquier
   name: job-name-civ-french-spearman
   description: job-description-civ-french-spearman
   playTimeTracker: JobFrenchSpearman
-  requirements:
   startingGear: FrenchSpearmanGear
-  icon: "JobIconSoldier"
+  icon: "JobIconSpear"
   supervisors: job-supervisors-lord
 
 - type: playTimeTracker
@@ -106,12 +108,12 @@
 
 - type: job
   id: FrenchRanged
+  originalName: Archer
   name: job-name-civ-french-ranged
   description: job-description-civ-french-ranged
   playTimeTracker: JobFrenchRanged
-  requirements:
   startingGear: FrenchRangedGear
-  icon: "JobIconSoldier"
+  icon: "JobIconRanged"
   supervisors: job-supervisors-lord
 
 - type: playTimeTracker
@@ -144,9 +146,9 @@
 - type: job
   id: FrenchMedic
   name: job-name-civ-french-medic
+  originalName: Moine
   description: job-description-civ-french-medic
   playTimeTracker: JobFrenchMedic
-  requirements:
   startingGear: FrenchMedicGear
   icon: "JobIconMedic"
   supervisors: job-supervisors-lord
@@ -158,9 +160,9 @@
   id: FrenchMedicGear
   equipment:
     shoes: civ13_shoes_leather_shoes_1
-    outerClothing: civ13_suit_leather_armor
-    jumpsuit: civ13_uniform_blue_tunic
-    head: civ13_head_kettle_helmet
+    outerClothing: civ13_suit_monk_robes
+    jumpsuit: civ13_uniform_light_brown_tunic
+    head: civ13_head_black_noble_hat
     belt: LeatherClothingBelt
     pocket1: CombatKnife
   storage:

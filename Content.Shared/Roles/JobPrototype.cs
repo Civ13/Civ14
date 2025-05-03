@@ -36,6 +36,13 @@ namespace Content.Shared.Roles
         public string LocalizedName => Loc.GetString(Name);
 
         /// <summary>
+        ///     The "original" name of the role, untranslated.
+        ///     This would be, for example, a medic for the french faction being called Médecin
+        /// </summary>
+        [DataField("originalName")]
+        public string OriginalName { get; private set; } = string.Empty;
+
+        /// <summary>
         ///     The name of this job as displayed to players.
         /// </summary>
         [DataField("description")]

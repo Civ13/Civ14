@@ -124,6 +124,7 @@
       key: walls
       mode: NoSprite
     - type: Construction
+      graph: WoodWindowClassic
       agemin: 0
       agemax: 8
       node: end

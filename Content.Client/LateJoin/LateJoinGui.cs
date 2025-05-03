@@ -233,7 +233,7 @@ namespace Content.Client.LateJoin
                             Margin = new Thickness(5f, 0, 0, 0)
                         };
 
-                        var jobButton = new JobButton(jobLabel, prototype.ID, prototype.LocalizedName, value);
+                        var jobButton = new JobButton(jobLabel, prototype.ID, prototype.LocalizedName, prototype.OriginalName, value);
 
                         var jobSelector = new BoxContainer
                         {
@@ -272,7 +272,7 @@ namespace Content.Client.LateJoin
                             {
                                 TextureScale = new Vector2(0.4f, 0.4f),
                                 Stretch = TextureRect.StretchMode.KeepCentered,
-                                Texture = _sprites.Frame0(new SpriteSpecifier.Texture(new ("/Textures/Interface/Nano/lock.svg.192dpi.png"))),
+                                Texture = _sprites.Frame0(new SpriteSpecifier.Texture(new("/Textures/Interface/Nano/lock.svg.192dpi.png"))),
                                 HorizontalExpand = true,
                                 HorizontalAlignment = HAlignment.Right,
                             });
@@ -340,14 +340,16 @@ namespace Content.Client.LateJoin
         public Label JobLabel { get; }
         public string JobId { get; }
         public string JobLocalisedName { get; }
+        public string OriginalName { get; }
         public int? Amount { get; private set; }
         private bool _initialised = false;
 
-        public JobButton(Label jobLabel, ProtoId<JobPrototype> jobId, string jobLocalisedName, int? amount)
+        public JobButton(Label jobLabel, ProtoId<JobPrototype> jobId, string jobLocalisedName, string originalName, int? amount)
         {
             JobLabel = jobLabel;
             JobId = jobId;
             JobLocalisedName = jobLocalisedName;
+            OriginalName = originalName;
             RefreshLabel(amount);
             AddStyleClass(StyleClassButton);
             _initialised = true;
@@ -360,10 +362,18 @@ namespace Content.Client.LateJoin
                 return;
             }
             Amount = amount;
-
-            JobLabel.Text = Amount != null ?
-                Loc.GetString("late-join-gui-job-slot-capped", ("jobName", JobLocalisedName), ("amount", Amount)) :
-                Loc.GetString("late-join-gui-job-slot-uncapped", ("jobName", JobLocalisedName));
+            if (OriginalName != string.Empty)
+            {
+                JobLabel.Text = Amount != null ?
+                    Loc.GetString("late-join-gui-job-slot-capped", ("originalName", OriginalName), ("jobName", JobLocalisedName), ("amount", Amount)) :
+                    Loc.GetString("late-join-gui-job-slot-uncapped", ("originalName", OriginalName), ("jobName", JobLocalisedName));
+            }
+            else
+            {
+                JobLabel.Text = Amount != null ?
+                    Loc.GetString("late-join-gui-job-slot-capped-no-original", ("jobName", JobLocalisedName), ("amount", Amount)) :
+                    Loc.GetString("late-join-gui-job-slot-uncapped-no-original", ("jobName", JobLocalisedName));
+            }
         }
     }
 }

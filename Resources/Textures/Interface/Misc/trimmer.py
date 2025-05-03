@@ -67,7 +67,7 @@ def trim_png_transparency(directory):
 # --- Configuration ---
 # IMPORTANT: Replace this with the actual path to your image directory!
 image_directory = (
-    r"d:\GitHub\Civ14\Resources\Textures\Interface\Misc\civ_hud_countries.rsi"
+    r"d:\GitHub\Civ14\Resources\Textures\Interface\Misc\civ_hud_squads.rsi"
 )
 # Example: image_directory = r'd:\GitHub\Civ14\Resources\Textures\Interface\Misc'
 # --- End Configuration ---

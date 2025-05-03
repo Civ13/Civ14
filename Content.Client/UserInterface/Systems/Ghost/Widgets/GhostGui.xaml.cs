@@ -13,6 +13,7 @@ public sealed partial class GhostGui : UIWidget
 
     public event Action? RequestWarpsPressed;
     public event Action? ReturnToBodyPressed;
+    public event Action? ReturnToLobbyPressed;
     public event Action? GhostRolesPressed;
 
     public GhostGui()
@@ -24,6 +25,7 @@ public sealed partial class GhostGui : UIWidget
         MouseFilter = MouseFilterMode.Ignore;
 
         GhostWarpButton.OnPressed += _ => RequestWarpsPressed?.Invoke();
+        ReturnToLobbyButton.OnPressed += _ => ReturnToLobbyPressed?.Invoke();
         ReturnToBodyButton.OnPressed += _ => ReturnToBodyPressed?.Invoke();
         GhostRolesButton.OnPressed += _ => GhostRolesPressed?.Invoke();
     }

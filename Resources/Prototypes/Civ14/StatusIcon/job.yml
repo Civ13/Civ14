@@ -134,3 +134,43 @@
     sprite: /Textures/Interface/Misc/civ_hud_ranks.rsi
     state: soldier
   jobName: job-name-soldier
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  priority: 9
+  id: JobIconSword
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: inf_sword
+  jobName: job-name-infantry-sword
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  priority: 9
+  id: JobIconHeavy
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: inf_heavy
+  jobName: job-name-infantry-heavy
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  priority: 9
+  id: JobIconSpear
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: inf_spear
+  jobName: job-name-infantry-spear
+
+- type: jobIcon
+  locationPreference: Left
+  parent: JobIcon
+  priority: 9
+  id: JobIconRanged
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: inf_ranged
+  jobName: job-name-infantry-ranged

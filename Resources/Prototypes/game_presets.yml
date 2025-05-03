@@ -17,4 +17,4 @@
   showInVote: true
   description: tdm-description
   rules:
-    - RespawnDeadRule
+    - RespawnDeadRuleTDM

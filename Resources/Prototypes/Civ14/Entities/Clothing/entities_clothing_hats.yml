@@ -7801,7 +7801,7 @@
   name: brown noble hat
   parent: ClothingHeadBase
   id: civ13_head_brown_noble_hat
-  description: ""
+  description: "A medieval brown cap."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/noblehat1.rsi
@@ -7815,10 +7815,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black noble hat
+  name: black cap
   parent: ClothingHeadBase
   id: civ13_head_black_noble_hat
-  description: ""
+  description: "A medieval black cap."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/noblehat2.rsi

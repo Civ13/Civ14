@@ -1,75 +1,91 @@
 {
-  "version": 1,
-  "license": "AGPLv3",
-  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "states": [
-    {
-      "name": "role",
-      "directions": 1
+    "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+    "size": {
+        "x": 9,
+        "y": 9
     },
-    {
-      "name": "role_builder",
-      "directions": 1
-    },
-    {
-      "name": "role_janitor",
-      "directions": 1
-    },
-    {
-      "name": "role_kitchen",
-      "directions": 1
-    },
-    {
-      "name": "role_logger",
-      "directions": 1
-    },
-    {
-      "name": "role_miner",
-      "directions": 1
-    },
-    {
-      "name": "squad_1",
-      "directions": 1
-    },
-    {
-      "name": "squad_2",
-      "directions": 1
-    },
-    {
-      "name": "squad_3",
-      "directions": 1
-    },
-    {
-      "name": "squad_4",
-      "directions": 1
-    },
-    {
-      "name": "squad_5",
-      "directions": 1
-    },
-    {
-      "name": "squad_6",
-      "directions": 1
-    },
-    {
-      "name": "squad_armoured",
-      "directions": 1
-    },
-    {
-      "name": "squad_at",
-      "directions": 1
-    },
-    {
-      "name": "squad_engineer",
-      "directions": 1
-    },
-    {
-      "name": "squad_recon",
-      "directions": 1
-    }
-  ]
+    "states": [
+        {
+            "name": "role",
+            "directions": 1
+        },
+        {
+            "name": "role_builder",
+            "directions": 1
+        },
+        {
+            "name": "role_janitor",
+            "directions": 1
+        },
+        {
+            "name": "role_kitchen",
+            "directions": 1
+        },
+        {
+            "name": "role_logger",
+            "directions": 1
+        },
+        {
+            "name": "role_miner",
+            "directions": 1
+        },
+        {
+            "name": "squad_1",
+            "directions": 1
+        },
+        {
+            "name": "squad_2",
+            "directions": 1
+        },
+        {
+            "name": "squad_3",
+            "directions": 1
+        },
+        {
+            "name": "squad_4",
+            "directions": 1
+        },
+        {
+            "name": "squad_5",
+            "directions": 1
+        },
+        {
+            "name": "squad_6",
+            "directions": 1
+        },
+        {
+            "name": "squad_armoured",
+            "directions": 1
+        },
+        {
+            "name": "squad_at",
+            "directions": 1
+        },
+        {
+            "name": "squad_engineer",
+            "directions": 1
+        },
+        {
+            "name": "squad_recon",
+            "directions": 1
+        },
+        {
+            "name": "inf_ranged",
+            "directions": 1
+        },
+        {
+            "name": "inf_heavy",
+            "directions": 1
+        },
+        {
+            "name": "inf_spear",
+            "directions": 1
+        },
+        {
+            "name": "inf_sword",
+            "directions": 1
+        }
+    ]
 }

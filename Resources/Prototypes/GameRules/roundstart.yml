@@ -14,6 +14,17 @@
       respawnDelay: 300
       deleteBody: false
 
+#shorter respawn timer for TDM
+- type: entity
+  parent: BaseGameRule
+  id: RespawnDeadRuleTDM
+  components:
+    - type: RespawnDeadRule
+      alwaysRespawnDead: true
+    - type: RespawnTracker
+      respawnDelay: 120
+      deleteBody: false
+
 - type: entity
   id: InactivityTimeRestart
   parent: BaseGameRule

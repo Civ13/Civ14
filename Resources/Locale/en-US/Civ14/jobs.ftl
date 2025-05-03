@@ -19,17 +19,21 @@ job-name-officer = Officer
 job-name-rifleman = Rifleman
 job-name-soldier = Soldier
 
-job-name-civ-english-lord = English Lord
-job-name-civ-english-knight = English Knight
-job-name-civ-english-man-at-arms = English Man-At-Arms
-job-name-civ-english-spearman = English Spearman
-job-name-civ-english-ranged = English Longbowman
-job-name-civ-english-medic = English Field Surgeon
+job-name-infantry-sword = Sword Infantry
+job-name-infantry-heavy = Heavy Infantry
+job-name-infantry-spear = Spear Infantry
+job-name-infantry-ranged = Ranged Infantry
 
+job-name-civ-english-lord = Leader
+job-name-civ-english-knight = Heavy Inf.
+job-name-civ-english-man-at-arms = Sword Inf.
+job-name-civ-english-spearman = Spear Inf.
+job-name-civ-english-ranged = Ranged Inf.
+job-name-civ-english-medic = Medic
 
-job-name-civ-french-lord = French Lord
-job-name-civ-french-knight = French Knight
-job-name-civ-french-man-at-arms = French Man-At-Arms
-job-name-civ-french-spearman = French Pikeman
-job-name-civ-french-ranged = French Archer
-job-name-civ-french-medic = French Field Surgeon
+job-name-civ-french-lord = Leader
+job-name-civ-french-knight = Heavy Inf.
+job-name-civ-french-man-at-arms = Sword Inf.
+job-name-civ-french-spearman = Spear Inf.
+job-name-civ-french-ranged = Ranged Inf.
+job-name-civ-french-medic = Medic

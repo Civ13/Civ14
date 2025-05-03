@@ -1,6 +1,7 @@
 - type: job
   id: EnglishLord
   name: job-name-civ-english-lord
+  originalName: Lorde
   description: job-description-civ-english-lord
   playTimeTracker: JobEnglishLord
   requirements:
@@ -26,6 +27,7 @@
 
 - type: job
   id: EnglishKnight
+  originalName: Knyghte
   name: job-name-civ-english-knight
   description: job-description-civ-english-knight
   playTimeTracker: JobEnglishKnight
@@ -56,11 +58,11 @@
 - type: job
   id: EnglishSwordsman
   name: job-name-civ-english-man-at-arms
+  originalName: Man-at-Armes
   description: job-description-civ-english-man-at-arms
   playTimeTracker: JobEnglishSwordsman
-  requirements:
   startingGear: EnglishSwordsmanGear
-  icon: "JobIconSoldier"
+  icon: "JobIconSword"
   supervisors: job-supervisors-lord
 
 - type: playTimeTracker
@@ -82,11 +84,11 @@
 - type: job
   id: EnglishSpearman
   name: job-name-civ-english-spearman
+  originalName: Spereman
   description: job-description-civ-english-spearman
   playTimeTracker: JobEnglishSpearman
-  requirements:
   startingGear: EnglishSpearmanGear
-  icon: "JobIconSoldier"
+  icon: "JobIconSpear"
   supervisors: job-supervisors-lord
 
 - type: playTimeTracker
@@ -108,11 +110,11 @@
 - type: job
   id: EnglishRanged
   name: job-name-civ-english-ranged
+  originalName: Longe Boweman
   description: job-description-civ-english-ranged
   playTimeTracker: JobEnglishRanged
-  requirements:
   startingGear: EnglishRangedGear
-  icon: "JobIconSoldier"
+  icon: "JobIconRanged"
   supervisors: job-supervisors-lord
 
 - type: playTimeTracker
@@ -145,9 +147,9 @@
 - type: job
   id: EnglishMedic
   name: job-name-civ-english-medic
+  originalName: Monk
   description: job-description-civ-english-medic
   playTimeTracker: JobEnglishMedic
-  requirements:
   startingGear: EnglishMedicGear
   icon: "JobIconMedic"
   supervisors: job-supervisors-lord
@@ -159,9 +161,9 @@
   id: EnglishMedicGear
   equipment:
     shoes: civ13_shoes_leather_shoes_1
-    outerClothing: civ13_suit_leather_armor
-    jumpsuit: civ13_uniform_red_tunic
-    head: civ13_head_kettle_helmet
+    outerClothing: civ13_suit_monk_robes
+    jumpsuit: civ13_uniform_light_brown_tunic
+    head: civ13_head_black_noble_hat
     belt: LeatherClothingBelt
     pocket1: CombatKnife
   storage:
