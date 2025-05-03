@@ -118,19 +118,7 @@
               doAfter: 5
     - node: end
       entity: MedievalWall
-- type: constructionGraph
-  id: MedievalWall
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: WoodPlank
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: MedievalWall
+
 - type: constructionGraph
   id: LogWall
   start: start
