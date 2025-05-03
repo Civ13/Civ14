@@ -16,7 +16,8 @@
         - type: NpcFactionMember
           factions:
             - English
-        - type: ShowFactionIcons
+        - type: ShowEnglishFactionIcons
+          factionIcon: EnglishFaction
 
 - type: playTimeTracker
   id: JobEnglishLord
@@ -50,7 +51,8 @@
         - type: NpcFactionMember
           factions:
             - English
-        - type: ShowFactionIcons
+        - type: ShowEnglishFactionIcons
+          factionIcon: EnglishFaction
 
 - type: playTimeTracker
   id: JobEnglishKnight
@@ -84,7 +86,8 @@
         - type: NpcFactionMember
           factions:
             - English
-        - type: ShowFactionIcons
+        - type: ShowEnglishFactionIcons
+          factionIcon: EnglishFaction
 
 - type: playTimeTracker
   id: JobEnglishSwordsman
@@ -117,7 +120,8 @@
         - type: NpcFactionMember
           factions:
             - English
-        - type: ShowFactionIcons
+        - type: ShowEnglishFactionIcons
+          factionIcon: EnglishFaction
 
 - type: playTimeTracker
   id: JobEnglishSpearman
@@ -150,7 +154,8 @@
         - type: NpcFactionMember
           factions:
             - English
-        - type: ShowFactionIcons
+        - type: ShowEnglishFactionIcons
+          factionIcon: EnglishFaction
 
 - type: playTimeTracker
   id: JobEnglishRanged
@@ -194,7 +199,8 @@
         - type: NpcFactionMember
           factions:
             - English
-        - type: ShowFactionIcons
+        - type: ShowEnglishFactionIcons
+          factionIcon: EnglishFaction
 
 - type: playTimeTracker
   id: JobEnglishMedic

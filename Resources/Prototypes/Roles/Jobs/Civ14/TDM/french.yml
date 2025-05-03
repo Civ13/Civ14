@@ -16,7 +16,8 @@
         - type: NpcFactionMember
           factions:
             - French
-        - type: ShowFactionIcons
+        - type: ShowFrenchFactionIcons
+          factionIcon: FrenchFaction
 
 - type: playTimeTracker
   id: JobFrenchLord
@@ -49,6 +50,8 @@
         - type: NpcFactionMember
           factions:
             - French
+        - type: ShowFrenchFactionIcons
+          factionIcon: FrenchFaction
 
 - type: playTimeTracker
   id: JobFrenchKnight
@@ -82,7 +85,8 @@
         - type: NpcFactionMember
           factions:
             - French
-        - type: ShowFactionIcons
+        - type: ShowFrenchFactionIcons
+          factionIcon: FrenchFaction
 
 - type: playTimeTracker
   id: JobFrenchSwordsman
@@ -115,7 +119,8 @@
         - type: NpcFactionMember
           factions:
             - French
-        - type: ShowFactionIcons
+        - type: ShowFrenchFactionIcons
+          factionIcon: FrenchFaction
 
 - type: playTimeTracker
   id: JobFrenchSpearman
@@ -148,7 +153,8 @@
         - type: NpcFactionMember
           factions:
             - French
-        - type: ShowFactionIcons
+        - type: ShowFrenchFactionIcons
+          factionIcon: FrenchFaction
 
 - type: playTimeTracker
   id: JobFrenchRanged
@@ -192,7 +198,8 @@
         - type: NpcFactionMember
           factions:
             - French
-        - type: ShowFactionIcons
+        - type: ShowFrenchFactionIcons
+          factionIcon: FrenchFaction
 
 - type: playTimeTracker
   id: JobFrenchMedic
