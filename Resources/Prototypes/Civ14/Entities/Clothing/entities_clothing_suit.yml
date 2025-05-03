@@ -3623,6 +3623,8 @@
       sprite: Civ14/Clothing/exported/suits/knight_red.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/knight_red.rsi
+    - type: STWeight
+      self: 25
     - type: Armor
       modifiers:
         coefficients:
@@ -3641,6 +3643,8 @@
       sprite: Civ14/Clothing/exported/suits/knight_blue.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/knight_blue.rsi
+    - type: STWeight
+      self: 25
     - type: Armor
       modifiers:
         coefficients:
@@ -4494,6 +4498,8 @@
       sprite: Civ14/Clothing/exported/suits/chainmail.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/chainmail.rsi
+    - type: STWeight
+      self: 8
     - type: Armor
       modifiers:
         coefficients:
@@ -4764,6 +4770,8 @@
       sprite: Civ14/Clothing/exported/suits/imperial_breastplate.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/imperial_breastplate.rsi
+    - type: STWeight
+      self: 8
     - type: Armor
       modifiers:
         coefficients:
@@ -4818,6 +4826,8 @@
       sprite: Civ14/Clothing/exported/suits/knight_simple.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/knight_simple.rsi
+    - type: STWeight
+      self: 25
     - type: Armor
       modifiers:
         coefficients:
@@ -4870,6 +4880,8 @@
       sprite: Civ14/Clothing/exported/suits/knight_templar.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/knight_templar.rsi
+    - type: STWeight
+      self: 25
     - type: Armor
       modifiers:
         coefficients:
@@ -4895,6 +4907,8 @@
       sprite: Civ14/Clothing/exported/suits/bronze_chestplate.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/bronze_chestplate.rsi
+    - type: STWeight
+      self: 8
     - type: Armor
       modifiers:
         coefficients:
@@ -4914,6 +4928,8 @@
       sprite: Civ14/Clothing/exported/suits/iron_chestplate.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/iron_chestplate.rsi
+    - type: STWeight
+      self: 8
     - type: Armor
       modifiers:
         coefficients:
@@ -4939,6 +4955,8 @@
       sprite: Civ14/Clothing/exported/suits/leather_armor.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/leather_armor.rsi
+    - type: STWeight
+      self: 5
     - type: Armor
       modifiers:
         coefficients:
@@ -5046,6 +5064,8 @@
       sprite: Civ14/Clothing/exported/suits/imperial_chinese.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/imperial_chinese.rsi
+    - type: STWeight
+      self: 12
     - type: Armor
       modifiers:
         coefficients:
@@ -5099,6 +5119,8 @@
       sprite: Civ14/Clothing/exported/suits/royalplate.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/royalplate.rsi
+    - type: STWeight
+      self: 25
     - type: Armor
       modifiers:
         coefficients:
@@ -5409,6 +5431,8 @@
       sprite: Civ14/Clothing/exported/suits/ork_plate_elite.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/ork_plate_elite.rsi
+    - type: STWeight
+      self: 28
     - type: Armor
       modifiers:
         coefficients:
@@ -5435,6 +5459,8 @@
       sprite: Civ14/Clothing/exported/suits/ork_plate_commander.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/ork_plate_commander.rsi
+    - type: STWeight
+      self: 30
     - type: Armor
       modifiers:
         coefficients:

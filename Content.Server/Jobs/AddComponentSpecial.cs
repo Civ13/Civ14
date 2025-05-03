@@ -13,7 +13,7 @@ public sealed partial class AddComponentSpecial : JobSpecial
     /// </summary>
     [DataField]
     public bool RemoveExisting = true;
-
+    private readonly ISawmill _sawmill;
     public override void AfterEquip(EntityUid mob)
     {
         var entMan = IoCManager.Resolve<IEntityManager>();

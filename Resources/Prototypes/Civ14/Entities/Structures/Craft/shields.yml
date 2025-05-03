@@ -7,7 +7,8 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/nguni_shield.rsi
-
+    - type: STWeight
+      self: 5
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -46,7 +47,8 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/steel_shield.rsi
-
+    - type: STWeight
+      self: 7
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -83,7 +85,8 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/iron_shield.rsi
-
+    - type: STWeight
+      self: 7
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -123,6 +126,8 @@
     - type: Clothing
       sprite: Civ14/Weapons/semioval_shield.rsi
       slots: [Back]
+    - type: STWeight
+      self: 8
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -159,18 +164,19 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/semioval_shield_templar.rsi
-
+    - type: STWeight
+      self: 8
     - type: Blocking
       passiveBlockModifier:
         coefficients:
-          Blunt: 0.850
-          Slash: 0.850
-          Piercing: 0.850
+          Blunt: 0.630
+          Slash: 0.630
+          Piercing: 0.630
       activeBlockModifier:
         coefficients:
-          Blunt: 0.748
-          Slash: 0.748
-          Piercing: 0.748
+          Blunt: 0.554
+          Slash: 0.554
+          Piercing: 0.554
         flatReductions:
           Blunt: 1
           Slash: 1
@@ -197,17 +203,19 @@
       state: icon
       sprite: Civ14/Weapons/semioval_shield_templar2.rsi
 
+    - type: STWeight
+      self: 8
     - type: Blocking
       passiveBlockModifier:
         coefficients:
-          Blunt: 0.850
-          Slash: 0.850
-          Piercing: 0.850
+          Blunt: 0.630
+          Slash: 0.630
+          Piercing: 0.630
       activeBlockModifier:
         coefficients:
-          Blunt: 0.748
-          Slash: 0.748
-          Piercing: 0.748
+          Blunt: 0.554
+          Slash: 0.554
+          Piercing: 0.554
         flatReductions:
           Blunt: 1
           Slash: 1
@@ -233,6 +241,8 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/orc_shield.rsi
+    - type: STWeight
+      self: 7
 
     - type: Blocking
       passiveBlockModifier:
@@ -270,6 +280,8 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/bronze_shield.rsi
+    - type: STWeight
+      self: 6
 
     - type: Blocking
       passiveBlockModifier:
@@ -307,6 +319,8 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/athenian_shield.rsi
+    - type: STWeight
+      self: 7
 
     - type: Blocking
       passiveBlockModifier:
@@ -343,6 +357,8 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/pegasus_shield.rsi
+    - type: STWeight
+      self: 7
 
     - type: Blocking
       passiveBlockModifier:
@@ -379,6 +395,8 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/owl_shield.rsi
+    - type: STWeight
+      self: 7
 
     - type: Blocking
       passiveBlockModifier:
@@ -416,6 +434,8 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/spartan_shield.rsi
+    - type: STWeight
+      self: 7
 
     - type: Blocking
       passiveBlockModifier:
@@ -453,6 +473,8 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/egyptian_shield.rsi
+    - type: STWeight
+      self: 5
 
     - type: Blocking
       passiveBlockModifier:
@@ -490,6 +512,8 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/scutum.rsi
+    - type: STWeight
+      self: 7
 
     - type: Blocking
       passiveBlockModifier:
@@ -530,6 +554,8 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/prae_roman_shield.rsi
+    - type: STWeight
+      self: 7
 
     - type: Blocking
       passiveBlockModifier:
@@ -567,6 +593,8 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/roman_shield.rsi
+    - type: STWeight
+      self: 7
 
     - type: Blocking
       passiveBlockModifier:
@@ -612,6 +640,8 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/chimalli.rsi
+    - type: STWeight
+      self: 6
 
     - type: Blocking
       passiveBlockModifier:
@@ -652,6 +682,8 @@
     - type: Sprite
       state: icon
       sprite: Civ14/Weapons/arabic_shield.rsi
+    - type: STWeight
+      self: 6
 
     - type: Blocking
       passiveBlockModifier:

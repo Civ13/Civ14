@@ -8,6 +8,8 @@
     - type: Sprite
       sprite: Objects/Weapons/Melee/shields.rsi
       state: riot-icon
+    - type: STWeight
+      self: 5
     - type: Item
       sprite: Objects/Weapons/Melee/shields.rsi
       size: Ginormous
@@ -167,6 +169,8 @@
               acts: ["Destruction"]
     - type: StaticPrice
       price: 150
+    - type: STWeight
+      self: 5
 
 - type: entity
   name: red wooden buckler

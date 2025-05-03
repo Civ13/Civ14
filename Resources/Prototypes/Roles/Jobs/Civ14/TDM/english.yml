@@ -10,6 +10,13 @@
   startingGear: EnglishLordGear
   icon: "JobIconCommander"
   supervisors: job-supervisors-nobody
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - English
+        - type: ShowFactionIcons
 
 - type: playTimeTracker
   id: JobEnglishLord
@@ -37,6 +44,13 @@
   startingGear: EnglishKnightGear
   icon: "JobIconOfficer"
   supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - English
+        - type: ShowFactionIcons
 
 - type: playTimeTracker
   id: JobEnglishKnight
@@ -50,8 +64,8 @@
     head: civ13_head_hounskull_bascinet
     gloves: civ13_gloves_armored_gauntlets
   inhand:
-    - civ13_shield_semioval_iron_shield
     - civ13_sword_arming_sword
+    - civ13_shield_semioval_iron_shield
 
 # Swordsman
 
@@ -64,6 +78,13 @@
   startingGear: EnglishSwordsmanGear
   icon: "JobIconSword"
   supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - English
+        - type: ShowFactionIcons
 
 - type: playTimeTracker
   id: JobEnglishSwordsman
@@ -76,8 +97,8 @@
     jumpsuit: civ13_uniform_red_tunic
     head: civ13_head_kettle_helmet
   inhand:
-    - WoodenBucklerRed
     - civ13_sword_arming_sword
+    - WoodenBucklerRed
 
 # Spearman
 
@@ -90,6 +111,13 @@
   startingGear: EnglishSpearmanGear
   icon: "JobIconSpear"
   supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - English
+        - type: ShowFactionIcons
 
 - type: playTimeTracker
   id: JobEnglishSpearman
@@ -102,8 +130,8 @@
     jumpsuit: civ13_uniform_yellow_red_tunic
     head: civ13_head_protective_conical_helmet
   inhand:
-    - WoodenBucklerRed
     - civ13_spear_pike
+    - WoodenBucklerRed
 
 # Ranged
 
@@ -116,6 +144,13 @@
   startingGear: EnglishRangedGear
   icon: "JobIconRanged"
   supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - English
+        - type: ShowFactionIcons
 
 - type: playTimeTracker
   id: JobEnglishRanged
@@ -129,8 +164,8 @@
     head: civ13_head_conical_helmet
     belt: ClothingBeltQuiver
     pocket1: CombatKnife
+    back: WoodenBucklerRed
   inhand:
-    - WoodenBucklerRed
     - BowImprovised
   storage:
     belt:
@@ -153,6 +188,13 @@
   startingGear: EnglishMedicGear
   icon: "JobIconMedic"
   supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - English
+        - type: ShowFactionIcons
 
 - type: playTimeTracker
   id: JobEnglishMedic

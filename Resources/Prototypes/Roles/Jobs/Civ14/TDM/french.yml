@@ -10,6 +10,13 @@
   startingGear: FrenchLordGear
   icon: "JobIconCommander"
   supervisors: job-supervisors-nobody
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - French
+        - type: ShowFactionIcons
 
 - type: playTimeTracker
   id: JobFrenchLord
@@ -36,6 +43,12 @@
   startingGear: FrenchKnightGear
   icon: "JobIconOfficer"
   supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - French
 
 - type: playTimeTracker
   id: JobFrenchKnight
@@ -49,8 +62,8 @@
     head: civ13_head_hounskull_bascinet
     gloves: civ13_gloves_armored_gauntlets
   inhand:
-    - civ13_shield_semioval_iron_shield
     - civ13_sword_arming_sword
+    - civ13_shield_semioval_iron_shield
 
 # Swordsman
 
@@ -63,6 +76,13 @@
   startingGear: FrenchSwordsmanGear
   icon: "JobIconSword"
   supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - French
+        - type: ShowFactionIcons
 
 - type: playTimeTracker
   id: JobFrenchSwordsman
@@ -75,8 +95,8 @@
     jumpsuit: civ13_uniform_blue_tunic
     head: civ13_head_kettle_helmet
   inhand:
-    - WoodenBucklerBlue
     - civ13_sword_arming_sword
+    - WoodenBucklerBlue
 
 # Spearman
 
@@ -89,6 +109,13 @@
   startingGear: FrenchSpearmanGear
   icon: "JobIconSpear"
   supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - French
+        - type: ShowFactionIcons
 
 - type: playTimeTracker
   id: JobFrenchSpearman
@@ -101,8 +128,8 @@
     jumpsuit: civ13_uniform_blue_white_tunic
     head: civ13_head_protective_conical_helmet
   inhand:
-    - WoodenBucklerBlue
     - civ13_spear_pike
+    - WoodenBucklerBlue
 
 # Ranged
 
@@ -115,6 +142,13 @@
   startingGear: FrenchRangedGear
   icon: "JobIconRanged"
   supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - French
+        - type: ShowFactionIcons
 
 - type: playTimeTracker
   id: JobFrenchRanged
@@ -128,8 +162,8 @@
     head: civ13_head_conical_helmet
     belt: ClothingBeltQuiver
     pocket1: CombatKnife
+    back: WoodenBucklerBlue
   inhand:
-    - WoodenBucklerBlue
     - BowImprovised
   storage:
     belt:
@@ -152,6 +186,13 @@
   startingGear: FrenchMedicGear
   icon: "JobIconMedic"
   supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - French
+        - type: ShowFactionIcons
 
 - type: playTimeTracker
   id: JobFrenchMedic
