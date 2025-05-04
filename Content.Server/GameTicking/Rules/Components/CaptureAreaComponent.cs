@@ -1,5 +1,9 @@
 namespace Content.Server.GameTicking.Rules.Components;
 
+[RegisterComponent, Access(typeof(CaptureAreaSystem))]
+public sealed partial class CaptureAreaRuleComponent : Component
+{
+}
 [RegisterComponent]
 public sealed partial class CaptureAreaComponent : Component
 {
@@ -9,13 +13,19 @@ public sealed partial class CaptureAreaComponent : Component
     [DataField("name")]
     public string Name { get; set; } = "Objective Area";
     /// <summary>
-    /// How long does the area need to be held for
+    /// How long does the area need to be held for, in seconds
     /// </summary>
     [DataField("captureDuration")]
-    public TimeSpan CaptureDuration { get; set; } = TimeSpan.FromMinutes(5);
+    public float CaptureDuration { get; set; } = 300f;
+    /// <summary>
+    /// How far entities need to be to count towards capture
+    /// </summary>
+    [DataField("captureRadius")]
+    public float CaptureRadius { get; set; } = 4f;
     /// <summary>
     /// What the capture timer is currently at
     /// </summary>
+
     [DataField("captureTimer")]
     public float CaptureTimer { get; set; } = 0f;
     /// <summary>

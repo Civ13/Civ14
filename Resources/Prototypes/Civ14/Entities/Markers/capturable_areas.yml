@@ -1,0 +1,29 @@
+- type: entity
+  name: capturable area
+  id: MarkerCapturableArea
+  parent: MarkerBase
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: Civ14/Markers/areas.rsi
+      state: capture_red
+    - type: CaptureArea
+      name: "Objective Area"
+      captureDuration: 300 # 5 min
+      captureRadius: 6
+
+- type: entity
+  name: capturable area - KOTH Camp
+  id: MarkerKOTHCamp
+  parent: MarkerCapturableArea
+  components:
+    - type: Sprite
+      sprite: Civ14/Markers/areas.rsi
+      state: capture_green
+    - type: CaptureArea
+      name: "Objective Area"
+      captureDuration: 300 # 5 min
+      captureRadius: 6
+      capturableFactions:
+        - English
+        - French

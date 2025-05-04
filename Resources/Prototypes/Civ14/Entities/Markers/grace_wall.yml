@@ -1,0 +1,20 @@
+- type: entity
+  name: grace wall
+  id: MarkerGracewall
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      sprite: Civ14/Markers/areas.rsi
+      state: gracewall
+    - type: GracewallArea # Use the new component
+      gracewallActive: true
+      gracewallRadius: 2
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        gracewall: # Define a fixture for the area
+          shape: !type:PhysShapeCircle
+            radius: 2 # Initial radius, will be updated by the system
+          # Collision layer/mask will be managed by the GracewallRuleSystem
+          hard: true

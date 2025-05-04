@@ -52,3 +52,15 @@
   parent: BaseGameRule
   components:
     - type: SecretRule
+
+- type: entity
+  parent: BaseGameRule
+  id: GracewallRule
+  components:
+    - type: GracewallRule
+
+- type: entity
+  parent: BaseGameRule
+  id: CaptureAreaRule
+  components:
+    - type: CaptureAreaRule

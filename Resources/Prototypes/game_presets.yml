@@ -18,3 +18,5 @@
   description: tdm-description
   rules:
     - RespawnDeadRuleTDM
+    - GracewallRule
+    - CaptureAreaRule
