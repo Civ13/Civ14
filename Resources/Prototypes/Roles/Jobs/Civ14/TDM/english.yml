@@ -15,7 +15,7 @@
       components:
         - type: NpcFactionMember
           factions:
-            - English
+            - England
         - type: ShowEnglishFactionIcons
           factionIcon: EnglishFaction
 
@@ -50,7 +50,7 @@
       components:
         - type: NpcFactionMember
           factions:
-            - English
+            - England
         - type: ShowEnglishFactionIcons
           factionIcon: EnglishFaction
 
@@ -63,7 +63,7 @@
     shoes: civ13_shoes_Sabatons
     outerClothing: civ13_suit_red_plated_armor
     jumpsuit: civ13_uniform_red_tunic
-    head: civ13_head_hounskull_bascinet
+    head: civ13_head_knight_helmet
     gloves: civ13_gloves_armored_gauntlets
   inhand:
     - civ13_sword_arming_sword
@@ -77,7 +77,7 @@
   originalName: Man-at-Armes
   description: job-description-civ-english-man-at-arms
   playTimeTracker: JobEnglishSwordsman
-  startingGear: EnglishSwordsmanGear
+  startingGear: [EnglishSwordsmanGear, EnglishSwordsmanGear2]
   icon: "JobIconSword"
   supervisors: job-supervisors-lord
   special:
@@ -85,7 +85,7 @@
       components:
         - type: NpcFactionMember
           factions:
-            - English
+            - England
         - type: ShowEnglishFactionIcons
           factionIcon: EnglishFaction
 
@@ -97,12 +97,23 @@
   equipment:
     shoes: civ13_shoes_leather_shoes_1
     outerClothing: civ13_suit_chainmail
+    neck: civ13_accessory_tabard_red_yellow
+    jumpsuit: civ13_uniform_yellow_red_tunic
+    head: civ13_head_kettle_helmet
+  inhand:
+    - civ13_sword_arming_sword
+    - WoodenBucklerRed
+- type: startingGear
+  id: EnglishSwordsmanGear2
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_chainmail
+    neck: civ13_accessory_tabard_red
     jumpsuit: civ13_uniform_red_tunic
     head: civ13_head_kettle_helmet
   inhand:
     - civ13_sword_arming_sword
     - WoodenBucklerRed
-
 # Spearman
 
 - type: job
@@ -111,7 +122,7 @@
   originalName: Spereman
   description: job-description-civ-english-spearman
   playTimeTracker: JobEnglishSpearman
-  startingGear: EnglishSpearmanGear
+  startingGear: [EnglishSpearmanGear, EnglishSpearmanGear2]
   icon: "JobIconSpear"
   supervisors: job-supervisors-lord
   special:
@@ -119,7 +130,7 @@
       components:
         - type: NpcFactionMember
           factions:
-            - English
+            - England
         - type: ShowEnglishFactionIcons
           factionIcon: EnglishFaction
 
@@ -130,13 +141,24 @@
   id: EnglishSpearmanGear
   equipment:
     shoes: civ13_shoes_leather_shoes_1
-    outerClothing: civ13_suit_chainmail
+    outerClothing: civ13_suit_gambeson
+    neck: civ13_accessory_tabard_red
+    jumpsuit: civ13_uniform_red_tunic
+    head: civ13_head_protective_conical_helmet
+  inhand:
+    - civ13_spear_pike
+    - WoodenBucklerRed
+- type: startingGear
+  id: EnglishSpearmanGear2
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_gambeson
+    neck: civ13_accessory_tabard_red_yellow
     jumpsuit: civ13_uniform_yellow_red_tunic
     head: civ13_head_protective_conical_helmet
   inhand:
     - civ13_spear_pike
     - WoodenBucklerRed
-
 # Ranged
 
 - type: job
@@ -145,7 +167,7 @@
   originalName: Longe Boweman
   description: job-description-civ-english-ranged
   playTimeTracker: JobEnglishRanged
-  startingGear: EnglishRangedGear
+  startingGear: [EnglishRangedGear, EnglishRangedGear2]
   icon: "JobIconRanged"
   supervisors: job-supervisors-lord
   special:
@@ -153,7 +175,7 @@
       components:
         - type: NpcFactionMember
           factions:
-            - English
+            - England
         - type: ShowEnglishFactionIcons
           factionIcon: EnglishFaction
 
@@ -164,9 +186,33 @@
   id: EnglishRangedGear
   equipment:
     shoes: civ13_shoes_leather_shoes_1
-    outerClothing: civ13_suit_leather_armor
-    jumpsuit: civ13_uniform_yellow_red_tunic
+    outerClothing: civ13_suit_gambeson
+    jumpsuit: civ13_uniform_red_tunic
+    neck: civ13_accessory_tabard_red
     head: civ13_head_conical_helmet
+    belt: ClothingBeltQuiver
+    pocket1: CombatKnife
+    back: WoodenBucklerRed
+  inhand:
+    - BowImprovised
+  storage:
+    belt:
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+- type: startingGear
+  id: EnglishRangedGear2
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_gambeson
+    neck: civ13_accessory_tabard_red_yellow
+    jumpsuit: civ13_uniform_red_tunic
+    head: civ13_head_kettle_helmet
     belt: ClothingBeltQuiver
     pocket1: CombatKnife
     back: WoodenBucklerRed
@@ -198,7 +244,7 @@
       components:
         - type: NpcFactionMember
           factions:
-            - English
+            - England
         - type: ShowEnglishFactionIcons
           factionIcon: EnglishFaction
 

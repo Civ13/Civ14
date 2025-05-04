@@ -193,7 +193,7 @@
 
 ## TDM
 - type: npcFaction
-  id: French
+  id: France
   hostile:
     - SimpleHostile
     - Syndicate
@@ -204,10 +204,10 @@
     - AllHostile
     - Wizard
     - Predator
-    - English
+    - England
 
 - type: npcFaction
-  id: English
+  id: England
   hostile:
     - SimpleHostile
     - Syndicate
@@ -218,4 +218,4 @@
     - AllHostile
     - Wizard
     - Predator
-    - French
+    - France

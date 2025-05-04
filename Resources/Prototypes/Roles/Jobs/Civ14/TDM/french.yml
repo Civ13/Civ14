@@ -15,7 +15,7 @@
       components:
         - type: NpcFactionMember
           factions:
-            - French
+            - France
         - type: ShowFrenchFactionIcons
           factionIcon: FrenchFaction
 
@@ -49,7 +49,7 @@
       components:
         - type: NpcFactionMember
           factions:
-            - French
+            - France
         - type: ShowFrenchFactionIcons
           factionIcon: FrenchFaction
 
@@ -62,7 +62,7 @@
     shoes: civ13_shoes_Sabatons
     outerClothing: civ13_suit_blue_plated_armor
     jumpsuit: civ13_uniform_blue_tunic
-    head: civ13_head_hounskull_bascinet
+    head: civ13_head_knight_helmet
     gloves: civ13_gloves_armored_gauntlets
   inhand:
     - civ13_sword_arming_sword
@@ -76,7 +76,7 @@
   name: job-name-civ-french-man-at-arms
   description: job-description-civ-french-man-at-arms
   playTimeTracker: JobFrenchSwordsman
-  startingGear: FrenchSwordsmanGear
+  startingGear: [FrenchSwordsmanGear, FrenchSwordsmanGear2]
   icon: "JobIconSword"
   supervisors: job-supervisors-lord
   special:
@@ -84,7 +84,7 @@
       components:
         - type: NpcFactionMember
           factions:
-            - French
+            - France
         - type: ShowFrenchFactionIcons
           factionIcon: FrenchFaction
 
@@ -96,12 +96,23 @@
   equipment:
     shoes: civ13_shoes_leather_shoes_1
     outerClothing: civ13_suit_chainmail
+    neck: civ13_accessory_tabard_blue_white
+    jumpsuit: civ13_uniform_blue_white_tunic
+    head: civ13_head_kettle_helmet
+  inhand:
+    - civ13_sword_arming_sword
+    - WoodenBucklerBlue
+- type: startingGear
+  id: FrenchSwordsmanGear2
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_chainmail
+    neck: civ13_accessory_tabard_blue
     jumpsuit: civ13_uniform_blue_tunic
     head: civ13_head_kettle_helmet
   inhand:
     - civ13_sword_arming_sword
     - WoodenBucklerBlue
-
 # Spearman
 
 - type: job
@@ -110,7 +121,7 @@
   name: job-name-civ-french-spearman
   description: job-description-civ-french-spearman
   playTimeTracker: JobFrenchSpearman
-  startingGear: FrenchSpearmanGear
+  startingGear: [FrenchSpearmanGear, FrenchSpearmanGear2]
   icon: "JobIconSpear"
   supervisors: job-supervisors-lord
   special:
@@ -118,7 +129,7 @@
       components:
         - type: NpcFactionMember
           factions:
-            - French
+            - France
         - type: ShowFrenchFactionIcons
           factionIcon: FrenchFaction
 
@@ -129,13 +140,25 @@
   id: FrenchSpearmanGear
   equipment:
     shoes: civ13_shoes_leather_shoes_1
-    outerClothing: civ13_suit_chainmail
+    outerClothing: civ13_suit_gambeson
+    neck: civ13_accessory_tabard_blue_white
     jumpsuit: civ13_uniform_blue_white_tunic
     head: civ13_head_protective_conical_helmet
   inhand:
     - civ13_spear_pike
     - WoodenBucklerBlue
 
+- type: startingGear
+  id: FrenchSpearmanGear2
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_gambeson
+    neck: civ13_accessory_tabard_blue
+    jumpsuit: civ13_uniform_blue_tunic
+    head: civ13_head_protective_conical_helmet
+  inhand:
+    - civ13_spear_pike
+    - WoodenBucklerBlue
 # Ranged
 
 - type: job
@@ -144,7 +167,7 @@
   name: job-name-civ-french-ranged
   description: job-description-civ-french-ranged
   playTimeTracker: JobFrenchRanged
-  startingGear: FrenchRangedGear
+  startingGear: [FrenchRangedGear, FrenchRangedGear2]
   icon: "JobIconRanged"
   supervisors: job-supervisors-lord
   special:
@@ -152,7 +175,7 @@
       components:
         - type: NpcFactionMember
           factions:
-            - French
+            - France
         - type: ShowFrenchFactionIcons
           factionIcon: FrenchFaction
 
@@ -163,9 +186,33 @@
   id: FrenchRangedGear
   equipment:
     shoes: civ13_shoes_leather_shoes_1
-    outerClothing: civ13_suit_leather_armor
+    outerClothing: civ13_suit_gambeson
+    neck: civ13_accessory_tabard_blue_white
     jumpsuit: civ13_uniform_blue_white_tunic
     head: civ13_head_conical_helmet
+    belt: ClothingBeltQuiver
+    pocket1: CombatKnife
+    back: WoodenBucklerBlue
+  inhand:
+    - BowImprovised
+  storage:
+    belt:
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+- type: startingGear
+  id: FrenchRangedGear2
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_gambeson
+    neck: civ13_accessory_tabard_blue
+    jumpsuit: civ13_uniform_blue_tunic
+    head: civ13_head_kettle_helmet
     belt: ClothingBeltQuiver
     pocket1: CombatKnife
     back: WoodenBucklerBlue
@@ -197,7 +244,7 @@
       components:
         - type: NpcFactionMember
           factions:
-            - French
+            - France
         - type: ShowFrenchFactionIcons
           factionIcon: FrenchFaction
 

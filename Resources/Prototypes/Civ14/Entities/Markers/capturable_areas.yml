@@ -21,9 +21,9 @@
       sprite: Civ14/Markers/areas.rsi
       state: capture_green
     - type: CaptureArea
-      name: "Objective Area"
+      name: "the Castle"
       captureDuration: 300 # 5 min
       captureRadius: 6
       capturableFactions:
-        - English
-        - French
+        - England
+        - France

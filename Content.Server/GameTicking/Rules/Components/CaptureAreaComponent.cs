@@ -39,6 +39,11 @@ public sealed partial class CaptureAreaComponent : Component
     [DataField("controller")]
     public string Controller { get; set; } = "";
     /// <summary>
+    /// The previous controller (for announcements when controller changes)
+    /// </summary>
+    [DataField("previousController")]
+    public string PreviousController { get; set; } = "";
+    /// <summary>
     /// Which factions can occupy this area?
     /// </summary>
     [DataField("capturableFactions")]

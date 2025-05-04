@@ -3,6 +3,8 @@ using Content.Server.GameTicking.Rules.Components;
 using Content.Shared.NPC.Components;
 using Content.Shared.Physics;
 using Robust.Shared.Timing;
+using Content.Server.Chat.Systems;
+using Content.Server.RoundEnd;
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -12,11 +14,12 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly RoundEndSystem _roundEndSystem = default!;
+    [Dependency] private readonly GameTicker _gameTicker = default!;
     public override void Initialize()
     {
         base.Initialize();
-
-        // Potentially subscribe to other events if needed later
     }
 
     public override void Update(float frameTime)
@@ -79,7 +82,14 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
             // Controller changed (or became contested/empty)
             area.Controller = currentController;
             area.CaptureTimer = 0f; // Reset timer on change
-            // Optional: Raise an event here if needed
+            if (currentController == "")
+            {
+                _chat.DispatchGlobalAnnouncement($"{area.PreviousController} has lost control of {area.Name}!", "Objective", false, null, Color.Red);
+            }
+            else
+            {
+                _chat.DispatchGlobalAnnouncement($"{currentController} has gained control of {area.Name}!", "Objective", false, null, Color.DodgerBlue);
+            }
         }
         else if (!string.IsNullOrEmpty(currentController))
         {
@@ -89,14 +99,20 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
             //Check for capture completion
             if (area.CaptureTimer >= area.CaptureDuration)
             {
-                //     // Area captured! Raise event, announce, etc.
+                if (_gameTicker.RunLevel == GameRunLevel.InRound)
+                {
+                    _chat.DispatchGlobalAnnouncement($"{currentController} has captured {area.Name} and is victorious!", "Round", false, null, Color.Green);
+                    _roundEndSystem.EndRound();
+                }
             }
+
         }
         else
         {
             // Area is empty or contested, and wasn't previously controlled by a single faction
             area.CaptureTimer = 0f; // Ensure timer is reset/stays reset
         }
+        area.PreviousController = currentController;
     }
 
 }

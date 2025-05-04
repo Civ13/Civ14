@@ -33,7 +33,7 @@ public sealed partial class GracewallAreaComponent : Component
     /// How long the grace wall lasts since the round started
     /// </summary>
     [DataField("gracewallRadius")]
-    public float GracewallRadius { get; set; } = 2f;
+    public float GracewallRadius { get; set; } = 1.5f;
     /// <summary>
     /// Is the grace wall currently active?
     /// </summary>

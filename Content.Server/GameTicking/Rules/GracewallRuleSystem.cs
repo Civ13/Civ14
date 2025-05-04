@@ -14,8 +14,6 @@ namespace Content.Server.GameTicking.Rules;
 
 public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly FixtureSystem _fixtureSystem = default!;
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     // Define a specific collision group for the grace wall.
     // Make sure this group is defined in CollisionGroups.yml and NPCs are set to not collide with it.
@@ -37,7 +35,12 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
 
         component.Timer = (float)component.GracewallDuration.TotalSeconds;
         component.GracewallActive = true;
-        _chat.DispatchGlobalAnnouncement($"The grace wall is up for {component.GracewallDuration.TotalMinutes} minutes!", null, false, null, null);
+        // Schedule the announcement for 15 seconds later
+        var announcementMessage = $"The grace wall is up for {component.GracewallDuration.TotalMinutes} minutes!";
+        Timer.Spawn(TimeSpan.FromSeconds(15), () =>
+        {
+            _chat.DispatchGlobalAnnouncement(announcementMessage, "Round", false, null, Color.Yellow);
+        });
         Log.Info($"Grace wall active for {component.GracewallDuration.TotalMinutes} minutes.");
 
         // Activate all grace wall areas
@@ -55,7 +58,7 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
 
         // Ensure walls are deactivated if the rule ends unexpectedly
         DeactivateAllGraceWalls(component);
-        _chat.DispatchGlobalAnnouncement("The grace wall is now down!", null, false, null, null);
+        _chat.DispatchGlobalAnnouncement("The grace wall is now down!", "Round", false, null, Color.Yellow);
     }
 
     public override void Update(float frameTime)
@@ -74,6 +77,7 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
             {
                 Log.Info("Grace wall duration ended.");
                 DeactivateAllGraceWalls(gracewall);
+                _chat.DispatchGlobalAnnouncement("The grace wall is now down!", "Round", false, null, null);
             }
         }
     }
