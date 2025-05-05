@@ -15,20 +15,26 @@
 - type: entity
   id: SpawnPointEnglish
   parent: SpawnPointJobBase
-  name: nomad
+  name: english spawner
+  suffix: faction spawn
   components:
     - type: SpawnPoint
-      job_id: EnglishLord
+      faction: England
+      spawn_type: Faction
     - type: Sprite
+      sprite: Markers/cross.rsi
       layers:
-        - state: green
+        - state: red
 - type: entity
   id: SpawnPointFrench
   parent: SpawnPointJobBase
-  name: nomad
+  name: french spawner
+  suffix: faction spawn
   components:
     - type: SpawnPoint
-      job_id: FrenchLord
+      faction: France
+      spawn_type: Faction
     - type: Sprite
+      sprite: Markers/cross.rsi
       layers:
-        - state: green
+        - state: blue

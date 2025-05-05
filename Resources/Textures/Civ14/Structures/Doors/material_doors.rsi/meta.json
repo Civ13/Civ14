@@ -342,38 +342,6 @@
             ]
         },
         {
-            "name": "gate_large_closed"
-        },
-        {
-            "name": "gate_large_open"
-        },
-        {
-            "name": "gate_large_closing",
-            "delays": [
-                [
-                    0.6,
-                    0.6,
-                    0.6,
-                    0.6,
-                    0.6,
-                    0.6
-                ]
-            ]
-        },
-        {
-            "name": "gate_large_opening",
-            "delays": [
-                [
-                    0.6,
-                    0.6,
-                    0.6,
-                    0.6,
-                    0.6,
-                    0.6
-                ]
-            ]
-        },
-        {
             "name": "s_gate1"
         },
         {

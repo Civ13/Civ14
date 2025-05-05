@@ -1,6 +1,7 @@
 - type: job
   id: EnglishLord
   name: job-name-civ-english-lord
+  faction: England
   originalName: Lorde
   description: job-description-civ-english-lord
   playTimeTracker: JobEnglishLord
@@ -37,6 +38,7 @@
   id: EnglishKnight
   originalName: Knyghte
   name: job-name-civ-english-knight
+  faction: England
   description: job-description-civ-english-knight
   playTimeTracker: JobEnglishKnight
   requirements:
@@ -74,6 +76,7 @@
 - type: job
   id: EnglishSwordsman
   name: job-name-civ-english-man-at-arms
+  faction: England
   originalName: Man-at-Armes
   description: job-description-civ-english-man-at-arms
   playTimeTracker: JobEnglishSwordsman
@@ -120,6 +123,7 @@
 - type: job
   id: EnglishSpearman
   name: job-name-civ-english-spearman
+  faction: England
   originalName: Spereman
   description: job-description-civ-english-spearman
   playTimeTracker: JobEnglishSpearman
@@ -166,6 +170,7 @@
 - type: job
   id: EnglishRanged
   name: job-name-civ-english-ranged
+  faction: England
   originalName: Longe Boweman
   description: job-description-civ-english-ranged
   playTimeTracker: JobEnglishRanged
@@ -236,6 +241,7 @@
 - type: job
   id: EnglishMedic
   name: job-name-civ-english-medic
+  faction: England
   originalName: Monk
   description: job-description-civ-english-medic
   playTimeTracker: JobEnglishMedic

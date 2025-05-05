@@ -3,6 +3,7 @@ using Content.Server.Spawners.Components;
 using Content.Server.Station.Systems;
 using Robust.Shared.Map;
 using Robust.Shared.Random;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.Spawners.EntitySystems;
 
@@ -12,7 +13,7 @@ public sealed class SpawnPointSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly StationSystem _stationSystem = default!;
     [Dependency] private readonly StationSpawningSystem _stationSpawning = default!;
-
+    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     public override void Initialize()
     {
         SubscribeLocalEvent<PlayerSpawningEvent>(OnPlayerSpawning);
@@ -27,10 +28,19 @@ public sealed class SpawnPointSystem : EntitySystem
         var points = EntityQueryEnumerator<SpawnPointComponent, TransformComponent>();
         var possiblePositions = new List<EntityCoordinates>();
 
-        while ( points.MoveNext(out var uid, out var spawnPoint, out var xform))
+        while (points.MoveNext(out var uid, out var spawnPoint, out var xform))
         {
             if (args.Station != null && _stationSystem.GetOwningStation(uid, xform) != args.Station)
                 continue;
+            // Try to get the actual JobPrototype data from the ID (args.Job)
+            if (args.Job != null && _prototypeManager.TryIndex(args.Job.Value, out var jobPrototype))
+            {
+                if (jobPrototype != null && jobPrototype.Faction == spawnPoint.Faction)
+                {
+                    possiblePositions.Add(xform.Coordinates);
+                }
+            }
+
 
             if (_gameTicker.RunLevel == GameRunLevel.InRound && spawnPoint.SpawnType == SpawnPointType.LateJoin)
             {

@@ -1,6 +1,7 @@
 - type: job
   id: FrenchLord
   name: job-name-civ-french-lord
+  faction: France
   originalName: Seigneur
   description: job-description-civ-french-lord
   playTimeTracker: JobFrenchLord
@@ -36,6 +37,7 @@
   id: FrenchKnight
   originalName: Chevalier
   name: job-name-civ-french-knight
+  faction: France
   description: job-description-civ-french-knight
   playTimeTracker: JobFrenchKnight
   requirements:
@@ -74,6 +76,7 @@
   id: FrenchSwordsman
   originalName: Homme d'Armes
   name: job-name-civ-french-man-at-arms
+  faction: France
   description: job-description-civ-french-man-at-arms
   playTimeTracker: JobFrenchSwordsman
   startingGear: FrenchSwordsmanGear
@@ -120,6 +123,7 @@
   id: FrenchSpearman
   originalName: Piquier
   name: job-name-civ-french-spearman
+  faction: France
   description: job-description-civ-french-spearman
   playTimeTracker: JobFrenchSpearman
   startingGear: FrenchSpearmanGear
@@ -167,6 +171,7 @@
   id: FrenchRanged
   originalName: Archer
   name: job-name-civ-french-ranged
+  faction: France
   description: job-description-civ-french-ranged
   playTimeTracker: JobFrenchRanged
   startingGear: FrenchRangedGear
@@ -236,6 +241,7 @@
 - type: job
   id: FrenchMedic
   name: job-name-civ-french-medic
+  faction: France
   originalName: Moine
   description: job-description-civ-french-medic
   playTimeTracker: JobFrenchMedic

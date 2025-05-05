@@ -40,7 +40,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: STWeight
-      self: 16        
+      self: 16
     - type: Item
       heldPrefix: null
       sprite: Civ14/Weapons/dory.rsi
@@ -66,7 +66,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: STWeight
-      self: 16        
+      self: 16
     - type: Item
       heldPrefix: null
       sprite: Civ14/Weapons/sarissa.rsi
@@ -85,13 +85,15 @@
       sprite: Civ14/Weapons/pike.rsi
 
     - type: MeleeWeapon
+      range: 1.8
+      attackRate: 0.8
       damage:
         types:
-          Piercing: 15   
+          Piercing: 15
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: STWeight
-      self: 12     
+      self: 12
     - type: Item
       heldPrefix: null
       sprite: Civ14/Weapons/pike.rsi
@@ -119,7 +121,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: IncreaseDamageOnWield
-      damage: 
+      damage:
         types:
           Piercing: 5
           Slash: 2
