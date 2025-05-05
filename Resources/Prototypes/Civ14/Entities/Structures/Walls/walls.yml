@@ -523,7 +523,7 @@
   id: WallRockIndestructible
   parent: BaseWall
   name: rock
-  suffix: planetmap
+  suffix: indestructible
   description: This wall cannot be destroyed.
   components:
     - type: Transform

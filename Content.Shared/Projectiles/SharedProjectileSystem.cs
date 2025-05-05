@@ -121,7 +121,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         if (!deleted)
         {
             _guns.PlayImpactSound(target, modifiedDamage, component.SoundHit, component.ForceSound, filter, projectile);
-            _sharedCameraRecoil.KickCamera(target, direction);
+            //_sharedCameraRecoil.KickCamera(target, direction); # this makes people blind or something
         }
 
         component.DamagedEntity = true;

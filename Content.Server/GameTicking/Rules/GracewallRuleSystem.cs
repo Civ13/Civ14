@@ -77,7 +77,7 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
             {
                 Log.Info("Grace wall duration ended.");
                 DeactivateAllGraceWalls(gracewall);
-                _chat.DispatchGlobalAnnouncement("The grace wall is now down!", "Round", false, null, null);
+                _chat.DispatchGlobalAnnouncement("The grace wall is now down!", "Round", false, null, Color.Yellow);
             }
         }
     }
