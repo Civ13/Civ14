@@ -103,7 +103,7 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Construction
-      graph: StovePetbelly
+      graph: StovePotbelly
       node: end
       agemin: 2
       agemax: 8
