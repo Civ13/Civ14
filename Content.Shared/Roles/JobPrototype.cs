@@ -118,6 +118,9 @@ namespace Content.Shared.Roles
         [DataField]
         public ProtoId<StartingGearPrototype>? StartingGear { get; private set; }
 
+        [DataField]
+        public List<ProtoId<StartingGearPrototype>>? RandomStartingGears { get; private set; }
+
         /// <summary>
         /// Use this to spawn in as a non-humanoid (borg, test subject, etc.)
         /// Starting gear will be ignored.

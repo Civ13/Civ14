@@ -77,7 +77,8 @@
   originalName: Man-at-Armes
   description: job-description-civ-english-man-at-arms
   playTimeTracker: JobEnglishSwordsman
-  startingGear: [EnglishSwordsmanGear, EnglishSwordsmanGear2]
+  startingGear: EnglishSwordsmanGear
+  randomStartingGears: [EnglishSwordsmanGear, EnglishSwordsmanGear2]
   icon: "JobIconSword"
   supervisors: job-supervisors-lord
   special:
@@ -122,7 +123,8 @@
   originalName: Spereman
   description: job-description-civ-english-spearman
   playTimeTracker: JobEnglishSpearman
-  startingGear: [EnglishSpearmanGear, EnglishSpearmanGear2]
+  startingGear: EnglishSpearmanGear
+  randomStartingGears: [EnglishSpearmanGear, EnglishSpearmanGear2]
   icon: "JobIconSpear"
   supervisors: job-supervisors-lord
   special:
@@ -167,7 +169,8 @@
   originalName: Longe Boweman
   description: job-description-civ-english-ranged
   playTimeTracker: JobEnglishRanged
-  startingGear: [EnglishRangedGear, EnglishRangedGear2]
+  startingGear: EnglishRangedGear
+  randomStartingGears: [EnglishRangedGear, EnglishRangedGear2]
   icon: "JobIconRanged"
   supervisors: job-supervisors-lord
   special:

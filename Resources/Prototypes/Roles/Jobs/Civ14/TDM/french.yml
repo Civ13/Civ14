@@ -76,7 +76,8 @@
   name: job-name-civ-french-man-at-arms
   description: job-description-civ-french-man-at-arms
   playTimeTracker: JobFrenchSwordsman
-  startingGear: [FrenchSwordsmanGear, FrenchSwordsmanGear2]
+  startingGear: FrenchSwordsmanGear
+  randomStartingGears: [FrenchSwordsmanGear, FrenchSwordsmanGear2]
   icon: "JobIconSword"
   supervisors: job-supervisors-lord
   special:
@@ -121,7 +122,8 @@
   name: job-name-civ-french-spearman
   description: job-description-civ-french-spearman
   playTimeTracker: JobFrenchSpearman
-  startingGear: [FrenchSpearmanGear, FrenchSpearmanGear2]
+  startingGear: FrenchSpearmanGear
+  randomStartingGears: [FrenchSpearmanGear, FrenchSpearmanGear2]
   icon: "JobIconSpear"
   supervisors: job-supervisors-lord
   special:
@@ -167,7 +169,8 @@
   name: job-name-civ-french-ranged
   description: job-description-civ-french-ranged
   playTimeTracker: JobFrenchRanged
-  startingGear: [FrenchRangedGear, FrenchRangedGear2]
+  startingGear: FrenchRangedGear
+  randomStartingGears: [FrenchRangedGear, FrenchRangedGear2]
   icon: "JobIconRanged"
   supervisors: job-supervisors-lord
   special:
