@@ -3598,10 +3598,10 @@
       sprite: Civ14/Clothing/exported/suits/knight_green.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/knight_green.rsi
-
 - type: entity
   name: red plated armor
   parent: civ13_suit_plated_armor
+
   id: civ13_suit_red_plated_armor
   description: A thick, expensive iron armor, covering most of the body.
   components:
@@ -3609,10 +3609,10 @@
       sprite: Civ14/Clothing/exported/suits/knight_red.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/knight_red.rsi
-
 - type: entity
   name: blue plated armor
   parent: civ13_suit_plated_armor
+
   id: civ13_suit_blue_plated_armor
   description: A thick, expensive iron armor, covering most of the body.
   components:
@@ -5097,7 +5097,6 @@
       sprite: Civ14/Clothing/exported/suits/royalplate.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/royalplate.rsi
-
     - type: Construction
       graph: civ13_suit_royal_plated_armor
       node: end

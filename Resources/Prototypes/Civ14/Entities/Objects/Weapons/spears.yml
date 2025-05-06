@@ -83,7 +83,6 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/pike.rsi
-
     - type: MeleeWeapon
       range: 2.2
       attackRate: 0.8
