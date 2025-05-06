@@ -21,6 +21,8 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
+using Robust.Shared.Timing;
+using Content.Server.GameTicking.Rules.Components;
 
 namespace Content.Server.GameTicking
 {
@@ -29,6 +31,7 @@ namespace Content.Server.GameTicking
         [Dependency] private readonly IAdminManager _adminManager = default!;
         [Dependency] private readonly SharedJobSystem _jobs = default!;
         [Dependency] private readonly AdminSystem _admin = default!;
+        [Dependency] private readonly IGameTiming _timing = default!;
 
         [ValidatePrototypeId<EntityPrototype>]
         public const string ObserverPrototypeName = "MobObserver";
@@ -147,6 +150,22 @@ namespace Content.Server.GameTicking
                 RaiseLocalEvent(ref ev);
                 if (ev.Cancelled)
                     return;
+            }
+
+            foreach (var tracker in EntityQuery<RespawnTrackerComponent>())
+            {
+                foreach (var (player1, time) in tracker.RespawnQueue)
+                {
+                    if (player1 == player.UserId)
+                    {
+                        if (_timing.CurTime < time)
+                        {
+                            _chatManager.DispatchServerMessage(player,
+                                Loc.GetString("rule-respawn-blocked", ("seconds", time.TotalSeconds - _timing.CurTime.TotalSeconds)));
+                            return;
+                        }
+                    }
+                }
             }
 
             SpawnPlayer(player, character, station, jobId, lateJoin, silent);

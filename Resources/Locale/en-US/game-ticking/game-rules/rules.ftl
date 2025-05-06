@@ -4,3 +4,4 @@ rule-time-has-run-out = Time has run out!
 
 # Respawning
 rule-respawn-in-seconds = Respawning in {$second} seconds...
+rule-respawn-blocked = You cannot join yet, please wait {$seconds} seconds.

@@ -8,8 +8,9 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/assagai.rsi
-
     - type: MeleeWeapon
+      range: 2
+      attackRate: 0.8
       damage:
         types:
           Piercing: 19
@@ -30,9 +31,8 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/dory.rsi
-
     - type: MeleeWeapon
-      range: 1.8
+      range: 2.2
       attackRate: 0.8
       damage:
         types:
@@ -59,7 +59,7 @@
 
     - type: MeleeWeapon
       attackRate: 0.6
-      range: 2.1
+      range: 2.8
       damage:
         types:
           Piercing: 16
@@ -85,7 +85,7 @@
       sprite: Civ14/Weapons/pike.rsi
 
     - type: MeleeWeapon
-      range: 1.8
+      range: 2.2
       attackRate: 0.8
       damage:
         types:
@@ -111,9 +111,9 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/naginata.rsi
-
     - type: MeleeWeapon
-      range: 1.6
+      range: 2.2
+      attackRate: 0.8
       damage:
         types:
           Slash: 1
@@ -140,8 +140,9 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/halberd.rsi
-
     - type: MeleeWeapon
+      range: 2.5
+      attackRate: 0.6
       damage:
         types:
           Slash: 8
