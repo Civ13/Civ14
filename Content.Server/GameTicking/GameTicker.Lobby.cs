@@ -4,7 +4,9 @@ using Content.Server.Station.Components;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using System.Text;
-
+using Content.Shared.NPC.Prototypes;
+using Robust.Shared.Prototypes;
+using Content.Shared.NPC.Components;
 namespace Content.Server.GameTicking
 {
     public sealed partial class GameTicker
@@ -38,6 +40,7 @@ namespace Content.Server.GameTicking
         public void UpdateInfoText()
         {
             RaiseNetworkEvent(GetInfoMsg(), Filter.Empty().AddPlayers(_playerManager.NetworkedSessions));
+            RaiseNetworkEvent(GetPlayerCountsMsg(), Filter.Empty().AddPlayers(_playerManager.NetworkedSessions)); // Send faction counts too
         }
 
         private string GetInfoText()
@@ -61,7 +64,7 @@ namespace Content.Server.GameTicking
             {
                 foundOne = true;
                 if (stationNames.Length > 0)
-                        stationNames.Append('\n');
+                    stationNames.Append('\n');
 
                 stationNames.Append(meta.EntityName);
             }
@@ -107,9 +110,13 @@ namespace Content.Server.GameTicking
 
         private TickerLobbyInfoEvent GetInfoMsg()
         {
-            return new (GetInfoText());
+            return new(GetInfoText());
         }
 
+        private GetPlayerFactionCounts GetPlayerCountsMsg()
+        {
+            return new(GetPlayerFactionCounts());
+        }
         private void UpdateLateJoinStatus()
         {
             RaiseNetworkEvent(new TickerLateJoinStatusEvent(DisallowLateJoin));
@@ -179,7 +186,30 @@ namespace Content.Server.GameTicking
             // update server info to reflect new ready count
             UpdateInfoText();
         }
+        public Dictionary<ProtoId<NpcFactionPrototype>, int> GetPlayerFactionCounts()
+        {
+            var factionCounts = new Dictionary<ProtoId<NpcFactionPrototype>, int>();
 
+            // Iterate through all currently connected player sessions on the server
+            foreach (var session in _playerManager.Sessions)
+            {
+                // Get the entity currently controlled by the player
+                if (session.AttachedEntity is not { Valid: true } playerEntity)
+                    continue;
+
+                // Try to get the NpcFactionMemberComponent from the player's controlled entity
+                if (TryComp<NpcFactionMemberComponent>(playerEntity, out var factionMemberComponent))
+                {
+                    // A player can be part of multiple factions
+                    foreach (var factionId in factionMemberComponent.Factions)
+                    {
+                        factionCounts.TryGetValue(factionId, out var currentCount);
+                        factionCounts[factionId] = currentCount + 1;
+                    }
+                }
+            }
+            return factionCounts;
+        }
         public bool UserHasJoinedGame(ICommonSession session)
             => UserHasJoinedGame(session.UserId);
 

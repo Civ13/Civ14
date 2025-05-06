@@ -31,7 +31,6 @@ namespace Content.Server.GameTicking
         [Dependency] private readonly IAdminManager _adminManager = default!;
         [Dependency] private readonly SharedJobSystem _jobs = default!;
         [Dependency] private readonly AdminSystem _admin = default!;
-        [Dependency] private readonly IGameTiming _timing = default!;
 
         [ValidatePrototypeId<EntityPrototype>]
         public const string ObserverPrototypeName = "MobObserver";
@@ -158,10 +157,10 @@ namespace Content.Server.GameTicking
                 {
                     if (player1 == player.UserId)
                     {
-                        if (_timing.CurTime < time)
+                        if (_gameTiming.CurTime < time)
                         {
                             _chatManager.DispatchServerMessage(player,
-                                Loc.GetString("rule-respawn-blocked", ("seconds", time.TotalSeconds - _timing.CurTime.TotalSeconds)));
+                                Loc.GetString("rule-respawn-blocked", ("seconds", time.TotalSeconds - _gameTiming.CurTime.TotalSeconds)));
                             return;
                         }
                     }
@@ -449,7 +448,7 @@ namespace Content.Server.GameTicking
                 // Ideally engine would just spawn them on grid directly I guess? Right now grid traversal is handling it during
                 // update which means we need to add a hack somewhere around it.
                 var spawn = _robustRandom.Pick(_possiblePositions);
-                var toMap = spawn.ToMap(EntityManager, _transform);
+                var toMap = _transform.ToMapCoordinates(spawn);
 
                 if (_mapManager.TryFindGridAt(toMap, out var gridUid, out _))
                 {

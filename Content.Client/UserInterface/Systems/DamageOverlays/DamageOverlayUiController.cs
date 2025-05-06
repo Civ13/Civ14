@@ -76,7 +76,7 @@ public sealed class DamageOverlayUiController : UIController
     {
         if (mobState == null && !EntityManager.TryGetComponent(entity, out mobState) ||
             thresholds == null && !EntityManager.TryGetComponent(entity, out thresholds) ||
-            damageable == null && !EntityManager.TryGetComponent(entity, out  damageable))
+            damageable == null && !EntityManager.TryGetComponent(entity, out damageable))
             return;
 
         if (!_mobThresholdSystem.TryGetIncapThreshold(entity, out var foundThreshold, thresholds))
@@ -94,51 +94,51 @@ public sealed class DamageOverlayUiController : UIController
         switch (mobState.CurrentState)
         {
             case MobState.Alive:
-            {
-                FixedPoint2 painLevel = 0;
-                _overlay.PainLevel = 0;
-
-                if (!EntityManager.HasComponent<PainNumbnessComponent>(entity))
                 {
-                    foreach (var painDamageType in damageable.PainDamageGroups)
+                    FixedPoint2 painLevel = 0;
+                    _overlay.PainLevel = 0;
+
+                    if (!EntityManager.HasComponent<PainNumbnessComponent>(entity))
                     {
-                        damageable.DamagePerGroup.TryGetValue(painDamageType, out var painDamage);
-                        painLevel += painDamage;
-                    }
-                    _overlay.PainLevel = FixedPoint2.Min(1f, painLevel / critThreshold).Float();
+                        foreach (var painDamageType in damageable.PainDamageGroups)
+                        {
+                            damageable.DamagePerGroup.TryGetValue(painDamageType, out var painDamage);
+                            painLevel += painDamage;
+                        }
+                        _overlay.PainLevel = FixedPoint2.Min(1f, painLevel / critThreshold).Float();
 
-                    if (_overlay.PainLevel < 0.05f) // Don't show damage overlay if they're near enough to max.
+                        if (_overlay.PainLevel < 0.05f) // Don't show damage overlay if they're near enough to max.
+                        {
+                            _overlay.PainLevel = 0;
+                        }
+                    }
+
+                    if (damageable.DamagePerGroup.TryGetValue("Airloss", out var oxyDamage))
                     {
-                        _overlay.PainLevel = 0;
+                        _overlay.OxygenLevel = FixedPoint2.Min(1f, oxyDamage / critThreshold).Float();
                     }
-                }
 
-                if (damageable.DamagePerGroup.TryGetValue("Airloss", out var oxyDamage))
-                {
-                    _overlay.OxygenLevel = FixedPoint2.Min(1f, oxyDamage / critThreshold).Float();
+                    _overlay.CritLevel = 0;
+                    _overlay.DeadLevel = 0;
+                    break;
                 }
-
-                _overlay.CritLevel = 0;
-                _overlay.DeadLevel = 0;
-                break;
-            }
             case MobState.Critical:
-            {
-                if (!_mobThresholdSystem.TryGetDeadPercentage(entity,
-                        FixedPoint2.Max(0.0, damageable.TotalDamage), out var critLevel))
-                    return;
-                _overlay.CritLevel = critLevel.Value.Float();
+                {
+                    if (!_mobThresholdSystem.TryGetDeadPercentage(entity,
+                            FixedPoint2.Max(0.0, damageable.TotalDamage), out var critLevel))
+                        return;
+                    _overlay.CritLevel = critLevel.Value.Float();
 
-                _overlay.PainLevel = 0;
-                _overlay.DeadLevel = 0;
-                break;
-            }
+                    _overlay.PainLevel = 0;
+                    _overlay.DeadLevel = 0;
+                    break;
+                }
             case MobState.Dead:
-            {
-                _overlay.PainLevel = 0;
-                _overlay.CritLevel = 0;
-                break;
-            }
+                {
+                    _overlay.PainLevel = 0;
+                    _overlay.CritLevel = 0;
+                    break;
+                }
         }
     }
 }

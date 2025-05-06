@@ -5,7 +5,8 @@ using Content.Shared.Physics;
 using Robust.Shared.Timing;
 using Content.Server.Chat.Systems;
 using Content.Server.RoundEnd;
-
+using Content.Shared.Mobs.Components;
+using Content.Shared.Mobs;
 namespace Content.Server.GameTicking.Rules;
 
 public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
@@ -47,14 +48,19 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
         var entitiesInRange = _lookup.GetEntitiesInRange(areaXform, area.CaptureRadius, LookupFlags.Dynamic | LookupFlags.Sundries); // Include dynamic entities and items/mobs etc.
         foreach (var entity in entitiesInRange)
         {
-            // Check if the entity has a faction and if it's one we care about
-            if (_entityManager.TryGetComponent<NpcFactionMemberComponent>(entity, out var factionMember))
+            if (EntityManager.TryGetComponent<MobStateComponent>(entity, out var mobState))
             {
-                foreach (var faction in factionMember.Factions)
-                {
-                    if (area.CapturableFactions.Contains(faction))
-                        factionCounts[faction]++;
-                }
+                //do not count dead and crit mobs
+                if (mobState.CurrentState == MobState.Alive)
+                    // Check if the entity has a faction and if it's one we care about
+                    if (_entityManager.TryGetComponent<NpcFactionMemberComponent>(entity, out var factionMember))
+                    {
+                        foreach (var faction in factionMember.Factions)
+                        {
+                            if (area.CapturableFactions.Contains(faction))
+                                factionCounts[faction]++;
+                        }
+                    }
             }
         }
 
