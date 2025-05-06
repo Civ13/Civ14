@@ -27,7 +27,7 @@
       agemax: 8
 
 - type: entity
-  parent: DrinkBottleBaseEmpty
+  parent: BaseItem
   id: LeatherWaterskin
   name: leather waterskin
   description: A leather waterskin, used to carry liquids.
@@ -35,6 +35,40 @@
     - type: Sprite
       sprite: Civ14/Objects/Storage/storage.rsi
       state: waterskin
+    - type: STWeight
+      self: 2
+    - type: Item
+      size: Normal
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 100
+    - type: SolutionTransfer
+      canChangeTransferAmount: true
+      maxTransferAmount: 5
+    - type: Drink
+    - type: MeleeWeapon
+      soundNoDamage:
+        path: "/Audio/Effects/Fluids/splat.ogg"
+      damage:
+        types:
+          Blunt: 0
+    - type: MixableSolution
+      solution: drink
+    - type: Spillable
+      solution: drink
+    - type: FitsInDispenser
+      solution: drink
+    - type: DrawableSolution
+      solution: drink
+    - type: RefillableSolution
+      solution: drink
+    - type: DrainableSolution
+      solution: drink
+    - type: UserInterface
+      interfaces:
+        enum.TransferAmountUiKey.Key:
+          type: TransferAmountBoundUserInterface
     - type: Construction
       graph: LeatherWaterskin
       node: end
