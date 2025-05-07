@@ -4,6 +4,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: ah_basic
@@ -14,6 +15,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: arab_basic
@@ -24,6 +26,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: ballas
@@ -34,6 +37,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: barbarian_basic
@@ -44,6 +48,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: blugoslavia
@@ -54,6 +59,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: brit_basic
@@ -64,6 +70,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: chechen_basic
@@ -74,6 +81,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: danish_basic
@@ -84,6 +92,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: eastern
@@ -94,16 +103,21 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: empire
 
 - type: factionIcon
-  id: EngFaction
-  priority: 1
+  id: EnglishFaction
+  priority: 0
+  locationPreference: Right
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
+      - ShowFrenchFactionIcons
+      - ShowEnglishFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: eng_basic
@@ -114,6 +128,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: finnish_basic
@@ -124,6 +139,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: fp_basic
@@ -134,16 +150,21 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: fr2_basic
 
 - type: factionIcon
-  id: FrFaction
-  priority: 1
+  id: FrenchFaction
+  priority: 0
+  locationPreference: Right
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
+      - ShowFrenchFactionIcons
+      - ShowEnglishFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: fr_basic
@@ -154,6 +175,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: ger0_basic
@@ -164,6 +186,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: ger2_basic
@@ -174,6 +197,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: ger3_basic
@@ -184,6 +208,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: ger_basic
@@ -194,6 +219,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: greek_basic
@@ -204,6 +230,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: hez_basic
@@ -214,6 +241,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: ichiwa
@@ -224,6 +252,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: idf_basic
@@ -234,6 +263,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: imp_basic
@@ -244,6 +274,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: ind_basic
@@ -254,6 +285,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: isis_basic
@@ -264,6 +296,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: it_basic
@@ -274,6 +307,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: jp_basic
@@ -284,6 +318,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: nl_basic
@@ -294,6 +329,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: nl_old_basic
@@ -304,6 +340,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: norway_basic
@@ -314,6 +351,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: ot_basic
@@ -324,6 +362,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: pirate_basic
@@ -334,6 +373,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: police
@@ -344,6 +384,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: pol_basic
@@ -354,6 +395,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: pt2_basic
@@ -364,6 +406,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: pt_basic
@@ -374,6 +417,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: rebel_basic
@@ -384,6 +428,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: redmenia
@@ -394,6 +439,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: rednikov
@@ -404,6 +450,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: rn2_basic
@@ -414,6 +461,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: rn_basic
@@ -424,6 +472,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: robbers
@@ -434,6 +483,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: roc_basic
@@ -444,6 +494,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: roman_basic
@@ -454,6 +505,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: ru_basic
@@ -464,6 +516,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: sov_basic
@@ -474,6 +527,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: spn_basic
@@ -484,6 +538,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: spr_basic
@@ -494,6 +549,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: sp_basic
@@ -504,6 +560,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: stormcloak
@@ -514,6 +571,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: swedish_basic
@@ -524,6 +582,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: syria_basic
@@ -534,6 +593,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: syria_fsa
@@ -544,6 +604,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: ukr_basic
@@ -554,6 +615,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: un
@@ -564,6 +626,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: upa_basic
@@ -574,6 +637,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: us_basic
@@ -584,6 +648,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: vc_basic
@@ -594,6 +659,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: vn_basic
@@ -604,6 +670,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: wagner
@@ -614,6 +681,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: western
@@ -624,6 +692,7 @@
   showTo:
     components:
       - ShowAntagIcons
+      - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: yamaguchi

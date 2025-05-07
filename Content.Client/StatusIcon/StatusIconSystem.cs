@@ -89,8 +89,8 @@ public sealed class StatusIconSystem : SharedStatusIconSystem
         if (TryComp<SpriteComponent>(ent, out var sprite) && !sprite.Visible)
             return false;
 
-        if (data.ShowTo != null && !_entityWhitelist.IsValid(data.ShowTo, viewer))
-            return false;
+        //if (data.ShowTo != null && !_entityWhitelist.IsValid(data.ShowTo, viewer))
+        //    return false;
 
         return true;
     }

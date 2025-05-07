@@ -129,31 +129,3 @@
   icon:
     sprite: /Textures/Interface/Misc/civ_hud.rsi
     state: hostile
-
-- type: factionIcon
-  id: FrenchFaction
-  priority: 0
-  locationPreference: Right
-  showTo:
-    components:
-      - ShowAntagIcons
-      - ShowFactionIcons
-      - ShowFrenchFactionIcons
-      - ShowEnglishFactionIcons
-  icon:
-    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
-    state: fr_basic
-
-- type: factionIcon
-  id: EnglishFaction
-  priority: 0
-  locationPreference: Right
-  showTo:
-    components:
-      - ShowAntagIcons
-      - ShowFactionIcons
-      - ShowFrenchFactionIcons
-      - ShowEnglishFactionIcons
-  icon:
-    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
-    state: eng_basic
