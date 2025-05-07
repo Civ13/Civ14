@@ -72,10 +72,10 @@
   agemin: 0
   agemax: 8
   placementMode: SnapgridCenter
-
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
+
 - type: constructionGraph
   id: StrawWall
   start: start

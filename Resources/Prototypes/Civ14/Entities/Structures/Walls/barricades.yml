@@ -35,6 +35,7 @@
     - type: Barricade
       blocking: 80
     - type: AtmosExposed
+
 - type: entity
   id: CrenelatedWallFull
   description: A stone wall with crenelations.
@@ -203,7 +204,11 @@
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]
-
+    - type: Construction
+      graph: BarricadeDirtWall
+      agemin: 0
+      agemax: 8
+      node: end
 - type: entity
   id: BarricadeDirtwallMedium
   description: An unfinished dirt barricade.
@@ -259,6 +264,11 @@
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]
+    - type: Construction
+      graph: BarricadeStoneWall
+      agemin: 0
+      agemax: 8
+      node: end
 
 - type: entity
   id: BarricadeSandstonewall
