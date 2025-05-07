@@ -205,7 +205,7 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Construction
-      graph: BarricadeDirtWall
+      graph: BarricadeDirtwall
       agemin: 0
       agemax: 8
       node: end
@@ -265,7 +265,7 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Construction
-      graph: BarricadeStoneWall
+      graph: BarricadeStonewall
       agemin: 0
       agemax: 8
       node: end

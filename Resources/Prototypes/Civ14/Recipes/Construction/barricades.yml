@@ -1,7 +1,7 @@
 - type: construction
   name: stone barricade
-  id: BarricadeStoneWall
-  graph: BarricadeStoneWall
+  id: BarricadeStonewall
+  graph: BarricadeStonewall
   startNode: start
   targetNode: end
   category: construction-category-structures
@@ -18,7 +18,7 @@
     - !type:TileNotBlocked
 
 - type: constructionGraph
-  id: BarricadeStoneWall
+  id: BarricadeStonewall
   start: start
   graph:
     - node: start
@@ -29,12 +29,12 @@
               amount: 3
               doAfter: 7
     - node: end
-      entity: BarricadeStoneWall
+      entity: BarricadeStonewall
 
 - type: construction
   name: dirt wall
-  id: BarricadeDirtWall
-  graph: BarricadeDirtWall
+  id: BarricadeDirtwall
+  graph: BarricadeDirtwall
   startNode: start
   targetNode: end
   category: construction-category-structures
@@ -51,7 +51,7 @@
     - !type:TileNotBlocked
 
 - type: constructionGraph
-  id: BarricadeDirtWall
+  id: BarricadeDirtwall
   start: start
   graph:
     - node: start
@@ -62,4 +62,4 @@
               amount: 3
               doAfter: 7
     - node: end
-      entity: BarricadeDirtWall
+      entity: BarricadeDirtwall
