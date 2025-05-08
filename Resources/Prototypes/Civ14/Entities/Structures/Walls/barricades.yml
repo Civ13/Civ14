@@ -12,6 +12,7 @@
       state: crenelated_wall
       drawdepth: FloorObjects
       noRot: true
+    - type: Climbable
     - type: Physics
     - type: Fixtures
       fixtures:
@@ -70,6 +71,7 @@
       state: sandbag
       drawdepth: FloorObjects
       noRot: true
+    - type: Climbable
     - type: Physics
     - type: Fixtures
       fixtures:

@@ -29,6 +29,16 @@ public sealed partial class CaptureAreaComponent : Component
     [DataField("captureTimer")]
     public float CaptureTimer { get; set; } = 0f;
     /// <summary>
+    /// Has 1 minute left been announced?
+    /// </summary>
+    [DataField("captureTimerAnnouncement1")]
+    public bool CaptureTimerAnnouncement1 { get; set; } = false;
+    /// <summary>
+    /// Has 2 minute left been announced?
+    /// </summary>
+    [DataField("captureTimerAnnouncement2")]
+    public bool CaptureTimerAnnouncement2 { get; set; } = false;
+    /// <summary>
     /// Is the area currently occupied?
     /// </summary>
     [DataField("occupied")]
