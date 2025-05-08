@@ -22,7 +22,7 @@
       state: capture_green
     - type: CaptureArea
       name: "the Castle"
-      captureDuration: 300 # 5 min
+      captureDuration: 240 # 4 min
       captureRadius: 6
       capturableFactions:
         - England

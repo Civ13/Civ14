@@ -1,0 +1,1091 @@
+- type: entity
+  parent: BaseFlag
+  id: WallFlagWhite
+  name: white flag
+  description: A wall mounted flag.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: f_white
+
+- type: entity
+  id: civ13_wallflag_green
+  name: green banner
+  description: A green linen banner.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: green_banner
+
+- type: entity
+  id: civ13_wallflag_red
+  name: red banner
+  description: A red linen banner.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: red_banner
+
+- type: entity
+  id: civ13_wallflag_red2
+  name: red banner
+  description: A red linen banner, with golden trims.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: red_banner2
+
+- type: entity
+  id: civ13_wallflag_blue
+  name: blue banner
+  description: A blue linen banner.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: blue_banner
+
+- type: entity
+  id: civ13_wallflag_reich
+  name: Reich Flag
+  description: A Reich flag for glory.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: reich
+
+- type: entity
+  id: civ13_wallflag_gb_imperial
+  name: Extra-Galactic Empire Flag
+  description: An Imperial Flag for the Extra-Galactic Empire.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_galacticempire
+
+- type: entity
+  id: civ13_wallflag_gb_rebel
+  name: Alliance to Restore the Democracy Flag
+  description: A Rebellious flag for the Alliance.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_rebelalliance
+
+- type: entity
+  id: civ13_wallflag_gb_pysker
+  name: Pysker Order Flag
+  description: A blue and white flag for the ancient order of pyskers.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_pysker
+
+- type: entity
+  id: civ13_wallflag_gb_cis
+  name: Confederacy of Issolationist Star-Systems Flag
+  description: A bright blue and white with a circular emblem.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_cis
+
+- type: entity
+  id: civ13_wallflag_russia
+  name: Russian flag
+  description: A flag of Russsia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_russia
+
+- type: entity
+  id: civ13_wallflag_brazil_empire
+  name: Empire of Brazil flag
+  description: The flag of the Empire of Brazil.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_brazil_empire
+
+- type: entity
+  id: civ13_wallflag_russia_kornilov
+  name: Kornilov Shock Regiment flag
+  description: A flag of the infamous regiment of the Volunteer Army.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_russia_kornilov
+
+- type: entity
+  id: civ13_wallflag_sov_navy
+  name: Soviet Navy flag
+  description: The flag of the naval service branch of the Soviet Armed Forces.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_sovfleet
+
+- type: entity
+  id: civ13_wallflag_russia_rsfsr
+  name: RSFSR flag
+  description: A flag of the Russian Soviet Federative Socialist Republic.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_rsfsr
+
+- type: entity
+  id: civ13_wallflag_usa
+  name: USA flag
+  description: The star-spangled banner.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_usa
+
+- type: entity
+  id: civ13_wallflag_blue2
+  name: blue banner
+  description: A blue linen banner, with golden trims.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: blue_banner2
+
+- type: entity
+  id: civ13_wallflag_templar1
+  name: templar banner
+  description: A white banner with the red cross of the templars in the middle.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: templar_banner1
+
+- type: entity
+  id: civ13_wallflag_templar2
+  name: templar banner
+  description: A white banner with the red cross of the templars in the middle.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: templar_banner2
+
+- type: entity
+  id: civ13_wallflag_jihad1
+  name: black islamic flag
+  description: A black flag with Allah written in Arabic.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: jihad1
+
+- type: entity
+  id: civ13_wallflag_jihad2
+  name: green islamic flag
+  description: A green flag with Allah written in Arabic.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: jihad2
+
+- type: entity
+  id: civ13_wallflag_jihad3
+  name: red islamic banner
+  description: A red banner with three moons.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: jihad3
+
+- type: entity
+  id: civ13_wallflag_jihad4
+  name: green islamic banner
+  description: A green banner with the shadada.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: jihad4
+
+- type: entity
+  id: civ13_wallflag_taliban
+  name: taliban flag
+  description: A white flag of the Taliban.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_taliban
+
+- type: entity
+  id: civ13_wallflag_isis
+  name: ISIS flag
+  description: A black flag of the ISIS.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_isis
+
+- type: entity
+  id: civ13_wallflag_chechen
+  name: chechen flag
+  description: The Chechen Separatist flag.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_chechen
+
+- type: entity
+  id: civ13_wallflag_ireland
+  name: irish flag
+  description: The Irish Republic flag.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_ireland
+
+- type: entity
+  id: civ13_wallflag_gadsen
+  name: Gadsen flag
+  description: The classic Gadsen flag.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_gadsen
+
+- type: entity
+  id: civ13_wallflag_medical
+  name: Medical flag
+  description: >-
+    A flag with the universally recognized symbol for medicine and humanitarian
+    aid.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: medical_flag
+
+- type: entity
+  id: civ13_wallflag_medical_crescent
+  name: Red crescent flag
+  description: A flag with the crescent emblem for medicine and humanitarian aid.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: medical_flag_crescent
+
+- type: entity
+  id: civ13_wallflag_medical_crystal
+  name: Medical crystal flag
+  description: A flag with the crystal symbol for medicine and humaniarian aid.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: medical_flag_crystal
+
+- type: entity
+  id: civ13_wallflag_japanese
+  name: Imperial Japanese flag
+  description: A flag with the imperial Japanese rising sun.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_japan_empire
+
+- type: entity
+  id: civ13_wallflag_german_modern
+  name: German flag
+  description: A horizontal tricolour flag of the German Republic.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_germany_republic
+
+- type: entity
+  id: civ13_wallflag_chinese
+  name: Republic of China flag
+  description: A flag with the republic of China design.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_china
+
+- type: entity
+  id: civ13_wallflag_chinese_prc
+  name: People's Republic of China flag
+  description: A flag with the PRC design.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_chinacommie
+
+- type: entity
+  id: civ13_wallflag_mongolia
+  name: Mongolian State flag
+  description: A flag of the state of Mongolia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_mongolia
+
+- type: entity
+  id: civ13_wallflag_mongolia_communist
+  name: Mongolian People's Republic flag
+  description: A flag of the Mongolian People's Republic.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_mongolia_communist
+
+- type: entity
+  id: civ13_wallflag_french
+  name: French flag
+  description: A flag with the tricolour french flag.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_france
+
+- type: entity
+  id: civ13_wallflag_denmark
+  name: Danish flag
+  description: A flag with the red and white dannebrog.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_denmark
+
+- type: entity
+  id: civ13_wallflag_german
+  name: German Empire flag
+  description: A horizontal tricolour flag of the German Empire.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_germany
+
+- type: entity
+  id: civ13_wallflag_german_east
+  name: East German flag
+  description: A horizontal tricolour flag of the German Democratic Republic.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_germany_east
+
+- type: entity
+  id: civ13_wallflag_uk
+  name: United Kingdom flag
+  description: A flag of the United Kingdom.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_uk
+
+- type: entity
+  id: civ13_wallflag_ukraine
+  name: Ukrainian flag
+  description: A flag of Ukraine.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_ukraine
+
+- type: entity
+  id: civ13_wallflag_ukraine_upa
+  name: flag of the UPA
+  description: The flag of the Ukrainian Insurgent Army called UPA.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_ukraine_upa
+
+- type: entity
+  id: civ13_wallflag_ukraine_makhno
+  name: Makhnovsti flag
+  description: >-
+    A flag of the Revolutionary Insurgent Army of Ukraine. Also known as the
+    Black Army or Makhnovsti.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_makhno
+
+- type: entity
+  id: civ13_wallflag_ukraine_azov
+  name: flag of the Azov regiment
+  description: The flag of the infamous Azov regiment of the Ukrainian National Guard.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_ukraine_azov
+
+- type: entity
+  id: civ13_wallflag_ukraine_rightsector
+  name: flag of the Right Sector
+  description: The flag of the Ukrainian far-right paramilitary movement.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_ukraine_rightsector
+
+- type: entity
+  id: civ13_wallflag_ukraine_dnr
+  name: flag of the Donetsk People's Republic
+  description: The flag of the self-proclaimed state of the Donetsk People's Republic
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_ukraine_dnr
+
+- type: entity
+  id: civ13_wallflag_ukraine_lnr
+  name: flag of the Luhansk People's Republic
+  description: The flag of the self-proclaimed state of the Luhansk People's Republic
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_ukraine_lnr
+
+- type: entity
+  id: civ13_wallflag_ukraine_afu
+  name: AFU flag
+  description: The flag of the Armed Forces of Ukraine.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_vsu
+
+- type: entity
+  id: civ13_wallflag_doncossack
+  name: Don Cossack Host flag
+  description: A flag of the Don cossacks.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_doncossack
+
+- type: entity
+  id: civ13_wallflag_terekcossack
+  name: Terek Cossack Host flag
+  description: A flag of the Terek cossacks.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_terekcossack
+
+- type: entity
+  id: civ13_wallflag_poland
+  name: Polish flag
+  description: A flag of Poland.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_poland
+
+- type: entity
+  id: civ13_wallflag_vietnam
+  name: North Vietnam flag
+  description: The North Vietnamese flag.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_vietnam
+
+- type: entity
+  id: civ13_wallflag_vietcong
+  name: Viet Cong flag
+  description: The blue and red flag of the Viet Cong forces.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_vietcong
+
+- type: entity
+  id: civ13_wallflag_usa_union
+  name: Union flag
+  description: The red, white and blue flag flying above ranks of blue-clad troops.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_union
+
+- type: entity
+  id: civ13_wallflag_usa_confed
+  name: Confederate flag
+  description: The flag of the Confederate States.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_confederate
+
+- type: entity
+  id: civ13_wallflag_texas
+  name: Texan flag
+  description: The flag of the state of Texas.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_texas
+
+- type: entity
+  id: civ13_wallflag_hungary_sov
+  name: Hungarian People's Republic flag
+  description: The flag of the Hungarian People's Republic.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_hungary_sov
+
+- type: entity
+  id: civ13_wallflag_sov_vdv
+  name: Soviet VDV flag
+  description: The flag of the Soviet Airborne Forces.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_vdv
+
+- type: entity
+  id: civ13_wallflag_sov_air
+  name: Soviet Air Forces flag
+  description: The flag of the Soviet Air Forces.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_sovair
+
+- type: entity
+  id: civ13_wallflag_sov_border
+  name: Soviet Border Troops flag
+  description: The flag of the Soviet Border Troops.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_sovborder
+
+- type: entity
+  id: civ13_wallflag_nazi
+  name: Third Reich flag
+  description: The red, white and black flag of the Third Reich.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_nazi
+
+- type: entity
+  id: civ13_wallflag_israel
+  name: Israel flag
+  description: The white and blue flag of Israel, with the 6 pointed star in the middle.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_israel
+
+- type: entity
+  id: civ13_wallflag_un
+  name: UN flag
+  description: The flag of the United Nations.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_un
+
+- type: entity
+  id: civ13_wallflag_dutch
+  name: Dutch flag
+  description: The flag of Netherlands.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_netherlands
+
+- type: entity
+  id: civ13_wallflag_dutch_old
+  name: Prince's flag
+  description: The Dutch flag.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_netherlands_old
+
+- type: entity
+  id: civ13_wallflag_chetnik
+  name: Chetnik flag
+  description: A Chetnik flag.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_chetnik
+
+- type: entity
+  id: civ13_wallflag_yugoslavia
+  name: Yugoslavian flag
+  description: The flag of Yugoslavia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_yugo
+
+- type: entity
+  id: civ13_wallflag_yugoslavia_partisan
+  name: Yugoslavian flag
+  description: The flag of Yugoslavian partisans.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_yugopart
+
+- type: entity
+  id: civ13_wallflag_gns
+  name: GNS flag
+  description: The flag of the Goverment of National Salvation.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_gns
+
+- type: entity
+  id: civ13_wallflag_australia
+  name: Australian flag
+  description: The flag of Australia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_australia
+
+- type: entity
+  id: civ13_wallflag_canada
+  name: Canadian flag
+  description: The flag of Canada.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_canada
+
+- type: entity
+  id: civ13_wallflag_hezbollah
+  name: Hezbollah flag
+  description: The yellow and green flag of the Shia Hezbollah organization.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_hezbollah
+
+- type: entity
+  id: civ13_wallflag_philippine
+  name: Filipino flag
+  description: The flag of the Philippines.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_fp
+
+- type: entity
+  id: civ13_wallflag_philippine_war
+  name: Filipino flag
+  description: The flag of the Philippines. Flipped for wartime.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_fp_war
+
+- type: entity
+  id: civ13_wallflag_pirate
+  name: Pirate flag
+  description: The black pirate flag, with a skull in the middle.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: pirate
+
+- type: entity
+  id: civ13_wallflag_firstcav
+  name: 1st Cavalry Division flag
+  description: Flag of the United States Army 1st Cavalry Division.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_1stcav
+
+- type: entity
+  id: civ13_wallflag_cuba
+  name: Cuban flag
+  description: The Cuban flag.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_cuba
+
+- type: entity
+  id: civ13_wallflag_colombia
+  name: Colombian flag
+  description: The flag of Colombia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_colombia
+
+- type: entity
+  id: civ13_wallflag_colombia_farc
+  name: FARC flag
+  description: The flag of the Revolutionary Armed Forces of Columbia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_colombia_farc
+
+- type: entity
+  id: civ13_wallflag_mexico
+  name: Mexican flag
+  description: The flag of Mexico.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_mexico
+
+- type: entity
+  id: civ13_wallflag_brazil
+  name: Brazilian flag
+  description: The flag of Brazil.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_brazil
+
+- type: entity
+  id: civ13_wallflag_paraguay
+  name: Paraguayan flag
+  description: The flag of Paraguay.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_paraguay
+
+- type: entity
+  id: civ13_wallflag_argentina
+  name: Argentinian flag
+  description: The flag of Argentina.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_argentina
+
+- type: entity
+  id: civ13_wallflag_venezuela
+  name: Venezuelan flag
+  description: The flag of Venezuela.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_venezuela
+
+- type: entity
+  id: civ13_wallflag_peru
+  name: Peruvian flag
+  description: The flag of Peru.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_peru
+
+- type: entity
+  id: civ13_wallflag_bolivia
+  name: Bolivian flag
+  description: The flag of Bolivia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_bolivia
+
+- type: entity
+  id: civ13_wallflag_chile
+  name: Chilean flag
+  description: The flag of Chile.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_chile
+
+- type: entity
+  id: civ13_wallflag_afghan_dra
+  name: DRA flag
+  description: The Democratic Republic of Afghanistan flag.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_dra
+
+- type: entity
+  id: civ13_wallflag_iran
+  name: Iranian flag
+  description: The Iranian flag.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_iran
+
+- type: entity
+  id: civ13_wallflag_iraq
+  name: Iraqui flag
+  description: The flag of Iraq.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_iraq
+
+- type: entity
+  id: civ13_wallflag_syria
+  name: Syrian Arab Republic flag
+  description: The flag of the Syrian Arab Republic.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_syria
+
+- type: entity
+  id: civ13_wallflag_fsa
+  name: FSA flag
+  description: The flag of the Free Syrian Army.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_syria_fsa
+
+- type: entity
+  id: civ13_wallflag_turkey
+  name: Turkish flag
+  description: The flag of Turkey.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_turkey
+
+- type: entity
+  id: civ13_wallflag_kurdistan
+  name: Kurdish flag
+  description: The flag of Kurdistan.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_kurdistan
+
+- type: entity
+  id: civ13_wallflag_georgia
+  name: Georgian flag
+  description: The flag of Georgia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_georgia
+
+- type: entity
+  id: civ13_wallflag_india
+  name: Indian flag
+  description: The flag of India.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_india
+
+- type: entity
+  id: civ13_wallflag_pakistan
+  name: Pakistani flag
+  description: The flag of Pakistan.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_pakistan
+
+- type: entity
+  id: civ13_wallflag_italy
+  name: Italian flag
+  description: The Italian flag.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_italy
+
+- type: entity
+  id: civ13_wallflag_finland
+  name: Finnish flag
+  description: The flag of Finland.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_finland
+
+- type: entity
+  id: civ13_wallflag_nigeria
+  name: Nigerian flag
+  description: The flag of Nigeria.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_nigeria
+
+- type: entity
+  id: civ13_wallflag_ethiopia
+  name: Ethiopian flag
+  description: The flag of Ethiopia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_ethiopia
+
+- type: entity
+  id: civ13_wallflag_armenia
+  name: Armenian flag
+  description: The flag of Armenia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_armenia
+
+- type: entity
+  id: civ13_wallflag_azerbaijan
+  name: Azerbaijani flag
+  description: The flag of the Republic of Azerbaijan.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_azerbaijan
+
+- type: entity
+  id: civ13_wallflag_bosnia
+  name: Bosnian flag
+  description: The flag of Bosnia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_bosnia
+
+- type: entity
+  id: civ13_wallflag_kosovo
+  name: Kosovo flag
+  description: The flag of Kosovo.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_kosovo
+
+- type: entity
+  id: civ13_wallflag_albania
+  name: Albanian flag
+  description: The flag of Albania.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_albania
+
+- type: entity
+  id: civ13_wallflag_serbia
+  name: Serbian flag
+  description: The flag of Serbia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_serbia
+
+- type: entity
+  id: civ13_wallflag_romania
+  name: Romanian flag
+  description: The flag of Romania.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_romania
+
+- type: entity
+  id: civ13_wallflag_romania_socialist
+  name: RSR flag
+  description: The flag of the Socialist Republic of Romania.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_romania_soc
+
+- type: entity
+  id: civ13_wallflag_moldova
+  name: Moldovan flag
+  description: The flag of the Republic of Moldova.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_moldova
+
+- type: entity
+  id: civ13_wallflag_moldova_transnistria
+  name: Transnistrian flag
+  description: The flag of the Pridnestrovian Moldavian Republic.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_transnistria
+
+- type: entity
+  id: civ13_wallflag_czech
+  name: Czechoslovakian flag
+  description: The flag of Czechoslovakia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_czech
+
+- type: entity
+  id: civ13_wallflag_hungary
+  name: Hungarian flag
+  description: The flag of Hungary.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_hungary
+
+- type: entity
+  id: civ13_wallflag_warpact
+  name: WARPACT flag
+  description: The flag of the Wasrsaw Pact.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_warpact
+
+- type: entity
+  id: civ13_wallflag_warpact_alt
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_warpact2
+
+- type: entity
+  id: civ13_wallflag_nato
+  name: NATO flag
+  description: The flag of North Atlantic Treaty Organization.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_nato
+
+- type: entity
+  id: civ13_wallflag_redmenia
+  name: Redmenian flag
+  description: The flag of the Empire of Redmenia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_redmenia
+
+- type: entity
+  id: civ13_wallflag_blugoslavia
+  name: Blugoslavian flag
+  description: The flag of the Republic of Blugoslavia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_blugoslavia
+
+- type: entity
+  id: civ13_wallflag_arstotzka
+  name: Arstotzkan flag
+  description: Glory to Arstotzka!
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_arstotzka
