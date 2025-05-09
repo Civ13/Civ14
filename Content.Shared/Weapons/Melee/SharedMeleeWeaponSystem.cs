@@ -417,13 +417,14 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
             switch (attack)
             {
                 case LightAttackEvent light:
-                    DoLightAttack(user, light, weaponUid, weapon, session);
+                    if (!DoLightAttack(user, light, weaponUid, weapon, session))
+                        return false;
                     animation = weapon.Animation;
                     break;
                 case DisarmAttackEvent disarm:
+                    // DoDisarm already returns bool and is checked
                     if (!DoDisarm(user, disarm, weaponUid, weapon, session))
                         return false;
-
                     animation = weapon.Animation;
                     break;
                 case HeavyAttackEvent heavy:
@@ -448,7 +449,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
     protected abstract bool InRange(EntityUid user, EntityUid target, float range, ICommonSession? session);
 
-    protected virtual void DoLightAttack(EntityUid user, LightAttackEvent ev, EntityUid meleeUid, MeleeWeaponComponent component, ICommonSession? session)
+    protected virtual bool DoLightAttack(EntityUid user, LightAttackEvent ev, EntityUid meleeUid, MeleeWeaponComponent component, ICommonSession? session)
     {
         // If I do not come back later to fix Light Attacks being Heavy Attacks you can throw me in the spider pit -Errant
         var damage = GetDamage(meleeUid, user, component) * GetHeavyDamageModifier(meleeUid, user, component);
@@ -459,7 +460,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         if (TryComp<StaminaComponent>(user, out var stam))
         {
             if (stam.StaminaDamage > stam.SlowdownThreshold)
-            { return; }
+            { return false; }
         }
 
         // For consistency with wide attacks stuff needs damageable.
@@ -488,7 +489,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
             var missEvent = new MeleeHitEvent(new List<EntityUid>(), user, meleeUid, damage, null);
             RaiseLocalEvent(meleeUid, missEvent);
             _meleeSound.PlaySwingSound(user, meleeUid, component);
-            return;
+            return true;
         }
 
         // Sawmill.Debug($"Melee damage is {damage.Total} out of {component.Damage.Total}");
@@ -498,7 +499,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         RaiseLocalEvent(meleeUid, hitEvent);
 
         if (hitEvent.Handled)
-            return;
+            return true;
 
         var targets = new List<EntityUid>(1)
         {
@@ -554,6 +555,8 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         {
             DoDamageEffect(targets, user, targetXform);
         }
+
+        return true;
     }
 
     protected abstract void DoDamageEffect(List<EntityUid> targets, EntityUid? user, TransformComponent targetXform);

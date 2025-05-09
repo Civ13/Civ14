@@ -75,4 +75,10 @@ public sealed partial class StaminaComponent : Component
     [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
     public float SlowdownThreshold = 50f; // CritThreshold / 2
     // stalker-changes-end
+
+    /// <summary>
+    /// When the last "gasp" message was sent
+    /// </summary>
+    [DataField("lastMessageTime"), AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
+    public TimeSpan LastMessageTime { get; set; } = TimeSpan.Zero;
 }
