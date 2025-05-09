@@ -1,4 +1,3 @@
-
 using Content.Server.GameTicking.Rules.Components;
 using Content.Shared.NPC.Components;
 using Content.Shared.Physics;
@@ -33,6 +32,12 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
             ProcessArea(uid, area, frameTime);
         }
     }
+    /// <summary>
+    /// Processes a capture area, determining faction control based on the presence of alive faction members, updating control status, managing capture timers, and dispatching global announcements for control changes, timed warnings, and victory.
+    /// </summary>
+    /// <param name="uid">The entity identifier of the capture area.</param>
+    /// <param name="area">The capture area component to process.</param>
+    /// <param name="frameTime">The elapsed time since the last update, in seconds.</param>
     private void ProcessArea(EntityUid uid, CaptureAreaComponent area, float frameTime)
     {
         var areaXform = _transform.GetMapCoordinates(uid);

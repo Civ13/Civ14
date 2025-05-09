@@ -36,6 +36,10 @@ public sealed class TakeStaminaDamageEvent : HandledEntityEventArgs, IInventoryR
     /// </summary>
     public float FlatModifier = 0;
 
+    /// <summary>
+    /// Initialises a new event for handling stamina damage about to be applied to a specific entity.
+    /// </summary>
+    /// <param name="target">The entity with a stamina component that will receive damage.</param>
     public TakeStaminaDamageEvent(Entity<StaminaComponent> target)
     {
         Target = target;

@@ -19,6 +19,9 @@ public sealed class DodgeWideswingSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly StaminaSystem _stamina = default!;
 
+    /// <summary>
+    /// Subscribes to damage change events for entities with the <see cref="DodgeWideswingComponent"/>.
+    /// </summary>
     public override void Initialize()
     {
         base.Initialize();
@@ -26,6 +29,12 @@ public sealed class DodgeWideswingSystem : EntitySystem
         SubscribeLocalEvent<DodgeWideswingComponent, BeforeDamageChangedEvent>(OnDamageChanged);
     }
 
+    /// <summary>
+    /// Handles incoming heavy attack damage for entities with a DodgeWideswingComponent, potentially converting the damage into stamina loss and cancelling the original damage based on configured chance and conditions.
+    /// </summary>
+    /// <param name="uid">The entity receiving the damage.</param>
+    /// <param name="component">The DodgeWideswingComponent associated with the entity.</param>
+    /// <param name="args">The event data for the incoming damage, passed by reference.</param>
     private void OnDamageChanged(EntityUid uid, DodgeWideswingComponent component, ref BeforeDamageChangedEvent args)
     {
         if (args.HeavyAttack && (!HasComp<KnockedDownComponent>(uid) || component.WhenKnockedDown) && _random.Prob(component.Chance))

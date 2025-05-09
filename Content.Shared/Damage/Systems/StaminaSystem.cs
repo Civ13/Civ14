@@ -49,6 +49,9 @@ public sealed partial class StaminaSystem : EntitySystem
     /// </summary>
     private static readonly TimeSpan StamCritBufferTime = TimeSpan.FromSeconds(3f);
 
+    /// <summary>
+    /// Initializes the StaminaSystem, setting up event subscriptions for stamina-related components and configuring logging.
+    /// </summary>
     public override void Initialize()
     {
         base.Initialize();
@@ -71,6 +74,9 @@ public sealed partial class StaminaSystem : EntitySystem
         _sawmill = _logManager.GetSawmill("stamina");
     }
 
+    /// <summary>
+    /// Handles stamina state changes after state synchronisation, entering stamina critical state if necessary or updating active stamina components.
+    /// </summary>
     private void OnStamHandleState(EntityUid uid, StaminaComponent component, ref AfterAutoHandleStateEvent args)
     {
         // goob edit - stunmeta
@@ -123,6 +129,9 @@ public sealed partial class StaminaSystem : EntitySystem
         Dirty(uid, component);
     }
 
+    /// <summary>
+    /// Applies immediate stamina damage with resistances to an entity when disarmed, unless already handled or in a critical state.
+    /// </summary>
     private void OnDisarmed(EntityUid uid, StaminaComponent component, DisarmedEvent args)
     {
         // No random stamina damage
@@ -139,7 +148,10 @@ public sealed partial class StaminaSystem : EntitySystem
         // Shoving shouldnt handle it
     }
 
-    // goobstation - stun resistance. try not to modify this method at all
+    /// <summary>
+    /// Handles stamina damage application when an entity with a <see cref="StaminaDamageOnHitComponent"/> lands a melee hit,
+    /// splitting immediate and overtime stamina damage among all valid hit entities and applying relevant multipliers and modifiers.
+    /// </summary>
     private void OnMeleeHit(EntityUid uid, StaminaDamageOnHitComponent component, MeleeHitEvent args)
     {
         if (!args.IsHit ||
@@ -202,6 +214,9 @@ public sealed partial class StaminaSystem : EntitySystem
         OnCollide(uid, component, args.Target);
     }
 
+    /// <summary>
+    /// Applies immediate stamina damage with resistances to an entity when a projectile embeds into it.
+    /// </summary>
     private void OnProjectileEmbed(EntityUid uid, StaminaDamageOnEmbedComponent component, ref EmbedEvent args)
     {
         if (!TryComp<StaminaComponent>(args.Embedded, out var stamina))
@@ -210,11 +225,20 @@ public sealed partial class StaminaSystem : EntitySystem
         TakeStaminaDamage(args.Embedded, component.Damage, stamina, source: uid, applyResistances: true, immediate: true);
     }
 
+    /// <summary>
+    /// Applies stamina damage to a target entity when struck by a thrown object.
+    /// </summary>
     private void OnThrowHit(EntityUid uid, StaminaDamageOnCollideComponent component, ThrowDoHitEvent args)
     {
         OnCollide(uid, component, args.Target);
     }
 
+    /// <summary>
+    /// Applies stamina damage to a target entity upon collision if it has a stamina component, allowing for event-based modification or cancellation.
+    /// </summary>
+    /// <param name="uid">The entity causing the collision.</param>
+    /// <param name="component">The stamina damage on collide component.</param>
+    /// <param name="target">The entity being collided with.</param>
     private void OnCollide(EntityUid uid, StaminaDamageOnCollideComponent component, EntityUid target)
     {
         // you can't inflict stamina damage on things with no stamina component
@@ -246,6 +270,9 @@ public sealed partial class StaminaSystem : EntitySystem
         TakeOvertimeStaminaDamage(target, overtime); // Goobstation
     }
 
+    /// <summary>
+    /// Updates the stamina alert level for an entity based on its current stamina damage relative to the critical threshold.
+    /// </summary>
     private void SetStaminaAlert(EntityUid uid, StaminaComponent? component = null)
     {
         if (!Resolve(uid, ref component, false) || component.Deleted)
@@ -257,7 +284,15 @@ public sealed partial class StaminaSystem : EntitySystem
 
     /// <summary>
     /// Tries to take stamina damage without raising the entity over the crit threshold.
+    /// <summary>
+    /// Attempts to apply stamina damage to an entity, returning whether the entity remains below the critical threshold.
     /// </summary>
+    /// <param name="uid">The entity to apply stamina damage to.</param>
+    /// <param name="value">The amount of stamina damage to attempt to apply.</param>
+    /// <param name="component">Optional stamina component; resolved if not provided.</param>
+    /// <param name="source">Optional source of the stamina damage.</param>
+    /// <param name="with">Optional weapon or item used to inflict the damage.</param>
+    /// <returns>True if the stamina damage was applied and the entity is not in a critical state; false if the entity would exceed or is already at the critical threshold.</returns>
     public bool TryTakeStamina(EntityUid uid, float value, StaminaComponent? component = null, EntityUid? source = null, EntityUid? with = null)
     {
         // Something that has no Stamina component automatically passes stamina checks
@@ -273,7 +308,11 @@ public sealed partial class StaminaSystem : EntitySystem
         return true;
     }
 
-    // goob edit - stunmeta
+    /// <summary>
+    /// Adds stamina damage over time to the specified entity, accumulating the value in its overtime stamina component.
+    /// </summary>
+    /// <param name="uid">The entity to receive overtime stamina damage.</param>
+    /// <param name="value">The amount of stamina damage to add.</param>
     public void TakeOvertimeStaminaDamage(EntityUid uid, float value)
     {
         // do this only on server side because otherwise shit happens
@@ -289,7 +328,22 @@ public sealed partial class StaminaSystem : EntitySystem
         overtime!.Damage = hasComp ? overtime.Damage + value : value;
     }
 
-    // goob edit - stunmeta
+    /// <summary>
+    /// Applies stamina damage to an entity, optionally factoring in resistances, triggering visual and audio effects, and logging the event.
+    /// </summary>
+    /// <param name="uid">The entity receiving stamina damage.</param>
+    /// <param name="value">The amount of stamina damage to apply.</param>
+    /// <param name="component">Optional stamina component; resolved if not provided.</param>
+    /// <param name="source">Optional source entity responsible for the damage.</param>
+    /// <param name="with">Optional entity used to inflict the damage.</param>
+    /// <param name="visual">Whether to trigger visual effects for the damage.</param>
+    /// <param name="sound">Optional sound to play when damage is applied.</param>
+    /// <param name="immediate">If true, applies a hard stun when entering stamina crit.</param>
+    /// <param name="applyResistances">If true, applies resistance modifiers before applying damage.</param>
+    /// <param name="shouldLog">Whether to log the stamina damage event.</param>
+    /// <remarks>
+    /// If the entity is already in stamina crit or the event is cancelled, no damage is applied. Exceeding the slowdown threshold applies jitter, stutter, and slowdown effects. Entering stamina crit may apply a hard stun depending on the <paramref name="immediate"/> flag.
+    /// </remarks>
     public void TakeStaminaDamage(EntityUid uid, float value, StaminaComponent? component = null,
         EntityUid? source = null, EntityUid? with = null, bool visual = true, SoundSpecifier? sound = null, bool immediate = false, bool applyResistances = false, bool shouldLog = true)
     {
@@ -374,6 +428,14 @@ public sealed partial class StaminaSystem : EntitySystem
         }
     }
 
+    /// <summary>
+    /// Enables or disables a stamina drain effect on an entity from a specified source, with an optional speed modification.
+    /// </summary>
+    /// <param name="target">The entity to apply or remove the stamina drain from.</param>
+    /// <param name="drainRate">The rate at which stamina is drained per second.</param>
+    /// <param name="enabled">Whether to enable or disable the stamina drain.</param>
+    /// <param name="modifiesSpeed">Whether the drain should also affect the entity's movement speed.</param>
+    /// <param name="source">The source entity responsible for the drain; if null, the target is used as the source.</param>
     public void ToggleStaminaDrain(EntityUid target, float drainRate, bool enabled, bool modifiesSpeed, EntityUid? source = null)
     {
         if (!TryComp<StaminaComponent>(target, out var stamina))
@@ -393,6 +455,9 @@ public sealed partial class StaminaSystem : EntitySystem
         Dirty(target, stamina);
     }
 
+    /// <summary>
+    /// Processes stamina updates for all entities with active stamina components, applying stamina drains, handling recovery, and managing entry and exit from stamina critical states.
+    /// </summary>
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -440,7 +505,13 @@ public sealed partial class StaminaSystem : EntitySystem
         }
     }
 
-    // goob edit - stunmeta
+    /// <summary>
+    /// Puts an entity into stamina critical state, optionally applying a hard stun (paralysis) for a specified duration.
+    /// </summary>
+    /// <param name="uid">The entity to enter stamina crit.</param>
+    /// <param name="component">The stamina component, if already resolved.</param>
+    /// <param name="hardStun">If true, applies a full paralysis; otherwise, does not apply a hard stun.</param>
+    /// <param name="duration">Duration of the stun effect in seconds if hard stun is applied.</param>
     private void EnterStamCrit(EntityUid uid, StaminaComponent? component = null, bool hardStun = false, float duration = 6f)
     {
         if (!Resolve(uid, ref component) || component.Critical)
@@ -474,7 +545,9 @@ public sealed partial class StaminaSystem : EntitySystem
     // goob edit - made it public.
     // in any case it requires a stamina component that can be freely modified.
     // so it doesn't really matter if it's public or private. besides, very convenient.
-    // regards
+    /// <summary>
+    /// Exits stamina critical state for the specified entity, resetting stamina damage and related effects.
+    /// </summary>
     public void ExitStamCrit(EntityUid uid, StaminaComponent? component = null)
     {
         if (!Resolve(uid, ref component) ||
