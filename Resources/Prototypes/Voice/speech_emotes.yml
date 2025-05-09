@@ -6,10 +6,10 @@
   icon: Interface/Emotes/scream.png
   whitelist:
     components:
-    - Vocal
+      - Vocal
   blacklist:
     components:
-    - BorgChassis
+      - BorgChassis
   chatMessages: ["chat-emote-msg-scream"]
   chatTriggers:
     - scream
@@ -36,10 +36,10 @@
   icon: Interface/Emotes/laugh.png
   whitelist:
     components:
-    - Vocal
+      - Vocal
   blacklist:
     components:
-    - BorgChassis
+      - BorgChassis
   chatMessages: ["chat-emote-msg-laugh"]
   chatTriggers:
     - laugh
@@ -66,8 +66,8 @@
   whitelist:
     requireAll: true
     components:
-    - Vocal
-    - BorgChassis
+      - Vocal
+      - BorgChassis
   chatMessages: ["chat-emote-msg-honk"]
   chatTriggers:
     - honk
@@ -82,10 +82,10 @@
   icon: Interface/Emotes/sigh.png
   whitelist:
     components:
-    - Vocal
+      - Vocal
   blacklist:
     components:
-    - BorgChassis
+      - BorgChassis
   chatMessages: ["chat-emote-msg-sigh"]
   chatTriggers:
     - sigh
@@ -99,10 +99,10 @@
   icon: Interface/Emotes/whistle.png
   whitelist:
     components:
-    - Vocal
+      - Vocal
   blacklist:
     components:
-    - BorgChassis
+      - BorgChassis
   chatMessages: ["chat-emote-msg-whistle"]
   chatTriggers:
     - whistle
@@ -116,10 +116,10 @@
   icon: Interface/Emotes/cry.png
   whitelist:
     components:
-    - Vocal
+      - Vocal
   blacklist:
     components:
-    - BorgChassis
+      - BorgChassis
   chatMessages: ["chat-emote-msg-crying"]
   chatTriggers:
     - cry
@@ -137,10 +137,10 @@
   icon: Interface/Emotes/squish.png
   whitelist:
     components:
-    - Vocal
+      - Vocal
   blacklist:
     components:
-    - BorgChassis
+      - BorgChassis
   chatMessages: ["chat-emote-msg-squish"]
   chatTriggers:
     - squish
@@ -155,15 +155,15 @@
   icon: Interface/Emotes/chitter.png
   whitelist:
     components:
-    - Vocal
+      - Vocal
   blacklist:
     components:
-    - BorgChassis
+      - BorgChassis
   chatMessages: ["chat-emote-msg-chitter"]
   chatTriggers:
-   - chitter
-   - chitters
-   - chittered
+    - chitter
+    - chitters
+    - chittered
 
 - type: emote
   id: Squeak
@@ -176,12 +176,12 @@
       - Vocal
   blacklist:
     components:
-    - BorgChassis
+      - BorgChassis
   chatMessages: ["chat-emote-msg-squeak"]
   chatTriggers:
-   - squeak
-   - squeaks
-   - squeaked
+    - squeak
+    - squeaks
+    - squeaked
 
 - type: emote
   id: Click
@@ -191,14 +191,14 @@
   icon: Interface/Emotes/click.png
   whitelist:
     components:
-    - Vocal
+      - Vocal
   blacklist:
     components:
-    - BorgChassis
+      - BorgChassis
   chatMessages: ["chat-emote-msg-click"]
   chatTriggers:
-   - click
-   - clicks
+    - click
+    - clicks
 
 # hand emotes
 - type: emote
@@ -208,10 +208,10 @@
   icon: Interface/Emotes/clap.png
   whitelist:
     components:
-    - Hands
+      - Hands
   blacklist:
     components:
-    - BorgChassis
+      - BorgChassis
   chatMessages: ["chat-emote-msg-clap"]
   chatTriggers:
     - claps
@@ -225,11 +225,11 @@
   icon: Interface/Emotes/clap.png #TODO: Needs a sprite that distinguishes it better from clap
   whitelist:
     components:
-    - Hands
+      - Hands
   blacklist:
     components:
-    - BorgChassis
-  chatMessages: [ "chat-emote-msg-clap-single" ]
+      - BorgChassis
+  chatMessages: ["chat-emote-msg-clap-single"]
   chatTriggers:
     - clap
     - claps their hands together
@@ -244,10 +244,10 @@
   icon: Interface/Emotes/snap.png
   whitelist:
     components:
-    - Hands
+      - Hands
   blacklist:
     components:
-    - BorgChassis
+      - BorgChassis
   chatMessages: ["chat-emote-msg-snap"]
   chatTriggers:
     - snap
@@ -271,10 +271,10 @@
   icon: Interface/Emotes/tailslap.png
   whitelist:
     components:
-    - Hands
+      - Hands
   blacklist:
     components:
-    - BorgChassis
+      - BorgChassis
   chatMessages: ["chat-emote-msg-thump"]
   chatTriggers:
     - thump
@@ -295,10 +295,10 @@
   icon: Interface/Emotes/salute.png
   whitelist:
     components:
-    - Hands
+      - Hands
   blacklist:
     components:
-    - BorgChassis
+      - BorgChassis
   chatMessages: ["chat-emote-msg-salute"]
   chatTriggers:
     - salute
@@ -309,12 +309,12 @@
   name: chat-emote-name-gasp
   whitelist:
     components:
-    - Respirator
+      - Respirator
   chatMessages: ["chat-emote-msg-gasp"]
   chatTriggers:
-   - gasp
-   - gasps
-   - gasped
+    - gasp
+    - gasps
+    - gasped
 
 - type: emote
   id: DefaultDeathgasp
@@ -322,16 +322,27 @@
   icon: Interface/Emotes/deathgasp.png
   whitelist:
     components:
-    - MobState
+      - MobState
   chatMessages: ["chat-emote-msg-deathgasp"]
   chatTriggers:
-  - deathgasp
+    - deathgasp
 
 - type: emote
   id: MonkeyDeathgasp
   name: chat-emote-name-deathgasp
   icon: Interface/Emotes/deathgasp.png
   chatMessages: ["chat-emote-msg-deathgasp-monkey"]
+
+# for out of breath effects due to low stamina
+- type: emote
+  id: BreathGasp
+  name: chat-emote-name-gasp-stamina
+  whitelist:
+    components:
+      - Respirator
+  chatMessages: ["chat-emote-msg-gasp-stamina"]
+  chatTriggers:
+    - breathgasp
 
 - type: emote
   id: Buzz
@@ -341,8 +352,8 @@
   whitelist:
     requireAll: true
     components:
-    - BorgChassis
-    - Vocal
+      - BorgChassis
+      - Vocal
   chatMessages: ["chat-emote-msg-buzz"]
   chatTriggers:
     - buzzing
@@ -372,11 +383,11 @@
   icon: Interface/Emotes/chirp.png
   whitelist:
     components:
-    - Nymph
-    - Vocal
+      - Nymph
+      - Vocal
   blacklist:
     components:
-    - BorgChassis
+      - BorgChassis
   chatMessages: ["chat-emote-msg-chirp"]
   chatTriggers:
     - chirp
@@ -393,8 +404,8 @@
   whitelist:
     requireAll: true
     components:
-    - BorgChassis
-    - Vocal
+      - BorgChassis
+      - Vocal
   chatMessages: ["chat-emote-msg-beep"]
   chatTriggers:
     - beep
@@ -410,8 +421,8 @@
   whitelist:
     requireAll: true
     components:
-    - BorgChassis
-    - Vocal
+      - BorgChassis
+      - Vocal
   chatMessages: ["chat-emote-msg-chime"]
   chatTriggers:
     - chime
@@ -427,8 +438,8 @@
   whitelist:
     requireAll: true
     components:
-    - BorgChassis
-    - Vocal
+      - BorgChassis
+      - Vocal
   chatMessages: ["chat-emote-msg-buzzestwo"]
   chatTriggers:
     - buzztwice
@@ -450,8 +461,8 @@
   whitelist:
     requireAll: true
     components:
-    - BorgChassis
-    - Vocal
+      - BorgChassis
+      - Vocal
   chatMessages: ["chat-emote-msg-ping"]
   chatTriggers:
     - ping

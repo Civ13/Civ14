@@ -581,7 +581,7 @@ public abstract partial class SharedGunSystem : EntitySystem
                     {
                         var hitEntity = lastHit.Value;
                         if (hitscan.StaminaDamage > 0f)
-                            _stamina.TakeStaminaDamage(hitEntity, hitscan.StaminaDamage, source: user);
+                            _stamina.TakeStaminaDamage(hitEntity, hitscan.StaminaDamage, source: user, immediate: true);
 
                         var dmg = hitscan.Damage;
 
