@@ -8,6 +8,7 @@
   description: extended-description
   rules:
     - RespawnDeadRule
+    - FactionRule
 
 - type: gamePreset
   id: TDM
@@ -21,4 +22,3 @@
     - GracewallRule
     - CaptureAreaRule
     - TeamDeathMatchRule
-

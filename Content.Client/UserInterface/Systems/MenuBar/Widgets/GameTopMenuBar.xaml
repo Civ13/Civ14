@@ -69,7 +69,7 @@
     <ui:MenuButton
         Name="FactionButton"
         Access="Internal"
-        Icon="{xe:Tex '/Textures/Interface/gavel.svg.192dpi.png'}"
+        Icon="{xe:Tex '/Textures/Interface/flag.png'}"
         BoundKey="{x:Static is:ContentKeyFunctions.OpenFactionsMenu}"
         ToolTip="{Loc 'game-hud-open-factions-menu-button-tooltip'}"
         MinSize="42 64"
