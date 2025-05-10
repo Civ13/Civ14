@@ -235,6 +235,78 @@
               acts: ["Destruction"]
 
 - type: tile
+  id: FloorCobblestone
+  name: cobblestone floor
+  sprite: /Textures/Civ14/Objects/floors.rsi/cobble_vertical_dark.png
+  variants: 1
+  baseTurf: Plating
+  weather: true
+  isSubfloor: false
+  deconstructTools: [Prying]
+  footstepSounds:
+    collection: FootstepFloor
+  barestepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemCobblestone
+  heatCapacity: 10000
+
+- type: stack
+  id: FloorTileCobblestone
+  name: cobblestone floor
+  spawn: FloorTileItemCobblestone
+  maxCount: 30
+
+- type: entity
+  name: cobblestone floor
+  parent: FloorTileItemBase
+  id: FloorTileItemCobblestone
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/floors.rsi
+      state: cobble_vertical_dark
+    - type: Item
+      heldPrefix: cobblestone
+    - type: FloorTile
+      outputs:
+        - Plating
+        - FloorRoad
+    - type: Stack
+      stackType: FloorTileCobblestone
+    - type: SpawnAfterInteract #Nuke after convert to FloorTile
+      prototype: FloorCobblestone
+      doAfter: 0.5
+      removeOnInteract: true
+    - type: Construction
+      graph: TileCobblestone
+      node: end
+
+- type: entity
+  id: FloorCobblestone
+  parent: BaseStructure
+  name: cobblestone floor
+  description: "A cobblestone floor."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/floors.rsi
+      state: cobble_vertical_dark
+      drawdepth: FloorTiles
+    - type: Tag
+      tags:
+        - ForceFixRotations
+    - type: Physics
+      canCollide: false
+    - type: Fixtures
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 180
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: tile
   id: FloorBridge
   name: bridge
   sprite: /Textures/Civ14/Structures/Floors/wood.rsi/woodalt7.png

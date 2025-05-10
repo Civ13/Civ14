@@ -1,0 +1,31 @@
+- type: gameMap
+  id: Camp
+  mapName: "Camp (Medieval)"
+  mapPath: /Maps/civ/tdm/camp.yml
+  minPlayers: 0
+  maxPlayers: 128
+  maxRandomOffset: 0
+  randomRotation: false
+  stations:
+    Camp:
+      stationProto: StandardStationTDM
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Camp (Medieval)"
+        - type: StationJobs
+          availableJobs:
+            # English
+            EnglishLord: [1, 1]
+            EnglishKnight: [2, 5]
+            EnglishSwordsman: [5, 20]
+            EnglishSpearman: [20, 50]
+            EnglishRanged: [5, 20]
+            EnglishMedic: [1, 3]
+
+            # French
+            FrenchLord: [1, 1]
+            FrenchKnight: [2, 5]
+            FrenchSwordsman: [5, 20]
+            FrenchSpearman: [20, 50]
+            FrenchRanged: [5, 20]
+            FrenchMedic: [1, 3]

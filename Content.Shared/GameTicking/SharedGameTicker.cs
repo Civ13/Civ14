@@ -7,6 +7,8 @@ using Robust.Shared.Serialization.Markdown.Mapping;
 using Robust.Shared.Serialization.Markdown.Value;
 using Robust.Shared.Timing;
 using Robust.Shared.Audio;
+using Robust.Shared.Player;
+using Content.Shared.NPC.Prototypes;
 
 namespace Content.Shared.GameTicking
 {
@@ -14,6 +16,7 @@ namespace Content.Shared.GameTicking
     {
         [Dependency] private readonly IReplayRecordingManager _replay = default!;
         [Dependency] private readonly IGameTiming _gameTiming = default!;
+        [Dependency] private readonly ISharedPlayerManager _playerManager = default!;
 
         // See ideally these would be pulled from the job definition or something.
         // But this is easier, and at least it isn't hardcoded.
@@ -119,6 +122,16 @@ namespace Content.Shared.GameTicking
         }
     }
 
+    [Serializable, NetSerializable]
+    public sealed class GetPlayerFactionCounts : EntityEventArgs
+    {
+        public Dictionary<ProtoId<NpcFactionPrototype>, int> FactionCounts { get; } = new();
+
+        public GetPlayerFactionCounts(Dictionary<ProtoId<NpcFactionPrototype>, int> factionCounts)
+        {
+            FactionCounts = factionCounts;
+        }
+    }
     [Serializable, NetSerializable]
     public sealed class TickerLobbyCountdownEvent : EntityEventArgs
     {

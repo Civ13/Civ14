@@ -1,59 +1,67 @@
 {
-    "version": 1,
-    "license": "AGPLv3",
-    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
-    "size": {
-        "x": 32,
-        "y": 32
+  "version": 1,
+  "license": "AGPLv3",
+  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "buckler",
+      "directions": 1
     },
-    "states": [
-        {
-            "name": "buckler",
-            "directions": 1
-        },
-        {
-            "name": "equipped-BACKPACK",
-            "directions": 4
-        },
-        {
-            "name": "buckler-icon",
-            "directions": 1
-        },
-        {
-            "name": "icon",
-            "directions": 1
-        },
-        {
-            "name": "inhand-left",
-            "directions": 4
-        },
-        {
-            "name": "inhand-right",
-            "directions": 4
-        },
-        {
-            "name": "red_buckler-icon",
-            "directions": 1
-        },
-        {
-            "name": "red_buckler-inhand-left",
-            "directions": 4
-        },
-        {
-            "name": "red_buckler-inhand-right",
-            "directions": 4
-        },
-        {
-            "name": "blue_buckler-icon",
-            "directions": 1
-        },
-        {
-            "name": "blue_buckler-inhand-left",
-            "directions": 4
-        },
-        {
-            "name": "blue_buckler-inhand-right",
-            "directions": 4
-        }
-    ]
+    {
+      "name": "equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "buckler-icon",
+      "directions": 1
+    },
+    {
+      "name": "icon",
+      "directions": 1
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "red_buckler-icon",
+      "directions": 1
+    },
+    {
+      "name": "red_buckler-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "red_buckler-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "blue_buckler-icon",
+      "directions": 1
+    },
+    {
+      "name": "blue_buckler-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "blue_buckler-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "buckler-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "buckler-inhand-right",
+      "directions": 4
+    }
+  ]
 }

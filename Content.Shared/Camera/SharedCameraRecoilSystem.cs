@@ -3,6 +3,7 @@ using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Systems;
 using JetBrains.Annotations;
 using Robust.Shared.Network;
+using Robust.Shared.Maths;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.Camera;
@@ -58,9 +59,23 @@ public abstract class SharedCameraRecoilSystem : EntitySystem
 
         while (query.MoveNext(out var uid, out var recoil, out var eye))
         {
+            // Check if CurrentKick is invalid (NaN or Infinite) and reset if necessary.
+            // This prevents downstream errors, especially with Math.Sign.
+            if (!float.IsFinite(recoil.CurrentKick.X) || !float.IsFinite(recoil.CurrentKick.Y))
+            {
+                // Log error and reset
+                Log.Error($"Camera recoil CurrentKick is invalid for entity {ToPrettyString(uid)}. Resetting kick. Value: {recoil.CurrentKick}");
+                recoil.CurrentKick = Vector2.Zero;
+                // Allow logic to continue to potentially update eye if LastKick wasn't zero
+            }
+
             var magnitude = recoil.CurrentKick.Length();
             if (magnitude <= 0.005f)
             {
+                // If it's already zero, skip updates. Otherwise, set it to zero.
+                if (recoil.CurrentKick == Vector2.Zero)
+                    continue;
+
                 recoil.CurrentKick = Vector2.Zero;
             }
             else // Continually restore camera to 0.
@@ -69,14 +84,27 @@ public abstract class SharedCameraRecoilSystem : EntitySystem
                 recoil.LastKickTime += frameTime;
                 var restoreRate = MathHelper.Lerp(RestoreRateMin, RestoreRateMax, Math.Min(1, recoil.LastKickTime / RestoreRateRamp));
                 var restore = normalized * restoreRate * frameTime;
-                var (x, y) = recoil.CurrentKick - restore;
-                if (Math.Sign(x) != Math.Sign(recoil.CurrentKick.X))
-                    x = 0;
 
-                if (Math.Sign(y) != Math.Sign(recoil.CurrentKick.Y))
-                    y = 0;
+                // Sanity check: ensure restore vector is finite.
+                if (!float.IsFinite(restore.X) || !float.IsFinite(restore.Y))
+                {
+                    Log.Error($"Camera recoil restore vector is invalid for entity {ToPrettyString(uid)}. Resetting kick. Restore: {restore}, Normalized: {normalized}, Rate: {restoreRate}, FrameTime: {frameTime}");
+                    recoil.CurrentKick = Vector2.Zero;
+                }
+                else
+                {
+                    var newKick = recoil.CurrentKick - restore;
+                    var (x, y) = newKick;
 
-                recoil.CurrentKick = new Vector2(x, y);
+                    // Check if the sign flipped (meaning we overshot zero)
+                    if (Math.Sign(x) != Math.Sign(recoil.CurrentKick.X))
+                        x = 0;
+
+                    if (Math.Sign(y) != Math.Sign(recoil.CurrentKick.Y))
+                        y = 0;
+
+                    recoil.CurrentKick = new Vector2(x, y);
+                }
             }
 
             if (recoil.CurrentKick == recoil.LastKick)

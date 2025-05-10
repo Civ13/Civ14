@@ -10,3 +10,5 @@ department-Silicon-description = Obey your laws and serve the crew.
 department-Specific-description = Jobs that not all stations have.
 
 department-Nomads-description = Nomads are not bound to any faction.
+department-French-description = The French are one of the factions present in this map.
+department-English-description = The English are one of the factions present in this map.

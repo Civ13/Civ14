@@ -96,7 +96,7 @@ namespace Content.Shared.Ghost
         /// <summary>
         /// Whether this warp represents a warp point or a player
         /// </summary>
-        public bool IsWarpPoint { get;  }
+        public bool IsWarpPoint { get; }
     }
 
     /// <summary>
@@ -142,6 +142,13 @@ namespace Content.Shared.Ghost
     /// </summary>
     [Serializable, NetSerializable]
     public sealed class GhostReturnToBodyRequest : EntityEventArgs
+    {
+    }
+    /// <summary>
+    /// A client to server request for their ghost to return to lobby
+    /// </summary>
+    [Serializable, NetSerializable]
+    public sealed class GhostReturnToLobbyRequest : EntityEventArgs
     {
     }
 

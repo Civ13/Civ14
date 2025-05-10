@@ -11,3 +11,30 @@
       layers:
         - state: green
         - state: passenger
+
+- type: entity
+  id: SpawnPointEnglish
+  parent: SpawnPointJobBase
+  name: english spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: England
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: red
+- type: entity
+  id: SpawnPointFrench
+  parent: SpawnPointJobBase
+  name: french spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: France
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: blue

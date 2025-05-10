@@ -1,0 +1,296 @@
+- type: entity
+  id: CrenelatedWall
+  description: A stone wall with crenelations.
+  parent: BaseBarricade
+  name: crenelated wall
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Civ14/Structures/barricades.rsi
+      state: crenelated_wall
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.49,-0.45,0.49,-0.02"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+    - type: Damageable
+      damageModifierSet: Rock
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 250
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Barricade
+      blocking: 80
+    - type: AtmosExposed
+
+- type: entity
+  id: CrenelatedWallFull
+  description: A stone wall with crenelations.
+  parent: CrenelatedWall
+  name: crenelated wall
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/walls.rsi
+      state: stone_brick
+      drawdepth: FloorObjects
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb {}
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+
+# sandbags and other similar stuff
+- type: entity
+  id: BarricadeSandbags
+  description: A sandbag wall.
+  parent: BaseBarricade
+  name: sandbag wall
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Civ14/Structures/barricades.rsi
+      state: sandbag
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Climbable
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.49,-0.45,0.49,-0.02"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+    - type: Damageable
+      damageModifierSet: Inert
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 180
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Barricade
+      blocking: 66
+    - type: AtmosExposed
+
+- type: entity
+  id: BarricadeSandbagsMedium
+  description: An unfinished sandbag wall.
+  parent: BarricadeSandbags
+  name: sandbag wall
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/barricades.rsi
+      state: sandbag_66%
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Barricade
+      blocking: 50
+- type: entity
+  id: BarricadeSandbagsLow
+  description: An unfinished sandbag wall.
+  parent: BarricadeSandbags
+  name: sandbag wall
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/barricades.rsi
+      state: sandbag_33%
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Barricade
+      blocking: 33
+# snow wall
+- type: entity
+  id: BarricadeSnowwall
+  description: A snowwall barricade.
+  parent: BarricadeSandbags
+  name: snow wall
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/barricades.rsi
+      state: snow_wall
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Damageable
+      damageModifierSet: Snow
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 110
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  id: BarricadeSnowwallMedium
+  description: An unfinished snow barricade.
+  parent: BarricadeSnowwall
+  name: snow wall
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/barricades.rsi
+      state: snow_wall_66%
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Barricade
+      blocking: 50
+- type: entity
+  id: BarricadeSnowwallLow
+  description: An unfinished snow barricade.
+  parent: BarricadeSnowwall
+  name: snow wall
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/barricades.rsi
+      state: snow_wall_33%
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Barricade
+      blocking: 33
+
+# dirt wall
+- type: entity
+  id: BarricadeDirtwall
+  description: A dirt barricade.
+  parent: BarricadeSandbags
+  name: dirt wall
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/barricades.rsi
+      state: dirt_wall
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Damageable
+      damageModifierSet: Inert
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 130
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Construction
+      graph: BarricadeDirtwall
+      agemin: 0
+      agemax: 8
+      node: end
+- type: entity
+  id: BarricadeDirtwallMedium
+  description: An unfinished dirt barricade.
+  parent: BarricadeDirtwall
+  name: dirt wall
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/barricades.rsi
+      state: dirt_wall_66%
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Barricade
+      blocking: 50
+
+- type: entity
+  id: BarricadeDirtwallLow
+  description: An unfinished dirt barricade.
+  parent: BarricadeDirtwall
+  name: dirt wall
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/barricades.rsi
+      state: dirt_wall_33%
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Barricade
+      blocking: 33
+
+- type: entity
+  id: BarricadeStonewall
+  description: A low stone wall.
+  parent: BarricadeSandbags
+  name: stone barricade
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/barricades.rsi
+      state: rock_barricade
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Damageable
+      damageModifierSet: Rock
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 200
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Construction
+      graph: BarricadeStonewall
+      agemin: 0
+      agemax: 8
+      node: end
+
+- type: entity
+  id: BarricadeSandstonewall
+  description: A low sandstone wall.
+  parent: BarricadeSandbags
+  name: sandstone barricade
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/barricades.rsi
+      state: sandstone_barricade
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Damageable
+      damageModifierSet: Rock
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 200
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]

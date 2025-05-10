@@ -143,3 +143,29 @@
   color: "#a36156"
   roles:
     - Nomad
+
+- type: department
+  id: DepFrench
+  name: department-French
+  description: department-French-description
+  color: "#6490ce"
+  roles:
+    - FrenchLord
+    - FrenchKnight
+    - FrenchSwordsman
+    - FrenchSpearman
+    - FrenchRanged
+    - FrenchMedic
+
+- type: department
+  id: DepEnglish
+  name: department-English
+  description: department-English-description
+  color: "#dc3f3f"
+  roles:
+    - EnglishLord
+    - EnglishKnight
+    - EnglishSwordsman
+    - EnglishSpearman
+    - EnglishRanged
+    - EnglishMedic

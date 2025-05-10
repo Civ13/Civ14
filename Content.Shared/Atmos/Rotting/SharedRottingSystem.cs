@@ -35,7 +35,6 @@ public abstract class SharedRottingSystem : EntitySystem
     {
         component.RotNextUpdate = _timing.CurTime + component.PerishUpdateRate;
     }
-
     private void OnMobStateChanged(EntityUid uid, PerishableComponent component, MobStateChangedEvent args)
     {
         if (args.NewMobState != MobState.Dead && args.OldMobState != MobState.Dead)
@@ -170,6 +169,6 @@ public abstract class SharedRottingSystem : EntitySystem
         if (!Resolve(uid, ref comp, ref perishable))
             return 0;
 
-        return (int) (comp.TotalRotTime.TotalSeconds / perishable.RotAfter.TotalSeconds);
+        return (int)(comp.TotalRotTime.TotalSeconds / perishable.RotAfter.TotalSeconds);
     }
 }

@@ -72,10 +72,10 @@
   agemin: 0
   agemax: 8
   placementMode: SnapgridCenter
-
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
+
 - type: constructionGraph
   id: StrawWall
   start: start
@@ -89,6 +89,35 @@
               doAfter: 5
     - node: end
       entity: StrawWall
+
+- type: construction
+  name: medieval wall
+  id: MedievalWall
+  graph: MedievalWall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A medieval wood and lime washed plaster wall.
+  icon:
+    sprite: Civ14/Structures/Walls/medieval.rsi
+    state: full
+  objectType: Structure
+  agemin: 0
+  agemax: 8
+  placementMode: SnapgridCenter
+- type: constructionGraph
+  id: MedievalWall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 5
+              doAfter: 5
+    - node: end
+      entity: MedievalWall
 
 - type: constructionGraph
   id: LogWall

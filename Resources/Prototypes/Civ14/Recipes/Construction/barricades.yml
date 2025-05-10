@@ -1,0 +1,65 @@
+- type: construction
+  name: stone barricade
+  id: BarricadeStonewall
+  graph: BarricadeStonewall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A low stone wall.
+  icon:
+    sprite: Civ14/Structures/barricades.rsi
+    state: rock_barricade
+  objectType: Structure
+  agemin: 0
+  agemax: 8
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: constructionGraph
+  id: BarricadeStonewall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Stone
+              amount: 3
+              doAfter: 7
+    - node: end
+      entity: BarricadeStonewall
+
+- type: construction
+  name: dirt wall
+  id: BarricadeDirtwall
+  graph: BarricadeDirtwall
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A dirt barricade.
+  icon:
+    sprite: Civ14/Structures/barricades.rsi
+    state: dirt_wall
+  objectType: Structure
+  agemin: 0
+  agemax: 8
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: constructionGraph
+  id: BarricadeDirtwall
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Dirt
+              amount: 3
+              doAfter: 7
+    - node: end
+      entity: BarricadeDirtwall

@@ -1,9 +1,12 @@
 ﻿[game]
 # Straight in-game baby
-lobbyenabled = false
+lobbyenabled = true
 # Dev map for faster loading & convenience
-map = "Nomads"
+map = "Camp"
 role_timers = false
+lobbyduration = 15
+disallowlatejoins = false
+defaultpreset = "tdm"
 
 [events]
 enabled = false
@@ -37,3 +40,6 @@ see_own_notes = true
 
 [net]
 tickrate = 20
+
+[server]
+lobby_right_panel_width = 500

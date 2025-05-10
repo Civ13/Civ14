@@ -1,43 +1,75 @@
 {
-  "version": 1,
-  "license": "AGPLv3",
-  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
-  "size": {
-    "x": 64,
-    "y": 32
-  },
-  "states": [
-    {
-      "name": "elevator_door"
+    "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+    "size": {
+        "x": 64,
+        "y": 32
     },
-    {
-      "name": "elevator_dooropen"
-    },
-    {
-      "name": "elevator_dooropening",
-      "delays": [
-        [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "elevator_doorclosing",
-      "delays": [
-        [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ]
-      ]
-    }
-  ]
+    "states": [
+        {
+            "name": "elevator_door"
+        },
+        {
+            "name": "elevator_dooropen"
+        },
+        {
+            "name": "elevator_dooropening",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "elevator_doorclosing",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "gate_large_closed"
+        },
+        {
+            "name": "gate_large_open"
+        },
+        {
+            "name": "gate_large_closing",
+            "delays": [
+                [
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.6
+                ]
+            ]
+        },
+        {
+            "name": "gate_large_opening",
+            "delays": [
+                [
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.6
+                ]
+            ]
+        }
+    ]
 }

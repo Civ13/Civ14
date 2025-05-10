@@ -1139,21 +1139,52 @@
       sprite: Civ14/Clothing/exported/ties/customtabard.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/customtabard.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
     - type: Construction
       graph: civ13_accessory_tabard
       node: end
       cost: 2
       material: Cloth
       time: 3
+- type: entity
+  name: red tabard
+  parent: ClothingNeckBase
+  id: civ13_accessory_tabard_red
+  description: A cloth tabard, dyed red.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/tabard_red.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/tabard_red.rsi
+- type: entity
+  name: red and yellow tabard
+  parent: ClothingNeckBase
+  id: civ13_accessory_tabard_red_yellow
+  description: A cloth tabard, dyed red and yellow.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/tabard_red_yellow.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/tabard_red_yellow.rsi
+- type: entity
+  name: blue tabard
+  parent: ClothingNeckBase
+  id: civ13_accessory_tabard_blue
+  description: A cloth tabard, dyed blue.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/tabard_blue.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/tabard_blue.rsi
+- type: entity
+  name: blue and white tabard
+  parent: ClothingNeckBase
+  id: civ13_accessory_tabard_blue_white
+  description: A cloth tabard, dyed blue and white.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/tabard_blue_white.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/tabard_blue_white.rsi
 - type: entity
   name: apron
   parent: ClothingNeckBase
@@ -5890,8 +5921,8 @@
         coefficients:
           Blunt: 0.5
           Slash: 0.5
-          Piercing: 0.92
-          Arrow: 0.65
+          Piercing: 0.7
+          Arrow: 0.7
           Heat: 0.85
     - type: Construction
       graph: civ13_accessory_chainmail

@@ -41,14 +41,38 @@
 - type: damageModifierSet
   id: Rock
   coefficients:
-    Structural: 4
-    Blunt: 0.5
-    Slash: 0.25
-    Piercing: 0.75
-    Heat: 0.9
+    Structural: 3
+    Blunt: 0.1
+    Slash: 0.05
+    Piercing: 0.15
+    Heat: 0.1
+  flatReductions:
+    Blunt: 5
+    Slash: 5
+
+#this is for sandbags and the like
+- type: damageModifierSet
+  id: Inert
+  coefficients:
+    Structural: 0.5
+    Blunt: 0.3
+    Slash: 1
+    Piercing: 0.2
+    Heat: 1
   flatReductions:
     Blunt: 5
 
+- type: damageModifierSet
+  id: Snow
+  coefficients:
+    Structural: 0.7
+    Blunt: 0.25
+    Slash: 35
+    Piercing: 0.5
+    Heat: 4
+  flatReductions:
+    Blunt: 5
+    Slash: 5
 - type: damageModifierSet
   id: PerforatedMetallic
   coefficients:
@@ -137,13 +161,14 @@
 - type: damageModifierSet
   id: Wood
   coefficients:
-    Blunt: 0.5
-    Slash: 2.0
-    Piercing: 1.0
+    Blunt: 0.1
+    Slash: 0.3
+    Piercing: 0.2
     Heat: 2.0
     Structural: 0.5
   flatReductions:
     Blunt: 5
+    Piercing: 5
 
 - type: damageModifierSet
   id: Web # Very flammable, can be easily hacked and slashed, but shooting or hitting it is another story.

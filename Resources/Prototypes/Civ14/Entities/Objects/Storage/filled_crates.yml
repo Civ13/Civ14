@@ -1,0 +1,10 @@
+- type: entity
+  parent: CrateWood
+  id: CrateWoodArrows
+  name: wood crate
+  suffix: arrows
+  components:
+    - type: StorageFill
+      contents:
+        - id: ArrowIron
+          amount: 12

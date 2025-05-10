@@ -3590,7 +3590,7 @@
       time: 5
 - type: entity
   name: green plated armor
-  parent: ClothingOuterBase
+  parent: civ13_suit_plated_armor
   id: civ13_suit_green_plated_armor
   description: A thick, expensive iron armor, covering most of the body.
   components:
@@ -3598,21 +3598,29 @@
       sprite: Civ14/Clothing/exported/suits/knight_green.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/knight_green.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.15
-          Slash: 0.15
-          Piercing: 0.9
-          Arrow: 0.1
-          Heat: 0.85
-    - type: Construction
+- type: entity
+  name: red plated armor
+  parent: civ13_suit_plated_armor
 
-      graph: civ13_suit_green_plated_armor
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+  id: civ13_suit_red_plated_armor
+  description: A thick, expensive iron armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/knight_red.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/knight_red.rsi
+- type: entity
+  name: blue plated armor
+  parent: civ13_suit_plated_armor
+
+  id: civ13_suit_blue_plated_armor
+  description: A thick, expensive iron armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/knight_blue.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/knight_blue.rsi
+
 - type: entity
   name: seal lifevest
   parent: ClothingOuterBase
@@ -4457,6 +4465,8 @@
       sprite: Civ14/Clothing/exported/suits/chainmail.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/chainmail.rsi
+    - type: STWeight
+      self: 8
     - type: Armor
       modifiers:
         coefficients:
@@ -4727,6 +4737,8 @@
       sprite: Civ14/Clothing/exported/suits/imperial_breastplate.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/imperial_breastplate.rsi
+    - type: STWeight
+      self: 8
     - type: Armor
       modifiers:
         coefficients:
@@ -4781,13 +4793,15 @@
       sprite: Civ14/Clothing/exported/suits/knight_simple.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/knight_simple.rsi
+    - type: STWeight
+      self: 46
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.15
-          Slash: 0.15
-          Piercing: 0.9
-          Arrow: 0.1
+          Blunt: 0.3
+          Slash: 0.3
+          Piercing: 0.4
+          Arrow: 0.15
           Heat: 0.85
     - type: Construction
 
@@ -4823,7 +4837,7 @@
       time: 5
 - type: entity
   name: templar plated armor
-  parent: ClothingOuterBase
+  parent: civ13_suit_plated_armor
   id: civ13_suit_templar_plated_armor
   description: >-
     A thick, expensive iron armor, covering most of the body. This one is
@@ -4833,16 +4847,7 @@
       sprite: Civ14/Clothing/exported/suits/knight_templar.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/knight_templar.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.15
-          Slash: 0.15
-          Piercing: 0.9
-          Arrow: 0.1
-          Heat: 0.85
     - type: Construction
-
       graph: civ13_suit_templar_plated_armor
       node: end
       cost: 5
@@ -4858,6 +4863,8 @@
       sprite: Civ14/Clothing/exported/suits/bronze_chestplate.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/bronze_chestplate.rsi
+    - type: STWeight
+      self: 8
     - type: Armor
       modifiers:
         coefficients:
@@ -4877,6 +4884,8 @@
       sprite: Civ14/Clothing/exported/suits/iron_chestplate.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/iron_chestplate.rsi
+    - type: STWeight
+      self: 8
     - type: Armor
       modifiers:
         coefficients:
@@ -4902,6 +4911,8 @@
       sprite: Civ14/Clothing/exported/suits/leather_armor.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/leather_armor.rsi
+    - type: STWeight
+      self: 4
     - type: Armor
       modifiers:
         coefficients:
@@ -4910,12 +4921,32 @@
           Arrow: 0.85
           Heat: 0.85
     - type: Construction
-
       graph: civ13_suit_leather_armor
       node: end
       cost: 6
       material: Leather
       time: 13
+
+- type: entity
+  name: gambeson
+  parent: ClothingOuterBase
+  id: civ13_suit_gambeson
+  description: A thick, padded jacket made of layered cloth, offering basic protection for infantry.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/gambeson.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/gambeson.rsi
+    - type: STWeight
+      self: 6
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.65
+          Slash: 0.65
+          Arrow: 0.80
+          Heat: 0.85
+
 - type: entity
   name: hauberk
   parent: ClothingOuterBase
@@ -4928,6 +4959,8 @@
       sprite: Civ14/Clothing/exported/suits/hauberk.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/hauberk.rsi
+    - type: STWeight
+      self: 9
     - type: Armor
       modifiers:
         coefficients:
@@ -5009,6 +5042,8 @@
       sprite: Civ14/Clothing/exported/suits/imperial_chinese.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/imperial_chinese.rsi
+    - type: STWeight
+      self: 12
     - type: Armor
       modifiers:
         coefficients:
@@ -5054,7 +5089,7 @@
       time: 14
 - type: entity
   name: royal plated armor
-  parent: ClothingOuterBase
+  parent: civ13_suit_plated_armor
   id: civ13_suit_royal_plated_armor
   description: A thick, expensive iron armor, covering most of the body.
   components:
@@ -5062,20 +5097,11 @@
       sprite: Civ14/Clothing/exported/suits/royalplate.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/royalplate.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.15
-          Slash: 0.15
-          Piercing: 0.8
-          Arrow: 0
-          Heat: 0.85
     - type: Construction
-
       graph: civ13_suit_royal_plated_armor
       node: end
       cost: 5
-      material: Cloth
+      material: Steel
       time: 5
 - type: entity
   name: leather samurai armor
@@ -5363,7 +5389,7 @@
       material: Cloth
       time: 5
 - type: entity
-  name: plated armor
+  name: ork plated armor
   parent: ClothingOuterBase
   id: civ13_suit_plated_armor_1
   description: A cheap dark iron armor.
@@ -5372,6 +5398,8 @@
       sprite: Civ14/Clothing/exported/suits/ork_plate_elite.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/ork_plate_elite.rsi
+    - type: STWeight
+      self: 28
     - type: Armor
       modifiers:
         coefficients:
@@ -5382,14 +5410,13 @@
           Heat: 0.85
           Radiation: 0.55
     - type: Construction
-
       graph: civ13_suit_plated_armor_1
       node: end
       cost: 5
       material: Cloth
       time: 5
 - type: entity
-  name: plated armor
+  name: heavy ork plated armor
   parent: ClothingOuterBase
   id: civ13_suit_plated_armor_1_2
   description: A cheap dark iron armor.
@@ -5398,6 +5425,8 @@
       sprite: Civ14/Clothing/exported/suits/ork_plate_commander.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/ork_plate_commander.rsi
+    - type: STWeight
+      self: 30
     - type: Armor
       modifiers:
         coefficients:
@@ -5408,7 +5437,6 @@
           Heat: 0.85
           Radiation: 0.55
     - type: Construction
-
       graph: civ13_suit_plated_armor_1_2
       node: end
       cost: 5

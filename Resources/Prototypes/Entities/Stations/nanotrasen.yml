@@ -16,3 +16,17 @@
   categories: [HideSpawnMenu]
   components:
     - type: Transform
+
+- type: entity
+  id: StandardStationTDM
+  parent:
+    - BaseStation
+    - BaseStationJobsSpawning
+    - BaseStationRecords
+  categories: [HideSpawnMenu]
+  components:
+    - type: Transform
+    - type: NpcFactionMember
+      factions:
+        - France
+        - England

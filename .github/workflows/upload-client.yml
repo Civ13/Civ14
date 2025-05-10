@@ -23,8 +23,7 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Setup Submodule
-        run: |
-          git submodule update --init --recursive
+        run: git submodule update --init --recursive
 
       - name: Pull engine updates
         uses: space-wizards/submodule-dependency@v0.1.5
@@ -39,6 +38,7 @@ jobs:
 
       - name: Package Client
         run: dotnet build -c Release -r win-x64 Content.Client
+
       - name: Package Server
         run: dotnet build -c Release -r win-x64 Content.Server
 
@@ -52,31 +52,31 @@ jobs:
       - name: Update Target Repo
         run: |
           echo "--- Updating Client ---"
-          rsync -av --delete --update ./bin/Content.Client/win-x64/ target-repo/Content.Client/
+          rsync -avc --delete ./bin/Content.Client/win-x64/ target-repo/Content.Client/
           cd target-repo/Content.Client
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add .
-          # Check if there are staged changes. git diff exits 0 if no changes, 1 if changes.
-          if git diff --staged --quiet; then
-            echo "No client changes to commit."
-          else
+          if ! git diff --staged --quiet; then
             git commit -m "Update compiled client from Civ14"
             git push
+          else
+            echo "No client changes to commit."
           fi
-          # Go back to the workspace root before processing the server
           cd ${{ github.workspace }}
 
           echo "--- Updating Server ---"
-          rsync -av --delete --update ./bin/Content.Server/win-x64/ target-repo/Content.Server/
+          rsync -avc --delete ./bin/Content.Server/win-x64/ target-repo/Content.Server/
           cd target-repo/Content.Server
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add .
-          # Check if there are staged changes
-          if git diff --staged --quiet; then
-            echo "No server changes to commit."
-          else
+          if ! git diff --staged --quiet; then
             git commit -m "Update compiled server from Civ14"
             git push
+          else
+            echo "No server changes to commit."
           fi
+
+          cd ${{ github.workspace }}
+          true  # Prevent non-zero exit from halting the workflow

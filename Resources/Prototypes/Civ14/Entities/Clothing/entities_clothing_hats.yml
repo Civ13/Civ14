@@ -2282,13 +2282,15 @@
       sprite: Civ14/Clothing/exported/hats/bascinet_o.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/bascinet_o.rsi
+    - type: STWeight
+      self: 8
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30
-          Slash: 0.30
-          Piercing: 0.9
-          Arrow: 0.1
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.7
+          Arrow: 0.6
           Heat: 0.85
     - type: Construction
       graph: civ13_head_hounskull_bascinet
@@ -2306,13 +2308,15 @@
       sprite: Civ14/Clothing/exported/hats/knight_simple.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/knight_simple.rsi
+    - type: STWeight
+      self: 8
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30
-          Slash: 0.30
+          Blunt: 0.70
+          Slash: 0.70
           Piercing: 0.9
-          Arrow: 0.1
+          Arrow: 0.5
           Heat: 0.85
 - type: entity
   name: protective conical helmet
@@ -2324,13 +2328,15 @@
       sprite: Civ14/Clothing/exported/hats/medieval_helmet1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/medieval_helmet1.rsi
+    - type: STWeight
+      self: 6
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5
-          Slash: 0.5
+          Blunt: 0.8
+          Slash: 0.8
           Piercing: 0.95
-          Arrow: 0.6
+          Arrow: 0.75
           Heat: 0.85
 - type: entity
   name: kettle helmet
@@ -2342,13 +2348,15 @@
       sprite: Civ14/Clothing/exported/hats/medieval_helmet2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/medieval_helmet2.rsi
+    - type: STWeight
+      self: 5
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
-          Arrow: 0.65
+          Arrow: 0.75
           Heat: 0.85
 - type: entity
   name: conical helmet
@@ -2360,13 +2368,15 @@
       sprite: Civ14/Clothing/exported/hats/medieval_helmet3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/medieval_helmet3.rsi
+    - type: STWeight
+      self: 5
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.6
-          Slash: 0.6
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
-          Arrow: 0.7
+          Arrow: 0.75
           Heat: 0.85
 - type: entity
   name: coif wrapped mamluk helmet
@@ -2396,13 +2406,15 @@
       sprite: Civ14/Clothing/exported/hats/coif_helmet.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/coif_helmet.rsi
+    - type: STWeight
+      self: 8
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
-          Piercing: 0.9
-          Arrow: 0.55
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.8
+          Arrow: 0.65
           Heat: 0.85
 - type: entity
   name: purple arabic turban helmet
@@ -7801,7 +7813,7 @@
   name: brown noble hat
   parent: ClothingHeadBase
   id: civ13_head_brown_noble_hat
-  description: ""
+  description: "A medieval brown cap."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/noblehat1.rsi
@@ -7815,10 +7827,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black noble hat
+  name: black cap
   parent: ClothingHeadBase
   id: civ13_head_black_noble_hat
-  description: ""
+  description: "A medieval black cap."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/hats/noblehat2.rsi

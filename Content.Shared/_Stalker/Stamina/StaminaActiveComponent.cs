@@ -37,4 +37,5 @@ public sealed partial class StaminaActiveComponent : Component
     /// Nothing will happen if you'll set it manually.
     /// </summary>
     public bool Slowed = false;
+
 }

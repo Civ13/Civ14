@@ -20,7 +20,9 @@
     - type: Tool
       qualities:
         - Slicing
-
+    - type: Clothing
+      sprite: Civ14/Weapons/armingsword.rsi
+      slots: [Belt]
 - type: entity
   name: captain's sabre
   parent: [BaseSword, BaseCommandContraband]

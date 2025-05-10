@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created for Civ14 - Taislin",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "blue"
+        },
+        {
+            "name": "green"
+        },
+        {
+            "name": "pink"
+        },
+        {
+            "name": "red"
+        },
+        {
+            "name": "gracewall"
+        },
+        {
+            "name": "capture_red"
+        },
+        {
+            "name": "capture_green"
+        },
+        {
+            "name": "capture_blue"
+        }
+    ]
+}

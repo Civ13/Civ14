@@ -76,8 +76,23 @@
       angle: 0
       damage:
         types:
-          Piercing: 22
-
+          Piercing: 20
+- type: entity
+  parent: BaseArrow
+  id: ArrowIron
+  name: arrow
+  description: A basic arrow with an iron tip.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/weapons.rsi
+      state: arrow_iron
+    - type: ThrowingAngle
+      angle: 225
+    - type: Projectile
+      angle: 0
+      damage:
+        types:
+          Piercing: 25
 - type: entity
   parent: BaseArrow
   id: ArrowImprovised

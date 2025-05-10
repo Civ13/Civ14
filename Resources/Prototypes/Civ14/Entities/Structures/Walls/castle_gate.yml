@@ -1,0 +1,133 @@
+- type: entity
+  id: CastleGate
+  description: A castle gate with metal bars.
+  parent: BaseBarricade
+  name: castle gate
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Civ14/Structures/Doors/doors_64x32.rsi
+      state: gate_large_closed
+      drawdepth: Overdoors
+      noRot: true
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          density: 1000
+          shape: !type:PhysShapeAabb
+            bounds: "-1.49,-0.49,1.49,0.49"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+    - type: Damageable
+      damageModifierSet: Rock
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Barricade
+      blocking: 80
+    - type: AtmosExposed
+
+- type: entity
+  id: CastleGateSmallOpen
+  description: A castle gate with metal bars.
+  parent: BaseBarricade
+  name: castle gate
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Civ14/Structures/Doors/material_doors.rsi
+      state: gate1
+      drawdepth: Overdoors
+      noRot: true
+    - type: Fixtures
+      fixtures:
+        fix1:
+          density: 1000
+          shape: !type:PhysShapeAabb
+            bounds: "-1.49,-0.49,1.49,0.49"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+          hard: false
+    - type: Barricade
+      blocking: 15
+
+- type: entity
+  id: CastleSmallGate
+  description: A castle gate with metal bars.
+  parent: BaseBarricade
+  name: castle gate
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Civ14/Structures/Doors/material_doors.rsi
+      state: gate0
+      drawdepth: Overdoors
+      noRot: true
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          density: 1000
+          shape: !type:PhysShapeAabb
+            bounds: "-0.49,-0.49,0.49,0.49"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+    - type: Damageable
+      damageModifierSet: Rock
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Barricade
+      blocking: 80
+    - type: AtmosExposed
+
+- type: entity
+  id: CastleGateOpen
+  description: A castle gate with metal bars.
+  parent: BaseBarricade
+  name: castle gate
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Civ14/Structures/Doors/doors_64x32.rsi
+      state: gate_large_open
+      drawdepth: Overdoors
+      noRot: true
+    - type: Fixtures
+      fixtures:
+        fix1:
+          density: 1000
+          shape: !type:PhysShapeAabb
+            bounds: "-0.49,-0.49,0.49,0.49"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+          hard: false
+    - type: Barricade
+      blocking: 15

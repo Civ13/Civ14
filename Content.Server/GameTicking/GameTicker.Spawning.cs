@@ -21,6 +21,9 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
+using Robust.Shared.Timing;
+using Content.Server.GameTicking.Rules.Components;
+using Content.Shared.GameTicking.Components;
 
 namespace Content.Server.GameTicking
 {
@@ -149,9 +152,55 @@ namespace Content.Server.GameTicking
                     return;
             }
 
+            foreach (var tracker in EntityQuery<RespawnTrackerComponent>())
+            {
+                foreach (var (player1, time) in tracker.RespawnQueue)
+                {
+                    if (player1 == player.UserId)
+                    {
+                        if (_gameTiming.CurTime < time)
+                        {
+                            _chatManager.DispatchServerMessage(player,
+                                Loc.GetString("rule-respawn-blocked", ("seconds", time.TotalSeconds - _gameTiming.CurTime.TotalSeconds)));
+                            return;
+                        }
+                    }
+                }
+            }
+            //if TDM, check if the teams are balanced
+            var factionCount = GetPlayerFactionCounts();
+            if (factionCount != null && factionCount.Count > 1)
+            {
+                //get the faction of the selected job
+                if (jobId != null && _prototypeManager.TryIndex<JobPrototype>(jobId, out var job))
+                {
+                    var selectedFaction = job.Faction;
+                    var currentCount = 0;
+                    var minCount = 1000;
+                    foreach (var fact in factionCount)
+                    {
+                        if (fact.Key == selectedFaction)
+                        {
+                            currentCount = fact.Value;
+
+                        }
+                        else if (fact.Key != selectedFaction && fact.Value < minCount)
+                        {
+                            minCount = fact.Value;
+                        }
+                    }
+                    if (currentCount > minCount)
+                    {
+                        //if the current faction is greater than the minimum faction, block the respawn
+                        _chatManager.DispatchServerMessage(player,
+                            Loc.GetString("rule-respawn-autobalance", ("this", currentCount), ("other", minCount)));
+                        return;
+                    }
+                }
+
+            }
             SpawnPlayer(player, character, station, jobId, lateJoin, silent);
         }
-
         private void SpawnPlayer(ICommonSession player,
             HumanoidCharacterProfile character,
             EntityUid station,
@@ -212,9 +261,12 @@ namespace Content.Server.GameTicking
                     JoinAsObserver(player);
                 }
 
+                if (LobbyEnabled)
+                {
+                    PlayerJoinLobby(player);
+                }
                 var evNoJobs = new NoJobsAvailableSpawningEvent(player); // Used by gamerules to wipe their antag slot, if they got one
                 RaiseLocalEvent(evNoJobs);
-
                 _chatManager.DispatchServerMessage(player,
                     Loc.GetString("game-ticker-player-no-jobs-available-when-joining"));
                 return;
@@ -239,7 +291,7 @@ namespace Content.Server.GameTicking
 
             _mind.TransferTo(newMind, mob);
 
-            _roles.MindAddJobRole(newMind, silent: silent, jobPrototype:jobId);
+            _roles.MindAddJobRole(newMind, silent: silent, jobPrototype: jobId);
             var jobName = _jobs.MindTryGetJobName(newMind);
             _admin.UpdatePlayerList(player);
 
@@ -332,7 +384,7 @@ namespace Content.Server.GameTicking
         /// <param name="station">The station they're spawning on</param>
         /// <param name="jobId">An optional job for them to spawn as</param>
         /// <param name="silent">Whether or not the player should be greeted upon joining</param>
-        public void MakeJoinGame(ICommonSession player, EntityUid station, string? jobId = null, bool silent = false)
+        public void MakeJoinGame(ICommonSession player, EntityUid station, string? jobId = null, bool silent = true)
         {
             if (!_playerGameStatuses.ContainsKey(player.UserId))
                 return;
@@ -427,7 +479,7 @@ namespace Content.Server.GameTicking
                 // Ideally engine would just spawn them on grid directly I guess? Right now grid traversal is handling it during
                 // update which means we need to add a hack somewhere around it.
                 var spawn = _robustRandom.Pick(_possiblePositions);
-                var toMap = spawn.ToMap(EntityManager, _transform);
+                var toMap = _transform.ToMapCoordinates(spawn);
 
                 if (_mapManager.TryFindGridAt(toMap, out var gridUid, out _))
                 {

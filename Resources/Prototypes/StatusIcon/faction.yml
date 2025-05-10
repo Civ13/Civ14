@@ -42,18 +42,7 @@
     state: Syndicate
 
 - type: factionIcon
-  id: NomadsFaction1
-  priority: 0
-  locationPreference: Right
-  showTo:
-    components:
-      - ShowAntagIcons
-  icon:
-    sprite: /Textures/Interface/Misc/civ_hud.rsi
-    state: civ1
-
-- type: factionIcon
-  id: NomadsFaction2
+  id: NomadsFaction
   priority: 0
   locationPreference: Right
   showTo:
@@ -64,7 +53,29 @@
     state: civ2
 
 - type: factionIcon
-  id: NomadsFaction3
+  id: Nomads1Faction
+  priority: 0
+  locationPreference: Right
+  showTo:
+    components:
+      - ShowAntagIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud.rsi
+    state: civ1
+
+- type: factionIcon
+  id: Nomads2Faction
+  priority: 0
+  locationPreference: Right
+  showTo:
+    components:
+      - ShowAntagIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud.rsi
+    state: civ2
+
+- type: factionIcon
+  id: Nomads3Faction
   priority: 0
   locationPreference: Right
   showTo:
@@ -75,7 +86,7 @@
     state: civ3
 
 - type: factionIcon
-  id: NomadsFaction4
+  id: Nomads4Faction
   priority: 0
   locationPreference: Right
   showTo:
@@ -86,7 +97,7 @@
     state: civ4
 
 - type: factionIcon
-  id: NomadsFaction5
+  id: Nomads5Faction
   priority: 0
   locationPreference: Right
   showTo:
@@ -97,7 +108,7 @@
     state: civ5
 
 - type: factionIcon
-  id: NomadsFaction6
+  id: Nomads6Faction
   priority: 0
   locationPreference: Right
   showTo:

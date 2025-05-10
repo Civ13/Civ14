@@ -75,6 +75,48 @@
             High: { visible: true, state: s_brazier2 }
 
 - type: entity
+  id: StovePotbelly
+  parent: Brazier
+  name: potbelly stove
+  description: An iron stove.
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/kitchen.rsi
+      layers:
+        - state: oven_off
+        - map: ["enum.EntityHeaterVisuals.Setting"]
+          shader: unshaded
+          visible: false
+    - type: PointLight
+      enabled: false
+      radius: 4
+      energy: 5
+      color: "#E25822"
+    - type: HeatEmitter
+      heatingRate: 12
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 250
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Construction
+      graph: StovePotbelly
+      node: end
+      agemin: 2
+      agemax: 8
+    - type: GenericVisualizer
+      visuals:
+        enum.EntityHeaterVisuals.Setting:
+          enum.EntityHeaterVisuals.Setting:
+            Off: { visible: false, state: oven_off }
+            Low: { visible: true, state: oven_on }
+            Medium: { visible: true, state: oven_on }
+            High: { visible: true, state: oven_on }
+
+- type: entity
   name: tiki torch
   parent: Torch
   id: TikiTorch
@@ -127,7 +169,55 @@
       thresholds:
         - trigger: !type:DamageTrigger
             damage: 40
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
+- type: entity
+  name: iron lantern
+  parent: Torch
+  id: IronLantern
+  description: A fueled iron lantern.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/lighting.rsi
+      layers:
+        - map: [enum.ExpendableLightVisualLayers.Base]
+          state: lantern
+        - map: [enum.ExpendableLightVisualLayers.Glow]
+          state: lantern-on
+          visible: true
+          shader: unshaded
+    - type: Icon
+      sprite: Civ14/Objects/lighting.rsi
+      state: lantern
+    - type: Construction
+      graph: IronLantern
+      node: end
+    - type: PointLight
+      enabled: true
+      color: "#E25822"
+      radius: 4.0
+      energy: 5.0
+      netsync: true
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.25,-0.25,0.25,0.25"
+          density: 190
+          mask:
+            - MachineMask
+          layer:
+            - MachineLayer
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 70
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]

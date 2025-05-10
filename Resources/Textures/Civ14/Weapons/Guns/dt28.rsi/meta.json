@@ -8,7 +8,8 @@
   },
   "states": [
     {
-      "name": "mag-0"
+      "name": "mag-0",
+      "directions": 1
     },
     {
       "name": "dt28",

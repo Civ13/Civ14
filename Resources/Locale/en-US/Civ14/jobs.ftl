@@ -1,0 +1,39 @@
+job-supervisors-nobody = nobody, you are the highest ranking person in your faction
+job-supervisors-sgt = your Sargeant
+job-supervisors-officer = any Officer
+job-supervisors-squadleader = your Squad Leader
+job-supervisors-lord = your Lord
+
+job-name-commander = Commander
+job-name-designated-marksman = Designated Marksman
+job-name-i-cpl = Corporal
+job-name-i-cpt = Captain
+job-name-i-lt = Lieutenant
+job-name-i-maj = Major
+job-name-i-sgt = Sergeant
+job-name-i-ssgt = Staff Sergeant
+job-name-medic = Medic
+job-name-mg = Machine Gunner
+job-name-nco = NCO
+job-name-officer = Officer
+job-name-rifleman = Rifleman
+job-name-soldier = Soldier
+
+job-name-infantry-sword = Sword Infantry
+job-name-infantry-heavy = Heavy Infantry
+job-name-infantry-spear = Spear Infantry
+job-name-infantry-ranged = Ranged Infantry
+
+job-name-civ-english-lord = Leader
+job-name-civ-english-knight = Heavy Inf.
+job-name-civ-english-man-at-arms = Sword Inf.
+job-name-civ-english-spearman = Spear Inf.
+job-name-civ-english-ranged = Ranged Inf.
+job-name-civ-english-medic = Medic
+
+job-name-civ-french-lord = Leader
+job-name-civ-french-knight = Heavy Inf.
+job-name-civ-french-man-at-arms = Sword Inf.
+job-name-civ-french-spearman = Spear Inf.
+job-name-civ-french-ranged = Ranged Inf.
+job-name-civ-french-medic = Medic

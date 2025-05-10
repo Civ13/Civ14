@@ -14,6 +14,17 @@
       respawnDelay: 300
       deleteBody: false
 
+#shorter respawn timer for TDM
+- type: entity
+  parent: BaseGameRule
+  id: RespawnDeadRuleTDM
+  components:
+    - type: RespawnDeadRule
+      alwaysRespawnDead: true
+    - type: RespawnTracker
+      respawnDelay: 120
+      deleteBody: false
+
 - type: entity
   id: InactivityTimeRestart
   parent: BaseGameRule
@@ -41,3 +52,27 @@
   parent: BaseGameRule
   components:
     - type: SecretRule
+
+- type: entity
+  parent: BaseGameRule
+  id: GracewallRule
+  components:
+    - type: GracewallRule
+
+- type: entity
+  parent: BaseGameRule
+  id: CaptureAreaRule
+  components:
+    - type: CaptureAreaRule
+
+- type: entity
+  id: DeathMatchRule
+  parent: BaseGameRule
+  components:
+    - type: DeathMatchRule
+
+- type: entity
+  id: TeamDeathMatchRule
+  parent: BaseGameRule
+  components:
+    - type: TeamDeathMatchRule

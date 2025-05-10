@@ -7,16 +7,18 @@ using Content.Shared.Damage;
 using Robust.Server.Containers;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Timing;
+using Content.Server.GameTicking;
+using Content.Server.GameTicking.Rules.Components;
+using Content.Shared.GameTicking.Components;
 
 namespace Content.Server.Atmos.Rotting;
-
 public sealed class RottingSystem : SharedRottingSystem
 {
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly AtmosphereSystem _atmosphere = default!;
     [Dependency] private readonly ContainerSystem _container = default!;
     [Dependency] private readonly DamageableSystem _damageable = default!;
-
+    [Dependency] private readonly GameTicker _gameTicker = default!;
     public override void Initialize()
     {
         base.Initialize();
@@ -108,11 +110,26 @@ public sealed class RottingSystem : SharedRottingSystem
                 var damage = rotting.Damage * rotting.RotUpdateRate.TotalSeconds;
                 _damageable.TryChangeDamage(uid, damage, true, false);
             }
-
             if (TryComp<RotIntoComponent>(uid, out var rotInto))
             {
+                var rotStageEnd = rotInto.Stage;
+                //on tdm, faster rotting
+                var query = EntityQueryEnumerator<TeamDeathMatchRuleComponent, GameRuleComponent>();
+                while (query.MoveNext(out var nuid, out var tdm, out var gameRule))
+                {
+                    if (_gameTicker.IsGameRuleActive(nuid, gameRule))
+                    {
+
+                        if (perishable.RotAccumulator.TotalSeconds >= 300)
+                        {
+                            Spawn(rotInto.Entity, xform.Coordinates);
+                            QueueDel(uid);
+                            return;
+                        }
+                    }
+                }
                 var stage = RotStage(uid, rotting, perishable);
-                if (stage >= rotInto.Stage)
+                if (stage >= rotStageEnd)
                 {
                     Spawn(rotInto.Entity, xform.Coordinates);
                     QueueDel(uid);

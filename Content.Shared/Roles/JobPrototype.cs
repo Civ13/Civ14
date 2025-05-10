@@ -36,6 +36,18 @@ namespace Content.Shared.Roles
         public string LocalizedName => Loc.GetString(Name);
 
         /// <summary>
+        ///     The "original" name of the role, untranslated.
+        ///     This would be, for example, a medic for the french faction being called Médecin
+        /// </summary>
+        [DataField("originalName")]
+        public string OriginalName { get; private set; } = string.Empty;
+        /// <summary>
+        ///     The faction this job belongs to. Used to look for spawnpoints.
+        /// </summary>
+        [DataField("faction")]
+        public string Faction { get; private set; } = string.Empty;
+
+        /// <summary>
         ///     The name of this job as displayed to players.
         /// </summary>
         [DataField("description")]
@@ -110,6 +122,9 @@ namespace Content.Shared.Roles
 
         [DataField]
         public ProtoId<StartingGearPrototype>? StartingGear { get; private set; }
+
+        [DataField]
+        public List<ProtoId<StartingGearPrototype>>? RandomStartingGears { get; private set; } = new();
 
         /// <summary>
         /// Use this to spawn in as a non-humanoid (borg, test subject, etc.)

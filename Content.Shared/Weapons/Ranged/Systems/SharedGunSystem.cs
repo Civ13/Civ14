@@ -384,6 +384,20 @@ public abstract partial class SharedGunSystem : EntitySystem
         Shoot(gunUid, gun, new List<(EntityUid? Entity, IShootable Shootable)>(1) { (ammo, shootable) }, fromCoordinates, toCoordinates, out userImpulse, user, throwItems);
     }
 
+    /// <summary>
+    /// Fires one or more projectiles or hitscan shots from a gun using the provided ammo, handling recoil, effects, and impact logic.
+    /// </summary>
+    /// <param name="gunUid">The entity UID of the gun firing.</param>
+    /// <param name="gun">The gun component associated with the firing gun.</param>
+    /// <param name="ammo">A list of ammo entities and their shootable components to be fired.</param>
+    /// <param name="fromCoordinates">The origin coordinates of the shot.</param>
+    /// <param name="toCoordinates">The target coordinates of the shot.</param>
+    /// <param name="userImpulse">Set to true if the user should receive recoil impulse; false if not.</param>
+    /// <param name="user">The entity UID of the user firing the gun, if any.</param>
+    /// <param name="throwItems">If true, items are thrown instead of shot as projectiles.</param>
+    /// <param name="predictedProjectiles">Optional list of predicted projectile indices for client-side prediction.</param>
+    /// <param name="userSession">Optional session of the user for prediction purposes.</param>
+    /// <returns>A list of entity UIDs representing the fired projectiles, or null if none were fired.</returns>
     public List<EntityUid>? Shoot(
         EntityUid gunUid,
         GunComponent gun,
@@ -581,7 +595,7 @@ public abstract partial class SharedGunSystem : EntitySystem
                     {
                         var hitEntity = lastHit.Value;
                         if (hitscan.StaminaDamage > 0f)
-                            _stamina.TakeStaminaDamage(hitEntity, hitscan.StaminaDamage, source: user);
+                            _stamina.TakeStaminaDamage(hitEntity, hitscan.StaminaDamage, source: user, immediate: true);
 
                         var dmg = hitscan.Damage;
 

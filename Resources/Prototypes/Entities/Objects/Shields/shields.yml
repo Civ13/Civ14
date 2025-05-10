@@ -8,6 +8,8 @@
     - type: Sprite
       sprite: Objects/Weapons/Melee/shields.rsi
       state: riot-icon
+    - type: STWeight
+      self: 5
     - type: Item
       sprite: Objects/Weapons/Melee/shields.rsi
       size: Ginormous
@@ -133,7 +135,11 @@
       sprite: Civ14/Weapons/buckler.rsi
       state: buckler-icon
     - type: Item
-      heldPrefix: buckler
+      heldPrefix: null
+      sprite: Civ14/Weapons/buckler.rsi
+    - type: Clothing
+      sprite: Civ14/Weapons/buckler.rsi
+      slots: [Back]
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -163,6 +169,8 @@
               acts: ["Destruction"]
     - type: StaticPrice
       price: 150
+    - type: STWeight
+      self: 5
 
 - type: entity
   name: red wooden buckler
@@ -173,6 +181,12 @@
     - type: Sprite
       sprite: Civ14/Weapons/red_buckler.rsi
       state: icon
+    - type: Clothing
+      sprite: Civ14/Weapons/red_buckler.rsi
+      slots: [Back]
+    - type: Item
+      sprite: Civ14/Weapons/red_buckler.rsi
+      heldPrefix: null
     - type: Construction
       graph: WoodenBuckler
       node: woodenBucklerRed
@@ -186,6 +200,12 @@
     - type: Sprite
       sprite: Civ14/Weapons/blue_buckler.rsi
       state: icon
+    - type: Clothing
+      sprite: Civ14/Weapons/blue_buckler.rsi
+      slots: [Back]
+    - type: Item
+      sprite: Civ14/Weapons/blue_buckler.rsi
+      heldPrefix: null
     - type: Construction
       graph: WoodenBuckler
       node: woodenBucklerBlue

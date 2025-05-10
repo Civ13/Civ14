@@ -84,6 +84,8 @@
     - Dragon
     - AllHostile
     - Wizard
+    - France
+    - England
 
 - type: npcFaction
   id: Xeno
@@ -190,3 +192,32 @@
     - Zombie
     - Revolutionary
     - Predator
+
+## TDM
+- type: npcFaction
+  id: France
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - England
+
+- type: npcFaction
+  id: England
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - France

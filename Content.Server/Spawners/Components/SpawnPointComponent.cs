@@ -1,3 +1,4 @@
+using Content.Shared.NPC.Prototypes;
 using Content.Shared.Roles;
 using Robust.Shared.Prototypes;
 
@@ -8,6 +9,12 @@ public sealed partial class SpawnPointComponent : Component, ISpawnPoint
 {
     [DataField("job_id")]
     public ProtoId<JobPrototype>? Job;
+    /// <summary>
+    /// The faction that this spawn point applies to
+    /// Remember to set SpawnType to Faction!
+    /// </summary>
+    [DataField("faction")]
+    public ProtoId<NpcFactionPrototype>? Faction;
 
     /// <summary>
     /// The type of spawn point
@@ -27,4 +34,5 @@ public enum SpawnPointType
     LateJoin,
     Job,
     Observer,
+    Faction,
 }

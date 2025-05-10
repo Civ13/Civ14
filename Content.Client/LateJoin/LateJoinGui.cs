@@ -10,6 +10,7 @@ using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Content.Shared.StatusIcon;
 using Robust.Client.Console;
+using Robust.Shared.Log;
 using Robust.Client.GameObjects;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
@@ -29,9 +30,8 @@ namespace Content.Client.LateJoin
         [Dependency] private readonly IEntitySystemManager _entitySystem = default!;
         [Dependency] private readonly JobRequirementsManager _jobRequirements = default!;
         [Dependency] private readonly IClientPreferencesManager _preferencesManager = default!;
-
         public event Action<(NetEntity, string)> SelectedId;
-
+        private readonly ISawmill _sawmill;
         private readonly ClientGameTicker _gameTicker;
         private readonly SpriteSystem _sprites;
         private readonly CrewManifestSystem _crewManifest;
@@ -47,6 +47,7 @@ namespace Content.Client.LateJoin
             MinSize = SetSize = new Vector2(360, 560);
             IoCManager.InjectDependencies(this);
             _sprites = _entitySystem.GetEntitySystem<SpriteSystem>();
+            _sawmill = Logger.GetSawmill("latejoin");
             _crewManifest = _entitySystem.GetEntitySystem<CrewManifestSystem>();
             _gameTicker = _entitySystem.GetEntitySystem<ClientGameTicker>();
 
@@ -66,12 +67,13 @@ namespace Content.Client.LateJoin
             SelectedId += x =>
             {
                 var (station, jobId) = x;
-                Logger.InfoS("latejoin", $"Late joining as ID: {jobId}");
+                _sawmill.Info("latejoin", $"Late joining as ID: {jobId}");
                 _consoleHost.ExecuteCommand($"joingame {CommandParsing.Escape(jobId)} {station}");
                 Close();
             };
 
             _gameTicker.LobbyJobsAvailableUpdated += JobsAvailableUpdated;
+            _gameTicker.PlayerFactionCountsUpdated += OnPlayerFactionCountsUpdated;
         }
 
         private void RebuildUI()
@@ -82,7 +84,7 @@ namespace Content.Client.LateJoin
             _jobCategories.Clear();
 
             if (!_gameTicker.DisallowedLateJoin && _gameTicker.StationNames.Count == 0)
-                Logger.Warning("No stations exist, nothing to display in late-join GUI");
+                _sawmill.Warning("No stations exist, nothing to display in late-join GUI");
 
             foreach (var (id, name) in _gameTicker.StationNames)
             {
@@ -208,7 +210,21 @@ namespace Content.Client.LateJoin
                             MinSize = new Vector2(0, 23),
                         });
                     }
-
+                    var currentFactionPlayers = 0;
+                    var currentText = departmentName;
+                    var currentcount = _gameTicker.PlayerFactionCounts;
+                    foreach (var faction in currentcount)
+                    {
+                        if (faction.Key == departmentName)
+                        {
+                            currentFactionPlayers = faction.Value;
+                            break;
+                        }
+                    }
+                    if (currentFactionPlayers > 0)
+                    {
+                        currentText = $"{departmentName} ({currentFactionPlayers} players)";
+                    }
                     category.AddChild(new PanelContainer
                     {
                         Children =
@@ -216,7 +232,7 @@ namespace Content.Client.LateJoin
                             new Label
                             {
                                 StyleClasses = { "LabelBig" },
-                                Text = Loc.GetString("late-join-gui-department-jobs-label", ("departmentName", departmentName))
+                                Text = currentText
                             }
                         }
                     });
@@ -233,7 +249,7 @@ namespace Content.Client.LateJoin
                             Margin = new Thickness(5f, 0, 0, 0)
                         };
 
-                        var jobButton = new JobButton(jobLabel, prototype.ID, prototype.LocalizedName, value);
+                        var jobButton = new JobButton(jobLabel, prototype.ID, prototype.LocalizedName, prototype.OriginalName, value);
 
                         var jobSelector = new BoxContainer
                         {
@@ -272,7 +288,7 @@ namespace Content.Client.LateJoin
                             {
                                 TextureScale = new Vector2(0.4f, 0.4f),
                                 Stretch = TextureRect.StretchMode.KeepCentered,
-                                Texture = _sprites.Frame0(new SpriteSpecifier.Texture(new ("/Textures/Interface/Nano/lock.svg.192dpi.png"))),
+                                Texture = _sprites.Frame0(new SpriteSpecifier.Texture(new("/Textures/Interface/Nano/lock.svg.192dpi.png"))),
                                 HorizontalExpand = true,
                                 HorizontalAlignment = HAlignment.Right,
                             });
@@ -320,7 +336,11 @@ namespace Content.Client.LateJoin
                 }
             }
         }
-
+        private void OnPlayerFactionCountsUpdated()
+        {
+            RebuildUI(); // Rebuild the UI to reflect new faction counts
+        }
+        [Obsolete("Overrides obsolete member 'Control.Dispose(bool)'.")]
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);
@@ -329,6 +349,7 @@ namespace Content.Client.LateJoin
             {
                 _jobRequirements.Updated -= RebuildUI;
                 _gameTicker.LobbyJobsAvailableUpdated -= JobsAvailableUpdated;
+                _gameTicker.PlayerFactionCountsUpdated -= OnPlayerFactionCountsUpdated;
                 _jobButtons.Clear();
                 _jobCategories.Clear();
             }
@@ -340,14 +361,16 @@ namespace Content.Client.LateJoin
         public Label JobLabel { get; }
         public string JobId { get; }
         public string JobLocalisedName { get; }
+        public string OriginalName { get; }
         public int? Amount { get; private set; }
         private bool _initialised = false;
 
-        public JobButton(Label jobLabel, ProtoId<JobPrototype> jobId, string jobLocalisedName, int? amount)
+        public JobButton(Label jobLabel, ProtoId<JobPrototype> jobId, string jobLocalisedName, string originalName, int? amount)
         {
             JobLabel = jobLabel;
             JobId = jobId;
             JobLocalisedName = jobLocalisedName;
+            OriginalName = originalName;
             RefreshLabel(amount);
             AddStyleClass(StyleClassButton);
             _initialised = true;
@@ -360,10 +383,18 @@ namespace Content.Client.LateJoin
                 return;
             }
             Amount = amount;
-
-            JobLabel.Text = Amount != null ?
-                Loc.GetString("late-join-gui-job-slot-capped", ("jobName", JobLocalisedName), ("amount", Amount)) :
-                Loc.GetString("late-join-gui-job-slot-uncapped", ("jobName", JobLocalisedName));
+            if (OriginalName != string.Empty)
+            {
+                JobLabel.Text = Amount != null ?
+                    Loc.GetString("late-join-gui-job-slot-capped", ("originalName", OriginalName), ("jobName", JobLocalisedName), ("amount", Amount)) :
+                    Loc.GetString("late-join-gui-job-slot-uncapped", ("originalName", OriginalName), ("jobName", JobLocalisedName));
+            }
+            else
+            {
+                JobLabel.Text = Amount != null ?
+                    Loc.GetString("late-join-gui-job-slot-capped-no-original", ("jobName", JobLocalisedName), ("amount", Amount)) :
+                    Loc.GetString("late-join-gui-job-slot-uncapped-no-original", ("jobName", JobLocalisedName));
+            }
         }
     }
 }

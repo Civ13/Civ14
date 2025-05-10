@@ -26,6 +26,33 @@
       entity: Brazier
 
 - type: construction
+  name: potbelly stove
+  id: StovePotbelly
+  graph: StovePotbelly
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: An iron stove.
+  icon: { sprite: Civ14/Objects/kitchen.rsi, state: oven_off }
+  objectType: Structure
+  agemin: 2
+  agemax: 8
+
+- type: constructionGraph
+  id: StovePotbelly
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Iron
+              amount: 6
+              doAfter: 10
+    - node: end
+      entity: StovePotbelly
+
+- type: construction
   name: tiki torch
   id: TikiTorch
   graph: TikiTorch
@@ -51,3 +78,30 @@
               doAfter: 8
     - node: end
       entity: TikiTorch
+
+- type: construction
+  name: iron lantern
+  id: IronLantern
+  graph: IronLantern
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  description: A static light source.
+  icon: { sprite: Civ14/Objects/lighting.rsi, state: lantern-on }
+  objectType: Structure
+  agemin: 2
+  agemax: 8
+
+- type: constructionGraph
+  id: IronLantern
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Iron
+              amount: 3
+              doAfter: 8
+    - node: end
+      entity: IronLantern

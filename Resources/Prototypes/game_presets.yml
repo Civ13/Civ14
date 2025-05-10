@@ -4,7 +4,21 @@
     - extended
     - nomads
   name: extended-title
-  showInVote: true #2boring2vote
+  showInVote: true
   description: extended-description
   rules:
     - RespawnDeadRule
+
+- type: gamePreset
+  id: TDM
+  alias:
+    - tdm
+  name: tdm-title
+  showInVote: true
+  description: tdm-description
+  rules:
+    - RespawnDeadRuleTDM
+    - GracewallRule
+    - CaptureAreaRule
+    - TeamDeathMatchRule
+

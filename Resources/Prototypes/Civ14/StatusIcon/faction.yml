@@ -1,0 +1,698 @@
+- type: factionIcon
+  id: AHFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: ah_basic
+
+- type: factionIcon
+  id: ArabFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: arab_basic
+
+- type: factionIcon
+  id: BallasFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: ballas
+
+- type: factionIcon
+  id: BarbarianFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: barbarian_basic
+
+- type: factionIcon
+  id: BlugoslaviaFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: blugoslavia
+
+- type: factionIcon
+  id: BritFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: brit_basic
+
+- type: factionIcon
+  id: ChechenFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: chechen_basic
+
+- type: factionIcon
+  id: DanishFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: danish_basic
+
+- type: factionIcon
+  id: EasternFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: eastern
+
+- type: factionIcon
+  id: EmpireFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: empire
+
+- type: factionIcon
+  id: EnglishFaction
+  priority: 0
+  locationPreference: Right
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+      - ShowFrenchFactionIcons
+      - ShowEnglishFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: eng_basic
+
+- type: factionIcon
+  id: FinnishFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: finnish_basic
+
+- type: factionIcon
+  id: FpFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: fp_basic
+
+- type: factionIcon
+  id: Fr2Faction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: fr2_basic
+
+- type: factionIcon
+  id: FrenchFaction
+  priority: 0
+  locationPreference: Right
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+      - ShowFrenchFactionIcons
+      - ShowEnglishFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: fr_basic
+
+- type: factionIcon
+  id: Ger0Faction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: ger0_basic
+
+- type: factionIcon
+  id: Ger2Faction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: ger2_basic
+
+- type: factionIcon
+  id: Ger3Faction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: ger3_basic
+
+- type: factionIcon
+  id: GerFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: ger_basic
+
+- type: factionIcon
+  id: GreekFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: greek_basic
+
+- type: factionIcon
+  id: HezFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: hez_basic
+
+- type: factionIcon
+  id: IchiwaFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: ichiwa
+
+- type: factionIcon
+  id: IdfFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: idf_basic
+
+- type: factionIcon
+  id: ImpFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: imp_basic
+
+- type: factionIcon
+  id: IndFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: ind_basic
+
+- type: factionIcon
+  id: IsisFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: isis_basic
+
+- type: factionIcon
+  id: ItFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: it_basic
+
+- type: factionIcon
+  id: JpFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: jp_basic
+
+- type: factionIcon
+  id: NlFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: nl_basic
+
+- type: factionIcon
+  id: NlOldFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: nl_old_basic
+
+- type: factionIcon
+  id: NorwayFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: norway_basic
+
+- type: factionIcon
+  id: OtFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: ot_basic
+
+- type: factionIcon
+  id: PirateFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: pirate_basic
+
+- type: factionIcon
+  id: PoliceFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: police
+
+- type: factionIcon
+  id: PolFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: pol_basic
+
+- type: factionIcon
+  id: Pt2Faction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: pt2_basic
+
+- type: factionIcon
+  id: PtFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: pt_basic
+
+- type: factionIcon
+  id: RebelFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: rebel_basic
+
+- type: factionIcon
+  id: RedmeniaFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: redmenia
+
+- type: factionIcon
+  id: RednikovFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: rednikov
+
+- type: factionIcon
+  id: Rn2Faction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: rn2_basic
+
+- type: factionIcon
+  id: RnFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: rn_basic
+
+- type: factionIcon
+  id: RobbersFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: robbers
+
+- type: factionIcon
+  id: RocFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: roc_basic
+
+- type: factionIcon
+  id: RomanFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: roman_basic
+
+- type: factionIcon
+  id: RuFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: ru_basic
+
+- type: factionIcon
+  id: SovFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: sov_basic
+
+- type: factionIcon
+  id: SpnFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: spn_basic
+
+- type: factionIcon
+  id: SprFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: spr_basic
+
+- type: factionIcon
+  id: SpFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: sp_basic
+
+- type: factionIcon
+  id: StormcloakFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: stormcloak
+
+- type: factionIcon
+  id: SwedishFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: swedish_basic
+
+- type: factionIcon
+  id: SyriaFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: syria_basic
+
+- type: factionIcon
+  id: SyriaFsaFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: syria_fsa
+
+- type: factionIcon
+  id: UkrFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: ukr_basic
+
+- type: factionIcon
+  id: UnFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: un
+
+- type: factionIcon
+  id: UpaFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: upa_basic
+
+- type: factionIcon
+  id: UsFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: us_basic
+
+- type: factionIcon
+  id: VcFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: vc_basic
+
+- type: factionIcon
+  id: VnFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: vn_basic
+
+- type: factionIcon
+  id: WagnerFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: wagner
+
+- type: factionIcon
+  id: WesternFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: western
+
+- type: factionIcon
+  id: YamaguchiFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: yamaguchi

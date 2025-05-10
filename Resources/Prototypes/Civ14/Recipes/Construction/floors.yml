@@ -52,11 +52,39 @@
             - !type:SetStackCount
               amount: 4
           steps:
-            # Needs StackType ID
             - material: Stone
               amount: 1
     - node: end
       entity: FloorTileItemRoad
+
+- type: construction
+  name: cobblestone floor
+  id: TileCobblestone
+  graph: TileCobblestone
+  startNode: start
+  targetNode: end
+  category: construction-category-tiles
+  description: A cobblestone floor.
+  icon: { sprite: Civ14/Objects/floors.rsi, state: cobble_vertical_dark }
+  objectType: Item
+  agemin: 1
+  agemax: 8
+
+- type: constructionGraph
+  id: TileCobblestone
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Stone
+              amount: 1
+    - node: end
+      entity: FloorTileItemCobblestone
 
 - type: construction
   name: bridging tile

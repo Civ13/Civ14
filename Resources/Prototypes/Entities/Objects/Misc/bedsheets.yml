@@ -55,6 +55,15 @@
       state: sheetbrown
     - type: Clothing
       sprite: Clothing/Neck/Bedsheets/brown.rsi
+# only because this one does not have the white sheet underneath and looks "older"
+- type: entity
+  id: BedsheetBrownCiv
+  parent: BedsheetBrown
+  name: brown bedsheet
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/items.rsi
+      state: sheetbrown
 
 - type: entity
   id: BedsheetCaptain

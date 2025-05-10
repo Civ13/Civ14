@@ -20,6 +20,8 @@ using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Serialization;
+using Content.Shared.Barricade;
+using Robust.Shared.Random;
 
 namespace Content.Shared.Projectiles;
 
@@ -38,7 +40,9 @@ public abstract partial class SharedProjectileSystem : EntitySystem
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly SharedGunSystem _guns = default!;
     [Dependency] private readonly SharedCameraRecoilSystem _sharedCameraRecoil = default!;
-
+    [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private readonly ILogManager _log = default!;
+    private ISawmill _sawmill = default!;
     public override void Initialize()
     {
         base.Initialize();
@@ -49,6 +53,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         SubscribeLocalEvent<EmbeddableProjectileComponent, ThrowDoHitEvent>(OnEmbedThrowDoHit);
         SubscribeLocalEvent<EmbeddableProjectileComponent, ActivateInWorldEvent>(OnEmbedActivate);
         SubscribeLocalEvent<EmbeddableProjectileComponent, RemoveEmbeddedProjectileEvent>(OnEmbedRemove);
+        _sawmill = _log.GetSawmill("projectile");
     }
 
     private void OnStartCollide(EntityUid uid, ProjectileComponent component, ref StartCollideEvent args)
@@ -57,6 +62,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         if (args.OurFixtureId != ProjectileFixture || !args.OtherFixture.Hard
             || component.DamagedEntity || component is { Weapon: null, OnlyCollideWhenShot: true })
             return;
+
 
         ProjectileCollide((uid, component, args.OurBody), args.OtherEntity);
     }
@@ -118,7 +124,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         if (!deleted)
         {
             _guns.PlayImpactSound(target, modifiedDamage, component.SoundHit, component.ForceSound, filter, projectile);
-            _sharedCameraRecoil.KickCamera(target, direction);
+            //_sharedCameraRecoil.KickCamera(target, direction); # this makes people blind or something
         }
 
         component.DamagedEntity = true;
@@ -244,6 +250,51 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         if (component.IgnoreShooter && (args.OtherEntity == component.Shooter || args.OtherEntity == component.Weapon))
         {
             args.Cancelled = true;
+        }
+        //check for barricade component (percentage of chance to hit/pass over)
+        if (TryComp(args.OtherEntity, out BarricadeComponent? barricade))
+        {
+            var alwaysPassThrough = false;
+            _sawmill.Info("Checking barricade...");
+            if (component.Shooter is { } shooterUid && Exists(shooterUid))
+            {
+                // Condition 1: Directions are the same (using cardinal directions).
+                var shooterWorldRotation = _transform.GetWorldRotation(shooterUid);
+                var barricadeWorldRotation = _transform.GetWorldRotation(args.OtherEntity);
+
+                var shooterDir = shooterWorldRotation.GetCardinalDir();
+                var barricadeDir = barricadeWorldRotation.GetCardinalDir();
+
+                if (shooterDir == barricadeDir)
+                {
+
+                    _sawmill.Info("Same dir!");
+                    // Condition 2: Firer is within 1 tile of the barricade.
+                    var shooterCoords = Transform(shooterUid).Coordinates;
+                    var barricadeCoords = Transform(args.OtherEntity).Coordinates;
+
+                    if (shooterCoords.TryDistance(EntityManager, barricadeCoords, out var distance) &&
+                        distance <= 1.3f)
+                    {
+                        _sawmill.Info($"Distance: {distance}");
+                        alwaysPassThrough = true;
+                    }
+                }
+            }
+
+            if (alwaysPassThrough)
+            {
+                args.Cancelled = true;
+            }
+            else
+            {
+                _sawmill.Info("Not same dir or too far away!");
+                // Standard barricade blocking logic if the special conditions are not met.
+                if (_random.NextFloat(0.0f, 100.0f) >= barricade.Blocking)
+                {
+                    args.Cancelled = true;
+                }
+            }
         }
     }
 

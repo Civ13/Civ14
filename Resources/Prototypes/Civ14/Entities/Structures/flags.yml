@@ -1,0 +1,280 @@
+- type: entity
+  parent: BaseSign
+  id: BaseFlagPole
+  abstract: true
+  description: "A flag on a pole."
+  components:
+    - type: Sprite
+      drawdepth: WallMountedItems
+      sprite: Civ14/Objects/flags.rsi
+      state: cust_flag
+
+- type: entity
+  id: civ13_flag_pirates
+  name: Pirate flag
+  description: A black and white pirate flags with skull and bones.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: pirates
+
+- type: entity
+  id: civ13_flag_black
+  name: Black flag
+  description: A black flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: black
+
+- type: entity
+  id: civ13_flag_french
+  name: French flag
+  description: The French flag, white with golden fleur-de-lys.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: french
+
+- type: entity
+  id: civ13_flag_french_modern
+  name: French flag
+  description: The modern french tricoleur.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: french2
+
+- type: entity
+  id: civ13_flag_french_monarchist
+  name: French flag
+  description: The french monarchist flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: french3
+
+- type: entity
+  id: civ13_flag_spanish
+  name: Spanish Flag
+  description: The Spanish flag, white with a red cross of burgundy.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: spanish
+
+- type: entity
+  id: civ13_flag_spanish_modern
+  name: Spanish Flag
+  description: The modern yellow and red spanish flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: spanish2
+
+- type: entity
+  id: civ13_flag_italian
+  name: Italian Flag
+  description: The modern italian flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: italian
+
+- type: entity
+  id: civ13_flag_british
+  name: British flag
+  description: The Union Jack.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: british
+
+- type: entity
+  id: civ13_flag_portuguese
+  name: Portuguese flag
+  description: A white flag with the Portuguese Coat of Arms in the middle.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: portuguese
+
+- type: entity
+  id: civ13_flag_dutch
+  name: Dutch Flag
+  description: The tricolor Dutch flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: netherlands
+
+- type: entity
+  id: civ13_flag_dutch_old
+  name: Dutch Flag
+  description: The tricolor Dutch flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: netherlands_old
+
+- type: entity
+  id: civ13_flag_japanese
+  name: Imperial Japanese flag
+  description: The Imperial Japanese flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: japanese
+
+- type: entity
+  id: civ13_flag_russian
+  name: Russian flag
+  description: The tricolor Russian flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: russian
+
+- type: entity
+  id: civ13_flag_soviet
+  name: Soviet Union Flag
+  description: The Soviet flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: soviet
+
+- type: entity
+  id: civ13_flag_us
+  name: USA flag
+  description: The US flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: us
+
+- type: entity
+  id: civ13_flag_german
+  name: German flag
+  description: The German flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: german
+
+- type: entity
+  id: civ13_flag_german_modern
+  name: German flag
+  description: The German flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: german2
+
+- type: entity
+  id: civ13_flag_confed
+  name: Confederate flag
+  description: The Confederate flag
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: confed
+
+- type: entity
+  id: civ13_flag_reich
+  name: Third Reich Flag
+  description: The Third Reich war flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: reich
+
+- type: entity
+  id: civ13_flag_chinese
+  name: Republic of China Flag
+  description: The Republic of China flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: chinese
+
+- type: entity
+  id: civ13_flag_filipino
+  name: Philippines Republic
+  description: The Republic of the Philippines flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: filipino
+
+- type: entity
+  id: civ13_flag_filipino_war
+  name: Philippines Republic
+  description: The Republic of the Philippines flag. This one flipped for wartime.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: filipino_wartime
+
+- type: entity
+  id: civ13_flag_nva
+  name: North Vietnam Flag
+  description: The flag of North Vietnam.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: nva
+
+- type: entity
+  id: civ13_flag_vietcong
+  name: Vietcong Flag
+  description: The flag of the National Liberation Front of Vietnam.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: vietcong
+
+- type: entity
+  id: civ13_flag_campaign_redmenia
+  name: Redmenia Flag
+  description: The flag of Redmenia.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: redmenia
+
+- type: entity
+  id: civ13_flag_campaign_blugoslavia
+  name: Blugoslavia Flag
+  description: The flag of Blugoslavia.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: blugoslavia
+
+- type: entity
+  id: civ13_flag_pole
+  name: Flagpole
+  description: Flagless, apply cloth or a flag.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: flagpole_blank
+
+- type: entity
+  id: civ13_flag_bearclan
+  name: Bearclan Banner
+  description: A Bearclan banner.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: bearclan
+
+- type: entity
+  id: civ13_flag_ravenclan
+  name: Raven Banner
+  description: A Ravenclan banner.
+  parent: BaseFlagPole
+  components:
+    - type: Sprite
+      state: ravenclan

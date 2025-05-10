@@ -28,7 +28,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using ItemToggleMeleeWeaponComponent = Content.Shared.Item.ItemToggle.Components.ItemToggleMeleeWeaponComponent;
-
+using Content.Shared.Damage.Components;
 namespace Content.Shared.Weapons.Melee;
 
 public abstract class SharedMeleeWeaponSystem : EntitySystem
@@ -191,7 +191,8 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
             return;
 
         if (!TryGetWeapon(user, out var weaponUid, out var weapon) ||
-            weaponUid != GetEntity(msg.Weapon))
+            weaponUid != GetEntity(msg.Weapon) ||
+            !weapon.CanWideSwing) // Goobstation Change
         {
             return;
         }
@@ -416,13 +417,14 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
             switch (attack)
             {
                 case LightAttackEvent light:
-                    DoLightAttack(user, light, weaponUid, weapon, session);
+                    if (!DoLightAttack(user, light, weaponUid, weapon, session))
+                        return false;
                     animation = weapon.Animation;
                     break;
                 case DisarmAttackEvent disarm:
+                    // DoDisarm already returns bool and is checked
                     if (!DoDisarm(user, disarm, weaponUid, weapon, session))
                         return false;
-
                     animation = weapon.Animation;
                     break;
                 case HeavyAttackEvent heavy:
@@ -447,12 +449,19 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
     protected abstract bool InRange(EntityUid user, EntityUid target, float range, ICommonSession? session);
 
-    protected virtual void DoLightAttack(EntityUid user, LightAttackEvent ev, EntityUid meleeUid, MeleeWeaponComponent component, ICommonSession? session)
+    protected virtual bool DoLightAttack(EntityUid user, LightAttackEvent ev, EntityUid meleeUid, MeleeWeaponComponent component, ICommonSession? session)
     {
         // If I do not come back later to fix Light Attacks being Heavy Attacks you can throw me in the spider pit -Errant
         var damage = GetDamage(meleeUid, user, component) * GetHeavyDamageModifier(meleeUid, user, component);
         var target = GetEntity(ev.Target);
         var resistanceBypass = GetResistanceBypass(meleeUid, user, component);
+
+        //do a stamina check before attacking
+        if (TryComp<StaminaComponent>(user, out var stam))
+        {
+            if (stam.StaminaDamage > stam.SlowdownThreshold)
+            { return false; }
+        }
 
         // For consistency with wide attacks stuff needs damageable.
         if (Deleted(target) ||
@@ -480,7 +489,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
             var missEvent = new MeleeHitEvent(new List<EntityUid>(), user, meleeUid, damage, null);
             RaiseLocalEvent(meleeUid, missEvent);
             _meleeSound.PlaySwingSound(user, meleeUid, component);
-            return;
+            return true;
         }
 
         // Sawmill.Debug($"Melee damage is {damage.Total} out of {component.Damage.Total}");
@@ -490,7 +499,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         RaiseLocalEvent(meleeUid, hitEvent);
 
         if (hitEvent.Handled)
-            return;
+            return true;
 
         var targets = new List<EntityUid>(1)
         {
@@ -513,13 +522,16 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         var modifiedDamage = DamageSpecifier.ApplyModifierSets(damage + hitEvent.BonusDamage + attackedEvent.BonusDamage, hitEvent.ModifiersList);
         var damageResult = Damageable.TryChangeDamage(target, modifiedDamage, origin: user, ignoreResistances: resistanceBypass);
 
+        //drain stamina from the attacker as well
+        //hardcoded at 10 for now, TODO: Make it take into account the weapons weight?
+        _stamina.TakeStaminaDamage(user, 10f, visual: false, source: user, with: meleeUid == user ? null : meleeUid, immediate: false);
 
         if (damageResult is { Empty: false })
         {
             // If the target has stamina and is taking blunt damage, they should also take stamina damage based on their blunt to stamina factor
             if (damageResult.DamageDict.TryGetValue("Blunt", out var bluntDamage))
             {
-                _stamina.TakeStaminaDamage(target.Value, (bluntDamage * component.BluntStaminaDamageFactor).Float(), visual: false, source: user, with: meleeUid == user ? null : meleeUid);
+                _stamina.TakeStaminaDamage(target.Value, (bluntDamage * component.BluntStaminaDamageFactor).Float(), visual: false, source: user, with: meleeUid == user ? null : meleeUid, immediate: false);
             }
 
             if (meleeUid == user)
@@ -543,6 +555,8 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         {
             DoDamageEffect(targets, user, targetXform);
         }
+
+        return true;
     }
 
     protected abstract void DoDamageEffect(List<EntityUid> targets, EntityUid? user, TransformComponent targetXform);
@@ -558,12 +572,23 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         if (targetMap.MapId != userXform.MapID)
             return false;
 
+        //do a stamina check before attacking
+        if (TryComp<StaminaComponent>(user, out var stam))
+        {
+            if (stam.StaminaDamage > stam.SlowdownThreshold)
+            { return false; }
+        }
+
         var userPos = TransformSystem.GetWorldPosition(userXform);
         var direction = targetMap.Position - userPos;
         var distance = Math.Min(component.Range, direction.Length());
 
         var damage = GetDamage(meleeUid, user, component);
         var entities = GetEntityList(ev.Entities);
+
+        //drain stamina from the attacker as well
+        //hardcoded at 20 for now, TODO: Make it take into account the weapons weight?
+        _stamina.TakeStaminaDamage(user, 20f, visual: false, source: user, with: meleeUid == user ? null : meleeUid, immediate: false);
 
         if (entities.Count == 0)
         {
@@ -674,7 +699,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
                 // If the target has stamina and is taking blunt damage, they should also take stamina damage based on their blunt to stamina factor
                 if (damageResult.DamageDict.TryGetValue("Blunt", out var bluntDamage))
                 {
-                    _stamina.TakeStaminaDamage(entity, (bluntDamage * component.BluntStaminaDamageFactor).Float(), visual: false, source: user, with: meleeUid == user ? null : meleeUid);
+                    _stamina.TakeStaminaDamage(entity, (bluntDamage * component.BluntStaminaDamageFactor).Float(), visual: false, source: user, with: meleeUid == user ? null : meleeUid, immediate: false);
                 }
 
                 appliedDamage += damageResult;

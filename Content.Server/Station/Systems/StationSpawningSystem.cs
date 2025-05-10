@@ -167,10 +167,28 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
             EquipRoleLoadout(entity.Value, loadout, roleProto!);
         }
 
-        if (prototype?.StartingGear != null)
+        // Equip starting gear if specified in the job prototype
+        if (prototype != null)
         {
-            var startingGear = _prototypeManager.Index<StartingGearPrototype>(prototype.StartingGear);
-            EquipStartingGear(entity.Value, startingGear, raiseEvent: false);
+            StartingGearPrototype? startingGearProto = null;
+
+            // Check if random gears are available and populated
+            if (prototype.RandomStartingGears != null && prototype.RandomStartingGears.Count > 0)
+            {
+                var startingGearId = _random.Pick(prototype.RandomStartingGears); // Safe now
+                _prototypeManager.TryIndex(startingGearId, out startingGearProto);
+            }
+            // Otherwise, check if the single starting gear is specified
+            else if (prototype.StartingGear != null)
+            {
+                _prototypeManager.TryIndex(prototype.StartingGear.Value, out startingGearProto); // Safe now, using .Value for ProtoId?
+            }
+
+            // If we found a valid gear prototype (either random or specific), equip it
+            if (startingGearProto != null)
+            {
+                EquipStartingGear(entity.Value, startingGearProto, raiseEvent: false);
+            }
         }
 
         var gearEquippedEv = new StartingGearEquippedEvent(entity.Value);

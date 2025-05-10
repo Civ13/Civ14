@@ -27,17 +27,20 @@ public sealed partial class EnsnareableDoAfterEvent : SimpleDoAfterEvent
 
 public abstract class SharedEnsnareableSystem : EntitySystem
 {
-    [Dependency] private   readonly AlertsSystem _alerts = default!;
-    [Dependency] private   readonly MovementSpeedModifierSystem _speedModifier = default!;
+    [Dependency] private readonly AlertsSystem _alerts = default!;
+    [Dependency] private readonly MovementSpeedModifierSystem _speedModifier = default!;
     [Dependency] protected readonly SharedAppearanceSystem Appearance = default!;
-    [Dependency] private   readonly SharedAudioSystem _audio = default!;
-    [Dependency] private   readonly SharedBodySystem _body = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly SharedBodySystem _body = default!;
     [Dependency] protected readonly SharedContainerSystem Container = default!;
-    [Dependency] private   readonly SharedDoAfterSystem _doAfter = default!;
-    [Dependency] private   readonly SharedHandsSystem _hands = default!;
+    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
+    [Dependency] private readonly SharedHandsSystem _hands = default!;
     [Dependency] protected readonly SharedPopupSystem Popup = default!;
-    [Dependency] private   readonly StaminaSystem _stamina = default!;
+    [Dependency] private readonly StaminaSystem _stamina = default!;
 
+    /// <summary>
+    /// Subscribes to local events related to ensnaring and ensnareable components to initialise the system's event handling.
+    /// </summary>
     public override void Initialize()
     {
         base.Initialize();
@@ -249,7 +252,13 @@ public abstract class SharedEnsnareableSystem : EntitySystem
     /// </summary>
     /// <param name="target">The entity that will be ensnared</param>
     /// <paramref name="ensnare"> The entity that is used to ensnare</param>
-    /// <param name="component">The ensnaring component</param>
+    /// <summary>
+    /// Attempts to ensnare a target entity using the specified ensnaring entity.
+    /// </summary>
+    /// <param name="target">The entity to be ensnared.</param>
+    /// <param name="ensnare">The ensnaring entity to apply.</param>
+    /// <param name="component">The ensnaring component.</param>
+    /// <returns>True if the target was successfully ensnared; otherwise, false.</returns>
     public bool TryEnsnare(EntityUid target, EntityUid ensnare, EnsnaringComponent component)
     {
         //Don't do anything if they don't have the ensnareable component.
@@ -267,7 +276,7 @@ public abstract class SharedEnsnareableSystem : EntitySystem
         // Apply stamina damage to target
         if (TryComp<StaminaComponent>(target, out var stamina))
         {
-            _stamina.TakeStaminaDamage(target, component.StaminaDamage, with: ensnare, component: stamina);
+            _stamina.TakeStaminaDamage(target, component.StaminaDamage, with: ensnare, component: stamina, immediate: true);
         }
 
         component.Ensnared = target;

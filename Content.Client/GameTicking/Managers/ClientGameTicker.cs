@@ -11,6 +11,8 @@ using Robust.Client.State;
 using Robust.Client.UserInterface;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Audio;
+using Content.Shared.NPC.Prototypes;
+using Content.Shared.NPC.Components;
 
 namespace Content.Client.GameTicking.Managers
 {
@@ -22,7 +24,7 @@ namespace Content.Client.GameTicking.Managers
         [Dependency] private readonly IClyde _clyde = default!;
         [Dependency] private readonly IUserInterfaceManager _userInterfaceManager = default!;
 
-        private Dictionary<NetEntity, Dictionary<ProtoId<JobPrototype>, int?>>  _jobsAvailable = new();
+        private Dictionary<NetEntity, Dictionary<ProtoId<JobPrototype>, int?>> _jobsAvailable = new();
         private Dictionary<NetEntity, string> _stationNames = new();
 
         [ViewVariables] public bool AreWeReady { get; private set; }
@@ -31,6 +33,7 @@ namespace Content.Client.GameTicking.Managers
         [ViewVariables] public string? LobbyBackground { get; private set; }
         [ViewVariables] public bool DisallowedLateJoin { get; private set; }
         [ViewVariables] public string? ServerInfoBlob { get; private set; }
+        [ViewVariables] public Dictionary<ProtoId<NpcFactionPrototype>, int> PlayerFactionCounts { get; private set; } = new();
         [ViewVariables] public TimeSpan StartTime { get; private set; }
         [ViewVariables] public new bool Paused { get; private set; }
 
@@ -41,7 +44,7 @@ namespace Content.Client.GameTicking.Managers
         public event Action? LobbyStatusUpdated;
         public event Action? LobbyLateJoinStatusUpdated;
         public event Action<IReadOnlyDictionary<NetEntity, Dictionary<ProtoId<JobPrototype>, int?>>>? LobbyJobsAvailableUpdated;
-
+        public event Action? PlayerFactionCountsUpdated;
         public override void Initialize()
         {
             base.Initialize();
@@ -51,6 +54,7 @@ namespace Content.Client.GameTicking.Managers
             SubscribeNetworkEvent<TickerConnectionStatusEvent>(ConnectionStatus);
             SubscribeNetworkEvent<TickerLobbyStatusEvent>(LobbyStatus);
             SubscribeNetworkEvent<TickerLobbyInfoEvent>(LobbyInfo);
+            SubscribeNetworkEvent<GetPlayerFactionCounts>(OnPlayerFactionCountsReceived);
             SubscribeNetworkEvent<TickerLobbyCountdownEvent>(LobbyCountdown);
             SubscribeNetworkEvent<RoundEndMessageEvent>(RoundEnd);
             SubscribeNetworkEvent<RequestWindowAttentionEvent>(OnAttentionRequest);
@@ -134,7 +138,11 @@ namespace Content.Client.GameTicking.Managers
 
             InfoBlobUpdated?.Invoke();
         }
-
+        private void OnPlayerFactionCountsReceived(GetPlayerFactionCounts ev)
+        {
+            PlayerFactionCounts = ev.FactionCounts;
+            PlayerFactionCountsUpdated?.Invoke();
+        }
         private void JoinGame(TickerJoinGameEvent message)
         {
             _stateManager.RequestStateChange<GameplayState>();

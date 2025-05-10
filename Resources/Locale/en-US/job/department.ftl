@@ -10,3 +10,5 @@ department-Silicon = Silicon
 department-Specific = Station specific
 
 department-Nomads = Nomads
+department-French = France
+department-English = England

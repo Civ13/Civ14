@@ -120,7 +120,11 @@
     - type: Icon
       sprite: Civ14/Structures/windows.rsi
       state: windownew_frame
+    - type: IconSmooth
+      key: walls
+      mode: NoSprite
     - type: Construction
+      graph: WoodWindowClassic
       agemin: 0
       agemax: 8
       node: end

@@ -4,6 +4,9 @@ using Content.Shared.Damage.Systems;
 using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Systems;
 using Robust.Shared.Physics.Components;
+using Content.Server.Chat.Systems;
+using Robust.Shared.Random;
+using Robust.Shared.Timing;
 
 namespace Content.Server._Stalker.Stamina;
 
@@ -11,6 +14,10 @@ public sealed class StaminaActiveSystem : EntitySystem
 {
     [Dependency] private readonly StaminaSystem _stamina = default!;
     [Dependency] private readonly MovementSpeedModifierSystem _speed = default!;
+    [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly IRobustRandom _random = default!;
+
+    [Dependency] private readonly IGameTiming _gameTiming = default!;
     private ISawmill _sawmill = default!;
 
     public override void Initialize()
@@ -25,6 +32,15 @@ public sealed class StaminaActiveSystem : EntitySystem
         var query = EntityQueryEnumerator<StaminaComponent, MovementSpeedModifierComponent, StaminaActiveComponent, InputMoverComponent>();
         while (query.MoveNext(out var uid, out var stamina, out var modifier, out var active, out var input))
         {
+            var curTime = _gameTiming.CurTime;
+            if (stamina.StaminaDamage > stamina.SlowdownThreshold)
+            {
+                if ((curTime - stamina.LastMessageTime).TotalSeconds >= 6)
+                {
+                    _chat.TryEmoteWithChat(uid, "BreathGasp");
+                    stamina.LastMessageTime = curTime; // Update last message time
+                }
+            }
             // If our entity is slowed, we can't apply new speed/speed modifiers
             // Because CurrentSprintSpeed will change
             if (!active.Slowed)
