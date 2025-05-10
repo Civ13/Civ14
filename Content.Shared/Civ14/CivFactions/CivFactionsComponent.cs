@@ -16,6 +16,10 @@ public sealed partial class CivFactionsComponent : Component
     /// </summary>
     [DataField("factionList")]
     public List<CivFactionComponent> FactionList { get; set; } = new();
-
+    /// <summary>
+    /// Check if the faction rule is enabled.
+    /// </summary>
+    [DataField("factionsActive")]
+    public bool FactionsActive { get; set; } = true;
 }
 

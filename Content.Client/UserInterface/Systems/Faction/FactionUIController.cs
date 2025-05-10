@@ -226,6 +226,19 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // OrderBy requires System.Linq
         foreach (var faction in factionsComp.FactionList.OrderBy(f => f.FactionName))
         {
+            // Added detailed logging to inspect faction members state
+            _sawmill.Debug($"Inspecting faction for UI list: '{faction.FactionName ?? "Unnamed Faction"}'");
+            if (faction.FactionMembers == null)
+            {
+                _sawmill.Debug($"  - FactionMembers list is null.");
+            }
+            else
+            {
+                _sawmill.Debug($"  - FactionMembers.Count = {faction.FactionMembers.Count}");
+                if (faction.FactionMembers.Count > 0)
+                    _sawmill.Debug($"  - Members: [{string.Join(", ", faction.FactionMembers)}]");
+            }
+
             // *** FIX: Construct the string first, then append ***
             string factionLine = $"{faction.FactionName ?? "Unnamed Faction"}: {faction.FactionMembers?.Count ?? 0} members";
             listBuilder.AppendLine(factionLine); // Use the AppendLine(string) overload

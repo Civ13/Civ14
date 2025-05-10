@@ -9,6 +9,7 @@ using Content.Server.Chat.Managers;
 using Content.Shared.Chat;
 using Robust.Shared.Map.Components;
 using Robust.Shared.GameObjects; // Required for EntityUid
+using Content.Server.GameTicking;
 
 namespace Content.Server.Civ14.CivFactions;
 
@@ -19,7 +20,7 @@ public sealed class CivFactionsSystem : EntitySystem
     [Dependency] private readonly IChatManager _chatManager = default!;
     [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!; // Use IEntityManager
-
+    [Dependency] private readonly GameTicker _gameTicker = default!;
     private EntityUid? _factionsEntity;
     private CivFactionsComponent? _factionsComponent;
 
@@ -46,10 +47,15 @@ public sealed class CivFactionsSystem : EntitySystem
     /// Ensures the global CivFactionsComponent exists and caches its reference.
     /// Creates one if necessary (e.g., attached to the first map found).
     /// </summary>
-    private void EnsureFactionsComponent()
+    private bool EnsureFactionsComponent()
     {
+        if (!_gameTicker.IsGameRuleActive("FactionRuleComponent"))
+        {
+            Log.Info($"Factions are disabled on this map.");
+            return false;
+        }
         if (_factionsComponent != null && !_entityManager.Deleted(_factionsEntity))
-            return; // Already cached and valid
+            return true; // Already cached and valid
 
         var query = EntityQueryEnumerator<CivFactionsComponent>();
         if (query.MoveNext(out var owner, out var comp))
@@ -57,6 +63,7 @@ public sealed class CivFactionsSystem : EntitySystem
             _factionsEntity = owner;
             _factionsComponent = comp;
             Log.Info($"Found existing CivFactionsComponent on entity {_entityManager.ToPrettyString(owner)}");
+            return true;
         }
         else
         {
@@ -66,12 +73,14 @@ public sealed class CivFactionsSystem : EntitySystem
                 Log.Info($"No CivFactionsComponent found. Creating one on map entity {_entityManager.ToPrettyString(mapUid)}.");
                 _factionsComponent = _entityManager.AddComponent<CivFactionsComponent>(mapUid);
                 _factionsEntity = mapUid;
+                return true;
             }
             else
             {
                 Log.Error("Could not find CivFactionsComponent and no map entity found to attach a new one!");
                 _factionsComponent = null;
                 _factionsEntity = null;
+                return false;
             }
         }
     }
@@ -80,7 +89,10 @@ public sealed class CivFactionsSystem : EntitySystem
 
     private void OnCreateFactionRequest(CreateFactionRequestEvent msg, EntitySessionEventArgs args)
     {
-        EnsureFactionsComponent();
+        if (!EnsureFactionsComponent())
+        {
+            return;
+        }
         var sourceEntity = _factionsEntity ?? EntityUid.Invalid; // Use Invalid if component entity is somehow null
 
         if (_factionsComponent == null || _factionsEntity == null)
@@ -138,7 +150,10 @@ public sealed class CivFactionsSystem : EntitySystem
 
     private void OnLeaveFactionRequest(LeaveFactionRequestEvent msg, EntitySessionEventArgs args)
     {
-        EnsureFactionsComponent();
+        if (!EnsureFactionsComponent())
+        {
+            return;
+        }
         var sourceEntity = _factionsEntity ?? EntityUid.Invalid;
         if (_factionsComponent == null || _factionsEntity == null) return;
 
@@ -171,7 +186,10 @@ public sealed class CivFactionsSystem : EntitySystem
 
     private void OnInviteFactionRequest(InviteFactionRequestEvent msg, EntitySessionEventArgs args)
     {
-        EnsureFactionsComponent();
+        if (!EnsureFactionsComponent())
+        {
+            return;
+        }
         var sourceEntity = _factionsEntity ?? EntityUid.Invalid;
         if (_factionsComponent == null || _factionsEntity == null) return;
 
@@ -222,7 +240,10 @@ public sealed class CivFactionsSystem : EntitySystem
 
     private void OnAcceptFactionInvite(AcceptFactionInviteEvent msg, EntitySessionEventArgs args)
     {
-        EnsureFactionsComponent();
+        if (!EnsureFactionsComponent())
+        {
+            return;
+        }
         var sourceEntity = _factionsEntity ?? EntityUid.Invalid;
         if (_factionsComponent == null || _factionsEntity == null) return;
 
