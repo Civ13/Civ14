@@ -1,0 +1,59 @@
+- type: entity
+  name: bolt-action rifle
+  parent: BaseItem
+  id: BaseWeaponBoltAction
+  description: A bolt-action rifle.
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: Civ14/Weapons/Guns/mosin.rsi
+      layers:
+        - state: icon
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: STWeight
+      self: 5
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,7,1
+    - type: Clothing
+      sprite: Civ14/Weapons/Guns/mosin.rsi
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: BallisticAmmoProvider
+      autoCycle: false
+      capacity: 5
+      proto: civ13_caliber_a762x54
+      whitelist:
+        tags:
+          - civ13_caliber_a762x54
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          ents: []
+    - type: Gun
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/Mosin.ogg
+      projectileSpeed: 50
+      minAngle: 50
+      maxAngle: 80
+      angleIncrease: 5
+      angleDecay: 25
+      fireRate: 0.3
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -50
+      maxAngle: -50
+
+- type: entity
+  name: Mosin-Nagant M91/30
+  parent: BaseWeaponBoltAction
+  id: GunMosinNagant
+  description: An imperial Russian bolt-action rifle.

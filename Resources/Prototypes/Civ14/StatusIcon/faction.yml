@@ -167,7 +167,7 @@
       - ShowEnglishFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
-    state: fr_basic
+    state: fr1_basic
 
 - type: factionIcon
   id: Ger0Faction

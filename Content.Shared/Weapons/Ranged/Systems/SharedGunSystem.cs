@@ -494,6 +494,7 @@ public abstract partial class SharedGunSystem : EntitySystem
                             MuzzleFlash(gunUid, cartridge, mapDirection.ToAngle(), user);
                             Audio.PlayPredicted(gun.SoundGunshotModified, gunUid, user);
                         }
+                        Recoil(user, mapDirection, gun.CameraRecoilScalarModified);
                     }
                     else
                     {
@@ -501,7 +502,6 @@ public abstract partial class SharedGunSystem : EntitySystem
                         Audio.PlayPredicted(gun.SoundEmpty, gunUid, user);
                     }
 
-                    Recoil(user, mapDirection, gun.CameraRecoilScalarModified);
 
                     // Something like ballistic might want to leave it in the container still
                     if (!cartridge.DeleteOnSpawn && !Containers.IsEntityInContainer(ent!.Value))

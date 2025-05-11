@@ -26,7 +26,7 @@ public abstract partial class SharedGunSystem
         SubscribeLocalEvent<BallisticAmmoProviderComponent, GetAmmoCountEvent>(OnBallisticAmmoCount);
 
         SubscribeLocalEvent<BallisticAmmoProviderComponent, ExaminedEvent>(OnBallisticExamine);
-        SubscribeLocalEvent<BallisticAmmoProviderComponent, GetVerbsEvent<Verb>>(OnBallisticVerb);
+        SubscribeLocalEvent<BallisticAmmoProviderComponent, GetVerbsEvent<AlternativeVerb>>(OnBallisticVerb);
         SubscribeLocalEvent<BallisticAmmoProviderComponent, InteractUsingEvent>(OnBallisticInteractUsing);
         SubscribeLocalEvent<BallisticAmmoProviderComponent, AfterInteractEvent>(OnBallisticAfterInteract);
         SubscribeLocalEvent<BallisticAmmoProviderComponent, AmmoFillDoAfterEvent>(OnBallisticAmmoFillDoAfter);
@@ -160,14 +160,14 @@ public abstract partial class SharedGunSystem
         args.Repeat = moreSpace && moreAmmo;
     }
 
-    private void OnBallisticVerb(EntityUid uid, BallisticAmmoProviderComponent component, GetVerbsEvent<Verb> args)
+    private void OnBallisticVerb(EntityUid uid, BallisticAmmoProviderComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
         if (!args.CanAccess || !args.CanInteract || args.Hands == null || !component.Cycleable)
             return;
 
         if (component.Cycleable)
         {
-            args.Verbs.Add(new Verb()
+            args.Verbs.Add(new AlternativeVerb()
             {
                 Text = Loc.GetString("gun-ballistic-cycle"),
                 Disabled = GetBallisticShots(component) == 0,
@@ -249,6 +249,8 @@ public abstract partial class SharedGunSystem
                 entity = component.Entities[^1];
 
                 args.Ammo.Add((entity, EnsureShootable(entity)));
+                if (!component.AutoCycle) //  Goobstation - do not remove spent ammo from the gun it doesn't autocycle
+                    break;
                 component.Entities.RemoveAt(component.Entities.Count - 1);
                 DirtyField(uid, component, nameof(BallisticAmmoProviderComponent.Entities));
                 Containers.Remove(entity, component.Container);
@@ -259,6 +261,15 @@ public abstract partial class SharedGunSystem
                 DirtyField(uid, component, nameof(BallisticAmmoProviderComponent.UnspawnedCount));
                 entity = Spawn(component.Proto, args.Coordinates);
                 args.Ammo.Add((entity, EnsureShootable(entity)));
+
+                // Goobstation - put spent ammo back in the gun if it doesn't autocycle
+                if (!component.AutoCycle)
+                {
+                    component.Entities.Add(entity);
+                    Containers.Insert(entity, component.Container);
+                    DirtyField(uid, component, nameof(BallisticAmmoProviderComponent.Entities));
+                }
+                // Goobstation - end
             }
         }
 
