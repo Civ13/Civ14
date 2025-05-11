@@ -22,12 +22,8 @@ using Content.Client.Lobby;
 using Content.Client.Players.RateLimiting;
 using Content.Shared.Administration.Managers;
 using Content.Shared.Chat;
-using Content.Client.Examine;
-using Content.Shared.Examine;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
-using Content.Shared.Popups;
-using Content.Client.Popups;
 
 namespace Content.Client.IoC
 {

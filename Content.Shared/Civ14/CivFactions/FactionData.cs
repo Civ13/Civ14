@@ -21,7 +21,7 @@ public sealed partial class FactionData
     /// The list of members, using the ckeys.
     /// </summary>
     [DataField("factionMembers")]
-    public List<string> FactionMembers { get; set; } = [];
+    public List<string> FactionMembers { get; set; } = new List<string>();
     /// <summary>
     /// The current research level of the faction.
     /// </summary>
@@ -41,6 +41,6 @@ public sealed partial class FactionData
     /// People registered as leaders of the faction (can invite others)
     /// </summary>
     [DataField("factionLeaders")]
-    public List<string> FactionLeaders { get; set; } = [];
+    public List<string> FactionLeaders { get; set; } = new List<string>();
 }
 

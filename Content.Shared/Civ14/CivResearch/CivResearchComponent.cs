@@ -37,5 +37,15 @@ public sealed partial class CivResearchComponent : Component
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("maxResearch")]
     public float MaxResearch { get; set; } = 800;
+    /// <summary>
+    /// Calculates the current age based on the ResearchLevel.
+    /// Age is determined by flooring the division of ResearchLevel by 100.
+    /// </summary>
+    /// <returns>The current age as an integer.</returns>
+    public int GetCurrentAge()
+    {
+        return (int)Math.Floor(ResearchLevel / 100f);
+    }
+
 }
 
