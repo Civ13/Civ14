@@ -21,8 +21,8 @@ public sealed class SharedWeightExamineInfoSystem : EntitySystem
 
         if (component.Total < 50f)
         {
-             r = HexFromId(255 / 50 * (int)component.Total);
-             g = HexFromId(255);
+            r = HexFromId(255 / 50 * (int)component.Total);
+            g = HexFromId(255);
         }
 
         var colorString = $"#{r}{g}00";
@@ -39,7 +39,7 @@ public sealed class SharedWeightExamineInfoSystem : EntitySystem
                 return "00";
 
             case < 16:
-                return  "0" + id.ToString("X");
+                return "0" + id.ToString("X");
 
             case > 255:
                 id = 255;

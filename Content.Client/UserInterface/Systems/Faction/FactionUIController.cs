@@ -18,6 +18,7 @@ using System.Linq;
 using System.Text;
 using Robust.Shared.Network;
 using Robust.Shared.GameObjects;
+using Robust.Shared.Player; // Required for ICommonSession
 using Content.Client.UserInterface.Systems.MenuBar.Widgets;
 
 
@@ -199,6 +200,17 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
             // Then, explicitly refresh the faction list display based on the latest component data
             // This ensures the list content (member counts, etc.) is also up-to-date.
             HandleListFactionsPressed();
+
+            if (msg.IsInFaction == true && msg.FactionName != null)
+            {
+                if (_ent.TryGetComponent<CivFactionComponent>(_player.LocalEntity, out var factionComp))
+                {
+                    _sawmill.Debug($"Updating faction component for player entity: {_player.LocalEntity}");
+                    factionComp.SetFaction(msg.FactionName);
+                    _sawmill.Debug($"Faction name set to '{msg.FactionName}'({factionComp.FactionName}) in CivFactionComponent.");
+
+                }
+            }
         }
         else
         {
@@ -371,6 +383,16 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // the updated CivFactionsComponent relatively quickly.
         // A more robust solution might involve a server confirmation event or a short delay.
         // RefreshFactionWindowState(); // Removed: UI will update via PlayerFactionStatusChangedEvent
+
+        //probably need to check if the name is being used or not
+        if (_ent.TryGetComponent<CivFactionComponent>(_player.LocalEntity, out var factionComp))
+        {
+            if (factionComp.FactionName == "")
+            {
+                _sawmill.Debug($"Setting faction name to '{desiredName}' in CivFactionComponent.");
+                factionComp.SetFaction(desiredName);
+            }
+        }
     }
 
     private void HandleLeaveFactionPressed()
@@ -380,7 +402,10 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // Raise the network event to send it to the server
         _ent.RaisePredictiveEvent(leaveEvent); // Use RaisePredictiveEvent for client-initiated actions
         _sawmill.Info("Sent LeaveFactionRequestEvent to server.");
-
+        if (_ent.TryGetComponent<CivFactionComponent>(_player.LocalEntity, out var factionComp))
+        {
+            factionComp.SetFaction("");
+        }
         // Attempt to refresh the window state immediately.
         // RefreshFactionWindowState(); // Removed: UI will update via PlayerFactionStatusChangedEvent
     }
@@ -388,21 +413,51 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
 
     private void HandleInvitePlayerPressed()
     {
-        _sawmill.Info("Invite Player button pressed.");
-        // TODO: Implement player selection UI (e.g., targeting system or player list)
-        // Example: Show a prompt for player name/ID
-        _consoleHost.ExecuteCommand("echo \"[TODO] Implement player selection UI (e.g., targeting or name input) and send InviteFactionRequestEvent to server...\"");
+        _sawmill.Debug("Invite Player button pressed.");
 
-        // --- Example of how sending would look (needs target player info) ---
-        // 1. Get Target Player's NetUserId (e.g., from a selection UI or input field)
-        // NetUserId targetUserId = ... get this from UI ...;
+        if (_window == null)
+        {
+            _sawmill.Error("Attempted to invite player, but FactionWindow is null!");
+            return;
+        }
 
-        // 2. Create the event
-        // var inviteEvent = new InviteFactionRequestEvent { TargetPlayerUserId = targetUserId };
+        // Get the target player's name from the window's input field
+        var targetPlayerName = _window.InvitePlayerNameInputText.Trim();
 
-        // 3. Send the event
-        // _ent.RaisePredictiveEvent(inviteEvent);
-        // _sawmill.Info($"Sent InviteFactionRequestEvent for target {targetUserId} to server.");
+        if (string.IsNullOrWhiteSpace(targetPlayerName))
+        {
+            _sawmill.Debug("Invite player: Name field is empty.");
+            _popupSystem?.PopupCursor("Player name cannot be empty.", PopupType.SmallCaution);
+            return;
+        }
+
+        _sawmill.Info($"Attempting to invite player: '{targetPlayerName}'");
+
+        // Find the player session by name (case-insensitive search)
+        var targetSession = _player.Sessions.FirstOrDefault( // Sessions are ICommonSession on client
+            s => s.Name.Equals(targetPlayerName, StringComparison.OrdinalIgnoreCase) // Name is available on ICommonSession
+        );
+
+        if (targetSession == null)
+        {
+            var notFoundMsg = $"Player '{targetPlayerName}' not found.";
+            _sawmill.Warning(notFoundMsg);
+            _popupSystem?.PopupCursor(notFoundMsg, PopupType.SmallCaution);
+            return;
+        }
+
+        // Player found, get their NetUserId. UserId is available on ICommonSession.
+        NetUserId targetUserId = targetSession.UserId; // Correctly accesses UserId from ICommonSession
+
+        // Create the event
+        var inviteEvent = new InviteFactionRequestEvent(targetUserId);
+
+        // Send the event to the server
+        _ent.RaisePredictiveEvent(inviteEvent);
+        _sawmill.Info($"Sent InviteFactionRequestEvent for target player '{targetPlayerName}' (ID: {targetUserId}) to server.");
+        _popupSystem?.PopupCursor($"Invite sent to {targetPlayerName}.", PopupType.Small);
+
+        _window.ClearInvitePlayerNameInput(); // Clear the input field
     }
 
     /// <summary>

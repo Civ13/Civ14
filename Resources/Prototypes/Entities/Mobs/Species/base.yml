@@ -181,6 +181,7 @@
     - type: NpcFactionMember
       factions:
         - Nomads
+    - type: CivFaction
     - type: CreamPied
     - type: Stripping
     - type: UserInterface

@@ -19,10 +19,10 @@
 
             <!-- *** ADDED THIS SECTION *** -->
             <BoxContainer Orientation="Horizontal"
-                    Margin="0 5">
+                          Margin="0 5">
                 <Label Text="Faction Name:"
-                        MinWidth="100"
-                        VerticalAlignment="Center"/>
+                       MinWidth="100"
+                       VerticalAlignment="Center"/>
                 <LineEdit Name="FactionNameInput"
                           Access="Public"
                           HorizontalExpand="True"
@@ -48,6 +48,17 @@
                    Text="Current Faction: -"
                    Align="Center"
                    Margin="0 0 0 10"/>
+            <!-- Input for inviting a player -->
+            <BoxContainer Orientation="Horizontal"
+                    Margin="0 0 0 5">
+                <Label Text="Player to Invite:"
+                       MinWidth="100"
+                       VerticalAlignment="Center"/>
+                <LineEdit Name="InvitePlayerNameInput"
+                          Access="Public"
+                          HorizontalExpand="True"
+                          PlaceHolder="Enter player name"/>
+            </BoxContainer>
             <Button Name="InvitePlayerButton"
                     Text="Invite Player"
                     Access="Public"

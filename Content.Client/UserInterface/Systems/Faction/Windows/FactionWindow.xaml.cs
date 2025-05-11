@@ -22,6 +22,8 @@ public sealed partial class FactionWindow : DefaultWindow
 
     // This property relies on the XAML generator succeeding
     public string FactionNameInputText => FactionNameInput?.Text ?? string.Empty;
+    // Property for the new invite player name input
+    public string InvitePlayerNameInputText => InvitePlayerNameInput?.Text ?? string.Empty;
 
     public FactionWindow()
     {
@@ -44,6 +46,13 @@ public sealed partial class FactionWindow : DefaultWindow
         // This line relies on the XAML generator succeeding
         if (FactionNameInput != null)
             FactionNameInput.Text = string.Empty;
+    }
+
+    public void ClearInvitePlayerNameInput()
+    {
+        // This line relies on the XAML generator succeeding
+        if (InvitePlayerNameInput != null)
+            InvitePlayerNameInput.Text = string.Empty;
     }
 
     /// <summary>
