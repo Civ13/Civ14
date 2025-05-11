@@ -83,6 +83,8 @@ namespace Content.Client.Construction.UI
 
         /// <summary>
         /// Constructs a new instance of <see cref="ConstructionMenuPresenter" />.
+        /// <summary>
+        /// Initializes the ConstructionMenuPresenter, injecting dependencies, setting up the construction UI, binding event handlers, and populating initial categories and recipes.
         /// </summary>
         public ConstructionMenuPresenter()
         {
@@ -141,6 +143,9 @@ namespace Content.Client.Construction.UI
             _constructionView.ResetPlacement();
         }
 
+        /// <summary>
+        /// Handles selection of a construction recipe from the UI, updating the selected recipe and displaying its details.
+        /// </summary>
         private void OnViewRecipeSelected(object? sender, ItemList.Item? item)
         {
             if (item is null)
@@ -169,6 +174,11 @@ namespace Content.Client.Construction.UI
             PopulateInfo(_selected);
         }
 
+        /// <summary>
+        /// Populates the construction recipe list or grid in the UI based on the current search term and selected category, filtering recipes by visibility, player eligibility, whitelist, and research age.
+        /// </summary>
+        /// <param name="sender">The event sender (unused).</param>
+        /// <param name="args">A tuple containing the search string and selected category.</param>
         private void OnViewPopulateRecipes(object? sender, (string search, string category) args)
         {
             var (search, category) = args;

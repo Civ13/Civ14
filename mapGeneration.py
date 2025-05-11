@@ -370,7 +370,11 @@ def generate_atmosphere_tiles(width, height, chunk_size):
 
 
 def generate_main_entities(tile_map, chunk_size=16, decals_by_id=None):
-    """Generates entities, decals and atmos."""
+    """
+    Generates the main map and grid entities, including tile chunks, decals, and atmospheric data.
+    
+    Divides the tile map into chunks, encodes each chunk for storage, and constructs the main map entity (UID 1) and grid entity (UID 2) with relevant components such as lighting, physics, weather, decals, and atmosphere. Decals are grouped by ID and indexed, and atmospheric data is generated per chunk. Returns a dictionary containing the main entities and their components.
+    """
     if decals_by_id is None:
         decals_by_id = {}
 

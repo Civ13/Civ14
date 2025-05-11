@@ -126,6 +126,9 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         LoadProfile(uid, startingSet.Profile, humanoid);
     }
 
+    /// <summary>
+    /// Adds a description to the examination text for a humanoid entity, including its identity, species, and age category.
+    /// </summary>
     private void OnExamined(EntityUid uid, HumanoidAppearanceComponent component, ExaminedEvent args)
     {
         var identity = Identity.Entity(uid, EntityManager);
