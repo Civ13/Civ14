@@ -11,15 +11,13 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using static Robust.Client.UserInterface.Controls.BaseButton;
 using Robust.Client.Console;
-using Content.Shared.Civ14.CivFactions; // <-- Ensure this is present
-using Content.Client.Popups; // <-- Add this for the client-side PopupSystem
+using Content.Shared.Civ14.CivFactions;
+using Content.Client.Popups;
 using Content.Shared.Popups;
 using System.Linq;
 using System.Text;
-// using Content.Shared.Popups; // <-- Remove or comment out this
 using Robust.Shared.Network;
 using Robust.Shared.GameObjects;
-// Make sure this using directive is present for MenuBar.Widgets
 using Content.Client.UserInterface.Systems.MenuBar.Widgets;
 
 
@@ -34,7 +32,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IClientConsoleHost _consoleHost = default!;
     [Dependency] private readonly IClientNetManager _netManager = default!;
-    private readonly PopupSystem _popupSystem = default!;
+    private PopupSystem? _popupSystem; // Make nullable
     private ISawmill _sawmill = default!;
     private FactionWindow? _window; // Make nullable
     // Ensure the namespace and class name are correct for GameTopMenuBar
@@ -43,7 +41,11 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     public override void Initialize()
     {
         base.Initialize();
+        // Try to get PopupSystem. If this fails (e.g., due to initialization order issues),
+        // _popupSystem will remain null. We'll attempt to resolve it lazily later if needed,
+        // or handle its absence. This avoids a startup crash if EntitySystemManager is problematic.
         SubscribeNetworkEvent<FactionInviteOfferEvent>(OnFactionInviteOffer);
+        SubscribeNetworkEvent<PlayerFactionStatusChangedEvent>(OnPlayerFactionStatusChanged);
         _sawmill = _logMan.GetSawmill("faction");
     }
 
@@ -122,19 +124,39 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         UnloadButton();
     }
 
-    // ... (rest of the methods: GetCivFactionsComponent, OnFactionInviteOffer, GetPlayerFactionStatus, Handle...Pressed methods remain the same) ...
     private CivFactionsComponent? GetCivFactionsComponent()
     {
-        // Consider using EntityQuery instead of Enumerator if you only need one
-        var query = _ent.EntityQueryEnumerator<CivFactionsComponent>();
-        if (query.MoveNext(out var owner, out var comp))
+        var query = _ent.EntityQueryEnumerator<CivFactionsComponent, MetaDataComponent>();
+        CivFactionsComponent? firstComp = null;
+        EntityUid? firstOwner = null;
+        MetaDataComponent? firstMeta = null;
+        int instanceCount = 0;
+
+        _sawmill.Debug("Starting search for CivFactionsComponent instances...");
+        while (query.MoveNext(out var ownerUid, out var comp, out var metadata))
         {
-            return comp;
+            instanceCount++;
+            if (firstComp == null) // Store the first one found
+            {
+                firstComp = comp;
+                firstOwner = ownerUid;
+                firstMeta = metadata;
+            }
+            // Log details for every instance found
+            var listIsNull = comp.FactionList == null;
+            var listCount = listIsNull ? "N/A (list is null)" : comp.FactionList!.Count.ToString();
+            _sawmill.Debug($"Discovered CivFactionsComponent on entity {ownerUid} (Name: '{metadata.EntityName}', Prototype: '{metadata.EntityPrototype?.ID ?? "N/A"}'). FactionList is null: {listIsNull}, FactionList count: {listCount}.");
         }
-        // It might be normal for this component not to exist immediately or always.
-        // Change Warning to Debug if this can happen during normal gameplay without being an error.
-        _sawmill.Warning("Could not find CivFactionsComponent in the game state.");
-        return null;
+
+        if (instanceCount > 1 && firstOwner.HasValue && firstMeta != null)
+        {
+            _sawmill.Warning($"Found {instanceCount} instances of CivFactionsComponent. Using the first one found on entity {firstOwner.Value} (Name: '{firstMeta.EntityName}'). This might not be the authoritative instance.");
+        }
+        else if (instanceCount == 0)
+        {
+            _sawmill.Warning("Could not find any CivFactionsComponent in the game state.");
+        }
+        return firstComp; // Return the first component found, or null if none
     }
 
     private void OnFactionInviteOffer(FactionInviteOfferEvent msg, EntitySessionEventArgs args)
@@ -151,25 +173,58 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
 
         if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity)
         {
-
-            _popupSystem.PopupEntity(fullMessage, playerEntity, PopupType.Medium);
-
+            // Only use _popupSystem if it was successfully retrieved
+            _popupSystem?.PopupEntity(fullMessage, playerEntity, PopupType.Medium);
         }
         else
         {
-            _sawmill.Warning("Could not show faction invite popup, local player entity not found.");
+            // Fallback if player entity isn't available or popup system isn't
+            _popupSystem?.PopupCursor(fullMessage); // Show on cursor if possible
+            _sawmill.Warning($"Could not show faction invite popup on entity (player entity not found or PopupSystem unavailable). Falling back to cursor popup if PopupSystem exists. Message: {fullMessage}");
+        }
+        // As a very robust fallback, also send to chat, as popups can sometimes be missed or problematic.
+        _consoleHost.ExecuteCommand($"say \"{message}\"");
+        _consoleHost.ExecuteCommand($"echo \"To accept, type: {acceptCommand}\""); // Echo to self for easy copy/paste
+    }
+
+    private void OnPlayerFactionStatusChanged(PlayerFactionStatusChangedEvent msg, EntitySessionEventArgs args)
+    {
+        _sawmill.Info($"Received PlayerFactionStatusChangedEvent: IsInFaction={msg.IsInFaction}, FactionName='{msg.FactionName ?? "null"}'.");
+
+        if (_window != null && _window.IsOpen)
+        {
+            _sawmill.Debug("PlayerFactionStatusChangedEvent received while window is open. Updating window state and faction list.");
+            // Update the main view (InFactionView/NotInFactionView) based on the event
+            _window.UpdateState(msg.IsInFaction, msg.FactionName);
+            // Then, explicitly refresh the faction list display based on the latest component data
+            // This ensures the list content (member counts, etc.) is also up-to-date.
+            HandleListFactionsPressed();
+        }
+        else
+        {
+            _sawmill.Debug("PlayerFactionStatusChangedEvent received, but window is not open or null. No immediate UI refresh.");
         }
     }
 
+
+
     private (bool IsInFaction, string? FactionName) GetPlayerFactionStatus()
     {
-        var localPlayerUserId = _player.LocalSession?.UserId;
-        if (localPlayerUserId == null)
+        var localPlayerSession = _player.LocalSession;
+        if (localPlayerSession == null)
         {
-            _sawmill.Warning("Could not get local player user ID for faction status check.");
+            _sawmill.Warning("LocalPlayerSession is null for faction status check.");
             return (false, null);
         }
 
+        // Get the NetUserId and convert it to string for comparison.
+        // NetUserId.ToString() produces a consistent lowercase GUID string.
+        var localPlayerNetId = localPlayerSession.UserId;
+        var localPlayerIdString = localPlayerNetId.ToString();
+        _sawmill.Debug($"GetPlayerFactionStatus: Attempting to find player ID string '{localPlayerIdString}' in factions.");
+
+
+        // Retrieve the global factions component
         var factionsComp = GetCivFactionsComponent();
         if (factionsComp == null)
         {
@@ -177,23 +232,36 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
             return (false, null); // Not necessarily an error if the component doesn't exist yet
         }
 
-        // Ensure FactionList and FactionMembers are not null before iterating
         if (factionsComp.FactionList == null)
         {
             _sawmill.Warning("CivFactionsComponent.FactionList is null.");
             return (false, null);
         }
 
+        // Iterate through each faction to check for the player's membership
         foreach (var faction in factionsComp.FactionList)
         {
-            // Ensure FactionMembers is not null
-            if (faction.FactionMembers != null && faction.FactionMembers.Contains(localPlayerUserId.Value.ToString()))
+            // Log the current faction being checked and its members for detailed debugging
+            var membersString = faction.FactionMembers == null ? "null" : $"[{string.Join(", ", faction.FactionMembers)}]";
+            _sawmill.Debug($"GetPlayerFactionStatus: Checking faction '{faction.FactionName ?? "Unnamed Faction"}'. Members: {membersString}");
+
+            if (faction.FactionMembers != null && faction.FactionMembers.Contains(localPlayerIdString))
             {
-                _sawmill.Debug($"Player {localPlayerUserId} found in faction '{faction.FactionName}'.");
+                _sawmill.Debug($"GetPlayerFactionStatus: Player ID string '{localPlayerIdString}' FOUND in faction '{faction.FactionName}'.");
                 return (true, faction.FactionName);
             }
+            else if (faction.FactionMembers == null)
+            {
+                _sawmill.Debug($"GetPlayerFactionStatus: Faction '{faction.FactionName ?? "Unnamed Faction"}' has a null FactionMembers list.");
+            }
+            else
+            {
+                // This branch means FactionMembers is not null, but does not contain localPlayerIdString
+                _sawmill.Debug($"GetPlayerFactionStatus: Player ID string '{localPlayerIdString}' NOT found in faction '{faction.FactionName ?? "Unnamed Faction"}'.");
+            }
         }
-        _sawmill.Debug($"Player {localPlayerUserId} not found in any faction.");
+
+        _sawmill.Debug($"GetPlayerFactionStatus: Player ID string '{localPlayerIdString}' was not found in any faction after checking all.");
         return (false, null);
     }
 
@@ -263,11 +331,11 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         if (string.IsNullOrWhiteSpace(desiredName))
         {
             _sawmill.Warning("Create Faction pressed with empty name.");
-            if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity)
-                _popupSystem.PopupEntity("Faction name cannot be empty.", playerEntity, PopupType.SmallCaution);
-            else
-                // FIX: Use PopupCursor as a fallback when entity isn't available
-                _popupSystem.PopupCursor("Faction name cannot be empty.");
+            var errorMsg = "Faction name cannot be empty.";
+            if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity && _popupSystem != null)
+                _popupSystem.PopupEntity(errorMsg, playerEntity, PopupType.SmallCaution);
+            else // Fallback to cursor popup or console if entity/popupsystem is unavailable
+                _popupSystem?.PopupCursor(errorMsg); // Use null-conditional
             return;
         }
 
@@ -277,11 +345,10 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         {
             _sawmill.Warning($"Create Faction pressed with name too long: {desiredName}");
             var msg = $"Faction name is too long (max {maxNameLength} characters).";
-            if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity)
+            if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity && _popupSystem != null)
                 _popupSystem.PopupEntity(msg, playerEntity, PopupType.SmallCaution);
-            else
-                // FIX: Use PopupCursor as a fallback when entity isn't available
-                _popupSystem.PopupCursor(msg);
+            else // Fallback
+                _popupSystem?.PopupCursor(msg); // Use null-conditional
             return;
         }
         // --- End Client-side validation ---
@@ -299,9 +366,11 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // Optional: Clear the input field in the UI after sending the request
         _window.ClearFactionNameInput(); // Assumes FactionWindow has this method
 
-        // Optional: Close the window after sending the request?
-        // Or maybe wait for server confirmation before closing/updating UI state.
-        // CloseWindow();
+        // Attempt to refresh the window state immediately.
+        // This relies on the server processing the request and the client receiving
+        // the updated CivFactionsComponent relatively quickly.
+        // A more robust solution might involve a server confirmation event or a short delay.
+        // RefreshFactionWindowState(); // Removed: UI will update via PlayerFactionStatusChangedEvent
     }
 
     private void HandleLeaveFactionPressed()
@@ -311,8 +380,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // Raise the network event to send it to the server
         _ent.RaisePredictiveEvent(leaveEvent); // Use RaisePredictiveEvent for client-initiated actions
         _sawmill.Info("Sent LeaveFactionRequestEvent to server.");
-        // Maybe close the window or update state after sending
-        // CloseWindow();
+
+        // Attempt to refresh the window state immediately.
+        // RefreshFactionWindowState(); // Removed: UI will update via PlayerFactionStatusChangedEvent
     }
 
 
@@ -333,6 +403,32 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // 3. Send the event
         // _ent.RaisePredictiveEvent(inviteEvent);
         // _sawmill.Info($"Sent InviteFactionRequestEvent for target {targetUserId} to server.");
+    }
+
+    /// <summary>
+    /// Refreshes the faction window's main view (in/not in faction) and the faction list.
+    /// Call this after actions that might change the player's faction status or the list of factions.
+    /// </summary>
+    private void RefreshFactionWindowState()
+    {
+        if (_window == null)
+        {
+            _sawmill.Warning("RefreshFactionWindowState called but _window is null!");
+            return;
+        }
+        if (!_window.IsOpen) // No need to refresh if not open
+        {
+            _sawmill.Debug("RefreshFactionWindowState called but window is not open.");
+            return;
+        }
+
+        _sawmill.Debug("Refreshing faction window state...");
+        var (isInFaction, factionName) = GetPlayerFactionStatus();
+        _window.UpdateState(isInFaction, factionName); // This updates NotInFactionView vs InFactionView
+
+        HandleListFactionsPressed(); // This updates the FactionListLabel
+
+        _sawmill.Debug("Faction window state refreshed.");
     }
 
     public void UnloadButton()
@@ -432,7 +528,8 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
             _sawmill.Debug("FactionWindow opened.");
 
             // Optionally, refresh the list immediately on open
-            // HandleListFactionsPressed();
+            // This ensures the faction list is populated when the window is first opened.
+            HandleListFactionsPressed();
         }
 
         // Update button visual state AFTER toggling

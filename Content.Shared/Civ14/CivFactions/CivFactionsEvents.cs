@@ -95,3 +95,19 @@ public sealed class AcceptFactionInviteEvent : BaseFactionRequestEvent
 // Optional: Decline event if explicit decline handling is needed beyond timeout/ignoring.
 // [Serializable, NetSerializable]
 // public sealed class DeclineFactionInviteEvent : BaseFactionRequestEvent { ... }
+
+/// <summary>
+/// Sent from Server -> Client (specific player) when their faction membership status changes.
+/// </summary>
+[Serializable, NetSerializable]
+public sealed class PlayerFactionStatusChangedEvent : EntityEventArgs
+{
+    public bool IsInFaction { get; }
+    public string? FactionName { get; } // Name of the faction if IsInFaction is true
+
+    public PlayerFactionStatusChangedEvent(bool isInFaction, string? factionName)
+    {
+        IsInFaction = isInFaction;
+        FactionName = factionName;
+    }
+}

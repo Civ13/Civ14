@@ -1,12 +1,12 @@
 ﻿[game]
 # Straight in-game baby
-lobbyenabled = true
+lobbyenabled = false
 # Dev map for faster loading & convenience
-map = "Camp"
+map = "Nomads"
 role_timers = false
 lobbyduration = 15
 disallowlatejoins = false
-defaultpreset = "tdm"
+defaultpreset = "nomads"
 
 [events]
 enabled = false

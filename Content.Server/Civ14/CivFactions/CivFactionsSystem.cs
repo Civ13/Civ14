@@ -49,7 +49,7 @@ public sealed class CivFactionsSystem : EntitySystem
     /// </summary>
     private bool EnsureFactionsComponent()
     {
-        if (!_gameTicker.IsGameRuleActive("FactionRuleComponent"))
+        if (!_gameTicker.IsGameRuleActive("FactionRule"))
         {
             Log.Info($"Factions are disabled on this map.");
             return false;
@@ -133,7 +133,7 @@ public sealed class CivFactionsSystem : EntitySystem
         }
 
         // Create the new faction component
-        var newFaction = new CivFactionComponent
+        var newFaction = new FactionData // <-- Use FactionData
         {
             FactionName = msg.FactionName,
             FactionMembers = new List<string> { playerId }
@@ -146,6 +146,10 @@ public sealed class CivFactionsSystem : EntitySystem
         // Send confirmation message
         var confirmationMsg = $"Faction '{msg.FactionName}' created successfully.";
         _chatManager.ChatMessageToOne(ChatChannel.Notifications, confirmationMsg, confirmationMsg, sourceEntity, false, playerSession.Channel);
+
+        // Notify the client their status changed
+        var statusChangeEvent = new PlayerFactionStatusChangedEvent(true, newFaction.FactionName);
+        RaiseNetworkEvent(statusChangeEvent, playerSession.Channel); // Target the specific player
     }
 
     private void OnLeaveFactionRequest(LeaveFactionRequestEvent msg, EntitySessionEventArgs args)
@@ -182,6 +186,10 @@ public sealed class CivFactionsSystem : EntitySystem
         }
 
         Dirty(_factionsEntity.Value, _factionsComponent);
+
+        // Notify the client their status changed
+        var statusChangeEvent = new PlayerFactionStatusChangedEvent(false, null);
+        RaiseNetworkEvent(statusChangeEvent, playerSession.Channel); // Target the specific player
     }
 
     private void OnInviteFactionRequest(InviteFactionRequestEvent msg, EntitySessionEventArgs args)
@@ -275,12 +283,16 @@ public sealed class CivFactionsSystem : EntitySystem
         var confirmationMsg = $"You have joined faction '{targetFaction.FactionName}'.";
         _chatManager.ChatMessageToOne(ChatChannel.Notifications, confirmationMsg, confirmationMsg, sourceEntity, false, accepterSession.Channel);
         Log.Info($"Player {accepterSession.Name} accepted invite and joined faction '{targetFaction.FactionName}'.");
+
+        // Notify the client their status changed
+        var statusChangeEvent = new PlayerFactionStatusChangedEvent(true, targetFaction.FactionName);
+        RaiseNetworkEvent(statusChangeEvent, accepterSession.Channel); // Target the specific player
     }
 
 
     // --- Helper Methods ---
 
-    public bool IsPlayerInFaction(NetUserId userId, out CivFactionComponent? faction)
+    public bool IsPlayerInFaction(NetUserId userId, out FactionData? faction) // <-- Use FactionData
     {
         faction = null;
         if (_factionsComponent == null)
@@ -298,7 +310,7 @@ public sealed class CivFactionsSystem : EntitySystem
         return false;
     }
 
-    public bool TryGetPlayerFaction(NetUserId userId, out CivFactionComponent? faction)
+    public bool TryGetPlayerFaction(NetUserId userId, out FactionData? faction) // <-- Use FactionData
     {
         return IsPlayerInFaction(userId, out faction);
     }

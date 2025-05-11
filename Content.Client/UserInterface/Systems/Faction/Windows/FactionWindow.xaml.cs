@@ -4,6 +4,7 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Client.UserInterface.Controls; // Required for ButtonEventArgs
 using System; // Required for Action
 // Remove the duplicate/unused using directive if FactionUIController isn't directly used here
+using Robust.Shared.Log; // Required for ISawmill
 // using Content.Client.UserInterface.Systems.Faction;
 
 namespace Content.Client.UserInterface.Systems.Faction.Windows;
@@ -11,6 +12,8 @@ namespace Content.Client.UserInterface.Systems.Faction.Windows;
 [GenerateTypedNameReferences]
 public sealed partial class FactionWindow : DefaultWindow
 {
+    // For logging within the window itself
+    private static readonly ISawmill Sawmill = Logger.GetSawmill("faction.window");
     // Events for the controller to subscribe to
     public event Action? OnListFactionsPressed;
     public event Action? OnCreateFactionPressed;
@@ -50,18 +53,24 @@ public sealed partial class FactionWindow : DefaultWindow
     /// <param name="factionName">The name of the faction if isInFaction is true.</param>
     public void UpdateState(bool isInFaction, string? factionName = null)
     {
+        Sawmill.Debug($"UpdateState called. isInFaction: {isInFaction}, factionName: '{factionName ?? "null"}'");
+
         // These lines rely on the XAML generator succeeding
         NotInFactionView.Visible = !isInFaction;
         InFactionView.Visible = isInFaction;
+
+        Sawmill.Debug($"Post-UpdateState: NotInFactionView.Visible: {NotInFactionView.Visible}, InFactionView.Visible: {InFactionView.Visible}");
 
         if (isInFaction)
         {
             // This line relies on the XAML generator succeeding
             CurrentFactionLabel.Text = $"Current Faction: {factionName ?? "Unknown"}";
+            Sawmill.Debug($"CurrentFactionLabel text set to: '{CurrentFactionLabel.Text}'");
         }
 
-        // Clear the list when state changes, it might be stale
-        UpdateFactionList("Press 'List Factions' to refresh.");
+        // The FactionListLabel will be updated by the FactionUIController calling HandleListFactionsPressed
+        // after this UpdateState call, or when the "List Factions" button is pressed.
+        Sawmill.Debug("UpdateState finished (main view updated). Faction list will be updated separately by controller if needed.");
     }
 
     /// <summary>

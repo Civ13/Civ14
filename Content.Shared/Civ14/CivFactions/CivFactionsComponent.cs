@@ -7,6 +7,7 @@ using Robust.Shared.Serialization.Manager.Attributes;
 
 namespace Content.Shared.Civ14.CivFactions;
 
+[AutoGenerateComponentState] // Add this attribute
 [RegisterComponent]
 [NetworkedComponent]
 public sealed partial class CivFactionsComponent : Component
@@ -14,12 +15,11 @@ public sealed partial class CivFactionsComponent : Component
     /// <summary>
     /// The list of current factions in the game.
     /// </summary>
-    [DataField("factionList")]
-    public List<CivFactionComponent> FactionList { get; set; } = new();
+    [DataField("factionList"), AutoNetworkedField]
+    public List<FactionData> FactionList { get; set; } = new(); // <-- Use FactionData
     /// <summary>
     /// Check if the faction rule is enabled.
     /// </summary>
     [DataField("factionsActive")]
     public bool FactionsActive { get; set; } = true;
 }
-

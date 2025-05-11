@@ -4,12 +4,13 @@ using Robust.Shared.GameObjects;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.Manager.Attributes;
+using System.Collections.Generic; // Required for List
 
 namespace Content.Shared.Civ14.CivFactions;
 
-[RegisterComponent]
-[NetworkedComponent]
-public sealed partial class CivFactionComponent : Component
+// Changed from Component to a DataDefinition for use in lists.
+[DataDefinition, Serializable, NetSerializable]
+public sealed partial class FactionData
 {
     /// <summary>
     /// The name of the faction.
