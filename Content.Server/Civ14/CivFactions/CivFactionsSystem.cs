@@ -24,6 +24,9 @@ public sealed class CivFactionsSystem : EntitySystem
     private EntityUid? _factionsEntity;
     private CivFactionsComponent? _factionsComponent;
 
+    /// <summary>
+    /// Initialises the faction system, ensuring the global factions component exists and subscribing to relevant network events for faction management.
+    /// </summary>
     public override void Initialize()
     {
         base.Initialize();
@@ -38,6 +41,9 @@ public sealed class CivFactionsSystem : EntitySystem
         SubscribeNetworkEvent<AcceptFactionInviteEvent>(OnAcceptFactionInvite);
     }
 
+    /// <summary>
+    /// Performs cleanup operations when the faction system is shut down.
+    /// </summary>
     public override void Shutdown()
     {
         base.Shutdown();
@@ -46,7 +52,10 @@ public sealed class CivFactionsSystem : EntitySystem
     /// <summary>
     /// Ensures the global CivFactionsComponent exists and caches its reference.
     /// Creates one if necessary (e.g., attached to the first map found).
+    /// <summary>
+    /// Ensures that a global CivFactionsComponent exists and is cached, creating one on a map entity if necessary.
     /// </summary>
+    /// <returns>True if the factions component is available and cached; false if it could not be ensured.</returns>
     private bool EnsureFactionsComponent()
     {
         if (!_gameTicker.IsGameRuleActive("FactionRule"))
@@ -85,7 +94,9 @@ public sealed class CivFactionsSystem : EntitySystem
         }
     }
 
-    // --- Event Handlers ---
+    /// <summary>
+    /// Handles a request to create a new faction, validating the faction name and player status, and adds the player as the initial member if successful.
+    /// </summary>
 
     private void OnCreateFactionRequest(CreateFactionRequestEvent msg, EntitySessionEventArgs args)
     {
@@ -152,6 +163,9 @@ public sealed class CivFactionsSystem : EntitySystem
         RaiseNetworkEvent(statusChangeEvent, playerSession.Channel); // Target the specific player
     }
 
+    /// <summary>
+    /// Handles a player's request to leave their current faction, updating faction membership and notifying the player.
+    /// </summary>
     private void OnLeaveFactionRequest(LeaveFactionRequestEvent msg, EntitySessionEventArgs args)
     {
         if (!EnsureFactionsComponent())
@@ -192,6 +206,9 @@ public sealed class CivFactionsSystem : EntitySystem
         RaiseNetworkEvent(statusChangeEvent, playerSession.Channel); // Target the specific player
     }
 
+    /// <summary>
+    /// Handles a request for a player to invite another player to their faction, performing validation and sending appropriate notifications and network events.
+    /// </summary>
     private void OnInviteFactionRequest(InviteFactionRequestEvent msg, EntitySessionEventArgs args)
     {
         if (!EnsureFactionsComponent())
@@ -246,6 +263,9 @@ public sealed class CivFactionsSystem : EntitySystem
         Log.Info($"Player {inviterSession.Name} invited {targetSession.Name} to faction '{inviterFaction.FactionName}'.");
     }
 
+    /// <summary>
+    /// Handles a player's acceptance of a faction invitation, adding them to the specified faction and notifying them of the status change.
+    /// </summary>
     private void OnAcceptFactionInvite(AcceptFactionInviteEvent msg, EntitySessionEventArgs args)
     {
         if (!EnsureFactionsComponent())
@@ -290,7 +310,14 @@ public sealed class CivFactionsSystem : EntitySystem
     }
 
 
-    // --- Helper Methods ---
+    /// <summary>
+    /// Determines whether the specified player is a member of any faction.
+    /// </summary>
+    /// <param name="userId">The user ID of the player to check.</param>
+    /// <param name="faction">
+    /// When this method returns, contains the faction the player belongs to if found; otherwise, null.
+    /// </param>
+    /// <returns>True if the player is in a faction; otherwise, false.</returns>
 
     public bool IsPlayerInFaction(NetUserId userId, out FactionData? faction) // <-- Use FactionData
     {
@@ -310,6 +337,12 @@ public sealed class CivFactionsSystem : EntitySystem
         return false;
     }
 
+    /// <summary>
+    /// Attempts to find the faction that the specified player belongs to.
+    /// </summary>
+    /// <param name="userId">The user ID of the player.</param>
+    /// <param name="faction">When this method returns, contains the player's faction if found; otherwise, null.</param>
+    /// <returns>True if the player is a member of a faction; otherwise, false.</returns>
     public bool TryGetPlayerFaction(NetUserId userId, out FactionData? faction) // <-- Use FactionData
     {
         return IsPlayerInFaction(userId, out faction);

@@ -1,9 +1,12 @@
-﻿using Content.Shared.Examine;
+using Content.Shared.Examine;
 
 namespace Content.Shared.Civ14.CivFactions;
 
 public sealed class FactionExamineSystem : EntitySystem
 {
+    /// <summary>
+    /// Subscribes to examination events for entities with a faction component to provide custom examine text based on faction membership.
+    /// </summary>
     public override void Initialize()
     {
         base.Initialize();
@@ -11,6 +14,12 @@ public sealed class FactionExamineSystem : EntitySystem
         SubscribeLocalEvent<CivFactionComponent, ExaminedEvent>(OnFactionExamine);
     }
 
+    /// <summary>
+    /// Adds a faction membership message to the examine event, indicating whether the examined entity shares a faction with the examiner or not.
+    /// </summary>
+    /// <param name="uid">The unique identifier of the examined entity.</param>
+    /// <param name="component">The faction component of the examined entity.</param>
+    /// <param name="args">The examination event arguments.</param>
     private void OnFactionExamine(EntityUid uid, CivFactionComponent component, ExaminedEvent args)
     {
 

@@ -12,6 +12,10 @@ public sealed partial class CivFactionComponent : Component
     [ViewVariables]
     public string FactionName { get; set; } = "";
 
+    /// <summary>
+    /// Sets the faction name associated with this component.
+    /// </summary>
+    /// <param name="factionName">The name of the faction to assign.</param>
     public void SetFaction(string factionName)
     {
         FactionName = factionName;

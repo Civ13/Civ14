@@ -39,6 +39,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     // Ensure the namespace and class name are correct for GameTopMenuBar
     private MenuButton? FactionButton => UIManager.GetActiveUIWidgetOrNull<GameTopMenuBar>()?.FactionButton;
 
+    /// <summary>
+    /// Performs initial setup for the faction UI controller, including subscribing to relevant network events and configuring logging.
+    /// </summary>
     public override void Initialize()
     {
         base.Initialize();
@@ -50,6 +53,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         _sawmill = _logMan.GetSawmill("faction");
     }
 
+    /// <summary>
+    /// Handles entering the gameplay state by creating and configuring the faction window, wiring up UI events, registering keybinds, and loading the faction menu button.
+    /// </summary>
     public void OnStateEntered(GameplayState state)
     {
         // _window should be null here if OnStateExited cleaned up properly
@@ -96,6 +102,10 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         LoadButton();
     }
 
+    /// <summary>
+    /// Cleans up faction UI elements and event handlers when exiting the gameplay state.
+    /// </summary>
+    /// <param name="state">The gameplay state being exited.</param>
     public void OnStateExited(GameplayState state)
     {
         _sawmill.Debug("FactionUIController exiting GameplayState.");
@@ -125,6 +135,13 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         UnloadButton();
     }
 
+    /// <summary>
+    /// Retrieves the first available <see cref="CivFactionsComponent"/> found in the game state, or null if none exist.
+    /// </summary>
+    /// <returns>The first discovered <see cref="CivFactionsComponent"/>, or null if not found.</returns>
+    /// <remarks>
+    /// Logs detailed information about all found instances and warns if multiple or none are present. The returned component may not be the authoritative instance if multiple exist.
+    /// </remarks>
     private CivFactionsComponent? GetCivFactionsComponent()
     {
         var query = _ent.EntityQueryEnumerator<CivFactionsComponent, MetaDataComponent>();
@@ -160,6 +177,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         return firstComp; // Return the first component found, or null if none
     }
 
+    /// <summary>
+    /// Handles a faction invite offer by notifying the player with a popup and chat messages containing instructions to accept the invite.
+    /// </summary>
     private void OnFactionInviteOffer(FactionInviteOfferEvent msg, EntitySessionEventArgs args)
     {
         _sawmill.Info($"Received faction invite from {msg.InviterName} for faction '{msg.FactionName}'.");
@@ -188,6 +208,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         _consoleHost.ExecuteCommand($"echo \"To accept, type: {acceptCommand}\""); // Echo to self for easy copy/paste
     }
 
+    /// <summary>
+    /// Handles updates to the player's faction status, refreshing the faction window UI and updating the player's faction component if necessary.
+    /// </summary>
     private void OnPlayerFactionStatusChanged(PlayerFactionStatusChangedEvent msg, EntitySessionEventArgs args)
     {
         _sawmill.Info($"Received PlayerFactionStatusChangedEvent: IsInFaction={msg.IsInFaction}, FactionName='{msg.FactionName ?? "null"}'.");
@@ -220,6 +243,12 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
 
 
 
+    /// <summary>
+    /// Determines whether the local player is a member of any faction and returns the faction name if applicable.
+    /// </summary>
+    /// <returns>
+    /// A tuple containing a boolean indicating membership status and the name of the faction if the player is a member; otherwise, null.
+    /// </returns>
     private (bool IsInFaction, string? FactionName) GetPlayerFactionStatus()
     {
         var localPlayerSession = _player.LocalSession;
@@ -277,6 +306,12 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         return (false, null);
     }
 
+    /// <summary>
+    /// Displays a list of all existing factions and their member counts in the faction window.
+    /// </summary>
+    /// <remarks>
+    /// If no faction data is available or no factions exist, an appropriate message is shown instead.
+    /// </remarks>
     private void HandleListFactionsPressed()
     {
         _sawmill.Info("List Factions button pressed. Querying local state...");
@@ -327,6 +362,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         _window.UpdateFactionList(listBuilder.ToString());
         _sawmill.Info($"Displayed faction list with {factionsComp.FactionList.Count} factions.");
     }
+    /// <summary>
+    /// Handles the creation of a new faction based on user input, performing client-side validation and sending a creation request to the server.
+    /// </summary>
     private void HandleCreateFactionPressed()
     {
         if (_window == null)
@@ -395,6 +433,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         }
     }
 
+    /// <summary>
+    /// Handles the action when the player chooses to leave their current faction, sending a leave request to the server and clearing the local faction component.
+    /// </summary>
     private void HandleLeaveFactionPressed()
     {
         _sawmill.Info("Leave Faction button pressed.");
@@ -411,6 +452,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     }
 
 
+    /// <summary>
+    /// Handles the invite player action from the faction window, validating input, searching for the player by name, and sending an invite request to the server.
+    /// </summary>
     private void HandleInvitePlayerPressed()
     {
         _sawmill.Debug("Invite Player button pressed.");
@@ -463,6 +507,8 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     /// <summary>
     /// Refreshes the faction window's main view (in/not in faction) and the faction list.
     /// Call this after actions that might change the player's faction status or the list of factions.
+    /// <summary>
+    /// Updates the faction window UI to reflect the player's current faction status and the latest faction list.
     /// </summary>
     private void RefreshFactionWindowState()
     {
@@ -486,6 +532,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         _sawmill.Debug("Faction window state refreshed.");
     }
 
+    /// <summary>
+    /// Unsubscribes the faction button from its pressed event and deactivates its pressed state.
+    /// </summary>
     public void UnloadButton()
     {
         if (FactionButton == null)
@@ -499,6 +548,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         DeactivateButton();
     }
 
+    /// <summary>
+    /// Subscribes to the faction button's press event and synchronises its pressed state with the faction window's visibility.
+    /// </summary>
     public void LoadButton()
     {
         if (FactionButton == null)
@@ -517,6 +569,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
             FactionButton.Pressed = _window.IsOpen;
     }
 
+    /// <summary>
+    /// Sets the faction button's pressed state to inactive if the button exists.
+    /// </summary>
     private void DeactivateButton()
     {
         if (FactionButton == null) return;
@@ -524,6 +579,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         _sawmill.Debug("Deactivated FactionButton visual state.");
     }
 
+    /// <summary>
+    /// Sets the faction button's pressed state to active if the button exists.
+    /// </summary>
     private void ActivateButton()
     {
         if (FactionButton == null) return;
@@ -531,6 +589,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         _sawmill.Debug("Activated FactionButton visual state.");
     }
 
+    /// <summary>
+    /// Closes the faction window if it exists and is currently open.
+    /// </summary>
     private void CloseWindow()
     {
         if (_window == null)
@@ -545,12 +606,18 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         }
     }
 
+    /// <summary>
+    /// Handles the faction button press event by toggling the faction window's visibility.
+    /// </summary>
     private void FactionButtonPressed(ButtonEventArgs args)
     {
         _sawmill.Debug("FactionButton pressed, calling ToggleWindow.");
         ToggleWindow();
     }
 
+    /// <summary>
+    /// Toggles the visibility of the faction management window, updating its state and synchronising the faction button's visual state.
+    /// </summary>
     private void ToggleWindow()
     {
         _sawmill.Debug($"ToggleWindow called. Window is null: {_window == null}");
