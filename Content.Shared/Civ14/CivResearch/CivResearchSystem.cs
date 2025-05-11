@@ -9,6 +9,9 @@ public sealed partial class CivResearchSystem : EntitySystem
     [Dependency] private readonly IMapManager _mapManager = default!;
     [Dependency] private readonly ILogManager _logManager = default!;
     private ISawmill _sawmill = default!;
+    /// <summary>
+    /// Sets up the research system by subscribing to map creation events and initialising the research logger.
+    /// </summary>
     public override void Initialize()
     {
         base.Initialize();
@@ -17,6 +20,10 @@ public sealed partial class CivResearchSystem : EntitySystem
     }
 
 
+    /// <summary>
+    /// Ensures that a CivResearchComponent is attached to the entity representing a newly created map.
+    /// </summary>
+    /// <param name="ev">The event containing information about the newly created map.</param>
     private void OnMapCreated(MapCreatedEvent ev)
     {
         var mapUid = _mapManager.GetMapEntityId(ev.MapId);
@@ -24,6 +31,10 @@ public sealed partial class CivResearchSystem : EntitySystem
         _sawmill.Info("research", $"Ensured ResearchComponent on new map {ev.MapId} (Entity: {mapUid})");
     }
 
+    /// <summary>
+    /// Advances research progression on all active maps by incrementing their research level if research is enabled and not yet at the maximum.
+    /// </summary>
+    /// <param name="frameTime">Elapsed time since the last update, in seconds.</param>
     public override void Update(float frameTime)
     {
         base.Update(frameTime);

@@ -1,4 +1,4 @@
-﻿using Content.Shared.Examine;
+using Content.Shared.Examine;
 
 namespace Content.Shared._Stalker.Weight;
 
@@ -11,6 +11,9 @@ public sealed class SharedWeightExamineInfoSystem : EntitySystem
         SubscribeLocalEvent<STWeightComponent, ExaminedEvent>(OnWeightExamine);
     }
 
+    /// <summary>
+    /// Adds a colour-coded weight description to the examination event based on the entity's total weight.
+    /// </summary>
     private void OnWeightExamine(EntityUid uid, STWeightComponent component, ExaminedEvent args)
     {
         if (!args.IsInDetailsRange)
@@ -31,6 +34,11 @@ public sealed class SharedWeightExamineInfoSystem : EntitySystem
         args.PushMarkup(str);
     }
 
+    /// <summary>
+    /// Converts an integer to a two-character hexadecimal string, clamping values below 0 to "00" and above 255 to "FF".
+    /// </summary>
+    /// <param name="id">The integer value to convert.</param>
+    /// <returns>A two-character hexadecimal string representing the clamped value.</returns>
     private string HexFromId(int id)
     {
         switch (id)
