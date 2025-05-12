@@ -9,6 +9,12 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/ar10.rsi
     - type: Gun
+      projectileSpeed: 32 # 7.62x51mm NATO
+      fireRate: 4.8 # ~700 RPM
+      minAngle: 58 # Significant recoil
+      maxAngle: 140
+      angleIncrease: 7.5
+      angleDecay: 22 # Slower recovery
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/battle_rifle.ogg
     - type: ItemSlots
@@ -40,6 +46,12 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/ar15.rsi
     - type: Gun
+      projectileSpeed: 30 # 5.56x45mm
+      fireRate: 5.5 # Represents fast cycling for semi-auto
+      minAngle: 40 # Low recoil
+      maxAngle: 80
+      angleIncrease: 3.0
+      angleDecay: 35 # Quick recovery
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/M4A1.ogg
       selectedMode: SemiAuto
@@ -74,6 +86,12 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/m16.rsi
     - type: Gun
+      projectileSpeed: 30 # 5.56x45mm
+      fireRate: 5.8 # ~750-900 RPM
+      minAngle: 42 # Good control, long rifle
+      maxAngle: 85
+      angleIncrease: 3.2
+      angleDecay: 33
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/M4A1.ogg
     - type: ItemSlots
@@ -141,10 +159,14 @@
       sprite: Objects/Weapons/Guns/m4.rsi
     - type: Clothing
       sprite: Objects/Weapons/Guns/m4.rsi
+    # Merged and updated Gun component for XM177E2
     - type: Gun
-      soundGunshot:
-        path: /Audio/Weapons/Guns/Fire/M4A1.ogg
-    - type: Gun
+      projectileSpeed: 29 # 5.56mm carbine, shorter barrel
+      fireRate: 6.0 # ~750-950 RPM, can be lively
+      minAngle: 45 # More jumpy than M16
+      maxAngle: 95
+      angleIncrease: 4.0
+      angleDecay: 30
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/M4A1.ogg
       selectedMode: SemiAuto
@@ -162,6 +184,12 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/m4.rsi
     - type: Gun
+      projectileSpeed: 29 # 5.56mm carbine
+      fireRate: 5.9 # ~700-900 RPM, slightly more refined than XM177E2
+      minAngle: 44 # Good control for a carbine
+      maxAngle: 90
+      angleIncrease: 3.8
+      angleDecay: 31
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/M4A1.ogg
       selectedMode: SemiAuto
