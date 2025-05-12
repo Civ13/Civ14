@@ -70,23 +70,26 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
         }
 
         // Determine the controlling faction
-        string currentController = "";
-        int controllerCount = 0;
+        var currentController = "";
+        var maxCount = 0;
         foreach (var (faction, count) in factionCounts)
         {
-            if (count > 0)
+            if (count > maxCount)
             {
+                maxCount = count;
                 currentController = faction;
-                controllerCount++;
+            }
+            else if (maxCount != 0 && count == maxCount)
+            {
+                currentController = ""; // Contested
             }
         }
 
-        // If more than one faction is present, it's contested
-        if (controllerCount > 1)
-            currentController = ""; // Reset controller if contested
-
         // Update component state
-        area.Occupied = controllerCount > 0;
+        if (maxCount > 0 && currentController != "")
+        {
+            area.Occupied = true;
+        }
 
         if (currentController != area.Controller)
         {
