@@ -35,10 +35,15 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     [Dependency] private readonly IClientConsoleHost _consoleHost = default!;
     [Dependency] private readonly IClientNetManager _netManager = default!;
     private PopupSystem? _popupSystem;
+
+    // Store the command instance to manage its registration lifecycle
+    private AcceptFactionInviteCommand? _acceptInviteCmdInstance;
     private ISawmill _sawmill = default!;
     private FactionWindow? _window; // Make nullable
     // Ensure the namespace and class name are correct for GameTopMenuBar
     private MenuButton? FactionButton => UIManager.GetActiveUIWidgetOrNull<GameTopMenuBar>()?.FactionButton;
+
+    private bool _factionControllerResourcesCleanedUp = false;
 
     /// <summary>
     /// Performs initial setup for the faction UI controller, including subscribing to relevant network events and configuring logging.
@@ -51,10 +56,23 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         SubscribeNetworkEvent<PlayerFactionStatusChangedEvent>(OnPlayerFactionStatusChanged);
         _sawmill = _logMan.GetSawmill("faction");
 
-        // Create an instance of the command and inject its dependencies
+        // Create an instance of the command
         var acceptInviteCmd = new AcceptFactionInviteCommand();
         IoCManager.InjectDependencies(acceptInviteCmd); // Injects [Dependency] fields in AcceptFactionInviteCommand
-        _consoleHost.RegisterCommand(acceptInviteCmd); // Register the instance
+
+        try
+        {
+            _consoleHost.RegisterCommand(acceptInviteCmd);
+            _acceptInviteCmdInstance = acceptInviteCmd; // This instance successfully registered the command
+            _sawmill.Debug($"Command '{acceptInviteCmd.Command}' registered successfully by this FactionUIController instance.");
+        }
+        catch (ArgumentException e) when (e.Message.Contains("An item with the same key has already been added"))
+        {
+            // Command is already registered, likely by another client instance in a test/tool environment.
+            // Log this and assume the existing registration is fine.
+            _sawmill.Debug($"Command '{acceptInviteCmd.Command}' was already registered. Skipping registration for this FactionUIController instance. Exception: {e.Message}");
+            _acceptInviteCmdInstance = null; // This instance did not register the command.
+        }
     }
 
     /// <summary>
@@ -139,7 +157,43 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // *** ADD THIS LINE ***
         // Unload the button hookup
         UnloadButton();
+
+        // Perform cleanup of resources specific to this controller when exiting the gameplay state.
+        // This is used as the primary cleanup point for the command registration
+        // due to apparent issues with overriding or extending UIController.Dispose in the current build environment.
+        CleanupFactionControllerResources(true); // True for 'disposing managed resources'
     }
+
+    /// <summary>
+    /// Performs cleanup of managed resources held by this FactionUIController,
+    /// such as unregistering console commands.
+    /// This method is called from OnStateExited as the primary cleanup path
+    /// because the standard IDisposable pattern with overriding Dispose(bool)
+    /// seems problematic in the current build/linting environment (based on CS0115, CS0117).
+    /// </summary>
+    /// <param name="disposing">True if called because managed resources should be disposed.</param>
+    private void CleanupFactionControllerResources(bool disposing)
+    {
+        if (_factionControllerResourcesCleanedUp)
+            return;
+
+        if (disposing)
+        {
+            if (_acceptInviteCmdInstance != null)
+            {
+                _consoleHost.UnregisterCommand(_acceptInviteCmdInstance.Command);
+                _sawmill.Debug($"Command '{_acceptInviteCmdInstance.Command}' unregistered by FactionUIController in CleanupFactionControllerResources.");
+                _acceptInviteCmdInstance = null;
+            }
+        }
+        _factionControllerResourcesCleanedUp = true;
+    }
+
+    // Note: The base UIController.Dispose() method (from IDisposable) will be called when this controller is disposed by the UserInterfaceManager.
+    // However, due to compiler errors (CS0115 'no suitable method to override' for Dispose(bool), and CS0117 'base.Dispose(bool) not found'),
+    // FactionUIController-specific cleanup (like command unregistration) has been moved to OnStateExited via CleanupFactionControllerResources.
+    // If the UIController API in the environment were to match the standard RobustToolbox pattern (with a protected virtual Dispose(bool)),
+    // that would be the ideal place for this cleanup logic.
 
     /// <summary>
     /// Retrieves the first available <see cref="CivFactionsComponent"/> found in the game state, or null if none exist.
