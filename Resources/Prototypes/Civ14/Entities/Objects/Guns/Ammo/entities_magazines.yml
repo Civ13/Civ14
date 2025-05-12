@@ -2097,9 +2097,9 @@
     - type: Sprite
       sprite: Civ14/Objects/ammo.rsi
       layers:
-        - state: ppsh-0
+        - state: thompson-0
           map: ["enum.GunVisualLayers.Base"]
-        - state: ppsh
+        - state: thompson
           map: ["enum.GunVisualLayers.Mag"]
     - type: Tag
       tags:
@@ -2116,6 +2116,13 @@
       whitelist:
         tags:
           - civ13_caliber_a45acp
+    - type: Sprite
+      sprite: Civ14/Objects/ammo.rsi
+      layers:
+        - state: tommydrum-0
+          map: ["enum.GunVisualLayers.Base"]
+        - state: tommydrum
+          map: ["enum.GunVisualLayers.Mag"]
     - type: Tag
       tags:
         - civ13_magazine_Thompson_drum_magazine_(.45)
@@ -3309,28 +3316,7 @@
     - type: Tag
       tags:
         - civ13_magazine_heavy_bullet_pouch_(.50_BMG)
-- type: entity
-  id: civ13_magazine_heavy_bullet_pouch_(.50_BMG)
-  name: heavy bullet pouch (.50 BMG)
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      proto: civ13_caliber_a50cal
-      capacity: 10
-      whitelist:
-        tags:
-          - civ13_caliber_a50cal
-    - type: Sprite
-      sprite: Civ14/Objects/ammo.rsi
-      layers:
-        - state: pouch_closed-0
-          map: ["enum.GunVisualLayers.Base"]
-        - state: pouch_closed
-          map: ["enum.GunVisualLayers.Mag"]
-    - type: Tag
-      tags:
-        - civ13_magazine_heavy_bullet_pouch_(.50_BMG)
+
 - type: entity
   id: civ13_magazine_heavy_bullet_pouch_(.50_BMG_HE)
   name: heavy bullet pouch (.50 BMG HE)
