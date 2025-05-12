@@ -230,13 +230,6 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/greasegun.rsi
     - type: Gun
-      # Values from previous request, confirmed here
-      # projectileSpeed: 18
-      # minAngle: 50
-      # maxAngle: 80
-      # angleIncrease: 4
-      # angleDecay: 20
-      # fireRate: 3.5
       projectileSpeed: 18
       minAngle: 50
       maxAngle: 80

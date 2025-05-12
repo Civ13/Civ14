@@ -76,6 +76,12 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/stg.rsi
     - type: Gun
+      projectileSpeed: 28 # 7.92 Kurz is a bit slower
+      fireRate: 3.7 # ~500 RPM
+      minAngle: 50
+      maxAngle: 110 # More controllable than base AK
+      angleIncrease: 5.0
+      angleDecay: 27
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/stg.ogg
     - type: ItemSlots
@@ -106,6 +112,12 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/g3.rsi
     - type: Gun
+      projectileSpeed: 32 # Full power 7.62 NATO
+      fireRate: 3.8 # ~500-600 RPM
+      minAngle: 60 # Higher recoil
+      maxAngle: 150
+      angleIncrease: 8.0
+      angleDecay: 20 # Slower recoil recovery
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/battle_rifle.ogg
     - type: ItemSlots
@@ -136,6 +148,12 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/fal.rsi
     - type: Gun
+      projectileSpeed: 32 # Full power 7.62 NATO
+      fireRate: 4.5 # ~650-700 RPM
+      minAngle: 62 # Significant recoil
+      maxAngle: 160
+      angleIncrease: 8.5
+      angleDecay: 18 # Hard to control on full auto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/fnfal.ogg
     - type: ItemSlots
@@ -166,6 +184,12 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/scar.rsi
     - type: Gun
+      projectileSpeed: 30 # Standard 5.56
+      fireRate: 4.5 # ~550-650 RPM
+      minAngle: 45 # Very controllable
+      maxAngle: 95
+      angleIncrease: 4.0
+      angleDecay: 30 # Recovers quickly
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/M4A1.ogg
     - type: ItemSlots
@@ -196,6 +220,12 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/scar.rsi
     - type: Gun
+      projectileSpeed: 32 # Full power 7.62 NATO
+      fireRate: 4.2 # ~600 RPM
+      minAngle: 55 # More controllable than older .308s
+      maxAngle: 130
+      angleIncrease: 7.0
+      angleDecay: 22
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/M14.ogg
     - type: ItemSlots
@@ -226,6 +256,12 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/m14.rsi
     - type: Gun
+      projectileSpeed: 32 # Full power 7.62 NATO
+      fireRate: 4.8 # ~700-750 RPM, very fast for caliber
+      minAngle: 65 # Very high recoil
+      maxAngle: 170
+      angleIncrease: 9.5 # Difficult to control
+      angleDecay: 17 # Slowest recoil recovery
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/M14Alt.ogg
     - type: ItemSlots
