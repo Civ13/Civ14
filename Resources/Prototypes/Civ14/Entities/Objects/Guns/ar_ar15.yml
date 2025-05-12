@@ -16,7 +16,6 @@
         gun_magazine:
           name: Magazine
           startingItem: civ13_magazine_AR_10_magazine_(7.62x51mm)
-
           priority: 2
           whitelist:
             tags:
@@ -103,9 +102,15 @@
   components:
     - type: Sprite
       sprite: Objects/Weapons/Guns/m16.rsi
-
     - type: Clothing
       sprite: Objects/Weapons/Guns/m16.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M4A1.ogg
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+        - Burst
 
 - type: entity
   name: M16A4
@@ -117,7 +122,13 @@
       sprite: Objects/Weapons/Guns/m16a4.rsi
     - type: Clothing
       sprite: Objects/Weapons/Guns/m16a4.rsi
-
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M4A1.ogg
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+        - Burst
 # M4s
 
 - type: entity
@@ -133,7 +144,14 @@
     - type: Gun
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/M4A1.ogg
-
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M4A1.ogg
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+        - Burst
+        - FullAuto
 - type: entity
   name: M4 Carbine
   parent: civ13_ar_XM177E2
@@ -143,6 +161,13 @@
       sprite: Objects/Weapons/Guns/m4.rsi
     - type: Clothing
       sprite: Objects/Weapons/Guns/m4.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M4A1.ogg
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+        - FullAuto
 
 - type: entity
   name: M4 MWS
@@ -165,6 +190,13 @@
       sprite: Objects/Weapons/Guns/c7.rsi
     - type: Clothing
       sprite: Objects/Weapons/Guns/c7.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M4A1.ogg
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+        - FullAuto
 
 - type: entity
   name: C8
@@ -176,6 +208,13 @@
       sprite: Objects/Weapons/Guns/c8.rsi
     - type: Clothing
       sprite: Objects/Weapons/Guns/c8.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M4A1.ogg
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+        - FullAuto
 
 - type: entity
   name: Service Rifle

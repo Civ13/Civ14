@@ -1,5 +1,5 @@
 - type: entity
-  name: BaseSMG
+  name: BaseGunSMG
   parent: BaseGunCiv
   id: BaseGunCivAR
   suffix: AR

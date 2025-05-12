@@ -123,6 +123,7 @@
           whitelist:
             tags:
               - civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
+              - civ13_magazine_PPS_43_magazine_(7.62x25mm)
         gun_chamber:
           name: Chamber
           startingItem: civ13_caliber_a762x25
@@ -167,6 +168,7 @@
           whitelist:
             tags:
               - civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
+              - civ13_magazine_PPS_43_magazine_(7.62x25mm)
         gun_chamber:
           name: Chamber
           startingItem: civ13_caliber_a762x25
