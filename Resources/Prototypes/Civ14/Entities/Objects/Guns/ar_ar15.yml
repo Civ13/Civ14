@@ -1,0 +1,191 @@
+- type: entity
+  name: AR-10
+  parent: BaseGunCivAR
+  id: civ13_ar_AR_10
+  description: An ArmaLite battle rifle, chambered in 7.62x51mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/ar10.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/ar10.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/battle_rifle.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_AR_10_magazine_(7.62x51mm)
+
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_AR_10_magazine_(7.62x51mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a762x51
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a762x51
+- type: entity
+  name: AR-15
+  parent: BaseGunCivAR
+  id: civ13_ar_AR_15
+  description: >-
+    A civilian market version of ArmaLite's AR-15, single-fire only. Has
+    railings for several attachments.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/ar15.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/ar15.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M4A1.ogg
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_AR15_magazine_(5.56x45mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_AR15_magazine_(5.56x45mm)
+              - civ13_magazine_STANAG_magazine_(5.56x45mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a556x45
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a556x45
+
+- type: entity
+  name: M16A1
+  parent: BaseGunCivAR
+  id: civ13_ar_M16A1
+  description: An American assault rifle, chambered in 5.56x45mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/m16.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/m16.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M4A1.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_STANAG_magazine_(5.56x45mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_STANAG_magazine_(5.56x45mm)
+              - civ13_magazine_AR15_magazine_(5.56x45mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a556x45
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a556x45
+
+- type: entity
+  name: M16A2
+  parent: civ13_ar_M16A1
+  id: civ13_ar_M16A2
+  description: A modernized version of the M16, with burst fire instead of automatic.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/m16.rsi
+
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/m16.rsi
+
+- type: entity
+  name: M16A4
+  parent: civ13_ar_M16A1
+  id: civ13_ar_M16A4
+  description: A modernized version of the M16, with a railed upper receiver and handguard.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/m16a4.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/m16a4.rsi
+
+# M4s
+
+- type: entity
+  name: XM177E2
+  parent: civ13_ar_M16A1
+  id: civ13_ar_XM177E2
+  description: A carbine version of the AR-15/M16, chambered in 5.56x45mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/m4.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/m4.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M4A1.ogg
+
+- type: entity
+  name: M4 Carbine
+  parent: civ13_ar_XM177E2
+  id: civ13_ar_M4_Carbine
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/m4.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/m4.rsi
+
+- type: entity
+  name: M4 MWS
+  parent: civ13_ar_M4_Carbine
+  id: civ13_ar_M4_MWS
+  description: A version of the M4 carbine made to fit the Modular Weapon System.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/m4mws.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/m4mws.rsi
+
+- type: entity
+  name: C7
+  parent: civ13_ar_M16A1
+  id: civ13_ar_C7
+  description: A Canadian Colt C7 assault rifle, chambered in 5.56x45mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/c7.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/c7.rsi
+
+- type: entity
+  name: C8
+  parent: civ13_ar_M4_Carbine
+  id: civ13_ar_C8
+  description: A Canadian Colt C8 assault rifle, chambered in 5.56x45mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/c8.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/c8.rsi
+
+- type: entity
+  name: Service Rifle
+  parent: civ13_ar_M16A1
+  id: civ13_ar_Service_Rifle
+  description: >-
+    A pre-war rifle design employed as the standard arm of the New California
+    Republic.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/service_rifle.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/service_rifle.rsi

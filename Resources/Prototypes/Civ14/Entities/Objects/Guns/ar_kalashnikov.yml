@@ -1,0 +1,310 @@
+# kalashnikovs and related weapons
+
+- type: entity
+  name: AKM
+  parent: BaseGunCivAR
+  id: civ13_ar_AKM
+  description: Iconic Soviet assault rifle, chambered in 7.62x39mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/ak47.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/ak47.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/AKM.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_AK47_(7.62x39mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_AK47_(7.62x39mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a762x39
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a762x39
+- type: entity
+  name: gold-plated AKM
+  parent: civ13_ar_AKM
+  id: civ13_ar_gold_plated_AKM
+  description: >-
+    Iconic Soviet assault rifle, chambered in 7.62x39mm. This one is plated in
+    gold. It looks very expensive.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/ak47gold.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/ak47gold.rsi
+
+- type: entity
+  name: AKMS
+  parent: civ13_ar_AKM
+  id: civ13_ar_AKMS
+  description: >-
+    Iconic Soviet assault rifle, chambered in 7.62x39mm. This one has a wire
+    underfolding stock.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/akms.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/akms.rsi
+
+- type: entity
+  name: AK-74
+  parent: civ13_ar_AKM
+  id: civ13_ar_AK_74
+  description: Soviet assault rifle, chambered in 5.45x39mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/ak74.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/ak74.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/AK74.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_AK_74_magazine_(5.45x39mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_AK_74_magazine_(5.45x39mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a545x39
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a545x39
+- type: entity
+  name: AKS-74
+  parent: civ13_ar_AK_74
+  id: civ13_ar_AKS_74
+  description: Soviet assault rifle chambered in 5.45x39mm, with a folding stock.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/aks74.rsi
+
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/aks74.rsi
+
+- type: entity
+  name: AKS-74U
+  parent: civ13_ar_AK_74
+  id: civ13_ar_AKS_74U
+  description: Soviet compact assault rifle, chambered in 5.45x39mm, with a folding stock.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/aks74u.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/aks74u.rsi
+
+- type: entity
+  name: AKS-74U SpecOps
+  parent: civ13_ar_AK_74
+  id: civ13_ar_AKS_74U_SpecOps
+  description: >-
+    Soviet assault carbine version of the AK-74, chambered in 5.45x39mm, with a
+    folding stock. This one has picatinny rails for attachments.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/aks74uso.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/aks74uso.rsi
+
+- type: entity
+  name: AK-74M
+  parent: civ13_ar_AK_74
+  id: civ13_ar_AK_74M
+  description: Russian assault rifle, chambered in 5.45x39mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/ak74m.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/ak74m.rsi
+
+- type: entity
+  name: AK-101
+  parent: civ13_ar_AK_74
+  id: civ13_ar_AK_101
+  description: A modern Russian AK variant, chambered in NATO 5.56x45mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/ak101.rsi
+
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/ak101.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/AKM.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_AK_101_magazine_(5.46x45mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_AK_101_magazine_(5.46x45mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a556x45
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a556x45
+- type: entity
+  name: AK-102
+  parent: civ13_ar_AK_101
+  id: civ13_ar_AK_102
+  description: >-
+    A modern Russian AK variant, chambered in NATO 5.56x45mm. This is a carbine
+    version of the AK-101.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/ak101.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/ak101.rsi
+
+- type: entity
+  name: AK-103
+  parent: civ13_ar_AKM
+  id: civ13_ar_AK_103
+  description: A modern Russian AK variant, chambered in 7.62x39mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/ak101.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/ak101.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/AKM.ogg
+
+- type: entity
+  name: AK-104
+  parent: civ13_ar_AK_103
+  id: civ13_ar_AK_104
+  description: >-
+    A modern Russian AK variant, chambered in 7.62x39mm. This is a carbine
+    version of the AK-103.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/ak101.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/ak101.rsi
+
+- type: entity
+  name: AK-105
+  parent: civ13_ar_AK_74
+  id: civ13_ar_AK_105
+  description: >-
+    A modern Russian AK variant, chambered in 5.45x39mm. This is a carbine
+    version of the AK-74M.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/ak101.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/ak101.rsi
+
+- type: entity
+  name: AK-12
+  parent: civ13_ar_AK_74
+  id: civ13_ar_AK_12
+  description: A fifth generation Modern AK variant, chambered in 5.45x39mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/ak12.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/ak12.rsi
+
+- type: entity
+  name: AK-15
+  parent: civ13_ar_AKM
+  id: civ13_ar_AK_15
+  description: A fifth generation Modern AK variant, chambered in 7.62x39mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/ak12.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/ak12.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/AKM.ogg
+
+- type: entity
+  name: Makeshift AK-47
+  parent: civ13_ar_AKM
+  id: civ13_ar_Makeshift_AK_47
+  description: Looks like someone did a really bad job at "UpGRaDinG" their AK.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/makeshiftak.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/makeshiftak.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/AKM.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_Makeshift_AK_47_magazine_(7.62x39mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_Makeshift_AK_47_magazine_(7.62x39mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a762x39
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a762x39
+
+- type: entity
+  name: VZ-58
+  parent: civ13_ar_AKM
+  id: civ13_ar_VZ_58
+  description: Czechoslovakian assault rifle chambered in 7.62x39mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/vz58.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/vz58.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/AKM.ogg
+
+- type: entity
+  name: White VZ-58
+  parent: civ13_ar_VZ_58
+  id: civ13_ar_White_VZ_58
+  description: >-
+    Czechoslovakian assault rifle chambered in 7.62x39mm. This model has a birch
+    stock and handguard.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/white_vz58.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/white_vz58.rsi
+
+- type: entity
+  name: Black VZ-58
+  parent: civ13_ar_VZ_58
+  id: civ13_ar_Black_VZ_58
+  description: >-
+    Czechoslovakian assault rifle chambered in 7.62x39mm. This model has a black
+    stock and handguard.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/black_vz58.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/black_vz58.rsi

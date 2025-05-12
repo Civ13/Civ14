@@ -8,11 +8,9 @@
   components:
     - type: Clothing
       sprite: Objects/Weapons/Guns/SMGs/atreides.rsi
-      quickEquip: false
+      quickEquip: true
       slots:
         - Back
-        - suitStorage
-        - Belt
     - type: Item
       size: Large
       shape:
@@ -50,7 +48,7 @@
       availableModes:
         - FullAuto
       soundGunshot:
-        path: /Audio/Weapons/Guns/Fire/mp40.ogg
+        path: /Audio/Weapons/Guns/Fire/PPSh.ogg
     - type: ChamberMagazineAmmoProvider
       soundRack:
         path: /Audio/Weapons/Guns/Cock/smg_cock.ogg
@@ -64,7 +62,7 @@
   suffix: SMG
   parent: BaseGunCivSMG
   id: civ13_smg_mp40
-  description: A german WW2-era submachinegun.
+  description: Iconic German submachinegun with an underfolding stock, chambered in 9mm Luger.
   components:
     - type: STWeight
       self: 4
@@ -104,11 +102,41 @@
               - civ13_caliber_a9x19
 
 - type: entity
+  name: PPD-40
+  parent: BaseGunCivSMG
+  id: civ13_smg_PPD_40
+  description: Early Soviet submachinegun. Chambered in 7.62x25mm Tokarev.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/ppd.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/ppd.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/762x25.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a762x25
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a762x25
+
+- type: entity
   name: PPSh-41
   suffix: SMG
   parent: BaseGunCivSMG
   id: civ13_smg_ppsh
-  description: A soviet WW2-era submachinegun.
+  description: Soviet submachinegun typically equipped with drum magazines. Chambered in 7.62x25mm Tokarev.
   components:
     - type: STWeight
       self: 4.5
@@ -127,7 +155,7 @@
       maxAngle: 110
       angleIncrease: 3
       angleDecay: 10
-      fireRate: 14
+      fireRate: 5
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/PPSh.ogg
     - type: ItemSlots
@@ -146,3 +174,192 @@
           whitelist:
             tags:
               - civ13_caliber_a762x25
+
+- type: entity
+  name: PPS-43
+  parent: BaseGunCivSMG
+  id: civ13_smg_PPS_43
+  description: A simplistic Soviet submachinegun. Chambered in 7.62x25mm Tokarev.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/pps.rsi
+
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/pps.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/762x25.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_PPS_43_magazine_(7.62x25mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_PPS_43_magazine_(7.62x25mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a762x25
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a762x25
+- type: entity
+  name: M3A1 SMG
+  parent: BaseGunCivSMG
+  id: civ13_smg_M3A1_SMG
+  description: A simplistic American submachinegun, chambered in .45 ACP.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/greasegun.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/greasegun.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M3A1.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_M3A1_magazine_(.45_ACP)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_M3A1_magazine_(.45_ACP)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a45acp
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a45acp
+
+- type: entity
+  name: Thompson M1928
+  parent: BaseGunCivSMG
+  id: civ13_smg_Thompson_M1928
+  description: An American submachinegun, chambered in .45 ACP.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/tommygun.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/tommygun.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/thompson.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_Thompson_drum_magazine_(.45)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_Thompson_drum_magazine_(.45)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a45acp
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a45acp
+
+- type: entity
+  name: Thompson M1A1
+  parent: civ13_smg_Thompson_M1928
+  id: civ13_smg_Thompson_M1A1
+  description: An American submachinegun, chambered in .45 ACP.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/thompson.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/thompson.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/thompson.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_Thompson_magazine_(.45)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_Thompson_magazine_(.45)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a45acp
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a45acp
+
+- type: entity
+  name: Type-100
+  parent: BaseGunCivSMG
+  id: civ13_smg_Type_100
+  description: A Japanese submachinegun, chambered in 8x22mm Nambu.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/type100.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/type100.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/Type100.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_Type_100_Magazine
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_Type_100_Magazine
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_c8mmnambu
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_c8mmnambu
+- type: entity
+  name: Sten MK II
+  parent: BaseGunCivSMG
+  id: civ13_smg_Sten_MK_II
+  description: A British submachinegun, chambered in 9x19 Parabellum.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/sten2.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/sten2.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/mp40.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_Sten_Magazine_(9x19mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_Sten_Magazine_(9x19mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a9x19
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a9x19
+- type: entity
+  name: Sten MK V
+  parent: civ13_smg_Sten_MK_II
+  id: civ13_smg_Sten_MK_V
+  description: A British submachinegun, chambered in 9x19 Parabellum.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/sten2.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/sten2.rsi

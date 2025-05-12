@@ -1,0 +1,246 @@
+- type: entity
+  name: BaseSMG
+  parent: BaseGunCiv
+  id: BaseGunCivAR
+  suffix: AR
+  description: An assault rifle.
+  abstract: true
+  components:
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/ak101.rsi
+      quickEquip: false
+      slots:
+        - Back
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,5,1
+    - type: Sprite
+      layers:
+        - state: icon
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          priority: 3
+          insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        gun_chamber:
+          name: Chamber
+          priority: 1
+          startingItem: civ13_caliber_a762x39
+          whitelist:
+            tags:
+              - civ13_caliber_a762x39
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -40
+      maxAngle: -40
+    - type: Gun
+      projectileSpeed: 30
+      minAngle: 52
+      maxAngle: 125
+      angleIncrease: 6
+      angleDecay: 25
+      fireRate: 4
+      selectedMode: SemiAuto
+      availableModes:
+        - FullAuto
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/AKM.ogg
+    - type: ChamberMagazineAmmoProvider
+      soundRack:
+        path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+
+# imported
+- type: entity
+  name: StG-44
+  parent: BaseGunCivSMG
+  id: civ13_ar_StG_44
+  description: German assault rifle chambered in 7.92x33mm Kurz, 30 round magazine.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/stg.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/stg.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/stg.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_StG_44_magazine_(7.92x33mm)
+
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_StG_44_magazine_(7.92x33mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a792x33
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a792x33
+- type: entity
+  name: H&K G3
+  parent: BaseGunCivSMG
+  id: civ13_ar_H&K_G3
+  description: A German battle rifle, chambered in 7.62x51mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/g3.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/g3.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/battle_rifle.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_G3_magazine_(7.62x51mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_G3_magazine_(7.62x51mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a762x51
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a762x51
+
+- type: entity
+  name: FN Fal
+  parent: BaseGunCivSMG
+  id: civ13_ar_FN_Fal
+  description: A Belgian battle rifle, chambered in 7.62x51mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/fal.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/fal.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/fnfal.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_FN_Fal_magazine_(7.62x51mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_FN_Fal_magazine_(7.62x51mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a762x51
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a762x51
+
+- type: entity
+  name: FN SCAR-L
+  parent: BaseGunCivSMG
+  id: civ13_ar_FN_SCAR_L
+  description: A Belgian assault rifle, chambered in 5.56x45mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/scar.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/scar.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M4A1.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_STANAG_magazine_(5.56x45mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_STANAG_magazine_(5.56x45mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a556x45
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a556x45
+
+- type: entity
+  name: FN SCAR-H
+  parent: BaseGunCivSMG
+  id: civ13_ar_FN_SCAR_H
+  description: A Belgian-designed automatic rifle, chambered in 7.62x51mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/scar.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/scar.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M14.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_SCAR_H_magazine_(7.62x51mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_SCAR_H_magazine_(7.62x51mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a762x51
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a762x51
+
+- type: entity
+  name: M14
+  parent: BaseGunCivSMG
+  id: civ13_ar_M14
+  description: An American battle rifle, chambered in 7.62x51mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/m14.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/m14.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M14Alt.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_M14_magazine_(7.62x51mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_M14_magazine_(7.62x51mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a762x51
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a762x51

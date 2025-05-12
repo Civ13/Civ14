@@ -825,8 +825,8 @@
       tags:
         - civ13_magazine_shotgun_beanbag_box_(.12_gauge)
 - type: entity
-  id: civ13_magazine_AK_74_magazine_(5.45x39mm_Rubber)
-  name: AK-74 magazine (5.45x39mm Rubber)
+  id: civ13_magazine_AK_74_magazine_(5.45x39mm)
+  name: AK-74 magazine (5.45x39mm)
   parent: BaseMagazinePistol
   components:
     - type: BallisticAmmoProvider
@@ -838,7 +838,7 @@
           - civ13_caliber_a545x39
     - type: Tag
       tags:
-        - civ13_magazine_AK_74_magazine_(5.45x39mm_Rubber)
+        - civ13_magazine_AK_74_magazine_(5.45x39mm)
 - type: entity
   id: civ13_magazine_shotgun_breaching_slug_box_(.12_gauge)
   name: shotgun breaching slug box (.12 gauge)
@@ -1411,6 +1411,21 @@
       tags:
         - civ13_magazine_Thompson_magazine_(.45)
 - type: entity
+  id: civ13_magazine_Thompson_drum_magazine_(.45)
+  name: Thompson drum magazine (.45)
+  parent: BaseMagazinePistol
+  components:
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      proto: civ13_caliber_a45acp
+      capacity: 50
+      whitelist:
+        tags:
+          - civ13_caliber_a45acp
+    - type: Tag
+      tags:
+        - civ13_magazine_Thompson_drum_magazine_(.45)
+- type: entity
   id: civ13_magazine_Desert_eagle_magazine_(50cal)
   name: Desert eagle magazine (50cal)
   parent: BaseMagazinePistol
@@ -1470,6 +1485,21 @@
     - type: Tag
       tags:
         - civ13_magazine_Makeshift_AK_47_magazine_(7.62x39mm)
+- type: entity
+  id: civ13_magazine_AK47_(7.62x39mm)
+  name: AK-47 magazine (7.62x39mm)
+  parent: BaseMagazinePistol
+  components:
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      proto: civ13_caliber_a762x39
+      capacity: 30
+      whitelist:
+        tags:
+          - civ13_caliber_a762x39
+    - type: Tag
+      tags:
+        - civ13_magazine_AK47_(7.62x39mm)
 - type: entity
   id: civ13_magazine_RPK_47_drum_(7.62x39mm)
   name: RPK-47 drum (7.62x39mm)
@@ -2101,6 +2131,21 @@
     - type: Tag
       tags:
         - civ13_magazine_AR15_magazine_(5.56x45mm)
+- type: entity
+  id: civ13_magazine_STANAG_magazine_(5.56x45mm)
+  name: STANAG magazine (5.56x45mm)
+  parent: BaseMagazinePistol
+  components:
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      proto: civ13_caliber_a556x45
+      capacity: 30
+      whitelist:
+        tags:
+          - civ13_caliber_a556x45
+    - type: Tag
+      tags:
+        - civ13_magazine_STANAG_magazine_(5.56x45mm)
 - type: entity
   id: civ13_magazine_clip_(7.62x39mm)
   name: clip (7.62x39mm)

@@ -285,7 +285,7 @@
 - type: Tag
   id: civ13_magazine_shotgun_beanbag_box_(.12_gauge)
 - type: Tag
-  id: civ13_magazine_AK_74_magazine_(5.45x39mm_Rubber)
+  id: civ13_magazine_AK_74_magazine_(5.45x39mm)
 - type: Tag
   id: civ13_magazine_shotgun_breaching_slug_box_(.12_gauge)
 - type: Tag
@@ -365,6 +365,8 @@
 - type: Tag
   id: civ13_magazine_Thompson_magazine_(.45)
 - type: Tag
+  id: civ13_magazine_Thompson_drum_magazine_(.45)
+- type: Tag
   id: civ13_magazine_Desert_eagle_magazine_(50cal)
 - type: Tag
   id: civ13_magazine_Desert_eagle_magazine_(44.magnum)
@@ -372,6 +374,8 @@
   id: civ13_magazine_Browning_hi_power_magazine
 - type: Tag
   id: civ13_magazine_Makeshift_AK_47_magazine_(7.62x39mm)
+- type: Tag
+  id: civ13_magazine_AK47_(7.62x39mm)
 - type: Tag
   id: civ13_magazine_RPK_47_drum_(7.62x39mm)
 - type: Tag
@@ -462,6 +466,8 @@
   id: civ13_magazine_bergmann_(8x22mm)
 - type: Tag
   id: civ13_magazine_AR15_magazine_(5.56x45mm)
+- type: Tag
+  id: civ13_magazine_STANAG_magazine_(5.56x45mm)
 - type: Tag
   id: civ13_magazine_clip_(7.62x39mm)
 - type: Tag
