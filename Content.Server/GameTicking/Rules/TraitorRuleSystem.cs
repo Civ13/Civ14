@@ -134,7 +134,7 @@ public sealed class TraitorRuleSystem : GameRuleSystem<TraitorRuleComponent>
 
         if (component.GiveBriefing)
         {
-            _antag.SendBriefing(traitor, GenerateBriefing(codewords, code, issuer), null, component.GreetSoundNotification);
+            _antag.SendBriefing(traitor, GenerateBriefing(codewords, code, issuer), null, null);
             Log.Debug($"MakeTraitor {ToPrettyString(traitor)} - Sent the Briefing");
         }
 
@@ -204,7 +204,7 @@ public sealed class TraitorRuleSystem : GameRuleSystem<TraitorRuleComponent>
     // TODO: AntagCodewordsComponent
     private void OnObjectivesTextPrepend(EntityUid uid, TraitorRuleComponent comp, ref ObjectivesTextPrependEvent args)
     {
-        if(comp.GiveCodewords)
+        if (comp.GiveCodewords)
             args.Text += "\n" + Loc.GetString("traitor-round-end-codewords", ("codewords", string.Join(", ", comp.Codewords)));
     }
 

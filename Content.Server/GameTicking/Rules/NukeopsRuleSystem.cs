@@ -104,7 +104,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
 
         args.AddLine(Loc.GetString("nukeops-list-start"));
 
-        var antags =_antag.GetAntagIdentifiers(uid);
+        var antags = _antag.GetAntagIdentifiers(uid);
 
         foreach (var (_, sessionData, name) in antags)
         {
@@ -481,7 +481,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
                 ("station", target),
                 ("name", Name(ent))),
             Color.Red,
-            ent.Comp.GreetSoundNotification);
+            null);
     }
 
     private void OnGetBriefing(Entity<NukeopsRoleComponent> role, ref GetBriefingEvent args)

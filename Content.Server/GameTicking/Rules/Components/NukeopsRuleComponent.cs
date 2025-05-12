@@ -87,7 +87,7 @@ public sealed partial class NukeopsRuleComponent : Component
     public WinType WinType = WinType.Neutral;
 
     [DataField]
-    public List<WinCondition> WinConditions = new ();
+    public List<WinCondition> WinConditions = new();
 
     [DataField]
     public EntityUid? TargetStation;
@@ -95,11 +95,6 @@ public sealed partial class NukeopsRuleComponent : Component
     [DataField]
     public ProtoId<NpcFactionPrototype> Faction = "Syndicate";
 
-    /// <summary>
-    ///     Path to antagonist alert sound.
-    /// </summary>
-    [DataField]
-    public SoundSpecifier GreetSoundNotification = new SoundPathSpecifier("/Audio/Ambience/Antag/nukeops_start.ogg");
 }
 
 public enum WinType : byte

@@ -1,6 +1,6 @@
 using Content.Shared.Dataset;
 using Content.Shared.FixedPoint;
-﻿using Content.Shared.NPC.Prototypes;
+using Content.Shared.NPC.Prototypes;
 using Content.Shared.Random;
 using Content.Shared.Roles;
 using Robust.Shared.Audio;
@@ -70,12 +70,6 @@ public sealed partial class TraitorRuleComponent : Component
     /// </summary>
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), ViewVariables(VVAccess.ReadWrite)]
     public TimeSpan? AnnounceAt;
-
-    /// <summary>
-    ///     Path to antagonist alert sound.
-    /// </summary>
-    [DataField]
-    public SoundSpecifier GreetSoundNotification = new SoundPathSpecifier("/Audio/Ambience/Antag/traitor_start.ogg");
 
     /// <summary>
     /// The amount of codewords that are selected.

@@ -42,7 +42,7 @@ public sealed class FactionExamineSystem : EntitySystem
         }
         else
         {
-            var str = $"He is a member of [color=#7f0000]{component.FactionName}[/color].";
+            var str = $"He is not a member of any factions.";
             args.PushMarkup(str);
         }
     }

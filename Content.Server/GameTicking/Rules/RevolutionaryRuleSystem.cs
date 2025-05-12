@@ -166,7 +166,7 @@ public sealed class RevolutionaryRuleSystem : GameRuleSystem<RevolutionaryRuleCo
         }
 
         if (mind?.Session != null)
-            _antag.SendBriefing(mind.Session, Loc.GetString("rev-role-greeting"), Color.Red, revComp.RevStartSound);
+            _antag.SendBriefing(mind.Session, Loc.GetString("rev-role-greeting"), Color.Red, null);
     }
 
     //TODO: Enemies of the revolution
