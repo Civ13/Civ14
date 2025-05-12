@@ -6776,13 +6776,16 @@
         coefficients:
           Blunt: 1
           Slash: 1
-
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialLeather1
+        amount: 1
     - type: Construction
-
       graph: civ13_uniform_leather_tunic
       node: end
       cost: 5
-      material: Cloth
+      material: Leather
       time: 5
 - type: entity
   name: kilt
@@ -7450,9 +7453,12 @@
         coefficients:
           Blunt: 1
           Slash: 1
-
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialLeather1
+        amount: 1
     - type: Construction
-
       graph: civ13_uniform_stormcloak_curass
       node: end
       cost: 5
@@ -7527,12 +7533,17 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
-
       graph: civ13_uniform_imperial_armor
       node: end
       cost: 5
-      material: Cloth
+      material: Leather
       time: 5
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialLeather1
+        amount: 1
+  
 - type: entity
   name: Jarl Bolgruf's clothes
   parent: ClothingUniformBase
@@ -8409,7 +8420,6 @@
         coefficients:
           Blunt: 1
           Slash: 1
-
     - type: Construction
       graph: LeatherLoincloth
       node: end
@@ -8436,9 +8446,7 @@
         coefficients:
           Blunt: 1
           Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_cotton_loincloth
       node: end
       cost: 2
@@ -8459,13 +8467,16 @@
         coefficients:
           Blunt: 1
           Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_leaf_skirt
       node: end
       cost: 4
       time: 10
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialStraw1
+        amount: 1
 - type: entity
   name: long leaf skirt
   parent: ClothingUniformBase
@@ -8525,13 +8536,16 @@
         coefficients:
           Blunt: 1
           Slash: 1
-
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialLeather1
+        amount: 1
     - type: Construction
-
       graph: civ13_uniform_short_leather_loincloth
       node: end
       cost: 5
-      material: Cloth
+      material: Leather
       time: 5
 - type: entity
   name: long leather loincloth
@@ -8548,13 +8562,16 @@
         coefficients:
           Blunt: 1
           Slash: 1
-
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialLeather1
+        amount: 1
     - type: Construction
-
       graph: civ13_uniform_long_leather_loincloth
       node: end
       cost: 5
-      material: Cloth
+      material: Leather
       time: 5
 - type: entity
   name: covering leather loincloth
@@ -8571,13 +8588,16 @@
         coefficients:
           Blunt: 1
           Slash: 1
-
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialLeather1
+        amount: 1
     - type: Construction
-
       graph: civ13_uniform_covering_leather_loincloth
       node: end
       cost: 5
-      material: Cloth
+      material: Leather
       time: 5
 - type: entity
   name: indian chief clothing
@@ -8594,14 +8614,17 @@
         coefficients:
           Blunt: 1
           Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_indian_chief_clothing
       node: end
       cost: 5
-      material: Cloth
+      material: Leather
       time: 5
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialLeather1
+        amount: 1
 - type: entity
   name: pygmy shaman clothing
   parent: ClothingUniformBase
@@ -8688,9 +8711,7 @@
         coefficients:
           Blunt: 1
           Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_slene_cattle_fur_loincloth
       node: end
       cost: 2
@@ -8932,9 +8953,7 @@
         coefficients:
           Blunt: 1
           Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_short_loincloth
       node: end
       cost: 3
@@ -8945,6 +8964,7 @@
       spawned:
       - id: MaterialLeather1
         amount: 1
+
 - type: entity
   name: shendyt
   parent: ClothingUniformBase
@@ -9006,9 +9026,7 @@
         coefficients:
           Blunt: 1
           Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_tunic
       node: end
       cost: 4
