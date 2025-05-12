@@ -34,7 +34,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IClientConsoleHost _consoleHost = default!;
     [Dependency] private readonly IClientNetManager _netManager = default!;
-    [Dependency] private readonly PopupSystem _popupSystem = default!;
+    private PopupSystem? _popupSystem;
     private ISawmill _sawmill = default!;
     private FactionWindow? _window; // Make nullable
     // Ensure the namespace and class name are correct for GameTopMenuBar
@@ -46,6 +46,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     public override void Initialize()
     {
         base.Initialize();
+
+        _ent.TrySystem(out _popupSystem); // Try to get PopupSystem, will be null if not registered
+
         SubscribeNetworkEvent<FactionInviteOfferEvent>(OnFactionInviteOffer);
         SubscribeNetworkEvent<PlayerFactionStatusChangedEvent>(OnPlayerFactionStatusChanged);
         _sawmill = _logMan.GetSawmill("faction");
@@ -198,11 +201,11 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         var localPlayerEntity = _player.LocalSession?.AttachedEntity;
         if (localPlayerEntity.HasValue && _ent.EntityExists(localPlayerEntity))
         {
-            _popupSystem.PopupEntity(fullMessage, localPlayerEntity.Value, PopupType.Medium);
+            _popupSystem?.PopupEntity(fullMessage, localPlayerEntity.Value, PopupType.Medium);
         }
         else
         {
-            _popupSystem.PopupCursor(fullMessage, PopupType.Medium);
+            _popupSystem?.PopupCursor(fullMessage, PopupType.Medium);
             _sawmill.Warning($"Could not show faction invite popup on player entity (entity not found or invalid). Falling back to cursor popup. Message: {fullMessage}");
         }
         // As a very robust fallback, also send to chat, as popups can sometimes be missed or problematic.
@@ -385,9 +388,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
             _sawmill.Warning("Create Faction pressed with empty name.");
             var errorMsg = "Faction name cannot be empty.";
             if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity) // playerEntity here is EntityUid
-                _popupSystem.PopupEntity(errorMsg, playerEntity, PopupType.SmallCaution); // Use playerEntity directly
+                _popupSystem?.PopupEntity(errorMsg, playerEntity, PopupType.SmallCaution); // Use playerEntity directly
             else // Fallback to cursor popup or console if entity/popupsystem is unavailable
-                _popupSystem.PopupCursor(errorMsg, PopupType.SmallCaution);
+                _popupSystem?.PopupCursor(errorMsg, PopupType.SmallCaution);
             return;
         }
 
@@ -398,9 +401,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
             _sawmill.Warning($"Create Faction pressed with name too long: {desiredName}");
             var msg = $"Faction name is too long (max {maxNameLength} characters).";
             if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity) // playerEntity here is EntityUid
-                _popupSystem.PopupEntity(msg, playerEntity, PopupType.SmallCaution); // Use playerEntity directly
+                _popupSystem?.PopupEntity(msg, playerEntity, PopupType.SmallCaution); // Use playerEntity directly
             else // Fallback
-                _popupSystem.PopupCursor(msg, PopupType.SmallCaution);
+                _popupSystem?.PopupCursor(msg, PopupType.SmallCaution);
             return;
         }
         // --- End Client-side validation ---
@@ -473,7 +476,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         if (string.IsNullOrWhiteSpace(targetPlayerName))
         {
             _sawmill.Debug("Invite player: Name field is empty.");
-            _popupSystem.PopupCursor("Player name cannot be empty.", PopupType.SmallCaution);
+            _popupSystem?.PopupCursor("Player name cannot be empty.", PopupType.SmallCaution);
             return;
         }
 
@@ -488,7 +491,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         {
             var notFoundMsg = $"Player '{targetPlayerName}' not found.";
             _sawmill.Warning(notFoundMsg);
-            _popupSystem.PopupCursor(notFoundMsg, PopupType.SmallCaution);
+            _popupSystem?.PopupCursor(notFoundMsg, PopupType.SmallCaution);
             return;
         }
 
@@ -501,7 +504,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // Send the event to the server
         _ent.RaisePredictiveEvent(inviteEvent);
         _sawmill.Info($"Sent InviteFactionRequestEvent for target player '{targetPlayerName}' (ID: {targetUserId}) to server.");
-        _popupSystem.PopupCursor($"Invite sent to {targetPlayerName}.", PopupType.Small);
+        _popupSystem?.PopupCursor($"Invite sent to {targetPlayerName}.", PopupType.Small);
 
         _window.ClearInvitePlayerNameInput(); // Clear the input field
     }
