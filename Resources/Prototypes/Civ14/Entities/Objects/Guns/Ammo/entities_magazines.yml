@@ -1311,28 +1311,7 @@
     - type: Tag
       tags:
         - civ13_magazine_magazine_box_(7.7x58mm)
-- type: entity
-  id: civ13_magazine_clip_(7.7x58mm)
-  name: clip (7.7x58mm)
-  parent: BaseMagazinePistol
-  components:
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      proto: civ13_caliber_a77x58_wood
-      capacity: 5
-      whitelist:
-        tags:
-          - civ13_caliber_a77x58_wood
-    - type: Sprite
-      sprite: Civ14/Objects/ammo.rsi
-      layers:
-        - state: kclip-0
-          map: ["enum.GunVisualLayers.Base"]
-        - state: kclip
-          map: ["enum.GunVisualLayers.Mag"]
-    - type: Tag
-      tags:
-        - civ13_magazine_clip_(7.7x58mm)
+
 - type: entity
   id: civ13_magazine_Type_100_Magazine
   name: Type 100 Magazine

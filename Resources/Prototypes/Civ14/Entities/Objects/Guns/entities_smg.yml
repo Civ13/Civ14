@@ -112,6 +112,12 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/ppd.rsi
     - type: Gun
+      projectileSpeed: 18
+      minAngle: 55
+      maxAngle: 95
+      angleIncrease: 5
+      angleDecay: 20
+      fireRate: 6.0
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/762x25.ogg
     - type: ItemSlots
@@ -189,6 +195,12 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/pps.rsi
     - type: Gun
+      projectileSpeed: 18
+      minAngle: 50
+      maxAngle: 80
+      angleIncrease: 4
+      angleDecay: 22
+      fireRate: 5.0
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/762x25.ogg
     - type: ItemSlots
@@ -218,6 +230,19 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/greasegun.rsi
     - type: Gun
+      # Values from previous request, confirmed here
+      # projectileSpeed: 18
+      # minAngle: 50
+      # maxAngle: 80
+      # angleIncrease: 4
+      # angleDecay: 20
+      # fireRate: 3.5
+      projectileSpeed: 18
+      minAngle: 50
+      maxAngle: 80
+      angleIncrease: 4
+      angleDecay: 20
+      fireRate: 3.5
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/M3A1.ogg
     - type: ItemSlots
@@ -248,6 +273,12 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/tommygun.rsi
     - type: Gun
+      projectileSpeed: 18
+      minAngle: 55
+      maxAngle: 90
+      angleIncrease: 4.5
+      angleDecay: 19
+      fireRate: 5.0
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/thompson.ogg
     - type: ItemSlots
@@ -278,6 +309,11 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/thompson.rsi
     - type: Gun
+      fireRate: 4.8 # Slightly more controllable/slower than M1928
+      minAngle: 52
+      maxAngle: 85
+      angleIncrease: 4.2
+      angleDecay: 20
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/thompson.ogg
     - type: ItemSlots
@@ -308,6 +344,12 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/type100.rsi
     - type: Gun
+      projectileSpeed: 18
+      minAngle: 45 # 8mm Nambu is a weaker round
+      maxAngle: 65
+      angleIncrease: 3
+      angleDecay: 25
+      fireRate: 3.5 # Similar to M3A1 due to lower RPM
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/Type100.ogg
     - type: ItemSlots
@@ -337,6 +379,12 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/sten2.rsi
     - type: Gun
+      projectileSpeed: 18
+      minAngle: 50
+      maxAngle: 75 # Sten was a bit rough
+      angleIncrease: 3.8
+      angleDecay: 18
+      fireRate: 4.0 # Similar to MP40
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/mp40.ogg
     - type: ItemSlots
@@ -365,3 +413,9 @@
       sprite: Objects/Weapons/Guns/sten2.rsi
     - type: Clothing
       sprite: Objects/Weapons/Guns/sten2.rsi
+    - type: Gun # Overrides for better controllability than Mk II
+      minAngle: 48
+      maxAngle: 70
+      angleIncrease: 3.5
+      angleDecay: 20
+      # Inherits projectileSpeed, fireRate, and soundGunshot from Sten MK II
