@@ -47,8 +47,6 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     {
         base.Initialize();
 
-        _ent.TrySystem(out _popupSystem); // Try to get PopupSystem, will be null if not registered
-
         SubscribeNetworkEvent<FactionInviteOfferEvent>(OnFactionInviteOffer);
         SubscribeNetworkEvent<PlayerFactionStatusChangedEvent>(OnPlayerFactionStatusChanged);
         _sawmill = _logMan.GetSawmill("faction");
@@ -68,6 +66,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // DebugTools.Assert(_window == null); // Keep this assertion
 
         _sawmill.Debug("FactionUIController entering GameplayState.");
+
+        // Retrieve PopupSystem here, as EntityManager should be more reliably initialized.
+        _ent.TrySystem(out _popupSystem);
 
         // Create the window instance
         _window = UIManager.CreateWindow<FactionWindow>();
