@@ -1,0 +1,148 @@
+- type: entity
+  name: BaseSMG
+  parent: BaseGunCiv
+  id: BaseGunCivSMG
+  suffix: SMG
+  description: A submachinegun.
+  abstract: true
+  components:
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/SMGs/atreides.rsi
+      quickEquip: false
+      slots:
+        - Back
+        - suitStorage
+        - Belt
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,4,1
+    - type: Sprite
+      layers:
+        - state: icon
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          priority: 3
+          insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        gun_chamber:
+          name: Chamber
+          priority: 1
+          startingItem: civ13_caliber_a9x19
+          whitelist:
+            tags:
+              - civ13_caliber_a9x19
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -40
+      maxAngle: -40
+    - type: Gun
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/mp40.ogg
+    - type: ChamberMagazineAmmoProvider
+      soundRack:
+        path: /Audio/Weapons/Guns/Cock/smg_cock.ogg
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+
+- type: entity
+  name: MP 40
+  suffix: SMG
+  parent: BaseGunCivSMG
+  id: civ13_smg_mp40
+  description: A german WW2-era submachinegun.
+  components:
+    - type: STWeight
+      self: 4
+    - type: Item
+      sprite: Civ14/Weapons/Guns/mp40.rsi
+      size: Large
+      shape:
+        - 0,0,6,1
+    - type: Sprite
+      sprite: Civ14/Weapons/Guns/mp40.rsi
+    - type: Clothing
+      sprite: Civ14/Weapons/Guns/mp40.rsi
+      equipDelay: 1
+    - type: Gun
+      projectileSpeed: 18
+      minAngle: 52
+      maxAngle: 70
+      angleIncrease: 3.5
+      angleDecay: 17.5
+      fireRate: 4
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/mp40.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_mp40_(9x19mm)
+          whitelist:
+            tags:
+              - civ13_magazine_mp40_(9x19mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a9x19
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a9x19
+
+- type: entity
+  name: PPSh-41
+  suffix: SMG
+  parent: BaseGunCivSMG
+  id: civ13_smg_ppsh
+  description: A soviet WW2-era submachinegun.
+  components:
+    - type: STWeight
+      self: 4.5
+    - type: Item
+      sprite: Civ14/Weapons/Guns/ppsh.rsi
+      size: Large
+      shape:
+        - 0,0,6,1
+    - type: Sprite
+      sprite: Civ14/Weapons/Guns/ppsh.rsi
+    - type: Clothing
+      sprite: Civ14/Weapons/Guns/ppsh.rsi
+    - type: Gun
+      projectileSpeed: 18
+      minAngle: 65
+      maxAngle: 110
+      angleIncrease: 3
+      angleDecay: 10
+      fireRate: 14
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/PPSh.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a762x25
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a762x25

@@ -1,0 +1,25 @@
+- type: entity
+  parent: BaseItem
+  id: BaseGunCiv
+  name: A gun
+  abstract: true
+  components:
+    - type: STWeight
+      self: 2.7
+    - type: Clothing
+      equipDelay: 1
+      slots:
+        - Back
+      quickEquip: false
+    - type: AmmoCounter
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,5,1
+    - type: Sprite
+      layers:
+        - state: icon
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Appearance

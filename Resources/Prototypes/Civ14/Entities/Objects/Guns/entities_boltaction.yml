@@ -1,9 +1,10 @@
 - type: entity
   name: bolt-action rifle
-  parent: BaseItem
+  parent: BaseGunCiv
   id: BaseWeaponBoltAction
   description: A bolt-action rifle.
   abstract: true
+  suffix: Bolt-Action
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/mosin.rsi
@@ -50,7 +51,7 @@
       maxAngle: 80
       angleIncrease: 5
       angleDecay: 25
-      fireRate: 0.3
+      fireRate: 0.8
     - type: Wieldable
     - type: GunWieldBonus
       minAngle: -50

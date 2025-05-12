@@ -991,8 +991,8 @@
       tags:
         - civ13_magazine_Sten_Magazine_(9x19mm)
 - type: entity
-  id: civ13_magazine_erma_emp_magazine_(9x19mm)
-  name: erma-emp magazine (9x19mm)
+  id: civ13_magazine_mp40_(9x19mm)
+  name: MP 40 magazine (9x19mm)
   parent: BaseMagazinePistol
   components:
     - type: BallisticAmmoProvider
@@ -1004,7 +1004,7 @@
           - civ13_caliber_a9x19
     - type: Tag
       tags:
-        - civ13_magazine_erma_emp_magazine_(9x19mm)
+        - civ13_magazine_mp40_(9x19mm)
 - type: entity
   id: civ13_magazine_MP5_magazine_(9x19mm)
   name: MP5 magazine (9x19mm)
@@ -1118,7 +1118,7 @@
     - type: BallisticAmmoProvider
       mayTransfer: true
       proto: civ13_caliber_a762x25
-      capacity: 65
+      capacity: 71
       whitelist:
         tags:
           - civ13_caliber_a762x25
