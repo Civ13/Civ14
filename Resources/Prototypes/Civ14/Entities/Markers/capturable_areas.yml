@@ -27,3 +27,19 @@
       capturableFactions:
         - England
         - France
+
+- type: entity
+  name: capturable area - KOTH Opushka
+  id: MarkerKOTHOpushka
+  parent: MarkerCapturableArea
+  components:
+    - type: Sprite
+      sprite: Civ14/Markers/areas.rsi
+      state: capture_blue
+    - type: CaptureArea
+      name: "The Main House"
+      captureDuration: 240 # 4 min
+      captureRadius: 3
+      capturableFactions:
+        - Soviet
+        - Germany       

@@ -169,3 +169,29 @@
     - EnglishSpearman
     - EnglishRanged
     - EnglishMedic
+
+- type: department
+  id: DepGerman
+  name: department-German
+  description: department-German-description
+  color: "#080101"
+  roles:
+    - GermanCaptain
+    - GermanSergeant
+    - GermanSubmachineGunner
+    - GermanRifleman
+    - GermanMachinegunner
+    - GermanMedic
+    
+- type: department
+  id: DepSoviet
+  name: department-Soviet
+  description: department-Soviet-description
+  color: "#f80505"
+  roles:
+    - SovietCaptain
+    - SovietSergeant
+    - SovietSubmachineGunner
+    - SovietRifleman
+    - SovietMachinegunner
+    - SovietMedic

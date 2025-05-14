@@ -1,0 +1,31 @@
+- type: gameMap
+  id: Opushka
+  mapName: "Opushka (WW2)"
+  mapPath: /Maps/civ/tdm/opushka.yml
+  minPlayers: 0
+  maxPlayers: 128
+  maxRandomOffset: 0
+  randomRotation: false
+  stations:
+    Opushka:
+      stationProto: StandardStationTDM
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Opushka (WW2)"
+        - type: StationJobs
+          availableJobs:
+            # German
+            GermanCaptain: [1, 1]
+            GermanSergeant: [2, 5]
+            GermanSubmachineGunner: [5, 20]
+            GermanRifleman: [20, 50]
+            GermanMachinegunner: [5, 20]
+            GermanMedic: [1, 3]
+
+          # Soviet
+            SovietCaptain: [1, 1]
+            SovietSergeant: [2, 5]
+            SovietSubmachineGunner: [5, 20]
+            SovietRifleman: [20, 50]
+            SovietMachinegunner: [5, 20]
+            SovietMedic: [1, 3]

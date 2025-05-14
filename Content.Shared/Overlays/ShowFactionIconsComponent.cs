@@ -37,3 +37,23 @@ public sealed partial class ShowFrenchFactionIconsComponent : Component
     [DataField("factionIcon", customTypeSerializer: typeof(PrototypeIdSerializer<FactionIconPrototype>))]
     public string FactionIcon = "FrenchFaction";
 }
+[RegisterComponent, NetworkedComponent]
+public sealed partial class ShowGermanFactionIconsComponent : Component
+{
+
+    /// <summary>
+    /// The faction icon to display
+    /// </summary>
+    [DataField("factionIcon", customTypeSerializer: typeof(PrototypeIdSerializer<FactionIconPrototype>))]
+    public string FactionIcon = "GermanFaction";
+}
+[RegisterComponent, NetworkedComponent]
+public sealed partial class ShowSovietFactionIconsComponent : Component
+{
+
+    /// <summary>
+    /// The faction icon to display
+    /// </summary>
+    [DataField("factionIcon", customTypeSerializer: typeof(PrototypeIdSerializer<FactionIconPrototype>))]
+    public string FactionIcon = "SovietFaction";
+}

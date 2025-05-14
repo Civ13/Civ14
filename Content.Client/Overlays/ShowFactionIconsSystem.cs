@@ -71,3 +71,44 @@ public sealed class ShowEnglishFactionIconsSystem : EquipmentHudSystem<ShowEngli
             ev.StatusIcons.Add(iconPrototype);
     }
 }
+public sealed class ShowGermanFactionIconsSystem : EquipmentHudSystem<ShowGermanFactionIconsComponent>
+{
+    [Dependency] private readonly IPrototypeManager _prototype = default!;
+    public override void Initialize()
+    {
+        base.Initialize();
+
+        SubscribeLocalEvent<ShowGermanFactionIconsComponent, GetStatusIconsEvent>(OnGetStatusIconsEvent);
+
+    }
+
+    private void OnGetStatusIconsEvent(EntityUid uid, ShowGermanFactionIconsComponent component, ref GetStatusIconsEvent ev)
+    {
+        if (!IsActive)
+            return;
+
+        if (_prototype.TryIndex<FactionIconPrototype>(component.FactionIcon, out var iconPrototype))
+            ev.StatusIcons.Add(iconPrototype);
+    }
+}
+public sealed class ShowSovietFactionIconsSystem : EquipmentHudSystem<ShowSovietFactionIconsComponent>
+{
+    [Dependency] private readonly IPrototypeManager _prototype = default!;
+    public override void Initialize()
+    {
+        base.Initialize();
+
+        SubscribeLocalEvent<ShowSovietFactionIconsComponent, GetStatusIconsEvent>(OnGetStatusIconsEvent);
+
+    }
+
+    private void OnGetStatusIconsEvent(EntityUid uid, ShowSovietFactionIconsComponent component, ref GetStatusIconsEvent ev)
+    {
+        if (!IsActive)
+            return;
+
+        if (_prototype.TryIndex<FactionIconPrototype>(component.FactionIcon, out var iconPrototype))
+            ev.StatusIcons.Add(iconPrototype);
+    }
+}
+
