@@ -40,7 +40,7 @@
   originalName: Serzhant
   name: job-name-civ-soviet-sgt
   faction: Soviet
-  description: job-description-civ-soviet-sergeant
+  description: job-description-civ-soviet-sgt
   playTimeTracker: JobSovietSergeant
   requirements:
     - !type:OverallPlaytimeRequirement
