@@ -123,7 +123,7 @@
 
 - type: job
   id: SovietRifleman
-  name: job-name-civ-soviet-riflemen
+  name: job-name-civ-soviet-rifleman
   faction: Soviet
   originalName: Frontovik
   description: job-description-civ-soviet-rifleman
@@ -143,7 +143,7 @@
           factionIcon: SovietFaction
 
 - type: playTimeTracker
-  id: JobSovietRfileman
+  id: JobSovietRifleman
 
 - type: startingGear
   id: SovietRiflemanGear
