@@ -62,7 +62,7 @@
   id: JobSovietSergeant
 
 - type: startingGear
-  id: SovietnSergeantGear
+  id: SovietSergeantGear
   equipment:
     shoes: civ13_shoes_leather_shoes_1
     jumpsuit: civ13_uniform_Soviet_uniform
@@ -110,7 +110,7 @@
   #inhand:
     #- civ13_ppsh
 - type: startingGear
-  id: GermanSubmachineGunner2
+  id: SovietSubmachineGunnerGear2
   equipment:
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_Soviet_uniform
