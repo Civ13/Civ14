@@ -141,10 +141,10 @@
           factionIcon: GermanFaction
 
 - type: playTimeTracker
-  id: JobGermanRfileman
+  id: JobGermanRifleman
 
 - type: startingGear
-  id: GermanRfilemanGear
+  id: GermanRiflemanGear
   equipment:
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_German_SS_uniform
