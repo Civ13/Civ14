@@ -109,7 +109,7 @@
   #inhand:
     #- civ13_german_smg
 - type: startingGear
-  id: GermanSubmachineGunner2
+  id: GermanSubmachineGunnerGear2
   equipment:
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_German_camo_SS_uniform
@@ -121,7 +121,7 @@
 
 - type: job
   id: GermanRifleman
-  name: job-name-civ-german-riflemen
+  name: job-name-civ-german-rifleman
   faction: Germany
   originalName: Schütze
   description: job-description-civ-german-rifleman
