@@ -15,10 +15,10 @@ job-description-civ-french-medic = As a field surgeon, keep your troops alive!
 
 
 job-description-civ-german-cpt = You are the highest ranking in your faction. Lead your men to victory!
-job-description-civ-german-sgt = You are the right hand of your captain. Direct troops and order artilery strikes on the enemy while answering to the Kapitän!
-job-description-civ-german-submachinegunner = You are a submachinegunner. Use your gun's fast firerate to quickly advance into the enemy lines!
-job-description-civ-german-rifleman = You are a rifleman, the german standard of the army. Bring glory to Deustchland!
-job-description-civ-german-machinegunner = You are a machinegunner. Use your supperior firepower to suppress enemies at a distance!
+job-description-civ-german-sgt = You are the right hand of your captain. Direct troops and order artillery strikes on the enemy while answering to the Kapitän!
+job-description-civ-german-submachinegunner = You are a submachinegunner. Use your gun’s fast rate of fire to quickly advance into the enemy lines!
+job-description-civ-german-rifleman = You are a rifleman, the German standard of the army. Bring glory to Deutschland!
+job-description-civ-german-machinegunner = You are a machinegunner. Use your superior firepower to suppress enemies at a distance!
 job-description-civ-german-medic = As a field surgeon, keep your troops alive!
 
 
