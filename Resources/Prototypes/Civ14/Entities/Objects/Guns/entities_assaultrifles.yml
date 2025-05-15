@@ -1,5 +1,5 @@
 - type: entity
-  name: BaseGunSMG
+  name: BaseGunAR
   parent: BaseGunCiv
   id: BaseGunCivAR
   suffix: AR
@@ -274,6 +274,226 @@
           whitelist:
             tags:
               - civ13_magazine_M14_magazine_(7.62x51mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a762x51
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a762x51
+
+- type: entity
+  name: QBZ-95
+  parent: BaseGunCivAR
+  id: civ13_ar_QBZ_95
+  description: A Chinese-designed bullup assault rifle, chambered in 5.8x42mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/qbz95.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/qbz95.rsi
+    - type: Gun
+      projectileSpeed: 30 # 5.8x42mm, similar to other intermediate
+      fireRate: 4.3 # ~650 RPM
+      minAngle: 46 # Good control for a bullpup
+      maxAngle: 90
+      angleIncrease: 4.2
+      angleDecay: 29
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M14.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_QBZ_95_magazine_(5.8x42mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_QBZ_95_magazine_(5.8x42mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a58x42
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a58x42
+
+- type: entity
+  name: M2 carbine
+  parent: BaseGunCivAR
+  id: civ13_ar_M2_carbine
+  description: >-
+    An American Selective fire carbine using 7.62x33mm (Rimless .30 Carbine)
+    ammunition in a external magazine.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/mcar.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/mcar.rsi
+    - type: Gun
+      projectileSpeed: 25 # .30 Carbine, lower velocity
+      fireRate: 5.0 # ~750 RPM
+      minAngle: 40 # Low recoil round
+      maxAngle: 80
+      angleIncrease: 3.5
+      angleDecay: 30
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/Garand.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_M1_Carbine_Small_magazine_(7.62x33mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_M1_Carbine_Small_magazine_(7.62x33mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a762x33
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a762x33
+- type: entity
+  name: SR-3
+  parent: BaseGunCivAR
+  id: civ13_ar_SR_3
+  description: Russian Compact Carbine chambered in 9x39mm, comes with a compact stock.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/srm.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/srm.rsi
+    - type: Gun
+      projectileSpeed: 22 # 9x39mm subsonic, heavy
+      fireRate: 6.0 # ~900 RPM, very fast
+      minAngle: 48 # Manageable due to subsonic nature, but high RoF
+      maxAngle: 100
+      angleIncrease: 5.0 # Will climb on full auto
+      angleDecay: 27
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/PPSh.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_SR_3_magazine_(9x39mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_SR_3_magazine_(9x39mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a9x39
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a9x39
+- type: entity
+  name: L85A2
+  parent: BaseGunCivAR
+  id: civ13_ar_L85A2
+  description: >-
+    The L85A2 (also known as the SA80) rifle is a service rifle used by the
+    British since 1987. A bullpup rifle by design, it is a very compact rifle
+    while still having a relatively long barrel. It's chambered in 5.56x45mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/l85a2.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/l85a2.rsi
+    - type: Gun
+      projectileSpeed: 30 # 5.56x45mm
+      fireRate: 4.8 # ~700 RPM
+      minAngle: 44 # Good control (A2 version)
+      maxAngle: 88
+      angleIncrease: 3.9
+      angleDecay: 31
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M4A1.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_STANAG_magazine_(5.56x45mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_STANAG_magazine_(5.56x45mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_l85a2
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_l85a2
+- type: entity
+  name: Steyr AUG
+  parent: BaseGunCivAR
+  id: civ13_ar_Steyr_AUG
+  description: >-
+    The Steyr AUG is an Austrian bullpup assault rifle designed in the 1960s by
+    Steyr-Daimler-Puch. It's chambered in 5.56x45mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/aug.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/aug.rsi
+    - type: Gun
+      projectileSpeed: 30 # 5.56x45mm
+      fireRate: 4.9 # ~720 RPM
+      minAngle: 43 # Excellent control for a bullpup
+      maxAngle: 85
+      angleIncrease: 3.7
+      angleDecay: 32
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/M4A1.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_STANAG_magazine_(5.56x45mm)
+
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_STANAG_magazine_(5.56x45mm)
+        gun_chamber:
+          name: Chamber
+          startingItem: civ13_caliber_a556x45
+          priority: 1
+          whitelist:
+            tags:
+              - civ13_caliber_a556x45
+- type: entity
+  name: "HK417"
+  parent: BaseGunCivAR
+  id: civ13_ar_HK417
+  description: A modern German battle rifle, chambered in 7.62x51mm.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/hk417.rsi
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/hk417.rsi
+    - type: Gun
+      projectileSpeed: 32 # 7.62x51mm NATO
+      fireRate: 4.0 # ~600 RPM
+      minAngle: 56 # Solid kick
+      maxAngle: 135 # Controllable for its class
+      angleIncrease: 7.2 # Noticeable climb
+      angleDecay: 23 # Good recovery
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Fire/battle_rifle.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: civ13_magazine_G3_magazine_(7.62x51mm)
+          priority: 2
+          whitelist:
+            tags:
+              - civ13_magazine_G3_magazine_(7.62x51mm)
         gun_chamber:
           name: Chamber
           startingItem: civ13_caliber_a762x51

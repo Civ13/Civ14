@@ -2752,11 +2752,11 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
-      proto: CartridgePistol
-      capacity: 15
+      proto: civ13_caliber_a57x28
+      capacity: 50
       whitelist:
         tags:
-          - CartridgePistol
+          - civ13_caliber_a57x28
     - type: Sprite
       sprite: Civ14/Objects/ammo.rsi
       layers:
