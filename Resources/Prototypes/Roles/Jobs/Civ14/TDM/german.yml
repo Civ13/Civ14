@@ -106,16 +106,16 @@
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_German_SS_uniform
     head: civ13_head_german_stahlhelm
-  #inhand:
-    #- civ13_german_smg
+  inhand:
+    - civ13_smg_mp40
 - type: startingGear
   id: GermanSubmachineGunnerGear2
   equipment:
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_German_camo_SS_uniform
     head: civ13_head_German_SS_helmet
-# inhand:
-  # - civ13_german_smg
+  inhand:
+    - civ13_smg_mp40
 
 # Rifleman
 
@@ -149,22 +149,22 @@
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_German_SS_uniform
     head: civ13_head_german_stahlhelm
-# inhand:
-  #  - civ13_boltaction_Gewehr_71
+  inhand:
+    - civ13_boltaction_Karabiner_98k
 - type: startingGear
   id: GermanRiflemanGear2
   equipment:
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_German_camo_SS_uniform
     head: civ13_head_German_SS_helmet
-# inhand:
-  #  - civ13_boltaction_Gewehr_71
+  inhand:
+    - civ13_boltaction_Karabiner_98k
 
 # Machinegunner
 
 - type: job
-  id: GermanMachinegunner 
-  name: job-name-civ-german-machinegunner 
+  id: GermanMachinegunner
+  name: job-name-civ-german-machinegunner
   faction: Germany
   originalName: Maschinengewehrschütze # how to pronounce that
   description: job-description-civ-german-machinegunner
@@ -194,7 +194,7 @@
     head: civ13_head_german_stahlhelm
     pocket1: CombatKnife
 # inhand:
- # - civ13_generic_german_machinegun
+# - civ13_generic_german_machinegun
 - type: startingGear
   id: GermanMachinegunnerGear2
   equipment:
@@ -203,7 +203,7 @@
     head: civ13_head_German_SS_helmet
     pocket1: CombatKnife
 # inhand:
-   # - civ13_generic_german_machinegun
+# - civ13_generic_german_machinegun
 
 # Medic
 
@@ -238,8 +238,8 @@
     head: civ13_head_german_medic_stahlhelm
     belt: LeatherClothingBelt
     pocket1: CombatKnife
-  # inhand: 
-    # - civ13_boltaction_Gewehr_71
+  inhand:
+    - civ13_boltaction_Karabiner_98k
   storage:
     belt:
       - DoctorsHandbook

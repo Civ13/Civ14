@@ -11,6 +11,7 @@
       quickEquip: false
       slots:
         - Back
+    - type: GunRequiresWield
     - type: Item
       size: Large
       shape:

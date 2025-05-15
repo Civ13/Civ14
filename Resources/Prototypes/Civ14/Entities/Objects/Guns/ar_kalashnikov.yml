@@ -59,6 +59,7 @@
     - type: Sprite
       sprite: Civ14/Weapons/Guns/akms.rsi
     - type: Clothing
+      quickEquip: true
       sprite: Civ14/Weapons/Guns/akms.rsi
     - type: Gun # AKMS with folding stock, slightly less stable
       maxAngle: 130 # Slightly wider max spread than AKM
@@ -110,6 +111,7 @@
       sprite: Civ14/Weapons/Guns/aks74.rsi
     - type: Clothing
       sprite: Civ14/Weapons/Guns/aks74.rsi
+      quickEquip: true
     - type: Gun # AKS-74 with folding stock
       maxAngle: 105 # Slightly wider max spread than AK-74
       angleIncrease: 4.7 # Slightly more kick per shot than AK-74
@@ -144,6 +146,7 @@
     - type: Sprite
       sprite: Civ14/Weapons/Guns/aks74uso.rsi
     - type: Clothing
+      quickEquip: true
       sprite: Civ14/Weapons/Guns/aks74uso.rsi
     - type: Gun # AKS-74U SpecOps, similar to AKS-74U, maybe slightly better handling
       projectileSpeed: 27

@@ -66,7 +66,7 @@
   equipment:
     shoes: civ13_shoes_leather_shoes_1
     jumpsuit: civ13_uniform_Soviet_uniform
-   #outerClothing: civ13_suit_Soviet_coat
+    #outerClothing: civ13_suit_Soviet_coat
     head: civ13_head_soviet_pilotka
     belt: civ13_pistol_TT_33
     pocket1: civ13_caliber_a762x25
@@ -107,8 +107,8 @@
     gloves: ClothingHandsGlovesFingerless
     #outerClothing: civ13_suit_Soviet_coat
     head: civ13_head_soviet_helmet
-  #inhand:
-    #- civ13_ppsh
+  inhand:
+    - civ13_smg_ppsh
 - type: startingGear
   id: SovietSubmachineGunnerGear2
   equipment:
@@ -116,8 +116,8 @@
     jumpsuit: civ13_uniform_Soviet_uniform
     #outerClothing: civ13_suit_Soviet_coat_1
     head: civ13_head_soviet_ushanka
-# inhand:
-  # - civ13_ppsh
+  inhand:
+    - civ13_smg_ppsh
 
 # Rifleman
 
@@ -152,8 +152,8 @@
     jumpsuit: civ13_uniform_Soviet_uniform
     #outerClothing: civ13_suit_Soviet_coat_1
     head: civ13_head_soviet_helmet
-# inhand:
-  #  - civ13_boltaction_Mosin
+  inhand:
+    - civ13_boltaction_Mosin_30
 - type: startingGear
   id: SovietRiflemanGear2
   equipment:
@@ -162,16 +162,16 @@
     gloves: ClothingHandsGlovesFingerless
     outerClothing: civ13_suit_Soviet_coat
     head: civ13_head_soviet_ushanka_1
-# inhand:
-  #  - civ13_boltaction_Mosin
+  inhand:
+    - civ13_boltaction_Mosin_30
 
 # Machinegunner
 
 - type: job
-  id: SovietMachinegunner 
-  name: job-name-civ-soviet-machinegunner 
+  id: SovietMachinegunner
+  name: job-name-civ-soviet-machinegunner
   faction: Soviet
-  originalName: Pulemyotchik 
+  originalName: Pulemyotchik
   description: job-description-civ-soviet-machinegunner
   playTimeTracker: JobSovietMachinegunner
   startingGear: SovietMachinegunnerGear
@@ -201,7 +201,7 @@
     head: civ13_head_soviet_helmet
     pocket1: CombatKnife
 # inhand:
- # - civ13_soviet_machinegun
+# - civ13_soviet_machinegun
 - type: startingGear
   id: SovietMachinegunnerGear2
   equipment:
@@ -212,7 +212,7 @@
     head: civ13_head_soviet_ushanka_1
     pocket1: CombatKnife
 # inhand:
-   # - civ13_soviet_machinegun
+# - civ13_soviet_machinegun
 
 # Medic
 
@@ -248,8 +248,8 @@
     head: civ13_head_soviet_medical_helmet
     belt: LeatherClothingBelt
     pocket1: CombatKnife
-  # inhand: 
-    # - civ13_boltaction_Mosin
+  inhand:
+    - civ13_boltaction_Mosin_30
   storage:
     belt:
       - DoctorsHandbook
