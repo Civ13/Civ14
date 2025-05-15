@@ -8,12 +8,11 @@
       sprite: Civ14/Objects/StoneAge/club.rsi
       state: icon
     - type: MeleeWeapon
-      attackRate: 0.7
+      attackRate: 0.8
       wideAnimationRotation: -135
-      range: 1.1
       damage:
         types:
-          Blunt: 19
+          Blunt: 18
       soundHit:
         collection: MetalThud
       bluntStaminaDamageFactor: 1.5
