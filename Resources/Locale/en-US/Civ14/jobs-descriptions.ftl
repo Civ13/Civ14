@@ -23,8 +23,8 @@ job-description-civ-german-medic = As a field surgeon, keep your troops alive!
 
 
 job-description-civ-soviet-cpt = You are the highest ranking in your faction. Lead your men to victory!
-job-description-civ-soviet-sgt = You are the right hand of your captain. Direct troops and order artilery strikes on the enemy while answering to the Kapitan!
+job-description-civ-soviet-sgt = You are the right hand of your captain. Direct troops and order artillery strikes on the enemy while answering to the Kapitan!
 job-description-civ-soviet-submachinegunner = You are a submachinegunner. Use your gun's fast firerate to quickly advance into the enemy lines!
 job-description-civ-soviet-rifleman = You are a rifleman, the soviet standard of the army. For the Motherland!
-job-description-civ-soviet-machinegunner = You are a machinegunner. Use your supperior firepower to suppress enemies at a distance!
+job-description-civ-soviet-machinegunner = You are a machinegunner. Use your superior firepower to suppress enemies at a distance!
 job-description-civ-soviet-medic = As a field surgeon, keep your troops alive!
