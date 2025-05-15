@@ -82,7 +82,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     {
         // _window should be null here if OnStateExited cleaned up properly
         // DebugTools.Assert(_window == null); // Keep this assertion
-
+        _factionControllerResourcesCleanedUp = false;
         _sawmill.Debug("FactionUIController entering GameplayState.");
 
         // Retrieve PopupSystem here, as EntityManager should be more reliably initialized.

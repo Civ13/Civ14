@@ -103,9 +103,9 @@
             tags:
               - civ13_caliber_a792x33
 - type: entity
-  name: H&K G3
+  name: "H&K G3"
   parent: BaseGunCivAR
-  id: civ13_ar_H&K_G3
+  id: "civ13_ar_H&K_G3"
   description: A German battle rifle, chambered in 7.62x51mm.
   components:
     - type: Sprite
