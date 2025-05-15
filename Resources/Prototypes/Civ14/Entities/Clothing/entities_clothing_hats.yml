@@ -13,9 +13,9 @@
         coefficients:
           Blunt: 0.5
           Slash: 0.5
-          Piercing: 0.95
+          Piercing: 0.7
           Arrow: 0.6
-          Heat: 0.85
+          Heat: 0.40
 - type: entity
   name: Imperial Red Guard Helmet
   parent: ClothingHeadBase
