@@ -106,6 +106,7 @@
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_German_SS_uniform
     head: civ13_head_german_stahlhelm
+
   inhand:
     - civ13_smg_mp40
 - type: startingGear
@@ -116,6 +117,7 @@
     head: civ13_head_German_SS_helmet
   inhand:
     - civ13_smg_mp40
+
 
 # Rifleman
 
@@ -151,6 +153,7 @@
     head: civ13_head_german_stahlhelm
   inhand:
     - civ13_boltaction_Karabiner_98k
+
 - type: startingGear
   id: GermanRiflemanGear2
   equipment:
@@ -159,6 +162,7 @@
     head: civ13_head_German_SS_helmet
   inhand:
     - civ13_boltaction_Karabiner_98k
+
 
 # Machinegunner
 
@@ -195,6 +199,7 @@
     pocket1: CombatKnife
 # inhand:
 # - civ13_generic_german_machinegun
+
 - type: startingGear
   id: GermanMachinegunnerGear2
   equipment:
