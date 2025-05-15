@@ -7,9 +7,9 @@
   description: Iconic Soviet assault rifle, chambered in 7.62x39mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/ak47.rsi
+      sprite: Civ14/Weapons/Guns/ak47.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/ak47.rsi
+      sprite: Civ14/Weapons/Guns/ak47.rsi
     - type: Gun
       projectileSpeed: 30 # Base 7.62x39mm
       minAngle: 52 # Standard AKM recoil profile
@@ -44,9 +44,9 @@
     gold. It looks very expensive.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/ak47gold.rsi
+      sprite: Civ14/Weapons/Guns/ak47gold.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/ak47gold.rsi
+      sprite: Civ14/Weapons/Guns/ak47gold.rsi
 
 - type: entity
   name: AKMS
@@ -57,9 +57,9 @@
     underfolding stock.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/akms.rsi
+      sprite: Civ14/Weapons/Guns/akms.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/akms.rsi
+      sprite: Civ14/Weapons/Guns/akms.rsi
     - type: Gun # AKMS with folding stock, slightly less stable
       maxAngle: 130 # Slightly wider max spread than AKM
       angleIncrease: 6.2 # Slightly more kick per shot than AKM
@@ -72,9 +72,9 @@
   description: Soviet assault rifle, chambered in 5.45x39mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/ak74.rsi
+      sprite: Civ14/Weapons/Guns/ak74.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/ak74.rsi
+      sprite: Civ14/Weapons/Guns/ak74.rsi
     - type: Gun
       projectileSpeed: 30 # 5.45x39mm
       fireRate: 4.2 # ~650 RPM, slightly faster
@@ -107,9 +107,9 @@
   description: Soviet assault rifle chambered in 5.45x39mm, with a folding stock.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/aks74.rsi
+      sprite: Civ14/Weapons/Guns/aks74.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/aks74.rsi
+      sprite: Civ14/Weapons/Guns/aks74.rsi
     - type: Gun # AKS-74 with folding stock
       maxAngle: 105 # Slightly wider max spread than AK-74
       angleIncrease: 4.7 # Slightly more kick per shot than AK-74
@@ -122,9 +122,9 @@
   description: Soviet compact assault rifle, chambered in 5.45x39mm, with a folding stock.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/aks74u.rsi
+      sprite: Civ14/Weapons/Guns/aks74u.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/aks74u.rsi
+      sprite: Civ14/Weapons/Guns/aks74u.rsi
     - type: Gun # AKS-74U Carbine "Krinkov"
       projectileSpeed: 27 # Shorter barrel, lower velocity
       fireRate: 4.8 # Higher RoF ~700-750 RPM
@@ -142,9 +142,9 @@
     folding stock. This one has picatinny rails for attachments.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/aks74uso.rsi
+      sprite: Civ14/Weapons/Guns/aks74uso.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/aks74uso.rsi
+      sprite: Civ14/Weapons/Guns/aks74uso.rsi
     - type: Gun # AKS-74U SpecOps, similar to AKS-74U, maybe slightly better handling
       projectileSpeed: 27
       fireRate: 4.8
@@ -160,9 +160,9 @@
   description: Russian assault rifle, chambered in 5.45x39mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/ak74m.rsi
+      sprite: Civ14/Weapons/Guns/ak74m.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/ak74m.rsi
+      sprite: Civ14/Weapons/Guns/ak74m.rsi
     - type: Gun # AK-74M, modernized AK-74
       minAngle: 47 # Better ergonomics, improved control
       maxAngle: 95
@@ -177,9 +177,9 @@
   description: A modern Russian AK variant, chambered in NATO 5.56x45mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/ak101.rsi
+      sprite: Civ14/Weapons/Guns/ak101.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/ak101.rsi
+      sprite: Civ14/Weapons/Guns/ak101.rsi
     - type: Gun
       projectileSpeed: 30 # 5.56x45mm NATO
       fireRate: 4.2 # ~650 RPM, similar to AK-74M
@@ -214,9 +214,9 @@
     version of the AK-101.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/ak101.rsi
+      sprite: Civ14/Weapons/Guns/ak101.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/ak101.rsi
+      sprite: Civ14/Weapons/Guns/ak101.rsi
     - type: Gun # AK-102 Carbine (5.56x45mm)
       projectileSpeed: 28 # Shorter barrel
       fireRate: 4.6 # Higher RoF
@@ -232,9 +232,9 @@
   description: A modern Russian AK variant, chambered in 7.62x39mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/ak101.rsi
+      sprite: Civ14/Weapons/Guns/ak101.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/ak101.rsi
+      sprite: Civ14/Weapons/Guns/ak101.rsi
     - type: Gun
       projectileSpeed: 30 # 7.62x39mm
       fireRate: 4.0 # ~600 RPM, like AKM
@@ -254,9 +254,9 @@
     version of the AK-103.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/ak101.rsi
+      sprite: Civ14/Weapons/Guns/ak101.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/ak101.rsi
+      sprite: Civ14/Weapons/Guns/ak101.rsi
     - type: Gun # AK-104 Carbine (7.62x39mm)
       projectileSpeed: 28 # Shorter barrel
       fireRate: 4.3 # Slightly higher RoF
@@ -274,9 +274,9 @@
     version of the AK-74M.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/ak101.rsi
+      sprite: Civ14/Weapons/Guns/ak101.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/ak101.rsi
+      sprite: Civ14/Weapons/Guns/ak101.rsi
     - type: Gun # AK-105 Carbine (5.45x39mm), similar to AKS-74U/AK-74M carbine
       projectileSpeed: 27
       fireRate: 4.8
@@ -292,9 +292,9 @@
   description: A fifth generation Modern AK variant, chambered in 5.45x39mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/ak12.rsi
+      sprite: Civ14/Weapons/Guns/ak12.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/ak12.rsi
+      sprite: Civ14/Weapons/Guns/ak12.rsi
     - type: Gun # AK-12 (5.45x39mm), modern design
       projectileSpeed: 31 # Potentially slightly higher velocity/consistency
       fireRate: 5.0 # ~700 RPM
@@ -310,9 +310,9 @@
   description: A fifth generation Modern AK variant, chambered in 7.62x39mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/ak12.rsi
+      sprite: Civ14/Weapons/Guns/ak12.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/ak12.rsi
+      sprite: Civ14/Weapons/Guns/ak12.rsi
     - type: Gun
       projectileSpeed: 30 # 7.62x39mm
       fireRate: 4.8 # ~700 RPM, similar to AK-12
@@ -330,9 +330,9 @@
   description: Looks like someone did a really bad job at "UpGRaDinG" their AK.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/makeshiftak.rsi
+      sprite: Civ14/Weapons/Guns/makeshiftak.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/makeshiftak.rsi
+      sprite: Civ14/Weapons/Guns/makeshiftak.rsi
     - type: Gun
       projectileSpeed: 29 # Unreliable
       fireRate: 3.8 # Slower, clunkier
@@ -366,9 +366,9 @@
   description: Czechoslovakian assault rifle chambered in 7.62x39mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/vz58.rsi
+      sprite: Civ14/Weapons/Guns/vz58.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/vz58.rsi
+      sprite: Civ14/Weapons/Guns/vz58.rsi
     - type: Gun
       projectileSpeed: 30 # 7.62x39mm
       fireRate: 5.8 # ~800 RPM, very fast
@@ -388,9 +388,9 @@
     stock and handguard.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/white_vz58.rsi
+      sprite: Civ14/Weapons/Guns/white_vz58.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/white_vz58.rsi
+      sprite: Civ14/Weapons/Guns/white_vz58.rsi
 
 - type: entity
   name: Black VZ-58
@@ -401,6 +401,6 @@
     stock and handguard.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/black_vz58.rsi
+      sprite: Civ14/Weapons/Guns/black_vz58.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/black_vz58.rsi
+      sprite: Civ14/Weapons/Guns/black_vz58.rsi

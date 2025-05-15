@@ -5,9 +5,9 @@
   description: An ArmaLite battle rifle, chambered in 7.62x51mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/ar10.rsi
+      sprite: Civ14/Weapons/Guns/ar10.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/ar10.rsi
+      sprite: Civ14/Weapons/Guns/ar10.rsi
     - type: Gun
       projectileSpeed: 32 # 7.62x51mm NATO
       fireRate: 4.8 # ~700 RPM
@@ -42,9 +42,9 @@
     railings for several attachments.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/ar15.rsi
+      sprite: Civ14/Weapons/Guns/ar15.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/ar15.rsi
+      sprite: Civ14/Weapons/Guns/ar15.rsi
     - type: Gun
       projectileSpeed: 30 # 5.56x45mm
       fireRate: 5.5 # Represents fast cycling for semi-auto
@@ -82,9 +82,9 @@
   description: An American assault rifle, chambered in 5.56x45mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/m16.rsi
+      sprite: Civ14/Weapons/Guns/m16.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/m16.rsi
+      sprite: Civ14/Weapons/Guns/m16.rsi
     - type: Gun
       projectileSpeed: 30 # 5.56x45mm
       fireRate: 5.8 # ~750-900 RPM
@@ -119,9 +119,9 @@
   description: A modernized version of the M16, with burst fire instead of automatic.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/m16.rsi
+      sprite: Civ14/Weapons/Guns/m16.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/m16.rsi
+      sprite: Civ14/Weapons/Guns/m16.rsi
     - type: Gun
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/M4A1.ogg
@@ -137,9 +137,9 @@
   description: A modernized version of the M16, with a railed upper receiver and handguard.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/m16a4.rsi
+      sprite: Civ14/Weapons/Guns/m16a4.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/m16a4.rsi
+      sprite: Civ14/Weapons/Guns/m16a4.rsi
     - type: Gun
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/M4A1.ogg
@@ -156,9 +156,9 @@
   description: A carbine version of the AR-15/M16, chambered in 5.56x45mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/m4.rsi
+      sprite: Civ14/Weapons/Guns/m4.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/m4.rsi
+      sprite: Civ14/Weapons/Guns/m4.rsi
     # Merged and updated Gun component for XM177E2
     - type: Gun
       projectileSpeed: 29 # 5.56mm carbine, shorter barrel
@@ -180,9 +180,9 @@
   id: civ13_ar_M4_Carbine
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/m4.rsi
+      sprite: Civ14/Weapons/Guns/m4.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/m4.rsi
+      sprite: Civ14/Weapons/Guns/m4.rsi
     - type: Gun
       projectileSpeed: 29 # 5.56mm carbine
       fireRate: 5.9 # ~700-900 RPM, slightly more refined than XM177E2
@@ -204,9 +204,9 @@
   description: A version of the M4 carbine made to fit the Modular Weapon System.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/m4mws.rsi
+      sprite: Civ14/Weapons/Guns/m4mws.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/m4mws.rsi
+      sprite: Civ14/Weapons/Guns/m4mws.rsi
 
 - type: entity
   name: C7
@@ -215,9 +215,9 @@
   description: A Canadian Colt C7 assault rifle, chambered in 5.56x45mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/c7.rsi
+      sprite: Civ14/Weapons/Guns/c7.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/c7.rsi
+      sprite: Civ14/Weapons/Guns/c7.rsi
     - type: Gun
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/M4A1.ogg
@@ -233,9 +233,9 @@
   description: A Canadian Colt C8 assault rifle, chambered in 5.56x45mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/c8.rsi
+      sprite: Civ14/Weapons/Guns/c8.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/c8.rsi
+      sprite: Civ14/Weapons/Guns/c8.rsi
     - type: Gun
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/M4A1.ogg
@@ -253,6 +253,6 @@
     Republic.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/service_rifle.rsi
+      sprite: Civ14/Weapons/Guns/service_rifle.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/service_rifle.rsi
+      sprite: Civ14/Weapons/Guns/service_rifle.rsi

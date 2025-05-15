@@ -7,7 +7,7 @@
   abstract: true
   components:
     - type: Clothing
-      sprite: Objects/Weapons/Guns/SMGs/atreides.rsi
+      sprite: Civ14/Weapons/Guns/SMGs/atreides.rsi
       quickEquip: true
       slots:
         - Back
@@ -108,9 +108,9 @@
   description: Early Soviet submachinegun. Chambered in 7.62x25mm Tokarev.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/ppd.rsi
+      sprite: Civ14/Weapons/Guns/ppd.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/ppd.rsi
+      sprite: Civ14/Weapons/Guns/ppd.rsi
     - type: Gun
       projectileSpeed: 18
       minAngle: 55
@@ -190,10 +190,10 @@
   description: A simplistic Soviet submachinegun. Chambered in 7.62x25mm Tokarev.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/pps.rsi
+      sprite: Civ14/Weapons/Guns/pps.rsi
 
     - type: Clothing
-      sprite: Objects/Weapons/Guns/pps.rsi
+      sprite: Civ14/Weapons/Guns/pps.rsi
     - type: Gun
       projectileSpeed: 18
       minAngle: 50
@@ -226,9 +226,9 @@
   description: A simplistic American submachinegun, chambered in .45 ACP.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/greasegun.rsi
+      sprite: Civ14/Weapons/Guns/greasegun.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/greasegun.rsi
+      sprite: Civ14/Weapons/Guns/greasegun.rsi
     - type: Gun
       projectileSpeed: 18
       minAngle: 50
@@ -262,9 +262,9 @@
   description: An American submachinegun, chambered in .45 ACP.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/tommygun.rsi
+      sprite: Civ14/Weapons/Guns/tommygun.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/tommygun.rsi
+      sprite: Civ14/Weapons/Guns/tommygun.rsi
     - type: Gun
       projectileSpeed: 18
       minAngle: 55
@@ -298,9 +298,9 @@
   description: An American submachinegun, chambered in .45 ACP.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/thompson.rsi
+      sprite: Civ14/Weapons/Guns/thompson.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/thompson.rsi
+      sprite: Civ14/Weapons/Guns/thompson.rsi
     - type: Gun
       fireRate: 4.8 # Slightly more controllable/slower than M1928
       minAngle: 52
@@ -333,9 +333,9 @@
   description: A Japanese submachinegun, chambered in 8x22mm Nambu.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/type100.rsi
+      sprite: Civ14/Weapons/Guns/type100.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/type100.rsi
+      sprite: Civ14/Weapons/Guns/type100.rsi
     - type: Gun
       projectileSpeed: 18
       minAngle: 45 # 8mm Nambu is a weaker round
@@ -368,9 +368,9 @@
   description: A British submachinegun, chambered in 9x19 Parabellum.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/sten2.rsi
+      sprite: Civ14/Weapons/Guns/sten2.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/sten2.rsi
+      sprite: Civ14/Weapons/Guns/sten2.rsi
     - type: Gun
       projectileSpeed: 18
       minAngle: 50
@@ -403,9 +403,9 @@
   description: A British submachinegun, chambered in 9x19 Parabellum.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/sten2.rsi
+      sprite: Civ14/Weapons/Guns/sten2.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/sten2.rsi
+      sprite: Civ14/Weapons/Guns/sten2.rsi
     - type: Gun # Overrides for better controllability than Mk II
       minAngle: 48
       maxAngle: 70
