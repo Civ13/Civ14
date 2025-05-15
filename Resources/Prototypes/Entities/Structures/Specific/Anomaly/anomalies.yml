@@ -10,11 +10,6 @@
         collection: RadiationPulse
         params:
           volume: 5
-    - type: AmbientSound
-      range: 5
-      volume: -5
-      sound:
-        path: /Audio/Ambience/anomaly_drone.ogg
     - type: Transform
       anchored: false
     - type: Physics
@@ -598,8 +593,6 @@
           spawns:
             - MobSpawnCrabGold
 
-
-
 - type: entity
   id: AnomalyRockCoal
   parent: AnomalyRockBase
@@ -877,11 +870,6 @@
       radius: 1.5
       energy: 12.5
       color: "#793a80"
-    - type: AmbientSound
-      range: 5
-      volume: -5
-      sound:
-        path: /Audio/Ambience/anomaly_scary.ogg
     - type: Anomaly
       corePrototype: AnomalyCoreShadow
       coreInertPrototype: AnomalyCoreShadowInert

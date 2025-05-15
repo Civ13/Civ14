@@ -8,14 +8,7 @@
       sprite: Civ14/Clothing/exported/uniforms/chaplain.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/chaplain.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_preachers_clothing
       node: end
       cost: 5
@@ -31,14 +24,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ballas1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ballas1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_white_t_shirt_and_purple_shorts
       node: end
       cost: 5
@@ -54,14 +40,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ballas2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ballas2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_baggy_black_clothing
       node: end
       cost: 5
@@ -77,14 +56,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ballas3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ballas3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_purple_shirt_and_khaki_pants
       node: end
       cost: 5
@@ -100,14 +72,7 @@
       sprite: Civ14/Clothing/exported/uniforms/grove1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/grove1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_green_sweatshirt_and_jeans
       node: end
       cost: 5
@@ -123,14 +88,7 @@
       sprite: Civ14/Clothing/exported/uniforms/grove2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/grove2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_green_checkered_outfit
       node: end
       cost: 5
@@ -146,14 +104,7 @@
       sprite: Civ14/Clothing/exported/uniforms/grove3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/grove3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_green_jersey_and_jeans
       node: end
       cost: 5
@@ -169,14 +120,7 @@
       sprite: Civ14/Clothing/exported/uniforms/chad.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/chad.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_chad_clothing
       node: end
       cost: 5
@@ -192,14 +136,7 @@
       sprite: Civ14/Clothing/exported/uniforms/squid_player.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/squid_player.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_contestant_clothing
       node: end
       cost: 5
@@ -215,14 +152,7 @@
       sprite: Civ14/Clothing/exported/uniforms/replicant_bodyglove.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/replicant_bodyglove.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_replicant_black_bodyglove
       node: end
       cost: 5
@@ -238,14 +168,7 @@
       sprite: Civ14/Clothing/exported/uniforms/redbodyglove.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/redbodyglove.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_red_bodyglove
       node: end
       cost: 5
@@ -261,14 +184,7 @@
       sprite: Civ14/Clothing/exported/uniforms/bluebodyglove.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/bluebodyglove.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_blue_bodyglove
       node: end
       cost: 5
@@ -286,14 +202,7 @@
       sprite: Civ14/Clothing/exported/uniforms/imp_stormofficer.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/imp_stormofficer.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_imperial_stormtrooper_officer_uniform
       node: end
       cost: 5
@@ -311,14 +220,7 @@
       sprite: Civ14/Clothing/exported/uniforms/impofficer_captain.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/impofficer_captain.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_imperial_stormtrooper_officer_uniform_1
       node: end
       cost: 5
@@ -334,14 +236,7 @@
       sprite: Civ14/Clothing/exported/uniforms/imp_technician_grey.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/imp_technician_grey.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_imperial_technician_grey_uniform
       node: end
       cost: 5
@@ -357,14 +252,7 @@
       sprite: Civ14/Clothing/exported/uniforms/imp_technician_blue.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/imp_technician_blue.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_imperial_technician_blue_uniform
       node: end
       cost: 5
@@ -380,14 +268,7 @@
       sprite: Civ14/Clothing/exported/uniforms/imp_technician_black.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/imp_technician_black.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_imperial_technician_black_uniform
       node: end
       cost: 5
@@ -405,14 +286,7 @@
       sprite: Civ14/Clothing/exported/uniforms/repofficer_ensign.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/repofficer_ensign.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_republic_ensign_uniform
       node: end
       cost: 5
@@ -430,14 +304,7 @@
       sprite: Civ14/Clothing/exported/uniforms/repofficer_medical.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/repofficer_medical.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_republic_medical_officer
       node: end
       cost: 5
@@ -455,14 +322,7 @@
       sprite: Civ14/Clothing/exported/uniforms/repofficer_navcaptain.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/repofficer_navcaptain.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_republic_naval_officer_uniform
       node: end
       cost: 5
@@ -478,14 +338,7 @@
       sprite: Civ14/Clothing/exported/uniforms/repcaptain_uniform.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/repcaptain_uniform.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_republic_naval_captain_uniform
       node: end
       cost: 5
@@ -501,14 +354,7 @@
       sprite: Civ14/Clothing/exported/uniforms/repensign_uniform.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/repensign_uniform.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_republic_naval_ensign_uniform
       node: end
       cost: 5
@@ -524,14 +370,7 @@
       sprite: Civ14/Clothing/exported/uniforms/repmedical_uniform.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/repmedical_uniform.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_republic_medical_officer_uniform
       node: end
       cost: 5
@@ -548,14 +387,7 @@
       sprite: Civ14/Clothing/exported/uniforms/imp_stormofficer.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/imp_stormofficer.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_imperial_naval_lieutenant_uniform
       node: end
       cost: 5
@@ -571,14 +403,7 @@
       sprite: Civ14/Clothing/exported/uniforms/wise_tutor.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/wise_tutor.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_wise_tutors_outfit
       node: end
       cost: 5
@@ -594,14 +419,7 @@
       sprite: Civ14/Clothing/exported/uniforms/wise_tutor2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/wise_tutor2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_wise_tutors_alternative_outfit
       node: end
       cost: 5
@@ -617,14 +435,7 @@
       sprite: Civ14/Clothing/exported/uniforms/wise_tutor3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/wise_tutor3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_wise_disciple_outfit
       node: end
       cost: 5
@@ -640,14 +451,7 @@
       sprite: Civ14/Clothing/exported/uniforms/arrogant_student.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/arrogant_student.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_arrogant_students_outfit
       node: end
       cost: 5
@@ -663,14 +467,7 @@
       sprite: Civ14/Clothing/exported/uniforms/rebel1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/rebel1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_rebellion_trooper_uniform
       node: end
       cost: 5
@@ -686,14 +483,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dra_uni_officer.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dra_uni_officer.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_DRA_officer_uniform
       node: end
       cost: 5
@@ -709,14 +499,7 @@
       sprite: Civ14/Clothing/exported/uniforms/customroman.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/customroman.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_long_tunic
       node: end
       cost: 4
@@ -733,14 +516,7 @@
       sprite: Civ14/Clothing/exported/uniforms/blue_tunic.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/blue_tunic.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_blue_tunic
       node: end
       cost: 3
@@ -756,14 +532,7 @@
       sprite: Civ14/Clothing/exported/uniforms/red_tunic.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/red_tunic.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_red_tunic
       node: end
       cost: 3
@@ -780,14 +549,7 @@
       sprite: Civ14/Clothing/exported/uniforms/customtoga.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/customtoga.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_toga
       node: end
       cost: 3
@@ -803,14 +565,7 @@
       sprite: Civ14/Clothing/exported/uniforms/toga2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/toga2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_half_shoulder_white_toga
       node: end
       cost: 5
@@ -828,14 +583,7 @@
       sprite: Civ14/Clothing/exported/uniforms/roman_centurion.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/roman_centurion.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_roman_centurion_uniform
       node: end
       cost: 5
@@ -853,11 +601,6 @@
       sprite: Civ14/Clothing/exported/uniforms/athens.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/athens.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
 
 - type: entity
   name: greek uniform
@@ -871,11 +614,6 @@
       sprite: Civ14/Clothing/exported/uniforms/thebes.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/thebes.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
 
 - type: entity
   name: greek uniform
@@ -889,11 +627,6 @@
       sprite: Civ14/Clothing/exported/uniforms/corinthia.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/corinthia.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
 
 - type: entity
   name: greek commander uniform
@@ -907,11 +640,6 @@
       sprite: Civ14/Clothing/exported/uniforms/greek_commander.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/greek_commander.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
 
 - type: entity
   name: white tunic
@@ -923,14 +651,7 @@
       sprite: Civ14/Clothing/exported/uniforms/toxotai.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/toxotai.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_white_tunic
       node: end
       cost: 5
@@ -946,14 +667,7 @@
       sprite: Civ14/Clothing/exported/uniforms/celtic_green.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/celtic_green.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_green_celtic_trousers
       node: end
       cost: 5
@@ -969,14 +683,7 @@
       sprite: Civ14/Clothing/exported/uniforms/celtic_blue.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/celtic_blue.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_blue_celtic_trousers
       node: end
       cost: 5
@@ -992,14 +699,7 @@
       sprite: Civ14/Clothing/exported/uniforms/celtic_red.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/celtic_red.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_red_celtic_trousers
       node: end
       cost: 5
@@ -1015,11 +715,6 @@
       sprite: Civ14/Clothing/exported/uniforms/celtic_short_braccae.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/celtic_short_braccae.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
     - type: Construction
       graph: civ13_uniform_short_celtic_braccae
       node: end
@@ -1041,12 +736,6 @@
       sprite: Civ14/Clothing/exported/uniforms/celtic_long_braccae.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/celtic_long_braccae.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
       graph: civ13_uniform_long_celtic_braccae
       node: end
@@ -1068,12 +757,6 @@
       sprite: Civ14/Clothing/exported/uniforms/mayan_loincloth.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/mayan_loincloth.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
       graph: civ13_uniform_mayan_loincloth
       node: end
@@ -1090,12 +773,6 @@
       sprite: Civ14/Clothing/exported/uniforms/aztec_loincloth.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/aztec_loincloth.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
       graph: civ13_uniform_aztec_loincloth
       node: end
@@ -1117,14 +794,7 @@
       sprite: Civ14/Clothing/exported/uniforms/pharaoh.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/pharaoh.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_pharaohic_shendyt
       node: end
       cost: 8
@@ -1140,14 +810,7 @@
       sprite: Civ14/Clothing/exported/uniforms/greatshendyt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/greatshendyt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_nemes_shendyt
       node: end
       cost: 10
@@ -1163,14 +826,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ainu_robe.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ainu_robe.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_ainu_robes
       node: end
       cost: 3
@@ -1186,14 +842,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ainu_robe2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ainu_robe2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_ainu_robes_1
       node: end
       cost: 3
@@ -1211,14 +860,7 @@
       sprite: Civ14/Clothing/exported/uniforms/kimono.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/kimono.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_white_kimono
       node: end
       cost: 4
@@ -1234,14 +876,7 @@
       sprite: Civ14/Clothing/exported/uniforms/towel.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/towel.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_white_towel
       node: end
       cost: 5
@@ -1260,14 +895,7 @@
       sprite: Civ14/Clothing/exported/uniforms/traffic_cop.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/traffic_cop.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_police_outfit
       node: end
       cost: 5
@@ -1285,14 +913,7 @@
       sprite: Civ14/Clothing/exported/uniforms/traffic_cop_sup.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/traffic_cop_sup.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_police_supervisor_outfit
       node: end
       cost: 5
@@ -1308,14 +929,7 @@
       sprite: Civ14/Clothing/exported/uniforms/sd_sheriff.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/sd_sheriff.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_sheriffs_department_sheriff_outfit
       node: end
       cost: 5
@@ -1331,14 +945,7 @@
       sprite: Civ14/Clothing/exported/uniforms/sd_deputy.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/sd_deputy.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_sheriffs_department_deputy_outfit
       node: end
       cost: 5
@@ -1354,14 +961,7 @@
       sprite: Civ14/Clothing/exported/uniforms/custom_col_short_full.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/custom_col_short_full.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_short_colonial_outfit
       node: end
       cost: 4
@@ -1377,14 +977,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_fp.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_fp.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_US_Army_Uniform
       node: end
       cost: 5
@@ -1402,14 +995,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_camo.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_camo.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_woodland_camo_uniform
       node: end
       cost: 5
@@ -1425,14 +1011,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_greentrousers_og107.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_greentrousers_og107.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_OG_107_trousers
       node: end
       cost: 5
@@ -1448,14 +1027,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_uni_og107_rolled.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_uni_og107_rolled.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_OG_107_uniform_with_rolled_sleeves
       node: end
       cost: 5
@@ -1473,14 +1045,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_og107_lightuni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_og107_lightuni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_OG_107_trousers_and_khaki_undershirt
       node: end
       cost: 5
@@ -1498,14 +1063,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_og107_lightuni2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_og107_lightuni2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_OG_107_trousers_and_white_undershirt
       node: end
       cost: 5
@@ -1521,14 +1079,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_camo_tigerstripes.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_camo_tigerstripes.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_tigerstripes_camo_uniform
       node: end
       cost: 5
@@ -1544,14 +1095,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_camo_dcu.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_camo_dcu.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_desert_camouflage_uniform
       node: end
       cost: 5
@@ -1567,14 +1111,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_camo_woodland.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_camo_woodland.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_woodland_camouflage_uniform
       node: end
       cost: 5
@@ -1592,14 +1129,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_camo_woodland_hez.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_camo_woodland_hez.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_woodland_camouflage_uniform_1
       node: end
       cost: 5
@@ -1615,14 +1145,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_camo_ucp.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_camo_ucp.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_UCP_camo_uniform
       node: end
       cost: 5
@@ -1638,14 +1161,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_camo_ocp.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_camo_ocp.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_OCP_camo_uniform
       node: end
       cost: 5
@@ -1663,14 +1179,7 @@
       sprite: Civ14/Clothing/exported/uniforms/multicam.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/multicam.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_MultiCam_camo_uniform
       node: end
       cost: 5
@@ -1686,14 +1195,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_lightuni_modern.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_lightuni_modern.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_U.S._Army_training_uniform
       node: end
       cost: 5
@@ -1711,14 +1213,7 @@
       sprite: Civ14/Clothing/exported/uniforms/usuni_korea.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/usuni_korea.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_american_uniform
       node: end
       cost: 5
@@ -1734,14 +1229,7 @@
       sprite: Civ14/Clothing/exported/uniforms/korea_china.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/korea_china.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_chinese_uniform
       node: end
       cost: 5
@@ -1757,14 +1245,7 @@
       sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_local_NLF_uniform
       node: end
       cost: 5
@@ -1780,14 +1261,7 @@
       sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_local_NLF_uniform_1
       node: end
       cost: 5
@@ -1803,14 +1277,7 @@
       sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_local_NLF_uniform_1_2
       node: end
       cost: 5
@@ -1826,14 +1293,7 @@
       sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v4.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v4.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_local_NLF_uniform_1_2_3
       node: end
       cost: 5
@@ -1849,14 +1309,7 @@
       sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v5.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v5.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_local_NLF_uniform_1_2_3_4
       node: end
       cost: 5
@@ -1872,14 +1325,7 @@
       sprite: Civ14/Clothing/exported/uniforms/NVAuni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/NVAuni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_NVA_uniform
       node: end
       cost: 5
@@ -1897,14 +1343,7 @@
       sprite: Civ14/Clothing/exported/uniforms/NVAuni_sl.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/NVAuni_sl.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_NVA_sergeant_uniform
       node: end
       cost: 5
@@ -1922,14 +1361,7 @@
       sprite: Civ14/Clothing/exported/uniforms/toughguy.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/toughguy.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_specialist_pants_with_woodland_pattern_paint
       node: end
       cost: 5
@@ -1945,14 +1377,7 @@
       sprite: Civ14/Clothing/exported/uniforms/redguard.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/redguard.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Chinese_Red_Guard_Uniform
       node: end
       cost: 5
@@ -1970,14 +1395,7 @@
       sprite: Civ14/Clothing/exported/uniforms/afghanka_open.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/afghanka_open.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_afghanka_uniform
       node: end
       cost: 5
@@ -1993,14 +1411,7 @@
       sprite: Civ14/Clothing/exported/uniforms/cafr_afghanka_open.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/cafr_afghanka_open.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_cafr_afghanka_uniform
       node: end
       cost: 5
@@ -2016,14 +1427,7 @@
       sprite: Civ14/Clothing/exported/uniforms/sov_klmk.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/sov_klmk.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_KLMK_camo_uniform
       node: end
       cost: 5
@@ -2039,14 +1443,7 @@
       sprite: Civ14/Clothing/exported/uniforms/yellow_tunic.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/yellow_tunic.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_yellow_tunic
       node: end
       cost: 5
@@ -2064,14 +1461,7 @@
       sprite: Civ14/Clothing/exported/uniforms/sov_kzs.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/sov_kzs.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_KZS_camo_uniform
       node: end
       cost: 5
@@ -2087,14 +1477,7 @@
       sprite: Civ14/Clothing/exported/uniforms/sovuni_officer.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/sovuni_officer.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Soviet_officer_uniform
       node: end
       cost: 5
@@ -2110,14 +1493,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dra_uni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dra_uni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_DRA_uniform
       node: end
       cost: 5
@@ -2133,14 +1509,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dra_uni_nco.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dra_uni_nco.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_DRA_NCO_uniform
       node: end
       cost: 5
@@ -2156,14 +1525,7 @@
       sprite: Civ14/Clothing/exported/uniforms/bowling_red.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/bowling_red.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_red_bowling_outfit
       node: end
       cost: 5
@@ -2179,14 +1541,7 @@
       sprite: Civ14/Clothing/exported/uniforms/bowling_yellow.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/bowling_yellow.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_yellow_bowling_outfit
       node: end
       cost: 5
@@ -2202,14 +1557,7 @@
       sprite: Civ14/Clothing/exported/uniforms/bowling_green.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/bowling_green.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_green_bowling_outfit
       node: end
       cost: 5
@@ -2225,14 +1573,7 @@
       sprite: Civ14/Clothing/exported/uniforms/bowling_blue.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/bowling_blue.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_blue_bowling_outfit
       node: end
       cost: 5
@@ -2248,14 +1589,7 @@
       sprite: Civ14/Clothing/exported/uniforms/hippy.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/hippy.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_hippie_outfit
       node: end
       cost: 5
@@ -2273,14 +1607,7 @@
       sprite: Civ14/Clothing/exported/uniforms/sundress_yellow.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/sundress_yellow.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_yellow_sundress
       node: end
       cost: 3
@@ -2296,14 +1623,7 @@
       sprite: Civ14/Clothing/exported/uniforms/football_blue.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/football_blue.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Chad_Town_jersey
       node: end
       cost: 5
@@ -2319,14 +1639,7 @@
       sprite: Civ14/Clothing/exported/uniforms/customtoga.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/customtoga.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_purple_toga
       node: end
       cost: 5
@@ -2342,14 +1655,7 @@
       sprite: Civ14/Clothing/exported/uniforms/football_red.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/football_red.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Unga_Bunga_jersey
       node: end
       cost: 5
@@ -2367,14 +1673,7 @@
       sprite: Civ14/Clothing/exported/uniforms/gator_pants.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/gator_pants.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_shirtless_gator_pants
       node: end
       cost: 3
@@ -2395,14 +1694,7 @@
       sprite: Civ14/Clothing/exported/uniforms/nkvd_uni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/nkvd_uni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_NKVD_uniform
       node: end
       cost: 5
@@ -2418,14 +1710,7 @@
       sprite: Civ14/Clothing/exported/uniforms/nkvd_uni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/nkvd_uni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_KGB_uniform
       node: end
       cost: 5
@@ -2441,14 +1726,7 @@
       sprite: Civ14/Clothing/exported/uniforms/gulagprisoner.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/gulagprisoner.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_GULAG_prisoner_clothing
       node: end
       cost: 5
@@ -2464,14 +1742,7 @@
       sprite: Civ14/Clothing/exported/uniforms/japoffuni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/japoffuni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Japanese_Officer_Uniform
       node: end
       cost: 5
@@ -2487,14 +1758,7 @@
       sprite: Civ14/Clothing/exported/uniforms/japuni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/japuni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Japanese_Army_Uniform
       node: end
       cost: 5
@@ -2510,14 +1774,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_navy.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_navy.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_japanese_naval_uniform
       node: end
       cost: 5
@@ -2533,14 +1790,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_navy_po.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_navy_po.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Japanese_naval_petty_officer_uniform
       node: end
       cost: 5
@@ -2556,14 +1806,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_navy_officer.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_navy_officer.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Japanese_naval_officer_uniform
       node: end
       cost: 5
@@ -2581,14 +1824,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_snlf.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_snlf.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Japanese_SNLF_uniform
       node: end
       cost: 5
@@ -2604,14 +1840,7 @@
       sprite: Civ14/Clothing/exported/uniforms/japtanker.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/japtanker.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Japanese_tanker_uniform
       node: end
       cost: 5
@@ -2627,14 +1856,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww1_british.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww1_british.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_british_uniform
       node: end
       cost: 5
@@ -2650,14 +1872,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww2_british_off_tropical.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww2_british_off_tropical.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_British_officer_uniform
       node: end
       cost: 5
@@ -2673,14 +1888,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww2_china.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww2_china.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Chinese_uniform
       node: end
       cost: 5
@@ -2696,14 +1904,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww2_china_off.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww2_china_off.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Chinese_uniform_1
       node: end
       cost: 5
@@ -2719,14 +1920,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww2_china2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww2_china2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Chinese_uniform_1_2
       node: end
       cost: 5
@@ -2742,14 +1936,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww2_china2_off.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww2_china2_off.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_chinese_uniform_1
       node: end
       cost: 5
@@ -2765,14 +1952,7 @@
       sprite: Civ14/Clothing/exported/uniforms/cra_uni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/cra_uni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Chinese_Red_Army_uniform
       node: end
       cost: 5
@@ -2788,14 +1968,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww1_german.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww1_german.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_German_uniform
       node: end
       cost: 5
@@ -2811,14 +1984,7 @@
       sprite: Civ14/Clothing/exported/uniforms/geruni_doctor.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/geruni_doctor.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_German_doctor_uniform
       node: end
       cost: 5
@@ -2834,14 +2000,7 @@
       sprite: Civ14/Clothing/exported/uniforms/geruni_officer.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/geruni_officer.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_German_officer_uniform
       node: end
       cost: 5
@@ -2857,14 +2016,7 @@
       sprite: Civ14/Clothing/exported/uniforms/gertanker.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/gertanker.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_German_tanker_uniform
       node: end
       cost: 5
@@ -2880,14 +2032,7 @@
       sprite: Civ14/Clothing/exported/uniforms/geruni_mp.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/geruni_mp.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_German_MP_uniform
       node: end
       cost: 5
@@ -2903,14 +2048,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ssuni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ssuni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_German_SS_uniform
       node: end
       cost: 5
@@ -2926,14 +2064,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ssuni_officer.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ssuni_officer.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_German_SS_officer_uniform
       node: end
       cost: 5
@@ -2951,14 +2082,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ssuni_camo.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ssuni_camo.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_German_camo_SS_uniform
       node: end
       cost: 5
@@ -2974,14 +2098,7 @@
       sprite: Civ14/Clothing/exported/uniforms/sovuni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/sovuni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Soviet_uniform
       node: end
       cost: 5
@@ -2997,14 +2114,7 @@
       sprite: Civ14/Clothing/exported/uniforms/sovtanker.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/sovtanker.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Soviet_tanker_uniform
       node: end
       cost: 5
@@ -3020,14 +2130,7 @@
       sprite: Civ14/Clothing/exported/uniforms/berezka.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/berezka.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Soviet_berezka_uniform
       node: end
       cost: 5
@@ -3043,14 +2146,7 @@
       sprite: Civ14/Clothing/exported/uniforms/amoeba.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/amoeba.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Soviet_amoeba_outfit
       node: end
       cost: 5
@@ -3066,14 +2162,7 @@
       sprite: Civ14/Clothing/exported/uniforms/cad_pat_winter.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/cad_pat_winter.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_cadpat_uniform
       node: end
       cost: 5
@@ -3091,14 +2180,7 @@
       sprite: Civ14/Clothing/exported/uniforms/nap_portuguese_army.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/nap_portuguese_army.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_napoleonic_italian_soldier_uniform
       node: end
       cost: 5
@@ -3114,14 +2196,7 @@
       sprite: Civ14/Clothing/exported/uniforms/it_uni_officer.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/it_uni_officer.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Italian_officer_uniform
       node: end
       cost: 5
@@ -3137,14 +2212,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww2_japuni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww2_japuni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Greek_uniform
       node: end
       cost: 5
@@ -3160,14 +2228,7 @@
       sprite: Civ14/Clothing/exported/uniforms/civuni1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/civuni1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_blue_colonial_clothing
       node: end
       cost: 3
@@ -3183,14 +2244,7 @@
       sprite: Civ14/Clothing/exported/uniforms/civuni2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/civuni2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_white_colonial_clothing
       node: end
       cost: 3
@@ -3206,14 +2260,7 @@
       sprite: Civ14/Clothing/exported/uniforms/hj_uni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/hj_uni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Hitlerjugend_outfit
       node: end
       cost: 5
@@ -3229,14 +2276,7 @@
       sprite: Civ14/Clothing/exported/uniforms/usuni2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/usuni2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_American_uniform
       node: end
       cost: 5
@@ -3252,14 +2292,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ustanker.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ustanker.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_American_tanker_uniform
       node: end
       cost: 5
@@ -3275,14 +2308,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_navy.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_navy.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_U.S._Navy_uniform
       node: end
       cost: 5
@@ -3298,14 +2324,7 @@
       sprite: Civ14/Clothing/exported/uniforms/usuni_cap.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/usuni_cap.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_American_captain_uniform
       node: end
       cost: 5
@@ -3321,14 +2340,7 @@
       sprite: Civ14/Clothing/exported/uniforms/usuni_mp.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/usuni_mp.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_American_MP_uniform
       node: end
       cost: 5
@@ -3346,14 +2358,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_shirtless.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_shirtless.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_American_uniform_with_shirt
       node: end
       cost: 5
@@ -3369,14 +2374,7 @@
       sprite: Civ14/Clothing/exported/uniforms/geruni_ww2_winter.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/geruni_ww2_winter.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Finnish_uniform
       node: end
       cost: 5
@@ -3392,14 +2390,7 @@
       sprite: Civ14/Clothing/exported/uniforms/upa_uni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/upa_uni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_UPA_uniform
       node: end
       cost: 5
@@ -3415,14 +2406,7 @@
       sprite: Civ14/Clothing/exported/uniforms/upa_off.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/upa_off.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_UPA_officer_uniform
       node: end
       cost: 5
@@ -3438,14 +2422,7 @@
       sprite: Civ14/Clothing/exported/uniforms/blugoslavian_sailor.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/blugoslavian_sailor.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Blugoslavian_navy_uniform
       node: end
       cost: 5
@@ -3461,14 +2438,7 @@
       sprite: Civ14/Clothing/exported/uniforms/redmenian_sailor.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/redmenian_sailor.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Redmenian_navy_uniform
       node: end
       cost: 5
@@ -3484,14 +2454,7 @@
       sprite: Civ14/Clothing/exported/uniforms/scrubs_white.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/scrubs_white.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_white_medical_scrubs
       node: end
       cost: 5
@@ -3507,14 +2470,7 @@
       sprite: Civ14/Clothing/exported/uniforms/scrubs_darkgreen.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/scrubs_darkgreen.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_dark_green_medical_scrubs
       node: end
       cost: 5
@@ -3530,14 +2486,7 @@
       sprite: Civ14/Clothing/exported/uniforms/scrubs_lightgreen.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/scrubs_lightgreen.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_light_green_medical_scrubs
       node: end
       cost: 5
@@ -3553,14 +2502,7 @@
       sprite: Civ14/Clothing/exported/uniforms/scrubs_navy.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/scrubs_navy.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_navy_medical_scrubs
       node: end
       cost: 5
@@ -3576,14 +2518,7 @@
       sprite: Civ14/Clothing/exported/uniforms/un_irish.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/un_irish.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_irish_olive_uniform
       node: end
       cost: 5
@@ -3599,14 +2534,7 @@
       sprite: Civ14/Clothing/exported/uniforms/afr_merc.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/afr_merc.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_african_mercenary_uniform
       node: end
       cost: 5
@@ -3622,14 +2550,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ac_shirt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ac_shirt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_creed_shirt
       node: end
       cost: 5
@@ -3645,14 +2566,7 @@
       sprite: Civ14/Clothing/exported/uniforms/abashiri_guard.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/abashiri_guard.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Abashiri_Guard_Uniform
       node: end
       cost: 5
@@ -3668,14 +2582,7 @@
       sprite: Civ14/Clothing/exported/uniforms/abashiri_prisoner.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/abashiri_prisoner.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Abashiri_Prison_Uniform
       node: end
       cost: 5
@@ -3691,14 +2598,7 @@
       sprite: Civ14/Clothing/exported/uniforms/rusuni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/rusuni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Russian_Army_uniform
       node: end
       cost: 5
@@ -3714,14 +2614,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww1_russian2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww1_russian2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Russian_Army_uniform_1
       node: end
       cost: 5
@@ -3737,14 +2630,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww1_russian_o.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww1_russian_o.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Russian_Army_officer_uniform
       node: end
       cost: 5
@@ -3762,14 +2648,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww1_russian.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww1_russian.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Red_Army_uniform
       node: end
       cost: 5
@@ -3785,14 +2664,7 @@
       sprite: Civ14/Clothing/exported/uniforms/kuban_cossak.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/kuban_cossak.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Kuban_Cossak_beshmet
       node: end
       cost: 5
@@ -3808,14 +2680,7 @@
       sprite: Civ14/Clothing/exported/uniforms/modern1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/modern1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_light_brown_outfit
       node: end
       cost: 4
@@ -3831,14 +2696,7 @@
       sprite: Civ14/Clothing/exported/uniforms/modern2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/modern2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_black_outfit
       node: end
       cost: 4
@@ -3854,14 +2712,7 @@
       sprite: Civ14/Clothing/exported/uniforms/bman.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/bman.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_shirt_outfit
       node: end
       cost: 5
@@ -3877,14 +2728,7 @@
       sprite: Civ14/Clothing/exported/uniforms/modern3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/modern3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_grey_outfit
       node: end
       cost: 4
@@ -3900,14 +2744,7 @@
       sprite: Civ14/Clothing/exported/uniforms/modern4.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/modern4.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_brown_outfit
       node: end
       cost: 4
@@ -3923,14 +2760,7 @@
       sprite: Civ14/Clothing/exported/uniforms/modern7.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/modern7.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_modern_outfit
       node: end
       cost: 5
@@ -3946,14 +2776,7 @@
       sprite: Civ14/Clothing/exported/uniforms/swat.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/swat.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_swat_outfit
       node: end
       cost: 5
@@ -3975,7 +2798,6 @@
           Heat: 0.85
           Radiation: 0.8
     - type: Construction
-
       graph: civ13_uniform_cleansuit
       node: end
       cost: 5
@@ -3991,14 +2813,7 @@
       sprite: Civ14/Clothing/exported/uniforms/swat_new.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/swat_new.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_swat_outfit_1
       node: end
       cost: 5
@@ -4014,14 +2829,7 @@
       sprite: Civ14/Clothing/exported/uniforms/rdf_standardc.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/rdf_standardc.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Redmenian_Camo_Uniform
       node: end
       cost: 5
@@ -4037,14 +2845,7 @@
       sprite: Civ14/Clothing/exported/uniforms/police.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/police.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_police_outfit_1
       node: end
       cost: 5
@@ -4060,14 +2861,7 @@
       sprite: Civ14/Clothing/exported/uniforms/prisoner.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/prisoner.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_prison_outfit
       node: end
       cost: 5
@@ -4083,14 +2877,7 @@
       sprite: Civ14/Clothing/exported/uniforms/milrus2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/milrus2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_russian_military_outfit
       node: end
       cost: 5
@@ -4106,14 +2893,7 @@
       sprite: Civ14/Clothing/exported/uniforms/baily.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/baily.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_security_outfit
       node: end
       cost: 5
@@ -4129,14 +2909,7 @@
       sprite: Civ14/Clothing/exported/uniforms/tactical1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/tactical1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_tactical_outfit
       node: end
       cost: 5
@@ -4152,14 +2925,7 @@
       sprite: Civ14/Clothing/exported/uniforms/pmc.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/pmc.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_pmc_outfit
       node: end
       cost: 5
@@ -4175,14 +2941,7 @@
       sprite: Civ14/Clothing/exported/uniforms/mafia.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/mafia.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_fancy_outfit
       node: end
       cost: 5
@@ -4198,14 +2957,7 @@
       sprite: Civ14/Clothing/exported/uniforms/engi.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/engi.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_worker_outfit
       node: end
       cost: 5
@@ -4221,14 +2973,7 @@
       sprite: Civ14/Clothing/exported/uniforms/gorka.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/gorka.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_gorka_outfit
       node: end
       cost: 5
@@ -4244,14 +2989,7 @@
       sprite: Civ14/Clothing/exported/uniforms/modern8.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/modern8.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_modern_skirt
       node: end
       cost: 5
@@ -4267,14 +3005,7 @@
       sprite: Civ14/Clothing/exported/uniforms/oldmansuit.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/oldmansuit.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_old_man_suit
       node: end
       cost: 5
@@ -4290,14 +3021,7 @@
       sprite: Civ14/Clothing/exported/uniforms/cozyoldy.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/cozyoldy.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_fancy_outfit_1
       node: end
       cost: 5
@@ -4313,14 +3037,7 @@
       sprite: Civ14/Clothing/exported/uniforms/peakyblinder.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/peakyblinder.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_fancy_suit
       node: end
       cost: 5
@@ -4336,14 +3053,7 @@
       sprite: Civ14/Clothing/exported/uniforms/constable.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/constable.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_constable_outfit
       node: end
       cost: 5
@@ -4359,14 +3069,7 @@
       sprite: Civ14/Clothing/exported/uniforms/oldfirefighter.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/oldfirefighter.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_fire_fighter_uniform
       node: end
       cost: 5
@@ -4382,14 +3085,7 @@
       sprite: Civ14/Clothing/exported/uniforms/black_tango_alt_s.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/black_tango_alt_s.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_black_dress
       node: end
       cost: 5
@@ -4405,14 +3101,7 @@
       sprite: Civ14/Clothing/exported/uniforms/clown.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/clown.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_clown_outfit
       node: end
       cost: 5
@@ -4428,14 +3117,7 @@
       sprite: Civ14/Clothing/exported/uniforms/jester.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/jester.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_jester_outfit
       node: end
       cost: 5
@@ -4451,14 +3133,7 @@
       sprite: Civ14/Clothing/exported/uniforms/farmer_outfit.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/farmer_outfit.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_farmer_outfit
       node: end
       cost: 4
@@ -4474,14 +3149,7 @@
       sprite: Civ14/Clothing/exported/uniforms/mechanic_outfit.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/mechanic_outfit.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_mechanic_outfit
       node: end
       cost: 4
@@ -4499,14 +3167,7 @@
       sprite: Civ14/Clothing/exported/uniforms/tradwife_blue.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/tradwife_blue.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_blue_traditional_dress
       node: end
       cost: 5
@@ -4522,14 +3183,7 @@
       sprite: Civ14/Clothing/exported/uniforms/shorts_blue.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/shorts_blue.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_blue_shorts
       node: end
       cost: 5
@@ -4545,14 +3199,7 @@
       sprite: Civ14/Clothing/exported/uniforms/shorts_red.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/shorts_red.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_red_shorts
       node: end
       cost: 5
@@ -4568,14 +3215,7 @@
       sprite: Civ14/Clothing/exported/uniforms/shorts_yellow.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/shorts_yellow.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_yellow_shorts
       node: end
       cost: 5
@@ -4591,14 +3231,7 @@
       sprite: Civ14/Clothing/exported/uniforms/filuni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/filuni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Philippine_Republic_Army_Uniform
       node: end
       cost: 5
@@ -4614,14 +3247,7 @@
       sprite: Civ14/Clothing/exported/uniforms/filuni_sniper.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/filuni_sniper.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Tiradores_de_Muerta_Uniform
       node: end
       cost: 5
@@ -4637,14 +3263,7 @@
       sprite: Civ14/Clothing/exported/uniforms/us_fp_off.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/us_fp_off.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_US_Army_Officer_Uniform
       node: end
       cost: 5
@@ -4660,14 +3279,7 @@
       sprite: Civ14/Clothing/exported/uniforms/spanishrepublican.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/spanishrepublican.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Spanish_Republican_Uniform
       node: end
       cost: 5
@@ -4683,14 +3295,7 @@
       sprite: Civ14/Clothing/exported/uniforms/spanishnationalist.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/spanishnationalist.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Spanish_Nationalist_Uniform
       node: end
       cost: 5
@@ -4706,14 +3311,7 @@
       sprite: Civ14/Clothing/exported/uniforms/intbrigadist.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/intbrigadist.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Brigadists_Uniform
       node: end
       cost: 5
@@ -4729,14 +3327,7 @@
       sprite: Civ14/Clothing/exported/uniforms/rdf_standard.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/rdf_standard.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Redmenian_army_uniform
       node: end
       cost: 5
@@ -4752,14 +3343,7 @@
       sprite: Civ14/Clothing/exported/uniforms/rdf_standardc.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/rdf_standardc.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Redmenian_Camo_Uniform_1
       node: end
       cost: 5
@@ -4775,14 +3359,7 @@
       sprite: Civ14/Clothing/exported/uniforms/rdf_command.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/rdf_command.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Redmenian_Ceremonial_Uniform
       node: end
       cost: 5
@@ -4798,14 +3375,7 @@
       sprite: Civ14/Clothing/exported/uniforms/rdf_modern.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/rdf_modern.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Redmenian_Camo_Uniform_1_2
       node: end
       cost: 5
@@ -4821,14 +3391,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ncr_fatigues.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ncr_fatigues.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_NCR_uniform
       node: end
       cost: 5
@@ -4855,7 +3418,6 @@
           Arrow: 0.66
           Heat: 0.85
     - type: Construction
-
       graph: civ13_uniform_Legionaire_Armor
       node: end
       cost: 5
@@ -4871,14 +3433,7 @@
       sprite: Civ14/Clothing/exported/uniforms/civuni4.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/civuni4.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_fancy_colonial_clothing
       node: end
       cost: 5
@@ -4896,14 +3451,7 @@
       sprite: Civ14/Clothing/exported/uniforms/civuni3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/civuni3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_short_sleeved_colonial_clothing
       node: end
       cost: 2
@@ -4919,14 +3467,7 @@
       sprite: Civ14/Clothing/exported/uniforms/civuni5.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/civuni5.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_green_colonial_clothing
       node: end
       cost: 3
@@ -4942,14 +3483,7 @@
       sprite: Civ14/Clothing/exported/uniforms/civuni6.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/civuni6.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_pink_colonial_clothing
       node: end
       cost: 3
@@ -4966,14 +3500,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dress1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dress1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_dark_dress
       node: end
       cost: 3
@@ -4989,14 +3516,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dress2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dress2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_blue_dress
       node: end
       cost: 3
@@ -5012,14 +3532,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dress3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dress3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_brown_dress
       node: end
       cost: 3
@@ -5035,14 +3548,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dressg.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dressg.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_green_dress
       node: end
       cost: 3
@@ -5058,14 +3564,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dressr.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dressr.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_red_dress
       node: end
       cost: 3
@@ -5083,14 +3582,7 @@
       sprite: Civ14/Clothing/exported/uniforms/conquistador.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/conquistador.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_conquistador_uniform
       node: end
       cost: 5
@@ -5106,14 +3598,7 @@
       sprite: Civ14/Clothing/exported/uniforms/pilgrim.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/pilgrim.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_pilgrim_clothing
       node: end
       cost: 4
@@ -5129,14 +3614,7 @@
       sprite: Civ14/Clothing/exported/uniforms/pirate1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/pirate1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_black_stripes_clothing
       node: end
       cost: 3
@@ -5152,14 +3630,7 @@
       sprite: Civ14/Clothing/exported/uniforms/pirate2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/pirate2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_red_stripes_clothing
       node: end
       cost: 3
@@ -5175,14 +3646,7 @@
       sprite: Civ14/Clothing/exported/uniforms/pirate3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/pirate3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_blue_stripes_clothing
       node: end
       cost: 3
@@ -5198,14 +3662,7 @@
       sprite: Civ14/Clothing/exported/uniforms/pirate4.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/pirate4.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_baggy_clothing
       node: end
       cost: 5
@@ -5221,14 +3678,7 @@
       sprite: Civ14/Clothing/exported/uniforms/pirate5.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/pirate5.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_sleeveless_clothing
       node: end
       cost: 5
@@ -5244,14 +3694,7 @@
       sprite: Civ14/Clothing/exported/uniforms/british_sailor1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/british_sailor1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_british_sailor_clothes
       node: end
       cost: 5
@@ -5269,14 +3712,7 @@
       sprite: Civ14/Clothing/exported/uniforms/british_sailor2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/british_sailor2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_open_british_sailor_clothes
       node: end
       cost: 5
@@ -5292,14 +3728,7 @@
       sprite: Civ14/Clothing/exported/uniforms/british_sailor3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/british_sailor3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_british_sailor_trousers
       node: end
       cost: 5
@@ -5315,14 +3744,7 @@
       sprite: Civ14/Clothing/exported/uniforms/british_sailor4.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/british_sailor4.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_grey_british_sailor_clothes
       node: end
       cost: 5
@@ -5340,14 +3762,7 @@
       sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_portuguese_sailor_clothes
       node: end
       cost: 5
@@ -5365,14 +3780,7 @@
       sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_open_portuguese_sailor_clothes
       node: end
       cost: 5
@@ -5388,14 +3796,7 @@
       sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_portuguese_sailor_trousers
       node: end
       cost: 5
@@ -5413,14 +3814,7 @@
       sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor4.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor4.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_portuguese_sailor_clothes_with_scarf
       node: end
       cost: 5
@@ -5436,14 +3830,7 @@
       sprite: Civ14/Clothing/exported/uniforms/spanish_sailor1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/spanish_sailor1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_spanish_sailor_clothes
       node: end
       cost: 5
@@ -5461,14 +3848,7 @@
       sprite: Civ14/Clothing/exported/uniforms/spanish_sailor2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/spanish_sailor2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_open_spanish_sailor_clothes
       node: end
       cost: 5
@@ -5484,14 +3864,7 @@
       sprite: Civ14/Clothing/exported/uniforms/spanish_sailor3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/spanish_sailor3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_spanish_sailor_trousers
       node: end
       cost: 5
@@ -5507,14 +3880,7 @@
       sprite: Civ14/Clothing/exported/uniforms/spanish_soldier.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/spanish_soldier.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_spanish_soldier_uniform
       node: end
       cost: 5
@@ -5532,14 +3898,7 @@
       sprite: Civ14/Clothing/exported/uniforms/french_officer.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/french_officer.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_french_officer_clothes
       node: end
       cost: 5
@@ -5555,14 +3914,7 @@
       sprite: Civ14/Clothing/exported/uniforms/baycona.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/baycona.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_baycona_outfit
       node: end
       cost: 5
@@ -5578,14 +3930,7 @@
       sprite: Civ14/Clothing/exported/uniforms/french_sailor1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/french_sailor1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_french_sailor_clothes
       node: end
       cost: 5
@@ -5603,14 +3948,7 @@
       sprite: Civ14/Clothing/exported/uniforms/french_sailor2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/french_sailor2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_open_french_sailor_clothes
       node: end
       cost: 5
@@ -5626,14 +3964,7 @@
       sprite: Civ14/Clothing/exported/uniforms/french_sailor3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/french_sailor3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_french_sailor_trousers
       node: end
       cost: 5
@@ -5649,14 +3980,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dutch_sailor1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dutch_sailor1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_dutch_sailor_clothes
       node: end
       cost: 5
@@ -5674,14 +3998,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dutch_sailor2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dutch_sailor2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_open_dutch_sailor_clothes
       node: end
       cost: 5
@@ -5697,14 +4014,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dutch_sailor3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dutch_sailor3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_dutch_sailor_trousers
       node: end
       cost: 5
@@ -5722,14 +4032,7 @@
       sprite: Civ14/Clothing/exported/uniforms/officer.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/officer.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_officer_clothes
       node: end
       cost: 5
@@ -5745,14 +4048,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dutch_army.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dutch_army.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_dutch_army_uniform
       node: end
       cost: 5
@@ -5768,14 +4064,7 @@
       sprite: Civ14/Clothing/exported/uniforms/portuguese_army.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/portuguese_army.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_portuguese_army_uniform
       node: end
       cost: 5
@@ -5791,14 +4080,7 @@
       sprite: Civ14/Clothing/exported/uniforms/french_army.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/french_army.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_French_Army_uniform
       node: end
       cost: 5
@@ -5816,14 +4098,7 @@
       sprite: Civ14/Clothing/exported/uniforms/nightingale.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/nightingale.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_nightingale_dress
       node: end
       cost: 4
@@ -5841,14 +4116,7 @@
       sprite: Civ14/Clothing/exported/uniforms/nap_french_army.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/nap_french_army.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_napoleonic_french_soldier_uniform
       node: end
       cost: 5
@@ -5866,14 +4134,7 @@
       sprite: Civ14/Clothing/exported/uniforms/blackwatch.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/blackwatch.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_napoleonic_blackwatch_soldier_uniform
       node: end
       cost: 5
@@ -5891,14 +4152,7 @@
       sprite: Civ14/Clothing/exported/uniforms/walloon_guard.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/walloon_guard.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_napoleonic_walloon_soldier_uniform
       node: end
       cost: 5
@@ -5914,14 +4168,7 @@
       sprite: Civ14/Clothing/exported/uniforms/russian_emr.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/russian_emr.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_EMR_pattern_uniform
       node: end
       cost: 5
@@ -5939,14 +4186,7 @@
       sprite: Civ14/Clothing/exported/uniforms/patriot.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/patriot.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_patriotic_american_soldier_uniform
       node: end
       cost: 5
@@ -5965,14 +4205,7 @@
       sprite: Civ14/Clothing/exported/uniforms/nap_prussian_army.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/nap_prussian_army.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_napoleonic_prussian_soldier_uniform
       node: end
       cost: 5
@@ -5990,14 +4223,7 @@
       sprite: Civ14/Clothing/exported/uniforms/nap_jaegers.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/nap_jaegers.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_napoleonic_jaeger_soldier_uniform
       node: end
       cost: 5
@@ -6015,14 +4241,7 @@
       sprite: Civ14/Clothing/exported/uniforms/nap_portuguese_army.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/nap_portuguese_army.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_napoleonic_portuguese_soldier_uniform
       node: end
       cost: 5
@@ -6040,14 +4259,7 @@
       sprite: Civ14/Clothing/exported/uniforms/nap_satsuma.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/nap_satsuma.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_japanese_soldier_uniform
       node: end
       cost: 5
@@ -6063,14 +4275,7 @@
       sprite: Civ14/Clothing/exported/uniforms/merchant_suit.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/merchant_suit.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_merchant_suit
       node: end
       cost: 5
@@ -6086,14 +4291,7 @@
       sprite: Civ14/Clothing/exported/uniforms/scavfit.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/scavfit.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Ripped_outfit
       node: end
       cost: 5
@@ -6109,14 +4307,7 @@
       sprite: Civ14/Clothing/exported/uniforms/wastelander.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/wastelander.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_outfit
       node: end
       cost: 5
@@ -6132,14 +4323,7 @@
       sprite: Civ14/Clothing/exported/uniforms/pioneer_outfit.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/pioneer_outfit.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_pioneer_outfit
       node: end
       cost: 3
@@ -6155,14 +4339,7 @@
       sprite: Civ14/Clothing/exported/uniforms/rancher_outfit.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/rancher_outfit.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_rancher_outfit
       node: end
       cost: 3
@@ -6178,14 +4355,7 @@
       sprite: Civ14/Clothing/exported/uniforms/cowboy_outfit.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/cowboy_outfit.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_cowboy_outfit
       node: end
       cost: 3
@@ -6201,14 +4371,7 @@
       sprite: Civ14/Clothing/exported/uniforms/checkered_outfit.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/checkered_outfit.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_checkered_outfit
       node: end
       cost: 3
@@ -6224,14 +4387,7 @@
       sprite: Civ14/Clothing/exported/uniforms/worker_outfit.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/worker_outfit.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_worker_outfit_1
       node: end
       cost: 3
@@ -6247,14 +4403,7 @@
       sprite: Civ14/Clothing/exported/uniforms/texas.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/texas.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_texan_shirt_outfit
       node: end
       cost: 5
@@ -6270,14 +4419,7 @@
       sprite: Civ14/Clothing/exported/uniforms/lederhosen.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/lederhosen.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_lederhosen
       node: end
       cost: 4
@@ -6295,14 +4437,7 @@
       sprite: Civ14/Clothing/exported/uniforms/gang_leader.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/gang_leader.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_classy_outlaw_outfit
       node: end
       cost: 5
@@ -6321,14 +4456,7 @@
       sprite: Civ14/Clothing/exported/uniforms/arthur_morgan.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/arthur_morgan.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_outlaw_outfit
       node: end
       cost: 5
@@ -6344,14 +4472,7 @@
       sprite: Civ14/Clothing/exported/uniforms/bartender.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/bartender.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_bartender_outfit
       node: end
       cost: 5
@@ -6367,14 +4488,7 @@
       sprite: Civ14/Clothing/exported/uniforms/victorianvest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/victorianvest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_black_victorian_shirt_and_vest
       node: end
       cost: 5
@@ -6392,14 +4506,7 @@
       sprite: Civ14/Clothing/exported/uniforms/victorianredvest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/victorianredvest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_black_victorian_shirt_and_red_vest
       node: end
       cost: 5
@@ -6417,14 +4524,7 @@
       sprite: Civ14/Clothing/exported/uniforms/victorianblred.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/victorianblred.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_red_victorian_shirt_and_black_vest
       node: end
       cost: 5
@@ -6440,14 +4540,7 @@
       sprite: Civ14/Clothing/exported/uniforms/waistcoat.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/waistcoat.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_white_shirt_and_black_waistcoat
       node: end
       cost: 5
@@ -6464,14 +4557,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dress_saloon.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dress_saloon.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_saloon_dress_outfit
       node: end
       cost: 4
@@ -6489,14 +4575,7 @@
       sprite: Civ14/Clothing/exported/uniforms/cheongsam.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/cheongsam.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_cheongsam_dress
       node: end
       cost: 5
@@ -6512,14 +4591,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dress_black.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dress_black.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_plain_black_dress
       node: end
       cost: 4
@@ -6537,14 +4609,7 @@
       sprite: Civ14/Clothing/exported/uniforms/bride_white.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/bride_white.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_white_wedding_dress
       node: end
       cost: 10
@@ -6560,14 +4625,7 @@
       sprite: Civ14/Clothing/exported/uniforms/victorianblackdress.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/victorianblackdress.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_victorian_black_dress
       node: end
       cost: 5
@@ -6583,14 +4641,7 @@
       sprite: Civ14/Clothing/exported/uniforms/victorian_dress.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/victorian_dress.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_neck_length_black_dress
       node: end
       cost: 4
@@ -6605,14 +4656,7 @@
       sprite: Civ14/Clothing/exported/uniforms/union_uniform.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/union_uniform.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_union_uniform
       node: end
       cost: 5
@@ -6628,14 +4672,7 @@
       sprite: Civ14/Clothing/exported/uniforms/confederate_uniform1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/confederate_uniform1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_confederate_uniform
       node: end
       cost: 5
@@ -6651,14 +4688,7 @@
       sprite: Civ14/Clothing/exported/uniforms/confederate_uniform1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/confederate_uniform1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_confederate_uniform_1
       node: end
       cost: 5
@@ -6676,14 +4706,7 @@
       sprite: Civ14/Clothing/exported/uniforms/confederate_uniform2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/confederate_uniform2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_confederate_uniform_1_2
       node: end
       cost: 5
@@ -6702,14 +4725,7 @@
       sprite: Civ14/Clothing/exported/uniforms/doug_dimmadome.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/doug_dimmadome.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_eccentric_businessman_outfit
       node: end
       cost: 5
@@ -6725,14 +4741,7 @@
       sprite: Civ14/Clothing/exported/uniforms/white_tunic_long.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/white_tunic_long.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_white_tunic_1
       node: end
       cost: 5
@@ -6748,14 +4757,7 @@
       sprite: Civ14/Clothing/exported/uniforms/crusader1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/crusader1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_crusader_tunic
       node: end
       cost: 5
@@ -6771,18 +4773,16 @@
       sprite: Civ14/Clothing/exported/uniforms/leather_tunic.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/leather_tunic.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialLeather1
+        amount: 1
     - type: Construction
-
       graph: civ13_uniform_leather_tunic
       node: end
       cost: 5
-      material: Cloth
+      material: Leather
       time: 5
 - type: entity
   name: kilt
@@ -6794,14 +4794,7 @@
       sprite: Civ14/Clothing/exported/uniforms/kilt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/kilt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_kilt
       node: end
       cost: 2
@@ -6816,14 +4809,7 @@
       sprite: Civ14/Clothing/exported/uniforms/beggar_clothing.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/beggar_clothing.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_beggar_clothing
       node: end
       cost: 4
@@ -6838,14 +4824,7 @@
       sprite: Civ14/Clothing/exported/uniforms/blue_tunic2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/blue_tunic2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_blue_white_tunic
       node: end
       cost: 5
@@ -6861,14 +4840,7 @@
       sprite: Civ14/Clothing/exported/uniforms/red_tunic2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/red_tunic2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_yellow_red_tunic
       node: end
       cost: 5
@@ -6884,14 +4856,7 @@
       sprite: Civ14/Clothing/exported/uniforms/arabw_tunic.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/arabw_tunic.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_fancy_arabic_tunic
       node: end
       cost: 5
@@ -6907,14 +4872,7 @@
       sprite: Civ14/Clothing/exported/uniforms/arab1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/arab1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_light_brown_tunic
       node: end
       cost: 5
@@ -6932,14 +4890,7 @@
       sprite: Civ14/Clothing/exported/uniforms/emir_tunic.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/emir_tunic.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_emirate_tunic
       node: end
       cost: 4
@@ -6955,14 +4906,7 @@
       sprite: Civ14/Clothing/exported/uniforms/arab1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/arab1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_light_brown_arabic_tunic
       node: end
       cost: 3
@@ -6978,14 +4922,7 @@
       sprite: Civ14/Clothing/exported/uniforms/arab2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/arab2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_light_white_arabic_tunic
       node: end
       cost: 3
@@ -7001,14 +4938,7 @@
       sprite: Civ14/Clothing/exported/uniforms/arab3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/arab3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_white_arabic_tunic
       node: end
       cost: 5
@@ -7024,14 +4954,7 @@
       sprite: Civ14/Clothing/exported/uniforms/wise_knight.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/wise_knight.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Wise_Knight_robes
       node: end
       cost: 5
@@ -7047,14 +4970,7 @@
       sprite: Civ14/Clothing/exported/uniforms/arrogant_warrior.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/arrogant_warrior.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Arrogant_Warrior_robes
       node: end
       cost: 5
@@ -7070,14 +4986,7 @@
       sprite: Civ14/Clothing/exported/uniforms/steppe_wool_tunic.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/steppe_wool_tunic.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_steppe_wool_tunic
       node: end
       cost: 3
@@ -7092,14 +5001,7 @@
       sprite: Civ14/Clothing/exported/uniforms/count_outfit.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/count_outfit.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_count_outfit
       node: end
       cost: 6
@@ -7115,14 +5017,7 @@
       sprite: Civ14/Clothing/exported/uniforms/renaissance.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/renaissance.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_purple_renaissance_clothing
       node: end
       cost: 6
@@ -7140,14 +5035,7 @@
       sprite: Civ14/Clothing/exported/uniforms/doge.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/doge.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_doge_outfit
       node: end
       cost: 8
@@ -7163,14 +5051,7 @@
       sprite: Civ14/Clothing/exported/uniforms/pontifical.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/pontifical.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_pontifical_renaissance_clothing
       node: end
       cost: 6
@@ -7188,14 +5069,7 @@
       sprite: Civ14/Clothing/exported/uniforms/nun.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/nun.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_nun_dress
       node: end
       cost: 4
@@ -7213,14 +5087,7 @@
       sprite: Civ14/Clothing/exported/uniforms/christian_priest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/christian_priest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_black_priest_outfit
       node: end
       cost: 4
@@ -7238,14 +5105,7 @@
       sprite: Civ14/Clothing/exported/uniforms/landschneckt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/landschneckt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_green_landschneckt_uniform
       node: end
       cost: 6
@@ -7261,14 +5121,7 @@
       sprite: Civ14/Clothing/exported/uniforms/huipil.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/huipil.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_huipil
       node: end
       cost: 3
@@ -7284,14 +5137,7 @@
       sprite: Civ14/Clothing/exported/uniforms/halfhuipil.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/halfhuipil.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_half_huipil
       node: end
       cost: 2
@@ -7307,14 +5153,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dark_hanfu.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dark_hanfu.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_dark_hanfu
       node: end
       cost: 3
@@ -7330,14 +5169,7 @@
       sprite: Civ14/Clothing/exported/uniforms/artisan3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/artisan3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_light_artisan_clothing
       node: end
       cost: 3
@@ -7353,14 +5185,7 @@
       sprite: Civ14/Clothing/exported/uniforms/artisan1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/artisan1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_artisan_clothing
       node: end
       cost: 3
@@ -7376,14 +5201,7 @@
       sprite: Civ14/Clothing/exported/uniforms/artisan2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/artisan2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_dark_artisan_clothing
       node: end
       cost: 3
@@ -7399,14 +5217,7 @@
       sprite: Civ14/Clothing/exported/uniforms/haori_custom.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/haori_custom.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_haori
       node: end
       cost: 5
@@ -7422,19 +5233,13 @@
       sprite: Civ14/Clothing/exported/uniforms/haori_samurai.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/haori_samurai.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_haori_1
       node: end
       cost: 5
       material: Cloth
       time: 5
+
 - type: entity
   name: stormcloak curass
   parent: ClothingUniformBase
@@ -7445,14 +5250,12 @@
       sprite: Civ14/Clothing/exported/uniforms/stormcloak.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/stormcloak.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialLeather1
+        amount: 1
     - type: Construction
-
       graph: civ13_uniform_stormcloak_curass
       node: end
       cost: 5
@@ -7477,7 +5280,6 @@
           Arrow: 0.19
           Heat: 0.85
     - type: Construction
-
       graph: civ13_uniform_Ulfric_Stormcloaks_clothes
       node: end
       cost: 5
@@ -7502,7 +5304,6 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
-
       graph: civ13_uniform_whiterun_guard_curass
       node: end
       cost: 5
@@ -7527,12 +5328,17 @@
           Arrow: 0.7
           Heat: 0.85
     - type: Construction
-
       graph: civ13_uniform_imperial_armor
       node: end
       cost: 5
-      material: Cloth
+      material: Leather
       time: 5
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialLeather1
+        amount: 1
+
 - type: entity
   name: Jarl Bolgruf's clothes
   parent: ClothingUniformBase
@@ -7552,7 +5358,6 @@
           Arrow: 0.19
           Heat: 0.85
     - type: Construction
-
       graph: civ13_uniform_Jarl_Bolgrufs_clothes
       node: end
       cost: 5
@@ -7570,14 +5375,7 @@
       sprite: Civ14/Clothing/exported/uniforms/rus_vsr93.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/rus_vsr93.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_russian_military_outfit_VSR_93
       node: end
       cost: 5
@@ -7593,14 +5391,7 @@
       sprite: Civ14/Clothing/exported/uniforms/omon.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/omon.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_russian_OMON_uniform
       node: end
       cost: 5
@@ -7616,14 +5407,7 @@
       sprite: Civ14/Clothing/exported/uniforms/insurgent_black.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/insurgent_black.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_black_tunic
       node: end
       cost: 5
@@ -7639,14 +5423,7 @@
       sprite: Civ14/Clothing/exported/uniforms/insurgent_sand.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/insurgent_sand.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_sand_colored_tunic
       node: end
       cost: 5
@@ -7662,14 +5439,7 @@
       sprite: Civ14/Clothing/exported/uniforms/insurgent_sand_woodland.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/insurgent_sand_woodland.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_sand_colored_tunic_with_woodland_camo_trousers
       node: end
       cost: 5
@@ -7685,14 +5455,7 @@
       sprite: Civ14/Clothing/exported/uniforms/insurgent_sand_dcu.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/insurgent_sand_dcu.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_sand_colored_uniform_with_desert_camo_trousers
       node: end
       cost: 5
@@ -7708,14 +5471,7 @@
       sprite: Civ14/Clothing/exported/uniforms/insurgent_sand_green.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/insurgent_sand_green.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_light_brown_uniform_with_green_trousers
       node: end
       cost: 5
@@ -7731,14 +5487,7 @@
       sprite: Civ14/Clothing/exported/uniforms/insurgent_leader.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/insurgent_leader.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_black_tunic_with_desert_camo_trousers
       node: end
       cost: 5
@@ -7754,14 +5503,7 @@
       sprite: Civ14/Clothing/exported/uniforms/idf_olive.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/idf_olive.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_IDF_olive_uniform
       node: end
       cost: 5
@@ -7777,14 +5519,7 @@
       sprite: Civ14/Clothing/exported/uniforms/motorist.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/motorist.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_motorist_outfit
       node: end
       cost: 4
@@ -7802,14 +5537,7 @@
       sprite: Civ14/Clothing/exported/uniforms/reporter.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/reporter.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_war_correspondent_outfit
       node: end
       cost: 5
@@ -7827,14 +5555,7 @@
       sprite: Civ14/Clothing/exported/uniforms/punk.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/punk.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_punk_outfit
       node: end
       cost: 3
@@ -7850,14 +5571,7 @@
       sprite: Civ14/Clothing/exported/uniforms/paramedic.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/paramedic.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_paramedic_uniform
       node: end
       cost: 5
@@ -7873,14 +5587,7 @@
       sprite: Civ14/Clothing/exported/uniforms/firefighter.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/firefighter.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_firefighter_uniform
       node: end
       cost: 5
@@ -7896,14 +5603,7 @@
       sprite: Civ14/Clothing/exported/uniforms/detective1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/detective1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_shirt_outfit_1
       node: end
       cost: 5
@@ -7919,14 +5619,7 @@
       sprite: Civ14/Clothing/exported/uniforms/detective2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/detective2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_shirt_outfit_1_2
       node: end
       cost: 5
@@ -7942,14 +5635,7 @@
       sprite: Civ14/Clothing/exported/uniforms/detective3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/detective3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_shirt_outfit_1_2_3
       node: end
       cost: 5
@@ -7965,14 +5651,7 @@
       sprite: Civ14/Clothing/exported/uniforms/trackpants.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/trackpants.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_track_pants
       node: end
       cost: 5
@@ -7988,14 +5667,7 @@
       sprite: Civ14/Clothing/exported/uniforms/tacti.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/tacti.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_tactical_outfit_1
       node: end
       cost: 5
@@ -8013,14 +5685,7 @@
       sprite: Civ14/Clothing/exported/uniforms/tacticool_hawaiian_blue.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/tacticool_hawaiian_blue.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_tacticool_hawaiian_outfit
       node: end
       cost: 5
@@ -8036,14 +5701,7 @@
       sprite: Civ14/Clothing/exported/uniforms/boomerwaffen1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/boomerwaffen1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_camouflage_shirt_with_blue_pants
       node: end
       cost: 5
@@ -8059,14 +5717,7 @@
       sprite: Civ14/Clothing/exported/uniforms/boomerwaffen2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/boomerwaffen2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_tanktop_with_camouflage_pants
       node: end
       cost: 5
@@ -8082,14 +5733,7 @@
       sprite: Civ14/Clothing/exported/uniforms/boomerwaffen3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/boomerwaffen3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_black_shirt_with_camouflage_pants
       node: end
       cost: 5
@@ -8105,14 +5749,7 @@
       sprite: Civ14/Clothing/exported/uniforms/modern_shaman.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/modern_shaman.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_modern_shaman_outfit
       node: end
       cost: 5
@@ -8128,14 +5765,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ukraine_acu.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ukraine_acu.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_ACU_pattern_uniform
       node: end
       cost: 5
@@ -8151,14 +5781,7 @@
       sprite: Civ14/Clothing/exported/uniforms/russian_emr_vdv.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/russian_emr_vdv.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_EMR_pattern_uniform_1
       node: end
       cost: 5
@@ -8174,14 +5797,7 @@
       sprite: Civ14/Clothing/exported/uniforms/russian_emr_desert.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/russian_emr_desert.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_EMR_desert_pattern_uniform
       node: end
       cost: 5
@@ -8197,14 +5813,7 @@
       sprite: Civ14/Clothing/exported/uniforms/syr_army.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/syr_army.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Syrian_Army_uniform
       node: end
       cost: 5
@@ -8220,14 +5829,7 @@
       sprite: Civ14/Clothing/exported/uniforms/salv_army.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/salv_army.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Free_Syrian_Army_uniform
       node: end
       cost: 5
@@ -8243,14 +5845,7 @@
       sprite: Civ14/Clothing/exported/uniforms/warband1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/warband1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_jeans_with_suspenders
       node: end
       cost: 5
@@ -8266,14 +5861,7 @@
       sprite: Civ14/Clothing/exported/uniforms/warband2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/warband2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_camo_trousers_and_white_sleeveless_shirt
       node: end
       cost: 5
@@ -8289,14 +5877,7 @@
       sprite: Civ14/Clothing/exported/uniforms/cad_pat.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/cad_pat.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_cadpat_uniform_1
       node: end
       cost: 5
@@ -8312,14 +5893,7 @@
       sprite: Civ14/Clothing/exported/uniforms/cad_pat_arid.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/cad_pat_arid.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_cadpat_uniform_1_2
       node: end
       cost: 5
@@ -8335,14 +5909,7 @@
       sprite: Civ14/Clothing/exported/uniforms/type07.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/type07.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_type_07_chinese_uniform
       node: end
       cost: 5
@@ -8358,14 +5925,7 @@
       sprite: Civ14/Clothing/exported/uniforms/cartel1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/cartel1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_floral_shirt_with_light_pants
       node: end
       cost: 5
@@ -8381,14 +5941,7 @@
       sprite: Civ14/Clothing/exported/uniforms/dutch_dpm.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/dutch_dpm.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_M93_DPM_camo_uniform
       node: end
       cost: 5
@@ -8404,12 +5957,6 @@
       sprite: Civ14/Clothing/exported/uniforms/leatherloincloth1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/leatherloincloth1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
       graph: LeatherLoincloth
       node: end
@@ -8431,14 +5978,7 @@
       sprite: Civ14/Clothing/exported/uniforms/loincloth1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/loincloth1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_cotton_loincloth
       node: end
       cost: 2
@@ -8454,18 +5994,16 @@
       sprite: Civ14/Clothing/exported/uniforms/leaves_skirt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/leaves_skirt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_leaf_skirt
       node: end
       cost: 4
       time: 10
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialStraw1
+        amount: 1
 - type: entity
   name: long leaf skirt
   parent: ClothingUniformBase
@@ -8476,14 +6014,7 @@
       sprite: Civ14/Clothing/exported/uniforms/leaves_skirt_long.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/leaves_skirt_long.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_long_leaf_skirt
       node: end
       cost: 6
@@ -8498,14 +6029,7 @@
       sprite: Civ14/Clothing/exported/uniforms/adam.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/adam.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_au_naturel_leaf_covering
       node: end
       cost: 2
@@ -8520,18 +6044,16 @@
       sprite: Civ14/Clothing/exported/uniforms/indian1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/indian1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialLeather1
+        amount: 1
     - type: Construction
-
       graph: civ13_uniform_short_leather_loincloth
       node: end
       cost: 5
-      material: Cloth
+      material: Leather
       time: 5
 - type: entity
   name: long leather loincloth
@@ -8543,18 +6065,16 @@
       sprite: Civ14/Clothing/exported/uniforms/indian2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/indian2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialLeather1
+        amount: 1
     - type: Construction
-
       graph: civ13_uniform_long_leather_loincloth
       node: end
       cost: 5
-      material: Cloth
+      material: Leather
       time: 5
 - type: entity
   name: covering leather loincloth
@@ -8566,18 +6086,16 @@
       sprite: Civ14/Clothing/exported/uniforms/indian3.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/indian3.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialLeather1
+        amount: 1
     - type: Construction
-
       graph: civ13_uniform_covering_leather_loincloth
       node: end
       cost: 5
-      material: Cloth
+      material: Leather
       time: 5
 - type: entity
   name: indian chief clothing
@@ -8589,19 +6107,17 @@
       sprite: Civ14/Clothing/exported/uniforms/indianchef.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/indianchef.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_indian_chief_clothing
       node: end
       cost: 5
-      material: Cloth
+      material: Leather
       time: 5
+    - type: Butcherable
+      butcheringType: Knife
+      spawned:
+      - id: MaterialLeather1
+        amount: 1
 - type: entity
   name: pygmy shaman clothing
   parent: ClothingUniformBase
@@ -8612,14 +6128,7 @@
       sprite: Civ14/Clothing/exported/uniforms/indianshaman.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/indianshaman.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_pygmy_shaman_clothing
       node: end
       cost: 5
@@ -8635,14 +6144,7 @@
       sprite: Civ14/Clothing/exported/uniforms/indianshaman.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/indianshaman.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_indian_shaman_clothing
       node: end
       cost: 5
@@ -8658,14 +6160,7 @@
       sprite: Civ14/Clothing/exported/uniforms/giant_leopard_pelt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/giant_leopard_pelt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_big_leopard_pelt
       node: end
       cost: 5
@@ -8683,14 +6178,7 @@
       sprite: Civ14/Clothing/exported/uniforms/zulu_slene.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/zulu_slene.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_slene_cattle_fur_loincloth
       node: end
       cost: 2
@@ -8713,14 +6201,7 @@
       sprite: Civ14/Clothing/exported/uniforms/lizard_pants.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/lizard_pants.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_shirtless_lizard_pants
       node: end
       cost: 3
@@ -8741,14 +6222,7 @@
       sprite: Civ14/Clothing/exported/uniforms/trenchsuit.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/trenchsuit.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_British_uniform
       node: end
       cost: 5
@@ -8764,14 +6238,7 @@
       sprite: Civ14/Clothing/exported/uniforms/trenchsuit.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/trenchsuit.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Polish_uniform
       node: end
       cost: 5
@@ -8787,14 +6254,7 @@
       sprite: Civ14/Clothing/exported/uniforms/ww1_french.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/ww1_french.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_French_uniform
       node: end
       cost: 5
@@ -8810,14 +6270,7 @@
       sprite: Civ14/Clothing/exported/uniforms/g_strapbikini.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/g_strapbikini.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Green_Strap_Bikini
       node: end
       cost: 5
@@ -8835,14 +6288,7 @@
       sprite: Civ14/Clothing/exported/uniforms/g_bandbikini.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/g_bandbikini.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Green_Band_Bikini
       node: end
       cost: 5
@@ -8858,14 +6304,7 @@
       sprite: Civ14/Clothing/exported/uniforms/g_swimtrunks.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/g_swimtrunks.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Green_Swimtrunks
       node: end
       cost: 5
@@ -8881,14 +6320,7 @@
       sprite: Civ14/Clothing/exported/uniforms/football_custom.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/football_custom.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_football_jersey
       node: end
       cost: 5
@@ -8904,14 +6336,7 @@
       sprite: Civ14/Clothing/exported/uniforms/fem_roman.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/fem_roman.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_stola
       node: end
       cost: 4
@@ -8927,14 +6352,7 @@
       sprite: Civ14/Clothing/exported/uniforms/customspartan.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/customspartan.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_short_loincloth
       node: end
       cost: 3
@@ -8945,6 +6363,7 @@
       spawned:
       - id: MaterialLeather1
         amount: 1
+
 - type: entity
   name: shendyt
   parent: ClothingUniformBase
@@ -8955,14 +6374,7 @@
       sprite: Civ14/Clothing/exported/uniforms/customshendyt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/customshendyt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_shendyt
       node: end
       cost: 2
@@ -8978,14 +6390,7 @@
       sprite: Civ14/Clothing/exported/uniforms/customceltic.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/customceltic.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_celtic_trousers
       node: end
       cost: 2
@@ -9001,14 +6406,7 @@
       sprite: Civ14/Clothing/exported/uniforms/customtunic.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/customtunic.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_tunic
       node: end
       cost: 4
@@ -9024,14 +6422,7 @@
       sprite: Civ14/Clothing/exported/uniforms/customarabictunic.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/customarabictunic.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_arabic_tunic
       node: end
       cost: 4
@@ -9047,14 +6438,7 @@
       sprite: Civ14/Clothing/exported/uniforms/customren.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/customren.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_renaissance_outfit
       node: end
       cost: 6
@@ -9070,14 +6454,7 @@
       sprite: Civ14/Clothing/exported/uniforms/custom_pontifical.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/custom_pontifical.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_renaissance_outfit_1
       node: end
       cost: 6
@@ -9093,14 +6470,7 @@
       sprite: Civ14/Clothing/exported/uniforms/customdress.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/customdress.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_dress
       node: end
       cost: 4
@@ -9116,14 +6486,7 @@
       sprite: Civ14/Clothing/exported/uniforms/custombuttonup_full.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/custombuttonup_full.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_dress_1
       node: end
       cost: 4
@@ -9139,14 +6502,7 @@
       sprite: Civ14/Clothing/exported/uniforms/tribalrobe.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/tribalrobe.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_tribal_robe
       node: end
       cost: 3
@@ -9162,14 +6518,7 @@
       sprite: Civ14/Clothing/exported/uniforms/customuni.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/customuni.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_uniform
       node: end
       cost: 3
@@ -9185,14 +6534,7 @@
       sprite: Civ14/Clothing/exported/uniforms/modern_camo_custom.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/modern_camo_custom.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_camo_uniform
       node: end
       cost: 4
@@ -9208,14 +6550,7 @@
       sprite: Civ14/Clothing/exported/uniforms/custompyjamas.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/custompyjamas.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_pyjamas
       node: end
       cost: 3
@@ -9231,14 +6566,7 @@
       sprite: Civ14/Clothing/exported/uniforms/crinoline_dress.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/crinoline_dress.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_crinoine_dress
       node: end
       cost: 4
@@ -9254,14 +6582,7 @@
       sprite: Civ14/Clothing/exported/uniforms/custom_mod_full.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/custom_mod_full.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_modern_outfit_1
       node: end
       cost: 4
@@ -9277,14 +6598,7 @@
       sprite: Civ14/Clothing/exported/uniforms/custom_mod_full.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/custom_mod_full.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Facility_uniform
       node: end
       cost: 5
@@ -9300,14 +6614,7 @@
       sprite: Civ14/Clothing/exported/uniforms/custom_modbaggy_full.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/custom_modbaggy_full.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_baggy_modern_outfit
       node: end
       cost: 4
@@ -9323,14 +6630,7 @@
       sprite: Civ14/Clothing/exported/uniforms/custom_col_full.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/custom_col_full.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_colonial_outfit
       node: end
       cost: 4
@@ -9346,14 +6646,7 @@
       sprite: Civ14/Clothing/exported/uniforms/trackpants_custom.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/trackpants_custom.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_track_pants_1
       node: end
       cost: 5
@@ -9369,14 +6662,7 @@
       sprite: Civ14/Clothing/exported/uniforms/cafr_newiform.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/cafr_newiform.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_cafr_uniform
       node: end
       cost: 5
@@ -9392,14 +6678,7 @@
       sprite: Civ14/Clothing/exported/uniforms/football_red.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/football_red.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Unga_Bunga_jersey_1
       node: end
       cost: 5
@@ -9415,14 +6694,7 @@
       sprite: Civ14/Clothing/exported/uniforms/flamengo.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/flamengo.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_flamengo_shirt_with_yellow_shorts
       node: end
       cost: 5
@@ -9438,14 +6710,7 @@
       sprite: Civ14/Clothing/exported/uniforms/football_blue_gk.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/football_blue_gk.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Blugoslavia_goalkeeper_jersey
       node: end
       cost: 5
@@ -9461,14 +6726,7 @@
       sprite: Civ14/Clothing/exported/uniforms/football_red.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/football_red.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Redmenia_jersey
       node: end
       cost: 5
@@ -9484,14 +6742,7 @@
       sprite: Civ14/Clothing/exported/uniforms/football_blue.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/uniforms/football_blue.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-
     - type: Construction
-
       graph: civ13_uniform_Blugoslavia_jersey
       node: end
       cost: 5

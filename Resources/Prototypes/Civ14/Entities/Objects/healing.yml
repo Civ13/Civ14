@@ -88,7 +88,7 @@
         - Biological
       damage:
         groups:
-          Brute: -18
+          Brute: -10
       healingBeginSound:
         path: "/Audio/Items/Medical/ointment_begin.ogg"
       healingEndSound:

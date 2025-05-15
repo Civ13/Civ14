@@ -11,7 +11,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using static Robust.Client.UserInterface.Controls.BaseButton;
 using Robust.Client.Console;
-using Content.Shared.Civ14.CivFactions;
+using Content.Shared.Civ14.CivFactions; // Existing using
 using Content.Client.Popups;
 using Content.Shared.Popups;
 using System.Linq;
@@ -20,7 +20,8 @@ using Robust.Shared.Network;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Player; // Required for ICommonSession
 using Content.Client.UserInterface.Systems.MenuBar.Widgets;
-
+using Robust.Shared.IoC; // Added for IoCManager
+using Content.Client.Commands;
 
 namespace Content.Client.UserInterface.Systems.Faction;
 
@@ -33,11 +34,16 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IClientConsoleHost _consoleHost = default!;
     [Dependency] private readonly IClientNetManager _netManager = default!;
-    private PopupSystem? _popupSystem; // Make nullable
+    private PopupSystem? _popupSystem;
+
+    // Store the command instance to manage its registration lifecycle
+    private AcceptFactionInviteCommand? _acceptInviteCmdInstance;
     private ISawmill _sawmill = default!;
     private FactionWindow? _window; // Make nullable
     // Ensure the namespace and class name are correct for GameTopMenuBar
     private MenuButton? FactionButton => UIManager.GetActiveUIWidgetOrNull<GameTopMenuBar>()?.FactionButton;
+
+    private bool _factionControllerResourcesCleanedUp = false;
 
     /// <summary>
     /// Performs initial setup for the faction UI controller, including subscribing to relevant network events and configuring logging.
@@ -45,12 +51,28 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     public override void Initialize()
     {
         base.Initialize();
-        // Try to get PopupSystem. If this fails (e.g., due to initialization order issues),
-        // _popupSystem will remain null. We'll attempt to resolve it lazily later if needed,
-        // or handle its absence. This avoids a startup crash if EntitySystemManager is problematic.
+
         SubscribeNetworkEvent<FactionInviteOfferEvent>(OnFactionInviteOffer);
         SubscribeNetworkEvent<PlayerFactionStatusChangedEvent>(OnPlayerFactionStatusChanged);
         _sawmill = _logMan.GetSawmill("faction");
+
+        // Create an instance of the command
+        var acceptInviteCmd = new AcceptFactionInviteCommand();
+        IoCManager.InjectDependencies(acceptInviteCmd); // Injects [Dependency] fields in AcceptFactionInviteCommand
+
+        try
+        {
+            _consoleHost.RegisterCommand(acceptInviteCmd);
+            _acceptInviteCmdInstance = acceptInviteCmd; // This instance successfully registered the command
+            _sawmill.Debug($"Command '{acceptInviteCmd.Command}' registered successfully by this FactionUIController instance.");
+        }
+        catch (ArgumentException e) when (e.Message.Contains("An item with the same key has already been added"))
+        {
+            // Command is already registered, likely by another client instance in a test/tool environment.
+            // Log this and assume the existing registration is fine.
+            _sawmill.Debug($"Command '{acceptInviteCmd.Command}' was already registered. Skipping registration for this FactionUIController instance. Exception: {e.Message}");
+            _acceptInviteCmdInstance = null; // This instance did not register the command.
+        }
     }
 
     /// <summary>
@@ -62,6 +84,9 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // DebugTools.Assert(_window == null); // Keep this assertion
 
         _sawmill.Debug("FactionUIController entering GameplayState.");
+
+        // Retrieve PopupSystem here, as EntityManager should be more reliably initialized.
+        _ent.TrySystem(out _popupSystem);
 
         // Create the window instance
         _window = UIManager.CreateWindow<FactionWindow>();
@@ -122,8 +147,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
             // Ensure window is closed before disposing
             if (_window.IsOpen)
                 _window.Close();
-            _window.Dispose();
-            _window = null; // Set to null after disposal
+            _window = null; // Set to null after closing
         }
 
         // Unregister keybind
@@ -133,7 +157,43 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // *** ADD THIS LINE ***
         // Unload the button hookup
         UnloadButton();
+
+        // Perform cleanup of resources specific to this controller when exiting the gameplay state.
+        // This is used as the primary cleanup point for the command registration
+        // due to apparent issues with overriding or extending UIController.Dispose in the current build environment.
+        CleanupFactionControllerResources(true); // True for 'disposing managed resources'
     }
+
+    /// <summary>
+    /// Performs cleanup of managed resources held by this FactionUIController,
+    /// such as unregistering console commands.
+    /// This method is called from OnStateExited as the primary cleanup path
+    /// because the standard IDisposable pattern with overriding Dispose(bool)
+    /// seems problematic in the current build/linting environment (based on CS0115, CS0117).
+    /// </summary>
+    /// <param name="disposing">True if called because managed resources should be disposed.</param>
+    private void CleanupFactionControllerResources(bool disposing)
+    {
+        if (_factionControllerResourcesCleanedUp)
+            return;
+
+        if (disposing)
+        {
+            if (_acceptInviteCmdInstance != null)
+            {
+                _consoleHost.UnregisterCommand(_acceptInviteCmdInstance.Command);
+                _sawmill.Debug($"Command '{_acceptInviteCmdInstance.Command}' unregistered by FactionUIController in CleanupFactionControllerResources.");
+                _acceptInviteCmdInstance = null;
+            }
+        }
+        _factionControllerResourcesCleanedUp = true;
+    }
+
+    // Note: The base UIController.Dispose() method (from IDisposable) will be called when this controller is disposed by the UserInterfaceManager.
+    // However, due to compiler errors (CS0115 'no suitable method to override' for Dispose(bool), and CS0117 'base.Dispose(bool) not found'),
+    // FactionUIController-specific cleanup (like command unregistration) has been moved to OnStateExited via CleanupFactionControllerResources.
+    // If the UIController API in the environment were to match the standard RobustToolbox pattern (with a protected virtual Dispose(bool)),
+    // that would be the ideal place for this cleanup logic.
 
     /// <summary>
     /// Retrieves the first available <see cref="CivFactionsComponent"/> found in the game state, or null if none exist.
@@ -186,25 +246,25 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
 
         // Improved feedback using a clickable popup or chat message
         var message = $"{msg.InviterName} invited you to join faction '{msg.FactionName}'.";
-        var acceptCommand = $"/acceptfactioninvite \"{msg.FactionName}\""; // Use quotes for names with spaces
+        // Include InviterUserId in the command. It needs to be a string for the command line.
+        var acceptCommand = $"/acceptfactioninvite \"{msg.FactionName}\" \"{msg.InviterUserId.ToString()}\"";
 
         // You could use a more interactive popup system if available,
         // but for now, let's add the command hint to the popup/chat.
         var fullMessage = $"{message}\nType '{acceptCommand}' in chat to accept.";
 
-        if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity)
+        var localPlayerEntity = _player.LocalSession?.AttachedEntity;
+        if (localPlayerEntity.HasValue && _ent.EntityExists(localPlayerEntity))
         {
-            // Only use _popupSystem if it was successfully retrieved
-            _popupSystem?.PopupEntity(fullMessage, playerEntity, PopupType.Medium);
+            _popupSystem?.PopupEntity(fullMessage, localPlayerEntity.Value, PopupType.Medium);
         }
         else
         {
-            // Fallback if player entity isn't available or popup system isn't
-            _popupSystem?.PopupCursor(fullMessage); // Show on cursor if possible
-            _sawmill.Warning($"Could not show faction invite popup on entity (player entity not found or PopupSystem unavailable). Falling back to cursor popup if PopupSystem exists. Message: {fullMessage}");
+            _popupSystem?.PopupCursor(fullMessage, PopupType.Medium);
+            _sawmill.Warning($"Could not show faction invite popup on player entity (entity not found or invalid). Falling back to cursor popup. Message: {fullMessage}");
         }
         // As a very robust fallback, also send to chat, as popups can sometimes be missed or problematic.
-        _consoleHost.ExecuteCommand($"say \"{message}\"");
+        // _consoleHost.ExecuteCommand($"say \"{message}\""); // Optional: 'say' might be too noisy. The popup and echo should suffice.
         _consoleHost.ExecuteCommand($"echo \"To accept, type: {acceptCommand}\""); // Echo to self for easy copy/paste
     }
 
@@ -382,10 +442,10 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         {
             _sawmill.Warning("Create Faction pressed with empty name.");
             var errorMsg = "Faction name cannot be empty.";
-            if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity && _popupSystem != null)
-                _popupSystem.PopupEntity(errorMsg, playerEntity, PopupType.SmallCaution);
+            if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity) // playerEntity here is EntityUid
+                _popupSystem?.PopupEntity(errorMsg, playerEntity, PopupType.SmallCaution); // Use playerEntity directly
             else // Fallback to cursor popup or console if entity/popupsystem is unavailable
-                _popupSystem?.PopupCursor(errorMsg); // Use null-conditional
+                _popupSystem?.PopupCursor(errorMsg, PopupType.SmallCaution);
             return;
         }
 
@@ -395,10 +455,10 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         {
             _sawmill.Warning($"Create Faction pressed with name too long: {desiredName}");
             var msg = $"Faction name is too long (max {maxNameLength} characters).";
-            if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity && _popupSystem != null)
-                _popupSystem.PopupEntity(msg, playerEntity, PopupType.SmallCaution);
+            if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity) // playerEntity here is EntityUid
+                _popupSystem?.PopupEntity(msg, playerEntity, PopupType.SmallCaution); // Use playerEntity directly
             else // Fallback
-                _popupSystem?.PopupCursor(msg); // Use null-conditional
+                _popupSystem?.PopupCursor(msg, PopupType.SmallCaution);
             return;
         }
         // --- End Client-side validation ---

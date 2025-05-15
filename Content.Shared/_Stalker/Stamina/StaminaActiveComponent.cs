@@ -9,7 +9,7 @@ public sealed partial class StaminaActiveComponent : Component
     /// Float on which our entity will be "stunned"
     /// </summary>
     [DataField("slowThreshold"), ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
-    public float SlowThreshold = 180f;
+    public float SlowThreshold = 200f;
 
     /// <summary>
     /// Value to compare with StaminaDamage and set default sprint speed back.

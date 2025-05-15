@@ -181,12 +181,16 @@
     state: ger0_basic
 
 - type: factionIcon
-  id: Ger2Faction
-  priority: 1
+  id: GermanFaction
+  priority: 0
   showTo:
     components:
       - ShowAntagIcons
       - ShowFactionIcons
+      - ShowEnglishFactionIcons
+      - ShowFrenchFactionIcons
+      - ShowGermanFactionIcons
+      - ShowSovietFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: ger2_basic
@@ -511,12 +515,16 @@
     state: ru_basic
 
 - type: factionIcon
-  id: SovFaction
+  id: SovietFaction
   priority: 1
   showTo:
     components:
       - ShowAntagIcons
       - ShowFactionIcons
+      - ShowEnglishFactionIcons
+      - ShowFrenchFactionIcons
+      - ShowGermanFactionIcons
+      - ShowSovietFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: sov_basic

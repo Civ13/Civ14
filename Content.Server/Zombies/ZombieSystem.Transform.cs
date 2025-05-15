@@ -240,8 +240,6 @@ public sealed partial class ZombieSystem
             //Greeting message for new bebe zombers
             _chatMan.DispatchServerMessage(session, Loc.GetString("zombie-infection-greeting"));
 
-            // Notificate player about new role assignment
-            _audio.PlayGlobal(zombiecomp.GreetSoundNotification, session);
         }
         else
         {

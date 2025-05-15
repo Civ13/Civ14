@@ -560,6 +560,15 @@
   components:
     - type: Sprite
       state: flag_sovborder
+      
+- type: entity
+  id: civ13_wallflag_sov
+  name: Soviet Union flag
+  description: The flag of the Soviet Union.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_sov
 
 - type: entity
   id: civ13_wallflag_nazi

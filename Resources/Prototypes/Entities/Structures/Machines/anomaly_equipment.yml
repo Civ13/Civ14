@@ -37,12 +37,6 @@
       color: "#fca3c0"
     - type: Appearance
     - type: WiresPanel
-    - type: AmbientSound
-      enabled: false
-      range: 3
-      volume: -8
-      sound:
-        path: /Audio/Ambience/anomaly_drone.ogg
     - type: GenericVisualizer
       visuals:
         enum.PowerDeviceVisuals.Powered:

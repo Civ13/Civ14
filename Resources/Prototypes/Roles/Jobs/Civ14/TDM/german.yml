@@ -1,0 +1,254 @@
+- type: job
+  id: GermanCaptain
+  name: job-name-civ-german-cpt
+  faction: Germany
+  originalName: Kapitän
+  description: job-description-civ-german-cpt
+  playTimeTracker: JobGermanCaptain
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10800 #3 hrs
+  startingGear: GermanCaptainGear
+  icon: "JobIconCommander"
+  supervisors: job-supervisors-nobody
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: GermanAccent
+        - type: NpcFactionMember
+          factions:
+            - Germany
+        - type: ShowGermanFactionIcons
+          factionIcon: GermanFaction
+
+- type: playTimeTracker
+  id: JobGermanCaptain
+
+- type: startingGear
+  id: GermanCaptainGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_German_officer_uniform
+    outerClothing: civ13_suit_German_officer_coat
+    gloves: civ13_gloves_Officer_gloves
+    belt: civ13_pistol_Luger_P08
+    head: civ13_head_German_officer_cap
+
+# Sergeant
+
+- type: job
+  id: GermanSergeant
+  originalName: Sergeant
+  name: job-name-civ-german-sgt
+  faction: Germany
+  description: job-description-civ-german-sergeant
+  playTimeTracker: JobGermanSergeant
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 5400 #1.5 hrs
+  startingGear: GermanSergeantGear
+  icon: "JobIconOfficer"
+  supervisors: job-supervisors-cpt
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: GermanAccent
+        - type: NpcFactionMember
+          factions:
+            - Germany
+        - type: ShowGermanFactionIcons
+          factionIcon: GermanFaction
+
+- type: playTimeTracker
+  id: JobGermanSergeant
+
+- type: startingGear
+  id: GermanSergeantGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_German_SS_officer_uniform
+    outerClothing: civ13_suit_German_parka
+    head: civ13_head_German_field_cap
+    belt: civ13_pistol_Walther_P38
+    pocket1: civ13_caliber_a9x19
+  inhand:
+    - Binoculars
+
+# SMG
+
+- type: job
+  id: GermanSubmachineGunner
+  name: job-name-civ-german-submachinegunner
+  faction: Germany
+  originalName: Maschinenpistole Schütze
+  description: job-description-civ-german-submachinegunner
+  playTimeTracker: JobGermanSubmachineGunner
+  startingGear: GermanSubmachineGunnerGear
+  randomStartingGears: [GermanSubmachineGunnerGear, GermanSubmachineGunnerGear2]
+  icon: "JobIconSword"
+  supervisors: job-supervisors-cpt
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: GermanAccent
+        - type: NpcFactionMember
+          factions:
+            - Germany
+        - type: ShowGermanFactionIcons
+          factionIcon: GermanFaction
+
+- type: playTimeTracker
+  id: JobGermanSubmachineGunner
+
+- type: startingGear
+  id: GermanSubmachineGunnerGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_German_SS_uniform
+    head: civ13_head_german_stahlhelm
+  #inhand:
+    #- civ13_german_smg
+- type: startingGear
+  id: GermanSubmachineGunnerGear2
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_German_camo_SS_uniform
+    head: civ13_head_German_SS_helmet
+# inhand:
+  # - civ13_german_smg
+
+# Rifleman
+
+- type: job
+  id: GermanRifleman
+  name: job-name-civ-german-rifleman
+  faction: Germany
+  originalName: Schütze
+  description: job-description-civ-german-rifleman
+  playTimeTracker: JobGermanRifleman
+  startingGear: GermanRiflemanGear
+  randomStartingGears: [GermanRiflemanGear, GermanRiflemanGear2]
+  icon: "JobIconSpear"
+  supervisors: job-supervisors-cpt
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: GermanAccent
+        - type: NpcFactionMember
+          factions:
+            - Germany
+        - type: ShowGermanFactionIcons
+          factionIcon: GermanFaction
+
+- type: playTimeTracker
+  id: JobGermanRifleman
+
+- type: startingGear
+  id: GermanRiflemanGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_German_SS_uniform
+    head: civ13_head_german_stahlhelm
+# inhand:
+  #  - civ13_boltaction_Gewehr_71
+- type: startingGear
+  id: GermanRiflemanGear2
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_German_camo_SS_uniform
+    head: civ13_head_German_SS_helmet
+# inhand:
+  #  - civ13_boltaction_Gewehr_71
+
+# Machinegunner
+
+- type: job
+  id: GermanMachinegunner 
+  name: job-name-civ-german-machinegunner 
+  faction: Germany
+  originalName: Maschinengewehrschütze # how to pronounce that
+  description: job-description-civ-german-machinegunner
+  playTimeTracker: JobGermanMachinegunner
+  startingGear: GermanMachinegunnerGear
+  randomStartingGears: [GermanMachinegunnerGear, GermanMachinegunnerGear2]
+  icon: "JobIconRanged"
+  supervisors: job-supervisors-cpt
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: GermanAccent
+        - type: NpcFactionMember
+          factions:
+            - Germany
+        - type: ShowGermanFactionIcons
+          factionIcon: GermanFaction
+
+- type: playTimeTracker
+  id: JobGermanMachinegunner
+
+- type: startingGear
+  id: GermanMachinegunnerGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_German_SS_uniform
+    head: civ13_head_german_stahlhelm
+    pocket1: CombatKnife
+# inhand:
+ # - civ13_generic_german_machinegun
+- type: startingGear
+  id: GermanMachinegunnerGear2
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_German_camo_SS_uniform
+    head: civ13_head_German_SS_helmet
+    pocket1: CombatKnife
+# inhand:
+   # - civ13_generic_german_machinegun
+
+# Medic
+
+- type: job
+  id: GermanMedic
+  name: job-name-civ-german-medic
+  faction: Germany
+  originalName: Sanitäter
+  description: job-description-civ-german-medic
+  playTimeTracker: JobGermanMedic
+  startingGear: GermanMedicGear
+  icon: "JobIconMedic"
+  supervisors: job-supervisors-cpt
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: GermanAccent
+        - type: NpcFactionMember
+          factions:
+            - Germany
+        - type: ShowGermanFactionIcons
+          factionIcon: GermanFaction
+
+- type: playTimeTracker
+  id: JobGermanMedic
+
+- type: startingGear
+  id: GermanMedicGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_German_doctor_uniform
+    head: civ13_head_german_medic_stahlhelm
+    belt: LeatherClothingBelt
+    pocket1: CombatKnife
+  # inhand: 
+    # - civ13_boltaction_Gewehr_71
+  storage:
+    belt:
+      - DoctorsHandbook
+      - Brutepack
+      - Brutepack
+      - FoodPoppy
+      - YarrowHealingHerbs
+      - YarrowHealingHerbs
+      - ElderflowerHealingHerbs
+      - ElderflowerHealingHerbs
+      - Gauze
+      - Gauze

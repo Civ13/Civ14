@@ -12,3 +12,19 @@ job-description-civ-french-man-at-arms = You are a swordsman. Use your shield to
 job-description-civ-french-spearman = You are a spearman, the bread-and-butter of the army. Onwards to victory!
 job-description-civ-french-ranged = As a ranged unit, harass the lightly armoured enemies to submission!
 job-description-civ-french-medic = As a field surgeon, keep your troops alive!
+
+
+job-description-civ-german-cpt = You are the highest ranking in your faction. Lead your men to victory!
+job-description-civ-german-sgt = You are the right hand of your captain. Direct troops and order artillery strikes on the enemy while answering to the Kapitän!
+job-description-civ-german-submachinegunner = You are a submachinegunner. Use your gun’s fast rate of fire to quickly advance into the enemy lines!
+job-description-civ-german-rifleman = You are a rifleman, the German standard of the army. Bring glory to Deutschland!
+job-description-civ-german-machinegunner = You are a machinegunner. Use your superior firepower to suppress enemies at a distance!
+job-description-civ-german-medic = As a field surgeon, keep your troops alive!
+
+
+job-description-civ-soviet-cpt = You are the highest ranking in your faction. Lead your men to victory!
+job-description-civ-soviet-sgt = You are the right hand of your captain. Direct troops and order artillery strikes on the enemy while answering to the Kapitan!
+job-description-civ-soviet-submachinegunner = You are a submachinegunner. Use your gun's fast firerate to quickly advance into the enemy lines!
+job-description-civ-soviet-rifleman = You are a rifleman, the soviet standard of the army. For the Motherland!
+job-description-civ-soviet-machinegunner = You are a machinegunner. Use your superior firepower to suppress enemies at a distance!
+job-description-civ-soviet-medic = As a field surgeon, keep your troops alive!

@@ -221,3 +221,31 @@
     - Wizard
     - Predator
     - France
+
+- type: npcFaction
+  id: Soviet
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - Germany
+
+- type: npcFaction
+  id: Germany
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - Soviet      
