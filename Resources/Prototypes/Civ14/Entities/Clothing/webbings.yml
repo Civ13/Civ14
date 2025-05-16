@@ -119,3 +119,28 @@
           amount: 2
         - id: GrenadeF1
           amount: 3
+
+- type: entity
+  id: ClothingWebbingGermanMG
+  parent: ClothingWebbingGerman
+  name: feldgrau webbing
+  suffix: filled, MG
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_MG34_magazine_(7.92x57mm)
+          amount: 3
+        - id: GrenadeSHG24
+          amount: 1
+- type: entity
+  id: ClothingWebbingSovietMG
+  parent: ClothingWebbingRussian
+  name: leather webbing
+  suffix: filled, MG
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_DP_pan_(7.62x54mmR)
+          amount: 4
+        - id: GrenadeF1
+          amount: 3
