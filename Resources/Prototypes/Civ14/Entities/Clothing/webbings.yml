@@ -1,0 +1,121 @@
+- type: entity
+  id: ClothingWebbing
+  parent: ClothingBeltStorageBase
+  name: webbing
+  abstract: true
+  description: This webbing vest includes two sturdy leather belts equipped with small pouches for ammunition and grenades, providing essential storage for frontline soldiers.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+    - type: STWeight
+      self: 1.5
+    - type: Item
+      size: Large
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+        - 0,0,7,1
+
+- type: entity
+  id: ClothingWebbingGerman
+  parent: ClothingWebbing
+  name: feldgrau webbing
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/german_vest.rsi
+
+- type: entity
+  id: ClothingWebbingRussian
+  parent: ClothingWebbing
+  name: leather webbing
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/russian_vest.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/russian_vest.rsi
+
+- type: entity
+  id: ClothingWebbingUS
+  parent: ClothingWebbing
+  name: US webbing
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/us_webbing.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/us_webbing.rsi
+
+- type: entity
+  id: ClothingWebbingKhaki
+  parent: ClothingWebbing
+  name: khaki webbing
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/khaki_webbing.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/khaki_webbing.rsi
+
+- type: entity
+  id: ClothingWebbingGreen
+  parent: ClothingWebbing
+  name: green webbing
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/green_webbing.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/green_webbing.rsi
+
+# filled
+- type: entity
+  id: ClothingWebbingGermanRifleman
+  parent: ClothingWebbingGerman
+  name: fledgrau webbing
+  suffix: filled, Rifle
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_clip_(7.92x57mm)
+          amount: 8
+        - id: GrenadeSHG24
+          amount: 2
+
+- type: entity
+  id: ClothingWebbingRussianRifleman
+  parent: ClothingWebbingRussian
+  name: leather webbing
+  suffix: filled, Rifle
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_clip_(7.62x54mm)
+          amount: 8
+        - id: GrenadeF1
+          amount: 2
+
+- type: entity
+  id: ClothingWebbingGermanSMG
+  parent: ClothingWebbingGerman
+  name: fledgrau webbing
+  suffix: filled, SMG
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_mp40_(9x19mm)
+          amount: 3
+        - id: GrenadeSHG24
+          amount: 3
+- type: entity
+  id: ClothingWebbingSovietSMG
+  parent: ClothingWebbingRussian
+  name: leather webbing
+  suffix: filled, SMG
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
+          amount: 2
+        - id: GrenadeF1
+          amount: 3

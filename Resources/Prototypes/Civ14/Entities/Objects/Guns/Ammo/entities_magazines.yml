@@ -3879,7 +3879,7 @@
     - type: BallisticAmmoProvider
       mayTransfer: true
       proto: civ13_caliber_a762x54
-      capacity: 10
+      capacity: 100
       whitelist:
         tags:
           - civ13_caliber_a762x54

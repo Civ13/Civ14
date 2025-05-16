@@ -289,9 +289,9 @@
   description: A Chinese-designed bullup assault rifle, chambered in 5.8x42mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/qbz95.rsi
+      sprite: Civ14/Weapons/Guns/qbz95.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/qbz95.rsi
+      sprite: Civ14/Weapons/Guns/qbz95.rsi
     - type: Gun
       projectileSpeed: 30 # 5.8x42mm, similar to other intermediate
       fireRate: 4.3 # ~650 RPM
@@ -327,9 +327,9 @@
     ammunition in a external magazine.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/mcar.rsi
+      sprite: Civ14/Weapons/Guns/mcar.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/mcar.rsi
+      sprite: Civ14/Weapons/Guns/mcar.rsi
     - type: Gun
       projectileSpeed: 25 # .30 Carbine, lower velocity
       fireRate: 5.0 # ~750 RPM
@@ -362,9 +362,9 @@
   description: Russian Compact Carbine chambered in 9x39mm, comes with a compact stock.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/srm.rsi
+      sprite: Civ14/Weapons/Guns/srm.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/srm.rsi
+      sprite: Civ14/Weapons/Guns/srm.rsi
     - type: Gun
       projectileSpeed: 22 # 9x39mm subsonic, heavy
       fireRate: 6.0 # ~900 RPM, very fast
@@ -400,9 +400,9 @@
     while still having a relatively long barrel. It's chambered in 5.56x45mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/l85a2.rsi
+      sprite: Civ14/Weapons/Guns/l85a2.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/l85a2.rsi
+      sprite: Civ14/Weapons/Guns/l85a2.rsi
     - type: Gun
       projectileSpeed: 30 # 5.56x45mm
       fireRate: 4.8 # ~700 RPM
@@ -423,11 +423,11 @@
               - civ13_magazine_STANAG_magazine_(5.56x45mm)
         gun_chamber:
           name: Chamber
-          startingItem: civ13_caliber_l85a2
+          startingItem: civ13_caliber_a556x45
           priority: 1
           whitelist:
             tags:
-              - civ13_caliber_l85a2
+              - civ13_caliber_a556x45
 - type: entity
   name: Steyr AUG
   parent: BaseGunCivAR
@@ -437,9 +437,9 @@
     Steyr-Daimler-Puch. It's chambered in 5.56x45mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/aug.rsi
+      sprite: Civ14/Weapons/Guns/aug.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/aug.rsi
+      sprite: Civ14/Weapons/Guns/aug.rsi
     - type: Gun
       projectileSpeed: 30 # 5.56x45mm
       fireRate: 4.9 # ~720 RPM
@@ -473,9 +473,9 @@
   description: A modern German battle rifle, chambered in 7.62x51mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/hk417.rsi
+      sprite: Civ14/Weapons/Guns/hk417.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/hk417.rsi
+      sprite: Civ14/Weapons/Guns/hk417.rsi
     - type: Gun
       projectileSpeed: 32 # 7.62x51mm NATO
       fireRate: 4.0 # ~600 RPM

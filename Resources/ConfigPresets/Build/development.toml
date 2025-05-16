@@ -1,12 +1,12 @@
 ﻿[game]
 # Straight in-game baby
-lobbyenabled = false
+lobbyenabled = true
 # Dev map for faster loading & convenience
-map = "Nomads"
+map = "Opushka"
 role_timers = false
 lobbyduration = 15
 disallowlatejoins = false
-defaultpreset = "nomads"
+defaultpreset = "tdm"
 
 [events]
 enabled = false

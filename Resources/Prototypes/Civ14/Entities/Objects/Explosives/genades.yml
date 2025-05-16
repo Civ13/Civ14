@@ -1,0 +1,85 @@
+- type: entity
+  name: Stielhandgranate 24
+  description: A german WW2 fragmentation grenade.
+  parent: GrenadeBase
+  id: GrenadeSHG24
+  components:
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 5
+      intensitySlope: 2
+      totalIntensity: 40 # about a ~4 tile radius
+      canCreateVacuum: false
+    - type: OnUseTimerTrigger
+    - type: ProjectileGrenade
+      fillPrototype: PelletClusterLethal
+      capacity: 30
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+    - type: TwoStageTrigger
+      triggerDelay: 0
+      components:
+        - type: ExplodeOnTrigger
+    - type: Sprite
+      sprite: Civ14/Objects/grenade.rsi
+      layers:
+        - state: stgnade
+          map: ["enum.TriggerVisualLayers.Base"]
+    - type: GenericVisualizer
+      visuals:
+        enum.Trigger.TriggerVisuals.VisualState:
+          enum.ConstructionVisuals.Layer:
+            Primed: { state: stgnade_active }
+            Unprimed: { state: stgnade }
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 60
+          behaviors:
+            - !type:TriggerBehavior
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  name: F-1 grenade
+  description: A russian WW1 and WW2 fragmentation grenade.
+  parent: GrenadeBase
+  id: GrenadeF1
+  components:
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 5
+      intensitySlope: 2
+      totalIntensity: 40 # about a ~4 tile radius
+      canCreateVacuum: false
+    - type: OnUseTimerTrigger
+    - type: ProjectileGrenade
+      fillPrototype: PelletClusterLethal
+      capacity: 30
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+    - type: TwoStageTrigger
+      triggerDelay: 0
+      components:
+        - type: ExplodeOnTrigger
+    - type: Sprite
+      sprite: Civ14/Objects/grenade.rsi
+      layers:
+        - state: f1
+          map: ["enum.TriggerVisualLayers.Base"]
+    - type: GenericVisualizer
+      visuals:
+        enum.Trigger.TriggerVisuals.VisualState:
+          enum.ConstructionVisuals.Layer:
+            Primed: { state: f1_active }
+            Unprimed: { state: f1 }
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 60
+          behaviors:
+            - !type:TriggerBehavior
+            - !type:DoActsBehavior
+              acts: ["Destruction"]

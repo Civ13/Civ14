@@ -105,8 +105,11 @@
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_Soviet_uniform
     gloves: ClothingHandsGlovesFingerless
+    belt: ClothingWebbingSovietSMG
     #outerClothing: civ13_suit_Soviet_coat
     head: civ13_head_soviet_helmet
+    pocket1: Gauze
+    pocket2: Gauze
   inhand:
     - civ13_smg_ppsh
 - type: startingGear
@@ -114,8 +117,11 @@
   equipment:
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_Soviet_uniform
+    belt: ClothingWebbingSovietSMG
     #outerClothing: civ13_suit_Soviet_coat_1
     head: civ13_head_soviet_ushanka
+    pocket1: Gauze
+    pocket2: Gauze
   inhand:
     - civ13_smg_ppsh
 
@@ -152,6 +158,9 @@
     jumpsuit: civ13_uniform_Soviet_uniform
     #outerClothing: civ13_suit_Soviet_coat_1
     head: civ13_head_soviet_helmet
+    belt: ClothingWebbingRussianRifleman
+    pocket1: Gauze
+    pocket2: Gauze
   inhand:
     - civ13_boltaction_Mosin_30
 
@@ -161,6 +170,7 @@
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_Soviet_uniform
     gloves: ClothingHandsGlovesFingerless
+    belt: ClothingWebbingRussianRifleman
     outerClothing: civ13_suit_Soviet_coat
     head: civ13_head_soviet_ushanka_1
   inhand:
@@ -201,6 +211,7 @@
     #outerClothing: civ13_suit_Soviet_coat
     head: civ13_head_soviet_helmet
     pocket1: CombatKnife
+    pocket2: Gauze
 # inhand:
 # - civ13_soviet_machinegun
 - type: startingGear
@@ -212,6 +223,7 @@
     outerClothing: civ13_suit_Soviet_coat_1
     head: civ13_head_soviet_ushanka_1
     pocket1: CombatKnife
+    pocket2: Gauze
 # inhand:
 # - civ13_soviet_machinegun
 

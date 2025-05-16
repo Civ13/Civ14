@@ -107,10 +107,10 @@
   description: Polish Underground State submachine gun, chambered in 9mm Luger.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/blyskawica.rsi
+      sprite: Civ14/Weapons/Guns/blyskawica.rsi
 
     - type: Clothing
-      sprite: Objects/Weapons/Guns/blyskawica.rsi
+      sprite: Civ14/Weapons/Guns/blyskawica.rsi
 - type: entity
   name: PPD-40
   parent: BaseGunCivSMG
@@ -134,7 +134,7 @@
       slots:
         gun_magazine:
           name: Magazine
-          startingItem: civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
+          startingItem: civ13_magazine_PPS_43_magazine_(7.62x25mm)
           priority: 2
           whitelist:
             tags:
@@ -430,9 +430,9 @@
   description: A compact, rapid-fire defensive weapon, chambered in 5.7x28mm.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/p90.rsi
+      sprite: Civ14/Weapons/Guns/p90.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/p90.rsi
+      sprite: Civ14/Weapons/Guns/p90.rsi
     - type: Gun
       selectedMode: FullAuto
       availableModes:
@@ -472,9 +472,9 @@
     in 9mm
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/victor.rsi
+      sprite: Civ14/Weapons/Guns/victor.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/victor.rsi
+      sprite: Civ14/Weapons/Guns/victor.rsi
     - type: Gun
       projectileSpeed: 19 # 9mm
       fireRate: 7.0 # ~1200 RPM - very fast
@@ -507,10 +507,10 @@
   description: An Israeli submachinegun chambered in 9mm Parabellum.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/uzi.rsi
+      sprite: Civ14/Weapons/Guns/uzi.rsi
 
     - type: Clothing
-      sprite: Objects/Weapons/Guns/uzi.rsi
+      sprite: Civ14/Weapons/Guns/uzi.rsi
     - type: Gun
       projectileSpeed: 18 # 9mm
       fireRate: 4.0 # ~600 RPM
@@ -545,10 +545,10 @@
     Parabellum.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/mac10.rsi
+      sprite: Civ14/Weapons/Guns/mac10.rsi
 
     - type: Clothing
-      sprite: Objects/Weapons/Guns/mac10.rsi
+      sprite: Civ14/Weapons/Guns/mac10.rsi
     - type: Gun
       projectileSpeed: 18 # .45 ACP
       fireRate: 6.8 # ~1100 RPM - bullet hose
@@ -581,9 +581,9 @@
   description: A blowback-operated semi-automatic pistol.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/tec-9.rsi
+      sprite: Civ14/Weapons/Guns/tec-9.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/tec-9.rsi
+      sprite: Civ14/Weapons/Guns/tec-9.rsi
     - type: Gun
       selectedMode: SemiAuto
       availableModes:
@@ -619,9 +619,9 @@
   description: An Czechoslovak machinepistol chambered in 9mm Parabellum.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/skorpion.rsi
+      sprite: Civ14/Weapons/Guns/skorpion.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/skorpion.rsi
+      sprite: Civ14/Weapons/Guns/skorpion.rsi
     - type: Gun
       selectedMode: FullAuto
       availableModes:
@@ -659,9 +659,9 @@
   description: German submachinegun chambered in 9mm Parabellum.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/mp5.rsi
+      sprite: Civ14/Weapons/Guns/mp5.rsi
     - type: Clothing
-      sprite: Objects/Weapons/Guns/mp5.rsi
+      sprite: Civ14/Weapons/Guns/mp5.rsi
     - type: Gun
       selectedMode: FullAuto
       availableModes:
