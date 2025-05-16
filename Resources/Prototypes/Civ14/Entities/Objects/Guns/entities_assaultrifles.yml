@@ -58,6 +58,7 @@
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/AKM.ogg
     - type: ChamberMagazineAmmoProvider
+      boltClosed: true
       soundRack:
         path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
     - type: MagazineVisuals

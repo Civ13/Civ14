@@ -50,6 +50,7 @@
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/PPSh.ogg
     - type: ChamberMagazineAmmoProvider
+      boltClosed: true
       soundRack:
         path: /Audio/Weapons/Guns/Cock/smg_cock.ogg
     - type: MagazineVisuals
@@ -541,8 +542,7 @@
   parent: BaseGunCivSMG
   id: civ13_smg_MAC_10
   description: >-
-    An American compact blowback operated submachinegun chambered in 9mm
-    Parabellum.
+    An American compact blowback operated submachinegun chambered in .45 ACP.
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/mac10.rsi

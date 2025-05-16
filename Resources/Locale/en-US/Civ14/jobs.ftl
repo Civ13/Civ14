@@ -41,14 +41,14 @@ job-name-civ-french-medic = Medic
 
 job-name-civ-german-cpt = Leader
 job-name-civ-german-sgt = Sergeant
-job-name-civ-german-submachinegunner = SMG.
-job-name-civ-german-rifleman = Infantry.
-job-name-civ-german-machinegunner = HWG.
+job-name-civ-german-submachinegunner = SMG
+job-name-civ-german-rifleman = Infantry
+job-name-civ-german-machinegunner = LMG
 job-name-civ-german-medic = Medic
 
 job-name-civ-soviet-cpt = Leader
 job-name-civ-soviet-sgt = Sergeant
-job-name-civ-soviet-submachinegunner = SMG.
-job-name-civ-soviet-rifleman = Infantry.
-job-name-civ-soviet-machinegunner = HWG.
+job-name-civ-soviet-submachinegunner = SMG
+job-name-civ-soviet-rifleman = Infantry
+job-name-civ-soviet-machinegunner = LMG
 job-name-civ-soviet-medic = Medic

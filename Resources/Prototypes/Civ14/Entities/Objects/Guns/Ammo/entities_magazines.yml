@@ -36,7 +36,7 @@
 - type: entity
   id: civ13_magazine_clip_(7.62x54mm)
   name: clip (7.62x54mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -58,7 +58,7 @@
 - type: entity
   id: civ13_magazine_magazine_box_(7.62x54mm)
   name: magazine box (7.62x54mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -80,7 +80,7 @@
 - type: entity
   id: civ13_magazine_magazine_(7.62x54mm)
   name: magazine (7.62x54mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -102,7 +102,7 @@
 - type: entity
   id: civ13_magazine_Ammo_Box_(9x39mm)
   name: Ammo Box (9x39mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -124,7 +124,7 @@
 - type: entity
   id: civ13_magazine_belt_(7.62x51mm)
   name: belt (7.62x51mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -146,7 +146,7 @@
 - type: entity
   id: civ13_magazine_clip_(7.65x53mm)
   name: clip (7.65x53mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -168,7 +168,7 @@
 - type: entity
   id: civ13_magazine_magazine_box_(7.65x53mm)
   name: magazine box (7.65x53mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -190,7 +190,7 @@
 - type: entity
   id: civ13_magazine_clip_(7.92x57mm)
   name: clip (7.92x57mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -212,7 +212,7 @@
 - type: entity
   id: civ13_magazine_clip_(7.92x33mm)
   name: clip (7.92x33mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -234,7 +234,7 @@
 - type: entity
   id: civ13_magazine_clip_(7x53mm)
   name: clip (7x53mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -256,7 +256,7 @@
 - type: entity
   id: civ13_magazine_magazine_box_(7.92x57mm)
   name: magazine box (7.92x57mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -278,7 +278,7 @@
 - type: entity
   id: civ13_magazine_magazine_box_(7x53mm)
   name: magazine box (7x53mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -300,7 +300,7 @@
 - type: entity
   id: civ13_magazine_ammo_box_(.45_70_Government)
   name: ammo box (.45-70 Government)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -322,7 +322,7 @@
 - type: entity
   id: civ13_magazine_ammo_box_(.577/450_Martini_Henry)
   name: ammo box (.577/450 Martini-Henry)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -344,7 +344,7 @@
 - type: entity
   id: civ13_magazine_clip_(6.5x50mm)
   name: clip (6.5x50mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -366,7 +366,7 @@
 - type: entity
   id: civ13_magazine_magazine_box_(6.5x50mm)
   name: magazine box (6.5x50mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -388,7 +388,7 @@
 - type: entity
   id: civ13_magazine_clip_(6.5x52mm)
   name: clip (6.5x52mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -410,7 +410,7 @@
 - type: entity
   id: civ13_magazine_magazine_box_(6.5x52mm)
   name: magazine box (6.5x52mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -432,7 +432,7 @@
 - type: entity
   id: civ13_magazine_Maxim_ammo_belt
   name: Maxim ammo belt
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -454,7 +454,7 @@
 - type: entity
   id: civ13_magazine_MG08_ammo_belt
   name: MG08 ammo belt
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -476,7 +476,7 @@
 - type: entity
   id: civ13_magazine_Vickers_ammo_belt
   name: Vickers ammo belt
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -498,7 +498,7 @@
 - type: entity
   id: civ13_magazine_Hotchkiss_ammo_belt
   name: Hotchkiss ammo belt
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -520,7 +520,7 @@
 - type: entity
   id: civ13_magazine_Type_3_ammo_belt
   name: Type 3 ammo belt
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -542,7 +542,7 @@
 - type: entity
   id: civ13_magazine_MG_34_ammo_belt
   name: MG 34 ammo belt
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -565,7 +565,7 @@
 - type: entity
   id: civ13_magazine_Nambu_magazine
   name: Nambu magazine
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -587,7 +587,7 @@
 - type: entity
   id: civ13_magazine_Luger_magazine
   name: Luger magazine
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -609,7 +609,7 @@
 - type: entity
   id: civ13_magazine_Walther_magazine
   name: Walther magazine
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -631,7 +631,7 @@
 - type: entity
   id: civ13_magazine_Borchardt_magazine
   name: Borchardt magazine
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -653,7 +653,7 @@
 - type: entity
   id: civ13_magazine_Mauser_clip_(7.63mm)
   name: Mauser clip (7.63mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -675,7 +675,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(7.62x38mmR)
   name: bullet pouch (7.62x38mmR)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -697,7 +697,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(8x27mmR)
   name: bullet pouch (8x27mmR)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -719,7 +719,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(9mm)
   name: bullet pouch (9mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -741,7 +741,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(.32_S&W_Long)
   name: bullet pouch (.32 S&W Long)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -763,7 +763,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(.32_ACP)
   name: bullet pouch (.32 ACP)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -785,7 +785,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(9x19mm)
   name: bullet pouch (9x19mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -807,7 +807,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(.38_long)
   name: bullet pouch (.38 long)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -829,7 +829,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(.45_Colt)
   name: bullet pouch (.45 Colt)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -851,7 +851,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(.455_Webley)
   name: bullet pouch (.455 Webley)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -873,7 +873,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(.41_Short)
   name: bullet pouch (.41 Short)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -895,7 +895,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(.43_Spanish)
   name: bullet pouch (.43 Spanish)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -917,7 +917,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(.445_webly)
   name: bullet pouch (.445 webly)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -939,7 +939,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(.44_40_Winchester)
   name: bullet pouch (.44-40 Winchester)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -961,7 +961,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(.44_magnum)
   name: bullet pouch (.44 magnum)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -983,7 +983,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(8x50mmR_Lebel)
   name: bullet pouch (8x50mmR Lebel)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1005,7 +1005,7 @@
 - type: entity
   id: civ13_magazine_clip_(8x53mm)
   name: clip (8x53mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1027,7 +1027,7 @@
 - type: entity
   id: civ13_magazine_magazine_box_(8x53mm)
   name: magazine box (8x53mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1049,7 +1049,7 @@
 - type: entity
   id: civ13_magazine_clip_(.303)
   name: clip (.303)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1071,7 +1071,7 @@
 - type: entity
   id: civ13_magazine_magazine_box_(.303)
   name: magazine box (.303)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1093,7 +1093,7 @@
 - type: entity
   id: civ13_magazine_clip_(8x50mmR_Lebel,_3u)
   name: clip (8x50mmR Lebel, 3u)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1115,7 +1115,7 @@
 - type: entity
   id: civ13_magazine_clip_(8x50mmR_Lebel,_5u)
   name: clip (8x50mmR Lebel, 5u)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1137,7 +1137,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(.44)
   name: bullet pouch (.44)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1159,7 +1159,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(.357_magnum)
   name: bullet pouch (.357 magnum)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1182,7 +1182,7 @@
 - type: entity
   id: civ13_magazine_USAS_12_magazine_(slug)
   name: USAS-12 magazine (slug)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1204,7 +1204,7 @@
 - type: entity
   id: civ13_magazine_shotgun_beanbag_box_(.12_gauge)
   name: shotgun beanbag box (.12 gauge)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1226,7 +1226,7 @@
 - type: entity
   id: civ13_magazine_AK_74_magazine_(5.45x39mm)
   name: AK-74 magazine (5.45x39mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1248,7 +1248,7 @@
 - type: entity
   id: civ13_magazine_shotgun_breaching_slug_box_(.12_gauge)
   name: shotgun breaching slug box (.12 gauge)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1270,7 +1270,7 @@
 - type: entity
   id: civ13_magazine_clip_(7.7x58mm)
   name: clip (7.7x58mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1292,7 +1292,7 @@
 - type: entity
   id: civ13_magazine_magazine_box_(7.7x58mm)
   name: magazine box (7.7x58mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1315,7 +1315,7 @@
 - type: entity
   id: civ13_magazine_Type_100_Magazine
   name: Type 100 Magazine
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1337,7 +1337,7 @@
 - type: entity
   id: civ13_magazine_Type_99_Magazine
   name: Type-99 Magazine
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1359,7 +1359,7 @@
 - type: entity
   id: civ13_magazine_Type_97_Magazine
   name: Type-97 Magazine
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1381,7 +1381,7 @@
 - type: entity
   id: civ13_magazine_Type_96_Magazine
   name: Type-96 Magazine
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1403,7 +1403,7 @@
 - type: entity
   id: civ13_magazine_Type_92_ammo_belt
   name: Type 92 ammo belt
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1425,7 +1425,7 @@
 - type: entity
   id: civ13_magazine_Breda_30_clip_(6.5x52mm)
   name: Breda 30 clip (6.5x52mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1448,7 +1448,7 @@
 - type: entity
   id: civ13_magazine_Sten_Magazine_(9x19mm)
   name: Sten Magazine (9x19mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1470,7 +1470,7 @@
 - type: entity
   id: civ13_magazine_mp40_(9x19mm)
   name: MP 40 magazine (9x19mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1492,7 +1492,7 @@
 - type: entity
   id: civ13_magazine_MP5_magazine_(9x19mm)
   name: MP5 magazine (9x19mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1514,7 +1514,7 @@
 - type: entity
   id: civ13_magazine_MAB_38_magazine_(9x19mm)
   name: MAB 38 magazine (9x19mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1536,7 +1536,7 @@
 - type: entity
   id: civ13_magazine_FG_42_magazine_(7.92x57mm)
   name: FG 42 magazine (7.92x57mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1558,7 +1558,7 @@
 - type: entity
   id: civ13_magazine_MG34_magazine_(7.92x57mm)
   name: MG34 magazine (7.92x57mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1580,7 +1580,7 @@
 - type: entity
   id: civ13_magazine_MG13_magazine_(7.92x57mm)
   name: MG13 magazine (7.92x57mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1602,7 +1602,7 @@
 - type: entity
   id: civ13_magazine_M3A1_magazine_(.45_ACP)
   name: M3A1 magazine (.45 ACP)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1624,7 +1624,7 @@
 - type: entity
   id: civ13_magazine_PPS_43_magazine_(7.62x25mm)
   name: PPS-43 magazine (7.62x25mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1646,7 +1646,7 @@
 - type: entity
   id: civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
   name: PPSh-41 drum magazine (7.62x25mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1668,7 +1668,7 @@
 - type: entity
   id: civ13_magazine_DP_pan_(7.62x54mmR)
   name: DP pan (7.62x54mmR)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1690,7 +1690,7 @@
 - type: entity
   id: civ13_magazine_DT_magazine_(7.62x54mmR)
   name: DT magazine (7.62x54mmR)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1712,7 +1712,7 @@
 - type: entity
   id: civ13_magazine_StG_44_magazine_(7.92x33mm)
   name: StG 44 magazine (7.92x33mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1734,7 +1734,7 @@
 - type: entity
   id: civ13_magazine_G43_magazine_(7.92x57mm)
   name: G43 magazine (7.92x57mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1756,7 +1756,7 @@
 - type: entity
   id: civ13_magazine_SVD_magazine_(7.62x54mmR)
   name: SVD magazine (7.62x54mmR)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1778,7 +1778,7 @@
 - type: entity
   id: civ13_magazine_avtomat_magazine_(6.5x50mm)
   name: avtomat magazine (6.5x50mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1800,7 +1800,7 @@
 - type: entity
   id: civ13_magazine_SVT_40_magazine_(7.62x54mm)
   name: SVT-40 magazine (7.62x54mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1822,7 +1822,7 @@
 - type: entity
   id: civ13_magazine_M1911_magazine_(.45)
   name: M1911 magazine (.45)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1844,7 +1844,7 @@
 - type: entity
   id: civ13_magazine_magazine_box_(.45)
   name: magazine box (.45)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1866,7 +1866,7 @@
 - type: entity
   id: civ13_magazine_TT_33_magazine_(7.62x25mm)
   name: TT-33 magazine (7.62x25mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1888,7 +1888,7 @@
 - type: entity
   id: civ13_magazine_PM_Makarov_magazine_(9x18mm)
   name: PM Makarov magazine (9x18mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1910,7 +1910,7 @@
 - type: entity
   id: civ13_magazine_clip_(30_06)_8_rounds
   name: clip (30-06) 8 rounds
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1932,7 +1932,7 @@
 - type: entity
   id: civ13_magazine_M1_Carbine_Small_magazine_(7.62x33mm)
   name: M1 Carbine Small magazine (7.62x33mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1954,7 +1954,7 @@
 - type: entity
   id: civ13_magazine_M1_Carbine_magazine_(7.62x33mm)
   name: M1 Carbine magazine (7.62x33mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1976,7 +1976,7 @@
 - type: entity
   id: civ13_magazine_magazine_box_(30_06)
   name: magazine box (30-06)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -1998,7 +1998,7 @@
 - type: entity
   id: civ13_magazine_clip_(30_06)
   name: clip (30-06)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2020,7 +2020,7 @@
 - type: entity
   id: civ13_magazine_browning_ammo_belt
   name: browning ammo belt
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2042,7 +2042,7 @@
 - type: entity
   id: civ13_magazine_BAR_magazine_(30_06)
   name: BAR magazine (30-06)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2064,7 +2064,7 @@
 - type: entity
   id: civ13_magazine_Thompson_magazine_(.45)
   name: Thompson magazine (.45)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2086,7 +2086,7 @@
 - type: entity
   id: civ13_magazine_Thompson_drum_magazine_(.45)
   name: Thompson drum magazine (.45)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2108,7 +2108,7 @@
 - type: entity
   id: civ13_magazine_Desert_eagle_magazine_(50cal)
   name: Desert eagle magazine (50cal)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2130,7 +2130,7 @@
 - type: entity
   id: civ13_magazine_Desert_eagle_magazine_(44.magnum)
   name: Desert eagle magazine (44.magnum)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2152,7 +2152,7 @@
 - type: entity
   id: civ13_magazine_Browning_hi_power_magazine
   name: Browning hi-power magazine (9mm Parabellum)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2175,7 +2175,7 @@
 - type: entity
   id: civ13_magazine_Makeshift_AK_47_magazine_(7.62x39mm)
   name: Makeshift AK-47 magazine (7.62x39mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2197,7 +2197,7 @@
 - type: entity
   id: civ13_magazine_AK47_(7.62x39mm)
   name: AK-47 magazine (7.62x39mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2219,7 +2219,7 @@
 - type: entity
   id: civ13_magazine_RPK_47_drum_(7.62x39mm)
   name: RPK-47 drum (7.62x39mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2241,7 +2241,7 @@
 - type: entity
   id: civ13_magazine_SKS_M_magazine_(7.62x39mm)
   name: SKS-M magazine (7.62x39mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2263,7 +2263,7 @@
 - type: entity
   id: civ13_magazine_AK_74M_magazine_(5.45x39mm)
   name: AK-74M magazine (5.45x39mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2285,7 +2285,7 @@
 - type: entity
   id: civ13_magazine_AK_101_magazine_(5.46x45mm)
   name: AK-101 magazine (5.46x45mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2307,7 +2307,7 @@
 - type: entity
   id: civ13_magazine_BX_7_(.50_caliber)
   name: BX-7 (.50 caliber)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2329,7 +2329,7 @@
 - type: entity
   id: civ13_magazine_MAG5_60_STANAG_(5.56x45mm)
   name: MAG5-60 STANAG (5.56x45mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2351,7 +2351,7 @@
 - type: entity
   id: civ13_magazine_AR_10_magazine_(7.62x51mm)
   name: AR-10 magazine (7.62x51mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2373,7 +2373,7 @@
 - type: entity
   id: civ13_magazine_M14_magazine_(7.62x51mm)
   name: M14 magazine (7.62x51mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2395,7 +2395,7 @@
 - type: entity
   id: civ13_magazine_ammo_box_(7.62x51mm)
   name: ammo box (7.62x51mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2417,7 +2417,7 @@
 - type: entity
   id: civ13_magazine_G3_magazine_(7.62x51mm)
   name: G3 magazine (7.62x51mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2439,7 +2439,7 @@
 - type: entity
   id: civ13_magazine_FN_Fal_magazine_(7.62x51mm)
   name: FN Fal magazine (7.62x51mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2461,7 +2461,7 @@
 - type: entity
   id: civ13_magazine_MK18_magazine_(5.56mm_NATO)
   name: MK18 magazine (5.56mm NATO)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2483,7 +2483,7 @@
 - type: entity
   id: civ13_magazine_SCAR_H_magazine_(7.62x51mm)
   name: SCAR-H magazine (7.62x51mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2506,7 +2506,7 @@
 - type: entity
   id: civ13_magazine_PKM_ammo_belt_(7.62x54mmR)
   name: PKM ammo belt (7.62x54mmR)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2528,7 +2528,7 @@
 - type: entity
   id: civ13_magazine_PKM_ammo_belt_(7.62x54mmR)_100
   name: PKM ammo belt (7.62x54mmR)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2550,7 +2550,7 @@
 - type: entity
   id: civ13_magazine_Ammo_can_(12.7x108mm)
   name: Ammo can (12.7x108mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2572,7 +2572,7 @@
 - type: entity
   id: civ13_magazine_RPD_drum_(7.62x39)
   name: RPD drum (7.62x39)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2594,7 +2594,7 @@
 - type: entity
   id: civ13_magazine_RPK_74_magazine_(5.45x39)
   name: RPK-74 magazine (5.45x39)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2616,7 +2616,7 @@
 - type: entity
   id: civ13_magazine_RPK_47_magazine_(7.62x39mm)
   name: RPK-47 magazine (7.62x39mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2638,7 +2638,7 @@
 - type: entity
   id: civ13_magazine_Beretta_M9_magazine_(9x19mm)
   name: Beretta M9 magazine (9x19mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2660,7 +2660,7 @@
 - type: entity
   id: civ13_magazine_Jericho_941_magazine_(9x19mm)
   name: Jericho 941 magazine (9x19mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2682,7 +2682,7 @@
 - type: entity
   id: civ13_magazine_Negev_Belt_(5.56x45mm)
   name: Negev Belt (5.56x45mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2704,7 +2704,7 @@
 - type: entity
   id: civ13_magazine_belt_(5.56x45mm)
   name: belt (5.56x45mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2726,7 +2726,7 @@
 - type: entity
   id: civ13_magazine_clip_(7.62x51mm)
   name: clip (7.62x51mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2748,7 +2748,7 @@
 - type: entity
   id: civ13_magazine_P90_magazine_(50)
   name: P90 magazine (50)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2770,7 +2770,7 @@
 - type: entity
   id: civ13_magazine_Stechkin_APS_magazine_(9x18mm)
   name: Stechkin APS magazine (9x18mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2792,7 +2792,7 @@
 - type: entity
   id: civ13_magazine_G17_Glock_(9x19mm)
   name: G17 Glock (9x19mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2814,7 +2814,7 @@
 - type: entity
   id: civ13_magazine_Kriss_Vector_(9x19mm)
   name: Kriss Vector (9x19mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2836,7 +2836,7 @@
 - type: entity
   id: civ13_magazine_STI_2011_magazine_(9x19mm)
   name: STI 2011 magazine (9x19mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2858,7 +2858,7 @@
 - type: entity
   id: civ13_magazine_SIG_250_magazine_(9x19mm)
   name: SIG 250 magazine (9x19mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2880,7 +2880,7 @@
 - type: entity
   id: civ13_magazine_PL_14_(9x19mm)
   name: PL-14 (9x19mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2902,7 +2902,7 @@
 - type: entity
   id: civ13_magazine_MP_443_(9x19mm)
   name: MP-443 (9x19mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2924,7 +2924,7 @@
 - type: entity
   id: civ13_magazine_Uzi_magazine_(9x19mm_Parabellum)
   name: Uzi magazine (9x19mm Parabellum)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2946,7 +2946,7 @@
 - type: entity
   id: civ13_magazine_MAC_10_magazine_(.45_ACP)
   name: MAC-10 magazine (.45 ACP)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2968,7 +2968,7 @@
 - type: entity
   id: civ13_magazine_TEC_9_(9x19mm_Parabellum)
   name: TEC-9 (9x19mm Parabellum)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -2990,7 +2990,7 @@
 - type: entity
   id: civ13_magazine_Skorpion_magazine_(9x19mm_Parabellum)
   name: Skorpion magazine (9x19mm Parabellum)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3012,7 +3012,7 @@
 - type: entity
   id: civ13_magazine_P220_(.45)
   name: P220 (.45)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3034,7 +3034,7 @@
 - type: entity
   id: civ13_magazine_thompson_(.45_ACP)
   name: thompson (.45 ACP)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3056,7 +3056,7 @@
 - type: entity
   id: civ13_magazine_Colt_Hammerless_(.32)
   name: Colt Hammerless (.32)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3078,7 +3078,7 @@
 - type: entity
   id: civ13_magazine_Colt_Hammerless_(.380)
   name: Colt Hammerless (.380)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3100,7 +3100,7 @@
 - type: entity
   id: civ13_magazine_bergmann_(8x22mm)
   name: bergmann (8x22mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3122,7 +3122,7 @@
 - type: entity
   id: civ13_magazine_AR15_magazine_(5.56x45mm)
   name: AR15 magazine (5.56x45mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3144,7 +3144,7 @@
 - type: entity
   id: civ13_magazine_STANAG_magazine_(5.56x45mm)
   name: STANAG magazine (5.56x45mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3166,7 +3166,7 @@
 - type: entity
   id: civ13_magazine_clip_(7.62x39mm)
   name: clip (7.62x39mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3188,7 +3188,7 @@
 - type: entity
   id: civ13_magazine_clip_(14.5x114mm)
   name: clip (14.5x114mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3210,7 +3210,7 @@
 - type: entity
   id: civ13_magazine_VSS_Vintorez_magazine_(9x39mm)
   name: VSS Vintorez magazine (9x39mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3232,7 +3232,7 @@
 - type: entity
   id: civ13_magazine_SR_3_magazine_(9x39mm)
   name: SR-3 magazine (9x39mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3254,7 +3254,7 @@
 - type: entity
   id: civ13_magazine_SR_3_small_magazine_(9x39mm)
   name: SR-3 small magazine (9x39mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3276,7 +3276,7 @@
 - type: entity
   id: civ13_magazine_heavy_bullet_pouch_(.50_BMG)
   name: heavy bullet pouch (.50 BMG)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3299,7 +3299,7 @@
 - type: entity
   id: civ13_magazine_heavy_bullet_pouch_(.50_BMG_HE)
   name: heavy bullet pouch (.50 BMG HE)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3321,7 +3321,7 @@
 - type: entity
   id: civ13_magazine_magazine_(.50_BMG)
   name: magazine (.50 BMG)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3343,7 +3343,7 @@
 - type: entity
   id: civ13_magazine_BAM_AP_magazine_(15x115mm)
   name: BAM AP magazine (15x115mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3365,7 +3365,7 @@
 - type: entity
   id: civ13_magazine_BAM_HE_magazine_(15x115mm)
   name: BAM HE magazine (15x115mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3387,7 +3387,7 @@
 - type: entity
   id: civ13_magazine_BAM_magazine_(15x115mm)
   name: BAM magazine (15x115mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3409,7 +3409,7 @@
 - type: entity
   id: civ13_magazine_heavy_bullet_pouch_(14.5x114mm)
   name: heavy bullet pouch (14.5x114mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3431,7 +3431,7 @@
 - type: entity
   id: civ13_magazine_14.5x114mm_AP_cartridge_box
   name: 14.5x114mm AP cartridge box
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3453,7 +3453,7 @@
 - type: entity
   id: civ13_magazine_14.5x114mm_cartridge_box
   name: 14.5x114mm cartridge box
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3475,7 +3475,7 @@
 - type: entity
   id: civ13_magazine_7.92x94mm_case
   name: 7.92x94mm case
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3497,7 +3497,7 @@
 - type: entity
   id: civ13_magazine_7.92x94mm_AP_case
   name: 7.92x94mm AP case
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3519,7 +3519,7 @@
 - type: entity
   id: civ13_magazine_heavy_bullet_pouch_(7.92x94mm)
   name: heavy bullet pouch (7.92x94mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3541,7 +3541,7 @@
 - type: entity
   id: civ13_magazine_heavy_bullet_pouch_(7.92x94mm_AP)
   name: heavy bullet pouch (7.92x94mm AP)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3563,7 +3563,7 @@
 - type: entity
   id: civ13_magazine_.50_BMG_ammo_can
   name: .50 BMG ammo can
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3585,7 +3585,7 @@
 - type: entity
   id: civ13_magazine_C6_GPMG_ammo_belt
   name: C6 GPMG ammo belt
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3607,7 +3607,7 @@
 - type: entity
   id: civ13_magazine_C6_GPMG_ammo_can
   name: C6 GPMG ammo can
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3629,7 +3629,7 @@
 - type: entity
   id: civ13_magazine_QBZ_95_magazine_(5.8x42mm)
   name: QBZ-95 magazine (5.8x42mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3652,7 +3652,7 @@
 - type: entity
   id: civ13_magazine_service_rifle_magazine_(5.56x45mm)
   name: service rifle magazine (5.56x45mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3675,7 +3675,7 @@
 - type: entity
   id: civ13_magazine_bullet_pouch_(20)
   name: bullet pouch (20)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3697,7 +3697,7 @@
 - type: entity
   id: civ13_magazine_clip_(5)
   name: clip (5)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3720,7 +3720,7 @@
 - type: entity
   id: civ13_magazine_speedloader_(6)
   name: speedloader (6)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3742,7 +3742,7 @@
 - type: entity
   id: civ13_magazine_drum_magazine_(65)
   name: drum magazine (65)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3764,7 +3764,7 @@
 - type: entity
   id: civ13_magazine_magazine_(30)
   name: magazine (30)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3786,7 +3786,7 @@
 - type: entity
   id: civ13_magazine_pistol_magazine_(9mm)
   name: pistol magazine (9mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3808,7 +3808,7 @@
 - type: entity
   id: civ13_magazine_pistol_magazine_(15)
   name: pistol magazine (15)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3830,7 +3830,7 @@
 - type: entity
   id: civ13_magazine_pistol_magazine_(8)
   name: pistol magazine (8)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3852,7 +3852,7 @@
 - type: entity
   id: civ13_magazine_belt_(100)
   name: belt (100)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
@@ -3874,7 +3874,7 @@
 - type: entity
   id: civ13_magazine_belt_(7.62x54mm)
   name: belt (7.62x54mm)
-  parent: BaseMagazinePistol
+  parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true

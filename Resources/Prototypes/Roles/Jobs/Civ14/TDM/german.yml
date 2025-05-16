@@ -9,7 +9,7 @@
     - !type:OverallPlaytimeRequirement
       time: 10800 #3 hrs
   startingGear: GermanCaptainGear
-  icon: "JobIconCommander"
+  icon: "JobIconICpt"
   supervisors: job-supervisors-nobody
   special:
     - !type:AddComponentSpecial
@@ -27,7 +27,7 @@
 - type: startingGear
   id: GermanCaptainGear
   equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
+    shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_German_officer_uniform
     outerClothing: civ13_suit_German_officer_coat
     gloves: civ13_gloves_Officer_gloves
@@ -47,7 +47,7 @@
     - !type:OverallPlaytimeRequirement
       time: 5400 #1.5 hrs
   startingGear: GermanSergeantGear
-  icon: "JobIconOfficer"
+  icon: "JobIconISgt"
   supervisors: job-supervisors-cpt
   special:
     - !type:AddComponentSpecial
@@ -65,7 +65,7 @@
 - type: startingGear
   id: GermanSergeantGear
   equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
+    shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_German_SS_officer_uniform
     outerClothing: civ13_suit_German_parka
     head: civ13_head_German_field_cap
@@ -85,7 +85,7 @@
   playTimeTracker: JobGermanSubmachineGunner
   startingGear: GermanSubmachineGunnerGear
   randomStartingGears: [GermanSubmachineGunnerGear, GermanSubmachineGunnerGear2]
-  icon: "JobIconSword"
+  icon: "JobIconICpl"
   supervisors: job-supervisors-cpt
   special:
     - !type:AddComponentSpecial
@@ -103,7 +103,7 @@
 - type: startingGear
   id: GermanSubmachineGunnerGear
   equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
+    shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_German_SS_uniform
     head: civ13_head_german_stahlhelm
     belt: ClothingWebbingGermanSMG
@@ -115,7 +115,7 @@
 - type: startingGear
   id: GermanSubmachineGunnerGear2
   equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
+    shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_German_camo_SS_uniform
     head: civ13_head_German_SS_helmet
     belt: ClothingWebbingGermanSMG
@@ -135,7 +135,7 @@
   playTimeTracker: JobGermanRifleman
   startingGear: GermanRiflemanGear
   randomStartingGears: [GermanRiflemanGear, GermanRiflemanGear2]
-  icon: "JobIconSpear"
+  icon: "JobIconICpl"
   supervisors: job-supervisors-cpt
   special:
     - !type:AddComponentSpecial
@@ -153,7 +153,7 @@
 - type: startingGear
   id: GermanRiflemanGear
   equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
+    shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_German_SS_uniform
     head: civ13_head_german_stahlhelm
     belt: ClothingWebbingGermanRifleman
@@ -165,7 +165,7 @@
 - type: startingGear
   id: GermanRiflemanGear2
   equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
+    shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_German_camo_SS_uniform
     head: civ13_head_German_SS_helmet
     belt: ClothingWebbingGermanRifleman
@@ -185,7 +185,7 @@
   playTimeTracker: JobGermanMachinegunner
   startingGear: GermanMachinegunnerGear
   randomStartingGears: [GermanMachinegunnerGear, GermanMachinegunnerGear2]
-  icon: "JobIconRanged"
+  icon: "JobIconMg"
   supervisors: job-supervisors-cpt
   special:
     - !type:AddComponentSpecial
@@ -203,24 +203,24 @@
 - type: startingGear
   id: GermanMachinegunnerGear
   equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
+    shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_German_SS_uniform
     head: civ13_head_german_stahlhelm
     pocket1: CombatKnife
     pocket2: Gauze
-# inhand:
-# - civ13_generic_german_machinegun
+  inhand:
+    - civ13_mg_MG34
 
 - type: startingGear
   id: GermanMachinegunnerGear2
   equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
+    shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_German_camo_SS_uniform
     head: civ13_head_German_SS_helmet
     pocket1: CombatKnife
     pocket2: Gauze
-# inhand:
-# - civ13_generic_german_machinegun
+  inhand:
+    - civ13_mg_MG34
 
 # Medic
 
@@ -250,7 +250,7 @@
 - type: startingGear
   id: GermanMedicGear
   equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
+    shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_German_doctor_uniform
     head: civ13_head_german_medic_stahlhelm
     belt: LeatherClothingBelt

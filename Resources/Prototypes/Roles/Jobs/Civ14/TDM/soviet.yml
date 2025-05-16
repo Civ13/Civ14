@@ -9,7 +9,7 @@
     - !type:OverallPlaytimeRequirement
       time: 10800 #3 hrs
   startingGear: SovietCaptainGear
-  icon: "JobIconCommander"
+  icon: "JobIconICpt"
   supervisors: job-supervisors-nobody
   special:
     - !type:AddComponentSpecial
@@ -46,7 +46,7 @@
     - !type:OverallPlaytimeRequirement
       time: 5400 #1.5 hrs
   startingGear: SovietSergeantGear
-  icon: "JobIconOfficer"
+  icon: "JobIconISgt"
   supervisors: job-supervisors-cpt
   special:
     - !type:AddComponentSpecial
@@ -84,7 +84,7 @@
   playTimeTracker: JobSovietSubmachineGunner
   startingGear: SovietSubmachineGunnerGear
   randomStartingGears: [SovietSubmachineGunnerGear, SovietSubmachineGunnerGear2]
-  icon: "JobIconSword"
+  icon: "JobIconICpl"
   supervisors: job-supervisors-cpt
   special:
     - !type:AddComponentSpecial
@@ -136,7 +136,7 @@
   playTimeTracker: JobSovietRifleman
   startingGear: SovietRiflemanGear
   randomStartingGears: [SovietRiflemanGear, SovietRiflemanGear2]
-  icon: "JobIconSpear"
+  icon: "JobIconICpl"
   supervisors: job-supervisors-cpt
   special:
     - !type:AddComponentSpecial
@@ -187,7 +187,7 @@
   playTimeTracker: JobSovietMachinegunner
   startingGear: SovietMachinegunnerGear
   randomStartingGears: [SovietMachinegunnerGear, SovietMachinegunnerGear2]
-  icon: "JobIconRanged"
+  icon: "JobIconMg"
   supervisors: job-supervisors-cpt
   special:
     - !type:AddComponentSpecial
@@ -212,8 +212,9 @@
     head: civ13_head_soviet_helmet
     pocket1: CombatKnife
     pocket2: Gauze
-# inhand:
-# - civ13_soviet_machinegun
+  inhand:
+    - civ13_mg_DP_28
+
 - type: startingGear
   id: SovietMachinegunnerGear2
   equipment:
@@ -224,8 +225,8 @@
     head: civ13_head_soviet_ushanka_1
     pocket1: CombatKnife
     pocket2: Gauze
-# inhand:
-# - civ13_soviet_machinegun
+  inhand:
+    - civ13_mg_DP_28
 
 # Medic
 
