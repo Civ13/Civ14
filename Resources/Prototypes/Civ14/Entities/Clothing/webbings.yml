@@ -78,7 +78,7 @@
     - type: StorageFill
       contents:
         - id: civ13_magazine_clip_(7.92x57mm)
-          amount: 8
+          amount: 5
         - id: GrenadeSHG24
           amount: 2
 
@@ -91,7 +91,7 @@
     - type: StorageFill
       contents:
         - id: civ13_magazine_clip_(7.62x54mm)
-          amount: 8
+          amount: 5
         - id: GrenadeF1
           amount: 2
 

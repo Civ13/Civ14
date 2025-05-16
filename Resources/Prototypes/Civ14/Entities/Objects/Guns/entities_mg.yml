@@ -37,12 +37,15 @@
     - type: ItemSlots
       slots:
         gun_magazine:
+          name: Magazine
+          priority: 3
           startingItem: civ13_magazine_PKM_ammo_belt_(7.62x54mmR)
           whitelistFailPopup: gun-magazine-whitelist-fail
           whitelist:
             tags:
               - civ13_magazine_PKM_ammo_belt_(7.62x54mmR)
         gun_chamber:
+          name: Chamber
           startingItem: civ13_caliber_a762x54
           priority: 1
           whitelist:
@@ -68,7 +71,6 @@
       slots:
         gun_magazine:
           startingItem: civ13_magazine_PKM_ammo_belt_(7.62x54mmR)
-          priority: 2
           whitelist:
             tags:
               - civ13_magazine_PKM_ammo_belt_(7.62x54mmR)
