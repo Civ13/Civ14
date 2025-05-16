@@ -6,6 +6,7 @@ using Content.Server.Afk;
 using Content.Server.Chat.Managers;
 using Content.Server.Connection;
 using Content.Server.Database;
+using Content.Server.Discord.DiscordLink;
 using Content.Server.EUI;
 using Content.Server.GameTicking;
 using Content.Server.GhostKick;
@@ -78,7 +79,7 @@ namespace Content.Server.Entry
 
             foreach (var callback in TestingCallbacks)
             {
-                var cast = (ServerModuleTestingCallbacks) callback;
+                var cast = (ServerModuleTestingCallbacks)callback;
                 cast.ServerBeforeIoC?.Invoke();
             }
 
@@ -146,6 +147,8 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<IAdminManager>().Initialize();
                 IoCManager.Resolve<IAfkManager>().Initialize();
                 IoCManager.Resolve<RulesManager>().Initialize();
+                IoCManager.Resolve<DiscordLink>().Initialize();
+                IoCManager.Resolve<DiscordChatLink>().Initialize();
                 _euiManager.Initialize();
 
                 IoCManager.Resolve<IGameMapManager>().Initialize();
@@ -164,11 +167,11 @@ namespace Content.Server.Entry
             switch (level)
             {
                 case ModUpdateLevel.PostEngine:
-                {
-                    _euiManager.SendUpdates();
-                    _voteManager.Update();
-                    break;
-                }
+                    {
+                        _euiManager.SendUpdates();
+                        _voteManager.Update();
+                        break;
+                    }
 
                 case ModUpdateLevel.FramePostEngine:
                     _updateManager.Update();
@@ -184,6 +187,8 @@ namespace Content.Server.Entry
             _playTimeTracking?.Shutdown();
             _dbManager?.Shutdown();
             IoCManager.Resolve<ServerApi>().Shutdown();
+            IoCManager.Resolve<DiscordLink>().Shutdown();
+            IoCManager.Resolve<DiscordChatLink>().Shutdown();
         }
 
         private static void LoadConfigPresets(IConfigurationManager cfg, IResourceManager res, ISawmill sawmill)
