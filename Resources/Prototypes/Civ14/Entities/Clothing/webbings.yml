@@ -72,7 +72,7 @@
 - type: entity
   id: ClothingWebbingGermanRifleman
   parent: ClothingWebbingGerman
-  name: fledgrau webbing
+  name: feldgrau webbing
   suffix: filled, Rifle
   components:
     - type: StorageFill
@@ -98,7 +98,7 @@
 - type: entity
   id: ClothingWebbingGermanSMG
   parent: ClothingWebbingGerman
-  name: fledgrau webbing
+  name: feldgrau webbing
   suffix: filled, SMG
   components:
     - type: StorageFill
