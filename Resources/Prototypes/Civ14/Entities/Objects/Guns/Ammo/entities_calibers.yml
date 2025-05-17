@@ -1,47 +1,51 @@
 - type: entity
   id: civ13_caliber_musketball
   name: musketball cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_musketball
+      deleteOnSpawn: true
     - type: Tag
       tags:
         - civ13_caliber_musketball
 - type: entity
   id: civ13_caliber_stoneball
   name: stone ball projectile
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_stoneball
+      deleteOnSpawn: true
     - type: Tag
       tags:
         - civ13_caliber_stoneball
 - type: entity
   id: civ13_caliber_musketball_pistol
   name: pistol cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_musketball_pistol
+      deleteOnSpawn: true
     - type: Tag
       tags:
         - civ13_caliber_musketball_pistol
 - type: entity
   id: civ13_caliber_blunderbuss
   name: blunderbuss cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_blunderbuss
+      deleteOnSpawn: true
     - type: Tag
       tags:
         - civ13_caliber_blunderbuss
 - type: entity
   id: civ13_caliber_a65x50
   name: 6.5x50mm Arisaka cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a65x50
@@ -51,7 +55,7 @@
 - type: entity
   id: civ13_caliber_a50cal
   name: .50 BMG cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a50cal
@@ -61,7 +65,7 @@
 - type: entity
   id: civ13_caliber_a50cal_ap
   name: .50 BMG AP cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a50cal
@@ -71,7 +75,7 @@
 - type: entity
   id: civ13_caliber_a50cal_he
   name: .50 BMG HE cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a50cal
@@ -81,7 +85,7 @@
 - type: entity
   id: civ13_caliber_a145
   name: 14.5x114 cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a145
@@ -91,7 +95,7 @@
 - type: entity
   id: civ13_caliber_a127
   name: 12.7x108 cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a127
@@ -101,7 +105,7 @@
 - type: entity
   id: civ13_caliber_a145_ap
   name: 14.5x114 AP cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a145
@@ -111,7 +115,7 @@
 - type: entity
   id: civ13_caliber_a15115
   name: 15x115 cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a15115
@@ -121,7 +125,7 @@
 - type: entity
   id: civ13_caliber_a15115_ap
   name: 15x115 AP cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a15115
@@ -131,7 +135,7 @@
 - type: entity
   id: civ13_caliber_a15115_aphe
   name: 15x115 APHE cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a15115
@@ -141,7 +145,7 @@
 - type: entity
   id: civ13_caliber_a792x94
   name: 7.92x94mm cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a792x94
@@ -151,7 +155,7 @@
 - type: entity
   id: civ13_caliber_a792x94_ap
   name: 7.92x94mm AP cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a792x94
@@ -161,7 +165,7 @@
 - type: entity
   id: civ13_caliber_a65x52
   name: 6.5x52mm Carcano cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a65x52
@@ -171,7 +175,7 @@
 - type: entity
   id: civ13_caliber_a8x53
   name: 8x53mm Murata cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a8x53
@@ -181,7 +185,7 @@
 - type: entity
   id: civ13_caliber_a8x50
   name: 8x50mmR Lebel cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a8x50
@@ -301,7 +305,7 @@
 - type: entity
   id: civ13_caliber_a4570
   name: .45-70 Government cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a4570
@@ -311,7 +315,7 @@
 - type: entity
   id: civ13_caliber_a792x57
   name: 7.92x57mm Mauser cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a792x57
@@ -321,7 +325,7 @@
 - type: entity
   id: civ13_caliber_a765x53
   name: 7.65x53mm Mauser cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a765x53
@@ -341,7 +345,7 @@
 - type: entity
   id: civ13_caliber_a7x57
   name: 7x57mm Mauser cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a7x57
@@ -351,7 +355,7 @@
 - type: entity
   id: civ13_caliber_a77x58
   name: 7.7x58mm Arisaka cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a77x58
@@ -361,7 +365,7 @@
 - type: entity
   id: civ13_caliber_a77x58_wood
   name: 7.7x58mm bullet
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a77x58_wood
@@ -371,7 +375,7 @@
 - type: entity
   id: civ13_caliber_a577
   name: .577/450 Martini-Henry cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a577
@@ -381,7 +385,7 @@
 - type: entity
   id: civ13_caliber_a762x54
   name: 7.62x54mmR cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a762x54
@@ -391,7 +395,7 @@
 - type: entity
   id: civ13_caliber_a303
   name: .303 british cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a303
@@ -401,7 +405,7 @@
 - type: entity
   id: civ13_caliber_a3006
   name: .30-06 cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a3006
@@ -482,7 +486,7 @@
 - type: entity
   id: civ13_caliber_a545x39
   name: 5.45x39mm cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a545x39
@@ -512,7 +516,7 @@
 - type: entity
   id: civ13_caliber_a556x45
   name: 5.56x45mm NATO cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a556x45
@@ -522,7 +526,7 @@
 - type: entity
   id: civ13_caliber_a762x51
   name: 7.62x51mm NATO cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a762x51
@@ -532,7 +536,7 @@
 - type: entity
   id: civ13_caliber_a762x39
   name: 7.62x39mm cartridge
-  parent: CartridgePistol
+  parent: CartridgeRifle
   components:
     - type: CartridgeAmmo
       proto: civ13_bullet_a762x39

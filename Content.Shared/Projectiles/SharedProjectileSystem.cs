@@ -276,7 +276,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
                     if (shooterCoords.TryDistance(EntityManager, barricadeCoords, out var distance) &&
                         distance <= 1.3f)
                     {
-                        _sawmill.Info($"Distance: {distance}");
+                        //_sawmill.Info($"Distance: {distance}");
                         alwaysPassThrough = true;
                     }
                 }

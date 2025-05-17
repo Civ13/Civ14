@@ -33,6 +33,7 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Barricade
+      bidirectional: false
       blocking: 80
     - type: AtmosExposed
 
@@ -92,6 +93,7 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Barricade
+      bidirectional: true
       blocking: 66
     - type: AtmosExposed
 

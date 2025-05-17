@@ -23,6 +23,7 @@
     - type: Clothing
       sprite: Civ14/Weapons/Guns/mosin.rsi
       quickEquip: false
+      equipDelay: 1
       slots:
         - Back
     - type: AmmoCounter

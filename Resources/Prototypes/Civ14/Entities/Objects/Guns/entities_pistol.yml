@@ -33,6 +33,7 @@
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/9mm.ogg
     - type: ChamberMagazineAmmoProvider
+      boltClosed: true
       soundRack:
         path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
     - type: ItemSlots

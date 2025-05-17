@@ -37,9 +37,9 @@
       tags:
         - Arrow
     - type: Projectile
+      angle: 225
       deleteOnCollide: false
       onlyCollideWhenShot: true
-      angle: 0
       damage:
         types:
           Piercing: 25
@@ -70,10 +70,7 @@
     - type: Sprite
       sprite: Civ14/Objects/weapons.rsi
       state: arrow
-    - type: ThrowingAngle
-      angle: 225
     - type: Projectile
-      angle: 0
       damage:
         types:
           Piercing: 20
@@ -86,10 +83,7 @@
     - type: Sprite
       sprite: Civ14/Objects/weapons.rsi
       state: arrow_iron
-    - type: ThrowingAngle
-      angle: 225
     - type: Projectile
-      angle: 0
       damage:
         types:
           Piercing: 25

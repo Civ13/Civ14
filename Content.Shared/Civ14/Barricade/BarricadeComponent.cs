@@ -15,4 +15,12 @@ public sealed partial class BarricadeComponent : Component
     [DataField("blocking")]
     public int Blocking = 66;
 
+    /// <summary>
+    /// Can it be used bidirectionally (e.g. sandbags) or only from behind (e.g. crenelated walls)?
+    /// </summary>
+    [DataField("bidirectional")]
+    public bool Bidirectional = true;
+
+
+
 }
