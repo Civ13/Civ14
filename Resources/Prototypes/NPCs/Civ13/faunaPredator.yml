@@ -1,36 +1,65 @@
-#Primary Wolf NPC Behavior
 - type: htnCompound
-  id: predatorActivityCompound
+  id: PredatorActivityCompound
   branches:
+    # First priority: Attack prey if detected
     - tasks:
         - !type:HTNCompoundTask
           task: PredatorAttackCompound
-    - tasks: #for some reason idle occurs at the same time as WolfMeleeCombatCompound
+    # Second priority: Hunt for food when hungry
+    - preconditions:
+        - !type:HungerPrecondition
+          minimumHunger: Peckish
+      tasks:
+        - !type:HTNCompoundTask
+          task: PredatorHuntCompound
+    # Third priority: Idle/wander when not hunting
+    - tasks:
         - !type:HTNCompoundTask
           task: IdleCompound
 
-#Collects target data, makes it do the growl thing, & quues up the melee combat task
+# Collects target data, warns prey, and initiates combat
 - type: htnCompound
   id: PredatorAttackCompound
   branches:
-    - tasks:
-        - !type:HTNCompoundTask
-          task: PredatorWarnCompound
+    # First try to warn (growl) at prey
     - tasks:
         - !type:HTNPrimitiveTask
           operator: !type:UtilityOperator
             proto: NearbyPrey
         - !type:HTNCompoundTask
-          task: WolfMeleeCombatCompound
+          task: PredatorWarnCompound
+    # Then attack if prey is in range
+    - preconditions:
+        - !type:KeyExistsPrecondition
+          key: Target
+      tasks:
+        - !type:HTNCompoundTask
+          task: PredatorMeleeCombatCompound
 
-#Growls, intended to happen at a longer range than the melee combat task, but for now it just growls as it attacks
+# Hunting behavior - search for prey
+- type: htnCompound
+  id: PredatorHuntCompound
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:PickAccessibleOperator
+            rangeKey: HuntRange
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            pathfindInPlanning: false
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: NearbyPrey
+# Growls at prey before attacking
 - type: htnCompound
   id: PredatorWarnCompound
   branches:
     - preconditions:
+        - !type:KeyExistsPrecondition
+          key: Target
         - !type:TargetInRangePrecondition
           targetKey: Target
-          rangeKey: MeleeRange
+          rangeKey: VisionRadius
       tasks:
         - !type:HTNPrimitiveTask
           operator: !type:SpeakOperator
@@ -39,44 +68,44 @@
         - !type:HTNPrimitiveTask
           operator: !type:SetFloatOperator
             targetKey: WaitTime
-            amount: 8
+            amount: 3
+        - !type:HTNPrimitiveTask
+          operator: !type:WaitOperator
+            key: WaitTime
 
-#compound that performs the actual process of melee combat, including pathfinding to the target
+# Melee combat behavior
 - type: htnCompound
-  id: WolfMeleeCombatCompound
+  id: PredatorMeleeCombatCompound
   branches:
     - preconditions:
         - !type:KeyExistsPrecondition
           key: Target
+        - !type:TargetIsAlivePrecondition
+          targetKey: Target
       tasks:
+        # Move to target
         - !type:HTNPrimitiveTask
           operator: !type:MoveToOperator
             shutdownState: PlanFinished
             pathfindInPlanning: true
             removeKeyOnFinish: false
-            targetKey: TargetCoordinates
-            pathfindKey: TargetPathfind
+
+            targetKey: Target
             rangeKey: MeleeRange
+        # Perform juke maneuver for more realistic movement
         - !type:HTNPrimitiveTask
           operator: !type:JukeOperator
             jukeType: AdjacentTile
+        # Attack target if in range
         - !type:HTNPrimitiveTask
           operator: !type:MeleeOperator
             targetKey: Target
           preconditions:
-            - !type:KeyExistsPrecondition
-              key: Target
             - !type:TargetInRangePrecondition
               targetKey: Target
               rangeKey: MeleeRange
-    - tasks:
-        - !type:HTNPrimitiveTask
-          operator: !type:UtilityOperator
-            proto: NearbyPrey
 
-#Utility queries
-
-#finds nearby hostile mobs and marks it to the blackboard casting them as the target
+# Utility queries for finding prey
 - type: utilityQuery
   id: NearbyPrey
   query:
@@ -91,13 +120,12 @@
       curve: !type:PresetCurve
         preset: TargetHealth
     - !type:TargetAccessibleCon
-      curve: !type:BoolCurve #curve preset for above
-
-
+      curve: !type:BoolCurve
 - type: utilityCurvePreset
   id: PreyDistance
   curve: !type:QuadraticCurve
     slope: -1
     exponent: 1
-    yOffset: 0.5
+
+    yOffset: 1
     xOffset: 0

@@ -1,15 +1,23 @@
-#main prey activity
 - type: htnCompound
   id: SimplePreyCompound
   branches:
+    # First priority: Flee from predators
     - tasks:
         - !type:HTNCompoundTask
           task: PreyFleeCompound
+    # Second priority: Find food when hungry
+    - preconditions:
+        - !type:HungerPrecondition
+          minimumHunger: Peckish
+      tasks:
+        - !type:HTNCompoundTask
+          task: PreyForageCompound
+    # Third priority: Idle/wander when not fleeing or foraging
     - tasks:
         - !type:HTNCompoundTask
-          task: IdleCompound
+          task: PreyIdleCompound
 
-#finds the hostile target & sets up the flee compound
+# Finds hostile targets and initiates flee behavior
 - type: htnCompound
   id: PreyFleeCompound
   branches:
@@ -20,6 +28,67 @@
         - !type:HTNCompoundTask
           task: FleeHostileCompound
 
+# Foraging behavior for prey
+- type: htnCompound
+  id: PreyForageCompound
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:PickAccessibleOperator
+            rangeKey: ForageRange
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            pathfindInPlanning: false
+        - !type:HTNPrimitiveTask
+          operator: !type:RandomOperator
+            targetKey: ForageTime
+            minKey: MinimumForageTime
+            maxKey: MaximumForageTime
+        - !type:HTNPrimitiveTask
+          operator: !type:WaitOperator
+            key: ForageTime
+
+# Idle behavior specific to prey (more cautious)
+- type: htnCompound
+  id: PreyIdleCompound
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:WaitOperator
+            key: IdleTime
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: IdleTime
+    # Pick a new spot, look around, and wait there
+    - preconditions:
+        - !type:BuckledPrecondition
+          isBuckled: false
+        - !type:PulledPrecondition
+          isPulled: false
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:PickAccessibleOperator
+            rangeKey: IdleRange
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            pathfindInPlanning: false
+        # Look around (rotate) to simulate awareness
+        - !type:HTNPrimitiveTask
+          operator: !type:PickRandomRotationOperator
+            targetKey: RotateTarget
+        - !type:HTNPrimitiveTask
+          operator: !type:RotateToTargetOperator
+            targetKey: RotateTarget
+        - !type:HTNPrimitiveTask
+          operator: !type:RandomOperator
+            targetKey: IdleTime
+            minKey: MinimumIdleTime
+            maxKey: MaximumIdleTime
+        - !type:HTNPrimitiveTask
+          operator: !type:WaitOperator
+            key: IdleTime
+
+# Flee from hostile targets
 - type: htnCompound
   id: FleeHostileCompound
   branches:
@@ -30,22 +99,29 @@
           targetKey: Target
           rangeKey: VisionRadius
           opaqueKey: false
-      tasks: #this bit picks a random open tile & paths to it, also dodges away from the target
-        - !type:HTNPrimitiveTask #this needs to be made so it picks a random tile away from the target, aka the hostile creature.
-          operator:
-            !type:PickAccessibleOperator #RN there is something that is like 50% of the way in the file for that in the file
+      tasks:
+        # Make a sound when fleeing
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: "Squeals in fear"
+            hidden: false
+        # Pick a location away from the predator
+        - !type:HTNPrimitiveTask
+          operator: !type:PickFleeLocationOperator
+            targetKey: Target
             rangeKey: FleeRange
             targetCoordinates: FleeCoordinates
+        # Move to the flee location
         - !type:HTNPrimitiveTask
-          operator: !type:MoveToOperator #performs the actual
-            pathfindInPlanning: false
+          operator: !type:MoveToOperator
+            pathfindInPlanning: true
+            targetKey: FleeCoordinates
+        # Juke away from predator
         - !type:HTNPrimitiveTask
           operator: !type:JukeOperator
             jukeType: Away
 
-#Utility Operators
-
-#Identifies nearby hostiles & casts them as a target
+# Utility Operators
 - type: utilityQuery
   id: NearbyHostiles
   query:
@@ -60,8 +136,7 @@
       curve: !type:PresetCurve
         preset: TargetHealth
     - !type:TargetAccessibleCon
-      curve: !type:BoolCurve #Preset curve for the consideration in nearbyhostiles
-
+      curve: !type:BoolCurve
 
 - type: utilityCurvePreset
   id: HostileDistance
