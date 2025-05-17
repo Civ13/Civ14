@@ -255,19 +255,8 @@
     shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_German_doctor_uniform
     head: civ13_head_german_medic_stahlhelm
-    belt: LeatherClothingBelt
+    belt: ClothingSatchelMedicalMedsFilled
+    back: BackpackMedicalBag
     pocket1: CombatKnife
   inhand:
     - civ13_boltaction_Karabiner_98k
-  storage:
-    belt:
-      - DoctorsHandbook
-      - Brutepack
-      - Brutepack
-      - FoodPoppy
-      - YarrowHealingHerbs
-      - YarrowHealingHerbs
-      - ElderflowerHealingHerbs
-      - ElderflowerHealingHerbs
-      - Gauze
-      - Gauze

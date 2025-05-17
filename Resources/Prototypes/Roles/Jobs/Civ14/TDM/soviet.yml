@@ -262,19 +262,8 @@
     jumpsuit: civ13_uniform_Soviet_uniform
     #outerClothing: civ13_suit_Soviet_coat_1
     head: civ13_head_soviet_medical_helmet
-    belt: LeatherClothingBelt
+    belt: ClothingSatchelMedicalMedsFilled
+    back: BackpackMedicalBag
     pocket1: CombatKnife
   inhand:
     - civ13_boltaction_Mosin_30
-  storage:
-    belt:
-      - DoctorsHandbook
-      - Brutepack
-      - Brutepack
-      - FoodPoppy
-      - YarrowHealingHerbs
-      - YarrowHealingHerbs
-      - ElderflowerHealingHerbs
-      - ElderflowerHealingHerbs
-      - Gauze
-      - Gauze

@@ -1,0 +1,121 @@
+- type: entity
+  id: ClothingSatchelMedical
+  parent: ClothingBeltStorageBase
+  name: medical satchel
+  description: A medical satchel with a variety of medical supplies.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Storage/medical_satchel.rsi
+    - type: Clothing
+      sprite: Civ14/Objects/Storage/medical_satchel.rsi
+    - type: STWeight
+      self: 1
+    - type: Item
+      size: Large
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+        - 0,0,8,1
+
+- type: entity
+  id: ClothingSatchelMedicalFilled
+  parent: ClothingSatchelMedical
+  name: medical satchel
+  description: A medical satchel with a variety of medical supplies.
+  suffix: filled
+  components:
+    - type: StorageFill
+      contents:
+        - id: DoctorsHandbook
+          amount: 1
+        - id: Brutepack
+          amount: 2
+        - id: Ointment
+          amount: 2
+        - id: Gauze
+          amount: 2
+        - id: ClothingHandsGlovesNitrile
+
+- type: entity
+  id: ClothingSatchelMedicalMedsFilled
+  parent: ClothingSatchelMedical
+  name: medical satchel
+  description: A medical satchel with a variety of medical supplies.
+  suffix: filled, meds
+  components:
+    - type: StorageFill
+      contents:
+        - id: SyretteAdrenaline
+          amount: 4
+        - id: SyretteMorphine
+          amount: 4
+        - id: PillCanisterSulfanilamide
+          amount: 2
+
+- type: entity
+  id: ClothingSatchelMedkit
+  parent: ClothingSatchelMedical
+  name: medical kit
+  description: A medical kit with a variety of medical supplies.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Storage/medkit.rsi
+    - type: Clothing
+      sprite: Civ14/Objects/Storage/medkit.rsi
+    - type: Item
+      size: Small
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+        - 0,0,4,1
+
+- type: entity
+  id: ClothingSatchelMedkitFilled
+  parent: ClothingSatchelMedkit
+  name: medical kit
+  description: A medical kit with a variety of medical supplies.
+  suffix: filled
+  components:
+    - type: StorageFill
+      contents:
+        - id: Brutepack
+          amount: 1
+        - id: Gauze
+          amount: 2
+
+# this is actually a backpack
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: BackpackMedicalBag
+  name: medical duffelbag
+  description: A large medical duffelbag filled with supplies.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Storage/medical_bag.rsi
+    - type: Clothing
+      sprite: Civ14/Objects/Storage/medical_bag.rsi
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,7,4
+
+- type: entity
+  id: ClothingBackpackDuffelFilled
+  parent: BackpackMedicalBag
+  name: medical duffelbag
+  suffix: filled
+  components:
+    - type: StorageFill
+      contents:
+        - id: DoctorsHandbook
+          amount: 1
+        - id: Brutepack
+          amount: 2
+        - id: Ointment
+          amount: 2
+        - id: Bloodpack
+          amount: 2
+        - id: Gauze
+          amount: 4
+        - id: ClothingHandsGlovesNitrile

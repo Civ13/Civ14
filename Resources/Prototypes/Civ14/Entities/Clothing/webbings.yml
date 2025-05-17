@@ -16,7 +16,7 @@
     - type: Storage
       maxItemSize: Normal
       grid:
-        - 0,0,7,1
+        - 0,0,8,1
 
 - type: entity
   id: ClothingWebbingGerman

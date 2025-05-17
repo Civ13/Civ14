@@ -16,3 +16,14 @@
         - entity_storage
     - type: StaticPrice
       price: 100
+
+- type: entity
+  parent: CrateWood
+  id: CrateWoodRollerbeds
+  name: wood crate
+  suffix: rollerbeds
+  components:
+    - type: StorageFill
+      contents:
+        - id: CheapRollerBedSpawnFolded
+          amount: 5

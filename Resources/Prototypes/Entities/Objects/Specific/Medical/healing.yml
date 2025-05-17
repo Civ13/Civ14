@@ -33,7 +33,8 @@
       tags:
         - Ointment
     - type: Sprite
-      state: ointment
+      sprite: Civ14/Objects/surgery.rsi
+      state: burn_kit
     - type: Item
       heldPrefix: ointment
     - type: Healing
@@ -126,7 +127,8 @@
       tags:
         - Brutepack
     - type: Sprite
-      state: brutepack
+      sprite: Civ14/Objects/surgery.rsi
+      state: trauma_kit
     - type: Item
       heldPrefix: brutepack
     - type: Healing
