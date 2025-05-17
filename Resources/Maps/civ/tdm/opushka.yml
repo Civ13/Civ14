@@ -4,31 +4,8 @@ meta:
   engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/17/2025 02:19:39
-  entityCount: 1096
-maps:
-- 1
-grids:
-- 2
-orphans: []
-nullspace:
-- 1096
-tilemap:
-  5: Space
-  3: FloorBrokenWood
-  6: FloorDirt
-  1: FloorDirtDigged_1
-  2: FloorPlanetDryDirt
-  0: FloorPlanetGrass
-  4: FloorWood
-meta:
-  format: 7
-  category: Map
-  engineVersion: 251.0.0
-  forkId: ""
-  forkVersion: ""
-  time: 05/17/2025 16:13:37
-  entityCount: 1095
+  time: 05/17/2025 20:07:59
+  entityCount: 1118
 maps:
 - 1
 grids:
@@ -61,7 +38,7 @@ entities:
     - type: Broadphase
     - type: OccluderTree
     - type: CivResearch
-      researchLevel: 11.120683
+      researchLevel: 11.445294
     - type: FTLDestination
   - uid: 2
     components:
@@ -1494,6 +1471,9 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: StationMember
+      station: 1119
+    - type: NavMap
 - proto: AnimalRemains
   entities:
   - uid: 3
@@ -4013,6 +3993,125 @@ entities:
     components:
     - type: Transform
       pos: -22.5,3.5
+      parent: 2
+- proto: MarkerGracewallGermanyWW2
+  entities:
+  - uid: 1096
+    components:
+    - type: Transform
+      pos: 59.5,35.5
+      parent: 2
+  - uid: 1097
+    components:
+    - type: Transform
+      pos: 59.5,32.5
+      parent: 2
+  - uid: 1098
+    components:
+    - type: Transform
+      pos: 59.5,29.5
+      parent: 2
+  - uid: 1099
+    components:
+    - type: Transform
+      pos: 59.5,23.5
+      parent: 2
+  - uid: 1100
+    components:
+    - type: Transform
+      pos: 59.5,26.5
+      parent: 2
+  - uid: 1101
+    components:
+    - type: Transform
+      pos: 59.5,20.5
+      parent: 2
+  - uid: 1102
+    components:
+    - type: Transform
+      pos: 59.5,17.5
+      parent: 2
+  - uid: 1103
+    components:
+    - type: Transform
+      pos: 59.5,14.5
+      parent: 2
+  - uid: 1104
+    components:
+    - type: Transform
+      pos: 59.5,11.5
+      parent: 2
+  - uid: 1105
+    components:
+    - type: Transform
+      pos: 59.5,8.5
+      parent: 2
+  - uid: 1106
+    components:
+    - type: Transform
+      pos: 59.5,5.5
+      parent: 2
+  - uid: 1107
+    components:
+    - type: Transform
+      pos: 59.5,2.5
+      parent: 2
+- proto: MarkerGracewallSovietWW2
+  entities:
+  - uid: 1108
+    components:
+    - type: Transform
+      pos: -13.5,15.5
+      parent: 2
+  - uid: 1109
+    components:
+    - type: Transform
+      pos: -13.5,18.5
+      parent: 2
+  - uid: 1110
+    components:
+    - type: Transform
+      pos: -13.5,21.5
+      parent: 2
+  - uid: 1111
+    components:
+    - type: Transform
+      pos: -13.5,24.5
+      parent: 2
+  - uid: 1112
+    components:
+    - type: Transform
+      pos: -13.5,27.5
+      parent: 2
+  - uid: 1113
+    components:
+    - type: Transform
+      pos: -13.5,30.5
+      parent: 2
+  - uid: 1114
+    components:
+    - type: Transform
+      pos: -13.5,33.5
+      parent: 2
+  - uid: 1115
+    components:
+    - type: Transform
+      pos: -13.5,12.5
+      parent: 2
+  - uid: 1116
+    components:
+    - type: Transform
+      pos: -13.5,9.5
+      parent: 2
+  - uid: 1117
+    components:
+    - type: Transform
+      pos: -13.5,6.5
+      parent: 2
+  - uid: 1118
+    components:
+    - type: Transform
+      pos: -13.5,3.5
       parent: 2
 - proto: MarkerKOTHOpushka
   entities:
@@ -7420,7 +7519,7 @@ entities:
       pos: 21.5,24.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -6373.622
+      secondsUntilStateChange: -6562.743
       state: Opening
     - type: Godmode
       oldDamage: {}
@@ -7430,7 +7529,7 @@ entities:
       pos: 23.5,17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -9466.337
+      secondsUntilStateChange: -9655.458
       state: Opening
     - type: Godmode
       oldDamage: {}
