@@ -199,7 +199,7 @@
     jumpsuit: civ13_uniform_blue_white_tunic
     head: civ13_head_conical_helmet
     belt: ClothingBeltQuiver
-    pocket1: CombatKnife
+    pocket1: SwordDagger
     back: WoodenBucklerBlue
   inhand:
     - BowImprovised
@@ -222,7 +222,7 @@
     jumpsuit: civ13_uniform_blue_tunic
     head: civ13_head_kettle_helmet
     belt: ClothingBeltQuiver
-    pocket1: CombatKnife
+    pocket1: SwordDagger
     back: WoodenBucklerBlue
   inhand:
     - BowImprovised
@@ -272,7 +272,7 @@
     jumpsuit: civ13_uniform_light_brown_tunic
     head: civ13_head_black_noble_hat
     belt: LeatherClothingBelt
-    pocket1: CombatKnife
+    pocket1: SwordDagger
   storage:
     belt:
       - ComfreyHealingHerbs

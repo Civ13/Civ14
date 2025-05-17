@@ -255,28 +255,42 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         if (TryComp(args.OtherEntity, out BarricadeComponent? barricade))
         {
             var alwaysPassThrough = false;
-            _sawmill.Info("Checking barricade...");
+            //_sawmill.Info("Checking barricade...");
             if (component.Shooter is { } shooterUid && Exists(shooterUid))
             {
                 // Condition 1: Directions are the same (using cardinal directions).
+                // Or, if bidirectional, directions can be opposite.
                 var shooterWorldRotation = _transform.GetWorldRotation(shooterUid);
                 var barricadeWorldRotation = _transform.GetWorldRotation(args.OtherEntity);
 
                 var shooterDir = shooterWorldRotation.GetCardinalDir();
                 var barricadeDir = barricadeWorldRotation.GetCardinalDir();
 
+                bool directionallyAllowed = false;
                 if (shooterDir == barricadeDir)
                 {
+                    directionallyAllowed = true;
+                    //_sawmill.Debug("Shooter and barricade facing same cardinal direction.");
+                }
+                else if (barricade.Bidirectional)
+                {
+                    var oppositeBarricadeDir = (Direction)(((int)barricadeDir + 4) % 8);
+                    if (shooterDir == oppositeBarricadeDir)
+                    {
+                        directionallyAllowed = true;
+                        //_sawmill.Debug("Shooter and barricade facing opposite cardinal directions (bidirectional pass).");
+                    }
+                }
 
-                    _sawmill.Info("Same dir!");
+                if (directionallyAllowed)
+                {
                     // Condition 2: Firer is within 1 tile of the barricade.
                     var shooterCoords = Transform(shooterUid).Coordinates;
                     var barricadeCoords = Transform(args.OtherEntity).Coordinates;
 
                     if (shooterCoords.TryDistance(EntityManager, barricadeCoords, out var distance) &&
-                        distance <= 1.3f)
+                        distance <= 1.5f)
                     {
-                        //_sawmill.Info($"Distance: {distance}");
                         alwaysPassThrough = true;
                     }
                 }
@@ -288,7 +302,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
             }
             else
             {
-                _sawmill.Info("Not same dir or too far away!");
+                //_sawmill.Debug("Barricade direction/distance check failed or shooter not valid.");
                 // Standard barricade blocking logic if the special conditions are not met.
                 if (_random.NextFloat(0.0f, 100.0f) >= barricade.Blocking)
                 {
