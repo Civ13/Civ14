@@ -11,8 +11,8 @@
     - type: Gun
       projectileSpeed: 32 # 7.62x51mm NATO
       fireRate: 4.8 # ~700 RPM
-      minAngle: 58 # Significant recoil
-      maxAngle: 140
+      minAngle: 8 # 58 - 50
+      maxAngle: 90 # 140 - 50
       angleIncrease: 7.5
       angleDecay: 22 # Slower recovery
       soundGunshot:
@@ -48,8 +48,8 @@
     - type: Gun
       projectileSpeed: 30 # 5.56x45mm
       fireRate: 5.5 # Represents fast cycling for semi-auto
-      minAngle: 40 # Low recoil
-      maxAngle: 80
+      minAngle: 1 # 40 - 50 = -10, set to 1 (Low recoil)
+      maxAngle: 30 # 80 - 50
       angleIncrease: 3.0
       angleDecay: 35 # Quick recovery
       soundGunshot:
@@ -88,8 +88,8 @@
     - type: Gun
       projectileSpeed: 30 # 5.56x45mm
       fireRate: 5.8 # ~750-900 RPM
-      minAngle: 42 # Good control, long rifle
-      maxAngle: 85
+      minAngle: 1 # 42 - 50 = -8, set to 1 (Good control, long rifle)
+      maxAngle: 35 # 85 - 50
       angleIncrease: 3.2
       angleDecay: 33
       soundGunshot:
@@ -164,8 +164,8 @@
     - type: Gun
       projectileSpeed: 29 # 5.56mm carbine, shorter barrel
       fireRate: 6.0 # ~750-950 RPM, can be lively
-      minAngle: 45 # More jumpy than M16
-      maxAngle: 95
+      minAngle: 3 # 45 - 50 = -5, set to 3 (More jumpy than M16)
+      maxAngle: 45 # 95 - 50
       angleIncrease: 4.0
       angleDecay: 30
       soundGunshot:
@@ -188,8 +188,8 @@
     - type: Gun
       projectileSpeed: 29 # 5.56mm carbine
       fireRate: 5.9 # ~700-900 RPM, slightly more refined than XM177E2
-      minAngle: 44 # Good control for a carbine
-      maxAngle: 90
+      minAngle: 2 # 44 - 50 = -6, set to 2 (Good control for a carbine)
+      maxAngle: 40 # 90 - 50
       angleIncrease: 3.8
       angleDecay: 31
       soundGunshot:

@@ -41,13 +41,10 @@
         gun_magazine: !type:ContainerSlot
         gun_chamber: !type:ContainerSlot
     - type: Wieldable
-    - type: GunWieldBonus
-      minAngle: -40
-      maxAngle: -40
     - type: Gun
       projectileSpeed: 30
-      minAngle: 52
-      maxAngle: 125
+      minAngle: 2 # 52 - 50
+      maxAngle: 75 # 125 - 50
       angleIncrease: 6
       angleDecay: 25
       fireRate: 4
@@ -80,8 +77,8 @@
     - type: Gun
       projectileSpeed: 28 # 7.92 Kurz is a bit slower
       fireRate: 3.7 # ~500 RPM
-      minAngle: 50
-      maxAngle: 110 # More controllable than base AK
+      minAngle: 2 # 50 - 50 = 0, set to 2 (more controllable than base AK which is 2)
+      maxAngle: 60 # 110 - 50
       angleIncrease: 5.0
       angleDecay: 27
       soundGunshot:
@@ -116,8 +113,8 @@
     - type: Gun
       projectileSpeed: 32 # Full power 7.62 NATO
       fireRate: 3.8 # ~500-600 RPM
-      minAngle: 60 # Higher recoil
-      maxAngle: 150
+      minAngle: 10 # 60 - 50
+      maxAngle: 100 # 150 - 50
       angleIncrease: 8.0
       angleDecay: 20 # Slower recoil recovery
       soundGunshot:
@@ -152,8 +149,8 @@
     - type: Gun
       projectileSpeed: 32 # Full power 7.62 NATO
       fireRate: 4.5 # ~650-700 RPM
-      minAngle: 62 # Significant recoil
-      maxAngle: 160
+      minAngle: 12 # 62 - 50
+      maxAngle: 110 # 160 - 50
       angleIncrease: 8.5
       angleDecay: 18 # Hard to control on full auto
       soundGunshot:
@@ -188,8 +185,8 @@
     - type: Gun
       projectileSpeed: 30 # Standard 5.56
       fireRate: 4.5 # ~550-650 RPM
-      minAngle: 45 # Very controllable
-      maxAngle: 95
+      minAngle: 1 # 45 - 50 = -5, set to 1 (Very controllable)
+      maxAngle: 45 # 95 - 50
       angleIncrease: 4.0
       angleDecay: 30 # Recovers quickly
       soundGunshot:
@@ -224,8 +221,8 @@
     - type: Gun
       projectileSpeed: 32 # Full power 7.62 NATO
       fireRate: 4.2 # ~600 RPM
-      minAngle: 55 # More controllable than older .308s
-      maxAngle: 130
+      minAngle: 5 # 55 - 50
+      maxAngle: 80 # 130 - 50
       angleIncrease: 7.0
       angleDecay: 22
       soundGunshot:
@@ -260,8 +257,8 @@
     - type: Gun
       projectileSpeed: 32 # Full power 7.62 NATO
       fireRate: 4.8 # ~700-750 RPM, very fast for caliber
-      minAngle: 65 # Very high recoil
-      maxAngle: 170
+      minAngle: 15 # 65 - 50
+      maxAngle: 120 # 170 - 50
       angleIncrease: 9.5 # Difficult to control
       angleDecay: 17 # Slowest recoil recovery
       soundGunshot:
@@ -296,8 +293,8 @@
     - type: Gun
       projectileSpeed: 30 # 5.8x42mm, similar to other intermediate
       fireRate: 4.3 # ~650 RPM
-      minAngle: 46 # Good control for a bullpup
-      maxAngle: 90
+      minAngle: 2 # 46 - 50 = -4, set to 2 (Good control for a bullpup)
+      maxAngle: 40 # 90 - 50
       angleIncrease: 4.2
       angleDecay: 29
       soundGunshot:
@@ -334,8 +331,8 @@
     - type: Gun
       projectileSpeed: 25 # .30 Carbine, lower velocity
       fireRate: 5.0 # ~750 RPM
-      minAngle: 40 # Low recoil round
-      maxAngle: 80
+      minAngle: 1 # 40 - 50 = -10, set to 1 (Low recoil round)
+      maxAngle: 30 # 80 - 50
       angleIncrease: 3.5
       angleDecay: 30
       soundGunshot:
@@ -369,8 +366,8 @@
     - type: Gun
       projectileSpeed: 22 # 9x39mm subsonic, heavy
       fireRate: 6.0 # ~900 RPM, very fast
-      minAngle: 48 # Manageable due to subsonic nature, but high RoF
-      maxAngle: 100
+      minAngle: 2 # 48 - 50 = -2, set to 2 (Manageable)
+      maxAngle: 50 # 100 - 50
       angleIncrease: 5.0 # Will climb on full auto
       angleDecay: 27
       soundGunshot:
@@ -407,8 +404,8 @@
     - type: Gun
       projectileSpeed: 30 # 5.56x45mm
       fireRate: 4.8 # ~700 RPM
-      minAngle: 44 # Good control (A2 version)
-      maxAngle: 88
+      minAngle: 2 # 44 - 50 = -6, set to 2 (Good control A2)
+      maxAngle: 38 # 88 - 50
       angleIncrease: 3.9
       angleDecay: 31
       soundGunshot:
@@ -444,8 +441,8 @@
     - type: Gun
       projectileSpeed: 30 # 5.56x45mm
       fireRate: 4.9 # ~720 RPM
-      minAngle: 43 # Excellent control for a bullpup
-      maxAngle: 85
+      minAngle: 1 # 43 - 50 = -7, set to 1 (Excellent control for a bullpup)
+      maxAngle: 35 # 85 - 50
       angleIncrease: 3.7
       angleDecay: 32
       soundGunshot:
@@ -480,8 +477,8 @@
     - type: Gun
       projectileSpeed: 32 # 7.62x51mm NATO
       fireRate: 4.0 # ~600 RPM
-      minAngle: 56 # Solid kick
-      maxAngle: 135 # Controllable for its class
+      minAngle: 6 # 56 - 50
+      maxAngle: 85 # 135 - 50
       angleIncrease: 7.2 # Noticeable climb
       angleDecay: 23 # Good recovery
       soundGunshot:

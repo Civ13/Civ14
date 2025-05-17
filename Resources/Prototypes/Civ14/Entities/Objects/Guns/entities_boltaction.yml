@@ -982,7 +982,7 @@
     - type: Gun # 7.62x51mm NATO, modern sniper
       projectileSpeed: 52
       minAngle: 1 # Precision rifle
-      maxAngle: 0 # Good recoil management
+      maxAngle: 5 # Still extremely steady, but legal
       angleIncrease: 18
       angleDecay: 40
       soundGunshot:

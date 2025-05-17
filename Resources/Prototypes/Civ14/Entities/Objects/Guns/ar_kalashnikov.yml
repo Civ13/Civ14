@@ -12,8 +12,8 @@
       sprite: Civ14/Weapons/Guns/ak47.rsi
     - type: Gun
       projectileSpeed: 30 # Base 7.62x39mm
-      minAngle: 52 # Standard AKM recoil profile
-      maxAngle: 125
+      minAngle: 2 # 52 - 50 (Matches new BaseGunCivAR)
+      maxAngle: 75 # 125 - 50 (Matches new BaseGunCivAR)
       angleIncrease: 6
       angleDecay: 25
       fireRate: 4 # ~600 RPM
@@ -62,7 +62,7 @@
       quickEquip: true
       sprite: Civ14/Weapons/Guns/akms.rsi
     - type: Gun # AKMS with folding stock, slightly less stable
-      maxAngle: 130 # Slightly wider max spread than AKM
+      maxAngle: 80 # 130 - 50 (minAngle inherited from AKM: 2)
       angleIncrease: 6.2 # Slightly more kick per shot than AKM
       # Inherits other gun stats from AKM
 
@@ -79,8 +79,8 @@
     - type: Gun
       projectileSpeed: 30 # 5.45x39mm
       fireRate: 4.2 # ~650 RPM, slightly faster
-      minAngle: 48 # Less recoil than AKM
-      maxAngle: 100
+      minAngle: 1 # 48 - 50 = -2, set to 1 (Less recoil than AKM)
+      maxAngle: 50 # 100 - 50
       angleIncrease: 4.5
       angleDecay: 28 # Recovers a bit faster
       soundGunshot:
@@ -113,7 +113,7 @@
       sprite: Civ14/Weapons/Guns/aks74.rsi
       quickEquip: true
     - type: Gun # AKS-74 with folding stock
-      maxAngle: 105 # Slightly wider max spread than AK-74
+      maxAngle: 55 # 105 - 50 (minAngle inherited from AK-74: 1)
       angleIncrease: 4.7 # Slightly more kick per shot than AK-74
       # Inherits other gun stats from AK-74
 
@@ -130,8 +130,8 @@
     - type: Gun # AKS-74U Carbine "Krinkov"
       projectileSpeed: 27 # Shorter barrel, lower velocity
       fireRate: 4.8 # Higher RoF ~700-750 RPM
-      minAngle: 50 # More jumpy
-      maxAngle: 115
+      minAngle: 3 # 50 - 50 = 0, set to 3 (More jumpy)
+      maxAngle: 65 # 115 - 50
       angleIncrease: 5.5
       angleDecay: 26
 
@@ -151,8 +151,8 @@
     - type: Gun # AKS-74U SpecOps, similar to AKS-74U, maybe slightly better handling
       projectileSpeed: 27
       fireRate: 4.8
-      minAngle: 48 # Slightly better control
-      maxAngle: 110
+      minAngle: 2 # 48 - 50 = -2, set to 2 (Slightly better control than AKS-74U)
+      maxAngle: 60 # 110 - 50
       angleIncrease: 5.2
       angleDecay: 27
 
@@ -167,8 +167,8 @@
     - type: Clothing
       sprite: Civ14/Weapons/Guns/ak74m.rsi
     - type: Gun # AK-74M, modernized AK-74
-      minAngle: 47 # Better ergonomics, improved control
-      maxAngle: 95
+      minAngle: 1 # 47 - 50 = -3, set to 1 (Better ergonomics, improved control)
+      maxAngle: 45 # 95 - 50
       angleIncrease: 4.3
       angleDecay: 29 # Recovers faster
       # Inherits projectileSpeed, fireRate, soundGunshot from AK-74
@@ -186,8 +186,8 @@
     - type: Gun
       projectileSpeed: 30 # 5.56x45mm NATO
       fireRate: 4.2 # ~650 RPM, similar to AK-74M
-      minAngle: 47 # Good control, similar to AK-74M
-      maxAngle: 95
+      minAngle: 1 # 47 - 50 = -3, set to 1 (Good control, similar to AK-74M)
+      maxAngle: 45 # 95 - 50
       angleIncrease: 4.3
       angleDecay: 29
       soundGunshot:
@@ -223,8 +223,8 @@
     - type: Gun # AK-102 Carbine (5.56x45mm)
       projectileSpeed: 28 # Shorter barrel
       fireRate: 4.6 # Higher RoF
-      minAngle: 49
-      maxAngle: 110 # More jumpy than full-size
+      minAngle: 2 # 49 - 50 = -1, set to 2 (Carbine)
+      maxAngle: 60 # 110 - 50
       angleIncrease: 5.0
       angleDecay: 27
 
@@ -241,8 +241,8 @@
     - type: Gun
       projectileSpeed: 30 # 7.62x39mm
       fireRate: 4.0 # ~600 RPM, like AKM
-      minAngle: 50 # Slightly better control than base AKM due to modern design
-      maxAngle: 120
+      minAngle: 2 # 50 - 50 = 0, set to 2 (Slightly better control than base AKM)
+      maxAngle: 70 # 120 - 50
       angleIncrease: 5.8
       angleDecay: 26
       soundGunshot:
@@ -263,8 +263,8 @@
     - type: Gun # AK-104 Carbine (7.62x39mm)
       projectileSpeed: 28 # Shorter barrel
       fireRate: 4.3 # Slightly higher RoF
-      minAngle: 55 # More initial kick due to caliber and short barrel
-      maxAngle: 140 # Wider spread
+      minAngle: 5 # 55 - 50
+      maxAngle: 90 # 140 - 50
       angleIncrease: 7.0 # More climb
       angleDecay: 23 # Slower to settle
 
@@ -283,8 +283,8 @@
     - type: Gun # AK-105 Carbine (5.45x39mm), similar to AKS-74U/AK-74M carbine
       projectileSpeed: 27
       fireRate: 4.8
-      minAngle: 49 # Bit better than older Krinkovs
-      maxAngle: 110
+      minAngle: 2 # 49 - 50 = -1, set to 2 (Carbine)
+      maxAngle: 60 # 110 - 50
       angleIncrease: 5.3
       angleDecay: 27
 
@@ -301,8 +301,8 @@
     - type: Gun # AK-12 (5.45x39mm), modern design
       projectileSpeed: 31 # Potentially slightly higher velocity/consistency
       fireRate: 5.0 # ~700 RPM
-      minAngle: 42 # Very controllable for an AK
-      maxAngle: 85
+      minAngle: 1 # 42 - 50 = -8, set to 1 (Very controllable for an AK)
+      maxAngle: 35 # 85 - 50
       angleIncrease: 3.8
       angleDecay: 32 # Recovers well
 
@@ -319,8 +319,8 @@
     - type: Gun
       projectileSpeed: 30 # 7.62x39mm
       fireRate: 4.8 # ~700 RPM, similar to AK-12
-      minAngle: 48 # More kick than AK-12 but better than AKM
-      maxAngle: 110
+      minAngle: 3 # 48 - 50 = -2, set to 3 (More kick than AK-12 but better than AKM)
+      maxAngle: 60 # 110 - 50
       angleIncrease: 5.0
       angleDecay: 28
       soundGunshot:
@@ -339,8 +339,8 @@
     - type: Gun
       projectileSpeed: 29 # Unreliable
       fireRate: 3.8 # Slower, clunkier
-      minAngle: 60 # Poor initial accuracy
-      maxAngle: 150 # Very wide spread
+      minAngle: 10 # 60 - 50
+      maxAngle: 100 # 150 - 50
       angleIncrease: 7.5 # Lots of kick
       angleDecay: 20 # Hard to recover
       soundGunshot:
@@ -375,8 +375,8 @@
     - type: Gun
       projectileSpeed: 30 # 7.62x39mm
       fireRate: 5.8 # ~800 RPM, very fast
-      minAngle: 54
-      maxAngle: 135 # Higher RoF makes it climb
+      minAngle: 4 # 54 - 50
+      maxAngle: 85 # 135 - 50
       angleIncrease: 6.5
       angleDecay: 24
       soundGunshot:

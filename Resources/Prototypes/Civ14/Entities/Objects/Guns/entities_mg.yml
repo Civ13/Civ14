@@ -37,7 +37,7 @@
       projectileSpeed: 32 # PKM: 7.62x54mmR
       fireRate: 4.3 # PKM: ~650 RPM
       minAngle: 5
-      maxAngle: 20
+      maxAngle: 35
       angleIncrease: 4
       angleDecay: 20
     - type: ItemSlots
@@ -189,7 +189,7 @@
       projectileSpeed: 32 # 7.62x51mm
       fireRate: 7.0 # ~1000-1300 RPM (modernized MG42)
       minAngle: 12 # Still very high recoil
-      maxAngle: 50
+      maxAngle: 38
       angleIncrease: 5.5
       angleDecay: 16
       soundGunshot:
@@ -474,7 +474,7 @@
       projectileSpeed: 30 # 5.56x45mm
       fireRate: 5.8 # ~850 RPM
       minAngle: 4 # Controllable LMG
-      maxAngle: 15
+      maxAngle: 18
       angleIncrease: 3.5
       angleDecay: 24
       soundGunshot:
@@ -540,16 +540,6 @@
     - type: Clothing
       slots: 0
       sprite: Civ14/Weapons/Guns/c6.rsi
-    - type: Gun
-      # Explicitly defining stats, though it inherits from FN MAG
-      projectileSpeed: 32 # 7.62x51mm
-      fireRate: 5.0 # ~750 RPM
-      minAngle: 6
-      maxAngle: 25
-      angleIncrease: 4.2
-      angleDecay: 22
-      soundGunshot:
-        path: /Audio/Weapons/Guns/Fire/M60.ogg # Using M60 sound as specified
 
 - type: entity
   name: M60
@@ -603,7 +593,7 @@
       projectileSpeed: 32 # Explicit for clarity, same as base
       fireRate: 4.8 # ~700 RPM, faster than base PKM
       minAngle: 4 # Better control than base PKM
-      maxAngle: 15
+      maxAngle: 35
       angleIncrease: 3.8
       angleDecay: 23
       soundGunshot:
@@ -624,7 +614,7 @@
       projectileSpeed: 30 # 5.45x39mm
       fireRate: 4.0 # ~600 RPM (like AK-74)
       minAngle: 3 # Very controllable LMG
-      maxAngle: 10
+      maxAngle: 18
       angleIncrease: 3.0
       angleDecay: 25
       soundGunshot:
@@ -659,7 +649,7 @@
       projectileSpeed: 30 # Explicit for clarity, same as parent
       fireRate: 4.8 # ~700 RPM, faster than RPK-74
       minAngle: 2 # Excellent control
-      maxAngle: 5
+      maxAngle: 11
       angleIncrease: 2.8
       angleDecay: 28
       soundGunshot:
@@ -680,7 +670,7 @@
       projectileSpeed: 30 # 7.62x39mm
       fireRate: 4.0 # ~600 RPM (like AKM)
       minAngle: 5 # More kick than RPK-74, similar to PKM base
-      maxAngle: 20
+      maxAngle: 22
       angleIncrease: 4.0
       angleDecay: 22
       soundGunshot:
@@ -730,7 +720,7 @@
       projectileSpeed: 30 # 5.56x45mm
       fireRate: 6.5 # ~1000 RPM (can be very high)
       minAngle: 4 # Modern, good control despite RoF
-      maxAngle: 10
+      maxAngle: 20
       angleIncrease: 3.2
       angleDecay: 26
       soundGunshot:
