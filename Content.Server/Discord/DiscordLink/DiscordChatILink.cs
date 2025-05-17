@@ -76,6 +76,7 @@ public sealed class DiscordChatLink
         var channelId = channel switch
         {
             ChatChannel.OOC => _oocChannelId,
+            ChatChannel.Dead => _oocChannelId,
             ChatChannel.AdminChat => _adminChannelId,
             _ => throw new InvalidOperationException("Channel not linked to Discord."),
         };

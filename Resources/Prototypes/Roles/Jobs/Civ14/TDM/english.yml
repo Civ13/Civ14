@@ -14,6 +14,7 @@
   special:
     - !type:AddComponentSpecial
       components:
+        - type: MedievalAccent
         - type: NpcFactionMember
           factions:
             - England
