@@ -39,9 +39,9 @@
     - type: GracewallArea # Use the new component
       gracewallActive: true
       gracewallRadius: 1.5
-      blockingfaction: Germany
+      blockingFactions: Germany
     - type: GracewallRule
-      gracewallduration: 1000
+      gracewallDuration: 1000
     - type: Physics
       bodyType: Static
     - type: Fixtures
@@ -72,9 +72,9 @@
     - type: GracewallArea # Use the new component
       gracewallActive: true
       gracewallRadius: 1.5
-      blockingfaction: Soviet
+      blockingFactions: Soviet
     - type: GracewallRule
-      gracewallduration: 1000
+      gracewallDuration: 1000
     - type: Physics
       bodyType: Static
     - type: Fixtures
