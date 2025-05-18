@@ -40,8 +40,7 @@
       gracewallActive: true
       gracewallRadius: 1.5
       blockingFactions: [Germany]
-    - type: GracewallRule
-      gracewallDuration: 1000
+      permanent: true
     - type: Physics
       bodyType: Static
     - type: Fixtures
@@ -73,8 +72,7 @@
       gracewallActive: true
       gracewallRadius: 1.5
       blockingFactions: [Soviet]
-    - type: GracewallRule
-      gracewallDuration: 1000
+      permanent: true
     - type: Physics
       bodyType: Static
     - type: Fixtures
@@ -92,4 +90,4 @@
           layer:
             - LowImpassable
             - MidImpassable
-            - HighImpassable            
+            - HighImpassable

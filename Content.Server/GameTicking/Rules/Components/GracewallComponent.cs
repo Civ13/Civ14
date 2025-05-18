@@ -12,7 +12,7 @@ public sealed partial class GracewallRuleComponent : Component
     /// How long the grace wall lasts since the round started
     /// </summary>
     [DataField("gracewallDuration")]
-    public TimeSpan GracewallDuration { get; set; } = TimeSpan.FromMinutes(5);
+    public TimeSpan GracewallDuration { get; set; } = TimeSpan.FromMinutes(3);
     /// <summary>
     /// Is the grace wall currently active?
     /// </summary>
@@ -44,5 +44,10 @@ public sealed partial class GracewallAreaComponent : Component
     /// </summary>
     [DataField("blockingFactions")]
     public List<string> BlockingFactions { get; set; } = ["All"];
-
+    /// <summary>
+    /// Does the grace wall "go down" or is it permanent?
+    /// Permanent ones are useful to stop spawnkilling
+    /// </summary>
+    [DataField("permanent")]
+    public bool Permanent { get; set; } = false;
 }

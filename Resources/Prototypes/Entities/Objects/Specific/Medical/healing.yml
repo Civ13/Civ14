@@ -42,10 +42,10 @@
         - Biological
       damage:
         types:
-          Heat: -5
-          Cold: -5
-          Shock: -5
-          Caustic: -1.5
+          Heat: -8
+          Cold: -8
+          Shock: -8
+          Caustic: -3
       healingBeginSound:
         path: "/Audio/Items/Medical/ointment_begin.ogg"
       healingEndSound:
@@ -136,7 +136,7 @@
         - Biological
       damage:
         groups:
-          Brute: -15 # 5 for each type in the group
+          Brute: -17 # 5 for each type in the group
       healingBeginSound:
         path: "/Audio/Items/Medical/brutepack_begin.ogg"
       healingEndSound:
@@ -296,8 +296,8 @@
       damage:
         types:
           Slash: -5
-          Piercing: -10
-      bloodlossModifier: -10
+          Piercing: -5
+      bloodlossModifier: -12
       healingBeginSound:
         path: "/Audio/Items/Medical/brutepack_begin.ogg"
       healingEndSound:

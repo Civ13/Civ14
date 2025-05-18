@@ -19,7 +19,7 @@
       equipDelay: 3
       quickEquip: false
     - type: STWeight
-      self: 12
+      self: 24
     - type: Wieldable
     - type: GunRequiresWield
     - type: Item

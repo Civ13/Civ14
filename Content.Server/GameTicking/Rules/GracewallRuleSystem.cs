@@ -90,8 +90,11 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
         var query = EntityQueryEnumerator<GracewallAreaComponent, FixturesComponent>();
         while (query.MoveNext(out var wallUid, out var area, out var fixtures))
         {
-            area.GracewallActive = false;
-            UpdateGracewallPhysics(wallUid, area, fixtures, false);
+            if (area.Permanent == false)
+            {
+                area.GracewallActive = false;
+                UpdateGracewallPhysics(wallUid, area, fixtures, false);
+            }
         }
     }
 
@@ -126,17 +129,31 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
         // We only care when the wall is active.
         if (!component.GracewallActive)
             return;
-
-        // Check if the other entity is an NPC
-        var otherUid = args.OtherEntity;
-        if (HasComp<NpcFactionMemberComponent>(otherUid))
+        if (CheckPassable(uid, component) == true)
         {
-            // The collision system *should* prevent entry based on layers/masks.
-            // However, if an NPC somehow starts colliding (e.g., spawned inside, teleported),
-            // we could potentially push them out here.
-            // For now, we rely on the collision group preventing entry.
-            // Log.Debug($"NPC {ToPrettyString(otherUid)} collided with active grace wall {ToPrettyString(uid)}.");
+            return;
         }
-    }
 
+    }
+    private bool CheckPassable(EntityUid uid, GracewallAreaComponent component)
+    {
+        if (TryComp<NpcFactionMemberComponent>(uid, out var factions))
+        {
+            foreach (var faction in component.BlockingFactions)
+            {
+                if (faction == "All")
+                {
+                    return false;
+                }
+                foreach (var member in factions.Factions)
+                {
+                    if (member == faction)
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
+    }
 }
