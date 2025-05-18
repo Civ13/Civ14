@@ -1,0 +1,31 @@
+- type: entity
+  id: Barbedwire
+  description: A barbed wire fence.
+  parent: BaseStructure
+  name: barbed wire
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Civ14\Objects\structures.rsi
+      state: barbwire
+      drawdepth: BlastDoors
+      noRot: true
+    - type: Physics
+    - type: AtmosExposed
+    - type: CollisionWake
+      enabled: true
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.4,-0.4,0.4,0.4"
+          density: 30
+          mask:
+            - ItemMask
+    - type: StepTrigger
+      intersectRatio: 0.2
+    - type: TriggerOnStepTrigger
+    - type: DamageUserOnTrigger
+      damage:
+        types:
+          Slash: 5

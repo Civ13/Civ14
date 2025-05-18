@@ -125,12 +125,14 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
 
     private void OnStartCollide(EntityUid uid, GracewallAreaComponent component, ref StartCollideEvent args)
     {
+        Log.Warning($"Gracewall checking collision...");
         // This event triggers when something *starts* colliding with the grace wall fixture.
         // We only care when the wall is active.
-        if (!component.GracewallActive)
+        if (component.GracewallActive == false)
             return;
         if (CheckPassable(uid, component) == true)
         {
+            Log.Warning($"Passable!");
             return;
         }
 
@@ -141,12 +143,15 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
         {
             foreach (var faction in component.BlockingFactions)
             {
+
+                Log.Info(faction);
                 if (faction == "All")
                 {
                     return false;
                 }
                 foreach (var member in factions.Factions)
                 {
+                    Log.Info(member);
                     if (member == faction)
                     {
                         return false;

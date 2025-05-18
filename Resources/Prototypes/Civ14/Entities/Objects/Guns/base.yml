@@ -4,6 +4,8 @@
   name: A gun
   abstract: true
   components:
+    - type: Sprite
+      sprite: Civ14/Weapons/Guns/ak101.rsi
     - type: STWeight
       self: 2.7
     - type: Clothing

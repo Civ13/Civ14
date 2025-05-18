@@ -41,6 +41,7 @@
         gun_magazine: !type:ContainerSlot
         gun_chamber: !type:ContainerSlot
     - type: Wieldable
+      wieldedInhandPrefix: ""
     - type: GunWieldBonus
       minAngle: -40
       maxAngle: -40
