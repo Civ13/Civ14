@@ -7,8 +7,8 @@
           task: PredatorAttackCompound
     # Second priority: Hunt for food when hungry
     - preconditions:
-        - !type:HungerPrecondition
-          minimumHunger: Peckish
+        - !type:HungryPrecondition
+          minHungerState: Peckish
       tasks:
         - !type:HTNCompoundTask
           task: PredatorHuntCompound
@@ -80,8 +80,6 @@
     - preconditions:
         - !type:KeyExistsPrecondition
           key: Target
-        - !type:TargetIsAlivePrecondition
-          targetKey: Target
       tasks:
         # Move to target
         - !type:HTNPrimitiveTask

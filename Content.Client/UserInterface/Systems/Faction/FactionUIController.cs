@@ -247,7 +247,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // Improved feedback using a clickable popup or chat message
         var message = $"{msg.InviterName} invited you to join faction '{msg.FactionName}'.";
         // Include InviterUserId in the command. It needs to be a string for the command line.
-        var acceptCommand = $"/acceptfactioninvite \"{msg.FactionName}\" \"{msg.InviterUserId.ToString()}\"";
+        var acceptCommand = $"/acceptfactioninvite \"{msg.FactionName}\"";
 
         // You could use a more interactive popup system if available,
         // but for now, let's add the command hint to the popup/chat.

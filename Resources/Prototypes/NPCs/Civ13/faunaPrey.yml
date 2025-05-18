@@ -7,8 +7,8 @@
           task: PreyFleeCompound
     # Second priority: Find food when hungry
     - preconditions:
-        - !type:HungerPrecondition
-          minimumHunger: Peckish
+        - !type:HungryPrecondition
+          minHungerState: Peckish
       tasks:
         - !type:HTNCompoundTask
           task: PreyForageCompound
