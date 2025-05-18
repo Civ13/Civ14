@@ -70,9 +70,9 @@
     outerClothing: civ13_suit_German_parka
     head: civ13_head_German_field_cap
     belt: civ13_pistol_Walther_P38
-    pocket1: civ13_caliber_a9x19
+    pocket1: civ13_magazine_Walther_magazine
   inhand:
-    - Binoculars
+    - civ13_boltaction_Karabiner_98k
 
 # SMG
 

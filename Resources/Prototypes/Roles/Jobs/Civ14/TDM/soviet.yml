@@ -27,7 +27,7 @@
 - type: startingGear
   id: SovietCaptainGear
   equipment:
-    shoes: civ13_shoes_leather_shoes_1
+    shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_Soviet_officer_uniform
     outerClothing: civ13_suit_Soviet_officer_coat
     belt: civ13_pistol_TT_33
@@ -69,9 +69,9 @@
     #outerClothing: civ13_suit_Soviet_coat
     head: civ13_head_soviet_pilotka
     belt: civ13_pistol_TT_33
-    pocket1: civ13_caliber_a762x25
+    pocket1: civ13_magazine_TT_33_magazine_(7.62x25mm)
   inhand:
-    - Binoculars
+    - civ13_boltaction_Mosin_30
 
 # SMG
 
