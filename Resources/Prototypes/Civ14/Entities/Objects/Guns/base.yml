@@ -4,8 +4,6 @@
   name: A gun
   abstract: true
   components:
-    - type: Sprite
-      sprite: Civ14/Weapons/Guns/ak101.rsi
     - type: STWeight
       self: 2.7
     - type: Clothing
@@ -19,6 +17,7 @@
       shape:
         - 0,0,5,1
     - type: Sprite
+      sprite: Civ14/Weapons/Guns/ak101.rsi
       layers:
         - state: icon
           map: ["enum.GunVisualLayers.Base"]

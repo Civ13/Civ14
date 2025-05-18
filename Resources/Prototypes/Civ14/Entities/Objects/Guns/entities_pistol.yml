@@ -15,7 +15,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: Civ14/Weapons/Guns/m9beretta.rsi
+      sprite: Objects/Weapons/Guns/Pistols/viper.rsi
       quickEquip: true
       slots:
         - suitStorage
@@ -108,8 +108,6 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/luger.rsi
-    - type: Clothing
-      sprite: Civ14/Weapons/Guns/luger.rsi
     - type: Gun
       projectileSpeed: 20 # 9mm
       minAngle: 6 # Older design, slightly more kick
@@ -147,8 +145,6 @@
   description: A Walther P38 chambered in 9x19mm parabellum, german design.
   components:
     - type: Sprite
-      sprite: Civ14/Weapons/Guns/waltherp38.rsi
-    - type: Clothing
       sprite: Civ14/Weapons/Guns/waltherp38.rsi
     - type: Gun
       projectileSpeed: 20 # 9mm
@@ -188,8 +184,6 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/glock17.rsi
-    - type: Clothing
-      sprite: Civ14/Weapons/Guns/glock17.rsi
     - type: Gun
       projectileSpeed: 20
       minAngle: 5
@@ -227,8 +221,6 @@
   description: A modern pistol, loaded on 9x19mm, reliable and fast.
   components:
     - type: Sprite
-      sprite: Civ14/Weapons/Guns/sig250.rsi
-    - type: Clothing
       sprite: Civ14/Weapons/Guns/sig250.rsi
     - type: Gun
       projectileSpeed: 20 # 9mm
@@ -268,8 +260,6 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/pl14.rsi
-    - type: Clothing
-      sprite: Civ14/Weapons/Guns/pl14.rsi
     - type: Gun
       projectileSpeed: 20 # 9mm
       minAngle: 4 # Experimental, very good control
@@ -307,8 +297,6 @@
   description: A Russian made pistol firing loaded on 9x19mm.
   components:
     - type: Sprite
-      sprite: Civ14/Weapons/Guns/mp443.rsi
-    - type: Clothing
       sprite: Civ14/Weapons/Guns/mp443.rsi
     - type: Gun
       projectileSpeed: 20 # 9mm
@@ -348,8 +336,6 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/tarusg3.rsi
-    - type: Clothing
-      sprite: Civ14/Weapons/Guns/tarusg3.rsi
     - type: Gun
       projectileSpeed: 20 # 9mm
       minAngle: 5
@@ -387,8 +373,6 @@
   description: The SIG Sauer P220 is a semi-automatic pistol. Designed in 1975.
   components:
     - type: Sprite
-      sprite: Civ14/Weapons/Guns/p220.rsi
-    - type: Clothing
       sprite: Civ14/Weapons/Guns/p220.rsi
     - type: Gun
       projectileSpeed: 18 # .45 ACP - slower, heavier
@@ -428,8 +412,6 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/iogb7.rsi
-    - type: Clothing
-      sprite: Civ14/Weapons/Guns/iogb7.rsi
     - type: Gun
       projectileSpeed: 20 # 9mm
       minAngle: 10 # "Fake shit" - very high RoF, wild recoil
@@ -467,8 +449,6 @@
   description: An early German pistol that can chamber 7.62x25mm TT.
   components:
     - type: Sprite
-      sprite: Civ14/Weapons/Guns/mauser.rsi
-    - type: Clothing
       sprite: Civ14/Weapons/Guns/mauser.rsi
     - type: Gun
       projectileSpeed: 22 # 7.62x25mm - fast round
@@ -508,8 +488,6 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/borchardt.rsi
-    - type: Clothing
-      sprite: Civ14/Weapons/Guns/borchardt.rsi
     - type: Gun
       projectileSpeed: 19 # 7.65x25mm Borchardt - less powerful than Mauser
       minAngle: 6
@@ -547,8 +525,6 @@
   description: An early, compact Colt pistol chambered in .32 ACP.
   components:
     - type: Sprite
-      sprite: Civ14/Weapons/Guns/coltpockethammerless.rsi
-    - type: Clothing
       sprite: Civ14/Weapons/Guns/coltpockethammerless.rsi
     - type: Gun
       projectileSpeed: 17 # .32 ACP - weak
@@ -588,8 +564,6 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/coltpockethammerless.rsi
-    - type: Clothing
-      sprite: Civ14/Weapons/Guns/coltpockethammerless.rsi
     - type: Gun
       projectileSpeed: 18 # .380 ACP
       minAngle: 4
@@ -627,8 +601,6 @@
   description: A particularly unique-in-appearance early German semi-automatic pistol.
   components:
     - type: Sprite
-      sprite: Civ14/Weapons/Guns/bergmann.rsi
-    - type: Clothing
       sprite: Civ14/Weapons/Guns/bergmann.rsi
     - type: Gun
       projectileSpeed: 18 # Using 8mm Nambu stats as per chamber/sound
@@ -670,8 +642,6 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/colt.rsi
-    - type: Clothing
-      sprite: Civ14/Weapons/Guns/colt.rsi
     - type: Gun
       projectileSpeed: 18 # .45 ACP
       minAngle: 8
@@ -708,8 +678,6 @@
   description: A slightly upgraded model of the M1911A1. Chambered in .45 ACP.
   components:
     - type: Sprite
-      sprite: Civ14/Weapons/Guns/colt.rsi
-    - type: Clothing
       sprite: Civ14/Weapons/Guns/colt.rsi
     - type: Gun
       projectileSpeed: 18 # .45 ACP
@@ -751,8 +719,6 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/tt30.rsi
-    - type: Clothing
-      sprite: Civ14/Weapons/Guns/tt30.rsi
     - type: Gun
       projectileSpeed: 22 # 7.62x25mm Tokarev - fast
       minAngle: 6
@@ -793,8 +759,6 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/makarov.rsi
-    - type: Clothing
-      sprite: Civ14/Weapons/Guns/makarov.rsi
     - type: Gun
       projectileSpeed: 19 # 9x18mm Makarov - intermediate power
       minAngle: 5
@@ -832,8 +796,6 @@
   description: A Soviet selective fire machine pistol. Chambered in 9x18mm Makarov.
   components:
     - type: Sprite
-      sprite: Civ14/Weapons/Guns/aps.rsi
-    - type: Clothing
       sprite: Civ14/Weapons/Guns/aps.rsi
     - type: Gun
       projectileSpeed: 19 # 9x18mm Makarov
@@ -875,8 +837,6 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/m9beretta.rsi
-    - type: Clothing
-      sprite: Civ14/Weapons/Guns/m9beretta.rsi
     - type: Gun
       projectileSpeed: 20 # 9mm
       minAngle: 5
@@ -916,8 +876,6 @@
     9mm Luger. This one blends in with the desert.
   components:
     - type: Sprite
-      sprite: Civ14/Weapons/Guns/tanm9.rsi
-    - type: Clothing
       sprite: Civ14/Weapons/Guns/tanm9.rsi
       quickEquip: true
     - type: Gun
@@ -960,8 +918,6 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/jericho941.rsi
-    - type: Clothing
-      sprite: Civ14/Weapons/Guns/jericho941.rsi
     - type: Gun
       projectileSpeed: 20 # 9mm
       minAngle: 5
@@ -1000,8 +956,6 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/deagle.rsi
-    - type: Clothing
-      sprite: Civ14/Weapons/Guns/deagle.rsi
     - type: Gun
       projectileSpeed: 20 # .50 AE
       minAngle: 15 # Massive recoil
@@ -1039,8 +993,6 @@
   description: Designed and developed by Magnum Research Inc. Chambered in 44.magnum.
   components:
     - type: Sprite
-      sprite: Civ14/Weapons/Guns/deagle.rsi
-    - type: Clothing
       sprite: Civ14/Weapons/Guns/deagle.rsi
     - type: Gun
       projectileSpeed: 21 # .44 Magnum - very powerful
@@ -1082,8 +1034,6 @@
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/browning_hp.rsi
-    - type: Clothing
-      sprite: Civ14/Weapons/Guns/browning_hp.rsi
     - type: Gun
       projectileSpeed: 20 # 9mm
       minAngle: 5
@@ -1123,8 +1073,6 @@
     marshal service chambered .45 S&W.
   components:
     - type: Sprite
-      sprite: Civ14/Weapons/Guns/sti2011.rsi
-    - type: Clothing
       sprite: Civ14/Weapons/Guns/sti2011.rsi
     - type: Gun
       projectileSpeed: 18 # .45 ACP
