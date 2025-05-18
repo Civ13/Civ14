@@ -158,6 +158,7 @@ entities:
     - type: SpreaderGrid
     - type: Shuttle
     - type: GridPathfinding
+    - type: Weather
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg

@@ -76,8 +76,16 @@
   parent: BaseGameRule
   components:
     - type: TeamDeathMatchRule
+
 - type: entity
   parent: BaseGameRule
   id: FactionRule
   components:
     - type: FactionRule
+
+- type: entity
+  id: RandomWeatherRule
+  parent: BaseGameRule
+  components:
+    - type: RandomWeatherRule
+      allowedWeathers: [Rain, Clear, Storm]

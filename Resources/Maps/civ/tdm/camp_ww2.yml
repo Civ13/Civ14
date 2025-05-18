@@ -203,6 +203,7 @@ entities:
     - type: SunShadow
     - type: GridPathfinding
     - type: Gravity
+    - type: Weather
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg
       inherent: True

@@ -44,6 +44,7 @@ entities:
       name: grid
     - type: Transform
       parent: 1
+    - type: Weather
     - type: MapGrid
       chunks:
         1,0:
