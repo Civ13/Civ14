@@ -40,8 +40,6 @@
       containers:
         gun_magazine: !type:ContainerSlot
         gun_chamber: !type:ContainerSlot
-    - type: Wieldable
-      wieldedInhandPrefix: ""
     - type: Gun
       projectileSpeed: 30
       minAngle: 2 # 52 - 50

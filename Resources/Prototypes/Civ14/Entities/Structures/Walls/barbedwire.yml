@@ -13,15 +13,25 @@
     - type: Physics
     - type: AtmosExposed
     - type: CollisionWake
-      enabled: true
+      enabled: false
     - type: Fixtures
       fixtures:
+        slips:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.4,-0.4,0.4,0.4"
+          hard: false
+          layer:
+            - LowImpassable
         fix1:
           shape: !type:PhysShapeAabb
             bounds: "-0.4,-0.4,0.4,0.4"
           density: 30
           mask:
             - ItemMask
+    - type: DamageOtherOnHit
+      damage:
+        types:
+          Slash: 2
     - type: StepTrigger
       intersectRatio: 0.2
     - type: TriggerOnStepTrigger
@@ -29,3 +39,7 @@
       damage:
         types:
           Slash: 5
+    - type: Slippery
+      slipSound:
+        path: /Audio/Effects/glass_step.ogg
+      launchForwardsMultiplier: 0

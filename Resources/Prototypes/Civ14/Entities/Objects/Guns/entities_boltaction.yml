@@ -53,9 +53,7 @@
       maxAngle: 10 # Maximum upward/sideways kick angle
       angleIncrease: 20 # Initial jump/kick from firing a powerful round
       angleDecay: 35 # Speed of aim recovery/settling after shot
-      fireRate: 1
-    - type: Wieldable
-      wieldedInhandPrefix: ""
+      fireRate: 0.7
 
 # Imported
 

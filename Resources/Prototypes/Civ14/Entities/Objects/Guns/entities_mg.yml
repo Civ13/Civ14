@@ -20,8 +20,6 @@
       quickEquip: false
     - type: STWeight
       self: 24
-    - type: Wieldable
-      wieldedInhandPrefix: ""
     - type: GunRequiresWield
     - type: Item
       size: Ginormous
