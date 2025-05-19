@@ -202,8 +202,8 @@ entities:
     - type: Shuttle
     - type: SunShadow
     - type: GridPathfinding
-    - type: Gravity
     - type: Weather
+    - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg
       inherent: True

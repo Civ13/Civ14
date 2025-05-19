@@ -19,7 +19,7 @@
       equipDelay: 3
       quickEquip: false
     - type: STWeight
-      self: 24
+      self: 30
     - type: GunRequiresWield
     - type: Item
       size: Ginormous

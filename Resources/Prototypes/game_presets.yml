@@ -18,7 +18,7 @@
   showInVote: true
   description: tdm-description
   rules:
-    - RespawnDeadRuleTDM
+    - RespawnDeadRuleTDMFixed
     - GracewallRule
     - CaptureAreaRule
     - TeamDeathMatchRule

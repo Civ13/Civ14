@@ -124,12 +124,12 @@
       slots:
         gun_magazine:
           name: Magazine
-          startingItem: civ13_magazine_default
+          startingItem: civ13_magazine_Luger_magazine
 
           priority: 2
           whitelist:
             tags:
-              - civ13_magazine_default
+              - civ13_magazine_Luger_magazine
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
@@ -735,12 +735,12 @@
       slots:
         gun_magazine:
           name: Magazine
-          startingItem: civ13_magazine_default
+          startingItem: civ13_magazine_TT_33_magazine_(7.62x25mm)
 
           priority: 2
           whitelist:
             tags:
-              - civ13_magazine_default
+              - civ13_magazine_TT_33_magazine_(7.62x25mm)
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber

@@ -20,4 +20,13 @@ public sealed partial class RandomWeatherRuleComponent : Component
     [DataField("currentWeather")]
     public string CurrentWeather = "Clear";
 
+    /// <summary>
+    /// List of pre-set colors, mostly for tdm maps so we can set fixed times of day.
+    /// </summary>
+    [DataField]
+    public List<string> DayTimes = [
+        "Day", //Daylight #D8B059
+        "Dawn", //Dawn/Dusk #cf7330
+        "Night", //Moonlight #2b3143
+    ];
 }

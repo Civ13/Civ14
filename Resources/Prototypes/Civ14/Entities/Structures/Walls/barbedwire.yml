@@ -6,7 +6,7 @@
   components:
     - type: InteractionOutline
     - type: Sprite
-      sprite: Civ14\Objects\structures.rsi
+      sprite: Civ14/Objects/structures.rsi
       state: barbwire
       drawdepth: BlastDoors
       noRot: true

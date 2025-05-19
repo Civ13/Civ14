@@ -24,6 +24,17 @@
     - type: RespawnTracker
       respawnDelay: 120
       deleteBody: false
+# A fixed timer where all reinforcements are spawned at the same time.
+- type: entity
+  parent: BaseGameRule
+  id: RespawnDeadRuleTDMFixed
+  components:
+    - type: RespawnDeadRule
+      alwaysRespawnDead: true
+    - type: RespawnTracker
+      respawnDelay: 120
+      deleteBody: false
+      fixed: true
 
 - type: entity
   id: InactivityTimeRestart

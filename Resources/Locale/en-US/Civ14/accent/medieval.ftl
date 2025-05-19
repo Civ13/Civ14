@@ -370,10 +370,10 @@ accent-medieval-words-replace-107 = arresteth
 accent-medieval-words-108 = spider
 accent-medieval-words-replace-108 = arachnidbeast
 
-accent-medieval-words-109 = syndicate
+accent-medieval-words-109 = enemies
 accent-medieval-words-replace-109 = renegades
 
-accent-medieval-words-110 = syndi
+accent-medieval-words-110 = enemy
 accent-medieval-words-replace-110 = renegade
 
 accent-medieval-words-111 = traitor
