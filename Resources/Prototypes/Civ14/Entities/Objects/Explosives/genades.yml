@@ -89,7 +89,7 @@
 - type: entity
   parent: SmokeGrenade
   id: SmokeGrenadeRDG2
-  name: RGD-2 smoke grenade
+  name: RDG-2 smoke grenade
   description: A tactical grenade that releases a large, long-lasting cloud of smoke when used.
   components:
     - type: Sprite
