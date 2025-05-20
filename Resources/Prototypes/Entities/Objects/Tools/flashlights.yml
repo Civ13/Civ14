@@ -36,6 +36,17 @@
         right:
           - state: inhand-right-light
             shader: unshaded
+    - type: PowerCellSlot
+      cellSlotId: cell_slot
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: power-cell-slot-component-slot-name-default
+          startingItem: PowerCellMedium
+
     - type: Sprite
       sprite: Civ14/Objects/Flashlights/flashlight.rsi
       layers:

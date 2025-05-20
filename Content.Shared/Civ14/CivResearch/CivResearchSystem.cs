@@ -19,7 +19,6 @@ public sealed partial class CivResearchSystem : EntitySystem
         _sawmill = _logManager.GetSawmill("research");
     }
 
-
     /// <summary>
     /// Ensures that a CivResearchComponent is attached to the entity representing a newly created map.
     /// </summary>
@@ -28,7 +27,7 @@ public sealed partial class CivResearchSystem : EntitySystem
     {
         var mapUid = _mapManager.GetMapEntityId(ev.MapId);
         EnsureComp<CivResearchComponent>(mapUid);
-        _sawmill.Info("research", $"Ensured ResearchComponent on new map {ev.MapId} (Entity: {mapUid})");
+        _sawmill.Info($"Ensured ResearchComponent on new map {ev.MapId} (Entity: {mapUid})");
     }
 
     /// <summary>

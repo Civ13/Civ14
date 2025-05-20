@@ -87,7 +87,7 @@
 # smoke
 
 - type: entity
-  parent: SmokeGrenade
+  parent: GrenadeBase
   id: SmokeGrenadeRDG2
   name: RDG-2 smoke grenade
   description: A tactical grenade that releases a large, long-lasting cloud of smoke when used.
@@ -103,9 +103,17 @@
           enum.ConstructionVisuals.Layer:
             Primed: { state: rdg2_yellow_active }
             Unprimed: { state: rdg2_yellow }
-
+    - type: SmokeOnTrigger
+      duration: 30
+      spreadAmount: 40
+    - type: SoundOnTrigger
+      sound: /Audio/Items/smoke_grenade_smoke.ogg
+    - type: DeleteOnTrigger
+    - type: TimerTriggerVisuals
+      primingSound:
+        path: /Audio/Items/smoke_grenade_prime.ogg
 - type: entity
-  parent: SmokeGrenade
+  parent: GrenadeBase
   id: SmokeGrenadeNHG39
   name: Nebelhandgranate 39 smoke grenade
   description: A tactical grenade that releases a large, long-lasting cloud of smoke when used.
@@ -121,3 +129,12 @@
           enum.ConstructionVisuals.Layer:
             Primed: { state: smoke_grenade_active }
             Unprimed: { state: smoke_grenade }
+    - type: SmokeOnTrigger
+      duration: 30
+      spreadAmount: 40
+    - type: SoundOnTrigger
+      sound: /Audio/Items/smoke_grenade_smoke.ogg
+    - type: DeleteOnTrigger
+    - type: TimerTriggerVisuals
+      primingSound:
+        path: /Audio/Items/smoke_grenade_prime.ogg

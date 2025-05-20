@@ -11,6 +11,7 @@
       name: "Objective Area"
       captureDuration: 300 # 5 min
       captureRadius: 6
+      contestedResetTime: 10 # 10 seconds before timer resets when contested
 
 - type: entity
   name: capturable area - KOTH Camp
@@ -24,6 +25,7 @@
       name: "the Castle"
       captureDuration: 240 # 4 min
       captureRadius: 6
+      contestedResetTime: 10 # 10 seconds before timer resets when contested
       capturableFactions:
         - England
         - France
@@ -40,6 +42,7 @@
       name: "the Castle"
       captureDuration: 240 # 4 min
       captureRadius: 6
+      contestedResetTime: 10 # 10 seconds before timer resets when contested
       capturableFactions:
         - Soviet
         - Germany
@@ -56,6 +59,7 @@
       name: "The Main House"
       captureDuration: 240 # 4 min
       captureRadius: 5
+      contestedResetTime: 10 # 10 seconds before timer resets when contested
       capturableFactions:
         - Soviet
         - Germany

@@ -43,3 +43,6 @@
       slipSound:
         path: /Audio/Effects/glass_step.ogg
       launchForwardsMultiplier: 0
+    - type: Construction
+      graph: Barbedwire
+      node: end

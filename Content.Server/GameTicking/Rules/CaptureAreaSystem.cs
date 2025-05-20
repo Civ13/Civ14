@@ -94,22 +94,88 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
         if (currentController != area.Controller)
         {
             // Controller changed (or became contested/empty)
-            area.Controller = currentController;
-            area.CaptureTimer = 0f; // Reset timer on change
-            area.CaptureTimerAnnouncement1 = false;
-            area.CaptureTimerAnnouncement2 = false;
             if (currentController == "")
             {
-                _chat.DispatchGlobalAnnouncement($"{area.PreviousController} has lost control of {area.Name}!", "Objective", false, null, Color.Red);
+                // Area became contested or empty
+                if (area.ContestedTimer == 0f)
+                {
+                    // Store the last controller when we first enter contested state
+                    area.LastController = area.Controller;
+                }
+
+                // Increment contested timer
+                area.ContestedTimer += frameTime;
+
+                // Only reset the capture timer if contested for long enough
+                if (area.ContestedTimer >= area.ContestedResetTime)
+                {
+                    // Reset capture progress after contested threshold is reached
+                    area.CaptureTimer = 0f;
+                    area.CaptureTimerAnnouncement1 = false;
+                    area.CaptureTimerAnnouncement2 = false;
+
+                    // Only announce loss of control once the timer has fully reset
+                    if (!string.IsNullOrEmpty(area.LastController))
+                    {
+                        _chat.DispatchGlobalAnnouncement($"{area.LastController} has lost control of {area.Name}!", "Objective", false, null, Color.Red);
+                        area.LastController = ""; // Clear last controller after announcement
+                    }
+                }
+            }
+            else if (area.Controller == "")
+            {
+                // Area was contested/empty but now has a controller
+                if (currentController == area.LastController && area.ContestedTimer < area.ContestedResetTime)
+                {
+                    // The previous controller regained control before the reset threshold
+                    // Don't reset the timer or make announcements
+                    area.Controller = currentController;
+                    area.ContestedTimer = 0f;
+                }
+                else
+                {
+                    // New controller or contested long enough to reset
+                    area.Controller = currentController;
+                    area.ContestedTimer = 0f;
+                    _chat.DispatchGlobalAnnouncement($"{currentController} has gained control of {area.Name}!", "Objective", false, null, Color.DodgerBlue);
+                }
             }
             else
             {
-                _chat.DispatchGlobalAnnouncement($"{currentController} has gained control of {area.Name}!", "Objective", false, null, Color.DodgerBlue);
+                // Direct change from one faction to another
+                if (area.ContestedTimer == 0f)
+                {
+                    // Store the last controller when we first enter contested state
+                    area.LastController = area.Controller;
+                }
+
+                // Treat as contested first
+                area.Controller = "";
+                area.ContestedTimer += frameTime;
+
+                // Only reset and announce if contested long enough
+                if (area.ContestedTimer >= area.ContestedResetTime)
+                {
+                    area.CaptureTimer = 0f;
+                    area.CaptureTimerAnnouncement1 = false;
+                    area.CaptureTimerAnnouncement2 = false;
+
+                    // Now update to the new controller
+                    area.Controller = currentController;
+
+                    // Announce the change
+                    _chat.DispatchGlobalAnnouncement($"{area.LastController} has lost control of {area.Name}!", "Objective", false, null, Color.Red);
+                    _chat.DispatchGlobalAnnouncement($"{currentController} has gained control of {area.Name}!", "Objective", false, null, Color.DodgerBlue);
+
+                    area.LastController = "";
+                    area.ContestedTimer = 0f;
+                }
             }
         }
         else if (!string.IsNullOrEmpty(currentController))
         {
-            // Controller remains the same, increment timer
+            // Controller remains the same, reset contested timer and increment capture timer
+            area.ContestedTimer = 0f;
             area.CaptureTimer += frameTime;
 
             //announce when theres 2 and 1 minutes left.
@@ -133,14 +199,20 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
                     _roundEndSystem.EndRound();
                 }
             }
-
         }
         else
         {
             // Area is empty or contested, and wasn't previously controlled by a single faction
-            area.CaptureTimer = 0f; // Ensure timer is reset/stays reset
-            area.CaptureTimerAnnouncement1 = false;
-            area.CaptureTimerAnnouncement2 = false;
+            // Increment contested timer
+            area.ContestedTimer += frameTime;
+
+            if (area.ContestedTimer >= area.ContestedResetTime)
+            {
+                // Reset capture progress after contested threshold is reached
+                area.CaptureTimer = 0f;
+                area.CaptureTimerAnnouncement1 = false;
+                area.CaptureTimerAnnouncement2 = false;
+            }
         }
         area.PreviousController = currentController;
     }

@@ -39,7 +39,10 @@ entities:
     - type: Broadphase
     - type: OccluderTree
     - type: CivResearch
-      researchLevel: 0.75583875
+      researchLevel: 600
+      maxResearch: 600
+      researchEnabled: false
+      isTDM: true
   - uid: 2
     components:
     - type: MetaData

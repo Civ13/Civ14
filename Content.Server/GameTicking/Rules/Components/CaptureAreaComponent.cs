@@ -59,6 +59,21 @@ public sealed partial class CaptureAreaComponent : Component
     [DataField("capturableFactions")]
     public List<string> CapturableFactions { get; set; } = [];
 
+    /// <summary>
+    /// How long the area needs to be contested or lost before the capture timer resets
+    /// </summary>
+    [DataField("contestedResetTime")]
+    public float ContestedResetTime { get; set; } = 10f;
 
+    /// <summary>
+    /// Current timer tracking how long the area has been contested or lost
+    /// </summary>
+    [DataField("contestedTimer")]
+    public float ContestedTimer { get; set; } = 0f;
 
+    /// <summary>
+    /// The last controller before the area became contested or lost
+    /// </summary>
+    [DataField("lastController")]
+    public string LastController { get; set; } = "";
 }

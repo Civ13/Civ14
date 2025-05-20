@@ -96,7 +96,9 @@
       bidirectional: true
       blocking: 66
     - type: AtmosExposed
-
+    - type: Construction
+      graph: BarricadeSandbags
+      node: end
 - type: entity
   id: BarricadeSandbagsMedium
   description: An unfinished sandbag wall.

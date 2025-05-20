@@ -53,9 +53,24 @@
   icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: rope }
   spawn: MaterialRope1
   maxCount: 50
+
 - type: stack
   id: Dirt
   name: dirt
   icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: dirt_pile }
   spawn: MaterialDirt1
   maxCount: 20
+
+- type: stack
+  id: Barbwire
+  name: barbed wire
+  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: barbwire_stack }
+  spawn: MaterialBarbwire1
+  maxCount: 5
+
+- type: stack
+  id: Sandbags
+  name: sandbags
+  icon: { sprite: /Textures/Civ14/Objects/items.rsi, state: sandbag_new }
+  spawn: MaterialSandbags1
+  maxCount: 1
