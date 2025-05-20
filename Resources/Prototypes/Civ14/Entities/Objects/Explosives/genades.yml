@@ -88,21 +88,21 @@
 
 - type: entity
   parent: SmokeGrenade
-  id: SmokeGrenadeRGD2
+  id: SmokeGrenadeRDG2
   name: RGD-2 smoke grenade
   description: A tactical grenade that releases a large, long-lasting cloud of smoke when used.
   components:
     - type: Sprite
       sprite: Civ14/Objects/grenade.rsi
       layers:
-        - state: rgd2_yellow_active #because the unprimed is an overlay
+        - state: rdg2_yellow_active #because the unprimed is an overlay
           map: ["enum.TriggerVisualLayers.Base"]
     - type: GenericVisualizer
       visuals:
         enum.Trigger.TriggerVisuals.VisualState:
           enum.ConstructionVisuals.Layer:
-            Primed: { state: rgd2_yellow_active }
-            Unprimed: { state: rgd2_yellow }
+            Primed: { state: rdg2_yellow_active }
+            Unprimed: { state: rdg2_yellow }
 
 - type: entity
   parent: SmokeGrenade

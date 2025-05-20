@@ -5,7 +5,6 @@
   components:
     - type: StorageFill
       contents:
-        - id: FlashlightSeclite
         - id: WeaponDisabler
         - id: ClothingBeltSecurityFilled
         - id: Flash
@@ -30,7 +29,6 @@
   components:
     - type: StorageFill
       contents:
-        - id: FlashlightSeclite
         - id: WeaponDisabler
         - id: ClothingBeltSecurityFilled
         - id: Flash
@@ -55,8 +53,6 @@
   components:
     - type: StorageFill
       contents:
-        - id: FlashlightSeclite
-          prob: 0.8
         - id: WeaponDisabler
         - id: ClothingUniformJumpsuitSecGrey
           prob: 0.3
@@ -122,7 +118,6 @@
         - id: ClothingNeckTieDet
         - id: ClothingOuterVestDetective
         - id: ClothingOuterCoatDetective
-        - id: FlashlightSeclite
         - id: ForensicScanner
         - id: LogProbeCartridge
         - id: BoxForensicPad

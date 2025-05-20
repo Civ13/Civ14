@@ -55,7 +55,7 @@
     - type: CaptureArea
       name: "The Main House"
       captureDuration: 240 # 4 min
-      captureRadius: 3
+      captureRadius: 5
       capturableFactions:
         - Soviet
         - Germany
