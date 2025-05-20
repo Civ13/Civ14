@@ -16,7 +16,7 @@
       sprite: Civ14/Objects/Flashlights/militarylight.rsi
       storedRotation: -90
     - type: Clothing
-      sprite: Objects/Tools/militarylight.rsi
+      sprite: Civ14/Objects/Flashlights/militarylight.rsi
       quickEquip: false
       slots:
         - Belt
@@ -39,7 +39,7 @@
       sprite: Civ14/Objects/Flashlights/militarylight.rsi
       storedRotation: -90
     - type: Clothing
-      sprite: Objects/Tools/militarylight.rsi
+      sprite: Civ14/Objects/Flashlights/militarylight.rsi
       quickEquip: false
       slots:
         - Belt

@@ -62,13 +62,13 @@ public sealed partial class CCVars
     ///     Sets the duration of the map vote timer.
     /// </summary>
     public static readonly CVarDef<int>
-        VoteTimerMap = CVarDef.Create("vote.timermap", 90, CVar.SERVERONLY);
+        VoteTimerMap = CVarDef.Create("vote.timermap", 40, CVar.SERVERONLY);
 
     /// <summary>
     ///     Sets the duration of the restart vote timer.
     /// </summary>
     public static readonly CVarDef<int>
-        VoteTimerRestart = CVarDef.Create("vote.timerrestart", 60, CVar.SERVERONLY);
+        VoteTimerRestart = CVarDef.Create("vote.timerrestart", 40, CVar.SERVERONLY);
 
     /// <summary>
     ///     Sets the duration of the gamemode/preset vote timer.

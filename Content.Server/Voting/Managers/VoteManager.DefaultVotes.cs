@@ -19,6 +19,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
+using Robust.Shared.Configuration;
 
 namespace Content.Server.Voting.Managers
 {
@@ -27,11 +28,15 @@ namespace Content.Server.Voting.Managers
         [Dependency] private readonly IPlayerLocator _locator = default!;
         [Dependency] private readonly ILogManager _logManager = default!;
         [Dependency] private readonly IBanManager _bans = default!;
-        [Dependency] private readonly VoteWebhooks _voteWebhooks = default!;
 
+        [Dependency] private readonly ILogManager _log = default!;
+        [Dependency] private readonly VoteWebhooks _voteWebhooks = default!;
+        [Dependency] private readonly IConfigurationManager _configurationManager = default!;
+        private readonly ISawmill _sawmill = default!;
         private VotingSystem? _votingSystem;
         private RoleSystem? _roleSystem;
         private GameTicker? _gameTicker;
+
 
         private static readonly Dictionary<StandardVoteType, CVarDef<bool>> VoteTypesToEnableCVars = new()
         {
@@ -308,6 +313,8 @@ namespace Content.Server.Voting.Managers
                 {
                     if (_gameMapManager.TrySelectMapIfEligible(picked.ID))
                     {
+
+                        _configurationManager.SetCVar(CCVars.GameMap, picked.ID);
                         ticker.UpdateInfoText();
                     }
                 }

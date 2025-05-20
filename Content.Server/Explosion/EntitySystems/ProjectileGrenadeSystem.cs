@@ -58,6 +58,14 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
         var grenadeCoord = _transformSystem.GetMapCoordinates(uid);
         var shootCount = 0;
         var totalCount = component.Container.ContainedEntities.Count + component.UnspawnedCount;
+
+        // Check for division by zero
+        if (totalCount <= 0)
+        {
+            Logger.Warning($"ProjectileGrenade {ToPrettyString(uid)} has no projectiles to fragment into");
+            return;
+        }
+
         var segmentAngle = 360 / totalCount;
 
         while (TrySpawnContents(grenadeCoord, component, out var contentUid))
