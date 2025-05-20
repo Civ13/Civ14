@@ -136,70 +136,6 @@
 
 - type: entity
   parent: VendingMachine
-  id: VendingMachineBooze
-  name: Booze-O-Mat
-  description: A technological marvel, supposedly able to mix just the mixture you'd like to drink the moment you ask for one.
-  components:
-    - type: VendingMachine
-      pack: BoozeOMatInventory
-      offState: off
-      brokenState: broken
-      normalState: normal-unshaded
-      denyState: deny-unshaded
-      loopDeny: false
-    - type: Advertise
-      pack: BoozeOMatAds
-    - type: SpeakOnUIClosed
-      pack: BoozeOMatGoodbyes
-    - type: Sprite
-      sprite: Structures/Machines/VendingMachines/boozeomat.rsi
-      layers:
-        - state: "off"
-          map: ["enum.VendingMachineVisualLayers.Base"]
-        - state: "off"
-          map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-          shader: unshaded
-        - state: panel
-          map: ["enum.WiresVisualLayers.MaintenancePanel"]
-    - type: GuideHelp
-      guides:
-        - Drinks
-
-- type: entity
-  parent: VendingMachineBooze
-  id: VendingMachineBoozeSyndicate # syndie booze-o-mat for nukie outpost
-  name: Bruise-O-Mat
-  description: A refurbished Booze-O-Mat for boosting operative morale. An imprint of a blood-red hardsuit is visible on one side, and the paint seems ashed off on the other side.
-  components:
-    - type: VendingMachine
-      pack: BoozeOMatInventory
-      offState: off
-      brokenState: broken
-      normalState: normal-unshaded
-      denyState: deny-unshaded
-      loopDeny: false
-    - type: Advertise
-      pack: BruiseOMatAds
-    - type: SpeakOnUIClosed
-      pack: BruiseOMatGoodbyes
-    - type: Sprite
-      sprite: Structures/Machines/VendingMachines/bruiseomat.rsi
-      layers:
-        - state: "off"
-          map: ["enum.VendingMachineVisualLayers.Base"]
-        - state: "off"
-          map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-          shader: unshaded
-        - state: panel
-          map: ["enum.WiresVisualLayers.MaintenancePanel"]
-    - type: AccessReader
-      access: [["SyndicateAgent"]]
-    - type: GuideHelp
-      guides:
-        - Drinks
-
-- type: entity
-  parent: VendingMachine
   id: VendingMachineCigs
   name: ShadyCigs Deluxe
   description: If you want to get cancer, might as well do it in style.
@@ -348,29 +284,6 @@
 
 - type: entity
   parent: VendingMachineCola
-  id: VendingMachineSpaceUp
-  name: Space-Up! Vendor
-  description: Indulge in an explosion of flavor.
-  components:
-    - type: VendingMachine
-      pack: SpaceUpInventory
-    - type: Sprite
-      sprite: Structures/Machines/VendingMachines/spaceup.rsi
-      layers:
-        - state: "off"
-          map: ["enum.VendingMachineVisualLayers.Base"]
-        - state: "off"
-          map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-          shader: unshaded
-        - state: panel
-          map: ["enum.WiresVisualLayers.MaintenancePanel"]
-    - type: PointLight
-      radius: 1.5
-      energy: 1.6
-      color: "#44964A"
-
-- type: entity
-  parent: VendingMachineCola
   id: VendingMachineSoda
   suffix: Soda
   components:
@@ -392,36 +305,13 @@
       color: "#CBC6BE"
 
 - type: entity
-  parent: VendingMachineCola
-  id: VendingMachineStarkist
-  name: Star-kist Vendor
-  description: The taste of a star in liquid form.
+  parent: VendingMachine
+  id: VendingMachineSnack
+  name: Getmore Chocolate Corp
+  description: A snack machine courtesy of the Getmore Chocolate Corporation, based out of Mars.
   components:
     - type: VendingMachine
-      pack: StarkistInventory
-    - type: Sprite
-      sprite: Structures/Machines/VendingMachines/starkist.rsi
-      layers:
-        - state: "off"
-          map: ["enum.VendingMachineVisualLayers.Base"]
-        - state: "off"
-          map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-          shader: unshaded
-        - state: panel
-          map: ["enum.WiresVisualLayers.MaintenancePanel"]
-    - type: PointLight
-      radius: 1.5
-      energy: 1.6
-      color: "#D3A44D"
-
-- type: entity
-  parent: VendingMachineSnack
-  id: VendingMachineSustenance
-  name: Sustenance Vendor
-  description: A vending machine which vends food, as required by section 47-C of the NT's Prisoner Ethical Treatment Agreement.
-  components:
-    - type: VendingMachine
-      pack: SustenanceInventory
+      pack: GetmoreChocolateCorpInventory
       dispenseOnHitChance: 0.25
       dispenseOnHitThreshold: 2
       offState: off
@@ -429,8 +319,13 @@
       normalState: normal-unshaded
       ejectState: eject-unshaded
       denyState: deny-unshaded
+      initialStockQuality: 0.33
+    - type: Advertise
+      pack: GetmoreChocolateCorpAds
+    - type: SpeakOnUIClosed
+      pack: GetmoreChocolateCorpGoodbyes
     - type: Sprite
-      sprite: Structures/Machines/VendingMachines/sustenance.rsi
+      sprite: Structures/Machines/VendingMachines/snack.rsi
       layers:
         - state: "off"
           map: ["enum.VendingMachineVisualLayers.Base"]
@@ -442,8 +337,7 @@
     - type: PointLight
       radius: 1.5
       energy: 1.6
-      color: "#737785"
-
+      color: "#c73434"
 - type: entity
   parent: VendingMachineSnack
   id: VendingMachineSnackBlue
@@ -558,3 +452,57 @@
       radius: 1.5
       energy: 1.6
       color: "#389690"
+
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineDonut
+  name: Monkin' Donuts
+  description: A donut vendor provided by Robust Industries, LLC.
+  components:
+    - type: VendingMachine
+      pack: DonutInventory
+      dispenseOnHitChance: 0.25
+      dispenseOnHitThreshold: 2
+      offState: off
+      brokenState: broken
+      normalState: normal-unshaded
+      initialStockQuality: 0.33
+    - type: Advertise
+      pack: DonutAds
+    - type: SpeakOnUIClosed
+      pack: DonutGoodbyes
+    - type: Sprite
+      sprite: Structures/Machines/VendingMachines/donut.rsi
+      layers:
+        - state: "off"
+          map: ["enum.VendingMachineVisualLayers.Base"]
+        - state: "off"
+          map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+          shader: unshaded
+        - state: panel
+          map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - type: PointLight
+      radius: 1.5
+      energy: 1.6
+      color: "#d4ab33"
+
+# wallmounted machines
+
+- type: entity
+  id: VendingMachineWallmount
+  parent: VendingMachine
+  name: vending machine
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wallmount
+  components:
+    - type: Sprite
+      drawdepth: WallMountedItems
+      snapCardinals: false
+    - type: Rotatable
+    - type: WallMount
+      arc: 175
+    - type: Transform
+      noRot: false

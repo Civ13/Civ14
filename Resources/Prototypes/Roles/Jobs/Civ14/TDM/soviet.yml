@@ -32,6 +32,7 @@
     outerClothing: civ13_suit_Soviet_officer_coat
     belt: civ13_pistol_TT_33
     head: civ13_head_soviet_officer_cap
+    pocket1: FlashlightLanternMilitary
 
 # Sergeant
 
@@ -70,6 +71,7 @@
     head: civ13_head_soviet_pilotka
     belt: civ13_pistol_TT_33
     pocket1: civ13_magazine_TT_33_magazine_(7.62x25mm)
+    pocket2: FlashlightLanternMilitary
   inhand:
     - civ13_boltaction_Mosin_30
 
@@ -108,7 +110,7 @@
     belt: ClothingWebbingSovietSMG
     #outerClothing: civ13_suit_Soviet_coat
     head: civ13_head_soviet_helmet
-    pocket1: Gauze
+    pocket1: FlashlightLanternMilitary
     pocket2: Gauze
   inhand:
     - civ13_smg_ppsh
@@ -120,7 +122,7 @@
     belt: ClothingWebbingSovietSMG
     #outerClothing: civ13_suit_Soviet_coat_1
     head: civ13_head_soviet_ushanka
-    pocket1: Gauze
+    pocket1: FlashlightLanternMilitary
     pocket2: Gauze
   inhand:
     - civ13_smg_ppsh
@@ -159,7 +161,7 @@
     #outerClothing: civ13_suit_Soviet_coat_1
     head: civ13_head_soviet_helmet
     belt: ClothingWebbingRussianRifleman
-    pocket1: Gauze
+    pocket1: FlashlightLanternMilitary
     pocket2: Gauze
   inhand:
     - civ13_boltaction_Mosin_30
@@ -173,6 +175,8 @@
     belt: ClothingWebbingRussianRifleman
     outerClothing: civ13_suit_Soviet_coat
     head: civ13_head_soviet_ushanka_1
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
   inhand:
     - civ13_boltaction_Mosin_30
 
@@ -264,7 +268,7 @@
     head: civ13_head_soviet_medical_helmet
     belt: ClothingSatchelMedicalMedsFilled
     back: ClothingBackpackDuffelFilled
-    pocket1: CombatKnife
+    pocket1: FlashlightLanternMilitary
     pocket2: civ13_magazine_clip_(7.62x54mm)
   inhand:
     - civ13_boltaction_Mosin_30

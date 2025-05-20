@@ -287,8 +287,7 @@
         - AllAccess
       tags:
         - Borg
-    - type: AccessReader
-      access: [["Command"], ["Research"]]
+
     - type: ShowJobIcons
     - type: InteractionPopup
       interactSuccessSound:
@@ -306,8 +305,7 @@
       tags:
         - NuclearOperative
         - SyndicateAgent
-    - type: AccessReader
-      access: [["SyndicateAgent"], ["NuclearOperative"]]
+
     - type: SiliconLawProvider
       laws: SyndicateStatic
       subverted: true
@@ -342,8 +340,7 @@
       enabled: false
       groups:
         - AllAccess #Randomized access would be fun. AllAccess is the best i can think of right now that does make it too hard for it to enter the station or navigate it..
-    - type: AccessReader
-      access: [["Command"], ["Research"]]
+
     - type: StartIonStormed
       ionStormAmount: 3
     - type: IonStormTarget

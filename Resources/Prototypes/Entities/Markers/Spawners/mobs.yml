@@ -363,20 +363,6 @@
         - MobSpiderShiva
 
 - type: entity
-  name: Willow Spawner
-  id: SpawnMobKangarooWillow
-  parent: MarkerBase
-  components:
-    - type: Sprite
-      layers:
-        - state: green
-        - state: kangaroo
-          sprite: Mobs/Animals/kangaroo.rsi
-    - type: ConditionalSpawner
-      prototypes:
-        - MobKangarooWillow
-
-- type: entity
   name: Space Kangaroo Spawner
   id: SpawnMobKangaroo
   parent: MarkerBase
@@ -389,21 +375,6 @@
     - type: ConditionalSpawner
       prototypes:
         - MobKangarooSpace
-
-- type: entity
-  name: Boxing Kangaroo Spawner
-  id: SpawnMobBoxingKangaroo
-  parent: MarkerBase
-  components:
-    - type: Sprite
-      layers:
-        - state: green
-        - state: kangaroo
-          sprite: Mobs/Animals/kangaroo.rsi
-    - type: ConditionalSpawner
-      prototypes:
-        - MobBoxingKangaroo
-
 - type: entity
   name: Space Spider Spawner
   id: SpawnMobSpaceSpider
@@ -522,20 +493,6 @@
     - type: ConditionalSpawner
       prototypes:
         - MobSlimesPet
-
-- type: entity
-  name: Pun Pun Spawner
-  id: SpawnMobMonkeyPunpun
-  parent: MarkerBase
-  components:
-    - type: Sprite
-      layers:
-        - state: green
-        - state: monkey
-          sprite: Mobs/Animals/monkey.rsi
-    - type: ConditionalSpawner
-      prototypes:
-        - MobMonkeyPunpun
 
 - type: entity
   name: behonker Spawner

@@ -88,9 +88,6 @@
   name: emergency shuttle console
   description: Handles authorization to early launch the shuttle.
   components:
-    - type: AccessReader
-      access:
-        - [Command]
     - type: EmergencyShuttleConsole
     - type: ActivatableUI
       key: enum.EmergencyConsoleUiKey.Key
@@ -380,8 +377,6 @@
       color: "#1f8c28"
     - type: Computer
       board: CriminalRecordsComputerCircuitboard
-    - type: AccessReader
-      access: [["Security"]]
 
 - type: entity
   parent: BaseComputerAiAccess
@@ -482,8 +477,7 @@
       powerLoad: 1000
     - type: Computer
       board: ResearchComputerCircuitboard
-    - type: AccessReader
-      access: [["Research"]]
+
     - type: PointLight
       radius: 1.5
       energy: 1.6
@@ -630,8 +624,7 @@
           state: generic_keys
         - map: ["enum.WiresVisualLayers.MaintenancePanel"]
           state: generic_panel_open
-    - type: AccessReader
-      access: [["Command"]]
+
     - type: CommunicationsConsole
       title: comms-console-announcement-title-station
     - type: DeviceNetwork
@@ -672,8 +665,7 @@
           state: syndie_key
         - map: ["enum.WiresVisualLayers.MaintenancePanel"]
           state: generic_panel_open
-    - type: AccessReader
-      access: [["NuclearOperative"]]
+
     - type: CommunicationsConsole
       title: comms-console-announcement-title-nukie
       color: "#ff0000"
@@ -705,8 +697,7 @@
           state: wizard_key
         - map: ["enum.WiresVisualLayers.MaintenancePanel"]
           state: generic_panel_open
-    - type: AccessReader
-      access: [["Wizard"]]
+
     - type: CommunicationsConsole
       title: comms-console-announcement-title-wizard
       color: "#ff00ff"
@@ -852,8 +843,6 @@
       radius: 1.5
       energy: 1.6
       color: "#b89f25"
-    - type: AccessReader
-      access: [["Cargo"]]
 
 - type: entity
   id: ComputerCargoOrders
@@ -892,8 +881,7 @@
       radius: 1.5
       energy: 1.6
       color: "#b89f25"
-    - type: AccessReader
-      access: [["Cargo"]]
+
     - type: DeviceNetwork
       deviceNetId: Wireless
       receiveFrequencyId: BasicDevice
@@ -1043,8 +1031,7 @@
       board: ComputerMassMediaCircuitboard
     - type: DeviceNetworkRequiresPower
     - type: NewsWriter
-    - type: AccessReader
-      access: [["Service"]]
+
     - type: ActivatableUI
       key: enum.NewsWriterUiKey.Key
     - type: ActivatableUIRequiresVision
@@ -1170,8 +1157,7 @@
       powerLoad: 1000
     - type: Computer
       board: StationAiUploadCircuitboard
-    - type: AccessReader
-      access: [["ResearchDirector"]]
+
     - type: Lock
       unlockOnClick: false
     - type: SiliconLawUpdater

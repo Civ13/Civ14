@@ -33,6 +33,7 @@
     gloves: civ13_gloves_Officer_gloves
     belt: civ13_pistol_Luger_P08
     head: civ13_head_German_officer_cap
+    pocket1: FlashlightLanternMilitary
 
 # Sergeant
 
@@ -71,6 +72,7 @@
     head: civ13_head_German_field_cap
     belt: civ13_pistol_Walther_P38
     pocket1: civ13_magazine_Walther_magazine
+    pocket2: FlashlightLanternMilitary
   inhand:
     - civ13_boltaction_Karabiner_98k
 
@@ -107,7 +109,7 @@
     jumpsuit: civ13_uniform_German_SS_uniform
     head: civ13_head_german_stahlhelm
     belt: ClothingWebbingGermanSMG
-    pocket1: Gauze
+    pocket1: FlashlightLanternMilitary
     pocket2: Gauze
 
   inhand:
@@ -119,7 +121,7 @@
     jumpsuit: civ13_uniform_German_camo_SS_uniform
     head: civ13_head_German_SS_helmet
     belt: ClothingWebbingGermanSMG
-    pocket1: Gauze
+    pocket1: FlashlightLanternMilitary
     pocket2: Gauze
   inhand:
     - civ13_smg_mp40
@@ -157,7 +159,7 @@
     jumpsuit: civ13_uniform_German_SS_uniform
     head: civ13_head_german_stahlhelm
     belt: ClothingWebbingGermanRifleman
-    pocket1: Gauze
+    pocket1: FlashlightLanternMilitary
     pocket2: Gauze
   inhand:
     - civ13_boltaction_Karabiner_98k
@@ -169,7 +171,7 @@
     jumpsuit: civ13_uniform_German_camo_SS_uniform
     head: civ13_head_German_SS_helmet
     belt: ClothingWebbingGermanRifleman
-    pocket1: Gauze
+    pocket1: FlashlightLanternMilitary
     pocket2: Gauze
   inhand:
     - civ13_boltaction_Karabiner_98k
@@ -257,7 +259,7 @@
     head: civ13_head_german_medic_stahlhelm
     belt: ClothingSatchelMedicalMedsFilled
     back: ClothingBackpackDuffelFilled
-    pocket1: CombatKnife
+    pocket1: FlashlightLanternMilitary
     pocket2: civ13_magazine_clip_(7.92x57mm)
   inhand:
     - civ13_boltaction_Karabiner_98k

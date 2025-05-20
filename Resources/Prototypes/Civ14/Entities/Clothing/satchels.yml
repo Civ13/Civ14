@@ -69,20 +69,6 @@
       grid:
         - 0,0,4,1
 
-- type: entity
-  id: ClothingSatchelMedkitFilled
-  parent: ClothingSatchelMedkit
-  name: medical kit
-  description: A medical kit with a variety of medical supplies.
-  suffix: filled
-  components:
-    - type: StorageFill
-      contents:
-        - id: Brutepack
-          amount: 1
-        - id: Gauze
-          amount: 2
-
 # this is actually a backpack
 
 - type: entity

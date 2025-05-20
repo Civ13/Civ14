@@ -13,7 +13,6 @@
           state: icon
     - type: RandomSpawner
       rarePrototypes:
-        - SalvageHumanCorpse
         - CrateMaterialPlasteel
         - CrateMaterialWood
         - CrateMaterialPlastic
@@ -31,8 +30,6 @@
         - CrateServiceBooks
         - CrateServiceSmokeables
         - CrateTrashCartFilled
-        - ClosetMaintenanceFilledRandom
-        - ClosetEmergencyFilledRandom
       rareChance: 0.4
       prototypes:
         - CrateSalvageAssortedGoodies
@@ -51,10 +48,10 @@
           state: icon
     - type: RandomSpawner
       prototypes:
-      - WeaponCrusher
-      - WeaponCrusherDagger
-      - WeaponCrusherGlaive
-      - MiningDrill
+        - WeaponCrusher
+        - WeaponCrusherDagger
+        - WeaponCrusherGlaive
+        - MiningDrill
       offset: 0.0
 
 - type: entity
@@ -70,7 +67,7 @@
           state: icon
     - type: RandomSpawner
       rarePrototypes:
-      - MobSharkSalvage
+        - MobSharkSalvage
       rareChance: 0.2
       prototypes:
         - MobCarpSalvage
@@ -106,79 +103,79 @@
   id: SpawnMobBearSalvage
   parent: MarkerBase
   components:
-  - type: Sprite
-    layers:
-    - state: green
-    - state: bear
-      sprite: Mobs/Animals/bear.rsi
-  - type: ConditionalSpawner
-    prototypes:
-    - MobBearSpaceSalvage
+    - type: Sprite
+      layers:
+        - state: green
+        - state: bear
+          sprite: Mobs/Animals/bear.rsi
+    - type: ConditionalSpawner
+      prototypes:
+        - MobBearSpaceSalvage
 
 - type: entity
   id: SalvageMobSpawner75
   parent: SalvageMobSpawner
   suffix: 75
   components:
-  - type: RandomSpawner
-    rarePrototypes:
-    - MobSharkSalvage
-    rareChance: 0.2
-    prototypes:
-    - MobCarpSalvage
-    - MobCarpSalvage
-    - MobCarpSalvage
-    - MobCarpSalvage
-    - MobCarpSalvage
-    - MobTickSalvage
-    - MobTickSalvage
-    - MobTickSalvage
-    - PlushieCarp
-    - DehydratedSpaceCarp
-    chance: 0.75
-    offset: 0.2
+    - type: RandomSpawner
+      rarePrototypes:
+        - MobSharkSalvage
+      rareChance: 0.2
+      prototypes:
+        - MobCarpSalvage
+        - MobCarpSalvage
+        - MobCarpSalvage
+        - MobCarpSalvage
+        - MobCarpSalvage
+        - MobTickSalvage
+        - MobTickSalvage
+        - MobTickSalvage
+        - PlushieCarp
+        - DehydratedSpaceCarp
+      chance: 0.75
+      offset: 0.2
 
 - type: entity
   name: Salvage Space Kangaroo Spawner
   id: SpawnMobKangarooSalvage
   parent: MarkerBase
   components:
-  - type: Sprite
-    layers:
-    - state: green
-    - state: kangaroo-space
-      sprite: Mobs/Animals/kangaroo.rsi
-  - type: ConditionalSpawner
-    prototypes:
-    - MobKangarooSpaceSalvage
+    - type: Sprite
+      layers:
+        - state: green
+        - state: kangaroo-space
+          sprite: Mobs/Animals/kangaroo.rsi
+    - type: ConditionalSpawner
+      prototypes:
+        - MobKangarooSpaceSalvage
 
 - type: entity
   name: Salvage Space Spider Spawner
   id: SpawnMobSpiderSalvage
   parent: MarkerBase
   components:
-  - type: Sprite
-    layers:
-    - state: green
-    - state: spacespider
-      sprite: Mobs/Animals/spacespider.rsi
-  - type: ConditionalSpawner
-    prototypes:
-    - MobSpiderSpaceSalvage
+    - type: Sprite
+      layers:
+        - state: green
+        - state: spacespider
+          sprite: Mobs/Animals/spacespider.rsi
+    - type: ConditionalSpawner
+      prototypes:
+        - MobSpiderSpaceSalvage
 
 - type: entity
   name: Salvage Space Cobra Spawner
   id: SpawnMobCobraSalvage
   parent: MarkerBase
   components:
-  - type: Sprite
-    layers:
-      - state: green
-      - state: spacecobra
-        sprite: Mobs/Animals/spacecobra.rsi
-  - type: ConditionalSpawner
-    prototypes:
-    - MobCobraSpaceSalvage
+    - type: Sprite
+      layers:
+        - state: green
+        - state: spacecobra
+          sprite: Mobs/Animals/spacecobra.rsi
+    - type: ConditionalSpawner
+      prototypes:
+        - MobCobraSpaceSalvage
 
 - type: entity
   name: Salvage Flesh Spawner
@@ -193,15 +190,15 @@
           state: jared
     - type: RandomSpawner
       rarePrototypes:
-      - MobSharkSalvage
+        - MobSharkSalvage
       rareChance: 0
       prototypes:
-      - MobFleshJaredSalvage
-      - MobFleshGolemSalvage
-      - MobFleshGolemSalvage
-      - MobFleshClampSalvage
-      - MobFleshClampSalvage
-      - MobFleshLoverSalvage
-      - MobFleshLoverSalvage
+        - MobFleshJaredSalvage
+        - MobFleshGolemSalvage
+        - MobFleshGolemSalvage
+        - MobFleshClampSalvage
+        - MobFleshClampSalvage
+        - MobFleshLoverSalvage
+        - MobFleshLoverSalvage
       chance: 1
       offset: 0.2

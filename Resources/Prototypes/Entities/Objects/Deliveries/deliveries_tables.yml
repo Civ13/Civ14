@@ -139,14 +139,9 @@
       - !type:NestedSelector
         tableId: MaintWeaponTable
         weight: 0.1
-      # Syndie Loot
-      - !type:NestedSelector
-        tableId: SyndieMaintLoot
-        weight: 0.1
 
 - type: entityTable # TODO: Add more variety!
   id: PackageRareEntityTable
   table: !type:GroupSelector
     children:
-      - id: MedkitAdvancedFilled
       - id: PipeBomb

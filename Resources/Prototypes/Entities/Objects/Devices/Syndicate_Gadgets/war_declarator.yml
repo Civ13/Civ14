@@ -22,5 +22,3 @@
           type: WarDeclaratorBoundUserInterface
     - type: WarDeclarator
       message: war-declarator-default-message
-    - type: AccessReader
-      access: [["NuclearOperative"]]

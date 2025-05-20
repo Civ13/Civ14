@@ -78,13 +78,6 @@
         key_slots:
           - EncryptionKeyCommon
 
-          - EncryptionKeyEngineering
-          - EncryptionKeyMedical
-          - EncryptionKeyScience
-          - EncryptionKeySecurity
-          - EncryptionKeyService
-          - EncryptionKeyCommand
-
 - type: entity
   parent: TelecomServer
   id: TelecomServerFilledCommon
@@ -97,22 +90,13 @@
 
 - type: entity
   parent: TelecomServer
-  id: TelecomServerFilledCargo
-  suffix: Cargo
-  components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-
-- type: entity
-  parent: TelecomServer
   id: TelecomServerFilledEngineering
   suffix: Engineering
   components:
     - type: ContainerFill
       containers:
         key_slots:
-          - EncryptionKeyEngineering
+          - EncryptionKeyCommon
 
 - type: entity
   parent: TelecomServer
@@ -122,7 +106,7 @@
     - type: ContainerFill
       containers:
         key_slots:
-          - EncryptionKeyMedical
+          - EncryptionKeyCommon
 
 - type: entity
   parent: TelecomServer
@@ -132,7 +116,7 @@
     - type: ContainerFill
       containers:
         key_slots:
-          - EncryptionKeyScience
+          - EncryptionKeyCommon
 
 - type: entity
   parent: TelecomServer
@@ -142,7 +126,7 @@
     - type: ContainerFill
       containers:
         key_slots:
-          - EncryptionKeySecurity
+          - EncryptionKeyCommon
 
 - type: entity
   parent: TelecomServer
@@ -152,7 +136,7 @@
     - type: ContainerFill
       containers:
         key_slots:
-          - EncryptionKeyService
+          - EncryptionKeyCommon
 
 - type: entity
   parent: TelecomServer
@@ -162,4 +146,4 @@
     - type: ContainerFill
       containers:
         key_slots:
-          - EncryptionKeyCommand
+          - EncryptionKeyCommon
