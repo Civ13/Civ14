@@ -204,7 +204,7 @@
       sprite: Clothing/Head/Hats/bowler_hat.rsi
 
 - type: entity
-  parent: [ClothingHeadBase, BaseCommandContraband]
+  parent: [ClothingHeadBase]
   id: ClothingHeadHatCaptain
   name: captain's hardhat
   description: It's good being the king.
@@ -235,7 +235,7 @@
     - type: IngestionBlocker
 
 - type: entity
-  parent: [ClothingHeadBase, BaseCentcommContraband]
+  parent: [ClothingHeadBase]
   id: ClothingHeadHatCentcom
   name: CentComm brand hat
   description: "It's good to be the emperor."
@@ -314,7 +314,7 @@
       sprite: Clothing/Head/Hats/fez.rsi
 
 - type: entity
-  parent: [ClothingHeadBase, BaseCommandContraband]
+  parent: [ClothingHeadBase]
   id: ClothingHeadHatHopcap
   name: head of personnel's cap
   description: A grand, stylish head of personnel's cap.
@@ -330,7 +330,7 @@
         - WhitelistChameleon
 
 - type: entity
-  parent: [ClothingHeadBase, BaseCommandContraband]
+  parent: [ClothingHeadBase]
   id: ClothingHeadHatHoshat
   name: head of security cap
   description: The robust standard-issue cap of the Head of Security. For showing the officers who's in charge.
@@ -544,8 +544,6 @@
       sprite: Clothing/Head/Hats/warden.rsi
     - type: Clothing
       sprite: Clothing/Head/Hats/warden.rsi
-    - type: StealTarget
-      stealGroup: ClothingHeadHatWarden
 
 - type: entity
   parent: ClothingHeadBase
@@ -579,7 +577,7 @@
 
 - type: entity
   abstract: true
-  parent: [ClothingHeadBase, BaseMagicalContraband]
+  parent: [ClothingHeadBase]
   id: ClothingHeadHatWizardBase
   components:
     - type: WizardClothes
@@ -623,7 +621,7 @@
       sprite: Clothing/Head/Hats/truckershat.rsi
 
 - type: entity
-  parent: [ClothingHeadBase, BaseSyndicateContraband]
+  parent: [ClothingHeadBase]
   id: ClothingHeadPyjamaSyndicateBlack
   name: syndicate black pyjama hat
   description: For keeping that traitor head of yours warm.
@@ -634,7 +632,7 @@
       sprite: Clothing/Head/Hats/pyjamasyndicateblack.rsi
 
 - type: entity
-  parent: [ClothingHeadBase, BaseSyndicateContraband]
+  parent: [ClothingHeadBase]
   id: ClothingHeadPyjamaSyndicatePink
   name: syndicate pink pyjama hat
   description: For keeping that traitor head of yours warm.
@@ -645,7 +643,7 @@
       sprite: Clothing/Head/Hats/pyjamasyndicatepink.rsi
 
 - type: entity
-  parent: [ClothingHeadBase, BaseSyndicateContraband]
+  parent: [ClothingHeadBase]
   id: ClothingHeadPyjamaSyndicateRed
   name: syndicate red pyjama hat
   description: For keeping that traitor head of yours warm.
@@ -749,7 +747,7 @@
       sprite: Clothing/Head/Hats/jester2.rsi
 
 - type: entity
-  parent: [ClothingHeadBase, BaseCommandContraband]
+  parent: [ClothingHeadBase]
   id: ClothingHeadHatBeretCmo
   name: chief medical officer's beret
   description: Turquoise beret with a cross on the front. The sight of it calms you down and makes it clear that you will be cured.
@@ -806,7 +804,7 @@
           Caustic: 0.95
 
 - type: entity
-  parent: [ClothingHeadBase, BaseSyndicateContraband]
+  parent: [ClothingHeadBase]
   id: ClothingHeadHatSyndie
   name: syndicate hat
   description: A souvenir hat from "Syndieland", their production has already been closed.
@@ -908,7 +906,7 @@
     - type: BlockMovement
 
 - type: entity
-  parent: [ClothingHeadBase, BaseCentcommContraband]
+  parent: [ClothingHeadBase]
   id: ClothingHeadHatCentcomcap
   name: CentComm cap
   description: An extravagant, fancy Central Commander cap.

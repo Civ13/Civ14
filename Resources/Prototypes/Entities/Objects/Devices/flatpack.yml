@@ -66,9 +66,6 @@
     - type: StaticPrice
       price: 500
 
-    - type: StealTarget
-      stealGroup: AmePartFlatpack
-
 - type: entity
   parent: BaseFlatpack
   id: SingularityGeneratorFlatpack

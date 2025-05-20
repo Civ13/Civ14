@@ -1,15 +1,15 @@
 - type: entity
   name: hot potato
   description: Once activated, you can't drop this time bomb - hit someone else with it to save yourself! Don't burn your hands!
-  parent: [BaseItem, BaseSyndicateContraband]
+  parent: [BaseItem]
   id: HotPotato
   components:
     - type: Sprite
       sprite: Objects/Weapons/Bombs/hot_potato.rsi
       state: icon
       layers:
-      - state: icon
-        map: ["base"]
+        - state: icon
+          map: ["base"]
     - type: Item
       sprite: Objects/Weapons/Bombs/hot_potato.rsi
       size: Small
@@ -52,21 +52,21 @@
 
 - type: entity
   id: HotPotatoEffect
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-  - type: TimedDespawn
-    lifetime: 0.6
-  - type: Sprite
-    noRot: true
-    drawdepth: Effects
-    sprite: Effects/chemsmoke.rsi
-    state: chemsmoke
-    scale: "0.15, 0.15"
-  - type: EffectVisuals
-  - type: Tag
-    tags:
-      - HideContextMenu
-  - type: AnimationPlayer
+    - type: TimedDespawn
+      lifetime: 0.6
+    - type: Sprite
+      noRot: true
+      drawdepth: Effects
+      sprite: Effects/chemsmoke.rsi
+      state: chemsmoke
+      scale: "0.15, 0.15"
+    - type: EffectVisuals
+    - type: Tag
+      tags:
+        - HideContextMenu
+    - type: AnimationPlayer
 
 - type: entity
   name: banana peel
@@ -74,33 +74,32 @@
   parent: TrashBananaPeel
   id: TrashBananaPeelExplosive
   components:
-  - type: Sprite
-    sprite: Objects/Specific/Hydroponics/banana.rsi
-    layers:
-    - state: peel
-    - state: primed
-      shader: unshaded
-  - type: TriggerOnSlip
-  - type: ExplodeOnTrigger
-  - type: Explosive
-    explosionType: Default
-    maxIntensity: 3.4
-    intensitySlope: 3
-    totalIntensity: 20
-    canCreateVacuum: false
-  - type: DeleteOnTrigger
-  - type: AnimationPlayer
-  - type: Damageable
-    damageContainer: Inorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 10
-      behaviors:
-      - !type:TriggerBehavior
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/banana.rsi
+      layers:
+        - state: peel
+        - state: primed
+          shader: unshaded
+    - type: TriggerOnSlip
+    - type: ExplodeOnTrigger
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 3.4
+      intensitySlope: 3
+      totalIntensity: 20
+      canCreateVacuum: false
+    - type: DeleteOnTrigger
+    - type: AnimationPlayer
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 10
+          behaviors:
+            - !type:TriggerBehavior
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   parent: BaseItem
@@ -109,14 +108,14 @@
   suffix: Unarmed
   description: There's something unusual about this banana.
   components:
-  - type: Sprite
-    sprite: Objects/Specific/Hydroponics/banana.rsi
-    state: produce
-  - type: SpawnItemsOnUse
-    items:
-    - id: TrashBananaPeelExplosive
-    sound:
-      path: /Audio/Effects/unwrap.ogg
-  - type: Tag
-    tags:
-    - Banana
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/banana.rsi
+      state: produce
+    - type: SpawnItemsOnUse
+      items:
+        - id: TrashBananaPeelExplosive
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+    - type: Tag
+      tags:
+        - Banana

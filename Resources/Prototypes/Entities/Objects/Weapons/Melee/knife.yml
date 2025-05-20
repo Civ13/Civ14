@@ -93,7 +93,7 @@
 
 - type: entity
   name: combat knife
-  parent: [BaseKnife, BaseSecurityContraband]
+  parent: [BaseKnife]
   id: CombatKnife
   description: A deadly knife intended for melee confrontations.
   components:
@@ -321,7 +321,7 @@
 
 - type: entity
   name: throwing knife
-  parent: [BaseKnife, BaseSyndicateContraband]
+  parent: [BaseKnife]
   id: ThrowingKnife
   description: This blood-red knife is very aerodynamic and easy to throw, but good luck trying to fight someone hand-to-hand.
   components:

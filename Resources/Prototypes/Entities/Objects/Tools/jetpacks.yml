@@ -1,22 +1,22 @@
 - type: entity
   id: JetpackEffect
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-  - type: TimedDespawn
-    lifetime: 2
-  - type: Sprite
-    drawdepth: SmallMobs
-    noRot: true
-    layers:
-    - shader: unshaded
-      map: ["enum.EffectLayers.Unshaded"]
-      sprite: Effects/atmospherics.rsi
-      state: frezon_old
-  - type: EffectVisuals
-  - type: Tag
-    tags:
-      - HideContextMenu
-  - type: AnimationPlayer
+    - type: TimedDespawn
+      lifetime: 2
+    - type: Sprite
+      drawdepth: SmallMobs
+      noRot: true
+      layers:
+        - shader: unshaded
+          map: ["enum.EffectLayers.Unshaded"]
+          sprite: Effects/atmospherics.rsi
+          state: frezon_old
+    - type: EffectVisuals
+    - type: Tag
+      tags:
+        - HideContextMenu
+    - type: AnimationPlayer
 
 - type: entity
   parent: GasTankBase
@@ -63,29 +63,29 @@
   name: Toggle jetpack
   description: Toggles the jetpack, giving you movement outside the station.
   components:
-  - type: InstantAction
-    icon:
-      sprite: Objects/Tanks/Jetpacks/blue.rsi
-      state: icon
-    iconOn:
-      sprite: Objects/Tanks/Jetpacks/blue.rsi
-      state: icon-on
-    useDelay: 1.0
-    event: !type:ToggleJetpackEvent
+    - type: InstantAction
+      icon:
+        sprite: Objects/Tanks/Jetpacks/blue.rsi
+        state: icon
+      iconOn:
+        sprite: Objects/Tanks/Jetpacks/blue.rsi
+        state: icon-on
+      useDelay: 1.0
+      event: !type:ToggleJetpackEvent #Empty blue
 
-#Empty blue
+
 - type: entity
   id: JetpackBlue
   parent: BaseJetpack
   name: jetpack
   suffix: Empty
   components:
-  - type: Sprite
-    sprite: Objects/Tanks/Jetpacks/blue.rsi
-  - type: Clothing
-    sprite: Objects/Tanks/Jetpacks/blue.rsi
-    slots:
-      - Back
+    - type: Sprite
+      sprite: Objects/Tanks/Jetpacks/blue.rsi
+    - type: Clothing
+      sprite: Objects/Tanks/Jetpacks/blue.rsi
+      slots:
+        - Back
 
 # Filled blue
 - type: entity
@@ -94,31 +94,31 @@
   name: jetpack
   suffix: Filled
   components:
-  - type: GasTank
-    outputPressure: 42.6
-    air:
-      # 13 minutes of thrust
-      volume: 5
-      temperature: 293.15
-      moles:
-        - 1.025689525 # oxygen
-        - 1.025689525 # nitrogen
+    - type: GasTank
+      outputPressure: 42.6
+      air:
+        # 13 minutes of thrust
+        volume: 5
+        temperature: 293.15
+        moles:
+          - 1.025689525 # oxygen
+          - 1.025689525 # nitrogen
 
 #Empty black
 - type: entity
   id: JetpackBlack
-  parent: [BaseJetpack, BaseSyndicateContraband]
+  parent: [BaseJetpack]
   name: jetpack
   suffix: Empty
   components:
-  - type: Item
-    sprite: Objects/Tanks/Jetpacks/black.rsi
-  - type: Sprite
-    sprite: Objects/Tanks/Jetpacks/black.rsi
-  - type: Clothing
-    sprite: Objects/Tanks/Jetpacks/black.rsi
-    slots:
-      - Back
+    - type: Item
+      sprite: Objects/Tanks/Jetpacks/black.rsi
+    - type: Sprite
+      sprite: Objects/Tanks/Jetpacks/black.rsi
+    - type: Clothing
+      sprite: Objects/Tanks/Jetpacks/black.rsi
+      slots:
+        - Back
 
 # Filled black
 - type: entity
@@ -127,38 +127,36 @@
   name: jetpack
   suffix: Filled
   components:
-  - type: GasTank
-    outputPressure: 42.6
-    air:
-      # 13 minutes of thrust
-      volume: 5
-      temperature: 293.15
-      moles:
-        - 1.025689525 # oxygen
-        - 1.025689525 # nitrogen
+    - type: GasTank
+      outputPressure: 42.6
+      air:
+        # 13 minutes of thrust
+        volume: 5
+        temperature: 293.15
+        moles:
+          - 1.025689525 # oxygen
+          - 1.025689525 # nitrogen
 
 #Empty captain
 - type: entity
   id: JetpackCaptain
-  parent: [BaseJetpack, BaseGrandTheftContraband]
+  parent: [BaseJetpack]
   name: captain's jetpack
   suffix: Empty
   components:
-  - type: Sprite
-    sprite: Objects/Tanks/Jetpacks/captain.rsi
-  - type: Clothing
-    sprite: Objects/Tanks/Jetpacks/captain.rsi
-    slots:
-      - Back
-      - SuitStorage
-  - type: Item
-    sprite: Objects/Tanks/Jetpacks/captain.rsi
-    size: Normal
-  - type: Tag
-    tags:
-    - HighRiskItem
-  - type: StealTarget
-    stealGroup: JetpackCaptainFilled
+    - type: Sprite
+      sprite: Objects/Tanks/Jetpacks/captain.rsi
+    - type: Clothing
+      sprite: Objects/Tanks/Jetpacks/captain.rsi
+      slots:
+        - Back
+        - SuitStorage
+    - type: Item
+      sprite: Objects/Tanks/Jetpacks/captain.rsi
+      size: Normal
+    - type: Tag
+      tags:
+        - HighRiskItem
 
 # Filled captain
 - type: entity
@@ -167,15 +165,15 @@
   name: captain's jetpack
   suffix: Filled
   components:
-  - type: GasTank
-    outputPressure: 42.6
-    air:
-      # 13 minutes of thrust
-      volume: 5
-      temperature: 293.15
-      moles:
-        - 1.025689525 # oxygen
-        - 1.025689525 # nitrogen
+    - type: GasTank
+      outputPressure: 42.6
+      air:
+        # 13 minutes of thrust
+        volume: 5
+        temperature: 293.15
+        moles:
+          - 1.025689525 # oxygen
+          - 1.025689525 # nitrogen
 
 #Empty mini
 - type: entity
@@ -207,31 +205,31 @@
   name: mini jetpack
   suffix: Filled
   components:
-  - type: GasTank
-    outputPressure: 42.6
-    air:
-      # 4 minutes of thrust
-      volume: 1.5
-      temperature: 293.15
-      moles:
-        - 0.307706858 # oxygen
-        - 0.307706858 # nitrogen
+    - type: GasTank
+      outputPressure: 42.6
+      air:
+        # 4 minutes of thrust
+        volume: 1.5
+        temperature: 293.15
+        moles:
+          - 0.307706858 # oxygen
+          - 0.307706858 # nitrogen
 
 #Empty security
 - type: entity
   id: JetpackSecurity
-  parent: [BaseJetpack, BaseSecurityContraband]
+  parent: [BaseJetpack]
   name: security jetpack
   suffix: Empty
   components:
-  - type: Item
-    sprite: Objects/Tanks/Jetpacks/security.rsi
-  - type: Sprite
-    sprite: Objects/Tanks/Jetpacks/security.rsi
-  - type: Clothing
-    sprite: Objects/Tanks/Jetpacks/security.rsi
-    slots:
-      - Back
+    - type: Item
+      sprite: Objects/Tanks/Jetpacks/security.rsi
+    - type: Sprite
+      sprite: Objects/Tanks/Jetpacks/security.rsi
+    - type: Clothing
+      sprite: Objects/Tanks/Jetpacks/security.rsi
+      slots:
+        - Back
 
 #Filled security
 - type: entity
@@ -240,15 +238,15 @@
   name: security jetpack
   suffix: Filled
   components:
-  - type: GasTank
-    outputPressure: 42.6
-    air:
-      # 13 minutes thrust
-      volume: 5
-      temperature: 293.15
-      moles:
-        - 1.025689525 # oxygen
-        - 1.025689525 # nitrogen
+    - type: GasTank
+      outputPressure: 42.6
+      air:
+        # 13 minutes thrust
+        volume: 5
+        temperature: 293.15
+        moles:
+          - 1.025689525 # oxygen
+          - 1.025689525 # nitrogen
 
 #Empty void
 - type: entity
@@ -257,16 +255,16 @@
   name: void jetpack
   suffix: Empty
   components:
-  - type: Item
-    sprite: Objects/Tanks/Jetpacks/void.rsi
-  - type: Sprite
-    sprite: Objects/Tanks/Jetpacks/void.rsi
-  - type: Clothing
-    sprite: Objects/Tanks/Jetpacks/void.rsi
-    slots:
-      - Back
-      - suitStorage
-      - Belt
+    - type: Item
+      sprite: Objects/Tanks/Jetpacks/void.rsi
+    - type: Sprite
+      sprite: Objects/Tanks/Jetpacks/void.rsi
+    - type: Clothing
+      sprite: Objects/Tanks/Jetpacks/void.rsi
+      slots:
+        - Back
+        - suitStorage
+        - Belt
 
 # Filled void
 - type: entity
@@ -275,12 +273,12 @@
   name: void jetpack
   suffix: Filled
   components:
-  - type: GasTank
-    outputPressure: 42.6
-    air:
-      # 13 minutes of thrust
-      volume: 5
-      temperature: 293.15
-      moles:
-        - 1.025689525 # oxygen
-        - 1.025689525 # nitrogen
+    - type: GasTank
+      outputPressure: 42.6
+      air:
+        # 13 minutes of thrust
+        volume: 5
+        temperature: 293.15
+        moles:
+          - 1.025689525 # oxygen
+          - 1.025689525 # nitrogen

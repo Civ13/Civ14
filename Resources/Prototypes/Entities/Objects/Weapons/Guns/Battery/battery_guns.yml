@@ -107,7 +107,7 @@
 
 - type: entity
   name: svalinn laser pistol
-  parent: [BaseWeaponPowerCellSmall, BaseSecurityContraband]
+  parent: [BaseWeaponPowerCellSmall]
   id: WeaponLaserSvalinn
   description: A cheap and widely used laser pistol.
   components:
@@ -239,7 +239,7 @@
 
 - type: entity
   name: laser rifle
-  parent: [WeaponLaserCarbinePractice, BaseGunWieldable, BaseSecurityContraband]
+  parent: [WeaponLaserCarbinePractice, BaseGunWieldable]
   id: WeaponLaserCarbine
   description: Favoured by Nanotrasen Security for being cheap and easy to use.
   components:
@@ -285,7 +285,7 @@
 
 - type: entity
   name: pulse carbine
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseCentcommContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable]
   id: WeaponPulseCarbine
   description: A high tech energy carbine favoured by the NT-ERT operatives.
   components:
@@ -353,7 +353,7 @@
 
 - type: entity
   name: laser cannon
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable]
   id: WeaponLaserCannon
   description: A heavy duty, high powered laser weapon.
   components:
@@ -415,7 +415,7 @@
 
 - type: entity
   name: x-ray cannon
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable]
   id: WeaponXrayCannon
   description: An experimental weapon that uses concentrated x-ray energy against its target.
   components:
@@ -506,7 +506,7 @@
 
 - type: entity
   name: disabler SMG
-  parent: [BaseWeaponBattery, BaseSecurityContraband]
+  parent: [BaseWeaponBattery]
   id: WeaponDisablerSMG
   description: Advanced weapon that exhausts organic targets, weakening them until they collapse.
   components:
@@ -546,7 +546,7 @@
 
 - type: entity
   name: taser
-  parent: [BaseWeaponBatterySmall, BaseSecurityContraband]
+  parent: [BaseWeaponBatterySmall]
   id: WeaponTaser
   description: A low-capacity, energy-based stun gun used by security teams to subdue targets at range.
   components:
@@ -582,7 +582,7 @@
 
 - type: entity
   name: antique laser pistol
-  parent: [BaseWeaponBatterySmall, BaseGrandTheftContraband]
+  parent: [BaseWeaponBatterySmall]
   id: WeaponAntiqueLaser
   description: This is an antique laser pistol. All craftsmanship is of the highest quality. It is decorated with a mahogany grip and chrome filigree. The object menaces with spikes of energy. On the item is an image of a captain and a clown. The clown is dead. The captain is striking a heroic pose.
   components:
@@ -617,8 +617,7 @@
         - WeaponAntiqueLaser
     - type: StaticPrice
       price: 750
-    - type: StealTarget
-      stealGroup: WeaponAntiqueLaser
+
     - type: SentienceTarget # I hope this is only the captain's gun
       flavorKind: station-event-random-sentience-flavor-inanimate
       weight: 0.0002 # 5,000 times less likely than 1 regular animal
@@ -626,7 +625,7 @@
 
 - type: entity
   name: advanced laser pistol
-  parent: [BaseWeaponBatterySmall, BaseSecurityContraband]
+  parent: [BaseWeaponBatterySmall]
   id: WeaponAdvancedLaser
   description: An experimental high-energy laser pistol with a self-charging nuclear battery.
   components:
@@ -709,7 +708,7 @@
 
 - type: entity
   name: experimental C.H.I.M.P. handcannon
-  parent: [WeaponPistolCHIMP, BaseSyndicateContraband]
+  parent: [WeaponPistolCHIMP]
   id: WeaponPistolCHIMPUpgraded
   description: This C.H.I.M.P. seems to have a greater punch than is usual...
   components:
@@ -752,7 +751,7 @@
 
 - type: entity
   name: energy shotgun
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseGrandTheftContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable]
   id: WeaponEnergyShotgun
   description: A one-of-a-kind prototype energy weapon that uses various shotgun configurations. It offers the possibility of both lethal and non-lethal shots, making it a versatile weapon.
   components:
@@ -797,8 +796,7 @@
     - type: Tag
       tags:
         - HighRiskItem
-    - type: StealTarget
-      stealGroup: WeaponEnergyShotgun
+
     - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
     - type: Battery
       maxCharge: 1200

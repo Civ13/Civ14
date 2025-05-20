@@ -31,7 +31,7 @@
         - state: lantern-on
           shader: unshaded
           visible: false
-          map: [ "light" ]
+          map: ["light"]
     - type: Item
       sprite: Objects/Tools/lantern.rsi
       heldPrefix: off
@@ -53,8 +53,6 @@
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot {}
-    - type: StealTarget
-      stealGroup: LAMP
     - type: Clothing
       sprite: Objects/Tools/lantern.rsi
       equippedPrefix: off
@@ -63,7 +61,7 @@
         - Belt
     - type: Tag
       tags:
-      - Flashlight
+        - Flashlight
 
 - type: entity
   parent: Lantern
@@ -73,15 +71,15 @@
     - type: Sprite
       sprite: Objects/Tools/lantern.rsi
       layers:
-      - state: lantern
-        map: [ "enum.FlashVisuals.BaseLayer" ]
-      - state: lantern-on
-        shader: unshaded
-        visible: false
-        map: [ "light" ]
-      - state: flashing
-        map: [ "enum.FlashVisuals.LightLayer" ]
-        visible: false
+        - state: lantern
+          map: ["enum.FlashVisuals.BaseLayer"]
+        - state: lantern-on
+          shader: unshaded
+          visible: false
+          map: ["light"]
+        - state: flashing
+          map: ["enum.FlashVisuals.LightLayer"]
+          visible: false
     - type: PointLight
       radius: 5
       energy: 10
@@ -98,8 +96,8 @@
       visuals:
         enum.FlashVisuals.Burnt:
           enum.FlashVisuals.BaseLayer:
-            True: {state: burnt}
+            True: { state: burnt }
         enum.FlashVisuals.Flashing:
           enum.FlashVisuals.LightLayer:
-            True: {visible: true}
-            False: {visible: false}
+            True: { visible: true }
+            False: { visible: false }

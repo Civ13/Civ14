@@ -467,8 +467,6 @@
         - Chemistry
     - type: Machine
       board: MedicalTechFabCircuitboard
-    - type: StealTarget
-      stealGroup: MedicalTechFabCircuitboard
 
 - type: entity
   parent: BaseLathe

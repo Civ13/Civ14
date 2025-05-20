@@ -10,16 +10,16 @@
     - type: ItemSlots
     - type: ContainerContainer
       containers:
-        implanter_slot: !type:ContainerSlot { }
+        implanter_slot: !type:ContainerSlot {}
     - type: Implanter
       whitelist:
         components:
-        - Body # no chair microbomb
+          - Body # no chair microbomb
       blacklist:
         components:
-        - Guardian # no holoparasite macrobomb wombo combo
+          - Guardian # no holoparasite macrobomb wombo combo
         tags:
-        - Unimplantable
+          - Unimplantable
       currentMode: Draw
       implanterSlot:
         name: Implant
@@ -30,23 +30,23 @@
             - SubdermalImplant
       allowDeimplantAll: false
       deimplantWhitelist:
-      - SadTromboneImplant
-      - LightImplant
-      - BikeHornImplant
-      - TrackingImplant
-      - StorageImplant
-      - FreedomImplant
-      - UplinkImplant
-      - EmpImplant
-      - ScramImplant
-      - DnaScramblerImplant
-      - MicroBombImplant
-      - MacroBombImplant
-      - DeathAcidifierImplant
-      - DeathRattleImplant
-      - MindShieldImplant
-      - FakeMindShieldImplant
-      - RadioImplant
+        - SadTromboneImplant
+        - LightImplant
+        - BikeHornImplant
+        - TrackingImplant
+        - StorageImplant
+        - FreedomImplant
+        - UplinkImplant
+        - EmpImplant
+        - ScramImplant
+        - DnaScramblerImplant
+        - MicroBombImplant
+        - MacroBombImplant
+        - DeathAcidifierImplant
+        - DeathRattleImplant
+        - MindShieldImplant
+        - FakeMindShieldImplant
+        - RadioImplant
       deimplantFailureDamage:
         types:
           Cellular: 50
@@ -56,10 +56,10 @@
       state: implanter0
       layers:
         - state: implanter0
-          map: [ "implantOnly" ]
+          map: ["implantOnly"]
           visible: true
         - state: implanter1
-          map: [ "implantFull" ]
+          map: ["implantFull"]
           visible: false
     - type: Item
       sprite: Objects/Specific/Medical/implanter.rsi
@@ -70,12 +70,12 @@
       visuals:
         enum.ImplanterVisuals.Full:
           implantFull:
-            True: {visible: true}
-            False: {visible: false}
+            True: { visible: true }
+            False: { visible: false }
         enum.ImplanterImplantOnlyVisuals.ImplantOnly:
           implantOnly:
-            True: {state: broken}
-            False: {state: implanter0}
+            True: { state: broken }
+            False: { state: implanter0 }
     - type: UserInterface
       interfaces:
         enum.DeimplantUiKey.Key:
@@ -95,12 +95,12 @@
   id: ImplanterAdmeme
   suffix: Admeme
   components:
-  - type: Implanter
-    # go wild with sentient chairs with macrobombs
-    whitelist: null
-    blacklist: null
-    implantTime: 5
-    drawTime: 5
+    - type: Implanter
+      # go wild with sentient chairs with macrobombs
+      whitelist: null
+      blacklist: null
+      implantTime: 5
+      drawTime: 5
 
 - type: entity
   id: BaseImplantOnlyImplanter
@@ -113,17 +113,17 @@
       state: implanter0
       layers:
         - state: implanter1
-          map: [ "implantFull" ]
+          map: ["implantFull"]
           visible: true
         - state: implanter0
-          map: [ "implantOnly" ]
+          map: ["implantOnly"]
     - type: Implanter
       currentMode: Inject
       implantOnly: true
 
 - type: entity
   id: BaseImplantOnlyImplanterSyndi
-  parent: [BaseImplantOnlyImplanter, BaseSyndicateContraband]
+  parent: [BaseImplantOnlyImplanter]
   name: syndicate implanter
   description: A compact disposable syringe exclusively designed for the injection of subdermal implants.
   abstract: true
@@ -136,20 +136,20 @@
       state: implanter1
       layers:
         - state: implanter0
-          map: [ "implantFull" ]
+          map: ["implantFull"]
           visible: true
         - state: implanter1
-          map: [ "implantOnly" ]
+          map: ["implantOnly"]
     - type: GenericVisualizer
       visuals:
         enum.ImplanterVisuals.Full:
           implantFull:
-            True: {visible: true}
-            False: {visible: false}
+            True: { visible: true }
+            False: { visible: false }
         enum.ImplanterImplantOnlyVisuals.ImplantOnly:
           implantOnly:
-            True: {state: broken}
-            False: {state: implanter1}
+            True: { state: broken }
+            False: { state: implanter1 }
     - type: Tag
       tags: []
 
@@ -212,16 +212,16 @@
   suffix: radio Syndicate
   parent: BaseImplantOnlyImplanterSyndi
   components:
-  - type: Implanter
-    implant: RadioImplant
+    - type: Implanter
+      implant: RadioImplant
 
 - type: entity
   id: UplinkImplanter
   suffix: uplink
   parent: BaseImplantOnlyImplanterSyndi
   components:
-  - type: Implanter
-    implant: UplinkImplant
+    - type: Implanter
+      implant: UplinkImplant
 
 - type: entity
   id: EmpImplanter
@@ -278,16 +278,16 @@
   suffix: death acidifier
   parent: BaseImplantOnlyImplanterSyndi
   components:
-  - type: Implanter
-    implant: DeathAcidifierImplant
+    - type: Implanter
+      implant: DeathAcidifierImplant
 
 - type: entity
   id: FakeMindShieldImplanter
   suffix: fake mindshield
   parent: BaseImplantOnlyImplanterSyndi
   components:
-  - type: Implanter
-    implant: FakeMindShieldImplant
+    - type: Implanter
+      implant: FakeMindShieldImplant
 
 # Security and Command implanters
 
@@ -306,5 +306,5 @@
   suffix: radio Centcomm
   parent: BaseImplantOnlyImplanter
   components:
-  - type: Implanter
-    implant: RadioImplantCentcomm
+    - type: Implanter
+      implant: RadioImplantCentcomm

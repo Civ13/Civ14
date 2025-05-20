@@ -82,7 +82,7 @@
 
 - type: entity
   name: Inspector
-  parent: [BaseWeaponRevolver, BaseSecurityContraband]
+  parent: [BaseWeaponRevolver]
   id: WeaponRevolverInspector
   description: A detective's best friend. Uses .45 magnum ammo.
   components:
@@ -120,7 +120,7 @@
 
 - type: entity
   name: Python
-  parent: [BaseWeaponRevolver, BaseSyndicateContraband]
+  parent: [BaseWeaponRevolver]
   id: WeaponRevolverPython
   description: A robust revolver favoured by Syndicate agents. Uses .45 magnum ammo.
   components:

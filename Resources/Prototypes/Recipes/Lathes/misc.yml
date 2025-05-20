@@ -74,15 +74,6 @@
   result: Flare
 
 - type: latheRecipe
-  parent: BaseLightRecipe
-  id: FlashlightLantern
-  result: EmptyFlashlightLantern
-  materials:
-    Steel: 100
-    Glass: 100
-    Plastic: 100
-
-- type: latheRecipe
   parent: BaseToolRecipe
   id: FireExtinguisher
   result: FireExtinguisher
