@@ -205,11 +205,9 @@ namespace Content.Client.Construction.UI
             }
 
             var mapUid = _mapManager.GetMapEntityId(mapId);
-            _sawmill.Info($"Map UID: {mapUid}, Id: {mapId}");
 
             if (_entManager.TryGetComponent(mapUid, out CivResearchComponent? component))
             {
-                _sawmill.Info($"Res level: {component.ResearchLevel}");
                 var newval = (int)MathF.Floor(component.ResearchLevel / 100);
                 if (newval > currentAge)
                 {
@@ -220,7 +218,6 @@ namespace Content.Client.Construction.UI
 
             if (component != null)
             {
-                _sawmill.Info("Checking maptype...");
                 if (component.IsTDM)
                 {
                     isTDM = true;
