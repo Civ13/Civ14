@@ -28,7 +28,7 @@ namespace Content.Client.Access.UI
         private string? _lastJobProto;
 
         // The job that will be picked if the ID doesn't have a job on the station.
-        private static ProtoId<JobPrototype> _defaultJob = "Passenger";
+        private static ProtoId<JobPrototype> _defaultJob = "Nomad";
 
         public IdCardConsoleWindow(IdCardConsoleBoundUserInterface owner, IPrototypeManager prototypeManager,
             List<ProtoId<AccessLevelPrototype>> accessLevels)
