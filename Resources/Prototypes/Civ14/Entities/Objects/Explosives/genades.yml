@@ -8,12 +8,12 @@
       explosionType: Default
       maxIntensity: 5
       intensitySlope: 2
-      totalIntensity: 40 # about a ~4 tile radius
+      totalIntensity: 30 # about a ~4 tile radius
       canCreateVacuum: false
     - type: OnUseTimerTrigger
     - type: ProjectileGrenade
       fillPrototype: PelletClusterLethal
-      capacity: 30
+      capacity: 15
     - type: ContainerContainer
       containers:
         cluster-payload: !type:Container
@@ -24,7 +24,7 @@
     - type: Sprite
       sprite: Civ14/Objects/grenade.rsi
       layers:
-        - state: stgnade
+        - state: stgnade_active #because the unprimed is an overlay
           map: ["enum.TriggerVisualLayers.Base"]
     - type: GenericVisualizer
       visuals:
@@ -51,12 +51,12 @@
       explosionType: Default
       maxIntensity: 5
       intensitySlope: 2
-      totalIntensity: 40 # about a ~4 tile radius
+      totalIntensity: 30 # about a ~4 tile radius
       canCreateVacuum: false
     - type: OnUseTimerTrigger
     - type: ProjectileGrenade
       fillPrototype: PelletClusterLethal
-      capacity: 30
+      capacity: 15
     - type: ContainerContainer
       containers:
         cluster-payload: !type:Container
@@ -67,7 +67,7 @@
     - type: Sprite
       sprite: Civ14/Objects/grenade.rsi
       layers:
-        - state: f1
+        - state: f1_active #because the unprimed is an overlay
           map: ["enum.TriggerVisualLayers.Base"]
     - type: GenericVisualizer
       visuals:
@@ -83,3 +83,41 @@
             - !type:TriggerBehavior
             - !type:DoActsBehavior
               acts: ["Destruction"]
+
+# smoke
+
+- type: entity
+  parent: SmokeGrenade
+  id: SmokeGrenadeRGD2
+  name: RGD-2 smoke grenade
+  description: A tactical grenade that releases a large, long-lasting cloud of smoke when used.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/grenade.rsi
+      layers:
+        - state: rgd2_yellow_active #because the unprimed is an overlay
+          map: ["enum.TriggerVisualLayers.Base"]
+    - type: GenericVisualizer
+      visuals:
+        enum.Trigger.TriggerVisuals.VisualState:
+          enum.ConstructionVisuals.Layer:
+            Primed: { state: rgd2_yellow_active }
+            Unprimed: { state: rgd2_yellow }
+
+- type: entity
+  parent: SmokeGrenade
+  id: SmokeGrenadeNHG39
+  name: Nebelhandgranate 39 smoke grenade
+  description: A tactical grenade that releases a large, long-lasting cloud of smoke when used.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/grenade.rsi
+      layers:
+        - state: smoke_grenade_active #because the unprimed is an overlay
+          map: ["enum.TriggerVisualLayers.Base"]
+    - type: GenericVisualizer
+      visuals:
+        enum.Trigger.TriggerVisuals.VisualState:
+          enum.ConstructionVisuals.Layer:
+            Primed: { state: smoke_grenade_active }
+            Unprimed: { state: smoke_grenade }

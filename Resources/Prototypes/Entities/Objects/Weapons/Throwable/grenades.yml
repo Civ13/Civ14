@@ -382,7 +382,7 @@
         path: /Audio/Effects/hallelujah.ogg
 
 - type: entity
-  parent: [GrenadeBase, BaseSecurityContraband]
+  parent: GrenadeBase
   id: SmokeGrenade
   name: smoke grenade
   description: A tactical grenade that releases a large, long-lasting cloud of smoke when used.
