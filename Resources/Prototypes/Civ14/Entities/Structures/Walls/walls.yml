@@ -796,27 +796,27 @@
 
 - type: entity
   parent: BaseWall
-  id: CementWallIndestructible
-  name: cement wall
-  description: A modern, sturdy cement wall.
+  id: ConcreteWallIndestructible
+  name: concrete wall
+  description: A modern, sturdy concrete wall.
   suffix: indestructible
   components:
     - type: Tag
       tags:
         - Wall
     - type: Sprite
-      sprite: Civ14/Structures/Walls/cement_wall.rsi
+      sprite: Civ14/Structures/Walls/concrete.rsi
     - type: Icon
-      sprite: Civ14/Structures/Walls/cement_wall.rsi
+      sprite: Civ14/Structures/Walls/concrete.rsi
     - type: IconSmooth
       key: walls
-      base: cement_wall
+      base: concrete
 
 - type: entity
-  parent: CementWallIndestructible
-  id: CementWall
-  name: cement wall
-  description: A modern, sturdy cement wall.
+  parent: ConcreteWallIndestructible
+  id: ConcreteWall
+  name: concrete wall
+  description: A modern, sturdy concrete wall.
   components:
     - type: Destructible
       thresholds:
@@ -828,7 +828,7 @@
 
 - type: entity
   parent: BaseWall
-  id: NewBrickWallIndestructible
+  id: OldBrickWallIndestructible
   name: brick wall
   description: A classic red brick wall.
   suffix: indestructible
@@ -837,16 +837,16 @@
       tags:
         - Wall
     - type: Sprite
-      sprite: Civ14/Structures/Walls/new_brick.rsi
+      sprite: Civ14/Structures/Walls/old_brick.rsi
     - type: Icon
-      sprite: Civ14/Structures/Walls/new_brick.rsi
+      sprite: Civ14/Structures/Walls/old_brick.rsi
     - type: IconSmooth
       key: walls
-      base: new_brick
+      base: old_brick
 
 - type: entity
-  parent: NewBrickWallIndestructible
-  id: NewBrickWall
+  parent: OldBrickWallIndestructible
+  id: OldBrickWall
   name: brick wall
   description: A classic red brick wall.
   components:
