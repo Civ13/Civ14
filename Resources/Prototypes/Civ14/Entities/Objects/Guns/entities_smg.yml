@@ -83,7 +83,7 @@
     - type: Gun # Original minAngle: 52, maxAngle: 70
       projectileSpeed: 18
       minAngle: 12
-      maxAngle: 30
+      maxAngle: 40
       angleIncrease: 3.5
       angleDecay: 17.5
       fireRate: 4
@@ -172,8 +172,8 @@
       sprite: Civ14/Weapons/Guns/ppsh.rsi
     - type: Gun
       projectileSpeed: 18 # Original minAngle: 65, maxAngle: 110
-      minAngle: 25
-      maxAngle: 70
+      minAngle: 10
+      maxAngle: 50
       angleIncrease: 3
       angleDecay: 10
       fireRate: 5

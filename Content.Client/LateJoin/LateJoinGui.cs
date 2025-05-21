@@ -218,7 +218,6 @@ namespace Content.Client.LateJoin
                         if (faction.Key == departmentName)
                         {
                             currentFactionPlayers = faction.Value;
-                            break;
                         }
                     }
                     if (currentFactionPlayers > 0)
