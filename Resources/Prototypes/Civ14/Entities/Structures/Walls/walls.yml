@@ -162,6 +162,7 @@
   id: LogWall
   name: log wall
   description: A wall made of stacked hardwood logs. For that rustic feel.
+  suffix: ""
   components:
     - type: Damageable
       damageContainer: StructuralInorganic
@@ -262,6 +263,7 @@
   id: StoneBlockWall
   name: stone block wall
   description: An ancient wall made of stacked stone blocks.
+  suffix: ""
   components:
     - type: Destructible
       thresholds:
@@ -469,6 +471,7 @@
   id: SandstoneBlockWall
   name: sandstone block wall
   description: An ancient wall made of stacked sandstone blocks.
+  suffix: ""
   components:
     - type: Destructible
       thresholds:
@@ -753,47 +756,6 @@
       key: walls
       base: nordic
 
-# stone walls
-- type: entity
-  parent: BaseWall
-  id: StoneBlockWallIndestructible
-  name: stone block wall
-  description: An ancient wall made of stacked stone blocks.
-  suffix: indestructible
-  components:
-    - type: Tag
-      tags:
-        - Wall
-    - type: Sprite
-      sprite: Civ14/Structures/Walls/stone_block_wall.rsi
-    - type: Icon
-      sprite: Civ14/Structures/Walls/stone_block_wall.rsi
-    - type: IconSmooth
-      key: walls
-      base: stone_block_wall
-
-- type: entity
-  parent: StoneBlockWallIndestructible
-  id: StoneBlockWall
-  name: stone block wall
-  description: An ancient wall made of stacked stone blocks.
-  components:
-    - type: Destructible
-      thresholds:
-        - trigger: !type:DamageTrigger
-            damage: 300
-          behaviors:
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
-    - type: Construction
-      agemin: 0
-      agemax: 8
-      graph: StoneBlockWall
-      node: end
-      cost: 6
-      time: 8
-      material: Stone
-
 - type: entity
   parent: BaseWall
   id: ConcreteWallIndestructible
@@ -810,13 +772,14 @@
       sprite: Civ14/Structures/Walls/concrete.rsi
     - type: IconSmooth
       key: walls
-      base: concrete
+      base: concrete_wall
 
 - type: entity
   parent: ConcreteWallIndestructible
   id: ConcreteWall
   name: concrete wall
   description: A modern, sturdy concrete wall.
+  suffix: ""
   components:
     - type: Destructible
       thresholds:
@@ -842,13 +805,14 @@
       sprite: Civ14/Structures/Walls/old_brick.rsi
     - type: IconSmooth
       key: walls
-      base: old_brick
+      base: new_brick
 
 - type: entity
   parent: OldBrickWallIndestructible
   id: OldBrickWall
   name: brick wall
   description: A classic red brick wall.
+  suffix: ""
   components:
     - type: Destructible
       thresholds:
