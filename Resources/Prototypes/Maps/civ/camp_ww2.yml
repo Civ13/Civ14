@@ -16,15 +16,16 @@
           availableJobs:
             # German
             GermanCaptain: [1, 1]
-            GermanSergeant: [2, 5]
-            GermanSubmachineGunner: [5, 20]
-            GermanRifleman: [20, 50]
-            GermanMachinegunner: [5, 20]
-            GermanMedic: [1, 3]
+            GermanSergeant: [4, 4]
+            GermanSubmachineGunner: [10, 10]
+            GermanRifleman: [40, 40]
+            GermanMachinegunner: [5, 5]
+            GermanMedic: [3, 3]
+
             # Soviet
             SovietCaptain: [1, 1]
-            SovietSergeant: [2, 5]
-            SovietSubmachineGunner: [5, 20]
-            SovietRifleman: [20, 50]
-            SovietMachinegunner: [5, 20]
-            SovietMedic: [1, 3]
+            SovietSergeant: [4, 4]
+            SovietSubmachineGunner: [10, 10]
+            SovietRifleman: [40, 40]
+            SovietMachinegunner: [5, 5]
+            SovietMedic: [3, 3]

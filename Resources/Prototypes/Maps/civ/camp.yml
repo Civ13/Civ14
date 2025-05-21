@@ -16,16 +16,16 @@
           availableJobs:
             # English
             EnglishLord: [1, 1]
-            EnglishKnight: [2, 5]
-            EnglishSwordsman: [5, 20]
-            EnglishSpearman: [20, 50]
-            EnglishRanged: [5, 20]
-            EnglishMedic: [1, 3]
+            EnglishKnight: [5, 5]
+            EnglishSwordsman: [20, 20]
+            EnglishSpearman: [50, 50]
+            EnglishRanged: [20, 20]
+            EnglishMedic: [3, 3]
 
             # French
             FrenchLord: [1, 1]
-            FrenchKnight: [2, 5]
-            FrenchSwordsman: [5, 20]
-            FrenchSpearman: [20, 50]
-            FrenchRanged: [5, 20]
-            FrenchMedic: [1, 3]
+            FrenchKnight: [5, 5]
+            FrenchSwordsman: [20, 20]
+            FrenchSpearman: [50, 50]
+            FrenchRanged: [20, 20]
+            FrenchMedic: [3, 3]
