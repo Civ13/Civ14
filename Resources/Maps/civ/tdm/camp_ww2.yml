@@ -4,8 +4,8 @@ meta:
   engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/20/2025 22:19:05
-  entityCount: 3990
+  time: 05/21/2025 14:13:33
+  entityCount: 3959
 maps:
 - 1
 grids:
@@ -3185,164 +3185,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 73.50877,23.728542
       parent: 2
-- proto: civ13_magazine_clip_(7.62x54mm)
-  entities:
-  - uid: 3981
-    components:
-    - type: Transform
-      pos: 36.55528,43.318863
-      parent: 2
-  - uid: 3982
-    components:
-    - type: Transform
-      pos: 36.52403,43.318863
-      parent: 2
-  - uid: 3983
-    components:
-    - type: Transform
-      pos: 36.52403,43.318863
-      parent: 2
-  - uid: 3984
-    components:
-    - type: Transform
-      pos: 36.52403,43.318863
-      parent: 2
-  - uid: 3985
-    components:
-    - type: Transform
-      pos: 36.52403,43.318863
-      parent: 2
-  - uid: 3986
-    components:
-    - type: Transform
-      pos: 36.52403,43.318863
-      parent: 2
-  - uid: 3987
-    components:
-    - type: Transform
-      pos: 36.52403,43.318863
-      parent: 2
-  - uid: 3988
-    components:
-    - type: Transform
-      pos: 36.52403,43.318863
-      parent: 2
-  - uid: 3989
-    components:
-    - type: Transform
-      pos: 36.52403,43.318863
-      parent: 2
-  - uid: 3990
-    components:
-    - type: Transform
-      pos: 36.52403,43.318863
-      parent: 2
-- proto: civ13_magazine_clip_(7.92x57mm)
-  entities:
-  - uid: 3964
-    components:
-    - type: Transform
-      pos: 113.54649,40.365738
-      parent: 2
-  - uid: 3965
-    components:
-    - type: Transform
-      pos: 113.48399,40.396988
-      parent: 2
-  - uid: 3966
-    components:
-    - type: Transform
-      pos: 113.48399,40.396988
-      parent: 2
-  - uid: 3967
-    components:
-    - type: Transform
-      pos: 113.48399,40.396988
-      parent: 2
-  - uid: 3968
-    components:
-    - type: Transform
-      pos: 113.48399,40.396988
-      parent: 2
-  - uid: 3969
-    components:
-    - type: Transform
-      pos: 113.48399,40.396988
-      parent: 2
-  - uid: 3970
-    components:
-    - type: Transform
-      pos: 113.48399,40.396988
-      parent: 2
-  - uid: 3971
-    components:
-    - type: Transform
-      pos: 113.48399,40.396988
-      parent: 2
-  - uid: 3972
-    components:
-    - type: Transform
-      pos: 113.48399,40.396988
-      parent: 2
-  - uid: 3973
-    components:
-    - type: Transform
-      pos: 113.48399,40.396988
-      parent: 2
-- proto: civ13_magazine_mp40_(9x19mm)
-  entities:
-  - uid: 3957
-    components:
-    - type: Transform
-      pos: 113.60899,43.213223
-      parent: 2
-  - uid: 3960
-    components:
-    - type: Transform
-      pos: 113.46837,43.338223
-      parent: 2
-  - uid: 3961
-    components:
-    - type: Transform
-      pos: 113.32774,43.463223
-      parent: 2
-  - uid: 3962
-    components:
-    - type: Transform
-      pos: 113.32774,43.463223
-      parent: 2
-  - uid: 3963
-    components:
-    - type: Transform
-      pos: 113.32774,43.463223
-      parent: 2
-- proto: civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
-  entities:
-  - uid: 3976
-    components:
-    - type: Transform
-      pos: 37.539654,43.475113
-      parent: 2
-  - uid: 3977
-    components:
-    - type: Transform
-      pos: 37.539654,43.459488
-      parent: 2
-  - uid: 3978
-    components:
-    - type: Transform
-      pos: 37.539654,43.459488
-      parent: 2
-  - uid: 3979
-    components:
-    - type: Transform
-      pos: 37.539654,43.459488
-      parent: 2
-  - uid: 3980
-    components:
-    - type: Transform
-      pos: 37.539654,43.459488
-      parent: 2
 - proto: civ13_sword_longsword
   entities:
   - uid: 3875
@@ -3397,11 +3239,6 @@ entities:
       parent: 2
 - proto: CrateWood
   entities:
-  - uid: 2206
-    components:
-    - type: Transform
-      pos: 113.5,40.5
-      parent: 2
   - uid: 3413
     components:
     - type: Transform
@@ -3411,33 +3248,6 @@ entities:
     components:
     - type: Transform
       pos: 89.5,32.5
-      parent: 2
-  - uid: 3837
-    components:
-    - type: Transform
-      pos: 113.5,43.5
-      parent: 2
-  - uid: 3974
-    components:
-    - type: Transform
-      pos: 36.5,43.5
-      parent: 2
-  - uid: 3975
-    components:
-    - type: Transform
-      pos: 37.5,43.5
-      parent: 2
-- proto: CrateWoodArrows
-  entities:
-  - uid: 3835
-    components:
-    - type: Transform
-      pos: 36.5,37.5
-      parent: 2
-  - uid: 3836
-    components:
-    - type: Transform
-      pos: 36.5,38.5
       parent: 2
 - proto: CrateWoodBarbedwire
   entities:
@@ -3471,6 +3281,13 @@ entities:
     - type: Transform
       pos: 114.5,37.5
       parent: 2
+- proto: CrateWoodDPAmmo
+  entities:
+  - uid: 2206
+    components:
+    - type: Transform
+      pos: 36.5,44.5
+      parent: 2
 - proto: CrateWoodenGrave
   entities:
   - uid: 3415
@@ -3487,6 +3304,41 @@ entities:
     components:
     - type: Transform
       pos: 86.5,48.5
+      parent: 2
+- proto: CrateWoodMauserAmmo
+  entities:
+  - uid: 3836
+    components:
+    - type: Transform
+      pos: 112.5,40.5
+      parent: 2
+- proto: CrateWoodMG34Ammo
+  entities:
+  - uid: 3835
+    components:
+    - type: Transform
+      pos: 113.5,44.5
+      parent: 2
+- proto: CrateWoodMosinAmmo
+  entities:
+  - uid: 3957
+    components:
+    - type: Transform
+      pos: 37.5,43.5
+      parent: 2
+- proto: CrateWoodMP40Ammo
+  entities:
+  - uid: 3837
+    components:
+    - type: Transform
+      pos: 113.5,40.5
+      parent: 2
+- proto: CrateWoodPPShAmmo
+  entities:
+  - uid: 2072
+    components:
+    - type: Transform
+      pos: 36.5,43.5
       parent: 2
 - proto: CrateWoodSandbags
   entities:
@@ -4320,11 +4172,6 @@ entities:
       parent: 2
 - proto: FloorRoad
   entities:
-  - uid: 2072
-    components:
-    - type: Transform
-      pos: 36.5,42.5
-      parent: 2
   - uid: 2073
     components:
     - type: Transform

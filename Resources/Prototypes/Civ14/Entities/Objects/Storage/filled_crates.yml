@@ -8,3 +8,102 @@
       contents:
         - id: ArrowIron
           amount: 12
+
+- type: entity
+  parent: CrateWood
+  id: CrateWoodRollerbeds
+  name: rollerbed crate
+  suffix: rollerbeds
+  components:
+    - type: StorageFill
+      contents:
+        - id: CheapRollerBedSpawnFolded
+          amount: 5
+
+- type: entity
+  parent: CrateWood
+  id: CrateWoodBarbedwire
+  name: barbed wire crate
+  suffix: barbed wire
+  components:
+    - type: StorageFill
+      contents:
+        - id: MaterialBarbwire5
+          amount: 5
+
+- type: entity
+  parent: CrateWood
+  id: CrateWoodSandbags
+  name: sandbag crate
+  suffix: sandbags
+  components:
+    - type: StorageFill
+      contents:
+        - id: MaterialSandbags1
+          amount: 10
+
+- type: entity
+  parent: CrateWood
+  id: CrateWoodPPShAmmo
+  name: PPSh ammo crate
+  suffix: PPSh
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
+          amount: 6
+
+- type: entity
+  parent: CrateWood
+  id: CrateWoodMP40Ammo
+  name: MP40 ammo crate
+  suffix: MP40
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_mp40_(9x19mm)
+          amount: 10
+
+- type: entity
+  parent: CrateWood
+  id: CrateWoodMosinAmmo
+  name: Mosin ammo crate
+  suffix: 7.62x54mm
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_clip_(7.62x54mm)
+          amount: 15
+
+- type: entity
+  parent: CrateWood
+  id: CrateWoodMauserAmmo
+  name: Mauser ammo crate
+  suffix: 7.92x57mm
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_clip_(7.92x57mm)
+          amount: 15
+
+- type: entity
+  parent: CrateWood
+  id: CrateWoodDPAmmo
+  name: DP ammo crate
+  suffix: DP
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_DP_pan_(7.62x54mmR)
+          amount: 10
+
+- type: entity
+  parent: CrateWood
+  id: CrateWoodMG34Ammo
+  name: MG34 ammo crate
+  suffix: MG34
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_MG34_magazine_(7.92x57mm)
+          amount: 6

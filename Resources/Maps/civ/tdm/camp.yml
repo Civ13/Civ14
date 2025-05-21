@@ -4,8 +4,8 @@ meta:
   engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/08/2025 22:41:19
-  entityCount: 3876
+  time: 05/21/2025 13:53:28
+  entityCount: 3935
 maps:
 - 1
 grids:
@@ -39,10 +39,10 @@ entities:
     - type: Broadphase
     - type: OccluderTree
     - type: CivResearch
-      researchLevel: 200
+      isTDM: True
       maxResearch: 200
-      researchEnabled: false
-      isTDM: true
+      researchLevel: 200
+      researchEnabled: False
   - uid: 2
     components:
     - type: MetaData
@@ -50,6 +50,7 @@ entities:
     - type: Transform
       parent: 1
     - type: Weather
+      weather: {}
     - type: MapGrid
       chunks:
         1,0:
@@ -3222,6 +3223,93 @@ entities:
     - type: Transform
       pos: 41.5,43.5
       parent: 2
+- proto: ComfreyHealingHerbs
+  entities:
+  - uid: 3891
+    components:
+    - type: Transform
+      pos: 113.49095,46.686123
+      parent: 2
+  - uid: 3892
+    components:
+    - type: Transform
+      pos: 113.55345,46.545498
+      parent: 2
+  - uid: 3893
+    components:
+    - type: Transform
+      pos: 113.66283,46.420498
+      parent: 2
+  - uid: 3894
+    components:
+    - type: Transform
+      pos: 113.66283,46.420498
+      parent: 2
+  - uid: 3895
+    components:
+    - type: Transform
+      pos: 113.66283,46.467373
+      parent: 2
+  - uid: 3896
+    components:
+    - type: Transform
+      pos: 113.66283,46.576748
+      parent: 2
+  - uid: 3897
+    components:
+    - type: Transform
+      pos: 113.66283,46.654873
+      parent: 2
+  - uid: 3898
+    components:
+    - type: Transform
+      pos: 113.66283,46.654873
+      parent: 2
+  - uid: 3927
+    components:
+    - type: Transform
+      pos: 36.454014,35.55306
+      parent: 2
+  - uid: 3928
+    components:
+    - type: Transform
+      pos: 36.454014,35.39681
+      parent: 2
+  - uid: 3929
+    components:
+    - type: Transform
+      pos: 36.56339,35.39681
+      parent: 2
+  - uid: 3930
+    components:
+    - type: Transform
+      pos: 36.610264,35.74056
+      parent: 2
+  - uid: 3931
+    components:
+    - type: Transform
+      pos: 36.610264,35.74056
+      parent: 2
+  - uid: 3932
+    components:
+    - type: Transform
+      pos: 36.610264,35.70931
+      parent: 2
+  - uid: 3933
+    components:
+    - type: Transform
+      pos: 36.610264,35.58431
+      parent: 2
+  - uid: 3934
+    components:
+    - type: Transform
+      pos: 36.610264,35.58431
+      parent: 2
+  - uid: 3935
+    components:
+    - type: Transform
+      pos: 36.610264,35.58431
+      parent: 2
 - proto: ComfyChair
   entities:
   - uid: 2881
@@ -3581,6 +3669,93 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 58.605053,30.586407
+      parent: 2
+- proto: ElderflowerHealingHerbs
+  entities:
+  - uid: 3899
+    components:
+    - type: Transform
+      pos: 114.53783,46.545498
+      parent: 2
+  - uid: 3900
+    components:
+    - type: Transform
+      pos: 114.53783,46.529873
+      parent: 2
+  - uid: 3901
+    components:
+    - type: Transform
+      pos: 114.53783,46.498623
+      parent: 2
+  - uid: 3902
+    components:
+    - type: Transform
+      pos: 114.53783,46.498623
+      parent: 2
+  - uid: 3903
+    components:
+    - type: Transform
+      pos: 114.53783,46.498623
+      parent: 2
+  - uid: 3904
+    components:
+    - type: Transform
+      pos: 114.53783,46.498623
+      parent: 2
+  - uid: 3905
+    components:
+    - type: Transform
+      pos: 114.53783,46.498623
+      parent: 2
+  - uid: 3906
+    components:
+    - type: Transform
+      pos: 114.61595,46.529873
+      parent: 2
+  - uid: 3907
+    components:
+    - type: Transform
+      pos: 114.61595,46.529873
+      parent: 2
+  - uid: 3908
+    components:
+    - type: Transform
+      pos: 38.547764,35.52181
+      parent: 2
+  - uid: 3909
+    components:
+    - type: Transform
+      pos: 38.547764,35.52181
+      parent: 2
+  - uid: 3910
+    components:
+    - type: Transform
+      pos: 38.547764,35.52181
+      parent: 2
+  - uid: 3911
+    components:
+    - type: Transform
+      pos: 38.547764,35.52181
+      parent: 2
+  - uid: 3912
+    components:
+    - type: Transform
+      pos: 38.547764,35.52181
+      parent: 2
+  - uid: 3913
+    components:
+    - type: Transform
+      pos: 38.547764,35.52181
+      parent: 2
+  - uid: 3914
+    components:
+    - type: Transform
+      pos: 38.547764,35.52181
+      parent: 2
+  - uid: 3915
+    components:
+    - type: Transform
+      pos: 38.547764,35.52181
       parent: 2
 - proto: FenceWoodClassic
   entities:
@@ -11631,6 +11806,36 @@ entities:
     - type: Transform
       pos: 88.5,34.5
       parent: 2
+  - uid: 3877
+    components:
+    - type: Transform
+      pos: 36.5,35.5
+      parent: 2
+  - uid: 3878
+    components:
+    - type: Transform
+      pos: 37.5,35.5
+      parent: 2
+  - uid: 3879
+    components:
+    - type: Transform
+      pos: 38.5,35.5
+      parent: 2
+  - uid: 3880
+    components:
+    - type: Transform
+      pos: 112.5,46.5
+      parent: 2
+  - uid: 3881
+    components:
+    - type: Transform
+      pos: 113.5,46.5
+      parent: 2
+  - uid: 3882
+    components:
+    - type: Transform
+      pos: 114.5,46.5
+      parent: 2
 - proto: TreeMed
   entities:
   - uid: 2919
@@ -12463,11 +12668,6 @@ entities:
     components:
     - type: Transform
       pos: 48,47
-      parent: 2
-  - uid: 2255
-    components:
-    - type: Transform
-      pos: 114,47
       parent: 2
   - uid: 2256
     components:
@@ -22104,5 +22304,107 @@ entities:
     components:
     - type: Transform
       pos: 89.5,35.5
+      parent: 2
+- proto: YarrowHealingHerbs
+  entities:
+  - uid: 2255
+    components:
+    - type: Transform
+      pos: 112.36595,46.576748
+      parent: 2
+  - uid: 3883
+    components:
+    - type: Transform
+      pos: 112.3972,46.826748
+      parent: 2
+  - uid: 3884
+    components:
+    - type: Transform
+      pos: 112.55345,46.748623
+      parent: 2
+  - uid: 3885
+    components:
+    - type: Transform
+      pos: 112.8347,46.639248
+      parent: 2
+  - uid: 3886
+    components:
+    - type: Transform
+      pos: 112.63158,46.639248
+      parent: 2
+  - uid: 3887
+    components:
+    - type: Transform
+      pos: 112.35033,46.639248
+      parent: 2
+  - uid: 3888
+    components:
+    - type: Transform
+      pos: 112.30345,46.639248
+      parent: 2
+  - uid: 3889
+    components:
+    - type: Transform
+      pos: 112.44408,46.701748
+      parent: 2
+  - uid: 3890
+    components:
+    - type: Transform
+      pos: 112.44408,46.701748
+      parent: 2
+  - uid: 3916
+    components:
+    - type: Transform
+      pos: 37.485264,35.67806
+      parent: 2
+  - uid: 3917
+    components:
+    - type: Transform
+      pos: 37.485264,35.67806
+      parent: 2
+  - uid: 3918
+    components:
+    - type: Transform
+      pos: 37.65714,35.849934
+      parent: 2
+  - uid: 3919
+    components:
+    - type: Transform
+      pos: 37.829014,35.83431
+      parent: 2
+  - uid: 3920
+    components:
+    - type: Transform
+      pos: 37.860264,35.70931
+      parent: 2
+  - uid: 3921
+    components:
+    - type: Transform
+      pos: 37.735264,35.537434
+      parent: 2
+  - uid: 3922
+    components:
+    - type: Transform
+      pos: 37.53214,35.52181
+      parent: 2
+  - uid: 3923
+    components:
+    - type: Transform
+      pos: 37.53214,35.52181
+      parent: 2
+  - uid: 3924
+    components:
+    - type: Transform
+      pos: 37.56339,35.631184
+      parent: 2
+  - uid: 3925
+    components:
+    - type: Transform
+      pos: 37.56339,35.693684
+      parent: 2
+  - uid: 3926
+    components:
+    - type: Transform
+      pos: 37.56339,35.693684
       parent: 2
 ...
