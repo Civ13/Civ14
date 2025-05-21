@@ -4,8 +4,8 @@ meta:
   engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/21/2025 21:17:00
-  entityCount: 1033
+  time: 05/21/2025 21:19:17
+  entityCount: 1050
 maps:
 - 1
 grids:
@@ -2598,6 +2598,36 @@ entities:
       parent: 2
 - proto: CrateWoodBarbedwire
   entities:
+  - uid: 132
+    components:
+    - type: Transform
+      pos: 65.5,19.5
+      parent: 2
+  - uid: 133
+    components:
+    - type: Transform
+      pos: 66.5,19.5
+      parent: 2
+  - uid: 134
+    components:
+    - type: Transform
+      pos: 64.5,19.5
+      parent: 2
+  - uid: 196
+    components:
+    - type: Transform
+      pos: -18.5,19.5
+      parent: 2
+  - uid: 197
+    components:
+    - type: Transform
+      pos: -17.5,19.5
+      parent: 2
+  - uid: 198
+    components:
+    - type: Transform
+      pos: -16.5,19.5
+      parent: 2
   - uid: 1140
     components:
     - type: Transform
@@ -2613,20 +2643,77 @@ entities:
     - type: Transform
       pos: -30.5,17.5
       parent: 2
-  - uid: 1143
+- proto: CrateWoodDPAmmo
+  entities:
+  - uid: 190
     components:
     - type: Transform
-      pos: 77.5,18.5
+      pos: 74.5,19.5
       parent: 2
-  - uid: 1144
+  - uid: 191
     components:
     - type: Transform
-      pos: 77.5,17.5
+      pos: 73.5,19.5
       parent: 2
-  - uid: 1207
+- proto: CrateWoodMauserAmmo
+  entities:
+  - uid: 203
     components:
     - type: Transform
-      pos: 77.5,19.5
+      pos: -25.5,22.5
+      parent: 2
+  - uid: 204
+    components:
+    - type: Transform
+      pos: -26.5,22.5
+      parent: 2
+- proto: CrateWoodMG34Ammo
+  entities:
+  - uid: 201
+    components:
+    - type: Transform
+      pos: -25.5,23.5
+      parent: 2
+  - uid: 202
+    components:
+    - type: Transform
+      pos: -26.5,23.5
+      parent: 2
+- proto: CrateWoodMosinAmmo
+  entities:
+  - uid: 188
+    components:
+    - type: Transform
+      pos: 74.5,18.5
+      parent: 2
+  - uid: 189
+    components:
+    - type: Transform
+      pos: 73.5,18.5
+      parent: 2
+- proto: CrateWoodMP40Ammo
+  entities:
+  - uid: 199
+    components:
+    - type: Transform
+      pos: -25.5,24.5
+      parent: 2
+  - uid: 200
+    components:
+    - type: Transform
+      pos: -26.5,24.5
+      parent: 2
+- proto: CrateWoodPPShAmmo
+  entities:
+  - uid: 137
+    components:
+    - type: Transform
+      pos: 73.5,17.5
+      parent: 2
+  - uid: 139
+    components:
+    - type: Transform
+      pos: 74.5,17.5
       parent: 2
 - proto: CrateWoodRollerbeds
   entities:
@@ -2642,6 +2729,46 @@ entities:
       parent: 2
 - proto: CrateWoodSandbags
   entities:
+  - uid: 135
+    components:
+    - type: Transform
+      pos: 64.5,22.5
+      parent: 2
+  - uid: 136
+    components:
+    - type: Transform
+      pos: 63.5,22.5
+      parent: 2
+  - uid: 138
+    components:
+    - type: Transform
+      pos: 66.5,22.5
+      parent: 2
+  - uid: 140
+    components:
+    - type: Transform
+      pos: 65.5,22.5
+      parent: 2
+  - uid: 192
+    components:
+    - type: Transform
+      pos: -17.5,22.5
+      parent: 2
+  - uid: 193
+    components:
+    - type: Transform
+      pos: -18.5,22.5
+      parent: 2
+  - uid: 194
+    components:
+    - type: Transform
+      pos: -19.5,22.5
+      parent: 2
+  - uid: 195
+    components:
+    - type: Transform
+      pos: -16.5,22.5
+      parent: 2
   - uid: 1134
     components:
     - type: Transform
@@ -2671,36 +2798,6 @@ entities:
     components:
     - type: Transform
       pos: -31.5,22.5
-      parent: 2
-  - uid: 1208
-    components:
-    - type: Transform
-      pos: 77.5,24.5
-      parent: 2
-  - uid: 1209
-    components:
-    - type: Transform
-      pos: 77.5,23.5
-      parent: 2
-  - uid: 1210
-    components:
-    - type: Transform
-      pos: 77.5,22.5
-      parent: 2
-  - uid: 1211
-    components:
-    - type: Transform
-      pos: 78.5,22.5
-      parent: 2
-  - uid: 1212
-    components:
-    - type: Transform
-      pos: 78.5,23.5
-      parent: 2
-  - uid: 1213
-    components:
-    - type: Transform
-      pos: 78.5,24.5
       parent: 2
 - proto: Dresser
   entities:
@@ -2800,11 +2897,6 @@ entities:
     components:
     - type: Transform
       pos: -11.006341,8.50253
-      parent: 2
-  - uid: 299
-    components:
-    - type: Transform
-      pos: -30.407907,17.269825
       parent: 2
   - uid: 300
     components:
@@ -3552,235 +3644,240 @@ entities:
       parent: 2
 - proto: OldBrickWallIndestructible
   entities:
-  - uid: 132
+  - uid: 141
     components:
     - type: Transform
       pos: 18.5,23.5
       parent: 2
-  - uid: 133
+  - uid: 142
     components:
     - type: Transform
       pos: 28.5,23.5
       parent: 2
-  - uid: 134
+  - uid: 143
     components:
     - type: Transform
       pos: 19.5,23.5
       parent: 2
-  - uid: 135
+  - uid: 144
     components:
     - type: Transform
       pos: 16.5,19.5
       parent: 2
-  - uid: 136
+  - uid: 145
     components:
     - type: Transform
       pos: 18.5,19.5
       parent: 2
-  - uid: 137
+  - uid: 146
     components:
     - type: Transform
       pos: 29.5,23.5
       parent: 2
-  - uid: 138
+  - uid: 147
     components:
     - type: Transform
       pos: 30.5,23.5
       parent: 2
-  - uid: 139
+  - uid: 148
     components:
     - type: Transform
       pos: 19.5,19.5
       parent: 2
-  - uid: 140
+  - uid: 149
     components:
     - type: Transform
       pos: 16.5,23.5
       parent: 2
-  - uid: 141
+  - uid: 150
     components:
     - type: Transform
       pos: 22.5,12.5
       parent: 2
-  - uid: 142
+  - uid: 151
     components:
     - type: Transform
       pos: 27.5,23.5
       parent: 2
-  - uid: 143
+  - uid: 152
     components:
     - type: Transform
       pos: 21.5,12.5
       parent: 2
-  - uid: 144
+  - uid: 153
     components:
     - type: Transform
       pos: 17.5,23.5
       parent: 2
-  - uid: 145
+  - uid: 154
     components:
     - type: Transform
       pos: 29.5,19.5
       parent: 2
-  - uid: 146
+  - uid: 155
     components:
     - type: Transform
       pos: 27.5,19.5
       parent: 2
-  - uid: 147
+  - uid: 156
     components:
     - type: Transform
       pos: 23.5,28.5
       parent: 2
-  - uid: 148
+  - uid: 157
     components:
     - type: Transform
       pos: 24.5,25.5
       parent: 2
-  - uid: 149
+  - uid: 158
     components:
     - type: Transform
       pos: 24.5,28.5
       parent: 2
-  - uid: 150
+  - uid: 159
     components:
     - type: Transform
       pos: 26.5,20.5
       parent: 2
-  - uid: 151
+  - uid: 160
     components:
     - type: Transform
       pos: 26.5,19.5
       parent: 2
-  - uid: 152
+  - uid: 161
     components:
     - type: Transform
       pos: 23.5,12.5
       parent: 2
-  - uid: 153
+  - uid: 162
     components:
     - type: Transform
       pos: 20.5,22.5
       parent: 2
-  - uid: 154
+  - uid: 163
     components:
     - type: Transform
       pos: 21.5,13.5
       parent: 2
-  - uid: 155
+  - uid: 164
     components:
     - type: Transform
       pos: 25.5,13.5
       parent: 2
-  - uid: 156
+  - uid: 165
     components:
     - type: Transform
       pos: 25.5,16.5
       parent: 2
-  - uid: 157
+  - uid: 166
     components:
     - type: Transform
       pos: 20.5,19.5
       parent: 2
-  - uid: 158
+  - uid: 167
     components:
     - type: Transform
       pos: 21.5,17.5
       parent: 2
-  - uid: 159
+  - uid: 168
     components:
     - type: Transform
       pos: 22.5,17.5
       parent: 2
-  - uid: 160
+  - uid: 169
     components:
     - type: Transform
       pos: 20.5,17.5
       parent: 2
-  - uid: 161
+  - uid: 170
     components:
     - type: Transform
       pos: 24.5,17.5
       parent: 2
-  - uid: 162
+  - uid: 171
     components:
     - type: Transform
       pos: 21.5,16.5
       parent: 2
-  - uid: 163
+  - uid: 172
     components:
     - type: Transform
       pos: 20.5,23.5
       parent: 2
-  - uid: 164
+  - uid: 173
     components:
     - type: Transform
       pos: 21.5,14.5
       parent: 2
-  - uid: 165
+  - uid: 174
     components:
     - type: Transform
       pos: 25.5,17.5
       parent: 2
-  - uid: 166
+  - uid: 175
     components:
     - type: Transform
       pos: 22.5,24.5
       parent: 2
-  - uid: 167
+  - uid: 176
     components:
     - type: Transform
       pos: 23.5,24.5
       parent: 2
-  - uid: 168
+  - uid: 177
     components:
     - type: Transform
       pos: 24.5,24.5
       parent: 2
-  - uid: 169
+  - uid: 178
     components:
     - type: Transform
       pos: 26.5,23.5
       parent: 2
-  - uid: 170
+  - uid: 179
     components:
     - type: Transform
       pos: 20.5,28.5
       parent: 2
-  - uid: 171
+  - uid: 180
     components:
     - type: Transform
       pos: 19.5,28.5
       parent: 2
-  - uid: 172
+  - uid: 181
     components:
     - type: Transform
       pos: 19.5,27.5
       parent: 2
-  - uid: 173
+  - uid: 182
     components:
     - type: Transform
       pos: 20.5,24.5
       parent: 2
-  - uid: 174
+  - uid: 183
     components:
     - type: Transform
       pos: 30.5,19.5
       parent: 2
-  - uid: 175
+  - uid: 184
     components:
     - type: Transform
       pos: 25.5,12.5
       parent: 2
-  - uid: 176
+  - uid: 185
     components:
     - type: Transform
       pos: 28.5,19.5
       parent: 2
-  - uid: 177
+  - uid: 186
     components:
     - type: Transform
       pos: 17.5,19.5
+      parent: 2
+  - uid: 187
+    components:
+    - type: Transform
+      pos: 47.5,18.5
       parent: 2
 - proto: Shovel
   entities:
@@ -6888,7 +6985,7 @@ entities:
       pos: 21.5,24.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -11955.749
+      secondsUntilStateChange: -12092.178
       state: Opening
     - type: Godmode
       oldDamage: {}
@@ -6898,7 +6995,7 @@ entities:
       pos: 23.5,17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -15048.464
+      secondsUntilStateChange: -15184.893
       state: Opening
     - type: Godmode
       oldDamage: {}
