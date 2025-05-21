@@ -37,4 +37,26 @@ public sealed partial class TeamDeathMatchRuleComponent : Component
 
     [DataField("team2Kills")]
     public int Team2Kills = 0;
+
+    [DataField("kdRatio")]
+    public Dictionary<string, PlayerKDStats> KDRatio = new();
+}
+
+// Add this class to track player stats
+[DataDefinition, Serializable]
+public sealed partial class PlayerKDStats
+{
+    [DataField("kills")]
+    public int Kills = 0;
+
+    [DataField("deaths")]
+    public int Deaths = 0;
+
+    [DataField("team")]
+    public string Team = "";
+
+    [DataField("name")]
+    public string Name = "";
+
+    public float KDRatio => Deaths == 0 ? Kills : (float)Kills / Deaths;
 }
