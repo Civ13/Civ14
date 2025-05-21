@@ -24,7 +24,7 @@
     - type: Sprite
       sprite: Civ14/Objects/grenade.rsi
       layers:
-        - state: stgnade_active #because the unprimed is an overlay
+        - state: stgnade
           map: ["enum.TriggerVisualLayers.Base"]
     - type: GenericVisualizer
       visuals:
@@ -67,7 +67,7 @@
     - type: Sprite
       sprite: Civ14/Objects/grenade.rsi
       layers:
-        - state: f1_active #because the unprimed is an overlay
+        - state: f1
           map: ["enum.TriggerVisualLayers.Base"]
     - type: GenericVisualizer
       visuals:
@@ -93,25 +93,15 @@
   description: A tactical grenade that releases a large, long-lasting cloud of smoke when used.
   components:
     - type: Sprite
-      sprite: Civ14/Objects/grenade.rsi
-      layers:
-        - state: rdg2_yellow_active #because the unprimed is an overlay
-          map: ["enum.TriggerVisualLayers.Base"]
-    - type: GenericVisualizer
-      visuals:
-        enum.Trigger.TriggerVisuals.VisualState:
-          enum.ConstructionVisuals.Layer:
-            Primed: { state: rdg2_yellow_active }
-            Unprimed: { state: rdg2_yellow }
+      sprite: Civ14/Objects/Grenades/rdg2.rsi
+      state: rdg2_yellow
     - type: SmokeOnTrigger
-      duration: 30
-      spreadAmount: 40
+      duration: 25
+      spreadAmount: 30
     - type: SoundOnTrigger
       sound: /Audio/Items/smoke_grenade_smoke.ogg
     - type: DeleteOnTrigger
-    - type: TimerTriggerVisuals
-      primingSound:
-        path: /Audio/Items/smoke_grenade_prime.ogg
+
 - type: entity
   parent: GrenadeBase
   id: SmokeGrenadeNHG39
@@ -119,22 +109,11 @@
   description: A tactical grenade that releases a large, long-lasting cloud of smoke when used.
   components:
     - type: Sprite
-      sprite: Civ14/Objects/grenade.rsi
-      layers:
-        - state: smoke_grenade_active #because the unprimed is an overlay
-          map: ["enum.TriggerVisualLayers.Base"]
-    - type: GenericVisualizer
-      visuals:
-        enum.Trigger.TriggerVisuals.VisualState:
-          enum.ConstructionVisuals.Layer:
-            Primed: { state: smoke_grenade_active }
-            Unprimed: { state: smoke_grenade }
+      sprite: Civ14/Objects/Grenades/smoke_grenade.rsi
+      state: smoke_grenade
     - type: SmokeOnTrigger
-      duration: 30
-      spreadAmount: 40
+      duration: 25
+      spreadAmount: 30
     - type: SoundOnTrigger
       sound: /Audio/Items/smoke_grenade_smoke.ogg
     - type: DeleteOnTrigger
-    - type: TimerTriggerVisuals
-      primingSound:
-        path: /Audio/Items/smoke_grenade_prime.ogg

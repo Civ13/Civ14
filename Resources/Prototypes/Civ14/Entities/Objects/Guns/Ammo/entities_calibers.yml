@@ -322,6 +322,17 @@
     - type: Tag
       tags:
         - civ13_caliber_a792x57
+#for MGs
+- type: entity
+  id: civ13_caliber_a792x57_weak
+  name: 7.92x57mm Mauser cartridge
+  parent: CartridgeRifle
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_a792x57_weak
+    - type: Tag
+      tags:
+        - civ13_caliber_a792x57_weak
 - type: entity
   id: civ13_caliber_a765x53
   name: 7.65x53mm Mauser cartridge
@@ -392,6 +403,18 @@
     - type: Tag
       tags:
         - civ13_caliber_a762x54
+# for MGs
+- type: entity
+  id: civ13_caliber_a762x54_weak
+  name: 7.62x54mmR cartridge
+  parent: CartridgeRifle
+  components:
+    - type: CartridgeAmmo
+      proto: civ13_bullet_a762x54_weak
+    - type: Tag
+      tags:
+        - civ13_caliber_a762x54_weak
+
 - type: entity
   id: civ13_caliber_a303
   name: .303 british cartridge

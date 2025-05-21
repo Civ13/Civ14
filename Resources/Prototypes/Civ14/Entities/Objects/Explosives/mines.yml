@@ -1,0 +1,36 @@
+- type: entity
+  name: mine
+  parent: LandMineExplosive
+  id: LandMineCiv
+  components:
+    - type: Sprite
+      drawdepth: Items
+      sprite: Civ14/Objects/grenade.rsi
+      state: mine_armed
+    - type: LandMine
+      sound:
+        path: /Audio/Weapons/Guns/Cock/shotgun_open.ogg # yes, this is the right sound
+        params:
+          maxDistance: 10
+
+- type: entity
+  name: booby trap
+  parent: LandMineCiv
+  id: LandMineBoobyTrap
+  components:
+    - type: Sprite
+      drawdepth: Items
+      sprite: Civ14/Objects/grenade.rsi
+      state: boobytrap_armed
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 5
+      intensitySlope: 2
+      totalIntensity: 30
+      canCreateVacuum: false
+    - type: ProjectileGrenade
+      fillPrototype: PelletClusterLethal
+      capacity: 15
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container

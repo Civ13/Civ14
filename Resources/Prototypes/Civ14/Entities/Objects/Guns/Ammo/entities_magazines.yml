@@ -451,11 +451,11 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
-      proto: civ13_caliber_a762x54
+      proto: civ13_caliber_a762x54_weak
       capacity: 250
       whitelist:
         tags:
-          - civ13_caliber_a762x54
+          - civ13_caliber_a762x54_weak
     - type: Sprite
       sprite: Civ14/Objects/ammo.rsi
       layers:
@@ -473,11 +473,11 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
-      proto: civ13_caliber_a792x57
+      proto: civ13_caliber_a792x57_weak
       capacity: 250
       whitelist:
         tags:
-          - civ13_caliber_a792x57
+          - civ13_caliber_a792x57_weak
     - type: Sprite
       sprite: Civ14/Objects/ammo.rsi
       layers:
@@ -561,11 +561,11 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
-      proto: civ13_caliber_a792x57
+      proto: civ13_caliber_a792x57_weak
       capacity: 250
       whitelist:
         tags:
-          - civ13_caliber_a792x57
+          - civ13_caliber_a792x57_weak
     - type: Sprite
       sprite: Civ14/Objects/ammo.rsi
       layers:
@@ -1559,11 +1559,11 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
-      proto: civ13_caliber_a792x57
+      proto: civ13_caliber_a792x57_weak
       capacity: 50
       whitelist:
         tags:
-          - civ13_caliber_a792x57
+          - civ13_caliber_a792x57_weak
     - type: Sprite
       sprite: Civ14/Objects/ammo.rsi
       layers:
@@ -1581,11 +1581,11 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
-      proto: civ13_caliber_a792x57
+      proto: civ13_caliber_a792x57_weak
       capacity: 25
       whitelist:
         tags:
-          - civ13_caliber_a792x57
+          - civ13_caliber_a792x57_weak
     - type: Sprite
       sprite: Civ14/Objects/ammo.rsi
       layers:
@@ -1669,11 +1669,11 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
-      proto: civ13_caliber_a762x54
+      proto: civ13_caliber_a762x54_weak
       capacity: 47
       whitelist:
         tags:
-          - civ13_caliber_a762x54
+          - civ13_caliber_a762x54_weak
     - type: Sprite
       sprite: Civ14/Objects/ammo.rsi
       layers:
@@ -2501,11 +2501,11 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
-      proto: civ13_caliber_a762x54
+      proto: civ13_caliber_a762x54_weak
       capacity: 250
       whitelist:
         tags:
-          - civ13_caliber_a762x54
+          - civ13_caliber_a762x54_weak
     - type: Sprite
       sprite: Civ14/Objects/ammo.rsi
       layers:
@@ -2523,11 +2523,11 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
-      proto: civ13_caliber_a762x54
+      proto: civ13_caliber_a762x54_weak
       capacity: 100
       whitelist:
         tags:
-          - civ13_caliber_a762x54
+          - civ13_caliber_a762x54_weak
     - type: Sprite
       sprite: Civ14/Objects/ammo.rsi
       layers:
@@ -3829,11 +3829,11 @@
   components:
     - type: BallisticAmmoProvider
       mayTransfer: true
-      proto: civ13_caliber_a762x54
+      proto: civ13_caliber_a762x54_weak
       capacity: 100
       whitelist:
         tags:
-          - civ13_caliber_a762x54
+          - civ13_caliber_a762x54_weak
     - type: Sprite
       sprite: Civ14/Objects/ammo.rsi
       layers:

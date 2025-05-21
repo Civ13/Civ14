@@ -387,14 +387,9 @@
   components:
     - type: Sprite
       state: barbwire_stack
-      layers:
-        - state: barbwire_stack
-          map: ["base"]
     - type: Stack
       stackType: Barbwire
-      baseLayer: base
-      layerStates:
-        - barbwire_stack
+      baseLayer: barbwire_stack
     - type: Appearance
     - type: Item
       size: Large
@@ -426,14 +421,9 @@
     - type: Sprite
       sprite: Civ14/Objects/items.rsi
       state: sandbag_new
-      layers:
-        - state: sandbag_new
-          map: ["base"]
     - type: Stack
       stackType: Sandbags
-      baseLayer: base
-      layerStates:
-        - sandbag_new
+      baseLayer: sandbag_new
     - type: Appearance
     - type: Item
       size: Ginormous

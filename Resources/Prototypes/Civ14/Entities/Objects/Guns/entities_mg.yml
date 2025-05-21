@@ -51,11 +51,11 @@
               - civ13_magazine_PKM_ammo_belt_(7.62x54mmR)
         gun_chamber:
           name: Chamber
-          startingItem: civ13_caliber_a762x54
+          startingItem: civ13_caliber_a762x54_weak
           priority: 1
           whitelist:
             tags:
-              - civ13_caliber_a762x54
+              - civ13_caliber_a762x54_weak
     - type: ChamberMagazineAmmoProvider
       boltClosed: true
       soundRack:
@@ -87,11 +87,11 @@
             tags:
               - civ13_magazine_PKM_ammo_belt_(7.62x54mmR)
         gun_chamber:
-          startingItem: civ13_caliber_a762x54
+          startingItem: civ13_caliber_a762x54_weak
           priority: 1
           whitelist:
             tags:
-              - civ13_caliber_a762x54
+              - civ13_caliber_a762x54_weak
 
 - type: entity
   name: Maschinengewehr 13
@@ -121,11 +121,11 @@
             tags:
               - civ13_magazine_MG34_magazine_(7.92x57mm)
         gun_chamber:
-          startingItem: civ13_caliber_a792x57
+          startingItem: civ13_caliber_a792x57_weak
           priority: 1
           whitelist:
             tags:
-              - civ13_caliber_a792x57
+              - civ13_caliber_a792x57_weak
 
 - type: entity
   name: MG34
@@ -274,11 +274,11 @@
             tags:
               - civ13_magazine_magazine_(7.62x54mm)
         gun_chamber:
-          startingItem: civ13_caliber_a762x54
+          startingItem: civ13_caliber_a762x54_weak
           priority: 1
           whitelist:
             tags:
-              - civ13_caliber_a762x54
+              - civ13_caliber_a762x54_weak
 - type: entity
   name: Type 99 light machinegun
   parent: BaseGunCivMG
@@ -378,11 +378,11 @@
             tags:
               - civ13_magazine_DP_pan_(7.62x54mmR)
         gun_chamber:
-          startingItem: civ13_caliber_a762x54
+          startingItem: civ13_caliber_a762x54_weak
           priority: 1
           whitelist:
             tags:
-              - civ13_caliber_a762x54
+              - civ13_caliber_a762x54_weak
 
 - type: entity
   name: M1918A2 BAR

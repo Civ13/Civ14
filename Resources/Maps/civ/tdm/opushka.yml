@@ -4024,7 +4024,7 @@ entities:
       parent: 2
     - type: Physics
       canCollide: False
-- proto: LandMineExplosive
+- proto: LandMineCiv
   entities:
   - uid: 344
     components:
