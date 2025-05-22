@@ -1,16 +1,12 @@
 {
     "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
-        {
-            "name": ""
-        },
-        {
-            "name": "_____"
-        },
         {
             "name": "grille"
         },
@@ -26,6 +22,12 @@
                     0.1
                 ]
             ]
+        },
+        {
+            "name": "wood_barricade_snow"
+        },
+        {
+            "name": "barricade_vent"
         },
         {
             "name": "table_horizontal",
@@ -364,28 +366,6 @@
             "directions": 4
         },
         {
-            "name": "fence0-8"
-        },
-        {
-            "name": "fence4-8"
-        },
-        {
-            "name": "fence0-4"
-        },
-        {
-            "name": "fence1-2"
-        },
-        {
-            "name": "barricade sareas"
-        },
-        {
-            "name": "barbwire - sareas",
-            "directions": 4
-        },
-        {
-            "name": "fence4-8-b"
-        },
-        {
             "name": "wood_fence4-8"
         },
         {
@@ -423,12 +403,6 @@
         },
         {
             "name": "fence4"
-        },
-        {
-            "name": "fence5"
-        },
-        {
-            "name": "fence6"
         },
         {
             "name": "stol_middle"
@@ -780,6 +754,10 @@
             "directions": 4
         },
         {
+            "name": "barbwire-old",
+            "directions": 4
+        },
+        {
             "name": "antitank"
         },
         {
@@ -796,6 +774,12 @@
         },
         {
             "name": "jailbars"
+        },
+        {
+            "name": "bank_glass"
+        },
+        {
+            "name": "bank_glass_open"
         },
         {
             "name": "shellrack0"
@@ -1453,6 +1437,18 @@
             "name": "debris2"
         },
         {
+            "name": "debris3"
+        },
+        {
+            "name": "brick1"
+        },
+        {
+            "name": "brick2"
+        },
+        {
+            "name": "debris4"
+        },
+        {
             "name": "torch_stand",
             "directions": 4
         },
@@ -1502,12 +1498,6 @@
             "name": "camonet"
         },
         {
-            "name": "debris3"
-        },
-        {
-            "name": "debris4"
-        },
-        {
             "name": "slotmachine",
             "delays": [
                 [
@@ -1550,7 +1540,16 @@
             "name": "storeshelf"
         },
         {
-            "name": "nightstand"
+            "name": "nightstand",
+            "directions": 4
+        },
+        {
+            "name": "nightstand_small",
+            "directions": 4
+        },
+        {
+            "name": "nightstand_alt",
+            "directions": 4
         },
         {
             "name": "construction1",
@@ -1603,6 +1602,29 @@
         },
         {
             "name": "propstall4"
+        },
+        {
+            "name": "lift_panel"
+        },
+        {
+            "name": "lift_panel2"
+        },
+        {
+            "name": "velvet_rope"
+        },
+        {
+            "name": "export_radio"
+        },
+        {
+            "name": "supply_radio"
+        },
+        {
+            "name": "cliffside",
+            "directions": 8
+        },
+        {
+            "name": "cliffside_corner",
+            "directions": 4
         }
     ]
 }

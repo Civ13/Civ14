@@ -1,0 +1,43 @@
+# Carpets
+- type: decal
+  id: DecalCarpet
+  tags: ["decorative"]
+  sprite:
+    sprite: Civ14/Objects/decals_wide.rsi
+    state: carpet
+
+- type: decal
+  id: DecalCarpetPurple # Or DecalCarpet2 if you prefer strict mapping from icon_state
+  tags: ["decorative"]
+  sprite:
+    sprite: Civ14/Objects/decals_wide.rsi
+    state: carpet2
+
+- type: decal
+  id: DecalCarpetRed # Or DecalCarpet3
+  tags: ["decorative"]
+  sprite:
+    sprite: Civ14/Objects/decals_wide.rsi
+    state: carpet3
+
+- type: decal
+  id: DecalCarpetGreen # Or DecalCarpet4
+  tags: ["decorative"]
+  sprite:
+    sprite: Civ14/Objects/decals_wide.rsi
+    state: carpet4
+
+# Wide Signs as Decals
+- type: decal
+  id: DecalStalingrad
+  tags: ["decorative"]
+  sprite:
+    sprite: Civ14/Objects/decals_wide.rsi
+    state: stalingrad
+
+- type: decal
+  id: DecalKandahar
+  tags: ["decorative"]
+  sprite:
+    sprite: Civ14/Objects/decals_wide.rsi
+    state: kandahar

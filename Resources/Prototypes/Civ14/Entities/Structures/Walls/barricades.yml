@@ -298,3 +298,26 @@
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]
+
+- type: entity
+  id: BarricadeVelvetRope
+  description: A fancy velvet rope between two golden poles.
+  parent: BarricadeSandbags
+  name: velvet rope
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/structures.rsi
+      state: velvet_rope
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Barricade
+      blocking: 3
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]

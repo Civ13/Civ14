@@ -1,0 +1,56 @@
+- type: decal
+  id: RoadSignZebra
+  tags: ["road"]
+  sprite:
+    sprite: Civ14/Objects/decals.rsi
+    state: zebracrossing
+- type: decal
+  id: RoadSignYeld
+  tags: ["road"]
+  sprite:
+    sprite: Civ14/Objects/decals.rsi
+    state: yeld
+- type: decal
+  id: RoadSignWay
+  tags: ["road"]
+  sprite:
+    sprite: Civ14/Objects/decals.rsi
+    state: waysign
+- type: decal
+  id: RoadSignStop
+  tags: ["road"]
+  sprite:
+    sprite: Civ14/Objects/decals.rsi
+    state: stop
+- type: decal
+  id: RoadSignParking
+  tags: ["road"]
+  sprite:
+    sprite: Civ14/Objects/decals.rsi
+    state: parking
+- type: decal
+  id: RoadSignDNE
+  tags: ["road"]
+  sprite:
+    sprite: Civ14/Objects/decals.rsi
+    state: donotenter
+
+# markings
+- type: decal
+  id: RoadMarkingZebra
+  tags: ["road"]
+  sprite:
+    sprite: Civ14/Objects/decals.rsi
+    state: zebra
+- type: decal
+  id: RoadMarkingYellowSide
+  tags: ["road"]
+  sprite:
+    sprite: Civ14/Objects/decals.rsi
+    state: sideline
+- type: decal
+  id: RoadMarkingWhiteCentral
+  tags: ["road"]
+  sprite:
+    sprite: Civ14/Objects/decals.rsi
+    state: centralline

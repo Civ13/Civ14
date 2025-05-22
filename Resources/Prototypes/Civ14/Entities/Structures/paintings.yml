@@ -1,0 +1,256 @@
+- type: entity
+  parent: PaintingBase
+  id: PaintingOrthodox1
+  name: "icon of Mary"
+  description: "An icon depicting Mary, mother of Jesus. Often used in Eastern Orthodox cultures."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: orthodox1
+- type: entity
+  parent: PaintingBase
+  id: PaintingOrthodox2
+  name: "icon of Trinity"
+  description: "An icon depicting the saint Trinity. Often used in Eastern Orthodox cultures."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: orthodox2
+- type: entity
+  parent: PaintingBase
+  id: PaintingOrthodox3
+  name: "icon of Archangel Michael"
+  description: "An icon depicting Archangel Michael. Often used in Eastern Orthodox cultures."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: orthodox3
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingCiv1
+  name: painting
+  description: "A large foamy wave crashes into the rocky shore. A bit of sunlight passes through the clouds, glistening on the sea surface and wet boulders."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: painting1
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingCiv2
+  name: painting
+  description: "A serene city street with a few people on a summer day. Two- and three-storey houses stand to the left and right, separated by a cobblestone road. A massive building with spires could be seen in the distance."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: painting2
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingCiv3
+  name: painting
+  description: "A blazing sunset seen from a steep cliff above the sea."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: painting3
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingCiv4
+  name: painting
+  description: "A wooded mountain valley with a small pond at the clearing, where a group of horsemen could be seen. The mountains themselves loom farther ahead, obscured by a thin haze."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: painting4
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingCiv5
+  name: painting
+  description: "A still life painting, depicting a table with a piece of white cloth, several fruits and a human skull."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: painting5
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingCiv6
+  name: painting
+  description: "A long-tailed bird with black, olive green and white plumage, resembling a magpie, perches on a tree branch, surrounded by white cherry blossoms."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: painting6
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingCiv7
+  name: painting
+  description: "A lone figure with a carrying pole on their shoulders stands under a tall pine on the sloping shore, gazing at the snow-peaked mountain across the strait. The sky is colored dark orange by the setting sun."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: painting7
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingCiv8
+  name: painting
+  description: "A hilly landscape, where a large temple with red timber beams and sweeping roofs stands on the bank of a river."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: painting8
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingCiv9
+  name: painting
+  description: "A small encampment in the desert, with a few tents, several horses and loaded camels. A faraway river crosses the expanse of barren dunes."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: painting9
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingCiv10
+  name: painting
+  description: "A barque at sea, lit by the full moon."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: painting10
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingCiv11
+  name: painting
+  description: "A famous painting with a starry sky."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: painting11
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingCiv12
+  name: painting
+  description: "An arid desert, with some tents in the middle."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: painting12
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingCiv13
+  name: painting
+  description: "A still life."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: painting13
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingHitler
+  name: "Portrait of Hitler"
+  description: "A portrait of Hitler."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: hitler
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingLenin
+  name: "Portrait of Lenin"
+  description: "A portrait of Lenin."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: lenin
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingStalin
+  name: "Portrait of Stalin"
+  description: "A portrait of Stalin."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: stalin
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingBrezhnev
+  name: "Portrait of Brezhnev"
+  description: "A portrait of Brezhnev."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: brezhnev
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingSokolov
+  name: "Portrait of Marshal Sokolov"
+  description: "A portrait of Marshal Sokolov."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: sokolov
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingKarmal
+  name: "Portrait of Babrak Karmal"
+  description: "A portrait of Babrak Karmal."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: karmal
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingHirohito
+  name: "Portrait of Hirohito"
+  description: "A portrait of Hirohito."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: hirohito
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingKinggeorgev
+  name: "Portrait of King George V"
+  description: "A portrait of King George V."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: kinggeorgev
+
+- type: entity
+  parent: PaintingBase
+  id: PaintingKhalifAli
+  name: "Portrait of Khalif Ali"
+  description: "A portrait of Khalif Ali."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: khalif_ali1
+- type: entity
+  parent: PaintingBase
+  id: PaintingKhalifAli2
+  name: "Portrait of Khalif Ali"
+  description: "A portrait of Khalif Ali."
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: khalif_ali2
