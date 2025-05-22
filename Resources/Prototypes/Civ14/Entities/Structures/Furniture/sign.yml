@@ -19,7 +19,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignTfc
+  id: SignCivTfc
   name: "Texas Fried Chicken"
   description: "A sign Texas people usually like."
   components:
@@ -29,7 +29,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignWeedshop
+  id: SignCivWeedshop
   name: "Weed Shop"
   description: "A sign stoners usually like."
   components:
@@ -39,7 +39,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignMckellens
+  id: SignCivMckellens
   name: "McKellen's"
   description: "A sign for the McKellen's Franchise establishment."
   components:
@@ -49,7 +49,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignSheriff
+  id: SignCivSheriff
   name: "Sheriff's Office"
   description: "A sign for the local Sheriff's Office."
   components:
@@ -59,7 +59,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignBank
+  id: SignCivBank
   name: "bank"
   description: "A sign for the local bank."
   components:
@@ -69,7 +69,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignBarsign
+  id: SignCivBarsign
   name: "BAR"
   description: "A sign that says bar on it."
   components:
@@ -79,7 +79,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignCafesignRu
+  id: SignCivCafesignRu
   name: "CAFE"
   description: "A sign that says CAFE on it in cyrillic."
   components:
@@ -89,7 +89,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignBarber
+  id: SignCivBarber
   name: "barbershop"
   description: "A swirly object indicating a barbershop."
   components:
@@ -99,7 +99,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignBailypost
+  id: SignCivBailypost
   name: "Baily post"
   description: "Protection service."
   components:
@@ -109,7 +109,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignBailypost2
+  id: SignCivBailypost2
   name: "Baily post"
   description: "Protection service."
   components:
@@ -119,7 +119,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignMinefield
+  id: SignCivMinefield
   name: "Minefield"
   description: "Achtung! Minen."
   components:
@@ -129,7 +129,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignColonialSign
+  id: SignCivColonialSign
   name: "sign"
   description: "Signs something."
   components:
@@ -139,7 +139,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignCustomsign2
+  id: SignCivCustomsign2
   name: "sign"
   description: "Signs something."
   components:
@@ -149,7 +149,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignCustomsign
+  id: SignCivCustomsign
   name: "sign"
   description: "Signs something."
   components:
@@ -159,7 +159,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignN1
+  id: SignCivN1
   name: "ONE"
   description: "A silver sign which reads 'I'."
   components:
@@ -169,7 +169,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignN2
+  id: SignCivN2
   name: "TWO"
   description: "A silver sign which reads 'II'."
   components:
@@ -179,7 +179,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignN3
+  id: SignCivN3
   name: "THREE"
   description: "A silver sign which reads 'III'."
   components:
@@ -189,7 +189,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignN4
+  id: SignCivN4
   name: "FOUR"
   description: "A silver sign which reads 'IV'."
   components:
@@ -199,7 +199,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignN5
+  id: SignCivN5
   name: "FIVE"
   description: "A silver sign which reads 'V'."
   components:
@@ -209,7 +209,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignN6
+  id: SignCivN6
   name: "SIX"
   description: "A silver sign which reads 'VI'."
   components:
@@ -219,7 +219,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignMedal
+  id: SignCivMedal
   name: "presence recognition"
   description: "A recognition plaque staight from the ministy of admission! This one seems to be for the persons presence, what an award!"
   components:
@@ -229,7 +229,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignRestroom
+  id: SignCivRestroom
   name: "restroom"
   description: "A sign indicating the presence of a restroom."
   components:
@@ -239,7 +239,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignRestroomMale
+  id: SignCivRestroomMale
   name: "restroom"
   description: "A sign indicating the presence of a male restroom."
   components:
@@ -249,7 +249,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignRestroomFemale
+  id: SignCivRestroomFemale
   name: "restroom"
   description: "A sign indicating the presence of a female restroom."
   components:
@@ -259,7 +259,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignJustice
+  id: SignCivJustice
   name: "justice"
   description: "A justice sign."
   components:
@@ -269,7 +269,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignCourt
+  id: SignCivCourt
   name: "court"
   description: "The court house."
   components:
@@ -279,7 +279,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignTownhall
+  id: SignCivTownhall
   name: "town hall"
   description: "The town hall."
   components:
@@ -289,7 +289,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignAnatomy
+  id: SignCivAnatomy
   name: "anatomy poster"
   description: "A poster detailing the complexity of the human body."
   components:
@@ -299,7 +299,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignXrayOn
+  id: SignCivXrayOn
   name: "lightbox"
   description: "A medical lightbox used to examine X-ray images."
   components:
@@ -309,7 +309,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignPeriodic
+  id: SignCivPeriodic
   name: "periodic table"
   description: "A tabular display of the chemical elements."
   components:
@@ -319,7 +319,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignCasino
+  id: SignCivCasino
   name: "casino"
   description: "A blinking casino sign."
   components:
@@ -329,7 +329,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignOpen
+  id: SignCivOpen
   name: "open"
   description: "A blinking open sign."
   components:
@@ -339,7 +339,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignGunshop
+  id: SignCivGunshop
   name: "gun store"
   description: "A blinking gun store sign."
   components:
@@ -349,7 +349,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignGas
+  id: SignCivGas
   name: "gas"
   description: "A flashing gas station sign."
   components:
@@ -359,7 +359,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignSale
+  id: SignCivSale
   name: "SALE sign"
   description: "A sign indicating a sale."
   components:
@@ -369,7 +369,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignRent
+  id: SignCivRent
   name: "FOR RENT sign"
   description: "A sign indicating something for rent."
   components:
@@ -379,7 +379,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignDonutShop
+  id: SignCivDonutShop
   name: "Randy's Donuts"
   description: "A donut and pastries franchise."
   components:
@@ -389,7 +389,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignDeerTrophy
+  id: SignCivDeerTrophy
   name: "hunting deer trophy"
   description: "Looks like we finally found Bambi..."
   components:
@@ -399,7 +399,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignSovietPoster
+  id: SignCivSovietPoster
   name: "military poster"
   description: "A Soviet military poster depicting a saluting soldier in front of the Soviet flag."
   components:
@@ -409,7 +409,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignSovafghanPoster1
+  id: SignCivSovafghanPoster1
   name: "Soviet-Afghan friendship poster"
   description: "A poster depicting a Soviet and DRA soldier smiling at each other while holding a rifle together."
   components:
@@ -419,7 +419,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignSovafghanPoster2
+  id: SignCivSovafghanPoster2
   name: "Soviet-Afghan friendship poster"
   description: "A poster depicting armed men holding the Soviet and DRA flags."
   components:
@@ -462,7 +462,7 @@
       fixtures:
         fix1:
           shape: !type:PhysShapeAabb
-            bounds: "-1.45,-1.45,1.45,1.45"
+            bounds: "-0.8,0.3,0.8,1.3"
           density: 80
           mask:
             - MachineMask

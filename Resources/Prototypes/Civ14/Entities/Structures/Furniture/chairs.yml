@@ -1,0 +1,142 @@
+- type: entity
+  name: diner booth
+  id: SofaDinerBoothLeft
+  parent: ChairBase
+  description: It looks comfy.
+  suffix: left
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/bed_chair.rsi
+      state: diner_booth_left
+
+- type: entity
+  name: diner booth
+  id: SofaDinerBoothRight
+  parent: ChairBase
+  description: It looks comfy.
+  suffix: right
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/bed_chair.rsi
+      state: diner_booth_right
+
+- type: entity
+  name: sofa
+  id: SofaFancyLeft
+  parent: ChairBase
+  description: It looks comfy.
+  suffix: left
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/bed_chair.rsi
+      state: fancysofa_l
+
+- type: entity
+  name: sofa
+  id: SofaFancyMiddle
+  parent: ChairBase
+  description: It looks comfy.
+  suffix: middle
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/bed_chair.rsi
+      state: fancysofa_middle
+
+- type: entity
+  name: sofa
+  id: SofaFancyRight
+  parent: ChairBase
+  description: It looks comfy.
+  suffix: right
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/bed_chair.rsi
+      state: fancysofa_r
+
+- type: entity
+  name: bleacher
+  id: SofaBleacherLeft
+  parent: ChairBase
+  description: It does not look comfy.
+  suffix: left
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/bed_chair.rsi
+      state: bleacher_l
+
+- type: entity
+  name: bleacher
+  id: SofaBleacherMiddle
+  parent: ChairBase
+  description: It does not look comfy.
+  suffix: middle
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/bed_chair.rsi
+      state: bleacher
+
+- type: entity
+  name: bleacher
+  id: SofaBleacherRight
+  parent: ChairBase
+  description: It does not look comfy.
+  suffix: right
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/bed_chair.rsi
+      state: bleacher_r
+
+- type: entity
+  name: wooden chair
+  id: ChairWoodCiv
+  parent: UnanchoredChairBase
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/bed_chair.rsi
+      state: wooden_chair_alt
+    - type: Damageable
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 25
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: WoodDestroy
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                MaterialWoodPlank:
+                  min: 1
+                  max: 1
+    - type: Tag
+      tags:
+        - Wooden
+    - type: StaticPrice
+      price: 75
+
+- type: entity
+  name: old wooden chair
+  id: ChairWoodCivOld
+  parent: ChairWoodCiv
+  components:
+    - type: Sprite
+      state: wooden_chair_alt
+
+- type: entity
+  name: red wooden chair
+  id: ChairWoodCivRed
+  parent: ChairWoodCiv
+  components:
+    - type: Sprite
+      state: wooden_chair_red
+
+- type: entity
+  name: wooden chair
+  id: ChairWoodCivWings
+  parent: ChairWoodCiv
+  components:
+    - type: Sprite
+      state: wooden_chair_wings
