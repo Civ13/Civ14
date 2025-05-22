@@ -1,5 +1,7 @@
 {
     "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
     "size": {
         "x": 32,
         "y": 32
@@ -141,7 +143,6 @@
                     0.1,
                     0.1,
                     0.1,
-                    0.1,
                     0.1
                 ]
             ]
@@ -171,6 +172,9 @@
             "name": "fridgebroken"
         },
         {
+            "name": "fridgeoff"
+        },
+        {
             "name": "firecloset"
         },
         {
@@ -178,6 +182,9 @@
         },
         {
             "name": "toolcloset"
+        },
+        {
+            "name": "eleccloset"
         },
         {
             "name": "radsuitcloset"
@@ -247,6 +254,12 @@
         },
         {
             "name": "hydrant_open"
+        },
+        {
+            "name": "defib_wall"
+        },
+        {
+            "name": "defib_wall_open"
         },
         {
             "name": "medical_wall"
@@ -571,9 +584,6 @@
             "name": "secureqm1"
         },
         {
-            "name": "secureqmopen"
-        },
-        {
             "name": "secureqmoff"
         },
         {
@@ -587,6 +597,9 @@
                     0.1
                 ]
             ]
+        },
+        {
+            "name": "secureqmopen"
         },
         {
             "name": "sec"
@@ -941,6 +954,44 @@
         },
         {
             "name": "drawer"
+        },
+        {
+            "name": "dresser",
+            "directions": 4
+        },
+        {
+            "name": "dresser-alt",
+            "directions": 4
+        },
+        {
+            "name": "endtable",
+            "directions": 4
+        },
+        {
+            "name": "endtable-alt",
+            "directions": 4
+        },
+        {
+            "name": "coffee_table"
+        },
+        {
+            "name": "coffee_table-alt"
+        },
+        {
+            "name": "dresser2_right",
+            "directions": 4
+        },
+        {
+            "name": "dresser2_left",
+            "directions": 4
+        },
+        {
+            "name": "dresser2-alt_right",
+            "directions": 4
+        },
+        {
+            "name": "dresser2-alt_left",
+            "directions": 4
         },
         {
             "name": "icecream_cooler1"

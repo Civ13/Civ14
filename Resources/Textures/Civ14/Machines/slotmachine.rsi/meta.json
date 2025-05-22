@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "license": "AGPLv3",
+  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "slotmachine",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "slotmachine_pull",
+      "delays": [
+        [
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          1,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02
+        ]
+      ]
+    },
+    {
+      "name": "slot_spin",
+      "delays": [
+        [
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02
+        ]
+      ]
+    },
+    {
+      "name": "slot_Seven"
+    },
+    {
+      "name": "slot_Diamond"
+    },
+    {
+      "name": "slot_Cherry"
+    },
+    {
+      "name": "slot_Bar"
+    },
+    {
+      "name": "slot_Lemon"
+    },
+    {
+      "name": "slot_Heart"
+    },
+    {
+      "name": "slot_Watermelon"
+    },
+    {
+      "name": "slotmachine_off"
+    },
+    {
+      "name": "slotmachine_broken"
+    }
+  ]
+}

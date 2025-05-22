@@ -109,6 +109,9 @@
       "name": "plate"
     },
     {
+      "name": "plate_dirty"
+    },
+    {
       "name": "snack_bowl"
     },
     {
@@ -480,6 +483,40 @@
       "name": "han_gou_open"
     },
     {
+      "name": "microwave"
+    },
+    {
+      "name": "microwave_on",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "grill2_closed"
+    },
+    {
+      "name": "grill2"
+    },
+    {
+      "name": "grill2_on",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
       "name": "fryer"
     },
     {
@@ -494,16 +531,24 @@
       ]
     },
     {
-      "name": "microwave"
+      "name": "griddle"
     },
     {
-      "name": "microwave_on",
+      "name": "griddle_on",
       "delays": [
         [
-          0.1,
-          0.1
+          0.2,
+          0.2,
+          0.2,
+          0.2
         ]
       ]
+    },
+    {
+      "name": "patty_overlay_raw_6"
+    },
+    {
+      "name": "patty_overlay_cooked_6"
     }
   ]
 }

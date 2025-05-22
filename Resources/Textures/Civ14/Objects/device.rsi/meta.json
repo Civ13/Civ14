@@ -8,6 +8,17 @@
   },
   "states": [
     {
+      "name": "",
+      "delays": [
+        [
+          0.120000005,
+          0.120000005,
+          0.120000005,
+          0.120000005
+        ]
+      ]
+    },
+    {
       "name": "sunflower"
     },
     {
@@ -15,6 +26,9 @@
     },
     {
       "name": "telescope1"
+    },
+    {
+      "name": "binoculars-old"
     },
     {
       "name": "binoculars"
@@ -27,6 +41,15 @@
     },
     {
       "name": "carcano_scope"
+    },
+    {
+      "name": "turret_control"
+    },
+    {
+      "name": "periscope"
+    },
+    {
+      "name": "laser_designator"
     },
     {
       "name": "geiger_off"
@@ -75,34 +98,28 @@
       ]
     },
     {
-      "name": "periscope"
-    },
-    {
-      "name": "cellphone"
-    },
-    {
       "name": "pocketwatch"
-    },
-    {
-      "name": "camera_coldwar"
     },
     {
       "name": "photox"
     },
     {
-      "name": "camera_ww2"
+      "name": "photo"
+    },
+    {
+      "name": "film"
     },
     {
       "name": "camera_early"
     },
     {
-      "name": "photo"
+      "name": "camera_ww2"
+    },
+    {
+      "name": "camera_coldwar"
     },
     {
       "name": "camera_modern"
-    },
-    {
-      "name": "film"
     },
     {
       "name": "video_camera",
@@ -142,6 +159,12 @@
       ]
     },
     {
+      "name": "teleprinter0"
+    },
+    {
+      "name": "teleprinter1"
+    },
+    {
       "name": "radio_mic1"
     },
     {
@@ -149,6 +172,9 @@
     },
     {
       "name": "radio_mic3"
+    },
+    {
+      "name": "radio_off"
     },
     {
       "name": "recorder"
@@ -197,16 +223,28 @@
       "name": "radio_transmitter"
     },
     {
+      "name": "celly"
+    },
+    {
+      "name": "cellphone"
+    },
+    {
       "name": "telephone"
     },
     {
       "name": "telephone_blue"
     },
     {
-      "name": "teleprinter0"
+      "name": "telephone_green"
     },
     {
-      "name": "teleprinter1"
+      "name": "telephone_yellow"
+    },
+    {
+      "name": "intercom-p"
+    },
+    {
+      "name": "intercom"
     },
     {
       "name": "modern_intercom",
@@ -217,29 +255,48 @@
       "directions": 4
     },
     {
+      "name": "portable_radio"
+    },
+    {
       "name": "portable_radio2"
     },
     {
       "name": "portable_radio3"
     },
     {
-      "name": "portable_radio"
+      "name": "portable_radio_space",
+      "delays": [
+        [
+          0.1,
+          0.25,
+          0.15
+        ]
+      ]
     },
     {
       "name": "radio_headset"
     },
     {
-      "name": "portable_radio4"
+      "name": "walkietalkie"
+    },
+    {
+      "name": "walkietalkie2"
+    },
+    {
+      "name": "walkietalkie2_off"
+    },
+    {
+      "name": "comlink"
     },
     {
       "name": "loudspeaker",
       "directions": 4
     },
     {
-      "name": ""
+      "name": "mic"
     },
     {
-      "name": "mic"
+      "name": "mic2"
     },
     {
       "name": "micstand_empty",
@@ -250,25 +307,11 @@
       "directions": 4
     },
     {
+      "name": "micstand2",
+      "directions": 4
+    },
+    {
       "name": "wall_loudspeaker"
-    },
-    {
-      "name": "intercom-p"
-    },
-    {
-      "name": "intercom"
-    },
-    {
-      "name": "radio_off"
-    },
-    {
-      "name": "celly"
-    },
-    {
-      "name": "walkietalkie"
-    },
-    {
-      "name": "walkietalkie_off"
     },
     {
       "name": "tracking",
@@ -409,17 +452,7 @@
       ]
     },
     {
-      "name": "portable_radio5",
-      "delays": [
-        [
-          0.1,
-          0.25,
-          0.15
-        ]
-      ]
-    },
-    {
-      "name": "comlink"
+      "name": "rc_control"
     }
   ]
 }

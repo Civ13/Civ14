@@ -25,23 +25,6 @@
       "name": "stone_anvil_use2"
     },
     {
-      "name": "steel_anvil"
-    },
-    {
-      "name": "steel_anvil_use",
-      "delays": [
-        [
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "steel_anvil_use2"
-    },
-    {
       "name": "iron_anvil"
     },
     {
@@ -59,82 +42,10 @@
       "name": "iron_anvil_use2"
     },
     {
-      "name": "ingot_mold_full"
+      "name": "steel_anvil"
     },
     {
-      "name": "ingot_mold_empty"
-    },
-    {
-      "name": "sword_mold_empty"
-    },
-    {
-      "name": "sword_mold_full"
-    },
-    {
-      "name": "clay_jug_empty"
-    },
-    {
-      "name": "clay_jug_full"
-    },
-    {
-      "name": "knife_mold_empty"
-    },
-    {
-      "name": "knife_mold_full"
-    },
-    {
-      "name": "spearhead_mold_empty"
-    },
-    {
-      "name": "spearhead_mold_full"
-    },
-    {
-      "name": "pickaxe_mold_empty"
-    },
-    {
-      "name": "pickaxe_mold_full"
-    },
-    {
-      "name": "shovel_mold_empty"
-    },
-    {
-      "name": "shovel_mold_full"
-    },
-    {
-      "name": "arrowhead_mold_full"
-    },
-    {
-      "name": "arrowhead_mold_empty"
-    },
-    {
-      "name": "axehead_mold_full"
-    },
-    {
-      "name": "axehead_mold_empty"
-    },
-    {
-      "name": "clay_pot_empty"
-    },
-    {
-      "name": "clay_pot_full"
-    },
-    {
-      "name": "crude_pickaxe"
-    },
-    {
-      "name": "crude_spearhead"
-    },
-    {
-      "name": "crude_sword"
-    },
-    {
-      "name": "crude_shovel"
-    },
-    {
-      "name": "bloomery"
-    },
-    {
-      "name": "bloomery_on",
+      "name": "steel_anvil_use",
       "delays": [
         [
           0.1,
@@ -145,7 +56,7 @@
       ]
     },
     {
-      "name": "dolomite"
+      "name": "steel_anvil_use2"
     },
     {
       "name": "blast_furnace"
@@ -162,37 +73,18 @@
       ]
     },
     {
-      "name": "axehead_mold_raw"
+      "name": "bloomery"
     },
     {
-      "name": "ingot_mold_raw"
-    },
-    {
-      "name": "sword_mold_raw"
-    },
-    {
-      "name": "clay_jug_raw"
-    },
-    {
-      "name": "knife_mold_raw"
-    },
-    {
-      "name": "spearhead_mold_raw"
-    },
-    {
-      "name": "pickaxe_mold_raw"
-    },
-    {
-      "name": "shovel_mold_raw"
-    },
-    {
-      "name": "arrowhead_mold_raw"
-    },
-    {
-      "name": "clay_pot_raw"
-    },
-    {
-      "name": "flux_dust"
+      "name": "bloomery_on",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
     },
     {
       "name": "stone_kiln"
@@ -237,7 +129,112 @@
       ]
     },
     {
+      "name": "clay_jug_raw"
+    },
+    {
+      "name": "clay_jug_empty"
+    },
+    {
+      "name": "clay_jug_full"
+    },
+    {
+      "name": "clay_pot_raw"
+    },
+    {
+      "name": "clay_pot_empty"
+    },
+    {
+      "name": "clay_pot_full"
+    },
+    {
+      "name": "ingot_mold_raw"
+    },
+    {
+      "name": "ingot_mold_empty"
+    },
+    {
+      "name": "ingot_mold_full"
+    },
+    {
+      "name": "axehead_mold_raw"
+    },
+    {
+      "name": "axehead_mold_full"
+    },
+    {
+      "name": "axehead_mold_empty"
+    },
+    {
       "name": "crude_axehead"
+    },
+    {
+      "name": "sword_mold_raw"
+    },
+    {
+      "name": "sword_mold_empty"
+    },
+    {
+      "name": "sword_mold_full"
+    },
+    {
+      "name": "crude_sword"
+    },
+    {
+      "name": "knife_mold_raw"
+    },
+    {
+      "name": "knife_mold_empty"
+    },
+    {
+      "name": "knife_mold_full"
+    },
+    {
+      "name": "spearhead_mold_raw"
+    },
+    {
+      "name": "spearhead_mold_empty"
+    },
+    {
+      "name": "spearhead_mold_full"
+    },
+    {
+      "name": "crude_spearhead"
+    },
+    {
+      "name": "pickaxe_mold_raw"
+    },
+    {
+      "name": "pickaxe_mold_empty"
+    },
+    {
+      "name": "pickaxe_mold_full"
+    },
+    {
+      "name": "crude_pickaxe"
+    },
+    {
+      "name": "shovel_mold_raw"
+    },
+    {
+      "name": "shovel_mold_empty"
+    },
+    {
+      "name": "shovel_mold_full"
+    },
+    {
+      "name": "crude_shovel"
+    },
+    {
+      "name": "arrowhead_mold_raw"
+    },
+    {
+      "name": "arrowhead_mold_empty"
+    },
+    {
+      "name": "arrowhead_mold_full"
+    },
+    {
+      "name": "hammerhead_mold_raw"
     },
     {
       "name": "hammerhead_mold_empty"
@@ -249,9 +246,6 @@
       "name": "crude_hammerhead"
     },
     {
-      "name": "hammerhead_mold_raw"
-    },
-    {
       "name": "key_mold_raw"
     },
     {
@@ -259,6 +253,12 @@
     },
     {
       "name": "key_mold_full"
+    },
+    {
+      "name": "flux_dust"
+    },
+    {
+      "name": "dolomite"
     }
   ]
 }

@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "license": "AGPLv3",
+  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "",
+      "delays": [
+        [
+          0.120000005,
+          0.120000005,
+          0.120000005,
+          0.120000005
+        ]
+      ]
+    },
+    {
+      "name": "chinchona"
+    },
+    {
+      "name": "peyote"
+    },
+    {
+      "name": "juniper_berry"
+    },
+    {
+      "name": "sapote"
+    },
+    {
+      "name": "parsnip"
+    },
+    {
+      "name": "zucchini"
+    },
+    {
+      "name": "sapodilla"
+    },
+    {
+      "name": "paprika_pepper"
+    },
+    {
+      "name": "celery_stalk"
+    },
+    {
+      "name": "agave_leaf"
+    },
+    {
+      "name": "parsley"
+    },
+    {
+      "name": "grapes"
+    },
+    {
+      "name": "mushrooms"
+    },
+    {
+      "name": "watermelonslice"
+    },
+    {
+      "name": "pumpkinslice"
+    },
+    {
+      "name": "lime"
+    },
+    {
+      "name": "lemon"
+    },
+    {
+      "name": "orange"
+    },
+    {
+      "name": "apple"
+    },
+    {
+      "name": "banana"
+    },
+    {
+      "name": "apricot"
+    },
+    {
+      "name": "tomato"
+    },
+    {
+      "name": "carrot"
+    },
+    {
+      "name": "driedsalmon"
+    },
+    {
+      "name": "driedfish"
+    },
+    {
+      "name": "squid_rings"
+    },
+    {
+      "name": "octopus_rings"
+    },
+    {
+      "name": "driedfish1"
+    },
+    {
+      "name": "driedfish2"
+    },
+    {
+      "name": "driedmeat"
+    }
+  ]
+}

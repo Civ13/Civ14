@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "license": "AGPLv3",
+  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "donut"
+    },
+    {
+      "name": "jelly"
+    },
+    {
+      "name": "donut_pink"
+    },
+    {
+      "name": "jelly_pink"
+    },
+    {
+      "name": "donut_homer"
+    },
+    {
+      "name": "jelly_homer"
+    },
+    {
+      "name": "donut_purple"
+    },
+    {
+      "name": "jelly_purple"
+    },
+    {
+      "name": "donut_green"
+    },
+    {
+      "name": "jelly_green"
+    },
+    {
+      "name": "donut_beige"
+    },
+    {
+      "name": "jelly_beige"
+    },
+    {
+      "name": "donut_choc"
+    },
+    {
+      "name": "jelly_choc"
+    },
+    {
+      "name": "donut_choc_sprinkles"
+    },
+    {
+      "name": "jelly_choc_sprinkles"
+    },
+    {
+      "name": "donut_blue"
+    },
+    {
+      "name": "jelly_blue"
+    },
+    {
+      "name": "donut_yellow"
+    },
+    {
+      "name": "jelly_yellow"
+    },
+    {
+      "name": "donut_olive"
+    },
+    {
+      "name": "jelly_olive"
+    },
+    {
+      "name": "donut_laugh"
+    },
+    {
+      "name": "jelly_laugh"
+    },
+    {
+      "name": "donutbox"
+    },
+    {
+      "name": "donut_inbox"
+    },
+    {
+      "name": "donut_purple_inbox"
+    },
+    {
+      "name": "donut_laugh_inbox"
+    },
+    {
+      "name": "donut_green_inbox"
+    },
+    {
+      "name": "donut_beige_inbox"
+    },
+    {
+      "name": "donut_choc_inbox"
+    },
+    {
+      "name": "donut_blue_inbox"
+    },
+    {
+      "name": "donut_yellow_inbox"
+    },
+    {
+      "name": "donut_olive_inbox"
+    },
+    {
+      "name": "donut_choc_sprinkles_inbox"
+    },
+    {
+      "name": "donut_homer_inbox"
+    },
+    {
+      "name": "donut_pink_inbox"
+    },
+    {
+      "name": "donutbox_top"
+    },
+    {
+      "name": "donutbox_inner"
+    },
+    {
+      "name": "donutbox_open"
+    }
+  ]
+}

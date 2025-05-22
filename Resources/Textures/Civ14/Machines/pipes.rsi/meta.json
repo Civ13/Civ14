@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "license": "AGPLv3",
+  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "pipe-t",
+      "directions": 4
+    },
+    {
+      "name": "pipe-u",
+      "directions": 4
+    },
+    {
+      "name": "pipe-d",
+      "directions": 4
+    },
+    {
+      "name": "pipe-b",
+      "directions": 4
+    },
+    {
+      "name": "s_pipe",
+      "directions": 4
+    },
+    {
+      "name": "s_pipe_turn",
+      "directions": 4
+    },
+    {
+      "name": "s_pipe_connection4_thin"
+    },
+    {
+      "name": "s_pipe2_thin",
+      "directions": 4
+    },
+    {
+      "name": "s_pipe_connection3_thin",
+      "directions": 4
+    }
+  ]
+}

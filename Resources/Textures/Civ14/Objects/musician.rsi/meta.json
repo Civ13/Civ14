@@ -1,32 +1,32 @@
 {
-    "version": 1,
-    "license": "AGPLv3",
-    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
-    "size": {
-        "x": 32,
-        "y": 32
+  "version": 1,
+  "license": "AGPLv3",
+  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "piano"
     },
-    "states": [
-        {
-            "name": "piano"
-        },
-        {
-            "name": "minimoog"
-        },
-        {
-            "name": "minimoogbroken"
-        },
-        {
-            "name": "pianobroken"
-        },
-        {
-            "name": "violin"
-        },
-        {
-            "name": "trombone"
-        },
-        {
-            "name": "shamisen"
-        }
-    ]
+    {
+      "name": "pianobroken"
+    },
+    {
+      "name": "minimoog"
+    },
+    {
+      "name": "minimoogbroken"
+    },
+    {
+      "name": "violin"
+    },
+    {
+      "name": "trombone"
+    },
+    {
+      "name": "shamisen"
+    }
+  ]
 }

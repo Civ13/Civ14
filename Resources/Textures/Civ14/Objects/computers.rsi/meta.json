@@ -128,7 +128,7 @@
       "directions": 4
     },
     {
-      "name": "research_on",
+      "name": "research_on-old",
       "directions": 4,
       "delays": [
         [
@@ -274,6 +274,61 @@
     },
     {
       "name": "card_red"
+    },
+    {
+      "name": "commodore64"
+    },
+    {
+      "name": "ibm",
+      "directions": 4
+    },
+    {
+      "name": "ibm_on",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "research_on",
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
     }
   ]
 }

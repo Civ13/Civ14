@@ -44,16 +44,22 @@
       "name": "Air-Cooled Barrel"
     },
     {
-      "name": "Open (Belt-Fed)_unloaded"
+      "name": "Open (Belt-Fed)_loaded"
     },
     {
-      "name": "Open (Belt-Fed)_loaded"
+      "name": "Open (Belt-Fed)_unloaded"
     },
     {
       "name": "Large External Magazine_loaded"
     },
     {
       "name": "Large External Magazine_unloaded"
+    },
+    {
+      "name": "External Magazine_loaded"
+    },
+    {
+      "name": "External Magazine_unloaded"
     },
     {
       "name": "Internal Magazine_loaded"
@@ -68,13 +74,10 @@
       "name": "Internal Magazine (Removable)_unloaded"
     },
     {
-      "name": "External Magazine_loaded"
-    },
-    {
-      "name": "External Magazine_unloaded"
-    },
-    {
       "name": "Bolt-Action"
+    },
+    {
+      "name": "Bolt-Action_open"
     },
     {
       "name": "Pump-Action"

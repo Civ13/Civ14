@@ -57,6 +57,51 @@
     },
     {
       "name": "fueltank"
+    },
+    {
+      "name": "fueltank_new"
+    },
+    {
+      "name": "rocket"
+    },
+    {
+      "name": "rocket_o",
+      "delays": [
+        [
+          0.05,
+          0.05,
+          0.05
+        ]
+      ]
+    },
+    {
+      "name": "rocket_fly",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.08,
+          0.060000002,
+          0.04,
+          0.02,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "fob"
+    },
+    {
+      "name": "liberty",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
     }
   ]
 }
