@@ -56,10 +56,26 @@
       sprite: Civ14/Markers/areas.rsi
       state: capture_blue
     - type: CaptureArea
-      name: "The Main House"
+      name: "the Main House"
       captureDuration: 240 # 4 min
       captureRadius: 5
       contestedResetTime: 10 # 10 seconds before timer resets when contested
       capturableFactions:
         - Soviet
+        - Germany
+
+- type: entity
+  name: capturable area - Hotel
+  id: MarkerCaptureHotel
+  parent: MarkerCapturableArea
+  components:
+    - type: Sprite
+      sprite: Civ14/Markers/areas.rsi
+      state: capture_red
+    - type: CaptureArea
+      name: "the Hotel"
+      captureDuration: 240 # 4 min
+      captureRadius: 5
+      contestedResetTime: 10 # 10 seconds before timer resets when contested
+      capturableFactions:
         - Germany

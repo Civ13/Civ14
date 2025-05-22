@@ -193,7 +193,7 @@
       - ShowSovietFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
-    state: ger2_basic
+    state: ger_basic
 
 - type: factionIcon
   id: Ger3Faction
@@ -207,7 +207,7 @@
     state: ger3_basic
 
 - type: factionIcon
-  id: GerFaction
+  id: Ger2Faction
   priority: 1
   showTo:
     components:
@@ -215,7 +215,7 @@
       - ShowFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
-    state: ger_basic
+    state: ger2_basic
 
 - type: factionIcon
   id: GreekFaction

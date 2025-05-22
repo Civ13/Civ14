@@ -86,7 +86,7 @@
     - type: Projectile
       damage:
         types:
-          Piercing: 25
+          Piercing: 30
 - type: entity
   parent: BaseArrow
   id: ArrowImprovised

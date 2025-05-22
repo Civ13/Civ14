@@ -44,7 +44,7 @@
       selectedMode: FullAuto
       availableModes:
         - FullAuto
-      projectileSpeed: 18 # Original minAngle: 52, maxAngle: 70
+      projectileSpeed: 25 # Original minAngle: 52, maxAngle: 70
       minAngle: 12
       maxAngle: 30
       angleIncrease: 3.5
@@ -81,7 +81,7 @@
       sprite: Civ14/Weapons/Guns/mp40.rsi
       equipDelay: 1
     - type: Gun # Original minAngle: 52, maxAngle: 70
-      projectileSpeed: 18
+      projectileSpeed: 25
       minAngle: 12
       maxAngle: 40
       angleIncrease: 3.5
@@ -126,7 +126,7 @@
     - type: Clothing
       sprite: Civ14/Weapons/Guns/ppd.rsi
     - type: Gun
-      projectileSpeed: 18 # Original minAngle: 55, maxAngle: 95
+      projectileSpeed: 25 # Original minAngle: 55, maxAngle: 95
       minAngle: 15
       maxAngle: 55
       angleIncrease: 5
@@ -171,7 +171,7 @@
     - type: Clothing
       sprite: Civ14/Weapons/Guns/ppsh.rsi
     - type: Gun
-      projectileSpeed: 18 # Original minAngle: 65, maxAngle: 110
+      projectileSpeed: 25 # Original minAngle: 65, maxAngle: 110
       minAngle: 10
       maxAngle: 50
       angleIncrease: 3
@@ -209,7 +209,7 @@
     - type: Clothing
       sprite: Civ14/Weapons/Guns/pps.rsi
     - type: Gun
-      projectileSpeed: 18 # Original minAngle: 50, maxAngle: 80
+      projectileSpeed: 25 # Original minAngle: 50, maxAngle: 80
       minAngle: 10
       maxAngle: 40
       angleIncrease: 4
@@ -244,7 +244,7 @@
     - type: Clothing
       sprite: Civ14/Weapons/Guns/greasegun.rsi
     - type: Gun
-      projectileSpeed: 18 # Original minAngle: 50, maxAngle: 80
+      projectileSpeed: 25 # Original minAngle: 50, maxAngle: 80
       minAngle: 10
       maxAngle: 40
       angleIncrease: 4
@@ -280,7 +280,7 @@
     - type: Clothing
       sprite: Civ14/Weapons/Guns/tommygun.rsi
     - type: Gun
-      projectileSpeed: 18 # Original minAngle: 55, maxAngle: 90
+      projectileSpeed: 25 # Original minAngle: 55, maxAngle: 90
       minAngle: 15
       maxAngle: 50
       angleIncrease: 4.5
@@ -351,7 +351,7 @@
     - type: Clothing
       sprite: Civ14/Weapons/Guns/type100.rsi
     - type: Gun
-      projectileSpeed: 18 # Original minAngle: 45, maxAngle: 65
+      projectileSpeed: 25 # Original minAngle: 45, maxAngle: 65
       minAngle: 5 # 8mm Nambu is a weaker round
       maxAngle: 25
       angleIncrease: 3
@@ -386,7 +386,7 @@
     - type: Clothing
       sprite: Civ14/Weapons/Guns/sten2.rsi
     - type: Gun
-      projectileSpeed: 18 # Original minAngle: 50, maxAngle: 75
+      projectileSpeed: 25 # Original minAngle: 50, maxAngle: 75
       minAngle: 10
       maxAngle: 35 # Sten was a bit rough
       angleIncrease: 3.8
@@ -442,7 +442,7 @@
       availableModes:
         - FullAuto
         - SemiAuto
-      projectileSpeed: 24 # 5.7x28mm - high velocity for a PDW # Original minAngle: 42, maxAngle: 75
+      projectileSpeed: 34 # 5.7x28mm - high velocity for a PDW # Original minAngle: 42, maxAngle: 75
       fireRate: 6.0 # ~900 RPM
       minAngle: 2 # Good control, bullpup
       maxAngle: 35
@@ -480,7 +480,7 @@
     - type: Clothing
       sprite: Civ14/Weapons/Guns/victor.rsi
     - type: Gun
-      projectileSpeed: 19 # 9mm # Original minAngle: 38, maxAngle: 65
+      projectileSpeed: 34 # 9mm # Original minAngle: 38, maxAngle: 65
       fireRate: 7.0 # ~1200 RPM - very fast
       minAngle: 1 # Kriss Super V system - very low recoil
       maxAngle: 25
@@ -516,7 +516,7 @@
     - type: Clothing
       sprite: Civ14/Weapons/Guns/uzi.rsi
     - type: Gun
-      projectileSpeed: 18 # 9mm # Original minAngle: 50, maxAngle: 80
+      projectileSpeed: 25 # 9mm # Original minAngle: 50, maxAngle: 80
       fireRate: 4.0 # ~600 RPM
       minAngle: 10 # Standard SMG kick
       maxAngle: 40
@@ -553,7 +553,7 @@
     - type: Clothing
       sprite: Civ14/Weapons/Guns/mac10.rsi
     - type: Gun
-      projectileSpeed: 18 # .45 ACP # Original minAngle: 60, maxAngle: 115
+      projectileSpeed: 25 # .45 ACP # Original minAngle: 60, maxAngle: 115
       fireRate: 6.8 # ~1100 RPM - bullet hose
       minAngle: 20 # Hard to control
       maxAngle: 75 # Wide spread
@@ -630,7 +630,7 @@
       availableModes:
         - FullAuto
         - SemiAuto # Original minAngle: 52, maxAngle: 100
-      projectileSpeed: 19 # 9mm Parabellum
+      projectileSpeed: 25 # 9mm Parabellum
       fireRate: 5.8 # ~850 RPM
       minAngle: 12 # Machine pistol, a bit wild
       maxAngle: 60
@@ -670,7 +670,7 @@
       availableModes:
         - FullAuto
         - SemiAuto # Original minAngle: 40, maxAngle: 70
-      projectileSpeed: 20 # 9mm - high quality
+      projectileSpeed: 28 # 9mm - high quality
       fireRate: 5.6 # ~800 RPM
       minAngle: 1 # Very controllable for an SMG
       maxAngle: 30 # Tight grouping

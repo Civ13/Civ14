@@ -23,6 +23,7 @@
       delay: 1
     - type: GunRequiresWield
     - type: Gun
+      projectileSpeed: 30
       minAngle: 0
       maxAngle: 5
       fireRate: 1

@@ -102,7 +102,7 @@ public sealed partial class GunSystem
 
                     if (EntityManager.TryGetComponent<CartridgeAmmoComponent>(cartridgeUid, out var currentCartridge) && currentCartridge.Spent)
                     {
-                        _sawmill.Info($"Deleting spent cartridge {ToPrettyString(cartridgeUid)} after 5 minutes.");
+                        //_sawmill.Info($"Deleting spent cartridge {ToPrettyString(cartridgeUid)} after 5 minutes.");
                         EntityManager.QueueDeleteEntity(cartridgeUid);
                     }
                     else

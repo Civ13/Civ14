@@ -1,0 +1,31 @@
+- type: gameMap
+  id: Hotel
+  mapName: "Hotel (WW2)"
+  mapPath: /Maps/civ/tdm/hotel.yml
+  minPlayers: 0
+  maxPlayers: 200
+  maxRandomOffset: 0
+  randomRotation: false
+  stations:
+    Hotel:
+      stationProto: StandardStationTDM
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Hotel (WW2)"
+        - type: StationJobs
+          availableJobs:
+            # German
+            GermanCaptain: [1, 1]
+            GermanSergeant: [4, 4]
+            GermanSubmachineGunner: [10, 10]
+            GermanRifleman: [40, 40]
+            GermanMachinegunner: [5, 5]
+            GermanMedic: [3, 3]
+
+            # Soviet
+            SovietCaptain: [1, 1]
+            SovietSergeant: [4, 4]
+            SovietSubmachineGunner: [10, 10]
+            SovietRifleman: [40, 40]
+            SovietMachinegunner: [5, 5]
+            SovietMedic: [3, 3]
