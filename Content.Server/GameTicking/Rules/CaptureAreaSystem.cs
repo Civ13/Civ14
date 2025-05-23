@@ -26,10 +26,21 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
     {
         base.Update(frameTime);
 
-        var ruleComp = RuleConfiguration; // Get the active rule component instance
+        // Attempt to get the rule component.
+        // The standard way in GameRuleSystem<T> is: var ruleComp = RuleConfiguration;
+        // If 'RuleConfiguration' is not recognized by the compiler in your environment,
+        // you can query for the component directly as a workaround.
+        CaptureAreaRuleComponent? ruleComp = null;
+        var ruleQuery = EntityQueryEnumerator<CaptureAreaRuleComponent>();
+        if (ruleQuery.MoveNext(out _, out var activeRuleComp)) // Assumes one active rule component
+        {
+            ruleComp = activeRuleComp;
+        }
 
-        if (ruleComp == null) // No active capture area rule
+        if (ruleComp == null) // No active CaptureAreaRuleComponent found
+        {
             return;
+        }
 
         // Handle Asymmetric mode timer and defender victory
         if (ruleComp.Mode == "Asymmetric")
