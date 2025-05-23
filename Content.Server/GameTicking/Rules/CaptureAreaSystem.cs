@@ -77,7 +77,7 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
             if (count > maxCount)
             {
                 maxCount = count;
-                currentController = faction;
+                currentController = Faction2String(faction);
             }
             else if (maxCount != 0 && count == maxCount)
             {
@@ -86,10 +86,7 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
         }
 
         // Update component state
-        if (maxCount > 0 && currentController != "")
-        {
-            area.Occupied = true;
-        }
+        area.Occupied = maxCount > 0 && !string.IsNullOrEmpty(currentController);
 
         if (currentController != area.Controller)
         {
@@ -143,33 +140,29 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
             else
             {
                 // Direct change from one faction to another
-                if (area.ContestedTimer == 0f)
-                {
-                    // Store the last controller when we first enter contested state
-                    area.LastController = area.Controller;
-                }
+                var oldController = area.Controller; // This is the display name of the old controller
 
-                // Treat as contested first
-                area.Controller = "";
-                area.ContestedTimer += frameTime;
+                // Announce loss for the old controller
+                // oldController is guaranteed to be non-empty here because:
+                // 1. currentController != area.Controller (outer condition)
+                // 2. currentController != "" (otherwise this branch wouldn't be hit, it'd be currentController == "")
+                // 3. area.Controller != "" (otherwise this branch wouldn't be hit, it'd be area.Controller == "")
+                _chat.DispatchGlobalAnnouncement($"{oldController} has lost control of {area.Name}!", "Objective", false, null, Color.Red);
 
-                // Only reset and announce if contested long enough
-                if (area.ContestedTimer >= area.ContestedResetTime)
-                {
-                    area.CaptureTimer = 0f;
-                    area.CaptureTimerAnnouncement1 = false;
-                    area.CaptureTimerAnnouncement2 = false;
+                // Announce gain for the new controller
+                _chat.DispatchGlobalAnnouncement($"{currentController} has gained control of {area.Name}!", "Objective", false, null, Color.DodgerBlue);
 
-                    // Now update to the new controller
-                    area.Controller = currentController;
+                // Update to the new controller
+                area.Controller = currentController;
 
-                    // Announce the change
-                    _chat.DispatchGlobalAnnouncement($"{area.LastController} has lost control of {area.Name}!", "Objective", false, null, Color.Red);
-                    _chat.DispatchGlobalAnnouncement($"{currentController} has gained control of {area.Name}!", "Objective", false, null, Color.DodgerBlue);
+                // Reset capture progress for the new controller
+                area.CaptureTimer = 0f;
+                area.CaptureTimerAnnouncement1 = false;
+                area.CaptureTimerAnnouncement2 = false;
 
-                    area.LastController = "";
-                    area.ContestedTimer = 0f;
-                }
+                // Reset contested state as it's now firmly controlled by a new faction
+                area.ContestedTimer = 0f;
+                area.LastController = ""; // Previous "last controller" during a contested phase is no longer relevant
             }
         }
         else if (!string.IsNullOrEmpty(currentController))
@@ -216,5 +209,17 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
         }
         area.PreviousController = currentController;
     }
+    private static string Faction2String(string faction)
+    {
+        switch (faction)
+        {
+            case "SovietCW":
+                return "Soviet Union";
+            case "Soviet":
+                return "Soviet Union";
+            default:
+                return faction;
+        }
 
+    }
 }

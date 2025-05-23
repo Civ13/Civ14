@@ -289,16 +289,6 @@
 
 - type: entity
   parent: BaseSign
-  id: SignCivCourt
-  name: "court"
-  description: "The court."
-  components:
-    - type: Sprite
-      sprite: "Civ14/Objects/decals_wide.rsi"
-      state: court
-
-- type: entity
-  parent: BaseSign
   id: SignCivHotelUral
   name: "Hotel Ural sign"
   description: "A worn-out sign with 'Hotel Ural' written in Cyrillic."

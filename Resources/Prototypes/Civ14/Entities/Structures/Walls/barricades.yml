@@ -446,6 +446,7 @@
   id: HescoBastion
   name: Hesco bastion
   description: A modern gabion primarily used for flood control and military fortifications.
+  suffix: destroyable
   placement:
     mode: SnapgridCenter
     snap:

@@ -101,7 +101,7 @@
     shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_American_uniform
     head: civ13_head_M1_Helmet
-#    belt: ClothingWebbingGermanRifleman
+    belt: ClothingWebbingUSCWRifleman
     pocket1: Gauze
     pocket2: Gauze
   inhand:
@@ -113,7 +113,7 @@
     shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_American_uniform
     head: civ13_head_M1_Helmet_with_netting_1
-#    belt: ClothingWebbingGermanRifleman
+    belt: ClothingWebbingUSCWRifleman
     pocket1: Gauze
     pocket2: Gauze
   inhand:
@@ -150,7 +150,7 @@
     shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_American_uniform
     head: civ13_head_M1_Helmet
-#    belt: ClothingWebbingGermanMG
+    belt: ClothingWebbingUSCWMG
     pocket1: CombatKnife
     pocket2: Gauze
   inhand:
@@ -162,11 +162,11 @@
     shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_American_uniform
     head: civ13_head_M1_Helmet_with_netting
-#    belt: ClothingWebbingGermanMG
+    belt: ClothingWebbingUSCWMG
     pocket1: CombatKnife
     pocket2: Gauze
   inhand:
-   - civ13_mg_M60
+    - civ13_mg_M60
 
 # Medic
 

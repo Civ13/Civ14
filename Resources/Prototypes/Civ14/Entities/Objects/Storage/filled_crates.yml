@@ -110,7 +110,7 @@
 
 - type: entity
   parent: CrateMilitary
-  id: CrateWoodSTANAGAmmo
+  id: CrateMilitarySTANAGAmmo
   name: STANAG ammo crate
   suffix: "5.56x45mm"
   components:
@@ -121,7 +121,7 @@
 
 - type: entity
   parent: CrateMilitary
-  id: CrateWoodAK74Ammo
+  id: CrateMilitaryAK74Ammo
   name: AK-74 ammo crate
   suffix: "5.56x39mm"
   components:
@@ -132,7 +132,7 @@
 
 - type: entity
   parent: CrateMilitary
-  id: CrateWoodRPDAmmo
+  id: CrateMilitaryRPDAmmo
   name: RPD ammo crate
   suffix: "7.62x39mm"
   components:
@@ -143,7 +143,7 @@
 
 - type: entity
   parent: CrateMilitary
-  id: CrateWoodM60Ammo
+  id: CrateMilitaryM60Ammo
   name: M60 ammo crate
   suffix: "7.62x51mm"
   components:
