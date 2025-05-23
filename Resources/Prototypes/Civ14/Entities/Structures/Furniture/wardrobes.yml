@@ -78,7 +78,7 @@
       isPlaceable: false
     - type: Damageable
       damageContainer: StructuralInorganic
-      damageModifierSet: WoodDestroy
+      damageModifierSet: Wood
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
