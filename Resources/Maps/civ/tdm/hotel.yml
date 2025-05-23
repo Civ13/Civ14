@@ -7252,7 +7252,7 @@ entities:
     - type: Transform
       pos: 1.5,68.5
       parent: 2
-- proto: CrateWoodSTANAGAmmo
+- proto: CrateMilitarySTANAGAmmo
   entities:
   - uid: 3166
     components:

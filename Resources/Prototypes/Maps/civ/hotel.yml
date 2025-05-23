@@ -6,6 +6,7 @@
   maxPlayers: 200
   maxRandomOffset: 0
   randomRotation: false
+  fixedPreset: TDMAsymmetric
   stations:
     Hotel:
       stationProto: StandardStationTDM

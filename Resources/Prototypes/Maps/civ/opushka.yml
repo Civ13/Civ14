@@ -6,6 +6,7 @@
   maxPlayers: 128
   maxRandomOffset: 0
   randomRotation: false
+  fixedPreset: TDM
   stations:
     Opushka:
       stationProto: StandardStationTDM

@@ -2,11 +2,11 @@
 # Straight in-game baby
 lobbyenabled = true
 # Dev map for faster loading & convenience
-map = "CampWW2"
+map = "Hotel"
 role_timers = false
 lobbyduration = 15
 disallowlatejoins = false
-defaultpreset = "tdm"
+defaultpreset = "tdm-asymmetric"
 
 [events]
 enabled = false

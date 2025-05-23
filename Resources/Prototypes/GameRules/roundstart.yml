@@ -72,9 +72,25 @@
 
 - type: entity
   parent: BaseGameRule
+  id: GracewallRule5
+  components:
+    - type: GracewallRule
+      gracewallDuration: 5
+
+- type: entity
+  parent: BaseGameRule
   id: CaptureAreaRule
   components:
     - type: CaptureAreaRule
+
+- type: entity
+  parent: BaseGameRule
+  id: CaptureAreaRuleAsymmetric
+  components:
+    - type: CaptureAreaRule
+      mode: Asymmetric
+      timer: 40
+      defenderFactionName: SovietCW
 
 - type: entity
   id: TeamDeathMatchRule
@@ -93,4 +109,12 @@
   parent: BaseGameRule
   components:
     - type: RandomWeatherRule
-      allowedWeathers: [Rain, Clear, Storm]
+      allowedWeathers: ["Rain", "Clear", "Storm"]
+
+- type: entity
+  id: RandomWeatherRuleNightSnow
+  parent: BaseGameRule
+  components:
+    - type: RandomWeatherRule
+      allowedWeathers: ["SnowfallLight"]
+      dayTimes: ["Night"]

@@ -79,3 +79,4 @@
       contestedResetTime: 10 # 10 seconds before timer resets when contested
       capturableFactions:
         - US
+        - SovietCW # they dont actually capture it but need to remove control

@@ -23,3 +23,17 @@
     - CaptureAreaRule
     - TeamDeathMatchRule
     - RandomWeatherRule
+
+- type: gamePreset
+  id: TDMAsymmetric
+  alias:
+    - tdm-asymmetric
+  name: tdm-asy-title
+  showInVote: true
+  description: tdm-asy-description
+  rules:
+    - RespawnDeadRuleTDMFixed
+    - GracewallRule5
+    - CaptureAreaRuleAsymmetric
+    - TeamDeathMatchRule
+    - RandomWeatherRuleNightSnow
