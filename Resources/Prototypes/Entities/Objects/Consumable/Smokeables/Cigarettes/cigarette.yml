@@ -17,7 +17,7 @@
       slots: [mask]
       equippedPrefix: unlit
     - type: STWeight
-      self: 0.75
+      self: 0.05
     - type: Item
       size: Tiny
       sprite: Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi
@@ -25,6 +25,13 @@
     - type: Construction
       graph: smokeableCigarette
       node: cigarette
+    - type: SolutionContainerManager
+      solutions:
+        smokable:
+          maxVol: 40
+          reagents:
+            - ReagentId: Nicotine
+              Quantity: 20
 
 - type: entity
   id: SoakedCigarette
@@ -46,7 +53,7 @@
       slots: [mask]
       equippedPrefix: unlit
     - type: STWeight
-      self: 0.75
+      self: 0.05
     - type: Item
       size: Tiny
     - type: Construction

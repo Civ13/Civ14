@@ -1,0 +1,70 @@
+- type: entity
+  parent: StructureDecorativeBase
+  id: StructureDecorativeRadio
+  name: military radio
+  description: A military radio.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/device.rsi
+      state: modern_intercom
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: StructureDecorativeRadioTransmitter
+  name: radio transmitter
+  description: A powerful radio transmitter.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/device.rsi
+      state: radio_transmitter
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: StructureDecorativeRecorder
+  name: recorder
+  description: A tape recorder.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/device.rsi
+      state: recorder_on
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: StructureDecorativeMachine
+  name: machine
+  description: Some sort of machine. Not sure what this does.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/device.rsi
+      state: machine_on
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: StructureDecorativeFOB
+  name: FOB transmitter
+  description: A transmitter for a FOB command post.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/obj32x64.rsi
+      state: fob
+- type: entity
+  parent: StructureDecorativeFOB
+  id: StructureDecorativeFOBFlipped
+  name: FOB transmitter
+  description: A transmitter for a FOB command post.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/obj32x64.rsi
+      state: fob_flipped

@@ -73,7 +73,7 @@
       sprite: Civ14/Markers/areas.rsi
       state: capture_red
     - type: CaptureArea
-      name: "the Hotel"
+      name: "the command post"
       captureDuration: 240 # 4 min
       captureRadius: 5
       contestedResetTime: 10 # 10 seconds before timer resets when contested

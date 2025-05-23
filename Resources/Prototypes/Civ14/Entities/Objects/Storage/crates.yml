@@ -16,3 +16,13 @@
         - entity_storage
     - type: StaticPrice
       price: 100
+
+- type: entity
+  parent: CrateBaseWeldable
+  id: CrateMilitary
+  name: military crate
+  components:
+    - type: Icon
+      sprite: Civ14/Objects/Storage/green_crate.rsi
+    - type: Sprite
+      sprite: Civ14/Objects/Storage/green_crate.rsi

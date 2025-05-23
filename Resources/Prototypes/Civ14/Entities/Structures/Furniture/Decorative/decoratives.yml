@@ -9,7 +9,6 @@
       sprite: Civ14/Structures/totems.rsi
       state: cross
       drawdepth: Mobs
-      offset: "0.0,0.5"
 
 - type: entity
   parent: StructureDecorativeBase
