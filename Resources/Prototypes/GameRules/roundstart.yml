@@ -75,7 +75,7 @@
   id: GracewallRule5
   components:
     - type: GracewallRule
-      gracewallDuration: 5
+      gracewallDuration: 300
 
 - type: entity
   parent: BaseGameRule

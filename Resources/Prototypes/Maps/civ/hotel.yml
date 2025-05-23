@@ -15,18 +15,16 @@
           mapNameTemplate: "Hotel (Cold War)"
         - type: StationJobs
           availableJobs:
-            # German
-            GermanCaptain: [1, 1]
-            GermanSergeant: [4, 4]
-            GermanSubmachineGunner: [10, 10]
-            GermanRifleman: [40, 40]
-            GermanMachinegunner: [5, 5]
-            GermanMedic: [3, 3]
+            # US
+            USCaptain: [1, 1]
+            USSergeant: [4, 4]
+            USRifleman: [50, 50]
+            USMachinegunner: [5, 5]
+            USMedic: [3, 3]
 
             # Soviet
-            SovietCaptain: [1, 1]
-            SovietSergeant: [4, 4]
-            SovietSubmachineGunner: [10, 10]
-            SovietRifleman: [40, 40]
-            SovietMachinegunner: [5, 5]
-            SovietMedic: [3, 3]
+            SovietCWCaptain: [1, 1]
+            SovietCWSergeant: [4, 4]
+            SovietCWRifleman: [50, 50]
+            SovietCWMachinegunner: [5, 5]
+            SovietCWMedic: [3, 3]
