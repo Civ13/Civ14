@@ -75,7 +75,7 @@
     - type: CaptureArea
       name: "the command post"
       captureDuration: 240 # 4 min
-      captureRadius: 5
+      captureRadius: 4
       contestedResetTime: 10 # 10 seconds before timer resets when contested
       capturableFactions:
-        - Germany
+        - US

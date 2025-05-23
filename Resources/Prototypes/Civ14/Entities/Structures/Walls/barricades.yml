@@ -321,3 +321,200 @@
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]
+
+- type: entity
+  id: BarricadeJerseyBarrier
+  description: A modular concrete barrier, also useful as a barricade.
+  parent: BarricadeSandbags
+  name: jersey barrier
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/junk.rsi #why???
+      state: jerseybarrier1
+      drawdepth: FloorObjects
+      noRot: true
+      layers:
+        - state: jerseybarrier1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            jerseybarrier1: ""
+            jerseybarrier2: ""
+            jerseybarrier3: ""
+            jerseybarrier4: ""
+            jerseybarrier5: ""
+    - type: Damageable
+      damageModifierSet: Rock
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 320
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  id: BarricadeJerseyBarrierAlt
+  description: A modular concrete barrier, also useful as a barricade.
+  parent: BarricadeSandbags
+  name: jersey barrier
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/junk.rsi #why???
+      state: jerseybarrier_alt1
+      drawdepth: FloorObjects
+      noRot: true
+      layers:
+        - state: jerseybarrier_alt1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            jerseybarrier_alt1: ""
+            jerseybarrier_alt2: ""
+    - type: Damageable
+      damageModifierSet: Rock
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 320
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  parent: BaseStructure
+  id: HescoBastionIndestructible
+  name: Hesco bastion
+  description: A modern gabion primarily used for flood control and military fortifications.
+  suffix: indestructible
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+    - type: RangedDamageSound
+      soundGroups:
+        Brute:
+          collection: MetalBulletImpact
+      soundTypes:
+        Heat:
+          collection: MetalLaserImpact
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: Civ14/Objects/junk.rsi #why???
+      state: hescobastion
+      drawdepth: Walls
+    - type: Icon
+      sprite: Civ14/Objects/junk.rsi #why???
+      state: hescobastion
+    - type: PlacementReplacement
+      key: walls
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Inert
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.5,-0.5,0.5,0.5"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+          density: 1000
+    - type: Occluder
+    - type: Airtight
+      airBlocked: false
+    - type: RadiationBlocker
+      resistance: 2
+    - type: SunShadowCast
+
+- type: entity
+  parent: HescoBastionIndestructible
+  id: HescoBastion
+  name: Hesco bastion
+  description: A modern gabion primarily used for flood control and military fortifications.
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+    - type: Damageable
+      damageModifierSet: Inert
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 450
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  parent: BaseBarricade
+  id: BarricadeJunk
+  name: junk
+  description: A pile of junk. Not much to see here.
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/junk.rsi
+      state: Junk_1
+      layers:
+        - state: Junk_1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            Junk_1: ""
+            Junk_2: ""
+            Junk_3: ""
+            Junk_4: ""
+            Junk_5: ""
+            Junk_6: ""
+            Junk_7: ""
+            Junk_8: ""
+            Junk_9: ""
+            Junk_10: ""
+            Junk_11: ""
+            Junk_12: ""
+            Junk_13: ""
+            Junk_14: ""
+    - type: Climbable
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.38,-0.38,0.38,0.38"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+    - type: Damageable
+      damageModifierSet: Inert
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 90
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Barricade
+      bidirectional: true
+      blocking: 30
+    - type: AtmosExposed

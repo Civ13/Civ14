@@ -1,6 +1,6 @@
 - type: gameMap
   id: Hotel
-  mapName: "Hotel (WW2)"
+  mapName: "Hotel (Cold War)"
   mapPath: /Maps/civ/tdm/hotel.yml
   minPlayers: 0
   maxPlayers: 200
@@ -11,7 +11,7 @@
       stationProto: StandardStationTDM
       components:
         - type: StationNameSetup
-          mapNameTemplate: "Hotel (WW2)"
+          mapNameTemplate: "Hotel (Cold War)"
         - type: StationJobs
           availableJobs:
             # German

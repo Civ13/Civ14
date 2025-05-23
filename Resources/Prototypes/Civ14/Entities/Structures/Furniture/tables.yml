@@ -46,3 +46,87 @@
     - type: FootstepModifier
       footstepSoundCollection:
         collection: FootstepWood
+# non-tileable tables
+- type: entity
+  id: TableNonTileable
+  parent: BaseStructure
+  name: table
+  abstract: true
+  description: A table.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/closet.rsi
+      state: coffee_table
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.45,-0.45,0.45,0.45"
+          density: 55
+          mask:
+            - TableMask
+          layer:
+            - TableLayer
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+        - trigger: !type:DamageTrigger
+            damage: 15
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: WoodDestroy
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                MaterialWoodPlank1:
+                  min: 0
+                  max: 1
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  id: TableWoodCoffeeTable
+  parent: TableNonTileable
+  name: coffee table
+  description: A wooden coffee table.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/closet.rsi
+      state: coffee_table
+
+- type: entity
+  id: TableWoodCoffeeTableWhite
+  parent: TableNonTileable
+  name: coffee table
+  description: A white coffee table.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/closet.rsi
+      state: coffee_table-alt
+
+- type: entity
+  id: TableWoodEndtable
+  parent: TableNonTileable
+  name: end table
+  description: A wooden end table.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/closet.rsi
+      state: endtable
+
+- type: entity
+  id: TableWoodEndtableWhite
+  parent: TableNonTileable
+  name: end table
+  description: A white end table.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/closet.rsi
+      state: endtable-alt

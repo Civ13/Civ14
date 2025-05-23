@@ -68,3 +68,94 @@
       noRot: true
       sprite: Civ14/Objects/obj32x64.rsi
       state: fob_flipped
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: StructureDecorativeSupplyCrate
+  name: supply crate
+  description: A crate of assorted supplies.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/junk.rsi
+      state: supply_crate
+- type: entity
+  parent: StructureDecorativeBase
+  id: StructureDecorativeRadiator
+  name: radiator
+  description: An old radiator.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: false
+      sprite: Civ14/Objects/junk.rsi
+      state: radiator
+- type: entity
+  parent: StructureDecorativeBase
+  id: StructureDecorativeBathtube
+  name: bathtub
+  description: An old bathtub.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/junk.rsi
+      state: bathtub
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: StructureDecorativeWashingMachine
+  name: washing machine
+  description: An old washing machine.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/modern_structures.rsi
+      state: washing_machine_4
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: StructureDecorativeStove
+  name: stove
+  description: An old gas stove.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/modern_structures.rsi
+      state: stove
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: StructureDecorativeTV
+  name: TV
+  description: An old TV.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/modern_structures.rsi
+      state: TV
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: StructureDecorativeCashRegister
+  name: cash register
+  description: A standard cash register.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/modern_structures.rsi
+      state: cash_register
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.2,-0.2,0.2,0.2"
+          hard: false
+          density: 30
+          mask:
+            - ItemMask

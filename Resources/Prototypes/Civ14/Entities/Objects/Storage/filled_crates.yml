@@ -107,3 +107,47 @@
       contents:
         - id: civ13_magazine_MG34_magazine_(7.92x57mm)
           amount: 6
+
+- type: entity
+  parent: CrateMilitary
+  id: CrateWoodSTANAGAmmo
+  name: STANAG ammo crate
+  suffix: "5.56x45mm"
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_STANAG_magazine_(5.56x45mm)
+          amount: 14
+
+- type: entity
+  parent: CrateMilitary
+  id: CrateWoodAK74Ammo
+  name: AK-74 ammo crate
+  suffix: "5.56x39mm"
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_AK_74_magazine_(5.45x39mm)
+          amount: 14
+
+- type: entity
+  parent: CrateMilitary
+  id: CrateWoodRPDAmmo
+  name: RPD ammo crate
+  suffix: "7.62x39mm"
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_RPD_drum_(7.62x39)
+          amount: 10
+
+- type: entity
+  parent: CrateMilitary
+  id: CrateWoodM60Ammo
+  name: M60 ammo crate
+  suffix: "7.62x51mm"
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_belt_(7.62x51mm)
+          amount: 10
