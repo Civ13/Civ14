@@ -28,6 +28,7 @@
   equipment:
     shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_American_captain_uniform
+    neck: civ13_accessory_green_PASGT_body_armor
     head: civ13_head_M1_Captain_Helmet
     belt: civ13_pistol_M1911A1
     pocket1: civ13_magazine_M1911_magazine_(.45)
@@ -64,6 +65,7 @@
   equipment:
     shoes: civ13_shoes_jackboots
     jumpsuit: civ13_uniform_US_Army_Officer_Uniform
+    neck: civ13_accessory_woodland_PASGT_body_armor
     head: civ13_head_M1_1st_LT_Helmet
     belt: civ13_pistol_M1911A1
     pocket1: civ13_magazine_M1911_magazine_(.45)
@@ -102,6 +104,7 @@
     jumpsuit: civ13_uniform_American_uniform
     head: civ13_head_M1_Helmet
     belt: ClothingWebbingUSCWRifleman
+    neck: civ13_accessory_woodland_PASGT_body_armor
     pocket1: Gauze
     pocket2: Gauze
   inhand:
@@ -114,6 +117,7 @@
     jumpsuit: civ13_uniform_American_uniform
     head: civ13_head_M1_Helmet_with_netting_1
     belt: ClothingWebbingUSCWRifleman
+    neck: civ13_accessory_woodland_PASGT_body_armor
     pocket1: Gauze
     pocket2: Gauze
   inhand:
@@ -151,6 +155,7 @@
     jumpsuit: civ13_uniform_American_uniform
     head: civ13_head_M1_Helmet
     belt: ClothingWebbingUSCWMG
+    neck: civ13_accessory_woodland_PASGT_body_armor
     pocket1: CombatKnife
     pocket2: Gauze
   inhand:
@@ -163,6 +168,7 @@
     jumpsuit: civ13_uniform_American_uniform
     head: civ13_head_M1_Helmet_with_netting
     belt: ClothingWebbingUSCWMG
+    neck: civ13_accessory_woodland_PASGT_body_armor
     pocket1: CombatKnife
     pocket2: Gauze
   inhand:
@@ -200,6 +206,7 @@
     head: civ13_head_M1_Medic_Helmet
     belt: ClothingSatchelMedicalMedsFilled
     back: ClothingBackpackDuffelFilled
+    neck: civ13_accessory_woodland_PASGT_body_armor
     pocket1: CombatKnife
   inhand:
     - civ13_ar_M16A2

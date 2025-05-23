@@ -1487,7 +1487,7 @@
       time: 5
 - type: entity
   name: green PASGT body armor
-  parent: ClothingNeckBase
+  parent: civ13_accessory_woodland_PASGT_body_armor
   id: civ13_accessory_green_PASGT_body_armor
   description: Wearable armor that can stop most pistol rounds. This one is green colored.
   components:
@@ -1495,14 +1495,6 @@
       sprite: Civ14/Clothing/exported/ties/pasgt_green.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/pasgt_green.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.32
-          Slash: 0.32
-          Piercing: 0.48
-          Arrow: 0.054
-          Heat: 0.78
     - type: Construction
       graph: civ13_accessory_green_PASGT_body_armor
       node: end
@@ -5355,9 +5347,9 @@
         coefficients:
           Blunt: 0.32
           Slash: 0.32
-          Piercing: 0.7
+          Piercing: 0.48
           Arrow: 0.054
-          Heat: 0.85
+          Heat: 0.78
     - type: Construction
       graph: civ13_accessory_6B2_body_armor
       node: end
@@ -5761,12 +5753,11 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+          Blunt: 0.45
+          Slash: 0.45
+          Piercing: 0.60
+          Arrow: 0.08
+          Heat: 0.78
     - type: Construction
       graph: civ13_accessory_6B1_vest
       node: end
@@ -5801,7 +5792,7 @@
       time: 5
 - type: entity
   name: khaki PASGT body armor
-  parent: ClothingNeckBase
+  parent: civ13_accessory_woodland_PASGT_body_armor
   id: civ13_accessory_khaki_PASGT_body_armor
   description: Wearable armor that can stop most pistol rounds. This one is khaki colored.
   components:
@@ -5809,14 +5800,6 @@
       sprite: Civ14/Clothing/exported/ties/pasgt_khaki.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/pasgt_khaki.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.32
-          Slash: 0.32
-          Piercing: 0.48
-          Arrow: 0.054
-          Heat: 0.78
     - type: Construction
       graph: civ13_accessory_khaki_PASGT_body_armor
       node: end
@@ -5825,7 +5808,7 @@
       time: 5
 - type: entity
   name: blizzard PASGT body armor
-  parent: ClothingNeckBase
+  parent: civ13_accessory_woodland_PASGT_body_armor
   id: civ13_accessory_blizzard_PASGT_body_armor
   description: >-
     Wearable armor that can stop most pistol rounds. This one has a blizzard
@@ -5835,14 +5818,6 @@
       sprite: Civ14/Clothing/exported/ties/pasgt_blizzard.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/pasgt_blizzard.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.32
-          Slash: 0.32
-          Piercing: 0.48
-          Arrow: 0.054
-          Heat: 0.78
     - type: Construction
       graph: civ13_accessory_blizzard_PASGT_body_armor
       node: end

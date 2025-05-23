@@ -30,6 +30,7 @@
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_Soviet_officer_uniform
     outerClothing: civ13_suit_Soviet_officer_coat
+    neck: civ13_accessory_6B2_body_armor
     belt: civ13_pistol_Makarov_PM
     pocket2: civ13_magazine_PM_Makarov_magazine_(9x18mm)
     head: civ13_head_soviet_officer_cap
@@ -68,7 +69,7 @@
   equipment:
     shoes: civ13_shoes_leather_shoes_1
     jumpsuit: civ13_uniform_Soviet_uniform
-    #outerClothing: civ13_suit_Soviet_coat
+    neck: civ13_accessory_6B2_body_armor
     head: civ13_head_soviet_pilotka
     belt: civ13_pistol_Makarov_PM
     pocket1: civ13_magazine_PM_Makarov_magazine_(9x18mm)
@@ -107,7 +108,7 @@
   equipment:
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_Soviet_uniform
-    #outerClothing: civ13_suit_Soviet_coat_1
+    neck: civ13_accessory_6B2_body_armor
     head: civ13_head_soviet_helmet
     belt: ClothingWebbingSovietCWRifleman
     pocket1: FlashlightLanternMilitary
@@ -122,7 +123,7 @@
     jumpsuit: civ13_uniform_Soviet_amoeba_outfit
     gloves: ClothingHandsGlovesFingerless
     belt: ClothingWebbingSovietCWRifleman
-    #    outerClothing: civ13_suit_Soviet_coat
+    neck: civ13_accessory_6B2_body_armor
     head: civ13_head_soviet_helmet
     pocket1: FlashlightLanternMilitary
     pocket2: Gauze
@@ -162,7 +163,7 @@
     jumpsuit: civ13_uniform_Soviet_uniform
     gloves: ClothingHandsGlovesFingerless
     belt: ClothingWebbingSovietCWMG
-    #outerClothing: civ13_suit_Soviet_coat
+    neck: civ13_accessory_6B2_body_armor
     head: civ13_head_soviet_helmet
     pocket1: CombatKnife
     pocket2: Gauze
@@ -176,7 +177,7 @@
     jumpsuit: civ13_uniform_Soviet_amoeba_outfit
     gloves: ClothingHandsGlovesFingerless
     belt: ClothingWebbingSovietCWRifleman
-    #    outerClothing: civ13_suit_Soviet_coat_1
+    neck: civ13_accessory_6B2_body_armor
     head: civ13_head_soviet_ushanka_1
     pocket1: CombatKnife
     pocket2: Gauze
@@ -213,7 +214,7 @@
   equipment:
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_Soviet_uniform
-    #outerClothing: civ13_suit_Soviet_coat_1
+    neck: civ13_accessory_6B2_body_armor
     head: civ13_head_soviet_medical_helmet
     belt: ClothingSatchelMedicalMedsFilled
     back: ClothingBackpackDuffelFilled
