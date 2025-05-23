@@ -215,15 +215,18 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
 
             //announce when theres 2 and 1 minutes left.
             var timeleft = area.CaptureDuration - area.CaptureTimer;
-            if (timeleft <= 120 && area.CaptureTimerAnnouncement2 == false)
+            if (currentController != ruleComp.DefenderFactionName)
             {
-                _chat.DispatchGlobalAnnouncement($"Two minutes until {currentController} captures {area.Name}!", "Round", false, null, Color.Blue);
-                area.CaptureTimerAnnouncement2 = true;
-            }
-            else if (timeleft < 60 && area.CaptureTimerAnnouncement1 == false)
-            {
-                _chat.DispatchGlobalAnnouncement($"One minute until {currentController} captures {area.Name}!", "Round", false, null, Color.Blue);
-                area.CaptureTimerAnnouncement1 = true;
+                if (timeleft <= 120 && area.CaptureTimerAnnouncement2 == false)
+                {
+                    _chat.DispatchGlobalAnnouncement($"Two minutes until {currentController} captures {area.Name}!", "Round", false, null, Color.Blue);
+                    area.CaptureTimerAnnouncement2 = true;
+                }
+                else if (timeleft < 60 && area.CaptureTimerAnnouncement1 == false)
+                {
+                    _chat.DispatchGlobalAnnouncement($"One minute until {currentController} captures {area.Name}!", "Round", false, null, Color.Blue);
+                    area.CaptureTimerAnnouncement1 = true;
+                }
             }
             //Check for capture completion
             if (area.CaptureTimer >= area.CaptureDuration)
