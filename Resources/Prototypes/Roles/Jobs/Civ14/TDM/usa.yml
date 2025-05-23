@@ -1,0 +1,205 @@
+- type: job
+  id: USCaptain
+  name: job-name-civ-us-cpt
+  faction: US
+  originalName: Captain
+  description: job-description-civ-us-cpt
+  playTimeTracker: JobUSCaptain
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10800 #3 hrs
+  startingGear: USCaptainGear
+  icon: "JobIconICpt"
+  supervisors: job-supervisors-nobody
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - US
+        - type: ShowUsFactionIcons
+          factionIcon: UsFaction
+
+- type: playTimeTracker
+  id: JobUSCaptain
+
+- type: startingGear
+  id: USCaptainGear
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_American_captain_uniform
+    head: civ13_head_M1_Captain_Helmet
+    belt: civ13_pistol_M1911A1
+    pocket1: civ13_magazine_M1911_magazine_(.45)
+
+# Sergeant
+
+- type: job
+  id: USSergeant
+  originalName: Sergeant
+  name: job-name-civ-us-sgt
+  faction: US
+  description: job-description-civ-us-sergeant
+  playTimeTracker: JobUSSergeant
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 5400 #1.5 hrs
+  startingGear: USSergeantGear
+  icon: "JobIconISgt"
+  supervisors: job-supervisors-cpt
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - US
+        - type: ShowUsFactionIcons
+          factionIcon: UsFaction
+
+- type: playTimeTracker
+  id: JobUSSergeant
+
+- type: startingGear
+  id: USSergeantGear
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_US_Army_Officer_Uniform
+    head: civ13_head_M1_1st_LT_Helmet
+    belt: civ13_pistol_M1911A1
+    pocket1: civ13_magazine_M1911_magazine_(.45)
+  inhand:
+    - civ13_ar_M16A2
+
+# Assault Rifleman
+
+- type: job
+  id: USRifleman
+  name: job-name-civ-us-rifleman
+  faction: US
+  originalName: Rifleman
+  description: job-description-civ-us-rifleman
+  playTimeTracker: JobUSRifleman
+  startingGear: USRiflemanGear
+  randomStartingGears: [USRiflemanGear, USRiflemanGear2]
+  icon: "JobIconICpl"
+  supervisors: job-supervisors-cpt
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - US
+        - type: ShowUsFactionIcons
+          factionIcon: UsFaction
+
+- type: playTimeTracker
+  id: JobUSRifleman
+
+- type: startingGear
+  id: USRiflemanGear
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_American_uniform
+    head: civ13_head_M1_Helmet
+#    belt: ClothingWebbingGermanRifleman
+    pocket1: Gauze
+    pocket2: Gauze
+  inhand:
+    - civ13_ar_M16A2
+
+- type: startingGear
+  id: USRiflemanGear2
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_American_uniform
+    head: civ13_head_M1_Helmet_with_netting_1
+#    belt: ClothingWebbingGermanRifleman
+    pocket1: Gauze
+    pocket2: Gauze
+  inhand:
+    - civ13_ar_M16A2
+
+# Machinegunner
+
+- type: job
+  id: USMachinegunner
+  name: job-name-civ-us-machinegunner
+  faction: US
+  originalName: Machinegunner
+  description: job-description-civ-us-machinegunner
+  playTimeTracker: JobUSMachinegunner
+  startingGear: USMachinegunnerGear
+  randomStartingGears: [USMachinegunnerGear, USMachinegunnerGear2]
+  icon: "JobIconMg"
+  supervisors: job-supervisors-cpt
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - US
+        - type: ShowUsFactionIcons
+          factionIcon: UsFaction
+
+- type: playTimeTracker
+  id: JobUSMachinegunner
+
+- type: startingGear
+  id: USMachinegunnerGear
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_American_uniform
+    head: civ13_head_M1_Helmet
+#    belt: ClothingWebbingGermanMG
+    pocket1: CombatKnife
+    pocket2: Gauze
+  inhand:
+    - civ13_mg_M60
+
+- type: startingGear
+  id: USMachinegunnerGear2
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_American_uniform
+    head: civ13_head_M1_Helmet_with_netting
+#    belt: ClothingWebbingGermanMG
+    pocket1: CombatKnife
+    pocket2: Gauze
+  inhand:
+   - civ13_mg_M60
+
+# Medic
+
+- type: job
+  id: USMedic
+  name: job-name-civ-us-medic
+  faction: US
+  originalName: Medic
+  description: job-description-civ-us-medic
+  playTimeTracker: JobUSMedic
+  startingGear: USMedicGear
+  icon: "JobIconMedic"
+  supervisors: job-supervisors-cpt
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - US
+        - type: ShowUsFactionIcons
+          factionIcon: UsFaction
+
+- type: playTimeTracker
+  id: JobUSMedic
+
+- type: startingGear
+  id: USMedicGear
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_American_uniform
+    head: civ13_head_M1_Medic_Helmet
+    belt: ClothingSatchelMedicalMedsFilled
+    back: ClothingBackpackDuffelFilled
+    pocket1: CombatKnife
+  inhand:
+    - civ13_ar_M16A2

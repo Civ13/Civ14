@@ -63,4 +63,30 @@
     - type: Sprite
       sprite: Markers/cross.rsi
       layers:
-        - state: pink     
+        - state: pink
+- type: entity
+  id: SpawnPointUS
+  parent: SpawnPointJobBase
+  name: us spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: US
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: blue
+- type: entity
+  id: SpawnPointSovietCW
+  parent: SpawnPointJobBase
+  name: sovietcw spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: SovietCW
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: pink         

@@ -111,4 +111,24 @@ public sealed class ShowSovietFactionIconsSystem : EquipmentHudSystem<ShowSoviet
             ev.StatusIcons.Add(iconPrototype);
     }
 }
+public sealed class ShowUsFactionIconsSystem : EquipmentHudSystem<ShowUsFactionIconsComponent>
+{
+    [Dependency] private readonly IPrototypeManager _prototype = default!;
+    public override void Initialize()
+    {
+        base.Initialize();
+
+        SubscribeLocalEvent<ShowUsFactionIconsComponent, GetStatusIconsEvent>(OnGetStatusIconsEvent);
+
+    }
+
+    private void OnGetStatusIconsEvent(EntityUid uid, ShowUsFactionIconsComponent component, ref GetStatusIconsEvent ev)
+    {
+        if (!IsActive)
+            return;
+
+        if (_prototype.TryIndex<FactionIconPrototype>(component.FactionIcon, out var iconPrototype))
+            ev.StatusIcons.Add(iconPrototype);
+    }
+}
 
