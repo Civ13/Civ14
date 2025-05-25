@@ -315,26 +315,13 @@ public sealed partial class GameTicker
 
     private void UpdateGameRules()
     {
-
-        if (_gameMapManager.GetSelectedMap() is { } mapPrototype)
+        var query = EntityQueryEnumerator<DelayedStartRuleComponent, GameRuleComponent>();
+        while (query.MoveNext(out var uid, out var delay, out var rule))
         {
-            var map = mapPrototype;
-            if (map.FixedPreset != "")
-            {
-                SetGamePreset(map.FixedPreset);
-            }
-        }
-        else
-        {
-            var query = EntityQueryEnumerator<DelayedStartRuleComponent, GameRuleComponent>();
-            while (query.MoveNext(out var uid, out var delay, out var rule))
-            {
-                if (_gameTiming.CurTime < delay.RuleStartTime)
-                    continue;
+            if (_gameTiming.CurTime < delay.RuleStartTime)
+                continue;
 
-
-                StartGameRule(uid, rule);
-            }
+            StartGameRule(uid, rule);
         }
     }
 

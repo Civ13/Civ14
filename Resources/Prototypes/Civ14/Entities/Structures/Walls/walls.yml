@@ -781,6 +781,9 @@
   description: A modern, sturdy concrete wall.
   suffix: ""
   components:
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Inert
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -814,6 +817,9 @@
   description: A classic red brick wall.
   suffix: ""
   components:
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Inert
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
