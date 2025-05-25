@@ -18,7 +18,7 @@
         - type: NpcFactionMember
           factions:
             - France
-        - type: ShowFrenchFactionIcons
+        - type: ShowFactionIcons
           factionIcon: FrenchFaction
 
 - type: playTimeTracker
@@ -53,7 +53,7 @@
         - type: NpcFactionMember
           factions:
             - France
-        - type: ShowFrenchFactionIcons
+        - type: ShowFactionIcons
           factionIcon: FrenchFaction
 
 - type: playTimeTracker
@@ -90,7 +90,7 @@
         - type: NpcFactionMember
           factions:
             - France
-        - type: ShowFrenchFactionIcons
+        - type: ShowFactionIcons
           factionIcon: FrenchFaction
 
 - type: playTimeTracker
@@ -137,7 +137,7 @@
         - type: NpcFactionMember
           factions:
             - France
-        - type: ShowFrenchFactionIcons
+        - type: ShowFactionIcons
           factionIcon: FrenchFaction
 
 - type: playTimeTracker
@@ -185,7 +185,7 @@
         - type: NpcFactionMember
           factions:
             - France
-        - type: ShowFrenchFactionIcons
+        - type: ShowFactionIcons
           factionIcon: FrenchFaction
 
 - type: playTimeTracker
@@ -259,7 +259,7 @@
         - type: NpcFactionMember
           factions:
             - France
-        - type: ShowFrenchFactionIcons
+        - type: ShowFactionIcons
           factionIcon: FrenchFaction
 
 - type: playTimeTracker

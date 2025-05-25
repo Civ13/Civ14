@@ -7,63 +7,18 @@ namespace Content.Shared.Overlays;
 /// <summary>
 ///     This component allows you to see faction icons above mobs.
 /// </summary>
-[RegisterComponent, NetworkedComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class ShowFactionIconsComponent : Component
 {
 
     /// <summary>
     /// The faction icon to display
     /// </summary>
-    [DataField("factionIcon", customTypeSerializer: typeof(PrototypeIdSerializer<FactionIconPrototype>))]
-    public string FactionIcon = "HostileFaction";
-}
-[RegisterComponent, NetworkedComponent]
-public sealed partial class ShowEnglishFactionIconsComponent : Component
-{
-
+    [DataField("factionIcon", customTypeSerializer: typeof(PrototypeIdSerializer<FactionIconPrototype>)), AutoNetworkedField]
+    public string FactionIcon { get; set; } = "HostileFaction";
     /// <summary>
-    /// The faction icon to display
+    /// The job icon to display (if any)
     /// </summary>
-    [DataField("factionIcon", customTypeSerializer: typeof(PrototypeIdSerializer<FactionIconPrototype>))]
-    public string FactionIcon = "EnglishFaction";
-}
-[RegisterComponent, NetworkedComponent]
-public sealed partial class ShowFrenchFactionIconsComponent : Component
-{
-
-    /// <summary>
-    /// The faction icon to display
-    /// </summary>
-    [DataField("factionIcon", customTypeSerializer: typeof(PrototypeIdSerializer<FactionIconPrototype>))]
-    public string FactionIcon = "FrenchFaction";
-}
-[RegisterComponent, NetworkedComponent]
-public sealed partial class ShowGermanFactionIconsComponent : Component
-{
-
-    /// <summary>
-    /// The faction icon to display
-    /// </summary>
-    [DataField("factionIcon", customTypeSerializer: typeof(PrototypeIdSerializer<FactionIconPrototype>))]
-    public string FactionIcon = "GermanFaction";
-}
-[RegisterComponent, NetworkedComponent]
-public sealed partial class ShowSovietFactionIconsComponent : Component
-{
-
-    /// <summary>
-    /// The faction icon to display
-    /// </summary>
-    [DataField("factionIcon", customTypeSerializer: typeof(PrototypeIdSerializer<FactionIconPrototype>))]
-    public string FactionIcon = "SovietFaction";
-}
-[RegisterComponent, NetworkedComponent]
-public sealed partial class ShowUsFactionIconsComponent : Component
-{
-
-    /// <summary>
-    /// The faction icon to display
-    /// </summary>
-    [DataField("factionIcon", customTypeSerializer: typeof(PrototypeIdSerializer<FactionIconPrototype>))]
-    public string FactionIcon = "UsFaction";
+    [DataField("jobIcon", customTypeSerializer: typeof(PrototypeIdSerializer<JobIconPrototype>)), AutoNetworkedField]
+    public string JobIcon { get; set; } = "JobIconSoldier";
 }

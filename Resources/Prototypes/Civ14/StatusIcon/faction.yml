@@ -187,11 +187,6 @@
     components:
       - ShowAntagIcons
       - ShowFactionIcons
-      - ShowEnglishFactionIcons
-      - ShowFrenchFactionIcons
-      - ShowGermanFactionIcons
-      - ShowSovietFactionIcons
-      - ShowUsFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: ger_basic
@@ -522,11 +517,6 @@
     components:
       - ShowAntagIcons
       - ShowFactionIcons
-      - ShowEnglishFactionIcons
-      - ShowFrenchFactionIcons
-      - ShowGermanFactionIcons
-      - ShowSovietFactionIcons
-      - ShowUsFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: sov_basic
@@ -648,11 +638,6 @@
     components:
       - ShowAntagIcons
       - ShowFactionIcons
-      - ShowEnglishFactionIcons
-      - ShowFrenchFactionIcons
-      - ShowGermanFactionIcons
-      - ShowSovietFactionIcons
-      - ShowUsFactionIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
     state: us_basic

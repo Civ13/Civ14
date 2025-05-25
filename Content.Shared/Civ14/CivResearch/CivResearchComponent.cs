@@ -26,11 +26,11 @@ public sealed partial class CivResearchComponent : Component
     public float ResearchLevel { get; set; } = 0f;
     /// <summary>
     /// For autoresearch, how much research increases per tick.
-    /// This defaults to 100 levels per day.
+    /// This defaults to 100 levels per hour.
     /// </summary>
 
     [DataField("researchSpeed"), AutoNetworkedField]
-    public float ResearchSpeed { get; set; } = 0.000057f;
+    public float ResearchSpeed { get; set; } = 0.001368f;
     /// <summary>
     /// The maximum research level.
     /// Should probably stay below 900 as 9 is used as the research level for disabled and futuristic stuff.

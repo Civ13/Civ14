@@ -18,7 +18,7 @@
         - type: NpcFactionMember
           factions:
             - Germany
-        - type: ShowGermanFactionIcons
+        - type: ShowFactionIcons
           factionIcon: GermanFaction
 
 - type: playTimeTracker
@@ -57,7 +57,7 @@
         - type: NpcFactionMember
           factions:
             - Germany
-        - type: ShowGermanFactionIcons
+        - type: ShowFactionIcons
           factionIcon: GermanFaction
 
 - type: playTimeTracker
@@ -96,7 +96,7 @@
         - type: NpcFactionMember
           factions:
             - Germany
-        - type: ShowGermanFactionIcons
+        - type: ShowFactionIcons
           factionIcon: GermanFaction
 
 - type: playTimeTracker
@@ -146,7 +146,7 @@
         - type: NpcFactionMember
           factions:
             - Germany
-        - type: ShowGermanFactionIcons
+        - type: ShowFactionIcons
           factionIcon: GermanFaction
 
 - type: playTimeTracker
@@ -196,7 +196,7 @@
         - type: NpcFactionMember
           factions:
             - Germany
-        - type: ShowGermanFactionIcons
+        - type: ShowFactionIcons
           factionIcon: GermanFaction
 
 - type: playTimeTracker
@@ -245,7 +245,7 @@
         - type: NpcFactionMember
           factions:
             - Germany
-        - type: ShowGermanFactionIcons
+        - type: ShowFactionIcons
           factionIcon: GermanFaction
 
 - type: playTimeTracker

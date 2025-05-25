@@ -18,7 +18,7 @@
         - type: NpcFactionMember
           factions:
             - Soviet
-        - type: ShowSovietFactionIcons
+        - type: ShowFactionIcons
           factionIcon: SovietFaction
 
 - type: playTimeTracker
@@ -56,7 +56,7 @@
         - type: NpcFactionMember
           factions:
             - Soviet
-        - type: ShowSovietFactionIcons
+        - type: ShowFactionIcons
           factionIcon: SovietFaction
 
 - type: playTimeTracker
@@ -95,7 +95,7 @@
         - type: NpcFactionMember
           factions:
             - Soviet
-        - type: ShowSovietFactionIcons
+        - type: ShowFactionIcons
           factionIcon: SovietFaction
 
 - type: playTimeTracker
@@ -147,7 +147,7 @@
         - type: NpcFactionMember
           factions:
             - Soviet
-        - type: ShowSovietFactionIcons
+        - type: ShowFactionIcons
           factionIcon: SovietFaction
 
 - type: playTimeTracker
@@ -200,7 +200,7 @@
         - type: NpcFactionMember
           factions:
             - Soviet
-        - type: ShowSovietFactionIcons
+        - type: ShowFactionIcons
           factionIcon: SovietFaction
 
 - type: playTimeTracker
@@ -253,7 +253,7 @@
         - type: NpcFactionMember
           factions:
             - Soviet
-        - type: ShowSovietFactionIcons
+        - type: ShowFactionIcons
           factionIcon: SovietFaction
 
 - type: playTimeTracker

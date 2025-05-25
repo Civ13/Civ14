@@ -13,7 +13,7 @@ public sealed partial class MortarComponent : Component
     public string ContainerId = "rmc_mortar_container";
 
     [DataField, AutoNetworkedField]
-    public TimeSpan DeployDelay = TimeSpan.FromSeconds(4);
+    public TimeSpan DeployDelay = TimeSpan.FromSeconds(8);
 
     [DataField, AutoNetworkedField]
     public TimeSpan TargetDelay = TimeSpan.FromSeconds(3);

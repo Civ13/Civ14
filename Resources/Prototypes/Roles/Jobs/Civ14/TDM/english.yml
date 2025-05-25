@@ -18,7 +18,7 @@
         - type: NpcFactionMember
           factions:
             - England
-        - type: ShowEnglishFactionIcons
+        - type: ShowFactionIcons
           factionIcon: EnglishFaction
 
 - type: playTimeTracker
@@ -54,7 +54,7 @@
         - type: NpcFactionMember
           factions:
             - England
-        - type: ShowEnglishFactionIcons
+        - type: ShowFactionIcons
           factionIcon: EnglishFaction
 
 - type: playTimeTracker
@@ -91,7 +91,7 @@
         - type: NpcFactionMember
           factions:
             - England
-        - type: ShowEnglishFactionIcons
+        - type: ShowFactionIcons
           factionIcon: EnglishFaction
 
 - type: playTimeTracker
@@ -138,7 +138,7 @@
         - type: NpcFactionMember
           factions:
             - England
-        - type: ShowEnglishFactionIcons
+        - type: ShowFactionIcons
           factionIcon: EnglishFaction
 
 - type: playTimeTracker
@@ -185,7 +185,7 @@
         - type: NpcFactionMember
           factions:
             - England
-        - type: ShowEnglishFactionIcons
+        - type: ShowFactionIcons
           factionIcon: EnglishFaction
 
 - type: playTimeTracker
@@ -259,7 +259,7 @@
         - type: NpcFactionMember
           factions:
             - England
-        - type: ShowEnglishFactionIcons
+        - type: ShowFactionIcons
           factionIcon: EnglishFaction
 
 - type: playTimeTracker
