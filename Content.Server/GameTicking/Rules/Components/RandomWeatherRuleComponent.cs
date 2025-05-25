@@ -23,7 +23,12 @@ public sealed partial class RandomWeatherRuleComponent : Component
     /// <summary>
     /// List of pre-set colors, mostly for tdm maps so we can set fixed times of day.
     /// </summary>
+    [DataField("weatherInitialised")]
+    public bool WeatherInitialised = false;
 
+    /// <summary>
+    /// List of pre-set colors, mostly for tdm maps so we can set fixed times of day.
+    /// </summary>
     [DataField("dayTimes")]
     public List<string> DayTimes = [
         "Day", //Daylight #D8B059

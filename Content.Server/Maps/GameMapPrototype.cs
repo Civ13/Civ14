@@ -50,6 +50,12 @@ public sealed partial class GameMapPrototype : IPrototype
     [DataField("fixedPreset")]
     public string FixedPreset { get; private set; } = "";
 
+    /// <summary>
+    /// To prevent looping
+    /// </summary>
+    [DataField("fixedPresetInitialised")]
+    public bool FixedPresetInitialised { get; set; } = false;
+
     [DataField("stations", required: true)]
     private Dictionary<string, StationConfig> _stations = new();
 

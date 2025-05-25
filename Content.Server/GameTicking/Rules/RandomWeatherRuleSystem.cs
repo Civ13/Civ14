@@ -70,7 +70,11 @@ public sealed class RandomWeatherRuleSystem : GameRuleSystem<RandomWeatherRuleCo
         }
         foreach (var mapId in _mapManager.GetAllMapIds())
         {
-            _weather.SetWeather(mapId, weather, endTime);
+            if (component.WeatherInitialised == false)
+            {
+                _weather.SetWeather(mapId, weather, endTime);
+                component.WeatherInitialised = true;
+            }
         }
     }
 
