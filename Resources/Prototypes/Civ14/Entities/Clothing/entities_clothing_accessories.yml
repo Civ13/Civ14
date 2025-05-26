@@ -8,15 +8,7 @@
       sprite: Civ14/Clothing/exported/ties/customarmband.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/customarmband.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_armband
       node: end
@@ -36,10 +28,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30
-          Slash: 0.30
-          Piercing: 0.6
-          Arrow: 0.1
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.7
+          Arrow: 0.6
           Heat: 0.88
           Radiation: 0.85
     - type: Construction
@@ -58,15 +50,7 @@
       sprite: Civ14/Clothing/exported/ties/spanish.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/spanish.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_yellow_armband
       node: end
@@ -83,15 +67,7 @@
       sprite: Civ14/Clothing/exported/ties/spanishrep.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/spanishrep.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Spanish_Republican_armband
       node: end
@@ -108,15 +84,7 @@
       sprite: Civ14/Clothing/exported/ties/french_vest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/french_vest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_French_webbing_vest
       node: end
@@ -133,15 +101,7 @@
       sprite: Civ14/Clothing/exported/ties/un.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/un.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_UN_armband
       node: end
@@ -158,15 +118,7 @@
       sprite: Civ14/Clothing/exported/ties/portuguese.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/portuguese.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_green_armband
       node: end
@@ -183,15 +135,7 @@
       sprite: Civ14/Clothing/exported/ties/dutch.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/dutch.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_orange_armband
       node: end
@@ -208,15 +152,7 @@
       sprite: Civ14/Clothing/exported/ties/polisharmband.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/polisharmband.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_polish_armband
       node: end
@@ -233,15 +169,7 @@
       sprite: Civ14/Clothing/exported/ties/wagred.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/wagred.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_red_wagner_armband
       node: end
@@ -258,15 +186,7 @@
       sprite: Civ14/Clothing/exported/ties/iron_arm.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/iron_arm.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_iron_arm_bangle
       node: end
@@ -285,15 +205,7 @@
       sprite: Civ14/Clothing/exported/badges/police_gold.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/police_gold.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_golden_Public_Order_ribbon
       node: end
@@ -312,15 +224,7 @@
       sprite: Civ14/Clothing/exported/badges/police_silver.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/police_silver.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_silver_Public_Order_ribbon
       node: end
@@ -337,15 +241,7 @@
       sprite: Civ14/Clothing/exported/ties/copper_arm.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/copper_arm.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_copper_arm_bangle
       node: end
@@ -364,15 +260,7 @@
       sprite: Civ14/Clothing/exported/badges/police_bronze.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/police_bronze.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_bronze_Public_Order_ribbon
       node: end
@@ -389,15 +277,7 @@
       sprite: Civ14/Clothing/exported/ties/sheriff.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/sheriff.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Sheriff_Star
       node: end
@@ -414,15 +294,7 @@
       sprite: Civ14/Clothing/exported/ties/spanish.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/spanish.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_deputy_armband
       node: end
@@ -439,15 +311,7 @@
       sprite: Civ14/Clothing/exported/ties/sheriff.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/sheriff.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_police_badge
       node: end
@@ -464,15 +328,7 @@
       sprite: Civ14/Clothing/exported/ties/red.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/red.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_red_armband
       node: end
@@ -489,15 +345,7 @@
       sprite: Civ14/Clothing/exported/ties/french.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/french.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_blue_armband
       node: end
@@ -539,15 +387,7 @@
       sprite: Civ14/Clothing/exported/ties/blue_tie.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/blue_tie.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_blue_tie
       node: end
@@ -564,15 +404,7 @@
       sprite: Civ14/Clothing/exported/ties/british_scarf.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/british_scarf.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_blue_scarf
       node: end
@@ -589,15 +421,7 @@
       sprite: Civ14/Clothing/exported/ties/british_scarf.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/british_scarf.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_blue_scarf_1
       node: end
@@ -614,15 +438,7 @@
       sprite: Civ14/Clothing/exported/ties/grey_scarf.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/grey_scarf.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_grey_scarf
       node: end
@@ -639,15 +455,7 @@
       sprite: Civ14/Clothing/exported/ties/red_scarf.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/red_scarf.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_red_scarf
       node: end
@@ -664,15 +472,7 @@
       sprite: Civ14/Clothing/exported/ties/yellow_scarf.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/yellow_scarf.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_yellow_scarf
       node: end
@@ -689,15 +489,7 @@
       sprite: Civ14/Clothing/exported/ties/spiked_bracers.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/spiked_bracers.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_spiked_bracers
       node: end
@@ -714,15 +506,7 @@
       sprite: Civ14/Clothing/exported/ties/indian2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/indian2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_indian_accessories_1_2
       node: end
@@ -739,15 +523,7 @@
       sprite: Civ14/Clothing/exported/ties/indianshaman.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/indianshaman.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_indian_shaman_bodypaint
       node: end
@@ -764,15 +540,7 @@
       sprite: Civ14/Clothing/exported/ties/indianr.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/indianr.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_red_indian_acessories
       node: end
@@ -789,15 +557,7 @@
       sprite: Civ14/Clothing/exported/ties/indiang.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/indiang.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_green_indian_acessories
       node: end
@@ -814,15 +574,7 @@
       sprite: Civ14/Clothing/exported/ties/indianb.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/indianb.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_blue_indian_acessories
       node: end
@@ -839,15 +591,7 @@
       sprite: Civ14/Clothing/exported/ties/indiany.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/indiany.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_yellow_indian_acessories
       node: end
@@ -864,15 +608,7 @@
       sprite: Civ14/Clothing/exported/ties/indianw.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/indianw.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_white_indian_acessories
       node: end
@@ -889,15 +625,7 @@
       sprite: Civ14/Clothing/exported/ties/indianbl.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/indianbl.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_black_indian_acessories
       node: end
@@ -914,15 +642,7 @@
       sprite: Civ14/Clothing/exported/ties/talisman.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/talisman.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_bone_talisman
       node: end
@@ -939,15 +659,7 @@
       sprite: Civ14/Clothing/exported/ties/redcross.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/redcross.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_red_cross_armband
       node: end
@@ -964,15 +676,7 @@
       sprite: Civ14/Clothing/exported/ties/nsdap.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/nsdap.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_NSDAP_armband
       node: end
@@ -989,15 +693,7 @@
       sprite: Civ14/Clothing/exported/ties/japanesemp.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/japanesemp.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Kenpeitai_armband
       node: end
@@ -1014,15 +710,7 @@
       sprite: Civ14/Clothing/exported/ties/usmp.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/usmp.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_military_police_armband
       node: end
@@ -1039,15 +727,7 @@
       sprite: Civ14/Clothing/exported/ties/volkssturm.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/volkssturm.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Volkssturm_armband
       node: end
@@ -1064,15 +744,7 @@
       sprite: Civ14/Clothing/exported/ties/kitty.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/kitty.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_cat_tail_and_ears
       node: end
@@ -1089,15 +761,7 @@
       sprite: Civ14/Clothing/exported/ties/customscarf.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/customscarf.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_scarf
       node: end
@@ -1114,15 +778,7 @@
       sprite: Civ14/Clothing/exported/ties/customsash.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/customsash.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_sash
       node: end
@@ -1195,15 +851,7 @@
       sprite: Civ14/Clothing/exported/ties/apron.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/apron.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_apron
       node: end
@@ -1220,15 +868,7 @@
       sprite: Civ14/Clothing/exported/ties/customizable_priest_band.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/customizable_priest_band.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_priest_band
       node: end
@@ -1245,15 +885,7 @@
       sprite: Civ14/Clothing/exported/ties/customcape.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/customcape.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_cape
       node: end
@@ -1270,15 +902,7 @@
       sprite: Civ14/Clothing/exported/ties/black_tie.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/black_tie.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_black_tie
       node: end
@@ -1295,15 +919,7 @@
       sprite: Civ14/Clothing/exported/ties/black_bowtie.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/black_bowtie.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_black_bowtie
       node: end
@@ -1320,15 +936,7 @@
       sprite: Civ14/Clothing/exported/ties/patch_marksman.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/patch_marksman.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_marksman_patch
       node: end
@@ -1345,15 +953,7 @@
       sprite: Civ14/Clothing/exported/ties/patch_russia.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/patch_russia.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Russia_patch
       node: end
@@ -1370,15 +970,7 @@
       sprite: Civ14/Clothing/exported/ties/patch_spets.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/patch_spets.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Spetsgruppa_A_patch
       node: end
@@ -1395,15 +987,7 @@
       sprite: Civ14/Clothing/exported/ties/swat.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/swat.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_SWAT_patch
       node: end
@@ -1420,15 +1004,7 @@
       sprite: Civ14/Clothing/exported/ties/patch_specialforces.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/patch_specialforces.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_special_forces_patch
       node: end
@@ -1445,15 +1021,7 @@
       sprite: Civ14/Clothing/exported/ties/policetag.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/policetag.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_SECURITY
       node: end
@@ -1470,15 +1038,7 @@
       sprite: Civ14/Clothing/exported/ties/pauldron_s.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/pauldron_s.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Standard_Single_Pauldron_
       node: end
@@ -1511,15 +1071,7 @@
       sprite: Civ14/Clothing/exported/ties/red_tie.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/red_tie.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_red_tie
       node: end
@@ -1536,15 +1088,7 @@
       sprite: Civ14/Clothing/exported/ties/pauldron_d.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/pauldron_d.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Standard_Double_Pauldron_
       node: end
@@ -1561,15 +1105,7 @@
       sprite: Civ14/Clothing/exported/ties/wearable_sign.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/wearable_sign.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_wearable_sign
       node: end
@@ -1586,15 +1122,7 @@
       sprite: Civ14/Clothing/exported/badges/combat_medical_badge.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/combat_medical_badge.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Combat_Medical_Badge
       node: end
@@ -1630,15 +1158,7 @@
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Webbing_vest
       node: end
@@ -1655,15 +1175,7 @@
       sprite: Civ14/Clothing/exported/badges/EK_1st.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/EK_1st.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Iron_Cross
       node: end
@@ -1680,15 +1192,7 @@
       sprite: Civ14/Clothing/exported/badges/EK_2nd.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/EK_2nd.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Iron_Cross_1
       node: end
@@ -1705,15 +1209,7 @@
       sprite: Civ14/Clothing/exported/badges/GEK.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/GEK.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Great_Iron_Cross
       node: end
@@ -1730,15 +1226,7 @@
       sprite: Civ14/Clothing/exported/badges/Knight_EK.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/Knight_EK.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Knight_Iron_Cross
       node: end
@@ -1755,15 +1243,7 @@
       sprite: Civ14/Clothing/exported/badges/Knight_EK_oaken.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/Knight_EK_oaken.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Knight_Iron_Cross_1
       node: end
@@ -1780,15 +1260,7 @@
       sprite: Civ14/Clothing/exported/badges/knight_EK_gold_oaken.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/knight_EK_gold_oaken.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Knight_Iron_Cross_1_2
       node: end
@@ -1805,15 +1277,7 @@
       sprite: Civ14/Clothing/exported/badges/wehrmacht_long_service.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/wehrmacht_long_service.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Long_Service_Medal
       node: end
@@ -1830,15 +1294,7 @@
       sprite: Civ14/Clothing/exported/badges/eastern_front.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/eastern_front.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Eastern_Front_Medal
       node: end
@@ -1855,15 +1311,7 @@
       sprite: Civ14/Clothing/exported/badges/assault_badge.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/assault_badge.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Assault_Badge
       node: end
@@ -1880,15 +1328,7 @@
       sprite: Civ14/Clothing/exported/badges/silver_tank_destruction.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/silver_tank_destruction.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Tank_Destruction_Badge
       node: end
@@ -1905,15 +1345,7 @@
       sprite: Civ14/Clothing/exported/badges/golden_tank_destruction.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/golden_tank_destruction.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Tank_Destruction_Badge_1
       node: end
@@ -1930,15 +1362,7 @@
       sprite: Civ14/Clothing/exported/badges/black_wound.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/black_wound.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Wounded_Badge
       node: end
@@ -1955,15 +1379,7 @@
       sprite: Civ14/Clothing/exported/badges/silver_wound.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/silver_wound.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Wounded_Badge_1
       node: end
@@ -1980,15 +1396,7 @@
       sprite: Civ14/Clothing/exported/badges/gold_wound.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/gold_wound.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Wounded_Badge_1_2
       node: end
@@ -2005,15 +1413,7 @@
       sprite: Civ14/Clothing/exported/badges/wehrmacht_sadler.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/wehrmacht_sadler.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Wehrmacht_Sadler
       node: end
@@ -2030,15 +1430,7 @@
       sprite: Civ14/Clothing/exported/badges/ss_wehrmacht_sadler.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/ss_wehrmacht_sadler.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_SS_Sadler
       node: end
@@ -2055,15 +1447,7 @@
       sprite: Civ14/Clothing/exported/badges/ss_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/ss_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_SS_pin
       node: end
@@ -2080,15 +1464,7 @@
       sprite: Civ14/Clothing/exported/badges/nazi_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/nazi_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_NSDAP_pin
       node: end
@@ -2105,15 +1481,7 @@
       sprite: Civ14/Clothing/exported/badges/totenkopf.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/totenkopf.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Totenkopf_pin
       node: end
@@ -2130,15 +1498,7 @@
       sprite: Civ14/Clothing/exported/badges/nsdap.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/nsdap.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_NSDAP_pin_1
       node: end
@@ -2155,15 +1515,7 @@
       sprite: Civ14/Clothing/exported/badges/east_asia_war.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/east_asia_war.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_East_Asia_War_medal
       node: end
@@ -2180,15 +1532,7 @@
       sprite: Civ14/Clothing/exported/badges/china_incident1931.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/china_incident1931.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_China_Incident_medal
       node: end
@@ -2205,15 +1549,7 @@
       sprite: Civ14/Clothing/exported/badges/china_incident1937.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/china_incident1937.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_China_Incident_medal_1
       node: end
@@ -2232,15 +1568,7 @@
       sprite: Civ14/Clothing/exported/badges/order_rising_sun.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/order_rising_sun.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Order_of_the_Rising_Sun
       node: end
@@ -2259,15 +1587,7 @@
       sprite: Civ14/Clothing/exported/badges/delegate_supreme_soviet.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/delegate_supreme_soviet.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Supreme_Soviet_of_the_Soviet_Union
       node: end
@@ -2284,15 +1604,7 @@
       sprite: Civ14/Clothing/exported/badges/nkvd.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/nkvd.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Peoples_Commissariat_of_Internal_Affairs_Pin
       node: end
@@ -2311,15 +1623,7 @@
       sprite: Civ14/Clothing/exported/badges/Hero of the Soviet Union.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/Hero of the Soviet Union.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Hero_of_the_Soviet_Union_Medal
       node: end
@@ -2342,15 +1646,7 @@
       sprite: Civ14/Clothing/exported/badges/Order of the Red Star.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/Order of the Red Star.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Order_of_the_Red_Star_Medal
       node: end
@@ -2369,15 +1665,7 @@
       sprite: Civ14/Clothing/exported/badges/For the Defence of Stalingrad.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/For the Defence of Stalingrad.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_For_the_Defence_of_Stalingrad_Medal
       node: end
@@ -2396,15 +1684,7 @@
       sprite: Civ14/Clothing/exported/badges/For the Defence of Leningrad.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/For the Defence of Leningrad.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_For_the_Defence_of_Leningrad_Medal
       node: end
@@ -2423,15 +1703,7 @@
       sprite: Civ14/Clothing/exported/badges/Guards Unit Badge.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/Guards Unit Badge.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Guards_Unit_Badge
       node: end
@@ -2448,15 +1720,7 @@
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Italian_webbing_vest
       node: end
@@ -2473,15 +1737,7 @@
       sprite: Civ14/Clothing/exported/badges/Fascist pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/Fascist pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Fascist_Party_Pin
       node: end
@@ -2504,15 +1760,7 @@
       sprite: >-
         Civ14/Clothing/exported/badges/Officer's Colonial Order of the Star of
         Italy.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Officers_Colonial_Order_of_the_Star_of_Italy_Medal
       node: end
@@ -2535,15 +1783,7 @@
       sprite: >-
         Civ14/Clothing/exported/badges/Knight's Colonial Order of the Star of
         Italy.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Knights_Colonial_Order_of_the_Star_of_Italy_Medal
       node: end
@@ -2562,15 +1802,7 @@
       sprite: Civ14/Clothing/exported/badges/communist_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/communist_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Communist_Party_Pin
       node: end
@@ -2589,15 +1821,7 @@
       sprite: Civ14/Clothing/exported/badges/ancom_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/ancom_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Anarcho_communist_Party_Pin
       node: end
@@ -2614,15 +1838,7 @@
       sprite: Civ14/Clothing/exported/badges/anarchist_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/anarchist_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Anarchist_Party_Pin
       node: end
@@ -2641,15 +1857,7 @@
       sprite: Civ14/Clothing/exported/badges/monarchist_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/monarchist_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Monarchist_Party_Pin
       node: end
@@ -2668,15 +1876,7 @@
       sprite: Civ14/Clothing/exported/badges/republicanist_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/republicanist_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Republican_Party_Pin
       node: end
@@ -2693,15 +1893,7 @@
       sprite: Civ14/Clothing/exported/badges/fascist_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/fascist_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Fascist_Party_Pin_1
       node: end
@@ -2720,15 +1912,7 @@
       sprite: Civ14/Clothing/exported/badges/nazi_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/nazi_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_National_socialist_Party_Pin
       node: end
@@ -2747,15 +1931,7 @@
       sprite: Civ14/Clothing/exported/badges/minarchist_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/minarchist_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Minarchist_Party_Pin
       node: end
@@ -2774,15 +1950,7 @@
       sprite: Civ14/Clothing/exported/badges/ancap_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/ancap_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Anarcho_capitalist_Party_Pin
       node: end
@@ -2801,15 +1969,7 @@
       sprite: Civ14/Clothing/exported/badges/libertarian_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/libertarian_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Libertarian_Party_Pin
       node: end
@@ -2828,15 +1988,7 @@
       sprite: Civ14/Clothing/exported/badges/msf_flag_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/msf_flag_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_MSF_Party_Pin
       node: end
@@ -2855,15 +2007,7 @@
       sprite: Civ14/Clothing/exported/badges/liberal_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/liberal_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Liberal_Party_Pin
       node: end
@@ -2882,15 +2026,7 @@
       sprite: Civ14/Clothing/exported/badges/anlib_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/anlib_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Anarcho_liberal_Party_Pin
       node: end
@@ -2909,15 +2045,7 @@
       sprite: Civ14/Clothing/exported/badges/anprim_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/anprim_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Anarcho_primitist_Party_Pin
       node: end
@@ -2936,15 +2064,7 @@
       sprite: Civ14/Clothing/exported/badges/environmentalist_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/environmentalist_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Evironmentalist_Party_Pin
       node: end
@@ -2961,15 +2081,7 @@
       sprite: Civ14/Clothing/exported/badges/christian_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/christian_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Christian_Party_Pin
       node: end
@@ -2986,15 +2098,7 @@
       sprite: Civ14/Clothing/exported/badges/muslim_brotherhood_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/muslim_brotherhood_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Muslim_Brotherhood_Party_Pin
       node: end
@@ -3013,15 +2117,7 @@
       sprite: Civ14/Clothing/exported/badges/conservative_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/conservative_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Conservative_Party_Pin
       node: end
@@ -3040,15 +2136,7 @@
       sprite: Civ14/Clothing/exported/badges/nationalist_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/nationalist_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Nationalist_Party_Pin
       node: end
@@ -3067,15 +2155,7 @@
       sprite: Civ14/Clothing/exported/badges/egalitarian_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/egalitarian_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Egalitarian_Party_Pin
       node: end
@@ -3094,15 +2174,7 @@
       sprite: Civ14/Clothing/exported/badges/globalist_flag_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/globalist_flag_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Globalist_Party_Pin
       node: end
@@ -3121,15 +2193,7 @@
       sprite: Civ14/Clothing/exported/badges/farmers_union_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/farmers_union_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Farmers_Union_Pin
       node: end
@@ -3148,15 +2212,7 @@
       sprite: Civ14/Clothing/exported/badges/miners_union_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/miners_union_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Miners_Union_Pin
       node: end
@@ -3175,15 +2231,7 @@
       sprite: Civ14/Clothing/exported/badges/factory_workers_union_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/factory_workers_union_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Factory_Workers_Union_Pin
       node: end
@@ -3202,15 +2250,7 @@
       sprite: Civ14/Clothing/exported/badges/workers_union_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/workers_union_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Labour_Workers_Union_Pin
       node: end
@@ -3229,15 +2269,7 @@
       sprite: Civ14/Clothing/exported/badges/medics_guild_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/medics_guild_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Medical_Workers_Guild_Pin
       node: end
@@ -3256,15 +2288,7 @@
       sprite: Civ14/Clothing/exported/badges/corporate_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/corporate_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Office_Workers_Union_Pin
       node: end
@@ -3283,15 +2307,7 @@
       sprite: Civ14/Clothing/exported/badges/aristocratic_league_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/aristocratic_league_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Hospitality_Pin
       node: end
@@ -3310,15 +2326,7 @@
       sprite: Civ14/Clothing/exported/badges/lumberjacks_union_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/lumberjacks_union_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Lumberjacks_Union_Pin
       node: end
@@ -3337,15 +2345,7 @@
       sprite: Civ14/Clothing/exported/badges/zionist_party_pin.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/badges/zionist_party_pin.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Merchants_Guild_Pin
       node: end
@@ -3362,15 +2362,7 @@
       sprite: Civ14/Clothing/exported/ties/fp_cpt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/fp_cpt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Kapitan_rank_epaulettes
       node: end
@@ -3387,15 +2379,7 @@
       sprite: Civ14/Clothing/exported/ties/fp_lt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/fp_lt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Tenyente_rank_epaulettes
       node: end
@@ -3412,15 +2396,7 @@
       sprite: Civ14/Clothing/exported/ties/fp_sgt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/fp_sgt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Sarhente_rank_patch
       node: end
@@ -3437,15 +2413,7 @@
       sprite: Civ14/Clothing/exported/ties/fp_cpl.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/fp_cpl.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Kabo_rank_patch
       node: end
@@ -3462,15 +2430,7 @@
       sprite: Civ14/Clothing/exported/ties/jap_nitohei.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/jap_nitohei.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Nitohei_rank_patch
       node: end
@@ -3487,15 +2447,7 @@
       sprite: Civ14/Clothing/exported/ties/jap_ittohei.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/jap_ittohei.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Ittohei_rank_patch
       node: end
@@ -3514,15 +2466,7 @@
       sprite: Civ14/Clothing/exported/ties/jap_jotohei.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/jap_jotohei.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Jotohei_rank_patch
       node: end
@@ -3541,15 +2485,7 @@
       sprite: Civ14/Clothing/exported/ties/jap_gunso.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/jap_gunso.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Gunso_rank_patch
       node: end
@@ -3566,15 +2502,7 @@
       sprite: Civ14/Clothing/exported/ties/jap_2lt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/jap_2lt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Shoi_rank_patch
       node: end
@@ -3591,15 +2519,7 @@
       sprite: Civ14/Clothing/exported/ties/jap_1lt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/jap_1lt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Chui_rank_patch
       node: end
@@ -3616,15 +2536,7 @@
       sprite: Civ14/Clothing/exported/ties/jap_taii.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/jap_taii.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Tai_i_rank_patch
       node: end
@@ -3641,15 +2553,7 @@
       sprite: Civ14/Clothing/exported/ties/germ_schtz.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/germ_schtz.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Schutze_rank_patch
       node: end
@@ -3666,15 +2570,7 @@
       sprite: Civ14/Clothing/exported/ties/germ_obrschtz.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/germ_obrschtz.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Oberschutze_rank_patch
       node: end
@@ -3691,15 +2587,7 @@
       sprite: Civ14/Clothing/exported/ties/germ_gftr.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/germ_gftr.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Gefreiter_rank_patch
       node: end
@@ -3716,15 +2604,7 @@
       sprite: Civ14/Clothing/exported/ties/germ_obrgftr.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/germ_obrgftr.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Obergefreiter_rank_patch
       node: end
@@ -3741,15 +2621,7 @@
       sprite: Civ14/Clothing/exported/ties/germ_grppnfher.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/germ_grppnfher.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Unteroffizier_rank_patch
       node: end
@@ -3766,15 +2638,7 @@
       sprite: Civ14/Clothing/exported/ties/germ_1lt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/germ_1lt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Ober_Leutnant_rank_patch
       node: end
@@ -3791,15 +2655,7 @@
       sprite: Civ14/Clothing/exported/ties/germ_hptmn.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/germ_hptmn.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Hauptmann_rank_patch
       node: end
@@ -3816,15 +2672,7 @@
       sprite: Civ14/Clothing/exported/ties/germ_2lt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/germ_2lt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Untersturmfuhrer_rank_patch
       node: end
@@ -3841,15 +2689,7 @@
       sprite: Civ14/Clothing/exported/ties/germ_grppnfher.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/germ_grppnfher.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Scharfuhrer_rank_patch
       node: end
@@ -3866,15 +2706,7 @@
       sprite: Civ14/Clothing/exported/ties/germ_1lt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/germ_1lt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Obersturmfuhrer_rank_patch
       node: end
@@ -3891,15 +2723,7 @@
       sprite: Civ14/Clothing/exported/ties/germ_hptmn.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/germ_hptmn.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Hauptsturmfuhrer_rank_patch
       node: end
@@ -3916,15 +2740,7 @@
       sprite: Civ14/Clothing/exported/ties/upa_lt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/upa_lt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Khorunzhyj_rank_patches
       node: end
@@ -3941,15 +2757,7 @@
       sprite: Civ14/Clothing/exported/ties/upa_sgt.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/upa_sgt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Vistun_rank_patch
       node: end
@@ -3966,15 +2774,7 @@
       sprite: Civ14/Clothing/exported/ties/holster.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/holster.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_shoulder_holster
       node: end
@@ -3991,15 +2791,7 @@
       sprite: Civ14/Clothing/exported/ties/holster.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/holster.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_armpit_holster
       node: end
@@ -4016,15 +2808,7 @@
       sprite: Civ14/Clothing/exported/ties/holster.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/holster.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_waist_holster
       node: end
@@ -4041,15 +2825,7 @@
       sprite: Civ14/Clothing/exported/ties/waist_holster.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/waist_holster.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_chest_holster
       node: end
@@ -4066,15 +2842,7 @@
       sprite: Civ14/Clothing/exported/ties/holster_hip.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/holster_hip.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_hip_holster
       node: end
@@ -4091,15 +2859,7 @@
       sprite: Civ14/Clothing/exported/ties/holster_hip2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/holster_hip2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_double_hip_holster
       node: end
@@ -4116,15 +2876,7 @@
       sprite: Civ14/Clothing/exported/ties/tacholster.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/tacholster.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_hip_holster_1
       node: end
@@ -4141,15 +2893,7 @@
       sprite: Civ14/Clothing/exported/ties/replicant_kama.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/replicant_kama.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_replicant_kama
       node: end
@@ -4174,15 +2918,7 @@
       sprite: Civ14/Clothing/exported/ties/locket.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/locket.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_silver_locket
       node: end
@@ -4199,15 +2935,7 @@
       sprite: Civ14/Clothing/exported/ties/webbing.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/webbing.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_load_bearing_equipment
       node: end
@@ -4224,15 +2952,7 @@
       sprite: Civ14/Clothing/exported/ties/short_sheath.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/short_sheath.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_short_sword_sheath
       node: end
@@ -4249,15 +2969,7 @@
       sprite: Civ14/Clothing/exported/ties/longsword_sheath.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/longsword_sheath.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_long_sword_sheath
       node: end
@@ -4274,15 +2986,7 @@
       sprite: Civ14/Clothing/exported/ties/katana_sheath.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/katana_sheath.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_katana_sheath
       node: end
@@ -4299,15 +3003,7 @@
       sprite: Civ14/Clothing/exported/ties/daisho_sheath.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/daisho_sheath.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_daisho_sheaths
       node: end
@@ -4324,15 +3020,7 @@
       sprite: Civ14/Clothing/exported/ties/longer_sheath.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/longer_sheath.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_sword_sheath
       node: end
@@ -4349,15 +3037,7 @@
       sprite: Civ14/Clothing/exported/ties/knifeholster.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/knifeholster.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_knife_sheath
       node: end
@@ -4374,15 +3054,7 @@
       sprite: Civ14/Clothing/exported/ties/knifeholster.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/knifeholster.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_belt_loop
       node: end
@@ -4401,15 +3073,7 @@
       sprite: Civ14/Clothing/exported/ties/tacholster.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/tacholster.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_duty_rig
       node: end
@@ -4426,15 +3090,7 @@
       sprite: Civ14/Clothing/exported/ties/tan_pouches.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/tan_pouches.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_loose_pouches
       node: end
@@ -4453,15 +3109,7 @@
       sprite: Civ14/Clothing/exported/ties/bandolier.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/bandolier.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_thrown_weapon_bandolier
       node: end
@@ -4478,15 +3126,7 @@
       sprite: Civ14/Clothing/exported/ties/bandolier.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/bandolier.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_bandolier
       node: end
@@ -4503,15 +3143,7 @@
       sprite: Civ14/Clothing/exported/ties/green_webbing.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/green_webbing.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_green_chest_webbing
       node: end
@@ -4528,15 +3160,7 @@
       sprite: Civ14/Clothing/exported/ties/nlfchestrig_v2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/nlfchestrig_v2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_NLF_small_pouches
       node: end
@@ -4555,15 +3179,7 @@
       sprite: Civ14/Clothing/exported/ties/nlfchestrig_v1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/nlfchestrig_v1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_NLF_chestrig
       node: end
@@ -4580,15 +3196,7 @@
       sprite: Civ14/Clothing/exported/ties/khaki_webbing.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/khaki_webbing.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_khaki_chest_webbing
       node: end
@@ -4605,15 +3213,7 @@
       sprite: Civ14/Clothing/exported/ties/black_pouches.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/black_pouches.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_black_pouches
       node: end
@@ -4630,15 +3230,7 @@
       sprite: Civ14/Clothing/exported/ties/largepouches.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/largepouches.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_large_black_pouches
       node: end
@@ -4655,15 +3247,7 @@
       sprite: Civ14/Clothing/exported/ties/largepouches_tan.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/largepouches_tan.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_large_tan_pouches
       node: end
@@ -4680,15 +3264,7 @@
       sprite: Civ14/Clothing/exported/ties/tan_pouches.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/tan_pouches.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_tan_pouches
       node: end
@@ -4707,15 +3283,7 @@
       sprite: Civ14/Clothing/exported/ties/ubac_tan.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/ubac_tan.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_tan_UBAC
       node: end
@@ -4734,15 +3302,7 @@
       sprite: Civ14/Clothing/exported/ties/ubac_green.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/ubac_green.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_green_UBAC
       node: end
@@ -4761,15 +3321,7 @@
       sprite: Civ14/Clothing/exported/ties/ubac_black.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/ubac_black.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_black_UBAC
       node: end
@@ -4786,15 +3338,7 @@
       sprite: Civ14/Clothing/exported/ties/sweater.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/sweater.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_grey_sweater
       node: end
@@ -4811,15 +3355,7 @@
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_light_webbing
       node: end
@@ -4836,15 +3372,7 @@
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Chinese_light_webbing
       node: end
@@ -4861,15 +3389,7 @@
       sprite: Civ14/Clothing/exported/ties/us_vest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/us_vest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_US_Army_webbing
       node: end
@@ -4886,15 +3406,7 @@
       sprite: Civ14/Clothing/exported/ties/us_bandolier.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/us_bandolier.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_US_Army_bandolier
       node: end
@@ -4911,15 +3423,7 @@
       sprite: Civ14/Clothing/exported/ties/shotgun_bandolier.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/shotgun_bandolier.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_shotgun_bandolier
       node: end
@@ -4936,15 +3440,7 @@
       sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_US_Army_M79_Vest
       node: end
@@ -4961,15 +3457,7 @@
       sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Grenadier_Webbing
       node: end
@@ -4986,15 +3474,7 @@
       sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Grenadier_Webbing_1
       node: end
@@ -5013,15 +3493,7 @@
       sprite: Civ14/Clothing/exported/ties/survival_webbing.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/survival_webbing.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_survival_webbing
       node: end
@@ -5038,15 +3510,7 @@
       sprite: Civ14/Clothing/exported/ties/ru_band.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/ru_band.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Imperial_Russian_Army_bandolier
       node: end
@@ -5063,15 +3527,7 @@
       sprite: Civ14/Clothing/exported/ties/fp_webbing.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/fp_webbing.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_filipino_webbing
       node: end
@@ -5088,15 +3544,7 @@
       sprite: Civ14/Clothing/exported/ties/civil_war.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/civil_war.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_cartridge_rigging
       node: end
@@ -5113,15 +3561,7 @@
       sprite: Civ14/Clothing/exported/ties/caf_tacvest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/caf_tacvest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_CAF_Tacvest
       node: end
@@ -5138,15 +3578,7 @@
       sprite: Civ14/Clothing/exported/ties/british_vest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/british_vest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Leather_webbing_vest
       node: end
@@ -5164,15 +3596,7 @@
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Greek_webbing_vest
       node: end
@@ -5189,15 +3613,7 @@
       sprite: Civ14/Clothing/exported/ties/russian_vest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/russian_vest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_Russian_webbing_vest
       node: end
@@ -5216,15 +3632,7 @@
       sprite: Civ14/Clothing/exported/ties/us_webbing.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/us_webbing.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_US_webbing
       node: end
@@ -5242,15 +3650,7 @@
       sprite: Civ14/Clothing/exported/ties/stethoscope.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/stethoscope.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_stethoscope
       node: end
@@ -5267,15 +3667,7 @@
       sprite: Civ14/Clothing/exported/ties/tatba.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/tatba.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_TATBA_7_vest
       node: end
@@ -5295,12 +3687,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+          Blunt: 0.55
+          Slash: 0.55
+          Piercing: 0.45
+          Arrow: 0.35
     - type: Construction
       graph: civ13_accessory_6B3_body_armor
       node: end
@@ -5309,7 +3699,7 @@
       time: 5
 - type: entity
   name: 6B3 green camo body armor
-  parent: ClothingNeckBase
+  parent: civ13_accessory_6B3_body_armor
   id: civ13_accessory_6B3_green_camo_body_armor
   description: ""
   components:
@@ -5317,15 +3707,6 @@
       sprite: Civ14/Clothing/exported/ties/6b3cam.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/6b3cam.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
     - type: Construction
       graph: civ13_accessory_6B3_green_camo_body_armor
       node: end
@@ -5345,10 +3726,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.32
-          Slash: 0.32
-          Piercing: 0.48
-          Arrow: 0.054
+          Blunt: 0.6
+          Slash: 0.6
+          Piercing: 0.6
+          Arrow: 0.3
           Heat: 0.78
     - type: Construction
       graph: civ13_accessory_6B2_body_armor
@@ -5369,10 +3750,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30
-          Slash: 0.30
-          Piercing: 0.30
-          Arrow: 0.054
+          Blunt: 0.52
+          Slash: 0.52
+          Piercing: 0.42
+          Arrow: 0.32
           Heat: 0.7
     - type: Construction
       graph: civ13_accessory_6B5_body_armor
@@ -5395,10 +3776,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30
-          Slash: 0.30
-          Piercing: 0.28
-          Arrow: 0.054
+          Blunt: 0.55
+          Slash: 0.55
+          Piercing: 0.45
+          Arrow: 0.35
           Heat: 0.7
     - type: Construction
       graph: civ13_accessory_N34_B_body_armor
@@ -5408,7 +3789,7 @@
       time: 5
 - type: entity
   name: N34-BM body armor
-  parent: ClothingNeckBase
+  parent: civ13_accessory_N34_B_body_armor
   id: civ13_accessory_N34_BM_body_armor
   description: >-
     A Blugoslavian armor used by medics and doctors alike, comes with a white
@@ -5418,14 +3799,6 @@
       sprite: Civ14/Clothing/exported/ties/n34bmm.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/n34bmm.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.30
-          Slash: 0.30
-          Piercing: 0.28
-          Arrow: 0.054
-          Heat: 0.7
     - type: Construction
       graph: civ13_accessory_N34_BM_body_armor
       node: end
@@ -5696,15 +4069,7 @@
       sprite: Civ14/Clothing/exported/ties/flakjacket.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/flakjacket.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_M_1952_Flak_Jacket
       node: end
@@ -5723,15 +4088,7 @@
       sprite: Civ14/Clothing/exported/ties/flakjacket1969.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/flakjacket1969.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_M_1969_Flak_Jacket
       node: end
@@ -5779,10 +4136,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.32
-          Slash: 0.32
-          Piercing: 0.48
-          Arrow: 0.054
+          Blunt: 0.6
+          Slash: 0.6
+          Piercing: 0.6
+          Arrow: 0.3
           Heat: 0.78
     - type: Construction
       graph: civ13_accessory_woodland_PASGT_body_armor
@@ -5837,10 +4194,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.30
-          Slash: 0.30
-          Piercing: 0.28
-          Arrow: 0.054
+          Blunt: 0.6
+          Slash: 0.6
+          Piercing: 0.5
+          Arrow: 0.4
           Heat: 0.7
     - type: Construction
       graph: civ13_accessory_RB_23_body_armor
@@ -5861,10 +4218,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.32
-          Slash: 0.32
-          Piercing: 0.48
-          Arrow: 0.054
+          Blunt: 0.6
+          Slash: 0.6
+          Piercing: 0.5
+          Arrow: 0.4
           Heat: 0.78
     - type: Construction
       graph: civ13_accessory_Masada_body_armor
@@ -5906,15 +4263,7 @@
       sprite: Civ14/Clothing/exported/ties/knee_protections.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/knee_protections.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_knee_protections
       node: end
@@ -5931,15 +4280,7 @@
       sprite: Civ14/Clothing/exported/ties/legguards.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/legguards.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_leg_guards
       node: end
@@ -5956,15 +4297,7 @@
       sprite: Civ14/Clothing/exported/ties/elbow_protections.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/elbow_protections.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_elbow_protections
       node: end
@@ -5981,15 +4314,7 @@
       sprite: Civ14/Clothing/exported/ties/armguards.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/armguards.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_arm_guards
       node: end
@@ -6149,15 +4474,7 @@
       sprite: Civ14/Clothing/exported/suits/bailyvest.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/bailyvest.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_baily_vest
       node: end
@@ -6174,15 +4491,7 @@
       sprite: Civ14/Clothing/exported/suits/iogsuit.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/suits/iogsuit.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_IOG_heavy_vest_B_7
       node: end
@@ -6274,15 +4583,7 @@
       sprite: Civ14/Clothing/exported/ties/sash.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/sash.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_White_Sash
       node: end
@@ -6299,15 +4600,7 @@
       sprite: Civ14/Clothing/exported/ties/ruffle_neck.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/ruffle_neck.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_neck_ruffle
       node: end
@@ -6324,15 +4617,7 @@
       sprite: Civ14/Clothing/exported/ties/suspenders1.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/suspenders1.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_suspenders
       node: end
@@ -6349,15 +4634,7 @@
       sprite: Civ14/Clothing/exported/ties/suspenders2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/suspenders2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 1
-          Slash: 1
-          Piercing: 1
-          Arrow: 1
-          Heat: 1
-          Radiation: 1
+
     - type: Construction
       graph: civ13_accessory_dark_suspenders
       node: end
