@@ -18,6 +18,12 @@ public sealed class ShowFactionIconsSystem : EquipmentHudSystem<ShowFactionIcons
 
     }
 
+    /// <summary>
+    /// Adds faction and job icons to the status icon list for an entity if their prototypes are found.
+    /// </summary>
+    /// <param name="uid">The entity requesting status icons.</param>
+    /// <param name="component">The component specifying faction and job icon identifiers.</param>
+    /// <param name="ev">The event containing the status icon list to update.</param>
     private void OnGetStatusIconsEvent(EntityUid uid, ShowFactionIconsComponent component, ref GetStatusIconsEvent ev)
     {
         if (!IsActive)

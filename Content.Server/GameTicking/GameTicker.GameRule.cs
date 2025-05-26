@@ -313,6 +313,9 @@ public sealed partial class GameTicker
         }
     }
 
+    /// <summary>
+    /// Sets the game preset for the selected map if required, or starts any delayed game rules whose start time has elapsed.
+    /// </summary>
     private void UpdateGameRules()
     {
 
