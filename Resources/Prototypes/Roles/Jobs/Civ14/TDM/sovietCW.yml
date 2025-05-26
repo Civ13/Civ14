@@ -20,6 +20,8 @@
             - SovietCW
         - type: ShowFactionIcons
           factionIcon: SovietFaction
+          jobIcon: JobIconICpt
+          assignSquad: false
 
 - type: playTimeTracker
   id: JobSovietCWCaptain
@@ -60,6 +62,8 @@
             - SovietCW
         - type: ShowFactionIcons
           factionIcon: SovietFaction
+          jobIcon: JobIconISgt
+          assignSquad: true
 
 - type: playTimeTracker
   id: JobSovietCWSergeant
@@ -99,6 +103,8 @@
             - SovietCW
         - type: ShowFactionIcons
           factionIcon: SovietFaction
+          jobIcon: JobIconRifleman
+          assignSquad: true
 
 - type: playTimeTracker
   id: JobSovietCWRifleman
@@ -152,6 +158,8 @@
             - SovietCW
         - type: ShowFactionIcons
           factionIcon: SovietFaction
+          jobIcon: JobIconRifleman
+          assignSquad: true
 
 - type: playTimeTracker
   id: JobSovietCWMachinegunner
@@ -205,6 +213,8 @@
             - SovietCW
         - type: ShowFactionIcons
           factionIcon: SovietFaction
+          jobIcon: JobIconMedic
+          assignSquad: false
 
 - type: playTimeTracker
   id: JobSovietCWMedic

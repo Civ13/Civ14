@@ -43,6 +43,9 @@ entities:
       maxResearch: 600
       researchLevel: 600
       researchEnabled: False
+    - type: CivTDMFactions
+      faction1Id: German
+      faction2Id: Soviet
   - uid: 2
     components:
     - type: MetaData

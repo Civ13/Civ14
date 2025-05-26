@@ -58,6 +58,7 @@
         - type: ShowFactionIcons
           factionIcon: UsFaction
           jobIcon: JobIconISgt
+          assignSquad: true
 
 - type: playTimeTracker
   id: JobUSSergeant
@@ -96,6 +97,7 @@
         - type: ShowFactionIcons
           factionIcon: UsFaction
           jobIcon: JobIconRifleman
+          assignSquad: true
 
 - type: playTimeTracker
   id: JobUSRifleman
@@ -148,6 +150,7 @@
         - type: ShowFactionIcons
           factionIcon: UsFaction
           jobIcon: JobIconMg
+          assignSquad: true
 
 - type: playTimeTracker
   id: JobUSMachinegunner

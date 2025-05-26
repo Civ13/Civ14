@@ -174,3 +174,59 @@
     sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
     state: inf_ranged
   jobName: job-name-infantry-ranged
+
+#squad icons
+- type: jobIcon
+  locationPreference: Right
+  parent: JobIcon
+  priority: 1
+  id: JobIconSquad1
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: squad_1
+  jobName: job-name-infantry-ranged
+- type: jobIcon
+  locationPreference: Right
+  parent: JobIcon
+  priority: 1
+  id: JobIconSquad2
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: squad_2
+  jobName: job-name-infantry-ranged
+- type: jobIcon
+  locationPreference: Right
+  parent: JobIcon
+  priority: 1
+  id: JobIconSquad3
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: squad_3
+  jobName: job-name-infantry-ranged
+- type: jobIcon
+  locationPreference: Right
+  parent: JobIcon
+  priority: 1
+  id: JobIconSquad4
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: squad_4
+  jobName: job-name-infantry-ranged
+- type: jobIcon
+  locationPreference: Right
+  parent: JobIcon
+  priority: 1
+  id: JobIconSquad5
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: squad_5
+  jobName: job-name-infantry-ranged
+- type: jobIcon
+  locationPreference: Right
+  parent: JobIcon
+  priority: 1
+  id: JobIconSquad6
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: squad_6
+  jobName: job-name-infantry-ranged

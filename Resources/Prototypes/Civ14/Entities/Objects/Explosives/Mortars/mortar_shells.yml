@@ -4,12 +4,12 @@
   id: MortarAmmoBase
   name: base mortar shell
   components:
-  - type: Sprite
-    sprite: Civ14/Objects/Mortars/shells.rsi
-    state: mortar_ammo_he
-  - type: Item
-    size: Huge
-  - type: MortarShell
+    - type: Sprite
+      sprite: Civ14/Objects/Mortars/shells.rsi
+      state: mortar_ammo_he
+    - type: Item
+      size: Huge
+    - type: MortarShell
 
 - type: entity
   parent: MortarAmmoBase
@@ -17,15 +17,15 @@
   name: high explosive mortar shell
   description: A mortar shell packed with high explosive. Drop into a mortar tube to activate.
   components:
-  - type: Item
-  - type: Sprite
-    sprite: Civ14/Objects/Mortars/shells.rsi
-    state: mortar_ammo_he
-  - type: MortarShell
-  - type: Explosive
-    explosionType: Default
-    maxIntensity: 10 # these values need tuning to im sure
-    intensitySlope: 3
-    totalIntensity: 120
-    canCreateVacuum: false
-    deleteAfterExplosion: true
+    - type: Item
+    - type: Sprite
+      sprite: Civ14/Objects/Mortars/shells.rsi
+      state: mortar_ammo_he
+    - type: MortarShell
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 10 # these values need tuning to im sure
+      intensitySlope: 3
+      totalIntensity: 120
+      canCreateVacuum: false
+      deleteAfterExplosion: true

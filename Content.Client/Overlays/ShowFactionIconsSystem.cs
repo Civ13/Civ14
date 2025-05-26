@@ -1,8 +1,4 @@
-using Content.Shared.Access.Components;
-using Content.Shared.Access.Systems;
-using Content.Shared.NPC.Components;
 using Content.Shared.Overlays;
-using System.Linq;
 using Content.Shared.StatusIcon;
 using Content.Shared.StatusIcon.Components;
 using Robust.Shared.Prototypes;
@@ -12,6 +8,7 @@ namespace Content.Client.Overlays;
 public sealed class ShowFactionIconsSystem : EquipmentHudSystem<ShowFactionIconsComponent>
 {
     [Dependency] private readonly IPrototypeManager _prototype = default!;
+
 
     public override void Initialize()
     {
@@ -26,9 +23,18 @@ public sealed class ShowFactionIconsSystem : EquipmentHudSystem<ShowFactionIcons
         if (!IsActive)
             return;
 
+        // Display regular faction icon
         if (_prototype.TryIndex<FactionIconPrototype>(component.FactionIcon, out var iconPrototype))
             ev.StatusIcons.Add(iconPrototype);
-        if (component.JobIcon != null)
+
+        // Display squad-specific icon if assigned by the server
+        if (component.AssignSquad && component.SquadIcon != null)
+        {
+            if (_prototype.TryIndex<JobIconPrototype>(component.SquadIcon, out var squadIconPrototype))
+                ev.StatusIcons.Add(squadIconPrototype);
+        }
+        // Otherwise, display the general job icon if no squad icon is present or if not part of a squad
+        if (component.JobIcon != null && component.JobIcon != "JobIconSoldier" && component.JobIcon != "JobIconRifleman" && component.JobIcon != "JobIconMG")
         {
             if (_prototype.TryIndex<JobIconPrototype>(component.JobIcon, out var jobIconPrototype))
                 ev.StatusIcons.Add(jobIconPrototype);

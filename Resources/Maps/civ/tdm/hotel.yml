@@ -55,6 +55,9 @@ entities:
       researchLevel: 600
       researchEnabled: False
     - type: FTLDestination
+    - type: CivTDMFactions
+      faction1Id: US
+      faction2Id: SovietCW
   - uid: 2
     components:
     - type: MetaData
