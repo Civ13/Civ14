@@ -57,7 +57,7 @@
       state: capture_blue
     - type: CaptureArea
       name: "the Main House"
-      captureDuration: 240 # 4 min
+      captureDuration: 240 # 3 min
       captureRadius: 5
       contestedResetTime: 10 # 10 seconds before timer resets when contested
       capturableFactions:
@@ -74,7 +74,7 @@
       state: capture_red
     - type: CaptureArea
       name: "the command post"
-      captureDuration: 240 # 4 min
+      captureDuration: 180 # 3 min
       captureRadius: 4
       contestedResetTime: 10 # 10 seconds before timer resets when contested
       capturableFactions:

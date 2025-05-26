@@ -284,36 +284,6 @@
         Glass: 1
         Steel: 5
 
-- type: entity
-  parent: BaseMachineCircuitboard
-  id: AnomalyVesselCircuitboard
-  name: anomaly vessel machine board
-  description: A machine printed circuit board for an anomaly vessel.
-  components:
-    - type: Sprite
-      state: science
-    - type: MachineBoard
-      prototype: MachineAnomalyVessel
-      stackRequirements:
-        Capacitor: 3
-        Cable: 1
-        PlasmaGlass: 10
-
-- type: entity
-  parent: BaseMachineCircuitboard
-  id: AnomalyVesselExperimentalCircuitboard
-  name: experimental anomaly vessel machine board
-  description: A machine printed circuit board for an experimental anomaly vessel.
-  components:
-    - type: Sprite
-      state: science
-    - type: MachineBoard
-      prototype: MachineAnomalyVesselExperimental
-      stackRequirements:
-        Capacitor: 3
-        Cable: 5
-        PlasmaGlass: 15
-        MetalRod: 4
 
 - type: entity
   parent: BaseMachineCircuitboard

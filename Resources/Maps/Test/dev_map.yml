@@ -5285,20 +5285,6 @@ entities:
           - type: Transform
             pos: 5.5,-7.5
             parent: 179
-  - proto: MachineAnomalyGenerator
-    entities:
-      - uid: 1071
-        components:
-          - type: Transform
-            pos: 16.5,25.5
-            parent: 179
-  - proto: MachineAnomalyVessel
-    entities:
-      - uid: 1087
-        components:
-          - type: Transform
-            pos: 15.5,19.5
-            parent: 179
   - proto: MachineArtifactAnalyzer
     entities:
       - uid: 1078
