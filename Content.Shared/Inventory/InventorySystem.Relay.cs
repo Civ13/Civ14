@@ -25,6 +25,9 @@ namespace Content.Shared.Inventory;
 
 public partial class InventorySystem
 {
+    /// <summary>
+    /// Subscribes the inventory component to a range of events, enabling automatic relaying of relevant events to equipped items in specified inventory slots.
+    /// </summary>
     public void InitializeRelay()
     {
         SubscribeLocalEvent<InventoryComponent, DamageModifyEvent>(RelayInventoryEvent);
