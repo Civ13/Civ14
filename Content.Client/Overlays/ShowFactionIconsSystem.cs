@@ -40,7 +40,7 @@ public sealed class ShowFactionIconsSystem : EquipmentHudSystem<ShowFactionIcons
                 ev.StatusIcons.Add(squadIconPrototype);
         }
         // Otherwise, display the general job icon if no squad icon is present or if not part of a squad
-        if (component.JobIcon != null && component.JobIcon != "JobIconSoldier" && component.JobIcon != "JobIconRifleman" && component.JobIcon != "JobIconMG")
+        if (component.JobIcon != null && component.JobIcon != "JobIconSoldier" && component.JobIcon != "JobIconRifleman" && component.JobIcon != "JobIconMg")
         {
             if (_prototype.TryIndex<JobIconPrototype>(component.JobIcon, out var jobIconPrototype))
                 ev.StatusIcons.Add(jobIconPrototype);
