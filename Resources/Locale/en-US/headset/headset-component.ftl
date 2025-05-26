@@ -19,3 +19,7 @@ chat-radio-freelance = Freelance
 # not headset but whatever
 chat-radio-handheld = Handheld
 chat-radio-binary = Binary
+
+
+chat-radio-soviet = Soviet
+chat-radio-us = US

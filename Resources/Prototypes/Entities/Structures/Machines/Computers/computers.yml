@@ -461,7 +461,7 @@
     - type: ResearchConsole
     - type: ActiveRadio
       channels:
-        - Science
+        - Common
     - type: TechnologyDatabase
     - type: ActivatableUI
       key: enum.ResearchConsoleUiKey.Key
@@ -866,7 +866,7 @@
     - type: BankClient
     - type: ActiveRadio
       channels:
-        - Supply
+        - Common
     - type: ActivatableUI
       key: enum.CargoConsoleUiKey.Orders
     - type: UserInterface
@@ -1113,7 +1113,7 @@
     - type: RoboticsConsole
     - type: ActiveRadio
       channels:
-        - Science
+        - Common
     - type: ActivatableUI
       key: enum.RoboticsConsoleUiKey.Key
     - type: UserInterface

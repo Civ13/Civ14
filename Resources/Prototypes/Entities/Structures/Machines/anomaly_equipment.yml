@@ -294,7 +294,7 @@
     - type: Appearance
     - type: ActiveRadio
       channels:
-        - Science
+        - Common
     - type: GenericVisualizer
       visuals:
         enum.PowerDeviceVisuals.Powered:

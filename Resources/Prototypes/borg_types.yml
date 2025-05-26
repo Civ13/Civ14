@@ -9,14 +9,14 @@
   extraModuleCount: 5
   moduleWhitelist:
     tags:
-    - BorgModuleGeneric
-    - BorgModuleScience #until sciborgs are added
+      - BorgModuleGeneric
+      - BorgModuleScience #until sciborgs are added
 
   defaultModules:
-  - BorgModuleTool
+    - BorgModuleTool
 
   radioChannels:
-  - Science
+    - Common
 
   # Visual
   inventoryTemplateId: borgShort
@@ -29,7 +29,6 @@
   petSuccessString: petting-success-generic-cyborg
   petFailureString: petting-failure-generic-cyborg
 
-
 # Engineering borg
 - type: borgType
   id: engineering
@@ -41,18 +40,17 @@
   extraModuleCount: 3
   moduleWhitelist:
     tags:
-    - BorgModuleGeneric
-    - BorgModuleEngineering
+      - BorgModuleGeneric
+      - BorgModuleEngineering
 
   defaultModules:
-  - BorgModuleTool
-  - BorgModuleConstruction
-  - BorgModuleRCD
-  - BorgModuleCable
+    - BorgModuleTool
+    - BorgModuleConstruction
+    - BorgModuleRCD
+    - BorgModuleCable
 
   radioChannels:
-  - Engineering
-  - Science
+    - Common
 
   # Visual
   inventoryTemplateId: borgShort
@@ -65,7 +63,6 @@
   petSuccessString: petting-success-engineer-cyborg
   petFailureString: petting-failure-engineer-cyborg
 
-
 # Salvage borg
 - type: borgType
   id: mining
@@ -77,17 +74,16 @@
   extraModuleCount: 3
   moduleWhitelist:
     tags:
-    - BorgModuleGeneric
-    - BorgModuleCargo
+      - BorgModuleGeneric
+      - BorgModuleCargo
 
   defaultModules:
-  - BorgModuleGrapplingGun
-  - BorgModuleMining
-  - BorgModuleAppraisal
+    - BorgModuleGrapplingGun
+    - BorgModuleMining
+    - BorgModuleAppraisal
 
   radioChannels:
-  - Supply
-  - Science
+    - Common
 
   # Visual
   inventoryTemplateId: borgTall
@@ -101,7 +97,6 @@
   petSuccessString: petting-success-salvage-cyborg
   petFailureString: petting-failure-salvage-cyborg
 
-
 # Janitor borg
 - type: borgType
   id: janitor
@@ -113,16 +108,15 @@
   extraModuleCount: 3
   moduleWhitelist:
     tags:
-    - BorgModuleGeneric
-    - BorgModuleJanitor
+      - BorgModuleGeneric
+      - BorgModuleJanitor
 
   defaultModules:
-  - BorgModuleLightReplacer
-  - BorgModuleCleaning
+    - BorgModuleLightReplacer
+    - BorgModuleCleaning
 
   radioChannels:
-  - Science
-  - Service
+    - Common
 
   # Visual
   inventoryTemplateId: borgShort
@@ -136,7 +130,6 @@
   petSuccessString: petting-success-janitor-cyborg
   petFailureString: petting-failure-janitor-cyborg
 
-
 # Medical borg
 - type: borgType
   id: medical
@@ -148,24 +141,23 @@
   extraModuleCount: 3
   moduleWhitelist:
     tags:
-    - BorgModuleGeneric
-    - BorgModuleMedical
+      - BorgModuleGeneric
+      - BorgModuleMedical
 
   defaultModules:
-  - BorgModuleTreatment
+    - BorgModuleTreatment
 
   radioChannels:
-  - Science
-  - Medical
+    - Common
 
   addComponents:
-  - type: SolutionScanner
-  - type: ShowHealthBars
-    damageContainers:
-    - Biological
-  - type: ShowHealthIcons
-    damageContainers:
-    - Biological
+    - type: SolutionScanner
+    - type: ShowHealthBars
+      damageContainers:
+        - Biological
+    - type: ShowHealthIcons
+      damageContainers:
+        - Biological
 
   # Visual
   inventoryTemplateId: borgDutch
@@ -183,7 +175,6 @@
   footstepCollection:
     collection: FootstepHoverBorg
 
-
 # Service borg
 - type: borgType
   id: service
@@ -195,17 +186,16 @@
   extraModuleCount: 3
   moduleWhitelist:
     tags:
-    - BorgModuleGeneric
-    - BorgModuleService
+      - BorgModuleGeneric
+      - BorgModuleService
 
   defaultModules:
-  - BorgModuleMusique
-  - BorgModuleService
-  - BorgModuleClowning
+    - BorgModuleMusique
+    - BorgModuleService
+    - BorgModuleClowning
 
   radioChannels:
-  - Science
-  - Service
+    - Common
 
   # Visual
   inventoryTemplateId: borgTall

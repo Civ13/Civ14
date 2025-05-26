@@ -34,6 +34,7 @@
     belt: civ13_pistol_M1911A1
     pocket1: civ13_magazine_M1911_magazine_(.45)
     pocket2: Compass
+    ears: ClothingHeadsetUS
 
 # Sergeant
 
@@ -74,6 +75,7 @@
     belt: civ13_pistol_M1911A1
     pocket1: civ13_magazine_M1911_magazine_(.45)
     pocket2: Compass
+    ears: ClothingHeadsetUS
   inhand:
     - civ13_ar_M16A2
 
@@ -114,6 +116,7 @@
     neck: civ13_accessory_woodland_PASGT_body_armor
     pocket1: Gauze
     pocket2: Gauze
+    ears: ClothingHeadsetUS
   inhand:
     - civ13_ar_M16A2
 
@@ -127,6 +130,7 @@
     neck: civ13_accessory_woodland_PASGT_body_armor
     pocket1: Gauze
     pocket2: Gauze
+    ears: ClothingHeadsetUS
   inhand:
     - civ13_ar_M16A2
 
@@ -167,6 +171,7 @@
     neck: civ13_accessory_woodland_PASGT_body_armor
     pocket1: CombatKnife
     pocket2: Gauze
+    ears: ClothingHeadsetUS
   inhand:
     - civ13_mg_M60
 
@@ -180,6 +185,7 @@
     neck: civ13_accessory_woodland_PASGT_body_armor
     pocket1: CombatKnife
     pocket2: Gauze
+    ears: ClothingHeadsetUS
   inhand:
     - civ13_mg_M60
 
@@ -218,5 +224,6 @@
     back: ClothingBackpackDuffelFilled
     neck: civ13_accessory_woodland_PASGT_body_armor
     pocket1: CombatKnife
+    ears: ClothingHeadsetUS
   inhand:
     - civ13_ar_M16A2

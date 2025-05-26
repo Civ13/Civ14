@@ -25,3 +25,33 @@
       layers:
         - state: crypt_gray
         - state: common_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeySoviet
+  name: Soviet encryption key
+  description: An encryption key used by the Soviet Union.
+  components:
+    - type: EncryptionKey
+      channels:
+        - Soviet
+      defaultChannel: Soviet
+    - type: Sprite
+      layers:
+        - state: crypt_gray
+        - state: common_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyUS
+  name: Soviet encryption key
+  description: An encryption key used by the United States.
+  components:
+    - type: EncryptionKey
+      channels:
+        - US
+      defaultChannel: US
+    - type: Sprite
+      layers:
+        - state: crypt_gray
+        - state: common_label

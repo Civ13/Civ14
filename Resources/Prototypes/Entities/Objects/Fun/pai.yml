@@ -97,10 +97,10 @@
         - MindRoleGhostRoleFamiliar
     - type: IntrinsicRadioTransmitter
       channels:
-        - Syndicate
+        - Common
     - type: ActiveRadio
       channels:
-        - Syndicate
+        - Common
     - type: Appearance
     - type: GenericVisualizer
       visuals:

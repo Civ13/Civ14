@@ -18,13 +18,14 @@
     - type: Sprite
       state: icon
     - type: STWeight
-      self: 1
+      self: 0.5
     - type: Item
       size: Small
     - type: Clothing
       slots:
         - ears
-      sprite: Clothing/Ears/Headsets/base.rsi
+      sprite: Clothing/Ears/Headsets/base.rsiç
+    - type: TelecomExempt
     - type: GuideHelp
       guides:
         - Radio
@@ -51,3 +52,33 @@
       sprite: Clothing/Ears/Headsets/cargo.rsi
     - type: Clothing
       sprite: Clothing/Ears/Headsets/cargo.rsi
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetSoviet
+  name: Soviet headset
+  description: A headset used by the Soviet Union.
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeySoviet
+    - type: Sprite
+      sprite: Civ14/Objects/headset.rsi
+    - type: Clothing
+      sprite: Civ14/Objects/headset.rsi
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetUS
+  name: US headset
+  description: A headset used by the United States.
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeyUS
+    - type: Sprite
+      sprite: Civ14/Objects/headset.rsi
+    - type: Clothing
+      sprite: Civ14/Objects/headset.rsi

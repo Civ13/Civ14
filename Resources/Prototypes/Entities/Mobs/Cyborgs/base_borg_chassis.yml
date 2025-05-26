@@ -93,14 +93,10 @@
     - type: IntrinsicRadioReceiver
     - type: IntrinsicRadioTransmitter
       channels:
-        - Binary
         - Common
-        - Science
     - type: ActiveRadio
       channels:
-        - Binary
         - Common
-        - Science
     - type: ZombieImmune
     - type: Repairable
       doAfterDelay: 10
@@ -311,11 +307,10 @@
       subverted: true
     - type: IntrinsicRadioTransmitter
       channels:
-        - Binary
-        - Syndicate
+        - Common
     - type: ActiveRadio
       channels:
-        - Syndicate
+        - Common
     - type: ShowSyndicateIcons
     - type: MovementAlwaysTouching
     - type: Speech

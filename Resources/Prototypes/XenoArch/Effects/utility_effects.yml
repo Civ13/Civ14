@@ -18,14 +18,6 @@
       requiresPower: false
       supportedChannels:
         - Common
-        - CentCom
-        - Command
-        - Engineering
-        - Medical
-        - Science
-        - Security
-        - Service
-        - Supply
 
 - type: artifactEffect
   id: EffectRandomInstrument
