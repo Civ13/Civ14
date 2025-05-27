@@ -243,7 +243,8 @@
   requirements:
     - !type:TotalJobsTimeRequirement
       group: CivJobsEnlisted
-      time: 9000 # 2.5 hours
+      # time: 9000 # 2.5 hours
+      time: 3600 # 1 hour temporarily until people build up playtime
   ranks:
     RankSergeant:
       - !type:RoleTimeRequirement

@@ -60,6 +60,9 @@
     - type: SolutionContainerVisuals
       maxFillLevels: 1
       fillBaseName: solution
+    - type: StunOnCollide
+      stunAmount: 2
+      knockdownAmount: 1
 
 - type: entity
   parent: BaseArrow
