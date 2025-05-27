@@ -102,6 +102,10 @@
   randomStartingGears: [SovietSubmachineGunnerGear, SovietSubmachineGunnerGear2]
   icon: "JobIconSoldier"
   supervisors: job-supervisors-cpt
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobSovietRifleman
+      time: 3600 # 1 hour
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
@@ -225,6 +229,10 @@
   randomStartingGears: [SovietMachinegunnerGear, SovietMachinegunnerGear2]
   icon: "JobIconMg"
   supervisors: job-supervisors-cpt
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobSovietRifleman
+      time: 3600 # 1 hour
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement

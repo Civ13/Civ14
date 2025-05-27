@@ -54,7 +54,9 @@ public sealed partial class RoleTimeRequirement : JobRequirement
         if (!Inverted)
         {
             if (roleDiff <= 0)
+            {
                 return true;
+            }
 
             reason = FormattedMessage.FromMarkupPermissive(Loc.GetString(
                 "role-timer-role-insufficient",

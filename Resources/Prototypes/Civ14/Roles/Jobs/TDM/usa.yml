@@ -4,7 +4,7 @@
   faction: US
   originalName: Captain
   description: job-description-civ-us-cpt
-  playTimeTracker: JobSeniorOfficerUS
+  playTimeTracker: JobUSCaptain
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 10800 #3 hrs
@@ -14,7 +14,7 @@
   ranks:
     RankMajor:
       - !type:RoleTimeRequirement
-        role: JobSeniorOfficerUS
+        role: JobUSCaptain
         time: 18000 # 5 hours
     RankCaptain: []
   special:

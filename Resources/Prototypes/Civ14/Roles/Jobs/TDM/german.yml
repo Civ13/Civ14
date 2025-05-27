@@ -104,6 +104,10 @@
   randomStartingGears: [GermanSubmachineGunnerGear, GermanSubmachineGunnerGear2]
   icon: "JobIconSoldier"
   supervisors: job-supervisors-cpt
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobGermanRifleman
+      time: 3600 # 1 hour
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
@@ -222,6 +226,10 @@
   randomStartingGears: [GermanMachinegunnerGear, GermanMachinegunnerGear2]
   icon: "JobIconMg"
   supervisors: job-supervisors-cpt
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobGermanRifleman
+      time: 3600 # 1 hour
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
