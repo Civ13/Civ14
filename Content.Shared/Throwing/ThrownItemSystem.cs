@@ -9,6 +9,8 @@ using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Timing;
+using Content.Shared.Barricade;
+using Robust.Shared.Random;
 
 namespace Content.Shared.Throwing
 {
@@ -23,9 +25,10 @@ namespace Content.Shared.Throwing
         [Dependency] private readonly FixtureSystem _fixtures = default!;
         [Dependency] private readonly SharedPhysicsSystem _physics = default!;
         [Dependency] private readonly SharedGravitySystem _gravity = default!;
-
-        private const string ThrowingFixture = "throw-fixture";
-
+        [Dependency] private readonly SharedTransformSystem _transform = default!; private const string ThrowingFixture = "throw-fixture";
+        [Dependency] private readonly IRobustRandom _random = default!;
+        [Dependency] private readonly ILogManager _log = default!;
+        private ISawmill _sawmill = default!;
         public override void Initialize()
         {
             base.Initialize();
@@ -36,6 +39,7 @@ namespace Content.Shared.Throwing
             SubscribeLocalEvent<ThrownItemComponent, ThrownEvent>(ThrowItem);
 
             SubscribeLocalEvent<PullStartedMessage>(HandlePullStarted);
+            _sawmill = _log.GetSawmill("throwing");
         }
 
         private void OnMapInit(EntityUid uid, ThrownItemComponent component, MapInitEvent args)
@@ -54,7 +58,7 @@ namespace Content.Shared.Throwing
 
             var fixture = fixturesComponent.Fixtures.Values.First();
             var shape = fixture.Shape;
-            _fixtures.TryCreateFixture(uid, shape, ThrowingFixture, hard: false, collisionMask: (int) CollisionGroup.ThrownItem, manager: fixturesComponent, body: body);
+            _fixtures.TryCreateFixture(uid, shape, ThrowingFixture, hard: false, collisionMask: (int)CollisionGroup.ThrownItem, manager: fixturesComponent, body: body);
         }
 
         private void HandleCollision(EntityUid uid, ThrownItemComponent component, ref StartCollideEvent args)
@@ -73,6 +77,71 @@ namespace Content.Shared.Throwing
             if (args.OtherEntity == component.Thrower)
             {
                 args.Cancelled = true;
+            }
+            //check for barricade component (percentage of chance to hit/pass over)
+            if (TryComp(args.OtherEntity, out BarricadeComponent? barricade))
+            {
+                var alwaysPassThrough = false;
+                //_sawmill.Info("Checking barricade...");
+                if (component.Thrower is { } shooterUid && Exists(shooterUid))
+                {
+                    // Condition 1: Directions are the same (using cardinal directions).
+                    // Or, if bidirectional, directions can be opposite.
+                    var shooterWorldRotation = _transform.GetWorldRotation(shooterUid);
+                    var barricadeWorldRotation = _transform.GetWorldRotation(args.OtherEntity);
+
+                    var shooterDir = shooterWorldRotation.GetCardinalDir();
+                    var barricadeDir = barricadeWorldRotation.GetCardinalDir();
+
+                    bool directionallyAllowed = false;
+                    if (shooterDir == barricadeDir)
+                    {
+                        directionallyAllowed = true;
+                        //_sawmill.Debug("Shooter and barricade facing same cardinal direction.");
+                    }
+                    else if (barricade.Bidirectional)
+                    {
+                        var oppositeBarricadeDir = (Direction)(((int)barricadeDir + 4) % 8);
+                        if (shooterDir == oppositeBarricadeDir)
+                        {
+                            directionallyAllowed = true;
+                            //_sawmill.Debug("Shooter and barricade facing opposite cardinal directions (bidirectional pass).");
+                        }
+                    }
+
+                    if (directionallyAllowed)
+                    {
+                        // Condition 2: Firer is within 1 tile of the barricade.
+                        var shooterCoords = Transform(shooterUid).Coordinates;
+                        var barricadeCoords = Transform(args.OtherEntity).Coordinates;
+
+                        if (shooterCoords.TryDistance(EntityManager, barricadeCoords, out var distance) &&
+                            distance <= 1.5f)
+                        {
+                            alwaysPassThrough = true;
+                        }
+                    }
+                }
+
+                if (alwaysPassThrough)
+                {
+                    args.Cancelled = true;
+                }
+                else
+                {
+                    //_sawmill.Debug("Barricade direction/distance check failed or shooter not valid.");
+                    // Standard barricade blocking logic if the special conditions are not met.
+                    var rando = _random.NextFloat(0.0f, 100.0f);
+                    if (rando >= 12)
+                    {
+                        args.Cancelled = true;
+                        return;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
             }
         }
 
