@@ -56,7 +56,7 @@ public sealed partial class AnomalyGeneratorComponent : Component
     /// The radio channel for science
     /// </summary>
     [DataField("scienceChannel", customTypeSerializer: typeof(PrototypeIdSerializer<RadioChannelPrototype>))]
-    public string ScienceChannel = "Science";
+    public string ScienceChannel = "Common";
 
     /// <summary>
     /// The sound looped while an anomaly generates

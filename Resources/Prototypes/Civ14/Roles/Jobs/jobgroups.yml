@@ -39,6 +39,7 @@
   components:
     - type: JobGroup
       name: role-timer-medical-roles
+      color: "#a60019"
       jobs:
         - JobSovietMedic
         - JobSovietCWMedic
@@ -52,6 +53,7 @@
   components:
     - type: JobGroup
       name: role-timer-squad-leader-roles
+      color: "#1967ba"
       jobs:
         - JobSovietSergeant
         - JobSovietCWSergeant
@@ -65,6 +67,7 @@
   components:
     - type: JobGroup
       name: role-timer-officer-roles
+      color: "#1967ba"
       jobs:
         - JobSovietCaptain
         - JobSovietCWCaptain
