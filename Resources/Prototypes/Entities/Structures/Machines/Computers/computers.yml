@@ -459,9 +459,6 @@
           state: generic_panel_open
     - type: ResearchClient
     - type: ResearchConsole
-    - type: ActiveRadio
-      channels:
-        - Common
     - type: TechnologyDatabase
     - type: ActivatableUI
       key: enum.ResearchConsoleUiKey.Key
@@ -864,9 +861,6 @@
           state: generic_panel_open
     - type: CargoOrderConsole
     - type: BankClient
-    - type: ActiveRadio
-      channels:
-        - Common
     - type: ActivatableUI
       key: enum.CargoConsoleUiKey.Orders
     - type: UserInterface
@@ -1111,9 +1105,6 @@
         - map: ["enum.WiresVisualLayers.MaintenancePanel"]
           state: generic_panel_open
     - type: RoboticsConsole
-    - type: ActiveRadio
-      channels:
-        - Common
     - type: ActivatableUI
       key: enum.RoboticsConsoleUiKey.Key
     - type: UserInterface
