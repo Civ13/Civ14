@@ -6,8 +6,9 @@
   description: job-description-civ-german-cpt
   playTimeTracker: JobGermanCaptain
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 10800 #3 hrs
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsSquadLeader
+      time: 7200 # 2 hours
   startingGear: GermanCaptainGear
   icon: "JobIconICpt"
   supervisors: job-supervisors-nobody
@@ -51,8 +52,9 @@
   description: job-description-civ-german-sergeant
   playTimeTracker: JobGermanSergeant
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 5400 #1.5 hrs
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 7200 # 2 hours
   startingGear: GermanSergeantGear
   icon: "JobIconISgt"
   supervisors: job-supervisors-cpt
@@ -105,9 +107,9 @@
   icon: "JobIconSoldier"
   supervisors: job-supervisors-cpt
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobGermanRifleman
-      time: 3600 # 1 hour
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 3600 # 1 hours
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
@@ -227,9 +229,9 @@
   icon: "JobIconMg"
   supervisors: job-supervisors-cpt
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobGermanRifleman
-      time: 3600 # 1 hour
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 3600 # 1 hours
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
@@ -288,6 +290,10 @@
   startingGear: GermanMedicGear
   icon: "JobIconMedic"
   supervisors: job-supervisors-cpt
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 9000 # 2.5 hours
   ranks:
     RankSergeant:
       - !type:RoleTimeRequirement

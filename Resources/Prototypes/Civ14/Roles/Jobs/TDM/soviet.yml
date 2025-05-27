@@ -6,8 +6,9 @@
   description: job-description-civ-soviet-cpt
   playTimeTracker: JobSovietCaptain
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 10800 #3 hrs
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsSquadLeader
+      time: 7200 # 2 hours
   startingGear: SovietCaptainGear
   icon: "JobIconICpt"
   supervisors: job-supervisors-nobody
@@ -49,8 +50,9 @@
   description: job-description-civ-soviet-sgt
   playTimeTracker: JobSovietSergeant
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 5400 #1.5 hrs
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 7200 # 2 hours
   startingGear: SovietSergeantGear
   icon: "JobIconISgt"
   supervisors: job-supervisors-cpt
@@ -103,9 +105,9 @@
   icon: "JobIconSoldier"
   supervisors: job-supervisors-cpt
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobSovietRifleman
-      time: 3600 # 1 hour
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 3600 # 1 hours
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
@@ -230,9 +232,9 @@
   icon: "JobIconMg"
   supervisors: job-supervisors-cpt
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobSovietRifleman
-      time: 3600 # 1 hour
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 3600 # 1 hours
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
@@ -295,6 +297,10 @@
   startingGear: SovietMedicGear
   icon: "JobIconMedic"
   supervisors: job-supervisors-cpt
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 9000 # 2.5 hours
   ranks:
     RankSergeant:
       - !type:RoleTimeRequirement

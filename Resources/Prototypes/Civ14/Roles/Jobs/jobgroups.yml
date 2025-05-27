@@ -1,0 +1,72 @@
+- type: entity
+  id: CivJobsEnlisted
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: JobGroup
+      name: role-timer-enlisted-roles
+      color: "#A66300"
+      jobs:
+        - JobSovietCWRifleman
+        - JobSovietCWMachinegunner
+        - JobSovietRifleman
+        - JobSovietMachinegunner
+        - JobSovietSubmachineGunner
+        - JobUSRifleman
+        - JobUSMachinegunner
+        - JobGermanRifleman
+        - JobGermanMachinegunner
+        - JobGermanSubmachineGunner
+
+- type: entity
+  id: CivJobsEnlistedRifleman
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: JobGroup
+      name: role-timer-rifleman-roles
+      color: "#A66300"
+      jobs:
+        - JobSovietCWRifleman
+        - JobSovietRifleman
+        - JobUSRifleman
+        - JobGermanRifleman
+
+- type: entity
+  id: CivJobsMedical
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: JobGroup
+      name: role-timer-medical-roles
+      jobs:
+        - JobSovietMedic
+        - JobSovietCWMedic
+        - JobUSMedic
+        - JobGermanMedic
+
+- type: entity
+  id: CivJobsSquadLeader
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: JobGroup
+      name: role-timer-squad-leader-roles
+      jobs:
+        - JobSovietSergeant
+        - JobSovietCWSergeant
+        - JobUSSergeant
+        - JobGermanSergeant
+
+- type: entity
+  id: CivJobsOfficer
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: JobGroup
+      name: role-timer-officer-roles
+      jobs:
+        - JobSovietCaptain
+        - JobSovietCWCaptain
+        - JobUSCaptain
+        - JobGermanCaptain

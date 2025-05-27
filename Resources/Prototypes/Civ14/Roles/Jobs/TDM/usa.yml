@@ -6,8 +6,9 @@
   description: job-description-civ-us-cpt
   playTimeTracker: JobUSCaptain
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 10800 #3 hrs
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsSquadLeader
+      time: 7200 # 2 hours
   startingGear: USCaptainGear
   icon: "JobIconICpt"
   supervisors: job-supervisors-nobody
@@ -49,8 +50,9 @@
   description: job-description-civ-us-sergeant
   playTimeTracker: JobUSSergeant
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 5400 #1.5 hrs
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 7200 # 2 hours
   startingGear: USSergeantGear
   icon: "JobIconISgt"
   supervisors: job-supervisors-cpt
@@ -164,6 +166,10 @@
   randomStartingGears: [USMachinegunnerGear, USMachinegunnerGear2]
   icon: "JobIconMg"
   supervisors: job-supervisors-cpt
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 3600 # 1 hours
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
@@ -225,6 +231,10 @@
   startingGear: USMedicGear
   icon: "JobIconMedic"
   supervisors: job-supervisors-cpt
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 9000 # 2.5 hours
   ranks:
     RankSergeant:
       - !type:RoleTimeRequirement
