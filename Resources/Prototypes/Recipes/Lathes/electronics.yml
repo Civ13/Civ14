@@ -260,24 +260,9 @@
   result: ArtifactCrusherMachineCircuitboard
 
 - type: latheRecipe
-  parent: BaseCircuitboardRecipe
-  id: AnomalyVesselCircuitboard
-  result: AnomalyVesselCircuitboard
-
-- type: latheRecipe
-  parent: BaseGoldCircuitboardRecipe
-  id: AnomalyVesselExperimentalCircuitboard
-  result: AnomalyVesselExperimentalCircuitboard
-
-- type: latheRecipe
   parent: BaseSilverCircuitboardRecipe
   id: AnomalySynchronizerCircuitboard
   result: AnomalySynchronizerCircuitboard
-
-- type: latheRecipe
-  parent: BaseCircuitboardRecipe
-  id: APECircuitboard
-  result: APECircuitboard
 
 - type: latheRecipe
   parent: BaseCircuitboardRecipe

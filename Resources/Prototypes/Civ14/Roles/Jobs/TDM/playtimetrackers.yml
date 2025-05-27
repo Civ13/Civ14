@@ -1,0 +1,36 @@
+- type: playTimeTracker
+  id: JobSeniorOfficer
+
+- type: playTimeTracker
+  id: JobOfficer
+
+- type: playTimeTracker
+  id: JobSergeant
+
+- type: playTimeTracker
+  id: JobSoldier
+
+- type: playTimeTracker
+  id: JobSpecialist
+
+- type: playTimeTracker
+  id: JobMedic
+
+- type: playTimeTracker
+  id: JobSapper
+
+# medieval
+- type: playTimeTracker
+  id: JobOfficerMedieval
+
+- type: playTimeTracker
+  id: JobSergeantMedieval
+
+- type: playTimeTracker
+  id: JobSoldierMedieval
+
+- type: playTimeTracker
+  id: JobRangedMedieval
+
+- type: playTimeTracker
+  id: JobMedicMedieval

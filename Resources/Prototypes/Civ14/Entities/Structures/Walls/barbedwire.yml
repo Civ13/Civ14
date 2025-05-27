@@ -43,6 +43,16 @@
       slipSound:
         path: /Audio/Effects/glass_step.ogg
       launchForwardsMultiplier: 0
+    - type: Damageable
+      damageModifierSet: Metallic
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 220
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
     - type: Construction
       graph: Barbedwire
       node: end

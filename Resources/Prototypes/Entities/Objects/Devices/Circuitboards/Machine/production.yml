@@ -284,7 +284,6 @@
         Glass: 1
         Steel: 5
 
-
 - type: entity
   parent: BaseMachineCircuitboard
   id: AnomalySynchronizerCircuitboard
@@ -300,21 +299,6 @@
         Capacitor: 5
         PlasmaGlass: 5
         Cable: 5
-
-- type: entity
-  parent: BaseMachineCircuitboard
-  id: APECircuitboard
-  name: A.P.E. machine board
-  description: A machine printed circuit board for an A.P.E.
-  components:
-    - type: Sprite
-      state: science
-    - type: MachineBoard
-      prototype: MachineAPE
-      stackRequirements:
-        Capacitor: 2
-        Cable: 1
-        Glass: 1
 
 - type: entity
   id: ThermomachineFreezerMachineCircuitBoard

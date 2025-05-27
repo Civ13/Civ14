@@ -43,10 +43,8 @@
         - MicroBombImplant
         - MacroBombImplant
         - DeathAcidifierImplant
-        - DeathRattleImplant
         - MindShieldImplant
         - FakeMindShieldImplant
-        - RadioImplant
       deimplantFailureDamage:
         types:
           Cellular: 50
@@ -208,14 +206,6 @@
       implant: FreedomImplant
 
 - type: entity
-  id: RadioImplanter
-  suffix: radio Syndicate
-  parent: BaseImplantOnlyImplanterSyndi
-  components:
-    - type: Implanter
-      implant: RadioImplant
-
-- type: entity
   id: UplinkImplanter
   suffix: uplink
   parent: BaseImplantOnlyImplanterSyndi
@@ -265,13 +255,6 @@
     - type: Implanter
       implant: MacroBombImplant
 
-- type: entity
-  id: DeathRattleImplanter
-  suffix: death rattle
-  parent: BaseImplantOnlyImplanterSyndi
-  components:
-    - type: Implanter
-      implant: DeathRattleImplant
 
 - type: entity
   id: DeathAcidifierImplanter
@@ -298,13 +281,3 @@
   components:
     - type: Implanter
       implant: MindShieldImplant
-
-# Centcomm implanters
-
-- type: entity
-  id: RadioImplanterCentcomm
-  suffix: radio Centcomm
-  parent: BaseImplantOnlyImplanter
-  components:
-    - type: Implanter
-      implant: RadioImplantCentcomm

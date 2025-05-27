@@ -4,7 +4,7 @@
   faction: France
   originalName: Seigneur
   description: job-description-civ-french-lord
-  playTimeTracker: JobFrenchLord
+  playTimeTracker: JobOfficerMedieval
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 10800 #3 hrs
@@ -20,9 +20,6 @@
             - France
         - type: ShowFactionIcons
           factionIcon: FrenchFaction
-
-- type: playTimeTracker
-  id: JobFrenchLord
 
 - type: startingGear
   id: FrenchLordGear
@@ -40,7 +37,7 @@
   name: job-name-civ-french-knight
   faction: France
   description: job-description-civ-french-knight
-  playTimeTracker: JobFrenchKnight
+  playTimeTracker: JobSergeantMedieval
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 5400 #1.5 hrs
@@ -56,9 +53,6 @@
             - France
         - type: ShowFactionIcons
           factionIcon: FrenchFaction
-
-- type: playTimeTracker
-  id: JobFrenchKnight
 
 - type: startingGear
   id: FrenchKnightGear
@@ -80,7 +74,7 @@
   name: job-name-civ-french-man-at-arms
   faction: France
   description: job-description-civ-french-man-at-arms
-  playTimeTracker: JobFrenchSwordsman
+  playTimeTracker: JobSoldierMedieval
   startingGear: FrenchSwordsmanGear
   randomStartingGears: [FrenchSwordsmanGear, FrenchSwordsmanGear2]
   icon: "JobIconSword"
@@ -94,9 +88,6 @@
             - France
         - type: ShowFactionIcons
           factionIcon: FrenchFaction
-
-- type: playTimeTracker
-  id: JobFrenchSwordsman
 
 - type: startingGear
   id: FrenchSwordsmanGear
@@ -128,7 +119,7 @@
   name: job-name-civ-french-spearman
   faction: France
   description: job-description-civ-french-spearman
-  playTimeTracker: JobFrenchSpearman
+  playTimeTracker: JobSoldierMedieval
   startingGear: FrenchSpearmanGear
   randomStartingGears: [FrenchSpearmanGear, FrenchSpearmanGear2]
   icon: "JobIconSpear"
@@ -142,9 +133,6 @@
             - France
         - type: ShowFactionIcons
           factionIcon: FrenchFaction
-
-- type: playTimeTracker
-  id: JobFrenchSpearman
 
 - type: startingGear
   id: FrenchSpearmanGear
@@ -177,7 +165,7 @@
   name: job-name-civ-french-ranged
   faction: France
   description: job-description-civ-french-ranged
-  playTimeTracker: JobFrenchRanged
+  playTimeTracker: JobRangedMedieval
   startingGear: FrenchRangedGear
   randomStartingGears: [FrenchRangedGear, FrenchRangedGear2]
   icon: "JobIconRanged"
@@ -191,9 +179,6 @@
             - France
         - type: ShowFactionIcons
           factionIcon: FrenchFaction
-
-- type: playTimeTracker
-  id: JobFrenchRanged
 
 - type: startingGear
   id: FrenchRangedGear
@@ -253,7 +238,7 @@
   faction: France
   originalName: Moine
   description: job-description-civ-french-medic
-  playTimeTracker: JobFrenchMedic
+  playTimeTracker: JobMedicMedieval
   startingGear: FrenchMedicGear
   icon: "JobIconMedic"
   supervisors: job-supervisors-lord
@@ -266,9 +251,6 @@
             - France
         - type: ShowFactionIcons
           factionIcon: FrenchFaction
-
-- type: playTimeTracker
-  id: JobFrenchMedic
 
 - type: startingGear
   id: FrenchMedicGear

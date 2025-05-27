@@ -4,7 +4,7 @@
   faction: England
   originalName: Lorde
   description: job-description-civ-english-lord
-  playTimeTracker: JobEnglishLord
+  playTimeTracker: JobOfficerMedieval
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 10800 #3 hrs
@@ -20,9 +20,6 @@
             - England
         - type: ShowFactionIcons
           factionIcon: EnglishFaction
-
-- type: playTimeTracker
-  id: JobEnglishLord
 
 - type: startingGear
   id: EnglishLordGear
@@ -41,7 +38,7 @@
   name: job-name-civ-english-knight
   faction: England
   description: job-description-civ-english-knight
-  playTimeTracker: JobEnglishKnight
+  playTimeTracker: JobSergeantMedieval
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 5400 #1.5 hrs
@@ -57,9 +54,6 @@
             - England
         - type: ShowFactionIcons
           factionIcon: EnglishFaction
-
-- type: playTimeTracker
-  id: JobEnglishKnight
 
 - type: startingGear
   id: EnglishKnightGear
@@ -81,7 +75,7 @@
   faction: England
   originalName: Man-at-Armes
   description: job-description-civ-english-man-at-arms
-  playTimeTracker: JobEnglishSwordsman
+  playTimeTracker: JobSoldierMedieval
   startingGear: EnglishSwordsmanGear
   randomStartingGears: [EnglishSwordsmanGear, EnglishSwordsmanGear2]
   icon: "JobIconSword"
@@ -95,9 +89,6 @@
             - England
         - type: ShowFactionIcons
           factionIcon: EnglishFaction
-
-- type: playTimeTracker
-  id: JobEnglishSwordsman
 
 - type: startingGear
   id: EnglishSwordsmanGear
@@ -129,7 +120,7 @@
   faction: England
   originalName: Spereman
   description: job-description-civ-english-spearman
-  playTimeTracker: JobEnglishSpearman
+  playTimeTracker: JobSoldierMedieval
   startingGear: EnglishSpearmanGear
   randomStartingGears: [EnglishSpearmanGear, EnglishSpearmanGear2]
   icon: "JobIconSpear"
@@ -143,9 +134,6 @@
             - England
         - type: ShowFactionIcons
           factionIcon: EnglishFaction
-
-- type: playTimeTracker
-  id: JobEnglishSpearman
 
 - type: startingGear
   id: EnglishSpearmanGear
@@ -177,7 +165,7 @@
   faction: England
   originalName: Longe Boweman
   description: job-description-civ-english-ranged
-  playTimeTracker: JobEnglishRanged
+  playTimeTracker: JobRangedMedieval
   startingGear: EnglishRangedGear
   randomStartingGears: [EnglishRangedGear, EnglishRangedGear2]
   icon: "JobIconRanged"
@@ -191,9 +179,6 @@
             - England
         - type: ShowFactionIcons
           factionIcon: EnglishFaction
-
-- type: playTimeTracker
-  id: JobEnglishRanged
 
 - type: startingGear
   id: EnglishRangedGear
@@ -253,7 +238,7 @@
   faction: England
   originalName: Monk
   description: job-description-civ-english-medic
-  playTimeTracker: JobEnglishMedic
+  playTimeTracker: JobMedicMedieval
   startingGear: EnglishMedicGear
   icon: "JobIconMedic"
   supervisors: job-supervisors-lord
@@ -266,9 +251,6 @@
             - England
         - type: ShowFactionIcons
           factionIcon: EnglishFaction
-
-- type: playTimeTracker
-  id: JobEnglishMedic
 
 - type: startingGear
   id: EnglishMedicGear
