@@ -4,7 +4,7 @@
   faction: France
   originalName: Seigneur
   description: job-description-civ-french-lord
-  playTimeTracker: JobOfficerMedievalFrench
+  playTimeTracker: JobFrenchLord
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 10800 #3 hrs
@@ -37,7 +37,7 @@
   name: job-name-civ-french-knight
   faction: France
   description: job-description-civ-french-knight
-  playTimeTracker: JobSergeantMedievalFrench
+  playTimeTracker: JobFrenchKnight
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 5400 #1.5 hrs
@@ -74,7 +74,7 @@
   name: job-name-civ-french-man-at-arms
   faction: France
   description: job-description-civ-french-man-at-arms
-  playTimeTracker: JobSoldierMedievalFrench
+  playTimeTracker: JobFrenchSwordsman
   startingGear: FrenchSwordsmanGear
   randomStartingGears: [FrenchSwordsmanGear, FrenchSwordsmanGear2]
   icon: "JobIconSword"
@@ -119,7 +119,7 @@
   name: job-name-civ-french-spearman
   faction: France
   description: job-description-civ-french-spearman
-  playTimeTracker: JobSpearMedievalFrench
+  playTimeTracker: JobFrenchSpearman
   startingGear: FrenchSpearmanGear
   randomStartingGears: [FrenchSpearmanGear, FrenchSpearmanGear2]
   icon: "JobIconSpear"
@@ -165,7 +165,7 @@
   name: job-name-civ-french-ranged
   faction: France
   description: job-description-civ-french-ranged
-  playTimeTracker: JobRangedMedievalFrench
+  playTimeTracker: JobFrenchRanged
   startingGear: FrenchRangedGear
   randomStartingGears: [FrenchRangedGear, FrenchRangedGear2]
   icon: "JobIconRanged"
@@ -238,7 +238,7 @@
   faction: France
   originalName: Moine
   description: job-description-civ-french-medic
-  playTimeTracker: JobMedicMedievalFrench
+  playTimeTracker: JobFrenchMedic
   startingGear: FrenchMedicGear
   icon: "JobIconMedic"
   supervisors: job-supervisors-lord

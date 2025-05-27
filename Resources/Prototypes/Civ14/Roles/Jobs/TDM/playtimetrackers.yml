@@ -104,37 +104,37 @@
 
 # medieval
 - type: playTimeTracker
-  id: JobOfficerMedievalEnglish
+  id: JobEnglishLord
 
 - type: playTimeTracker
-  id: JobSergeantMedievalEnglish
+  id: JobEnglishKnight
 
 - type: playTimeTracker
-  id: JobSpearMedievalEnglish
+  id: JobEnglishSpearman
 
 - type: playTimeTracker
-  id: JobSoldierMedievalEnglish
+  id: JobEnglishSwordsman
 
 - type: playTimeTracker
-  id: JobRangedMedievalEnglish
+  id: JobEnglishRanged
 
 - type: playTimeTracker
-  id: JobMedicMedievalEnglish
+  id: JobEnglishMedic
 
 - type: playTimeTracker
-  id: JobOfficerMedievalFrench
+  id: JobFrenchLord
 
 - type: playTimeTracker
-  id: JobSergeantMedievalFrench
+  id: JobFrenchKnight
 
 - type: playTimeTracker
-  id: JobSoldierMedievalFrench
+  id: JobFrenchSwordsman
 
 - type: playTimeTracker
-  id: JobSpearMedievalFrench
+  id: JobFrenchSpearman
 
 - type: playTimeTracker
-  id: JobRangedMedievalFrench
+  id: JobFrenchRanged
 
 - type: playTimeTracker
-  id: JobMedicMedievalFrench
+  id: JobFrenchMedic
