@@ -101,7 +101,7 @@
   faction: SovietCW
   originalName: Strelok
   description: job-description-civ-sovietcw-rifleman
-  playTimeTracker: JobSoldierSovietCW
+  playTimeTracker: JobSovietCWRifleman
   startingGear: SovietCWRiflemanGear
   randomStartingGears: [SovietCWRiflemanGear, SovietCWRiflemanGear2]
   icon: "JobIconICpl"
@@ -109,11 +109,11 @@
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
-        role: JobSoldierSovietCW
+        role: JobSovietCWRifleman
         time: 36000 # 10 hours
     RankPrivateFirstClass:
       - !type:RoleTimeRequirement
-        role: JobSoldierSovietCW
+        role: JobSovietCWRifleman
         time: 10800 # 3 hours
     RankPrivate: []
   special:
@@ -165,7 +165,7 @@
   faction: SovietCW
   originalName: Pulemyotchik
   description: job-description-civ-sovietcw-machinegunner
-  playTimeTracker: JobMGSovietCW
+  playTimeTracker: JobSovietCWMachinegunner
   startingGear: SovietCWMachinegunnerGear
   randomStartingGears: [SovietCWMachinegunnerGear, SovietCWMachinegunnerGear2]
   icon: "JobIconMg"
@@ -173,11 +173,11 @@
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
-        role: JobMGSovietCW
+        role: JobSovietCWMachinegunner
         time: 36000 # 10 hours
     RankPrivateFirstClass:
       - !type:RoleTimeRequirement
-        role: JobMGSovietCW
+        role: JobSovietCWMachinegunner
         time: 10800 # 3 hours
     RankPrivate: []
   special:
@@ -230,14 +230,14 @@
   faction: SovietCW
   originalName: Vrach
   description: job-description-civ-sovietcw-medic
-  playTimeTracker: JobMedicSovietCW
+  playTimeTracker: JobSovietCWMedic
   startingGear: SovietCWMedicGear
   icon: "JobIconMedic"
   supervisors: job-supervisors-cpt
   ranks:
     RankSergeant:
       - !type:RoleTimeRequirement
-        role: JobMedicSovietCW
+        role: JobSovietCWMedic
         time: 10800 # 3 hours
     RankCorporal: []
   special:

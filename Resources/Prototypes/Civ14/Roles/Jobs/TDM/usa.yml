@@ -97,7 +97,7 @@
   faction: US
   originalName: Rifleman
   description: job-description-civ-us-rifleman
-  playTimeTracker: JobSoldierUS
+  playTimeTracker: JobUSRifleman
   startingGear: USRiflemanGear
   randomStartingGears: [USRiflemanGear, USRiflemanGear2]
   icon: "JobIconICpl"
@@ -105,11 +105,11 @@
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
-        role: JobSoldierUS
+        role: JobUSRifleman
         time: 36000 # 10 hours
     RankPrivateFirstClass:
       - !type:RoleTimeRequirement
-        role: JobSoldierUS
+        role: JobUSRifleman
         time: 10800 # 3 hours
     RankPrivate: []
   special:
@@ -159,7 +159,7 @@
   faction: US
   originalName: Machinegunner
   description: job-description-civ-us-machinegunner
-  playTimeTracker: JobMGUS
+  playTimeTracker: JobUSMachinegunner
   startingGear: USMachinegunnerGear
   randomStartingGears: [USMachinegunnerGear, USMachinegunnerGear2]
   icon: "JobIconMg"
@@ -167,11 +167,11 @@
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
-        role: JobMGUS
+        role: JobUSMachinegunner
         time: 36000 # 10 hours
     RankPrivateFirstClass:
       - !type:RoleTimeRequirement
-        role: JobMGUS
+        role: JobUSMachinegunner
         time: 10800 # 3 hours
     RankPrivate: []
   special:
@@ -221,14 +221,14 @@
   faction: US
   originalName: Medic
   description: job-description-civ-us-medic
-  playTimeTracker: JobMedicUS
+  playTimeTracker: JobUSMedic
   startingGear: USMedicGear
   icon: "JobIconMedic"
   supervisors: job-supervisors-cpt
   ranks:
     RankSergeant:
       - !type:RoleTimeRequirement
-        role: JobMedicUS
+        role: JobUSMedic
         time: 10800 # 3 hours
     RankCorporal: []
   special:

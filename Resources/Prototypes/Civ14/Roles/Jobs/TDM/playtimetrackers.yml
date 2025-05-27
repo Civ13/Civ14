@@ -9,16 +9,16 @@
   id: JobSergeantSovietCW
 
 - type: playTimeTracker
-  id: JobSoldierSovietCW
+  id: JobSovietCWRifleman
 
 - type: playTimeTracker
-  id: JobMGSovietCW
+  id: JobSovietCWMachinegunner
 
 - type: playTimeTracker
   id: JobSpecialistSovietCW
 
 - type: playTimeTracker
-  id: JobMedicSovietCW
+  id: JobSovietCWMedic
 
 - type: playTimeTracker
   id: JobSapperSovietCW
@@ -33,16 +33,16 @@
   id: JobSergeantUS
 
 - type: playTimeTracker
-  id: JobSoldierUS
+  id: JobUSRifleman
 
 - type: playTimeTracker
-  id: JobMGUS
+  id: JobUSMachinegunner
 
 - type: playTimeTracker
   id: JobSpecialistUS
 
 - type: playTimeTracker
-  id: JobMedicUS
+  id: JobUSMedic
 
 - type: playTimeTracker
   id: JobSapperUS
@@ -58,25 +58,25 @@
   id: JobSergeantSoviet
 
 - type: playTimeTracker
-  id: JobSoldierSoviet
+  id: JobSovietRifleman
 
 - type: playTimeTracker
   id: JobMGSoviet
 
 - type: playTimeTracker
-  id: JobSMGSoviet
+  id: JobSovietSubmachineGunner
 
 - type: playTimeTracker
   id: JobSpecialistSoviet
 
 - type: playTimeTracker
-  id: JobMedicSoviet
+  id: JobSovietMedic
 
 - type: playTimeTracker
   id: JobSapperSoviet
 
 - type: playTimeTracker
-  id: JobSeniorOfficerGerman
+  id: JobGermanCaptain
 
 - type: playTimeTracker
   id: JobOfficerGerman
@@ -85,19 +85,19 @@
   id: JobSergeantGerman
 
 - type: playTimeTracker
-  id: JobSoldierGerman
+  id: JobGermanRifleman
 
 - type: playTimeTracker
-  id: JobMGGerman
+  id: JobGermanMachinegunner
 
 - type: playTimeTracker
-  id: JobSMGGerman
+  id: JobGermanSubmachineGunner
 
 - type: playTimeTracker
   id: JobSpecialistGerman
 
 - type: playTimeTracker
-  id: JobMedicGerman
+  id: JobGermanMedic
 
 - type: playTimeTracker
   id: JobSapperGerman
