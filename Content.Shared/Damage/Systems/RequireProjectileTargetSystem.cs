@@ -3,27 +3,50 @@ using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Standing;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Containers;
+using Robust.Shared.Random;
+using Content.Shared.Mobs.Systems;
 
 namespace Content.Shared.Damage.Components;
 
 public sealed class RequireProjectileTargetSystem : EntitySystem
 {
     [Dependency] private readonly SharedContainerSystem _container = default!;
-
+    [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private readonly ILogManager _logManager = default!;
+    [Dependency] private readonly MobStateSystem _mobState = default!;
+    private ISawmill _sawmill = default!;
     public override void Initialize()
     {
         SubscribeLocalEvent<RequireProjectileTargetComponent, PreventCollideEvent>(PreventCollide);
         SubscribeLocalEvent<RequireProjectileTargetComponent, StoodEvent>(StandingBulletHit);
         SubscribeLocalEvent<RequireProjectileTargetComponent, DownedEvent>(LayingBulletPass);
+
+        _sawmill = _logManager.GetSawmill("targeting");
     }
 
     private void PreventCollide(Entity<RequireProjectileTargetComponent> ent, ref PreventCollideEvent args)
     {
         if (args.Cancelled)
-          return;
+            return;
 
         if (!ent.Comp.Active)
+        {
             return;
+        }
+        else
+        {
+            if (_mobState.IsDead(args.OtherEntity))
+            { args.Cancelled = true; }
+            //_sawmill.Info("checking");
+            var rando = _random.NextFloat(0.0f, 100.0f);
+            // 20% chance get hit
+            if (rando >= 80.0f)
+            {
+                //_sawmill.Info("20%");
+                return;
+            }
+
+        }
 
         var other = args.OtherEntity;
         if (TryComp(other, out ProjectileComponent? projectile) &&
@@ -40,7 +63,7 @@ public sealed class RequireProjectileTargetSystem : EntitySystem
                 return;
 
             if (!_container.IsEntityOrParentInContainer(shooter.Value))
-               args.Cancelled = true;
+                args.Cancelled = true;
         }
     }
 
@@ -60,6 +83,6 @@ public sealed class RequireProjectileTargetSystem : EntitySystem
 
     private void LayingBulletPass(Entity<RequireProjectileTargetComponent> ent, ref DownedEvent args)
     {
-        SetActive(ent, true);
+        SetActive(ent, true); // stalker-changes
     }
 }
