@@ -6,6 +6,24 @@
   color: "#2cdb2c"
 
 - type: radioChannel
+  id: Science
+  name: chat-radio-science
+  frequency: 1433
+  color: "#2cdb2c"
+
+- type: radioChannel
+  id: Supply
+  name: chat-radio-supply
+  frequency: 1434
+  color: "#2cdb2c"
+
+- type: radioChannel
+  id: Security
+  name: chat-radio-security
+  frequency: 1435
+  color: "#2cdb2c"
+
+- type: radioChannel
   id: Handheld
   name: chat-radio-handheld
   frequency: 1330
