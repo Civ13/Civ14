@@ -4,8 +4,8 @@ meta:
   engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/22/2025 14:35:08
-  entityCount: 1049
+  time: 05/27/2025 16:17:35
+  entityCount: 1057
 maps:
 - 1
 grids:
@@ -44,8 +44,16 @@ entities:
       researchEnabled: False
     - type: FTLDestination
     - type: CivTDMFactions
-      faction1Id: German
+      faction2Squads:
+        Alpha: {}
+        Bravo: {}
+        Charlie: {}
+      faction1Squads:
+        Alpha: {}
+        Bravo: {}
+        Charlie: {}
       faction2Id: Soviet
+      faction1Id: German
   - uid: 2
     components:
     - type: MetaData
@@ -2599,6 +2607,28 @@ entities:
     - type: Transform
       pos: 71.46087,24.807653
       parent: 2
+- proto: CrateMilitaryMortarAmmo
+  entities:
+  - uid: 208
+    components:
+    - type: Transform
+      pos: -28.5,23.5
+      parent: 2
+  - uid: 209
+    components:
+    - type: Transform
+      pos: -28.5,24.5
+      parent: 2
+  - uid: 211
+    components:
+    - type: Transform
+      pos: 72.5,18.5
+      parent: 2
+  - uid: 212
+    components:
+    - type: Transform
+      pos: 72.5,17.5
+      parent: 2
 - proto: CrateWoodBarbedwire
   entities:
   - uid: 132
@@ -3644,6 +3674,20 @@ entities:
     components:
     - type: Transform
       pos: 20.664913,27.684372
+      parent: 2
+- proto: MortarKit
+  entities:
+  - uid: 207
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -28.30018,22.385866
+      parent: 2
+  - uid: 210
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 71.37881,19.36227
       parent: 2
 - proto: OldBrickWallIndestructible
   entities:
@@ -6983,7 +7027,7 @@ entities:
       pos: 21.5,24.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -12158.777
+      secondsUntilStateChange: -12236.257
       state: Opening
     - type: Godmode
       oldDamage: {}
@@ -6993,7 +7037,7 @@ entities:
       pos: 23.5,17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -15251.492
+      secondsUntilStateChange: -15328.972
       state: Opening
     - type: Godmode
       oldDamage: {}
@@ -7018,5 +7062,19 @@ entities:
     components:
     - type: Transform
       pos: 16.5,20.5
+      parent: 2
+- proto: Wrench
+  entities:
+  - uid: 206
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -28.33143,22.432741
+      parent: 2
+  - uid: 213
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 71.53506,19.58102
       parent: 2
 ...

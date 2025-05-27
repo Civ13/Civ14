@@ -71,7 +71,7 @@
   name: thatch floor
   sprite: /Textures/Civ14/Structures/Floors/wood.rsi/thatch2.png
   variants: 1
-  baseTurf: Plating
+  baseTurf: FloorDirt
   isSubfloor: false
   deconstructTools: [Prying]
   footstepSounds:
@@ -167,7 +167,7 @@
   name: ancient road
   sprite: /Textures/Civ14/Structures/Floors/roads.rsi/r_roadfull.png
   variants: 1
-  baseTurf: Plating
+  baseTurf: FloorDirt
   weather: true
   isSubfloor: false
   deconstructTools: [Prying]
@@ -239,7 +239,7 @@
   name: cobblestone floor
   sprite: /Textures/Civ14/Objects/floors.rsi/cobble_vertical_dark.png
   variants: 1
-  baseTurf: Plating
+  baseTurf: FloorDirt
   weather: true
   isSubfloor: false
   deconstructTools: [Prying]
@@ -311,7 +311,7 @@
   name: bridge
   sprite: /Textures/Civ14/Structures/Floors/wood.rsi/woodalt7.png
   variants: 1
-  baseTurf: Plating
+  baseTurf: FloorDirt
   isSubfloor: false
   deconstructTools: [Prying]
   footstepSounds:
