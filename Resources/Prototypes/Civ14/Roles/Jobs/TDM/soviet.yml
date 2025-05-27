@@ -4,7 +4,7 @@
   faction: Soviet
   originalName: Kapitan
   description: job-description-civ-soviet-cpt
-  playTimeTracker: JobSeniorOfficerSoviet
+  playTimeTracker: JobSovietCaptain
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 10800 #3 hrs
@@ -14,7 +14,7 @@
   ranks:
     RankMajor:
       - !type:RoleTimeRequirement
-        role: JobSeniorOfficerSoviet
+        role: JobSovietCaptain
         time: 18000 # 5 hours
     RankCaptain: []
   special:
@@ -47,7 +47,7 @@
   name: job-name-civ-soviet-sgt
   faction: Soviet
   description: job-description-civ-soviet-sgt
-  playTimeTracker: JobSergeantSoviet
+  playTimeTracker: JobSovietSergeant
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 5400 #1.5 hrs
@@ -57,11 +57,11 @@
   ranks:
     RankSergeantMajor:
       - !type:RoleTimeRequirement
-        role: JobSergeantSoviet
+        role: JobSovietSergeant
         time: 36000 # 10 hours
     RankStaffSergeant:
       - !type:RoleTimeRequirement
-        role: JobSergeantSoviet
+        role: JobSovietSergeant
         time: 10800 # 3 hours
     RankSergeant: []
   special:

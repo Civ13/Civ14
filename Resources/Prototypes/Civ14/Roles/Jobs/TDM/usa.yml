@@ -47,7 +47,7 @@
   name: job-name-civ-us-sgt
   faction: US
   description: job-description-civ-us-sergeant
-  playTimeTracker: JobSergeantUS
+  playTimeTracker: JobUSSergeant
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 5400 #1.5 hrs
@@ -57,11 +57,11 @@
   ranks:
     RankSergeantMajor:
       - !type:RoleTimeRequirement
-        role: JobSergeantUS
+        role: JobUSSergeant
         time: 36000 # 10 hours
     RankStaffSergeant:
       - !type:RoleTimeRequirement
-        role: JobSergeantUS
+        role: JobUSSergeant
         time: 10800 # 3 hours
     RankSergeant: []
   special:

@@ -49,7 +49,7 @@
   name: job-name-civ-german-sgt
   faction: Germany
   description: job-description-civ-german-sergeant
-  playTimeTracker: JobSergeantGerman
+  playTimeTracker: JobGermanSergeant
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 5400 #1.5 hrs
@@ -59,11 +59,11 @@
   ranks:
     RankSergeantMajor:
       - !type:RoleTimeRequirement
-        role: JobSergeantGerman
+        role: JobGermanSergeant
         time: 36000 # 10 hours
     RankStaffSergeant:
       - !type:RoleTimeRequirement
-        role: JobSergeantGerman
+        role: JobGermanSergeant
         time: 10800 # 3 hours
     RankSergeant: []
   special:

@@ -1,12 +1,12 @@
 # coldwar
 - type: playTimeTracker
-  id: JobSeniorOfficerSovietCW
+  id: JobSovietCWCaptain
 
 - type: playTimeTracker
   id: JobOfficerSovietCW
 
 - type: playTimeTracker
-  id: JobSergeantSovietCW
+  id: JobSovietCWSergeant
 
 - type: playTimeTracker
   id: JobSovietCWRifleman
@@ -30,7 +30,7 @@
   id: JobOfficerUS
 
 - type: playTimeTracker
-  id: JobSergeantUS
+  id: JobUSSergeant
 
 - type: playTimeTracker
   id: JobUSRifleman
@@ -49,13 +49,13 @@
 
 # ww2
 - type: playTimeTracker
-  id: JobSeniorOfficerSoviet
+  id: JobSovietCaptain
 
 - type: playTimeTracker
   id: JobOfficerSoviet
 
 - type: playTimeTracker
-  id: JobSergeantSoviet
+  id: JobSovietSergeant
 
 - type: playTimeTracker
   id: JobSovietRifleman
@@ -82,7 +82,7 @@
   id: JobOfficerGerman
 
 - type: playTimeTracker
-  id: JobSergeantGerman
+  id: JobGermanSergeant
 
 - type: playTimeTracker
   id: JobGermanRifleman
