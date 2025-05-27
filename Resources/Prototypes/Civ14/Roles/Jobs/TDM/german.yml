@@ -4,7 +4,7 @@
   faction: Germany
   originalName: Kapitän
   description: job-description-civ-german-cpt
-  playTimeTracker: JobSeniorOfficer
+  playTimeTracker: JobSeniorOfficerGerman
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 10800 #3 hrs
@@ -14,7 +14,7 @@
   ranks:
     RankMajor:
       - !type:RoleTimeRequirement
-        role: JobSeniorOfficer
+        role: JobSeniorOfficerGerman
         time: 18000 # 5 hours
     RankCaptain: []
   special:
@@ -49,7 +49,7 @@
   name: job-name-civ-german-sgt
   faction: Germany
   description: job-description-civ-german-sergeant
-  playTimeTracker: JobSergeant
+  playTimeTracker: JobSergeantGerman
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 5400 #1.5 hrs
@@ -59,11 +59,11 @@
   ranks:
     RankSergeantMajor:
       - !type:RoleTimeRequirement
-        role: JobSergeant
+        role: JobSergeantGerman
         time: 36000 # 10 hours
     RankStaffSergeant:
       - !type:RoleTimeRequirement
-        role: JobSergeant
+        role: JobSergeantGerman
         time: 10800 # 3 hours
     RankSergeant: []
   special:
@@ -99,7 +99,7 @@
   faction: Germany
   originalName: Maschinenpistole Schütze
   description: job-description-civ-german-submachinegunner
-  playTimeTracker: JobSoldier
+  playTimeTracker: JobSMGGerman
   startingGear: GermanSubmachineGunnerGear
   randomStartingGears: [GermanSubmachineGunnerGear, GermanSubmachineGunnerGear2]
   icon: "JobIconSoldier"
@@ -107,11 +107,11 @@
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
-        role: JobSoldier
+        role: JobSMGGerman
         time: 36000 # 10 hours
     RankPrivateFirstClass:
       - !type:RoleTimeRequirement
-        role: JobSoldier
+        role: JobSMGGerman
         time: 10800 # 3 hours
     RankPrivate: []
   special:
@@ -158,7 +158,7 @@
   faction: Germany
   originalName: Schütze
   description: job-description-civ-german-rifleman
-  playTimeTracker: JobSoldier
+  playTimeTracker: JobSoldierGerman
   startingGear: GermanRiflemanGear
   randomStartingGears: [GermanRiflemanGear, GermanRiflemanGear2]
   icon: "JobIconSoldier"
@@ -166,11 +166,11 @@
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
-        role: JobSoldier
+        role: JobSoldierGerman
         time: 36000 # 10 hours
     RankPrivateFirstClass:
       - !type:RoleTimeRequirement
-        role: JobSoldier
+        role: JobSoldierGerman
         time: 10800 # 3 hours
     RankPrivate: []
   special:
@@ -217,7 +217,7 @@
   faction: Germany
   originalName: Maschinengewehrschütze # how to pronounce that
   description: job-description-civ-german-machinegunner
-  playTimeTracker: JobSoldier
+  playTimeTracker: JobMGGerman
   startingGear: GermanMachinegunnerGear
   randomStartingGears: [GermanMachinegunnerGear, GermanMachinegunnerGear2]
   icon: "JobIconMg"
@@ -225,11 +225,11 @@
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
-        role: JobSoldier
+        role: JobMGGerman
         time: 36000 # 10 hours
     RankPrivateFirstClass:
       - !type:RoleTimeRequirement
-        role: JobSoldier
+        role: JobMGGerman
         time: 10800 # 3 hours
     RankPrivate: []
   special:
@@ -276,14 +276,14 @@
   faction: Germany
   originalName: Sanitäter
   description: job-description-civ-german-medic
-  playTimeTracker: JobMedic
+  playTimeTracker: JobMedicGerman
   startingGear: GermanMedicGear
   icon: "JobIconMedic"
   supervisors: job-supervisors-cpt
   ranks:
     RankSergeant:
       - !type:RoleTimeRequirement
-        role: JobMedic
+        role: JobMedicGerman
         time: 10800 # 3 hours
     RankCorporal: []
   special:

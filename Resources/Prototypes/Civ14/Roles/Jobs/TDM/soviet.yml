@@ -4,7 +4,7 @@
   faction: Soviet
   originalName: Kapitan
   description: job-description-civ-soviet-cpt
-  playTimeTracker: JobSeniorOfficer
+  playTimeTracker: JobSeniorOfficerSoviet
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 10800 #3 hrs
@@ -14,7 +14,7 @@
   ranks:
     RankMajor:
       - !type:RoleTimeRequirement
-        role: JobSeniorOfficer
+        role: JobSeniorOfficerSoviet
         time: 18000 # 5 hours
     RankCaptain: []
   special:
@@ -47,7 +47,7 @@
   name: job-name-civ-soviet-sgt
   faction: Soviet
   description: job-description-civ-soviet-sgt
-  playTimeTracker: JobSergeant
+  playTimeTracker: JobSergeantSoviet
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 5400 #1.5 hrs
@@ -57,11 +57,11 @@
   ranks:
     RankSergeantMajor:
       - !type:RoleTimeRequirement
-        role: JobSergeant
+        role: JobSergeantSoviet
         time: 36000 # 10 hours
     RankStaffSergeant:
       - !type:RoleTimeRequirement
-        role: JobSergeant
+        role: JobSergeantSoviet
         time: 10800 # 3 hours
     RankSergeant: []
   special:
@@ -97,7 +97,7 @@
   faction: Soviet
   originalName: Avtomatchik
   description: job-description-civ-soviet-submachinegunner
-  playTimeTracker: JobSoldier
+  playTimeTracker: JobSMGSoviet
   startingGear: SovietSubmachineGunnerGear
   randomStartingGears: [SovietSubmachineGunnerGear, SovietSubmachineGunnerGear2]
   icon: "JobIconSoldier"
@@ -105,11 +105,11 @@
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
-        role: JobSoldier
+        role: JobSMGSoviet
         time: 36000 # 10 hours
     RankPrivateFirstClass:
       - !type:RoleTimeRequirement
-        role: JobSoldier
+        role: JobSMGSoviet
         time: 10800 # 3 hours
     RankPrivate: []
   special:
@@ -158,7 +158,7 @@
   faction: Soviet
   originalName: Strelok
   description: job-description-civ-soviet-rifleman
-  playTimeTracker: JobSoldier
+  playTimeTracker: JobSoldierSoviet
   startingGear: SovietRiflemanGear
   randomStartingGears: [SovietRiflemanGear, SovietRiflemanGear2]
   icon: "JobIconSoldier"
@@ -166,11 +166,11 @@
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
-        role: JobSoldier
+        role: JobSoldierSoviet
         time: 36000 # 10 hours
     RankPrivateFirstClass:
       - !type:RoleTimeRequirement
-        role: JobSoldier
+        role: JobSoldierSoviet
         time: 10800 # 3 hours
     RankPrivate: []
   special:
@@ -220,7 +220,7 @@
   faction: Soviet
   originalName: Pulemyotchik
   description: job-description-civ-soviet-machinegunner
-  playTimeTracker: JobSoldier
+  playTimeTracker: JobMGSoviet
   startingGear: SovietMachinegunnerGear
   randomStartingGears: [SovietMachinegunnerGear, SovietMachinegunnerGear2]
   icon: "JobIconMg"
@@ -228,11 +228,11 @@
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
-        role: JobSoldier
+        role: JobMGSoviet
         time: 36000 # 10 hours
     RankPrivateFirstClass:
       - !type:RoleTimeRequirement
-        role: JobSoldier
+        role: JobMGSoviet
         time: 10800 # 3 hours
     RankPrivate: []
   special:
@@ -283,14 +283,14 @@
   faction: Soviet
   originalName: Vrach
   description: job-description-civ-soviet-medic
-  playTimeTracker: JobMedic
+  playTimeTracker: JobMedicSoviet
   startingGear: SovietMedicGear
   icon: "JobIconMedic"
   supervisors: job-supervisors-cpt
   ranks:
     RankSergeant:
       - !type:RoleTimeRequirement
-        role: JobMedic
+        role: JobMedicSoviet
         time: 10800 # 3 hours
     RankCorporal: []
   special:

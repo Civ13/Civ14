@@ -1,36 +1,140 @@
+# coldwar
 - type: playTimeTracker
-  id: JobSeniorOfficer
+  id: JobSeniorOfficerSovietCW
 
 - type: playTimeTracker
-  id: JobOfficer
+  id: JobOfficerSovietCW
 
 - type: playTimeTracker
-  id: JobSergeant
+  id: JobSergeantSovietCW
 
 - type: playTimeTracker
-  id: JobSoldier
+  id: JobSoldierSovietCW
 
 - type: playTimeTracker
-  id: JobSpecialist
+  id: JobMGSovietCW
 
 - type: playTimeTracker
-  id: JobMedic
+  id: JobSpecialistSovietCW
 
 - type: playTimeTracker
-  id: JobSapper
+  id: JobMedicSovietCW
+
+- type: playTimeTracker
+  id: JobSapperSovietCW
+
+- type: playTimeTracker
+  id: JobSeniorOfficerUS
+
+- type: playTimeTracker
+  id: JobOfficerUS
+
+- type: playTimeTracker
+  id: JobSergeantUS
+
+- type: playTimeTracker
+  id: JobSoldierUS
+
+- type: playTimeTracker
+  id: JobMGUS
+
+- type: playTimeTracker
+  id: JobSpecialistUS
+
+- type: playTimeTracker
+  id: JobMedicUS
+
+- type: playTimeTracker
+  id: JobSapperUS
+
+# ww2
+- type: playTimeTracker
+  id: JobSeniorOfficerSoviet
+
+- type: playTimeTracker
+  id: JobOfficerSoviet
+
+- type: playTimeTracker
+  id: JobSergeantSoviet
+
+- type: playTimeTracker
+  id: JobSoldierSoviet
+
+- type: playTimeTracker
+  id: JobMGSoviet
+
+- type: playTimeTracker
+  id: JobSMGSoviet
+
+- type: playTimeTracker
+  id: JobSpecialistSoviet
+
+- type: playTimeTracker
+  id: JobMedicSoviet
+
+- type: playTimeTracker
+  id: JobSapperSoviet
+
+- type: playTimeTracker
+  id: JobSeniorOfficerGerman
+
+- type: playTimeTracker
+  id: JobOfficerGerman
+
+- type: playTimeTracker
+  id: JobSergeantGerman
+
+- type: playTimeTracker
+  id: JobSoldierGerman
+
+- type: playTimeTracker
+  id: JobMGGerman
+
+- type: playTimeTracker
+  id: JobSMGGerman
+
+- type: playTimeTracker
+  id: JobSpecialistGerman
+
+- type: playTimeTracker
+  id: JobMedicGerman
+
+- type: playTimeTracker
+  id: JobSapperGerman
 
 # medieval
 - type: playTimeTracker
-  id: JobOfficerMedieval
+  id: JobOfficerMedievalEnglish
 
 - type: playTimeTracker
-  id: JobSergeantMedieval
+  id: JobSergeantMedievalEnglish
 
 - type: playTimeTracker
-  id: JobSoldierMedieval
+  id: JobSpearMedievalEnglish
 
 - type: playTimeTracker
-  id: JobRangedMedieval
+  id: JobSoldierMedievalEnglish
 
 - type: playTimeTracker
-  id: JobMedicMedieval
+  id: JobRangedMedievalEnglish
+
+- type: playTimeTracker
+  id: JobMedicMedievalEnglish
+
+- type: playTimeTracker
+  id: JobOfficerMedievalFrench
+
+- type: playTimeTracker
+  id: JobSergeantMedievalFrench
+
+- type: playTimeTracker
+  id: JobSoldierMedievalFrench
+
+- type: playTimeTracker
+  id: JobSpearMedievalFrench
+
+- type: playTimeTracker
+  id: JobRangedMedievalFrench
+
+- type: playTimeTracker
+  id: JobMedicMedievalFrench
