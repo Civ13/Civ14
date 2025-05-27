@@ -7,16 +7,16 @@
       name: role-timer-enlisted-roles
       color: "#A66300"
       jobs:
-        - JobSovietCWRifleman
-        - JobSovietCWMachinegunner
-        - JobSovietRifleman
-        - JobSovietMachinegunner
-        - JobSovietSubmachineGunner
-        - JobUSRifleman
-        - JobUSMachinegunner
-        - JobGermanRifleman
-        - JobGermanMachinegunner
-        - JobGermanSubmachineGunner
+        - SovietCWRifleman
+        - SovietCWMachinegunner
+        - SovietRifleman
+        - SovietMachinegunner
+        - SovietSubmachineGunner
+        - USRifleman
+        - USMachinegunner
+        - GermanRifleman
+        - GermanMachinegunner
+        - GermanSubmachineGunner
 
 - type: entity
   id: CivJobsEnlistedRifleman
@@ -27,10 +27,10 @@
       name: role-timer-rifleman-roles
       color: "#A66300"
       jobs:
-        - JobSovietCWRifleman
-        - JobSovietRifleman
-        - JobUSRifleman
-        - JobGermanRifleman
+        - SovietCWRifleman
+        - SovietRifleman
+        - USRifleman
+        - GermanRifleman
 
 - type: entity
   id: CivJobsMedical
@@ -41,10 +41,10 @@
       name: role-timer-medical-roles
       color: "#a60019"
       jobs:
-        - JobSovietMedic
-        - JobSovietCWMedic
-        - JobUSMedic
-        - JobGermanMedic
+        - SovietMedic
+        - SovietCWMedic
+        - USMedic
+        - GermanMedic
 
 - type: entity
   id: CivJobsSquadLeader
@@ -55,10 +55,10 @@
       name: role-timer-squad-leader-roles
       color: "#1967ba"
       jobs:
-        - JobSovietSergeant
-        - JobSovietCWSergeant
-        - JobUSSergeant
-        - JobGermanSergeant
+        - SovietSergeant
+        - SovietCWSergeant
+        - USSergeant
+        - GermanSergeant
 
 - type: entity
   id: CivJobsOfficer
@@ -69,7 +69,7 @@
       name: role-timer-officer-roles
       color: "#1967ba"
       jobs:
-        - JobSovietCaptain
-        - JobSovietCWCaptain
-        - JobUSCaptain
-        - JobGermanCaptain
+        - SovietCaptain
+        - SovietCWCaptain
+        - USCaptain
+        - GermanCaptain

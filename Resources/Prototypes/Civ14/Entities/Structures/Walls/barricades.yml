@@ -34,7 +34,7 @@
               acts: ["Destruction"]
     - type: Barricade
       bidirectional: false
-      blocking: 80
+      blocking: 85
     - type: AtmosExposed
 
 - type: entity
@@ -94,7 +94,7 @@
               acts: ["Destruction"]
     - type: Barricade
       bidirectional: true
-      blocking: 66
+      blocking: 75
     - type: AtmosExposed
     - type: Construction
       graph: BarricadeSandbags
@@ -113,7 +113,7 @@
       drawdepth: FloorObjects
       noRot: true
     - type: Barricade
-      blocking: 50
+      blocking: 60
 - type: entity
   id: BarricadeSandbagsLow
   description: An unfinished sandbag wall.
@@ -128,7 +128,7 @@
       drawdepth: FloorObjects
       noRot: true
     - type: Barricade
-      blocking: 33
+      blocking: 40
 # snow wall
 - type: entity
   id: BarricadeSnowwall
@@ -168,7 +168,7 @@
       drawdepth: FloorObjects
       noRot: true
     - type: Barricade
-      blocking: 50
+      blocking: 60
 - type: entity
   id: BarricadeSnowwallLow
   description: An unfinished snow barricade.
@@ -183,7 +183,7 @@
       drawdepth: FloorObjects
       noRot: true
     - type: Barricade
-      blocking: 33
+      blocking: 40
 
 # dirt wall
 - type: entity
@@ -228,7 +228,7 @@
       drawdepth: FloorObjects
       noRot: true
     - type: Barricade
-      blocking: 50
+      blocking: 60
 
 - type: entity
   id: BarricadeDirtwallLow
@@ -244,7 +244,7 @@
       drawdepth: FloorObjects
       noRot: true
     - type: Barricade
-      blocking: 33
+      blocking: 40
 
 - type: entity
   id: BarricadeStonewall

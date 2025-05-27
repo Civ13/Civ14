@@ -304,9 +304,14 @@ public abstract partial class SharedProjectileSystem : EntitySystem
             {
                 //_sawmill.Debug("Barricade direction/distance check failed or shooter not valid.");
                 // Standard barricade blocking logic if the special conditions are not met.
-                if (_random.NextFloat(0.0f, 100.0f) >= barricade.Blocking)
+                var rando = _random.NextFloat(0.0f, 100.0f);
+                if (rando >= barricade.Blocking)
                 {
                     args.Cancelled = true;
+                }
+                else
+                {
+                    return;
                 }
             }
         }
