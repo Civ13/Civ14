@@ -560,7 +560,7 @@
   components:
     - type: Sprite
       state: flag_sovborder
-      
+
 - type: entity
   id: civ13_wallflag_sov
   name: Soviet Union flag
@@ -1089,6 +1089,24 @@
   components:
     - type: Sprite
       state: flag_blugoslavia
+
+- type: entity
+  id: civ13_wallflag_yellandia
+  name: Yellandian flag
+  description: The flag of the Federation of Yellandia.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_yellandia
+
+- type: entity
+  id: civ13_wallflag_greenistan
+  name: Greenistani flag
+  description: The flag of the People's Republic of Greenistan.
+  parent: WallFlagWhite
+  components:
+    - type: Sprite
+      state: flag_greenistan
 
 - type: entity
   id: civ13_wallflag_arstotzka

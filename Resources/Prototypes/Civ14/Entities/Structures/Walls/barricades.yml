@@ -419,9 +419,6 @@
       state: hescobastion
     - type: PlacementReplacement
       key: walls
-    - type: Damageable
-      damageContainer: StructuralInorganic
-      damageModifierSet: Inert
     - type: Physics
       bodyType: Static
     - type: Fixtures
@@ -519,3 +516,91 @@
       bidirectional: true
       blocking: 30
     - type: AtmosExposed
+
+- type: entity
+  parent: BaseStructure
+  id: BarricadeSandbagsTall
+  name: tall sandbag wall
+  description: A tall sandbag wall.
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+    - type: RangedDamageSound
+      soundGroups:
+        Brute:
+          collection: MetalBulletImpact
+      soundTypes:
+        Heat:
+          collection: MetalLaserImpact
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: Civ14/Structures/barricades.rsi
+      state: sandbagfull
+      drawdepth: Walls
+    - type: Icon
+      sprite: Civ14/Structures/barricades.rsi
+      state: sandbagfull
+    - type: PlacementReplacement
+      key: walls
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.49,-0.45,0.49,0.15"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+          density: 1000
+    - type: Occluder
+    - type: Airtight
+      airBlocked: false
+    - type: RadiationBlocker
+      resistance: 2
+    - type: SunShadowCast
+    - type: Damageable
+      damageModifierSet: Inert
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 450
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  id: BarricadeAntiTank
+  description: A static anti-tank obstacle defense made of metal angle beams.
+  parent: BaseStructure
+  name: czech hedgehog
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Civ14/Objects/structures.rsi
+      state: antitank
+      drawdepth: BlastDoors
+      noRot: true
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeCircle
+            radius: 0.4
+          density: 185
+          restitution: 0.0
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+    - type: AtmosExposed
+    - type: Climbable
+    - type: Barricade
+      bidirectional: true
+      blocking: 50

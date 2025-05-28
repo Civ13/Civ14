@@ -161,3 +161,28 @@
       contents:
         - id: MortarShellHE
           amount: 10
+
+# Blue wardrobe
+- type: entity
+  id: WardrobeCivMedical
+  parent: WardrobeBase
+  name: medical clothing wardrobe
+  description: "A wardrobe packed surgical clothes."
+  components:
+    - type: Appearance
+    - type: EntityStorageVisuals
+      stateBaseClosed: generic
+      stateDoorOpen: generic_open
+      stateDoorClosed: blue_door
+    - type: StorageFill
+      contents:
+        - id: ClothingHandsGlovesLatex
+          amount: 2
+        - id: ClothingMaskBreathMedical
+          amount: 2
+        - id: ClothingHeadHatSurgcapBlue
+          amount: 2
+        - id: civ13_uniform_white_medical_scrubs
+          amount: 2
+        - id: ClothingOuterCoatLabOpened
+          amount: 2
