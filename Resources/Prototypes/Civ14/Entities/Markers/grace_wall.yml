@@ -29,129 +29,100 @@
             - HighImpassable
 
 - type: entity
-  name: grace wall germanyww2
-  id: MarkerGracewallGermanyWW2
+  name: grace wall factions
+  id: MarkerGracewallFaction
   parent: MarkerBase
+  abstract: true
   components:
     - type: Sprite
       sprite: Civ14/Markers/areas.rsi
       state: gracewall
+    - type: GracewallArea # Use the new component
+      gracewallActive: true
+      gracewallRadius: 1.5
+      blockingFactions: []
+      permanent: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        gracewall: # Define a fixture for the area
+          shape: !type:PhysShapeAabb
+            bounds: "-0.2, -1.5, 0.2, 1.5"
+          # Collision layer/mask will be managed by the GracewallRuleSystem
+          density: 100
+          hard: true
+          mask:
+            - LowImpassable
+            - MidImpassable
+            - HighImpassable
+          layer:
+            - LowImpassable
+            - MidImpassable
+            - HighImpassable
+
+- type: entity
+  name: grace wall germanyww2
+  id: MarkerGracewallGermanyWW2
+  parent: MarkerGracewallFaction
+  components:
     - type: GracewallArea # Use the new component
       gracewallActive: true
       gracewallRadius: 1.5
       blockingFactions: [Germany]
       permanent: true
-    - type: Physics
-      bodyType: Static
-    - type: Fixtures
-      fixtures:
-        gracewall: # Define a fixture for the area
-          shape: !type:PhysShapeAabb
-            bounds: "-0.2, -1.5, 0.2, 1.5"
-          # Collision layer/mask will be managed by the GracewallRuleSystem
-          density: 100
-          hard: true
-          mask:
-            - LowImpassable
-            - MidImpassable
-            - HighImpassable
-          layer:
-            - LowImpassable
-            - MidImpassable
-            - HighImpassable
 
 - type: entity
   name: grace wall sovietww2
   id: MarkerGracewallSovietWW2
-  parent: MarkerBase
+  parent: MarkerGracewallFaction
   components:
-    - type: Sprite
-      sprite: Civ14/Markers/areas.rsi
-      state: gracewall
     - type: GracewallArea # Use the new component
       gracewallActive: true
       gracewallRadius: 1.5
       blockingFactions: [Soviet]
       permanent: true
-    - type: Physics
-      bodyType: Static
-    - type: Fixtures
-      fixtures:
-        gracewall: # Define a fixture for the area
-          shape: !type:PhysShapeAabb
-            bounds: "-0.2, -1.5, 0.2, 1.5"
-          # Collision layer/mask will be managed by the GracewallRuleSystem
-          density: 100
-          hard: true
-          mask:
-            - LowImpassable
-            - MidImpassable
-            - HighImpassable
-          layer:
-            - LowImpassable
-            - MidImpassable
-            - HighImpassable
 
 - type: entity
   name: grace wall US
   id: MarkerGracewallUS
-  parent: MarkerBase
+  parent: MarkerGracewallFaction
   components:
-    - type: Sprite
-      sprite: Civ14/Markers/areas.rsi
-      state: gracewall
     - type: GracewallArea # Use the new component
       gracewallActive: true
       gracewallRadius: 1.5
       blockingFactions: [US]
       permanent: true
-    - type: Physics
-      bodyType: Static
-    - type: Fixtures
-      fixtures:
-        gracewall: # Define a fixture for the area
-          shape: !type:PhysShapeAabb
-            bounds: "-0.2, -1.5, 0.2, 1.5"
-          # Collision layer/mask will be managed by the GracewallRuleSystem
-          density: 100
-          hard: true
-          mask:
-            - LowImpassable
-            - MidImpassable
-            - HighImpassable
-          layer:
-            - LowImpassable
-            - MidImpassable
-            - HighImpassable
 
 - type: entity
   name: grace wall sovietCW
   id: MarkerGracewallSovietCW
-  parent: MarkerBase
+  parent: MarkerGracewallFaction
   components:
-    - type: Sprite
-      sprite: Civ14/Markers/areas.rsi
-      state: gracewall
     - type: GracewallArea # Use the new component
       gracewallActive: true
       gracewallRadius: 1.5
       blockingFactions: [SovietCW]
       permanent: true
-    - type: Physics
-      bodyType: Static
-    - type: Fixtures
-      fixtures:
-        gracewall: # Define a fixture for the area
-          shape: !type:PhysShapeAabb
-            bounds: "-0.2, -1.5, 0.2, 1.5"
-          # Collision layer/mask will be managed by the GracewallRuleSystem
-          density: 100
-          hard: true
-          mask:
-            - LowImpassable
-            - MidImpassable
-            - HighImpassable
-          layer:
-            - LowImpassable
-            - MidImpassable
-            - HighImpassable
+
+- type: entity
+  name: grace wall insurgents
+  id: MarkerGracewallInsurgents
+  parent: MarkerGracewallFaction
+  components:
+    - type: GracewallArea # Use the new component
+      gracewallActive: true
+      gracewallRadius: 1.5
+      blockingFactions: [Insurgents]
+      permanent: true
+
+- type: entity
+  name: grace wall blugoslavia
+  id: MarkerGracewallBlugoslavia
+  parent: MarkerGracewallFaction
+  components:
+    - type: GracewallArea # Use the new component
+      gracewallActive: true
+      gracewallRadius: 1.5
+      blockingFactions: [Blugoslavia]
+      permanent: true

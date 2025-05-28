@@ -739,8 +739,8 @@
           state: rocky_west
 
 - type: entity
-  id: WallRock
-  parent: WallRockSand
+  id: WallRockSand2
+  parent: WallRock
   name: rock
   suffix: planetmap
   description: Its made of large, uneven rocks stacked together.
@@ -763,10 +763,9 @@
         - map: ["enum.EdgeLayer.West"]
           state: rock_sand2_west
 
-
 - type: entity
-  id: WallRock
-  parent: WallRockSand2
+  id: WallRockSand3
+  parent: WallRock
   name: rock
   suffix: planetmap
   description: Its made of large, uneven rocks stacked together.
@@ -788,7 +787,6 @@
           state: rock_sand3_north
         - map: ["enum.EdgeLayer.West"]
           state: rock_sand3_west
-
 
 # Ore veins
 - type: entity

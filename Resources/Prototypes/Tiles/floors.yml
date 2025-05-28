@@ -1721,8 +1721,8 @@
     - 1.0
     - 1.0
     - 1.0
-  baseTurf: Space
-  isSubfloor: true
+  baseTurf: FloorDirt
+  isSubfloor: false
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000
@@ -1741,8 +1741,8 @@
     - 1.0
     - 1.0
     - 1.0
-  baseTurf: Space
-  isSubfloor: true
+  baseTurf: FloorPlanetDryDirt
+  isSubfloor: false
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000

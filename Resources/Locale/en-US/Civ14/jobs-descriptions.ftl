@@ -40,3 +40,14 @@ job-description-civ-sovietcw-sgt = You are the right hand of your captain. Direc
 job-description-civ-sovietcw-rifleman = You are a rifleman, the soviet standard of the army. For the Motherland!
 job-description-civ-sovietcw-machinegunner = You are a machinegunner. Use your superior firepower to suppress enemies at a distance!
 job-description-civ-sovietcw-medic = As a field surgeon, keep your troops alive!
+
+job-description-civ-insurgent-sgt = Direct your troops and order artillery strikes on the enemy!
+job-description-civ-insurgent-rifleman = You are an insurgent. Ambush your enemies and take them by surprise!
+job-description-civ-insurgent-machinegunner = You are a machinegunner. Use your superior firepower to suppress enemies at a distance!
+job-description-civ-insurgent-medic = As a field surgeon, keep your troops alive!
+
+job-description-civ-blugoslavia-cpt = You are the highest ranking in your faction. Lead your men to victory!
+job-description-civ-blugoslavia-sgt = You are the right hand of your captain. Direct troops and order artillery strikes on the enemy while answering to the Captain!
+job-description-civ-blugoslavia-rifleman = You are a rifleman, one of Blugoslavia's finest. Fight for victory!
+job-description-civ-blugoslavia-machinegunner = You are a machinegunner. Use your superior firepower to suppress enemies at a distance!
+job-description-civ-blugoslavia-medic = As a field surgeon, keep your troops alive!

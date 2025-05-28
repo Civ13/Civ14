@@ -1,3 +1,31 @@
+# modern
+- type: playTimeTracker
+  id: JobInsurgentLeader
+
+- type: playTimeTracker
+  id: JobInsurgentRifleman
+
+- type: playTimeTracker
+  id: JobInsurgentMachinegunner
+
+- type: playTimeTracker
+  id: JobInsurgentMedic
+
+- type: playTimeTracker
+  id: JobBlugoslaviaCaptain
+
+- type: playTimeTracker
+  id: JobBlugoslaviaSergeant
+
+- type: playTimeTracker
+  id: JobBlugoslaviaRifleman
+
+- type: playTimeTracker
+  id: JobBlugoslaviaMachinegunner
+
+- type: playTimeTracker
+  id: JobBlugoslaviaMedic
+
 # coldwar
 - type: playTimeTracker
   id: JobSovietCWCaptain

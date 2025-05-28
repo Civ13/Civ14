@@ -17,6 +17,10 @@
         - GermanRifleman
         - GermanMachinegunner
         - GermanSubmachineGunner
+        - BlugoslaviaRifleman
+        - BlugoslaviaMachinegunner
+        - InsurgentRifleman
+        - InsurgentMachinegunner
 
 - type: entity
   id: CivJobsEnlistedRifleman
@@ -31,6 +35,8 @@
         - SovietRifleman
         - USRifleman
         - GermanRifleman
+        - InsurgentRifleman
+        - BlugoslaviaRifleman
 
 - type: entity
   id: CivJobsMedical
@@ -45,6 +51,8 @@
         - SovietCWMedic
         - USMedic
         - GermanMedic
+        - InsurgentMedic
+        - BlugoslaviaMedic
 
 - type: entity
   id: CivJobsSquadLeader
@@ -59,6 +67,8 @@
         - SovietCWSergeant
         - USSergeant
         - GermanSergeant
+        - InsurgentLeader
+        - BlugoslaviaSergeant
 
 - type: entity
   id: CivJobsOfficer
@@ -73,3 +83,4 @@
         - SovietCWCaptain
         - USCaptain
         - GermanCaptain
+        - BlugoslaviaCaptain

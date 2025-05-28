@@ -89,4 +89,32 @@
     - type: Sprite
       sprite: Markers/cross.rsi
       layers:
-        - state: pink         
+        - state: pink
+
+- type: entity
+  id: SpawnPointInsurgents
+  parent: SpawnPointJobBase
+  name: insurgent spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: SovietCW
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: green
+
+- type: entity
+  id: SpawnPointBlugoslavia
+  parent: SpawnPointJobBase
+  name: blugoslavia spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: Blugoslavia
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: blue # duh

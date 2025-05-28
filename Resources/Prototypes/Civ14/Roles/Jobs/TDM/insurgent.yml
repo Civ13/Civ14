@@ -1,0 +1,234 @@
+# Leader
+
+- type: job
+  id: InsurgentLeader
+  originalName: Leader
+  name: job-name-civ-insurgent-sgt
+  faction: Insurgent
+  description: job-description-civ-insurgent-sgt
+  playTimeTracker: JobInsurgentLeader
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 7200 # 2 hours
+  startingGear: InsurgentLeaderGear
+  icon: "JobIconISgt"
+  supervisors: job-supervisors-nobody
+  ranks:
+    RankLeaderMajor:
+      - !type:RoleTimeRequirement
+        role: JobInsurgentLeader
+        time: 36000 # 10 hours
+    RankStaffLeader:
+      - !type:RoleTimeRequirement
+        role: JobInsurgentLeader
+        time: 10800 # 3 hours
+    RankLeader: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: RussianAccent
+        - type: NpcFactionMember
+          factions:
+            - Insurgent
+        - type: ShowFactionIcons
+          factionIcon: SovietFaction
+          jobIcon: JobIconISgt
+          assignSquad: true
+
+- type: startingGear
+  id: InsurgentLeaderGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    jumpsuit: civ13_uniform_Soviet_uniform
+    neck: civ13_accessory_6B2_body_armor
+    head: civ13_head_soviet_pilotka
+    belt: civ13_pistol_Makarov_PM
+    pocket1: civ13_magazine_PM_Makarov_magazine_(9x18mm)
+    pocket2: Compass
+    ears: ClothingHeadsetSoviet
+  inhand:
+    - civ13_ar_AK_74
+
+# Assault Rifleman
+
+- type: job
+  id: InsurgentRifleman
+  name: job-name-civ-insurgent-rifleman
+  faction: Insurgent
+  originalName: Strelok
+  description: job-description-civ-insurgent-rifleman
+  playTimeTracker: JobInsurgentRifleman
+  startingGear: InsurgentRiflemanGear
+  randomStartingGears: [InsurgentRiflemanGear, InsurgentRiflemanGear2]
+  icon: "JobIconICpl"
+  supervisors: job-supervisors-cpt
+  ranks:
+    RankLanceCorporal:
+      - !type:RoleTimeRequirement
+        role: JobInsurgentRifleman
+        time: 36000 # 10 hours
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: JobInsurgentRifleman
+        time: 10800 # 3 hours
+    RankPrivate: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: RussianAccent
+        - type: NpcFactionMember
+          factions:
+            - Insurgent
+        - type: ShowFactionIcons
+          factionIcon: SovietFaction
+          jobIcon: JobIconRifleman
+          assignSquad: true
+
+- type: startingGear
+  id: InsurgentRiflemanGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_uniform
+    neck: civ13_accessory_6B2_body_armor
+    head: civ13_head_soviet_helmet
+    belt: ClothingWebbingInsurgentRifleman
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+    ears: ClothingHeadsetSoviet
+  inhand:
+    - civ13_ar_AK_74
+
+- type: startingGear
+  id: InsurgentRiflemanGear2
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_amoeba_outfit
+    gloves: ClothingHandsGlovesFingerless
+    belt: ClothingWebbingInsurgentRifleman
+    neck: civ13_accessory_6B2_body_armor
+    head: civ13_head_soviet_helmet
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+    ears: ClothingHeadsetSoviet
+  inhand:
+    - civ13_ar_AK_74
+
+# Machinegunner
+
+- type: job
+  id: InsurgentMachinegunner
+  name: job-name-civ-insurgent-machinegunner
+  faction: Insurgent
+  originalName: Pulemyotchik
+  description: job-description-civ-insurgent-machinegunner
+  playTimeTracker: JobInsurgentMachinegunner
+  startingGear: InsurgentMachinegunnerGear
+  randomStartingGears: [InsurgentMachinegunnerGear, InsurgentMachinegunnerGear2]
+  icon: "JobIconMg"
+  supervisors: job-supervisors-cpt
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 3600 # 1 hours
+  ranks:
+    RankLanceCorporal:
+      - !type:RoleTimeRequirement
+        role: JobInsurgentMachinegunner
+        time: 36000 # 10 hours
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: JobInsurgentMachinegunner
+        time: 10800 # 3 hours
+    RankPrivate: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: RussianAccent
+        - type: NpcFactionMember
+          factions:
+            - Insurgent
+        - type: ShowFactionIcons
+          factionIcon: SovietFaction
+          jobIcon: JobIconMg
+          assignSquad: true
+
+- type: startingGear
+  id: InsurgentMachinegunnerGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_uniform
+    gloves: ClothingHandsGlovesFingerless
+    belt: ClothingWebbingInsurgentMG
+    neck: civ13_accessory_6B2_body_armor
+    head: civ13_head_soviet_helmet
+    pocket1: CombatKnife
+    pocket2: Gauze
+    ears: ClothingHeadsetSoviet
+  inhand:
+    - civ13_mg_RPD_machine_gun
+
+- type: startingGear
+  id: InsurgentMachinegunnerGear2
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_amoeba_outfit
+    gloves: ClothingHandsGlovesFingerless
+    belt: ClothingWebbingInsurgentMG
+    neck: civ13_accessory_6B2_body_armor
+    head: civ13_head_soviet_ushanka_1
+    pocket1: CombatKnife
+    pocket2: Gauze
+    ears: ClothingHeadsetSoviet
+  inhand:
+    - civ13_mg_RPD_machine_gun
+
+# Medic
+
+- type: job
+  id: InsurgentMedic
+  name: job-name-civ-insurgent-medic
+  faction: Insurgent
+  originalName: Vrach
+  description: job-description-civ-insurgent-medic
+  playTimeTracker: JobInsurgentMedic
+  startingGear: InsurgentMedicGear
+  icon: "JobIconMedic"
+  supervisors: job-supervisors-cpt
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      # time: 9000 # 2.5 hours
+      time: 3600 # 1 hour temporarily until people build up playtime
+  ranks:
+    RankLeader:
+      - !type:RoleTimeRequirement
+        role: JobInsurgentMedic
+        time: 10800 # 3 hours
+    RankCorporal: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: RussianAccent
+        - type: NpcFactionMember
+          factions:
+            - Insurgent
+        - type: ShowFactionIcons
+          factionIcon: SovietFaction
+          jobIcon: JobIconMedic
+          assignSquad: false
+
+- type: startingGear
+  id: InsurgentMedicGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_uniform
+    neck: civ13_accessory_6B2_body_armor
+    head: civ13_head_soviet_medical_helmet
+    belt: ClothingSatchelMedicalMedsFilled
+    back: ClothingBackpackDuffelFilled
+    pocket1: FlashlightLanternMilitary
+    pocket2: civ13_magazine_AK_74_magazine_(5.45x39mm)
+    ears: ClothingHeadsetSoviet
+  inhand:
+    - civ13_ar_AK_74

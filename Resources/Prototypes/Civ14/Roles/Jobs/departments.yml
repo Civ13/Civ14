@@ -81,3 +81,26 @@
     - SovietCWRifleman
     - SovietCWMachinegunner
     - SovietCWMedic
+
+- type: department
+  id: DepInsurgents
+  name: department-Insurgents
+  description: department-Insurgents-description
+  color: "#24a600"
+  roles:
+    - InsurgentLeader
+    - InsurgentRifleman
+    - InsurgentMachinegunner
+    - InsurgentMedic
+
+- type: department
+  id: DepBlugoslavia
+  name: department-Blugoslavia
+  description: department-Insurgents-description
+  color: "#002fca"
+  roles:
+    - BlugoslaviaCaptain
+    - BlugoslaviaSergeant
+    - BlugoslaviaRifleman
+    - BlugoslaviaMachinegunner
+    - BlugoslaviaMedic

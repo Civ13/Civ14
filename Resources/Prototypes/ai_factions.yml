@@ -236,7 +236,7 @@
     - Predator
     - Germany
     - US
-    
+
 - type: npcFaction
   id: Germany
   hostile:
@@ -251,7 +251,7 @@
     - Predator
     - Soviet
     - US
-     
+
 - type: npcFaction
   id: US
   hostile:
@@ -264,7 +264,7 @@
     - AllHostile
     - Wizard
     - Predator
-    - Soviet  
+    - Soviet
     - Germany
 
 - type: npcFaction
@@ -281,3 +281,32 @@
     - Predator
     - Germany
     - US
+
+- type: npcFaction
+  id: Insurgents
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - US
+    - Blugoslavia
+
+- type: npcFaction
+  id: Blugoslavia
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - Insurgents

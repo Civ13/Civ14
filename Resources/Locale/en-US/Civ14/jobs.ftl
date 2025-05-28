@@ -65,3 +65,15 @@ job-name-civ-sovietcw-submachinegunner = SMG
 job-name-civ-sovietcw-rifleman = Infantry
 job-name-civ-sovietcw-machinegunner = LMG
 job-name-civ-sovietcw-medic = Medic
+
+job-name-civ-insurgent-sgt = Leader
+job-name-civ-insurgent-rifleman = Insurgent
+job-name-civ-insurgent-machinegunner = LMG
+job-name-civ-insurgent-medic = Medic
+
+job-name-civ-blugoslavia-cpt = Leader
+job-name-civ-blugoslavia-sgt = Sergeant
+job-name-civ-blugoslavia-submachinegunner = SMG
+job-name-civ-blugoslavia-rifleman = Infantry
+job-name-civ-blugoslavia-machinegunner = LMG
+job-name-civ-blugoslavia-medic = Medic

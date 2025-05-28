@@ -243,3 +243,26 @@
       cost: 8
       time: 20
       material: Stone
+
+- type: entity
+  name: traffic cone
+  parent: BaseItem
+  id: traffic cone
+  description: An orange traffic cone.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/decals.rsi
+      state: cone
+      layers:
+        - state: cone
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            cone: ""
+            cone1: ""
+            cone2: ""
+    - type: STWeight
+      self: 0.75
+    - type: Item
+      size: Normal
