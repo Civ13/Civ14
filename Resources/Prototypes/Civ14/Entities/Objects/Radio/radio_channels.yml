@@ -13,3 +13,19 @@
   frequency: 1351
   color: "#539c00"
   longRange: true
+
+- type: radioChannel
+  id: Insurgents
+  name: chat-radio-insurgents
+  keycode: "i"
+  frequency: 1352
+  color: "#539c00"
+  longRange: true
+
+- type: radioChannel
+  id: Blugoslavia
+  name: chat-radio-blugoslavia
+  keycode: "b"
+  frequency: 1353
+  color: "#0032c7"
+  longRange: true

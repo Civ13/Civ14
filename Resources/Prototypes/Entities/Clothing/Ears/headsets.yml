@@ -82,3 +82,33 @@
       sprite: Civ14/Objects/headset.rsi
     - type: Clothing
       sprite: Civ14/Objects/headset.rsi
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetInsurgents
+  name: Insurgent headset
+  description: A headset used by the Insurgents.
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeyInsurgents
+    - type: Sprite
+      sprite: Civ14/Objects/headset.rsi
+    - type: Clothing
+      sprite: Civ14/Objects/headset.rsi
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetBlugoslavia
+  name: Blugoslavia headset
+  description: A headset used by the Republic of Blugoslavia.
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeyBlugoslavia
+    - type: Sprite
+      sprite: Civ14/Objects/headset.rsi
+    - type: Clothing
+      sprite: Civ14/Objects/headset.rsi

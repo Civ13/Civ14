@@ -23,3 +23,7 @@ chat-radio-binary = Binary
 
 chat-radio-soviet = Soviet
 chat-radio-us = US
+
+
+chat-radio-blugoslavia = Blugoslavia
+chat-radio-insurgents = Insurgents

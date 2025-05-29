@@ -206,9 +206,9 @@
       material: Leather
       time: 8
 - type: entity
-  name: ０military boots
+  name: military boots
   parent: ClothingShoesBase
-  id: civ13_shoes_０military_boots
+  id: civ13_shoes_military_boots
   description: When you want to turn up the heat.
   components:
     - type: Sprite
@@ -225,32 +225,25 @@
           Heat: 0.75
     - type: Construction
 
-      graph: civ13_shoes_０military_boots
+      graph: civ13_shoes_military_boots
       node: end
       cost: 5
       material: Cloth
       time: 5
 - type: entity
-  name: ０wrapped boots
+  name: wrapped boots
   parent: ClothingShoesBase
-  id: civ13_shoes_０wrapped_boots
+  id: civ13_shoes_wrapped_boots
   description: ""
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/wrappedboots.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/shoes/wrappedboots.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.19
-          Slash: 0.19
-          Arrow: 0.9
-          Heat: 0.75
-          Radiation: 0.6
+
     - type: Construction
 
-      graph: civ13_shoes_０wrapped_boots
+      graph: civ13_shoes_wrapped_boots
       node: end
       cost: 5
       material: Cloth
@@ -315,14 +308,7 @@
       sprite: Civ14/Clothing/exported/shoes/japboots_ww2.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/shoes/japboots_ww2.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.19
-          Slash: 0.19
-          Arrow: 0.9
-          Heat: 0.75
-          Radiation: 0.6
+
     - type: Construction
 
       graph: civ13_shoes_Leather_boots
@@ -1007,7 +993,7 @@
 - type: entity
   name: military boots
   parent: ClothingShoesBase
-  id: civ13_shoes_military_boots
+  id: civ13_shoes_military_boots_tan
   description: Classic tan military boots.
   components:
     - type: Sprite
@@ -1024,7 +1010,7 @@
           Heat: 0.75
     - type: Construction
 
-      graph: civ13_shoes_military_boots
+      graph: civ13_shoes_military_boots_tan
       node: end
       cost: 5
       material: Cloth

@@ -98,7 +98,7 @@
   suffix: faction spawn
   components:
     - type: SpawnPoint
-      faction: SovietCW
+      faction: Insurgents
       spawn_type: Faction
     - type: Sprite
       sprite: Markers/cross.rsi

@@ -2,9 +2,9 @@
 
 - type: job
   id: InsurgentLeader
-  originalName: Leader
+  originalName: Qaynarqan
   name: job-name-civ-insurgent-sgt
-  faction: Insurgent
+  faction: Insurgents
   description: job-description-civ-insurgent-sgt
   playTimeTracker: JobInsurgentLeader
   requirements:
@@ -39,14 +39,14 @@
 - type: startingGear
   id: InsurgentLeaderGear
   equipment:
-    shoes: civ13_shoes_leather_shoes_1
-    jumpsuit: civ13_uniform_Soviet_uniform
-    neck: civ13_accessory_6B2_body_armor
-    head: civ13_head_soviet_pilotka
-    belt: civ13_pistol_Makarov_PM
-    pocket1: civ13_magazine_PM_Makarov_magazine_(9x18mm)
+    shoes: civ13_shoes_black_boots
+    jumpsuit: civ13_uniform_black_tunic_with_desert_camo_trousers
+    neck: civ13_accessory_khaki_PASGT_body_armor
+    head: civ13_head_black_bandana
+    belt: civ13_sword_saif
+    pocket1: civ13_magazine_AK_74_magazine_(5.45x39mm)
     pocket2: Compass
-    ears: ClothingHeadsetSoviet
+    ears: ClothingHeadsetInsurgents
   inhand:
     - civ13_ar_AK_74
 
@@ -55,14 +55,14 @@
 - type: job
   id: InsurgentRifleman
   name: job-name-civ-insurgent-rifleman
-  faction: Insurgent
-  originalName: Strelok
+  faction: Insurgents
+  originalName: Tufangchy
   description: job-description-civ-insurgent-rifleman
   playTimeTracker: JobInsurgentRifleman
   startingGear: InsurgentRiflemanGear
-  randomStartingGears: [InsurgentRiflemanGear, InsurgentRiflemanGear2]
+  randomStartingGears: [InsurgentRiflemanGear, InsurgentRiflemanGear2, InsurgentRiflemanGear3]
   icon: "JobIconICpl"
-  supervisors: job-supervisors-cpt
+  supervisors: job-supervisors-sgt
   ranks:
     RankLanceCorporal:
       - !type:RoleTimeRequirement
@@ -88,113 +88,61 @@
 - type: startingGear
   id: InsurgentRiflemanGear
   equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
-    jumpsuit: civ13_uniform_Soviet_uniform
+    shoes: civ13_shoes_black_boots
+    jumpsuit: civ13_uniform_sand_colored_tunic_with_woodland_camo_trousers
     neck: civ13_accessory_6B2_body_armor
-    head: civ13_head_soviet_helmet
-    belt: ClothingWebbingInsurgentRifleman
+    head: civ13_head_black_bandana
+    mask: civ13_mask_black_balaclava
+    belt: ClothingWebbingInsurgentRifleman2
     pocket1: FlashlightLanternMilitary
     pocket2: Gauze
-    ears: ClothingHeadsetSoviet
+    ears: ClothingHeadsetInsurgents
   inhand:
-    - civ13_ar_AK_74
+    - civ13_ar_AKM
 
 - type: startingGear
   id: InsurgentRiflemanGear2
   equipment:
     shoes: civ13_shoes_Soviet_sapogi_boots
-    jumpsuit: civ13_uniform_Soviet_amoeba_outfit
+    jumpsuit: civ13_uniform_sand_colored_uniform_with_desert_camo_trousers
     gloves: ClothingHandsGlovesFingerless
     belt: ClothingWebbingInsurgentRifleman
     neck: civ13_accessory_6B2_body_armor
-    head: civ13_head_soviet_helmet
+    head: civ13_head_black_shemagh
     pocket1: FlashlightLanternMilitary
     pocket2: Gauze
-    ears: ClothingHeadsetSoviet
+    ears: ClothingHeadsetInsurgents
   inhand:
-    - civ13_ar_AK_74
-
-# Machinegunner
-
-- type: job
-  id: InsurgentMachinegunner
-  name: job-name-civ-insurgent-machinegunner
-  faction: Insurgent
-  originalName: Pulemyotchik
-  description: job-description-civ-insurgent-machinegunner
-  playTimeTracker: JobInsurgentMachinegunner
-  startingGear: InsurgentMachinegunnerGear
-  randomStartingGears: [InsurgentMachinegunnerGear, InsurgentMachinegunnerGear2]
-  icon: "JobIconMg"
-  supervisors: job-supervisors-cpt
-  requirements:
-    - !type:TotalJobsTimeRequirement
-      group: CivJobsEnlisted
-      time: 3600 # 1 hours
-  ranks:
-    RankLanceCorporal:
-      - !type:RoleTimeRequirement
-        role: JobInsurgentMachinegunner
-        time: 36000 # 10 hours
-    RankPrivateFirstClass:
-      - !type:RoleTimeRequirement
-        role: JobInsurgentMachinegunner
-        time: 10800 # 3 hours
-    RankPrivate: []
-  special:
-    - !type:AddComponentSpecial
-      components:
-        - type: RussianAccent
-        - type: NpcFactionMember
-          factions:
-            - Insurgent
-        - type: ShowFactionIcons
-          factionIcon: SovietFaction
-          jobIcon: JobIconMg
-          assignSquad: true
+    - civ13_ar_AKM
 
 - type: startingGear
-  id: InsurgentMachinegunnerGear
+  id: InsurgentRiflemanGear3
   equipment:
     shoes: civ13_shoes_Soviet_sapogi_boots
-    jumpsuit: civ13_uniform_Soviet_uniform
+    jumpsuit: civ13_uniform_light_brown_uniform_with_green_trousers
     gloves: ClothingHandsGlovesFingerless
-    belt: ClothingWebbingInsurgentMG
+    belt: ClothingWebbingInsurgentRifleman2
     neck: civ13_accessory_6B2_body_armor
-    head: civ13_head_soviet_helmet
-    pocket1: CombatKnife
+    head: civ13_head_black_shemagh
+    mask: civ13_mask_black_balaclava
+    pocket1: FlashlightLanternMilitary
     pocket2: Gauze
-    ears: ClothingHeadsetSoviet
+    ears: ClothingHeadsetInsurgents
   inhand:
-    - civ13_mg_RPD_machine_gun
-
-- type: startingGear
-  id: InsurgentMachinegunnerGear2
-  equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
-    jumpsuit: civ13_uniform_Soviet_amoeba_outfit
-    gloves: ClothingHandsGlovesFingerless
-    belt: ClothingWebbingInsurgentMG
-    neck: civ13_accessory_6B2_body_armor
-    head: civ13_head_soviet_ushanka_1
-    pocket1: CombatKnife
-    pocket2: Gauze
-    ears: ClothingHeadsetSoviet
-  inhand:
-    - civ13_mg_RPD_machine_gun
+    - civ13_ar_AKM
 
 # Medic
 
 - type: job
   id: InsurgentMedic
   name: job-name-civ-insurgent-medic
-  faction: Insurgent
-  originalName: Vrach
+  faction: Insurgents
+  originalName: Shifobaxsh
   description: job-description-civ-insurgent-medic
   playTimeTracker: JobInsurgentMedic
   startingGear: InsurgentMedicGear
   icon: "JobIconMedic"
-  supervisors: job-supervisors-cpt
+  supervisors: job-supervisors-sgt
   requirements:
     - !type:TotalJobsTimeRequirement
       group: CivJobsEnlisted
@@ -224,11 +172,11 @@
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_Soviet_uniform
     neck: civ13_accessory_6B2_body_armor
-    head: civ13_head_soviet_medical_helmet
+    head: civ13_head_black_shemagh
     belt: ClothingSatchelMedicalMedsFilled
     back: ClothingBackpackDuffelFilled
     pocket1: FlashlightLanternMilitary
-    pocket2: civ13_magazine_AK_74_magazine_(5.45x39mm)
-    ears: ClothingHeadsetSoviet
+    pocket2: civ13_magazine_AK47_(7.62x39mm)
+    ears: ClothingHeadsetInsurgents
   inhand:
-    - civ13_ar_AK_74
+    - civ13_ar_AKM
