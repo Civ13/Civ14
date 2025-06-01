@@ -13,7 +13,7 @@
     - type: Gun
       projectileSpeed: 30 # Base 7.62x39mm
       minAngle: 2 # 52 - 50 (Matches new BaseGunCivAR)
-      maxAngle: 75 # 125 - 50 (Matches new BaseGunCivAR)
+      maxAngle: 50 # 125 - 50 (Matches new BaseGunCivAR)
       angleIncrease: 6
       angleDecay: 25
       fireRate: 4 # ~600 RPM
