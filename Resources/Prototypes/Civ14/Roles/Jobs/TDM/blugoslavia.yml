@@ -21,7 +21,6 @@
   special:
     - !type:AddComponentSpecial
       components:
-        - type: RussianAccent
         - type: NpcFactionMember
           factions:
             - Blugoslavia
@@ -72,7 +71,6 @@
   special:
     - !type:AddComponentSpecial
       components:
-        - type: RussianAccent
         - type: NpcFactionMember
           factions:
             - Blugoslavia
@@ -93,7 +91,7 @@
     pocket2: Compass
     ears: ClothingHeadsetBlugoslavia
   inhand:
-    - civ13_ar_AK_74
+    - civ13_ar_AK_12
 
 # Assault Rifleman
 
@@ -121,7 +119,6 @@
   special:
     - !type:AddComponentSpecial
       components:
-        - type: RussianAccent
         - type: NpcFactionMember
           factions:
             - Blugoslavia
@@ -137,12 +134,12 @@
     jumpsuit: civ13_uniform_Soviet_uniform
     neck: civ13_accessory_N34_B_body_armor
     head: civ13_head_soviet_helmet
-    belt: ClothingWebbingBlugoslaviaRifleman
+    belt: ClothingWebbingSovietCWRifleman
     pocket1: FlashlightLanternMilitary
     pocket2: Gauze
     ears: ClothingHeadsetBlugoslavia
   inhand:
-    - civ13_ar_AK_74
+    - civ13_ar_AK_12
 
 - type: startingGear
   id: BlugoslaviaRiflemanGear2
@@ -150,14 +147,14 @@
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_Soviet_amoeba_outfit
     gloves: ClothingHandsGlovesFingerless
-    belt: ClothingWebbingBlugoslaviaRifleman
+    belt: ClothingWebbingSovietCWRifleman
     neck: civ13_accessory_N34_B_body_armor
     head: civ13_head_soviet_helmet
     pocket1: FlashlightLanternMilitary
     pocket2: Gauze
     ears: ClothingHeadsetBlugoslavia
   inhand:
-    - civ13_ar_AK_74
+    - civ13_ar_AK_12
 
 # Machinegunner
 
@@ -189,7 +186,6 @@
   special:
     - !type:AddComponentSpecial
       components:
-        - type: RussianAccent
         - type: NpcFactionMember
           factions:
             - Blugoslavia
@@ -204,7 +200,7 @@
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_Soviet_uniform
     gloves: ClothingHandsGlovesFingerless
-    belt: ClothingWebbingBlugoslaviaMG
+    belt: ClothingWebbingSovietCWMG
     neck: civ13_accessory_N34_B_body_armor
     head: civ13_head_soviet_helmet
     pocket1: CombatKnife
@@ -219,7 +215,7 @@
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_Soviet_amoeba_outfit
     gloves: ClothingHandsGlovesFingerless
-    belt: ClothingWebbingBlugoslaviaMG
+    belt: ClothingWebbingSovietCWMG
     neck: civ13_accessory_N34_B_body_armor
     head: civ13_head_soviet_ushanka_1
     pocket1: CombatKnife
@@ -254,7 +250,6 @@
   special:
     - !type:AddComponentSpecial
       components:
-        - type: RussianAccent
         - type: NpcFactionMember
           factions:
             - Blugoslavia
@@ -276,4 +271,4 @@
     pocket2: civ13_magazine_AK_74_magazine_(5.45x39mm)
     ears: ClothingHeadsetBlugoslavia
   inhand:
-    - civ13_ar_AK_74
+    - civ13_ar_AK_12

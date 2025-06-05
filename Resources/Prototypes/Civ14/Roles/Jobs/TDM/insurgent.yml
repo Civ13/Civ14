@@ -15,24 +15,23 @@
   icon: "JobIconISgt"
   supervisors: job-supervisors-nobody
   ranks:
-    RankLeaderMajor:
+    RankSergeantMajor:
       - !type:RoleTimeRequirement
-        role: JobInsurgentLeader
+        role: JobBlugoslaviaSergeant
         time: 36000 # 10 hours
-    RankStaffLeader:
+    RankStaffSergeant:
       - !type:RoleTimeRequirement
-        role: JobInsurgentLeader
+        role: JobBlugoslaviaSergeant
         time: 10800 # 3 hours
-    RankLeader: []
+    RankSergeant: []
   special:
     - !type:AddComponentSpecial
       components:
-        - type: RussianAccent
         - type: NpcFactionMember
           factions:
-            - Insurgent
+            - Insurgents
         - type: ShowFactionIcons
-          factionIcon: SovietFaction
+          factionIcon: GreenistanFaction
           jobIcon: JobIconISgt
           assignSquad: true
 
@@ -76,12 +75,11 @@
   special:
     - !type:AddComponentSpecial
       components:
-        - type: RussianAccent
         - type: NpcFactionMember
           factions:
-            - Insurgent
+            - Insurgents
         - type: ShowFactionIcons
-          factionIcon: SovietFaction
+          factionIcon: GreenistanFaction
           jobIcon: JobIconRifleman
           assignSquad: true
 
@@ -157,12 +155,11 @@
   special:
     - !type:AddComponentSpecial
       components:
-        - type: RussianAccent
         - type: NpcFactionMember
           factions:
-            - Insurgent
+            - Insurgents
         - type: ShowFactionIcons
-          factionIcon: SovietFaction
+          factionIcon: GreenistanFaction
           jobIcon: JobIconMedic
           assignSquad: false
 

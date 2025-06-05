@@ -225,6 +225,17 @@
     state: greek_basic
 
 - type: factionIcon
+  id: GreenistanFaction
+  priority: 1
+  showTo:
+    components:
+      - ShowAntagIcons
+      - ShowFactionIcons
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_countries.rsi
+    state: greenistan
+
+- type: factionIcon
   id: HezFaction
   priority: 1
   showTo:

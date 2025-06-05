@@ -25,6 +25,9 @@
       sprite: Markers/cross.rsi
       layers:
         - state: red
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_uk
+
 - type: entity
   id: SpawnPointFrench
   parent: SpawnPointJobBase
@@ -38,6 +41,9 @@
       sprite: Markers/cross.rsi
       layers:
         - state: blue
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_france
+
 - type: entity
   id: SpawnPointGerman
   parent: SpawnPointJobBase
@@ -51,6 +57,9 @@
       sprite: Markers/cross.rsi
       layers:
         - state: green
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_germany
+
 - type: entity
   id: SpawnPointSoviet
   parent: SpawnPointJobBase
@@ -64,6 +73,9 @@
       sprite: Markers/cross.rsi
       layers:
         - state: pink
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_sov
+
 - type: entity
   id: SpawnPointUS
   parent: SpawnPointJobBase
@@ -77,6 +89,9 @@
       sprite: Markers/cross.rsi
       layers:
         - state: blue
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_usa
+
 - type: entity
   id: SpawnPointSovietCW
   parent: SpawnPointJobBase
@@ -90,6 +105,8 @@
       sprite: Markers/cross.rsi
       layers:
         - state: pink
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_sov
 
 - type: entity
   id: SpawnPointInsurgents
@@ -104,6 +121,8 @@
       sprite: Markers/cross.rsi
       layers:
         - state: green
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_greenistan
 
 - type: entity
   id: SpawnPointBlugoslavia
@@ -118,3 +137,21 @@
       sprite: Markers/cross.rsi
       layers:
         - state: blue # duh
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_blugoslavia
+
+- type: entity
+  id: SpawnPointUnitedNations
+  parent: SpawnPointJobBase
+  name: UN spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: UnitedNations
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: blue # duh
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_un

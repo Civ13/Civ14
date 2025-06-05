@@ -7,9 +7,9 @@ For the full guide with a tutorial, please check the wiki.
 
 Here is a quick rundown of the steps you need to go through to make a new map, in case you need a refresher or you're already familiar with the mapping process. Otherwise, scroll down to the tutorial.
 
-1. When you're ingame, spawn as an observer. Open the console using `\` and type `mapping 10 Maps/civ/template.yml`. This will open the template map, which has some presets predefined.
+1. When you're ingame, spawn as an observer. Open the console using backslash key and type [color=orange]mapping 10 Maps/civ/template.yml[/color]. This will open the template map, which has some presets predefined.
 
-2. Expand the map if you need to, first select a floor tile and hold CTRL and drag it to expand. Remember to enclose the new area in indestructible walls, normally `WallRockIndestructible`. If you do so, remember to run `fixgridatmos` in the console.
+2. Expand the map if you need to, first select a floor tile and hold CTRL and drag it to expand. Remember to enclose the new area in indestructible walls, normally [color=orange]WallRockIndestructible[/color]. If you do so, remember to run [color=orange]fixgridatmos[/color] in the console.
 
 3. Map to your heart's content. Don't forget to add:
 
@@ -18,9 +18,9 @@ Here is a quick rundown of the steps you need to go through to make a new map, i
     - Capturable area(s), if applicable
     - Grace walls
 
-4. Save the map using `savemap 10 mapname.yml`. The file will be created in `bin/Content.Server/Data`. Move it to the map folder in Resources/ afterwards.
+4. Save the map using [color=orange]savemap 10 mapname.yml[/color]. The file will be created in [color=orange]bin/Content.Server/Data[/color]. Move it to the map folder in [color=orange]Resources/[/color] afterwards.
 
-5. Create a new map metadata in `Resources/Prototypes/Maps` and edit it accordingly. Don't forget to define an ID, the preset and the jobs.
+5. Create a new map metadata in [color=orange]Resources/Prototypes/Maps[/color] and edit it accordingly. Don't forget to define an ID, the preset and the jobs.
 
 6. Edit the map file and add the ID you defined above to the station section.
 

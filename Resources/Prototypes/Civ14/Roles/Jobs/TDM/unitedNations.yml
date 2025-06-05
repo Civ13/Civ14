@@ -31,7 +31,7 @@
           factions:
             - UnitedNations
         - type: ShowFactionIcons
-          factionIcon: UnitedNations
+          factionIcon: UnitedNationsFaction
           jobIcon: JobIconRifleman
           assignSquad: true
 
@@ -95,7 +95,7 @@
           factions:
             - UnitedNations
         - type: ShowFactionIcons
-          factionIcon: SovietFaction
+          factionIcon: UnitedNationsFaction
           jobIcon: JobIconMedic
           assignSquad: false
 
