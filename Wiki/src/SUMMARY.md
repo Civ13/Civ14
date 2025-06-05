@@ -10,6 +10,7 @@ Meta
 -   [Rules](rules/rules.md)
 -   [How to Play](guides/playing.md)
 -   [Editing the Wiki](contributing.md)
+-   [Mapping Tutorial](mapping.md)
 
 Guides
 ======
@@ -30,3 +31,4 @@ Gamemodes
 -   [Nomads](gamemodes/nomads.md)
 -   [TDM](gamemodes/tdm.md)
 -   [Art of the Deal](gamemodes/aotd.md)
+-   [Valley](gamemodes/valley.md)

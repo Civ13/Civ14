@@ -32,7 +32,7 @@ Features:
 
 ## Gamemodes
 
-So far, we are working on the **Nomads** gamemode. You can see a guide to this [here](gamemodes/nomads.md).
+So far, we are working on the **Nomads** gamemode. You can see a guide to this [on this page](gamemodes/nomads.md).
 
 ## How to Play
 
