@@ -41,13 +41,13 @@
 - type: gamePreset
   id: TDMValley
   alias:
-    - tdm
+    - tdm-valley
   name: tdm-valley-title
   showInVote: true
   description: tdm-valley-description
   rules:
     - RespawnDeadRuleTDMFixed
     - GracewallRule
-    #- ValleyPointsRule
+    # - ValleyPointsRule
     - TeamDeathMatchRule
     - RandomWeatherRule
