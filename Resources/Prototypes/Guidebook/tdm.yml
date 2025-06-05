@@ -1,0 +1,13 @@
+- type: guideEntry
+  id: TDM
+  name: guide-entry-tdm
+  priority: 3
+  text: "/ServerInfo/Guidebook/TDM/tdm.xml"
+  children:
+    - TDMValley
+
+- type: guideEntry
+  id: TDMValley
+  name: guide-entry-valley
+  priority: 1
+  text: "/ServerInfo/Guidebook/TDM/valley.xml"

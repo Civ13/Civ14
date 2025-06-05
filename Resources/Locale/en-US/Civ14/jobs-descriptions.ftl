@@ -51,3 +51,6 @@ job-description-civ-blugoslavia-sgt = You are the right hand of your captain. Di
 job-description-civ-blugoslavia-rifleman = You are a rifleman, one of Blugoslavia's finest. Fight for victory!
 job-description-civ-blugoslavia-machinegunner = You are a machinegunner. Use your superior firepower to suppress enemies at a distance!
 job-description-civ-blugoslavia-medic = As a field surgeon, keep your troops alive!
+
+job-description-civ-unitednations-rifleman = You are a rifleman serving the UN in this area. Keep the peace and civilians safe!
+job-description-civ-unitednations-medic = As a field medic for the UN, keep civilians alive!

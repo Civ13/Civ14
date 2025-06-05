@@ -77,3 +77,6 @@ job-name-civ-blugoslavia-submachinegunner = SMG
 job-name-civ-blugoslavia-rifleman = Infantry
 job-name-civ-blugoslavia-machinegunner = LMG
 job-name-civ-blugoslavia-medic = Medic
+
+job-name-civ-unitednations-rifleman = Infantry
+job-name-civ-unitednations-medic = Medic

@@ -39,15 +39,15 @@
     - RandomWeatherRuleNightSnow
 
 - type: gamePreset
-  id: TDM
+  id: TDMValley
   alias:
     - tdm
   name: tdm-valley-title
   showInVote: true
-  description: tdm-description
+  description: tdm-valley-description
   rules:
     - RespawnDeadRuleTDMFixed
     - GracewallRule
-    - ValleyPointsRule
+    #- ValleyPointsRule
     - TeamDeathMatchRule
     - RandomWeatherRule
