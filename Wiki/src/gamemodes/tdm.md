@@ -10,7 +10,7 @@ Even though all Team Death Match game modes feature two or more teams fighting e
 
 ### Symmetric
 
-This could also be called classic, in this game mode each team has to defend their base and capture the opponents'.
+This could also be called classic: in this game mode, each team defends its base and captures the opponent’s base.
 
 ### Asymmetric
 
