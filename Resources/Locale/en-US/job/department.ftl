@@ -18,3 +18,4 @@ department-US = United States
 department-SovietCW = Soviet Union
 department-Insurgents = Insurgents
 department-Blugoslavia = Blugoslavia
+department-UnitedNations = United Nations

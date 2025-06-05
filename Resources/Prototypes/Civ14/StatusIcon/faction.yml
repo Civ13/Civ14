@@ -610,7 +610,7 @@
     state: ukr_basic
 
 - type: factionIcon
-  id: UnFaction
+  id: UnitedNationsFaction
   priority: 1
   showTo:
     components:

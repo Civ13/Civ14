@@ -29,3 +29,11 @@
   frequency: 1353
   color: "#0032c7"
   longRange: true
+
+- type: radioChannel
+  id: UnitedNations
+  name: chat-radio-unitednations
+  keycode: "n"
+  frequency: 1354
+  color: "#004e9c"
+  longRange: true

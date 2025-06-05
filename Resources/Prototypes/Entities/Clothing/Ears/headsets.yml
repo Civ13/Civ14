@@ -112,3 +112,18 @@
       sprite: Civ14/Objects/headset.rsi
     - type: Clothing
       sprite: Civ14/Objects/headset.rsi
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetUnitedNations
+  name: UN headset
+  description: A headset used by the United Nations.
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeyUnitedNations
+    - type: Sprite
+      sprite: Civ14/Objects/headset.rsi
+    - type: Clothing
+      sprite: Civ14/Objects/headset.rsi

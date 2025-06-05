@@ -310,3 +310,16 @@
     - Wizard
     - Predator
     - Insurgents
+
+- type: npcFaction
+  id: UnitedNations
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator

@@ -1062,6 +1062,17 @@
       material: Cloth
       time: 5
 - type: entity
+  name: UN PASGT body armor
+  parent: civ13_accessory_woodland_PASGT_body_armor
+  id: civ13_accessory_un_PASGT_body_armor
+  description: Wearable armor that can stop most pistol rounds. This one is blue colored for use by the UN.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/ties/pasgt_un.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/ties/pasgt_un.rsi
+
+- type: entity
   name: red tie
   parent: ClothingNeckBase
   id: civ13_accessory_red_tie

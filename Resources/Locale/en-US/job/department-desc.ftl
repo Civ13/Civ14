@@ -18,3 +18,4 @@ department-US-description = The US are one of the factions present in this map.
 department-SovietCW-description = The Soviet Union are one of the factions present in this map.
 department-Insurgents-description = The Insurgents are one of the factions present in this map.
 department-Blugoslavia-description = Blugoslavia are one of the factions present in this map.
+department-UnitedNations-description = United Nations is one of the factions present in this map.

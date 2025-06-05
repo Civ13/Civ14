@@ -95,7 +95,7 @@
 - type: department
   id: DepBlugoslavia
   name: department-Blugoslavia
-  description: department-Insurgents-description
+  description: department-InsurgentsBlugoslavia-description
   color: "#002fca"
   roles:
     - BlugoslaviaCaptain
@@ -103,3 +103,12 @@
     - BlugoslaviaRifleman
     - BlugoslaviaMachinegunner
     - BlugoslaviaMedic
+
+- type: department
+  id: DepUnitedNations
+  name: department-UnitedNations
+  description: department-UnitedNations-description
+  color: "#3a62e7"
+  roles:
+    - UnitedNationsRifleman
+    - UnitedNationsMedic

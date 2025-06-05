@@ -199,7 +199,7 @@ namespace Content.Server.GameTicking
                             currentCount = fact.Value;
 
                         }
-                        else if (fact.Key != selectedFaction && fact.Value < minCount)
+                        else if (fact.Key != selectedFaction && fact.Value < minCount && fact.Key != "UnitedNations")
                         {
                             minCount = fact.Value;
                         }

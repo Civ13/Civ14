@@ -20,6 +20,7 @@
         - BlugoslaviaRifleman
         - BlugoslaviaMachinegunner
         - InsurgentRifleman
+        - UnitedNationsRifleman
 
 - type: entity
   id: CivJobsEnlistedRifleman
@@ -36,6 +37,7 @@
         - GermanRifleman
         - InsurgentRifleman
         - BlugoslaviaRifleman
+        - UnitedNationsRifleman
 
 - type: entity
   id: CivJobsMedical
@@ -52,6 +54,7 @@
         - GermanMedic
         - InsurgentMedic
         - BlugoslaviaMedic
+        - UnitedNationsMedic
 
 - type: entity
   id: CivJobsSquadLeader

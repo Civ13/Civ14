@@ -64,6 +64,7 @@
   components:
     - type: EncryptionKey
       channels:
+        - Common
         - Blugoslavia
       defaultChannel: Blugoslavia
     - type: Sprite
@@ -79,9 +80,26 @@
   components:
     - type: EncryptionKey
       channels:
+        - Common
         - Insurgents
       defaultChannel: Insurgents
     - type: Sprite
       layers:
         - state: crypt_gray
+        - state: common_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyUnitedNations
+  name: United Nations encryption key
+  description: An encryption key used by the United Nations.
+  components:
+    - type: EncryptionKey
+      channels:
+        - Common
+        - UnitedNations
+      defaultChannel: UnitedNations
+    - type: Sprite
+      layers:
+        - state: crypt_blue
         - state: common_label
