@@ -8,14 +8,7 @@
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/containers.rsi
       state: donk_co
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PhysShapeAabb
-            bounds: "-0.9,0.9,1.9,-0.9"
-          density: 1000
-          layer:
-            - WallLayer
+
 - type: entity
   id: ContainerBoxStalkerRandom
   parent: ContainerBoxStalker

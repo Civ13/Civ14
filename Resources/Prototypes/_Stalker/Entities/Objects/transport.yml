@@ -3,7 +3,7 @@
   id: helicopterStructure
   parent: BaseShippingContainer
   name: broken helicopter
-  suffix: ST
+  suffix: Decorative
   description: Crashed as a result of a disaster, the model is unknown.
   components:
     - type: Sprite
@@ -29,7 +29,7 @@
   parent: OldCarGreen
   name: abandoned car
   description: How old is this monument to the automotive industry, and how many rock paintings are on it?
-  suffix: ST
+  suffix: STCar, Decorative
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/Transport/forgotten_car.rsi
@@ -41,7 +41,7 @@
   id: UAZStructure
   parent: BaseShippingContainer
   name: UAZ-452
-  suffix: ST
+  suffix: STCar, Decorative
   description: A family of four-wheel drive off-road vans and light trucks with a body on a frame and a cabin above the engine, produced by the Ulyanovsk Automobile Plant (UAZ) since 1965.
   components:
     - type: Sprite
@@ -77,7 +77,7 @@
   id: UAZStructureRusted
   parent: UAZStructure
   name: rusty UAZ-452
-  suffix: ST
+  suffix: STCar, Decorative
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/Transport/uaz.rsi
@@ -88,7 +88,7 @@
   id: OldCarGreen
   parent: BaseShippingContainer
   name: old green car
-  suffix: ST
+  suffix: STCar, Decorative
   description: It's a pretty old car, made back in Soviet times. Time spares no one, that's why she's in such a bad state. Unfortunately, it is impossible to distinguish the make of the car. At least, you don't know them.
   components:
     - type: Sprite
@@ -124,7 +124,7 @@
   id: OldCarRed
   parent: OldCarGreen
   name: old red car
-  suffix: ST
+  suffix: STCar, Decorative
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/Transport/old_cars.rsi
@@ -135,7 +135,7 @@
   id: CarRedUS
   parent: OldCarGreen
   name: old red imported car
-  suffix: ST
+  suffix: STCar, Decorative
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/Transport/old_cars.rsi
@@ -156,7 +156,7 @@
   id: CarGreenUS
   parent: OldCarGreen
   name: old green imported car
-  suffix: ST
+  suffix: STCar, Decorative
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/Transport/old_cars.rsi
@@ -177,7 +177,7 @@
   id: BrokenCarGreen
   parent: OldCarGreen
   name: old wrecked car
-  suffix: ST
+  suffix: STCar, Decorative
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/Transport/old_cars.rsi
@@ -188,7 +188,7 @@
   id: BrokenCarRed
   parent: OldCarGreen
   name: old wrecked car
-  suffix: ST
+  suffix: STCar, Decorative
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/Transport/old_cars.rsi
@@ -211,7 +211,7 @@
   id: ZIL
   parent: BaseShippingContainer
   name: ZIL-130
-  suffix: ST
+  suffix: STCar, Decorative
   description: A Soviet and Russian medium-tonnage truck of the third generation developed and manufactured by the Likhachev Automobile Plant in Moscow.
   components:
     - type: Sprite
@@ -257,7 +257,7 @@
   id: boatStalker1
   parent: BaseShippingContainer
   name: boat
-  suffix: ST
+  suffix: Decorative
   description: A small deckless vessel.
   components:
     - type: Sprite
@@ -306,7 +306,7 @@
   id: Moskvich
   parent: BaseShippingContainer
   name: Moskvich-412
-  suffix: ST
+  suffix: STCar, Decorative
   description: A Soviet and Russian rear-wheel drive car of the II group of small class, produced from October 1967 to 1976 at the MZMA plant.
   components:
     - type: Sprite
@@ -388,9 +388,9 @@
 - type: entity
   id: STtank
   parent: kraz
-  name: танк
-  suffix: ST
-  description: An armored combat vehicle, on a tracked track, with cannon and additional machine-gun armament mounted in a rotating full-turn turret.
+  name: Tank
+  suffix: Decorative
+  description: An armored combat vehicle, with cannon and additional machine-gun armament mounted in a rotating full-turn turret.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/Transport/tank.rsi
