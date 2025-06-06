@@ -28,11 +28,13 @@ public sealed class AccessReaderSystem : EntitySystem
     [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
     [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
     [Dependency] private readonly SharedStationRecordsSystem _recordsSystem = default!;
-
+    [Dependency] private readonly ILogManager _log = default!;
+    public const string Sawmill = "accessreader";
+    protected ISawmill _sawmill = default!;
     public override void Initialize()
     {
         base.Initialize();
-
+        _sawmill = _log.GetSawmill(Sawmill);
         SubscribeLocalEvent<AccessReaderComponent, GotEmaggedEvent>(OnEmagged);
         SubscribeLocalEvent<AccessReaderComponent, LinkAttemptEvent>(OnLinkAttempt);
 
@@ -121,9 +123,20 @@ public sealed class AccessReaderSystem : EntitySystem
             return true;
         }
 
+        //Also check if the user has access levels in their components
+        if (TryComp<AccessComponent>(user, out var comp))
+        {
+            foreach (var tag in comp.Tags)
+            {
+                foreach (var alist in reader.AccessLists)
+                {
+                    if (alist.Contains(tag))
+                        return true;
+                }
+            }
+        }
         return false;
     }
-
     public bool GetMainAccessReader(EntityUid uid, [NotNullWhen(true)] out Entity<AccessReaderComponent>? ent)
     {
         ent = null;
@@ -273,7 +286,7 @@ public sealed class AccessReaderSystem : EntitySystem
             FindAccessTagsItem(ent, ref tags, ref owned);
         }
 
-        return (ICollection<ProtoId<AccessLevelPrototype>>?) tags ?? Array.Empty<ProtoId<AccessLevelPrototype>>();
+        return (ICollection<ProtoId<AccessLevelPrototype>>?)tags ?? Array.Empty<ProtoId<AccessLevelPrototype>>();
     }
 
     /// <summary>
@@ -334,7 +347,7 @@ public sealed class AccessReaderSystem : EntitySystem
         component.AccessLists.Clear();
         foreach (var access in accesses)
         {
-            component.AccessLists.Add(new HashSet<ProtoId<AccessLevelPrototype>>(){access});
+            component.AccessLists.Add(new HashSet<ProtoId<AccessLevelPrototype>>() { access });
         }
         Dirty(uid, component);
         RaiseLocalEvent(uid, new AccessReaderConfigurationChangedEvent());

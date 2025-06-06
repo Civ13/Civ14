@@ -45,3 +45,31 @@
       sprite: /Textures/Civ14/Objects/stairs.rsi
     - type: LocalTeleport
       portalName: WesternTunnel
+
+- type: entity
+  parent: LocalTeleportTunnelBottom
+  id: LocalTeleportTunnelBottomInsurgents
+  name: tunnel
+  components:
+    - type: Sprite
+      layers:
+        - state: hole_bottom
+      sprite: /Textures/Civ14/Objects/stairs.rsi
+    - type: LocalTeleport
+      portalName: WesternTunnel
+    - type: AccessReader
+      access: [["Insurgents"]]
+
+- type: entity
+  parent: LocalTeleportTunnelTop
+  id: LocalTeleportTunnelTopInsurgents
+  name: tunnel
+  components:
+    - type: Sprite
+      layers:
+        - state: hole_top
+      sprite: /Textures/Civ14/Objects/stairs.rsi
+    - type: LocalTeleport
+      portalName: WesternTunnel
+    - type: AccessReader
+      access: [["Insurgents"]]

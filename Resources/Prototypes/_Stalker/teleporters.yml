@@ -1,9 +1,8 @@
 - type: entity
   id: STBaseTeleport
   abstract: true
-  suffix: Teleport, Portal
+  suffix: Teleport
   components:
-    - type: Marker
     - type: Transform
       anchored: True
     - type: Physics

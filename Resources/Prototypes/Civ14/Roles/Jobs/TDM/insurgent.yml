@@ -34,6 +34,9 @@
           factionIcon: GreenistanFaction
           jobIcon: JobIconISgt
           assignSquad: true
+        - type: Access
+          groups:
+            - Insurgents
 
 - type: startingGear
   id: InsurgentLeaderGear
@@ -82,6 +85,9 @@
           factionIcon: GreenistanFaction
           jobIcon: JobIconRifleman
           assignSquad: true
+        - type: Access
+          groups:
+            - Insurgents
 
 - type: startingGear
   id: InsurgentRiflemanGear
@@ -162,6 +168,9 @@
           factionIcon: GreenistanFaction
           jobIcon: JobIconMedic
           assignSquad: false
+        - type: Access
+          groups:
+            - Insurgents
 
 - type: startingGear
   id: InsurgentMedicGear

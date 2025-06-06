@@ -13,6 +13,11 @@
 - type: accessGroup
   id: Engineering
   tags:
-  - ChiefEngineer
-  - Engineering
-  - Atmospherics
+    - ChiefEngineer
+    - Engineering
+    - Atmospherics
+
+- type: accessGroup
+  id: Insurgents
+  tags:
+    - Insurgents
