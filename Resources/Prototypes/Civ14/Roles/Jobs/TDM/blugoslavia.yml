@@ -25,20 +25,19 @@
           factions:
             - Blugoslavia
         - type: ShowFactionIcons
-          factionIcon: SovietFaction
+          factionIcon: BlugoslaviaFaction
           jobIcon: JobIconICpt
           assignSquad: false
 
 - type: startingGear
   id: BlugoslaviaCaptainGear
   equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
-    jumpsuit: civ13_uniform_Soviet_officer_uniform
-    outerClothing: civ13_suit_Soviet_officer_coat
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_Blugoslavian_officer_uniform
     neck: civ13_accessory_N34_B_body_armor
-    belt: civ13_pistol_Makarov_PM
-    pocket2: civ13_magazine_PM_Makarov_magazine_(9x18mm)
-    head: civ13_head_soviet_officer_cap
+    belt: civ13_pistol_M1911A1
+    pocket2: civ13_magazine_M1911_magazine_(.45)
+    head: civ13_head_Blugoslavian_beret
     pocket1: Compass
     ears: ClothingHeadsetBlugoslavia
 
@@ -75,19 +74,19 @@
           factions:
             - Blugoslavia
         - type: ShowFactionIcons
-          factionIcon: SovietFaction
+          factionIcon: BlugoslaviaFaction
           jobIcon: JobIconISgt
           assignSquad: true
 
 - type: startingGear
   id: BlugoslaviaSergeantGear
   equipment:
-    shoes: civ13_shoes_leather_shoes_1
-    jumpsuit: civ13_uniform_Soviet_uniform
+    shoes: civ13_shoes_Brown_boots
+    jumpsuit: civ13_uniform_tigerstripes_camo_uniform
     neck: civ13_accessory_N34_B_body_armor
-    head: civ13_head_soviet_pilotka
-    belt: civ13_pistol_Makarov_PM
-    pocket1: civ13_magazine_PM_Makarov_magazine_(9x18mm)
+    head: civ13_head_Blugoslavian_beret
+    belt: civ13_pistol_M1911A1
+    pocket1: civ13_magazine_M1911_magazine_(.45)
     pocket2: Compass
     ears: ClothingHeadsetBlugoslavia
   inhand:
@@ -103,7 +102,7 @@
   description: job-description-civ-blugoslavia-rifleman
   playTimeTracker: JobBlugoslaviaRifleman
   startingGear: BlugoslaviaRiflemanGear
-  randomStartingGears: [BlugoslaviaRiflemanGear, BlugoslaviaRiflemanGear2]
+  randomStartingGears: [BlugoslaviaRiflemanGear]
   icon: "JobIconICpl"
   supervisors: job-supervisors-cpt
   ranks:
@@ -123,33 +122,18 @@
           factions:
             - Blugoslavia
         - type: ShowFactionIcons
-          factionIcon: SovietFaction
+          factionIcon: BlugoslaviaFaction
           jobIcon: JobIconRifleman
           assignSquad: true
 
 - type: startingGear
   id: BlugoslaviaRiflemanGear
   equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
-    jumpsuit: civ13_uniform_Soviet_uniform
+    shoes: civ13_shoes_Brown_boots
+    jumpsuit: civ13_uniform_tigerstripes_camo_uniform
     neck: civ13_accessory_N34_B_body_armor
-    head: civ13_head_soviet_helmet
+    head: civ13_head_ACH_helmet
     belt: ClothingWebbingSovietCWRifleman
-    pocket1: FlashlightLanternMilitary
-    pocket2: Gauze
-    ears: ClothingHeadsetBlugoslavia
-  inhand:
-    - civ13_ar_AK_12
-
-- type: startingGear
-  id: BlugoslaviaRiflemanGear2
-  equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
-    jumpsuit: civ13_uniform_Soviet_amoeba_outfit
-    gloves: ClothingHandsGlovesFingerless
-    belt: ClothingWebbingSovietCWRifleman
-    neck: civ13_accessory_N34_B_body_armor
-    head: civ13_head_soviet_helmet
     pocket1: FlashlightLanternMilitary
     pocket2: Gauze
     ears: ClothingHeadsetBlugoslavia
@@ -166,7 +150,7 @@
   description: job-description-civ-blugoslavia-machinegunner
   playTimeTracker: JobBlugoslaviaMachinegunner
   startingGear: BlugoslaviaMachinegunnerGear
-  randomStartingGears: [BlugoslaviaMachinegunnerGear, BlugoslaviaMachinegunnerGear2]
+  randomStartingGears: [BlugoslaviaMachinegunnerGear]
   icon: "JobIconMg"
   supervisors: job-supervisors-cpt
   requirements:
@@ -190,34 +174,19 @@
           factions:
             - Blugoslavia
         - type: ShowFactionIcons
-          factionIcon: SovietFaction
+          factionIcon: BlugoslaviaFaction
           jobIcon: JobIconMg
           assignSquad: true
 
 - type: startingGear
   id: BlugoslaviaMachinegunnerGear
   equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
-    jumpsuit: civ13_uniform_Soviet_uniform
+    shoes: civ13_shoes_Brown_boots
+    jumpsuit: civ13_uniform_tigerstripes_camo_uniform
     gloves: ClothingHandsGlovesFingerless
     belt: ClothingWebbingSovietCWMG
     neck: civ13_accessory_N34_B_body_armor
-    head: civ13_head_soviet_helmet
-    pocket1: CombatKnife
-    pocket2: Gauze
-    ears: ClothingHeadsetBlugoslavia
-  inhand:
-    - civ13_mg_RPD_machine_gun
-
-- type: startingGear
-  id: BlugoslaviaMachinegunnerGear2
-  equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
-    jumpsuit: civ13_uniform_Soviet_amoeba_outfit
-    gloves: ClothingHandsGlovesFingerless
-    belt: ClothingWebbingSovietCWMG
-    neck: civ13_accessory_N34_B_body_armor
-    head: civ13_head_soviet_ushanka_1
+    head: civ13_head_ACH_helmet
     pocket1: CombatKnife
     pocket2: Gauze
     ears: ClothingHeadsetBlugoslavia
@@ -254,17 +223,17 @@
           factions:
             - Blugoslavia
         - type: ShowFactionIcons
-          factionIcon: SovietFaction
+          factionIcon: BlugoslaviaFaction
           jobIcon: JobIconMedic
           assignSquad: false
 
 - type: startingGear
   id: BlugoslaviaMedicGear
   equipment:
-    shoes: civ13_shoes_Soviet_sapogi_boots
-    jumpsuit: civ13_uniform_Soviet_uniform
-    neck: civ13_accessory_N34_B_body_armor
-    head: civ13_head_soviet_medical_helmet
+    shoes: civ13_shoes_Brown_boots
+    jumpsuit: civ13_uniform_tigerstripes_camo_uniform
+    neck: civ13_accessory_N34_BM_body_armor
+    head: civ13_head_ACH_helmet
     belt: ClothingSatchelMedicalMedsFilled
     back: ClothingBackpackDuffelFilled
     pocket1: FlashlightLanternMilitary

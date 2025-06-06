@@ -48,6 +48,7 @@
   rules:
     - RespawnDeadRuleTDMFixed
     - GracewallRule
-    # - ValleyPointsRule
+    - ValleyPointsRule
     - TeamDeathMatchRule
     - RandomWeatherRule
+    - CaptureAreaRule

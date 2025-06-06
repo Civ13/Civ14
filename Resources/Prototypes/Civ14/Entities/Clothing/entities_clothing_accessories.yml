@@ -3789,15 +3789,9 @@
         coefficients:
           Blunt: 0.55
           Slash: 0.55
-          Piercing: 0.45
-          Arrow: 0.35
-          Heat: 0.7
-    - type: Construction
-      graph: civ13_accessory_N34_B_body_armor
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+          Piercing: 0.55
+          Arrow: 0.3
+          Heat: 0.78
 - type: entity
   name: N34-BM body armor
   parent: civ13_accessory_N34_B_body_armor
@@ -3810,12 +3804,7 @@
       sprite: Civ14/Clothing/exported/ties/n34bmm.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/n34bmm.rsi
-    - type: Construction
-      graph: civ13_accessory_N34_BM_body_armor
-      node: end
-      cost: 5
-      material: Cloth
-      time: 5
+
 - type: entity
   name: black Interceptor Body Armor
   parent: ClothingNeckBase

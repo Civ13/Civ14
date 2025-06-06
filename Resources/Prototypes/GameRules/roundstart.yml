@@ -118,3 +118,9 @@
     - type: RandomWeatherRule
       allowedWeathers: ["SnowfallLight"]
       dayTimes: ["Night"]
+
+- type: entity
+  parent: BaseGameRule
+  id: ValleyPointsRule
+  components:
+    - type: ValleyPoints

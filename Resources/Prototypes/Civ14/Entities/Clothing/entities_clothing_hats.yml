@@ -1252,14 +1252,14 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.38
-          Slash: 0.38
-          Piercing: 0.44
-          Arrow: 0.25
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.85
+          Arrow: 0.7
           Heat: 0.85
 - type: entity
   name: Red PASGT helmet
-  parent: ClothingHeadBase
+  parent: civ13_head_PASGT_helmet
   id: civ13_head_Red_PASGT_helmet
   description: A typical US Army PASGT helmet. This one has a red dye.
   components:
@@ -1267,14 +1267,7 @@
       sprite: Civ14/Clothing/exported/hats/pasgt_reddish.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/pasgt_reddish.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.38
-          Slash: 0.38
-          Piercing: 0.44
-          Arrow: 0.25
-          Heat: 0.85
+
 - type: entity
   name: white papakha
   parent: ClothingHeadBase
@@ -1331,7 +1324,7 @@
       time: 5
 - type: entity
   name: OCP ACH helmet
-  parent: ClothingHeadBase
+  parent: civ13_head_ACH_helmet
   id: civ13_head_OCP_ACH_helmet
   description: A typical US Army Advanced Combat Helmet. This one is in OCP cammo.
   components:
@@ -1339,14 +1332,7 @@
       sprite: Civ14/Clothing/exported/hats/ach_ocp.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/ach_ocp.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.25
-          Slash: 0.25
-          Piercing: 0.065
-          Arrow: 0.054
-          Heat: 0.78
+
 - type: entity
   name: ACH helmet
   parent: ClothingHeadBase
@@ -1360,11 +1346,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.25
-          Slash: 0.25
-          Piercing: 0.065
-          Arrow: 0.054
-          Heat: 0.78
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.8
+          Arrow: 0.7
+          Heat: 0.85
+
 - type: entity
   name: MASKA 1 helmet
   parent: ClothingHeadBase
@@ -1378,10 +1365,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.1
-          Slash: 0.1
+          Blunt: 0.5
+          Slash: 0.5
           Piercing: 0.05
-          Arrow: -0.1
+          Arrow: 0.7
           Heat: 0.73
 - type: entity
   name: 6B47 helmet
@@ -1553,7 +1540,7 @@
           Heat: 0.85
 - type: entity
   name: M95 helmet
-  parent: ClothingHeadBase
+  parent: civ13_head_PASGT_helmet
   id: civ13_head_M95_helmet
   description: >-
     A PASGT derived helmet used by the Dutch Armed Forces. This one is in DPM
@@ -1563,14 +1550,7 @@
       sprite: Civ14/Clothing/exported/hats/m95_dpm.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/m95_dpm.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.38
-          Slash: 0.38
-          Piercing: 0.44
-          Arrow: 0.25
-          Heat: 0.85
+
 - type: entity
   name: M1 Helmet
   parent: ClothingHeadBase
@@ -1584,8 +1564,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.6
-          Slash: 0.6
+          Blunt: 0.8
+          Slash: 0.8
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85

@@ -39,7 +39,7 @@
             vitezstvi: ""
 
 - type: entity
-  id: ContainereStalkerParent
+  id: ContainerStalkerParent
   parent: BaseShippingContainer
   abstract: true
   name: container parent
@@ -58,7 +58,7 @@
 
 - type: entity
   id: ContainerBlueStalker
-  parent: ContainereStalkerParent
+  parent: ContainerStalkerParent
   name: blue container
   description: This type of sea container is typically used for transporting large and bulky cargo, up to 9 meters in length. One of the main advantages of this container is its increased height, which allows for transporting more cargo at the same freight cost.
   suffix: ST
@@ -69,7 +69,7 @@
 
 - type: entity
   id: ContainerBlueRustedStalker
-  parent: ContainereStalkerParent
+  parent: ContainerStalkerParent
   name: blue rusty container
   description: This type of sea container is typically used for transporting large and bulky cargo, up to 9 meters in length. One of the main advantages of this container is its increased height, which allows for transporting more cargo at the same freight cost. The container is completely covered in rust.
   suffix: ST
@@ -80,7 +80,7 @@
 
 - type: entity
   id: ContainerRedStalker
-  parent: ContainereStalkerParent
+  parent: ContainerStalkerParent
   name: red container
   description: This type of sea container is typically used for transporting large and bulky cargo, up to 9 meters in length. One of the main advantages of this container is its increased height, which allows for transporting more cargo at the same freight cost.
   suffix: ST
@@ -91,7 +91,7 @@
 
 - type: entity
   id: ContainerRedRustedStalker
-  parent: ContainereStalkerParent
+  parent: ContainerStalkerParent
   name: red rusty container
   description: This type of sea container is typically used for transporting large and bulky cargo, up to 9 meters in length. One of the main advantages of this container is its increased height, which allows for transporting more cargo at the same freight cost. The container is completely covered in rust.
   suffix: ST
@@ -102,7 +102,7 @@
 
 - type: entity
   id: ContainerYellowStalker
-  parent: ContainereStalkerParent
+  parent: ContainerStalkerParent
   name: yellow container
   description: This type of sea container is typically used for transporting large and bulky cargo, up to 9 meters in length. One of the main advantages of this container is its increased height, which allows for transporting more cargo at the same freight cost.
   suffix: ST
@@ -113,7 +113,7 @@
 
 - type: entity
   id: ContainerYellowRustedStalker
-  parent: ContainereStalkerParent
+  parent: ContainerStalkerParent
   name: yellow rusty container
   description: This type of sea container is typically used for transporting large and bulky cargo, up to 9 meters in length. One of the main advantages of this container is its increased height, which allows for transporting more cargo at the same freight cost. The container is completely covered in rust.
   suffix: ST

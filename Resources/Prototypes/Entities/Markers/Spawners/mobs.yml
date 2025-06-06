@@ -834,3 +834,16 @@
     - type: ConditionalSpawner
       prototypes:
         - MobReindeerDoe
+
+- type: entity
+  name: civilian NPC spawner
+  id: SpawnCivilian
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - MobCivilian

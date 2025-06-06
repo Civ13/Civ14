@@ -50,6 +50,7 @@
   parent: LocalTeleportTunnelBottom
   id: LocalTeleportTunnelBottomInsurgents
   name: tunnel
+  suffix: Teleport, Insurgents
   components:
     - type: Sprite
       layers:
@@ -64,6 +65,7 @@
   parent: LocalTeleportTunnelTop
   id: LocalTeleportTunnelTopInsurgents
   name: tunnel
+  suffix: Teleport, Insurgents
   components:
     - type: Sprite
       layers:

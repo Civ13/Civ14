@@ -323,3 +323,16 @@
     - AllHostile
     - Wizard
     - Predator
+
+- type: npcFaction
+  id: Civilian
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
