@@ -1,0 +1,97 @@
+# Yes we have decals for this, but you cannot hide under a decal can you???
+- type: entity
+  name: tall grass
+  id: WildPlantTallGrass
+  description: A patch of tall grass. Looks like a decent hiding spot.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bushes_dry.rsi
+      state: tall_grass_3
+      drawdepth: Overdoors
+    - type: SpriteFade
+    - type: Clickable
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.17,0,0.20,0.4"
+    - type: Transform
+      anchored: true
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+- type: entity
+  name: tall grass
+  parent: WildPlantTallGrass
+  id: WildPlantTallGrass2
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bushes_dry.rsi
+      state: tall_grass_4
+      drawdepth: Overdoors
+- type: entity
+  name: tall grass
+  parent: WildPlantTallGrass
+  id: WildPlantTallGrass3
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bushes_dry.rsi
+      state: tall_grass_5
+      drawdepth: Overdoors
+
+- type: entity
+  name: dry tall grass
+  parent: WildPlantTallGrass
+  id: WildPlantTallGrassDry
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bushes_dry.rsi
+      state: tall_grass_8
+      drawdepth: Overdoors
+
+- type: entity
+  name: dry tall grass
+  parent: WildPlantTallGrassDry
+  id: WildPlantTallGrassDry2
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bushes_dry.rsi
+      state: tall_grass_9
+      drawdepth: Overdoors
+
+- type: entity
+  name: dead tall grass
+  parent: WildPlantTallGrass
+  id: WildPlantTallGrassDead2
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bushes_dry.rsi
+      state: dead_tall_grass_4
+      drawdepth: Overdoors
+- type: entity
+  name: dead tall grass
+  parent: WildPlantTallGrass
+  id: WildPlantTallGrassDead3
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bushes_dry.rsi
+      state: dead_tall_grass_5
+      drawdepth: Overdoors
+- type: entity
+  name: dead tall grass
+  parent: WildPlantTallGrass
+  id: WildPlantTallGrassDead
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/bushes_dry.rsi
+      state: dead_tall_grass_3
+      drawdepth: Overdoors

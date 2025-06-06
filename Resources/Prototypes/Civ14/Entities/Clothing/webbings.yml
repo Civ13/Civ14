@@ -215,7 +215,7 @@
   components:
     - type: StorageFill
       contents:
-        - id: civ13_magazine_AKM_magazine_(7.62x39mm)
+        - id: civ13_magazine_AK47_(7.62x39mm)
           amount: 5
         - id: GrenadeRGD5
           amount: 1
@@ -230,7 +230,7 @@
   components:
     - type: StorageFill
       contents:
-        - id: civ13_magazine_AK_47_magazine_(7.62x39mm)
+        - id: civ13_magazine_AK47_(7.62x39mm)
           amount: 5
         - id: GrenadeRGD5
           amount: 1
