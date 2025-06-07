@@ -43,8 +43,7 @@ The United Nations Greenistan Assistance Force (UNGAFOR) operates a humanitarian
 Blugoslavia earns points through logistical and territorial control to secure the Valley. Victory is achieved by reaching **1000 points** or having the most points when the match timer (50 minutes) expires.
 
 -   **Supply Box Deliveries**: Transport supply boxes from the FOB to any of the four checkpoints. Each delivery earns **50 points**. Boxes must be secured at a checkpoint uncontested for 30 seconds.
--   **Holding Checkpoints**: Control a checkpoint (no insurgents in its radius) for 5 minutes to earn **25 points per checkpoint**. Holding all four checkpoints simultaneously grants a **100-point bonus** every 5 minutes.
--   **Protecting Supply Convoys**: Escort AI-controlled supply convoys from the map’s edge to the Forward Base for **100 points** per successful escort.
+-   **Holding Checkpoints**: Control a checkpoint (no insurgents in its radius) to earn **5 points per checkpoint per minute**. Holding all four checkpoints simultaneously grants a **20-point bonus** every minute.
 
 ### Greenistani Insurgents
 

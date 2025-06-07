@@ -214,44 +214,47 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
             area.CaptureTimer += frameTime;
 
             //announce when theres 2 and 1 minutes left.
-            var timeleft = area.CaptureDuration - area.CaptureTimer;
-            if (currentController != Faction2String(ruleComp.DefenderFactionName))
+            if (ruleComp.Mode != "Points")
             {
-                if (timeleft <= 120 && area.CaptureTimerAnnouncement2 == false)
+                var timeleft = area.CaptureDuration - area.CaptureTimer;
+                if (currentController != Faction2String(ruleComp.DefenderFactionName))
                 {
-                    _chat.DispatchGlobalAnnouncement($"Two minutes until {currentController} captures {area.Name}!", "Round", false, null, Color.Blue);
-                    area.CaptureTimerAnnouncement2 = true;
-                }
-                else if (timeleft < 60 && area.CaptureTimerAnnouncement1 == false)
-                {
-                    _chat.DispatchGlobalAnnouncement($"One minute until {currentController} captures {area.Name}!", "Round", false, null, Color.Blue);
-                    area.CaptureTimerAnnouncement1 = true;
-                }
-            }
-            //Check for capture completion
-            if (area.CaptureTimer >= area.CaptureDuration)
-            {
-                if (_gameTicker.RunLevel == GameRunLevel.InRound)
-                {
-                    bool canWinByCapture = true;
-                    // area.Controller is the display name of the faction that has held the point
-                    string winningControllerDisplay = area.Controller;
-
-                    if (ruleComp.Mode == "Asymmetric")
+                    if (timeleft <= 120 && area.CaptureTimerAnnouncement2 == false)
                     {
-                        // In Asymmetric mode, only non-defenders (attackers) can win by capturing a point.
-                        // The defender wins by timeout.
-                        if (winningControllerDisplay == Faction2String(ruleComp.DefenderFactionName))
-                        {
-                            canWinByCapture = false;
-                        }
+                        _chat.DispatchGlobalAnnouncement($"Two minutes until {currentController} captures {area.Name}!", "Round", false, null, Color.Blue);
+                        area.CaptureTimerAnnouncement2 = true;
                     }
-
-                    if (canWinByCapture && !string.IsNullOrEmpty(winningControllerDisplay))
+                    else if (timeleft < 60 && area.CaptureTimerAnnouncement1 == false)
                     {
-                        _chat.DispatchGlobalAnnouncement($"{winningControllerDisplay} has captured {area.Name} and is victorious!", "Round", false, null, Color.Green);
-                        _roundEndSystem.EndRound();
-                        return; // Round ended, no further processing for this area needed.
+                        _chat.DispatchGlobalAnnouncement($"One minute until {currentController} captures {area.Name}!", "Round", false, null, Color.Blue);
+                        area.CaptureTimerAnnouncement1 = true;
+                    }
+                }
+                //Check for capture completion
+                if (area.CaptureTimer >= area.CaptureDuration)
+                {
+                    if (_gameTicker.RunLevel == GameRunLevel.InRound)
+                    {
+                        bool canWinByCapture = true;
+                        // area.Controller is the display name of the faction that has held the point
+                        string winningControllerDisplay = area.Controller;
+
+                        if (ruleComp.Mode == "Asymmetric")
+                        {
+                            // In Asymmetric mode, only non-defenders (attackers) can win by capturing a point.
+                            // The defender wins by timeout.
+                            if (winningControllerDisplay == Faction2String(ruleComp.DefenderFactionName))
+                            {
+                                canWinByCapture = false;
+                            }
+                        }
+
+                        if (canWinByCapture && !string.IsNullOrEmpty(winningControllerDisplay))
+                        {
+                            _chat.DispatchGlobalAnnouncement($"{winningControllerDisplay} has captured {area.Name} and is victorious!", "Round", false, null, Color.Green);
+                            _roundEndSystem.EndRound();
+                            return; // Round ended, no further processing for this area needed.
+                        }
                     }
                 }
             }

@@ -82,6 +82,10 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
             {
                 if (TryComp<NpcFactionMemberComponent>(ev.Mob, out var npc))
                 {
+                    if (npc.Factions.First() == "UnitedNations")
+                    {
+                        return;
+                    }
                     if (npc.Factions.Count > 0 && npc.Factions.First() != component.Team2)
                     {
                         component.Team1 = npc.Factions.First();
@@ -92,6 +96,10 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
             {
                 if (TryComp<NpcFactionMemberComponent>(ev.Mob, out var npc))
                 {
+                    if (npc.Factions.First() == "UnitedNations")
+                    {
+                        return;
+                    }
                     if (npc.Factions.Count > 0 && npc.Factions.First() != component.Team1)
                     {
                         component.Team2 = npc.Factions.First();

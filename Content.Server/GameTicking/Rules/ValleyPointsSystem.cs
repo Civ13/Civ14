@@ -9,6 +9,7 @@ using Content.Shared.NPC.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Hands.EntitySystems;
 using Robust.Shared.Timing;
+using Content.Server.KillTracking;
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -26,6 +27,8 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
     [Dependency] private readonly SharedHandsSystem _hands = default!;
 
     private ISawmill _sawmill = default!;
+    private TimeSpan _lastSupplyBoxCheck = TimeSpan.Zero;
+    private const float SupplyBoxCheckInterval = 30f; // Check every 30 seconds
 
     public override void Initialize()
     {
@@ -33,20 +36,21 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
         _sawmill = _logManager.GetSawmill("valley-points");
 
         SubscribeLocalEvent<MobStateChangedEvent>(OnMobStateChanged);
-        SubscribeLocalEvent<ValleySupplyBoxComponent, InteractUsingEvent>(OnSupplyBoxInteract);
         SubscribeLocalEvent<CaptureAreaComponent, ComponentStartup>(OnCaptureAreaStartup);
-
+        SubscribeLocalEvent<KillReportedEvent>(OnKillReported);
     }
 
     protected override void Started(EntityUid uid, ValleyPointsComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
     {
-        base.Started(uid, component, gameRule, args);
-
         component.GameStartTime = _timing.CurTime;
         component.LastCheckpointBonusTime = _timing.CurTime;
+        _lastSupplyBoxCheck = _timing.CurTime;
 
-        InitializeCivilianCount(component);
+        // Initialize checkpoints immediately
         InitializeCheckpoints(component);
+
+        // Delay civilian count initialization to allow spawning
+        Timer.Spawn(TimeSpan.FromSeconds(5), () => InitializeCivilianCount(component));
 
         _sawmill.Info("Valley gamemode started - 50 minute timer begins now");
         AnnounceToAll("Valley conflict has begun! Blugoslavia and Insurgents fight for control.");
@@ -75,60 +79,6 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
                     AwardInsurgentKill(ruleEntity);
                 }
             }
-        }
-    }
-
-    private void OnSupplyBoxInteract(EntityUid uid, ValleySupplyBoxComponent component, InteractUsingEvent args)
-    {
-        var nearbyCheckpoints = _lookup.GetEntitiesInRange(_transform.GetMapCoordinates(uid), 2f);
-
-        foreach (var entity in nearbyCheckpoints)
-        {
-            if (HasComp<ValleyCheckpointComponent>(entity) && HasComp<CaptureAreaComponent>(entity))
-            {
-                TryDeliverSupplyBox(uid, entity, args.User);
-                break;
-            }
-        }
-    }
-
-    private void TryDeliverSupplyBox(EntityUid supplyBox, EntityUid checkpoint, EntityUid user)
-    {
-        if (!TryComp<ValleySupplyBoxComponent>(supplyBox, out var boxComp) ||
-            !TryComp<ValleyCheckpointComponent>(checkpoint, out var checkpointComp) ||
-            !TryComp<CaptureAreaComponent>(checkpoint, out var areaComp))
-            return;
-
-        if (!TryComp<NpcFactionMemberComponent>(user, out var factionMember) ||
-            !factionMember.Factions.Any(f => f == "Blugoslavia"))
-        {
-            _popup.PopupEntity("Only Blugoslavian forces can deliver supply boxes to checkpoints!", user, user);
-            return;
-        }
-
-        if (!checkpointComp.BlugoslaviaControlled)
-        {
-            _popup.PopupEntity("This checkpoint must be under Blugoslavian control to deliver supplies!", user, user);
-            return;
-        }
-
-        if (boxComp.Delivered)
-        {
-            _popup.PopupEntity("This supply box has already been delivered!", user, user);
-            return;
-        }
-
-        var ruleQuery = EntityQueryEnumerator<ValleyPointsComponent>();
-        if (ruleQuery.MoveNext(out var ruleEntity, out _))
-        {
-            boxComp.Delivered = true;
-            boxComp.SecuringAtCheckpoint = checkpoint;
-            checkpointComp.SecuringBoxes.Add(supplyBox);
-
-            AwardSupplyBoxDelivery(ruleEntity, checkpoint, supplyBox);
-            _popup.PopupEntity($"Supply box delivery started at {areaComp.Name}! Securing for 30 seconds...", user, user);
-
-            _hands.TryDrop(user, supplyBox);
         }
     }
 
@@ -177,9 +127,84 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
             UpdateCheckpointHolding(valley);
             UpdateSupplyBoxSecuring(valley);
             CheckCaptureAreaControl(valley);
+            CheckSupplyBoxDeliveries(valley);
             CheckWinConditions(uid, valley);
             CheckTimeLimit(uid, valley);
         }
+    }
+
+    private void CheckSupplyBoxDeliveries(ValleyPointsComponent valley)
+    {
+        var currentTime = _timing.CurTime;
+
+        // Only check every 30 seconds
+        if ((currentTime - _lastSupplyBoxCheck).TotalSeconds < SupplyBoxCheckInterval)
+            return;
+
+        _lastSupplyBoxCheck = currentTime;
+
+        // Check all capture areas for nearby supply boxes
+        var areaQuery = EntityQueryEnumerator<CaptureAreaComponent>();
+        while (areaQuery.MoveNext(out var areaUid, out var area))
+        {
+            var areaPos = _transform.GetMapCoordinates(areaUid);
+            var nearbyEntities = _lookup.GetEntitiesInRange(areaPos, 3f);
+
+            foreach (var entity in nearbyEntities)
+            {
+                if (TryComp<ValleySupplyBoxComponent>(entity, out var supplyBox) && !supplyBox.Delivered)
+                {
+                    // Check if this is a checkpoint controlled by Blugoslavia
+                    if (HasComp<ValleyCheckpointComponent>(areaUid) && area.Controller == "Blugoslavia")
+                    {
+                        ProcessBlugoslavianSupplyDelivery(valley, entity, areaUid, area);
+                    }
+                    // Check if this is the Insurgent base
+                    else if (IsInsurgentBase(areaUid, area))
+                    {
+                        ProcessInsurgentSupplyTheft(valley, entity, areaUid, area);
+                    }
+                }
+            }
+        }
+    }
+
+    private bool IsInsurgentBase(EntityUid areaUid, CaptureAreaComponent area)
+    {
+        // Check if this area is marked as insurgent base
+        return area.Name.ToLower().Contains("insurgent");
+
+    }
+
+    private void ProcessBlugoslavianSupplyDelivery(ValleyPointsComponent valley, EntityUid supplyBox, EntityUid checkpoint, CaptureAreaComponent area)
+    {
+        if (!TryComp<ValleySupplyBoxComponent>(supplyBox, out var boxComp))
+            return;
+
+        boxComp.Delivered = true;
+        boxComp.SecuringAtCheckpoint = checkpoint;
+
+        // Start securing timer
+        valley.SecuringSupplyBoxes[supplyBox] = _timing.CurTime;
+
+        _sawmill.Info($"Supply box delivery started at {area.Name}, securing for {valley.SupplyBoxSecureTime} seconds");
+        AnnounceToAll($"Blugoslavia supply box delivery started at {area.Name}!");
+    }
+
+    private void ProcessInsurgentSupplyTheft(ValleyPointsComponent valley, EntityUid supplyBox, EntityUid baseArea, CaptureAreaComponent area)
+    {
+        if (!TryComp<ValleySupplyBoxComponent>(supplyBox, out var boxComp))
+            return;
+
+        boxComp.Delivered = true;
+
+        // Award points immediately for insurgent theft
+        valley.InsurgentPoints += valley.StolenSupplyBoxPoints;
+        _sawmill.Info($"Insurgents awarded {valley.StolenSupplyBoxPoints} points for stolen supply box at {area.Name}. Total: {valley.InsurgentPoints}");
+        AnnounceToAll($"Insurgents: +{valley.StolenSupplyBoxPoints} points (Supply Theft at {area.Name}) - Total: {valley.InsurgentPoints}");
+
+        // Remove the supply box
+        QueueDel(supplyBox);
     }
 
     private void CheckCaptureAreaControl(ValleyPointsComponent valley)
@@ -224,12 +249,13 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
         var currentTime = _timing.CurTime;
         var checkpointsToAward = new List<EntityUid>();
 
+        // Check individual checkpoint holding - award points every minute (60 seconds)
         foreach (var kvp in valley.CheckpointHoldStartTimes.ToList())
         {
             var checkpoint = kvp.Key;
             var startTime = kvp.Value;
 
-            if ((currentTime - startTime).TotalSeconds >= valley.CheckpointHoldTime)
+            if ((currentTime - startTime).TotalSeconds >= 60f) // 1 minute instead of 5
             {
                 checkpointsToAward.Add(checkpoint);
                 valley.CheckpointHoldStartTimes[checkpoint] = currentTime;
@@ -238,13 +264,13 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
 
         if (checkpointsToAward.Count > 0)
         {
-            var pointsAwarded = checkpointsToAward.Count * valley.CheckpointHoldPoints;
+            var pointsAwarded = checkpointsToAward.Count * 5; // 5 points per minute instead of 25 per 5 minutes
             valley.BlugoslaviaPoints += pointsAwarded;
             _sawmill.Info($"Blugoslavia awarded {pointsAwarded} points for holding {checkpointsToAward.Count} checkpoints");
             AnnounceToAll($"Blugoslavia: +{pointsAwarded} points (Checkpoint Control) - Total: {valley.BlugoslaviaPoints}");
         }
 
-        // Check for all checkpoints bonus
+        // Check for all checkpoints bonus - still every 5 minutes but reduced frequency
         if (valley.BlugoslaviaHeldCheckpoints.Count >= 4 && // Assuming 4 checkpoints total
             (currentTime - valley.LastCheckpointBonusTime).TotalSeconds >= valley.CheckpointBonusInterval)
         {
@@ -418,13 +444,29 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
         AnnounceToAll(finalMessage);
 
         // Check UN objectives
-        CheckUNObjectives(valley);
+        AnnounceToAll(CheckUNObjectives(valley));
     }
-    private void CheckUNObjectives(ValleyPointsComponent valley)
+    private string CheckUNObjectives(ValleyPointsComponent valley)
     {
         var civilianSurvivalRate = valley.TotalCivilianNPCs > 0
             ? (float)valley.AliveCivilianNPCs / valley.TotalCivilianNPCs
             : 1.0f;
+
+        var query = EntityQueryEnumerator<CaptureAreaComponent>();
+        while (query.MoveNext(out var uid, out var area))
+        {
+            if (area.Name == "UN Hospital")
+            {
+                if (area.Occupied == true)
+                {
+                    valley.UNHospitalZoneControlled = false;
+                }
+                else
+                {
+                    valley.UNHospitalZoneControlled = true;
+                }
+            }
+        }
 
         var unSuccess = civilianSurvivalRate >= valley.RequiredCivilianSurvivalRate &&
                        valley.UNHospitalZoneControlled &&
@@ -435,11 +477,45 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
             : $"UN OBJECTIVES FAILED: {civilianSurvivalRate:P0} civilian survival rate, hospital zone: {(valley.UNHospitalZoneControlled ? "Secured" : "Lost")}, neutrality: {(valley.UNNeutralityMaintained ? "Maintained" : "Violated")}";
 
         _sawmill.Info(unMessage);
-        AnnounceToAll(unMessage);
+        return unMessage;
     }
 
     private void AnnounceToAll(string message)
     {
         _chatManager.DispatchServerAnnouncement(message);
     }
+
+    protected override void AppendRoundEndText(EntityUid uid, ValleyPointsComponent component, GameRuleComponent gameRule, ref RoundEndTextAppendEvent args)
+    {
+
+        if (component.BlugoslaviaPoints > component.InsurgentPoints)
+        {
+            args.AddLine($"[color=lime]Blugoslavia[/color] has won!");
+        }
+        else if (component.BlugoslaviaPoints < component.InsurgentPoints)
+        {
+            args.AddLine($"[color=lime]Insurgents[/color] have won!");
+
+        }
+        else
+        {
+            args.AddLine("The round ended in a [color=yellow]draw[/color]!");
+        }
+        args.AddLine("");
+        args.AddLine($"Blugoslavia: {component.BlugoslaviaPoints} points");
+        args.AddLine($"Insurgents: {component.InsurgentPoints} points");
+        args.AddLine("");
+        args.AddLine($"UN Objectives:");
+        args.AddLine(CheckUNObjectives(component));
+    }
+    private void OnKillReported(ref KillReportedEvent ev)
+    {
+        var query = EntityQueryEnumerator<TeamDeathMatchRuleComponent, GameRuleComponent>();
+        while (query.MoveNext(out var uid, out var dm, out var rule))
+        {
+            if (!GameTicker.IsGameRuleActive(uid, rule))
+                continue;
+        }
+    }
+
 }

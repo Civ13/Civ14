@@ -93,6 +93,14 @@
       defenderFactionName: SovietCW
 
 - type: entity
+  parent: BaseGameRule
+  id: CaptureAreaRulePoints
+  components:
+    - type: CaptureAreaRule
+      mode: Points
+      pointsFactionName1: Blugoslavia
+
+- type: entity
   id: TeamDeathMatchRule
   parent: BaseGameRule
   components:

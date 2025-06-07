@@ -28,6 +28,23 @@ public sealed partial class CaptureAreaRuleComponent : Component
     /// </summary>
     [DataField("asymmetricGameTimeElapsed"), ViewVariables(VVAccess.ReadWrite)]
     public float AsymmetricGameTimeElapsed { get; set; } = 0f;
+
+    //for points-based
+    /// <summary>
+    /// The first faction that can get points from capture.
+    /// </summary>
+    [DataField("pointsFactionName1")]
+    public string PointsFactionName1 { get; set; } = "";
+    /// <summary>
+    /// The first faction that can get points from capture.
+    /// </summary>
+    [DataField("pointsFactionName2")]
+    public string PointsFactionName2 { get; set; } = "";
+    /// <summary>
+    /// How many points per minute
+    /// </summary>
+    [DataField("pointsPerMinute")]
+    public int PointsPerMinute { get; set; } = 0;
 }
 [RegisterComponent]
 public sealed partial class CaptureAreaComponent : Component

@@ -41,6 +41,38 @@
       name: "Hill Outpost"
 
 - type: entity
+  name: Insurgent Base
+  id: ValleyInsurgentBase
+  parent: MarkerCapturableArea
+  components:
+    - type: Sprite
+      sprite: Civ14/Markers/areas.rsi
+      state: capture_green
+    - type: CaptureArea
+      name: "Insurgent Base"
+      captureDuration: 9999 # to make it impossibe to win by capturing
+      captureRadius: 6
+      contestedResetTime: 15 # 15 seconds before timer resets when contested
+      capturableFactions: []
+
+- type: entity
+  name: UN Hospital
+  id: ValleyUNHospital
+  parent: MarkerCapturableArea
+  components:
+    - type: Sprite
+      sprite: Civ14/Markers/areas.rsi
+      state: capture_blue
+    - type: CaptureArea
+      name: "UN Hospital"
+      captureDuration: 9999 # to make it impossibe to win by capturing
+      captureRadius: 4
+      contestedResetTime: 15 # 15 seconds before timer resets when contested
+      capturableFactions:
+        - Blugoslavia
+        - Insurgents
+
+- type: entity
   parent: BaseStructureDynamic
   id: ValleySupplyBox
   name: supply delivery
