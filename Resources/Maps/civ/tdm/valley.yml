@@ -4,8 +4,8 @@ meta:
   engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 06/07/2025 13:56:28
-  entityCount: 2709
+  time: 06/07/2025 14:32:08
+  entityCount: 2710
 maps:
 - 1
 grids:
@@ -5702,7 +5702,7 @@ entities:
       pos: 47.5,60.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -9889.233
+      secondsUntilStateChange: -9966.779
       state: Opening
 - proto: FenceMetalStraight
   entities:
@@ -6028,7 +6028,7 @@ entities:
       pos: 26.5,51.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -21149.709
+      secondsUntilStateChange: -21227.256
       state: Opening
 - proto: FloorWaterDeepEntity
   entities:
@@ -7337,7 +7337,7 @@ entities:
       pos: 47.5,62.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -13803.304
+      secondsUntilStateChange: -13880.85
       state: Opening
   - uid: 1859
     components:
@@ -9576,6 +9576,13 @@ entities:
     components:
     - type: Transform
       pos: 71.5,14.5
+      parent: 2
+- proto: ValleySupplyBoxSpawner
+  entities:
+  - uid: 2710
+    components:
+    - type: Transform
+      pos: -25.5,78.5
       parent: 2
 - proto: ValleyUNHospital
   entities:
@@ -16364,7 +16371,7 @@ entities:
       pos: 16.5,49.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -11540.999
+      secondsUntilStateChange: -11618.545
       state: Opening
 - proto: WoodDoorClassic
   entities:
@@ -16379,7 +16386,7 @@ entities:
       pos: 23.5,43.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -21145.51
+      secondsUntilStateChange: -21223.057
       state: Opening
   - uid: 183
     components:
