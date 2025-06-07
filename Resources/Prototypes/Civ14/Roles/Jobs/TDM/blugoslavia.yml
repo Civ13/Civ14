@@ -2,7 +2,7 @@
   id: BlugoslaviaCaptain
   name: job-name-civ-blugoslavia-cpt
   faction: Blugoslavia
-  originalName: Captain
+  originalName: Kapetan
   description: job-description-civ-blugoslavia-cpt
   playTimeTracker: JobBlugoslaviaCaptain
   requirements:
@@ -45,7 +45,7 @@
 
 - type: job
   id: BlugoslaviaSergeant
-  originalName: Sergeant
+  originalName: Narednik
   name: job-name-civ-blugoslavia-sgt
   faction: Blugoslavia
   description: job-description-civ-blugoslavia-sgt
@@ -98,7 +98,7 @@
   id: BlugoslaviaRifleman
   name: job-name-civ-blugoslavia-rifleman
   faction: Blugoslavia
-  originalName: Rifleman
+  originalName: Puškar
   description: job-description-civ-blugoslavia-rifleman
   playTimeTracker: JobBlugoslaviaRifleman
   startingGear: BlugoslaviaRiflemanGear
@@ -146,7 +146,7 @@
   id: BlugoslaviaMachinegunner
   name: job-name-civ-blugoslavia-machinegunner
   faction: Blugoslavia
-  originalName: Machinegunner
+  originalName: Mitraljezac
   description: job-description-civ-blugoslavia-machinegunner
   playTimeTracker: JobBlugoslaviaMachinegunner
   startingGear: BlugoslaviaMachinegunnerGear
@@ -199,7 +199,7 @@
   id: BlugoslaviaMedic
   name: job-name-civ-blugoslavia-medic
   faction: Blugoslavia
-  originalName: Medic
+  originalName: Sanitarnik
   description: job-description-civ-blugoslavia-medic
   playTimeTracker: JobBlugoslaviaMedic
   startingGear: BlugoslaviaMedicGear

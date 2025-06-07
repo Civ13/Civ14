@@ -91,3 +91,23 @@
           shape: !type:PhysShapeAabb
             bounds: "-0.4,-0.3,0.4,0.3"
           density: 50
+
+- type: entity
+  id: ValleySupplyBoxSpawner
+  name: Valley Supply Box Spawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Civ14/Objects/Storage/storage.rsi
+          state: supplybox
+        - state: timed
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+        - ValleySupplyBox
+      chance: 1
+      intervalSeconds: 300
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 1

@@ -36,7 +36,7 @@ public sealed partial class ValleyPointsComponent : Component
     /// Points awarded for killing a Blugoslavian soldier.
     /// </summary>
     [DataField]
-    public int KillPoints = 10;
+    public int KillPoints = 30;
 
     /// <summary>
     /// Points awarded for delivering a supply box.
@@ -48,7 +48,7 @@ public sealed partial class ValleyPointsComponent : Component
     /// Points awarded for stealing a supply box.
     /// </summary>
     [DataField]
-    public int StolenSupplyBoxPoints = 50;
+    public int StolenSupplyBoxPoints = 75;
 
     /// <summary>
     /// Points awarded for escorting a convoy.
@@ -60,7 +60,7 @@ public sealed partial class ValleyPointsComponent : Component
     /// Points awarded for holding a checkpoint.
     /// </summary>
     [DataField]
-    public int CheckpointHoldPoints = 25;
+    public int CheckpointHoldPoints = 5;
 
     /// <summary>
     /// Bonus points for holding all checkpoints.
@@ -72,7 +72,7 @@ public sealed partial class ValleyPointsComponent : Component
     /// Time in seconds to hold a checkpoint before earning points.
     /// </summary>
     [DataField]
-    public float CheckpointHoldTime = 300f; // 5 minutes
+    public float CheckpointHoldTime = 60f; // 1 minute
 
     /// <summary>
     /// Time in seconds to secure a supply box at a checkpoint.
@@ -155,4 +155,10 @@ public sealed partial class ValleyPointsComponent : Component
     /// </summary>
     [DataField]
     public Dictionary<EntityUid, TimeSpan> SecuringSupplyBoxes = new();
+
+    /// <summary>
+    /// Last time scores were announced.
+    /// </summary>
+    [DataField]
+    public TimeSpan LastScoreAnnouncementTime;
 }

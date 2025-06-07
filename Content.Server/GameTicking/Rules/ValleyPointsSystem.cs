@@ -10,6 +10,8 @@ using Content.Shared.Interaction;
 using Content.Shared.Hands.EntitySystems;
 using Robust.Shared.Timing;
 using Content.Server.KillTracking;
+using Content.Shared.NPC.Systems;
+
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -26,6 +28,7 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
 
+    [Dependency] private readonly NpcFactionSystem _factionSystem = default!; // Added dependency
     private ISawmill _sawmill = default!;
     private TimeSpan _lastSupplyBoxCheck = TimeSpan.Zero;
     private const float SupplyBoxCheckInterval = 30f; // Check every 30 seconds
@@ -44,6 +47,7 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
     {
         component.GameStartTime = _timing.CurTime;
         component.LastCheckpointBonusTime = _timing.CurTime;
+        component.LastScoreAnnouncementTime = _timing.CurTime;
         _lastSupplyBoxCheck = _timing.CurTime;
 
         // Initialize checkpoints immediately
@@ -128,6 +132,7 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
             UpdateSupplyBoxSecuring(valley);
             CheckCaptureAreaControl(valley);
             CheckSupplyBoxDeliveries(valley);
+            CheckScoreAnnouncement(valley);
             CheckWinConditions(uid, valley);
             CheckTimeLimit(uid, valley);
         }
@@ -510,12 +515,61 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
     }
     private void OnKillReported(ref KillReportedEvent ev)
     {
-        var query = EntityQueryEnumerator<TeamDeathMatchRuleComponent, GameRuleComponent>();
-        while (query.MoveNext(out var uid, out var dm, out var rule))
+        var query = EntityQueryEnumerator<ValleyPointsComponent, GameRuleComponent>();
+        while (query.MoveNext(out var uid, out var valley, out var rule))
         {
             if (!GameTicker.IsGameRuleActive(uid, rule))
                 continue;
+
+            // Check if UN member was involved (either as killer or victim) TODO: Check killer
+            bool unInvolved = false;
+
+            // Check if victim is UN
+            if (TryComp<NpcFactionMemberComponent>(ev.Entity, out var victimFaction))
+            {
+                if (_factionSystem.IsMember(ev.Entity, "UnitedNations"))
+                {
+                    unInvolved = true;
+                }
+
+                // If UN was involved, set neutrality to false
+                if (unInvolved && valley.UNNeutralityMaintained)
+                {
+                    valley.UNNeutralityMaintained = false;
+                    _sawmill.Info("UN neutrality violated - UN member involved in combat");
+                    AnnounceToAll("UN neutrality has been violated!");
+                }
+
+                // Award points to Insurgents for killing Blugoslavian soldiers
+                if (TryComp<NpcFactionMemberComponent>(ev.Entity, out var deadFaction) &&
+                    deadFaction.Factions.Any(f => f == "Blugoslavia"))
+                {
+                    valley.InsurgentPoints += valley.KillPoints;
+                    _sawmill.Info($"Insurgents awarded {valley.KillPoints} points for Blugoslavian kill. Total: {valley.InsurgentPoints}");
+                    AnnounceToAll($"Insurgents: +{valley.KillPoints} points (Kill) - Total: {valley.InsurgentPoints}");
+                }
+            }
         }
     }
 
+    private void CheckScoreAnnouncement(ValleyPointsComponent valley)
+    {
+        var currentTime = _timing.CurTime;
+
+        // Announce scores every 5 minutes (300 seconds)
+        if ((currentTime - valley.LastScoreAnnouncementTime).TotalSeconds >= 300f)
+        {
+            valley.LastScoreAnnouncementTime = currentTime;
+
+            var elapsedMinutes = (currentTime - valley.GameStartTime).TotalMinutes;
+            var remainingMinutes = valley.MatchDurationMinutes - elapsedMinutes;
+
+            var scoreMessage = $"SCORE UPDATE ({remainingMinutes:F0} minutes remaining): " +
+                              $"Blugoslavia: {valley.BlugoslaviaPoints} points | " +
+                              $"Insurgents: {valley.InsurgentPoints} points";
+
+            _sawmill.Info($"Score announcement: {scoreMessage}");
+            AnnounceToAll(scoreMessage);
+        }
+    }
 }

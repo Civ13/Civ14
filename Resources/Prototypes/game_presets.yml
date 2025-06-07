@@ -46,7 +46,7 @@
   showInVote: true
   description: tdm-valley-description
   rules:
-    - RespawnDeadRuleTDMFixed
+    - RespawnDeadRuleTDM
     - GracewallRule
     - ValleyPointsRule
     - TeamDeathMatchRule

@@ -22,7 +22,7 @@
     - type: RespawnDeadRule
       alwaysRespawnDead: true
     - type: RespawnTracker
-      respawnDelay: 120
+      respawnDelay: 180
       deleteBody: false
 # A fixed timer where all reinforcements are spawned at the same time.
 - type: entity

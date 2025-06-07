@@ -4,8 +4,8 @@ meta:
   engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 06/07/2025 12:19:09
-  entityCount: 2708
+  time: 06/07/2025 13:56:28
+  entityCount: 2709
 maps:
 - 1
 grids:
@@ -5702,7 +5702,7 @@ entities:
       pos: 47.5,60.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -9859.1455
+      secondsUntilStateChange: -9889.233
       state: Opening
 - proto: FenceMetalStraight
   entities:
@@ -6028,7 +6028,7 @@ entities:
       pos: 26.5,51.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -21119.621
+      secondsUntilStateChange: -21149.709
       state: Opening
 - proto: FloorWaterDeepEntity
   entities:
@@ -7337,7 +7337,7 @@ entities:
       pos: 47.5,62.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -13773.216
+      secondsUntilStateChange: -13803.304
       state: Opening
   - uid: 1859
     components:
@@ -9576,6 +9576,13 @@ entities:
     components:
     - type: Transform
       pos: 71.5,14.5
+      parent: 2
+- proto: ValleyUNHospital
+  entities:
+  - uid: 2709
+    components:
+    - type: Transform
+      pos: 48.5,64.5
       parent: 2
 - proto: WallRockIndestructible
   entities:
@@ -16357,7 +16364,7 @@ entities:
       pos: 16.5,49.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -11510.911
+      secondsUntilStateChange: -11540.999
       state: Opening
 - proto: WoodDoorClassic
   entities:
@@ -16372,7 +16379,7 @@ entities:
       pos: 23.5,43.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -21115.422
+      secondsUntilStateChange: -21145.51
       state: Opening
   - uid: 183
     components:
