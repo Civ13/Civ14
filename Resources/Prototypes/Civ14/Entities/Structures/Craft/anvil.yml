@@ -225,3 +225,40 @@
   materials:
     Bronze: 500
   result: civ13_head_chinese_warrior_helmet
+
+## iron anvil
+
+- type: entity
+  parent: BaseLathe
+  id: AnvilIron
+  name: iron anvil
+  description: A metalworking tool to produce weapons and armours.
+  components:
+    - type: Transform
+      noRot: false
+    - type: Sprite
+      sprite: Civ14/Objects/metallurgy.rsi
+      snapCardinals: true
+      state: iron_anvil
+    - type: ApcPowerReceiver
+      needsPower: false
+      powerLoad: 0
+    - type: Anchorable
+      delay: 2
+    - type: Lathe
+      producingSound: /Audio/Effects/metal_thud1.ogg
+      idleState: iron_anvil
+      runningState: iron_anvil_use
+      staticPacks:
+        - AnvilBronze
+        - AnvilGold
+        - AnvilSwordsMedieval
+        - AnvilShieldsMedieval
+    - type: MaterialStorage
+      whitelist:
+        tags:
+          - Sheet
+          - Ingot
+    - type: Construction
+      graph: AnvilIron
+      node: end

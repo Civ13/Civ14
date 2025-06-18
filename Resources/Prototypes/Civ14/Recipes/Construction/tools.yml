@@ -12,6 +12,19 @@
   agemax: 8
 
 - type: construction
+  name: stone shovel
+  id: StoneShovel
+  graph: StoneShovel
+  startNode: start
+  targetNode: stoneshovel
+  category: construction-category-tools
+  description: A crude stone shovel.
+  icon: { sprite: Civ14/Objects/StoneAge/stone_shovel.rsi, state: icon }
+  objectType: Item
+  agemin: 0
+  agemax: 8
+
+- type: construction
   name: bone pickaxe
   id: BonePickaxe
   graph: BonePickaxe
@@ -118,6 +131,23 @@
               doAfter: 4
     - node: boneshovel
       entity: BoneShovel
+
+- type: constructionGraph
+  id: StoneShovel
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: stoneshovel
+          steps:
+            - material: Stone
+              amount: 3
+              doAfter: 3
+            - material: WoodPlank
+              amount: 4
+              doAfter: 4
+    - node: stoneshovel
+      entity: StoneShovel
 
 - type: constructionGraph
   id: BonePickaxe
