@@ -1,0 +1,13 @@
+- type: entity
+  name: sandbags
+  parent: BaseItem
+  id: ItemSandbag
+  description: A bunch of sandbags that can be used to create a fortification.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/items.rsi
+      state: sandbag_new
+    - type: STWeight
+      self: 25
+    - type: Item
+      size: Ginormous

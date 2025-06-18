@@ -968,17 +968,6 @@
         task: SimpleHostileCompound
 
 - type: entity
-  name: boxing kangaroo
-  parent: MobKangaroo
-  id: MobBoxingKangaroo
-  components:
-    - type: Loadout
-      prototypes: [BoxingKangarooGear]
-    - type: NpcFactionMember
-      factions:
-        - SimpleHostile
-
-- type: entity
   name: genetic ancestor
   id: MobBaseAncestor
   parent: [SimpleMobBase, StripableInventoryBase]
@@ -1824,7 +1813,7 @@
 
 - type: entity
   name: grenade penguin
-  parent: [MobPenguin, MobCombat, BaseSyndicateContraband]
+  parent: [MobPenguin, MobCombat]
   id: MobGrenadePenguin
   description: A small penguin with a grenade strapped around its neck. Harvested by the Syndicate from icy shit-hole planets.
   components:

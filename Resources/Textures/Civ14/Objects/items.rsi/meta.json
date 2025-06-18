@@ -1,21 +1,12 @@
 {
     "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
-        {
-            "name": "",
-            "delays": [
-                [
-                    0.120000005,
-                    0.120000005,
-                    0.120000005,
-                    0.120000005
-                ]
-            ]
-        },
         {
             "name": "paintbrush"
         },
@@ -45,6 +36,9 @@
         },
         {
             "name": "cuff_white"
+        },
+        {
+            "name": "cuff_zip"
         },
         {
             "name": "beartrap0"
@@ -289,28 +283,304 @@
             "name": "prybar"
         },
         {
-            "name": "dollar_2"
-        },
-        {
-            "name": "50dollar_2"
-        },
-        {
             "name": "50dollar"
         },
         {
-            "name": "20dollar_2"
+            "name": "100dollar"
+        },
+        {
+            "name": "100dollar50"
+        },
+        {
+            "name": "100dollar100"
+        },
+        {
+            "name": "100dollar300"
+        },
+        {
+            "name": "100dollar500"
         },
         {
             "name": "20dollar"
         },
         {
-            "name": "5dollar_2"
+            "name": "20dollar_2"
+        },
+        {
+            "name": "20dollar_3"
+        },
+        {
+            "name": "20dollar_4"
+        },
+        {
+            "name": "20dollar_5"
         },
         {
             "name": "5dollar"
         },
         {
+            "name": "5dollar_2"
+        },
+        {
+            "name": "5dollar_3"
+        },
+        {
+            "name": "5dollar_4"
+        },
+        {
+            "name": "5dollar_5"
+        },
+        {
             "name": "dollar"
+        },
+        {
+            "name": "dollar_2"
+        },
+        {
+            "name": "dollar_3"
+        },
+        {
+            "name": "dollar_4"
+        },
+        {
+            "name": "dollar_5"
+        },
+        {
+            "name": "britpound"
+        },
+        {
+            "name": "britpound_2"
+        },
+        {
+            "name": "britpound_3"
+        },
+        {
+            "name": "britpound_4"
+        },
+        {
+            "name": "britpound_5"
+        },
+        {
+            "name": "5britpound"
+        },
+        {
+            "name": "5britpound_2"
+        },
+        {
+            "name": "5britpound_3"
+        },
+        {
+            "name": "5britpound_4"
+        },
+        {
+            "name": "5britpound_5"
+        },
+        {
+            "name": "10britpound"
+        },
+        {
+            "name": "10britpound_2"
+        },
+        {
+            "name": "10britpound_3"
+        },
+        {
+            "name": "10britpound_4"
+        },
+        {
+            "name": "10britpound_5"
+        },
+        {
+            "name": "20britpound"
+        },
+        {
+            "name": "20britpound_2"
+        },
+        {
+            "name": "20britpound_3"
+        },
+        {
+            "name": "20britpound_4"
+        },
+        {
+            "name": "20britpound_5"
+        },
+        {
+            "name": "50britpound"
+        },
+        {
+            "name": "50britpound_2"
+        },
+        {
+            "name": "50britpound_3"
+        },
+        {
+            "name": "50britpound_4"
+        },
+        {
+            "name": "50britpound_5"
+        },
+        {
+            "name": "euro"
+        },
+        {
+            "name": "euro_2"
+        },
+        {
+            "name": "euro_3"
+        },
+        {
+            "name": "euro_4"
+        },
+        {
+            "name": "euro_5"
+        },
+        {
+            "name": "2euro"
+        },
+        {
+            "name": "2euro_2"
+        },
+        {
+            "name": "2euro_3"
+        },
+        {
+            "name": "2euro_4"
+        },
+        {
+            "name": "2euro_5"
+        },
+        {
+            "name": "5euro"
+        },
+        {
+            "name": "5euro_2"
+        },
+        {
+            "name": "5euro_3"
+        },
+        {
+            "name": "5euro_4"
+        },
+        {
+            "name": "5euro_5"
+        },
+        {
+            "name": "10euro"
+        },
+        {
+            "name": "10euro_2"
+        },
+        {
+            "name": "10euro_3"
+        },
+        {
+            "name": "10euro_4"
+        },
+        {
+            "name": "10euro_5"
+        },
+        {
+            "name": "20euro"
+        },
+        {
+            "name": "20euro_2"
+        },
+        {
+            "name": "20euro_3"
+        },
+        {
+            "name": "20euro_4"
+        },
+        {
+            "name": "20euro_5"
+        },
+        {
+            "name": "50euro"
+        },
+        {
+            "name": "50euro_2"
+        },
+        {
+            "name": "50euro_3"
+        },
+        {
+            "name": "50euro_4"
+        },
+        {
+            "name": "50euro_5"
+        },
+        {
+            "name": "100euro"
+        },
+        {
+            "name": "100euro_2"
+        },
+        {
+            "name": "100euro_3"
+        },
+        {
+            "name": "100euro_4"
+        },
+        {
+            "name": "100euro_5"
+        },
+        {
+            "name": "200euro"
+        },
+        {
+            "name": "200euro_2"
+        },
+        {
+            "name": "200euro_3"
+        },
+        {
+            "name": "200euro_4"
+        },
+        {
+            "name": "200euro_5"
+        },
+        {
+            "name": "500euro"
+        },
+        {
+            "name": "500euro_2"
+        },
+        {
+            "name": "500euro_3"
+        },
+        {
+            "name": "500euro_4"
+        },
+        {
+            "name": "500euro_5"
+        },
+        {
+            "name": "fengshui"
+        },
+        {
+            "name": "fengshui_2"
+        },
+        {
+            "name": "fengshui_3"
+        },
+        {
+            "name": "fengshui_4"
+        },
+        {
+            "name": "fengshui_5"
+        },
+        {
+            "name": "arstotzkacredit"
+        },
+        {
+            "name": "arstotzkacredit_2"
+        },
+        {
+            "name": "arstotzkacredit_3"
+        },
+        {
+            "name": "arstotzkacredit_4"
         },
         {
             "name": "sov_flag",
@@ -325,6 +595,9 @@
         },
         {
             "name": "german_shovel"
+        },
+        {
+            "name": "german_shovel_folded"
         },
         {
             "name": "trench_shovel"
@@ -410,19 +683,91 @@
             "name": "goldcoin_pile"
         },
         {
-            "name": "dollarc"
+            "name": "goldcoin_pile_2"
+        },
+        {
+            "name": "goldcoin_pile_3"
+        },
+        {
+            "name": "goldcoin_pile_4"
+        },
+        {
+            "name": "goldcoin_pile_5"
+        },
+        {
+            "name": "silvercoin_pile"
+        },
+        {
+            "name": "silvercoin_pile_2"
+        },
+        {
+            "name": "silvercoin_pile_3"
+        },
+        {
+            "name": "silvercoin_pile_4"
+        },
+        {
+            "name": "silvercoin_pile_5"
         },
         {
             "name": "dobloon"
         },
         {
+            "name": "dobloon_2"
+        },
+        {
+            "name": "dobloon_3"
+        },
+        {
+            "name": "dobloon_4"
+        },
+        {
+            "name": "dobloon_5"
+        },
+        {
             "name": "real"
+        },
+        {
+            "name": "real_2"
+        },
+        {
+            "name": "real_3"
+        },
+        {
+            "name": "real_4"
+        },
+        {
+            "name": "real_5"
         },
         {
             "name": "escudo"
         },
         {
-            "name": "silvercoin_pile"
+            "name": "escudo_2"
+        },
+        {
+            "name": "escudo_3"
+        },
+        {
+            "name": "escudo_4"
+        },
+        {
+            "name": "escudo_5"
+        },
+        {
+            "name": "coppercoin_pile"
+        },
+        {
+            "name": "coppercoin_pile_2"
+        },
+        {
+            "name": "coppercoin_pile_3"
+        },
+        {
+            "name": "coppercoin_pile_4"
+        },
+        {
+            "name": "coppercoin_pile_5"
         },
         {
             "name": "pickaxe"
@@ -450,6 +795,12 @@
         },
         {
             "name": "coffee_roasted"
+        },
+        {
+            "name": "pickaxe_bone"
+        },
+        {
+            "name": "shovel_bone"
         },
         {
             "name": "fishing"
@@ -496,9 +847,6 @@
         },
         {
             "name": "olivebranch"
-        },
-        {
-            "name": "coppercoin_pile"
         },
         {
             "name": "swatter"
@@ -679,6 +1027,18 @@
             "name": "ruble"
         },
         {
+            "name": "ruble50"
+        },
+        {
+            "name": "ruble100"
+        },
+        {
+            "name": "ruble300"
+        },
+        {
+            "name": "ruble500"
+        },
+        {
             "name": "iron_bolthead"
         },
         {
@@ -730,9 +1090,6 @@
         },
         {
             "name": "handbell"
-        },
-        {
-            "name": "type89"
         },
         {
             "name": "yen"
@@ -859,7 +1216,13 @@
             "name": "hookah3"
         },
         {
+            "name": "chip_blue"
+        },
+        {
             "name": "chip_red"
+        },
+        {
+            "name": "chip_green"
         },
         {
             "name": "chip_black"
@@ -886,10 +1249,33 @@
             "name": "compass_modern"
         },
         {
+            "name": "compass_modern_on",
+            "delays": [
+                [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5
+                ]
+            ]
+        },
+        {
             "name": "compass_map"
         },
         {
             "name": "compass_map_modern"
+        },
+        {
+            "name": "messrad"
+        },
+        {
+            "name": "crod"
+        },
+        {
+            "name": "nrod"
+        },
+        {
+            "name": ""
         }
     ]
 }

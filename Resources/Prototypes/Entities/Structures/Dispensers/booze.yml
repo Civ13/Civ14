@@ -22,8 +22,6 @@
     - type: GuideHelp
       guides:
         - Drinks
-    - type: StealTarget
-      stealGroup: BoozeDispenser
 
 - type: entity
   id: BoozeDispenserEmpty

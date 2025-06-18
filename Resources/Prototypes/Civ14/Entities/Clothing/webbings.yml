@@ -16,7 +16,7 @@
     - type: Storage
       maxItemSize: Normal
       grid:
-        - 0,0,7,1
+        - 0,0,8,1
 
 - type: entity
   id: ClothingWebbingGerman
@@ -106,7 +106,10 @@
         - id: civ13_magazine_mp40_(9x19mm)
           amount: 3
         - id: GrenadeSHG24
-          amount: 3
+          amount: 1
+        - id: SmokeGrenadeNHG39
+          amount: 1
+
 - type: entity
   id: ClothingWebbingSovietSMG
   parent: ClothingWebbingRussian
@@ -118,7 +121,9 @@
         - id: civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
           amount: 2
         - id: GrenadeF1
-          amount: 3
+          amount: 1
+        - id: SmokeGrenadeRDG2
+          amount: 1
 
 - type: entity
   id: ClothingWebbingGermanMG
@@ -143,4 +148,91 @@
         - id: civ13_magazine_DP_pan_(7.62x54mmR)
           amount: 4
         - id: GrenadeF1
-          amount: 3
+          amount: 1
+
+# cold war
+- type: entity
+  id: ClothingWebbingSovietCWMG
+  parent: ClothingWebbingGreen
+  name: green webbing
+  suffix: filled, MG
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_RPD_drum_(7.62x39)
+          amount: 2
+        - id: GrenadeRGD5
+          amount: 1
+
+- type: entity
+  id: ClothingWebbingUSCWMG
+  parent: ClothingWebbingUS
+  name: US webbing
+  suffix: filled, MG
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_belt_(7.62x51mm)
+          amount: 2
+        - id: GrenadeM67
+          amount: 1
+
+- type: entity
+  id: ClothingWebbingSovietCWRifleman
+  parent: ClothingWebbingGreen
+  name: green webbing
+  suffix: filled, Rifleman
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_AK_74_magazine_(5.45x39mm)
+          amount: 5
+        - id: GrenadeRGD5
+          amount: 1
+        - id: SmokeGrenadeRDG2
+          amount: 1
+
+- type: entity
+  id: ClothingWebbingUSCWRifleman
+  parent: ClothingWebbingUS
+  name: US webbing
+  suffix: filled, Rifleman
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_STANAG_magazine_(5.56x45mm)
+          amount: 5
+        - id: GrenadeM67
+          amount: 1
+        - id: SmokeGrenadeM18
+          amount: 1
+
+- type: entity
+  id: ClothingWebbingInsurgentRifleman
+  parent: ClothingWebbingGreen
+  name: green webbing
+  suffix: filled, AK47
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_AK47_(7.62x39mm)
+          amount: 5
+        - id: GrenadeRGD5
+          amount: 1
+        - id: SmokeGrenadeRDG2
+          amount: 1
+
+- type: entity
+  id: ClothingWebbingInsurgentRifleman2
+  parent: ClothingWebbingKhaki
+  name: khaki webbing
+  suffix: filled, AK47
+  components:
+    - type: StorageFill
+      contents:
+        - id: civ13_magazine_AK47_(7.62x39mm)
+          amount: 5
+        - id: GrenadeRGD5
+          amount: 1
+        - id: SmokeGrenadeRDG2
+          amount: 1

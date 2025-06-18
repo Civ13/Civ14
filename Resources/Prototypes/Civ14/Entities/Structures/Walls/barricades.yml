@@ -33,7 +33,8 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Barricade
-      blocking: 80
+      bidirectional: false
+      blocking: 85
     - type: AtmosExposed
 
 - type: entity
@@ -76,7 +77,7 @@
       fixtures:
         fix1:
           shape: !type:PhysShapeAabb
-            bounds: "-0.49,-0.45,0.49,-0.02"
+            bounds: "-0.49,-0.45,0.49,-0.15"
           mask:
             - FullTileMask
           layer:
@@ -92,9 +93,12 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
     - type: Barricade
-      blocking: 66
+      bidirectional: true
+      blocking: 75
     - type: AtmosExposed
-
+    - type: Construction
+      graph: BarricadeSandbags
+      node: end
 - type: entity
   id: BarricadeSandbagsMedium
   description: An unfinished sandbag wall.
@@ -109,7 +113,7 @@
       drawdepth: FloorObjects
       noRot: true
     - type: Barricade
-      blocking: 50
+      blocking: 60
 - type: entity
   id: BarricadeSandbagsLow
   description: An unfinished sandbag wall.
@@ -124,7 +128,7 @@
       drawdepth: FloorObjects
       noRot: true
     - type: Barricade
-      blocking: 33
+      blocking: 40
 # snow wall
 - type: entity
   id: BarricadeSnowwall
@@ -164,7 +168,7 @@
       drawdepth: FloorObjects
       noRot: true
     - type: Barricade
-      blocking: 50
+      blocking: 60
 - type: entity
   id: BarricadeSnowwallLow
   description: An unfinished snow barricade.
@@ -179,7 +183,7 @@
       drawdepth: FloorObjects
       noRot: true
     - type: Barricade
-      blocking: 33
+      blocking: 40
 
 # dirt wall
 - type: entity
@@ -224,7 +228,7 @@
       drawdepth: FloorObjects
       noRot: true
     - type: Barricade
-      blocking: 50
+      blocking: 60
 
 - type: entity
   id: BarricadeDirtwallLow
@@ -240,7 +244,7 @@
       drawdepth: FloorObjects
       noRot: true
     - type: Barricade
-      blocking: 33
+      blocking: 40
 
 - type: entity
   id: BarricadeStonewall
@@ -294,3 +298,309 @@
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]
+
+- type: entity
+  id: BarricadeVelvetRope
+  description: A fancy velvet rope between two golden poles.
+  parent: BarricadeSandbags
+  name: velvet rope
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/structures.rsi
+      state: velvet_rope
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Barricade
+      blocking: 3
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  id: BarricadeJerseyBarrier
+  description: A modular concrete barrier, also useful as a barricade.
+  parent: BarricadeSandbags
+  name: jersey barrier
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/junk.rsi #why???
+      state: jerseybarrier1
+      drawdepth: FloorObjects
+      noRot: true
+      layers:
+        - state: jerseybarrier1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            jerseybarrier1: ""
+            jerseybarrier2: ""
+            jerseybarrier3: ""
+            jerseybarrier4: ""
+            jerseybarrier5: ""
+    - type: Damageable
+      damageModifierSet: Rock
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 320
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  id: BarricadeJerseyBarrierAlt
+  description: A modular concrete barrier, also useful as a barricade.
+  parent: BarricadeSandbags
+  name: jersey barrier
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/junk.rsi #why???
+      state: jerseybarrier_alt1
+      drawdepth: FloorObjects
+      noRot: true
+      layers:
+        - state: jerseybarrier_alt1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            jerseybarrier_alt1: ""
+            jerseybarrier_alt2: ""
+    - type: Damageable
+      damageModifierSet: Rock
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 320
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  parent: BaseStructure
+  id: HescoBastionIndestructible
+  name: Hesco bastion
+  description: A modern gabion primarily used for flood control and military fortifications.
+  suffix: indestructible
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+    - type: RangedDamageSound
+      soundGroups:
+        Brute:
+          collection: MetalBulletImpact
+      soundTypes:
+        Heat:
+          collection: MetalLaserImpact
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: Civ14/Objects/junk.rsi #why???
+      state: hescobastion
+      drawdepth: Walls
+    - type: Icon
+      sprite: Civ14/Objects/junk.rsi #why???
+      state: hescobastion
+    - type: PlacementReplacement
+      key: walls
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.5,-0.5,0.5,0.5"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+          density: 1000
+    - type: Occluder
+    - type: Airtight
+      airBlocked: false
+    - type: RadiationBlocker
+      resistance: 2
+    - type: SunShadowCast
+
+- type: entity
+  parent: HescoBastionIndestructible
+  id: HescoBastion
+  name: Hesco bastion
+  description: A modern gabion primarily used for flood control and military fortifications.
+  suffix: destroyable
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+    - type: Damageable
+      damageModifierSet: Inert
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 450
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  parent: BaseBarricade
+  id: BarricadeJunk
+  name: junk
+  description: A pile of junk. Not much to see here.
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/junk.rsi
+      state: Junk_1
+      layers:
+        - state: Junk_1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            Junk_1: ""
+            Junk_2: ""
+            Junk_3: ""
+            Junk_4: ""
+            Junk_5: ""
+            Junk_6: ""
+            Junk_7: ""
+            Junk_8: ""
+            Junk_9: ""
+            Junk_10: ""
+            Junk_11: ""
+            Junk_12: ""
+            Junk_13: ""
+            Junk_14: ""
+    - type: Climbable
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.38,-0.38,0.38,0.38"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+    - type: Damageable
+      damageModifierSet: Inert
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 90
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Barricade
+      bidirectional: true
+      blocking: 30
+    - type: AtmosExposed
+
+- type: entity
+  parent: BaseStructure
+  id: BarricadeSandbagsTall
+  name: tall sandbag wall
+  description: A tall sandbag wall.
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+    - type: RangedDamageSound
+      soundGroups:
+        Brute:
+          collection: MetalBulletImpact
+      soundTypes:
+        Heat:
+          collection: MetalLaserImpact
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: Civ14/Structures/barricades.rsi
+      state: sandbagfull
+      drawdepth: Walls
+    - type: Icon
+      sprite: Civ14/Structures/barricades.rsi
+      state: sandbagfull
+    - type: PlacementReplacement
+      key: walls
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.49,-0.45,0.49,0.15"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+          density: 1000
+    - type: Occluder
+    - type: Airtight
+      airBlocked: false
+    - type: RadiationBlocker
+      resistance: 2
+    - type: SunShadowCast
+    - type: Damageable
+      damageModifierSet: Inert
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 450
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  id: BarricadeAntiTank
+  description: A static anti-tank obstacle defense made of metal angle beams.
+  parent: BaseStructure
+  name: czech hedgehog
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Civ14/Objects/structures.rsi
+      state: antitank
+      drawdepth: BlastDoors
+      noRot: true
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeCircle
+            radius: 0.4
+          density: 185
+          restitution: 0.0
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+    - type: AtmosExposed
+    - type: Climbable
+    - type: Barricade
+      bidirectional: true
+      blocking: 50

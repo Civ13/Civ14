@@ -18,7 +18,37 @@
   showInVote: true
   description: tdm-description
   rules:
-    - RespawnDeadRuleTDM
+    - RespawnDeadRuleTDMFixed
     - GracewallRule
     - CaptureAreaRule
     - TeamDeathMatchRule
+    - RandomWeatherRule
+
+- type: gamePreset
+  id: TDMAsymmetric
+  alias:
+    - tdm-asymmetric
+  name: tdm-asy-title
+  showInVote: true
+  description: tdm-asy-description
+  rules:
+    - RespawnDeadRuleTDMFixed
+    - GracewallRule5
+    - CaptureAreaRuleAsymmetric
+    - TeamDeathMatchRule
+    - RandomWeatherRuleNightSnow
+
+- type: gamePreset
+  id: TDMValley
+  alias:
+    - tdm-valley
+  name: tdm-valley-title
+  showInVote: true
+  description: tdm-valley-description
+  rules:
+    - RespawnDeadRuleTDM
+    - GracewallRule
+    - ValleyPointsRule
+    - TeamDeathMatchRule
+    - RandomWeatherRule
+    - CaptureAreaRulePoints

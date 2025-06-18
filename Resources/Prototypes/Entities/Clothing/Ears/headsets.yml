@@ -18,13 +18,14 @@
     - type: Sprite
       state: icon
     - type: STWeight
-      self: 1
+      self: 0.5
     - type: Item
       size: Small
     - type: Clothing
       slots:
         - ears
       sprite: Clothing/Ears/Headsets/base.rsi
+    - type: TelecomExempt
     - type: GuideHelp
       guides:
         - Radio
@@ -46,7 +47,6 @@
     - type: ContainerFill
       containers:
         key_slots:
-          - EncryptionKeyCargo
           - EncryptionKeyCommon
     - type: Sprite
       sprite: Clothing/Ears/Headsets/cargo.rsi
@@ -54,239 +54,76 @@
       sprite: Clothing/Ears/Headsets/cargo.rsi
 
 - type: entity
-  parent: ClothingHeadsetCargo
-  id: ClothingHeadsetMining
-  name: mining headset
-  description: Headset used by shaft miners.
-  components:
-    - type: Sprite
-      sprite: Clothing/Ears/Headsets/mining.rsi
-    - type: Clothing
-      sprite: Clothing/Ears/Headsets/mining.rsi
-
-- type: entity
-  parent: [ClothingHeadsetCargo, BaseCommandContraband]
-  id: ClothingHeadsetQM
-  name: qm headset
-  description: A headset used by the quartermaster.
+  parent: ClothingHeadset
+  id: ClothingHeadsetSoviet
+  name: Soviet headset
+  description: A headset used by the Soviet Union.
   components:
     - type: ContainerFill
       containers:
         key_slots:
-          - EncryptionKeyCargo
-          - EncryptionKeyCommand
-          - EncryptionKeyCommon
-
-- type: entity
-  parent: [ClothingHeadset, BaseCentcommContraband]
-  id: ClothingHeadsetCentCom
-  name: CentComm headset
-  description: A headset used by the upper echelons of Nanotrasen.
-  components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyCentCom
-          - EncryptionKeyStationMaster
+          - EncryptionKeySoviet
     - type: Sprite
-      sprite: Clothing/Ears/Headsets/centcom.rsi
+      sprite: Civ14/Objects/headset.rsi
     - type: Clothing
-      sprite: Clothing/Ears/Headsets/centcom.rsi
-
-- type: entity
-  parent: [ClothingHeadset, BaseCommandContraband]
-  id: ClothingHeadsetCommand
-  name: command headset
-  description: A headset with a commanding channel.
-  components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyStationMaster
-    - type: Sprite
-      sprite: Clothing/Ears/Headsets/command.rsi
-    - type: Clothing
-      sprite: Clothing/Ears/Headsets/command.rsi
+      sprite: Civ14/Objects/headset.rsi
 
 - type: entity
   parent: ClothingHeadset
-  id: ClothingHeadsetEngineering
-  name: engineering headset
-  description: A headset for engineers to chat while the station burns around them.
+  id: ClothingHeadsetUS
+  name: US headset
+  description: A headset used by the United States.
   components:
     - type: ContainerFill
       containers:
         key_slots:
-          - EncryptionKeyEngineering
-          - EncryptionKeyCommon
+          - EncryptionKeyUS
     - type: Sprite
-      sprite: Clothing/Ears/Headsets/engineering.rsi
+      sprite: Civ14/Objects/headset.rsi
     - type: Clothing
-      sprite: Clothing/Ears/Headsets/engineering.rsi
-
-- type: entity
-  parent: [ClothingHeadsetEngineering, BaseCommandContraband]
-  id: ClothingHeadsetCE
-  name: ce headset
-  description: A headset for the chief engineer to ignore all emergency calls on.
-  components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyEngineering
-          - EncryptionKeyCommand
-          - EncryptionKeyCommon
+      sprite: Civ14/Objects/headset.rsi
 
 - type: entity
   parent: ClothingHeadset
-  id: ClothingHeadsetMedical
-  name: medical headset
-  description: A headset for the trained staff of the medbay.
+  id: ClothingHeadsetInsurgents
+  name: Insurgent headset
+  description: A headset used by the Insurgents.
   components:
     - type: ContainerFill
       containers:
         key_slots:
-          - EncryptionKeyMedical
-          - EncryptionKeyCommon
+          - EncryptionKeyInsurgents
     - type: Sprite
-      sprite: Clothing/Ears/Headsets/medical.rsi
+      sprite: Civ14/Objects/headset.rsi
     - type: Clothing
-      sprite: Clothing/Ears/Headsets/medical.rsi
-
-- type: entity
-  parent: [ClothingHeadsetMedical, BaseCommandContraband]
-  id: ClothingHeadsetCMO
-  name: cmo headset
-  description: A headset used by the CMO.
-  components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyMedical
-          - EncryptionKeyCommand
-          - EncryptionKeyCommon
+      sprite: Civ14/Objects/headset.rsi
 
 - type: entity
   parent: ClothingHeadset
-  id: ClothingHeadsetScience
-  name: science headset
-  description: A sciency headset. Like usual.
+  id: ClothingHeadsetBlugoslavia
+  name: Blugoslavia headset
+  description: A headset used by the Republic of Blugoslavia.
   components:
     - type: ContainerFill
       containers:
         key_slots:
-          - EncryptionKeyScience
-          - EncryptionKeyCommon
+          - EncryptionKeyBlugoslavia
     - type: Sprite
-      sprite: Clothing/Ears/Headsets/science.rsi
+      sprite: Civ14/Objects/headset.rsi
     - type: Clothing
-      sprite: Clothing/Ears/Headsets/science.rsi
-
-- type: entity
-  parent: ClothingHeadsetScience
-  id: ClothingHeadsetMedicalScience
-  name: medical research headset
-  description: A headset that is a result of the mating between medical and science.
-  components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyMedicalScience
-          - EncryptionKeyCommon
-    - type: Sprite
-      sprite: Clothing/Ears/Headsets/medicalscience.rsi
-    - type: Clothing
-      sprite: Clothing/Ears/Headsets/medicalscience.rsi
-
-- type: entity
-  parent: ClothingHeadsetScience
-  id: ClothingHeadsetRobotics
-  name: robotics headset
-  description: Made specifically for the roboticists, who cannot decide between departments.
-  components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyRobo
-          - EncryptionKeyCommon
-    - type: Sprite
-      sprite: Clothing/Ears/Headsets/robotics.rsi
-    - type: Clothing
-      sprite: Clothing/Ears/Headsets/robotics.rsi
-
-- type: entity
-  parent: [ClothingHeadsetScience, BaseCommandContraband]
-  id: ClothingHeadsetRD
-  name: rd headset
-  description: Lamarr used to love chewing on this...
-  components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyScience
-          - EncryptionKeyCommand
-          - EncryptionKeyCommon
-
-- type: entity
-  parent: [ClothingHeadset, BaseSecurityLawyerContraband]
-  id: ClothingHeadsetSecurity
-  name: security headset
-  description: This is used by your elite security force.
-  components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeySecurity
-          - EncryptionKeyCommon
-    - type: Sprite
-      sprite: Clothing/Ears/Headsets/security.rsi
-    - type: Clothing
-      sprite: Clothing/Ears/Headsets/security.rsi
-
-- type: entity
-  parent: [ClothingHeadset, BaseSecurityContraband]
-  id: ClothingHeadsetBrigmedic
-  name: brigmedic headset
-  description: A headset that helps to hear the death cries.
-  components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyMedical
-          - EncryptionKeySecurity
-          - EncryptionKeyCommon
-    - type: Sprite
-      sprite: Clothing/Ears/Headsets/brigmedic.rsi
-    - type: Clothing
-      sprite: Clothing/Ears/Headsets/brigmedic.rsi
+      sprite: Civ14/Objects/headset.rsi
 
 - type: entity
   parent: ClothingHeadset
-  id: ClothingHeadsetService
-  name: service headset
-  description: Headset used by the service staff, tasked with keeping the station full, happy and clean.
+  id: ClothingHeadsetUnitedNations
+  name: UN headset
+  description: A headset used by the United Nations.
   components:
     - type: ContainerFill
       containers:
         key_slots:
-          - EncryptionKeyService
-          - EncryptionKeyCommon
+          - EncryptionKeyUnitedNations
     - type: Sprite
-      sprite: Clothing/Ears/Headsets/service.rsi
+      sprite: Civ14/Objects/headset.rsi
     - type: Clothing
-      sprite: Clothing/Ears/Headsets/service.rsi
-
-- type: entity
-  parent: ClothingHeadset
-  id: ClothingHeadsetFreelance
-  name: freelancer headset
-  description: This is used by a roaming group of freelancers.
-  components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyFreelance
-    - type: Sprite
-      sprite: Clothing/Ears/Headsets/freelance.rsi
-    - type: Clothing
-      sprite: Clothing/Ears/Headsets/freelance.rsi
+      sprite: Civ14/Objects/headset.rsi

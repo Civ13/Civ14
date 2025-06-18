@@ -23,7 +23,7 @@
 
 #Basic Helmet (Security Helmet)
 - type: entity
-  parent: [ClothingHeadHelmetBase, BaseSecurityContraband]
+  parent: [ClothingHeadHelmetBase]
   id: ClothingHeadHelmetBasic
   name: helmet
   description: Standard security gear. Protects the head from impacts.
@@ -51,7 +51,7 @@
 
 #SWAT Helmet
 - type: entity
-  parent: [ClothingHeadBase, BaseSecurityContraband]
+  parent: [ClothingHeadBase]
   id: ClothingHeadHelmetSwat
   name: SWAT helmet
   description: An extremely robust helmet, commonly used by paramilitary forces. This one has the Nanotrasen logo emblazoned on the top.
@@ -87,7 +87,7 @@
 
 #Light Riot Helmet
 - type: entity
-  parent: [ClothingHeadBase, BaseSecurityContraband]
+  parent: [ClothingHeadBase]
   id: ClothingHeadHelmetRiot
   name: light riot helmet
   description: It's a helmet specifically designed to protect against close range attacks.
@@ -259,7 +259,7 @@
 
 #Atmos Fire Helmet
 - type: entity
-  parent: [ClothingHeadLightBase, BaseEngineeringContraband]
+  parent: [ClothingHeadLightBase]
   id: ClothingHeadHelmetAtmosFire
   name: atmos fire helmet
   description: An atmos fire helmet, able to keep the user cool in any situation.
@@ -313,7 +313,7 @@
 #ERT HELMETS
 #ERT Leader Helmet
 - type: entity
-  parent: [BaseCentcommContraband, ClothingHeadHelmetBase]
+  parent: [ClothingHeadHelmetBase]
   id: ClothingHeadHelmetERTLeader
   name: ERT leader helmet
   description: An in-atmosphere helmet worn by the leader of a Nanotrasen Emergency Response Team. Has blue highlights.
@@ -325,7 +325,7 @@
 
 #ERT Security Helmet
 - type: entity
-  parent: [BaseCentcommContraband, ClothingHeadHelmetBase]
+  parent: [ClothingHeadHelmetBase]
   id: ClothingHeadHelmetERTSecurity
   name: ERT security helmet
   description: An in-atmosphere helmet worn by security members of the Nanotrasen Emergency Response Team. Has red highlights.
@@ -337,7 +337,7 @@
 
 #ERT Medic Helmet
 - type: entity
-  parent: [BaseCentcommContraband, ClothingHeadHelmetBase]
+  parent: [ClothingHeadHelmetBase]
   id: ClothingHeadHelmetERTMedic
   name: ERT medic helmet
   description: An in-atmosphere helmet worn by medical members of the Nanotrasen Emergency Response Team. Has white highlights.
@@ -349,7 +349,7 @@
 
 #ERT Engineer Helmet
 - type: entity
-  parent: [BaseCentcommContraband, ClothingHeadHelmetBase]
+  parent: [ClothingHeadHelmetBase]
   id: ClothingHeadHelmetERTEngineer
   name: ERT engineer helmet
   description: An in-atmosphere helmet worn by engineering members of the Nanotrasen Emergency Response Team. Has orange highlights.
@@ -361,7 +361,7 @@
 
 #ERT Janitor Helmet
 - type: entity
-  parent: [BaseCentcommContraband, ClothingHeadHelmetBase]
+  parent: [ClothingHeadHelmetBase]
   id: ClothingHeadHelmetERTJanitor
   name: ERT janitor helmet
   description: An in-atmosphere helmet worn by janitorial members of the Nanotrasen Emergency Response Team. Has dark purple highlights.
@@ -402,7 +402,7 @@
 
 #Justice Helmet
 - type: entity
-  parent: [ClothingHeadHelmetBase, BaseSecurityContraband]
+  parent: [ClothingHeadHelmetBase]
   id: ClothingHeadHelmetJustice
   name: justice helm
   description: Advanced security gear. Protects the station from ne'er-do-wells.

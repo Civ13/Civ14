@@ -242,9 +242,9 @@
     - node: end
       entity: civ13_shoes_black_fur_boots
 - type: construction
-  name: ０military boots
-  id: civ13_shoes_０military_boots
-  graph: civ13_shoes_０military_boots
+  name: military boots
+  id: civ13_shoes_military_boots
+  graph: civ13_shoes_military_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
@@ -256,7 +256,7 @@
   agemin: 5
   agemax: 8
 - type: constructionGraph
-  id: civ13_shoes_０military_boots
+  id: civ13_shoes_military_boots
   start: start
   graph:
     - node: start
@@ -267,11 +267,11 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_shoes_０military_boots
+      entity: civ13_shoes_military_boots
 - type: construction
-  name: ０wrapped boots
-  id: civ13_shoes_０wrapped_boots
-  graph: civ13_shoes_０wrapped_boots
+  name: wrapped boots
+  id: civ13_shoes_wrapped_boots
+  graph: civ13_shoes_wrapped_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
@@ -283,7 +283,7 @@
   agemin: 5
   agemax: 8
 - type: constructionGraph
-  id: civ13_shoes_０wrapped_boots
+  id: civ13_shoes_wrapped_boots
   start: start
   graph:
     - node: start
@@ -294,7 +294,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_shoes_０wrapped_boots
+      entity: civ13_shoes_wrapped_boots
 - type: construction
   name: NCR wrapped boots
   id: civ13_shoes_NCR_wrapped_boots
@@ -1188,8 +1188,8 @@
       entity: civ13_shoes_leather_sailor_boots
 - type: construction
   name: military boots
-  id: civ13_shoes_military_boots
-  graph: civ13_shoes_military_boots
+  id: civ13_shoes_military_boots_tan
+  graph: civ13_shoes_military_boots_tan
   startNode: start
   targetNode: end
   category: construction-category-clothing
@@ -1201,7 +1201,7 @@
   agemin: 5
   agemax: 8
 - type: constructionGraph
-  id: civ13_shoes_military_boots
+  id: civ13_shoes_military_boots_tan
   start: start
   graph:
     - node: start
@@ -1212,7 +1212,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_shoes_military_boots
+      entity: civ13_shoes_military_boots_tan
 - type: construction
   name: black riding boots
   id: civ13_shoes_black_riding_boots

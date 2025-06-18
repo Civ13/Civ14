@@ -1,0 +1,243 @@
+- type: job
+  id: BlugoslaviaCaptain
+  name: job-name-civ-blugoslavia-cpt
+  faction: Blugoslavia
+  originalName: Kapetan
+  description: job-description-civ-blugoslavia-cpt
+  playTimeTracker: JobBlugoslaviaCaptain
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsSquadLeader
+      time: 7200 # 2 hours
+  startingGear: BlugoslaviaCaptainGear
+  icon: "JobIconICpt"
+  supervisors: job-supervisors-nobody
+  ranks:
+    RankMajor:
+      - !type:RoleTimeRequirement
+        role: JobBlugoslaviaCaptain
+        time: 18000 # 5 hours
+    RankCaptain: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - Blugoslavia
+        - type: ShowFactionIcons
+          factionIcon: BlugoslaviaFaction
+          jobIcon: JobIconICpt
+          assignSquad: false
+
+- type: startingGear
+  id: BlugoslaviaCaptainGear
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_Blugoslavian_officer_uniform
+    neck: civ13_accessory_N34_B_body_armor
+    belt: civ13_pistol_M1911A1
+    pocket2: civ13_magazine_M1911_magazine_(.45)
+    head: civ13_head_Blugoslavian_beret
+    pocket1: Compass
+    ears: ClothingHeadsetBlugoslavia
+
+# Sergeant
+
+- type: job
+  id: BlugoslaviaSergeant
+  originalName: Narednik
+  name: job-name-civ-blugoslavia-sgt
+  faction: Blugoslavia
+  description: job-description-civ-blugoslavia-sgt
+  playTimeTracker: JobBlugoslaviaSergeant
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 7200 # 2 hours
+  startingGear: BlugoslaviaSergeantGear
+  icon: "JobIconISgt"
+  supervisors: job-supervisors-cpt
+  ranks:
+    RankSergeantMajor:
+      - !type:RoleTimeRequirement
+        role: JobBlugoslaviaSergeant
+        time: 36000 # 10 hours
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: JobBlugoslaviaSergeant
+        time: 10800 # 3 hours
+    RankSergeant: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - Blugoslavia
+        - type: ShowFactionIcons
+          factionIcon: BlugoslaviaFaction
+          jobIcon: JobIconISgt
+          assignSquad: true
+
+- type: startingGear
+  id: BlugoslaviaSergeantGear
+  equipment:
+    shoes: civ13_shoes_Brown_boots
+    jumpsuit: civ13_uniform_tigerstripes_camo_uniform
+    neck: civ13_accessory_N34_B_body_armor
+    head: civ13_head_Blugoslavian_beret
+    belt: civ13_pistol_M1911A1
+    pocket1: civ13_magazine_M1911_magazine_(.45)
+    pocket2: Compass
+    ears: ClothingHeadsetBlugoslavia
+  inhand:
+    - civ13_ar_AK_12
+
+# Assault Rifleman
+
+- type: job
+  id: BlugoslaviaRifleman
+  name: job-name-civ-blugoslavia-rifleman
+  faction: Blugoslavia
+  originalName: Puškar
+  description: job-description-civ-blugoslavia-rifleman
+  playTimeTracker: JobBlugoslaviaRifleman
+  startingGear: BlugoslaviaRiflemanGear
+  randomStartingGears: [BlugoslaviaRiflemanGear]
+  icon: "JobIconICpl"
+  supervisors: job-supervisors-cpt
+  ranks:
+    RankLanceCorporal:
+      - !type:RoleTimeRequirement
+        role: JobBlugoslaviaRifleman
+        time: 36000 # 10 hours
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: JobBlugoslaviaRifleman
+        time: 10800 # 3 hours
+    RankPrivate: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - Blugoslavia
+        - type: ShowFactionIcons
+          factionIcon: BlugoslaviaFaction
+          jobIcon: JobIconRifleman
+          assignSquad: true
+
+- type: startingGear
+  id: BlugoslaviaRiflemanGear
+  equipment:
+    shoes: civ13_shoes_Brown_boots
+    jumpsuit: civ13_uniform_tigerstripes_camo_uniform
+    neck: civ13_accessory_N34_B_body_armor
+    head: civ13_head_ACH_helmet
+    belt: ClothingWebbingSovietCWRifleman
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+    ears: ClothingHeadsetBlugoslavia
+  inhand:
+    - civ13_ar_AK_12
+
+# Machinegunner
+
+- type: job
+  id: BlugoslaviaMachinegunner
+  name: job-name-civ-blugoslavia-machinegunner
+  faction: Blugoslavia
+  originalName: Mitraljezac
+  description: job-description-civ-blugoslavia-machinegunner
+  playTimeTracker: JobBlugoslaviaMachinegunner
+  startingGear: BlugoslaviaMachinegunnerGear
+  randomStartingGears: [BlugoslaviaMachinegunnerGear]
+  icon: "JobIconMg"
+  supervisors: job-supervisors-cpt
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 3600 # 1 hours
+  ranks:
+    RankLanceCorporal:
+      - !type:RoleTimeRequirement
+        role: JobBlugoslaviaMachinegunner
+        time: 36000 # 10 hours
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: JobBlugoslaviaMachinegunner
+        time: 10800 # 3 hours
+    RankPrivate: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - Blugoslavia
+        - type: ShowFactionIcons
+          factionIcon: BlugoslaviaFaction
+          jobIcon: JobIconMg
+          assignSquad: true
+
+- type: startingGear
+  id: BlugoslaviaMachinegunnerGear
+  equipment:
+    shoes: civ13_shoes_Brown_boots
+    jumpsuit: civ13_uniform_tigerstripes_camo_uniform
+    gloves: ClothingHandsGlovesFingerless
+    belt: ClothingWebbingSovietCWMG
+    neck: civ13_accessory_N34_B_body_armor
+    head: civ13_head_ACH_helmet
+    pocket1: CombatKnife
+    pocket2: Gauze
+    ears: ClothingHeadsetBlugoslavia
+  inhand:
+    - civ13_mg_RPD_machine_gun
+
+# Medic
+
+- type: job
+  id: BlugoslaviaMedic
+  name: job-name-civ-blugoslavia-medic
+  faction: Blugoslavia
+  originalName: Sanitarnik
+  description: job-description-civ-blugoslavia-medic
+  playTimeTracker: JobBlugoslaviaMedic
+  startingGear: BlugoslaviaMedicGear
+  icon: "JobIconMedic"
+  supervisors: job-supervisors-cpt
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      # time: 9000 # 2.5 hours
+      time: 3600 # 1 hour temporarily until people build up playtime
+  ranks:
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: JobBlugoslaviaMedic
+        time: 10800 # 3 hours
+    RankCorporal: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - Blugoslavia
+        - type: ShowFactionIcons
+          factionIcon: BlugoslaviaFaction
+          jobIcon: JobIconMedic
+          assignSquad: false
+
+- type: startingGear
+  id: BlugoslaviaMedicGear
+  equipment:
+    shoes: civ13_shoes_Brown_boots
+    jumpsuit: civ13_uniform_tigerstripes_camo_uniform
+    neck: civ13_accessory_N34_BM_body_armor
+    head: civ13_head_ACH_helmet
+    belt: ClothingSatchelMedicalMedsFilled
+    back: ClothingBackpackDuffelFilled
+    pocket1: FlashlightLanternMilitary
+    pocket2: civ13_magazine_AK_74_magazine_(5.45x39mm)
+    ears: ClothingHeadsetBlugoslavia
+  inhand:
+    - civ13_ar_AK_12

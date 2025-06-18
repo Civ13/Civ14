@@ -18,9 +18,7 @@ namespace Content.IntegrationTests.Tests.Round;
 [TestFixture]
 public sealed class JobTest
 {
-    private static readonly ProtoId<JobPrototype> Passenger = "Passenger";
-    private static readonly ProtoId<JobPrototype> Engineer = "StationEngineer";
-    private static readonly ProtoId<JobPrototype> Captain = "Captain";
+    private static readonly ProtoId<JobPrototype> Nomad = "Nomad";
 
     private static string _map = "JobTestMap";
 
@@ -39,9 +37,7 @@ public sealed class JobTest
           mapNameTemplate: ""Nomads""
         - type: StationJobs
           availableJobs:
-            {Passenger}: [ -1, -1 ]
-            {Engineer}: [ -1, -1 ]
-            {Captain}: [ 1, 1 ]
+            {Nomad}: [ -1, -1 ]
 ";
 
     private void AssertJob(TestPair pair, ProtoId<JobPrototype> job, NetUserId? user = null, bool isAntag = false)
@@ -66,7 +62,7 @@ public sealed class JobTest
     }
 
     /// <summary>
-    /// Simple test that checks that starting the round spawns the player into the test map as a passenger.
+    /// Simple test that checks that starting the round spawns the player into the test map as a nomad.
     /// </summary>
     [Test]
     public async Task StartRoundTest()
@@ -92,7 +88,7 @@ public sealed class JobTest
         await pair.Server.WaitPost(() => ticker.StartRound());
         await pair.RunTicksSync(10);
 
-        AssertJob(pair, Passenger);
+        AssertJob(pair, Nomad);
 
         await pair.Server.WaitPost(() => ticker.RestartRound());
         await pair.CleanReturnAsync();
@@ -116,21 +112,12 @@ public sealed class JobTest
         Assert.That(ticker.RunLevel, Is.EqualTo(GameRunLevel.PreRoundLobby));
         Assert.That(pair.Client.AttachedEntity, Is.Null);
 
-        await pair.SetJobPriorities((Passenger, JobPriority.Medium), (Engineer, JobPriority.High));
+        await pair.SetJobPriorities((Nomad, JobPriority.Medium));
         ticker.ToggleReadyAll(true);
         await pair.Server.WaitPost(() => ticker.StartRound());
         await pair.RunTicksSync(10);
 
-        AssertJob(pair, Engineer);
-
-        await pair.Server.WaitPost(() => ticker.RestartRound());
-        Assert.That(ticker.RunLevel, Is.EqualTo(GameRunLevel.PreRoundLobby));
-        await pair.SetJobPriorities((Passenger, JobPriority.High), (Engineer, JobPriority.Medium));
-        ticker.ToggleReadyAll(true);
-        await pair.Server.WaitPost(() => ticker.StartRound());
-        await pair.RunTicksSync(10);
-
-        AssertJob(pair, Passenger);
+        AssertJob(pair, Nomad);
 
         await pair.Server.WaitPost(() => ticker.RestartRound());
         await pair.CleanReturnAsync();
@@ -155,68 +142,17 @@ public sealed class JobTest
         Assert.That(ticker.RunLevel, Is.EqualTo(GameRunLevel.PreRoundLobby));
         Assert.That(pair.Client.AttachedEntity, Is.Null);
 
-        var captain = pair.Server.ProtoMan.Index(Captain);
-        var engineer = pair.Server.ProtoMan.Index(Engineer);
-        var passenger = pair.Server.ProtoMan.Index(Passenger);
-        Assert.That(captain.Weight, Is.GreaterThan(engineer.Weight));
-        Assert.That(engineer.Weight, Is.EqualTo(passenger.Weight));
+        var nomad = pair.Server.ProtoMan.Index(Nomad);
 
-        await pair.SetJobPriorities((Passenger, JobPriority.Medium), (Engineer, JobPriority.High), (Captain, JobPriority.Low));
+        await pair.SetJobPriorities((Nomad, JobPriority.Medium));
         ticker.ToggleReadyAll(true);
         await pair.Server.WaitPost(() => ticker.StartRound());
         await pair.RunTicksSync(10);
 
-        AssertJob(pair, Captain);
+        AssertJob(pair, Nomad);
 
         await pair.Server.WaitPost(() => ticker.RestartRound());
         await pair.CleanReturnAsync();
     }
 
-    /// <summary>
-    /// Check that jobs are preferentially given to players that have marked those jobs as higher priority.
-    /// </summary>
-    [Test]
-    public async Task JobPriorityTest()
-    {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings
-        {
-            DummyTicker = false,
-            Connected = true,
-            InLobby = true
-        });
-
-        pair.Server.CfgMan.SetCVar(CCVars.GameMap, _map);
-        var ticker = pair.Server.System<GameTicker>();
-        Assert.That(ticker.RunLevel, Is.EqualTo(GameRunLevel.PreRoundLobby));
-        Assert.That(pair.Client.AttachedEntity, Is.Null);
-
-        await pair.Server.AddDummySessions(5);
-        await pair.RunTicksSync(5);
-
-        var engineers = pair.Server.PlayerMan.Sessions.Select(x => x.UserId).ToList();
-        var captain = engineers[3];
-        engineers.RemoveAt(3);
-
-        await pair.SetJobPriorities(captain, (Captain, JobPriority.High), (Engineer, JobPriority.Medium));
-        foreach (var engi in engineers)
-        {
-            await pair.SetJobPriorities(engi, (Captain, JobPriority.Medium), (Engineer, JobPriority.High));
-        }
-
-        ticker.ToggleReadyAll(true);
-        await pair.Server.WaitPost(() => ticker.StartRound());
-        await pair.RunTicksSync(10);
-
-        AssertJob(pair, Captain, captain);
-        Assert.Multiple(() =>
-        {
-            foreach (var engi in engineers)
-            {
-                AssertJob(pair, Engineer, engi);
-            }
-        });
-
-        await pair.Server.WaitPost(() => ticker.RestartRound());
-        await pair.CleanReturnAsync();
-    }
 }

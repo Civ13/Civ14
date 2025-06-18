@@ -1,0 +1,237 @@
+- type: entity
+  id: CigPackAtika
+  parent: [BaseStorageItem, BaseBagOpenClose]
+  name: Atika cigarette pack
+  description: A pack of Atika cigarettes.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Cigarettes/atika.rsi
+      layers:
+        - state: closed
+          map: ["closeLayer"]
+        - state: open
+          map: ["openLayer"]
+          visible: false
+        - state: cig1
+          map: ["cig1"]
+          sprite: Civ14/Objects/Cigarettes/visualizer.rsi
+          visible: false
+        - state: cig2
+          map: ["cig2"]
+          sprite: Civ14/Objects/Cigarettes/visualizer.rsi
+          visible: false
+        - state: cig3
+          map: ["cig3"]
+          sprite: Civ14/Objects/Cigarettes/visualizer.rsi
+          visible: false
+        - state: cig4
+          map: ["cig4"]
+          sprite: Civ14/Objects/Cigarettes/visualizer.rsi
+          visible: false
+        - state: cig5
+          map: ["cig5"]
+          sprite: Civ14/Objects/Cigarettes/visualizer.rsi
+          visible: false
+        - state: cig6
+          map: ["cig6"]
+          sprite: Civ14/Objects/Cigarettes/visualizer.rsi
+          visible: false
+    - type: Tag
+      tags:
+        - CigPack
+        - Trash
+    - type: PhysicalComposition
+      materialComposition:
+        Steel: 50
+    - type: SpaceGarbage
+    - type: STWeight
+      self: 0.15
+    - type: Item
+      sprite: Civ14/Objects/Cigarettes/atika.rsi
+      size: Tiny
+      shape: # Yes, this is cursed, but it breaks otherwise, dont question it.
+        - 0,0,0,1
+    - type: Storage
+      grid:
+        - 0,0,4,1
+    - type: StorageFill
+      contents:
+        - id: CigaretteFiltered
+          amount: 10
+    - type: ItemCounter
+      count:
+        tags: [Cigarette]
+      composite: true
+      layerStates:
+        - cig1
+        - cig2
+        - cig3
+        - cig4
+        - cig5
+        - cig6
+    - type: Appearance
+
+- type: entity
+  id: CigPackLuckyStrike
+  parent: CigPackAtika
+  name: Lucky Strike cigarette pack
+  description: A pack of Lucky Strikes.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Cigarettes/luckystrike.rsi
+    - type: Item
+      sprite: Civ14/Objects/Cigarettes/luckystrike.rsi
+
+- type: entity
+  id: CigPackMarlboro
+  parent: CigPackAtika
+  name: Marlboro cigarette pack
+  description: A soft pack of Marlboros.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Cigarettes/marlboro.rsi
+      layers:
+        - state: closed
+          map: ["closeLayer"]
+        - state: open
+          map: ["openLayer"]
+          visible: false
+        - state: cig1
+          map: ["cig1"]
+          sprite: Civ14/Objects/Cigarettes/visualizer_soft.rsi
+          visible: false
+        - state: cig2
+          map: ["cig2"]
+          sprite: Civ14/Objects/Cigarettes/visualizer_soft.rsi
+          visible: false
+        - state: cig3
+          map: ["cig3"]
+          sprite: Civ14/Objects/Cigarettes/visualizer_soft.rsi
+          visible: false
+        - state: cig4
+          map: ["cig4"]
+          sprite: Civ14/Objects/Cigarettes/visualizer_soft.rsi
+          visible: false
+        - state: cig5
+          map: ["cig5"]
+          sprite: Civ14/Objects/Cigarettes/visualizer_soft.rsi
+          visible: false
+        - state: cig6
+          map: ["cig6"]
+          sprite: Civ14/Objects/Cigarettes/visualizer_soft.rsi
+          visible: false
+    - type: Item
+      sprite: Civ14/Objects/Cigarettes/marlboro.rsi
+
+- type: entity
+  id: CigPackPachka
+  parent: CigPackAtika
+  name: Pachka cigarette pack
+  description: A pack of unfiltered Pachka cigarettes.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Cigarettes/pachka.rsi
+      layers:
+        - state: closed
+          map: ["closeLayer"]
+        - state: open
+          map: ["openLayer"]
+          visible: false
+        - state: cig1
+          map: ["cig1"]
+          sprite: Civ14/Objects/Cigarettes/visualizer_unfiltered.rsi
+          visible: false
+        - state: cig2
+          map: ["cig2"]
+          sprite: Civ14/Objects/Cigarettes/visualizer_unfiltered.rsi
+          visible: false
+        - state: cig3
+          map: ["cig3"]
+          sprite: Civ14/Objects/Cigarettes/visualizer_unfiltered.rsi
+          visible: false
+        - state: cig4
+          map: ["cig4"]
+          sprite: Civ14/Objects/Cigarettes/visualizer_unfiltered.rsi
+          visible: false
+        - state: cig5
+          map: ["cig5"]
+          sprite: Civ14/Objects/Cigarettes/visualizer_unfiltered.rsi
+          visible: false
+        - state: cig6
+          map: ["cig6"]
+          sprite: Civ14/Objects/Cigarettes/visualizer_unfiltered.rsi
+          visible: false
+    - type: Item
+      sprite: Civ14/Objects/Cigarettes/pachka.rsi
+    - type: StorageFill
+      contents:
+        - id: CigaretteUnfiltered
+          amount: 10
+
+- type: entity
+  id: CigaretteUnfiltered
+  parent: BaseCigar
+  name: cigarette
+  description: An unfiltered cigarette.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Cigarettes/cigarette_unfiltered.rsi
+      state: unlit-icon
+    - type: Tag
+      tags:
+        - Cigarette
+        - Trash
+    - type: SpaceGarbage
+    - type: Clothing
+      sprite: Civ14/Objects/Cigarettes/cigarette_unfiltered.rsi
+      slots: [mask]
+      equippedPrefix: unlit
+    - type: STWeight
+      self: 0.05
+    - type: Item
+      size: Tiny
+      sprite: Civ14/Objects/Cigarettes/cigarette_unfiltered.rsi
+      heldPrefix: unlit
+    - type: SolutionContainerManager
+      solutions:
+        smokable:
+          maxVol: 40
+          reagents:
+            - ReagentId: Nicotine
+              Quantity: 20
+            - ReagentId: Epinephrine
+              Quantity: 10
+
+- type: entity
+  id: CigaretteFiltered
+  parent: BaseCigar
+  name: cigarette
+  description: A filtered cigarette.
+  components:
+    - type: Sprite
+      sprite: Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi
+      state: unlit-icon
+    - type: Tag
+      tags:
+        - Cigarette
+        - Trash
+    - type: SpaceGarbage
+    - type: Clothing
+      sprite: Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi
+      slots: [mask]
+      equippedPrefix: unlit
+    - type: STWeight
+      self: 0.05
+    - type: Item
+      size: Tiny
+      sprite: Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi
+      heldPrefix: unlit
+    - type: SolutionContainerManager
+      solutions:
+        smokable:
+          maxVol: 40
+          reagents:
+            - ReagentId: Nicotine
+              Quantity: 20
+            - ReagentId: Epinephrine
+              Quantity: 8

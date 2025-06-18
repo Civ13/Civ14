@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "license": "AGPLv3",
+  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "Masa Harina"
+    },
+    {
+      "name": "Quick Lime"
+    },
+    {
+      "name": "Slaked Lime"
+    },
+    {
+      "name": "Nixtamalisation Pot w_1 corn"
+    },
+    {
+      "name": "Nixtamalisation Pot"
+    },
+    {
+      "name": "Nixtamalisation Pot w_2 corn"
+    },
+    {
+      "name": "Tortilla"
+    },
+    {
+      "name": "Masa Dough"
+    },
+    {
+      "name": "Nixtamalised Corn"
+    },
+    {
+      "name": "Nixtamalisation Pot w_ lime"
+    },
+    {
+      "name": "Nixtamalisation Pot w_ water"
+    }
+  ]
+}

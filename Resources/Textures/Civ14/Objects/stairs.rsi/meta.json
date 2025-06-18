@@ -98,13 +98,6 @@
       "name": "hole_bottom"
     },
     {
-      "name": "siege_ladder"
-    },
-    {
-      "name": "siege_ladder_dep",
-      "directions": 4
-    },
-    {
       "name": "pine_closed"
     },
     {
@@ -127,7 +120,16 @@
       "directions": 4
     },
     {
-      "name": "metal_ladder_dep",
+      "name": "ladderdown_wood"
+    },
+    {
+      "name": "ladderup_wood"
+    },
+    {
+      "name": "siege_ladder"
+    },
+    {
+      "name": "siege_ladder_dep",
       "directions": 4
     },
     {
@@ -135,10 +137,22 @@
       "directions": 4
     },
     {
-      "name": "ladderdown_wood"
+      "name": "metal_ladder_dep",
+      "directions": 4
     },
     {
-      "name": "ladderup_wood"
+      "name": "grapplehook"
+    },
+    {
+      "name": "grapplehook_dep"
+    },
+    {
+      "name": "slopeup",
+      "directions": 4
+    },
+    {
+      "name": "slopedown",
+      "directions": 4
     }
   ]
 }

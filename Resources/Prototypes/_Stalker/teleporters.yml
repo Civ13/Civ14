@@ -1,0 +1,54 @@
+- type: entity
+  id: STBaseTeleport
+  abstract: true
+  suffix: Teleport
+  components:
+    - type: Transform
+      anchored: True
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        portalFixture:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.5,-0.5,0.5,0.5"
+          mask:
+            - FullTileMask
+          layer:
+            - TableLayer
+          hard: false
+    - type: InteractionOutline
+    - type: Clickable
+
+- type: entity
+  parent: STBaseTeleport
+  id: LocalTeleportBase
+  abstract: true
+  components:
+    - type: Sprite # I think you'll need to add an invisibility here
+      layers:
+        - state: hole_bottom
+      sprite: /Textures/Civ14/Objects/stairs.rsi
+    - type: LocalTeleport
+
+- type: entity
+  parent: STBaseTeleport
+  id: LocalTeleportBaseUncollide
+  abstract: true
+  components:
+    - type: Sprite # I think you'll need to add an invisibility here
+      layers:
+        - state: hole_bottom
+      sprite: /Textures/Civ14/Objects/stairs.rsi
+    - type: LocalTeleport
+# Portal system template
+
+# Example:
+# - type: entity
+#   parent: LocalTeleportBase
+#   id: LocalTeleportMilBase1
+#   tag: Stalker 1
+#   name: Военная база 1
+#   components:
+#     - type: LocalTeleport
+#       portalName: MilBase1

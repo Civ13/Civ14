@@ -16,6 +16,10 @@ using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Utility;
 using Content.Shared.NPC.Systems;
+using Robust.Shared.Player;
+using Content.Server.Overlays; // Added for FactionIconsSystem
+using Content.Shared.Overlays;
+using Content.Shared.Civ14.CivTDMFactions; // Added for CivTDMFactionsComponent
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -32,7 +36,8 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
     [Dependency] private readonly StationSpawningSystem _stationSpawning = default!;
     [Dependency] private readonly NpcFactionSystem _factionSystem = default!; // Added dependency
     [Dependency] private readonly TransformSystem _transform = default!;
-
+    [Dependency] private readonly IEntityManager _entities = default!;
+    [Dependency] private readonly FactionIconsSystem _factionIconsSystem = default!;
     public override void Initialize()
     {
         base.Initialize();
@@ -77,6 +82,10 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
             {
                 if (TryComp<NpcFactionMemberComponent>(ev.Mob, out var npc))
                 {
+                    if (npc.Factions.First() == "UnitedNations")
+                    {
+                        return;
+                    }
                     if (npc.Factions.Count > 0 && npc.Factions.First() != component.Team2)
                     {
                         component.Team1 = npc.Factions.First();
@@ -87,6 +96,10 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
             {
                 if (TryComp<NpcFactionMemberComponent>(ev.Mob, out var npc))
                 {
+                    if (npc.Factions.First() == "UnitedNations")
+                    {
+                        return;
+                    }
                     if (npc.Factions.Count > 0 && npc.Factions.First() != component.Team1)
                     {
                         component.Team2 = npc.Factions.First();
@@ -104,19 +117,100 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
             if (!GameTicker.IsGameRuleActive(uid, rule))
                 continue;
 
+            bool killedPlayerWasInSquad = false;
+
             // Check if the killed entity is part of either team using FactionSystem
-            // This avoids potential direct access permission issues with NpcFactionMemberComponent.Factions
-            if (HasComp<NpcFactionMemberComponent>(ev.Entity)) // Ensure the component exists before checking factions
+            if (HasComp<NpcFactionMemberComponent>(ev.Entity))
             {
+                string killedTeam = "";
+                ShowFactionIconsComponent? factIcons = null; // Resolve component once
+                TryComp<ShowFactionIconsComponent>(ev.Entity, out factIcons);
+
                 if (_factionSystem.IsMember(ev.Entity, dm.Team1))
                 {
                     dm.Team1Deaths += 1;
                     dm.Team2Kills += 1;
+                    killedTeam = dm.Team1;
+                    if (factIcons != null && factIcons.AssignedSquadNameKey != null)
+                    {
+                        killedPlayerWasInSquad = true;
+                    }
                 }
                 else if (_factionSystem.IsMember(ev.Entity, dm.Team2))
                 {
                     dm.Team2Deaths += 1;
                     dm.Team1Kills += 1;
+                    killedTeam = dm.Team2;
+                    if (factIcons != null && factIcons.AssignedSquadNameKey != null)
+                    {
+                        killedPlayerWasInSquad = true;
+                    }
+                }
+
+                if (killedPlayerWasInSquad)
+                {
+                    CivTDMFactionsComponent? civTDMComp = null;
+                    // Attempt to find the CivTDMFactionsComponent.
+                    // This query assumes it's a somewhat global component (e.g., on a map or game rule entity).
+                    var civQuery = _entities.EntityQueryEnumerator<CivTDMFactionsComponent>();
+                    if (civQuery.MoveNext(out _, out civTDMComp)) // Use the first one found
+                    {
+                        _factionIconsSystem.RecalculateAllCivFactionSquadCounts(civTDMComp);
+                        Log.Debug($"Player {ToPrettyString(ev.Entity)} died while in squad {factIcons?.AssignedSquadNameKey}. Recalculating CivTDMFaction squad counts.");
+                    }
+                    else
+                    {
+                        Log.Warning($"Player {ToPrettyString(ev.Entity)} died in a squad, but CivTDMFactionsComponent was not found to update counts.");
+                    }
+                }
+
+                // Track individual player stats
+                if (ev.Primary is KillPlayerSource playerSource)
+                {
+
+                    var playerIdStr = playerSource.PlayerId.ToString();
+
+                    if (!dm.KDRatio.ContainsKey(playerIdStr))
+                    {
+                        // Find player name from sessions
+                        string playerName = "Unknown";
+                        foreach (var session in _player.Sessions)
+                        {
+                            if (session.UserId == playerSource.PlayerId)
+                            {
+                                playerName = session.Name;
+                                break;
+                            }
+                        }
+
+                        string playerTeam = killedTeam == dm.Team1 ? dm.Team2 : dm.Team1;
+
+                        dm.KDRatio[playerIdStr] = new PlayerKDStats
+                        {
+                            Name = playerName,
+                            Team = playerTeam
+                        };
+                    }
+
+                    dm.KDRatio[playerIdStr].Kills++;
+                }
+
+                // Track deaths for the killed player
+                if (_entities.TryGetComponent(ev.Entity, out ActorComponent? actorComponent))
+                {
+
+                    var playerIdStrKilled = actorComponent.PlayerSession.UserId.ToString();
+
+                    if (!dm.KDRatio.ContainsKey(playerIdStrKilled))
+                    {
+                        dm.KDRatio[playerIdStrKilled] = new PlayerKDStats
+                        {
+                            Name = actorComponent.PlayerSession.Name,
+                            Team = killedTeam
+                        };
+                    }
+
+                    dm.KDRatio[playerIdStrKilled].Deaths++;
                 }
             }
         }
@@ -145,5 +239,32 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
         args.AddLine($"[color=cyan]{component.Team1}[/color]: {component.Team1Kills} Kills, {component.Team1Deaths} Deaths");
         args.AddLine("");
         args.AddLine($"[color=cyan]{component.Team2}[/color]: {component.Team2Kills} Kills, {component.Team2Deaths} Deaths");
+
+        // Display K/D ratio per player, sorted by K/D ratio
+        args.AddLine("");
+        args.AddLine("[color=yellow]Player Statistics:[/color]");
+
+        // Sort players by K/D ratio (highest first)
+        var sortedPlayers = component.KDRatio
+            .OrderByDescending(p => p.Value.KDRatio)
+            .ThenByDescending(p => p.Value.Kills)
+            .ToList();
+
+        // Display team 1 players
+        args.AddLine($"[color=cyan]{component.Team1}[/color] Players:");
+        foreach (var player in sortedPlayers.Where(p => p.Value.Team == component.Team1))
+        {
+            var kdRatio = player.Value.Deaths == 0 ? player.Value.Kills.ToString() : (player.Value.Kills / (float)player.Value.Deaths).ToString("F2");
+            args.AddLine($"  [color=white]{player.Value.Name}[/color]: {player.Value.Kills} Kills, {player.Value.Deaths} Deaths, K/D: {kdRatio}");
+        }
+
+        // Display team 2 players
+        args.AddLine("");
+        args.AddLine($"[color=cyan]{component.Team2}[/color] Players:");
+        foreach (var player in sortedPlayers.Where(p => p.Value.Team == component.Team2))
+        {
+            var kdRatio = player.Value.Deaths == 0 ? player.Value.Kills.ToString() : (player.Value.Kills / (float)player.Value.Deaths).ToString("F2");
+            args.AddLine($"  [color=white]{player.Value.Name}[/color]: {player.Value.Kills} Kills, {player.Value.Deaths} Deaths, K/D: {kdRatio}");
+        }
     }
 }

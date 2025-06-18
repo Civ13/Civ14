@@ -11,6 +11,7 @@
       name: "Objective Area"
       captureDuration: 300 # 5 min
       captureRadius: 6
+      contestedResetTime: 10 # 10 seconds before timer resets when contested
 
 - type: entity
   name: capturable area - KOTH Camp
@@ -24,9 +25,27 @@
       name: "the Castle"
       captureDuration: 240 # 4 min
       captureRadius: 6
+      contestedResetTime: 10 # 10 seconds before timer resets when contested
       capturableFactions:
         - England
         - France
+
+- type: entity
+  name: capturable area - KOTH Camp WW2
+  id: MarkerKOTHCampWW2
+  parent: MarkerCapturableArea
+  components:
+    - type: Sprite
+      sprite: Civ14/Markers/areas.rsi
+      state: capture_green
+    - type: CaptureArea
+      name: "the Castle"
+      captureDuration: 240 # 4 min
+      captureRadius: 6
+      contestedResetTime: 10 # 10 seconds before timer resets when contested
+      capturableFactions:
+        - Soviet
+        - Germany
 
 - type: entity
   name: capturable area - KOTH Opushka
@@ -37,9 +56,27 @@
       sprite: Civ14/Markers/areas.rsi
       state: capture_blue
     - type: CaptureArea
-      name: "The Main House"
-      captureDuration: 240 # 4 min
-      captureRadius: 3
+      name: "the Main House"
+      captureDuration: 240 # 3 min
+      captureRadius: 5
+      contestedResetTime: 10 # 10 seconds before timer resets when contested
       capturableFactions:
         - Soviet
-        - Germany       
+        - Germany
+
+- type: entity
+  name: capturable area - Hotel
+  id: MarkerCaptureHotel
+  parent: MarkerCapturableArea
+  components:
+    - type: Sprite
+      sprite: Civ14/Markers/areas.rsi
+      state: capture_red
+    - type: CaptureArea
+      name: "the command post"
+      captureDuration: 180 # 3 min
+      captureRadius: 4
+      contestedResetTime: 10 # 10 seconds before timer resets when contested
+      capturableFactions:
+        - US
+        - SovietCW # they dont actually capture it but need to remove control

@@ -33,52 +33,6 @@
           state: icon
 
 - type: entity
-  id: SpawnPointGhostRemilia
-  name: ghost role spawn point
-  suffix: Remilia
-  parent: MarkerBase
-  components:
-    - type: GhostRole
-      name: ghost-role-information-remilia-name
-      description: ghost-role-information-remilia-description
-      rules: ghost-role-information-familiar-rules
-      mindRoles:
-        - MindRoleGhostRoleFamiliar
-      raffle:
-        settings: short
-    - type: GhostRoleMobSpawner
-      prototype: MobBatRemilia
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-      layers:
-        - state: green
-        - sprite: Mobs/Animals/bat.rsi
-          state: bat
-
-- type: entity
-  id: SpawnPointGhostCerberus
-  name: ghost role spawn point
-  suffix: cerberus
-  parent: MarkerBase
-  components:
-    - type: GhostRole
-      name: ghost-role-information-cerberus-name
-      description: ghost-role-information-cerberus-description
-      rules: ghost-role-information-familiar-rules
-      mindRoles:
-        - MindRoleGhostRoleFamiliar
-      raffle:
-        settings: default
-    - type: GhostRoleMobSpawner
-      prototype: MobCorgiCerberus
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-      layers:
-        - state: green
-        - sprite: Mobs/Pets/corgi.rsi
-          state: narsian
-
-- type: entity
   categories: [HideSpawnMenu, Spawner]
   parent: BaseAntagSpawner
   id: SpawnPointGhostDragon

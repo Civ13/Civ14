@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from civ13 and edited by dallaszzz on github",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "mortar_deploy",
+      "directions": 4
+    },
+    {
+      "name": "mortar_fire",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.2
+        ],
+        [
+          0.1,
+          0.2
+        ],
+        [
+          0.1,
+          0.2
+        ],
+        [
+          0.1,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "mortar_carry"
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    }
+  ]
+}

@@ -100,6 +100,11 @@ guide-entry-yourfirstcharacter = Your First Character
 guide-entry-controls = Controls
 guide-entry-radio = Radio and Speech
 
+
+guide-entry-tdm = Team Deathmatch Gamemode
+guide-entry-valley = Valley Map
+guide-entry-mapping = Guide to Mapping
+
 guide-entry-references = Tables & References
 guide-entry-chemicals = Chemicals
 guide-entry-drinks = Drinks
@@ -202,4 +207,3 @@ guide-entry-rules-ban-types = Ban Types
 guide-entry-rules-ban-durations = Ban Durations
 
 guide-entry-writing = Writing
-guide-entry-glossary = Glossary

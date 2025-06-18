@@ -1,0 +1,26 @@
+<Document>
+  # Valley
+[bold]Valley[/bold] is a fictional modern-era map, designed for tactical combat and deep role-playing (RP). Set in the Blugoslavia-Redmenia universe of Civ13, focusing on a conflict-ravaged border region, it pits organized military forces against local insurgents, with a neutral UN presence adding complexity. The map emphasizes strategy, terrain mastery, and faction-specific objectives, making every skirmish a test of wits and coordination.
+
+
+## Victory Conditions
+
+### Blugoslavia
+
+Blugoslavia earns points through logistical and territorial control to secure the Valley. Victory is achieved by reaching [bold][color=cyan]1000 points[/color][/bold] or having the most points when the match timer (50 minutes) expires.
+
+-   [bold]Supply Box Deliveries[/bold]: Transport supply boxes from the FOB to any of the four checkpoints. Each delivery earns [bold][color=cyan]50 points[/color][/bold]. Boxes must be secured at a checkpoint uncontested for 30 seconds.
+-   [bold]Holding Checkpoints[/bold]: Control a checkpoint (no insurgents in its radius) to earn [bold][color=cyan]5 points[/color] per checkpoint per minute[/bold]. Holding all four checkpoints simultaneously grants a [bold][color=cyan]100-point bonus[/color][/bold] every 5 minutes.
+
+### Greenistani Insurgents
+
+Insurgents earn points by eliminating Blugoslavian forces, disrupting their operations. Victory is achieved by reaching [bold][color=cyan]1000 points[/color][/bold] or having the most points when the match timer (50 minutes) expires.
+
+-   [bold]Kills[/bold]: Earn [bold][color=cyan]30 points[/color][/bold] per Blugoslavian soldier killed.
+-   [bold]Disrupting Operations[/bold]: Additional points may be earned by stealing supply boxes and bringing them to the base: [bold][color=cyan]75 points[/color] per box[/bold]. Destroying boxes earns no points but denies the enemy theirs.
+
+### United Nations
+
+The UN cannot "win" the scenario per se, but their own independent objectives are ensuring 80% civilian NPC survival rate and maintain control of the hospital zone without violating neutrality.
+
+</Document>

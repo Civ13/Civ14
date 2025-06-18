@@ -95,9 +95,6 @@
       sound:
         path: /Audio/Ambience/Objects/vending_machine_hum.ogg
 
-    - type: StealTarget
-      stealGroup: Teg
-
 - type: entity
   id: TegCirculator
   name: circulator
@@ -170,8 +167,6 @@
     - type: AtmosUnsafeUnanchor
     - type: PipeRestrictOverlap
     - type: TegCirculator
-    - type: StealTarget
-      stealGroup: Teg
 
 - # Spawned by the client-side circulator examine code to indicate the inlet/outlet direction.
   type: entity

@@ -1,0 +1,151 @@
+- type: entity
+  id: DresserCiv
+  parent: Dresser
+  name: dresser
+  description: Wooden dresser, can store things inside itself, ideal for underwear, and someone's kidneys?...
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/closet.rsi
+      state: dresser
+
+- type: entity
+  id: DresserCivLeft
+  parent: Dresser
+  name: dresser
+  description: Wooden dresser, can store things inside itself, ideal for underwear, and someone's kidneys?...
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/closet.rsi
+      state: dresser2_left
+
+- type: entity
+  id: DresserCivRight
+  parent: Dresser
+  name: dresser
+  description: Wooden dresser, can store things inside itself, ideal for underwear, and someone's kidneys?...
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/closet.rsi
+      state: dresser2_right
+
+# lockers
+- type: entity
+  id: CabinetCiv
+  parent: BaseStructureDynamic
+  name: wooden cabinet
+  description: To store all your clothes.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/closet.rsi
+      noRot: true
+      layers:
+        - state: cabinet_open
+          map: ["enum.StorageVisualLayers.Base"]
+        - state: cabinet_closed
+          map: ["enum.StorageVisualLayers.Door"]
+    - type: Animateable
+    - type: ResistLocker
+    - type: Transform
+      noRot: true
+      anchored: true
+    - type: MovedByPressure
+    - type: ItemSlots
+    - type: DamageOnHighSpeedImpact
+      damage:
+        types:
+          Blunt: 5
+      soundHit:
+        collection: WeakHit
+    - type: InteractionOutline
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.25,-0.48,0.25,0.48"
+          density: 75
+          mask:
+            - MachineMask
+          layer:
+            - MachineLayer
+    - type: EntityStorage
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+        paper_label: !type:ContainerSlot
+    - type: PlaceableSurface
+      placeCentered: true
+      isPlaceable: false
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 180
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+        - trigger: !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: WoodDestroy
+                params:
+                  volume: -6
+    - type: Appearance
+    - type: EntityStorageVisuals
+      stateBaseClosed: cabinet_closed
+      stateDoorOpen: cabinet_open
+      stateDoorClosed: cabinet_closed
+
+- type: entity
+  id: CabinetCivCeiling
+  parent: CabinetCiv
+  name: wooden cabinet
+  description: To store all your cutlery.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/closet.rsi
+      noRot: true
+      layers:
+        - state: cabinet_open_ceiling
+          map: ["enum.StorageVisualLayers.Base"]
+        - state: cabinet_closed_ceiling
+          map: ["enum.StorageVisualLayers.Door"]
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.25,0,0.25,0.48"
+          density: 75
+          mask:
+            - MachineMask
+          layer:
+            - MachineLayer
+    - type: EntityStorageVisuals
+      stateBaseClosed: cabinet_closed_ceiling
+      stateDoorOpen: cabinet_open_ceiling
+      stateDoorClosed: cabinet_closed_ceiling
+
+- type: entity
+  id: CabinetCivGlass
+  parent: CabinetCiv
+  name: glass door cabinet
+  description: A fancy cabinet with glass doors.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/closet.rsi
+      noRot: true
+      layers:
+        - state: cabinetglass_open
+          map: ["enum.StorageVisualLayers.Base"]
+        - state: cabinetglass_closed
+          map: ["enum.StorageVisualLayers.Door"]
+    - type: EntityStorageVisuals
+      stateBaseClosed: cabinetglass_closed
+      stateDoorOpen: cabinetglass_open
+      stateDoorClosed: cabinetglass_closed

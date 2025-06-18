@@ -13,6 +13,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Server.Chat.Systems;
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -25,7 +26,8 @@ public sealed class RespawnRuleSystem : GameRuleSystem<RespawnDeadRuleComponent>
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly StationSystem _station = default!;
-
+    [Dependency] private readonly ChatSystem _chat = default!;
+    private bool _announced = false;
     /// <inheritdoc/>
     public override void Initialize()
     {
@@ -33,6 +35,10 @@ public sealed class RespawnRuleSystem : GameRuleSystem<RespawnDeadRuleComponent>
 
         SubscribeLocalEvent<SuicideEvent>(OnSuicide);
         SubscribeLocalEvent<MobStateChangedEvent>(OnMobStateChanged);
+        foreach (var tracker in EntityQuery<RespawnTrackerComponent>())
+        {
+            tracker.GlobalTimer = _timing.CurTime + tracker.RespawnDelay;
+        }
     }
 
     public override void Update(float frameTime)
@@ -44,20 +50,43 @@ public sealed class RespawnRuleSystem : GameRuleSystem<RespawnDeadRuleComponent>
 
         foreach (var tracker in EntityQuery<RespawnTrackerComponent>())
         {
-            foreach (var (player, time) in tracker.RespawnQueue)
+            if (!tracker.Fixed)
             {
-                if (_timing.CurTime < time)
-                    continue;
+                foreach (var (player, time) in tracker.RespawnQueue)
+                {
+                    if (_timing.CurTime < time)
+                        continue;
 
-                if (!_playerManager.TryGetSessionById(player, out var session))
-                    continue;
-                //This autorespawner is disabled since people can manually return to the lobby.
-                //We just check on the spawn event if the player is not in the queue.
-                //if (session.GetMind() is { } mind && TryComp<MindComponent>(mind, out var mindComp) && mindComp.OwnedEntity.HasValue)
-                //    QueueDel(mindComp.OwnedEntity.Value);
-                //GameTicker.MakeJoinGame(session, station, silent: true);
-                tracker.RespawnQueue.Remove(player);
+                    if (!_playerManager.TryGetSessionById(player, out var session))
+                        continue;
+                    //This autorespawner is disabled since people can manually return to the lobby.
+                    //We just check on the spawn event if the player is not in the queue.
+                    //if (session.GetMind() is { } mind && TryComp<MindComponent>(mind, out var mindComp) && mindComp.OwnedEntity.HasValue)
+                    //    QueueDel(mindComp.OwnedEntity.Value);
+                    //GameTicker.MakeJoinGame(session, station, silent: true);
+                    tracker.RespawnQueue.Remove(player);
+                }
             }
+            else
+            {
+                if (_timing.CurTime > tracker.GlobalTimer && _announced == false)
+                {
+                    _announced = true;
+                    var announcementMessage = "Reinforcements are arriving!";
+                    RespawnFixed(tracker);
+                    _chat.DispatchGlobalAnnouncement(announcementMessage, "Round", false, null, Color.Yellow);
+                    tracker.GlobalTimer = _timing.CurTime + tracker.RespawnDelay;
+                    _announced = false;
+                }
+            }
+        }
+    }
+
+    private void RespawnFixed(RespawnTrackerComponent tracker)
+    {
+        foreach (var (player, time) in tracker.RespawnQueue)
+        {
+            tracker.RespawnQueue.Remove(player);
         }
     }
 

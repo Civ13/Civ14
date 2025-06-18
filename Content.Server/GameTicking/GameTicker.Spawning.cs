@@ -154,18 +154,33 @@ namespace Content.Server.GameTicking
 
             foreach (var tracker in EntityQuery<RespawnTrackerComponent>())
             {
+
                 foreach (var (player1, time) in tracker.RespawnQueue)
                 {
                     if (player1 == player.UserId)
                     {
-                        if (_gameTiming.CurTime < time)
+                        if (!tracker.Fixed)
                         {
-                            _chatManager.DispatchServerMessage(player,
-                                Loc.GetString("rule-respawn-blocked", ("seconds", time.TotalSeconds - _gameTiming.CurTime.TotalSeconds)));
-                            return;
+                            if (_gameTiming.CurTime < time)
+                            {
+                                _chatManager.DispatchServerMessage(player,
+                                    Loc.GetString("rule-respawn-blocked", ("seconds", Math.Ceiling(time.TotalSeconds - _gameTiming.CurTime.TotalSeconds))));
+                                return;
+                            }
                         }
+                        else
+                        {
+                            if (_gameTiming.CurTime < tracker.GlobalTimer)
+                            {
+                                _chatManager.DispatchServerMessage(player,
+                                    Loc.GetString("rule-respawn-blocked", ("seconds", Math.Ceiling(tracker.GlobalTimer.TotalSeconds - _gameTiming.CurTime.TotalSeconds))));
+                                return;
+                            }
+                        }
+
                     }
                 }
+
             }
             //if TDM, check if the teams are balanced
             var factionCount = GetPlayerFactionCounts();
@@ -184,7 +199,7 @@ namespace Content.Server.GameTicking
                             currentCount = fact.Value;
 
                         }
-                        else if (fact.Key != selectedFaction && fact.Value < minCount)
+                        else if (fact.Key != selectedFaction && fact.Value < minCount && fact.Key != "UnitedNations")
                         {
                             minCount = fact.Value;
                         }

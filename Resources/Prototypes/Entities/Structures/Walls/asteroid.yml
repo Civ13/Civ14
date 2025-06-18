@@ -738,6 +738,56 @@
         - map: ["enum.EdgeLayer.West"]
           state: rocky_west
 
+- type: entity
+  id: WallRockSand2
+  parent: WallRock
+  name: rock
+  suffix: planetmap
+  description: Its made of large, uneven rocks stacked together.
+  components:
+    - type: Icon
+      sprite: Structures/Walls/rock.rsi
+      state: rock_sand2
+    - type: MiningScannerViewable
+    - type: SmoothEdge
+    - type: Sprite
+      sprite: Structures/Walls/rock.rsi
+      layers:
+        - state: rock_sand2
+        - map: ["enum.EdgeLayer.South"]
+          state: rock_sand2_south
+        - map: ["enum.EdgeLayer.East"]
+          state: rock_sand2_east
+        - map: ["enum.EdgeLayer.North"]
+          state: rock_sand2_north
+        - map: ["enum.EdgeLayer.West"]
+          state: rock_sand2_west
+
+- type: entity
+  id: WallRockSand3
+  parent: WallRock
+  name: rock
+  suffix: planetmap
+  description: Its made of large, uneven rocks stacked together.
+  components:
+    - type: Icon
+      sprite: Structures/Walls/rock.rsi
+      state: rock_sand3
+    - type: MiningScannerViewable
+    - type: SmoothEdge
+    - type: Sprite
+      sprite: Structures/Walls/rock.rsi
+      layers:
+        - state: rock_sand3
+        - map: ["enum.EdgeLayer.South"]
+          state: rock_sand3_south
+        - map: ["enum.EdgeLayer.East"]
+          state: rock_sand3_east
+        - map: ["enum.EdgeLayer.North"]
+          state: rock_sand3_north
+        - map: ["enum.EdgeLayer.West"]
+          state: rock_sand3_west
+
 # Ore veins
 - type: entity
   id: WallRockCoal

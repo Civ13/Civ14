@@ -72,6 +72,12 @@ public sealed partial class ConstructionPrototype : IPrototype
     public int AgeMin { get; set; } = 8;
 
     /// <summary>
+    /// If this crafting recipe is available in TDM.
+    /// </summary>
+    [DataField("tdm")]
+    public bool TDM { get; set; } = false;
+
+    /// <summary>
     /// If not null, then this is used to check if the entity trying to construct this is whitelisted.
     /// If they're not whitelisted, hide the item.
     /// </summary>

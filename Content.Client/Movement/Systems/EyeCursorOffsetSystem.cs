@@ -83,6 +83,10 @@ public sealed partial class EyeCursorOffsetSystem : EntitySystem
                 {
                     vectorOffset = vectorOffset.Normalized() * component.OffsetSpeed;
                 }
+                // Check to make sure vectorOffset is not NaN
+                if (float.IsNaN(vectorOffset.X) || float.IsNaN(vectorOffset.Y))
+                    return null;
+
                 component.CurrentPosition += vectorOffset;
             }
         }

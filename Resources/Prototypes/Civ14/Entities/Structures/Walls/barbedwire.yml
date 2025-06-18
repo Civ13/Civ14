@@ -1,0 +1,58 @@
+- type: entity
+  id: Barbedwire
+  description: A barbed wire fence.
+  parent: BaseStructure
+  name: barbed wire
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Civ14/Objects/structures.rsi
+      state: barbwire
+      drawdepth: BlastDoors
+      noRot: true
+    - type: Physics
+    - type: AtmosExposed
+    - type: CollisionWake
+      enabled: false
+    - type: Fixtures
+      fixtures:
+        slips:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.4,-0.4,0.4,0.4"
+          hard: false
+          layer:
+            - LowImpassable
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.4,-0.4,0.4,0.4"
+          density: 30
+          mask:
+            - ItemMask
+    - type: DamageOtherOnHit
+      damage:
+        types:
+          Slash: 2
+    - type: StepTrigger
+      intersectRatio: 0.2
+    - type: TriggerOnStepTrigger
+    - type: DamageUserOnTrigger
+      damage:
+        types:
+          Slash: 5
+    - type: Slippery
+      slipSound:
+        path: /Audio/Effects/glass_step.ogg
+      launchForwardsMultiplier: 0
+    - type: Damageable
+      damageModifierSet: Metallic
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 220
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Construction
+      graph: Barbedwire
+      node: end

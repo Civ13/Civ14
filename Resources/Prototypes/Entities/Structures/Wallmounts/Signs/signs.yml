@@ -4,8 +4,8 @@
   name: monkey painting
   description: Return to monky.
   components:
-  - type: Sprite
-    state: monkey_painting
+    - type: Sprite
+      state: monkey_painting
 
 # Directional Station Guide Signs
 - type: entity
@@ -22,8 +22,8 @@
   name: atmos sign
   description: A direction sign, pointing out which way the Atmospherics department is.
   components:
-  - type: Sprite
-    state: direction_atmos
+    - type: Sprite
+      state: direction_atmos
 
 - type: entity
   parent: BaseSignDirectional
@@ -31,8 +31,8 @@
   name: bar sign
   description: A direction sign, pointing out which way the bar is.
   components:
-  - type: Sprite
-    state: direction_bar
+    - type: Sprite
+      state: direction_bar
 
 - type: entity
   parent: BaseSignDirectional
@@ -40,8 +40,8 @@
   name: bridge sign
   description: A direction sign, pointing out which way the Bridge is.
   components:
-  - type: Sprite
-    state: direction_bridge
+    - type: Sprite
+      state: direction_bridge
 
 - type: entity
   parent: BaseSignDirectional
@@ -49,8 +49,8 @@
   name: brig sign
   description: A direction sign, pointing out which way the Brig is.
   components:
-  - type: Sprite
-    state: direction_brig
+    - type: Sprite
+      state: direction_brig
 
 - type: entity
   parent: BaseSignDirectional
@@ -58,8 +58,8 @@
   name: chapel sign
   description: A direction sign, pointing out which way the Chapel is.
   components:
-  - type: Sprite
-    state: direction_chapel
+    - type: Sprite
+      state: direction_chapel
 
 - type: entity
   parent: BaseSignDirectional
@@ -67,8 +67,8 @@
   name: chemistry sign
   description: A direction sign, pointing out which way the chemistry lab is.
   components:
-  - type: Sprite
-    state: direction_chemistry
+    - type: Sprite
+      state: direction_chemistry
 
 - type: entity
   parent: BaseSignDirectional
@@ -76,8 +76,8 @@
   name: cryo sign
   description: A direction sign, pointing out the way to cryogenics.
   components:
-  - type: Sprite
-    state: direction_cryo
+    - type: Sprite
+      state: direction_cryo
 
 - type: entity
   parent: BaseSignDirectional
@@ -85,8 +85,8 @@
   name: dorms sign
   description: A direction sign, pointing out which way the Dorms are.
   components:
-  - type: Sprite
-    state: direction_dorms
+    - type: Sprite
+      state: direction_dorms
 
 - type: entity
   parent: BaseSignDirectional
@@ -94,8 +94,8 @@
   name: engineering sign
   description: A direction sign, pointing out which way the Engineering department is.
   components:
-  - type: Sprite
-    state: direction_eng
+    - type: Sprite
+      state: direction_eng
 
 - type: entity
   parent: BaseSignDirectional
@@ -103,8 +103,8 @@
   name: evac sign
   description: A direction sign, pointing out which way evac is.
   components:
-  - type: Sprite
-    state: direction_evac
+    - type: Sprite
+      state: direction_evac
 
 - type: entity
   parent: BaseSignDirectional
@@ -112,8 +112,8 @@
   name: exam sign
   description: A direction sign, pointing out which way the examination room(s) are.
   components:
-  - type: Sprite
-    state: direction_exam
+    - type: Sprite
+      state: direction_exam
 
 - type: entity
   parent: BaseSignDirectional
@@ -121,8 +121,8 @@
   name: food sign
   description: A direction sign, pointing out which way the kitchen is.
   components:
-  - type: Sprite
-    state: direction_food
+    - type: Sprite
+      state: direction_food
 
 - type: entity
   parent: BaseSignDirectional
@@ -130,8 +130,8 @@
   name: gravity sign
   description: A direction sign, pointing out which way the gravity generator is.
   components:
-  - type: Sprite
-    state: direction_gravity
+    - type: Sprite
+      state: direction_gravity
 
 - type: entity
   parent: BaseSignDirectional
@@ -139,8 +139,8 @@
   name: hop sign
   description: A direction sign, pointing out which way Head of Personnel's office is.
   components:
-  - type: Sprite
-    state: direction_hop
+    - type: Sprite
+      state: direction_hop
 
 - type: entity
   parent: BaseSignDirectional
@@ -148,8 +148,8 @@
   name: hydro sign
   description: A direction sign, pointing out which way hydroponics is.
   components:
-  - type: Sprite
-    state: direction_hydro
+    - type: Sprite
+      state: direction_hydro
 
 - type: entity
   parent: BaseSignDirectional
@@ -157,8 +157,8 @@
   name: icu sign
   description: A direction sign, pointing out which way the ICU is.
   components:
-  - type: Sprite
-    state: direction_icu
+    - type: Sprite
+      state: direction_icu
 
 - type: entity
   parent: BaseSignDirectional
@@ -166,8 +166,8 @@
   name: janitor sign
   description: A direction sign, pointing out which way the janitor's closet is.
   components:
-  - type: Sprite
-    state: direction_janitor
+    - type: Sprite
+      state: direction_janitor
 
 - type: entity
   parent: BaseSignDirectional
@@ -175,8 +175,8 @@
   name: library sign
   description: A direction sign, pointing out which way the library is.
   components:
-  - type: Sprite
-    state: direction_library
+    - type: Sprite
+      state: direction_library
 
 - type: entity
   parent: BaseSignDirectional
@@ -184,8 +184,8 @@
   name: medical sign
   description: A direction sign, pointing out which way the Medical department is.
   components:
-  - type: Sprite
-    state: direction_med
+    - type: Sprite
+      state: direction_med
 
 - type: entity
   parent: BaseSignDirectional
@@ -193,8 +193,8 @@
   name: salvage sign
   description: A direction sign, pointing out which way the Salvage department is.
   components:
-  - type: Sprite
-    state: direction_salvage
+    - type: Sprite
+      state: direction_salvage
 
 - type: entity
   parent: BaseSignDirectional
@@ -202,8 +202,8 @@
   name: science sign
   description: A direction sign, pointing out which way the Science department is.
   components:
-  - type: Sprite
-    state: direction_sci
+    - type: Sprite
+      state: direction_sci
 
 - type: entity
   parent: BaseSignDirectional
@@ -211,8 +211,8 @@
   name: sec sign
   description: A direction sign, pointing out which way Security is.
   components:
-  - type: Sprite
-    state: direction_sec
+    - type: Sprite
+      state: direction_sec
 
 - type: entity
   parent: BaseSignDirectional
@@ -220,8 +220,8 @@
   name: solars sign
   description: A direction sign, pointing out which way solars are.
   components:
-  - type: Sprite
-    state: direction_solar
+    - type: Sprite
+      state: direction_solar
 
 - type: entity
   parent: BaseSignDirectional
@@ -229,8 +229,8 @@
   name: supply sign
   description: A direction sign, pointing to some supplies.
   components:
-  - type: Sprite
-    state: direction_supply
+    - type: Sprite
+      state: direction_supply
 
 - type: entity
   parent: BaseSignDirectional
@@ -238,8 +238,8 @@
   name: washroom sign
   description: A direction sign, pointing to the way to a washroom.
   components:
-  - type: Sprite
-    state: direction_wash
+    - type: Sprite
+      state: direction_wash
 
 - type: entity
   parent: BaseSignDirectional
@@ -247,8 +247,8 @@
   name: escape pods sign
   description: A direction sign, pointing out the way to an escape pod dock.
   components:
-  - type: Sprite
-    state: direction_pods
+    - type: Sprite
+      state: direction_pods
 
 # Regular Signs
 
@@ -258,8 +258,8 @@
   name: ai sign
   description: A sign, indicating an AI is present.
   components:
-  - type: Sprite
-    state: ai
+    - type: Sprite
+      state: ai
 
 - type: entity
   parent: BaseSign
@@ -276,8 +276,8 @@
   name: arcade sign
   description: A sign indicating the arcade.
   components:
-  - type: Sprite
-    state: arcade
+    - type: Sprite
+      state: arcade
 
 - type: entity
   parent: BaseSign
@@ -285,8 +285,8 @@
   name: armory sign
   description: A sign indicating the armory.
   components:
-  - type: Sprite
-    state: armory
+    - type: Sprite
+      state: armory
 
 - type: entity
   parent: BaseSign
@@ -294,8 +294,8 @@
   name: tool storage sign
   description: A sign indicating the tool storage room.
   components:
-  - type: Sprite
-    state: ass
+    - type: Sprite
+      state: ass
 
 - type: entity
   parent: BaseSign
@@ -303,8 +303,8 @@
   name: xenoarcheology lab sign
   description: A sign indicating the xenoarchaeology lab.
   components:
-  - type: Sprite
-    state: xenoarch
+    - type: Sprite
+      state: xenoarch
 
 - type: entity
   parent: BaseSign
@@ -312,8 +312,8 @@
   name: anomaly lab sign
   description: A sign indicating the anomalous research lab.
   components:
-  - type: Sprite
-    state: anomaly
+    - type: Sprite
+      state: anomaly
 
 - type: entity
   parent: BaseSign
@@ -321,8 +321,8 @@
   name: atmos sign
   description: A sign indicating the atmospherics area.
   components:
-  - type: Sprite
-    state: atmos
+    - type: Sprite
+      state: atmos
 
 - type: entity
   parent: BaseSign
@@ -330,8 +330,8 @@
   name: bar sign
   description: A sign indicating the bar.
   components:
-  - type: Sprite
-    state: bar
+    - type: Sprite
+      state: bar
 
 - type: entity
   parent: BaseSign
@@ -339,8 +339,8 @@
   name: bathroom sign
   description: A sign indicating the bathroom.
   components:
-  - type: Sprite
-    state: bath
+    - type: Sprite
+      state: bath
 
 - type: entity
   parent: BaseSign
@@ -348,8 +348,8 @@
   name: kitchen sign
   description: The heart of the home. And disease.
   components:
-  - type: Sprite
-    state: kitchen
+    - type: Sprite
+      state: kitchen
 
 - type: entity
   parent: BaseSign
@@ -357,16 +357,16 @@
   name: theater sign
   description: Would it even be Space Station without drama?
   components:
-  - type: Sprite
-    layers:
-    - state: drama1
-      map: [ "base" ]
-  - type: RandomSprite
-    available:
-    - base:
-        drama1: null
-        drama2: null
-        drama3: null
+    - type: Sprite
+      layers:
+        - state: drama1
+          map: ["base"]
+    - type: RandomSprite
+      available:
+        - base:
+            drama1: null
+            drama2: null
+            drama3: null
 
 - type: entity
   parent: BaseSign
@@ -374,8 +374,8 @@
   name: barbershop sign
   description: A sign indicating the barbershop.
   components:
-  - type: Sprite
-    state: barbershop
+    - type: Sprite
+      state: barbershop
 
 - type: entity
   parent: BaseSign
@@ -383,8 +383,8 @@
   name: bio sign
   description: A sign indicating the biology lab.
   components:
-  - type: Sprite
-    state: bio
+    - type: Sprite
+      state: bio
 
 - type: entity
   parent: BaseSign
@@ -392,8 +392,8 @@
   name: biohazard sign
   description: A sign indicating a biohazard.
   components:
-  - type: Sprite
-    state: biohazard
+    - type: Sprite
+      state: biohazard
 
 - type: entity
   parent: BaseSign
@@ -401,8 +401,8 @@
   name: bridge sign
   description: A sign indicating the bridge.
   components:
-  - type: Sprite
-    state: bridge
+    - type: Sprite
+      state: bridge
 
 - type: entity
   parent: BaseSign
@@ -410,8 +410,8 @@
   name: canisters sign
   description: A sign warning the viewer about pressurised canisters.
   components:
-  - type: Sprite
-    state: canisters
+    - type: Sprite
+      state: canisters
 
 - type: entity
   parent: BaseSign
@@ -419,8 +419,8 @@
   name: cargo sign
   description: A sign indicating the cargo area.
   components:
-  - type: Sprite
-    state: cargo
+    - type: Sprite
+      state: cargo
 
 - type: entity
   parent: BaseSign
@@ -428,8 +428,8 @@
   name: cargo dock sign
   description: A sign indicating a cargo dock.
   components:
-  - type: Sprite
-    state: cargo_dock
+    - type: Sprite
+      state: cargo_dock
 
 - type: entity
   parent: BaseSign
@@ -437,8 +437,8 @@
   name: chapel sign
   description: A sign indicating the chapel.
   components:
-  - type: Sprite
-    state: chapel
+    - type: Sprite
+      state: chapel
 
 - type: entity
   parent: BaseSign
@@ -446,8 +446,8 @@
   name: chemistry sign
   description: A sign indicating the chemistry lab.
   components:
-  - type: Sprite
-    state: chem
+    - type: Sprite
+      state: chem
 
 - type: entity
   parent: BaseSign
@@ -455,8 +455,8 @@
   name: cloning sign
   description: A sign indicating the cloning lab.
   components:
-  - type: Sprite
-    state: cloning
+    - type: Sprite
+      state: cloning
 
 - type: entity
   parent: BaseSign
@@ -464,8 +464,8 @@
   name: conference room sign
   description: Where work happens.
   components:
-  - type: Sprite
-    state: conference_room
+    - type: Sprite
+      state: conference_room
 
 - type: entity
   parent: BaseSign
@@ -473,9 +473,8 @@
   name: cryosleep sign
   description: Just like that? You're gonna chicken out?
   components:
-  - type: Sprite
-    state: cryo
-
+    - type: Sprite
+      state: cryo
 
 - type: entity
   parent: BaseSign
@@ -483,8 +482,8 @@
   name: disposal sign
   description: A sign indicating a disposal area.
   components:
-  - type: Sprite
-    state: deathsposal
+    - type: Sprite
+      state: deathsposal
 
 - type: entity
   parent: BaseSign
@@ -492,17 +491,8 @@
   name: doors sign
   description: A sign indicating doors.
   components:
-  - type: Sprite
-    state: doors
-
-- type: entity
-  parent: BaseSign
-  id: SignRestroom
-  name: restroom sign
-  description: A sign indicating where you go to... What do you do here again?
-  components:
-  - type: Sprite
-    state: restroom
+    - type: Sprite
+      state: doors
 
 - type: entity
   parent: BaseSign
@@ -510,8 +500,8 @@
   name: materials sign
   description: An omen to the juicy vault of steel, glass, and plastic that lays before you.
   components:
-  - type: Sprite
-    state: mats
+    - type: Sprite
+      state: mats
 
 - type: entity
   parent: BaseSign
@@ -519,8 +509,8 @@
   name: power sign
   description: Where the powa happens.
   components:
-  - type: Sprite
-    state: engine
+    - type: Sprite
+      state: engine
 
 - type: entity
   parent: BaseSign
@@ -528,8 +518,8 @@
   name: engineering sign
   description: A sign indicating the engineering area.
   components:
-  - type: Sprite
-    state: eng
+    - type: Sprite
+      state: eng
 
 - type: entity
   parent: BaseSign
@@ -537,8 +527,8 @@
   name: escape pods sign
   description: A sign indicating the escape pods.
   components:
-  - type: Sprite
-    state: pods
+    - type: Sprite
+      state: pods
 
 - type: entity
   parent: BaseSign
@@ -546,8 +536,8 @@
   name: EVA sign
   description: A sign indicating an EVA area. EVA equipment may be required beyond this point.
   components:
-  - type: Sprite
-    state: eva
+    - type: Sprite
+      state: eva
 
 - type: entity
   parent: BaseSign
@@ -555,8 +545,8 @@
   name: electrical sign
   description: A sign indicating an electrical hazard.
   components:
-  - type: Sprite
-    state: electrical
+    - type: Sprite
+      state: electrical
 
 - type: entity
   parent: BaseSign
@@ -564,8 +554,8 @@
   name: examination room sign
   description: A sign indicating a medical examination room.
   components:
-  - type: Sprite
-    state: examroom
+    - type: Sprite
+      state: examroom
 
 - type: entity
   parent: BaseSign
@@ -573,8 +563,8 @@
   name: fire sign
   description: A sign indicating a fire hazard.
   components:
-  - type: Sprite
-    state: fire
+    - type: Sprite
+      state: fire
 
 - type: entity
   parent: BaseSign
@@ -582,8 +572,8 @@
   name: gravity sign
   description: A sign indicating the gravity generator.
   components:
-  - type: Sprite
-    state: gravi
+    - type: Sprite
+      state: gravi
 
 - type: entity
   parent: BaseSign
@@ -591,8 +581,8 @@
   name: head sign
   description: An official sign indicating the dwellings of a Nanotrasen-certified head of department.
   components:
-  - type: Sprite
-    state: commander
+    - type: Sprite
+      state: commander
 
 - type: entity
   parent: BaseSign
@@ -600,8 +590,8 @@
   name: hydro sign
   description: A sign indicating a hydroponics area.
   components:
-  - type: Sprite
-    state: hydro
+    - type: Sprite
+      state: hydro
 
 - type: entity
   parent: BaseSign
@@ -609,8 +599,8 @@
   name: interrogation sign
   description: A sign indicating an interrogation room.
   components:
-  - type: Sprite
-    state: interrogation
+    - type: Sprite
+      state: interrogation
 
 - type: entity
   parent: BaseSign
@@ -618,8 +608,8 @@
   name: janitor sign
   description: A sign labelling an area where the janitor works.
   components:
-  - type: Sprite
-    state: janitor
+    - type: Sprite
+      state: janitor
 
 - type: entity
   parent: BaseSign
@@ -627,8 +617,8 @@
   name: laundromat sign
   description: A sign indicating the laundromat.
   components:
-  - type: Sprite
-    state: laundromat
+    - type: Sprite
+      state: laundromat
 
 - type: entity
   parent: BaseSign
@@ -636,8 +626,8 @@
   name: law sign
   description: A sign indicating the presence of the (typically absent) rule of law.
   components:
-  - type: Sprite
-    state: law
+    - type: Sprite
+      state: law
 
 - type: entity
   parent: BaseSign
@@ -645,8 +635,8 @@
   name: library sign
   description: A sign indicating the library.
   components:
-  - type: Sprite
-    state: biblio
+    - type: Sprite
+      state: biblio
 
 - type: entity
   parent: BaseSign
@@ -654,8 +644,8 @@
   name: mail sign
   description: A sign indicating mail.
   components:
-  - type: Sprite
-    state: mail
+    - type: Sprite
+      state: mail
 
 - type: entity
   parent: BaseSign
@@ -663,8 +653,8 @@
   name: medbay sign
   description: A sign indicating the medical bay.
   components:
-  - type: Sprite
-    state: medbay
+    - type: Sprite
+      state: medbay
 
 - type: entity
   parent: BaseSign
@@ -672,8 +662,8 @@
   name: morgue sign
   description: A sign indicating the morgue.
   components:
-  - type: Sprite
-    state: morgue
+    - type: Sprite
+      state: morgue
 
 - type: entity
   parent: BaseSign
@@ -681,8 +671,8 @@
   name: news sign
   description: A sign indicating where the Reporter works.
   components:
-  - type: Sprite
-    state: news
+    - type: Sprite
+      state: news
 
 - type: entity
   parent: BaseSign
@@ -690,8 +680,8 @@
   name: no smoking sign
   description: A sign indicating that smoking is not allowed in the vicinity.
   components:
-  - type: Sprite
-    state: nosmoking
+    - type: Sprite
+      state: nosmoking
 
 - type: entity
   parent: BaseSign
@@ -699,8 +689,8 @@
   name: prison sign
   description: A sign indicating the prison.
   components:
-  - type: Sprite
-    state: prison
+    - type: Sprite
+      state: prison
 
 - type: entity
   parent: BaseSign
@@ -708,8 +698,8 @@
   name: psychology sign
   description: A sign labelling an area where the Psychologist works.
   components:
-  - type: Sprite
-    state: psychology
+    - type: Sprite
+      state: psychology
 
 - type: entity
   parent: BaseSign
@@ -717,8 +707,8 @@
   name: reception sign
   description: A sign indicating the reception.
   components:
-  - type: Sprite
-    state: reception
+    - type: Sprite
+      state: reception
 
 - type: entity
   parent: BaseSign
@@ -726,8 +716,8 @@
   name: research and development sign
   description: A sign indicating the research and development lab.
   components:
-  - type: Sprite
-    state: rnd
+    - type: Sprite
+      state: rnd
 
 - type: entity
   parent: BaseSign
@@ -735,8 +725,8 @@
   name: robo sign
   description: A sign indicating the robotics lab.
   components:
-  - type: Sprite
-    state: robo
+    - type: Sprite
+      state: robo
 
 - type: entity
   parent: BaseSign
@@ -744,8 +734,8 @@
   name: salvage sign
   description: A sign indicating the salvage area.
   components:
-  - type: Sprite
-    state: salvage
+    - type: Sprite
+      state: salvage
 
 - type: entity
   parent: BaseSign
@@ -753,8 +743,8 @@
   name: science sign
   description: A sign indicating the science area.
   components:
-  - type: Sprite
-    state: sci
+    - type: Sprite
+      state: sci
 
 - type: entity
   parent: BaseSign
@@ -762,8 +752,8 @@
   name: server sign
   description: Ever heard of Big Data? This is it, chump. The biggest.
   components:
-  - type: Sprite
-    state: data
+    - type: Sprite
+      state: data
 
 - type: entity
   parent: BaseSign
@@ -771,16 +761,16 @@
   name: canisters sign
   description: A sign indicating the auspicious presence of gas canisters.
   components:
-  - type: Sprite
-    state: cans
+    - type: Sprite
+      state: cans
 
 - type: entity
   parent: SignCans
   id: SignCansScience
   suffix: science
   components:
-  - type: Sprite
-    state: cans_sci
+    - type: Sprite
+      state: cans_sci
 
 - type: entity
   parent: BaseSign
@@ -788,8 +778,8 @@
   name: evac sign
   description: A sign indicating the where the evac shuttle will (likely) arrive.
   components:
-  - type: Sprite
-    state: dock
+    - type: Sprite
+      state: dock
 
 - type: entity
   parent: BaseSign
@@ -797,8 +787,8 @@
   name: space sign
   description: A sign warning that the area ahead is nothing but cold, empty space.
   components:
-  - type: Sprite
-    state: space
+    - type: Sprite
+      state: space
 
 - type: entity
   parent: BaseSign
@@ -806,8 +796,8 @@
   name: surgery sign
   description: A sign indicating the operating theater.
   components:
-  - type: Sprite
-    state: surgery
+    - type: Sprite
+      state: surgery
 
 - type: entity
   parent: BaseSign
@@ -815,8 +805,8 @@
   name: telecomms sign
   description: A sign indicating the telecommunications room.
   components:
-  - type: Sprite
-    state: telecoms
+    - type: Sprite
+      state: telecoms
 
 - type: entity
   parent: BaseSign
@@ -824,8 +814,8 @@
   name: toxins sign
   description: A sign indicating the toxin lab.
   components:
-  - type: Sprite
-    state: toxins
+    - type: Sprite
+      state: toxins
 
 - type: entity
   parent: BaseSign
@@ -833,8 +823,8 @@
   name: vault sign
   description: A sign indicating the vault. Who knows what secrets lie inside?
   components:
-  - type: Sprite
-    state: vault
+    - type: Sprite
+      state: vault
 
 - type: entity
   parent: BaseSign
@@ -842,8 +832,8 @@
   name: virology sign
   description: A sign indicating the virology lab.
   components:
-  - type: Sprite
-    state: virology
+    - type: Sprite
+      state: virology
 
 - type: entity
   parent: BaseSign
@@ -851,8 +841,8 @@
   name: corrosives warning sign
   description: A sign indicating a corrosive materials hazard.
   components:
-  - type: Sprite
-    state: corrosives
+    - type: Sprite
+      state: corrosives
 
 - type: entity
   parent: BaseSign
@@ -860,8 +850,8 @@
   name: cryogenics warning sign
   description: A sign indicating a cryogenic materials hazard. Bring a jacket!
   components:
-  - type: Sprite
-    state: cryogenics
+    - type: Sprite
+      state: cryogenics
 
 - type: entity
   parent: BaseSign
@@ -869,8 +859,8 @@
   name: danger warning sign
   description: A sign warning against some danger.
   components:
-  - type: Sprite
-    state: danger
+    - type: Sprite
+      state: danger
 
 - type: entity
   parent: BaseSign
@@ -878,8 +868,8 @@
   name: explosives warning sign
   description: A sign indicating an explosive materials hazard.
   components:
-  - type: Sprite
-    state: explosives
+    - type: Sprite
+      state: explosives
 
 - type: entity
   parent: BaseSign
@@ -887,8 +877,8 @@
   name: flammable warning sign
   description: A sign indicating a flammable materials hazard.
   components:
-  - type: Sprite
-    state: flammable
+    - type: Sprite
+      state: flammable
 
 - type: entity
   parent: BaseSign
@@ -896,8 +886,8 @@
   name: laser warning sign
   description: A sign indicating a laser hazard.
   components:
-  - type: Sprite
-    state: laser
+    - type: Sprite
+      state: laser
 
 - type: entity
   parent: BaseSign
@@ -905,8 +895,8 @@
   name: magnetics warning sign
   description: A sign indicating a magnetic materials hazard.
   components:
-  - type: Sprite
-    state: magnetics
+    - type: Sprite
+      state: magnetics
 
 - type: entity
   parent: BaseSign
@@ -914,8 +904,8 @@
   name: memetic warning sign
   description: A sign indicating a memetic hazard.
   components:
-  - type: Sprite
-    state: memetic
+    - type: Sprite
+      state: memetic
 
 - type: entity
   parent: BaseSign
@@ -923,8 +913,8 @@
   name: secure sign
   description: A sign indicating that the area ahead is a secure area.
   components:
-  - type: Sprite
-    state: secure
+    - type: Sprite
+      state: secure
 
 - type: entity
   parent: BaseSign
@@ -932,9 +922,9 @@
   name: secure area sign
   description: A sign indicating that the area ahead is a secure area.
   components:
-  - type: Sprite
-    state: securearea
-    snapCardinals: true
+    - type: Sprite
+      state: securearea
+      snapCardinals: true
 
 - type: entity
   parent: BaseSign
@@ -942,8 +932,8 @@
   name: shock sign
   description: A sign indicating an electrical hazard.
   components:
-  - type: Sprite
-    state: shock
+    - type: Sprite
+      state: shock
 
 - type: entity
   parent: BaseSign
@@ -951,8 +941,8 @@
   name: optical warning sign
   description: A sign indicating an optical radiation hazard.
   components:
-  - type: Sprite
-    state: optical
+    - type: Sprite
+      state: optical
 
 - type: entity
   parent: BaseSign
@@ -960,8 +950,8 @@
   name: oxidants warning sign
   description: A sign indicating an oxidizing agent hazard.
   components:
-  - type: Sprite
-    state: oxidants
+    - type: Sprite
+      state: oxidants
 
 - type: entity
   parent: BaseSign
@@ -969,8 +959,8 @@
   name: radiation warning sign
   description: A sign indicating an ionizing radiation hazard.
   components:
-  - type: Sprite
-    state: radiation
+    - type: Sprite
+      state: radiation
 
 - type: entity
   parent: BaseSign
@@ -978,8 +968,8 @@
   name: xenobio sign
   description: A sign indicating the xenobiology lab.
   components:
-  - type: Sprite
-    state: xenobio
+    - type: Sprite
+      state: xenobio
 
 - type: entity
   parent: BaseSign
@@ -987,8 +977,8 @@
   name: zombie lab sign
   description: The final remains of a shut-down Nanotrasen research project that aimed to harness the powers of Romerol. I wonder how that went...
   components:
-  - type: Sprite
-    state: zomlab
+    - type: Sprite
+      state: zomlab
 
 - type: entity
   parent: BaseSign
@@ -996,8 +986,8 @@
   name: red secure sign
   description: A sign indicating that the area ahead is a secure area.
   components:
-  - type: Sprite
-    state: medium_secure_red
+    - type: Sprite
+      state: medium_secure_red
 
 - type: entity
   parent: BaseSign
@@ -1005,8 +995,8 @@
   name: small secure sign
   description: A sign indicating that the area ahead is a secure area.
   components:
-  - type: Sprite
-    state: small_secure
+    - type: Sprite
+      state: small_secure
 
 - type: entity
   parent: BaseSign
@@ -1014,8 +1004,8 @@
   name: small red secure sign
   description: A sign indicating that the area ahead is a secure area.
   components:
-  - type: Sprite
-    state: small_secure_red
+    - type: Sprite
+      state: small_secure_red
 
 - type: entity
   parent: BaseSign
@@ -1023,8 +1013,8 @@
   name: blank sign
   description: A blank sign.
   components:
-  - type: Sprite
-    state: medium_blank
+    - type: Sprite
+      state: medium_blank
 
 - type: entity
   parent: BaseSign
@@ -1032,8 +1022,8 @@
   name: magnetics sign
   description: A sign indicating the use of magnets.
   components:
-  - type: Sprite
-    state: medium_magnetics
+    - type: Sprite
+      state: medium_magnetics
 
 - type: entity
   parent: BaseSign
@@ -1041,8 +1031,8 @@
   name: danger sign
   description: A sign warning against some form of danger.
   components:
-  - type: Sprite
-    state: medium_danger
+    - type: Sprite
+      state: medium_danger
 
 - type: entity
   parent: BaseSign
@@ -1050,8 +1040,8 @@
   name: explosives sign
   description: A sign indicating explosive materials.
   components:
-  - type: Sprite
-    state: medium_explosives
+    - type: Sprite
+      state: medium_explosives
 
 - type: entity
   parent: BaseSign
@@ -1059,8 +1049,8 @@
   name: cryogenics sign
   description: A sign indicating cryogenic materials.
   components:
-  - type: Sprite
-    state: medium_cryogenics
+    - type: Sprite
+      state: medium_cryogenics
 
 - type: entity
   parent: BaseSign
@@ -1068,8 +1058,8 @@
   name: electrical sign
   description: A sign indicating an electrical hazard.
   components:
-  - type: Sprite
-    state: medium_electrical
+    - type: Sprite
+      state: medium_electrical
 
 - type: entity
   parent: BaseSign
@@ -1077,8 +1067,8 @@
   name: biohazard sign
   description: A sign indicating a biohazard.
   components:
-  - type: Sprite
-    state: medium_biohazard
+    - type: Sprite
+      state: medium_biohazard
 
 - type: entity
   parent: BaseSign
@@ -1086,8 +1076,8 @@
   name: radiation sign
   description: A sign indicating an ionizing radiation hazard.
   components:
-  - type: Sprite
-    state: medium_radiation
+    - type: Sprite
+      state: medium_radiation
 
 - type: entity
   parent: BaseSign
@@ -1095,8 +1085,8 @@
   name: flammable sign #when flammable component is done, this sign needs it
   description: A sign indicating flammable materials.
   components:
-  - type: Sprite
-    state: medium_flammable
+    - type: Sprite
+      state: medium_flammable
 
 - type: entity
   parent: BaseSign
@@ -1104,8 +1094,8 @@
   name: laser sign
   description: A sign indicating a laser hazard.
   components:
-  - type: Sprite
-    state: medium_laser
+    - type: Sprite
+      state: medium_laser
 
 - type: entity
   parent: BaseSign
@@ -1113,8 +1103,8 @@
   name: secure sign
   description: A sign indicating that the area ahead is a secure area.
   components:
-  - type: Sprite
-    state: medium_secure
+    - type: Sprite
+      state: medium_secure
 
 # TODO: make a fancier version of this sign
 - type: entity
@@ -1123,8 +1113,8 @@
   name: vox area sign
   description: A sign indicating that the area ahead is intended for Vox crew members and does not have an oxygen atmosphere.
   components:
-  - type: Sprite
-    state: vox
+    - type: Sprite
+      state: vox
 
 # Atmos Warnings
 
@@ -1134,8 +1124,8 @@
   name: air warning sign
   description: WARNING! Air flow tube. Ensure the flow is disengaged before working.
   components:
-  - type: Sprite
-    state: atmos_air
+    - type: Sprite
+      state: atmos_air
 
 - type: entity
   parent: BaseSign
@@ -1143,8 +1133,8 @@
   name: CO2 warning sign
   description: WARNING! CO2 flow tube. Ensure the flow is disengaged before working.
   components:
-  - type: Sprite
-    state: atmos_co2
+    - type: Sprite
+      state: atmos_co2
 
 - type: entity
   parent: BaseSign
@@ -1152,8 +1142,8 @@
   name: N2 warning sign
   description: WARNING! N2 flow tube. Ensure the flow is disengaged before working.
   components:
-  - type: Sprite
-    state: atmos_n2
+    - type: Sprite
+      state: atmos_n2
 
 - type: entity
   parent: BaseSign
@@ -1161,8 +1151,8 @@
   name: N2O warning sign
   description: WARNING! N2O flow tube. Ensure the flow is disengaged before working.
   components:
-  - type: Sprite
-    state: atmos_n2o
+    - type: Sprite
+      state: atmos_n2o
 
 - type: entity
   parent: BaseSign
@@ -1170,8 +1160,8 @@
   name: O2 warning sign
   description: WARNING! O2 flow tube. Ensure the flow is disengaged before working.
   components:
-  - type: Sprite
-    state: atmos_o2
+    - type: Sprite
+      state: atmos_o2
 
 - type: entity
   parent: BaseSign
@@ -1179,8 +1169,8 @@
   name: plasma waste sign
   description: WARNING! Plasma flow tube. Ensure the flow is disengaged before working.
   components:
-  - type: Sprite
-    state: atmos_plasma
+    - type: Sprite
+      state: atmos_plasma
 
 - type: entity
   parent: BaseSign
@@ -1188,8 +1178,8 @@
   name: tritium waste sign
   description: WARNING! Tritium flow tube. Ensure the flow is disengaged before working.
   components:
-  - type: Sprite
-    state: atmos_tritium
+    - type: Sprite
+      state: atmos_tritium
 
 - type: entity
   parent: BaseSign
@@ -1197,8 +1187,8 @@
   name: atmos waste sign
   description: WARNING! Waste flow tube. Ensure the flow is disengaged before working.
   components:
-  - type: Sprite
-    state: atmos_waste
+    - type: Sprite
+      state: atmos_waste
 
 - type: entity
   parent: BaseSign
@@ -1206,8 +1196,8 @@
   name: no smoking sign
   description: A warning sign which reads 'NO SMOKING'.
   components:
-  - type: Sprite
-    state: nosmoking2
+    - type: Sprite
+      state: nosmoking2
 
 - type: entity
   parent: BaseSign
@@ -1215,8 +1205,8 @@
   name: old sign
   description: Technical information of some sort, shame it's too worn-out to read.
   components:
-  - type: Sprite
-    state: something-old1
+    - type: Sprite
+      state: something-old1
 
 - type: entity
   parent: BaseSign
@@ -1224,8 +1214,8 @@
   name: old sign
   description: Looks like a planet crashing by some station above it. It's kinda scary.
   components:
-  - type: Sprite
-    state: something-old2
+    - type: Sprite
+      state: something-old2
 
 - type: entity
   parent: BaseSign
@@ -1233,8 +1223,8 @@
   name: security sign
   description: A sign depicting the security insignia.
   components:
-  - type: Sprite
-    state: security
+    - type: Sprite
+      state: security
 
 - type: entity
   parent: BaseSign
@@ -1242,8 +1232,8 @@
   name: golden plaque
   description: A prestigious golden plaque.
   components:
-  - type: Sprite
-    state: goldenplaque
+    - type: Sprite
+      state: goldenplaque
 
 - type: entity
   parent: BaseSign
@@ -1251,8 +1241,8 @@
   name: kiddie plaque
   description: A modest plaque.
   components:
-  - type: Sprite
-    state: kiddieplaque
+    - type: Sprite
+      state: kiddieplaque
 
 - type: entity
   parent: BaseSign
@@ -1260,9 +1250,9 @@
   name: nanotrasen sign 1
   description: Part 1.
   components:
-  - type: Sprite
-    state: nanotrasen_sign1
-    snapCardinals: false
+    - type: Sprite
+      state: nanotrasen_sign1
+      snapCardinals: false
 
 - type: entity
   parent: BaseSign
@@ -1270,9 +1260,9 @@
   name: nanotrasen sign 2
   description: Part 2.
   components:
-  - type: Sprite
-    state: nanotrasen_sign2
-    snapCardinals: false
+    - type: Sprite
+      state: nanotrasen_sign2
+      snapCardinals: false
 
 - type: entity
   parent: BaseSign
@@ -1280,9 +1270,9 @@
   name: nanotrasen sign 3
   description: Part 3.
   components:
-  - type: Sprite
-    state: nanotrasen_sign3
-    snapCardinals: false
+    - type: Sprite
+      state: nanotrasen_sign3
+      snapCardinals: false
 
 - type: entity
   parent: BaseSign
@@ -1290,9 +1280,9 @@
   name: nanotrasen sign 4
   description: Part 4.
   components:
-  - type: Sprite
-    state: nanotrasen_sign4
-    snapCardinals: false
+    - type: Sprite
+      state: nanotrasen_sign4
+      snapCardinals: false
 
 - type: entity
   parent: BaseSign
@@ -1300,9 +1290,9 @@
   name: nanotrasen sign 5
   description: Part 5.
   components:
-  - type: Sprite
-    state: nanotrasen_sign5
-    snapCardinals: false
+    - type: Sprite
+      state: nanotrasen_sign5
+      snapCardinals: false
 
 - type: entity
   parent: BaseSign
@@ -1310,8 +1300,8 @@
   name: one sign
   description: A sign with a digit, one is written on it.
   components:
-  - type: Sprite
-    state: one
+    - type: Sprite
+      state: one
 
 - type: entity
   parent: BaseSign
@@ -1319,8 +1309,8 @@
   name: two sign
   description: A sign with a digit, two is written on it.
   components:
-  - type: Sprite
-    state: two
+    - type: Sprite
+      state: two
 
 - type: entity
   parent: BaseSign
@@ -1328,8 +1318,8 @@
   name: three sign
   description: A sign with a digit, three is written on it.
   components:
-  - type: Sprite
-    state: three
+    - type: Sprite
+      state: three
 
 - type: entity
   parent: BaseSign
@@ -1337,8 +1327,8 @@
   name: four sign
   description: A sign with a digit, four is written on it.
   components:
-  - type: Sprite
-    state: four
+    - type: Sprite
+      state: four
 
 - type: entity
   parent: BaseSign
@@ -1346,8 +1336,8 @@
   name: five sign
   description: A sign with a digit, five is written on it.
   components:
-  - type: Sprite
-    state: five
+    - type: Sprite
+      state: five
 
 - type: entity
   parent: BaseSign
@@ -1355,8 +1345,8 @@
   name: six sign
   description: A sign with a digit, six is written on it.
   components:
-  - type: Sprite
-    state: six
+    - type: Sprite
+      state: six
 
 - type: entity
   parent: BaseSign
@@ -1364,8 +1354,8 @@
   name: seven sign
   description: A sign with a digit, seven is written on it.
   components:
-  - type: Sprite
-    state: seven
+    - type: Sprite
+      state: seven
 
 - type: entity
   parent: BaseSign
@@ -1373,8 +1363,8 @@
   name: eight sign
   description: A sign with a digit, eight is written on it.
   components:
-  - type: Sprite
-    state: eight
+    - type: Sprite
+      state: eight
 
 - type: entity
   parent: BaseSign
@@ -1382,8 +1372,8 @@
   name: nine sign
   description: A sign with a digit, nine is written on it.
   components:
-  - type: Sprite
-    state: nine
+    - type: Sprite
+      state: nine
 
 - type: entity
   parent: BaseSign
@@ -1391,8 +1381,8 @@
   name: zero sign
   description: A sign with a digit, zero is written on it.
   components:
-  - type: Sprite
-    state: zero
+    - type: Sprite
+      state: zero
 
 - type: entity
   parent: BaseSign
@@ -1400,8 +1390,8 @@
   name: survival sign
   description: A sign. "Survival" is written on it.
   components:
-  - type: Sprite
-    state: survival
+    - type: Sprite
+      state: survival
 
 - type: entity
   parent: BaseSign
@@ -1409,5 +1399,5 @@
   name: mine sign
   description: A sign. "Mine" is written on it.
   components:
-  - type: Sprite
-    state: ntmining
+    - type: Sprite
+      state: ntmining

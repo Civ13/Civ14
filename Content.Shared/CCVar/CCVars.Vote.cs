@@ -44,7 +44,7 @@ public sealed partial class CCVars
     ///     The required ratio of the server that must agree for a restart round vote to go through.
     /// </summary>
     public static readonly CVarDef<float> VoteRestartRequiredRatio =
-        CVarDef.Create("vote.restart_required_ratio", 0.85f, CVar.SERVERONLY);
+        CVarDef.Create("vote.restart_required_ratio", 0.75f, CVar.SERVERONLY);
 
     /// <summary>
     /// Whether or not to prevent the restart vote from having any effect when there is an online admin
@@ -62,13 +62,13 @@ public sealed partial class CCVars
     ///     Sets the duration of the map vote timer.
     /// </summary>
     public static readonly CVarDef<int>
-        VoteTimerMap = CVarDef.Create("vote.timermap", 90, CVar.SERVERONLY);
+        VoteTimerMap = CVarDef.Create("vote.timermap", 40, CVar.SERVERONLY);
 
     /// <summary>
     ///     Sets the duration of the restart vote timer.
     /// </summary>
     public static readonly CVarDef<int>
-        VoteTimerRestart = CVarDef.Create("vote.timerrestart", 60, CVar.SERVERONLY);
+        VoteTimerRestart = CVarDef.Create("vote.timerrestart", 40, CVar.SERVERONLY);
 
     /// <summary>
     ///     Sets the duration of the gamemode/preset vote timer.

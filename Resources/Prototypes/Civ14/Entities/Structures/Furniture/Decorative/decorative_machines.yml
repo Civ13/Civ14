@@ -1,0 +1,183 @@
+- type: entity
+  parent: StructureDecorativeBase
+  id: StructureDecorativeMachines
+  name: military radio
+  description: A military radio.
+  suffix: decorative
+  abstract: true
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/device.rsi
+      state: modern_intercom
+    - type: Damageable
+      damageModifierSet: Metallic
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 180
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+- type: entity
+  parent: StructureDecorativeMachines
+  id: StructureDecorativeRadio
+  name: military radio
+  description: A military radio.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/device.rsi
+      state: modern_intercom
+
+- type: entity
+  parent: StructureDecorativeMachines
+  id: StructureDecorativeRadioTransmitter
+  name: radio transmitter
+  description: A powerful radio transmitter.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/device.rsi
+      state: radio_transmitter
+
+- type: entity
+  parent: StructureDecorativeMachines
+  id: StructureDecorativeRecorder
+  name: recorder
+  description: A tape recorder.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/device.rsi
+      state: recorder_on
+
+- type: entity
+  parent: StructureDecorativeMachines
+  id: StructureDecorativeMachine
+  name: machine
+  description: Some sort of machine. Not sure what this does.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/device.rsi
+      state: machine_on
+
+- type: entity
+  parent: StructureDecorativeMachines
+  id: StructureDecorativeFOB
+  name: FOB transmitter
+  description: A transmitter for a FOB command post.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/obj32x64.rsi
+      state: fob
+- type: entity
+  parent: StructureDecorativeFOB
+  id: StructureDecorativeFOBFlipped
+  name: FOB transmitter
+  description: A transmitter for a FOB command post.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/obj32x64.rsi
+      state: fob_flipped
+
+- type: entity
+  parent: StructureDecorativeMachines
+  id: StructureDecorativeSupplyCrate
+  name: supply crate
+  description: A crate of assorted supplies.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/junk.rsi
+      state: supply_crate
+- type: entity
+  parent: StructureDecorativeMachines
+  id: StructureDecorativeRadiator
+  name: radiator
+  description: An old radiator.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: false
+      sprite: Civ14/Objects/junk.rsi
+      state: radiator
+- type: entity
+  parent: StructureDecorativeMachines
+  id: StructureDecorativeBathtube
+  name: bathtub
+  description: An old bathtub.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/junk.rsi
+      state: bathtub
+
+- type: entity
+  parent: StructureDecorativeMachines
+  id: StructureDecorativeWashingMachine
+  name: washing machine
+  description: An old washing machine.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/modern_structures.rsi
+      state: washing_machine_4
+
+- type: entity
+  parent: StructureDecorativeMachines
+  id: StructureDecorativeStove
+  name: stove
+  description: An old gas stove.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/modern_structures.rsi
+      state: stove
+
+- type: entity
+  parent: StructureDecorativeMachines
+  id: StructureDecorativeTV
+  name: TV
+  description: An old TV.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/modern_structures.rsi
+      state: TV
+
+- type: entity
+  parent: StructureDecorativeMachines
+  id: StructureDecorativeCashRegister
+  name: cash register
+  description: A standard cash register.
+  suffix: decorative
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/modern_structures.rsi
+      state: cash_register
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.2,-0.2,0.2,0.2"
+          hard: false
+          density: 30
+          mask:
+            - ItemMask

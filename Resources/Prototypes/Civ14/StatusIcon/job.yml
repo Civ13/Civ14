@@ -1,5 +1,5 @@
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 1
   id: JobIconCommander
@@ -9,7 +9,7 @@
   jobName: job-name-commander
 
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   id: JobIconIMaj
   priority: 2
@@ -19,7 +19,7 @@
   jobName: job-name-i-maj
 
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 3
   id: JobIconICpt
@@ -29,7 +29,7 @@
   jobName: job-name-i-cpt
 
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 4
   id: JobIconOfficer
@@ -39,7 +39,7 @@
   jobName: job-name-officer
 
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 4
   id: JobIconILt
@@ -49,7 +49,7 @@
   jobName: job-name-i-lt
 
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 5
   id: JobIconISsgt
@@ -59,7 +59,7 @@
   jobName: job-name-i-ssgt
 
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 6
   id: JobIconISgt
@@ -68,7 +68,7 @@
     state: i_sgt
   jobName: job-name-i-sgt
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 6
   id: JobIconNco
@@ -77,7 +77,7 @@
     state: nco
   jobName: job-name-nco
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 7
   id: JobIconICpl
@@ -86,7 +86,7 @@
     state: i_cpl
   jobName: job-name-i-cpl
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 8
   id: JobIconDesignatedMarksman
@@ -96,7 +96,7 @@
   jobName: job-name-designated-marksman
 
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 8
   id: JobIconMedic
@@ -106,7 +106,7 @@
   jobName: job-name-medic
 
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 8
   id: JobIconMg
@@ -116,7 +116,7 @@
   jobName: job-name-mg
 
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 9
   id: JobIconRifleman
@@ -126,7 +126,7 @@
   jobName: job-name-rifleman
 
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 9
   id: JobIconSoldier
@@ -136,7 +136,7 @@
   jobName: job-name-soldier
 
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 9
   id: JobIconSword
@@ -146,7 +146,7 @@
   jobName: job-name-infantry-sword
 
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 9
   id: JobIconHeavy
@@ -156,7 +156,7 @@
   jobName: job-name-infantry-heavy
 
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 9
   id: JobIconSpear
@@ -166,11 +166,67 @@
   jobName: job-name-infantry-spear
 
 - type: jobIcon
-  locationPreference: Left
+  locationPreference: Right
   parent: JobIcon
   priority: 9
   id: JobIconRanged
   icon:
     sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
     state: inf_ranged
+  jobName: job-name-infantry-ranged
+
+#squad icons
+- type: jobIcon
+  locationPreference: Right
+  parent: JobIcon
+  priority: 1
+  id: JobIconSquad1
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: squad_1
+  jobName: job-name-infantry-ranged
+- type: jobIcon
+  locationPreference: Right
+  parent: JobIcon
+  priority: 1
+  id: JobIconSquad2
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: squad_2
+  jobName: job-name-infantry-ranged
+- type: jobIcon
+  locationPreference: Right
+  parent: JobIcon
+  priority: 1
+  id: JobIconSquad3
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: squad_3
+  jobName: job-name-infantry-ranged
+- type: jobIcon
+  locationPreference: Right
+  parent: JobIcon
+  priority: 1
+  id: JobIconSquad4
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: squad_4
+  jobName: job-name-infantry-ranged
+- type: jobIcon
+  locationPreference: Right
+  parent: JobIcon
+  priority: 1
+  id: JobIconSquad5
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: squad_5
+  jobName: job-name-infantry-ranged
+- type: jobIcon
+  locationPreference: Right
+  parent: JobIcon
+  priority: 1
+  id: JobIconSquad6
+  icon:
+    sprite: /Textures/Interface/Misc/civ_hud_squads.rsi
+    state: squad_6
   jobName: job-name-infantry-ranged

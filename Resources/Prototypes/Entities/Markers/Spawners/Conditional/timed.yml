@@ -10,13 +10,6 @@
           state: full
         - state: ai
     - type: Timer
-    - type: TimedSpawner
-      prototypes:
-        - MobCivilian
-      chance: 0.75
-      intervalSeconds: 60
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 5
 
 - type: entity
   name: Xeno AI Timed Spawner

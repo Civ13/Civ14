@@ -1,0 +1,32 @@
+- type: gameMap
+  id: Valley
+  mapName: "Valley (Modern)"
+  mapPath: /Maps/civ/tdm/valley.yml
+  minPlayers: 10
+  maxPlayers: 200
+  maxRandomOffset: 0
+  randomRotation: false
+  fixedPreset: TDMValley
+  stations:
+    Valley:
+      stationProto: StandardStationTDM
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Valley (Modern)"
+        - type: StationJobs
+          availableJobs:
+            # Insurgents
+            InsurgentLeader: [6, 6]
+            InsurgentRifleman: [60, 60]
+            InsurgentMedic: [4, 4]
+
+            # Blugoslavia
+            BlugoslaviaCaptain: [1, 1]
+            BlugoslaviaSergeant: [4, 4]
+            BlugoslaviaRifleman: [50, 50]
+            BlugoslaviaMachinegunner: [5, 5]
+            BlugoslaviaMedic: [3, 3]
+
+            # UN
+            UnitedNationsMedic: [3, 3]
+            UnitedNationsRifleman: [5, 5]

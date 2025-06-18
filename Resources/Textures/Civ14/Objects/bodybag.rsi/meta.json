@@ -1,26 +1,26 @@
 {
-  "version": 1,
-  "license": "AGPLv3",
-  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "states": [
-    {
-      "name": "bodybag_label"
+    "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+    "size": {
+        "x": 32,
+        "y": 32
     },
-    {
-      "name": "bodybag_closed"
-    },
-    {
-      "name": "bodybag_open"
-    },
-    {
-      "name": "bodybag_closed1"
-    },
-    {
-      "name": "bodybag_folded"
-    }
-  ]
+    "states": [
+        {
+            "name": "bodybag_label"
+        },
+        {
+            "name": "bodybag_closed"
+        },
+        {
+            "name": "bodybag_open"
+        },
+        {
+            "name": "bodybag_closed1"
+        },
+        {
+            "name": "bodybag_folded"
+        }
+    ]
 }

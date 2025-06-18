@@ -378,3 +378,63 @@
   components:
     - type: Stack
       count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialBarbwire
+  name: barbed wire
+  suffix: Full
+  components:
+    - type: Sprite
+      state: barbwire_stack
+    - type: Stack
+      stackType: Barbwire
+      baseLayer: barbwire_stack
+    - type: Appearance
+    - type: Item
+      size: Large
+      heldPrefix: barbed wire
+    - type: STWeight
+      self: 5
+- type: entity
+  parent: MaterialBarbwire
+  id: MaterialBarbwire5
+  suffix: 5
+  components:
+    - type: Stack
+      count: 5
+
+- type: entity
+  parent: MaterialBarbwire
+  id: MaterialBarbwire1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialSandbags
+  name: sandbags
+  suffix: Full
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/items.rsi
+      state: sandbag_new
+    - type: Stack
+      stackType: Sandbags
+      baseLayer: sandbag_new
+    - type: Appearance
+    - type: Item
+      size: Ginormous
+      heldPrefix: sandbags
+    - type: STWeight
+      self: 25
+
+- type: entity
+  parent: MaterialSandbags
+  id: MaterialSandbags1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1

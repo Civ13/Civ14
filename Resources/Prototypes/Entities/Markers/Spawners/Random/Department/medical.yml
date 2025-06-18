@@ -10,19 +10,7 @@
         - state: red
         - sprite: Objects/Specific/Medical/medical.rsi
           state: brutepack
-    - type: RandomSpawner
-      rarePrototypes:
-        - MedkitFilled
-      rareChance: 0.1
-      prototypes:
-        - Syringe #you win some you lose some
-        - Brutepack
-        - Ointment
-        - Gauze
-        - EmergencyMedipen
-        - PillCanisterIron
-      chance: 0.9
-      offset: 0.0
+
 
 # Proper medical loot spawner, contains things like beakers and better meds.
 - type: entity
@@ -60,6 +48,5 @@
         - PillCanisterHyronalin
         - PillCanisterIron
         - Bloodpack
-        - MedkitFilled
       chance: 0.9
       offset: 0.0

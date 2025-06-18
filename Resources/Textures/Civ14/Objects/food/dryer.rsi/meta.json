@@ -1,0 +1,265 @@
+{
+  "version": 1,
+  "license": "AGPLv3",
+  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "",
+      "delays": [
+        [
+          0.120000005,
+          0.120000005,
+          0.120000005,
+          0.120000005
+        ]
+      ]
+    },
+    {
+      "name": "empty"
+    },
+    {
+      "name": "SLOTS"
+    },
+    {
+      "name": "some1x1"
+    },
+    {
+      "name": "some2x1"
+    },
+    {
+      "name": "some2x1R"
+    },
+    {
+      "name": "some1x2"
+    },
+    {
+      "name": "some1x2R"
+    },
+    {
+      "name": "some3x1"
+    },
+    {
+      "name": "some3x1R"
+    },
+    {
+      "name": "some1x3"
+    },
+    {
+      "name": "some1x3R"
+    },
+    {
+      "name": "some2x2"
+    },
+    {
+      "name": "some3x2"
+    },
+    {
+      "name": "some3x2R"
+    },
+    {
+      "name": "some2x3"
+    },
+    {
+      "name": "some2x3R"
+    },
+    {
+      "name": "some3x3"
+    },
+    {
+      "name": "some1x4"
+    },
+    {
+      "name": "some2x4"
+    },
+    {
+      "name": "some3x4"
+    },
+    {
+      "name": "rawcutlet"
+    },
+    {
+      "name": "rawcutletR"
+    },
+    {
+      "name": "driedmeat"
+    },
+    {
+      "name": "driedmeatR"
+    },
+    {
+      "name": "fishfillet"
+    },
+    {
+      "name": "fishfilletR"
+    },
+    {
+      "name": "driedfish"
+    },
+    {
+      "name": "driedfishR"
+    },
+    {
+      "name": "salmonfillet"
+    },
+    {
+      "name": "salmonfilletR"
+    },
+    {
+      "name": "driedsalmon"
+    },
+    {
+      "name": "driedsalmonR"
+    },
+    {
+      "name": "celery_stalk"
+    },
+    {
+      "name": "celery_stalkR"
+    },
+    {
+      "name": "chinchona_inhand"
+    },
+    {
+      "name": "peyote"
+    },
+    {
+      "name": "juniper_berry"
+    },
+    {
+      "name": "sapote"
+    },
+    {
+      "name": "parsnip"
+    },
+    {
+      "name": "zucchini"
+    },
+    {
+      "name": "sapodilla"
+    },
+    {
+      "name": "paprika_pepper"
+    },
+    {
+      "name": "agave_leaf"
+    },
+    {
+      "name": "parsley"
+    },
+    {
+      "name": "grapes"
+    },
+    {
+      "name": "mushrooms"
+    },
+    {
+      "name": "watermelonslice"
+    },
+    {
+      "name": "pumpkinslice"
+    },
+    {
+      "name": "lemon"
+    },
+    {
+      "name": "lemonR"
+    },
+    {
+      "name": "lime"
+    },
+    {
+      "name": "limeR"
+    },
+    {
+      "name": "orange"
+    },
+    {
+      "name": "orangeR"
+    },
+    {
+      "name": "apple"
+    },
+    {
+      "name": "banana"
+    },
+    {
+      "name": "apricot"
+    },
+    {
+      "name": "tomato"
+    },
+    {
+      "name": "tomatoR"
+    },
+    {
+      "name": "carrot"
+    },
+    {
+      "name": "pink_squid"
+    },
+    {
+      "name": "squid_rings"
+    },
+    {
+      "name": "purple_octopus"
+    },
+    {
+      "name": "purple_octopusR"
+    },
+    {
+      "name": "red_octopus"
+    },
+    {
+      "name": "red_octopusR"
+    },
+    {
+      "name": "octopus_rings"
+    },
+    {
+      "name": "octopus_ringsR"
+    },
+    {
+      "name": "animal1"
+    },
+    {
+      "name": "animal2"
+    },
+    {
+      "name": "animal3"
+    },
+    {
+      "name": "dry_dung"
+    },
+    {
+      "name": "wood_drier0"
+    },
+    {
+      "name": "wood_drier1"
+    },
+    {
+      "name": "wood_drier2"
+    },
+    {
+      "name": "wood_drier3"
+    },
+    {
+      "name": "wood_drier4"
+    },
+    {
+      "name": "tobacco_green"
+    },
+    {
+      "name": "tobacco_greenR"
+    },
+    {
+      "name": "tobacco"
+    },
+    {
+      "name": "tobaccoR"
+    }
+  ]
+}

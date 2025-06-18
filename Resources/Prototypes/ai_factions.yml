@@ -235,6 +235,7 @@
     - Wizard
     - Predator
     - Germany
+    - US
 
 - type: npcFaction
   id: Germany
@@ -248,4 +249,90 @@
     - AllHostile
     - Wizard
     - Predator
-    - Soviet      
+    - Soviet
+    - US
+
+- type: npcFaction
+  id: US
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - Soviet
+    - Germany
+
+- type: npcFaction
+  id: SovietCW
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - Germany
+    - US
+
+- type: npcFaction
+  id: Insurgents
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - US
+    - Blugoslavia
+
+- type: npcFaction
+  id: Blugoslavia
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - Insurgents
+
+- type: npcFaction
+  id: UnitedNations
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+
+- type: npcFaction
+  id: Civilian
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator

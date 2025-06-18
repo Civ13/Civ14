@@ -3,6 +3,7 @@ using Content.Server.Access.Systems;
 using Content.Server.Forensics;
 using Content.Shared.Access.Components;
 using Content.Shared.Forensics.Components;
+using Content.Server.Overlays; // Namespace for FactionIconsSystem
 using Content.Shared.GameTicking;
 using Content.Shared.Inventory;
 using Content.Shared.PDA;
@@ -12,6 +13,9 @@ using Content.Shared.StationRecords;
 using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Content.Shared.Overlays; // Namespace for ShowFactionIconsComponent
+using Content.Shared.Civ14.CivTDMFactions;
+using Content.Shared.NPC.Components; // Namespace for CivTDMFactionsComponent
 
 namespace Content.Server.StationRecords.Systems;
 
@@ -41,6 +45,7 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IdCardSystem _idCard = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private readonly FactionIconsSystem _factionIcons = default!; // Added dependency
 
     public override void Initialize()
     {
@@ -55,7 +60,67 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
         if (!TryComp<StationRecordsComponent>(args.Station, out var stationRecords))
             return;
 
+        // Create the general record first
         CreateGeneralRecord(args.Station, args.Mob, args.Profile, args.JobId, stationRecords);
+
+        // --- Attempt Squad Assignment ---
+        if (TryComp<ShowFactionIconsComponent>(args.Mob, out var sfiComponent))
+        {
+            // Determine if player wants to be a sergeant (e.g., based on job)
+            bool wantsToBeSergeant = sfiComponent.JobIcon == "JobIconISgt"; // Example: "JobIconISgt" implies sergeant role
+
+            // Determine player's CivFaction (this is crucial and needs proper game logic)
+            // For this example, let's assume a simple alternating assignment or based on JobId.
+            // In a real game, this would come from team selection, game mode logic, etc.
+            string? playerCivFactionId = null;
+
+            // Query for the CivTDMFactionsComponent (assuming one exists on a game rule or map entity)
+            var civQuery = EntityQueryEnumerator<CivTDMFactionsComponent>();
+            CivTDMFactionsComponent? civTDMComp = null;
+            if (civQuery.MoveNext(out _, out civTDMComp))
+            {
+                // Example: Assign to Faction1Id if JobId contains "Faction1", else Faction2Id
+                // This is placeholder logic. Replace with your actual faction assignment logic.
+                if (args.JobId != null) // Ensure JobId is not null
+                {
+                    if (TryComp<NpcFactionMemberComponent>(args.Mob, out var factionComp))
+                    {
+                        foreach (var faction in factionComp.Factions)
+                        {
+                            if (civTDMComp.Faction1Id == null || faction == civTDMComp.Faction1Id)
+                            {
+                                playerCivFactionId = civTDMComp.Faction1Id; // This is already a string, no need for ProtoId conversion here
+                                break;
+                            }
+                            else
+                            {
+                                playerCivFactionId = civTDMComp.Faction2Id;
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                // Fallback or default assignment if not determined by job
+                if (playerCivFactionId == null)
+                {
+                    // Simplistic: assign to Faction1Id by default if not specified or if factionComp.Factions was empty/null.
+                    // Or implement round-robin, or based on current team populations.
+                    playerCivFactionId = civTDMComp.Faction1Id;
+                }
+            }
+
+            if (playerCivFactionId != null)
+            {
+                sfiComponent.BelongsToCivFactionId = playerCivFactionId; // Store it on the component
+                _factionIcons.AttemptAssignPlayerToSquad(args.Mob, playerCivFactionId, wantsToBeSergeant, sfiComponent);
+            }
+            else
+            {
+                Log.Warning($"Could not determine CivFaction for player {ToPrettyString(args.Mob)} with job {args.JobId}. Squad assignment skipped.");
+            }
+        }
+        // --- End Squad Assignment ---
     }
 
     private void OnRename(ref EntityRenamedEvent ev)
@@ -65,13 +130,13 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
         // given entity is a card and the card itself is the key the record will be mistakenly renamed to the card's name
         // if we don't return early.
         // We also do not include the PDA itself being renamed, as that triggers the same event (e.g. for chameleon PDAs).
-        if (HasComp<IdCardComponent>(ev.Uid) ||  HasComp<PdaComponent>(ev.Uid))
+        if (HasComp<IdCardComponent>(ev.Uid) || HasComp<PdaComponent>(ev.Uid))
             return;
 
         if (_idCard.TryFindIdCard(ev.Uid, out var idCard))
         {
             if (TryComp(idCard, out StationRecordKeyStorageComponent? keyStorage)
-                && keyStorage.Key is {} key)
+                && keyStorage.Key is { } key)
             {
                 if (TryGetRecord<GeneralStationRecord>(key, out var generalRecord))
                 {
@@ -146,7 +211,7 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
 
         // when adding a record that already exists use the old one
         // this happens when respawning as the same character
-        if (GetRecordByName(station, name, records) is {} id)
+        if (GetRecordByName(station, name, records) is { } id)
         {
             SetIdKey(idUid, new StationRecordKey(id, station));
             return;
@@ -183,11 +248,11 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
     /// </summary>
     public void SetIdKey(EntityUid? uid, StationRecordKey key)
     {
-        if (uid is not {} idUid)
+        if (uid is not { } idUid)
             return;
 
         var keyStorageEntity = idUid;
-        if (TryComp<PdaComponent>(idUid, out var pda) && pda.ContainedId is {} id)
+        if (TryComp<PdaComponent>(idUid, out var pda) && pda.ContainedId is { } id)
         {
             keyStorageEntity = id;
         }
@@ -283,7 +348,7 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
     public string RecordName(StationRecordKey key)
     {
         if (!TryGetRecord<GeneralStationRecord>(key, out var record))
-           return string.Empty;
+            return string.Empty;
 
         return record.Name;
     }

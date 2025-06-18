@@ -1,0 +1,174 @@
+# modern
+- type: playTimeTracker
+  id: JobInsurgentLeader
+
+- type: playTimeTracker
+  id: JobInsurgentRifleman
+
+- type: playTimeTracker
+  id: JobInsurgentMachinegunner
+
+- type: playTimeTracker
+  id: JobInsurgentMedic
+
+- type: playTimeTracker
+  id: JobBlugoslaviaCaptain
+
+- type: playTimeTracker
+  id: JobBlugoslaviaSergeant
+
+- type: playTimeTracker
+  id: JobBlugoslaviaRifleman
+
+- type: playTimeTracker
+  id: JobBlugoslaviaMachinegunner
+
+- type: playTimeTracker
+  id: JobBlugoslaviaMedic
+
+# coldwar
+- type: playTimeTracker
+  id: JobSovietCWCaptain
+
+- type: playTimeTracker
+  id: JobSovietCWOfficer
+
+- type: playTimeTracker
+  id: JobSovietCWSergeant
+
+- type: playTimeTracker
+  id: JobSovietCWRifleman
+
+- type: playTimeTracker
+  id: JobSovietCWMachinegunner
+
+- type: playTimeTracker
+  id: JobSovietCWSpecialist
+
+- type: playTimeTracker
+  id: JobSovietCWMedic
+
+- type: playTimeTracker
+  id: JobSovietCWSapper
+
+- type: playTimeTracker
+  id: JobUSCaptain
+
+- type: playTimeTracker
+  id: JobUSOfficer
+
+- type: playTimeTracker
+  id: JobUSSergeant
+
+- type: playTimeTracker
+  id: JobUSRifleman
+
+- type: playTimeTracker
+  id: JobUSMachinegunner
+
+- type: playTimeTracker
+  id: JobUSSpecialist
+
+- type: playTimeTracker
+  id: JobUSMedic
+
+- type: playTimeTracker
+  id: JobUSSapper
+
+# ww2
+- type: playTimeTracker
+  id: JobSovietCaptain
+
+- type: playTimeTracker
+  id: JobSovietOfficer
+
+- type: playTimeTracker
+  id: JobSovietSergeant
+
+- type: playTimeTracker
+  id: JobSovietRifleman
+
+- type: playTimeTracker
+  id: JobSovietMachinegunner
+
+- type: playTimeTracker
+  id: JobSovietSubmachineGunner
+
+- type: playTimeTracker
+  id: JobSovietSpecialist
+
+- type: playTimeTracker
+  id: JobSovietMedic
+
+- type: playTimeTracker
+  id: JobSovietSapper
+
+- type: playTimeTracker
+  id: JobGermanCaptain
+
+- type: playTimeTracker
+  id: JobGermanOfficer
+
+- type: playTimeTracker
+  id: JobGermanSergeant
+
+- type: playTimeTracker
+  id: JobGermanRifleman
+
+- type: playTimeTracker
+  id: JobGermanMachinegunner
+
+- type: playTimeTracker
+  id: JobGermanSubmachineGunner
+
+- type: playTimeTracker
+  id: JobGermanSpecialist
+
+- type: playTimeTracker
+  id: JobGermanMedic
+
+- type: playTimeTracker
+  id: JobGermanSapper
+
+# medieval
+- type: playTimeTracker
+  id: JobEnglishLord
+
+- type: playTimeTracker
+  id: JobEnglishKnight
+
+- type: playTimeTracker
+  id: JobEnglishSpearman
+
+- type: playTimeTracker
+  id: JobEnglishSwordsman
+
+- type: playTimeTracker
+  id: JobEnglishRanged
+
+- type: playTimeTracker
+  id: JobEnglishMedic
+
+- type: playTimeTracker
+  id: JobFrenchLord
+
+- type: playTimeTracker
+  id: JobFrenchKnight
+
+- type: playTimeTracker
+  id: JobFrenchSwordsman
+
+- type: playTimeTracker
+  id: JobFrenchSpearman
+
+- type: playTimeTracker
+  id: JobFrenchRanged
+
+- type: playTimeTracker
+  id: JobFrenchMedic
+
+- type: playTimeTracker
+  id: JobUnitedNationsMedic
+
+- type: playTimeTracker
+  id: JobUnitedNationsRifleman

@@ -1,4 +1,4 @@
-﻿version: 1 # Not used right now, whatever.
+version: 1 # Not used right now, whatever.
 binds:
   - function: UIClick
     type: State
@@ -182,8 +182,8 @@ binds:
     key: Z
   - function: AltActivateItemInHand
     type: State
-    key: Z
-    mod1: Alt
+    key: E
+    mod1: Control
   - function: OpenCharacterMenu
     type: State
     key: C
@@ -590,4 +590,8 @@ binds:
   - function: MappingOpenContextMenu
     type: State
     key: MouseRight
+    canFocus: true
+  - function: LookZoom
+    type: State
+    key: Space
     canFocus: true

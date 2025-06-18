@@ -1,0 +1,123 @@
+- type: entity
+  id: ContainerBoxStalker
+  parent: BaseShippingContainer
+  name: shipping container
+  description: This type of sea container is typically used for transporting large and bulky cargo, up to 9 meters in length. One of the main advantages of this container is its increased height, which allows for transporting more cargo at the same freight cost.
+  suffix: ST
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/containers.rsi
+      state: donk_co
+
+- type: entity
+  id: ContainerBoxStalkerRandom
+  parent: ContainerBoxStalker
+  name: shipping container
+  suffix: ST, Random
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/containers.rsi
+      layers:
+        - state: donk_co
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            donk_co: ""
+            conarex: ""
+            cybersun: ""
+            deforest: ""
+            gorlex: ""
+            gorlex_red: ""
+            interdyne: ""
+            kahraman: ""
+            kahraman_alt: ""
+            kosmologistika: ""
+            nakamura: ""
+            nanotrasen: ""
+            nthi: ""
+            vitezstvi: ""
+
+- type: entity
+  id: ContainerStalkerParent
+  parent: BaseShippingContainer
+  abstract: true
+  name: container parent
+  suffix: ST
+  components:
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.9,0.9,1.9,-0.9"
+          density: 1000
+          layer:
+            - WallLayer
+
+- type: entity
+  id: ContainerBlueStalker
+  parent: ContainerStalkerParent
+  name: blue container
+  description: This type of sea container is typically used for transporting large and bulky cargo, up to 9 meters in length. One of the main advantages of this container is its increased height, which allows for transporting more cargo at the same freight cost.
+  suffix: ST
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/containerss.rsi
+      state: blue_clear
+
+- type: entity
+  id: ContainerBlueRustedStalker
+  parent: ContainerStalkerParent
+  name: blue rusty container
+  description: This type of sea container is typically used for transporting large and bulky cargo, up to 9 meters in length. One of the main advantages of this container is its increased height, which allows for transporting more cargo at the same freight cost. The container is completely covered in rust.
+  suffix: ST
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/containerss.rsi
+      state: blue_rusted
+
+- type: entity
+  id: ContainerRedStalker
+  parent: ContainerStalkerParent
+  name: red container
+  description: This type of sea container is typically used for transporting large and bulky cargo, up to 9 meters in length. One of the main advantages of this container is its increased height, which allows for transporting more cargo at the same freight cost.
+  suffix: ST
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/containerss.rsi
+      state: red_clear
+
+- type: entity
+  id: ContainerRedRustedStalker
+  parent: ContainerStalkerParent
+  name: red rusty container
+  description: This type of sea container is typically used for transporting large and bulky cargo, up to 9 meters in length. One of the main advantages of this container is its increased height, which allows for transporting more cargo at the same freight cost. The container is completely covered in rust.
+  suffix: ST
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/containerss.rsi
+      state: red_rusted
+
+- type: entity
+  id: ContainerYellowStalker
+  parent: ContainerStalkerParent
+  name: yellow container
+  description: This type of sea container is typically used for transporting large and bulky cargo, up to 9 meters in length. One of the main advantages of this container is its increased height, which allows for transporting more cargo at the same freight cost.
+  suffix: ST
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/containerss.rsi
+      state: yellow_clear
+
+- type: entity
+  id: ContainerYellowRustedStalker
+  parent: ContainerStalkerParent
+  name: yellow rusty container
+  description: This type of sea container is typically used for transporting large and bulky cargo, up to 9 meters in length. One of the main advantages of this container is its increased height, which allows for transporting more cargo at the same freight cost. The container is completely covered in rust.
+  suffix: ST
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/containerss.rsi
+      state: yellow_rusted

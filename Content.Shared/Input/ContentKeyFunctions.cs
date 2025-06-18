@@ -101,7 +101,9 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction Hotbar7 = "Hotbar7";
         public static readonly BoundKeyFunction Hotbar8 = "Hotbar8";
         public static readonly BoundKeyFunction Hotbar9 = "Hotbar9";
-
+        // Civ14 Change Start
+        public static readonly BoundKeyFunction LookZoom = "LookZoom";
+        // Civ14 Change End
         public static BoundKeyFunction[] GetHotbarBoundKeys() =>
             new[]
             {

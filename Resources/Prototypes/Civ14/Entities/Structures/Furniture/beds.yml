@@ -61,3 +61,30 @@
   name: sleepzone bed
   id: SleepZoneBed
   parent: Bed
+
+- type: entity
+  name: bed
+  id: BedCivPadding
+  parent: Bed
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/bed_chair.rsi
+      state: bed_padding
+
+- type: entity
+  name: field bed
+  id: BedCivField
+  parent: Bed
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/bed_chair.rsi
+      state: fieldbed
+
+- type: entity
+  name: hammock
+  id: BedCivHammock
+  parent: Bed
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/bed_chair.rsi
+      state: hammockf

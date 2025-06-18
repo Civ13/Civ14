@@ -16,3 +16,466 @@
       cost: 4
       material: WoodPlank
       time: 6
+
+- type: entity
+  parent: BaseSign
+  id: SignCivTfc
+  name: "Texas Fried Chicken"
+  description: "A sign Texas people usually like."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: tfc
+
+- type: entity
+  parent: BaseSign
+  id: SignCivWeedshop
+  name: "Weed Shop"
+  description: "A sign stoners usually like."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: weedshop
+
+- type: entity
+  parent: BaseSign
+  id: SignCivMckellens
+  name: "McKellen's"
+  description: "A sign for the McKellen's Franchise establishment."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: mckellens
+
+- type: entity
+  parent: BaseSign
+  id: SignCivSheriff
+  name: "Sheriff's Office"
+  description: "A sign for the local Sheriff's Office."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: sheriff
+
+- type: entity
+  parent: BaseSign
+  id: SignCivBank
+  name: "bank"
+  description: "A sign for the local bank."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: bank
+
+- type: entity
+  parent: BaseSign
+  id: SignCivBarsign
+  name: "BAR"
+  description: "A sign that says bar on it."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: barsign
+
+- type: entity
+  parent: BaseSign
+  id: SignCivCafesignRu
+  name: "CAFE"
+  description: "A sign that says CAFE on it in cyrillic."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: cafesign_ru
+
+- type: entity
+  parent: BaseSign
+  id: SignCivBarber
+  name: "barbershop"
+  description: "A swirly object indicating a barbershop."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: barber
+
+- type: entity
+  parent: BaseSign
+  id: SignCivBailypost
+  name: "Baily post"
+  description: "Protection service."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: bailypost
+
+- type: entity
+  parent: BaseSign
+  id: SignCivBailypost2
+  name: "Baily post"
+  description: "Protection service."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: bailypost2
+
+- type: entity
+  parent: BaseSign
+  id: SignCivMinefield
+  name: "Minefield"
+  description: "Achtung! Minen."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: minefield
+
+- type: entity
+  parent: BaseSign
+  id: SignCivColonialSign
+  name: "sign"
+  description: "Signs something."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: Colonial_Sign
+
+- type: entity
+  parent: BaseSign
+  id: SignCivCustomsign2
+  name: "sign"
+  description: "Signs something."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: customsign2
+
+- type: entity
+  parent: BaseSign
+  id: SignCivCustomsign
+  name: "sign"
+  description: "Signs something."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: customsign
+
+- type: entity
+  parent: BaseSign
+  id: SignCivN1
+  name: "ONE"
+  description: "A silver sign which reads 'I'."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: n1
+
+- type: entity
+  parent: BaseSign
+  id: SignCivN2
+  name: "TWO"
+  description: "A silver sign which reads 'II'."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: n2
+
+- type: entity
+  parent: BaseSign
+  id: SignCivN3
+  name: "THREE"
+  description: "A silver sign which reads 'III'."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: n3
+
+- type: entity
+  parent: BaseSign
+  id: SignCivN4
+  name: "FOUR"
+  description: "A silver sign which reads 'IV'."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: n4
+
+- type: entity
+  parent: BaseSign
+  id: SignCivN5
+  name: "FIVE"
+  description: "A silver sign which reads 'V'."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: n5
+
+- type: entity
+  parent: BaseSign
+  id: SignCivN6
+  name: "SIX"
+  description: "A silver sign which reads 'VI'."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: n6
+
+- type: entity
+  parent: BaseSign
+  id: SignCivMedal
+  name: "presence recognition"
+  description: "A recognition plaque staight from the ministy of admission! This one seems to be for the persons presence, what an award!"
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: medal
+
+- type: entity
+  parent: BaseSign
+  id: SignCivRestroom
+  name: "restroom"
+  description: "A sign indicating the presence of a restroom."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: restroom
+
+- type: entity
+  parent: BaseSign
+  id: SignCivRestroomMale
+  name: "restroom"
+  description: "A sign indicating the presence of a male restroom."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: restroom_male
+
+- type: entity
+  parent: BaseSign
+  id: SignCivRestroomFemale
+  name: "restroom"
+  description: "A sign indicating the presence of a female restroom."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: restroom_female
+
+- type: entity
+  parent: BaseSign
+  id: SignCivJustice
+  name: "justice"
+  description: "A justice sign."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: justice
+
+- type: entity
+  parent: BaseSign
+  id: SignCivCourt
+  name: "court"
+  description: "The court house."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals_wide.rsi"
+      state: court
+
+- type: entity
+  parent: BaseSign
+  id: SignCivTownhall
+  name: "town hall"
+  description: "The town hall."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals_wide.rsi"
+      state: townhall
+
+- type: entity
+  parent: BaseSign
+  id: SignCivHotelUral
+  name: "Hotel Ural sign"
+  description: "A worn-out sign with 'Hotel Ural' written in Cyrillic."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals_wide.rsi"
+      state: hotel_ural
+
+- type: entity
+  parent: BaseSign
+  id: SignCivAnatomy
+  name: "anatomy poster"
+  description: "A poster detailing the complexity of the human body."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: anatomy
+
+- type: entity
+  parent: BaseSign
+  id: SignCivXrayOn
+  name: "lightbox"
+  description: "A medical lightbox used to examine X-ray images."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: xray_on
+
+- type: entity
+  parent: BaseSign
+  id: SignCivPeriodic
+  name: "periodic table"
+  description: "A tabular display of the chemical elements."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: periodic
+
+- type: entity
+  parent: BaseSign
+  id: SignCivCasino
+  name: "casino"
+  description: "A blinking casino sign."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals_wider.rsi"
+      state: casino
+
+- type: entity
+  parent: BaseSign
+  id: SignCivOpen
+  name: "open"
+  description: "A blinking open sign."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: open
+
+- type: entity
+  parent: BaseSign
+  id: SignCivGunshop
+  name: "gun store"
+  description: "A blinking gun store sign."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: gunshop
+
+- type: entity
+  parent: BaseSign
+  id: SignCivGas
+  name: "gas"
+  description: "A flashing gas station sign."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: gas
+
+- type: entity
+  parent: BaseSign
+  id: SignCivSale
+  name: "SALE sign"
+  description: "A sign indicating a sale."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: sale
+
+- type: entity
+  parent: BaseSign
+  id: SignCivRent
+  name: "FOR RENT sign"
+  description: "A sign indicating something for rent."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: rent
+
+- type: entity
+  parent: BaseSign
+  id: SignCivDonutShop
+  name: "Randy's Donuts"
+  description: "A donut and pastries franchise."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: donut_shop
+
+- type: entity
+  parent: BaseSign
+  id: SignCivDeerTrophy
+  name: "hunting deer trophy"
+  description: "Looks like we finally found Bambi..."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: deer_trophy
+
+- type: entity
+  parent: BaseSign
+  id: SignCivSovietPoster
+  name: "military poster"
+  description: "A Soviet military poster depicting a saluting soldier in front of the Soviet flag."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: soviet_poster
+
+- type: entity
+  parent: BaseSign
+  id: SignCivSovafghanPoster1
+  name: "Soviet-Afghan friendship poster"
+  description: "A poster depicting a Soviet and DRA soldier smiling at each other while holding a rifle together."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: sovafghan_poster_1
+
+- type: entity
+  parent: BaseSign
+  id: SignCivSovafghanPoster2
+  name: "Soviet-Afghan friendship poster"
+  description: "A poster depicting armed men holding the Soviet and DRA flags."
+  components:
+    - type: Sprite
+      sprite: "Civ14/Objects/decals.rsi"
+      state: sovafghan_poster_2
+
+- type: entity
+  parent: StructureDecorativeBase
+  id: Billboard
+  name: billboard
+  description: "Goodness, what are they selling us this time?"
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: Civ14/Objects/billboards.rsi
+      state: billboard
+      layers:
+        - state: billboard
+        - state: ad1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            ad1: ""
+            ad2: ""
+            ad3: ""
+            ad4: ""
+            ad5: ""
+            ad6: ""
+            ad7: ""
+            ad8: ""
+            ad9: ""
+            ad10: ""
+            ad11: ""
+            ad12: ""
+            ad13: ""
+            ad14: ""
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.8,0.3,0.8,1.3"
+          density: 80
+          mask:
+            - MachineMask
+          layer:
+            - MidImpassable
+            - LowImpassable

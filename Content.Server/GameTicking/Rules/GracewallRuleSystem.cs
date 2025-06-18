@@ -1,4 +1,3 @@
-
 using Content.Server.GameTicking.Rules.Components;
 using Content.Shared.NPC.Components;
 using Content.Shared.Physics;
@@ -9,24 +8,29 @@ using Content.Server.Chat.Systems;
 using Robust.Shared.Physics;
 using Content.Shared.GameTicking.Components;
 using Robust.Shared.Physics.Components;
+using System.Collections.Generic;
 
 namespace Content.Server.GameTicking.Rules;
 
 public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
 {
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
-    // Define a specific collision group for the grace wall.
-    // Make sure this group is defined in CollisionGroups.yml and NPCs are set to not collide with it.
     [Dependency] private readonly ChatSystem _chat = default!;
-    private const int GraceWallCollisionGroup = (int)CollisionGroup.MidImpassable; // Example: Use MidImpassable or define a custom one
+    [Dependency] private readonly IGameTiming _gameTiming = default!;
 
-    private FixturesComponent? _fixtures;
+    private const int GraceWallCollisionGroup = (int)CollisionGroup.MidImpassable;
+
+    // Cache for entity passability checks
+    private Dictionary<EntityUid, bool> _passabilityCache = new();
+    private TimeSpan _lastCacheClear;
+    private const float CacheClearInterval = 5.0f; // Clear cache every 5 seconds
+
     public override void Initialize()
     {
         base.Initialize();
 
         SubscribeLocalEvent<GracewallAreaComponent, StartCollideEvent>(OnStartCollide);
-        // Potentially subscribe to PreventCollideEvent if more fine-grained control is needed
+        SubscribeLocalEvent<GracewallAreaComponent, PreventCollideEvent>(OnPreventCollide);
     }
 
     protected override void Started(EntityUid uid, GracewallRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
@@ -35,6 +39,8 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
 
         component.Timer = (float)component.GracewallDuration.TotalSeconds;
         component.GracewallActive = true;
+        _lastCacheClear = _gameTiming.CurTime;
+
         // Schedule the announcement for 15 seconds later
         var announcementMessage = $"The grace wall is up for {component.GracewallDuration.TotalMinutes} minutes!";
         Timer.Spawn(TimeSpan.FromSeconds(15), () =>
@@ -65,10 +71,18 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
     {
         base.Update(frameTime);
 
-        var query = EntityQueryEnumerator<GracewallRuleComponent, GameRuleComponent>();
-        while (query.MoveNext(out var uid, out var gracewall, out var gameRule))
+        // Clear cache periodically to avoid memory leaks
+        var currentTime = _gameTiming.CurTime;
+        if (currentTime - _lastCacheClear > TimeSpan.FromSeconds(CacheClearInterval))
         {
-            if (!GameTicker.IsGameRuleActive(uid, gameRule) || !gracewall.GracewallActive)
+            _passabilityCache.Clear();
+            _lastCacheClear = currentTime;
+        }
+
+        var query = EntityQueryEnumerator<GracewallRuleComponent, GameRuleComponent>();
+        while (query.MoveNext(out var ruleUid, out var gracewall, out var gameRule))
+        {
+            if (!GameTicker.IsGameRuleActive(ruleUid, gameRule) || !gracewall.GracewallActive)
                 continue;
 
             gracewall.Timer -= frameTime;
@@ -90,8 +104,11 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
         var query = EntityQueryEnumerator<GracewallAreaComponent, FixturesComponent>();
         while (query.MoveNext(out var wallUid, out var area, out var fixtures))
         {
-            area.GracewallActive = false;
-            UpdateGracewallPhysics(wallUid, area, fixtures, false);
+            if (area.Permanent == false)
+            {
+                area.GracewallActive = false;
+                UpdateGracewallPhysics(wallUid, area, fixtures, false);
+            }
         }
     }
 
@@ -99,44 +116,74 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
     {
         // Check if the specific fixture we defined in the prototype exists
         if (!fixtures.Fixtures.TryGetValue("gracewall", out var fixture))
-
         {
             Log.Warning($"Gracewall entity {ToPrettyString(uid)} is missing the 'gracewall' fixture!");
-            // Attempt to create it dynamically if missing? Or just rely on the prototype.
-            // For now, we'll just log a warning. If it's consistently missing, the prototype needs fixing.
             return;
         }
 
         // Modify the fixture's collision properties
-        // This assumes NPCs have a mask that *doesn't* include GraceWallCollisionGroup
         _physics.SetCollisionLayer(uid, "gracewall", fixture, active ? GraceWallCollisionGroup : (int)CollisionGroup.None);
-        // Setting the layer might require refreshing contacts or waking the body if it's asleep
-        // to ensure the change takes effect immediately.
+
+        // Ensure the change takes effect immediately
         if (TryComp<PhysicsComponent>(uid, out var physics))
             _physics.WakeBody(uid, body: physics);
-        // Ensure the radius is correct (it might change dynamically later)
-        // This requires getting the specific fixture and modifying its shape.
-        // For simplicity, we assume the prototype radius is sufficient for now.
-        // If dynamic radius is needed, we'd need more complex logic here.
     }
 
     private void OnStartCollide(EntityUid uid, GracewallAreaComponent component, ref StartCollideEvent args)
     {
-        // This event triggers when something *starts* colliding with the grace wall fixture.
-        // We only care when the wall is active.
+        // This event is kept minimal to reduce lag
+        if (!component.GracewallActive)
+            return;
+    }
+
+    private bool CheckPassable(EntityUid entityTryingToPass, GracewallAreaComponent component)
+    {
+        // Check cache first
+        if (_passabilityCache.TryGetValue(entityTryingToPass, out var result))
+            return result;
+
+        // Original logic
+        if (TryComp<NpcFactionMemberComponent>(entityTryingToPass, out var factions))
+        {
+            foreach (var faction in component.BlockingFactions)
+            {
+                if (faction == "All")
+                {
+                    _passabilityCache[entityTryingToPass] = true;
+                    return true;
+                }
+                foreach (var member in factions.Factions)
+                {
+                    if (member.ToString() == faction)
+                    {
+                        _passabilityCache[entityTryingToPass] = true;
+                        return true;
+                    }
+                }
+            }
+        }
+
+        _passabilityCache[entityTryingToPass] = false;
+        return false;
+    }
+
+    private void OnPreventCollide(EntityUid uid, GracewallAreaComponent component, ref PreventCollideEvent args)
+    {
+        // Only handle collisions when the wall is active
         if (!component.GracewallActive)
             return;
 
-        // Check if the other entity is an NPC
-        var otherUid = args.OtherEntity;
-        if (HasComp<NpcFactionMemberComponent>(otherUid))
+        // Get the entity trying to pass through
+        var otherEntity = args.OtherEntity;
+
+        // Skip processing for entities we've already determined can pass
+        if (_passabilityCache.TryGetValue(otherEntity, out var canPass) && canPass)
+            return;
+
+        // Check if the entity trying to pass through should be blocked
+        if (!CheckPassable(otherEntity, component))
         {
-            // The collision system *should* prevent entry based on layers/masks.
-            // However, if an NPC somehow starts colliding (e.g., spawned inside, teleported),
-            // we could potentially push them out here.
-            // For now, we rely on the collision group preventing entry.
-            // Log.Debug($"NPC {ToPrettyString(otherUid)} collided with active grace wall {ToPrettyString(uid)}.");
+            args.Cancelled = true;
         }
     }
-
 }

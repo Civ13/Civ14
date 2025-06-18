@@ -45,6 +45,7 @@
   objectType: Structure
   agemin: 0
   agemax: 8
+  tdm: true
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
@@ -63,3 +64,69 @@
               doAfter: 7
     - node: end
       entity: BarricadeDirtwall
+
+- type: construction
+  name: sandbag wall
+  id: BarricadeSandbags
+  graph: BarricadeSandbags
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A sandbag barricade.
+  icon:
+    sprite: Civ14/Structures/barricades.rsi
+    state: sandbag
+  objectType: Structure
+  agemin: 5
+  agemax: 8
+  tdm: true
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: constructionGraph
+  id: BarricadeSandbags
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Sandbags
+              amount: 1
+              doAfter: 15
+    - node: end
+      entity: BarricadeSandbags
+
+- type: construction
+  name: barbed wire
+  id: Barbedwire
+  graph: Barbedwire
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: A coil of barbed wire, useful for area denial.
+  icon:
+    sprite: Civ14/Objects/structures.rsi
+    state: barbwire
+  objectType: Structure
+  agemin: 5
+  agemax: 8
+  tdm: true
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+
+- type: constructionGraph
+  id: Barbedwire
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Barbwire
+              amount: 1
+              doAfter: 8
+    - node: end
+      entity: Barbedwire

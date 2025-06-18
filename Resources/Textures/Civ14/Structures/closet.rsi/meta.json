@@ -1,0 +1,268 @@
+{
+    "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "closed"
+        },
+        {
+            "name": "open"
+        },
+        {
+            "name": "welded"
+        },
+        {
+            "name": "emergency"
+        },
+        {
+            "name": "emergencyopen"
+        },
+        {
+            "name": "secure"
+        },
+        {
+            "name": "secure1"
+        },
+        {
+            "name": "secureopen"
+        },
+        {
+            "name": "secureoff"
+        },
+        {
+            "name": "securebroken",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "securebrokenopen"
+        },
+        {
+            "name": "medical"
+        },
+        {
+            "name": "medical1"
+        },
+        {
+            "name": "medicalopen"
+        },
+        {
+            "name": "medicalbroken",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "medicaloff"
+        },
+        {
+            "name": "coffin_open"
+        },
+        {
+            "name": "coffin"
+        },
+        {
+            "name": "coffin_blank"
+        },
+        {
+            "name": "fridge1"
+        },
+        {
+            "name": "fridgeopen"
+        },
+        {
+            "name": "fridge"
+        },
+        {
+            "name": "fridgebroken"
+        },
+        {
+            "name": "fridgeoff"
+        },
+        {
+            "name": "firecloset"
+        },
+        {
+            "name": "fireclosetopen"
+        },
+        {
+            "name": "toolcloset"
+        },
+        {
+            "name": "toolclosetopen"
+        },
+        {
+            "name": "bombsuit"
+        },
+        {
+            "name": "bombsuitopen"
+        },
+        {
+            "name": "extinguisher_full"
+        },
+        {
+            "name": "extinguisher_mini"
+        },
+        {
+            "name": "extinguisher_closed"
+        },
+        {
+            "name": "extinguisher_empty"
+        },
+        {
+            "name": "hydrant"
+        },
+        {
+            "name": "hydrant_open"
+        },
+        {
+            "name": "defib_wall"
+        },
+        {
+            "name": "defib_wall_open"
+        },
+        {
+            "name": "medical_wall"
+        },
+        {
+            "name": "medical_wall_open"
+        },
+        {
+            "name": "medical_wall_locked"
+        },
+        {
+            "name": "medical_wall_unlocked"
+        },
+        {
+            "name": "medical_wall_off"
+        },
+        {
+            "name": "medical_wall_spark",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    2,
+                    0.1,
+                    0.1,
+                    0.1,
+                    6
+                ]
+            ]
+        },
+        {
+            "name": "cabinet_closed"
+        },
+        {
+            "name": "cabinet_open"
+        },
+        {
+            "name": "cabinetglass_closed"
+        },
+        {
+            "name": "cabinetglass_open"
+        },
+        {
+            "name": "cabinetdetective_locked"
+        },
+        {
+            "name": "cabinetdetective_broken"
+        },
+        {
+            "name": "cabinet_closed_ceiling"
+        },
+        {
+            "name": "cabinet_open_ceiling"
+        },
+        {
+            "name": "iron_wall"
+        },
+        {
+            "name": "iron_wall_open"
+        },
+        {
+            "name": "bronze_sarcophagus_closed"
+        },
+        {
+            "name": "sarcophagus_open"
+        },
+        {
+            "name": "gold_sarcophagus_closed"
+        },
+        {
+            "name": "sealed_coffin"
+        },
+        {
+            "name": "sealed_coffin_open"
+        },
+        {
+            "name": "drawer"
+        },
+        {
+            "name": "dresser",
+            "directions": 4
+        },
+        {
+            "name": "dresser-alt",
+            "directions": 4
+        },
+        {
+            "name": "endtable",
+            "directions": 4
+        },
+        {
+            "name": "endtable-alt",
+            "directions": 4
+        },
+        {
+            "name": "coffee_table"
+        },
+        {
+            "name": "coffee_table-alt"
+        },
+        {
+            "name": "dresser2_right",
+            "directions": 4
+        },
+        {
+            "name": "dresser2_left",
+            "directions": 4
+        },
+        {
+            "name": "dresser2-alt_right",
+            "directions": 4
+        },
+        {
+            "name": "dresser2-alt_left",
+            "directions": 4
+        },
+        {
+            "name": "icecream_cooler1"
+        },
+        {
+            "name": "icecream_cooler"
+        },
+        {
+            "name": "icecream_cooler_open"
+        }
+    ]
+}

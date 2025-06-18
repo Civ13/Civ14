@@ -1,0 +1,43 @@
+- type: entity
+  name: compass
+  parent: BaseItem
+  id: Compass
+  description: A device to help navigate.
+  components:
+  - type: Sprite
+    sprite: Civ14/Objects/items.rsi
+    state: compass
+  - type: Item
+  - type: HandheldGPS
+  - type: Tag
+    tags:
+    - GPS
+
+- type: entity
+  name: map and compass
+  parent: Compass
+  id: CompassMap
+  description: A set of navigation tools.
+  components:
+  - type: Sprite
+    sprite: Civ14/Objects/items.rsi
+    state: compass_map
+
+- type: entity
+  name : modern map and compass
+  parent: CompassMap
+  id: ModernCompassMap
+  components:
+  - type: Sprite
+    sprite: Civ14/Objects/items.rsi
+    state: compass_map_modern
+
+- type: entity
+  name : digital map
+  parent: CompassMap
+  id: DigitalMap
+  description: A tablet with a map and navigation tools on it.
+  components:
+  - type: Sprite
+    sprite: Civ14/Objects/items.rsi
+    state: compass_modern

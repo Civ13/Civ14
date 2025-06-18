@@ -1,5 +1,7 @@
 {
     "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
     "size": {
         "x": 32,
         "y": 32
@@ -94,6 +96,10 @@
             "directions": 4
         },
         {
+            "name": "steelchair-old",
+            "directions": 4
+        },
+        {
             "name": "steelchair",
             "directions": 4
         },
@@ -163,6 +169,10 @@
             "directions": 4
         },
         {
+            "name": "fancysofa_middle",
+            "directions": 4
+        },
+        {
             "name": "fancysofa_l",
             "directions": 4
         },
@@ -175,6 +185,46 @@
         },
         {
             "name": "diner_booth_left",
+            "directions": 4
+        },
+        {
+            "name": "throne",
+            "directions": 4
+        },
+        {
+            "name": "throne_armrest",
+            "directions": 4
+        },
+        {
+            "name": "regalchair",
+            "directions": 4
+        },
+        {
+            "name": "bosschair",
+            "directions": 4
+        },
+        {
+            "name": "bosschair_armrest",
+            "directions": 4
+        },
+        {
+            "name": "metalchair",
+            "directions": 4
+        },
+        {
+            "name": "metalchair_blue",
+            "directions": 4
+        },
+        {
+            "name": "metalchair_yellow",
+            "directions": 4
+        },
+        {
+            "name": "metalchair_red",
+            "directions": 4
+        },
+        {
+            "name": "metalchair_green",
             "directions": 4
         }
     ]

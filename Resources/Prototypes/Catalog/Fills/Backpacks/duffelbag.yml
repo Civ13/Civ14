@@ -140,8 +140,6 @@
         - id: ClothingShoesClown
         - id: ClothingMaskClown
         - id: BikeHorn
-        - id: ClownPDA
-        - id: ClothingHeadsetService
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -191,25 +189,6 @@
       contents:
         - id: C4
           amount: 8
-
-- type: entity
-  parent: ClothingBackpackChameleon
-  id: ClothingBackpackChameleonFill
-  suffix: Fill, Chameleon
-  components:
-    - type: StorageFill
-      contents:
-        - id: ChameleonPDA
-        - id: ClothingUniformJumpsuitChameleon
-        - id: ClothingOuterChameleon
-        - id: ClothingNeckChameleon
-        - id: ClothingMaskGasChameleon
-        - id: ClothingHeadHatChameleon
-        - id: ClothingHandsChameleon
-        - id: ClothingEyesChameleon
-        - id: ClothingHeadsetChameleon
-        - id: ClothingShoesChameleon
-        - id: BarberScissors
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -304,8 +283,6 @@
     - type: StorageFill
       contents:
         - id: DefibrillatorSyndicate
-        - id: MedkitCombatFilled
-          amount: 4
         - id: Tourniquet
           amount: 4
         - id: CombatMedipen

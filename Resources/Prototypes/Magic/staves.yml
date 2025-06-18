@@ -36,7 +36,7 @@
 
 - type: entity
   id: AnimationStaff
-  parent: [BaseItem, BaseMagicalContraband]
+  parent: [BaseItem]
   name: staff of animation
   description: Brings inanimate objects to life!
   components:

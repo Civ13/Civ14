@@ -4,6 +4,7 @@
   mapPath: /Maps/civ/nomads_classic.yml
   minPlayers: 0
   maxPlayers: 256
+  fixedPreset: Nomads
   stations:
     Nomads:
       stationProto: StandardStationArena

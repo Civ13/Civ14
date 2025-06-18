@@ -30,7 +30,7 @@ public sealed partial class RoboticsConsoleComponent : Component
     /// Radio channel to send messages on.
     /// </summary>
     [DataField]
-    public ProtoId<RadioChannelPrototype> RadioChannel = "Science";
+    public ProtoId<RadioChannelPrototype> RadioChannel = "Common";
 
     /// <summary>
     /// Radio message sent when destroying a borg.

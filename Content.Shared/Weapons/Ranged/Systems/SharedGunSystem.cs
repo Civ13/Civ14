@@ -871,7 +871,7 @@ public abstract partial class SharedGunSystem : EntitySystem
         Projectiles.SetShooter(uid, projectile, user ?? gunUid);
         projectile.Weapon = gunUid;
 
-        TransformSystem.SetWorldRotationNoLerp(uid, direction.ToWorldAngle());
+        TransformSystem.SetWorldRotationNoLerp(uid, direction.ToWorldAngle() + projectile.Angle);
     }
 
     public List<EntityUid>? ShootRequested(NetEntity netGun, NetCoordinates coordinates, NetEntity? target, List<int>? projectiles, ICommonSession session)
@@ -899,8 +899,7 @@ public abstract partial class SharedGunSystem : EntitySystem
     /// Call this whenever the ammo count for a gun changes.
     /// </summary>
     protected virtual void UpdateAmmoCount(EntityUid uid, bool prediction = true) { }
-
-    protected void SetCartridgeSpent(EntityUid uid, CartridgeAmmoComponent cartridge, bool spent)
+    protected virtual void SetCartridgeSpent(EntityUid uid, CartridgeAmmoComponent cartridge, bool spent)
     {
         if (cartridge.Spent != spent)
             Dirty(uid, cartridge);

@@ -1,0 +1,88 @@
+- type: entity
+  id: CivJobsEnlisted
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: JobGroup
+      name: role-timer-enlisted-roles
+      color: "#A66300"
+      jobs:
+        - SovietCWRifleman
+        - SovietCWMachinegunner
+        - SovietRifleman
+        - SovietMachinegunner
+        - SovietSubmachineGunner
+        - USRifleman
+        - USMachinegunner
+        - GermanRifleman
+        - GermanMachinegunner
+        - GermanSubmachineGunner
+        - BlugoslaviaRifleman
+        - BlugoslaviaMachinegunner
+        - InsurgentRifleman
+        - UnitedNationsRifleman
+
+- type: entity
+  id: CivJobsEnlistedRifleman
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: JobGroup
+      name: role-timer-rifleman-roles
+      color: "#A66300"
+      jobs:
+        - SovietCWRifleman
+        - SovietRifleman
+        - USRifleman
+        - GermanRifleman
+        - InsurgentRifleman
+        - BlugoslaviaRifleman
+        - UnitedNationsRifleman
+
+- type: entity
+  id: CivJobsMedical
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: JobGroup
+      name: role-timer-medical-roles
+      color: "#a60019"
+      jobs:
+        - SovietMedic
+        - SovietCWMedic
+        - USMedic
+        - GermanMedic
+        - InsurgentMedic
+        - BlugoslaviaMedic
+        - UnitedNationsMedic
+
+- type: entity
+  id: CivJobsSquadLeader
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: JobGroup
+      name: role-timer-squad-leader-roles
+      color: "#1967ba"
+      jobs:
+        - SovietSergeant
+        - SovietCWSergeant
+        - USSergeant
+        - GermanSergeant
+        - InsurgentLeader
+        - BlugoslaviaSergeant
+
+- type: entity
+  id: CivJobsOfficer
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: JobGroup
+      name: role-timer-officer-roles
+      color: "#1967ba"
+      jobs:
+        - SovietCaptain
+        - SovietCWCaptain
+        - USCaptain
+        - GermanCaptain
+        - BlugoslaviaCaptain

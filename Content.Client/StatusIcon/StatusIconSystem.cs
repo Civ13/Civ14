@@ -8,6 +8,7 @@ using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Shared.Configuration;
+using Content.Shared.Overlays;
 
 namespace Content.Client.StatusIcon;
 
@@ -85,6 +86,17 @@ public sealed class StatusIconSystem : SharedStatusIconSystem
 
         if (data.HideOnStealth && TryComp<StealthComponent>(ent, out var stealth) && stealth.Enabled)
             return false;
+        if (TryComp<ShowFactionIconsComponent>(ent, out var requested))
+        {
+            if (TryComp<ShowFactionIconsComponent>(viewer, out var requester))
+            {
+                //only show if on the same faction
+                if (requester.FactionIcon != requested.FactionIcon)
+                {
+                    return false;
+                }
+            }
+        }
 
         if (TryComp<SpriteComponent>(ent, out var sprite) && !sprite.Visible)
             return false;

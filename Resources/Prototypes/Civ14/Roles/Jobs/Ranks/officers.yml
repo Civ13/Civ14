@@ -1,0 +1,65 @@
+- type: rank
+  id: RankFieldMarshal
+  name: Field Marshal
+  prefix: FM.
+  paygrade: O11
+
+- type: rank
+  id: RankGeneral
+  name: General
+  prefix: Gen.
+  paygrade: O10
+
+- type: rank
+  id: RankLieutenantGeneral
+  name: Lieutenant General
+  prefix: LtGen.
+  paygrade: O9
+
+- type: rank
+  id: RankMajorGeneral
+  name: Major General
+  prefix: MajGen.
+  paygrade: O8
+
+- type: rank
+  id: RankBrigadierGeneral
+  name: Brigadier General
+  prefix: BGen.
+  paygrade: O7
+
+- type: rank
+  id: RankColonel
+  name: Colonel
+  prefix: Col.
+  paygrade: O6
+
+- type: rank
+  id: RankLieutenantColonel
+  name: Lieutenant Colonel
+  prefix: LtCol.
+  paygrade: O5
+
+- type: rank
+  id: RankMajor
+  name: Major
+  prefix: Maj.
+  paygrade: O4
+
+- type: rank
+  id: RankCaptain
+  name: Captain
+  prefix: Capt.
+  paygrade: O3
+
+- type: rank
+  id: RankFirstLT
+  name: First Lieutenant
+  prefix: 1stLt.
+  paygrade: O2
+
+- type: rank
+  id: RankSecondLT
+  name: Second Lieutenant
+  prefix: 2ndLt.
+  paygrade: O1

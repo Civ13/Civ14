@@ -34,7 +34,6 @@
           - WeldingMask
         components:
           - StationMap
-          - SprayPainter
           - NetworkConfigurator
           - RCD
           - RCDAmmo
@@ -114,7 +113,6 @@
           - AppraisalTool
         components:
           - StationMap
-          - SprayPainter
           - NetworkConfigurator
           - RCD
           - RCDAmmo
@@ -458,7 +456,7 @@
     - type: Appearance
 
 - type: entity
-  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseSecurityContraband]
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltSecurity
   name: security belt
   description: Can hold security gear like handcuffs and flashes.
@@ -510,7 +508,7 @@
     - type: Appearance
 
 - type: entity
-  parent: [ClothingBeltBase, ClothingSlotBase, BaseCommandContraband]
+  parent: [ClothingBeltBase, ClothingSlotBase]
   id: ClothingBeltSheath
   name: sabre sheath
   description: An ornate sheath designed to hold an officer's blade.
@@ -595,7 +593,7 @@
         - 0,0,3,1
 
 - type: entity
-  parent: [ClothingBeltStorageBase, BaseSyndicateContraband]
+  parent: [ClothingBeltStorageBase]
   id: ClothingBeltSyndieHolster
   name: syndicate shoulder holster
   description: A deep shoulder holster capable of holding many types of ballistics.
@@ -652,7 +650,7 @@
       sprite: Clothing/Belt/salvagewebbing.rsi
 
 - type: entity
-  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseSyndicateContraband]
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltMilitaryWebbing
   name: chest rig
   description: A set of tactical webbing worn by Syndicate boarding parties.
@@ -708,7 +706,7 @@
       sprite: Clothing/Belt/suspenders_black.rsi
 
 - type: entity
-  parent: [ClothingBeltStorageBase, BaseMagicalContraband]
+  parent: [ClothingBeltStorageBase]
   id: ClothingBeltWand
   name: wand belt
   description: A belt designed to hold various rods of power. A veritable fanny pack of exotic magic.

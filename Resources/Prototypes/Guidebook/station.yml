@@ -5,11 +5,11 @@
   text: "/ServerInfo/Guidebook/SpaceStation14.xml"
   children:
     - References
-    - Glossary
     - Medical
     - Species
+    - Mapping
 
 - type: guideEntry
-  id: Glossary
-  name: guide-entry-glossary
-  text: "/ServerInfo/Guidebook/Glossary.xml"
+  id: Mapping
+  name: guide-entry-mapping
+  text: "/ServerInfo/Guidebook/Mapping.xml"

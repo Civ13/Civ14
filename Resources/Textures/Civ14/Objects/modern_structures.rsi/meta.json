@@ -129,7 +129,13 @@
       "name": "barrel"
     },
     {
+      "name": "barreln"
+    },
+    {
       "name": "lid_barrel"
+    },
+    {
+      "name": "lid_barreln"
     },
     {
       "name": "barrel-85"
@@ -162,11 +168,27 @@
       "directions": 4
     },
     {
+      "name": "cash_register-old",
+      "directions": 4
+    },
+    {
+      "name": "cash_register_opened-old",
+      "directions": 4
+    },
+    {
       "name": "cash_register",
       "directions": 4
     },
     {
       "name": "cash_register_opened",
+      "directions": 4
+    },
+    {
+      "name": "cash_register_antique",
+      "directions": 4
+    },
+    {
+      "name": "cash_register_antique_opened",
       "directions": 4
     },
     {
@@ -288,6 +310,12 @@
       "name": "smes2"
     },
     {
+      "name": "vinylplayer_empty"
+    },
+    {
+      "name": "vinylplayer"
+    },
+    {
       "name": "gramophone"
     },
     {
@@ -295,6 +323,20 @@
     },
     {
       "name": "grandfather_clock_a",
+      "delays": [
+        [
+          0.4,
+          0.2,
+          0.4,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "grandfather_clockX"
+    },
+    {
+      "name": "grandfather_clock_aX",
       "delays": [
         [
           0.4,
@@ -472,14 +514,15 @@
       ]
     },
     {
-      "name": "metal_detector"
+      "name": "metal_detector",
+      "directions": 4
     },
     {
       "name": "metal_detector1",
       "delays": [
         [
           1,
-          1
+          0.2
         ]
       ]
     },
@@ -487,8 +530,6 @@
       "name": "metal_detector2",
       "delays": [
         [
-          0.3,
-          0.3,
           0.3,
           0.3
         ]
@@ -514,6 +555,45 @@
     {
       "name": "medical_divider_full",
       "directions": 4
+    },
+    {
+      "name": "billard",
+      "directions": 8
+    },
+    {
+      "name": "circuit0"
+    },
+    {
+      "name": "circuit1",
+      "delays": [
+        [
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ]
+      ]
     }
   ]
 }

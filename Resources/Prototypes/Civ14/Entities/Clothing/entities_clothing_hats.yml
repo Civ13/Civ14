@@ -11,8 +11,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5
-          Slash: 0.5
+          Blunt: 0.8
+          Slash: 0.8
           Piercing: 0.7
           Arrow: 0.6
           Heat: 0.40
@@ -68,9 +68,9 @@
         coefficients:
           Blunt: 0.6
           Slash: 0.6
-          Piercing: 0.55
-          Arrow: 0.55
-          Heat: 0.55
+          Piercing: 0.85
+          Arrow: 0.85
+          Heat: 0.85
 - type: entity
   name: Phase I Replicant ARF Helmet
   parent: ClothingHeadBase
@@ -87,8 +87,8 @@
           Blunt: 0.7
           Slash: 0.7
           Piercing: 0.6
-          Arrow: 0.5
-          Heat: 0.55
+          Arrow: 0.8
+          Heat: 0.85
 - type: entity
   name: Phase I Replicant Airborne Helmet
   parent: ClothingHeadBase
@@ -105,7 +105,7 @@
           Blunt: 0.65
           Slash: 0.65
           Piercing: 0.65
-          Arrow: 0.5
+          Arrow: 0.8
           Heat: 0.44
 - type: entity
   name: Stormtrooper Helmet
@@ -124,7 +124,7 @@
           Slash: 0.65
           Piercing: 0.35
           Arrow: 0.4
-          Heat: 0.5
+          Heat: 0.8
 - type: entity
   name: Storm-Surgeon Helmet
   parent: ClothingHeadBase
@@ -142,7 +142,7 @@
           Slash: 0.65
           Piercing: 0.35
           Arrow: 0.4
-          Heat: 0.5
+          Heat: 0.8
 - type: entity
   name: Stormtrooper Radio Technician Helmet
   parent: ClothingHeadBase
@@ -159,8 +159,8 @@
           Blunt: 0.7
           Slash: 0.7
           Piercing: 0.44
-          Arrow: 0.5
-          Heat: 0.5
+          Arrow: 0.8
+          Heat: 0.8
 - type: entity
   name: AT-RT Replicant Driver Helmet
   parent: ClothingHeadBase
@@ -176,9 +176,9 @@
         coefficients:
           Blunt: 0.6
           Slash: 0.6
-          Piercing: 0.55
-          Arrow: 0.55
-          Heat: 0.55
+          Piercing: 0.85
+          Arrow: 0.85
+          Heat: 0.85
 - type: entity
   name: Phase I Replicant Radio Technician Helmet
   parent: ClothingHeadBase
@@ -195,8 +195,8 @@
           Blunt: 0.7
           Slash: 0.7
           Piercing: 0.6
-          Arrow: 0.5
-          Heat: 0.5
+          Arrow: 0.8
+          Heat: 0.8
 - type: entity
   name: Replicant Engineer Helmet
   parent: ClothingHeadBase
@@ -213,8 +213,8 @@
           Blunt: 0.7
           Slash: 0.7
           Piercing: 0.6
-          Arrow: 0.5
-          Heat: 0.5
+          Arrow: 0.8
+          Heat: 0.8
           Radiation: 0.65
 - type: entity
   name: Replicant Commando Helmet
@@ -229,9 +229,9 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
-          Piercing: 0.55
+          Blunt: 0.85
+          Slash: 0.85
+          Piercing: 0.85
           Arrow: 0.35
           Heat: 0.4
 - type: entity
@@ -250,7 +250,7 @@
           Blunt: 0.7
           Slash: 0.7
           Piercing: 0.6
-          Arrow: 0.5
+          Arrow: 0.8
           Heat: 0.44
 - type: entity
   name: Phase I Replicant MP Helmet
@@ -268,8 +268,8 @@
           Blunt: 0.7
           Slash: 0.7
           Piercing: 0.6
-          Arrow: 0.5
-          Heat: 0.55
+          Arrow: 0.8
+          Heat: 0.85
 - type: entity
   name: M1 helmet 2nd LT
   parent: ClothingHeadBase
@@ -283,10 +283,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.85
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
 - type: entity
   name: M1 camo helmet
@@ -315,7 +315,7 @@
           Blunt: 0.7
           Slash: 0.7
           Piercing: 0.6
-          Arrow: 0.5
+          Arrow: 0.8
           Heat: 0.44
 - type: entity
   name: Phase I Replicant Commander Helmet
@@ -333,7 +333,7 @@
           Blunt: 0.7
           Slash: 0.7
           Piercing: 0.6
-          Arrow: 0.5
+          Arrow: 0.8
           Heat: 0.44
 - type: entity
   name: Phase II Replicant Trooper Helmet
@@ -407,8 +407,8 @@
           Blunt: 0.7
           Slash: 0.7
           Piercing: 0.6
-          Arrow: 0.5
-          Heat: 0.55
+          Arrow: 0.8
+          Heat: 0.85
 - type: entity
   name: roman legionary helmet
   parent: ClothingHeadBase
@@ -502,7 +502,7 @@
           Blunt: 0.4
           Slash: 0.4
           Piercing: 0.9
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
 - type: entity
   name: sol invictus helmet
@@ -803,8 +803,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Arrow: 0.7
           Heat: 0.85
 - type: entity
@@ -822,8 +822,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Arrow: 0.7
           Heat: 0.85
 - type: entity
@@ -841,8 +841,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5
-          Slash: 0.5
+          Blunt: 0.8
+          Slash: 0.8
           Piercing: 0.95
           Arrow: 0.6
           Heat: 0.85
@@ -861,8 +861,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Arrow: 0.7
           Heat: 0.85
 - type: entity
@@ -938,10 +938,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.85
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
 - type: entity
   name: UN helmet
@@ -956,14 +956,14 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.85
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
 - type: entity
   name: UN medic helmet
-  parent: ClothingHeadBase
+  parent: civ13_head_UN_helmet
   id: civ13_head_UN_medic_helmet
   description: A typical blue UN helmet, with doctor markings.
   components:
@@ -998,7 +998,7 @@
         coefficients:
           Blunt: 0.4
           Slash: 0.4
-          Piercing: 0.5
+          Piercing: 0.8
           Arrow: 0.25
           Heat: 0.85
 - type: entity
@@ -1014,10 +1014,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5
-          Slash: 0.5
+          Blunt: 0.8
+          Slash: 0.8
           Piercing: 0.85
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
 - type: entity
   name: Chinese helmet
@@ -1032,10 +1032,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.65
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.75
 - type: entity
   name: Medical FT1 advanced helmet
@@ -1081,10 +1081,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.85
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
 - type: entity
   name: white hard hat
@@ -1162,8 +1162,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5
-          Slash: 0.5
+          Blunt: 0.8
+          Slash: 0.8
           Piercing: 0.9
           Arrow: 0.6
           Heat: 0.85
@@ -1186,8 +1186,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.8
           Arrow: 0.65
           Heat: 0.85
@@ -1210,8 +1210,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.9
           Arrow: 0.65
           Heat: 0.85
@@ -1234,8 +1234,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5
-          Slash: 0.5
+          Blunt: 0.8
+          Slash: 0.8
           Piercing: 0.9
           Arrow: 0.6
           Heat: 0.85
@@ -1252,14 +1252,14 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.38
-          Slash: 0.38
-          Piercing: 0.44
-          Arrow: 0.25
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.85
+          Arrow: 0.7
           Heat: 0.85
 - type: entity
   name: Red PASGT helmet
-  parent: ClothingHeadBase
+  parent: civ13_head_PASGT_helmet
   id: civ13_head_Red_PASGT_helmet
   description: A typical US Army PASGT helmet. This one has a red dye.
   components:
@@ -1267,14 +1267,7 @@
       sprite: Civ14/Clothing/exported/hats/pasgt_reddish.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/pasgt_reddish.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.38
-          Slash: 0.38
-          Piercing: 0.44
-          Arrow: 0.25
-          Heat: 0.85
+
 - type: entity
   name: white papakha
   parent: ClothingHeadBase
@@ -1331,7 +1324,7 @@
       time: 5
 - type: entity
   name: OCP ACH helmet
-  parent: ClothingHeadBase
+  parent: civ13_head_ACH_helmet
   id: civ13_head_OCP_ACH_helmet
   description: A typical US Army Advanced Combat Helmet. This one is in OCP cammo.
   components:
@@ -1339,14 +1332,7 @@
       sprite: Civ14/Clothing/exported/hats/ach_ocp.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/ach_ocp.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.25
-          Slash: 0.25
-          Piercing: 0.065
-          Arrow: 0.054
-          Heat: 0.78
+
 - type: entity
   name: ACH helmet
   parent: ClothingHeadBase
@@ -1360,11 +1346,12 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.25
-          Slash: 0.25
-          Piercing: 0.065
-          Arrow: 0.054
-          Heat: 0.78
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.8
+          Arrow: 0.7
+          Heat: 0.85
+
 - type: entity
   name: MASKA 1 helmet
   parent: ClothingHeadBase
@@ -1378,10 +1365,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.1
-          Slash: 0.1
+          Blunt: 0.5
+          Slash: 0.5
           Piercing: 0.05
-          Arrow: -0.1
+          Arrow: 0.7
           Heat: 0.73
 - type: entity
   name: 6B47 helmet
@@ -1532,7 +1519,7 @@
           Slash: -0.75
           Piercing: -0.19
           Arrow: 0.010000000000000009
-          Heat: 0.58
+          Heat: 0.88
 - type: entity
   name: QGF03 helmet
   parent: ClothingHeadBase
@@ -1553,7 +1540,7 @@
           Heat: 0.85
 - type: entity
   name: M95 helmet
-  parent: ClothingHeadBase
+  parent: civ13_head_PASGT_helmet
   id: civ13_head_M95_helmet
   description: >-
     A PASGT derived helmet used by the Dutch Armed Forces. This one is in DPM
@@ -1563,14 +1550,7 @@
       sprite: Civ14/Clothing/exported/hats/m95_dpm.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/hats/m95_dpm.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.38
-          Slash: 0.38
-          Piercing: 0.44
-          Arrow: 0.25
-          Heat: 0.85
+
 - type: entity
   name: M1 Helmet
   parent: ClothingHeadBase
@@ -1584,8 +1564,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.6
-          Slash: 0.6
+          Blunt: 0.8
+          Slash: 0.8
           Piercing: 0.9
           Arrow: 0.7
           Heat: 0.85
@@ -1718,8 +1698,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5
-          Slash: 0.5
+          Blunt: 0.8
+          Slash: 0.8
           Piercing: 0.95
           Arrow: 0.4
           Heat: 0.85
@@ -1789,8 +1769,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.9
           Arrow: 0.6
           Heat: 0.85
@@ -1995,8 +1975,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.92
           Arrow: 0.6
           Heat: 0.85
@@ -2016,8 +1996,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.92
           Arrow: 0.6
           Heat: 0.85
@@ -2207,10 +2187,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
     - type: Construction
       graph: civ13_head_italian_sallet
@@ -2233,10 +2213,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
     - type: Construction
       graph: civ13_head_german_sallet
@@ -2259,10 +2239,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
     - type: Construction
       graph: civ13_head_burgundian_sallet
@@ -2316,7 +2296,7 @@
           Blunt: 0.70
           Slash: 0.70
           Piercing: 0.9
-          Arrow: 0.5
+          Arrow: 0.8
           Heat: 0.85
 - type: entity
   name: protective conical helmet
@@ -2391,10 +2371,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.9
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
 - type: entity
   name: iron coif and helmet
@@ -2429,8 +2409,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
           Arrow: 0.6
           Heat: 0.85
@@ -2447,8 +2427,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
           Arrow: 0.6
           Heat: 0.85
@@ -2465,8 +2445,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
           Arrow: 0.6
           Heat: 0.85
@@ -2483,8 +2463,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
           Arrow: 0.6
           Heat: 0.85
@@ -2503,10 +2483,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
 - type: entity
   name: feminine long arabic helmet
@@ -2523,10 +2503,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
 - type: entity
   name: templar knight helmet
@@ -2561,10 +2541,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
 - type: entity
   name: crusader helmet
@@ -2718,10 +2698,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
 - type: entity
   name: royal mamluk conical helmet
@@ -2741,7 +2721,7 @@
           Blunt: 0.4
           Slash: 0.4
           Piercing: 0.9
-          Arrow: 0.5
+          Arrow: 0.8
           Heat: 0.85
 - type: entity
   name: royal viking helmet
@@ -2756,10 +2736,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
 - type: entity
   name: royal viking helmet
@@ -2776,10 +2756,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
 - type: entity
   name: varangian helmet
@@ -2816,10 +2796,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
 - type: entity
   name: penlianal_whitestrake helmet
@@ -2926,8 +2906,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.92
           Arrow: 0.6
           Heat: 0.85
@@ -2964,8 +2944,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.85
           Arrow: 0.7
           Heat: 0.75
@@ -2985,7 +2965,7 @@
           Blunt: 0.4
           Slash: 0.4
           Piercing: 0.9
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
 - type: entity
   name: imperial officer helmet
@@ -3003,7 +2983,7 @@
           Blunt: 0.30
           Slash: 0.30
           Piercing: 0.9
-          Arrow: 0.5
+          Arrow: 0.8
           Heat: 0.85
 - type: entity
   name: leather skullcap helmet
@@ -3041,7 +3021,7 @@
           Blunt: 0.4
           Slash: 0.4
           Piercing: 0.9
-          Arrow: 0.5
+          Arrow: 0.8
           Heat: 0.85
 - type: entity
   name: jingasa
@@ -3130,8 +3110,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.95
           Arrow: 0.35
           Heat: 0.65
@@ -3287,7 +3267,7 @@
           Piercing: 0.7
           Arrow: 0.1
           Heat: 0.8
-          Radiation: 0.55
+          Radiation: 0.85
 - type: entity
   name: orc beserker helm
   parent: ClothingHeadBase
@@ -3358,10 +3338,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.9
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
     - type: Construction
       graph: civ13_head_orc_spearman_helm
@@ -3382,10 +3362,10 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.44
-          Slash: 0.44
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.9
-          Arrow: 0.55
+          Arrow: 0.85
           Heat: 0.85
     - type: Construction
       graph: civ13_head_orc_captain_helm
@@ -3406,8 +3386,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5
-          Slash: 0.5
+          Blunt: 0.8
+          Slash: 0.8
           Piercing: 0.95
           Arrow: 0.6
           Heat: 0.85
@@ -3708,8 +3688,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.57
-          Slash: 0.57
+          Blunt: 0.87
+          Slash: 0.87
           Piercing: 0.9
           Arrow: 0.66
           Heat: 0.85
@@ -3746,8 +3726,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.57
-          Slash: 0.57
+          Blunt: 0.87
+          Slash: 0.87
           Piercing: 0.9
           Arrow: 0.66
           Heat: 0.85
@@ -3767,8 +3747,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.57
-          Slash: 0.57
+          Blunt: 0.87
+          Slash: 0.87
           Piercing: 0.9
           Arrow: 0.66
           Heat: 0.85
@@ -3928,8 +3908,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.55
-          Slash: 0.55
+          Blunt: 0.85
+          Slash: 0.85
           Piercing: 0.8
           Arrow: 0.65
           Heat: 0.85
@@ -3946,8 +3926,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.58
-          Slash: 0.58
+          Blunt: 0.88
+          Slash: 0.88
           Piercing: 0.8
           Arrow: 0.67
           Heat: 0.85

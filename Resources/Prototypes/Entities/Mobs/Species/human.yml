@@ -32,6 +32,10 @@
     - type: ShowAntagIcons
     - type: ShowSyndicateIcons
     - type: SleepZone
+    - type: LookZoom #civ14
+    - type: EyeCursorOffset #civ14
+      maxOffset: 4
+      pvsIncrease: 0.4
     - type: Inventory
       femaleDisplacements:
         jumpsuit:

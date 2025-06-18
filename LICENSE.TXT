@@ -1,3 +1,20 @@
+All code for the content repository is licensed under MIT, as defined below.
+This includes both the original SS14 content forked from their official repository,
+and the code contributed to this repository after that.
+
+Most assets are licensed under CC-BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/,
+unless stated otherwise. Assets have their license and the copyright in the metadata file.
+
+Note that some assets are licensed under the non-commercial CC-BY-NC-SA 3.0,
+https://creativecommons.org/licenses/by-nc-sa/3.0/, or similar non-commercial
+licenses and will need to be removed if you wish to use this project commercially.
+
+Assets ported over from Civ13 are licenced under GNU Affero General Public License v3.0 (AGPLv3),
+https://opensource.org/license/agpl-v3. Check the `meta.json` files or the `attributions.txt` files accompaniying them.
+
+Code from the "Stalker 14" repository, mostly inside the "_Stalker" folders, is licenced
+under their own terms, please see https://github.com/stalker14-project/stalker-14/blob/master/LICENSE.TXT.
+
 MIT License
 
 Copyright (c) 2017-2025 Space Wizards Federation & Civ13 team

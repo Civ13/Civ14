@@ -1,0 +1,39 @@
+- type: radioChannel
+  id: Soviet
+  name: chat-radio-soviet
+  keycode: "s"
+  frequency: 1349
+  color: "#539c00"
+  longRange: true
+
+- type: radioChannel
+  id: US
+  name: chat-radio-us
+  keycode: "u"
+  frequency: 1351
+  color: "#539c00"
+  longRange: true
+
+- type: radioChannel
+  id: Insurgents
+  name: chat-radio-insurgents
+  keycode: "i"
+  frequency: 1352
+  color: "#539c00"
+  longRange: true
+
+- type: radioChannel
+  id: Blugoslavia
+  name: chat-radio-blugoslavia
+  keycode: "b"
+  frequency: 1353
+  color: "#0032c7"
+  longRange: true
+
+- type: radioChannel
+  id: UnitedNations
+  name: chat-radio-unitednations
+  keycode: "n"
+  frequency: 1354
+  color: "#004e9c"
+  longRange: true

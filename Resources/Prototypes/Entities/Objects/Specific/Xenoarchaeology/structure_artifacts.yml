@@ -53,9 +53,6 @@
             ano01_on: Rainbow
     - type: Appearance
     - type: Actions
-
-    - type: StealTarget
-      stealGroup: XenoArtifact
     - type: ContainerContainer
       containers:
         storagebase: !type:Container # needed for the EffectStorage artifactEffect

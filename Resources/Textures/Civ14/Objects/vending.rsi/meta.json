@@ -1,5 +1,7 @@
 {
     "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
     "size": {
         "x": 32,
         "y": 32
@@ -12,19 +14,19 @@
             "name": "apparel_german_old"
         },
         {
+            "name": "gvendor_sov1"
+        },
+        {
             "name": "gvendor_sov2"
+        },
+        {
+            "name": "gvendor_ger1"
         },
         {
             "name": "gvendor_ger2"
         },
         {
             "name": "gvendor_ammo"
-        },
-        {
-            "name": "gvendor_sov1"
-        },
-        {
-            "name": "gvendor_ger1"
         },
         {
             "name": "gvendor"
@@ -164,6 +166,114 @@
             ]
         },
         {
+            "name": "hotfood",
+            "directions": 4,
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "cola",
+            "directions": 4
+        },
+        {
+            "name": "soda",
+            "directions": 4,
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "sovietsoda",
+            "directions": 4
+        },
+        {
             "name": "custom1"
         },
         {
@@ -228,14 +338,13 @@
             "directions": 4
         },
         {
-            "name": "sovietsoda",
-            "directions": 4
-        },
-        {
             "name": "grenade_crate"
         },
         {
             "name": "grenade_crate_alt"
+        },
+        {
+            "name": "menu"
         }
     ]
 }

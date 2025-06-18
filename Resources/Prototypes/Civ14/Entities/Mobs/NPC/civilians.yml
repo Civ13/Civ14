@@ -1,0 +1,81 @@
+- type: entity
+  name: civilian
+  parent: BaseMobHuman
+  id: MobCivilian
+  suffix: AI NPC
+  components:
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Loadout
+      prototypes:
+        - Civilian1
+        - Civilian2
+        - Civilian3
+        - Civilian4
+        - Civilian5
+        - Civilian6
+        - Civilian7
+        - Civilian8
+    - type: InputMover
+    - type: MobMover
+    - type: HTN
+      rootTask:
+        task: IdleCompound
+
+- type: startingGear
+  id: Civilian1
+  equipment:
+    jumpsuit: civ13_uniform_farmer_outfit
+    shoes: civ13_shoes_Brown_boots
+
+- type: startingGear
+  id: Civilian2
+  equipment:
+    jumpsuit: civ13_uniform_mechanic_outfit
+    shoes: civ13_shoes_Black_leather_boots
+    head: civ13_head_Afghanka_field_cap
+
+- type: startingGear
+  id: Civilian3
+  equipment:
+    jumpsuit: civ13_uniform_texan_shirt_outfit
+    shoes: civ13_shoes_Brown_boots
+    head: civ13_head_black_shemagh
+
+- type: startingGear
+  id: Civilian4
+  equipment:
+    jumpsuit: civ13_uniform_checkered_outfit
+    shoes: civ13_shoes_Black_leather_boots
+    head: civ13_head_red_cap
+
+- type: startingGear
+  id: Civilian5
+  equipment:
+    jumpsuit: civ13_uniform_pioneer_outfit
+    shoes: civ13_shoes_courier_sneakers
+    head: civ13_head_Afghanka_field_cap
+
+- type: startingGear
+  id: Civilian6
+  equipment:
+    jumpsuit: civ13_uniform_blue_colonial_clothing
+    shoes: civ13_shoes_courier_sneakers
+
+- type: startingGear
+  id: Civilian7
+  equipment:
+    jumpsuit: civ13_uniform_farmer_outfit
+    shoes: civ13_shoes_courier_sneakers
+    head: civ13_head_black_shemagh
+
+- type: startingGear
+  id: Civilian8
+  equipment:
+    jumpsuit: civ13_uniform_blue_colonial_clothing
+    shoes: civ13_shoes_Black_leather_boots
+    head: civ13_head_black_shemagh
+#shoes: civ13_shoes_Brown_boots, civ13_shoes_courier_sneakers, civ13_shoes_Black_leather_boots
+#jumpsuit: civ13_uniform_farmer_outfit, civ13_uniform_mechanic_outfit, civ13_uniform_texan_shirt_outfit, civ13_uniform_checkered_outfit, civ13_uniform_pioneer_outfit, civ13_uniform_blue_colonial_clothing
+#head: civ13_head_Afghanka_field_cap, civ13_head_red_cap, civ13_head_black_shemagh

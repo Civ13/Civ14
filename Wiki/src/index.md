@@ -32,7 +32,10 @@ Features:
 
 ## Gamemodes
 
-So far, we are working on the **Nomads** gamemode. You can see a guide to this [here](gamemodes/nomads.md).
+So far, we have two gamemodes being developed:
+
+-   The **Nomads** gamemode. You can see a guide to this [on this page](gamemodes/nomads.md).
+-   The **Team Deathmatch** gamemode. You can see a guide to this [on this page](gamemodes/tdm.md).
 
 ## How to Play
 

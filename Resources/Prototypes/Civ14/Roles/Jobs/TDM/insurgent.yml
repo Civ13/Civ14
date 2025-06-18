@@ -1,0 +1,188 @@
+# Leader
+
+- type: job
+  id: InsurgentLeader
+  originalName: Qaynarqan
+  name: job-name-civ-insurgent-sgt
+  faction: Insurgents
+  description: job-description-civ-insurgent-sgt
+  playTimeTracker: JobInsurgentLeader
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 7200 # 2 hours
+  startingGear: InsurgentLeaderGear
+  icon: "JobIconISgt"
+  supervisors: job-supervisors-nobody
+  ranks:
+    RankSergeantMajor:
+      - !type:RoleTimeRequirement
+        role: JobBlugoslaviaSergeant
+        time: 36000 # 10 hours
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: JobBlugoslaviaSergeant
+        time: 10800 # 3 hours
+    RankSergeant: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - Insurgents
+        - type: ShowFactionIcons
+          factionIcon: GreenistanFaction
+          jobIcon: JobIconISgt
+          assignSquad: true
+        - type: Access
+          groups:
+            - Insurgents
+
+- type: startingGear
+  id: InsurgentLeaderGear
+  equipment:
+    shoes: civ13_shoes_black_boots
+    jumpsuit: civ13_uniform_black_tunic_with_desert_camo_trousers
+    neck: civ13_accessory_khaki_PASGT_body_armor
+    head: civ13_head_black_bandana
+    belt: civ13_sword_saif
+    pocket1: civ13_magazine_AK_74_magazine_(5.45x39mm)
+    pocket2: Compass
+    ears: ClothingHeadsetInsurgents
+  inhand:
+    - civ13_ar_AK_74
+
+# Assault Rifleman
+
+- type: job
+  id: InsurgentRifleman
+  name: job-name-civ-insurgent-rifleman
+  faction: Insurgents
+  originalName: Tufangchy
+  description: job-description-civ-insurgent-rifleman
+  playTimeTracker: JobInsurgentRifleman
+  startingGear: InsurgentRiflemanGear
+  randomStartingGears: [InsurgentRiflemanGear, InsurgentRiflemanGear2, InsurgentRiflemanGear3]
+  icon: "JobIconICpl"
+  supervisors: job-supervisors-sgt
+  ranks:
+    RankLanceCorporal:
+      - !type:RoleTimeRequirement
+        role: JobInsurgentRifleman
+        time: 36000 # 10 hours
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: JobInsurgentRifleman
+        time: 10800 # 3 hours
+    RankPrivate: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - Insurgents
+        - type: ShowFactionIcons
+          factionIcon: GreenistanFaction
+          jobIcon: JobIconRifleman
+          assignSquad: true
+        - type: Access
+          groups:
+            - Insurgents
+
+- type: startingGear
+  id: InsurgentRiflemanGear
+  equipment:
+    shoes: civ13_shoes_black_boots
+    jumpsuit: civ13_uniform_sand_colored_tunic_with_woodland_camo_trousers
+    neck: civ13_accessory_khaki_PASGT_body_armor
+    head: civ13_head_black_bandana
+    mask: civ13_mask_black_balaclava
+    belt: ClothingWebbingInsurgentRifleman2
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+    ears: ClothingHeadsetInsurgents
+  inhand:
+    - civ13_ar_AKM
+
+- type: startingGear
+  id: InsurgentRiflemanGear2
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_sand_colored_uniform_with_desert_camo_trousers
+    gloves: ClothingHandsGlovesFingerless
+    belt: ClothingWebbingInsurgentRifleman
+    neck: civ13_accessory_green_PASGT_body_armor
+    head: civ13_head_black_shemagh
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+    ears: ClothingHeadsetInsurgents
+  inhand:
+    - civ13_ar_AKM
+
+- type: startingGear
+  id: InsurgentRiflemanGear3
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_light_brown_uniform_with_green_trousers
+    gloves: ClothingHandsGlovesFingerless
+    belt: ClothingWebbingInsurgentRifleman2
+    neck: civ13_accessory_woodland_PASGT_body_armor
+    head: civ13_head_black_shemagh
+    mask: civ13_mask_black_balaclava
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+    ears: ClothingHeadsetInsurgents
+  inhand:
+    - civ13_ar_AKM
+
+# Medic
+
+- type: job
+  id: InsurgentMedic
+  name: job-name-civ-insurgent-medic
+  faction: Insurgents
+  originalName: Shifobash
+  description: job-description-civ-insurgent-medic
+  playTimeTracker: JobInsurgentMedic
+  startingGear: InsurgentMedicGear
+  icon: "JobIconMedic"
+  supervisors: job-supervisors-sgt
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      # time: 9000 # 2.5 hours
+      time: 3600 # 1 hour temporarily until people build up playtime
+  ranks:
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: JobInsurgentMedic
+        time: 10800 # 3 hours
+    RankCorporal: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - Insurgents
+        - type: ShowFactionIcons
+          factionIcon: GreenistanFaction
+          jobIcon: JobIconMedic
+          assignSquad: false
+        - type: Access
+          groups:
+            - Insurgents
+
+- type: startingGear
+  id: InsurgentMedicGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_uniform
+    neck: civ13_accessory_green_PASGT_body_armor
+    head: civ13_head_black_shemagh
+    belt: ClothingSatchelMedicalMedsFilled
+    back: ClothingBackpackDuffelFilled
+    pocket1: FlashlightLanternMilitary
+    pocket2: civ13_magazine_AK47_(7.62x39mm)
+    ears: ClothingHeadsetInsurgents
+  inhand:
+    - civ13_ar_AKM

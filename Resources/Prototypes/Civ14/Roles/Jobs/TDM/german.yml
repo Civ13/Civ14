@@ -1,0 +1,327 @@
+- type: job
+  id: GermanCaptain
+  name: job-name-civ-german-cpt
+  faction: Germany
+  originalName: Kapitän
+  description: job-description-civ-german-cpt
+  playTimeTracker: JobGermanCaptain
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsSquadLeader
+      time: 7200 # 2 hours
+  startingGear: GermanCaptainGear
+  icon: "JobIconICpt"
+  supervisors: job-supervisors-nobody
+  ranks:
+    RankMajor:
+      - !type:RoleTimeRequirement
+        role: JobGermanCaptain
+        time: 18000 # 5 hours
+    RankCaptain: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: GermanAccent
+        - type: NpcFactionMember
+          factions:
+            - Germany
+        - type: ShowFactionIcons
+          factionIcon: GermanFaction
+          jobIcon: JobIconICpt
+          assignSquad: false
+
+- type: startingGear
+  id: GermanCaptainGear
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_German_officer_uniform
+    outerClothing: civ13_suit_German_officer_coat
+    gloves: civ13_gloves_Officer_gloves
+    belt: civ13_pistol_Luger_P08
+    head: civ13_head_German_officer_cap
+    pocket1: FlashlightLanternMilitary
+    pocket2: Compass
+
+# Sergeant
+
+- type: job
+  id: GermanSergeant
+  originalName: Sergeant
+  name: job-name-civ-german-sgt
+  faction: Germany
+  description: job-description-civ-german-sergeant
+  playTimeTracker: JobGermanSergeant
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 7200 # 2 hours
+  startingGear: GermanSergeantGear
+  icon: "JobIconISgt"
+  supervisors: job-supervisors-cpt
+  ranks:
+    RankSergeantMajor:
+      - !type:RoleTimeRequirement
+        role: JobGermanSergeant
+        time: 36000 # 10 hours
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: JobGermanSergeant
+        time: 10800 # 3 hours
+    RankSergeant: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: GermanAccent
+        - type: NpcFactionMember
+          factions:
+            - Germany
+        - type: ShowFactionIcons
+          factionIcon: GermanFaction
+          jobIcon: JobIconISgt
+          assignSquad: true
+
+- type: startingGear
+  id: GermanSergeantGear
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_German_SS_officer_uniform
+    outerClothing: civ13_suit_German_parka
+    head: civ13_head_German_field_cap
+    belt: civ13_pistol_Walther_P38
+    pocket1: civ13_magazine_Walther_magazine
+    pocket2: Compass
+  inhand:
+    - civ13_boltaction_Karabiner_98k
+
+# SMG
+
+- type: job
+  id: GermanSubmachineGunner
+  name: job-name-civ-german-submachinegunner
+  faction: Germany
+  originalName: Maschinenpistole Schütze
+  description: job-description-civ-german-submachinegunner
+  playTimeTracker: JobGermanSubmachineGunner
+  startingGear: GermanSubmachineGunnerGear
+  randomStartingGears: [GermanSubmachineGunnerGear, GermanSubmachineGunnerGear2]
+  icon: "JobIconSoldier"
+  supervisors: job-supervisors-cpt
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 3600 # 1 hours
+  ranks:
+    RankLanceCorporal:
+      - !type:RoleTimeRequirement
+        role: JobGermanSubmachineGunner
+        time: 36000 # 10 hours
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: JobGermanSubmachineGunner
+        time: 10800 # 3 hours
+    RankPrivate: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: GermanAccent
+        - type: NpcFactionMember
+          factions:
+            - Germany
+        - type: ShowFactionIcons
+          factionIcon: GermanFaction
+          jobIcon: JobIconRifleman
+          assignSquad: true
+
+- type: startingGear
+  id: GermanSubmachineGunnerGear
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_German_SS_uniform
+    head: civ13_head_german_stahlhelm
+    belt: ClothingWebbingGermanSMG
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+
+  inhand:
+    - civ13_smg_mp40
+- type: startingGear
+  id: GermanSubmachineGunnerGear2
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_German_camo_SS_uniform
+    head: civ13_head_German_SS_helmet
+    belt: ClothingWebbingGermanSMG
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+  inhand:
+    - civ13_smg_mp40
+
+# Rifleman
+
+- type: job
+  id: GermanRifleman
+  name: job-name-civ-german-rifleman
+  faction: Germany
+  originalName: Schütze
+  description: job-description-civ-german-rifleman
+  playTimeTracker: JobGermanRifleman
+  startingGear: GermanRiflemanGear
+  randomStartingGears: [GermanRiflemanGear, GermanRiflemanGear2]
+  icon: "JobIconSoldier"
+  supervisors: job-supervisors-cpt
+  ranks:
+    RankLanceCorporal:
+      - !type:RoleTimeRequirement
+        role: JobGermanRifleman
+        time: 36000 # 10 hours
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: JobGermanRifleman
+        time: 10800 # 3 hours
+    RankPrivate: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: GermanAccent
+        - type: NpcFactionMember
+          factions:
+            - Germany
+        - type: ShowFactionIcons
+          factionIcon: GermanFaction
+          jobIcon: JobIconRifleman
+          assignSquad: true
+
+- type: startingGear
+  id: GermanRiflemanGear
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_German_SS_uniform
+    head: civ13_head_german_stahlhelm
+    belt: ClothingWebbingGermanRifleman
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+  inhand:
+    - civ13_boltaction_Karabiner_98k
+
+- type: startingGear
+  id: GermanRiflemanGear2
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_German_camo_SS_uniform
+    head: civ13_head_German_SS_helmet
+    belt: ClothingWebbingGermanRifleman
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+  inhand:
+    - civ13_boltaction_Karabiner_98k
+
+# Machinegunner
+
+- type: job
+  id: GermanMachinegunner
+  name: job-name-civ-german-machinegunner
+  faction: Germany
+  originalName: Maschinengewehrschütze # how to pronounce that
+  description: job-description-civ-german-machinegunner
+  playTimeTracker: JobGermanMachinegunner
+  startingGear: GermanMachinegunnerGear
+  randomStartingGears: [GermanMachinegunnerGear, GermanMachinegunnerGear2]
+  icon: "JobIconMg"
+  supervisors: job-supervisors-cpt
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 3600 # 1 hours
+  ranks:
+    RankLanceCorporal:
+      - !type:RoleTimeRequirement
+        role: JobGermanMachinegunner
+        time: 36000 # 10 hours
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: JobGermanMachinegunner
+        time: 10800 # 3 hours
+    RankPrivate: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: GermanAccent
+        - type: NpcFactionMember
+          factions:
+            - Germany
+        - type: ShowFactionIcons
+          factionIcon: GermanFaction
+          jobIcon: JobIconRifleman
+          assignSquad: true
+
+- type: startingGear
+  id: GermanMachinegunnerGear
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_German_SS_uniform
+    head: civ13_head_german_stahlhelm
+    belt: ClothingWebbingGermanMG
+    pocket1: CombatKnife
+    pocket2: Gauze
+  inhand:
+    - civ13_mg_MG34
+
+- type: startingGear
+  id: GermanMachinegunnerGear2
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_German_camo_SS_uniform
+    head: civ13_head_German_SS_helmet
+    belt: ClothingWebbingGermanMG
+    pocket1: CombatKnife
+    pocket2: Gauze
+  inhand:
+    - civ13_mg_MG34
+
+# Medic
+
+- type: job
+  id: GermanMedic
+  name: job-name-civ-german-medic
+  faction: Germany
+  originalName: Sanitäter
+  description: job-description-civ-german-medic
+  playTimeTracker: JobGermanMedic
+  startingGear: GermanMedicGear
+  icon: "JobIconMedic"
+  supervisors: job-supervisors-cpt
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      # time: 9000 # 2.5 hours
+      time: 3600 # 1 hour temporarily until people build up playtime
+  ranks:
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: JobGermanMedic
+        time: 10800 # 3 hours
+    RankCorporal: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: GermanAccent
+        - type: NpcFactionMember
+          factions:
+            - Germany
+        - type: ShowFactionIcons
+          factionIcon: GermanFaction
+          jobIcon: JobIconMedic
+          assignSquad: false
+
+- type: startingGear
+  id: GermanMedicGear
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_German_doctor_uniform
+    head: civ13_head_german_medic_stahlhelm
+    belt: ClothingSatchelMedicalMedsFilled
+    back: ClothingBackpackDuffelFilled
+    pocket1: FlashlightLanternMilitary
+    pocket2: civ13_magazine_clip_(7.92x57mm)
+  inhand:
+    - civ13_boltaction_Karabiner_98k

@@ -163,7 +163,6 @@
   components:
     - type: StorageFill
       contents:
-        - id: BoxPDA
         - id: BoxID
 
 - type: entity

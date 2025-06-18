@@ -150,3 +150,9 @@ reagent-desc-haloperidol = Removes most stimulating and hallucinogenic drugs. Re
 
 reagent-name-dirt = dirt
 reagent-desc-dirt = A earthy mix of dirt.
+
+reagent-name-morphine = morphine
+reagent-desc-morphine = A rapid-acting syringe that relieves severe pain and stabilizes critically wounded soldiers, but risks drowsiness or overdose if overused.
+
+reagent-name-sulfanilamide = sulfanilamide
+reagent-desc-sulfanilamide = An antibacterial powder that prevents and treats wound infections.

@@ -2412,6 +2412,18 @@
       cost: 5
       material: Cloth
       time: 5
+
+- type: entity
+  name: Blugoslavian officer uniform
+  parent: ClothingUniformBase
+  id: civ13_uniform_Blugoslavian_officer_uniform
+  description: A ceremonial uniform of Blugoslavia, used by officers and commanders.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/uniforms/baf_command.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/uniforms/baf_command.rsi
+
 - type: entity
   name: Blugoslavian navy uniform
   parent: ClothingUniformBase

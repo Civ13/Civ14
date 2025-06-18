@@ -56,62 +56,7 @@
     },
     {
       "name": "dynamite3",
-      "directions": 4,
       "delays": [
-        [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2
-        ],
-        [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2
-        ],
-        [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2
-        ],
         [
           0.2,
           0.2,
@@ -139,10 +84,43 @@
       "name": "mine_armed"
     },
     {
+      "name": "damaged_pipe"
+    },
+    {
       "name": "boobytrap_armed"
     },
     {
       "name": "boobytrap_armedX"
+    },
+    {
+      "name": "m18a1"
+    },
+    {
+      "name": "m18a1-rework",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "m18a1_armed",
+      "directions": 4
+    },
+    {
+      "name": "mon50"
+    },
+    {
+      "name": "mon50_armed",
+      "directions": 4
+    },
+    {
+      "name": "mon90"
+    },
+    {
+      "name": "mon90_armed",
+      "directions": 4
     },
     {
       "name": "stgnade"
@@ -187,10 +165,28 @@
       "name": "m26_explosive_active"
     },
     {
-      "name": "m67_active"
+      "name": "m67_active-old"
+    },
+    {
+      "name": "m67-old"
     },
     {
       "name": "m67"
+    },
+    {
+      "name": "m67_active"
+    },
+    {
+      "name": "hg85"
+    },
+    {
+      "name": "hg85_active"
+    },
+    {
+      "name": "l109"
+    },
+    {
+      "name": "l109_active"
     },
     {
       "name": "flashbang"
@@ -211,6 +207,18 @@
       "name": "rgd5_active"
     },
     {
+      "name": "rgo"
+    },
+    {
+      "name": "rgo_active"
+    },
+    {
+      "name": "rgo-old"
+    },
+    {
+      "name": "rgo_active-old"
+    },
+    {
       "name": "rgd33"
     },
     {
@@ -221,6 +229,18 @@
     },
     {
       "name": "russian_charge_placed"
+    },
+    {
+      "name": "rg42"
+    },
+    {
+      "name": "rg42_active"
+    },
+    {
+      "name": "k51"
+    },
+    {
+      "name": "k51_active"
     },
     {
       "name": "type97"
@@ -249,6 +269,12 @@
       ]
     },
     {
+      "name": "oto35"
+    },
+    {
+      "name": "oto35_active"
+    },
+    {
       "name": "stgbundle"
     },
     {
@@ -261,11 +287,13 @@
       "name": "rpg40_active"
     },
     {
-      "name": "kamikaze_vest",
-      "directions": 4
+      "name": "rpg43"
     },
     {
-      "name": "g40mm_gas",
+      "name": "rpg43_active"
+    },
+    {
+      "name": "kamikaze_vest",
       "directions": 4
     },
     {
@@ -294,18 +322,6 @@
       "name": "m18smoke_active-old"
     },
     {
-      "name": "m18smoke_purple-old"
-    },
-    {
-      "name": "m18smoke_purple_active-old"
-    },
-    {
-      "name": "m18smoke_red"
-    },
-    {
-      "name": "m18smoke_red_active"
-    },
-    {
       "name": "t68"
     },
     {
@@ -319,6 +335,9 @@
       ]
     },
     {
+      "name": "detonator"
+    },
+    {
       "name": "detonator_active",
       "delays": [
         [
@@ -327,9 +346,6 @@
           0.3
         ]
       ]
-    },
-    {
-      "name": "detonator"
     },
     {
       "name": "emp"
@@ -371,6 +387,9 @@
       "name": "kamikaze"
     },
     {
+      "name": "kamikaze_active"
+    },
+    {
       "name": "plastic-explosive0"
     },
     {
@@ -386,14 +405,15 @@
       ]
     },
     {
-      "name": "kamikaze_active"
-    },
-    {
       "name": "suicide_vest",
       "directions": 4
     },
     {
       "name": "g40mm",
+      "directions": 4
+    },
+    {
+      "name": "g40mm_gas",
       "directions": 4
     },
     {
@@ -409,10 +429,48 @@
       "directions": 4
     },
     {
+      "name": "aircraft_bomb",
+      "directions": 4
+    },
+    {
+      "name": "aircraft_missile",
+      "directions": 4
+    },
+    {
+      "name": "rdg1"
+    },
+    {
+      "name": "rdg1_active"
+    },
+    {
       "name": "rdg2"
     },
     {
       "name": "rdg2_active"
+    },
+    {
+      "name": "rdg2_yellow"
+    },
+    {
+      "name": "rdg2_yellow_active"
+    },
+    {
+      "name": "smoke_generic"
+    },
+    {
+      "name": "smoke_generic_active"
+    },
+    {
+      "name": "m7a2"
+    },
+    {
+      "name": "m7a2_active"
+    },
+    {
+      "name": "riot"
+    },
+    {
+      "name": "riot_active"
     },
     {
       "name": "m18smoke"
@@ -427,10 +485,62 @@
       "name": "m18smoke_purple_active"
     },
     {
-      "name": "rdg2_yellow"
+      "name": "m18smoke_red"
     },
     {
-      "name": "rdg2_yellow_active"
+      "name": "m18smoke_red_active"
+    },
+    {
+      "name": "n73"
+    },
+    {
+      "name": "n73_active"
+    },
+    {
+      "name": "n74"
+    },
+    {
+      "name": "n74_active"
+    },
+    {
+      "name": "n75"
+    },
+    {
+      "name": "n75_active"
+    },
+    {
+      "name": "m34wp"
+    },
+    {
+      "name": "m34wp_active"
+    },
+    {
+      "name": "M406"
+    },
+    {
+      "name": "M406_active",
+      "directions": 4
+    },
+    {
+      "name": "M406s"
+    },
+    {
+      "name": "M406s_active",
+      "directions": 4
+    },
+    {
+      "name": "40x103mmshell"
+    },
+    {
+      "name": "40x103mmshell_active",
+      "directions": 4
+    },
+    {
+      "name": "40x103mmshells"
+    },
+    {
+      "name": "40x103mmshells_active",
+      "directions": 4
     }
   ]
 }

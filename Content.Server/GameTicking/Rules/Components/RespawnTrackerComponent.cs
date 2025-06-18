@@ -33,4 +33,16 @@ public sealed partial class RespawnTrackerComponent : Component
     /// </summary>
     [DataField]
     public bool DeleteBody = true;
+
+
+    /// <summary>
+    /// Is the spawn timer running at a set time for everyone, or X amount of time since death?
+    /// </summary>
+    [DataField]
+    public bool Fixed = false;
+    /// <summary>
+    /// Only used if fixed is true
+    /// </summary>
+    [DataField]
+    public TimeSpan GlobalTimer = TimeSpan.Zero;
 }

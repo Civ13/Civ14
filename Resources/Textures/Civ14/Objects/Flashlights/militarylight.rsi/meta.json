@@ -1,0 +1,69 @@
+{
+    "version": 1,
+    "license": "AGPL-3.0",
+    "copyright": "Exported from https://github.com/civ13/civ13",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "flashlight"
+        },
+        {
+            "name": "flashlight-on"
+        },
+        {
+            "name": "flashlight-on-red"
+        },
+        {
+            "name": "flashlight-on-green"
+        },
+        {
+            "name": "militarylightalt"
+        },
+        {
+            "name": "militarylightalt-on"
+        },
+        {
+            "name": "militarylightalt-on-red"
+        },
+        {
+            "name": "militarylightalt-on-green"
+        },
+        {
+            "name": "flashlight-overlay"
+        },
+        {
+            "name": "militarylightalt-overlay"
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "inhand-left-light",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right-light",
+            "directions": 4
+        },
+        {
+            "name": "equipped-BELT",
+            "directions": 4
+        },
+        {
+            "name": "flashlightjap",
+            "directions": 1
+        },
+        {
+            "name": "flashlightjap-on",
+            "directions": 1
+        }
+    ]
+}

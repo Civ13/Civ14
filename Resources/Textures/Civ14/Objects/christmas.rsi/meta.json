@@ -1,63 +1,63 @@
 {
-  "version": 1,
-  "license": "AGPLv3",
-  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "states": [
-    {
-      "name": "cracker"
+    "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+    "size": {
+        "x": 32,
+        "y": 32
     },
-    {
-      "name": "cracker1"
-    },
-    {
-      "name": "cracker2"
-    },
-    {
-      "name": "gift1"
-    },
-    {
-      "name": "gift2"
-    },
-    {
-      "name": "gift3"
-    },
-    {
-      "name": "doorwreath",
-      "directions": 4
-    },
-    {
-      "name": "xmaslights",
-      "directions": 4,
-      "delays": [
-        [
-          0.8,
-          0.8,
-          0.8,
-          0.8
-        ],
-        [
-          0.8,
-          0.8,
-          0.8,
-          0.8
-        ],
-        [
-          0.8,
-          0.8,
-          0.8,
-          0.8
-        ],
-        [
-          0.8,
-          0.8,
-          0.8,
-          0.8
-        ]
-      ]
-    }
-  ]
+    "states": [
+        {
+            "name": "cracker"
+        },
+        {
+            "name": "cracker1"
+        },
+        {
+            "name": "cracker2"
+        },
+        {
+            "name": "gift1"
+        },
+        {
+            "name": "gift2"
+        },
+        {
+            "name": "gift3"
+        },
+        {
+            "name": "doorwreath",
+            "directions": 4
+        },
+        {
+            "name": "xmaslights",
+            "directions": 4,
+            "delays": [
+                [
+                    0.8,
+                    0.8,
+                    0.8,
+                    0.8
+                ],
+                [
+                    0.8,
+                    0.8,
+                    0.8,
+                    0.8
+                ],
+                [
+                    0.8,
+                    0.8,
+                    0.8,
+                    0.8
+                ],
+                [
+                    0.8,
+                    0.8,
+                    0.8,
+                    0.8
+                ]
+            ]
+        }
+    ]
 }

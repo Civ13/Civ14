@@ -26,19 +26,61 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
     {
         base.Update(frameTime);
 
+        // Attempt to get the rule component.
+        // The standard way in GameRuleSystem<T> is: var ruleComp = RuleConfiguration;
+        // If 'RuleConfiguration' is not recognized by the compiler in your environment,
+        // you can query for the component directly as a workaround.
+        CaptureAreaRuleComponent? ruleComp = null;
+        var ruleQuery = EntityQueryEnumerator<CaptureAreaRuleComponent>();
+        if (ruleQuery.MoveNext(out _, out var activeRuleComp)) // Assumes one active rule component
+        {
+            ruleComp = activeRuleComp;
+        }
+
+        if (ruleComp == null) // No active CaptureAreaRuleComponent found
+        {
+            return;
+        }
+
+        // Handle Asymmetric mode timer and defender victory
+        if (ruleComp.Mode == "Asymmetric")
+        {
+            // If the round has already ended (e.g., by a capture in ProcessArea earlier this frame), do nothing.
+            if (_gameTicker.RunLevel != GameRunLevel.InRound)
+                return;
+
+            ruleComp.AsymmetricGameTimeElapsed += frameTime;
+            if (ruleComp.AsymmetricGameTimeElapsed >= ruleComp.Timer * 60f) // ruleComp.Timer is in minutes
+            {
+                var defenderDisplayName = Faction2String(ruleComp.DefenderFactionName);
+                if (string.IsNullOrEmpty(ruleComp.DefenderFactionName) || string.IsNullOrEmpty(defenderDisplayName))
+                {
+                    Logger.ErrorS("capturearea", $"Asymmetric mode: DefenderFactionName is not set or Faction2String returned empty for '{ruleComp.DefenderFactionName}'. Defaulting defender display name.");
+                    defenderDisplayName = "The Defenders"; // Fallback display name
+                }
+
+                _chat.DispatchGlobalAnnouncement(
+                    $"{defenderDisplayName} ha(s) successfully defended for {ruleComp.Timer:F0} minutes and win(s) the round!",
+                    "Round", false, null, Color.Green);
+                _roundEndSystem.EndRound();
+                return; // Round ended, no need to process areas further for capture victories
+            }
+        }
+
+        // Process individual capture areas
         var query = EntityQueryEnumerator<CaptureAreaComponent>();
         while (query.MoveNext(out var uid, out var area))
         {
-            ProcessArea(uid, area, frameTime);
+            // If the round ended due to asymmetric timer, stop processing areas.
+            if (_gameTicker.RunLevel != GameRunLevel.InRound)
+                break;
+            ProcessArea(uid, area, frameTime, ruleComp);
         }
     }
     /// <summary>
     /// Processes a capture area, determining faction control based on the presence of alive faction members, updating control status, managing capture timers, and dispatching global announcements for control changes, timed warnings, and victory.
     /// </summary>
-    /// <param name="uid">The entity identifier of the capture area.</param>
-    /// <param name="area">The capture area component to process.</param>
-    /// <param name="frameTime">The elapsed time since the last update, in seconds.</param>
-    private void ProcessArea(EntityUid uid, CaptureAreaComponent area, float frameTime)
+    private void ProcessArea(EntityUid uid, CaptureAreaComponent area, float frameTime, CaptureAreaRuleComponent ruleComp)
     {
         var areaXform = _transform.GetMapCoordinates(uid);
         var factionCounts = new Dictionary<string, int>();
@@ -77,7 +119,7 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
             if (count > maxCount)
             {
                 maxCount = count;
-                currentController = faction;
+                currentController = Faction2String(faction);
             }
             else if (maxCount != 0 && count == maxCount)
             {
@@ -86,63 +128,164 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
         }
 
         // Update component state
-        if (maxCount > 0 && currentController != "")
-        {
-            area.Occupied = true;
-        }
+        area.Occupied = maxCount > 0 && !string.IsNullOrEmpty(currentController);
 
         if (currentController != area.Controller)
         {
             // Controller changed (or became contested/empty)
-            area.Controller = currentController;
-            area.CaptureTimer = 0f; // Reset timer on change
-            area.CaptureTimerAnnouncement1 = false;
-            area.CaptureTimerAnnouncement2 = false;
             if (currentController == "")
             {
-                _chat.DispatchGlobalAnnouncement($"{area.PreviousController} has lost control of {area.Name}!", "Objective", false, null, Color.Red);
+                // Area became contested or empty
+                if (area.ContestedTimer == 0f)
+                {
+                    // Store the last controller when we first enter contested state
+                    area.LastController = area.Controller;
+                }
+
+                // Increment contested timer
+                area.ContestedTimer += frameTime;
+
+                // Only reset the capture timer if contested for long enough
+                if (area.ContestedTimer >= area.ContestedResetTime)
+                {
+                    // Reset capture progress after contested threshold is reached
+                    area.CaptureTimer = 0f;
+                    area.CaptureTimerAnnouncement1 = false;
+                    area.CaptureTimerAnnouncement2 = false;
+
+                    // Only announce loss of control once the timer has fully reset
+                    if (!string.IsNullOrEmpty(area.LastController))
+                    {
+                        _chat.DispatchGlobalAnnouncement($"{area.LastController} has lost control of {area.Name}!", "Objective", false, null, Color.Red);
+                        area.LastController = ""; // Clear last controller after announcement
+                    }
+                }
+            }
+            else if (area.Controller == "")
+            {
+                // Area was contested/empty but now has a controller
+                if (currentController == area.LastController && area.ContestedTimer < area.ContestedResetTime)
+                {
+                    // The previous controller regained control before the reset threshold
+                    // Don't reset the timer or make announcements
+                    area.Controller = currentController;
+                    area.ContestedTimer = 0f;
+                }
+                else
+                {
+                    // New controller or contested long enough to reset
+                    area.Controller = currentController;
+                    area.ContestedTimer = 0f;
+                    _chat.DispatchGlobalAnnouncement($"{currentController} has gained control of {area.Name}!", "Objective", false, null, Color.DodgerBlue);
+                }
             }
             else
             {
+                // Direct change from one faction to another
+                var oldController = area.Controller; // This is the display name of the old controller
+
+                // Announce loss for the old controller
+                // oldController is guaranteed to be non-empty here because:
+                // 1. currentController != area.Controller (outer condition)
+                // 2. currentController != "" (otherwise this branch wouldn't be hit, it'd be currentController == "")
+                // 3. area.Controller != "" (otherwise this branch wouldn't be hit, it'd be area.Controller == "")
+                _chat.DispatchGlobalAnnouncement($"{oldController} has lost control of {area.Name}!", "Objective", false, null, Color.Red);
+
+                // Announce gain for the new controller
                 _chat.DispatchGlobalAnnouncement($"{currentController} has gained control of {area.Name}!", "Objective", false, null, Color.DodgerBlue);
+
+                // Update to the new controller
+                area.Controller = currentController;
+
+                // Reset capture progress for the new controller
+                area.CaptureTimer = 0f;
+                area.CaptureTimerAnnouncement1 = false;
+                area.CaptureTimerAnnouncement2 = false;
+
+                // Reset contested state as it's now firmly controlled by a new faction
+                area.ContestedTimer = 0f;
+                area.LastController = ""; // Previous "last controller" during a contested phase is no longer relevant
             }
         }
         else if (!string.IsNullOrEmpty(currentController))
         {
-            // Controller remains the same, increment timer
+            // Controller remains the same, reset contested timer and increment capture timer
+            area.ContestedTimer = 0f;
             area.CaptureTimer += frameTime;
 
             //announce when theres 2 and 1 minutes left.
-            var timeleft = area.CaptureDuration - area.CaptureTimer;
-            if (timeleft <= 120 && area.CaptureTimerAnnouncement2 == false)
+            if (ruleComp.Mode != "Points")
             {
-                _chat.DispatchGlobalAnnouncement($"Two minutes until {currentController} captures {area.Name}!", "Round", false, null, Color.Blue);
-                area.CaptureTimerAnnouncement2 = true;
-            }
-            else if (timeleft < 60 && area.CaptureTimerAnnouncement1 == false)
-            {
-                _chat.DispatchGlobalAnnouncement($"One minute until {currentController} captures {area.Name}!", "Round", false, null, Color.Blue);
-                area.CaptureTimerAnnouncement1 = true;
-            }
-            //Check for capture completion
-            if (area.CaptureTimer >= area.CaptureDuration)
-            {
-                if (_gameTicker.RunLevel == GameRunLevel.InRound)
+                var timeleft = area.CaptureDuration - area.CaptureTimer;
+                if (currentController != Faction2String(ruleComp.DefenderFactionName))
                 {
-                    _chat.DispatchGlobalAnnouncement($"{currentController} has captured {area.Name} and is victorious!", "Round", false, null, Color.Green);
-                    _roundEndSystem.EndRound();
+                    if (timeleft <= 120 && area.CaptureTimerAnnouncement2 == false)
+                    {
+                        _chat.DispatchGlobalAnnouncement($"Two minutes until {currentController} captures {area.Name}!", "Round", false, null, Color.Blue);
+                        area.CaptureTimerAnnouncement2 = true;
+                    }
+                    else if (timeleft < 60 && area.CaptureTimerAnnouncement1 == false)
+                    {
+                        _chat.DispatchGlobalAnnouncement($"One minute until {currentController} captures {area.Name}!", "Round", false, null, Color.Blue);
+                        area.CaptureTimerAnnouncement1 = true;
+                    }
+                }
+                //Check for capture completion
+                if (area.CaptureTimer >= area.CaptureDuration)
+                {
+                    if (_gameTicker.RunLevel == GameRunLevel.InRound)
+                    {
+                        bool canWinByCapture = true;
+                        // area.Controller is the display name of the faction that has held the point
+                        string winningControllerDisplay = area.Controller;
+
+                        if (ruleComp.Mode == "Asymmetric")
+                        {
+                            // In Asymmetric mode, only non-defenders (attackers) can win by capturing a point.
+                            // The defender wins by timeout.
+                            if (winningControllerDisplay == Faction2String(ruleComp.DefenderFactionName))
+                            {
+                                canWinByCapture = false;
+                            }
+                        }
+
+                        if (canWinByCapture && !string.IsNullOrEmpty(winningControllerDisplay))
+                        {
+                            _chat.DispatchGlobalAnnouncement($"{winningControllerDisplay} has captured {area.Name} and is victorious!", "Round", false, null, Color.Green);
+                            _roundEndSystem.EndRound();
+                            return; // Round ended, no further processing for this area needed.
+                        }
+                    }
                 }
             }
-
         }
         else
         {
             // Area is empty or contested, and wasn't previously controlled by a single faction
-            area.CaptureTimer = 0f; // Ensure timer is reset/stays reset
-            area.CaptureTimerAnnouncement1 = false;
-            area.CaptureTimerAnnouncement2 = false;
+            // Increment contested timer
+            area.ContestedTimer += frameTime;
+
+            if (area.ContestedTimer >= area.ContestedResetTime)
+            {
+                // Reset capture progress after contested threshold is reached
+                area.CaptureTimer = 0f;
+                area.CaptureTimerAnnouncement1 = false;
+                area.CaptureTimerAnnouncement2 = false;
+            }
         }
         area.PreviousController = currentController;
     }
+    private static string Faction2String(string faction)
+    {
+        switch (faction)
+        {
+            case "SovietCW":
+                return "Soviet Union";
+            case "Soviet":
+                return "Soviet Union";
+            default:
+                return faction;
+        }
 
+    }
 }

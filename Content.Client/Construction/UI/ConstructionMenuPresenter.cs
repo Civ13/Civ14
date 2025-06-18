@@ -181,6 +181,7 @@ namespace Content.Client.Construction.UI
         /// <param name="args">A tuple containing the search string and selected category.</param>
         private void OnViewPopulateRecipes(object? sender, (string search, string category) args)
         {
+            _sawmill = _logManager.GetSawmill("craftmenu");
             var (search, category) = args;
 
             var recipes = new List<ConstructionPrototype>();
@@ -191,21 +192,50 @@ namespace Content.Client.Construction.UI
                 _selectedCategory = string.Empty;
             else
                 _selectedCategory = category;
+            _sawmill.Info("Populating...");
+            var currentAge = 0;
+            var isTDM = false;
+            var mapId = _mapManager.GetAllMapIds().FirstOrDefault();
+            if (_playerManager.LocalEntity != null)
+            {
+                if (_entManager.TryGetComponent<TransformComponent>(_playerManager.LocalEntity, out var xform))
+                {
+                    mapId = xform.MapID;
+                }
+            }
+
+            var mapUid = _mapManager.GetMapEntityId(mapId);
+
+            if (_entManager.TryGetComponent(mapUid, out CivResearchComponent? component))
+            {
+                var newval = (int)MathF.Floor(component.ResearchLevel / 100);
+                if (newval > currentAge)
+                {
+                    currentAge = newval;
+                }
+                _sawmill.Info($"Current age: {currentAge}");
+            }
+
+            if (component != null)
+            {
+                if (component.IsTDM)
+                {
+                    isTDM = true;
+                    _sawmill.Info("Map is TDM");
+                }
+            }
+
             foreach (var recipe in _prototypeManager.EnumeratePrototypes<ConstructionPrototype>())
             {
                 if (recipe.Hide)
                     continue;
-                var currentAge = 0;
-                // Get the entity UID associated with the first map
-                var mapId = _mapManager.GetAllMapIds().FirstOrDefault();
-                var mapUid = _mapManager.GetMapEntityId(mapId);
 
-                if (_entManager.TryGetComponent<CivResearchComponent>(mapUid, out var comp))
-                {
-                    currentAge = (int)MathF.Floor(comp.ResearchLevel / 100);
-                }
                 if (currentAge < recipe.AgeMin || currentAge > recipe.AgeMax)
                     continue;
+                if (recipe.TDM == false && isTDM == true)
+                {
+                    continue;
+                }
                 if (_playerManager.LocalSession == null
                 || _playerManager.LocalEntity == null
                 || _whitelistSystem.IsWhitelistFail(recipe.EntityWhitelist, _playerManager.LocalEntity.Value))

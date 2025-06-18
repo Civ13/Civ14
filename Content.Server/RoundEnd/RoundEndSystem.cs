@@ -22,6 +22,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Timer = Robust.Shared.Timing.Timer;
+using Content.Server.Voting.Managers;
 
 namespace Content.Server.RoundEnd
 {
@@ -42,7 +43,7 @@ namespace Content.Server.RoundEnd
         [Dependency] private readonly EmergencyShuttleSystem _shuttle = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly StationSystem _stationSystem = default!;
-
+        [Dependency] private readonly IVoteManager _votemanager = default!;
         public TimeSpan DefaultCooldownDuration { get; set; } = TimeSpan.FromSeconds(30);
 
         /// <summary>
@@ -290,6 +291,7 @@ namespace Content.Server.RoundEnd
                     ("time", time),
                     ("units", Loc.GetString(unitsLocString))));
             Timer.Spawn(countdownTime.Value, AfterEndRoundRestart, _countdownTokenSource.Token);
+            _votemanager.CreateStandardVote(null, Shared.Voting.StandardVoteType.Map);
         }
 
         /// <summary>
@@ -391,3 +393,4 @@ namespace Content.Server.RoundEnd
         Nothing
     }
 }
+

@@ -16,7 +16,7 @@ public sealed partial class SalvageSystem
     [Dependency] private readonly IRuntimeLog _runtimeLog = default!;
 
     [ValidatePrototypeId<RadioChannelPrototype>]
-    private const string MagnetChannel = "Supply";
+    private const string MagnetChannel = "Common";
 
     private EntityQuery<SalvageMobRestrictionsComponent> _salvMobQuery;
     private EntityQuery<MobStateComponent> _mobStateQuery;
@@ -204,7 +204,7 @@ public sealed partial class SalvageSystem
             var seed = _random.Next();
 
             // Fuck with the seed to mix wrecks and asteroids.
-            seed = (int) (seed / 10f) * 10;
+            seed = (int)(seed / 10f) * 10;
 
 
             if (i >= data.Comp.OfferCount / 2)

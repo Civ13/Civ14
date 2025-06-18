@@ -4,6 +4,7 @@ using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.StatusIcon;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
+using Content.Shared._RMC14.Marines.Roles.Ranks;
 
 namespace Content.Shared.Roles
 {
@@ -168,6 +169,11 @@ namespace Content.Shared.Roles
         /// </summary>
         [DataField]
         public List<ProtoId<GuideEntryPrototype>>? Guides;
+
+        //RMC Ranks
+        [DataField]
+        public readonly Dictionary<ProtoId<RankPrototype>, HashSet<JobRequirement>?>? Ranks;
+
     }
 
     /// <summary>

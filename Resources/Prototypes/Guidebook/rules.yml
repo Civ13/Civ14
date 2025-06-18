@@ -2,7 +2,7 @@
   id: DefaultRuleset
   name: guide-entry-rules
   ruleEntry: true
-  priority: 10
+  priority: 1
   text: "/ServerInfo/Guidebook/ServerRules/DefaultRules.xml"
   children:
     - RuleC1

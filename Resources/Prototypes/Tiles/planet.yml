@@ -16,12 +16,14 @@
 
 - type: tile
   id: FloorPlanetDryDirtDesert
+  name: tiles-drydirt-floor-desert
   parent: FloorPlanetDryDirt
   biome: Desert
   suffix: Desert
 
 - type: tile
   id: FloorPlanetDryDirtSavanna
+  name: tiles-drydirt-floor-savanna
   parent: FloorPlanetDryDirt
   biome: Savanna
   suffix: Savanna
@@ -83,24 +85,28 @@
 
 - type: tile
   id: FloorSandSemiArid
+  name: tiles-sand-floor-semiarid
   parent: FloorSand
   biome: SemiArid
   suffix: SemiArid
 
 - type: tile
   id: FloorSandTaiga
+  name: tiles-sand-floor-taiga
   parent: FloorSand
   biome: Taiga
   suffix: Taiga
 
 - type: tile
   id: FloorSandSavanna
+  name: tiles-sand-floor-savanna
   parent: FloorSand
   biome: Savanna
   suffix: Savanna
 
 - type: tile
   id: FloorSandJungle
+  name: tiles-sand-floor-jungle
   parent: FloorSand
   biome: Jungle
   suffix: Jungle
@@ -156,18 +162,21 @@
 
 - type: tile
   id: FloorPlanetGrassTaiga
+  name: tiles-grass-planet-floor-taiga
   parent: FloorPlanetGrass
   biome: Taiga
   suffix: Taiga
 
 - type: tile
   id: FloorPlanetGrassSemiArid
+  name: tiles-grass-planet-floor-semiarid
   parent: FloorPlanetGrass
   biome: SemiArid
   suffix: SemiArid
 
 - type: tile
   id: FloorPlanetGrassJungle
+  name: tiles-grass-planet-floor-jungle
   parent: FloorPlanetGrass
   biome: Jungle
   suffix: Jungle
@@ -218,11 +227,6 @@
   biome: Tundra
   suffix: Tundra
 
-- type: tile
-  id: FloorSnowSand
-  parent: FloorSnow
-  name: tiles-snow
-
 # Snow
 - type: tile
   id: FloorSnowGrass
@@ -245,12 +249,14 @@
 
 - type: tile
   id: FloorSnowGrassTaiga
+  name: tiles-snowgrass-taiga
   parent: FloorSnowGrass
   biome: Taiga
   suffix: Taiga
 
 - type: tile
   id: FloorSnowGrassTemperate
+  name: tiles-snowgrass-temperate
   parent: FloorSnowGrass
   biome: Temperate
   suffix: Temperate
@@ -276,12 +282,14 @@
 
 - type: tile
   id: FloorSnowDirtTaiga
+  name: tiles-snowdirt-taiga
   parent: FloorSnowDirt
   biome: Taiga
   suffix: Taiga
 
 - type: tile
   id: FloorSnowDirtTemperate
+  name: tiles-snowdirt-temperate
   parent: FloorSnowDirt
   biome: Temperate
   suffix: Temperate

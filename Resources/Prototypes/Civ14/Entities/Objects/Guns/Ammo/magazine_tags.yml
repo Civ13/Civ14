@@ -111,6 +111,9 @@
   id: civ13_caliber_a762x54
 
 - type: Tag
+  id: civ13_caliber_a762x54_weak
+
+- type: Tag
   id: civ13_caliber_a765x25
 
 - type: Tag
@@ -124,7 +127,8 @@
 
 - type: Tag
   id: civ13_caliber_a792x57
-
+- type: Tag
+  id: civ13_caliber_a792x57_weak
 - type: Tag
   id: civ13_caliber_a792x94
 

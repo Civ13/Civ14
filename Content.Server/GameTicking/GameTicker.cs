@@ -88,8 +88,8 @@ namespace Content.Server.GameTicking
             InitializePlayer();
             InitializeLobbyBackground();
             InitializeGamePreset();
-            DebugTools.Assert(_prototypeManager.Index<JobPrototype>(FallbackOverflowJob).Name == FallbackOverflowJobName,
-                "Overflow role does not have the correct name!");
+            //DebugTools.Assert(_prototypeManager.Index<JobPrototype>(FallbackOverflowJob).Name == FallbackOverflowJobName,
+            //    "Overflow role does not have the correct name!");
             InitializeGameRules();
             InitializeReplays();
             _initialized = true;

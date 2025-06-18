@@ -122,8 +122,6 @@
         GlassBeaker:
           amount: 2
           defaultPrototype: Beaker
-    - type: StealTarget
-      stealGroup: MedicalTechFabCircuitboard
 
 - type: entity
   id: CircuitImprinterMachineCircuitboard
@@ -288,37 +286,6 @@
 
 - type: entity
   parent: BaseMachineCircuitboard
-  id: AnomalyVesselCircuitboard
-  name: anomaly vessel machine board
-  description: A machine printed circuit board for an anomaly vessel.
-  components:
-    - type: Sprite
-      state: science
-    - type: MachineBoard
-      prototype: MachineAnomalyVessel
-      stackRequirements:
-        Capacitor: 3
-        Cable: 1
-        PlasmaGlass: 10
-
-- type: entity
-  parent: BaseMachineCircuitboard
-  id: AnomalyVesselExperimentalCircuitboard
-  name: experimental anomaly vessel machine board
-  description: A machine printed circuit board for an experimental anomaly vessel.
-  components:
-    - type: Sprite
-      state: science
-    - type: MachineBoard
-      prototype: MachineAnomalyVesselExperimental
-      stackRequirements:
-        Capacitor: 3
-        Cable: 5
-        PlasmaGlass: 15
-        MetalRod: 4
-
-- type: entity
-  parent: BaseMachineCircuitboard
   id: AnomalySynchronizerCircuitboard
   name: anomaly synchronizer machine board
   description: A machine printed circuit board for an anomaly synchronizer.
@@ -332,21 +299,6 @@
         Capacitor: 5
         PlasmaGlass: 5
         Cable: 5
-
-- type: entity
-  parent: BaseMachineCircuitboard
-  id: APECircuitboard
-  name: A.P.E. machine board
-  description: A machine printed circuit board for an A.P.E.
-  components:
-    - type: Sprite
-      state: science
-    - type: MachineBoard
-      prototype: MachineAPE
-      stackRequirements:
-        Capacitor: 2
-        Cable: 1
-        Glass: 1
 
 - type: entity
   id: ThermomachineFreezerMachineCircuitBoard

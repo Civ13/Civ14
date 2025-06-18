@@ -22,8 +22,19 @@
     - type: RespawnDeadRule
       alwaysRespawnDead: true
     - type: RespawnTracker
+      respawnDelay: 180
+      deleteBody: false
+# A fixed timer where all reinforcements are spawned at the same time.
+- type: entity
+  parent: BaseGameRule
+  id: RespawnDeadRuleTDMFixed
+  components:
+    - type: RespawnDeadRule
+      alwaysRespawnDead: true
+    - type: RespawnTracker
       respawnDelay: 120
       deleteBody: false
+      fixed: true
 
 - type: entity
   id: InactivityTimeRestart
@@ -61,24 +72,63 @@
 
 - type: entity
   parent: BaseGameRule
+  id: GracewallRule5
+  components:
+    - type: GracewallRule
+      gracewallDuration: 300
+
+- type: entity
+  parent: BaseGameRule
   id: CaptureAreaRule
   components:
     - type: CaptureAreaRule
 
 - type: entity
-  id: DeathMatchRule
   parent: BaseGameRule
+  id: CaptureAreaRuleAsymmetric
   components:
-    - type: DeathMatchRule
+    - type: CaptureAreaRule
+      mode: Asymmetric
+      timer: 40
+      defenderFactionName: SovietCW
+
+- type: entity
+  parent: BaseGameRule
+  id: CaptureAreaRulePoints
+  components:
+    - type: CaptureAreaRule
+      mode: Points
+      pointsFactionName1: Blugoslavia
 
 - type: entity
   id: TeamDeathMatchRule
   parent: BaseGameRule
   components:
     - type: TeamDeathMatchRule
+
 - type: entity
   parent: BaseGameRule
   id: FactionRule
   components:
     - type: FactionRule
 
+- type: entity
+  id: RandomWeatherRule
+  parent: BaseGameRule
+  components:
+    - type: RandomWeatherRule
+      allowedWeathers: ["Rain", "Clear", "Storm"]
+
+- type: entity
+  id: RandomWeatherRuleNightSnow
+  parent: BaseGameRule
+  components:
+    - type: RandomWeatherRule
+      allowedWeathers: ["SnowfallLight"]
+      dayTimes: ["Night"]
+
+- type: entity
+  parent: BaseGameRule
+  id: ValleyPointsRule
+  components:
+    - type: ValleyPoints

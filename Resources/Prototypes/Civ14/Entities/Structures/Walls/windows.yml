@@ -23,7 +23,7 @@
           mask:
             - TableMask
           layer:
-            - WallLayer
+            - LowImpassable
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood

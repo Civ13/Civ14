@@ -1376,10 +1376,13 @@
       cost: 6
       delay: 8
       fx: EffectRCDDeconstruct8
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Rock
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
-            damage: 100
+            damage: 350
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]

@@ -133,11 +133,13 @@
       cost: 5
       time: 8
       material: Clay
+
 - type: entity
   parent: BaseWall
-  id: LogWall
+  id: LogWallIndestructible
   name: log wall
   description: A wall made of stacked hardwood logs. For that rustic feel.
+  suffix: indestructible
   components:
     - type: MeleeSound
       soundGroups:
@@ -151,6 +153,17 @@
       sprite: Civ14/Structures/Walls/oldwood.rsi
     - type: Icon
       sprite: Civ14/Structures/Walls/oldwood.rsi
+    - type: IconSmooth
+      key: walls
+      base: oldwood
+
+- type: entity
+  parent: LogWallIndestructible
+  id: LogWall
+  name: log wall
+  description: A wall made of stacked hardwood logs. For that rustic feel.
+  suffix: ""
+  components:
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Wood
@@ -177,9 +190,6 @@
       cost: 5
       time: 8
       material: WoodPlank
-    - type: IconSmooth
-      key: walls
-      base: oldwood
 
 - type: entity
   parent: BaseWall
@@ -232,9 +242,10 @@
 # stone walls
 - type: entity
   parent: BaseWall
-  id: StoneBlockWall
+  id: StoneBlockWallIndestructible
   name: stone block wall
   description: An ancient wall made of stacked stone blocks.
+  suffix: indestructible
   components:
     - type: Tag
       tags:
@@ -243,6 +254,17 @@
       sprite: Civ14/Structures/Walls/stone_block_wall.rsi
     - type: Icon
       sprite: Civ14/Structures/Walls/stone_block_wall.rsi
+    - type: IconSmooth
+      key: walls
+      base: stone_block_wall
+
+- type: entity
+  parent: StoneBlockWallIndestructible
+  id: StoneBlockWall
+  name: stone block wall
+  description: An ancient wall made of stacked stone blocks.
+  suffix: ""
+  components:
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -250,9 +272,6 @@
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]
-    - type: IconSmooth
-      key: walls
-      base: stone_block_wall
     - type: Construction
       agemin: 0
       agemax: 8
@@ -261,6 +280,7 @@
       cost: 6
       time: 8
       material: Stone
+
 - type: entity
   parent: StoneBlockWall
   id: MayanStoneWall
@@ -282,6 +302,21 @@
       cost: 6
       time: 8
       material: Stone
+
+- type: entity
+  parent: StoneBlockWallIndestructible
+  id: StoneBrickWallIndestructible
+  name: stone brick wall
+  description: A wall made of well-stacked stone bricks.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/new_stonebrick.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/new_stonebrick.rsi
+    - type: IconSmooth
+      key: walls
+      base: new_stonebrick
+
 - type: entity
   parent: StoneBlockWall
   id: StoneBrickWall
@@ -303,6 +338,7 @@
       cost: 6
       time: 8
       material: Stone
+
 - type: entity
   parent: StoneBlockWall
   id: MarbleBlockWall
@@ -324,6 +360,22 @@
       cost: 8
       time: 8
       material: Stone
+
+- type: entity
+  parent: StoneBlockWallIndestructible
+  id: FortressBrickWallIndestructible
+  name: fortress stone wall
+  description: A strong, reinforced stone brick wall.
+  suffix: indestructible
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/fortress_brickwall.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/fortress_brickwall.rsi
+    - type: IconSmooth
+      key: walls
+      base: fortress_brickwall
+
 - type: entity
   parent: StoneBlockWall
   id: FortressBrickWall
@@ -352,6 +404,7 @@
       cost: 6
       time: 8
       material: Stone
+
 - type: entity
   parent: StoneBlockWall
   id: RomanStoneBrickWall
@@ -397,9 +450,10 @@
 #sandstone walls
 - type: entity
   parent: BaseWall
-  id: SandstoneBlockWall
+  id: SandstoneBlockWallIndestructible
   name: sandstone block wall
   description: An ancient wall made of stacked sandstone blocks.
+  suffix: indestructible
   components:
     - type: Tag
       tags:
@@ -408,6 +462,17 @@
       sprite: Civ14/Structures/Walls/sandstone_block_wall.rsi
     - type: Icon
       sprite: Civ14/Structures/Walls/sandstone_block_wall.rsi
+    - type: IconSmooth
+      key: walls
+      base: sandstone_block_wall
+
+- type: entity
+  parent: SandstoneBlockWallIndestructible
+  id: SandstoneBlockWall
+  name: sandstone block wall
+  description: An ancient wall made of stacked sandstone blocks.
+  suffix: ""
+  components:
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
@@ -415,9 +480,6 @@
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]
-    - type: IconSmooth
-      key: walls
-      base: sandstone_block_wall
     - type: Construction
       agemin: 0
       agemax: 8
@@ -426,6 +488,7 @@
       cost: 6
       time: 8
       material: Sandstone
+
 - type: entity
   parent: SandstoneBlockWall
   id: EgyptianSandstoneBrickWall
@@ -448,6 +511,21 @@
       time: 8
       material: Sandstone
 - type: entity
+  parent: SandstoneBlockWallIndestructible
+  id: SandstoneBrickWallIndestructible
+  name: sandstone brick wall
+  description: A wall made of well-stacked sandstone bricks.
+  suffix: indestructible
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/sandstone_brickwall.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/sandstone_brickwall.rsi
+    - type: IconSmooth
+      key: walls
+      base: sandstone_brickwall
+
+- type: entity
   parent: SandstoneBlockWall
   id: SandstoneBrickWall
   name: sandstone brick wall
@@ -468,6 +546,22 @@
       cost: 6
       time: 8
       material: Sandstone
+
+- type: entity
+  parent: SandstoneBlockWallIndestructible
+  id: RedSandstoneBlockWallIndestructible
+  name: red sandstone block wall
+  description: A wall made of red sandstone blocks.
+  suffix: indestructible
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/redsandstone_block_wall.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/redsandstone_block_wall.rsi
+    - type: IconSmooth
+      key: walls
+      base: redsandstone_block_wall
+
 - type: entity
   parent: SandstoneBlockWall
   id: RedSandstoneBlockWall
@@ -489,6 +583,22 @@
       cost: 6
       time: 8
       material: Sandstone
+
+- type: entity
+  parent: SandstoneBlockWallIndestructible
+  id: FortressSandstoneBrickWallIndestructible
+  name: fortress sandstone wall
+  description: A fortress wall made of dark sandstone bricks.
+  suffix: indestructible
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/sandstone_fortress.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/sandstone_fortress.rsi
+    - type: IconSmooth
+      key: walls
+      base: sandstone_fortress
+
 - type: entity
   parent: SandstoneBlockWall
   id: FortressSandstoneBrickWall
@@ -549,6 +659,68 @@
           state: rocky_north
         - map: ["enum.EdgeLayer.West"]
           state: rocky_west
+
+- type: entity
+  id: WallRockSandIndestructible
+  parent: WallRockIndestructible
+  name: rock
+  suffix: indestructible
+  description: This wall cannot be destroyed.
+  components:
+    - type: Transform
+      noRot: true
+    - type: Airtight
+      airBlocked: true
+    - type: IconSmooth
+      key: walls
+      mode: NoSprite
+    - type: Icon
+      sprite: Structures/Walls/rock.rsi
+      state: rock_sand2
+    - type: SmoothEdge
+    - type: Sprite
+      sprite: Structures/Walls/rock.rsi
+      layers:
+        - state: rock_sand2
+        - map: ["enum.EdgeLayer.South"]
+          state: rock_sand2_south
+        - map: ["enum.EdgeLayer.East"]
+          state: rock_sand2_east
+        - map: ["enum.EdgeLayer.North"]
+          state: rock_sand2_north
+        - map: ["enum.EdgeLayer.West"]
+          state: rock_sand2_west
+
+- type: entity
+  id: WallRockSand2Indestructible
+  parent: WallRockIndestructible
+  name: rock
+  suffix: indestructible
+  description: This wall cannot be destroyed.
+  components:
+    - type: Transform
+      noRot: true
+    - type: Airtight
+      airBlocked: true
+    - type: IconSmooth
+      key: walls
+      mode: NoSprite
+    - type: Icon
+      sprite: Structures/Walls/rock.rsi
+      state: rock_sand3
+    - type: SmoothEdge
+    - type: Sprite
+      sprite: Structures/Walls/rock.rsi
+      layers:
+        - state: rock_sand3
+        - map: ["enum.EdgeLayer.South"]
+          state: rock_sand3_south
+        - map: ["enum.EdgeLayer.East"]
+          state: rock_sand3_east
+        - map: ["enum.EdgeLayer.North"]
+          state: rock_sand3_north
+        - map: ["enum.EdgeLayer.West"]
+          state: rock_sand3_west
 
 - type: entity
   parent: BaseWall
@@ -645,3 +817,75 @@
     - type: IconSmooth
       key: walls
       base: nordic
+
+- type: entity
+  parent: BaseWall
+  id: ConcreteWallIndestructible
+  name: concrete wall
+  description: A modern, sturdy concrete wall.
+  suffix: indestructible
+  components:
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: Civ14/Structures/Walls/concrete.rsi
+    - type: Icon
+      sprite: Civ14/Structures/Walls/concrete.rsi
+    - type: IconSmooth
+      key: walls
+      base: concrete_wall
+
+- type: entity
+  parent: ConcreteWallIndestructible
+  id: ConcreteWall
+  name: concrete wall
+  description: A modern, sturdy concrete wall.
+  suffix: ""
+  components:
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Inert
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 450
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  parent: BaseWall
+  id: OldBrickWallIndestructible
+  name: brick wall
+  description: A classic red brick wall.
+  suffix: indestructible
+  components:
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: Structures/Walls/cobblebrick_sand.rsi
+    - type: Icon
+      sprite: Structures/Walls/cobblebrick_sand.rsi
+    - type: IconSmooth
+      key: walls
+      base: cobblebrick
+
+- type: entity
+  parent: OldBrickWallIndestructible
+  id: OldBrickWall
+  name: brick wall
+  description: A classic red brick wall.
+  suffix: ""
+  components:
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Inert
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 400
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]

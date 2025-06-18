@@ -12,7 +12,8 @@ namespace Content.Shared.Cargo.Components;
 [RegisterComponent, NetworkedComponent]
 public sealed partial class CargoOrderConsoleComponent : Component
 {
-    [DataField("soundError")] public SoundSpecifier ErrorSound =
+    [DataField("soundError")]
+    public SoundSpecifier ErrorSound =
         new SoundPathSpecifier("/Audio/Effects/Cargo/buzz_sigh.ogg");
 
     [DataField("soundConfirm")]
@@ -28,6 +29,6 @@ public sealed partial class CargoOrderConsoleComponent : Component
     /// Radio channel on which order approval announcements are transmitted
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public ProtoId<RadioChannelPrototype> AnnouncementChannel = "Supply";
+    public ProtoId<RadioChannelPrototype> AnnouncementChannel = "Common";
 }
 

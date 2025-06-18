@@ -1,0 +1,275 @@
+- type: job
+  id: EnglishLord
+  name: job-name-civ-english-lord
+  faction: England
+  originalName: Lorde
+  description: job-description-civ-english-lord
+  playTimeTracker: JobEnglishLord
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10800 #3 hrs
+  startingGear: EnglishLordGear
+  icon: "JobIconCommander"
+  supervisors: job-supervisors-nobody
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: MedievalAccent
+        - type: NpcFactionMember
+          factions:
+            - England
+        - type: ShowFactionIcons
+          factionIcon: EnglishFaction
+
+- type: startingGear
+  id: EnglishLordGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_iron_chestplate
+    jumpsuit: civ13_uniform_white_tunic_1
+    belt: civ13_sword_arming_sword
+    head: civ13_head_brown_noble_hat
+
+# Knight
+
+- type: job
+  id: EnglishKnight
+  originalName: Knyghte
+  name: job-name-civ-english-knight
+  faction: England
+  description: job-description-civ-english-knight
+  playTimeTracker: JobEnglishKnight
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 5400 #1.5 hrs
+  startingGear: EnglishKnightGear
+  icon: "JobIconOfficer"
+  supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: MedievalAccent
+        - type: NpcFactionMember
+          factions:
+            - England
+        - type: ShowFactionIcons
+          factionIcon: EnglishFaction
+
+- type: startingGear
+  id: EnglishKnightGear
+  equipment:
+    shoes: civ13_shoes_Sabatons
+    outerClothing: civ13_suit_red_plated_armor
+    jumpsuit: civ13_uniform_red_tunic
+    head: civ13_head_knight_helmet
+    gloves: civ13_gloves_armored_gauntlets
+  inhand:
+    - civ13_sword_arming_sword
+    - civ13_shield_semioval_iron_shield
+
+# Swordsman
+
+- type: job
+  id: EnglishSwordsman
+  name: job-name-civ-english-man-at-arms
+  faction: England
+  originalName: Man-at-Armes
+  description: job-description-civ-english-man-at-arms
+  playTimeTracker: JobEnglishSwordsman
+  startingGear: EnglishSwordsmanGear
+  randomStartingGears: [EnglishSwordsmanGear, EnglishSwordsmanGear2]
+  icon: "JobIconSword"
+  supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: MedievalAccent
+        - type: NpcFactionMember
+          factions:
+            - England
+        - type: ShowFactionIcons
+          factionIcon: EnglishFaction
+
+- type: startingGear
+  id: EnglishSwordsmanGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_chainmail
+    neck: civ13_accessory_tabard_red_yellow
+    jumpsuit: civ13_uniform_yellow_red_tunic
+    head: civ13_head_kettle_helmet
+  inhand:
+    - civ13_sword_arming_sword
+    - WoodenBucklerRed
+- type: startingGear
+  id: EnglishSwordsmanGear2
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_chainmail
+    neck: civ13_accessory_tabard_red
+    jumpsuit: civ13_uniform_red_tunic
+    head: civ13_head_kettle_helmet
+  inhand:
+    - civ13_sword_arming_sword
+    - WoodenBucklerRed
+# Spearman
+
+- type: job
+  id: EnglishSpearman
+  name: job-name-civ-english-spearman
+  faction: England
+  originalName: Spereman
+  description: job-description-civ-english-spearman
+  playTimeTracker: JobEnglishSpearman
+  startingGear: EnglishSpearmanGear
+  randomStartingGears: [EnglishSpearmanGear, EnglishSpearmanGear2]
+  icon: "JobIconSpear"
+  supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: MedievalAccent
+        - type: NpcFactionMember
+          factions:
+            - England
+        - type: ShowFactionIcons
+          factionIcon: EnglishFaction
+
+- type: startingGear
+  id: EnglishSpearmanGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_gambeson
+    neck: civ13_accessory_tabard_red
+    jumpsuit: civ13_uniform_red_tunic
+    head: civ13_head_protective_conical_helmet
+  inhand:
+    - civ13_spear_pike
+    - WoodenBucklerRed
+- type: startingGear
+  id: EnglishSpearmanGear2
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_gambeson
+    neck: civ13_accessory_tabard_red_yellow
+    jumpsuit: civ13_uniform_yellow_red_tunic
+    head: civ13_head_protective_conical_helmet
+  inhand:
+    - civ13_spear_pike
+    - WoodenBucklerRed
+# Ranged
+
+- type: job
+  id: EnglishRanged
+  name: job-name-civ-english-ranged
+  faction: England
+  originalName: Longe Boweman
+  description: job-description-civ-english-ranged
+  playTimeTracker: JobEnglishRanged
+  startingGear: EnglishRangedGear
+  randomStartingGears: [EnglishRangedGear, EnglishRangedGear2]
+  icon: "JobIconRanged"
+  supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: MedievalAccent
+        - type: NpcFactionMember
+          factions:
+            - England
+        - type: ShowFactionIcons
+          factionIcon: EnglishFaction
+
+- type: startingGear
+  id: EnglishRangedGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_gambeson
+    jumpsuit: civ13_uniform_red_tunic
+    neck: civ13_accessory_tabard_red
+    head: civ13_head_conical_helmet
+    belt: ClothingBeltQuiver
+    pocket1: SwordDagger
+    back: WoodenBucklerRed
+  inhand:
+    - BowImprovised
+  storage:
+    belt:
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+- type: startingGear
+  id: EnglishRangedGear2
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_gambeson
+    neck: civ13_accessory_tabard_red_yellow
+    jumpsuit: civ13_uniform_red_tunic
+    head: civ13_head_kettle_helmet
+    belt: ClothingBeltQuiver
+    pocket1: SwordDagger
+    back: WoodenBucklerRed
+  inhand:
+    - BowImprovised
+  storage:
+    belt:
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+# Medic
+
+- type: job
+  id: EnglishMedic
+  name: job-name-civ-english-medic
+  faction: England
+  originalName: Monk
+  description: job-description-civ-english-medic
+  playTimeTracker: JobEnglishMedic
+  startingGear: EnglishMedicGear
+  icon: "JobIconMedic"
+  supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: MedievalAccent
+        - type: NpcFactionMember
+          factions:
+            - England
+        - type: ShowFactionIcons
+          factionIcon: EnglishFaction
+
+- type: startingGear
+  id: EnglishMedicGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_monk_robes
+    jumpsuit: civ13_uniform_light_brown_tunic
+    head: civ13_head_black_noble_hat
+    belt: LeatherClothingBelt
+    pocket1: SwordDagger
+  storage:
+    belt:
+      - ComfreyHealingHerbs
+      - ComfreyHealingHerbs
+      - FoodPoppy
+      - FoodPoppy
+      - YarrowHealingHerbs
+      - YarrowHealingHerbs
+      - ElderflowerHealingHerbs
+      - ElderflowerHealingHerbs
+      - GauzeLeather1
+      - GauzeLeather1

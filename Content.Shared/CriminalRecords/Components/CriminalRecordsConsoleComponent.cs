@@ -44,7 +44,7 @@ public sealed partial class CriminalRecordsConsoleComponent : Component
     /// Channel to send messages to when someone's status gets changed.
     /// </summary>
     [DataField]
-    public ProtoId<RadioChannelPrototype> SecurityChannel = "Security";
+    public ProtoId<RadioChannelPrototype> SecurityChannel = "Common";
 
     /// <summary>
     /// Max length of arrest and crime history strings.

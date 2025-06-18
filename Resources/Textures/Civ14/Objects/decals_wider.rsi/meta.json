@@ -1,62 +1,104 @@
 {
-  "version": 1,
-  "license": "AGPLv3",
-  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
-  "size": {
-    "x": 96,
-    "y": 96
-  },
-  "states": [
-    {
-      "name": "circle",
-      "directions": 4
+    "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+    "size": {
+        "x": 96,
+        "y": 96
     },
-    {
-      "name": "casino",
-      "delays": [
-        [
-          0.5,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.5,
-          0.3,
-          0.9,
-          0.3,
-          0.9
-        ]
-      ]
-    },
-    {
-      "name": "waterpump"
-    },
-    {
-      "name": "crane",
-      "directions": 4
-    },
-    {
-      "name": "container1"
-    },
-    {
-      "name": "container2"
-    },
-    {
-      "name": "container3"
-    },
-    {
-      "name": "container4"
-    },
-    {
-      "name": "container5"
-    },
-    {
-      "name": "excavator",
-      "directions": 4
-    },
-    {
-      "name": "fueltank"
-    }
-  ]
+    "states": [
+        {
+            "name": "circle",
+            "directions": 4
+        },
+        {
+            "name": "casino",
+            "delays": [
+                [
+                    0.5,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.5,
+                    0.3,
+                    0.9,
+                    0.3,
+                    0.9
+                ]
+            ]
+        },
+        {
+            "name": "waterpump"
+        },
+        {
+            "name": "crane",
+            "directions": 4
+        },
+        {
+            "name": "container1"
+        },
+        {
+            "name": "container2"
+        },
+        {
+            "name": "container3"
+        },
+        {
+            "name": "container4"
+        },
+        {
+            "name": "container5"
+        },
+        {
+            "name": "excavator",
+            "directions": 4
+        },
+        {
+            "name": "fueltank"
+        },
+        {
+            "name": "fueltank_new"
+        },
+        {
+            "name": "rocket"
+        },
+        {
+            "name": "rocket_o",
+            "delays": [
+                [
+                    0.05,
+                    0.05,
+                    0.05
+                ]
+            ]
+        },
+        {
+            "name": "rocket_fly",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.08,
+                    0.060000002,
+                    0.04,
+                    0.02,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "liberty",
+            "delays": [
+                [
+                    0.1,
+                    0.1
+                ]
+            ]
+        }
+    ]
 }

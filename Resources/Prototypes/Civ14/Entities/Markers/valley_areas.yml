@@ -1,0 +1,113 @@
+- type: entity
+  name: Valley Checkpoint
+  id: ValleyCheckpoint
+  parent: MarkerCapturableArea
+  components:
+    - type: Sprite
+      sprite: Civ14/Markers/areas.rsi
+      state: capture_blue
+    - type: CaptureArea
+      name: "Checkpoint"
+      captureDuration: 9999 # to make it impossibe to win by capturing
+      captureRadius: 4
+      contestedResetTime: 15 # 15 seconds before timer resets when contested
+      capturableFactions:
+        - Blugoslavia
+        - Insurgents
+    - type: ValleyCheckpoint # New component for Valley-specific logic
+
+- type: entity
+  name: Valley Western Trenches
+  id: ValleyCheckpointBravo
+  parent: ValleyCheckpoint
+  components:
+    - type: CaptureArea
+      name: "Western Trenches"
+
+- type: entity
+  name: Valley Crossroads Outpost
+  id: ValleyCheckpointCharlie
+  parent: ValleyCheckpoint
+  components:
+    - type: CaptureArea
+      name: "Crossroads Outpost"
+
+- type: entity
+  name: Valley Hill Outpost
+  id: ValleyCheckpointDelta
+  parent: ValleyCheckpoint
+  components:
+    - type: CaptureArea
+      name: "Hill Outpost"
+
+- type: entity
+  name: Insurgent Base
+  id: ValleyInsurgentBase
+  parent: MarkerCapturableArea
+  components:
+    - type: Sprite
+      sprite: Civ14/Markers/areas.rsi
+      state: capture_green
+    - type: CaptureArea
+      name: "Insurgent Base"
+      captureDuration: 9999 # to make it impossibe to win by capturing
+      captureRadius: 6
+      contestedResetTime: 15 # 15 seconds before timer resets when contested
+      capturableFactions: []
+
+- type: entity
+  name: UN Hospital
+  id: ValleyUNHospital
+  parent: MarkerCapturableArea
+  components:
+    - type: Sprite
+      sprite: Civ14/Markers/areas.rsi
+      state: capture_blue
+    - type: CaptureArea
+      name: "UN Hospital"
+      captureDuration: 9999 # to make it impossibe to win by capturing
+      captureRadius: 4
+      contestedResetTime: 15 # 15 seconds before timer resets when contested
+      capturableFactions:
+        - Blugoslavia
+        - Insurgents
+
+- type: entity
+  parent: BaseStructureDynamic
+  id: ValleySupplyBox
+  name: supply delivery
+  description: A wheeled crate with several supplies.
+  suffix: Point System
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Storage/storage.rsi
+      state: supplybox
+    - type: ValleySupplyBox
+    - type: Physics
+      bodyType: Dynamic
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.4,-0.3,0.4,0.3"
+          density: 50
+
+- type: entity
+  id: ValleySupplyBoxSpawner
+  name: Valley Supply Box Spawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Civ14/Objects/Storage/storage.rsi
+          state: supplybox
+        - state: timed
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+        - ValleySupplyBox
+      chance: 1
+      intervalSeconds: 300
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 1

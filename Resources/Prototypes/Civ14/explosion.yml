@@ -1,0 +1,43 @@
+- type: explosion
+  id: CivDefault
+  damagePerIntensity:
+    types:
+      Heat: 5
+      Blunt: 5
+      Piercing: 5
+  tileBreakChance: [0, 0.5, 1]
+  tileBreakIntensity: [0, 10, 30]
+  tileBreakRerollReduction: 20
+  lightColor: Orange
+  texturePath: /Textures/Effects/fire.rsi
+  fireStates: 3
+  sound:
+    collection: CivExplosion
+  smallSound: 
+     collection: CivExplosionSmall
+  soundFar: 
+     collection: CivExplosionDistant
+  smallSoundFar: 
+     collection: CivExplosionDistantFar
+
+- type: explosion
+  id: CivGrenade
+  damagePerIntensity:
+    types:
+      Heat: 5
+      Blunt: 5
+      Piercing: 5
+  tileBreakChance: [0, 0.5, 1]
+  tileBreakIntensity: [0, 10, 30]
+  tileBreakRerollReduction: 20
+  lightColor: Orange
+  texturePath: /Textures/Effects/fire.rsi
+  fireStates: 3
+  sound:
+    collection: CivExplosionGrenade
+  smallSound: 
+     collection: CivExplosionGrenade
+  soundFar: 
+     collection: CivExplosionDistant
+  smallSoundFar: 
+     collection: CivExplosionDistantFar

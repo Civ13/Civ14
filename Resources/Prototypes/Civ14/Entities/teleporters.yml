@@ -1,0 +1,77 @@
+- type: entity
+  parent: LocalTeleportBase
+  id: LocalTeleportTunnelBottom
+  name: tunnel
+  components:
+    - type: Sprite
+      layers:
+        - state: hole_bottom
+      sprite: /Textures/Civ14/Objects/stairs.rsi
+    - type: LocalTeleport
+      portalName: WesternTunnel
+
+- type: entity
+  parent: LocalTeleportBase
+  id: LocalTeleportTunnelTop
+  name: tunnel
+  components:
+    - type: Sprite
+      layers:
+        - state: hole_top
+      sprite: /Textures/Civ14/Objects/stairs.rsi
+    - type: LocalTeleport
+      portalName: WesternTunnel
+
+- type: entity
+  parent: LocalTeleportBase
+  id: LocalTeleportLadderBottom
+  name: tunnel
+  components:
+    - type: Sprite
+      layers:
+        - state: ladder10
+      sprite: /Textures/Civ14/Objects/stairs.rsi
+    - type: LocalTeleport
+      portalName: WesternTunnel
+
+- type: entity
+  parent: LocalTeleportBase
+  id: LocalTeleportLadderTop
+  name: tunnel
+  components:
+    - type: Sprite
+      layers:
+        - state: ladder01
+      sprite: /Textures/Civ14/Objects/stairs.rsi
+    - type: LocalTeleport
+      portalName: WesternTunnel
+
+- type: entity
+  parent: LocalTeleportTunnelBottom
+  id: LocalTeleportTunnelBottomInsurgents
+  name: tunnel
+  suffix: Teleport, Insurgents
+  components:
+    - type: Sprite
+      layers:
+        - state: hole_bottom
+      sprite: /Textures/Civ14/Objects/stairs.rsi
+    - type: LocalTeleport
+      portalName: WesternTunnel
+    - type: AccessReader
+      access: [["Insurgents"]]
+
+- type: entity
+  parent: LocalTeleportTunnelTop
+  id: LocalTeleportTunnelTopInsurgents
+  name: tunnel
+  suffix: Teleport, Insurgents
+  components:
+    - type: Sprite
+      layers:
+        - state: hole_top
+      sprite: /Textures/Civ14/Objects/stairs.rsi
+    - type: LocalTeleport
+      portalName: WesternTunnel
+    - type: AccessReader
+      access: [["Insurgents"]]

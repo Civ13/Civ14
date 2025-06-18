@@ -1,0 +1,422 @@
+# Вертолет
+- type: entity
+  id: helicopterStructure
+  parent: BaseShippingContainer
+  name: broken helicopter
+  suffix: Decorative
+  description: Crashed as a result of a disaster, the model is unknown.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/helicopter.rsi
+      scale: 0.8, 0.8
+      state: h1
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.3,-1.4,0.8,1.5"
+          density: 155
+          mask:
+            - MachineMask
+          layer:
+            - WallLayer
+
+# брошенная машина
+
+- type: entity
+  id: STForgottenCar
+  parent: OldCarGreen
+  name: abandoned car
+  description: How old is this monument to the automotive industry, and how many rock paintings are on it?
+  suffix: STCar, Decorative
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/forgotten_car.rsi
+      state: base
+
+# УАЗ (БУХАНКА)
+
+- type: entity
+  id: UAZStructure
+  parent: BaseShippingContainer
+  name: UAZ-452
+  suffix: STCar, Decorative
+  description: A family of four-wheel drive off-road vans and light trucks with a body on a frame and a cabin above the engine, produced by the Ulyanovsk Automobile Plant (UAZ) since 1965.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/uaz.rsi
+      scale: 0.8, 0.8
+      state: base
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-1.5,-0.9,1.5,0.9"
+          density: 155
+          mask:
+            - MachineMask
+          layer:
+            - WallLayer
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 500
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  id: UAZStructureRusted
+  parent: UAZStructure
+  name: rusty UAZ-452
+  suffix: STCar, Decorative
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/uaz.rsi
+      state: rusted
+# СТАРЫЕ МАШИНЫ (сломанные и тп)
+
+- type: entity
+  id: OldCarGreen
+  parent: BaseShippingContainer
+  name: old green car
+  suffix: STCar, Decorative
+  description: It's a pretty old car, made back in Soviet times. Time spares no one, that's why she's in such a bad state. Unfortunately, it is impossible to distinguish the make of the car. At least, you don't know them.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/old_cars.rsi
+      scale: 0.8, 0.8
+      state: old_car_green
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.6,-1.1,0.6,1.1"
+          density: 155
+          mask:
+            - MachineMask
+          layer:
+            - WallLayer
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 500
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  id: OldCarRed
+  parent: OldCarGreen
+  name: old red car
+  suffix: STCar, Decorative
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/old_cars.rsi
+      scale: 0.8, 0.8
+      state: old_car_red
+
+- type: entity
+  id: CarRedUS
+  parent: OldCarGreen
+  name: old red imported car
+  suffix: STCar, Decorative
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/old_cars.rsi
+      scale: 0.8, 0.8
+      state: car_red_us
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.7,-1.4,0.6,1.3"
+          density: 155
+          mask:
+            - MachineMask
+          layer:
+            - WallLayer
+
+- type: entity
+  id: CarGreenUS
+  parent: OldCarGreen
+  name: old green imported car
+  suffix: STCar, Decorative
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/old_cars.rsi
+      scale: 0.8, 0.8
+      state: car_green_us
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.7,-1.4,0.6,1.3"
+          density: 155
+          mask:
+            - MachineMask
+          layer:
+            - WallLayer
+
+- type: entity
+  id: BrokenCarGreen
+  parent: OldCarGreen
+  name: old wrecked car
+  suffix: STCar, Decorative
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/old_cars.rsi
+      scale: 0.8, 0.8
+      state: niva_broken
+
+- type: entity
+  id: BrokenCarRed
+  parent: OldCarGreen
+  name: old wrecked car
+  suffix: STCar, Decorative
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/old_cars.rsi
+      scale: 0.8, 0.8
+      state: linkoln_broken
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.7,-1.4,0.6,1.3"
+          density: 155
+          mask:
+            - MachineMask
+          layer:
+            - WallLayer
+
+# ЗИЛы
+
+- type: entity
+  id: ZIL
+  parent: BaseShippingContainer
+  name: ZIL-130
+  suffix: STCar, Decorative
+  description: A Soviet and Russian medium-tonnage truck of the third generation developed and manufactured by the Likhachev Automobile Plant in Moscow.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/zil.rsi
+      scale: 1.1, 1.1
+      state: z1
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.7,-1.9,1.0,1.9"
+          density: 155
+          mask:
+            - MachineMask
+          layer:
+            - WallLayer
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 500
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+- type: entity
+  id: ZIL2
+  parent: ZIL
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/zil.rsi
+      scale: 1.1, 1.1
+      state: z2
+
+# ЛОДКИ
+
+- type: entity
+  id: boatStalker1
+  parent: BaseShippingContainer
+  name: boat
+  suffix: Decorative
+  description: A small deckless vessel.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/boat1.rsi
+      scale: 0.8, 0.8
+      state: b2
+    - type: InteractionOutline
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.5,-0.8,0.5,0.8"
+          density: 155
+          mask:
+            - MachineMask
+          layer:
+            - WallLayer
+
+- type: entity
+  id: boatStalker2
+  name: motor boat
+  parent: boatStalker1
+  description: A small deckless vessel with a motor.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/boat2.rsi
+      scale: 0.8, 0.8
+      state: b1
+    - type: InteractionOutline
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.5,-0.8,0.5,0.8"
+          density: 155
+          mask:
+            - MachineMask
+          layer:
+            - WallLayer
+
+# МОСКВИЧ
+
+- type: entity
+  id: Moskvich
+  parent: BaseShippingContainer
+  name: Moskvich-412
+  suffix: STCar, Decorative
+  description: A Soviet and Russian rear-wheel drive car of the II group of small class, produced from October 1967 to 1976 at the MZMA plant.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/moskvich.rsi
+      scale: 0.8, 0.8
+      state: m1
+    - type: InteractionOutline
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.6,-1.0,0.6,0.8"
+          density: 155
+          mask:
+            - MachineMask
+          layer:
+            - WallLayer
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 500
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+# КРАЗ
+
+- type: entity
+  id: kraz
+  name: KrAZ-260
+  description: A three-axle large-tonnage off-road truck designed for cargo transportation. The awning was repainted for military needs.
+  parent: ZIL
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/kraz.rsi
+      state: kraz1
+
+- type: entity
+  id: kraz2
+  name: KrAZ-260
+  description: A three-axle large-tonnage off-road truck designed for cargo transportation.
+  parent: kraz
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/kraz.rsi
+      state: kraz2
+
+# Icarus
+
+- type: entity
+  id: icarus
+  name: ikarus-280
+  description: Hungarian urban articulated high-floor medium-drive bus with extra large capacity from Ikarus.
+  parent: kraz
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/icarus.rsi
+      state: icarus
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.8,-2.7,0.7,2.9"
+          density: 155
+          mask:
+            - MachineMask
+          layer:
+            - WallLayer
+
+# Танк
+
+- type: entity
+  id: STtank
+  parent: kraz
+  name: Tank
+  suffix: Decorative
+  description: An armored combat vehicle, with cannon and additional machine-gun armament mounted in a rotating full-turn turret.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/Transport/tank.rsi
+      scale: 0.9, 0.9
+      state: tank_one
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-1.2,-1.9,1.4,2.2"
+          density: 155
+          mask:
+            - MachineMask
+          layer:
+            - WallLayer
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 1000
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:DoActsBehavior
+              acts: ["Destruction"]

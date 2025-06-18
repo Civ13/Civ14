@@ -1,6 +1,6 @@
 - type: entity
   name: wood club
-  parent: [BaseItem, BaseSecurityContraband]
+  parent: [BaseItem]
   id: WoodClub
   description: A crude wooden club, for all your unga needs.
   components:

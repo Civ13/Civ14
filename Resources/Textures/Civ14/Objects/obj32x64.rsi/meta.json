@@ -1,65 +1,71 @@
 {
-  "version": 1,
-  "license": "AGPLv3",
-  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
-  "size": {
-    "x": 32,
-    "y": 64
-  },
-  "states": [
-    {
-      "name": "oilwell"
+    "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+    "size": {
+        "x": 32,
+        "y": 64
     },
-    {
-      "name": "oilwell_metal"
-    },
-    {
-      "name": "powerline"
-    },
-    {
-      "name": "refinery"
-    },
-    {
-      "name": "refinery1",
-      "delays": [
-        [
-          0.2,
-          0.2,
-          0.2,
-          0.2
-        ]
-      ]
-    },
-    {
-      "name": "radio"
-    },
-    {
-      "name": "radio_powered",
-      "delays": [
-        [
-          0.5,
-          0.6,
-          0.5,
-          0.5,
-          0.6,
-          0.5
-        ]
-      ]
-    },
-    {
-      "name": "greekcross"
-    },
-    {
-      "name": "greekcross_used"
-    },
-    {
-      "name": "taucross"
-    },
-    {
-      "name": "taucross_used"
-    },
-    {
-      "name": "totem_pole"
-    }
-  ]
+    "states": [
+        {
+            "name": "oilwell"
+        },
+        {
+            "name": "oilwell_metal"
+        },
+        {
+            "name": "fob"
+        },
+        {
+            "name": "fob_flipped"
+        },
+        {
+            "name": "powerline"
+        },
+        {
+            "name": "refinery"
+        },
+        {
+            "name": "refinery1",
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2
+                ]
+            ]
+        },
+        {
+            "name": "radio"
+        },
+        {
+            "name": "radio_powered",
+            "delays": [
+                [
+                    0.5,
+                    0.6,
+                    0.5,
+                    0.5,
+                    0.6,
+                    0.5
+                ]
+            ]
+        },
+        {
+            "name": "greekcross"
+        },
+        {
+            "name": "greekcross_used"
+        },
+        {
+            "name": "taucross"
+        },
+        {
+            "name": "taucross_used"
+        },
+        {
+            "name": "totem_pole"
+        }
+    ]
 }

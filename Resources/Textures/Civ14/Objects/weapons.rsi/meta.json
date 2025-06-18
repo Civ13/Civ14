@@ -1,5 +1,7 @@
 {
     "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
     "size": {
         "x": 32,
         "y": 32
@@ -148,6 +150,9 @@
         },
         {
             "name": "spear"
+        },
+        {
+            "name": "club"
         },
         {
             "name": "big_club"
@@ -330,6 +335,9 @@
             "name": "tanto"
         },
         {
+            "name": "bone_battleaxe"
+        },
+        {
             "name": "urukhaiscimitar"
         },
         {
@@ -378,6 +386,9 @@
             "name": "arrowp"
         },
         {
+            "name": "arrow_flint"
+        },
+        {
             "name": "arrowf",
             "delays": [
                 [
@@ -387,9 +398,6 @@
                     0.1
                 ]
             ]
-        },
-        {
-            "name": "arrow_flint"
         },
         {
             "name": "arrow_stone"
@@ -431,21 +439,6 @@
             "name": "bolt_flint"
         },
         {
-            "name": "bolt_stone_old"
-        },
-        {
-            "name": "bolt_copper_old"
-        },
-        {
-            "name": "bolt_iron"
-        },
-        {
-            "name": "bolt_bronze"
-        },
-        {
-            "name": "bolt_steel"
-        },
-        {
             "name": "boltf",
             "delays": [
                 [
@@ -457,19 +450,31 @@
             ]
         },
         {
-            "name": "bolt_vial"
-        },
-        {
-            "name": "bolt_copper"
-        },
-        {
             "name": "bolt_stone"
         },
         {
             "name": "bolt_sandstone"
         },
         {
+            "name": "bolt_copper"
+        },
+        {
+            "name": "bolt_iron"
+        },
+        {
+            "name": "bolt_bronze"
+        },
+        {
+            "name": "bolt_steel"
+        },
+        {
             "name": "bolt_modern"
+        },
+        {
+            "name": "bolt_god"
+        },
+        {
+            "name": "bolt_vial"
         },
         {
             "name": "steelshank"
@@ -667,15 +672,6 @@
             "name": "scimitar"
         },
         {
-            "name": "type89"
-        },
-        {
-            "name": "mortar"
-        },
-        {
-            "name": "atgm"
-        },
-        {
             "name": "kombaton"
         },
         {
@@ -698,6 +694,9 @@
         },
         {
             "name": "twohanded"
+        },
+        {
+            "name": "twohanded0"
         },
         {
             "name": "steel_mace"
@@ -761,6 +760,30 @@
         },
         {
             "name": "claymore"
+        },
+        {
+            "name": "atgm"
+        },
+        {
+            "name": "kornet_atgm"
+        },
+        {
+            "name": "bgm71_tow_atgm"
+        },
+        {
+            "name": "mortar"
+        },
+        {
+            "name": "type89"
+        },
+        {
+            "name": "foldable_pkm"
+        },
+        {
+            "name": "bastionkit"
+        },
+        {
+            "name": "battering_ram"
         }
     ]
 }

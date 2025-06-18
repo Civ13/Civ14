@@ -1,0 +1,218 @@
+- type: entity
+  name: Stielhandgranate 24
+  description: A german WW2 fragmentation grenade.
+  parent: GrenadeBase
+  id: GrenadeSHG24
+  components:
+    - type: Explosive
+      explosionType: CivGrenade
+      maxIntensity: 5
+      intensitySlope: 2
+      totalIntensity: 30 # about a ~4 tile radius
+      canCreateVacuum: false
+    - type: OnUseTimerTrigger
+    - type: ProjectileGrenade
+      fillPrototype: PelletClusterLethal
+      capacity: 15
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+    - type: TwoStageTrigger
+      triggerDelay: 0
+      components:
+        - type: ExplodeOnTrigger
+    - type: Sprite
+      sprite: Civ14/Objects/grenade.rsi
+      layers:
+        - state: stgnade
+          map: ["enum.TriggerVisualLayers.Base"]
+    - type: GenericVisualizer
+      visuals:
+        enum.Trigger.TriggerVisuals.VisualState:
+          enum.ConstructionVisuals.Layer:
+            Primed: { state: stgnade_active }
+            Unprimed: { state: stgnade }
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 60
+          behaviors:
+            - !type:TriggerBehavior
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  name: M67 grenade
+  description: A modern US fragmentation grenade.
+  parent: GrenadeBase
+  id: GrenadeM67
+  components:
+    - type: Explosive
+      explosionType: CivGrenade
+      maxIntensity: 5
+      intensitySlope: 2
+      totalIntensity: 30 # about a ~4 tile radius
+      canCreateVacuum: false
+    - type: OnUseTimerTrigger
+    - type: ProjectileGrenade
+      fillPrototype: PelletClusterLethal
+      capacity: 15
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+    - type: TwoStageTrigger
+      triggerDelay: 0
+      components:
+        - type: ExplodeOnTrigger
+    - type: Sprite
+      sprite: Civ14/Objects/grenade.rsi
+      layers:
+        - state: m67
+          map: ["enum.TriggerVisualLayers.Base"]
+    - type: GenericVisualizer
+      visuals:
+        enum.Trigger.TriggerVisuals.VisualState:
+          enum.ConstructionVisuals.Layer:
+            Primed: { state: m67_active }
+            Unprimed: { state: m67 }
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 60
+          behaviors:
+            - !type:TriggerBehavior
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+- type: entity
+  name: F-1 grenade
+  description: A Soviet WW2-era fragmentation grenade.
+  parent: GrenadeBase
+  id: GrenadeF1
+  components:
+    - type: Explosive
+      explosionType: CivGrenade
+      maxIntensity: 5
+      intensitySlope: 2
+      totalIntensity: 30 # about a ~4 tile radius
+      canCreateVacuum: false
+    - type: OnUseTimerTrigger
+    - type: ProjectileGrenade
+      fillPrototype: PelletClusterLethal
+      capacity: 15
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+    - type: TwoStageTrigger
+      triggerDelay: 0
+      components:
+        - type: ExplodeOnTrigger
+    - type: Sprite
+      sprite: Civ14/Objects/grenade.rsi
+      layers:
+        - state: f1
+          map: ["enum.TriggerVisualLayers.Base"]
+    - type: GenericVisualizer
+      visuals:
+        enum.Trigger.TriggerVisuals.VisualState:
+          enum.ConstructionVisuals.Layer:
+            Primed: { state: f1_active }
+            Unprimed: { state: f1 }
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 60
+          behaviors:
+            - !type:TriggerBehavior
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+- type: entity
+  name: RGD-5 grenade
+  description: A Cold War era Soviet fragmentation grenade.
+  parent: GrenadeBase
+  id: GrenadeRGD5
+  components:
+    - type: Explosive
+      explosionType: CivGrenade
+      maxIntensity: 5
+      intensitySlope: 2
+      totalIntensity: 30 # about a ~4 tile radius
+      canCreateVacuum: false
+    - type: OnUseTimerTrigger
+    - type: ProjectileGrenade
+      fillPrototype: PelletClusterLethal
+      capacity: 15
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+    - type: TwoStageTrigger
+      triggerDelay: 0
+      components:
+        - type: ExplodeOnTrigger
+    - type: Sprite
+      sprite: Civ14/Objects/grenade.rsi
+      layers:
+        - state: rgd5
+          map: ["enum.TriggerVisualLayers.Base"]
+    - type: GenericVisualizer
+      visuals:
+        enum.Trigger.TriggerVisuals.VisualState:
+          enum.ConstructionVisuals.Layer:
+            Primed: { state: rgd5_active }
+            Unprimed: { state: rgd5 }
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 60
+          behaviors:
+            - !type:TriggerBehavior
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+# smoke
+
+- type: entity
+  parent: GrenadeBase
+  id: SmokeGrenadeRDG2
+  name: RDG-2 smoke grenade
+  description: A tactical grenade that releases a large, long-lasting cloud of smoke when used.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Grenades/rdg2.rsi
+      state: rdg2_yellow
+    - type: SmokeOnTrigger
+      duration: 25
+      spreadAmount: 30
+    - type: SoundOnTrigger
+      sound: /Audio/Items/smoke_grenade_smoke.ogg
+    - type: DeleteOnTrigger
+
+- type: entity
+  parent: GrenadeBase
+  id: SmokeGrenadeNHG39
+  name: Nebelhandgranate 39 smoke grenade
+  description: A tactical grenade that releases a large, long-lasting cloud of smoke when used.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Grenades/smoke_grenade.rsi
+      state: smoke_grenade
+    - type: SmokeOnTrigger
+      duration: 25
+      spreadAmount: 30
+    - type: SoundOnTrigger
+      sound: /Audio/Items/smoke_grenade_smoke.ogg
+    - type: DeleteOnTrigger
+
+- type: entity
+  parent: GrenadeBase
+  id: SmokeGrenadeM18
+  name: M18 smoke grenade
+  description: A tactical grenade that releases a large, long-lasting cloud of smoke when used.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Grenades/m18.rsi
+      state: icon
+    - type: SmokeOnTrigger
+      duration: 25
+      spreadAmount: 30
+    - type: SoundOnTrigger
+      sound: /Audio/Items/smoke_grenade_smoke.ogg
+    - type: DeleteOnTrigger

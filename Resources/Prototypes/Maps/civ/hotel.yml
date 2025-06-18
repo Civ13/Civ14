@@ -1,0 +1,30 @@
+- type: gameMap
+  id: Hotel
+  mapName: "Hotel (Cold War)"
+  mapPath: /Maps/civ/tdm/hotel.yml
+  minPlayers: 0
+  maxPlayers: 200
+  maxRandomOffset: 0
+  randomRotation: false
+  fixedPreset: TDMAsymmetric
+  stations:
+    Hotel:
+      stationProto: StandardStationTDM
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Hotel (Cold War)"
+        - type: StationJobs
+          availableJobs:
+            # US
+            USCaptain: [1, 1]
+            USSergeant: [4, 4]
+            USRifleman: [50, 50]
+            USMachinegunner: [5, 5]
+            USMedic: [3, 3]
+
+            # Soviet
+            SovietCWCaptain: [1, 1]
+            SovietCWSergeant: [4, 4]
+            SovietCWRifleman: [50, 50]
+            SovietCWMachinegunner: [5, 5]
+            SovietCWMedic: [3, 3]

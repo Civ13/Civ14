@@ -1,0 +1,115 @@
+- type: job
+  id: UnitedNationsRifleman
+  name: job-name-civ-unitednations-rifleman
+  faction: UnitedNations
+  originalName: Rifleman
+  description: job-description-civ-unitednations-rifleman
+  playTimeTracker: JobUnitedNationsRifleman
+  startingGear: UnitedNationsRiflemanGear
+  randomStartingGears: [UnitedNationsRiflemanGear, UnitedNationsRiflemanGear2]
+  icon: "JobIconICpl"
+  supervisors: job-supervisors-nobody
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      # time: 9000 # 2.5 hours
+      time: 3600 # 1 hour temporarily until people build up playtime
+  ranks:
+    RankLanceCorporal:
+      - !type:RoleTimeRequirement
+        role: JobUnitedNationsRifleman
+        time: 36000 # 10 hours
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: JobUnitedNationsRifleman
+        time: 10800 # 3 hours
+    RankPrivate: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - UnitedNations
+        - type: ShowFactionIcons
+          factionIcon: UnitedNationsFaction
+          jobIcon: JobIconRifleman
+          assignSquad: true
+
+- type: startingGear
+  id: UnitedNationsRiflemanGear
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_woodland_camo_uniform
+    neck: civ13_accessory_un_PASGT_body_armor
+    head: civ13_head_UN_helmet
+    belt: ClothingWebbingUSCWRifleman
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+    ears: ClothingHeadsetUnitedNations
+  inhand:
+    - civ13_ar_M16A2
+
+- type: startingGear
+  id: UnitedNationsRiflemanGear2
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_woodland_camo_uniform
+    gloves: ClothingHandsGlovesFingerless
+    belt: ClothingWebbingUSCWRifleman
+    neck: civ13_accessory_un_PASGT_body_armor
+    head: civ13_head_UN_beret
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+    ears: ClothingHeadsetUnitedNations
+  inhand:
+    - civ13_ar_M16A2
+
+# Medic
+
+- type: job
+  id: UnitedNationsMedic
+  name: job-name-civ-unitednations-medic
+  faction: UnitedNations
+  originalName: Medic
+  description: job-description-civ-unitednations-medic
+  playTimeTracker: JobUnitedNationsMedic
+  startingGear: UnitedNationsMedicGear
+  icon: "JobIconMedic"
+  supervisors: job-supervisors-nobody
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      # time: 9000 # 2.5 hours
+      time: 3600 # 1 hour temporarily until people build up playtime
+  ranks:
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: JobUnitedNationsMedic
+        time: 10800 # 3 hours
+    RankCorporal: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: RussianAccent
+        - type: NpcFactionMember
+          factions:
+            - UnitedNations
+        - type: ShowFactionIcons
+          factionIcon: UnitedNationsFaction
+          jobIcon: JobIconMedic
+          assignSquad: false
+
+- type: startingGear
+  id: UnitedNationsMedicGear
+  equipment:
+    shoes: civ13_shoes_jackboots
+    jumpsuit: civ13_uniform_woodland_camo_uniform
+    neck: civ13_accessory_un_PASGT_body_armor
+    head: civ13_head_UN_medic_helmet
+    belt: ClothingSatchelMedicalMedsFilled
+    back: ClothingBackpackDuffelFilled
+    pocket1: FlashlightLanternMilitary
+    pocket2: civ13_magazine_STANAG_magazine_(5.56x45mm)
+    ears: ClothingHeadsetUnitedNations
+  inhand:
+    - civ13_ar_M16A2

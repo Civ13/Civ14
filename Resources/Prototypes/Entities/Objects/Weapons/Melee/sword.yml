@@ -25,7 +25,7 @@
       slots: [Belt]
 - type: entity
   name: captain's sabre
-  parent: [BaseSword, BaseCommandContraband]
+  parent: [BaseSword]
   id: CaptainSabre
   description: A ceremonial weapon belonging to the captain of the station.
   components:

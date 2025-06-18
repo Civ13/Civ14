@@ -25,6 +25,9 @@
       sprite: Markers/cross.rsi
       layers:
         - state: red
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_uk
+
 - type: entity
   id: SpawnPointFrench
   parent: SpawnPointJobBase
@@ -38,6 +41,9 @@
       sprite: Markers/cross.rsi
       layers:
         - state: blue
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_france
+
 - type: entity
   id: SpawnPointGerman
   parent: SpawnPointJobBase
@@ -51,6 +57,9 @@
       sprite: Markers/cross.rsi
       layers:
         - state: green
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_germany
+
 - type: entity
   id: SpawnPointSoviet
   parent: SpawnPointJobBase
@@ -63,4 +72,86 @@
     - type: Sprite
       sprite: Markers/cross.rsi
       layers:
-        - state: pink     
+        - state: pink
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_sov
+
+- type: entity
+  id: SpawnPointUS
+  parent: SpawnPointJobBase
+  name: us spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: US
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: blue
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_usa
+
+- type: entity
+  id: SpawnPointSovietCW
+  parent: SpawnPointJobBase
+  name: sovietcw spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: SovietCW
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: pink
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_sov
+
+- type: entity
+  id: SpawnPointInsurgents
+  parent: SpawnPointJobBase
+  name: insurgent spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: Insurgents
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: green
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_greenistan
+
+- type: entity
+  id: SpawnPointBlugoslavia
+  parent: SpawnPointJobBase
+  name: blugoslavia spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: Blugoslavia
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: blue # duh
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_blugoslavia
+
+- type: entity
+  id: SpawnPointUnitedNations
+  parent: SpawnPointJobBase
+  name: UN spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: UnitedNations
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: blue # duh
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_un

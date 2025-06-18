@@ -10,6 +10,7 @@
   icon:
     sprite: Clothing/Mask/muzzle.rsi
     state: icon
+  tdm: true
 
 - type: construction
   name: gauze
@@ -25,6 +26,7 @@
     state: gauze
   agemin: 1
   agemax: 8
+  tdm: true
 
 - type: construction
   name: leather bandage
@@ -40,6 +42,7 @@
     state: leatherbandage
   agemin: 0
   agemax: 8
+  tdm: true
 
 - type: construction
   name: blindfold
@@ -55,6 +58,7 @@
     state: icon
   agemin: 0
   agemax: 8
+  tdm: true
 
 - type: construction
   name: flower wreath

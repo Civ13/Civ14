@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "license": "AGPLv3",
+  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "chicken_breast"
+    },
+    {
+      "name": "chicken_breast_flat"
+    },
+    {
+      "name": "chicken_breast_flat_crumbed"
+    },
+    {
+      "name": "chicken_drumstick"
+    },
+    {
+      "name": "wok"
+    },
+    {
+      "name": "chicken_milanesa"
+    },
+    {
+      "name": "chicken_wing_fried"
+    },
+    {
+      "name": "bucket_stripe2"
+    },
+    {
+      "name": "bucket_stripe1"
+    },
+    {
+      "name": "chicken_wing_crumbed"
+    },
+    {
+      "name": "chicken_wing"
+    },
+    {
+      "name": "chicken_tender_fried"
+    },
+    {
+      "name": "chicken_tender_crumbed"
+    },
+    {
+      "name": "chicken_nugget_fried"
+    },
+    {
+      "name": "chicken_nugge_crumbed"
+    },
+    {
+      "name": "chicken_minced"
+    },
+    {
+      "name": "chicken_tender"
+    },
+    {
+      "name": "chicken_drumstick_fried"
+    },
+    {
+      "name": "chicken_drumstick_crumbed"
+    },
+    {
+      "name": "bucket_piece4"
+    },
+    {
+      "name": "bucket_piece3"
+    },
+    {
+      "name": "bucket_piece2"
+    },
+    {
+      "name": "bucket_piece1"
+    },
+    {
+      "name": "rotten_chicken_carcass"
+    },
+    {
+      "name": "rotten_chicken_breast"
+    },
+    {
+      "name": "rotten_chicken_breast_flat"
+    },
+    {
+      "name": "rotten_chicken_drumstick"
+    },
+    {
+      "name": "rotten_chicken_wing"
+    },
+    {
+      "name": "chicken_carcass"
+    }
+  ]
+}

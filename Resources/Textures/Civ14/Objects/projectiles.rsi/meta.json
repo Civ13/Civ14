@@ -91,6 +91,17 @@
           0.1,
           0.1,
           0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "gibshot2",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
           0.1,
           0.1,
           0.1,
@@ -110,6 +121,29 @@
     {
       "name": "shell",
       "directions": 4
+    },
+    {
+      "name": "HE_shell"
+    },
+    {
+      "name": "AP_shell"
+    },
+    {
+      "name": "APCR_shell"
+    },
+    {
+      "name": "HEAT_shell",
+      "directions": 4
+    },
+    {
+      "name": "missile",
+      "directions": 4
+    },
+    {
+      "name": "panzerfaust_missile"
+    },
+    {
+      "name": "atgm_missile"
     },
     {
       "name": "arrow_flint",
@@ -255,6 +289,13 @@
     },
     {
       "name": "flare"
+    },
+    {
+      "name": "pellets",
+      "directions": 4
+    },
+    {
+      "name": ""
     }
   ]
 }

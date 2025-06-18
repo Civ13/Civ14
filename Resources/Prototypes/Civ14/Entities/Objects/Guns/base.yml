@@ -17,9 +17,13 @@
       shape:
         - 0,0,5,1
     - type: Sprite
+      sprite: Civ14/Weapons/Guns/ak101.rsi
       layers:
         - state: icon
           map: ["enum.GunVisualLayers.Base"]
         - state: mag-0
           map: ["enum.GunVisualLayers.Mag"]
     - type: Appearance
+    - type: EyeCursorOffset
+      maxOffset: 6
+      pvsIncrease: 0.6

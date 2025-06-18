@@ -8,7 +8,7 @@
   },
   "states": [
     {
-      "name": "pirates",
+      "name": "white",
       "delays": [
         [
           0.2,
@@ -30,40 +30,7 @@
       ]
     },
     {
-      "name": "netherlands",
-      "delays": [
-        [
-          0.2,
-          0.1,
-          0.2,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "netherlands_old",
-      "delays": [
-        [
-          0.2,
-          0.1,
-          0.2,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "french",
-      "delays": [
-        [
-          0.2,
-          0.1,
-          0.2,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "french4",
+      "name": "pirates",
       "delays": [
         [
           0.2,
@@ -85,50 +52,6 @@
       ]
     },
     {
-      "name": "portuguese",
-      "delays": [
-        [
-          0.2,
-          0.1,
-          0.2,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "spanish",
-      "delays": [
-        [
-          0.2,
-          0.1,
-          0.2,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "japanese",
-      "delays": [
-        [
-          0.2,
-          0.1,
-          0.2,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "russian",
-      "delays": [
-        [
-          0.2,
-          0.1,
-          0.2,
-          0.1
-        ]
-      ]
-    },
-    {
       "name": "british2",
       "delays": [
         [
@@ -140,7 +63,29 @@
       ]
     },
     {
-      "name": "soviet",
+      "name": "french",
+      "delays": [
+        [
+          0.2,
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "french2",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "french3",
       "delays": [
         [
           0.2,
@@ -157,39 +102,6 @@
           0.2,
           0.1,
           0.2,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "us",
-      "delays": [
-        [
-          0.2,
-          0.1,
-          0.2,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "chinese",
-      "delays": [
-        [
-          0.2,
-          0.1,
-          0.2,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "confed",
-      "delays": [
-        [
-          0.1,
-          0.1,
-          0.1,
           0.1
         ]
       ]
@@ -217,23 +129,23 @@
       ]
     },
     {
-      "name": "french2",
+      "name": "portuguese",
       "delays": [
         [
+          0.2,
           0.1,
-          0.1,
-          0.1,
+          0.2,
           0.1
         ]
       ]
     },
     {
-      "name": "italian",
+      "name": "spanish",
       "delays": [
         [
+          0.2,
           0.1,
-          0.1,
-          0.1,
+          0.2,
           0.1
         ]
       ]
@@ -250,7 +162,7 @@
       ]
     },
     {
-      "name": "french3",
+      "name": "japanese",
       "delays": [
         [
           0.2,
@@ -261,7 +173,40 @@
       ]
     },
     {
-      "name": "cust_flag",
+      "name": "russian",
+      "delays": [
+        [
+          0.1,
+          0.15,
+          0.1,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "soviet",
+      "delays": [
+        [
+          0.2,
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "us",
+      "delays": [
+        [
+          0.2,
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "confed",
       "delays": [
         [
           0.1,
@@ -272,7 +217,18 @@
       ]
     },
     {
-      "name": "flagpole_blank",
+      "name": "chinese",
+      "delays": [
+        [
+          0.2,
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "italian",
       "delays": [
         [
           0.1,
@@ -283,95 +239,26 @@
       ]
     },
     {
-      "name": "cust_flag_cloth",
+      "name": "netherlands",
       "delays": [
         [
+          0.15,
           0.1,
-          0.1,
-          0.1,
+          0.15,
           0.1
         ]
       ]
     },
     {
-      "name": "cust_flag_outline",
+      "name": "netherlands_old",
       "delays": [
         [
+          0.2,
           0.1,
-          0.1,
-          0.1,
+          0.2,
           0.1
         ]
       ]
-    },
-    {
-      "name": "cust_f_moon",
-      "delays": [
-        [
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "cust_f_cross",
-      "delays": [
-        [
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "cust_f_star",
-      "delays": [
-        [
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "cust_f_sun",
-      "delays": [
-        [
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "cust_f_plus",
-      "delays": [
-        [
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "cust_f_saltire",
-      "delays": [
-        [
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "cust_f_blank"
     },
     {
       "name": "filipino",
@@ -517,6 +404,17 @@
       ]
     },
     {
+      "name": "fna",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
       "name": "bearclan",
       "delays": [
         [
@@ -551,6 +449,133 @@
     },
     {
       "name": "flag_sca_yellow",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cust_flag",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "flagpole_blank",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cust_flag_cloth",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cust_flag_outline",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cust_f_moon",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cust_f_cross",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cust_f_star",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cust_f_sun",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cust_f_plus",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cust_f_saltire",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cust_f_blank"
+    },
+    {
+      "name": "sov_flag_object"
+    },
+    {
+      "name": "cafr",
       "delays": [
         [
           0.1,

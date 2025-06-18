@@ -1,0 +1,45 @@
+- type: entity
+  name: military flashlight
+  parent: FlashlightLantern
+  id: FlashlightLanternMilitary
+  description: A powerful military flashlight.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Flashlights/militarylight.rsi
+      layers:
+        - state: flashlight
+        - state: flashlight-overlay
+          shader: unshaded
+          visible: false
+          map: ["light"]
+    - type: Item
+      sprite: Civ14/Objects/Flashlights/militarylight.rsi
+      storedRotation: -90
+    - type: Clothing
+      sprite: Civ14/Objects/Flashlights/militarylight.rsi
+      quickEquip: false
+      slots:
+        - Belt
+
+- type: entity
+  name: military flashlight
+  parent: FlashlightLanternMilitary
+  id: FlashlightLanternMilitaryAlt
+  description: A powerful military flashlight.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/Flashlights/militarylight.rsi
+      layers:
+        - state: militarylightalt
+        - state: militarylightalt-overlay
+          shader: unshaded
+          visible: false
+          map: ["light"]
+    - type: Item
+      sprite: Civ14/Objects/Flashlights/militarylight.rsi
+      storedRotation: -90
+    - type: Clothing
+      sprite: Civ14/Objects/Flashlights/militarylight.rsi
+      quickEquip: false
+      slots:
+        - Belt

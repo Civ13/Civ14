@@ -1,0 +1,275 @@
+- type: job
+  id: FrenchLord
+  name: job-name-civ-french-lord
+  faction: France
+  originalName: Seigneur
+  description: job-description-civ-french-lord
+  playTimeTracker: JobFrenchLord
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10800 #3 hrs
+  startingGear: FrenchLordGear
+  icon: "JobIconCommander"
+  supervisors: job-supervisors-nobody
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: MedievalAccent
+        - type: NpcFactionMember
+          factions:
+            - France
+        - type: ShowFactionIcons
+          factionIcon: FrenchFaction
+
+- type: startingGear
+  id: FrenchLordGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_iron_chestplate
+    jumpsuit: civ13_uniform_white_tunic_1
+    belt: civ13_sword_arming_sword
+    head: civ13_head_brown_noble_hat
+# Knight
+
+- type: job
+  id: FrenchKnight
+  originalName: Chevalier
+  name: job-name-civ-french-knight
+  faction: France
+  description: job-description-civ-french-knight
+  playTimeTracker: JobFrenchKnight
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 5400 #1.5 hrs
+  startingGear: FrenchKnightGear
+  icon: "JobIconOfficer"
+  supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: MedievalAccent
+        - type: NpcFactionMember
+          factions:
+            - France
+        - type: ShowFactionIcons
+          factionIcon: FrenchFaction
+
+- type: startingGear
+  id: FrenchKnightGear
+  equipment:
+    shoes: civ13_shoes_Sabatons
+    outerClothing: civ13_suit_blue_plated_armor
+    jumpsuit: civ13_uniform_blue_tunic
+    head: civ13_head_knight_helmet
+    gloves: civ13_gloves_armored_gauntlets
+  inhand:
+    - civ13_sword_arming_sword
+    - civ13_shield_semioval_iron_shield
+
+# Swordsman
+
+- type: job
+  id: FrenchSwordsman
+  originalName: Homme d'Armes
+  name: job-name-civ-french-man-at-arms
+  faction: France
+  description: job-description-civ-french-man-at-arms
+  playTimeTracker: JobFrenchSwordsman
+  startingGear: FrenchSwordsmanGear
+  randomStartingGears: [FrenchSwordsmanGear, FrenchSwordsmanGear2]
+  icon: "JobIconSword"
+  supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: MedievalAccent
+        - type: NpcFactionMember
+          factions:
+            - France
+        - type: ShowFactionIcons
+          factionIcon: FrenchFaction
+
+- type: startingGear
+  id: FrenchSwordsmanGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_chainmail
+    neck: civ13_accessory_tabard_blue_white
+    jumpsuit: civ13_uniform_blue_white_tunic
+    head: civ13_head_kettle_helmet
+  inhand:
+    - civ13_sword_arming_sword
+    - WoodenBucklerBlue
+- type: startingGear
+  id: FrenchSwordsmanGear2
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_chainmail
+    neck: civ13_accessory_tabard_blue
+    jumpsuit: civ13_uniform_blue_tunic
+    head: civ13_head_kettle_helmet
+  inhand:
+    - civ13_sword_arming_sword
+    - WoodenBucklerBlue
+# Spearman
+
+- type: job
+  id: FrenchSpearman
+  originalName: Piquier
+  name: job-name-civ-french-spearman
+  faction: France
+  description: job-description-civ-french-spearman
+  playTimeTracker: JobFrenchSpearman
+  startingGear: FrenchSpearmanGear
+  randomStartingGears: [FrenchSpearmanGear, FrenchSpearmanGear2]
+  icon: "JobIconSpear"
+  supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: MedievalAccent
+        - type: NpcFactionMember
+          factions:
+            - France
+        - type: ShowFactionIcons
+          factionIcon: FrenchFaction
+
+- type: startingGear
+  id: FrenchSpearmanGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_gambeson
+    neck: civ13_accessory_tabard_blue_white
+    jumpsuit: civ13_uniform_blue_white_tunic
+    head: civ13_head_protective_conical_helmet
+  inhand:
+    - civ13_spear_pike
+    - WoodenBucklerBlue
+
+- type: startingGear
+  id: FrenchSpearmanGear2
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_gambeson
+    neck: civ13_accessory_tabard_blue
+    jumpsuit: civ13_uniform_blue_tunic
+    head: civ13_head_protective_conical_helmet
+  inhand:
+    - civ13_spear_pike
+    - WoodenBucklerBlue
+# Ranged
+
+- type: job
+  id: FrenchRanged
+  originalName: Archer
+  name: job-name-civ-french-ranged
+  faction: France
+  description: job-description-civ-french-ranged
+  playTimeTracker: JobFrenchRanged
+  startingGear: FrenchRangedGear
+  randomStartingGears: [FrenchRangedGear, FrenchRangedGear2]
+  icon: "JobIconRanged"
+  supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: MedievalAccent
+        - type: NpcFactionMember
+          factions:
+            - France
+        - type: ShowFactionIcons
+          factionIcon: FrenchFaction
+
+- type: startingGear
+  id: FrenchRangedGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_gambeson
+    neck: civ13_accessory_tabard_blue_white
+    jumpsuit: civ13_uniform_blue_white_tunic
+    head: civ13_head_conical_helmet
+    belt: ClothingBeltQuiver
+    pocket1: SwordDagger
+    back: WoodenBucklerBlue
+  inhand:
+    - BowImprovised
+  storage:
+    belt:
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+- type: startingGear
+  id: FrenchRangedGear2
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_gambeson
+    neck: civ13_accessory_tabard_blue
+    jumpsuit: civ13_uniform_blue_tunic
+    head: civ13_head_kettle_helmet
+    belt: ClothingBeltQuiver
+    pocket1: SwordDagger
+    back: WoodenBucklerBlue
+  inhand:
+    - BowImprovised
+  storage:
+    belt:
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+      - ArrowIron
+# Medic
+
+- type: job
+  id: FrenchMedic
+  name: job-name-civ-french-medic
+  faction: France
+  originalName: Moine
+  description: job-description-civ-french-medic
+  playTimeTracker: JobFrenchMedic
+  startingGear: FrenchMedicGear
+  icon: "JobIconMedic"
+  supervisors: job-supervisors-lord
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: MedievalAccent
+        - type: NpcFactionMember
+          factions:
+            - France
+        - type: ShowFactionIcons
+          factionIcon: FrenchFaction
+
+- type: startingGear
+  id: FrenchMedicGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    outerClothing: civ13_suit_monk_robes
+    jumpsuit: civ13_uniform_light_brown_tunic
+    head: civ13_head_black_noble_hat
+    belt: LeatherClothingBelt
+    pocket1: SwordDagger
+  storage:
+    belt:
+      - ComfreyHealingHerbs
+      - ComfreyHealingHerbs
+      - FoodPoppy
+      - FoodPoppy
+      - YarrowHealingHerbs
+      - YarrowHealingHerbs
+      - ElderflowerHealingHerbs
+      - ElderflowerHealingHerbs
+      - GauzeLeather1
+      - GauzeLeather1

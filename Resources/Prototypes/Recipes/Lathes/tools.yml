@@ -153,14 +153,6 @@
 
 - type: latheRecipe
   parent: BaseToolRecipe
-  id: SprayPainter
-  result: SprayPainter
-  materials:
-    Steel: 300
-    Plastic: 100
-
-- type: latheRecipe
-  parent: BaseToolRecipe
   id: UtilityBelt
   result: ClothingBeltUtility
   materials:

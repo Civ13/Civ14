@@ -1,0 +1,136 @@
+# just a re-named dylovene for non-futuristic uses
+- type: reagent
+  id: Sulfanilamide
+  name: reagent-name-sulfanilamide
+  group: Medicine
+  desc: reagent-desc-sulfanilamide
+  physicalDesc: reagent-physical-desc-chalky
+  flavor: bitter
+  color: "#E8E8D3"
+  metabolisms:
+    Medicine:
+      effects:
+        - !type:HealthChange
+          damage:
+            types:
+              Poison: -1
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentThreshold
+              min: 20
+          damage:
+            groups:
+              Brute: 2
+        - !type:Jitter
+          conditions:
+            - !type:ReagentThreshold
+              min: 20
+        - !type:PopupMessage
+          conditions:
+            - !type:ReagentThreshold
+              min: 20
+          type: Local
+          visualType: Medium
+          messages: ["generic-reagent-effect-nauseous"]
+          probability: 0.2
+        - !type:ChemVomit
+          conditions:
+            - !type:ReagentThreshold
+              min: 20
+          probability: 0.02
+        - !type:Drunk
+          conditions:
+            - !type:ReagentThreshold
+              min: 15
+  plantMetabolism:
+    - !type:PlantAdjustToxins
+      amount: -10
+    - !type:PlantAdjustHealth
+      amount: 1
+
+- type: entity
+  name: pill
+  suffix: Sulfanilamide 10u
+  parent: Pill
+  id: PillSulfanilamide
+  components:
+    - type: Pill
+      pillType: 9
+    - type: Sprite
+      state: pill10
+    - type: Label
+      currentLabel: sulfanilamide 10u
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 20
+          reagents:
+            - ReagentId: Sulfanilamide
+              Quantity: 10
+
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterSulfanilamide
+  suffix: Sulfanilamide 10u, 5
+  components:
+    - type: Label
+      currentLabel: sulfanilamide 10u
+    - type: StorageFill
+      contents:
+        - id: PillSulfanilamide
+          amount: 5
+
+- type: entity
+  name: adrenaline syrette
+  parent: ChemicalMedipen
+  id: SyretteAdrenaline
+  description: A rapid and safe way to stabilize patients in critical condition.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/syringe.rsi
+      layers:
+        - state: single_use3
+          map: ["enum.SolutionContainerLayers.Fill"]
+    - type: SolutionContainerVisuals
+      maxFillLevels: 1
+      changeColor: false
+      emptySpriteName: single_use3_empty
+    - type: SolutionContainerManager
+      solutions:
+        pen:
+          maxVol: 15
+          reagents:
+            - ReagentId: Epinephrine
+              Quantity: 12
+            - ReagentId: TranexamicAcid
+              Quantity: 3
+    - type: Tag
+      tags: []
+
+- type: entity
+  name: morphine syrette
+  parent: ChemicalMedipen
+  id: SyretteMorphine
+  description: A strong painkiller, in a syrette for quick delivery.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/syringe.rsi
+      layers:
+        - state: single_use0
+          map: ["enum.SolutionContainerLayers.Fill"]
+    - type: SolutionContainerVisuals
+      maxFillLevels: 1
+      changeColor: false
+      emptySpriteName: single_use0_empty
+    - type: SolutionContainerManager
+      solutions:
+        pen:
+          maxVol: 15
+          reagents:
+            - ReagentId: Bicaridine
+              Quantity: 10
+            - ReagentId: Diphenhydramine
+              Quantity: 5
+    - type: Tag
+      tags: []

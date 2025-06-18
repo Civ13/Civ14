@@ -1,7 +1,7 @@
 - type: guideEntry
   id: Nomads
   name: guide-entry-nomads
-  priority: 0
+  priority: 2
   text: "/ServerInfo/Guidebook/Nomads/nomads.xml"
   children:
     - NomadsStarterGuide

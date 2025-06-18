@@ -1,0 +1,237 @@
+{
+  "version": 1,
+  "license": "AGPLv3",
+  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "defibunit-charge100"
+    },
+    {
+      "name": "defibunit-charge75"
+    },
+    {
+      "name": "defibunit-charge50"
+    },
+    {
+      "name": "defibunit-charge25"
+    },
+    {
+      "name": "defibunit-nocell"
+    },
+    {
+      "name": "defibunit-powered",
+      "delays": [
+        [
+          0.4,
+          0.4,
+          0.4,
+          0.4
+        ]
+      ]
+    },
+    {
+      "name": "defibunit-emagged",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "defibpaddles0"
+    },
+    {
+      "name": "defibpaddles1"
+    },
+    {
+      "name": "defibpaddles_"
+    },
+    {
+      "name": "defibpaddles0_cooldown"
+    },
+    {
+      "name": "defibpaddles1_cooldown"
+    },
+    {
+      "name": "defibpaddles__cooldown"
+    },
+    {
+      "name": "defibcompact",
+      "delays": [
+        [
+          0.6,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "defibcompactnoscreen"
+    },
+    {
+      "name": "defibcompact-paddles"
+    },
+    {
+      "name": "defibcompact-nocell"
+    },
+    {
+      "name": "defibcompact-powered",
+      "delays": [
+        [
+          0.6,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "defibcompact-emagged",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "defibcompact-charge100"
+    },
+    {
+      "name": "defibcompact-charge75"
+    },
+    {
+      "name": "defibcompact-charge50"
+    },
+    {
+      "name": "defibcompact-charge25"
+    },
+    {
+      "name": "defibpaddlesold1__cooldown",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "defibunitold-nocell"
+    },
+    {
+      "name": "defibunitold-charge50"
+    },
+    {
+      "name": "defibunitold-powered",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "defibunitold-emagged",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "defibunitold-paddles"
+    },
+    {
+      "name": "defibpaddlesold0"
+    },
+    {
+      "name": "defibpaddlesold1"
+    },
+    {
+      "name": "defibpaddlesold_"
+    },
+    {
+      "name": "defibunitold-charge25"
+    },
+    {
+      "name": "defibunit",
+      "delays": [
+        [
+          0.4,
+          0.4,
+          0.4,
+          0.4
+        ]
+      ]
+    },
+    {
+      "name": "defibunitnoscreen"
+    },
+    {
+      "name": "defibunit-paddles"
+    },
+    {
+      "name": "defibunitold-charge75"
+    },
+    {
+      "name": "defibunitold"
+    },
+    {
+      "name": "defibpaddlesold0_cooldown",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "defibpaddlesold1_cooldown",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "defibunit-charge0",
+      "delays": [
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "defibunitold-charge100"
+    }
+  ]
+}

@@ -87,7 +87,7 @@
   id: CheapRollerBed
   name: rollerbed
   parent: RollerBed
-  description: A run-down rollerbed. Used to carry patients around.
+  description: A rollerbed. Used to carry patients around.
   components:
     - type: Item
       heldPrefix: cheap_rollerbed

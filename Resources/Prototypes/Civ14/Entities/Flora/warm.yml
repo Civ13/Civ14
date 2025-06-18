@@ -26,6 +26,81 @@
       sprite: Civ14/Flora/bigtrees_dead.rsi
       state: african_acacia_dead
 
+- type: entity
+  parent: BaseTree
+  id: TreePalm
+  name: palm tree
+  description: A tall palm tree.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/palms.rsi
+      layers:
+        - state: palm1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            palm1: ""
+            palm2: ""
+            palm1old: ""
+            palm2old: ""
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.3,-0.1,0.6,0.1"
+          density: 1000
+          layer:
+            - WallLayer
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Wood
+    - type: MeleeSound
+      soundGroups:
+        Brute:
+          path: /Audio/Effects/chop.ogg
+          params:
+            variation: 0.05
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 140
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+        - trigger: !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                path: /Audio/Effects/tree_fell.ogg
+                params:
+                  volume: 5
+                  variation: 0.05
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                MaterialWoodPlank1:
+                  min: 2
+                  max: 3
+- type: entity
+  parent: TreePalm
+  id: TreePalmDead
+  name: dead palm tree
+  description: A tall palm tree. This one is dead.
+  components:
+    - type: Sprite
+      sprite: Civ14/Flora/palms.rsi
+      layers:
+        - state: dead_palm1
+          map: ["random"]
+    - type: RandomSprite
+      available:
+        - random:
+            dead_palm1: ""
+            dead_palm2: ""
+
 - type: decal
   id: BushJungle1
   snapCardinals: true

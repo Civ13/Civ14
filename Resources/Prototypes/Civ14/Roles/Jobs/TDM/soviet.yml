@@ -1,0 +1,335 @@
+- type: job
+  id: SovietCaptain
+  name: job-name-civ-soviet-cpt
+  faction: Soviet
+  originalName: Kapitan
+  description: job-description-civ-soviet-cpt
+  playTimeTracker: JobSovietCaptain
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsSquadLeader
+      time: 7200 # 2 hours
+  startingGear: SovietCaptainGear
+  icon: "JobIconICpt"
+  supervisors: job-supervisors-nobody
+  ranks:
+    RankMajor:
+      - !type:RoleTimeRequirement
+        role: JobSovietCaptain
+        time: 18000 # 5 hours
+    RankCaptain: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: RussianAccent
+        - type: NpcFactionMember
+          factions:
+            - Soviet
+        - type: ShowFactionIcons
+          factionIcon: SovietFaction
+          jobIcon: JobIconICpt
+          assignSquad: false
+
+- type: startingGear
+  id: SovietCaptainGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_officer_uniform
+    outerClothing: civ13_suit_Soviet_officer_coat
+    belt: civ13_pistol_TT_33
+    head: civ13_head_soviet_officer_cap
+    pocket1: Compass
+
+# Sergeant
+
+- type: job
+  id: SovietSergeant
+  originalName: Serzhant
+  name: job-name-civ-soviet-sgt
+  faction: Soviet
+  description: job-description-civ-soviet-sgt
+  playTimeTracker: JobSovietSergeant
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 7200 # 2 hours
+  startingGear: SovietSergeantGear
+  icon: "JobIconISgt"
+  supervisors: job-supervisors-cpt
+  ranks:
+    RankSergeantMajor:
+      - !type:RoleTimeRequirement
+        role: JobSovietSergeant
+        time: 36000 # 10 hours
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: JobSovietSergeant
+        time: 10800 # 3 hours
+    RankSergeant: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: RussianAccent
+        - type: NpcFactionMember
+          factions:
+            - Soviet
+        - type: ShowFactionIcons
+          factionIcon: SovietFaction
+          jobIcon: JobIconISgt
+          assignSquad: true
+
+- type: startingGear
+  id: SovietSergeantGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    jumpsuit: civ13_uniform_Soviet_uniform
+    #outerClothing: civ13_suit_Soviet_coat
+    head: civ13_head_soviet_pilotka
+    belt: civ13_pistol_TT_33
+    pocket1: civ13_magazine_TT_33_magazine_(7.62x25mm)
+    pocket2: Compass
+  inhand:
+    - civ13_boltaction_Mosin_30
+
+# SMG
+
+- type: job
+  id: SovietSubmachineGunner
+  name: job-name-civ-soviet-submachinegunner
+  faction: Soviet
+  originalName: Avtomatchik
+  description: job-description-civ-soviet-submachinegunner
+  playTimeTracker: JobSovietSubmachineGunner
+  startingGear: SovietSubmachineGunnerGear
+  randomStartingGears: [SovietSubmachineGunnerGear, SovietSubmachineGunnerGear2]
+  icon: "JobIconSoldier"
+  supervisors: job-supervisors-cpt
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 3600 # 1 hours
+  ranks:
+    RankLanceCorporal:
+      - !type:RoleTimeRequirement
+        role: JobSovietSubmachineGunner
+        time: 36000 # 10 hours
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: JobSovietSubmachineGunner
+        time: 10800 # 3 hours
+    RankPrivate: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: RussianAccent
+        - type: NpcFactionMember
+          factions:
+            - Soviet
+        - type: ShowFactionIcons
+          factionIcon: SovietFaction
+          jobIcon: JobIconRifleman
+          assignSquad: true
+
+- type: startingGear
+  id: SovietSubmachineGunnerGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_uniform
+    gloves: ClothingHandsGlovesFingerless
+    belt: ClothingWebbingSovietSMG
+    #outerClothing: civ13_suit_Soviet_coat
+    head: civ13_head_soviet_helmet
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+  inhand:
+    - civ13_smg_ppsh
+- type: startingGear
+  id: SovietSubmachineGunnerGear2
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_uniform
+    belt: ClothingWebbingSovietSMG
+    #outerClothing: civ13_suit_Soviet_coat_1
+    head: civ13_head_soviet_ushanka
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+  inhand:
+    - civ13_smg_ppsh
+
+# Rifleman
+
+- type: job
+  id: SovietRifleman
+  name: job-name-civ-soviet-rifleman
+  faction: Soviet
+  originalName: Strelok
+  description: job-description-civ-soviet-rifleman
+  playTimeTracker: JobSovietRifleman
+  startingGear: SovietRiflemanGear
+  randomStartingGears: [SovietRiflemanGear, SovietRiflemanGear2]
+  icon: "JobIconSoldier"
+  supervisors: job-supervisors-cpt
+  ranks:
+    RankLanceCorporal:
+      - !type:RoleTimeRequirement
+        role: JobSovietRifleman
+        time: 36000 # 10 hours
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: JobSovietRifleman
+        time: 10800 # 3 hours
+    RankPrivate: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: RussianAccent
+        - type: NpcFactionMember
+          factions:
+            - Soviet
+        - type: ShowFactionIcons
+          factionIcon: SovietFaction
+          jobIcon: JobIconRifleman
+          assignSquad: true
+
+- type: startingGear
+  id: SovietRiflemanGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_uniform
+    #outerClothing: civ13_suit_Soviet_coat_1
+    head: civ13_head_soviet_helmet
+    belt: ClothingWebbingRussianRifleman
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+  inhand:
+    - civ13_boltaction_Mosin_30
+
+- type: startingGear
+  id: SovietRiflemanGear2
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_uniform
+    gloves: ClothingHandsGlovesFingerless
+    belt: ClothingWebbingRussianRifleman
+    outerClothing: civ13_suit_Soviet_coat
+    head: civ13_head_soviet_ushanka_1
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+  inhand:
+    - civ13_boltaction_Mosin_30
+
+# Machinegunner
+
+- type: job
+  id: SovietMachinegunner
+  name: job-name-civ-soviet-machinegunner
+  faction: Soviet
+  originalName: Pulemyotchik
+  description: job-description-civ-soviet-machinegunner
+  playTimeTracker: JobSovietMachinegunner
+  startingGear: SovietMachinegunnerGear
+  randomStartingGears: [SovietMachinegunnerGear, SovietMachinegunnerGear2]
+  icon: "JobIconMg"
+  supervisors: job-supervisors-cpt
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 3600 # 1 hours
+  ranks:
+    RankLanceCorporal:
+      - !type:RoleTimeRequirement
+        role: JobSovietMachinegunner
+        time: 36000 # 10 hours
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: JobSovietMachinegunner
+        time: 10800 # 3 hours
+    RankPrivate: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: RussianAccent
+        - type: NpcFactionMember
+          factions:
+            - Soviet
+        - type: ShowFactionIcons
+          factionIcon: SovietFaction
+          jobIcon: JobIconRifleman
+          assignSquad: true
+
+- type: startingGear
+  id: SovietMachinegunnerGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_uniform
+    gloves: ClothingHandsGlovesFingerless
+    belt: ClothingWebbingSovietMG
+    #outerClothing: civ13_suit_Soviet_coat
+    head: civ13_head_soviet_helmet
+    pocket1: CombatKnife
+    pocket2: Gauze
+  inhand:
+    - civ13_mg_DP_28
+
+- type: startingGear
+  id: SovietMachinegunnerGear2
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_uniform
+    gloves: ClothingHandsGlovesFingerless
+    belt: ClothingWebbingSovietMG
+    outerClothing: civ13_suit_Soviet_coat_1
+    head: civ13_head_soviet_ushanka_1
+    pocket1: CombatKnife
+    pocket2: Gauze
+  inhand:
+    - civ13_mg_DP_28
+
+# Medic
+
+- type: job
+  id: SovietMedic
+  name: job-name-civ-soviet-medic
+  faction: Soviet
+  originalName: Vrach
+  description: job-description-civ-soviet-medic
+  playTimeTracker: JobSovietMedic
+  startingGear: SovietMedicGear
+  icon: "JobIconMedic"
+  supervisors: job-supervisors-cpt
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      # time: 9000 # 2.5 hours
+      time: 3600 # 1 hour temporarily until people build up playtime
+  ranks:
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: JobSovietMedic
+        time: 10800 # 3 hours
+    RankCorporal: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: RussianAccent
+        - type: NpcFactionMember
+          factions:
+            - Soviet
+        - type: ShowFactionIcons
+          factionIcon: SovietFaction
+          jobIcon: JobIconMedic
+          assignSquad: false
+
+- type: startingGear
+  id: SovietMedicGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_uniform
+    #outerClothing: civ13_suit_Soviet_coat_1
+    head: civ13_head_soviet_medical_helmet
+    belt: ClothingSatchelMedicalMedsFilled
+    back: ClothingBackpackDuffelFilled
+    pocket1: FlashlightLanternMilitary
+    pocket2: civ13_magazine_clip_(7.62x54mm)
+  inhand:
+    - civ13_boltaction_Mosin_30

@@ -77,6 +77,28 @@ public abstract class SharedWieldableSystem : EntitySystem
 
     private void OnShootAttempt(EntityUid uid, GunRequiresWieldComponent component, ref ShotAttemptedEvent args)
     {
+        // Do they have enough hands free?
+        if (!TryComp<HandsComponent>(args.User, out var hands))
+        {
+            args.Cancel();
+        }
+        if (_hands.TryGetEmptyHand(args.User, out var hand, hands) == false)
+        {
+            if (!TryComp<WieldableComponent>(uid, out var _))
+            {
+                args.Cancel();
+                var time = _timing.CurTime;
+                if (time > component.LastPopup + component.PopupCooldown &&
+                    !HasComp<MeleeWeaponComponent>(uid) &&
+                    !HasComp<MeleeRequiresWieldComponent>(uid))
+                {
+                    component.LastPopup = time;
+                    var message = Loc.GetString("wieldable-component-no-free-hands");
+                    _popup.PopupClient(message, args.Used, args.User);
+                }
+            }
+
+        }
         if (TryComp<WieldableComponent>(uid, out var wieldable) &&
             !wieldable.Wielded)
         {

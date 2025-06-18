@@ -166,6 +166,17 @@
         types:
           Piercing: 47
 - type: entity
+  id: civ13_bullet_a762x54_weak
+  name: civ13_bullet_a762x54_weak
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 25
+- type: entity
   id: civ13_bullet_a44
   name: civ13_bullet_a44
   parent: BaseBullet
@@ -209,6 +220,17 @@
       damage:
         types:
           Piercing: 49
+- type: entity
+  id: civ13_bullet_a792x57_weak
+  name: civ13_bullet_a792x57_weak
+  parent: BaseBullet
+  categories:
+    - HideSpawnMenu
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 27
 - type: entity
   id: civ13_bullet_a765x53
   name: civ13_bullet_a765x53

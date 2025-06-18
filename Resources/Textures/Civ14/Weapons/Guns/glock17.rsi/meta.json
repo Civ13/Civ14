@@ -1,31 +1,23 @@
 {
-  "version": 1,
-  "license": "AGPL-3.0",
-  "copyright": "Exported from https://github.com/civ13/civ13",
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "states": [
-    {
-      "name": "mag-0",
-      "directions": 1
+    "version": 1,
+    "license": "AGPL-3.0",
+    "copyright": "Exported from https://github.com/civ13/civ13",
+    "size": {
+        "x": 32,
+        "y": 32
     },
-    {
-      "name": "icon",
-      "directions": 1
-    },
-    {
-      "name": "inhand-left",
-      "directions": 1
-    },
-    {
-      "name": "inhand-right",
-      "directions": 1
-    },
-    {
-      "name": "bolt-open",
-      "directions": 1
-    }
-  ]
+    "states": [
+        {
+            "name": "mag-0",
+            "directions": 1
+        },
+        {
+            "name": "icon",
+            "directions": 1
+        },
+        {
+            "name": "bolt-open",
+            "directions": 1
+        }
+    ]
 }

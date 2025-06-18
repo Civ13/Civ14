@@ -1,0 +1,114 @@
+- type: department
+  id: Nomads
+  name: department-Nomads
+  description: department-Nomads-description
+  color: "#a36156"
+  roles:
+    - Nomad
+
+- type: department
+  id: DepFrench
+  name: department-French
+  description: department-French-description
+  color: "#6490ce"
+  roles:
+    - FrenchLord
+    - FrenchKnight
+    - FrenchSwordsman
+    - FrenchSpearman
+    - FrenchRanged
+    - FrenchMedic
+
+- type: department
+  id: DepEnglish
+  name: department-English
+  description: department-English-description
+  color: "#dc3f3f"
+  roles:
+    - EnglishLord
+    - EnglishKnight
+    - EnglishSwordsman
+    - EnglishSpearman
+    - EnglishRanged
+    - EnglishMedic
+
+- type: department
+  id: DepGerman
+  name: department-German
+  description: department-German-description
+  color: "#080101"
+  roles:
+    - GermanCaptain
+    - GermanSergeant
+    - GermanSubmachineGunner
+    - GermanRifleman
+    - GermanMachinegunner
+    - GermanMedic
+
+- type: department
+  id: DepSoviet
+  name: department-Soviet
+  description: department-Soviet-description
+  color: "#f80505"
+  roles:
+    - SovietCaptain
+    - SovietSergeant
+    - SovietSubmachineGunner
+    - SovietRifleman
+    - SovietMachinegunner
+    - SovietMedic
+
+- type: department
+  id: DepUS
+  name: department-US
+  description: department-US-description
+  color: "#0919f3"
+  roles:
+    - USCaptain
+    - USSergeant
+    - USRifleman
+    - USMachinegunner
+    - USMedic
+
+- type: department
+  id: DepSovietCW
+  name: department-SovietCW
+  description: department-SovietCW-description
+  color: "#f30909"
+  roles:
+    - SovietCWCaptain
+    - SovietCWSergeant
+    - SovietCWRifleman
+    - SovietCWMachinegunner
+    - SovietCWMedic
+
+- type: department
+  id: DepInsurgents
+  name: department-Insurgents
+  description: department-Insurgents-description
+  color: "#24a600"
+  roles:
+    - InsurgentLeader
+    - InsurgentRifleman
+    - InsurgentMedic
+
+- type: department
+  id: DepBlugoslavia
+  name: department-Blugoslavia
+  description: department-Blugoslavia-description
+  color: "#002fca"
+  roles:
+    - BlugoslaviaCaptain
+    - BlugoslaviaSergeant
+    - BlugoslaviaRifleman
+    - BlugoslaviaMachinegunner
+    - BlugoslaviaMedic
+
+- type: department
+  id: DepUnitedNations
+  name: department-UnitedNations
+  description: department-UnitedNations-description
+  color: "#3a62e7"
+  roles:
+    - UnitedNationsRifleman
+    - UnitedNationsMedic
