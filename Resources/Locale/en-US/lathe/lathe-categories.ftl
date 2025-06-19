@@ -31,3 +31,5 @@ lathe-category-swords-medieval = Medieval Swords
 lathe-category-swords-imperial = Imperial Swords
 lathe-category-shields-ancient = Ancient Shields
 lathe-category-shields-medieval = Medieval Shields
+lathe-category-armor-medieval = Medieval Armor
+lathe-category-armor-imperial = Imperial Armor

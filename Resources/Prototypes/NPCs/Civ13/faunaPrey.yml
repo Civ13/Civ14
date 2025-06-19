@@ -105,17 +105,6 @@
           operator: !type:SpeakOperator
             speech: "Squeals in fear"
             hidden: false
-        # Pick a location away from the predator
-        - !type:HTNPrimitiveTask
-          operator: !type:PickFleeLocationOperator
-            targetKey: Target
-            rangeKey: FleeRange
-            targetCoordinates: FleeCoordinates
-        # Move to the flee location
-        - !type:HTNPrimitiveTask
-          operator: !type:MoveToOperator
-            pathfindInPlanning: true
-            targetKey: FleeCoordinates
         # Juke away from predator
         - !type:HTNPrimitiveTask
           operator: !type:JukeOperator
