@@ -179,9 +179,9 @@
       sprite: Civ14/Clothing/exported/suits/repcommander_armor.rsi
 
 - type: entity
-  name: red guard armor with robe.
+  name: red guard armor with robe
   parent: ClothingOuterBase
-  id: civ13_suit_red_guard_armor_with_robe.
+  id: civ13_suit_red_guard_armor_with_robe
   description: >-
     A thick, extremely expensive plastoid armor with a crimson red robe
     attached.
@@ -202,7 +202,7 @@
 - type: entity
   name: senate guard armor with robe
   parent: ClothingOuterBase
-  id: civ13_suit_senate_guard_armor_with_robe.
+  id: civ13_suit_senate_guard_armor_with_robe
   description: A thick, extremely expensive plastoid armor with a royal blue robe attached.
   components:
     - type: Sprite
@@ -335,7 +335,7 @@
   name: bronze egyptian lamellar
   parent: ClothingOuterBase
   id: civ13_suit_bronze_egyptian_lamellar
-  description: A bronze lamellar armor, used by soldiers of pharoahic dynasties.
+  description: A bronze lamellar armor, used by soldiers of pharaonic dynasties.
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/egyptian_lamellar.rsi
@@ -421,9 +421,9 @@
       time: 10
 
 - type: entity
-  name: pharoahic armor of the gods
+  name: pharaonic armor of the gods
   parent: ClothingOuterBase
-  id: civ13_suit_pharoahic_armor_of_the_gods
+  id: civ13_suit_pharaonic_armor_of_the_gods
   description: The armor of the divine gods of the desert
   components:
     - type: Sprite

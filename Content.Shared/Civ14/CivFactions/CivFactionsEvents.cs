@@ -69,11 +69,11 @@ public sealed class FactionInviteOfferEvent : EntityEventArgs // Not inheriting 
     public string InviterName { get; }
     public string FactionName { get; }
     public NetUserId InviterUserId { get; } /// <summary>
-    /// Initialises a new faction invitation offer with the inviter's name, faction name, and inviter's user ID.
-    /// </summary>
-    /// <param name="inviterName">The display name of the player sending the invitation.</param>
-    /// <param name="factionName">The name of the faction the invitation is for.</param>
-    /// <param name="inviterUserId">The user ID of the player sending the invitation.</param>
+                                            /// Initialises a new faction invitation offer with the inviter's name, faction name, and inviter's user ID.
+                                            /// </summary>
+                                            /// <param name="inviterName">The display name of the player sending the invitation.</param>
+                                            /// <param name="factionName">The name of the faction the invitation is for.</param>
+                                            /// <param name="inviterUserId">The user ID of the player sending the invitation.</param>
 
     public FactionInviteOfferEvent(string inviterName, string factionName, NetUserId inviterUserId)
     {
@@ -97,15 +97,14 @@ public sealed class AcceptFactionInviteEvent : BaseFactionRequestEvent
     /// The NetUserId of the player who originally sent the invite.
     /// </summary>
     public NetUserId InviterUserId { get; } /// <summary>
-    /// Initialises a new event indicating that a player has accepted a faction invitation.
-    /// </summary>
-    /// <param name="factionName">The name of the faction being joined.</param>
-    /// <param name="inviterUserId">The user ID of the player who sent the invitation.</param>
+                                            /// Initialises a new event indicating that a player has accepted a faction invitation.
+                                            /// </summary>
+                                            /// <param name="factionName">The name of the faction being joined.</param>
+                                            /// <param name="inviterUserId">The user ID of the player who sent the invitation.</param>
 
-    public AcceptFactionInviteEvent(string factionName, NetUserId inviterUserId)
+    public AcceptFactionInviteEvent(string factionName)
     {
         FactionName = factionName;
-        InviterUserId = inviterUserId;
     }
 }
 
@@ -121,10 +120,10 @@ public sealed class PlayerFactionStatusChangedEvent : EntityEventArgs
 {
     public bool IsInFaction { get; }
     public string? FactionName { get; } /// <summary>
-    /// Initialises a new event indicating a player's faction membership status and, if applicable, the faction's name.
-    /// </summary>
-    /// <param name="isInFaction">Whether the player is currently in a faction.</param>
-    /// <param name="factionName">The name of the faction if the player is a member; otherwise, null.</param>
+                                        /// Initialises a new event indicating a player's faction membership status and, if applicable, the faction's name.
+                                        /// </summary>
+                                        /// <param name="isInFaction">Whether the player is currently in a faction.</param>
+                                        /// <param name="factionName">The name of the faction if the player is a member; otherwise, null.</param>
 
     public PlayerFactionStatusChangedEvent(bool isInFaction, string? factionName)
     {
