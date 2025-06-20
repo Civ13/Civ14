@@ -5836,3 +5836,31 @@
               doAfter: 11
     - node: end
       entity: civ13_suit_mbata_pelt_vest
+
+- type: construction
+  name: gambeson
+  id: civ13_suit_gambeson
+  graph: civ13_suit_gambeson
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: A thick, padded jacket made of layered cloth, offering basic protection for infantry.
+  icon:
+    sprite: Civ14/Clothing/exported/suits/gambeson.rsi
+    state: icon
+  objectType: Item
+  agemin: 2
+  agemax: 8
+- type: constructionGraph
+  id: civ13_suit_gambeson
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 10
+              doAfter: 15
+    - node: end
+      entity: civ13_suit_gambeson
