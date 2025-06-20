@@ -4375,9 +4375,9 @@
     - node: end
       entity: civ13_suit_replicant_commander_armor
 - type: construction
-  name: red guard armor with robe.
-  id: civ13_suit_red_guard_armor_with_robe.
-  graph: civ13_suit_red_guard_armor_with_robe.
+  name: red guard armor with robe
+  id: civ13_suit_red_guard_armor_with_robe
+  graph: civ13_suit_red_guard_armor_with_robe
   startNode: start
   targetNode: end
   category: construction-category-clothing
@@ -4389,7 +4389,7 @@
   agemin: 9
   agemax: 9
 - type: constructionGraph
-  id: civ13_suit_red_guard_armor_with_robe.
+  id: civ13_suit_red_guard_armor_with_robe
   start: start
   graph:
     - node: start
@@ -4400,11 +4400,11 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_suit_red_guard_armor_with_robe.
+      entity: civ13_suit_red_guard_armor_with_robe
 - type: construction
-  name: senate guard armor with robe.
-  id: civ13_suit_senate_guard_armor_with_robe.
-  graph: civ13_suit_senate_guard_armor_with_robe.
+  name: senate guard armor with robe
+  id: civ13_suit_senate_guard_armor_with_robe
+  graph: civ13_suit_senate_guard_armor_with_robe
   startNode: start
   targetNode: end
   category: construction-category-clothing
@@ -4416,7 +4416,7 @@
   agemin: 9
   agemax: 9
 - type: constructionGraph
-  id: civ13_suit_senate_guard_armor_with_robe.
+  id: civ13_suit_senate_guard_armor_with_robe
   start: start
   graph:
     - node: start
@@ -4427,7 +4427,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_suit_senate_guard_armor_with_robe.
+      entity: civ13_suit_senate_guard_armor_with_robe
 - type: construction
   name: standard stormtrooper armor
   id: civ13_suit_standard_stormtrooper_armor
@@ -4646,9 +4646,9 @@
     - node: end
       entity: civ13_suit_alligator_scale_armor
 - type: construction
-  name: pharoahic armor of the gods
-  id: civ13_suit_pharoahic_armor_of_the_gods
-  graph: civ13_suit_pharoahic_armor_of_the_gods
+  name: pharaonic armor of the gods
+  id: civ13_suit_pharaonic_armor_of_the_gods
+  graph: civ13_suit_pharaonic_armor_of_the_gods
   startNode: start
   targetNode: end
   category: construction-category-clothing
@@ -4660,7 +4660,7 @@
   agemin: 8
   agemax: 8
 - type: constructionGraph
-  id: civ13_suit_pharoahic_armor_of_the_gods
+  id: civ13_suit_pharaonic_armor_of_the_gods
   start: start
   graph:
     - node: start
@@ -4671,7 +4671,7 @@
               amount: 5
               doAfter: 5
     - node: end
-      entity: civ13_suit_pharoahic_armor_of_the_gods
+      entity: civ13_suit_pharaonic_armor_of_the_gods
 - type: construction
   name: creed armor
   id: civ13_suit_creed_armor
