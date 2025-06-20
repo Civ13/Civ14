@@ -1,0 +1,1180 @@
+- type: entity
+  name: imperial officer armor
+  parent: ClothingOuterBase
+  id: civ13_suit_imperial_officer_armor
+  description: A thick, steel armor worn by imperial officers
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/imperial_officer.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/imperial_officer.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.35
+          Slash: 0.35
+          Piercing: 0.9
+          Arrow: 0.55
+          Heat: 0.85
+
+- type: entity
+  name: bronze chinese lamellar
+  parent: ClothingOuterBase
+  id: civ13_suit_bronze_chinese_lamellar
+  description: A bronze lamellar armor, used by warriors of early chinese dynasties.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/chinese_lamellar.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/chinese_lamellar.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.92
+          Arrow: 0.65
+          Heat: 0.85
+
+- type: entity
+  name: green plated armor
+  parent: civ13_suit_plated_armor
+  id: civ13_suit_green_plated_armor
+  description: A thick, expensive iron armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/knight_green.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/knight_green.rsi
+
+- type: entity
+  name: red plated armor
+  parent: civ13_suit_plated_armor
+  id: civ13_suit_red_plated_armor
+  description: A thick, expensive iron armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/knight_red.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/knight_red.rsi
+
+- type: entity
+  name: blue plated armor
+  parent: civ13_suit_plated_armor
+  id: civ13_suit_blue_plated_armor
+  description: A thick, expensive iron armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/knight_blue.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/knight_blue.rsi
+
+- type: entity
+  name: replicant trooper armor
+  parent: ClothingOuterBase
+  id: civ13_suit_replicant_trooper_armor
+  description: A thick, expensive plastoid armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/replicant_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/replicant_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.55
+          Slash: 0.55
+          Piercing: 0.25
+          Arrow: 0.1
+          Heat: 0.44
+
+- type: entity
+  name: replicant pilot armor
+  parent: civ13_suit_replicant_trooper_armor
+  id: civ13_suit_replicant_pilot_armor
+  description: A thin, expensive plastoid armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/reppilot_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/reppilot_armor.rsi
+
+- type: entity
+  name: replicant MP armor
+  parent: civ13_suit_replicant_trooper_armor
+  id: civ13_suit_replicant_MP_armor
+  description: An extremely thick, expensive plastoid armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/repmp_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/repmp_armor.rsi
+
+- type: entity
+  name: replicant sergeant armor
+  parent: civ13_suit_replicant_trooper_armor
+  id: civ13_suit_replicant_sergeant_armor
+  description: A thick, expensive green marked plastoid armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/repsgt_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/repsgt_armor.rsi
+
+- type: entity
+  name: replicant reinforced armor
+  parent: civ13_suit_replicant_trooper_armor
+  id: civ13_suit_replicant_reinforced_armor
+  description: >-
+    A thick, expensive plastoid armor with a blast plate, covering most of the
+    body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/repreinforced.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/repreinforced.rsi
+
+- type: entity
+  name: replicant lieutenant armor
+  parent: civ13_suit_replicant_trooper_armor
+  id: civ13_suit_replicant_lieutenant_armor
+  description: A thick, expensive blue marked plastoid armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/replieutenant_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/replieutenant_armor.rsi
+
+- type: entity
+  name: replicant commando armor
+  parent: civ13_suit_replicant_trooper_armor
+  id: civ13_suit_replicant_commando_armor
+  description: A thick, extremely expensive plastoid armor, covering most of the chest.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/repcommando.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/repcommando.rsi
+
+- type: entity
+  name: replicant captain armor
+  parent: civ13_suit_replicant_trooper_armor
+  id: civ13_suit_replicant_captain_armor
+  description: A thick, expensive red marked plastoid armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/repcaptain_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/repcaptain_armor.rsi
+
+- type: entity
+  name: replicant commander armor
+  parent: civ13_suit_replicant_trooper_armor
+  id: civ13_suit_replicant_commander_armor
+  description: A thick, expensive gold marked plastoid armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/repcommander_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/repcommander_armor.rsi
+
+- type: entity
+  name: red guard armor with robe.
+  parent: ClothingOuterBase
+  id: civ13_suit_red_guard_armor_with_robe.
+  description: >-
+    A thick, extremely expensive plastoid armor with a crimson red robe
+    attached.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/redguard.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/redguard.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.25
+          Slash: 0.25
+          Piercing: 0.054
+          Arrow: 0.1
+          Heat: 0.25
+
+- type: entity
+  name: senate guard armor with robe
+  parent: ClothingOuterBase
+  id: civ13_suit_senate_guard_armor_with_robe.
+  description: A thick, extremely expensive plastoid armor with a royal blue robe attached.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/senateguard.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/senateguard.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.25
+          Slash: 0.25
+          Piercing: 0.054
+          Arrow: 0.1
+          Heat: 0.25
+
+- type: entity
+  name: standard stormtrooper armor
+  parent: ClothingOuterBase
+  id: civ13_suit_standard_stormtrooper_armor
+  description: A thick, expensive imperial plastoid armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/stormtrooper_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/stormtrooper_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.55
+          Slash: 0.55
+          Piercing: 0.12
+          Arrow: 0.04
+          Heat: 0.5
+
+- type: entity
+  name: stormsurgeon armor
+  parent: civ13_suit_standard_stormtrooper_armor
+  id: civ13_suit_stormsurgeon_armor
+  description: >-
+    A thick, expensive imperial stormsurgeon plastoid armor with mint green
+    highlights, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/stormsurgeon_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/stormsurgeon_armor.rsi
+
+- type: entity
+  name: light stormtrooper armor
+  parent: civ13_suit_standard_stormtrooper_armor
+  id: civ13_suit_light_stormtrooper_armor
+  description: >-
+    A light, substandard imperial stormtrooper plastoid armor with removed
+    plates for added mobility , covering some of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/stormradio_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/stormradio_armor.rsi
+
+- type: entity
+  name: segmented armor
+  parent: ClothingOuterBase
+  id: civ13_suit_segmented_armor
+  description: >-
+    A thick and expensive segmented piece of iron armor, its scales protect the
+    torso.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/scale_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/scale_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.65
+          Slash: 0.65
+          Piercing: 0.6
+          Arrow: 0.65
+          Heat: 0.85
+          Radiation: 0.85
+
+- type: entity
+  name: chainmail
+  parent: ClothingOuterBase
+  id: civ13_suit_chainmail
+  description: Wearable armor made of several small interlinked chains.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/chainmail.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/chainmail.rsi
+    - type: STWeight
+      self: 8
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.92
+          Arrow: 0.65
+          Heat: 0.85
+
+- type: entity
+  name: linothorax armor
+  parent: ClothingOuterBase
+  id: civ13_suit_linothorax_armor
+  description: A thick linen armor, covering the torso and lower body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/heavycloth_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/heavycloth_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.44
+          Slash: 0.44
+          Arrow: 0.65
+          Heat: 0.85
+          Radiation: 0.9
+    - type: Construction
+      graph: civ13_suit_linothorax_armor
+      node: end
+      cost: 8
+      material: Cloth
+      time: 10
+
+- type: entity
+  name: bronze egyptian lamellar
+  parent: ClothingOuterBase
+  id: civ13_suit_bronze_egyptian_lamellar
+  description: A bronze lamellar armor, used by soldiers of pharoahic dynasties.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/egyptian_lamellar.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/egyptian_lamellar.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.92
+          Arrow: 0.65
+          Heat: 0.85
+
+- type: entity
+  name: scaled armor
+  parent: ClothingOuterBase
+  id: civ13_suit_scaled_armor
+  description: An armor made of serveral scales made of bronze.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/scaled_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/scaled_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.90
+          Arrow: 0.55
+          Heat: 0.85
+
+- type: entity
+  name: aztec harness
+  parent: ClothingOuterBase
+  id: civ13_suit_aztec_harness
+  description: A few metal plates on leather strips, covering the torso.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/aztec_harness.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/aztec_harness.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.65
+          Slash: 0.65
+          Piercing: 0.98
+          Arrow: 0.85
+          Heat: 0.98
+    - type: Construction
+      graph: civ13_suit_aztec_harness
+      node: end
+      cost: 4
+      material: Copper
+      time: 8
+
+- type: entity
+  name: alligator scale armor
+  parent: ClothingOuterBase
+  id: civ13_suit_alligator_scale_armor
+  description: A carefully cured & hardened alligator scale armor, covering the torso.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/gator_scale_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/gator_scale_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.55
+          Slash: 0.55
+          Piercing: 0.95
+          Arrow: 0.75
+          Heat: 0.9
+          Radiation: 0.9
+    - type: Construction
+      graph: civ13_suit_alligator_scale_armor
+      node: end
+      cost: 9
+      material: Leather
+      time: 10
+
+- type: entity
+  name: pharoahic armor of the gods
+  parent: ClothingOuterBase
+  id: civ13_suit_pharoahic_armor_of_the_gods
+  description: The armor of the divine gods of the desert
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/settra.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/settra.rsi
+
+- type: entity
+  name: creed armor
+  parent: ClothingOuterBase
+  id: civ13_suit_creed_armor
+  description: A leather armor worn by the creed.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/ac_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/ac_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.35
+          Slash: 0.35
+          Piercing: 0.9
+          Arrow: 0.19
+          Heat: 0.85
+          Radiation: 0.9
+
+- type: entity
+  name: creed armor
+  parent: ClothingOuterBase
+  id: civ13_suit_creed_armor_1_2
+  description: A leather armor worn by the creed.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/ac_armor_napol.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/ac_armor_napol.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.35
+          Slash: 0.35
+          Piercing: 0.9
+          Arrow: 0.19
+          Heat: 0.85
+          Radiation: 0.9
+
+- type: entity
+  name: NCR Trooper Armor
+  parent: ClothingOuterBase
+  id: civ13_suit_NCR_Trooper_Armor
+  description: An NCR Armored Vest
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/ncr_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/ncr_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.4
+          Slash: 0.4
+          Piercing: 0.8
+          Arrow: 0.6
+          Heat: 0.85
+
+- type: entity
+  name: imperial chestplate
+  parent: ClothingOuterBase
+  id: civ13_suit_imperial_chestplate
+  description: >-
+    An iron chestplate made in a imperial style, it is not wholly protective
+    against bullets but allows more maneuverability to avoid them.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/imperial_breastplate.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/imperial_breastplate.rsi
+    - type: STWeight
+      self: 8
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.8
+          Arrow: 0.5
+          Heat: 0.85
+
+- type: entity
+  name: arbites armor
+  parent: ClothingOuterBase
+  id: civ13_suit_arbites_armor
+  description: >-
+    A thick, authoritive red armor with reinforced steel leggings and shoulder
+    plates, covering most of the body. Futile attempts to assault arbite
+    enforcers of the law find that rebellion is fruitless.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/arbit.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/arbit.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.15
+          Slash: 0.15
+          Piercing: 0.65
+          Arrow: 0.1
+          Heat: 0.35
+          Radiation: 0
+
+- type: entity
+  name: plated armor
+  parent: ClothingOuterBase
+  id: civ13_suit_plated_armor
+  description: A thick, expensive iron armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/knight_simple.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/knight_simple.rsi
+    - type: STWeight
+      self: 46
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.3
+          Slash: 0.3
+          Piercing: 0.4
+          Arrow: 0.15
+          Heat: 0.85
+- type: entity
+  name: leather samurai armor
+  parent: ClothingOuterBase
+  id: civ13_suit_leather_samurai_armor
+  description: >-
+    A protective & lightweight armor, bound to and covering most of the body yet
+    slightly flexible. Often worn by a lord's bodyguards.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/samurai3.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/samurai3.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.92
+          Arrow: 0.65
+          Heat: 0.85
+    - type: Construction
+      graph: civ13_suit_leather_samurai_armor
+      node: end
+      cost: 10
+      material: Leather
+      time: 13
+- type: entity
+  name: samurai armor
+  parent: ClothingOuterBase
+  id: civ13_suit_samurai_armor
+  description: >-
+    A dense, metal armor of japanese origin, covering most of the body. Often
+    worn by a loyal warriors to a feudal lord.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/samurai_warrior3.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/samurai_warrior3.rsi
+    - type: STWeight
+      self: 40
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.35
+          Slash: 0.35
+          Piercing: 0.95
+          Arrow: 0.25
+          Heat: 0.85
+
+- type: entity
+  name: samurai lord armor
+  parent: civ13_suit_samurai_armor
+  id: civ13_suit_samurai_lord_armor
+  description: A thick, expensive armor of japanese origin. Often worn by feudal lords.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/samurai_lord3.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/samurai_lord3.rsi
+
+- type: entity
+  name: red samurai lord armor
+  parent: civ13_suit_samurai_lord_armor
+  id: civ13_suit_red_samurai_lord_armor
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/samurai_lord1.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/samurai_lord1.rsi
+
+- type: entity
+  name: templar plated armor
+  parent: civ13_suit_plated_armor
+  id: civ13_suit_templar_plated_armor
+  description: >-
+    A thick, expensive iron armor, covering most of the body. This one is
+    covered by white linen with the cross.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/knight_templar.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/knight_templar.rsi
+
+- type: entity
+  name: bronze chestplate
+  parent: ClothingOuterBase
+  id: civ13_suit_bronze_chestplate
+  description: A bronze chestplate.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/bronze_chestplate.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/bronze_chestplate.rsi
+    - type: STWeight
+      self: 8
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.85
+          Piercing: 0.85
+          Arrow: 0.85
+          Heat: 0.9
+
+- type: entity
+  name: iron chestplate
+  parent: ClothingOuterBase
+  id: civ13_suit_iron_chestplate
+  description: An iron chestplate.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/iron_chestplate.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/iron_chestplate.rsi
+    - type: STWeight
+      self: 8
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.8
+          Arrow: 0.8
+          Heat: 0.9
+
+- type: entity
+  name: leather armor
+  parent: ClothingOuterBase
+  id: civ13_suit_leather_armor
+  description: Several pressed sheets of leather, making a reasonable armor plate.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/leather_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/leather_armor.rsi
+    - type: STWeight
+      self: 4
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Arrow: 0.85
+          Heat: 0.85
+    - type: Construction
+      graph: civ13_suit_leather_armor
+      node: end
+      cost: 6
+      material: Leather
+      time: 13
+
+- type: entity
+  name: gambeson
+  parent: ClothingOuterBase
+  id: civ13_suit_gambeson
+  description: A thick, padded jacket made of layered cloth, offering basic protection for infantry.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/gambeson.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/gambeson.rsi
+    - type: STWeight
+      self: 6
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.65
+          Slash: 0.65
+          Arrow: 0.80
+          Heat: 0.85
+    - type: Construction
+      graph: civ13_suit_gambeson
+      node: end
+      cost: 10
+      material: Cloth
+      time: 13
+
+- type: entity
+  name: hauberk
+  parent: ClothingOuterBase
+  id: civ13_suit_hauberk
+  description: >-
+    A longer version of the chainmail, worn as a coat. Offers greater
+    protection.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/hauberk.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/hauberk.rsi
+    - type: STWeight
+      self: 9
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.45
+          Slash: 0.45
+          Piercing: 0.9
+          Arrow: 0.44
+          Heat: 0.8
+
+- type: entity
+  name: emirate armor
+  parent: ClothingOuterBase
+  id: civ13_suit_emirate_armor
+  description: >-
+    A loosely fitting but protective suit of armor to wrap around the body &
+    tunic for an emirate lord.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/emir_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/emir_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.45
+          Slash: 0.45
+          Piercing: 0.9
+          Arrow: 0.5
+          Heat: 0.8
+
+- type: entity
+  name: varangian lamellar armor
+  parent: ClothingOuterBase
+  id: civ13_suit_varangian_lamellar_armor
+  description: >-
+    A close fitting armor of small iron rectangular shapes to make a scale vest.
+    Manageably heavy but flexible.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/varangian_lamellar.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/varangian_lamellar.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.4
+          Slash: 0.4
+          Piercing: 0.9
+          Arrow: 0.44
+          Heat: 0.8
+
+- type: entity
+  name: imperial chinese armor
+  parent: ClothingOuterBase
+  id: civ13_suit_imperial_chinese_armor
+  description: >-
+    A well built & laquered armor with iron plates concealed inwardly and
+    outwardly protecting the body, made in imperial chinese style.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/imperial_chinese.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/imperial_chinese.rsi
+    - type: STWeight
+      self: 12
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.9
+          Arrow: 0.5
+          Heat: 0.8
+
+- type: entity
+  name: steppe leather armor
+  parent: ClothingOuterBase
+  id: civ13_suit_steppe_leather_armor
+  description: >-
+    Leather armor made from sheets of leather bound in a steppe nomad style,
+    making adequate protection for prospective warriors.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/steppe_leather_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/steppe_leather_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.55
+          Slash: 0.55
+          Piercing: 0.95
+          Arrow: 0.75
+          Heat: 0.85
+          Radiation: 0
+    - type: Construction
+      graph: civ13_suit_steppe_leather_armor
+      node: end
+      cost: 5
+      material: Leather
+      time: 14
+
+- type: entity
+  name: royal plated armor
+  parent: civ13_suit_plated_armor
+  id: civ13_suit_royal_plated_armor
+  description: A thick, expensive iron armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/royalplate.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/royalplate.rsi
+
+- type: entity
+  name: dwemmer armor
+  parent: ClothingOuterBase
+  id: civ13_suit_dwemmer_armor
+  description: A thick, expensive armor of dwemmer metal.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/dwarmor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/dwarmor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.55
+          Slash: 0.55
+          Piercing: 0.9
+          Arrow: 0.7
+          Heat: 0.85
+
+- type: entity
+  name: stormcloak officer armor
+  parent: ClothingOuterBase
+  id: civ13_suit_stormcloak_officer_armor
+  description: A thick, leather armor of hide with a bearpelt draped over it.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/stormcloak.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/stormcloak.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.35
+          Slash: 0.35
+          Piercing: 0.9
+          Arrow: 0.55
+          Heat: 0.85
+
+- type: entity
+  name: zgz1 advanced armor
+  parent: ClothingOuterBase
+  id: civ13_suit_zgz1_advanced_armor
+  description: >-
+    An advanced piece of armor that provides medium protection against kinetic
+    and other projectiles. This armor is mostly used by the Chinese.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/zgz1_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/zgz1_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.65
+          Slash: 0.65
+          Piercing: 0.35
+          Arrow: 0.4
+          Heat: 0.6
+
+- type: entity
+  name: Medical zgz1 advanced armor
+  parent: civ13_suit_zgz1_advanced_armor
+  id: civ13_suit_Medical_zgz1_advanced_armor
+  description: >-
+    An advanced piece of armor that provides medium protection against kinetic
+    and other projectiles. This armor is mostly used by the Chinese medics.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/zgz1med_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/zgz1med_armor.rsi
+
+- type: entity
+  name: scrap plate armor
+  parent: ClothingOuterBase
+  id: civ13_suit_scrap_plate_armor
+  description: A ramshackle suit of armor, reminiscence of medieval times.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/scraparmor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/scraparmor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.30
+          Slash: 0.30
+          Piercing: 0.8
+          Arrow: 0.15
+          Heat: 0.8
+          Radiation: 0.6
+
+- type: entity
+  name: mechanized armor
+  parent: ClothingOuterBase
+  id: civ13_suit_mechanized_armor
+  description: A thick, thrown together iron armor, covering most of the body.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/mechanicalarmor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/mechanicalarmor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.15
+          Slash: 0.15
+          Piercing: 0.5
+          Arrow: 0.5
+          Heat: 0.44
+
+- type: entity
+  name: chitin chestplate
+  parent: ClothingOuterBase
+  id: civ13_suit_chitin_chestplate
+  description: A chitin chestplate, specially crafted from insects.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/chitin_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/chitin_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.95
+          Arrow: 0.85
+          Heat: 0.85
+
+- type: entity
+  name: sauron's armor
+  parent: ClothingOuterBase
+  id: civ13_suit_saurons_armor
+  description: The armor of sauron
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/sauronarmor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/sauronarmor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.054
+          Slash: 0.054
+          Piercing: 0.7
+          Arrow: 0.1
+          Heat: 0.8
+          Radiation: 0.55
+
+- type: entity
+  name: ork plated armor
+  parent: ClothingOuterBase
+  id: civ13_suit_plated_armor_1
+  description: A cheap dark iron armor.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/ork_plate_elite.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/ork_plate_elite.rsi
+    - type: STWeight
+      self: 28
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.30
+          Slash: 0.30
+          Piercing: 0.9
+          Arrow: 0.1
+          Heat: 0.85
+          Radiation: 0.55
+
+- type: entity
+  name: heavy ork plated armor
+  parent: ClothingOuterBase
+  id: civ13_suit_plated_armor_1_2
+  description: A cheap dark iron armor.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/ork_plate_commander.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/ork_plate_commander.rsi
+    - type: STWeight
+      self: 30
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.19
+          Slash: 0.19
+          Piercing: 0.9
+          Arrow: 0.1
+          Heat: 0.85
+          Radiation: 0.55
+
+- type: entity
+  name: orc urukhai armor
+  parent: ClothingOuterBase
+  id: civ13_suit_orc_urukhai_armor
+  description: Orc make good armor!
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/urukhai_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/urukhai_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.4
+          Slash: 0.4
+          Piercing: 0.92
+          Arrow: 0.6
+          Heat: 0.85
+          Radiation: 0.75
+
+- type: entity
+  name: orc whitehand armor
+  parent: ClothingOuterBase
+  id: civ13_suit_orc_whitehand_armor
+  description: Orc make good armor!
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/whitehand_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/whitehand_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.4
+          Slash: 0.4
+          Piercing: 0.92
+          Arrow: 0.6
+          Heat: 0.85
+          Radiation: 0.75
+
+- type: entity
+  name: orc grunt armor
+  parent: ClothingOuterBase
+  id: civ13_suit_orc_grunt_armor
+  description: Orc make good armor!
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/grunt_armor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/grunt_armor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.94
+          Arrow: 0.65
+          Heat: 0.9
+          Radiation: 0.8
+
+- type: entity
+  name: carbon black suit
+  parent: ClothingOuterBase
+  id: civ13_suit_carbon_black_suit
+  description: A high tech suit made of compressed carbon materials.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/bxsuit.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/bxsuit.rsi
+
+- type: entity
+  name: primitive wood armor
+  parent: ClothingOuterBase
+  id: civ13_suit_primitive_wood_armor
+  description: >-
+    A wooden set of armor made of small planks held together by plant fiber
+    ropes.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/wooden_chestarmor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/wooden_chestarmor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.85
+          Arrow: 0.82
+          Heat: 0.9
+          Radiation: 0.85
+    - type: Construction
+      graph: civ13_suit_primitive_wood_armor
+      node: end
+      cost: 5
+      material: WoodPlank
+      time: 5
+
+- type: entity
+  name: primitive bone hair-pipe armor
+  parent: ClothingOuterBase
+  id: civ13_suit_primitive_bone_hair_pipe_armor
+  description: >-
+    A bone set of chest armor made of tightly packed small bones held together
+    by plant fiber ropes.
+  components:
+    - type: Sprite
+      sprite: Civ14/Clothing/exported/suits/native_bonearmor.rsi
+    - type: Clothing
+      sprite: Civ14/Clothing/exported/suits/native_bonearmor.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.79
+          Slash: 0.79
+          Arrow: 0.87
+          Heat: 0.92
+          Radiation: 0.82
+    - type: Construction
+      graph: civ13_suit_primitive_bone_hair_pipe_armor
+      node: end
+      cost: 5
+      material: Bones
+      time: 10

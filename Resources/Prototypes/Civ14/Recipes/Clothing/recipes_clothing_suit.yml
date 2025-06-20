@@ -5591,87 +5591,7 @@
               doAfter: 5
     - node: end
       entity: civ13_suit_red_cape
-- type: construction
-  name: swat heavy vest
-  id: civ13_suit_swat_heavy_vest
-  graph: civ13_suit_swat_heavy_vest
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: A heavy NIJ level IV vest, used by swat officers.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/swat.rsi
-    state: icon
-  objectType: Item
-  agemin: 8
-  agemax: 8
-- type: constructionGraph
-  id: civ13_suit_swat_heavy_vest
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_suit_swat_heavy_vest
-- type: construction
-  name: swat bulletproof vest
-  id: civ13_suit_swat_bulletproof_vest
-  graph: civ13_suit_swat_bulletproof_vest
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: A heavy NIJ level IV vest, used by swat officers.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/policevest.rsi
-    state: icon
-  objectType: Item
-  agemin: 8
-  agemax: 8
-- type: constructionGraph
-  id: civ13_suit_swat_bulletproof_vest
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_suit_swat_bulletproof_vest
-- type: construction
-  name: 6B3 body armor
-  id: civ13_suit_6B3_body_armor
-  graph: civ13_suit_6B3_body_armor
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: A ballistic vest of Soviet origin, issued in the mid 1980s.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/6b3.rsi
-    state: icon
-  objectType: Item
-  agemin: 8
-  agemax: 8
-- type: constructionGraph
-  id: civ13_suit_6B3_body_armor
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 12
-              doAfter: 26
-    - node: end
-      entity: civ13_suit_6B3_body_armor
+
 - type: construction
   name: yellow NBC suit
   id: civ13_suit_yellow_NBC_suit
@@ -5834,168 +5754,7 @@
               doAfter: 5
     - node: end
       entity: civ13_suit_astronaut_suit
-- type: construction
-  name: carbon black suit
-  id: civ13_suit_carbon_black_suit
-  graph: civ13_suit_carbon_black_suit
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: A high tech suit made of comprssed carbon materials.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/bxsuit.rsi
-    state: icon
-  objectType: Item
-  agemin: 8
-  agemax: 8
-- type: constructionGraph
-  id: civ13_suit_carbon_black_suit
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_suit_carbon_black_suit
-- type: construction
-  name: 6B45 heavy vest
-  id: civ13_suit_6B45_heavy_vest
-  graph: civ13_suit_6B45_heavy_vest
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: 6B45 is a modular bullet-resistant vest. It comprises frontal and rear section and soft-armour shoulder and side protection.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/a6b45.rsi
-    state: icon
-  objectType: Item
-  agemin: 8
-  agemax: 8
-- type: constructionGraph
-  id: civ13_suit_6B45_heavy_vest
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_suit_6B45_heavy_vest
-- type: construction
-  name: heavy vest
-  id: civ13_suit_heavy_vest
-  graph: civ13_suit_heavy_vest
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: A heavy NIJ level IV vest.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/heavypolice.rsi
-    state: icon
-  objectType: Item
-  agemin: 8
-  agemax: 8
-- type: constructionGraph
-  id: civ13_suit_heavy_vest
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_suit_heavy_vest
-- type: construction
-  name: medium vest
-  id: civ13_suit_medium_vest
-  graph: civ13_suit_medium_vest
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: A heavy NIJ level III vest.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/mediumvest.rsi
-    state: icon
-  objectType: Item
-  agemin: 8
-  agemax: 8
-- type: constructionGraph
-  id: civ13_suit_medium_vest
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_suit_medium_vest
-- type: construction
-  name: 6B44 vest
-  id: civ13_suit_6B44_vest
-  graph: civ13_suit_6B44_vest
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: 6B44 is a modular bullet-resistant vest.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/a6b44.rsi
-    state: icon
-  objectType: Item
-  agemin: 8
-  agemax: 8
-- type: constructionGraph
-  id: civ13_suit_6B44_vest
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_suit_6B44_vest
-- type: construction
-  name: 6B28 plate carrier
-  id: civ13_suit_6B28_plate_carrier
-  graph: civ13_suit_6B28_plate_carrier
-  startNode: start
-  targetNode: end
-  category: construction-category-clothing
-  description: 6B28 is a level III plate carrier.
-  icon:
-    sprite: Civ14/Clothing/exported/suits/a6b28.rsi
-    state: icon
-  objectType: Item
-  agemin: 8
-  agemax: 8
-- type: constructionGraph
-  id: civ13_suit_6B28_plate_carrier
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: end
-          steps:
-            - material: Cloth
-              amount: 5
-              doAfter: 5
-    - node: end
-      entity: civ13_suit_6B28_plate_carrier
+
 - type: construction
   name: lifejacket
   id: civ13_suit_lifejacket_1_2
@@ -6077,3 +5836,31 @@
               doAfter: 11
     - node: end
       entity: civ13_suit_mbata_pelt_vest
+
+- type: construction
+  name: gambeson
+  id: civ13_suit_gambeson
+  graph: civ13_suit_gambeson
+  startNode: start
+  targetNode: end
+  category: construction-category-clothing
+  description: A thick, padded jacket made of layered cloth, offering basic protection for infantry.
+  icon:
+    sprite: Civ14/Clothing/exported/suits/gambeson.rsi
+    state: icon
+  objectType: Item
+  agemin: 2
+  agemax: 8
+- type: constructionGraph
+  id: civ13_suit_gambeson
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Cloth
+              amount: 10
+              doAfter: 15
+    - node: end
+      entity: civ13_suit_gambeson

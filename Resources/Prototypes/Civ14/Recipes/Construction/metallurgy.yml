@@ -90,3 +90,34 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
+
+- type: constructionGraph
+  id: AnvilIron
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Iron
+              amount: 20
+              doAfter: 15
+    - node: end
+      entity: AnvilIron
+
+- type: construction
+  name: iron anvil
+  id: AnvilIron
+  graph: AnvilIron
+  startNode: start
+  targetNode: end
+  category: construction-category-production
+  description: A metalworking tool to produce weapons and armours.
+  icon: { sprite: Civ14/Objects/metallurgy.rsi, state: iron_anvil }
+  objectType: Structure
+  agemin: 2
+  agemax: 8
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked

@@ -14,11 +14,11 @@ namespace Content.Client.Commands
 
         public string Command => "acceptfactioninvite";
         public string Description => "Accepts an invitation to join a faction.";
-        public string Help => $"Usage: {Command} \"<faction_name>\" \"<inviter_user_id>\"";
+        public string Help => $"Usage: {Command} \"<faction_name>\"";
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 2)
+            if (args.Length != 1)
             {
                 shell.WriteError("Invalid number of arguments.");
                 shell.WriteLine(Help);

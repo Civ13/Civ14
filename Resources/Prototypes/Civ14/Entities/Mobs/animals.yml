@@ -53,12 +53,11 @@
     - type: NpcFactionMember
       factions:
         - Prey
-    #    - type: HTN
-    #      rootTask:
-    #        task: SimplePreyCompound
+    - type: HTN
+      rootTask:
+        task: SimplePreyCompound
     - type: Puller
       needsHands: false
-
 - type: entity
   name: deer doe
   parent: MobDeerBuck
@@ -110,7 +109,7 @@
       heldPrefix: 0
     - type: HTN
       rootTask:
-        task: MouseCompound
+        task: SimplePreyCompound
     - type: Physics
     - type: Fixtures
       fixtures:
