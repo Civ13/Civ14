@@ -1,0 +1,14 @@
+- type: reaction
+  id: BrewingBeer
+  source: true
+  requiredMixerCategories:
+    - Fermentation
+  reactants:
+    Water:
+      amount: 20
+    Flour:
+      amount: 10
+    Yeast:
+      amount: 1
+  products:
+    Beer: 20

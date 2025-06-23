@@ -1,0 +1,46 @@
+- type: entity
+  id: BrewingBarrel
+  parent: BaseTabletopChemicalMachine
+  name: fermentation barrel
+  description: A large wooden barrel for brewing fermentable drinks.
+  components:
+    - type: SolutionContainerMixer
+      mixDuration: 80
+      mixingSound:
+        path: /Audio/Effects/Chemistry/bubbles.ogg
+        params:
+          volume: -4
+    - type: ReactionMixer
+      reactionTypes:
+        - Fermentation
+    - type: Sprite
+      sprite: Civ14/Objects/barrel.rsi
+      state: beer_barrel
+    - type: ItemSlots
+      slots:
+        mixer:
+          whitelist:
+            tags:
+              - FermentationCompatible
+    - type: ApcPowerReceiver
+      needsPower: false
+      powerLoad: 0
+    - type: Anchorable
+      delay: 2
+
+- type: entity
+  parent: [ReagentPacketBase, ItemHeftyBase]
+  id: ReagentContainerYeast
+  name: yeast
+  description: A clump of yeast. Good for making beer!
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/food/food.rsi
+      state: enzyme
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 20
+          reagents:
+            - ReagentId: Yeast
+              Quantity: 20
