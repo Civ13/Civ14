@@ -1,3 +1,4 @@
+# Streets/Roads
 - type: tile
   id: FloorCivTarmac
   name: tarmac road
@@ -22,6 +23,7 @@
   heatCapacity: 10000
   weather: true
 
+# Grimey Wood
 - type: tile
   id: FloorCivWoodGrimeHorizontal
   name: grimey wood
@@ -45,3 +47,28 @@
     collection: FootstepTile
   heatCapacity: 10000
   weather: true
+
+# Messy Tiles
+- type: tile
+  id: FloorCivTileMessy1
+  name: tiled floor
+  sprite: /Textures/Civ14/Structures/Floors/tiles.rsi/tile_messy1.png
+  variants: 1
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepTile
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorCivTileMessy2
+  parent: FloorCivTileMessy1
+  name: tiled floor
+  sprite: /Textures/Civ14/Structures/Floors/tiles.rsi/tile_messy2.png
+
+- type: tile
+  id: FloorCivTileMessy3
+  parent: FloorCivTileMessy1
+  name: tiled floor
+  sprite: /Textures/Civ14/Structures/Floors/tiles.rsi/tile_messy3.png
