@@ -24,3 +24,6 @@
         - state: mag-0
           map: ["enum.GunVisualLayers.Mag"]
     - type: Appearance
+    - type: EyeCursorOffset
+      maxOffset: 6
+      pvsIncrease: 0.6

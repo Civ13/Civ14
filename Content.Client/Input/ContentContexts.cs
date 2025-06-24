@@ -99,6 +99,9 @@ namespace Content.Client.Input
             human.AddFunction(ContentKeyFunctions.Lay); // Stalker-Changes-UI
             // actions should be common (for ghosts, mobs, etc)
             common.AddFunction(ContentKeyFunctions.OpenActionsMenu);
+            // Civ14 change start
+            human.AddFunction(ContentKeyFunctions.LookZoom);
+            // Civ14 change end
 
             foreach (var boundKey in ContentKeyFunctions.GetHotbarBoundKeys())
             {

@@ -1,7 +1,7 @@
 # Mapping
 
 ```admonish tip
-Also check the SS14 guide.
+Also check the SS14 guide [here](https://docs.spacestation14.com/en/space-station-14/mapping/guides/general-guide.html)
 ```
 
 ```admonish info
