@@ -235,3 +235,44 @@
         acts: [ "Destruction" ]
   - type: Construction
     node: railingRound
+
+# Rusty Railings
+- type: entity
+  parent: Railing
+  id: RailingRusty
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: Civ14/Structures/rusty_railings.rsi
+  - type: Icon
+    sprite: Civ14/Structures/rusty_railings.rsi
+
+- type: entity
+  parent: RailingCorner
+  id: RailingCornerRusty
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: Civ14/Structures/rusty_railings.rsi
+  - type: Icon
+    sprite: Civ14/Structures/rusty_railings.rsi
+
+- type: entity
+  parent: RailingCornerSmall
+  id: RailingCornerSmallRusty
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: Civ14/Structures/rusty_railings.rsi
+  - type: Icon
+    sprite: Civ14/Structures/rusty_railings.rsi
+
+- type: entity
+  parent: RailingRound
+  id: RailingRoundRusty
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: Civ14/Structures/rusty_railings.rsi
+  - type: Icon
+    sprite: Civ14/Structures/rusty_railings.rsi
