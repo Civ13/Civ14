@@ -615,7 +615,7 @@
     - type: Sprite
       sprite: Civ14/Structures/walls.rsi
       state: steeljail
-      drawdepth: BlastDoors
+      drawdepth: FloorObjects
       noRot: true
     - type: Physics
     - type: Fixtures
