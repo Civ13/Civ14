@@ -18,7 +18,8 @@
   id: BrewingBarrel
   graph: BrewingBarrel
   startNode: start
-  targetNode: bedroll
+- targetNode: bedroll
++ targetNode: end
   category: construction-category-production
   description: A large wooden barrel for brewing fermentable drinks.
   icon: { sprite: Civ14/Objects/barrel.rsi, state: beer_barrel }
