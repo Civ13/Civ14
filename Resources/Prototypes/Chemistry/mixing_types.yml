@@ -71,8 +71,8 @@
   id: Fermentation
   verbText: mixing-verb-fermentation
   icon:
-    sprite: Civ14/Objects/beer_barrel.rsi
-    state: base
+    sprite: Civ14/Objects/barrel.rsi
+    state: beer_barrel
 
 - type: mixingCategory
   id: Distillation
