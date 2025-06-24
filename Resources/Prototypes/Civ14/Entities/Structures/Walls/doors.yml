@@ -40,6 +40,7 @@
       graph: WoodDoorClassic
       node: end
 
+# Cell Door
 - type: entity
   id: CellDoor
   name: cell door
@@ -89,3 +90,29 @@
       blocking: 0
     - type: Occluder
       enabled: false
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 400
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+# Metal Door
+- type: entity
+  id: MetalHeavyDoor
+  name: metal heavy door
+  parent: BaseMaterialDoor
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/Doors/metal_doors.rsi
+      layers:
+        - state: closed
+          map: ["enum.DoorVisualLayers.Base"]
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
