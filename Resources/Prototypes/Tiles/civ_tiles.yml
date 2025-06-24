@@ -1,0 +1,23 @@
+- type: tile
+  id: FloorCivTarmac
+  name: tarmac road
+  sprite: /Textures/Civ14/Structures/Floors/roads.rsi/tarmacfull.png
+  variants: 1
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepTile
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorCivStreetLight
+  name: light street
+  sprite: /Textures/Civ14/Structures/Floors/roads.rsi/streetfull_light.png
+  variants: 1
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepTile
+  heatCapacity: 10000
+  weather: true
