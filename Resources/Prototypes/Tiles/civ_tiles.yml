@@ -21,3 +21,27 @@
     collection: FootstepTile
   heatCapacity: 10000
   weather: true
+
+- type: tile
+  id: FloorCivWoodGrimeHorizontal
+  name: grimey wood
+  sprite: /Textures/Civ14/Structures/Floors/wood.rsi/woodgrime_horizontal.png
+  variants: 1
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepTile
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorCivWoodGrimeVertical
+  name: grimey wood
+  sprite: /Textures/Civ14/Structures/Floors/wood.rsi/woodgrime_vertical.png
+  variants: 1
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepTile
+  heatCapacity: 10000
+  weather: true
