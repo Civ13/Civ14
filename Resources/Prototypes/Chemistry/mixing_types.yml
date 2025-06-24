@@ -65,3 +65,18 @@
   icon:
     sprite: Objects/Misc/utensils.rsi
     state: spoon
+
+# Civ brewing
+- type: mixingCategory
+  id: Fermentation
+  verbText: mixing-verb-fermentation
+  icon:
+    sprite: Civ14/Objects/barrel.rsi
+    state: beer_barrel
+
+- type: mixingCategory
+  id: Distillation
+  verbText: mixing-verb-distillation
+  icon:
+    sprite: Civ14/Objects/structures.rsi
+    state: distillery
