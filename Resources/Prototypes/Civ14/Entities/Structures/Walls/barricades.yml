@@ -604,3 +604,30 @@
     - type: Barricade
       bidirectional: true
       blocking: 50
+
+# Metal Bars
+- type: entity
+  id: BarricadeMetalBars
+  description: A set of solid metal bars.
+  parent: BaseStructure
+  name: metal bars
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/walls.rsi
+      state: steeljail
+      drawdepth: BlastDoors
+      noRot: true
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb {}
+          mask:
+          - FullTileMask
+          layer:
+          - WallLayer
+    - type: AtmosExposed
+    - type: Barricade
+      bidirectional: true
+      blocking: 0
