@@ -12,3 +12,59 @@
       amount: 1
   products:
     Beer: 20
+
+- type: construction
+  name: brewing barrel
+  id: BrewingBarrel
+  graph: BrewingBarrel
+  startNode: start
+  targetNode: bedroll
+  category: construction-category-production
+  description: A large wooden barrel for brewing fermentable drinks.
+  icon: { sprite: Civ14/Objects/barrel.rsi, state: beer_barrel }
+  objectType: Item
+  agemin: 0
+  agemax: 8
+
+- type: constructionGraph
+  id: BrewingBarrel
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 12
+              doAfter: 10
+    - node: end
+      entity: BrewingBarrel
+
+- type: construction
+  name: fermentation starter jar
+  id: StarterJar
+  graph: StarterJar
+  startNode: start
+  targetNode: end
+  category: construction-category-production
+  description: A crude jar used to make yeast.
+  icon: { sprite: Civ14/Objects/drinks.rsi, state: jarF }
+  objectType: Structure
+  agemin: 0
+  agemax: 8
+
+- type: constructionGraph
+  id: StarterJar
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          completed:
+            - !type:SnapToGrid
+          steps:
+            - material: WoodPlank
+              amount: 3
+              doAfter: 6
+    - node: end
+      entity: StarterJar

@@ -27,6 +27,9 @@
       powerLoad: 0
     - type: Anchorable
       delay: 2
+    - type: Construction
+      graph: BrewingBarrel
+      node: end
 
 - type: entity
   parent: [ReagentPacketBase, ItemHeftyBase]
@@ -40,7 +43,60 @@
     - type: SolutionContainerManager
       solutions:
         food:
-          maxVol: 20
+          maxVol: 5
           reagents:
             - ReagentId: Yeast
-              Quantity: 20
+              Quantity: 5
+
+- type: entity
+  id: StarterJar
+  parent: BaseStructure
+  name: "fermentation starter jar"
+  description: A crude jar used to make yeast.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/drinks.rsi
+      state: jarF
+    - type: Appearance
+    - type: Damageable
+      damageModifierSet: Wood
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 30
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: WoodDestroyHeavy
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                MaterialWoodPlank:
+                  min: 2
+                  max: 3
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Tag
+      tags:
+        - Structure
+        - Wooden
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Anchorable
+    - type: Pullable
+    - type: InteractionOutline
+    - type: Composting
+      whitelist:
+        - Fruit
+        - Bread
+        - Wheat
+      compostTime: 10.0
+      outputName: "yeast"
+      outputPrototype: "ReagentContainerYeast"
+    - type: Construction
+      agemin: 0
+      agemax: 8
+      graph: StarterJar
+      node: end

@@ -39,7 +39,7 @@ public sealed partial class CompostingSystem : EntitySystem
         var item = args.Used;
         if (!IsCompostable(item, component))
         {
-            _popup.PopupEntity("This item cannot be composted.", uid, args.User);
+            _popup.PopupEntity($"This item cannot be used to make {component.OutputName}.", uid, args.User);
             return;
         }
 
@@ -54,7 +54,7 @@ public sealed partial class CompostingSystem : EntitySystem
         // Add item to composting process and delete it from the world
         component.CompostingItems[item] = _gameTiming.CurTime + TimeSpan.FromMinutes(component.CompostTime);
         QueueDel(item);
-        _popup.PopupEntity("You add the item to compost.", uid, args.User);
+        _popup.PopupEntity("You add the item.", uid, args.User);
         args.Handled = true;
     }
 
@@ -77,11 +77,11 @@ public sealed partial class CompostingSystem : EntitySystem
             return;
 
         // Spawn compost and try to place it in the player's hand
-        var compost = Spawn("Compost", Transform(uid).MapPosition);
+        var compost = Spawn(component.OutputPrototype, Transform(uid).MapPosition);
         if (_hands.TryPickupAnyHand(args.User, compost))
         {
             component.ReadyCompost--;
-            _popup.PopupEntity("You collect a unit of compost.", uid, args.User);
+            _popup.PopupEntity($"You collect a unit of {component.OutputName}.", uid, args.User);
         }
         else
         {
@@ -141,12 +141,12 @@ public sealed partial class CompostingSystem : EntitySystem
 
         if (compostingCount > 0)
         {
-            args.PushMarkup($"Its currently composting.");
+            args.PushMarkup($"Its currently processing.");
         }
 
         if (readyCompost > 0)
         {
-            args.PushMarkup($"There are {readyCompost} units of compost ready.");
+            args.PushMarkup($"There are {readyCompost} units of {component.OutputName} ready.");
         }
     }
 
@@ -155,7 +155,7 @@ public sealed partial class CompostingSystem : EntitySystem
         // Drops all ready compost
         for (int i = 0; i < component.ReadyCompost; i++)
         {
-            Spawn("Compost", Transform(uid).MapPosition);
+            Spawn(component.OutputPrototype, Transform(uid).MapPosition);
         }
     }
 }
