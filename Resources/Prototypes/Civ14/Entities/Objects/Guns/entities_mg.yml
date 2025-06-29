@@ -106,7 +106,7 @@
       sprite: Civ14/Weapons/Guns/mg13.rsi
     - type: Gun
       projectileSpeed: 32 # 7.92x57mm
-      fireRate: 4.0 # ~600 RPM
+      fireRate: 5.0 # ~600 RPM
       minAngle: 13 # Older LMG
       maxAngle: 30
       angleIncrease: 4.5
@@ -140,7 +140,7 @@
       sprite: Civ14/Weapons/Guns/mg34.rsi
     - type: Gun
       projectileSpeed: 32 # 7.92x57mm (inherited from parent, can be explicit)
-      fireRate: 6.0 # ~800-900 RPM
+      fireRate: 7.0 # ~800-900 RPM
       minAngle: 15 # Higher RoF than MG13
       maxAngle: 40
       angleIncrease: 5.0
@@ -163,7 +163,7 @@
       sprite: Civ14/Weapons/Guns/mg42.rsi
     - type: Gun
       projectileSpeed: 32 # 7.92x57mm (inherited from parent, can be explicit)
-      fireRate: 7.5 # ~1200-1500 RPM "Hitler's Buzzsaw"
+      fireRate: 9.5 # ~1200-1500 RPM "Hitler's Buzzsaw"
       minAngle: 20 # Very high recoil
       maxAngle: 40
       angleIncrease: 6.0
@@ -186,7 +186,7 @@
       sprite: Civ14/Weapons/Guns/mg3.rsi
     - type: Gun
       projectileSpeed: 32 # 7.62x51mm
-      fireRate: 7.0 # ~1000-1300 RPM (modernized MG42)
+      fireRate: 8.8 # ~1000-1300 RPM (modernized MG42)
       minAngle: 17 # Still very high recoil
       maxAngle: 38
       angleIncrease: 5.5
@@ -222,7 +222,7 @@
       sprite: Civ14/Weapons/Guns/mg3.rsi
     - type: Gun
       projectileSpeed: 32 # 7.62x51mm
-      fireRate: 5.0 # ~750 RPM (FN MAG can vary)
+      fireRate: 6.5 # ~750 RPM (FN MAG can vary)
       minAngle: 11 # Good GPMG, comparable to PKM base
       maxAngle: 25
       angleIncrease: 4.2
@@ -259,7 +259,7 @@
       sprite: Civ14/Weapons/Guns/madsen.rsi
     - type: Gun
       projectileSpeed: 32 # 7.62x54mmR (as per item slot)
-      fireRate: 3.5 # ~450-500 RPM (Older LMG)
+      fireRate: 4.2 # ~450-500 RPM (Older LMG)
       minAngle: 15 # Older, less refined
       maxAngle: 35
       angleIncrease: 5.0
@@ -294,7 +294,7 @@
       sprite: Civ14/Weapons/Guns/type99lmg.rsi
     - type: Gun
       projectileSpeed: 31 # 7.7x58mm Arisaka
-      fireRate: 3.8 # ~550 RPM
+      fireRate: 4.5 # ~550 RPM
       minAngle: 14
       maxAngle: 30
       angleIncrease: 4.8
@@ -330,7 +330,7 @@
       sprite: Civ14/Weapons/Guns/type96lmg.rsi
     - type: Gun
       projectileSpeed: 30 # 6.5x50mm Arisaka (milder)
-      fireRate: 3.8 # ~550 RPM
+      fireRate: 4.5 # ~550 RPM
       minAngle: 12 # Milder round, better control
       maxAngle: 25
       angleIncrease: 4.2
@@ -363,7 +363,7 @@
       sprite: Civ14/Weapons/Guns/dp.rsi
     - type: Gun
       projectileSpeed: 32 # 7.62x54mmR
-      fireRate: 3.8 # ~500-600 RPM
+      fireRate: 4.8 # ~500-600 RPM
       minAngle: 15 # Awkward pan magazine
       maxAngle: 35
       angleIncrease: 5.2
@@ -399,7 +399,7 @@
       sprite: Civ14/Weapons/Guns/bar.rsi
     - type: Gun
       projectileSpeed: 33 # .30-06
-      fireRate: 3.7 # ~550 RPM (fast setting)
+      fireRate: 4.5 # ~550 RPM (fast setting)
       minAngle: 17 # Heavy automatic rifle
       maxAngle: 45
       angleIncrease: 6.0
@@ -435,7 +435,7 @@
       sprite: Civ14/Weapons/Guns/browlmg.rsi
     - type: Gun
       projectileSpeed: 33 # .30-06
-      fireRate: 3.8 # ~500 RPM
+      fireRate: 4.2 # ~500 RPM
       minAngle: 13 # Heavy, stable GPMG
       maxAngle: 30
       angleIncrease: 5.0
@@ -471,7 +471,7 @@
       sprite: Civ14/Weapons/Guns/m249.rsi
     - type: Gun
       projectileSpeed: 30 # 5.56x45mm
-      fireRate: 5.8 # ~850 RPM
+      fireRate: 6.8 # ~850 RPM
       minAngle: 9 # Controllable LMG
       maxAngle: 18
       angleIncrease: 3.5
@@ -505,7 +505,7 @@
       sprite: Civ14/Weapons/Guns/rpd.rsi
     - type: Gun
       projectileSpeed: 30 # 7.62x39mm
-      fireRate: 4.8 # ~700 RPM
+      fireRate: 6.0 # ~700 RPM
       minAngle: 11 # Intermediate cartridge LMG
       maxAngle: 20
       angleIncrease: 4.0
@@ -555,7 +555,7 @@
       sprite: Civ14/Weapons/Guns/m60.rsi
     - type: Gun
       projectileSpeed: 32 # 7.62x51mm
-      fireRate: 4.0 # ~550-600 RPM "The Pig"
+      fireRate: 4.7 # ~550-600 RPM "The Pig"
       minAngle: 15 # Unwieldy
       maxAngle: 40
       angleIncrease: 5.5
@@ -590,7 +590,7 @@
     - type: Gun
       # PKP Pecheneg - Modernized PKM, inherits from PKM (BaseGunCivMG)
       projectileSpeed: 32 # Explicit for clarity, same as base
-      fireRate: 4.8 # ~700 RPM, faster than base PKM
+      fireRate: 6.0 # ~700 RPM, faster than base PKM
       minAngle: 9 # Better control than base PKM
       maxAngle: 35
       angleIncrease: 3.8
@@ -611,7 +611,7 @@
       sprite: Civ14/Weapons/Guns/rpk74.rsi
     - type: Gun
       projectileSpeed: 30 # 5.45x39mm
-      fireRate: 4.0 # ~600 RPM (like AK-74)
+      fireRate: 5.0 # ~600 RPM (like AK-74)
       minAngle: 8 # Very controllable LMG
       maxAngle: 18
       angleIncrease: 3.0
@@ -646,7 +646,7 @@
     - type: Gun
       # RPK-16 - Modernized RPK-74, inherits from RPK-74
       projectileSpeed: 30 # Explicit for clarity, same as parent
-      fireRate: 4.8 # ~700 RPM, faster than RPK-74
+      fireRate: 6.0 # ~700 RPM, faster than RPK-74
       minAngle: 7 # Excellent control
       maxAngle: 11
       angleIncrease: 2.8
@@ -667,7 +667,7 @@
       sprite: Civ14/Weapons/Guns/rpk47.rsi
     - type: Gun
       projectileSpeed: 30 # 7.62x39mm
-      fireRate: 4.0 # ~600 RPM (like AKM)
+      fireRate: 5.0 # ~600 RPM (like AKM)
       minAngle: 10 # More kick than RPK-74, similar to PKM base
       maxAngle: 22
       angleIncrease: 4.0
@@ -717,7 +717,7 @@
       sprite: Civ14/Weapons/Guns/negev.rsi
     - type: Gun
       projectileSpeed: 30 # 5.56x45mm
-      fireRate: 6.5 # ~1000 RPM (can be very high)
+      fireRate: 8.5 # ~1000 RPM (can be very high)
       minAngle: 9 # Modern, good control despite RoF
       maxAngle: 20
       angleIncrease: 3.2
