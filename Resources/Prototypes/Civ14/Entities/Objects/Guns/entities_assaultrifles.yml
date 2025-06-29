@@ -75,7 +75,7 @@
       sprite: Civ14/Weapons/Guns/stg.rsi
     - type: Gun
       projectileSpeed: 28 # 7.92 Kurz is a bit slower
-      fireRate: 3.7 # ~500 RPM
+      fireRate: 4.7 # ~500 RPM
       minAngle: 2 # 50 - 50 = 0, set to 2 (more controllable than base AK which is 2)
       maxAngle: 60 # 110 - 50
       angleIncrease: 5.0
@@ -111,7 +111,7 @@
       sprite: Civ14/Weapons/Guns/g3.rsi
     - type: Gun
       projectileSpeed: 32 # Full power 7.62 NATO
-      fireRate: 3.8 # ~500-600 RPM
+      fireRate: 4.8 # ~500-600 RPM
       minAngle: 10 # 60 - 50
       maxAngle: 100 # 150 - 50
       angleIncrease: 8.0
@@ -147,7 +147,7 @@
       sprite: Civ14/Weapons/Guns/fal.rsi
     - type: Gun
       projectileSpeed: 32 # Full power 7.62 NATO
-      fireRate: 4.5 # ~650-700 RPM
+      fireRate: 5.5 # ~650-700 RPM
       minAngle: 12 # 62 - 50
       maxAngle: 110 # 160 - 50
       angleIncrease: 8.5
@@ -183,7 +183,7 @@
       sprite: Civ14/Weapons/Guns/scar.rsi
     - type: Gun
       projectileSpeed: 30 # Standard 5.56
-      fireRate: 4.5 # ~550-650 RPM
+      fireRate: 5.5 # ~550-650 RPM
       minAngle: 1 # 45 - 50 = -5, set to 1 (Very controllable)
       maxAngle: 45 # 95 - 50
       angleIncrease: 4.0
@@ -219,7 +219,7 @@
       sprite: Civ14/Weapons/Guns/scar.rsi
     - type: Gun
       projectileSpeed: 32 # Full power 7.62 NATO
-      fireRate: 4.2 # ~600 RPM
+      fireRate: 5.2 # ~600 RPM
       minAngle: 5 # 55 - 50
       maxAngle: 80 # 130 - 50
       angleIncrease: 7.0
@@ -255,7 +255,7 @@
       sprite: Civ14/Weapons/Guns/m14.rsi
     - type: Gun
       projectileSpeed: 32 # Full power 7.62 NATO
-      fireRate: 4.8 # ~700-750 RPM, very fast for caliber
+      fireRate: 6.8 # ~700-750 RPM, very fast for caliber
       minAngle: 15 # 65 - 50
       maxAngle: 120 # 170 - 50
       angleIncrease: 9.5 # Difficult to control
@@ -291,7 +291,7 @@
       sprite: Civ14/Weapons/Guns/qbz95.rsi
     - type: Gun
       projectileSpeed: 30 # 5.8x42mm, similar to other intermediate
-      fireRate: 4.3 # ~650 RPM
+      fireRate: 5.3 # ~650 RPM
       minAngle: 2 # 46 - 50 = -4, set to 2 (Good control for a bullpup)
       maxAngle: 40 # 90 - 50
       angleIncrease: 4.2
@@ -329,7 +329,7 @@
       sprite: Civ14/Weapons/Guns/mcar.rsi
     - type: Gun
       projectileSpeed: 25 # .30 Carbine, lower velocity
-      fireRate: 5.0 # ~750 RPM
+      fireRate: 6.5 # ~750 RPM
       minAngle: 1 # 40 - 50 = -10, set to 1 (Low recoil round)
       maxAngle: 30 # 80 - 50
       angleIncrease: 3.5
@@ -364,7 +364,7 @@
       sprite: Civ14/Weapons/Guns/srm.rsi
     - type: Gun
       projectileSpeed: 22 # 9x39mm subsonic, heavy
-      fireRate: 6.0 # ~900 RPM, very fast
+      fireRate: 7.5 # ~900 RPM, very fast
       minAngle: 2 # 48 - 50 = -2, set to 2 (Manageable)
       maxAngle: 50 # 100 - 50
       angleIncrease: 5.0 # Will climb on full auto
@@ -402,7 +402,7 @@
       sprite: Civ14/Weapons/Guns/l85a2.rsi
     - type: Gun
       projectileSpeed: 30 # 5.56x45mm
-      fireRate: 4.8 # ~700 RPM
+      fireRate: 6.2 # ~700 RPM
       minAngle: 2 # 44 - 50 = -6, set to 2 (Good control A2)
       maxAngle: 38 # 88 - 50
       angleIncrease: 3.9
@@ -439,7 +439,7 @@
       sprite: Civ14/Weapons/Guns/aug.rsi
     - type: Gun
       projectileSpeed: 30 # 5.56x45mm
-      fireRate: 4.9 # ~720 RPM
+      fireRate: 6.4 # ~720 RPM
       minAngle: 1 # 43 - 50 = -7, set to 1 (Excellent control for a bullpup)
       maxAngle: 35 # 85 - 50
       angleIncrease: 3.7
@@ -475,7 +475,7 @@
       sprite: Civ14/Weapons/Guns/hk417.rsi
     - type: Gun
       projectileSpeed: 32 # 7.62x51mm NATO
-      fireRate: 4.0 # ~600 RPM
+      fireRate: 5.0 # ~600 RPM
       minAngle: 6 # 56 - 50
       maxAngle: 85 # 135 - 50
       angleIncrease: 7.2 # Noticeable climb
