@@ -94,12 +94,14 @@ public sealed class RespawnRuleSystem : GameRuleSystem<RespawnDeadRuleComponent>
     {
         if (!TryComp<ActorComponent>(ev.Victim, out var actor))
             return;
-
-        var query = EntityQueryEnumerator<RespawnTrackerComponent>();
-        while (query.MoveNext(out _, out var respawn))
+        var query = EntityQueryEnumerator<RespawnDeadRuleComponent, RespawnTrackerComponent, GameRuleComponent>();
+        while (query.MoveNext(out var uid, out var respawnRule, out var tracker, out var rule))
         {
-            if (respawn.Players.Remove(actor.PlayerSession.UserId))
-                QueueDel(ev.Victim);
+            if (!GameTicker.IsGameRuleActive(uid, rule))
+                continue;
+
+            if (respawnRule.AlwaysRespawnDead)
+                AddToTracker(actor.PlayerSession.UserId, (uid, tracker));
         }
     }
 
