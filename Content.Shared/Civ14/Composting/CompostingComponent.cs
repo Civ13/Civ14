@@ -38,4 +38,16 @@ public sealed partial class CompostingComponent : Component
     /// </summary>
     [DataField("maxCapacity")]
     public int MaxCapacity = 10;
+
+    /// <summary>
+    /// What actually is generated to output.
+    /// </summary>
+    [DataField("outputPrototype")]
+    public string OutputPrototype = "Compost";
+
+    /// <summary>
+    /// What the output is called when interacting.
+    /// </summary>
+    [DataField("outputName")]
+    public string OutputName = "compost";
 }

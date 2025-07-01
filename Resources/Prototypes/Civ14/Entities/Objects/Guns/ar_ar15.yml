@@ -87,7 +87,7 @@
       sprite: Civ14/Weapons/Guns/m16.rsi
     - type: Gun
       projectileSpeed: 30 # 5.56x45mm
-      fireRate: 5.8 # ~750-900 RPM
+      fireRate: 6.8 # ~750-900 RPM
       minAngle: 1 # 42 - 50 = -8, set to 1 (Good control, long rifle)
       maxAngle: 35 # 85 - 50
       angleIncrease: 3.2
@@ -163,7 +163,7 @@
     # Merged and updated Gun component for XM177E2
     - type: Gun
       projectileSpeed: 29 # 5.56mm carbine, shorter barrel
-      fireRate: 6.0 # ~750-950 RPM, can be lively
+      fireRate: 7.0 # ~750-950 RPM, can be lively
       minAngle: 3 # 45 - 50 = -5, set to 3 (More jumpy than M16)
       maxAngle: 45 # 95 - 50
       angleIncrease: 4.0
@@ -187,7 +187,7 @@
       sprite: Civ14/Weapons/Guns/m4.rsi
     - type: Gun
       projectileSpeed: 29 # 5.56mm carbine
-      fireRate: 5.9 # ~700-900 RPM, slightly more refined than XM177E2
+      fireRate: 6.9 # ~700-900 RPM, slightly more refined than XM177E2
       minAngle: 2 # 44 - 50 = -6, set to 2 (Good control for a carbine)
       maxAngle: 40 # 90 - 50
       angleIncrease: 3.8
