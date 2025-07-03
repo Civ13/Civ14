@@ -85,3 +85,11 @@
   unit: materials-unit-chunk
   icon: { sprite: Civ14/Objects/mining.rsi, state: ore_copper }
   price: 0.05
+
+- type: material
+  id: RawSand
+  stackEntity: MaterialSand1
+  name: materials-raw-sand
+  unit: materials-unit-chunk
+  icon: { sprite: Objects/Materials/materials.rsi, state: sheet-sand }
+  price: 0.01

@@ -48,6 +48,13 @@
   maxCount: 20
 
 - type: stack
+  id: Sand
+  name: sand
+  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: sheet-sand }
+  spawn: MaterialSand1
+  maxCount: 20
+
+- type: stack
   id: Rope
   name: rope
   icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: rope }

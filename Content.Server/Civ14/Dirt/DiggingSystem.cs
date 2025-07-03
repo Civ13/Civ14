@@ -23,7 +23,8 @@ public sealed partial class DiggingSystem : EntitySystem
     {
         { "FloorDirt", "FloorDirtDigged_1" },
         { "FloorDirtDigged_1", "FloorDirtDigged_2" },
-        { "FloorDirtDigged_2", "FloorDirtDigged_3" }
+        { "FloorDirtDigged_2", "FloorDirtDigged_3" },
+        { "FloorSand", "FloorSand" }
     };
 
     public override void Initialize()
@@ -98,7 +99,12 @@ public sealed partial class DiggingSystem : EntitySystem
         _map.SetTile(gridUid, grid, snapPos, new Tile(nextTile.TileId));
 
         var coordinates = grid.GridTileToLocal(snapPos);
-        Spawn("MaterialDirt1", coordinates);
+        var result = "MaterialDirt1";
+        if (tileDef.ID == "FloorSand")
+        {
+            result = "MaterialSand1";
+        }
+        Spawn(result, coordinates);
 
         _popup.PopupEntity("You finish digging the soil.", ent, args.User);
         args.Handled = true;
