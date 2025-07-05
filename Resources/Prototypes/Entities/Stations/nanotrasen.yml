@@ -35,8 +35,11 @@
         - US
 
 - type: entity
-  abstract: true
   id: StandardStationGulag
+  parent:
+    - BaseStation
+    - BaseStationJobsSpawning
+    - BaseStationRecords
   components:
     - type: NpcFactionMember
       factions:

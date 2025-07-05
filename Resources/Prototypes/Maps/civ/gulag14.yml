@@ -8,7 +8,7 @@
   randomRotation: false
   fixedPreset: Gulag14
   stations:
-    Valley:
+    Gulag14:
       stationProto: StandardStationGulag
       components:
         - type: StationNameSetup
