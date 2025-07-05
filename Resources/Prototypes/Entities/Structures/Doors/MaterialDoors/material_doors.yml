@@ -24,6 +24,7 @@
           layer:
             - AirlockLayer
     - type: Door
+      changeAirtight: false
       bumpOpen: false
       clickOpen: true
       canCrush: false
@@ -39,6 +40,7 @@
         path: /Audio/Effects/stonedoor_openclose.ogg
     - type: Appearance
     - type: Airtight
+      airBlocked: false
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Metallic
