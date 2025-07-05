@@ -63,8 +63,8 @@
           completed:
             - !type:SnapToGrid
           steps:
-            - material: WoodPlank
-              amount: 3
+            - material: Glass
+              amount: 2
               doAfter: 6
     - node: end
       entity: StarterJar
