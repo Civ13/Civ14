@@ -1,9 +1,9 @@
 - type: job
   id: GulagSovietCaptain
-  name: Soviet Captain
+  name: job-name-civ-gulag-soviet-cpt
   faction: GulagSoviet
   originalName: Kapitan
-  description: job-description-civ-soviet-cpt
+  description: job-description-civ-gulag-soviet-cpt
   playTimeTracker: JobGulagSovietCaptain
   requirements:
     - !type:TotalJobsTimeRequirement
@@ -41,13 +41,12 @@
     pocket1: Compass
 
 # Sergeant
-
 - type: job
   id: GulagSovietSergeant
   originalName: Serzhant
-  name: Soviet Sergeant
+  name: job-name-civ-gulag-soviet-sgt
   faction: GulagSoviet
-  description: job-description-civ-soviet-sgt
+  description: job-description-civ-gulag-soviet-sgt
   playTimeTracker: JobGulagSovietSergeant
   requirements:
     - !type:TotalJobsTimeRequirement
@@ -92,13 +91,12 @@
     - civ13_boltaction_Mosin_30
 
 # Guard
-
 - type: job
   id: GulagSovietGuard
-  name: Soviet Guard
+  name: job-name-civ-gulag-soviet-guard
   faction: GulagSoviet
-  originalName: Strelok
-  description: job-description-civ-soviet-rifleman
+  originalName: Karaul
+  description: job-description-civ-gulag-soviet-guard
   playTimeTracker: JobGulagSovietGuard
   startingGear: GulagSovietGuardGear
   icon: "JobIconSoldier"
@@ -130,7 +128,6 @@
   equipment:
     shoes: civ13_shoes_Soviet_sapogi_boots
     jumpsuit: civ13_uniform_Soviet_uniform
-    #outerClothing: civ13_suit_Soviet_coat_1
     head: civ13_head_soviet_helmet
     belt: ClothingWebbingRussianRifleman
     pocket1: FlashlightLanternMilitary

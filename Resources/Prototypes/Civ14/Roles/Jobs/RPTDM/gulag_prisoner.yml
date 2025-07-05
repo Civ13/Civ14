@@ -1,14 +1,12 @@
 # German
-
 - type: job
   id: GulagPrisonerGerman
-  name: german prisoner
+  name: job-name-civ-gulag-prisoner-german
   faction: GulagPrisonerGerman
-  originalName: Strelok
+  originalName: Nemetskiy plennik
   description: temp description
-  startingGear: GulagPrisonerGermanGear
+  startingGear: GulagPrisonerGear
   playTimeTracker: JobGulagPrisonerGerman
-  icon: "JobIconSoldier"
   special:
     - !type:AddComponentSpecial
       components:
@@ -16,28 +14,17 @@
           factions:
             - GulagPrisonerGerman
         - type: ShowFactionIcons
-          factionIcon: SovietFaction
-          jobIcon: JobIconRifleman
-          assignSquad: true
-
-- type: startingGear
-  id: GulagPrisonerGermanGear
-  equipment:
-    shoes: ClothingShoesColorBlack
-    jumpsuit: civ13_uniform_GULAG_prisoner_clothing
-    pocket2: Roubles
+          factionIcon: Ger3Faction
 
 # Ukrainian
-
 - type: job
   id: GulagPrisonerUkrainian
-  name: ukrainian prisoner
+  name: job-name-civ-gulag-prisoner-ukrainian
   faction: GulagPrisonerUkrainian
-  originalName: Strelok
+  originalName: Ukrainskiy plennik
   description: temp description
-  startingGear: GulagPrisonerUkrainianGear
+  startingGear: GulagPrisonerGear
   playTimeTracker: JobGulagPrisonerUkrainian
-  icon: "JobIconSoldier"
   special:
     - !type:AddComponentSpecial
       components:
@@ -45,28 +32,17 @@
           factions:
             - GulagPrisonerUkrainian
         - type: ShowFactionIcons
-          factionIcon: SovietFaction
-          jobIcon: JobIconRifleman
-          assignSquad: true
-
-- type: startingGear
-  id: GulagPrisonerUkrainianGear
-  equipment:
-    shoes: ClothingShoesColorBlack
-    jumpsuit: civ13_uniform_GULAG_prisoner_clothing
-    pocket2: Roubles
+          factionIcon: UkrFaction
 
 # Polish
-
 - type: job
   id: GulagPrisonerPolish
-  name: polish prisoner
+  name: job-name-civ-gulag-prisoner-polish
   faction: GulagPrisonerPolish
-  originalName: Strelok
+  originalName: Polskiy plennik
   description: temp description
-  startingGear: GulagPrisonerPolishGear
+  startingGear: GulagPrisonerGear
   playTimeTracker: JobGulagPrisonerPolish
-  icon: "JobIconSoldier"
   special:
     - !type:AddComponentSpecial
       components:
@@ -74,13 +50,12 @@
           factions:
             - GulagPrisonerPolish
         - type: ShowFactionIcons
-          factionIcon: SovietFaction
-          jobIcon: JobIconRifleman
-          assignSquad: true
+          factionIcon: PolFaction
 
+# Starting gear
 - type: startingGear
-  id: GulagPrisonerPolishGear
+  id: GulagPrisonerGear
   equipment:
-    shoes: ClothingShoesColorBlack
+    shoes: ClothingShoesColorBlack # this should be changed since they look silly
     jumpsuit: civ13_uniform_GULAG_prisoner_clothing
     pocket2: Roubles

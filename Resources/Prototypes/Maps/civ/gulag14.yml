@@ -17,7 +17,7 @@
           availableJobs:
             # Soviets
             GulagSovietCaptain: [1, 1]
-            GulagSovietSergent: [3, 3]
+            GulagSovietSergeant: [3, 3]
             GulagSovietGuard: [20, 20]
             # Prisoners
             GulagPrisonerGerman: [30, 30]

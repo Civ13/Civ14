@@ -1,4 +1,4 @@
-﻿department-Cargo-description = Complete bounties, earn Spessos, and order useful supplies for the crew.
+department-Cargo-description = Complete bounties, earn Spessos, and order useful supplies for the crew.
 department-Civilian-description = Perform small helpful tasks to keep the station sane and well catered.
 department-Command-description = Manage the crew and keep them working efficiently.
 department-CentralCommand-description = Manage the crew and keep them working efficiently.
@@ -19,3 +19,6 @@ department-SovietCW-description = The Soviet Union are one of the factions prese
 department-Insurgents-description = The Insurgents are one of the factions present in this map.
 department-Blugoslavia-description = Blugoslavia are one of the factions present in this map.
 department-UnitedNations-description = United Nations is one of the factions present in this map.
+
+department-Gulag-Soviets-Description = Soviet gulag guards are one of the factions present in this map.
+department-Gulag-Prisoners-Description = Prisoners are one of the factions present in this map.
