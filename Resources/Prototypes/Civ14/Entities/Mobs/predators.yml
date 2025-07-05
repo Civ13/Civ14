@@ -128,7 +128,7 @@
         - Predator
     - type: HTN
       rootTask:
-        task: PredatorActivityCompound
+        task: SimpleHostileCompound
     - type: ReplacementAccent #lets wolf vocalize
       accent: dog
     - type: Speech
