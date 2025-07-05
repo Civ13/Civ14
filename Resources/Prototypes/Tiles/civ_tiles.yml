@@ -34,7 +34,7 @@
   footstepSounds:
     collection: FootstepTile
   heatCapacity: 10000
-  weather: true
+  weather: false
 
 - type: tile
   id: FloorCivWoodGrimeVertical
@@ -46,7 +46,7 @@
   footstepSounds:
     collection: FootstepTile
   heatCapacity: 10000
-  weather: true
+  weather: false
 
 # Messy Tiles
 - type: tile
@@ -59,7 +59,7 @@
   footstepSounds:
     collection: FootstepTile
   heatCapacity: 10000
-  weather: true
+  weather: false
 
 - type: tile
   id: FloorCivTileMessy2
