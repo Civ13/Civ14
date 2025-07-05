@@ -336,3 +336,62 @@
     - AllHostile
     - Wizard
     - Predator
+
+# Gulag
+- type: npcFaction
+  id: GulagSoviet
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - Germany
+    - US
+    - GulagPrisoner
+
+- type: npcFaction
+  id: GulagPrisonerGerman
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - GulagSoviet
+
+- type: npcFaction
+  id: GulagPrisonerUkrainian
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - GulagSoviet
+
+- type: npcFaction
+  id: GulagPrisonerPolish
+  hostile:
+    - SimpleHostile
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Dragon
+    - AllHostile
+    - Wizard
+    - Predator
+    - GulagSoviet

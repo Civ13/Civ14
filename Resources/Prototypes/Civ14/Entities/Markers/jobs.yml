@@ -12,6 +12,8 @@
         - state: green
         - state: passenger
 
+# TDM
+
 - type: entity
   id: SpawnPointEnglish
   parent: SpawnPointJobBase
@@ -155,3 +157,69 @@
         - state: blue # duh
         - sprite: Civ14/Objects/decals.rsi
           state: flag_un
+
+# Gulag
+
+- type: entity
+  id: SpawnPointGulagSoviet
+  parent: SpawnPointJobBase
+  name: gulag soviet spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: GulagSoviet
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: pink
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_sov
+
+- type: entity
+  id: SpawnPointGulagPrisonerGerman
+  parent: SpawnPointJobBase
+  name: gulag german prisoner spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: GulagPrisonerGerman
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: pink
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_germany_republic
+
+- type: entity
+  id: SpawnPointGulagPrisonerUkrainian
+  parent: SpawnPointJobBase
+  name: gulag ukrainian prisoner spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: GulagPrisonerUkrainian
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: pink
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_ukraine
+
+- type: entity
+  id: SpawnPointGulagPrisonerPoland
+  parent: SpawnPointJobBase
+  name: gulag polish prisoner spawner
+  suffix: faction spawn
+  components:
+    - type: SpawnPoint
+      faction: GulagPrisonerPoland
+      spawn_type: Faction
+    - type: Sprite
+      sprite: Markers/cross.rsi
+      layers:
+        - state: pink
+        - sprite: Civ14/Objects/decals.rsi
+          state: flag_poland

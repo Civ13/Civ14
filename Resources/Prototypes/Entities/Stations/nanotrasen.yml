@@ -33,3 +33,14 @@
         - Soviet
         - Germany
         - US
+
+- type: entity
+  abstract: true
+  id: StandardStationGulag
+  components:
+    - type: NpcFactionMember
+      factions:
+        - GulagSoviet
+        - GulagPrisonerGerman
+        - GulagPrisonerUkrainian
+        - GulagPrisonerPolish

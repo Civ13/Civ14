@@ -1,0 +1,139 @@
+- type: job
+  id: GulagSovietCaptain
+  name: Soviet Captain
+  faction: GulagSoviet
+  originalName: Kapitan
+  description: job-description-civ-soviet-cpt
+  playTimeTracker: JobGulagSovietCaptain
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsSquadLeader
+      time: 7200 # 2 hours
+  startingGear: GulagSovietCaptainGear
+  icon: "JobIconICpt"
+  supervisors: job-supervisors-nobody
+  ranks:
+    RankMajor:
+      - !type:RoleTimeRequirement
+        role: JobSovietCaptain
+        time: 18000 # 5 hours
+    RankCaptain: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: RussianAccent
+        - type: NpcFactionMember
+          factions:
+            - GulagSoviet
+        - type: ShowFactionIcons
+          factionIcon: SovietFaction
+          jobIcon: JobIconICpt
+          assignSquad: false
+
+- type: startingGear
+  id: GulagSovietCaptainGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_officer_uniform
+    outerClothing: civ13_suit_Soviet_officer_coat
+    belt: civ13_pistol_TT_33
+    head: civ13_head_soviet_officer_cap
+    pocket1: Compass
+
+# Sergeant
+
+- type: job
+  id: GulagSovietSergeant
+  originalName: Serzhant
+  name: Soviet Sergeant
+  faction: GulagSoviet
+  description: job-description-civ-soviet-sgt
+  playTimeTracker: JobGulagSovietSergeant
+  requirements:
+    - !type:TotalJobsTimeRequirement
+      group: CivJobsEnlisted
+      time: 7200 # 2 hours
+  startingGear: SovietSergeantGear
+  icon: "JobIconISgt"
+  supervisors: job-supervisors-cpt
+  ranks:
+    RankSergeantMajor:
+      - !type:RoleTimeRequirement
+        role: JobSovietSergeant
+        time: 36000 # 10 hours
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: JobSovietSergeant
+        time: 10800 # 3 hours
+    RankSergeant: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: RussianAccent
+        - type: NpcFactionMember
+          factions:
+            - GulagSoviet
+        - type: ShowFactionIcons
+          factionIcon: SovietFaction
+          jobIcon: JobIconISgt
+          assignSquad: true
+
+- type: startingGear
+  id: GulagSovietSergeantGear
+  equipment:
+    shoes: civ13_shoes_leather_shoes_1
+    jumpsuit: civ13_uniform_Soviet_uniform
+    #outerClothing: civ13_suit_Soviet_coat
+    head: civ13_head_soviet_pilotka
+    belt: civ13_pistol_TT_33
+    pocket1: civ13_magazine_TT_33_magazine_(7.62x25mm)
+    pocket2: Compass
+  inhand:
+    - civ13_boltaction_Mosin_30
+
+# Guard
+
+- type: job
+  id: GulagSovietGuard
+  name: Soviet Guard
+  faction: GulagSoviet
+  originalName: Strelok
+  description: job-description-civ-soviet-rifleman
+  playTimeTracker: JobGulagSovietGuard
+  startingGear: GulagSovietGuardGear
+  icon: "JobIconSoldier"
+  supervisors: job-supervisors-cpt
+  ranks:
+    RankLanceCorporal:
+      - !type:RoleTimeRequirement
+        role: JobSovietRifleman
+        time: 36000 # 10 hours
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: JobSovietRifleman
+        time: 10800 # 3 hours
+    RankPrivate: []
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: RussianAccent
+        - type: NpcFactionMember
+          factions:
+            - GulagSoviet
+        - type: ShowFactionIcons
+          factionIcon: SovietFaction
+          jobIcon: JobIconRifleman
+          assignSquad: true
+
+- type: startingGear
+  id: GulagSovietGuardGear
+  equipment:
+    shoes: civ13_shoes_Soviet_sapogi_boots
+    jumpsuit: civ13_uniform_Soviet_uniform
+    #outerClothing: civ13_suit_Soviet_coat_1
+    head: civ13_head_soviet_helmet
+    belt: ClothingWebbingRussianRifleman
+    pocket1: FlashlightLanternMilitary
+    pocket2: Gauze
+  inhand:
+    - civ13_boltaction_Mosin_30
