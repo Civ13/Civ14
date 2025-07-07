@@ -28,6 +28,33 @@
       PotencyDivisor: 20
 
 - type: seed
+  id: barley
+  name: seeds-barley-name
+  noun: seeds-noun-seeds
+  displayName: seeds-barley-display-name
+  plantRsi: Objects/Specific/Hydroponics/barley.rsi
+  packetPrototype: BarleySeedsCiv
+  productPrototypes:
+    - BarleyBushel
+    - BarleySeedsCiv
+  lifespan: 25
+  maturation: 6
+  production: 3
+  yield: 2
+  potency: 5
+  idealLight: 8
+  nutrientConsumption: 0.40
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 20
+      PotencyDivisor: 20
+    BarleyFlour:
+      Min: 5
+      Max: 20
+      PotencyDivisor: 20
+
+- type: seed
   id: hemp
   name: seeds-hemp-name
   noun: seeds-noun-seeds

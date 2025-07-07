@@ -64,6 +64,29 @@
         - Compostable
 
 - type: entity
+  name: barley bushel
+  description: A bushel of barley
+  id: BarleyBushel
+  parent: ProduceBase
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/barley.rsi
+    - type: Item
+      heldPrefix: produce
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          reagents:
+            - ReagentId: BarleyFlour
+              Quantity: 10
+    - type: Produce
+      seedId: barley
+    - type: Tag
+      tags:
+        - Compostable
+
+
+- type: entity
   name: meatwheat bushel
   description: Some blood-drenched wheat stalks. You can crush them into what passes for meat if you squint hard enough.
   id: MeatwheatBushel

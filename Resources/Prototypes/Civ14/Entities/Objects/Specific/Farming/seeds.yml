@@ -31,6 +31,18 @@
       count: 1
 - type: entity
   parent: SeedBaseCiv
+  id: BarleySeedsCiv
+  name: "barley seeds"
+  components:
+    - type: Seed
+      seedId: barley
+    - type: Sprite
+      color: "#599e04"
+    - type: Stack
+      stackType: StackBarleySeedsCiv
+      count: 1
+- type: entity
+  parent: SeedBaseCiv
   id: CornSeedsCiv
   name: "corn seeds"
   components:
@@ -202,6 +214,13 @@
   name: wheat seeds
   icon: { sprite: /Textures/Civ14/Objects/Farming/seeds.rsi, state: seeds_old }
   spawn: WheatSeedsCiv
+  maxCount: 30
+
+- type: stack
+  id: StackBarleySeedsCiv
+  name: barley seeds
+  icon: { sprite: /Textures/Civ14/Objects/Farming/seeds.rsi, state: seeds_old }
+  spawn: BarleySeedsCiv
   maxCount: 30
 
 - type: stack

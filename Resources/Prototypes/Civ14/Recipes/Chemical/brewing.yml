@@ -13,6 +13,21 @@
   products:
     Beer: 20
 
+- type: reaction
+  id: BrewingBarley
+  source: true
+  requiredMixerCategories:
+    - Fermentation
+  reactants:
+    Water:
+      amount: 20
+    BarleyFlour:
+      amount: 10
+    Yeast:
+      amount: 1
+  products:
+    Ale: 20
+
 - type: construction
   name: brewing barrel
   id: BrewingBarrel

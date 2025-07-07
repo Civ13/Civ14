@@ -7,6 +7,9 @@ seeds-noun-spores = spores
 seeds-wheat-name = wheat
 seeds-wheat-display-name = wheat stalks
 
+seeds-barley-name = barley
+seeds-barley-display-name = barley stalks
+
 seeds-hemp-wheat-name = hemp
 seeds-hemp-display-name = hemp stalks
 seeds-meatwheat-name = meatwheat
