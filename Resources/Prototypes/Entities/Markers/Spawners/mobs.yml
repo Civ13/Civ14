@@ -605,7 +605,7 @@
         - state: green
         - state: goat
           sprite: Mobs/Animals/goat.rsi
-    - type: ConditionalSpawner
+    - type: RespawnableSpawner
       prototypes:
         - MobGoat
 
@@ -675,7 +675,7 @@
         - state: green
         - state: cow
           sprite: Mobs/Animals/cow.rsi
-    - type: ConditionalSpawner
+    - type: RespawnableSpawner
       prototypes:
         - MobCow
 
