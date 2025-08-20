@@ -152,3 +152,34 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
+
+  - type: constructionGraph
+  id: BlastFurnace
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: Iron
+              amount: 25
+              doAfter: 15
+    - node: end
+      entity: BlastFurnace
+
+- type: construction
+  name: blast furnace
+  id: BlastFurnace
+  graph: BlastFurnace
+  startNode: start
+  targetNode: end
+  category: construction-category-production
+  description: Used for smelting pig iron.
+  icon: { sprite: Civ14/Objects/metallurgy.rsi, state: blast_furnace }
+  objectType: Structure
+  agemin: 0
+  agemax: 8
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
