@@ -177,7 +177,7 @@
   description: Used for smelting pig iron.
   icon: { sprite: Civ14/Objects/metallurgy.rsi, state: blast_furnace }
   objectType: Structure
-  agemin: 0
+  agemin: 2
   agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: false
