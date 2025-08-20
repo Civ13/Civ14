@@ -185,3 +185,8 @@
   - type: Construction
     graph: BlastFurnace
     node: end
+
+    - type: latheRecipePack
+  id: BlastFurnace
+  recipes:
+    - IngotPigIron
