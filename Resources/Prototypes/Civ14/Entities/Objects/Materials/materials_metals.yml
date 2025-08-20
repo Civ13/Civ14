@@ -93,3 +93,54 @@
       state: copper
     - type: Stack
       count: 1
+
+- type: entity
+  parent: IngotBase
+  id: IngotPigIron
+  name: pig iron ingot
+  suffix: Full
+  components:
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        Iron: 100
+    - type: Stack
+      stackType: Iron
+      baseLayer: base
+      layerStates:
+        - pig_iron_one
+        - pig_iron_half
+        - pig_iron_full
+    - type: Sprite
+      state: pig_iron_full
+      layers:
+        - state: pig_iron_full
+          map: ["base"]
+    - type: Item
+      heldPrefix: iron
+    - type: Appearance
+    - type: Extractable
+      grindableSolutionName: iron
+    - type: SolutionContainerManager
+      solutions:
+        iron:
+          reagents:
+            - ReagentId: Iron
+              Quantity: 10
+
+- type: entity
+  parent: IngotIron
+  id: IngotIron1
+  name: pig iron ingot
+  suffix: Single
+  components:
+    - type: Sprite
+      state: pig_iron_one
+    - type: Stack
+      count: 1
+- type: stack
+  id: Iron
+  name: iron
+  icon: { sprite: /Textures/Objects/Materials/ingots.rsi, state: pig_iron_one }
+  spawn: IngotIron1
+  maxCount: 30
