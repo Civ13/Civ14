@@ -105,7 +105,7 @@
       materialComposition:
         Iron: 100
     - type: Stack
-      stackType: Iron
+      stackType: PigIron
       baseLayer: base
       layerStates:
         - pig_iron_one
@@ -140,7 +140,7 @@
       count: 1
 - type: stack
   id: PigIron
-  name: iron
+  name: PigIron
   icon: { sprite: /Textures/Objects/Materials/ingots.rsi, state: pig_iron_one }
   spawn: IngotPigIron1
   maxCount: 30
