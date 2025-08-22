@@ -129,8 +129,8 @@
               Quantity: 10
 
 - type: entity
-  parent: IngotIron
-  id: IngotIron1
+  parent: IngotPigIron
+  id: IngotPigIron1
   name: pig iron ingot
   suffix: Single
   components:
@@ -139,8 +139,8 @@
     - type: Stack
       count: 1
 - type: stack
-  id: Iron
+  id: PigIron
   name: iron
   icon: { sprite: /Textures/Objects/Materials/ingots.rsi, state: pig_iron_one }
-  spawn: IngotIron1
+  spawn: IngotPigIron1
   maxCount: 30
