@@ -604,3 +604,105 @@
     - type: Barricade
       bidirectional: true
       blocking: 50
+
+# Metal Bars
+- type: entity
+  id: BarricadeMetalBars
+  description: A set of solid metal bars.
+  parent: BaseStructure
+  name: metal bars
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/walls.rsi
+      state: steeljail
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb {}
+          mask:
+          - FullTileMask
+          layer:
+          - WallLayer
+    - type: AtmosExposed
+    - type: Barricade
+      bidirectional: true
+      blocking: 0
+
+# Barricade Railing
+- type: entity
+  id: BarricadeRailingBase
+  description: A sandbag wall.
+  parent: BaseBarricade
+  abstract: true
+  name: barricade railing base
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Civ14/Objects/Railing.rsi
+      state: stone
+      drawdepth: FloorObjects
+      noRot: true
+    - type: Climbable
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.49,-0.45,0.49,-0.25"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+    - type: Damageable
+      damageModifierSet: Inert
+      damageContainer: StructuralInorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 180
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Barricade
+      bidirectional: true
+      blocking: 25
+    - type: AtmosExposed
+    - type: Construction
+      graph: BarricadeSandbags
+      node: end
+
+- type: entity
+  id: BarricadeRailingStone
+  description: A stone railing.
+  parent: BarricadeRailingBase
+  name: stone railing
+  components:
+     - type: Sprite
+       sprite: Civ14/Objects/Railing.rsi
+       state: stone
+
+- type: entity
+  id: BarricadeRailingSandstone
+  description: A sandstone railing.
+  parent: BarricadeRailingBase
+  name: sandstone railing
+  components:
+     - type: Sprite
+       sprite: Civ14/Objects/Railing.rsi
+       state: sandstone
+
+- type: entity
+  id: BarricadeRailingBrick
+  description: A brick railing.
+  parent: BarricadeRailingBase
+  name: brick railing
+  components:
+     - type: Sprite
+       sprite: Civ14/Objects/Railing.rsi
+       state: sandstone

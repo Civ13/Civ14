@@ -80,3 +80,11 @@ job-name-civ-blugoslavia-medic = Medic
 
 job-name-civ-unitednations-rifleman = Infantry
 job-name-civ-unitednations-medic = Medic
+
+job-name-civ-gulag-soviet-cpt = Captain
+job-name-civ-gulag-soviet-sgt = Sergeant
+job-name-civ-gulag-soviet-guard = Guard
+
+job-name-civ-gulag-prisoner-german = German Prisoner
+job-name-civ-gulag-prisoner-ukrainian = Ukrainian Prisoner
+job-name-civ-gulag-prisoner-polish = Polish Prisoner

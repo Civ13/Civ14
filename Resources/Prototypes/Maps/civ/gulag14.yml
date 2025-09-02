@@ -1,0 +1,25 @@
+- type: gameMap
+  id: Gulag14
+  mapName: "Gulag14"
+  mapPath: /Maps/civ/tdm/gulag14.yml
+  minPlayers: 10
+  maxPlayers: 200
+  maxRandomOffset: 0
+  randomRotation: false
+  fixedPreset: Gulag14
+  stations:
+    Gulag14:
+      stationProto: StandardStationGulag
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Gulag14"
+        - type: StationJobs
+          availableJobs:
+            # Soviets
+            GulagSovietCaptain: [1, 1]
+            GulagSovietSergeant: [3, 3]
+            GulagSovietGuard: [20, 20]
+            # Prisoners
+            GulagPrisonerGerman: [30, 30]
+            GulagPrisonerUkrainian: [30, 30]
+            GulagPrisonerPolish: [30, 30]

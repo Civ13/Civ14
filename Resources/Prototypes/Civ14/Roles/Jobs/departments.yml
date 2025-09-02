@@ -6,6 +6,7 @@
   roles:
     - Nomad
 
+# TDM
 - type: department
   id: DepFrench
   name: department-French
@@ -112,3 +113,24 @@
   roles:
     - UnitedNationsRifleman
     - UnitedNationsMedic
+
+# Gulag
+- type: department
+  id: DepGulagSoviets
+  name: department-Gulag-Soviets
+  description: department-Gulag-Soviets-Description
+  color: "#f80505"
+  roles:
+    - GulagSovietCaptain
+    - GulagSovietSergeant
+    - GulagSovietGuard
+
+- type: department
+  id: DepGulagPrisoners
+  name: department-Gulag-Prisoners
+  description: department-Gulag-Prisoners-Description
+  color: "#a36156"
+  roles:
+    - GulagPrisonerGerman
+    - GulagPrisonerUkrainian
+    - GulagPrisonerPolish
