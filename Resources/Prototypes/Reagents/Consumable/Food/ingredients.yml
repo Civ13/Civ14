@@ -20,6 +20,28 @@
         amount: 0.1
 
 - type: reagent
+  id: BarleyFlour
+  name: reagent-name-barleyflour
+  group: Foods
+  desc: reagent-desc-barleyflour
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: chalky
+  color: white
+  recognizable: true
+  metabolisms:
+    Food:
+      effects:
+      - !type:AdjustReagent
+        reagent: Sugar
+        amount: 0.4
+      - !type:SatiateThirst
+        factor: -0.2 #its flour
+      - !type:AdjustReagent
+        reagent: Nutriment
+        amount: 0.1
+
+
+- type: reagent
   id: Cornmeal
   name: reagent-name-cornmeal
   group: Foods

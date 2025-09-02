@@ -9,6 +9,9 @@ mixing-verb-holy = bless
 mixing-verb-stir = stir
 mixing-verb-shake = shake
 
+mixing-verb-distillation = distill
+mixing-verb-fermentation = ferment
+
 ## Entity
 
 default-mixing-success = You mix the {$mixed} with the {$mixer}

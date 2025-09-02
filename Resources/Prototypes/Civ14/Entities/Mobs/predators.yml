@@ -128,9 +128,7 @@
         - Predator
     - type: HTN
       rootTask:
-        #        task: predatorActivityCompound #civ14 coustom predator system
         task: SimpleHostileCompound
-
     - type: ReplacementAccent #lets wolf vocalize
       accent: dog
     - type: Speech

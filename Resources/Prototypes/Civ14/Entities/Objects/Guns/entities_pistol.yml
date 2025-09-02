@@ -76,7 +76,7 @@
       maxAngle: 45
       angleIncrease: 4.2
       angleDecay: 28
-      fireRate: 3 # Already present
+      fireRate: 4 # Semi-auto pistol
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -114,7 +114,7 @@
       maxAngle: 52
       angleIncrease: 5.5
       angleDecay: 24
-      fireRate: 3 # Already present
+      fireRate: 4 # ~100 rpm, Semi-auto pistol
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -152,7 +152,7 @@
       maxAngle: 50
       angleIncrease: 5.2 # Solid, but older than Glock
       angleDecay: 25
-      fireRate: 3 # Already present
+      fireRate: 4.5 # ~100-200 rpm, no info on internet about this. Semi-auto pistol
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -190,7 +190,7 @@
       maxAngle: 50
       angleIncrease: 5
       angleDecay: 25 # Base Glock 17 stats
-      fireRate: 3
+      fireRate: 5 # Semi-auto pistol
       availableModes:
         - SemiAuto
       selectedMode: SemiAuto
@@ -228,7 +228,7 @@
       maxAngle: 48 # Modern, good control
       angleIncrease: 4.8
       angleDecay: 26
-      fireRate: 4 # Already present
+      fireRate: 5 # Semi-auto pistol
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -266,7 +266,7 @@
       maxAngle: 40
       angleIncrease: 3.5
       angleDecay: 30
-      fireRate: 6 # Already present
+      fireRate: 6 # Semi-auto pistol
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -304,7 +304,7 @@
       maxAngle: 50
       angleIncrease: 5
       angleDecay: 25
-      fireRate: 3 # Already present
+      fireRate: 5 # Semi-auto pistol
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -342,7 +342,7 @@
       maxAngle: 48 # Modern, good control
       angleIncrease: 4.8
       angleDecay: 26
-      fireRate: 4 # Already present
+      fireRate: 5 # Semi-auto pistol
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -380,7 +380,7 @@
       maxAngle: 60
       angleIncrease: 7
       angleDecay: 20
-      fireRate: 3 # Already present
+      fireRate: 4.2 # Semi-auto pistol, big caliber won't let you shoot too fast
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -456,7 +456,7 @@
       maxAngle: 55 # Noticeable kick, old design
       angleIncrease: 6
       angleDecay: 23
-      fireRate: 3 # Already present
+      fireRate: 5 # Semi-auto pistol
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -494,7 +494,7 @@
       maxAngle: 50
       angleIncrease: 5.5
       angleDecay: 24
-      fireRate: 3 # Already present
+      fireRate: 5 # Semi-auto pistol
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -532,7 +532,7 @@
       maxAngle: 35 # Very low recoil
       angleIncrease: 3.5
       angleDecay: 30
-      fireRate: 3 # Already present
+      fireRate: 5 # Semi-auto pistol
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -570,7 +570,7 @@
       maxAngle: 40 # Low recoil
       angleIncrease: 4
       angleDecay: 28
-      fireRate: 3 # Already present
+      fireRate: 3.5 # Single-action
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -608,7 +608,7 @@
       maxAngle: 45
       angleIncrease: 4.2
       angleDecay: 28
-      fireRate: 3 # Already present
+      fireRate: 4 # Semi-auto pistol
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -648,7 +648,7 @@
       maxAngle: 60 # Classic .45 kick
       angleIncrease: 7
       angleDecay: 20
-      fireRate: 3 # Already present
+      fireRate: 4 # Semi-auto pistol, heavy caliber wont let you mag-dump it so fast
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -685,7 +685,7 @@
       maxAngle: 58 # Slightly better handling 1911
       angleIncrease: 6.5
       angleDecay: 22
-      fireRate: 3 # Already present
+      fireRate: 4 # Semi-auto pistol, heavy caliber wont let you mag-dump it so fast
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -725,7 +725,7 @@
       maxAngle: 55
       angleIncrease: 5.8
       angleDecay: 24
-      fireRate: 3 # Already present
+      fireRate: 4.5 # Semi-auto pistol, small caliber
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -765,7 +765,7 @@
       maxAngle: 48
       angleIncrease: 5.2
       angleDecay: 26
-      fireRate: 3 # Already present
+      fireRate: 5 # Semi-auto pistol
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -803,9 +803,10 @@
       maxAngle: 50
       angleIncrease: 5.5
       angleDecay: 25
-      fireRate: 3 # Already present
-      selectedMode: SemiAuto
+      fireRate: 6.0 # Full-auto pistol, soviet glock with da switch
+      selectedMode: FullAuto
       availableModes:
+        - FullAuto
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/762x25.ogg
@@ -843,7 +844,7 @@
       maxAngle: 50 # Standard modern 9mm (like Glock)
       angleIncrease: 5
       angleDecay: 25
-      fireRate: 3 # Already present
+      fireRate: 5 # Semi-auto pistol
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -884,7 +885,7 @@
       maxAngle: 50 # Same as regular M9
       angleIncrease: 5
       angleDecay: 25
-      fireRate: 3 # Already present
+      fireRate: 5 # Semi-auto pistol
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -924,7 +925,7 @@
       maxAngle: 48 # Heavy frame, good control
       angleIncrease: 4.8
       angleDecay: 27
-      fireRate: 3 # Already present
+      fireRate: 5 # Semi-auto pistol
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -962,7 +963,7 @@
       maxAngle: 80
       angleIncrease: 12
       angleDecay: 15
-      fireRate: 3 # Already present
+      fireRate: 3.5 # Semi-auto pistol, You just cant mag-dump it cause of heavy recoil
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -1000,7 +1001,7 @@
       maxAngle: 75
       angleIncrease: 10
       angleDecay: 18
-      fireRate: 3 # Already present
+      fireRate: 3.8 # Semi-auto pistol, slightly better recoil than .50 AE version
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -1040,7 +1041,7 @@
       maxAngle: 48 # Classic, good handling
       angleIncrease: 4.9
       angleDecay: 26
-      fireRate: 3 # Already present
+      fireRate: 5 # Already present
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
@@ -1080,7 +1081,7 @@
       maxAngle: 50
       angleIncrease: 5.5
       angleDecay: 25
-      fireRate: 3 # Already present
+      fireRate: 4.5 # Already present
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto

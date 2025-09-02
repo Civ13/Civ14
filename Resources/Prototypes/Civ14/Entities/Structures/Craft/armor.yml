@@ -1,0 +1,105 @@
+- type: latheCategory
+  id: AnvilArmorMedieval
+  name: lathe-category-armor-medieval
+
+- type: latheCategory
+  id: AnvilArmorImperial
+  name: lathe-category-armor-imperial
+
+- type: latheRecipePack
+  id: AnvilArmorMedieval
+  recipes:
+    - civ13_suit_segmented_armor
+    - civ13_suit_chainmail
+    - civ13_suit_plated_armor
+    - civ13_suit_samurai_armor
+    - civ13_suit_iron_chestplate
+    - civ13_suit_hauberk
+    - civ13_suit_emirate_armor
+    - civ13_suit_imperial_chinese_armor
+
+- type: latheRecipePack
+  id: AnvilArmorImperial
+  recipes:
+    - civ13_suit_imperial_chestplate
+
+- type: latheRecipe
+  id: civ13_suit_imperial_chestplate
+  categories:
+    - AnvilArmorImperial
+  completetime: 10
+  materials:
+    Iron: 1000
+  result: civ13_suit_imperial_chestplate
+
+- type: latheRecipe
+  id: civ13_suit_segmented_armor
+  categories:
+    - AnvilArmorMedieval
+  completetime: 10
+  materials:
+    Iron: 1000
+  result: civ13_suit_segmented_armor
+
+- type: latheRecipe
+  id: civ13_suit_chainmail
+  categories:
+    - AnvilArmorMedieval
+  completetime: 12
+  materials:
+    Iron: 1000
+  result: civ13_suit_chainmail
+
+- type: latheRecipe
+  id: civ13_suit_plated_armor
+  categories:
+    - AnvilArmorMedieval
+  completetime: 10
+  materials:
+    Iron: 1600
+  result: civ13_suit_plated_armor
+
+- type: latheRecipe
+  id: civ13_suit_samurai_armor
+  categories:
+    - AnvilArmorMedieval
+  completetime: 10
+  materials:
+    Iron: 1400
+  result: civ13_suit_samurai_armor
+
+- type: latheRecipe
+  id: civ13_suit_iron_chestplate
+  categories:
+    - AnvilArmorMedieval
+  completetime: 10
+  materials:
+    Iron: 800
+  result: civ13_suit_iron_chestplate
+
+- type: latheRecipe
+  id: civ13_suit_hauberk
+  categories:
+    - AnvilArmorMedieval
+  completetime: 10
+  materials:
+    Iron: 1200
+  result: civ13_suit_hauberk
+
+- type: latheRecipe
+  id: civ13_suit_emirate_armor
+  categories:
+    - AnvilArmorMedieval
+  completetime: 10
+  materials:
+    Iron: 1200
+  result: civ13_suit_emirate_armor
+
+- type: latheRecipe
+  id: civ13_suit_imperial_chinese_armor
+  categories:
+    - AnvilArmorMedieval
+  completetime: 10
+  materials:
+    Iron: 1000
+  result: civ13_suit_imperial_chinese_armor

@@ -372,7 +372,7 @@ def generate_atmosphere_tiles(width, height, chunk_size):
 def generate_main_entities(tile_map, chunk_size=16, decals_by_id=None):
     """
     Generates the main map and grid entities, including tile chunks, decals, and atmospheric data.
-    
+
     Divides the tile map into chunks, encodes each chunk for storage, and constructs the main map entity (UID 1) and grid entity (UID 2) with relevant components such as lighting, physics, weather, decals, and atmosphere. Decals are grouped by ID and indexed, and atmospheric data is generated per chunk. Returns a dictionary containing the main entities and their components.
     """
     if decals_by_id is None:
@@ -965,6 +965,28 @@ MAP_CONFIG = [
     {  # Rabbits
         "type": "BiomeEntityLayer",
         "entity_protos": "SpawnMobRabbit",
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.9989,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "priority": 11,
+    },
+    {  # Cows
+        "type": "BiomeEntityLayer",
+        "entity_protos": "SpawnMobCow",
+        "noise_type": NoiseType.NoiseType_OpenSimplex2,
+        "octaves": 1,
+        "frequency": 0.1,
+        "fractal_type": FractalType.FractalType_FBm,
+        "threshold": 0.9989,
+        "tile_condition": lambda tile: tile == TILEMAP_REVERSE["FloorPlanetGrass"],
+        "priority": 11,
+    },
+    {  # Goats
+        "type": "BiomeEntityLayer",
+        "entity_protos": "SpawnMobGoat",
         "noise_type": NoiseType.NoiseType_OpenSimplex2,
         "octaves": 1,
         "frequency": 0.1,

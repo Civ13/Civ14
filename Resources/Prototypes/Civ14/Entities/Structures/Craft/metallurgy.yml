@@ -45,6 +45,7 @@
     - IngotSilver
     - IngotGold
     - IngotBronze
+    - Glass
 
 - type: latheRecipe
   id: IngotGold
@@ -139,4 +140,11 @@
   completetime: 2
   materials:
     RawIron: 100
-# forge
+
+- type: latheRecipe
+  id: Glass
+  result: SheetGlass1
+  icon: { sprite: "/Textures/Objects/Materials/Sheets/glass.rsi", state: glass }
+  completetime: 2
+  materials:
+    RawSand: 100

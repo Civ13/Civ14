@@ -311,6 +311,49 @@
 
 - type: entity
   parent: OreBase
+  id: MaterialSand
+  name: sand
+  suffix: Full
+  components:
+    - type: Sprite
+      sprite: Objects/Materials/materials.rsi
+      state: sheet-sand
+      layers:
+        - state: sheet-sand
+          map: ["base"]
+    - type: Stack
+      stackType: Sand
+      baseLayer: base
+      layerStates:
+        - sheet-sand
+        - sheet-sand_2
+        - sheet-sand_3
+    - type: Material
+    - type: Appearance
+    - type: Item
+      sprite: Objects/Materials/materials.rsi
+      heldPrefix: sand
+    - type: PhysicalComposition
+      materialComposition:
+        RawSand: 100
+- type: entity
+  parent: MaterialSand
+  id: MaterialSand10
+  suffix: 10
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: MaterialSand
+  id: MaterialSand1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: OreBase
   id: Coal
   name: coal
   suffix: Full

@@ -1,0 +1,14 @@
+- type: reagent
+  id: Yeast
+  name: reagent-name-yeast
+  group: Foods
+  desc: reagent-desc-yeast
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: chalky
+  color: tan
+  metabolisms:
+    Food:
+      effects:
+        - !type:AdjustReagent
+          reagent: Nutriment
+          amount: 0.1
