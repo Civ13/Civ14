@@ -17,6 +17,7 @@
     - civ13_suit_hauberk
     - civ13_suit_emirate_armor
     - civ13_suit_imperial_chinese_armor
+    - SheetSheetCiv14
 
 - type: latheRecipePack
   id: AnvilArmorImperial
@@ -103,3 +104,13 @@
   materials:
     Iron: 1000
   result: civ13_suit_imperial_chinese_armor
+
+  - type: latheRecipe
+  id: SheetSheetCiv14
+  categories:
+    - AnvilArmorMedieval
+  result: SheetSteel1
+  completetime: 4
+  materials:
+    PigIron: 100
+    

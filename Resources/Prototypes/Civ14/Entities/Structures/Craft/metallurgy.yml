@@ -148,3 +148,45 @@
   completetime: 2
   materials:
     RawSand: 100
+
+- type: entity
+  id: BlastFurnace
+  name: blastfurnace
+  description: Used for making pig iron.
+   - type: Sprite
+    sprite: Civ14/Objects/metallurgy.rsi
+    layers:
+    - state: blast_furnace_on
+      shader: unshaded
+      map: [ "enum.LatheVisualLayers.IsRunning" ]
+    - state: blast_furnace
+      map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+    - state: blast_furnace
+      map: [ "enum.MaterialStorageVisualLayers.Inserting" ]
+    - state: blast_furnace
+      map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: StoneBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: ApcPowerReceiver
+    needsPower: false
+  - type: Lathe
+    idleState: blast_furnace
+    runningState: blast_furnace_on
+    staticPacks:
+    - BlastFurnace
+  - type: Construction
+    graph: BlastFurnace
+    node: end
+
+    - type: latheRecipePack
+  id: BlastFurnace
+  recipes:
+    - IngotPigIron
