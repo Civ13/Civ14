@@ -86,12 +86,18 @@ public sealed partial class FlintRockSystem : EntitySystem
         if (args.Cancelled || args.Handled)
             return;
 
+        args.Handled = true;
+        if (component.CurrentFlints <= 0)
+        {
+            _popup.PopupEntity("There is nothing left to collect.", uid, args.Args.User);
+            return;
+        }
+
         component.CurrentFlints--;
         var spawnPos = Transform(uid).MapPosition;
         var flint = Spawn("Flint", spawnPos);
         _hands.TryPickupAnyHand(args.Args.User, flint);
         _popup.PopupEntity("You successfully collect a flint.", uid, args.Args.User);
-        args.Handled = true;
     }
 
     private void OnExamined(EntityUid uid, FlintRockComponent component, ExaminedEvent args)
