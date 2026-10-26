@@ -10,10 +10,13 @@ on:
 jobs:
   build:
     name: YAML Linter
-    if: github.actor != 'PJBot' && github.event.pull_request.draft == false
+    # Validate source repairs before draft PR review, including the full linter.
+    if: github.actor != 'PJBot'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3.6.0
+      - name: Check Gulag source contracts (offline)
+        run: python3 -m unittest discover -s Tools/ci -p 'test_gulag_contracts.py' -v
       - name: Setup submodule
         run: |
           git submodule update --init --recursive
