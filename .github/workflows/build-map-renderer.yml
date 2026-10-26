@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3.6.0
       - name: Check workflow contract (offline)
-        run: python3 -m unittest discover -s Tools/ci -p 'test_map_renderer_workflow.py' -v
+        run: python3 -m unittest discover -s Tools/ci -p 'test_map_renderer*.py' -v
 
   build:
     # Run on draft PRs too, so this workflow can be verified before review.
@@ -66,9 +66,10 @@ jobs:
 
       - name: Run Map Renderer
         # Preserve the existing Debug runtime build as well as the Release
-        # compile above, but do not restore the same project graph again.
+        # compile above. Require failure on a missing RSI, then restore the
+        # authored resource and require a real PNG from the normal render.
         timeout-minutes: 15
-        run: dotnet run --project Content.MapRenderer --configuration Debug --no-restore -- Dev
+        run: python3 Tools/ci/check_map_renderer.py
 
   ci-success:
     name: Build & Test Debug

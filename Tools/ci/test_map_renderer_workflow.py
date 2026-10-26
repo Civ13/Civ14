@@ -14,6 +14,8 @@ import shutil
 import subprocess
 import unittest
 
+from check_map_renderer import renderer_command
+
 
 ROOT = Path(__file__).resolve().parents[2]
 WORKFLOW = ROOT / ".github/workflows/build-map-renderer.yml"
@@ -60,8 +62,13 @@ class MapRendererWorkflowTests(unittest.TestCase):
         self.assertIn("--configuration Release --no-restore /p:WarningsAsErrors=nullable /m",
                       self.step("Build Project"))
         runtime = self.step("Run Map Renderer")
-        self.assertIn("--configuration Debug --no-restore -- Dev", runtime)
-        self.assertNotIn("--no-build", runtime)
+        self.assertIn("run: python3 Tools/ci/check_map_renderer.py", runtime)
+        command = renderer_command("output", build=True)
+        self.assertIn("Debug", command)
+        self.assertIn("--no-restore", command)
+        self.assertNotIn("--no-build", command)
+        self.assertEqual(command[-1], "Nomads")
+        self.assertIn("--no-build", renderer_command("output", build=False))
         sdk = json.loads((ROOT / "global.json").read_text(encoding="utf-8"))["sdk"]
         self.assertEqual(sdk, {"version": "9.0.100", "rollForward": "latestFeature"})
         self.assertIn("dotnet-version: 9.0.x", self.step("Setup .NET Core"))
