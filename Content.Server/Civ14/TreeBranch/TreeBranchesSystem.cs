@@ -89,12 +89,18 @@ private void OnGetVerbs(EntityUid uid, TreeBranchesComponent component, ref GetV
         if (args.Cancelled || args.Handled)
             return;
 
+        args.Handled = true;
+        if (component.CurrentBranches <= 0)
+        {
+            _popup.PopupEntity("There is nothing left to collect.", uid, args.Args.User);
+            return;
+        }
+
         component.CurrentBranches--;
         var spawnPos = Transform(uid).MapPosition;
         var branch = Spawn("LeafedStick", spawnPos);
         _hands.TryPickupAnyHand(args.Args.User, branch);
         _popup.PopupEntity("You successfully collect a branch.", uid, args.Args.User);
-        args.Handled = true;
     }
 
     private void OnExamined(EntityUid uid, TreeBranchesComponent component, ExaminedEvent args)
