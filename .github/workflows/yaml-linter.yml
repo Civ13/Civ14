@@ -13,26 +13,63 @@ jobs:
     # Validate source repairs before draft PR review, including the full linter.
     if: github.actor != 'PJBot'
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v3.6.0
-      - name: Check Gulag source contracts (offline)
-        run: python3 -m unittest discover -s Tools/ci -p 'test_gulag_contracts.py' -v
+        timeout-minutes: 5
+      - name: Check integration source contracts (offline)
+        timeout-minutes: 2
+        run: python3 -m unittest discover -s Tools/ci -p 'test_*.py' -v
       - name: Setup submodule
+        timeout-minutes: 5
         run: |
           git submodule update --init --recursive
       - name: Pull engine updates
+        timeout-minutes: 5
         uses: space-wizards/submodule-dependency@v0.1.5
       - name: Update Engine Submodules
+        timeout-minutes: 5
         run: |
           cd RobustToolbox/
           git submodule update --init --recursive
       - name: Setup .NET Core
+        timeout-minutes: 5
         uses: actions/setup-dotnet@v3.2.0
         with:
           dotnet-version: 9.0.x
       - name: Install dependencies
+        timeout-minutes: 5
         run: dotnet restore
       - name: Build
+        timeout-minutes: 15
         run: dotnet build --configuration Release --no-restore /p:WarningsAsErrors= /m
+      - name: Run the 16 focused port NUnit cases
+        id: port-tests
+        timeout-minutes: 3
+        run: >-
+          dotnet test Content.Tests/Content.Tests.csproj --configuration Release
+          --no-restore --no-build
+          --filter "FullyQualifiedName~Content.Tests.Server.Civ14.GatheringCompletionTest|FullyQualifiedName~Content.Tests.Server.Civ14.CompostingInteractionTest"
+          --logger "trx;LogFileName=ports.trx"
+          --results-directory "${{ github.workspace }}/TestResults/integration-ports"
+      - name: Verify exact port test results
+        if: always() && steps.port-tests.outcome != 'skipped'
+        timeout-minutes: 1
+        env:
+          EVIDENCE_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+          EVIDENCE_BASE: ${{ github.event.pull_request.base.sha || github.event.merge_group.base_sha || github.event.before || github.sha }}
+        run: python3 Tools/ci/verify_port_test_results.py --trx TestResults/integration-ports/ports.trx
       - name: Run Linter
+        timeout-minutes: 5
         run: dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj --no-build
+      - name: Preserve port test evidence for this source and attempt
+        if: always() && steps.port-tests.outcome != 'skipped'
+        timeout-minutes: 2
+        uses: actions/upload-artifact@v4
+        with:
+          name: civ14-ports-${{ github.event.pull_request.head.sha || github.sha }}-${{ github.event.pull_request.base.sha || github.event.merge_group.base_sha || github.event.before || github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            TestResults/integration-ports/ports.trx
+            TestResults/integration-ports/verification.json
+          if-no-files-found: error
+          retention-days: 3
