@@ -130,3 +130,14 @@
     - type: Sprite
       sprite: Civ14/Structures/closet.rsi
       state: endtable-alt
+
+- type: entity
+  id: TableWoodGrime
+  parent: TableWoodClassic
+  name: wood table
+  description: A grimy wood table.
+  components:
+    - type: Sprite
+      sprite: Civ14/Structures/grime_table.rsi
+    - type: Icon
+      sprite: Civ14/Structures/grime_table.rsi

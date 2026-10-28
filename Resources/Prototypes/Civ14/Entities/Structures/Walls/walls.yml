@@ -865,12 +865,12 @@
       tags:
         - Wall
     - type: Sprite
-      sprite: Structures/Walls/cobblebrick_sand.rsi
+      sprite: Civ14/Structures/Walls/old_brick.rsi
     - type: Icon
-      sprite: Structures/Walls/cobblebrick_sand.rsi
+      sprite: Civ14/Structures/Walls/old_brick.rsi
     - type: IconSmooth
       key: walls
-      base: cobblebrick
+      base: new_brick
 
 - type: entity
   parent: OldBrickWallIndestructible

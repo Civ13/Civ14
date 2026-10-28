@@ -19,3 +19,6 @@ department-SovietCW = Soviet Union
 department-Insurgents = Insurgents
 department-Blugoslavia = Blugoslavia
 department-UnitedNations = United Nations
+
+department-Gulag-Soviets = Soviets
+department-Gulag-Prisoners = Prisoners

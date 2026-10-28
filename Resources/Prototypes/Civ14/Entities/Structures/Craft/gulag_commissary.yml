@@ -1,0 +1,90 @@
+- type: entity
+  parent: BaseItem
+  id: Roubles
+  name: roubles
+  description: Currency of the USSR.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/trash.rsi
+      state: money
+    - type: Item
+      sprite: Civ14/Objects/trash.rsi
+      state: money
+      size: Small
+    - type: Tag
+      tags:
+        - CivMoney
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Stack
+      stackType: Roubles
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        Roubles: 1
+
+- type: stack
+  id: Roubles
+  name: roubles
+  spawn: Roubles
+  maxCount: 100
+
+- type: material
+  id: Roubles
+  stackEntity: Roubles
+  name: Roubles
+  unit: Rbl
+  icon: { sprite: /Textures/Civ14/Objects/trash.rsi, state: money }
+  color: "#d6ad77"
+  price: 1
+
+- type: entity
+  parent: BaseLathe
+  id: GulagCommissary
+  name: gulag commissary
+  description: A station for buying food and items.
+  components:
+    - type: Transform
+      noRot: false
+    - type: Sprite
+      sprite: Civ14/Objects/vending.rsi
+      snapCardinals: true
+      state: market_stall
+    - type: ApcPowerReceiver
+      needsPower: false
+      powerLoad: 0
+    - type: Anchorable
+      delay: 2
+    - type: Lathe
+      producingSound: /Audio/Machines/button.ogg
+      staticPacks:
+        - GulagCommissary
+    - type: MaterialStorage
+      whitelist:
+        tags:
+          - CivMoney
+
+- type: latheCategory
+  id: GulagCommissary
+  name: Gulag Commissary
+
+- type: latheRecipePack
+  id: GulagCommissary
+  recipes:
+    - GulagCommissaryInventoryNutribrick
+
+- type: latheRecipe
+  id: GulagCommissaryInventoryNutribrick
+  categories:
+    - GulagCommissary
+  completetime: 0.5
+  materials:
+    Roubles: 15
+  result: FoodSnackNutribrick

@@ -2,15 +2,12 @@
   parent: BaseItem
   name: mop
   id: MopItem
-  description: A mop that can't be stopped, viscera cleanup detail awaits.
+  description: A mop that can't be stopped.
   components:
     - type: Sprite
-      sprite: Objects/Specific/Janitorial/mop.rsi
+      sprite: Civ14/Objects/janitor.rsi
       layers:
         - state: mop
-        - map: ["enum.SolutionContainerLayers.Fill"]
-          state: fill-3
-          visible: false
     - type: Appearance
     - type: SolutionContainerVisuals
       maxFillLevels: 3

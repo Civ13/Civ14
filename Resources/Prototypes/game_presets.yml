@@ -52,3 +52,14 @@
     - TeamDeathMatchRule
     - RandomWeatherRule
     - CaptureAreaRulePoints
+
+- type: gamePreset
+  id: Gulag14
+  alias:
+    - gulag14
+  name: gulag14
+  showInVote: true
+  description: description for gulag temp
+  rules:
+    - RespawnDeadRuleTDMFixed
+    - RandomWeatherRuleNightSnow

@@ -1,0 +1,61 @@
+# German
+- type: job
+  id: GulagPrisonerGerman
+  name: job-name-civ-gulag-prisoner-german
+  faction: GulagPrisonerGerman
+  originalName: Nemetskiy plennik
+  description: temp description
+  startingGear: GulagPrisonerGear
+  playTimeTracker: JobGulagPrisonerGerman
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - GulagPrisonerGerman
+        - type: ShowFactionIcons
+          factionIcon: Ger3Faction
+
+# Ukrainian
+- type: job
+  id: GulagPrisonerUkrainian
+  name: job-name-civ-gulag-prisoner-ukrainian
+  faction: GulagPrisonerUkrainian
+  originalName: Ukrainskiy plennik
+  description: temp description
+  startingGear: GulagPrisonerGear
+  playTimeTracker: JobGulagPrisonerUkrainian
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - GulagPrisonerUkrainian
+        - type: ShowFactionIcons
+          factionIcon: UkrFaction
+
+# Polish
+- type: job
+  id: GulagPrisonerPolish
+  name: job-name-civ-gulag-prisoner-polish
+  faction: GulagPrisonerPolish
+  originalName: Polskiy plennik
+  description: temp description
+  startingGear: GulagPrisonerGear
+  playTimeTracker: JobGulagPrisonerPolish
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+            - GulagPrisonerPolish
+        - type: ShowFactionIcons
+          factionIcon: PolFaction
+
+# Starting gear
+- type: startingGear
+  id: GulagPrisonerGear
+  equipment:
+    shoes: ClothingShoesColorBlack # this should be changed since they look silly
+    jumpsuit: civ13_uniform_GULAG_prisoner_clothing
+    pocket2: Roubles

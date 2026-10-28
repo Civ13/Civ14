@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Shared._Stalker.Teleport;
 using Content.Shared.Access.Systems;
 using Content.Shared.Movement.Pulling.Systems;
@@ -6,6 +6,7 @@ using Content.Shared.Teleportation.Components;
 using Content.Shared.Teleportation.Systems;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Random;
+using Content.Shared.Movement.Pulling.Components;
 
 namespace Content.Server._Stalker.Teleports.LocalTeleport;
 /// <summary>
@@ -19,7 +20,6 @@ public sealed class LocalTeleportSystem : SharedTeleportSystem
     [Dependency] private readonly LinkedEntitySystem _linkedEntitySystem = default!;
     [Dependency] private readonly IEntityManager _entMan = default!;
     [Dependency] private readonly AccessReaderSystem _accessReaderSystem = default!;
-
     public override void Initialize()
     {
         SubscribeLocalEvent<LocalTeleportComponent, StartCollideEvent>(OnStartCollide);
@@ -37,13 +37,13 @@ public sealed class LocalTeleportSystem : SharedTeleportSystem
                 return;
         }
 
-        // Asked to remove, testing now
-        // if (TryComp<SharedPullableComponent>(subject, out var pullable) && pullable.BeingPulled)
-        //     _pulling.TryStopPull(pullable);
-        //
-        // if (TryComp<SharedPullerComponent>(subject, out var pulling)
-        //     && pulling.Pulling != null && TryComp<SharedPullableComponent>(pulling.Pulling.Value, out var subjectPulling))
-        //     _pulling.TryStopPull(subjectPulling);
+        // Asked to remove, testing now - Reenabled for civ14 because dragging items through is buggy
+        if (TryComp<PullableComponent>(subject, out var pullable) && pullable.BeingPulled)
+            _pulling.TryStopPull(subject, pullable);
+
+        if (TryComp<PullerComponent>(subject, out var pulling)
+            && pulling.Pulling != null && TryComp<PullableComponent>(pulling.Pulling.Value, out var subjectPulling))
+            _pulling.TryStopPull(subject, subjectPulling);
 
         // Remove Timeout from other portal
         if (HasComp<PortalTimeoutComponent>(subject))
