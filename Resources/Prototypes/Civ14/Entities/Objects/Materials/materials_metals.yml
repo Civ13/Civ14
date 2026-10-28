@@ -94,6 +94,14 @@
     - type: Stack
       count: 1
 
+- type: material
+  id: PigIron
+  stackEntity: IngotPigIron1
+  name: materials-pig-iron
+  icon: { sprite: Objects/Materials/ingots.rsi, state: pig_iron_one }
+  color: "#5b5b5b"
+  price: 0.12
+
 - type: entity
   parent: IngotBase
   id: IngotPigIron
@@ -103,7 +111,7 @@
     - type: Material
     - type: PhysicalComposition
       materialComposition:
-        Iron: 100
+        PigIron: 100
     - type: Stack
       stackType: PigIron
       baseLayer: base
@@ -138,9 +146,10 @@
       state: pig_iron_one
     - type: Stack
       count: 1
+
 - type: stack
   id: PigIron
-  name: PigIron
+  name: pig iron
   icon: { sprite: /Textures/Objects/Materials/ingots.rsi, state: pig_iron_one }
   spawn: IngotPigIron1
   maxCount: 30
