@@ -33,3 +33,4 @@ lathe-category-shields-ancient = Ancient Shields
 lathe-category-shields-medieval = Medieval Shields
 lathe-category-armor-medieval = Medieval Armor
 lathe-category-armor-imperial = Imperial Armor
+lathe-category-gulag-commissary = Gulag Commissary

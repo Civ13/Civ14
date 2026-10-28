@@ -644,7 +644,7 @@
   components:
     - type: InteractionOutline
     - type: Sprite
-      sprite: Civ14/Objects/Railing.rsi
+      sprite: Civ14/Objects/railing.rsi
       state: stone
       drawdepth: FloorObjects
       noRot: true
@@ -684,7 +684,7 @@
   name: stone railing
   components:
      - type: Sprite
-       sprite: Civ14/Objects/Railing.rsi
+       sprite: Civ14/Objects/railing.rsi
        state: stone
 
 - type: entity
@@ -694,7 +694,7 @@
   name: sandstone railing
   components:
      - type: Sprite
-       sprite: Civ14/Objects/Railing.rsi
+       sprite: Civ14/Objects/railing.rsi
        state: sandstone
 
 - type: entity
@@ -704,5 +704,5 @@
   name: brick railing
   components:
      - type: Sprite
-       sprite: Civ14/Objects/Railing.rsi
+       sprite: Civ14/Objects/railing.rsi
        state: sandstone
