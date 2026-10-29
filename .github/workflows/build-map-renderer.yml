@@ -1,4 +1,4 @@
-﻿name: Build & Test Map Renderer
+name: Build & Test Map Renderer
 
 on:
   push:
@@ -9,8 +9,19 @@ on:
     branches: [ master, staging, stable ]
 
 jobs:
+  workflow-contract:
+    name: Map renderer workflow contract
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v3.6.0
+      - name: Check workflow contract (offline)
+        run: python3 -m unittest discover -s Tools/ci -p 'test_map_renderer*.py' -v
+
   build:
-    if: github.actor != 'PJBot' && github.event.pull_request.draft == false
+    # Run on draft PRs too, so this workflow can be verified before review.
+    if: github.actor != 'PJBot'
+    timeout-minutes: 30
     strategy:
       matrix:
         os: [ubuntu-latest]
@@ -22,36 +33,57 @@ jobs:
         uses: actions/checkout@v3.6.0
 
       - name: Setup Submodule
+        timeout-minutes: 5
         run: |
-          git submodule update --init --recursive
+          # The dependency action needs only the engine checkout. Initialize its
+          # nested submodules once, after any declared engine PR is merged.
+          git submodule update --init
 
       - name: Pull engine updates
+        timeout-minutes: 5
         uses: space-wizards/submodule-dependency@v0.1.5
 
       - name: Update Engine Submodules
+        timeout-minutes: 5
         run: |
           cd RobustToolbox/
           git submodule update --init --recursive
 
       - name: Setup .NET Core
+        timeout-minutes: 5
         uses: actions/setup-dotnet@v3.2.0
         with:
           dotnet-version: 9.0.x
 
       - name: Install dependencies
-        run: dotnet restore
+        timeout-minutes: 5
+        # Restore the renderer and its transitive project references, not the
+        # solution's unrelated packaging, benchmarks and tooling projects.
+        run: dotnet restore Content.MapRenderer/Content.MapRenderer.csproj
 
       - name: Build Project
         run: dotnet build Content.MapRenderer --configuration Release --no-restore /p:WarningsAsErrors=nullable /m
 
       - name: Run Map Renderer
-        run: dotnet run --project Content.MapRenderer Dev
+        # Preserve the existing Debug runtime build as well as the Release
+        # compile above. Require failure on a missing RSI, then restore the
+        # authored resource and require a real PNG from the normal render.
+        timeout-minutes: 15
+        run: python3 Tools/ci/check_map_renderer.py
 
   ci-success:
     name: Build & Test Debug
+    if: always() && github.actor != 'PJBot'
     needs:
+      - workflow-contract
       - build
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - name: CI succeeded
-        run: exit 0
+        env:
+          CONTRACT_RESULT: ${{ needs.workflow-contract.result }}
+          BUILD_RESULT: ${{ needs.build.result }}
+        run: |
+          test "$CONTRACT_RESULT" = success
+          test "$BUILD_RESULT" = success
