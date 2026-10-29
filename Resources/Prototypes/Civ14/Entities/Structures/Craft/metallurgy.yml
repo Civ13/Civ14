@@ -148,3 +148,56 @@
   completetime: 2
   materials:
     RawSand: 100
+
+# blast furnace
+- type: entity
+  id: BlastFurnace
+  name: blast furnace
+  parent: OreProcessor
+  description: Used for smelting iron ore into pig iron.
+  components:
+    - type: Sprite
+      sprite: Civ14/Objects/metallurgy.rsi
+      layers:
+        - state: blast_furnace_on
+          shader: unshaded
+          map: ["enum.LatheVisualLayers.IsRunning"]
+        - state: blast_furnace
+          map: ["enum.PowerDeviceVisualLayers.Powered"]
+        - state: blast_furnace
+          map: ["enum.MaterialStorageVisualLayers.Inserting"]
+        - state: blast_furnace
+          map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 200
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: StoneBreak
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: ApcPowerReceiver
+      needsPower: false
+    - type: Lathe
+      idleState: blast_furnace
+      runningState: blast_furnace_on
+      staticPacks:
+        - BlastFurnace
+    - type: Construction
+      graph: BlastFurnace
+      node: end
+
+- type: latheRecipePack
+  id: BlastFurnace
+  recipes:
+    - IngotPigIron
+
+- type: latheRecipe
+  id: IngotPigIron
+  result: IngotPigIron1
+  icon: { sprite: "/Textures/Objects/Materials/ingots.rsi", state: pig_iron_one }
+  completetime: 2
+  materials:
+    RawIron: 100
