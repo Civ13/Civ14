@@ -11,6 +11,7 @@ materials-copper = copper
 materials-tin = tin
 materials-bronze = bronze
 materials-iron = iron
+materials-pig-iron = pig iron
 materials-gold = gold
 materials-silver = silver
 materials-plasteel = plasteel

@@ -5,6 +5,7 @@ parser. The full Content.YAMLLinter remains the authoritative semantic check.
 """
 
 import copy
+import json
 from pathlib import Path
 import re
 import unittest
@@ -69,8 +70,11 @@ class GulagContracts(unittest.TestCase):
         references = {scalar(block, "playTimeTracker") for block in jobs.values()}
         self.assertEqual(references, {f"Job{job}" for job in JOBS})
         declared = {}
-        for path in ("Resources/Prototypes/Roles/play_time_trackers.yml",
-                     f"{ROLES}/TDM/playtimetrackers.yml", f"{ROLES}/RPTDM/playtimetrackers.yml"):
+        paths = ["Resources/Prototypes/Roles/play_time_trackers.yml", f"{ROLES}/TDM/playtimetrackers.yml"]
+        alternate = f"{ROLES}/RPTDM/playtimetrackers.yml"
+        if (ROOT / alternate).exists():
+            paths.append(alternate)
+        for path in paths:
             for identifier in prototypes(read(path), "playTimeTracker"):
                 self.assertNotIn(identifier, declared, f"Duplicate tracker: {identifier}")
                 declared[identifier] = path
@@ -132,6 +136,18 @@ class GulagContracts(unittest.TestCase):
         self.assertIn("      state: money\n", item)
         self.assertIn("  price: 1\n", prototypes(text, "material")["Roubles"])
         self.assertIn("    Roubles: 15\n", prototypes(text, "latheRecipe")["GulagCommissaryInventoryNutribrick"])
+
+    def test_railing_variants_select_their_existing_artwork(self):
+        blocks = prototypes(read("Resources/Prototypes/Civ14/Entities/Structures/Walls/barricades.yml"), "entity")
+        asset = ROOT / "Resources/Textures/Civ14/Objects/railing.rsi"
+        states = {entry["name"] for entry in json.loads((asset / "meta.json").read_text())["states"]}
+        for variant, state in (("Sandstone", "sandstone"), ("Brick", "brick")):
+            with self.subTest(variant=variant):
+                block = blocks[f"BarricadeRailing{variant}"]
+                self.assertIn("       sprite: Civ14/Objects/railing.rsi\n", block)
+                self.assertRegex(block, rf"(?m)^       state: {state}$")
+                self.assertIn(state, states)
+                self.assertTrue((asset / f"{state}.png").is_file())
 
 
 if __name__ == "__main__":

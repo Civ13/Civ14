@@ -22,5 +22,4 @@ materials-unit-chunk = chunk
 materials-unit-bill = bill
 
 materials-unit-coin = coin
-
 materials-unit-rouble = Rbl

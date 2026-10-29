@@ -63,7 +63,8 @@ public sealed partial class CompostingSystem : EntitySystem
     /// </summary>
     private bool IsCompostable(EntityUid item, CompostingComponent component)
     {
-        var tagComponent = Comp<TagComponent>(item);
+        if (!TryComp<TagComponent>(item, out var tagComponent))
+            return false;
         var tags = tagComponent?.Tags.Select(tag => tag.Id).ToArray() ?? Array.Empty<string>();
         return component.Whitelist.Any(tag => tags.Contains(tag));
     }
@@ -76,15 +77,24 @@ public sealed partial class CompostingSystem : EntitySystem
         if (args.Handled || component.ReadyCompost <= 0)
             return;
 
+        if (!_hands.TryGetEmptyHand(args.User, out _))
+        {
+            _popup.PopupEntity("Your hands are full.", uid, args.User);
+            args.Handled = true;
+            return;
+        }
+
         // Spawn compost and try to place it in the player's hand
         var compost = Spawn(component.OutputPrototype, Transform(uid).MapPosition);
-        if (_hands.TryPickupAnyHand(args.User, compost))
+        // Pickup can report success even when DoPickup's container insertion fails.
+        if (_hands.TryPickupAnyHand(args.User, compost) && _hands.IsHolding(args.User, compost, out _))
         {
             component.ReadyCompost--;
             _popup.PopupEntity($"You collect a unit of {component.OutputName}.", uid, args.User);
         }
         else
         {
+            QueueDel(compost);
             _popup.PopupEntity("Your hands are full.", uid, args.User);
         }
         args.Handled = true;
