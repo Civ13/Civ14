@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     name: YAML Linter
-    # Validate source repairs before draft PR review, including the full linter.
+    # Run the full linter on draft PRs as well as ready-for-review PRs.
     if: github.actor != 'PJBot'
     runs-on: ubuntu-latest
     steps:
