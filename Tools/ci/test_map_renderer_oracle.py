@@ -1,6 +1,7 @@
 """Offline tests of the runtime probe oracle; these do not run the renderer."""
 
 import base64
+import json
 from pathlib import Path
 import tempfile
 import unittest
@@ -50,6 +51,17 @@ class MapRendererOracleTests(unittest.TestCase):
         self.assertIn(f"  id: {MAP_ID}\n", prototype)
         self.assertIn("  mapPath: /Maps/civ/nomads_classic.yml", prototype)
         self.assertTrue((ROOT / "Resources/Maps/civ/nomads_classic.yml").is_file())
+
+    def test_railing_variants_select_their_existing_artwork(self):
+        authored = PROTOTYPE.read_text(encoding="utf-8")
+        asset = ROOT / "Resources/Textures/Civ14/Objects/railing.rsi"
+        states = {entry["name"] for entry in json.loads((asset / "meta.json").read_text())["states"]}
+        for variant, state in (("Sandstone", "sandstone"), ("Brick", "brick")):
+            with self.subTest(variant=variant):
+                block = authored.split(f"  id: BarricadeRailing{variant}\n", 1)[1].split("\n- type:", 1)[0]
+                self.assertIn(f"       state: {state}\n", block + "\n")
+                self.assertIn(state, states)
+                self.assertTrue((asset / f"{state}.png").is_file())
 
 
 if __name__ == "__main__":
