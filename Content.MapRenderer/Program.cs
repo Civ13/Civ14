@@ -1,4 +1,4 @@
-﻿#nullable enable
+#nullable enable
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -135,8 +135,14 @@ namespace Content.MapRenderer
                 arguments.Maps = ids;
             }
 
-            await Run(arguments);
-            PoolManager.Shutdown();
+            try
+            {
+                await Run(arguments);
+            }
+            finally
+            {
+                PoolManager.Shutdown();
+            }
         }
 
         private static async Task Run(CommandLineArguments arguments)
@@ -201,7 +207,7 @@ namespace Content.MapRenderer
                 {
                     Console.WriteLine($"Painting map {map} failed due to an internal exception:");
                     Console.WriteLine(ex);
-                    continue;
+                    throw;
                 }
 
                 if (arguments.ExportViewerJson)
