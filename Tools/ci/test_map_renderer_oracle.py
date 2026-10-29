@@ -56,7 +56,7 @@ class MapRendererOracleTests(unittest.TestCase):
         authored = PROTOTYPE.read_text(encoding="utf-8")
         asset = ROOT / "Resources/Textures/Civ14/Objects/railing.rsi"
         states = {entry["name"] for entry in json.loads((asset / "meta.json").read_text())["states"]}
-        for variant, state in (("Sandstone", "sandstone"), ("Brick", "brick")):
+        for variant, state in (("Stone", "stone"), ("Sandstone", "sandstone"), ("Brick", "brick")):
             with self.subTest(variant=variant):
                 block = authored.split(f"  id: BarricadeRailing{variant}\n", 1)[1].split("\n- type:", 1)[0]
                 self.assertIn(f"       state: {state}\n", block + "\n")
