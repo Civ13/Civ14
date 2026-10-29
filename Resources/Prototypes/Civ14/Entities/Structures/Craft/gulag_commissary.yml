@@ -9,7 +9,6 @@
       state: money
     - type: Item
       sprite: Civ14/Objects/trash.rsi
-      state: money
       size: Small
     - type: Tag
       tags:
@@ -40,7 +39,7 @@
   id: Roubles
   stackEntity: Roubles
   name: Roubles
-  unit: Rbl
+  unit: materials-unit-rouble
   icon: { sprite: /Textures/Civ14/Objects/trash.rsi, state: money }
   color: "#d6ad77"
   price: 1
@@ -73,7 +72,7 @@
 
 - type: latheCategory
   id: GulagCommissary
-  name: Gulag Commissary
+  name: lathe-category-gulag-commissary
 
 - type: latheRecipePack
   id: GulagCommissary
