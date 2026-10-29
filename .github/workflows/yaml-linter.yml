@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3.6.0
+      - name: Check Gulag source contracts (offline)
+        run: python3 -m unittest discover -s Tools/ci -p 'test_gulag_contracts.py' -v
       - name: Setup submodule
         run: |
           git submodule update --init --recursive
